@@ -1,0 +1,14 @@
+Loaded 256px model on mps
+Inference 0: 1.031s
+Inference 1: 0.025s
+Inference 2: 0.024s
+Inference 3: 0.026s
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/benchmark.py", line 93, in <module>
+    main()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/benchmark.py", line 55, in main
+    opt_g = torch.optim.Adam(g.parameters(), lr=.002, betas=(0, .99))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/lib/python3.11/site-packages/torch/optim/adam.py", line 72, in __init__
+    raise ValueError("betas must be either both floats or both Tensors")
+ValueError: betas must be either both floats or both Tensors

@@ -33,7 +33,8 @@ test('reloads choose existing portraits without immediate repeats', async () => 
     seen.add(image.src);
     previous = image.src;
   }
-  assert.equal(seen.size, 80);
+  assert.equal(seen.size, 50);
+  assert.ok(!seen.has("/portraits/05.webp"));
 });
 
 test('blocked storage does not stop portraits loading', async () => {
@@ -52,7 +53,7 @@ test('total asset failure stops after trying each portrait', async () => {
   let attempts = 0;
   const elements = page(storage(), () => { attempts++; return true; });
   await tick();
-  assert.equal(attempts, 80);
+  assert.equal(attempts, 50);
   assert.equal(elements['#portrait'].src, undefined);
 });
 

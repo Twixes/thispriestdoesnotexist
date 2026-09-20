@@ -1,0 +1,28 @@
+Loaded 256px model on mps
+Inference 0: 0.161s
+Inference 1: 0.023s
+Inference 2: 0.023s
+Inference 3: 0.023s
+Train step 0: 4.130s
+Train step 1: 0.276s
+Train step 2: 0.270s
+R1 passed
+{
+  "device": "mps",
+  "torch": "2.14.0",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "model_sha256": "7aa4ddeee38e007ce92a1a0bccd386fc6abba6b5c8692bdbe813d3f1987c0722",
+  "inference_seconds": [
+    0.1614319580839947,
+    0.022932082996703684,
+    0.022663624957203865,
+    0.022584166028536856
+  ],
+  "training_step_seconds": [
+    4.130153459031135,
+    0.27589795796666294,
+    0.27004954195581377
+  ],
+  "r1_seconds": 2.029232084052637,
+  "r1_finite": true
+}

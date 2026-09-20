@@ -1,0 +1,17 @@
+Loaded 256px model on cpu
+Inference 0: 0.143s
+Inference 1: 0.128s
+Inference 2: 0.165s
+Inference 3: 0.138s
+{
+  "device": "cpu",
+  "torch": "2.14.0",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "model_sha256": "7aa4ddeee38e007ce92a1a0bccd386fc6abba6b5c8692bdbe813d3f1987c0722",
+  "inference_seconds": [
+    0.1431292910128832,
+    0.12812737503554672,
+    0.16527825000230223,
+    0.1379797919653356
+  ]
+}

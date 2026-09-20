@@ -1,5 +1,7 @@
 const COUNT = 80;
-const pool = Array.from({ length: COUNT }, (_, i) => i);
+// Calendar-style selection; also the initial training set for the generator.
+const pool = [1, 2, 3, 4, 7, 9, 10, 13, 18, 20, 22, 23, 25, 27, 33, 36, 38, 45, 46, 47,
+  ...Array.from({ length: 30 }, (_, i) => i + 51)].map(number => number - 1);
 const STORAGE_KEY = 'last-priest';
 const portrait = document.querySelector('#portrait');
 let current = -1;
