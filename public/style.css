@@ -37,10 +37,14 @@ main {
   color: #fff;
   opacity: .5;
   font: 12px Arial, Helvetica, sans-serif;
-  text-decoration: none;
 }
 
-.credit:focus-visible {
+.credit a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.credit a:focus-visible {
   outline: 1px solid currentColor;
   outline-offset: 4px;
 }
