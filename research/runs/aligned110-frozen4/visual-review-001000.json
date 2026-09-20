@@ -10,5 +10,15 @@
     "Residual malformed fine features and background artifacts remain",
     "The observed improvement does not establish reference-level facial realism or sufficient identity diversity"
   ],
-  "decision": "Keep rejected for deployment. Pause this control at durable1000 to allocate GPU to the reference recipe and CDC comparison; preserve resumable state. This is not a final-convergence verdict."
+  "decision": "Keep rejected for deployment. Pause this control at durable1000 to allocate GPU to the reference recipe and CDC comparison; preserve resumable state. This is not a final-convergence verdict.",
+  "raw_generator_review": {
+    "grid": "samples-001000-raw.png",
+    "sha256": "8d59c13a7d99f2e24f71dc6af4deaf763603373530d787bb0691c4e8ec02a4de",
+    "approved": false,
+    "findings": [
+      "Raw psi=1 grid retains some different hairstyles and apparent ages, but repeated face structure, ghosted details and distorted anatomy persist.",
+      "A few raw faces are more coherent than others; this is insufficient for uncurated production sampling."
+    ],
+    "comparison_limit": "Control1000 and CDC750 have different image counts; this is not an equal-budget superiority claim."
+  }
 }

@@ -10,5 +10,15 @@
     "Several faces and hairstyles remain strongly similar across these fixed latents",
     "Examples with source accessories are malformed; ordinary display quality is not met"
   ],
-  "decision": "Do not promote. Retain this intermediate checkpoint and review at the paired control's 8 kimg milestone."
+  "decision": "Do not promote. Retain this intermediate checkpoint and review at the paired control's 8 kimg milestone.",
+  "raw_generator_review": {
+    "grid": "samples-000750-raw.png",
+    "sha256": "07ba15f14cb8c91c0c8b55dd8471d8829239dfed1a31a5c1e24a8eeeb4232e9d",
+    "approved": false,
+    "findings": [
+      "Raw psi=1 grid also has extensive doubled facial features and malformed eyes/mouths, so the visible problem is not confined to EMA or truncation.",
+      "Collars, heads and background edges are visibly distorted in several raw samples."
+    ],
+    "comparison_limit": "Control1000 and CDC750 have different image counts; this is not an equal-budget superiority claim."
+  }
 }

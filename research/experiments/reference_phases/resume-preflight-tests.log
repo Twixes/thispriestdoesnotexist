@@ -1,0 +1,12 @@
+test_added_source_file_fails (test_resume_preflight.ResumePreflightTests.test_added_source_file_fails) ... ok
+test_baseline_cannot_be_overwritten (test_resume_preflight.ResumePreflightTests.test_baseline_cannot_be_overwritten) ... ok
+test_clean_pass (test_resume_preflight.ResumePreflightTests.test_clean_pass) ... ok
+test_missing_archive_fails (test_resume_preflight.ResumePreflightTests.test_missing_archive_fails) ... ok
+test_torch_version_mismatch_fails (test_resume_preflight.ResumePreflightTests.test_torch_version_mismatch_fails) ... ok
+test_trainer_mismatch_fails (test_resume_preflight.ResumePreflightTests.test_trainer_mismatch_fails) ... ok
+test_unrecorded_vendor_operation_change_fails (test_resume_preflight.ResumePreflightTests.test_unrecorded_vendor_operation_change_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.025s
+
+OK
