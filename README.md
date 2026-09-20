@@ -20,3 +20,7 @@ The first deployment was uploaded directly through the Cloudflare dashboard unde
 Alternatively, after authorizing Wrangler, `npm run deploy` uses Cloudflare Workers Static Assets under the same account. The account ID is pinned in `wrangler.jsonc` to prevent accidental deployment to another account. Only `public/` is deployed. Authentication is managed by Wrangler and is never committed.
 
 The image prompts are in `docs/image-prompts.md`. Images were generated with the built-in image-generation tool; no calendar photographs were copied.
+
+## License
+
+[MIT](LICENSE).
