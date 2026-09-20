@@ -1,0 +1,130 @@
+{
+  "checkpoint": "research/runs/aligned110-frozen4-cdc1000/generator-001500.pt",
+  "sha256": "29e6243e247582566d84ccf11ce807100d0ee2d81b9074ae12467ee1524be31d",
+  "count": 16,
+  "training_count": 110,
+  "unique_decoded_images": 16,
+  "nearest_lpips_min": 0.22967106103897095,
+  "nearest_lpips_median": 0.24457134306430817,
+  "generated_pair_lpips_median": 0.27346770465373993,
+  "generated_pair_lpips_min": 0.23527708649635315,
+  "seconds": 57.049645959050395,
+  "metric": "LPIPS v0.1 SqueezeNet; orientation invariant nearest training comparison",
+  "limitations": "Diagnostics only. These scores do not prove new identity or visual acceptability. Human visual inspection required.",
+  "records": [
+    {
+      "seed": 20000,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/synthetic-101.png",
+      "lpips": 0.22967106103897095,
+      "decoded_sha256": "6acc42c39c31bb084f473520cc27bc4643f4c531a42bb7b9078f193b2669741d"
+    },
+    {
+      "seed": 20001,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/original-045.png",
+      "lpips": 0.23975269496440887,
+      "decoded_sha256": "415a013058ca4c20db7e16319302a89c2fc6be749a119f250af98976820342f7"
+    },
+    {
+      "seed": 20002,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/original-045.png",
+      "lpips": 0.2417091429233551,
+      "decoded_sha256": "5c0e29f4ab0e40ff4f0a58f8f200cd9b95930fc94f9a3224e7e70eae180b43fd"
+    },
+    {
+      "seed": 20003,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/original-047.png",
+      "lpips": 0.2535746693611145,
+      "decoded_sha256": "ed28870db3bcf3a07831b78a4106e8caf73adcde329151324297390553c8b9dd"
+    },
+    {
+      "seed": 20004,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/original-079.png",
+      "lpips": 0.2449159324169159,
+      "decoded_sha256": "8e218bdf755957bb7125e351766147e1e995162b6e61465993a31d30c595e831"
+    },
+    {
+      "seed": 20005,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/synthetic-101.png",
+      "lpips": 0.23784954845905304,
+      "decoded_sha256": "3c492ac6591adc958ddd71870420322b05964d0e75d9bf40659bb7c87b396351"
+    },
+    {
+      "seed": 20006,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/original-047.png",
+      "lpips": 0.271054208278656,
+      "decoded_sha256": "9015cec04c47b91f815a82178c740337b43bce731bf303cf01d8519b4d32f06b"
+    },
+    {
+      "seed": 20007,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/synthetic-115.png",
+      "lpips": 0.24677738547325134,
+      "decoded_sha256": "2d476a9680c9e7aab03ec9c1b7421a6ec4d45c8e7aca0b7fd9e3c3c4f72cb049"
+    },
+    {
+      "seed": 20008,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/original-058.png",
+      "lpips": 0.2518841624259949,
+      "decoded_sha256": "d7e53c28e0896e65d9370ce2e455966eb66ea66376a92d7ed1acf079cdfae67a"
+    },
+    {
+      "seed": 20009,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/synthetic-085.png",
+      "lpips": 0.24422675371170044,
+      "decoded_sha256": "5e5c825edebdb3be6b59c0878e4d920274ea76a4b4c8a80107bb9fa9beca6cf9"
+    },
+    {
+      "seed": 20010,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/synthetic-120.png",
+      "lpips": 0.23707135021686554,
+      "decoded_sha256": "08b25636ff4e2747b636934e12f6ce8162976315811b6814fd52106965ad36de"
+    },
+    {
+      "seed": 20011,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/synthetic-132.png",
+      "lpips": 0.2437637597322464,
+      "decoded_sha256": "74bfdcc1768115f4e92e6700933dce505881b5e47bef33890eb318d9118209d9"
+    },
+    {
+      "seed": 20012,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/synthetic-140.png",
+      "lpips": 0.23956383764743805,
+      "decoded_sha256": "b2721f0ed4f12d08820ea6ebb668f592db16f8e28cf8e0273caf819eeeeb091d"
+    },
+    {
+      "seed": 20013,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/original-036.png",
+      "lpips": 0.26815664768218994,
+      "decoded_sha256": "0e14e2be96dd8d4752dc410185a758a8f6c17633ce2d473ceb520afdfde36368"
+    },
+    {
+      "seed": 20014,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/synthetic-085.png",
+      "lpips": 0.2524133622646332,
+      "decoded_sha256": "4cd202bbbb234b3a26c1c2143421b4bc36a9d5834c7a874f6824c2fe7bb1d2d6"
+    },
+    {
+      "seed": 20015,
+      "nearest_training_file": "research/alignment/collar-only/eyes42/original-047.png",
+      "lpips": 0.2519932687282562,
+      "decoded_sha256": "f33c1a12eaca375ed7f0dd943dd0c182fead1b8dee0651227f4651de21358d1b"
+    }
+  ],
+  "generated_pair_distances": [
+    0.24331805109977722,
+    0.3496570885181427,
+    0.23527708649635315,
+    0.2860866189002991,
+    0.2674192488193512,
+    0.23529958724975586,
+    0.28746816515922546,
+    0.317353755235672,
+    0.28525903820991516,
+    0.27951616048812866,
+    0.24082393944263458,
+    0.25044316053390503,
+    0.2606083154678345,
+    0.30455291271209717,
+    0.37083813548088074,
+    0.2415153831243515
+  ]
+}

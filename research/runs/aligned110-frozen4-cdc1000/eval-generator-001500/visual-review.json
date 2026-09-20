@@ -1,0 +1,19 @@
+{
+  "approved": false,
+  "checkpoint_step": 1500,
+  "seed_range": [
+    20000,
+    20015
+  ],
+  "truncation_psi": 0.7,
+  "reviewer": "Codex visual inspection",
+  "grid_sha256": "bfa7904e1b05e56717bfe48c1438d93ad9eb93ca559ab66959b6aafa0bde90c1",
+  "findings": [
+    "All 16 outputs depict adult male priest-like subjects with visible clerical collars and no hats.",
+    "Most faces share similar dark hair and facial structure; some facial hair, complexion and apparent age variation exists.",
+    "Seed 20012 has severe ghosted eye/glasses artifacts and displaced lower-face details. Seeds 20003 and 20009 have visible mouth/cheek deformation.",
+    "Several other samples have blurry or poorly resolved eye details at native256; this does not meet the requested1024-like photographic quality.",
+    "Distinct byte hashes and LPIPS distances do not establish distinct identities or acceptable anatomy."
+  ],
+  "decision": "Reject production promotion; continue bounded experiment and separate source-preserving data research."
+}

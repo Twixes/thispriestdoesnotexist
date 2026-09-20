@@ -1,0 +1,17 @@
+{
+  "step": 1500,
+  "images_seen": 12000,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grids": {
+    "samples-001500.png": "d9ec8870e5fa11bbc6863483c32e6d9bb1d1f41fc53b78bbb32241fcff29b395",
+    "samples-001500-untruncated.png": "0e882b1d83d97b1539d6b30b9587795d86df8a52ab9fcd0a229079fa7fe7684d"
+  },
+  "findings": [
+    "Truncated EMA grid has substantially clearer faces than early checkpoints, with visible clerical collars and bare heads.",
+    "Several samples retain ghosted eyes or glasses-like bands, especially first row first column and third row third column.",
+    "Most faces still share a narrow range of dark hair, face shape and complexion; this fixed grid cannot establish unseen-latent identity diversity.",
+    "Untruncated grid exposes further distortions in collars, shoulders, hair and facial features; apparent eyewear sits above one head."
+  ],
+  "decision": "Continue bounded CDC comparison; no production promotion. Prepare geometry-preserving paired-edit data experiment independently."
+}

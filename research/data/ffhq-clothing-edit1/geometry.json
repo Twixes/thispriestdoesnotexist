@@ -1,0 +1,217 @@
+{
+  "purpose": "Single built-in imagegen clothing-edit geometry calibration",
+  "training_eligible": false,
+  "production_approved": false,
+  "is_trained_priest_model_output": false,
+  "script_sha256": "569483524d63fa68988a4665d364338857c6f7ff51533ae583e44d43034b410e",
+  "prompt_sha256": "107a60593a4dfeb60dd984c9993ba17514bf7140d4a09a4c54706b9bcc7eb0ee",
+  "detector_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+  "versions": {
+    "opencv": "5.0.0",
+    "numpy": "2.4.6",
+    "pillow": "12.3.0"
+  },
+  "method": {
+    "resize": "Pillow RGB 256x256 LANCZOS",
+    "cpu_threads": 2,
+    "detector": "YuNet five landmarks, confidence .75, NMS .3, top_k 5000",
+    "face_selection": "largest area times confidence",
+    "landmark_order": [
+      "eye_0",
+      "eye_1",
+      "nose",
+      "mouth_0",
+      "mouth_1"
+    ],
+    "alignment_warp": false,
+    "padding_or_reflection": false
+  },
+  "source": {
+    "path": "research/runs/inference-cpu/ffhq1024/docker-4g/sample-002.webp",
+    "sha256": "9469812e8ae0be5a83274184bdc896235a3fb1df25361d4d494d12822a079216",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "face_confidence": 0.9403409957885742,
+    "grayscale_control": false,
+    "landmarks_normalized": [
+      [
+        0.38108229637145996,
+        0.45606234669685364
+      ],
+      [
+        0.6081700325012207,
+        0.46991875767707825
+      ],
+      [
+        0.5305269956588745,
+        0.616597592830658
+      ],
+      [
+        0.38616156578063965,
+        0.733898937702179
+      ],
+      [
+        0.5658653378486633,
+        0.7447924613952637
+      ]
+    ],
+    "eye_y": 0.46299055218696594,
+    "mouth_y": 0.7393456995487213,
+    "interocular": 0.22751008774512116
+  },
+  "edit": {
+    "path": "research/data/ffhq-clothing-edit1/001.png",
+    "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "face_confidence": 0.9338456392288208,
+    "grayscale_control": false,
+    "landmarks_normalized": [
+      [
+        0.3745597302913666,
+        0.4720066785812378
+      ],
+      [
+        0.6215691566467285,
+        0.4626278579235077
+      ],
+      [
+        0.5315410494804382,
+        0.6173177361488342
+      ],
+      [
+        0.3945254683494568,
+        0.732406735420227
+      ],
+      [
+        0.6057673096656799,
+        0.7277138233184814
+      ]
+    ],
+    "eye_y": 0.46731726825237274,
+    "mouth_y": 0.7300602793693542,
+    "interocular": 0.2471874167212701
+  },
+  "comparison": {
+    "landmark_delta_xy": [
+      [
+        -0.006522566080093384,
+        0.015944331884384155
+      ],
+      [
+        0.013399124145507812,
+        -0.007290899753570557
+      ],
+      [
+        0.0010140538215637207,
+        0.0007201433181762695
+      ],
+      [
+        0.008363902568817139,
+        -0.0014922022819519043
+      ],
+      [
+        0.0399019718170166,
+        -0.017078638076782227
+      ]
+    ],
+    "landmark_euclidean_displacement": [
+      0.017226885600960317,
+      0.015254302576104412,
+      0.0012437489906496062,
+      0.008495971623712522,
+      0.043403309014909255
+    ],
+    "max_landmark_euclidean_displacement": 0.043403309014909255,
+    "mean_landmark_euclidean_displacement": 0.01712484356126722,
+    "max_absolute_coordinate_displacement": 0.0399019718170166,
+    "eye_y_delta": 0.004326716065406799,
+    "mouth_y_delta": -0.009285420179367065,
+    "interocular_relative_change": 0.08648991862810673,
+    "prospective_max_landmark_displacement": 0.015,
+    "prospective_max_absolute_interocular_change": 0.05,
+    "landmark_tolerance_pass": false,
+    "interocular_tolerance_pass": false,
+    "interpretation": "Detector geometry only; not proof of pixel identity or training quality"
+  },
+  "grayscale_source_control": {
+    "method": "Same source RGB resize, then Pillow L conversion back to RGB; in memory only",
+    "source": {
+      "path": "research/runs/inference-cpu/ffhq1024/docker-4g/sample-002.webp",
+      "sha256": "9469812e8ae0be5a83274184bdc896235a3fb1df25361d4d494d12822a079216",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "face_confidence": 0.9325610995292664,
+      "grayscale_control": true,
+      "landmarks_normalized": [
+        [
+          0.37446463108062744,
+          0.46892204880714417
+        ],
+        [
+          0.6205658912658691,
+          0.46253129839897156
+        ],
+        [
+          0.5258945226669312,
+          0.617133378982544
+        ],
+        [
+          0.3901320993900299,
+          0.7323596477508545
+        ],
+        [
+          0.6041742563247681,
+          0.730179488658905
+        ]
+      ],
+      "eye_y": 0.46572667360305786,
+      "mouth_y": 0.7312695682048798,
+      "interocular": 0.24618422361220385
+    },
+    "raw_source_to_grayscale_max_landmark_displacement": 0.04100136835524395,
+    "raw_source_to_grayscale_interocular_relative_change": 0.08208047411068331,
+    "grayscale_source_to_edit_landmark_delta_xy": [
+      [
+        9.509921073913574e-05,
+        0.003084629774093628
+      ],
+      [
+        0.001003265380859375,
+        9.655952453613281e-05
+      ],
+      [
+        0.00564652681350708,
+        0.0001843571662902832
+      ],
+      [
+        0.00439336895942688,
+        4.7087669372558594e-05
+      ],
+      [
+        0.0015930533409118652,
+        -0.002465665340423584
+      ]
+    ],
+    "grayscale_source_to_edit_landmark_euclidean_displacement": [
+      0.003086095381401572,
+      0.0010079013673021536,
+      0.005649535611040699,
+      0.004393621292540194,
+      0.002935527979419819
+    ],
+    "grayscale_source_to_edit_max_landmark_displacement": 0.005649535611040699,
+    "grayscale_source_to_edit_mean_landmark_displacement": 0.0034145363263408876,
+    "grayscale_source_to_edit_interocular_relative_change": 0.004074969120062333,
+    "landmark_tolerance_pass": true,
+    "interocular_tolerance_pass": true,
+    "interpretation": "Color alone substantially shifts this detector; grayscale control reduces this confound but does not establish pixel identity"
+  },
+  "comparison_image_sha256": "c6c4f2f717040c7600ad42e48f7377f0918db065ede44c7e71f9fc1ecdb78d9f"
+}
