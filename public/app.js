@@ -1,9 +1,5 @@
-const COUNT = 50;
-// A subjective calendar-style edit: strong features, expressive eyes, and relaxed charisma.
-const HOT_PORTRAITS = [1, 2, 3, 4, 7, 9, 10, 13, 18, 20, 22, 23, 25, 27, 33, 36, 38, 45, 46, 47];
-const pool = document.body.dataset.collection === 'hot'
-  ? HOT_PORTRAITS.map(number => number - 1)
-  : Array.from({ length: COUNT }, (_, i) => i);
+const COUNT = 80;
+const pool = Array.from({ length: COUNT }, (_, i) => i);
 const STORAGE_KEY = 'last-priest';
 const portrait = document.querySelector('#portrait');
 let current = -1;
