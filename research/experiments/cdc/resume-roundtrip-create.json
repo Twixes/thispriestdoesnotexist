@@ -1,0 +1,52 @@
+{
+  "phase": "create",
+  "device": "mps",
+  "resolution": 256,
+  "preview_grids_skipped": true,
+  "trainer_sha256": "d46d393d136ce641fd290baec422737b1f070a1c501b43c135bce1b9b8df104e",
+  "seconds": 6.7410117079271,
+  "finite_optimizer_updates": 2,
+  "source_unchanged": true,
+  "source_has_no_gradients": true,
+  "optimizer_load_checks": [],
+  "rng_checks": [],
+  "cdc_observations": [
+    {
+      "loss": 0.0,
+      "source_sha256": "5a5e5e22461f7c1a94f69bc813230a8ac5d5705b7c0b4da30c812feb51d4a9d4",
+      "target_sha256": "af1ab0b4f5e222f15520f8554a2cd6b544830b9ad8dca376fa6404ecc2b0602b",
+      "details": {
+        "per_block_kl": {
+          "32": 0.0,
+          "64": 0.0,
+          "128": 0.0
+        },
+        "feature_shapes": {
+          "32": [
+            4,
+            32768
+          ],
+          "64": [
+            4,
+            16384
+          ],
+          "128": [
+            4,
+            8192
+          ]
+        },
+        "batch": 4,
+        "blocks": [
+          32,
+          64,
+          128
+        ],
+        "pool_size": 8,
+        "temperature": 1.0,
+        "reduction": "mean over examples and blocks; sum over neighbors"
+      }
+    }
+  ],
+  "mps_current_bytes": 887292416,
+  "mps_driver_bytes": 3818733568
+}

@@ -1,0 +1,18 @@
+{
+  "step": 250,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grids": {
+    "samples-000250.png": "cf8fd0538438df0297060e3b41b4557d2586352273ee07b588917ca04435171d",
+    "samples-000250-raw.png": "56da254f659652ec608ee918bee5d4ef95e0a0ceca0d060cf640d4bdd7beaeaa",
+    "samples-000250-untruncated.png": "76600843f0d814565d976b3dc4bd802458d7de6863ca032ca6fb59cc52c2b376"
+  },
+  "findings": [
+    "More visible variation than rejected pilot1000, but not yet acceptable facial integrity",
+    "Overlapping features, malformed eyes/mouths, and distorted face/neck transitions",
+    "Some source-model appearances remain outside requested adult-male target",
+    "Visible collars in many samples do not establish photorealistic priest portraits"
+  ],
+  "decision": "Do not promote. Continue bounded observation of this early checkpoint, compare later raw G/EMA and unseen samples. Independently audit CPU/MPS gradients and calibrate source-diversity regularization.",
+  "quality_target": "Photorealistic quality comparable to thispersondoesnotexist, at displayed size, across diverse unseen samples"
+}

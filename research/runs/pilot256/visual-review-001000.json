@@ -9,5 +9,10 @@
     "Ghosted facial features remain",
     "Conspicuously repeated facial structure, hair, clothing and composition across fixed latent codes"
   ],
-  "decision": "Intentional early stop after durable checkpoint1000; fresh pretrained restart using110 collar-preserving aligned portraits and FreezeD4. Not stopped due to observation timeout."
+  "decision": "Intentional early stop after durable checkpoint1000; fresh pretrained restart using110 collar-preserving aligned portraits and FreezeD4. Not stopped due to observation timeout.",
+  "human_review": {
+    "feedback": "This looks terrible",
+    "decision": "Rejected",
+    "quality_requirement": "Photorealistic visual quality similar to thispersondoesnotexist"
+  }
 }

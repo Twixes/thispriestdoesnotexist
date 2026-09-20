@@ -1,0 +1,42 @@
+{
+  "step": 2,
+  "resumed": true,
+  "freeze_d_layers": 4,
+  "frozen_tensor_count": 7,
+  "frozen_tensors_bitwise_unchanged": true,
+  "trainable_tensor_updated": "b128.conv0.weight",
+  "optimizer_excludes_buffers": true,
+  "g_trainable_tensor_updated": "synthesis.b4.const",
+  "g_gradients_finite": true,
+  "cdc_weight": 1000.0,
+  "cdc_loss": 5.5922139807762505e-08,
+  "cdc_source_unchanged": true,
+  "cdc_source_has_no_gradients": true,
+  "cdc_source_sha256": "5a5e5e22461f7c1a94f69bc813230a8ac5d5705b7c0b4da30c812feb51d4a9d4",
+  "cdc_preserves_adversarial_rng": true,
+  "mps_memory_bytes": {
+    "before_training": {
+      "current": 880088576,
+      "driver": 1586167808
+    },
+    "after_cdc_backward": {
+      "current": 979172096,
+      "driver": 3961241600
+    },
+    "after_update": {
+      "current": 1079728640,
+      "driver": 3969744896
+    }
+  },
+  "r1_finite": true,
+  "all_weights_finite": true,
+  "frozen_sha256": {
+    "b256.conv0.bias": "afbd494d0e0366b7612bc29db4328075b6c289a55868d2f2c21bbac3833f6037",
+    "b256.conv0.weight": "a0909dcf22f02cbeedb77b069fc5088446c8af756232671e2e5e35020592ce6c",
+    "b256.conv1.bias": "397c4f7f72fbf90f324eb2b0dab7536a83fa046cdcde83598c6c42575195e8b8",
+    "b256.conv1.weight": "4ec738816279a72962d82d370781ca1bc023116e64f94f72c246ed64f1a029d6",
+    "b256.fromrgb.bias": "c0caa5c4a85dac1b2e5a0f28000f3e3f60e401b3a23827c12ddb9bb0a3fc8049",
+    "b256.fromrgb.weight": "6cdfdf416a13703677dc4ebad6d092b9027a989c0dc23b5a84881695c02195a2",
+    "b256.skip.weight": "b536ce08cbc1be5ae3c06572107a990a2dc289111f9c3076801b06d7aea0eacf"
+  }
+}

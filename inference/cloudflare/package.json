@@ -1,0 +1,7 @@
+{
+  "name": "priest-cloudflare-container-candidate",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test test.mjs" },
+  "dependencies": { "@cloudflare/containers": "0.3.7" }
+}

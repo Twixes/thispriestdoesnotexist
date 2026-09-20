@@ -1,0 +1,125 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/lib/python3.11/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/native/TensorShape.cpp:4223.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+{
+  "device": "cpu",
+  "mode": "calibration",
+  "threads": 2,
+  "batch": 4,
+  "resolution": 256,
+  "checkpoint_step": 1000,
+  "torch": "2.14.0",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "source_state_sha256": "5a5e5e22461f7c1a94f69bc813230a8ac5d5705b7c0b4da30c812feb51d4a9d4",
+  "target_state_sha256": "db13162196ac4e21b8475d0e6a5141e3efd85545b3b4851bba3b08c738b738ca",
+  "source_model": "research/models/ffhq256.pkl",
+  "pilot_checkpoint": "research/runs/pilot256/resume.pt",
+  "helper_sha256": "9925e435baf55c3b9441028aa31e0a8b93015c79a99b23eb52d2d46a4555dda6",
+  "cdc_loss_unweighted": 0.0026604849845170975,
+  "cdc_gradient_l2": 0.0029425397500504194,
+  "cdc_tensors_with_gradient": 72,
+  "cdc_details": {
+    "per_block_kl": {
+      "32": 0.005302145145833492,
+      "64": 0.0018820990808308125,
+      "128": 0.0007972103776410222
+    },
+    "feature_shapes": {
+      "32": [
+        4,
+        32768
+      ],
+      "64": [
+        4,
+        16384
+      ],
+      "128": [
+        4,
+        8192
+      ]
+    },
+    "batch": 4,
+    "blocks": [
+      32,
+      64,
+      128
+    ],
+    "pool_size": 8,
+    "temperature": 1.0,
+    "reduction": "mean over examples and blocks; sum over neighbors"
+  },
+  "seconds": {
+    "cdc_forward": 1.5779908749973401,
+    "cdc_backward": 0.5945651669753715,
+    "cdc_total": 2.1725560419727117
+  },
+  "optimizer_updates": 0,
+  "adversarial_loss": 2.1418285369873047,
+  "adversarial_gradient_l2": 63.27072063105787,
+  "adversarial_seconds": 2.9866150829475373,
+  "augment_p": 0.574239999999997,
+  "gradient_cosine": 0.0029742764221733975,
+  "weight_for_equal_global_gradient_norm": 21502.078478285213,
+  "weighted_comparisons": [
+    {
+      "weight": 100,
+      "weighted_cdc_loss": 0.26604849845170975,
+      "weighted_cdc_gradient_l2": 0.29425397500504197,
+      "cdc_to_adversarial_norm_ratio": 0.004650713190401071,
+      "combined_gradient_l2": 63.27228004992198
+    },
+    {
+      "weight": 1000,
+      "weighted_cdc_loss": 2.6604849845170975,
+      "weighted_cdc_gradient_l2": 2.9425397500504196,
+      "cdc_to_adversarial_norm_ratio": 0.0465071319040107,
+      "combined_gradient_l2": 63.34785008790565
+    },
+    {
+      "weight": 10000,
+      "weighted_cdc_loss": 26.604849845170975,
+      "weighted_cdc_gradient_l2": 29.425397500504193,
+      "cdc_to_adversarial_norm_ratio": 0.46507131904010696,
+      "combined_gradient_l2": 69.85780501342528
+    }
+  ],
+  "per_group": {
+    "synthesis.b4": {
+      "adversarial_gradient_l2": 22.165949879821465,
+      "cdc_gradient_l2": 0.0019259229322155012
+    },
+    "synthesis.b8": {
+      "adversarial_gradient_l2": 23.648301996330503,
+      "cdc_gradient_l2": 0.0018656107089179473
+    },
+    "synthesis.b16": {
+      "adversarial_gradient_l2": 23.930138787342152,
+      "cdc_gradient_l2": 0.0010343676256020012
+    },
+    "synthesis.b32": {
+      "adversarial_gradient_l2": 23.988391491360332,
+      "cdc_gradient_l2": 0.0005039196026043162
+    },
+    "synthesis.b64": {
+      "adversarial_gradient_l2": 23.96824866409847,
+      "cdc_gradient_l2": 0.00022917518205284199
+    },
+    "synthesis.b128": {
+      "adversarial_gradient_l2": 23.898613372649677,
+      "cdc_gradient_l2": 0.00023498322699445358
+    },
+    "synthesis.b256": {
+      "adversarial_gradient_l2": 25.668920617252528,
+      "cdc_gradient_l2": 0.0
+    },
+    "mapping": {
+      "adversarial_gradient_l2": 0.06283510546116604,
+      "cdc_gradient_l2": 0.0001930491925489743
+    }
+  },
+  "adversarial_definition": "Actual pilot D, softplus(-D), same DiffAugment/flip policy and saved p; matched unmixed z and constant noise for this calibration",
+  "scaling": "Weighted gradients computed analytically by linear scaling of the one actual CDC gradient; not extra backward passes",
+  "source_unchanged_no_gradients": true,
+  "target_weights_and_buffers_unchanged": true,
+  "finite_gradients": true,
+  "process_peak_rss_bytes": 5479514112
+}

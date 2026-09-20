@@ -1,0 +1,68 @@
+{
+  "device": "mps",
+  "mode": "cdc-benchmark",
+  "threads": 2,
+  "batch": 4,
+  "resolution": 256,
+  "checkpoint_step": 1000,
+  "torch": "2.14.0",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "source_state_sha256": "5a5e5e22461f7c1a94f69bc813230a8ac5d5705b7c0b4da30c812feb51d4a9d4",
+  "target_state_sha256": "db13162196ac4e21b8475d0e6a5141e3efd85545b3b4851bba3b08c738b738ca",
+  "source_model": "research/models/ffhq256.pkl",
+  "pilot_checkpoint": "research/runs/pilot256/resume.pt",
+  "helper_sha256": "9925e435baf55c3b9441028aa31e0a8b93015c79a99b23eb52d2d46a4555dda6",
+  "calibration_script_sha256": "4629a54cb8cbca328ec1c9b552d9766d1be2538476b12d6bf1e1290719217b7f",
+  "cdc_loss_unweighted": 0.0006895761471241713,
+  "cdc_gradient_l2": 0.0008080430828331171,
+  "cdc_tensors_with_gradient": 72,
+  "cdc_details": {
+    "per_block_kl": {
+      "32": 0.0008326858514919877,
+      "64": 0.00039559107972308993,
+      "128": 0.000840451568365097
+    },
+    "feature_shapes": {
+      "32": [
+        4,
+        32768
+      ],
+      "64": [
+        4,
+        16384
+      ],
+      "128": [
+        4,
+        8192
+      ]
+    },
+    "batch": 4,
+    "blocks": [
+      32,
+      64,
+      128
+    ],
+    "pool_size": 8,
+    "temperature": 1.0,
+    "reduction": "mean over examples and blocks; sum over neighbors"
+  },
+  "seconds": {
+    "cdc_forward": 1.0951054169563577,
+    "cdc_backward": 0.45924995793029666,
+    "cdc_total": 1.5543553748866543
+  },
+  "optimizer_updates": 0,
+  "source_unchanged_no_gradients": true,
+  "target_weights_and_buffers_unchanged": true,
+  "finite_gradients": true,
+  "process_peak_rss_bytes": 1012367360,
+  "mps_memory_before": {
+    "current_allocated_bytes": 201143296,
+    "driver_allocated_bytes": 226967552
+  },
+  "mps_memory_after": {
+    "current_allocated_bytes": 295931392,
+    "driver_allocated_bytes": 2439905280
+  },
+  "memory_scope": "Per-process MPS allocator snapshots, not device-wide peak; main training continues concurrently"
+}

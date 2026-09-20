@@ -1,0 +1,102 @@
+{
+  "device": "cpu",
+  "threads": 2,
+  "batch": 4,
+  "resolution": 256,
+  "torch": "2.14.0",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "model_sha256": "7aa4ddeee38e007ce92a1a0bccd386fc6abba6b5c8692bdbe813d3f1987c0722",
+  "source_state_sha256": "5a5e5e22461f7c1a94f69bc813230a8ac5d5705b7c0b4da30c812feb51d4a9d4",
+  "helper_sha256": "9925e435baf55c3b9441028aa31e0a8b93015c79a99b23eb52d2d46a4555dda6",
+  "identical_loss": 0.0,
+  "identical_details": {
+    "per_block_kl": {
+      "32": 0.0,
+      "64": 0.0,
+      "128": 0.0
+    },
+    "feature_shapes": {
+      "32": [
+        4,
+        32768
+      ],
+      "64": [
+        4,
+        16384
+      ],
+      "128": [
+        4,
+        8192
+      ]
+    },
+    "batch": 4,
+    "blocks": [
+      32,
+      64,
+      128
+    ],
+    "pool_size": 8,
+    "temperature": 1.0,
+    "reduction": "mean over examples and blocks; sum over neighbors"
+  },
+  "perturbed_loss": 2.835664929534687e-07,
+  "perturbation": {
+    "tensor": "synthesis.b32.conv0.affine.weight",
+    "std_fraction": 0.15
+  },
+  "target_gradient_l2": 3.644999595805261e-05,
+  "target_tensors_with_gradient": 72,
+  "target_gradients_finite": true,
+  "source_has_no_gradients": true,
+  "source_unchanged": true,
+  "target_weights_unchanged_by_forward_backward": true,
+  "target_buffers_unchanged": true,
+  "target_modes_unchanged": true,
+  "rng_unchanged": true,
+  "hooks_removed": true,
+  "batch2_rejected": true,
+  "timing_seconds": {
+    "identical_forward": 1.6530007079709321,
+    "perturbed_forward": 1.169033791986294,
+    "perturbed_backward": 0.6354176250752062,
+    "perturbed_total": 1.8044514170615003
+  },
+  "memory": {
+    "metric": "process cumulative peak RSS; includes models and prior phases",
+    "before_calls_bytes": 816316416,
+    "after_backward_bytes": 3579002880,
+    "incremental_peak_bytes": 2762686464
+  },
+  "details": {
+    "per_block_kl": {
+      "32": 2.0550760382320732e-07,
+      "64": 3.0366572900675237e-07,
+      "128": 3.4152617445215583e-07
+    },
+    "feature_shapes": {
+      "32": [
+        4,
+        32768
+      ],
+      "64": [
+        4,
+        16384
+      ],
+      "128": [
+        4,
+        8192
+      ]
+    },
+    "batch": 4,
+    "blocks": [
+      32,
+      64,
+      128
+    ],
+    "pool_size": 8,
+    "temperature": 1.0,
+    "reduction": "mean over examples and blocks; sum over neighbors"
+  },
+  "optimizer_updates": 0,
+  "scope": "CDC-only diagnostic, not a full paper reproduction or image-quality result"
+}

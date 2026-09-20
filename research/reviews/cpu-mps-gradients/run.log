@@ -1,0 +1,55 @@
+cpu generator 0.666498375008814 5.024654865264893
+cpu discriminator 0.6403448329074308 4.0181965827941895
+cpu r1 1.9273383331019431 0.415776789188385
+mps generator 5.205194207956083 5.0246453285217285
+mps discriminator 0.6919748749351129 4.0181965827941895
+mps r1 2.87896775000263 0.4157760739326477
+{
+  "generator": {
+    "all_finite": true,
+    "relative_l2": 0.0007571314087418858,
+    "cosine": 0.9999997141604343,
+    "compared_tensor_count": 110,
+    "missing_gradients": []
+  },
+  "discriminator": {
+    "all_finite": true,
+    "relative_l2": 2.4736591267145272e-05,
+    "cosine": 0.9999999996947515,
+    "compared_tensor_count": 38,
+    "missing_gradients": []
+  },
+  "r1": {
+    "all_finite": true,
+    "relative_l2": 5.3487698980563355e-06,
+    "cosine": 0.9999999999874501,
+    "compared_tensor_count": 37,
+    "missing_gradients": [
+      {
+        "name": "b4.out.bias",
+        "cpu_missing": true,
+        "mps_missing": true
+      }
+    ]
+  },
+  "generated_image": {
+    "count": 196608,
+    "finite": true,
+    "reference_l2": 202.50733862381495,
+    "candidate_l2": 202.50731349901554,
+    "error_l2": 0.0007008017384356968,
+    "relative_l2": 3.460623912190816e-06,
+    "max_absolute": 3.802776336669922e-05,
+    "cosine": 0.9999999999939441
+  },
+  "r1_input_gradient": {
+    "count": 196608,
+    "finite": true,
+    "reference_l2": 0.6448075572207986,
+    "candidate_l2": 0.6448070123669648,
+    "error_l2": 0.00048114448830444725,
+    "relative_l2": 0.0007461830788371034,
+    "max_absolute": 0.0001192982163047418,
+    "cosine": 0.9999997216054705
+  }
+}

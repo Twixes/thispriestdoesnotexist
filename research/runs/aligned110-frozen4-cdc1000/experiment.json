@@ -1,0 +1,17 @@
+{
+  "purpose": "Preserve source facial diversity during adaptation, starting before observed control contraction",
+  "control": "aligned110-frozen4",
+  "base": "research/models/ffhq256.pkl",
+  "dataset": "research/alignment/collar-only/eyes42",
+  "dataset_count": 110,
+  "freeze_d_layers": 4,
+  "cdc_weight": 1000,
+  "cdc_batch": 4,
+  "planned_steps": 6000,
+  "batch": 8,
+  "presentations_budget": 48000,
+  "snapshot_every": 250,
+  "interpretation": "Controlled feasibility test, not full convergence budget. Same seed, dataset and adversarial settings as control; independent CDC latent stream. CDC helper and trainer hashes recorded by trainer.",
+  "quality_gate": "Review matched fixed latents and unseen samples for facial integrity, adult male priest appearance, collars, no hats and varied identities. Do not deploy on loss/hash evidence alone.",
+  "hardware": "Local Apple M5 Pro MPS, concurrent control run; do not interpret wall time as isolated benchmark."
+}

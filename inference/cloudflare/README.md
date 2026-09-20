@@ -1,0 +1,41 @@
+# Optional Cloudflare Containers candidate
+
+This directory is **inactive**. It does not change the current Worker, frontend, deployment settings, or production model. No Cloudflare container has been deployed or measured. There is currently no approved `models/production` bundle, so the deployment command and Docker build intentionally cannot complete.
+
+The plain JavaScript Worker sends `/generate` and `/health` to one Durable Object named `priest-production`. Its `Container` subclass starts the existing Python inference server on port 8080, sleeps after 30 seconds without requests, and disables outbound internet. Every successful generation is a real model forward pass with the server's fresh 256-bit seed. The Worker validates the live model health and exact expected hash before accepting an image; it never selects a saved portrait. Static asset requests continue through `ASSETS`.
+
+The connection from the Durable Object to the container is private. No public inference origin, shared bearer token, caller cookie, caller authorization, or query parameter is forwarded. Responses have `Cache-Control: no-store`, and only approved model metadata, the generation seed, and inference timing are retained. Startup, overload, timeout, model mismatch, and generation failure return empty 503 responses with `Retry-After: 3`. The Python server admits at most three requests and runs one generation at a time.
+
+The SDK APIs follow Cloudflare's [Container class reference](https://developers.cloudflare.com/containers/reference/container-class/) and [getting started guide](https://developers.cloudflare.com/containers/get-started/). The pinned SDK is `@cloudflare/containers` 0.3.7. Port readiness alone is insufficient: this implementation checks the Python server's loaded-model health on every request.
+
+## Resource and cost assumptions
+
+The example config uses a custom **1 vCPU, 3 GiB RAM, 4 GB disk** instance and `max_instances: 1`. These values satisfy the published [custom instance constraints](https://developers.cloudflare.com/containers/platform/limits/). The local Wrangler schema still describes custom sizing as Enterprise-only, whereas the current documentation describes it generally; eligibility on the personal account has **not** been verified. Do not silently replace this configuration with a larger paid instance.
+
+Cloudflare's current [pricing](https://developers.cloudflare.com/containers/platform/pricing/) requires the $5/month Workers Paid plan and adds usage charges. Memory and disk are charged while awake, even without active CPU usage. For this 3 GiB candidate, always-awake memory alone is about $19.22 per 30-day month after the included allowance, before the base plan and other resources. A 30-second sleep can make low traffic economical, but one instance is **not** a $15 spending cap. Account plan, observed cold-start latency, actual resource usage, and monthly cost must be checked before choosing this alternative. Do not poll `/health` continuously: polling wakes the container and extends its billable lifetime.
+
+## CI-only promotion
+
+Use the existing personal-account Workers Builds integration for `Twixes/thispriestdoesnotexist`, production branch `master`, repository root as its root directory. Do not run `wrangler deploy` locally. Do not change the integration's deploy command until a usable, visually reviewed model exists and this hosting option has been selected.
+
+1. Export the chosen trained checkpoint into `models/production/{generator.safetensors,model.json,LICENSE.txt}`. Review samples from those exact weights for attractive adult male faces, visible priest collars, no hats, anatomy, and diversity. Record the decision and `review.weights_sha256` in the manifest only after that review. The approval and `weights_sha256` must both equal the SHA-256 of the committed safetensors file. A training step above zero is required. Approval does not transfer to a different checkpoint.
+2. Commit the bundle with Git LFS. Keep `public/app.js` on its existing static implementation for the first infrastructure promotion. Ensure the alternative VPS deployment workflow is disabled if selecting Containers, so the same production bundle does not activate both hosting options.
+3. Keep a build command that installs the root dependencies and runs the existing checks, such as `npm ci && npm run check && node --test`. Set the **production deploy command** to `bash inference/cloudflare/ci-deploy.sh`. This file is an optional command, not an active deployment hook. It refuses non-Workers-Builds execution, non-`master` branches, and a checkout that differs from `WORKERS_CI_COMMIT_SHA`.
+4. Push the reviewed infrastructure/model commit to `master`. The deploy script hydrates LFS assets and weights, checks the approval and exact hash, runs the candidate tests, writes an ignored generated config containing that hash, and prebuilds the Linux amd64 Docker image before invoking Wrangler. The Dockerfile independently runs `infra/validate-model.py` and bakes the weights and licenses into the image. It performs no model downloads at runtime. Missing or unreviewed models fail the build before deployment rather than silently publishing a fallback.
+5. Wait for the CI deployment and container provisioning to finish. Check `/health` for the exact reviewed hash and positive training step. Make several uncached `/generate` requests and verify decodable WebP images, the expected model hash, different 256-bit seeds, and `no-store`. Measure a request after at least 30 seconds of inactivity as well as warm requests. No automated continuous health polling is needed.
+6. Only after these checks pass, promote the reviewed `inference/client-app.js` flow to `public/app.js` in a separate `master` commit and let Workers Builds deploy it. Preserve the existing CSP requirements described in `docs/inference-routing.md`. The generated Worker config already provides the `ASSETS` binding and `run_worker_first` routes. Do not activate the separate external-origin `worker.js` configuration at the same time.
+
+Cloudflare [documents that Worker activation and container rollout are not transactional](https://developers.cloudflare.com/containers/guides/deploy/): the Worker can become live before an image is ready, and `wrangler deploy` does not wait for every running instance to update. The local image prebuild catches model/build failures early but cannot eliminate registry or rollout failures. The exact-hash gate deliberately returns 503 while a previous image is still running. One instance also permits brief downtime during updates. First activation therefore uses the two CI commits above. Roll back subsequent failed promotions by restoring the previously approved bundle and configuration in a new `master` commit and deploying through CI; keep the previous container image available.
+
+Non-production `wrangler versions upload` builds do not publish container images or provide a complete Containers preview. Keep non-production deploys disabled for this production Worker. Workers Builds' branch and commit environment variables are documented in its [configuration reference](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/).
+
+## Verification performed
+
+- Six Node tests exercise stable instance selection, stripping caller metadata, asset delegation, per-request model health and generation, sanitized health responses, and failure handling.
+- The Worker bundles with the actual pinned SDK.
+- Wrangler 4.135.0 accepts the example configuration and bundles it with `deploy --dry-run --containers-rollout=none`; this does not upload or deploy anything.
+- The CI shell command passes `bash -n`.
+
+Run the isolated tests with `npm ci --prefix inference/cloudflare --ignore-scripts` followed by `npm test --prefix inference/cloudflare`. Local dry-run validation is safe; omit neither `--dry-run` nor `--containers-rollout=none` when reproducing the config check.
+
+The dedicated final-model Dockerfile has not been built: its required reviewed bundle does not exist. The existing inference server was separately tested in a Linux amd64 Docker image, but that does not establish Containers deployment, account eligibility, platform cold-start behavior, or monthly cost.

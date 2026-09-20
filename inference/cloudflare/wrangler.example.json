@@ -1,0 +1,27 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "thispriestdoesnotexist",
+  "account_id": "1a5e44710a69d21d6822a460e5861578",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-20",
+  "workers_dev": true,
+  "assets": {
+    "directory": "../../public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/generate", "/health"]
+  },
+  "routes": [{ "pattern": "thispriestdoesnotexist.com", "custom_domain": true }],
+  "vars": { "MODEL_SHA256": "REPLACED_BY_CI_FROM_REVIEWED_MANIFEST" },
+  "containers": [{
+    "class_name": "PriestContainer",
+    "image": "./Dockerfile",
+    "image_build_context": "../..",
+    "max_instances": 1,
+    "instance_type": { "vcpu": 1, "memory_mib": 3072, "disk_mb": 4000 },
+    "ssh": { "enabled": false }
+  }],
+  "durable_objects": {
+    "bindings": [{ "name": "PRIEST_CONTAINER", "class_name": "PriestContainer" }]
+  },
+  "migrations": [{ "tag": "priest-container-v1", "new_sqlite_classes": ["PriestContainer"] }]
+}

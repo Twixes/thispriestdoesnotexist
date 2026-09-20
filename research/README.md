@@ -12,6 +12,10 @@ The reference network code is reused without modifications. `train.py` provides 
 
 The current experiment freezes the first four discriminator layers using NVIDIA's built-in FreezeD buffers, uses mapping LR .0005 and EMA half-life .5 kimg, and allows up to 6000 batch-8 steps on the local Apple GPU. Frozen weights, optimizer restoration, R1, and side-effect-free snapshots passed real CPU smoke checks. Every 250 steps it saves matched raw-G and EMA grids at truncation 1.0, plus the usual EMA grid at .7. Review these before deciding to continue; a long run is not itself evidence of acceptable quality. This combines several evidence-driven changes and is not an isolated causal ablation. See `reviews/few-shot-options.md`.
 
+The 6000-step limit is only 48,000 image presentations and is a feasibility budget. NVIDIA reports around one million presentations as a common transfer-learning reference, roughly 3.5 days at our measured local speed at 256px. This is not a quality guarantee. The original 1024px StyleGAN used 70,000 photographs and about a week on eight V100 GPUs; our pretrained weights reuse that kind of upstream investment. See [resource comparison](reviews/stylegan-resource-reference.md) for primary sources and the distinction between unique images, presentations, and optimizer steps.
+
+A paired fresh-base run, `aligned110-frozen4-cdc1000`, now uses the same dataset, seed, FreezeD and adversarial settings, with an additional source-correspondence loss at weight 1000. Its independent latent stream keeps the adversarial RNG unaffected. Real MPS G/D/R1 updates and a full checkpoint/optimizer/RNG round trip passed. See [CDC experiment](experiments/cdc/README.md). Both runs remain unapproved; the control step-500 review still shows distorted features and contracted diversity. Concurrent runs share the GPU, so their wall times are not isolated performance measurements.
+
 ## Reproduce
 
 ```sh

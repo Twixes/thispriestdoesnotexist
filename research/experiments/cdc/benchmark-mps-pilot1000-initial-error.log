@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/cdc/calibrate_pilot1000.py", line 88, in <module>
+    cdc_norm = gradient_norm(cdc_gradients)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/cdc/calibrate_pilot1000.py", line 68, in gradient_norm
+    return math.sqrt(sum(float(value.detach().double().square().sum().cpu())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/cdc/calibrate_pilot1000.py", line 68, in <genexpr>
+    return math.sqrt(sum(float(value.detach().double().square().sum().cpu())
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn't support float64. Please use float32 instead.

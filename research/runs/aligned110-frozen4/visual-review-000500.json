@@ -1,0 +1,16 @@
+{
+  "step": 500,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grids": {
+    "samples-000500.png": "d3a0e80cf6998d86f5580dac3cfb5440f208bfc3ac4eefe5dccf551598af5fc6"
+  },
+  "findings": [
+    "Clerical collars and monochrome target style are established in the fixed EMA grid",
+    "Severe overlapping or malformed eyes and mouths remain",
+    "Faces, hairstyles and compositions converge visibly across distinct fixed latents",
+    "This checkpoint fails the requested photorealism and identity diversity"
+  ],
+  "decision": "Do not promote. Keep current run as bounded control; test source-correspondence preservation from fresh pretrained weights. Early failure is not proof of final convergence failure.",
+  "quality_target": "Photorealistic quality comparable to thispersondoesnotexist at displayed size and across unseen latents"
+}
