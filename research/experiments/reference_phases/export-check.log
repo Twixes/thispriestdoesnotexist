@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "source_resume": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/reference256-mps-intended-smoke/resume.pt",
+  "generator_snapshot": "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_phases/prototype-tests/export/generator-000001.pt",
+  "weights_only_load_passed": true,
+  "ema_state_exact": true,
+  "comparison_counts": {
+    "tensors": 144,
+    "elements": 24943026
+  },
+  "json_safe_metadata": true,
+  "offline_export_passed": true,
+  "training_step": 1,
+  "images_seen": 32,
+  "production_gate_rejected_unreviewed": true,
+  "production_gate_message": "Production requires a trained, visually reviewed model matching this checksum",
+  "bundle_weights_sha256": "d63c7adb32a7d1b43b6947ee1ef4d9131cb61cafbac5937b494742d13d58d389",
+  "original_training_source_sha256": "c639223e8ceb05c2cc57651c63d16f0ee82009d8b6fc0acd92f0c18db4e9ccdf",
+  "serialization_trainer_sha256": "00b5266875dbe07169025eb7b38b22a412230019c52d1bae77eeb8daf0045b13",
+  "exporter_sha256": "311421b3d539a9e90f05c30a5aa674f5c4123e6178aae00c6856c11027a9f3e1"
+}

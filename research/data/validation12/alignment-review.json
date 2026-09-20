@@ -1,0 +1,31 @@
+{
+  "status": "accepted_for_held_out_diagnostics_with_reflection_caveat",
+  "split": "validation_only",
+  "training_use_permitted": false,
+  "manifest_sha256": "b307696a197ff8196963b9d06e3ebfb64f7e9a2530f359e3a2f93c1d87b3a70d",
+  "count": 12,
+  "all_outputs_verified_rgb256": true,
+  "unique_output_hashes": 12,
+  "visual_inspection": "All twelve original-to-aligned panels reviewed at native256 resolution",
+  "visible_collars_and_bare_heads": true,
+  "new_facial_warping_observed": false,
+  "collar_fallback_ids": [
+    "003"
+  ],
+  "reflection_above_5_percent_ids": [
+    "002",
+    "004",
+    "005",
+    "006"
+  ],
+  "visibly_reflected_hair_ids": [
+    "002",
+    "005",
+    "006"
+  ],
+  "mean_reflection_fraction": 0.046031951904296875,
+  "maximum_reflection_fraction": 0.1626129150390625,
+  "comparison_caveat": "The exact training recipe was preserved, but held-out padding is heavier than the training mean. Report per-image and padding-stratified discriminator scores; do not attribute a score gap solely to memorization.",
+  "crop_adjustments_for_hard_cases": false,
+  "training_dataset_modified": false
+}

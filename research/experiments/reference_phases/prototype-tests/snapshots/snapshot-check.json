@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "resolution": 256,
+  "model_states_unchanged": true,
+  "all_training_flags_unchanged": true,
+  "all_rng_states_unchanged": true,
+  "grid_sizes": [
+    1024,
+    256
+  ],
+  "grid_files": [
+    "samples-000000-ema.png",
+    "samples-000000-raw.png",
+    "samples-000000-untruncated.png"
+  ],
+  "before_and_after_state_hashes": [
+    "5a5e5e22461f7c1a94f69bc813230a8ac5d5705b7c0b4da30c812feb51d4a9d4",
+    "89876066b1f0b6004088523dfc98f5e107ad184b29d47a2d7bd95b10210a1536"
+  ],
+  "trainer_sha256": "c639223e8ceb05c2cc57651c63d16f0ee82009d8b6fc0acd92f0c18db4e9ccdf"
+}

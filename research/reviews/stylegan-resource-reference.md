@@ -28,14 +28,17 @@ hardware/trainer settings and do not guarantee results with our small dataset.
 We reuse pretrained FFHQ weights, so we need not repeat scratch training. Our
 current target dataset has 110 synthetic portraits at 256×256. The rejected pilot
 had 50 portraits and stopped after 1,000 updates × batch 8 = 8,000 presentations.
-The current aligned110-frozen4 run's planned 6,000 updates amount to only 48,000
+The paused aligned110-frozen4 run's planned 6,000 updates amount to only 48,000
 presentations, so it is a feasibility experiment, not a full convergence budget.
 
-At step 580, the current local MPS run logged 1,408.46 seconds for 4,640 image
+At step 580, the earlier custom-loop MPS run logged 1,408.46 seconds for 4,640 image
 presentations. A straight-line extrapolation to one million is about 84 hours
 (3.5 days), excluding changes in method, contention, interruptions and additional
-experiments. This is an estimate at 256 resolution, not a prediction of visual
-quality or a benchmark of the optional CDC variant.
+experiments. This is an estimate for that earlier custom loop at 256 resolution, not a prediction
+of visual quality or a benchmark of either the CDC variant or the full reference-phase
+trainer. The new reference256-paper-b64 baseline includes both PL and R1 with the
+upstream augmentation pipeline; its measured throughput must be reported separately.
+Its planned 15,625 batch-64 updates equal one million presentations.
 
 The earlier short-run expectations were too optimistic. Longer training alone
 does not establish that facial artifacts or lost diversity will recover. Assess

@@ -1,0 +1,23 @@
+{
+  "purpose": "Reference loss/augmentation/optimizer baseline for high-quality diverse priest adaptation",
+  "dataset": "research/alignment/collar-only/eyes42",
+  "original_portraits": 110,
+  "virtual_dataset_entries_with_mirror": 220,
+  "resolution": 256,
+  "batch": 64,
+  "microbatch": 8,
+  "minibatch_std_group": 8,
+  "planned_steps": 15625,
+  "planned_image_presentations": 1000000,
+  "snapshot_every": 125,
+  "checkpoint_every": 125,
+  "resume_from": "research/runs/reference256-b64-m8-smoke/resume.pt",
+  "resume_sha256": "915f678a602ed53ed81b703fa67c7060b445c796b1771171432bf7919476052c",
+  "resume_step": 1,
+  "resume_images_seen": 64,
+  "initial_update": "Reuse the successful actual intended-configuration smoke update, preserving complete optimizer, PL, ADA and RNG state. Same trainer hash, recipe and threads; no repeat of the costly initial regularized update.",
+  "reference_components": "Unmodified NVIDIA StyleGAN2Loss and AugmentPipe; separate main/regularization Adam phases, PL+R1, ADA100, EMA20, no FreezeD, paper256 loss/optimizer values. Single-device FP32 and gradient accumulation are recorded portability differences.",
+  "comparison": "Compare against paused aligned110-frozen4 and ongoing CDC at matched kimg, not matched optimizer steps. Multi-component recipe comparison, not isolated causal attribution.",
+  "quality_gate": "Inspect raw and EMA samples, fixed and unseen latents; verify adult male priest appearance, collar, no hats, realism and distinct identities. No promotion based only on losses or successful execution.",
+  "hardware": "Local Apple M5 Pro MPS, concurrent CDC training. No rented compute."
+}

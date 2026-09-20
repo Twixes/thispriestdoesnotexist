@@ -1,0 +1,14 @@
+{
+  "step": 750,
+  "images_seen": 6000,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grid_sha256": "dfa1a7908a39ad4e6b8cc9897127c0b743edbfa31bf9c202f10fa9165de3d091",
+  "findings": [
+    "Visible white collars and mostly adult male faces",
+    "Some faces are clearer than at step 500, but overlapping eyes, mouths and cheeks remain prominent",
+    "Several faces and hairstyles remain strongly similar across these fixed latents",
+    "Examples with source accessories are malformed; ordinary display quality is not met"
+  ],
+  "decision": "Do not promote. Retain this intermediate checkpoint and review at the paired control's 8 kimg milestone."
+}

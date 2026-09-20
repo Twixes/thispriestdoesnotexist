@@ -1,0 +1,33 @@
+{
+  "status": "not_approved_due_to_reflected_border_artifacts",
+  "scope": "Training preprocessing only; not production model approval",
+  "manifest_sha256": "12ec00d6444be02e8be7773d599234059227160f469f574dd29d728daf2ddf62",
+  "reviewed_contact_sheet": "research/alignment/collar-only/eyes42-1024-contact.png",
+  "full_resolution_images_inspected": [
+    "original-001",
+    "synthetic-140",
+    "synthetic-122"
+  ],
+  "count": 110,
+  "all_dimensions_verified": [
+    1024,
+    1024
+  ],
+  "all_mode_verified": "RGB",
+  "source_count": 110,
+  "all_source_dimensions_verified": [
+    1254,
+    1254
+  ],
+  "source_hashes_match_accepted_manifest": true,
+  "accepted_256_hashes_unchanged": true,
+  "max_geometry_roundtrip_error_reference_pixels": 5.684341886080802e-14,
+  "mean_reflected_padding_fraction": 0.01876211166381836,
+  "known_issue": {
+    "id": "synthetic-122",
+    "type": "Inherited REFLECT_101 border mirrors hair into the top edge",
+    "reflected_padding_fraction": 0.08403778076171875,
+    "disposition": "Reported; requested accepted border/geometry preserved without silent correction"
+  },
+  "visual_summary": "Contact sheet retains visible collars and bare heads; reviewed full-resolution faces/collars have intact geometry. Border reflection is conspicuous in the highest-padding example."
+}

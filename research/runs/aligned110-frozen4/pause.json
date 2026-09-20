@@ -1,0 +1,11 @@
+{
+  "status": "intentionally_paused",
+  "resume_step": 1000,
+  "images_seen": 8000,
+  "resume_sha256": "7ef7338bd97a36cc48e783bb113ca0d2d7e1b7e58186cefe3a245da42f4e09eb",
+  "reason": "Allocate local GPU to reference-phase baseline and ongoing CDC comparison. Preserve this control for matched-kimg comparison and later continuation; not a terminal convergence judgment.",
+  "checkpoint_verified": "Full torch.load, expected training state keys and all model weights finite",
+  "process_id": 67435,
+  "command": "research/.venv/bin/python -u research/train.py --device mps --data research/alignment/collar-only/eyes42 --freeze-d-layers 4 --run aligned110-frozen4 --steps 6000 --batch 8 --snapshot-every 250",
+  "resume_command": "research/.venv/bin/python -u research/train.py --device mps --data research/alignment/collar-only/eyes42 --freeze-d-layers 4 --run aligned110-frozen4 --steps 6000 --batch 8 --snapshot-every 250 --resume research/runs/aligned110-frozen4/resume.pt"
+}

@@ -1,0 +1,14 @@
+{
+  "step": 1000,
+  "images_seen": 8000,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grid_sha256": "7aa9ffc4518bcd949e592a1dd39444188f5709447469119e3be2bee8fba7a1bd",
+  "findings": [
+    "More coherent eyes and mouths than the step500 grid",
+    "Strong concentration around similar faces and hairstyles remains across distinct latents",
+    "Residual malformed fine features and background artifacts remain",
+    "The observed improvement does not establish reference-level facial realism or sufficient identity diversity"
+  ],
+  "decision": "Keep rejected for deployment. Pause this control at durable1000 to allocate GPU to the reference recipe and CDC comparison; preserve resumable state. This is not a final-convergence verdict."
+}

@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 25.353363334000278,
+  "cpu_limit": 1,
+  "memory_limit_bytes": 4294967296,
+  "network": "none",
+  "cgroup_memory_peak_bytes": 1613926400,
+  "cgroup_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+  "cgroup_cpu_stat": "usage_usec 25266380\nuser_usec 23107211\nsystem_usec 2159168\nnice_usec 0\nnr_periods 257\nnr_throttled 97\nthrottled_usec 351489\nnr_bursts 0\nburst_usec 0\n",
+  "interpretation": "Linux amd64 emulation on Apple Silicon; memory evidence only, not production latency.",
+  "process_start_to_first_sample_seconds_approx": 11.906878706999123
+}

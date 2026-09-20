@@ -1,0 +1,37 @@
+{
+  "status": "acceptable_as_separate_preprocessing_experiment_with_framing_tradeoff",
+  "scope": "Training preprocessing only, not model quality or deployment approval",
+  "manifest_sha256": "748f2d7441a3e3d196dd2f8f11b703f211648627ab2d8312c2f1e7aa9415cefe",
+  "contact_sheet_inspected": "research/alignment/collar-only/eyes42-1024-zero-reflection-contact.png",
+  "comparison_images_inspected": [
+    "synthetic-122",
+    "synthetic-102",
+    "synthetic-099"
+  ],
+  "full_resolution_images_inspected": [
+    "synthetic-122"
+  ],
+  "count": 110,
+  "unique_output_hashes": 110,
+  "all_dimensions_verified": [
+    1024,
+    1024
+  ],
+  "all_border_modes_bitwise_equal": true,
+  "source_kernel_support_margin_pixels": 4,
+  "summary": {
+    "count": 110,
+    "infeasible": 0,
+    "exact_eye_position_feasible": 27,
+    "eye_40_to_44_band_infeasible": 46,
+    "eyes_outside_40_to_44_percent": 46,
+    "max_eye_displacement_pixels": 122.37923804140894,
+    "eye_y_fraction_range": [
+      0.35743411517484935,
+      0.42146484375000015
+    ]
+  },
+  "visual_result": "Disconnected reflected hair and repeated borders removed in reviewed cases. Contact sheet retains white collars and bare heads; facial proportions are unchanged. Some images crop more hair or shift horizontally.",
+  "framing_tradeoff": "46 images cannot maintain eyes between 40% and 44% output height under the documented constraints; mean eye height 40.19%.",
+  "training_started": false
+}

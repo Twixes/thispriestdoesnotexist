@@ -1,0 +1,1429 @@
+{
+  "checkpoint": "research/runs/aligned110-frozen4/resume.pt",
+  "checkpoint_sha256": "7ef7338bd97a36cc48e783bb113ca0d2d7e1b7e58186cefe3a245da42f4e09eb",
+  "checkpoint_step": 1000,
+  "checkpoint_augmentation_probability": 0.574239999999997,
+  "base_sha256": "7aa4ddeee38e007ce92a1a0bccd386fc6abba6b5c8692bdbe813d3f1987c0722",
+  "base_source": {
+    "url": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res256-mirror-paper256-noaug.pkl",
+    "sha256": "7aa4ddeee38e007ce92a1a0bccd386fc6abba6b5c8692bdbe813d3f1987c0722"
+  },
+  "training_dataset_sha256": "0f5c978c3c153b3943396c6488c3a371fd5d0fc5e2be1a36311d8cd808b06688",
+  "reflected_padding_fraction_means": {
+    "training": 0.018757213245738636,
+    "heldout": 0.046031951904296875
+  },
+  "provenance_sha256": {
+    "research/runs/aligned110-frozen4/config.json": "68f92c1b0b765132e3765305c7fd82353d71b5411e3784c0cd6dc9a137d27333",
+    "research/sources.json": "b729a4b020413992aa4ba82d01f3e50fbbf4eb939f08150fcd61da6144046e55",
+    "research/data/validation12/alignment-manifest.json": "b307696a197ff8196963b9d06e3ebfb64f7e9a2530f359e3a2f93c1d87b3a70d",
+    "research/reviews/heldout-discriminator/diagnose.py": "ec321a5f552d9daaf6a787b468fdd5535fe3212edf78bf31760c836515d37a1f",
+    "research/data/validation12/provenance.json": "4775978a3d081644601388d90cceda6becf7592a77ee3d06034ea546cd311756",
+    "research/data/validation12/prompts.json": "83144eb20fc43a4276fd96364b76a940f36615864a586fac5dfd08db0e73bf9c",
+    "research/data/validation12/alignment-review.json": "a354139d1706c1cc6ac4dc0a53d6c44c0d2a8202e984a67c7a9954d2ed933bc2",
+    "research/data/validation12/alignment-review.md": "87e8f887d26077491d753da3d122f329424615880efebf2141ba71e964562588",
+    "research/alignment/collar-only/manifest.json": "a38078275cff627f4e41a830e6f53361f3fca1fda93bb79bd1bd8471d80d6aa1",
+    "research/alignment/collar-only/review.json": "e3f494ab9d3466f0eb1358cc46b60941faf4b287ef299620eba2f94027e6225a",
+    "research/data/synthetic/manifest.json": "9a7453f57a5b7bc43f0f24a83924edb638cedf34d3e15d99acbc1f7a761aa039",
+    "research/vendor/stylegan2-ada-pytorch/training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24"
+  },
+  "protocol": {
+    "device": "cpu",
+    "threads": 2,
+    "dtype": "float32",
+    "mode": "eval/inference_mode",
+    "augmentation": "none",
+    "normalization": "unchanged 256x256 RGB pixels / 127.5 - 1",
+    "batch_one_minibatch_std": "variance zero; epsilon floor sqrt(1e-8)=0.0001",
+    "common_anchor_paths": [
+      "research/alignment/collar-only/eyes42/original-001.png",
+      "research/alignment/collar-only/eyes42/original-002.png",
+      "research/alignment/collar-only/eyes42/original-003.png"
+    ],
+    "common_anchor_note": "Same 3 training anchors + target at position 4; anchors excluded as scored targets."
+  },
+  "summaries": {
+    "batch_one_raw_logit": {
+      "training": {
+        "count": 110,
+        "mean": 0.019447383013638582,
+        "median": 0.07821106910705566,
+        "minimum": -2.7980096340179443,
+        "maximum": 3.3060858249664307,
+        "population_stddev": 1.219950925306199,
+        "positive_fraction": 0.509090909090909,
+        "zero_fraction": 0.0,
+        "sign_mean": 0.01818181818181818
+      },
+      "heldout": {
+        "count": 12,
+        "mean": -2.5550045569737754,
+        "median": -2.6921470165252686,
+        "minimum": -4.306316375732422,
+        "maximum": -0.18685126304626465,
+        "population_stddev": 1.3961551675308814,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.0,
+        "sign_mean": -1.0
+      },
+      "training_minus_heldout_mean": 2.574451939987414,
+      "padding_strata": {
+        "at_most_5_percent": {
+          "training": {
+            "count": 97,
+            "mean": 0.027856957052171845,
+            "median": 0.08553528785705566,
+            "minimum": -2.7980096340179443,
+            "maximum": 3.3060858249664307,
+            "population_stddev": 1.2257742857480765,
+            "positive_fraction": 0.5154639175257731,
+            "zero_fraction": 0.0,
+            "sign_mean": 0.030927835051546393
+          },
+          "heldout": {
+            "count": 8,
+            "mean": -2.4488911628723145,
+            "median": -2.6445205211639404,
+            "minimum": -3.8149259090423584,
+            "maximum": -0.18685126304626465,
+            "population_stddev": 1.301638349687976,
+            "positive_fraction": 0.0,
+            "zero_fraction": 0.0,
+            "sign_mean": -1.0
+          }
+        },
+        "above_5_percent": {
+          "training": {
+            "count": 13,
+            "mean": -0.043300977120032676,
+            "median": -0.11436820030212402,
+            "minimum": -1.625547170639038,
+            "maximum": 2.1654856204986572,
+            "population_stddev": 1.1736888228652662,
+            "positive_fraction": 0.46153846153846156,
+            "zero_fraction": 0.0,
+            "sign_mean": -0.07692307692307693
+          },
+          "heldout": {
+            "count": 4,
+            "mean": -2.7672313451766968,
+            "median": -3.1043108701705933,
+            "minimum": -4.306316375732422,
+            "maximum": -0.5539872646331787,
+            "population_stddev": 1.5465001307036104,
+            "positive_fraction": 0.0,
+            "zero_fraction": 0.0,
+            "sign_mean": -1.0
+          }
+        }
+      }
+    },
+    "common_three_anchors_raw_logit": {
+      "training": {
+        "count": 107,
+        "mean": 1.6439932172543534,
+        "median": 1.672999620437622,
+        "minimum": -0.7667849063873291,
+        "maximum": 4.018482208251953,
+        "population_stddev": 0.8968012241804503,
+        "positive_fraction": 0.9532710280373832,
+        "zero_fraction": 0.0,
+        "sign_mean": 0.9065420560747663
+      },
+      "heldout": {
+        "count": 12,
+        "mean": -0.4346868594487508,
+        "median": -0.4862844944000244,
+        "minimum": -1.2368576526641846,
+        "maximum": 0.860673189163208,
+        "population_stddev": 0.6253293216537708,
+        "positive_fraction": 0.3333333333333333,
+        "zero_fraction": 0.0,
+        "sign_mean": -0.3333333333333333
+      },
+      "training_minus_heldout_mean": 2.078680076703104,
+      "padding_strata": {
+        "at_most_5_percent": {
+          "training": {
+            "count": 94,
+            "mean": 1.5962236003672823,
+            "median": 1.5950407981872559,
+            "minimum": -0.7667849063873291,
+            "maximum": 4.018482208251953,
+            "population_stddev": 0.8962313911586784,
+            "positive_fraction": 0.9468085106382979,
+            "zero_fraction": 0.0,
+            "sign_mean": 0.8936170212765957
+          },
+          "heldout": {
+            "count": 8,
+            "mean": -0.38366031646728516,
+            "median": -0.4862844944000244,
+            "minimum": -1.2368576526641846,
+            "maximum": 0.860673189163208,
+            "population_stddev": 0.6498935068895506,
+            "positive_fraction": 0.375,
+            "zero_fraction": 0.0,
+            "sign_mean": -0.25
+          }
+        },
+        "above_5_percent": {
+          "training": {
+            "count": 13,
+            "mean": 1.989404293207022,
+            "median": 2.037099599838257,
+            "minimum": 0.2636735439300537,
+            "maximum": 2.950740098953247,
+            "population_stddev": 0.8220896286581552,
+            "positive_fraction": 1.0,
+            "zero_fraction": 0.0,
+            "sign_mean": 1.0
+          },
+          "heldout": {
+            "count": 4,
+            "mean": -0.5367399454116821,
+            "median": -0.5761914253234863,
+            "minimum": -1.1249220371246338,
+            "maximum": 0.13034510612487793,
+            "population_stddev": 0.5592538711834389,
+            "positive_fraction": 0.25,
+            "zero_fraction": 0.0,
+            "sign_mean": -0.5
+          }
+        }
+      }
+    }
+  },
+  "per_image": [
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-001.png",
+      "sha256": "c1d0cb6ec434c296d7124b4d6233721092220cda9fa25c9bdaeafec13d63be1c",
+      "batch_one_raw_logit": -1.5505216121673584,
+      "anchor_target": true,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent"
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-002.png",
+      "sha256": "221975c700492a1755008938dae0de4e5e87db28ce5a6bfa8e82d362e34734fb",
+      "batch_one_raw_logit": -0.5755679607391357,
+      "anchor_target": true,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent"
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-003.png",
+      "sha256": "ae0dce1238205c63dd8d4340198e4e0bf7b4504f81b79d54b4935e255ea010f0",
+      "batch_one_raw_logit": -0.478992223739624,
+      "anchor_target": true,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent"
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-004.png",
+      "sha256": "41d39e6570fa8657d8fcdb50893488a429566ffb41a3d290d171549061a6141d",
+      "batch_one_raw_logit": -0.1969468593597412,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.1791751384735107
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-007.png",
+      "sha256": "6f3558415d3070bed45843907ef4d7195ce8b86bb7ae07d941a6270e2fa7f593",
+      "batch_one_raw_logit": -0.1156165599822998,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0239410400390625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.0119054317474365
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-009.png",
+      "sha256": "307328fe32ae7e9c1a6ae3d5d8077a6550e013e920071be2923d6e1a6e07dc15",
+      "batch_one_raw_logit": 0.2464449405670166,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.2785098552703857
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-010.png",
+      "sha256": "745c8cac4eb0912a22e85480c083f54107cb1d1fe5e52ca0b7f88f2dfd3b7c3a",
+      "batch_one_raw_logit": -0.027234792709350586,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.217010259628296
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-013.png",
+      "sha256": "a619ec556f1c613413dfd1fbf382a3844254db0f4271c8931a41d4b0cc0c29f7",
+      "batch_one_raw_logit": -1.7395780086517334,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": -0.0002357959747314453
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-018.png",
+      "sha256": "8684ac1fe532eaf804884117bf3f49b720ccc078489b1abcf1d578e2963e76f2",
+      "batch_one_raw_logit": -1.4309604167938232,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.6438119411468506
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-020.png",
+      "sha256": "56b940ed9fa8ea9028a05e98a50ef2ea9e2eff921c366fa71cd2369f9e2a5acc",
+      "batch_one_raw_logit": -1.2805907726287842,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.0465867519378662
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-022.png",
+      "sha256": "ea1c29eb49b0edc899994a9036372db2f0de1386a9e9e396bcf4d87fb4ca96a4",
+      "batch_one_raw_logit": -2.120431661605835,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.40975308418273926
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-023.png",
+      "sha256": "2763b44377d089aabdd48284a91ac59c7bc38cc5fa0ae8bf1eff3bdcf2a63455",
+      "batch_one_raw_logit": 0.4858057498931885,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0006256103515625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.9524900913238525
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-025.png",
+      "sha256": "8ff7d2c1086b57f62e6611b95a4ac7b7a58929ed0b4ca9d6170f0cf4a9223b56",
+      "batch_one_raw_logit": -0.28211379051208496,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.8091318607330322
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-027.png",
+      "sha256": "22a9bb8ddfd43bd5ca6550b980cae6f0d91431275d10ec62fedf9eb8b979d04b",
+      "batch_one_raw_logit": -0.5513436794281006,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.3665788173675537
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-033.png",
+      "sha256": "b17847016099fe738fa29a033a9c597bc78758bfb1e0f4e448440838c0450141",
+      "batch_one_raw_logit": 0.08553528785705566,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0131072998046875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.9730503559112549
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-036.png",
+      "sha256": "1cd022f940cdbe5bdbf6a34cafbba3bd9c169a2572c23b662f03552855d4410b",
+      "batch_one_raw_logit": 0.07088685035705566,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.022705078125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.9773919582366943
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-038.png",
+      "sha256": "d5506ed7c72d14e855dd9395bcaff43560473370563fd22b49280317a4fec6e1",
+      "batch_one_raw_logit": -0.4305379390716553,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.08628249168396
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-045.png",
+      "sha256": "448a727d2d673e222d32657da12fc50213f701935e3dead43e17f29271cbbede",
+      "batch_one_raw_logit": -1.1197316646575928,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.009979248046875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": -0.013125181198120117
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-046.png",
+      "sha256": "e2c044ff958847e20e8703a00173c99fe5c4b009b1ec45c84c8fc8900af3dd0a",
+      "batch_one_raw_logit": -2.7980096340179443,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.28942131996154785
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-047.png",
+      "sha256": "c6227bc5ce8921a7130dc45c8f42cf807fa0ede977dabf5ded060a604bd870ee",
+      "batch_one_raw_logit": -0.2797067165374756,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.465017557144165
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-051.png",
+      "sha256": "6ea08fe91ae87e64c78e3f52cd7df462271c0b8efd184c1f3a140af02c97510b",
+      "batch_one_raw_logit": -1.6390407085418701,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.018646240234375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": -0.003171205520629883
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-052.png",
+      "sha256": "ff5f20090804e31fa407aacccf9f42668f2e506e33b119e9a1769a8e02af81cf",
+      "batch_one_raw_logit": 0.49355340003967285,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.039031982421875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.9754083156585693
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-053.png",
+      "sha256": "c33f9701c263cd45ae41ccf4834769482325a36693695f6f0df8dc86292913d9",
+      "batch_one_raw_logit": 0.25142407417297363,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.5853464603424072
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-054.png",
+      "sha256": "544ac12bd1af37f0389dd3a9c9df4b36a0b57c86545a224e51093021f315c38c",
+      "batch_one_raw_logit": 0.4939243793487549,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0464019775390625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.3165090084075928
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-055.png",
+      "sha256": "c9e28d7e72a0c0c0868949d3f90f856dea09491d2260109037c69d88c2b9b611",
+      "batch_one_raw_logit": 0.7895853519439697,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0365447998046875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.4641458988189697
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-056.png",
+      "sha256": "34d1babe290c7533affb7ab996556f2a321d61f95d0b7fc1c70915e815e3f534",
+      "batch_one_raw_logit": 0.3839552402496338,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.001220703125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.672999620437622
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-057.png",
+      "sha256": "773dad8403bc0df4867a92fa0d436f94ea4d3d7f375ffe10cf626fe9f801028e",
+      "batch_one_raw_logit": 0.6120188236236572,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.877394437789917
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-058.png",
+      "sha256": "b15992585b836bff5fb7f860a456ec644e376592b68aab91435f0223986857c3",
+      "batch_one_raw_logit": -1.1294801235198975,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": -0.07195258140563965
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-059.png",
+      "sha256": "8cf1236016f403587d35a8f49ba179a6c1dc7768a0800fe2ccf93f76ddc6d1de",
+      "batch_one_raw_logit": 1.0341627597808838,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.7286779880523682
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-060.png",
+      "sha256": "9a9c0aa3848ecba150c78d003456431c0d91c291d14cacde7a9d91f388ebe62c",
+      "batch_one_raw_logit": 1.5047504901885986,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0117950439453125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.078669786453247
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-061.png",
+      "sha256": "fb5406eb2040c186e38f02046e4d1eb8e472ecb5ce6d50ffa109a489d22074f7",
+      "batch_one_raw_logit": -0.5352475643157959,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.000152587890625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.4519922733306885
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-062.png",
+      "sha256": "fa13cc835e04519d808e92c212906b528efd9421baa74e29e3e43b834401eb4d",
+      "batch_one_raw_logit": 0.2023603916168213,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0466461181640625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.5804245471954346
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-063.png",
+      "sha256": "263e6505f19943abd17282f1f9379231b02efca66a5c5fa093416fe00351eb1e",
+      "batch_one_raw_logit": -0.22884058952331543,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.9630639553070068
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-064.png",
+      "sha256": "63eaf1ee0dbf6eeb8f9a125ed3c3137fe53f71b9a7d196494264edb1053e07ad",
+      "batch_one_raw_logit": 0.8988640308380127,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.007049560546875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.163555383682251
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-065.png",
+      "sha256": "b856097d32a4e57be0a45133231eaaec5ec081e1e0c7d5970b3754c60519fdbf",
+      "batch_one_raw_logit": 0.29828667640686035,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0054931640625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.8230230808258057
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-066.png",
+      "sha256": "c5a0f18a04958758abc6f200dcb26a709804f8b361279e0c8816ca92a0af811b",
+      "batch_one_raw_logit": -0.07128024101257324,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.002838134765625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.404078722000122
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-067.png",
+      "sha256": "8d2e8084270bcb68c280fadef8305a682241b1d053d53b32984826e92ed474d8",
+      "batch_one_raw_logit": 1.4085047245025635,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0157318115234375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.0524303913116455
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-068.png",
+      "sha256": "f1a37d940c2b96b871d58a0e49f3333f4b648fe7bf0fc01b15e0adfe1defa459",
+      "batch_one_raw_logit": -0.2083585262298584,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.1017253398895264
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-069.png",
+      "sha256": "c950f6ab50bd37c83d1e5de766e9660e0907da49efd6ed1160721a41ad71d160",
+      "batch_one_raw_logit": -2.5273187160491943,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": -0.7667849063873291
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-070.png",
+      "sha256": "3b927fadb362592e8327801757cc7d688035486c088ff86209a6ed7e613c4f10",
+      "batch_one_raw_logit": 1.390967607498169,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0078277587890625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.78505539894104
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-071.png",
+      "sha256": "b4e258b39df0affd260a715cdf43db243bd68a648e58d6c7794be86cc71f11ac",
+      "batch_one_raw_logit": -1.225106954574585,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.5777952671051025
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-072.png",
+      "sha256": "8b06b9410891dd4b0c23453ed2e828eb71ccdb2bb9f272b482d434860567f9db",
+      "batch_one_raw_logit": 0.23506760597229004,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0441741943359375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.4071643352508545
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-073.png",
+      "sha256": "0d3abcfa8b70ee7568df8cae04707481fcc10890cf19724de97e389b6863df6b",
+      "batch_one_raw_logit": 0.8076975345611572,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.000244140625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.8128187656402588
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-074.png",
+      "sha256": "a1ef2b77cf541174ba085df3f7e12ff1f9e62b010fdb643c5c6a6cc57a47194d",
+      "batch_one_raw_logit": 1.1524336338043213,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.01068115234375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.8521058559417725
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-075.png",
+      "sha256": "7039716ab1bff85d52aceb27e52c029264da68e22b8edbaaf81af0ddaa809abd",
+      "batch_one_raw_logit": 1.2228357791900635,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.6840975284576416
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-076.png",
+      "sha256": "03be09e5ef7ee727ba073c1d5b15684b58a000504260ce9e25ab921e9cb57816",
+      "batch_one_raw_logit": 0.30216240882873535,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0326080322265625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.9886324405670166
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-077.png",
+      "sha256": "7c8ce9afe3a0bc7e6979a2697dfc38f37666702cf26ae389862891158a3b6079",
+      "batch_one_raw_logit": 0.6921350955963135,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0015106201171875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 3.5229403972625732
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-078.png",
+      "sha256": "0e53a39e47cdaf6fb26d30010f2ce5554b7112beb810429b506a164a79892b0b",
+      "batch_one_raw_logit": -0.6159789562225342,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.5822608470916748
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-079.png",
+      "sha256": "c24528c402b7bcf1a71f2818bc78fe049bfc6da972ba8d64c409cdeab5ea0658",
+      "batch_one_raw_logit": 0.8279116153717041,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.035125732421875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.9762938022613525
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/original-080.png",
+      "sha256": "98b855137e2f51f9cdc0622119c1e99347c5a0abf03436aefd2b51e9fab9281b",
+      "batch_one_raw_logit": -0.6860368251800537,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.5419738292694092
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-081.png",
+      "sha256": "d155f227be262f5f5e536b858079648d3e9748216bb845b3fdd5afbeb89107f7",
+      "batch_one_raw_logit": 1.8554527759552002,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0260162353515625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.8421685695648193
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-082.png",
+      "sha256": "7b37a7df5fd955bd042b6c4a0d02d56b8c197bfd7f992f5e8cff9d7ff8ea9fce",
+      "batch_one_raw_logit": -0.29930663108825684,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0537872314453125,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 2.293070077896118
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-083.png",
+      "sha256": "27e18244a02b653651fc112f9bff3840492754b73e990e498d08685151610d62",
+      "batch_one_raw_logit": -0.7819650173187256,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0024871826171875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.145381212234497
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-084.png",
+      "sha256": "8f5ae074cf62478d95d780f9653c18cd382be4d19fad5a6aa7a8ac460d77a99e",
+      "batch_one_raw_logit": 2.0510923862457275,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.027862548828125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 3.270220994949341
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-085.png",
+      "sha256": "9e51def9f8d8fcb30d99a902034fe460ec3d19e668dcb2d31db4579821cc2fa1",
+      "batch_one_raw_logit": 1.2724783420562744,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0102081298828125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.1279871463775635
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-086.png",
+      "sha256": "994fd2b596b753ecbd06653c7f829c650a01be57d3abd3f0dd1fa18d8437d8f5",
+      "batch_one_raw_logit": 0.38147950172424316,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.06585693359375,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 2.864575147628784
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-087.png",
+      "sha256": "27bd54661ac88ffe2536052f7c4ba8411bbbd0cf579029aa46135afad5a4f850",
+      "batch_one_raw_logit": -0.5120189189910889,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0437469482421875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.296893835067749
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-088.png",
+      "sha256": "7736c968f50b485f0892426aec36be5f7d95567c37bce77b941942e9302fd804",
+      "batch_one_raw_logit": 2.15621018409729,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.015625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 3.5866410732269287
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-089.png",
+      "sha256": "db612ba6f557533b9632f61bc00fa1dcd8c2ec4c914c6f4a7852395c2acf25bd",
+      "batch_one_raw_logit": 0.774954080581665,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.00152587890625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.038259744644165
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-090.png",
+      "sha256": "12cda26b7f43d0ddb1a1fd43efcffc7b16564de25970a1e9872424f8f78e9ee3",
+      "batch_one_raw_logit": -1.5909535884857178,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0733795166015625,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 0.7644779682159424
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-091.png",
+      "sha256": "581faef0a6b0ca79c2092f26c56a90d2e206440ebd472fa49a83eb6365b24e5d",
+      "batch_one_raw_logit": -1.5200822353363037,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.01702880859375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.0306036472320557
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-092.png",
+      "sha256": "3a78c42676de4782b7a4b41a912595f0604f5bb022c0fd28520224973dbc3db1",
+      "batch_one_raw_logit": 1.4914629459381104,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.715204954147339
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-093.png",
+      "sha256": "0297bc9726634510be213ee4433966d04358be9c1eb2621038c50b0d6f3b3d4c",
+      "batch_one_raw_logit": 1.2072336673736572,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0567169189453125,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 2.7521584033966064
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-094.png",
+      "sha256": "5cf2746760b55e626c48013cb695f7a41b7e314ea3ad132adc30171d01cad563",
+      "batch_one_raw_logit": -1.121305227279663,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0695343017578125,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 1.9102399349212646
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-095.png",
+      "sha256": "21c86a6ac12eb51279bc708ee00d8dfddfaae370b83ef92d9ceed6925ca04afe",
+      "batch_one_raw_logit": -1.693795919418335,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0081329345703125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.4207208156585693
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-096.png",
+      "sha256": "cc1d1c65b2f8387a0e4ff0ae4ffcebdabb6670b6d6dbd194687338617666fe03",
+      "batch_one_raw_logit": -0.354907751083374,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.009979248046875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.0370705127716064
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-097.png",
+      "sha256": "885362703757a30aeaedcef6740bbe6070ea9041295fcf91bc8cc1b556715a37",
+      "batch_one_raw_logit": 2.1654856204986572,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0610809326171875,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 2.9466116428375244
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-098.png",
+      "sha256": "955d22f3a74c140386db7aa6bc32e97e79d237063484ad71bfb1568f061b9bf2",
+      "batch_one_raw_logit": -0.11436820030212402,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.068634033203125,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 1.6629021167755127
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-099.png",
+      "sha256": "644c5e9259ac2f1dfb4fea2ca59c7036ef9d0200bd187f71744845b993698f38",
+      "batch_one_raw_logit": 0.23234009742736816,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0751953125,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 2.540428400039673
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-100.png",
+      "sha256": "0f27d74323c1cabb60b38f10158a37ca1fb01d7a75da421810b93ed0f647bf55",
+      "batch_one_raw_logit": -0.01811385154724121,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0252532958984375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.2243306636810303
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-101.png",
+      "sha256": "9f744839fe20ad3da5383014f63e8477bb203db855eb38fd12108d88c1f0c431",
+      "batch_one_raw_logit": -0.023784399032592773,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0053863525390625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.8327071666717529
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-102.png",
+      "sha256": "a4739bb14af4e9eed993e4f183a46b8e2f026c6a666ff244e9293790488821d0",
+      "batch_one_raw_logit": -1.625547170639038,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0800628662109375,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 1.4256021976470947
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-103.png",
+      "sha256": "1ed06eabbf6ad91a2748a7cafd7ef0606fa7a92afb4423dd1bee74358df26afb",
+      "batch_one_raw_logit": -1.0948121547698975,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.1683332920074463
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-104.png",
+      "sha256": "26e84fbd0b070d02b32d35b3c3dcb7aba0b9afc5e21e0155ec50e472e46129f3",
+      "batch_one_raw_logit": 2.2716448307037354,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.01824951171875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 3.1830098628997803
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-105.png",
+      "sha256": "22ad39544ca97f1f3e373a5aa8769892e0f6f2955df8e77d02ba813437261fb5",
+      "batch_one_raw_logit": 0.6599066257476807,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0226287841796875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.9233968257904053
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-106.png",
+      "sha256": "44d6fea64f16829d6f65b54b526314a1605f668d62f9be39f0cd092b0642d99a",
+      "batch_one_raw_logit": -0.8170688152313232,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0423431396484375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.72654128074646
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-107.png",
+      "sha256": "c24db6b7efe3a038d56cb5a0e3dd350e74abbe064712558e2a644993e893dc65",
+      "batch_one_raw_logit": -2.098290205001831,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.026031494140625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.2256767749786377
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-108.png",
+      "sha256": "c4ad62d51ca12d04915e09e8f70452b8a10f438be3d0d1434a8b4bd712f98a85",
+      "batch_one_raw_logit": 1.53725266456604,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.01904296875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.947240114212036
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-109.png",
+      "sha256": "8c2601eb385eae1d62207fc219ed991592edc9eb9657ec47c2de07bb60a0c75d",
+      "batch_one_raw_logit": 1.537781000137329,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0013275146484375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.283010721206665
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-110.png",
+      "sha256": "c7a9d661f063f8533ff46b5b5bcc5d9b3c7f00425737ba3d5c1ee7eee958dd98",
+      "batch_one_raw_logit": 0.4186851978302002,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0461273193359375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.4033234119415283
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-111.png",
+      "sha256": "e98183391a2e674e5d537b6951868b7253b62778fec629383bb1758da1271a11",
+      "batch_one_raw_logit": -0.3139302730560303,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.1858460903167725
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-112.png",
+      "sha256": "6c84d847eee1c98569a54a0990a1abcea95955886fde1153a9498e62aaf4f843",
+      "batch_one_raw_logit": 1.5266001224517822,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0750885009765625,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 2.950740098953247
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-113.png",
+      "sha256": "029df6784e61733d689881ead6b46aed443c73c13d740f52c8ae0d3762117a40",
+      "batch_one_raw_logit": 0.590648889541626,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0341339111328125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.607820749282837
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-114.png",
+      "sha256": "dc974a6562ca51c54a5506859add3235c57ef2aa9330824bb75f61670643d1ee",
+      "batch_one_raw_logit": -0.5543830394744873,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.017913818359375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.8099315166473389
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-115.png",
+      "sha256": "04067bc16eb758b998877230c646f43b4b7e38b777dce38c6d8a8911492e3f6a",
+      "batch_one_raw_logit": -1.5102412700653076,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0500335693359375,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 0.2636735439300537
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-116.png",
+      "sha256": "797c91996f6055dd51267b633ce1ebdc883eb2205ee243d97bbd86c1dc8c5a43",
+      "batch_one_raw_logit": 3.3060858249664307,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.00518798828125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 4.018482208251953
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-117.png",
+      "sha256": "2d2c8f1b174e91f984a150d978fcc5487716ddb27d92be97f1a553b85da1e583",
+      "batch_one_raw_logit": -0.30594611167907715,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.034698486328125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.026559591293335
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-118.png",
+      "sha256": "9dd45fe5d7a5f090d8c57d93654a0c67a13056b85a0352cc4e490f80055bf313",
+      "batch_one_raw_logit": -2.107238531112671,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0281219482421875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.6673061847686768
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-119.png",
+      "sha256": "916ea50c07bb836cef3afbc99e06f502022f1476b2b277c00051618572d9ef11",
+      "batch_one_raw_logit": 0.4044077396392822,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.04193115234375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.9768221378326416
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-120.png",
+      "sha256": "b2aca6003f35fa5de3a7f461954b133ce95c50c12dce575423aa95d9252b0583",
+      "batch_one_raw_logit": 0.8132383823394775,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.001190185546875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.2611663341522217
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-121.png",
+      "sha256": "9402844c87ff856609eef73bde8e846e374f74bef81153c1b36e4646315f67a2",
+      "batch_one_raw_logit": 0.3536112308502197,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.032928466796875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.349670648574829
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-122.png",
+      "sha256": "d78be1f3eee8a82766051e2c1f9dcc268583f7ce0238c893caac4ad9e728877b",
+      "batch_one_raw_logit": 0.5533325672149658,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0840606689453125,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 2.037099599838257
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-123.png",
+      "sha256": "006f82f23be2cff08cada4a73e46e6691a8114bb8217752ac9bce82079239ff5",
+      "batch_one_raw_logit": -2.372731924057007,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.0232961177825928
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-124.png",
+      "sha256": "608781ebcccee664384e060acd03cf4ee85fc62cc151cd6943961555ffe05509",
+      "batch_one_raw_logit": 1.7505266666412354,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 3.1130330562591553
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-125.png",
+      "sha256": "21006186bd4cb5cf4f3a16ec3134fa19c3e747083c7276ca6d85d1c9a77715ca",
+      "batch_one_raw_logit": 0.6718790531158447,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.018096923828125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.9849193096160889
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-126.png",
+      "sha256": "b6acdace67e291933058354e11fd89b0ac4030940963222c57a790c2f7340002",
+      "batch_one_raw_logit": -2.2971999645233154,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.016265869140625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.16033720970153809
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-127.png",
+      "sha256": "b5945abb40b2c51f8cb74719f158f37753eed33d50be8e74cff5a9a76d82a58f",
+      "batch_one_raw_logit": -1.535886526107788,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.628746747970581
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-128.png",
+      "sha256": "8e20c08bdb98e83d1e33268204cd480075ee634db3311f8ac412388f7542a84a",
+      "batch_one_raw_logit": 0.7983705997467041,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0120391845703125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.463623285293579
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-129.png",
+      "sha256": "a1afa8db12bad3cc55528728b56e7f9d9edca0f3cda75278157e5be69325dd9f",
+      "batch_one_raw_logit": 1.7979748249053955,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0178070068359375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.5376784801483154
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-130.png",
+      "sha256": "76e924beebf827a11de5462504c9a6d15eef5b6d079978de7f8515eca098ced7",
+      "batch_one_raw_logit": -1.758483648300171,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.002349853515625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.7871530055999756
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-131.png",
+      "sha256": "feab92a9494660e0da22a286574dc2ff9c02d17c53ef92d8a0697e79a72e254e",
+      "batch_one_raw_logit": 0.4888498783111572,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0483245849609375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.2631475925445557
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-132.png",
+      "sha256": "39c3b6fc72c624352555bd5ef1f842396aa633d74deeb2fb7fb0632aaf544619",
+      "batch_one_raw_logit": 2.457573175430298,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0073089599609375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 3.1856529712677
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-133.png",
+      "sha256": "dfd4157bce18e82991543fa2646c4ce8095dea7165b1e3755179e3677e738b3c",
+      "batch_one_raw_logit": 0.6239502429962158,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0043487548828125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 1.887291669845581
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-134.png",
+      "sha256": "42f424def56004514eb0301f056be8782c7f307719a878cff3d41bb5a1e2d9a4",
+      "batch_one_raw_logit": -0.3676621913909912,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0608367919921875,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 1.450676679611206
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-135.png",
+      "sha256": "90dc2d25cba94b7ad801cf0fee0fafa7bc8e7f311a3bbfa08a8b3e9632112216",
+      "batch_one_raw_logit": -0.6718785762786865,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.030609130859375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.3080976009368896
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-136.png",
+      "sha256": "bc7c6fcc88be483cb736b4c423b731814c04712e1038ae305a65e79dc24d8936",
+      "batch_one_raw_logit": 0.49247002601623535,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.31569504737854
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-137.png",
+      "sha256": "19f0b1c284cc02d6aba1c6080aa88cb4247fbd37d76607170acf742aef9b828c",
+      "batch_one_raw_logit": 1.42775559425354,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.009521484375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.4664466381073
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-138.png",
+      "sha256": "33bec28577a55b61d59c014b208980d78db3eea1080654c8e70928522e8ed101",
+      "batch_one_raw_logit": -1.0296361446380615,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.012420654296875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.9380700588226318
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-139.png",
+      "sha256": "9774d71977fb9c5d95b826cb15820c103bee5506dea70d9571538fd89ac7c6dc",
+      "batch_one_raw_logit": -0.8825423717498779,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.6276161670684814
+    },
+    {
+      "split": "training",
+      "path": "research/alignment/collar-only/eyes42/synthetic-140.png",
+      "sha256": "21e2624aad0abcd853998ca6cc45ae948d0f6575406581fc677db89ac72ff712",
+      "batch_one_raw_logit": 1.3958570957183838,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0107421875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 2.2004544734954834
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/001.png",
+      "sha256": "2df15eb8f2e42ea3c0769ee31d9c9b43ff460737992953e41280ee2f3847e7fe",
+      "batch_one_raw_logit": -1.214115858078003,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0009002685546875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.10764145851135254
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/002.png",
+      "sha256": "4bb69c4d9f78b646ae6a1a656fad03b173638a32bffeedaa2114ba145e69de07",
+      "batch_one_raw_logit": -4.122194290161133,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.1126708984375,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": -1.1249220371246338
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/003.png",
+      "sha256": "de11236588407206b660d0844e18e613151354a8c67d41364e83faff19f623a6",
+      "batch_one_raw_logit": -3.8059794902801514,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0495147705078125,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": -1.2368576526641846
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/004.png",
+      "sha256": "4d00d2af41667d7072b2698c1f9fd900a7fd7c542e95876120f1ef5644050d91",
+      "batch_one_raw_logit": -0.5539872646331787,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0532684326171875,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": -0.09818196296691895
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/005.png",
+      "sha256": "f96a02a49ee2816f789a95975b9ab8d796da18989b90c670b61df5eed388799e",
+      "batch_one_raw_logit": -4.306316375732422,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.1626129150390625,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": -1.0542008876800537
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/006.png",
+      "sha256": "2eb3f68abcc5f127b1bd76b4a8deea1a11b6730862632d80b5041440b7375461",
+      "batch_one_raw_logit": -2.0864274501800537,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0966949462890625,
+      "padding_stratum": "above_5_percent",
+      "common_three_anchors_raw_logit": 0.13034510612487793
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/007.png",
+      "sha256": "347a21848d2c7a8ae4f87bc4375969f422e78b7ae6bbd98a3fec132752118f06",
+      "batch_one_raw_logit": -0.18685126304626465,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.023406982421875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.860673189163208
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/008.png",
+      "sha256": "2b03865d6e04991b780805e45e4408cf55b5152a96ec040cc3ec8ee11b01d0fd",
+      "batch_one_raw_logit": -3.2978665828704834,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0099945068359375,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": 0.04084420204162598
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/009.png",
+      "sha256": "bc891fa2db8c481b833e329467751692b2cd311857a7b6c3dd41dc97a918910d",
+      "batch_one_raw_logit": -1.9911744594573975,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0071258544921875,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": -0.6080358028411865
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/010.png",
+      "sha256": "e122da551c12a2c1dfeb5ea1c9ed282cc0c3e7b7b677aff037b14289fa15a556",
+      "batch_one_raw_logit": -1.5909478664398193,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.03619384765625,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": -0.3645331859588623
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/011.png",
+      "sha256": "8e809191274a9e70fbbe31ea03417b943a659b9e30537bad06792980a70d0467",
+      "batch_one_raw_logit": -3.689267873764038,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": -1.0427300930023193
+    },
+    {
+      "split": "heldout",
+      "path": "research/data/validation12/aligned256/012.png",
+      "sha256": "635710afab8297c4f419fbfbd0123dcd862e54289a75f3e1d51839ead77e7d90",
+      "batch_one_raw_logit": -3.8149259090423584,
+      "anchor_target": false,
+      "reflected_padding_fraction": 0.0,
+      "padding_stratum": "at_most_5_percent",
+      "common_three_anchors_raw_logit": -0.826284646987915
+    }
+  ],
+  "limits": [
+    "Raw logits are not calibrated probabilities, aesthetic judgments, or production quality scores.",
+    "No-augmentation eval and fixed minibatch context differ from training logs; numerical scales are not directly comparable.",
+    "Twelve synthetic held-out portraits are a small nonrandom set, with possible generation/prompt/framing/domain mismatch.",
+    "A train-heldout gap alone cannot establish memorization or diagnose the cause of poor generator quality.",
+    "Held-out reflection/padding differs from training; strata are descriptive small subsets, not an adjusted causal estimate.",
+    "Common anchors come from training and define only one chosen context; training summary excludes those 3 anchors.",
+    "No optimizer steps, gradient computation, MPS use, or model approval occurred."
+  ],
+  "elapsed_seconds": 98.37825125001837,
+  "peak_rss_bytes": 2621259776,
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "torch_version": "2.14.0"
+}

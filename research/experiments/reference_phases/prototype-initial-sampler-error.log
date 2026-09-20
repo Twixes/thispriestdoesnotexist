@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_phases/trainer.py", line 318, in <module>
+    main()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_phases/trainer.py", line 193, in main
+    sampler = iter(misc.InfiniteSampler(dataset=data, rank=0, num_replicas=1, seed=args.seed))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/misc.py", line 115, in __init__
+    super().__init__(dataset)
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)

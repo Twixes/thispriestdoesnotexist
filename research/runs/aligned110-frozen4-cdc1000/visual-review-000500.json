@@ -1,0 +1,14 @@
+{
+  "step": 500,
+  "images_seen": 4000,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grid_sha256": "6a72d1f823a9ff8a65fe196aae5c82127a0e84a9a476bb2b71075779924299ce",
+  "findings": [
+    "Priest collars and mostly adult male appearance now visible",
+    "Pronounced ghosted and doubled eyes, noses and mouths throughout the grid",
+    "Some variation in hairstyle and apparent age remains, but multiple faces share conspicuously similar structure",
+    "This fixed 16-image truncated grid cannot establish diversity on unseen latents"
+  ],
+  "decision": "Do not promote. Compare at matched image presentations; no final-convergence conclusion at 4 kimg."
+}

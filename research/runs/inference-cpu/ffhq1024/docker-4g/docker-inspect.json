@@ -1,0 +1,45 @@
+{
+  "image_id": "sha256:84943e91972961818c8cd240e0856017094f95a11c6282a5bbe62db6e8b34796",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-20T22:35:29.696204054Z",
+    "FinishedAt": "2026-09-20T22:35:55.447459033Z"
+  },
+  "limits": {
+    "Memory": 4294967296,
+    "MemorySwap": 4294967296,
+    "NanoCpus": 1000000000,
+    "NetworkMode": "none",
+    "ReadonlyRootfs": true,
+    "PidsLimit": 128,
+    "CapDrop": [
+      "ALL"
+    ],
+    "SecurityOpt": [
+      "no-new-privileges"
+    ],
+    "Tmpfs": {
+      "/tmp": "rw,nosuid,size=128m"
+    }
+  },
+  "model_mount": [
+    {
+      "Destination": "/results",
+      "RW": true,
+      "Type": "bind"
+    },
+    {
+      "Destination": "/app/model",
+      "RW": false,
+      "Type": "bind"
+    }
+  ]
+}

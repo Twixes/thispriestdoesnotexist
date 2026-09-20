@@ -1,0 +1,912 @@
+{
+  "version": "validation12-current-eyes42-v1",
+  "split": "validation_only",
+  "count": 12,
+  "training_use_permitted": false,
+  "accepted_training_manifest_sha256": "a38078275cff627f4e41a830e6f53361f3fca1fda93bb79bd1bd8471d80d6aa1",
+  "reference_collar_script_sha256": "9fb3155c77ff89a650a7a1c8a8e37794951608962f7bc146eb15af6e2df895a1",
+  "reused_helper_source_sha256": "5aa2e54e561ed63b1ecefdcb80a63199a6939f191f4aca6c6b3275447d990bcd",
+  "reused_functions": [
+    "collar_box",
+    "contains_collar",
+    "metrics"
+  ],
+  "script_sha256": "3466f34df29021a51496bb582a23fb54cdaf1e5e7630bfef177ab0ea02929b16",
+  "detector_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+  "opencv_version": "5.0.0",
+  "numpy_version": "2.4.6",
+  "pillow_version": "12.3.0",
+  "settings": {
+    "resize": "PIL LANCZOS 1254 to256 before detection and affine",
+    "detector": "YuNet confidence0.75 nms0.3 topk5000; largest area timesconfidence",
+    "desired_interocular_fraction": 0.24,
+    "eye_y_fraction": 0.42,
+    "collar_bottom_guard_fraction": 0.96,
+    "collar_padding_source256_pixels": 4,
+    "interpolation": "cv2.INTER_LANCZOS4",
+    "border": "cv2.BORDER_REFLECT_101"
+  },
+  "accepted_matrix_regression": {
+    "count": 110,
+    "maximum_absolute_difference": 0.0
+  },
+  "source_hashes_disjoint_from_training_sources": true,
+  "summary": {
+    "collar_fallback_count": 1,
+    "mean_reflected_padding_fraction": 0.046031951904296875,
+    "max_reflected_padding_fraction": 0.1626129150390625
+  },
+  "entries": [
+    {
+      "id": "001",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/001.png",
+      "source_sha256": "24a377a5ecfb4f4c77b3eab9c4e4f1fd1014c682e6c1274cb16eb72731de22c7",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9297849535942078,
+      "face_box": [
+        82.39340209960938,
+        48.26502227783203,
+        89.82173919677734,
+        120.81742858886719
+      ],
+      "landmarks_source256": [
+        [
+          106.73307800292969,
+          97.97261047363281
+        ],
+        [
+          150.57498168945312,
+          95.20646667480469
+        ],
+        [
+          131.83828735351562,
+          120.72200012207031
+        ],
+        [
+          114.70938873291016,
+          139.93951416015625
+        ],
+        [
+          152.0750732421875,
+          136.64674377441406
+        ]
+      ],
+      "collar_box_heuristic": [
+        124,
+        186,
+        30,
+        21
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.1852472003691776,
+          -0.10397396060024217,
+          -14.444031813299574
+        ],
+        [
+          0.10397396060024217,
+          1.1852472003691776,
+          -20.339149210333744
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/001.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "2df15eb8f2e42ea3c0769ee31d9c9b43ff460737992953e41280ee2f3847e7fe",
+      "metrics": {
+        "eye_y": 0.42,
+        "eye_x": 0.5,
+        "mouth_y": 0.6150066925684079,
+        "interocular": 0.20416708084713397,
+        "eye_mouth_distance": 0.19507076760067657
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0009002685546875
+    },
+    {
+      "id": "002",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/002.png",
+      "source_sha256": "2e9ca89138e0079343ea55dbbe15f24f866539f4478860a8f0a829a699584473",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9337419271469116,
+      "face_box": [
+        54.61233901977539,
+        32.46017074584961,
+        88.33141326904297,
+        122.10991668701172
+      ],
+      "landmarks_source256": [
+        [
+          67.15921020507812,
+          78.75927734375
+        ],
+        [
+          110.48143005371094,
+          77.7512435913086
+        ],
+        [
+          81.43724060058594,
+          101.96984100341797
+        ],
+        [
+          71.07349395751953,
+          119.73148345947266
+        ],
+        [
+          109.1024398803711,
+          119.43954467773438
+        ]
+      ],
+      "collar_box_heuristic": [
+        100,
+        167,
+        22,
+        19
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.2273087232168018,
+          -0.03299327788810662,
+          21.571943861096557
+        ],
+        [
+          0.03299327788810662,
+          1.2273087232168018,
+          8.546162686458644
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/002.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "4bb69c4d9f78b646ae6a1a656fad03b173638a32bffeedaa2114ba145e69de07",
+      "metrics": {
+        "eye_y": 0.42,
+        "eye_x": 0.5000000000000001,
+        "mouth_y": 0.6183078304693463,
+        "interocular": 0.20782556147930703,
+        "eye_mouth_distance": 0.19830925127702392
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.1126708984375
+    },
+    {
+      "id": "003",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/003.png",
+      "source_sha256": "7aab1ede6b67adaced6909b55729344068ce2e03d3d1d8632cd03b60ab5bc7f7",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9181118011474609,
+      "face_box": [
+        107.94087219238281,
+        41.18156433105469,
+        82.5724868774414,
+        111.302734375
+      ],
+      "landmarks_source256": [
+        [
+          140.09446716308594,
+          82.32745361328125
+        ],
+        [
+          177.67807006835938,
+          84.16212463378906
+        ],
+        [
+          162.43544006347656,
+          105.04083251953125
+        ],
+        [
+          136.62965393066406,
+          122.13539123535156
+        ],
+        [
+          168.23556518554688,
+          123.45045471191406
+        ]
+      ],
+      "collar_box_heuristic": null,
+      "collar_fallback_used": true,
+      "matrix_source256_to_output256": [
+        [
+          1.2256938328202047,
+          0.1317091444907546,
+          -77.71001952087977
+        ],
+        [
+          -0.1317091444907546,
+          1.2256938328202047,
+          26.41414986756955
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/003.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "de11236588407206b660d0844e18e613151354a8c67d41364e83faff19f623a6",
+      "metrics": {
+        "eye_y": 0.41999999999999993,
+        "eye_x": 0.5000000000000001,
+        "mouth_y": 0.6126715221598689,
+        "interocular": 0.18119671220478173,
+        "eye_mouth_distance": 0.1929602654667395
+      },
+      "detected_collar_fully_visible": null,
+      "reflected_padding_fraction": 0.0495147705078125
+    },
+    {
+      "id": "004",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/004.png",
+      "source_sha256": "bc37ecfd2469f0c9ed7deaa7e264cf01db79ebceed41a52872e5eb3ef7f1991a",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9243060350418091,
+      "face_box": [
+        79.99386596679688,
+        34.34535217285156,
+        98.31583404541016,
+        128.95794677734375
+      ],
+      "landmarks_source256": [
+        [
+          108.7325439453125,
+          84.9151611328125
+        ],
+        [
+          154.69647216796875,
+          81.93067932128906
+        ],
+        [
+          135.53387451171875,
+          108.11033630371094
+        ],
+        [
+          117.06298828125,
+          130.2616424560547
+        ],
+        [
+          154.92864990234375,
+          126.88483428955078
+        ]
+      ],
+      "collar_box_heuristic": [
+        130,
+        182,
+        29,
+        19
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.1170644825557485,
+          -0.0890789250872591,
+          -11.702374725910374
+        ],
+        [
+          0.0890789250872591,
+          1.1170644825557485,
+          2.5982319871973516
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/004.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "4d00d2af41667d7072b2698c1f9fd900a7fd7c542e95876120f1ef5644050d91",
+      "metrics": {
+        "eye_y": 0.42,
+        "eye_x": 0.5,
+        "mouth_y": 0.6185046537565928,
+        "interocular": 0.20162550707648103,
+        "eye_mouth_distance": 0.19852688483480102
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0532684326171875
+    },
+    {
+      "id": "005",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/005.png",
+      "source_sha256": "3eba42380d17614543f898bf14968f29c73c5e55c7fd1f291ac661ff3662f064",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9257880449295044,
+      "face_box": [
+        42.868003845214844,
+        42.526371002197266,
+        96.02740478515625,
+        124.08606719970703
+      ],
+      "landmarks_source256": [
+        [
+          55.04060363769531,
+          91.9166488647461
+        ],
+        [
+          96.7252197265625,
+          86.7654037475586
+        ],
+        [
+          68.1572494506836,
+          113.90620422363281
+        ],
+        [
+          66.77607727050781,
+          136.04148864746094
+        ],
+        [
+          101.85748291015625,
+          131.60902404785156
+        ]
+      ],
+      "collar_box_heuristic": [
+        95,
+        182,
+        17,
+        18
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.148620356613532,
+          -0.18108792960463768,
+          57.01792440533454
+        ],
+        [
+          0.18108792960463768,
+          1.148620356613532,
+          -8.840400864879967
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/005.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "f96a02a49ee2816f789a95975b9ab8d796da18989b90c670b61df5eed388799e",
+      "metrics": {
+        "eye_y": 0.41999999999999993,
+        "eye_x": 0.5,
+        "mouth_y": 0.6255576716505862,
+        "interocular": 0.1907808330192015,
+        "eye_mouth_distance": 0.20565647288386238
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.1626129150390625
+    },
+    {
+      "id": "006",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/006.png",
+      "source_sha256": "2a40de8a30c5aa7b652ed46aced41e8e8011d281acd7e4ce3b79bac01a80f094",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9269058108329773,
+      "face_box": [
+        100.45040893554688,
+        37.14616394042969,
+        80.22146606445312,
+        106.41136169433594
+      ],
+      "landmarks_source256": [
+        [
+          111.3243179321289,
+          72.17189025878906
+        ],
+        [
+          142.3289337158203,
+          71.2562255859375
+        ],
+        [
+          117.32771301269531,
+          92.99977111816406
+        ],
+        [
+          114.06942749023438,
+          114.80799865722656
+        ],
+        [
+          141.38174438476562,
+          112.27691650390625
+        ]
+      ],
+      "collar_box_heuristic": [
+        132,
+        167,
+        22,
+        20
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.1523556645752056,
+          -0.028710786433500175,
+          -16.090413685928553
+        ],
+        [
+          0.028710786433500175,
+          1.1523556645752056,
+          21.23860695537668
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/006.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "2eb3f68abcc5f127b1bd76b4a8deea1a11b6730862632d80b5041440b7375461",
+      "metrics": {
+        "eye_y": 0.41999999999999993,
+        "eye_x": 0.5,
+        "mouth_y": 0.6083867310081157,
+        "interocular": 0.13966802663150255,
+        "eye_mouth_distance": 0.1883878336383932
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0966949462890625
+    },
+    {
+      "id": "007",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/007.png",
+      "source_sha256": "bcb2421766e8522ab43f5cfe974c6b5e39e2a879e4b6c941282b52d0db35df87",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.909984827041626,
+      "face_box": [
+        83.941650390625,
+        41.78474426269531,
+        93.21710205078125,
+        130.41458129882812
+      ],
+      "landmarks_source256": [
+        [
+          106.40836334228516,
+          91.05242919921875
+        ],
+        [
+          150.43258666992188,
+          88.23165893554688
+        ],
+        [
+          128.75599670410156,
+          114.66950988769531
+        ],
+        [
+          117.88612365722656,
+          139.35057067871094
+        ],
+        [
+          152.73489379882812,
+          135.5006866455078
+        ]
+      ],
+      "collar_box_heuristic": [
+        126,
+        188,
+        25,
+        17
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.1354763201546139,
+          -0.12010294358222089,
+          -7.052135031218143
+        ],
+        [
+          0.12010294358222089,
+          1.1354763201546139,
+          -9.69009539322964
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/007.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "347a21848d2c7a8ae4f87bc4375969f422e78b7ae6bbd98a3fec132752118f06",
+      "metrics": {
+        "eye_y": 0.41999999999999993,
+        "eye_x": 0.5,
+        "mouth_y": 0.6351743833234399,
+        "interocular": 0.19675936386240866,
+        "eye_mouth_distance": 0.21532839606339566
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.023406982421875
+    },
+    {
+      "id": "008",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/008.png",
+      "source_sha256": "613c85052a8830e3f5c4cb55ca369ebe2a0250c3229676d93388317cc42ba0aa",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9229860305786133,
+      "face_box": [
+        70.9083023071289,
+        41.70302963256836,
+        83.73117065429688,
+        106.88585662841797
+      ],
+      "landmarks_source256": [
+        [
+          81.3016586303711,
+          82.26490020751953
+        ],
+        [
+          116.93225860595703,
+          81.77484130859375
+        ],
+        [
+          90.59219360351562,
+          103.12311553955078
+        ],
+        [
+          85.59983825683594,
+          120.61735534667969
+        ],
+        [
+          116.84700012207031,
+          119.833740234375
+        ]
+      ],
+      "collar_box_heuristic": [
+        112,
+        168,
+        18,
+        16
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.291164275137103,
+          -0.045404959668721,
+          3.7478328957872264
+        ],
+        [
+          0.045404959668721,
+          1.291164275137103,
+          -2.8815284827091148
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/008.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "2b03865d6e04991b780805e45e4408cf55b5152a96ec040cc3ec8ee11b01d0fd",
+      "metrics": {
+        "eye_y": 0.41999999999999993,
+        "eye_x": 0.4999999999999999,
+        "mouth_y": 0.6130681603477947,
+        "interocular": 0.17983495566076893,
+        "eye_mouth_distance": 0.1931065011455161
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0099945068359375
+    },
+    {
+      "id": "009",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/009.png",
+      "source_sha256": "ba818e3b66f542e2f658cbd81eb04b8b9e605865f5670cc47ab53b3291cd0c30",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9270224571228027,
+      "face_box": [
+        85.97836303710938,
+        41.44316101074219,
+        88.01702117919922,
+        111.03341674804688
+      ],
+      "landmarks_source256": [
+        [
+          121.98393249511719,
+          80.1996841430664
+        ],
+        [
+          155.68460083007812,
+          79.52549743652344
+        ],
+        [
+          146.84539794921875,
+          101.1031265258789
+        ],
+        [
+          126.56703186035156,
+          120.34857940673828
+        ],
+        [
+          156.39370727539062,
+          119.25047302246094
+        ]
+      ],
+      "collar_box_heuristic": [
+        113,
+        170,
+        18,
+        10
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.3319951033434467,
+          -0.06005911760857714,
+          -52.130086638088414
+        ],
+        [
+          0.06005911760857714,
+          1.3319951033434467,
+          -7.1948434219177955
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/009.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "bc891fa2db8c481b833e329467751692b2cd311857a7b6c3dd41dc97a918910d",
+      "metrics": {
+        "eye_y": 0.42000000000000004,
+        "eye_x": 0.5000000000000001,
+        "mouth_y": 0.6284168946639668,
+        "interocular": 0.17556142227133995,
+        "eye_mouth_distance": 0.20846330345433597
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0071258544921875
+    },
+    {
+      "id": "010",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/010.png",
+      "source_sha256": "247d4c3650f7c82c9a19cfe2d7e76040c17349226e2f3a55d5c4562a64520187",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9221671223640442,
+      "face_box": [
+        77.5047607421875,
+        41.488014221191406,
+        85.40792846679688,
+        107.09329223632812
+      ],
+      "landmarks_source256": [
+        [
+          99.50973510742188,
+          81.36293029785156
+        ],
+        [
+          139.0782012939453,
+          80.63101196289062
+        ],
+        [
+          120.02344512939453,
+          102.62953186035156
+        ],
+        [
+          105.37467956542969,
+          120.13822937011719
+        ],
+        [
+          140.29136657714844,
+          119.28924560546875
+        ]
+      ],
+      "collar_box_heuristic": [
+        116,
+        173,
+        30,
+        17
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.2077579770600428,
+          -0.06589112392221513,
+          -10.741260247447343
+        ],
+        [
+          0.06589112392221513,
+          1.2077579770600428,
+          1.8348483577082817
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/010.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "e122da551c12a2c1dfeb5ea1c9ed282cc0c3e7b7b677aff037b14289fa15a556",
+      "metrics": {
+        "eye_y": 0.42,
+        "eye_x": 0.49999999999999994,
+        "mouth_y": 0.6035690457702841,
+        "interocular": 0.1869858798390041,
+        "eye_mouth_distance": 0.1836924219873769
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.03619384765625
+    },
+    {
+      "id": "011",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/011.png",
+      "source_sha256": "0c48df51202b55054885132ce6f7e71d5979faf3d19704f6e02de4e19bae4f2b",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9161708950996399,
+      "face_box": [
+        70.30204772949219,
+        48.0837287902832,
+        87.15943145751953,
+        109.65239715576172
+      ],
+      "landmarks_source256": [
+        [
+          89.8335952758789,
+          91.15132141113281
+        ],
+        [
+          127.15088653564453,
+          89.87150573730469
+        ],
+        [
+          107.29669189453125,
+          111.92803955078125
+        ],
+        [
+          95.166259765625,
+          129.27688598632812
+        ],
+        [
+          127.69227600097656,
+          127.471435546875
+        ]
+      ],
+      "collar_box_heuristic": [
+        101,
+        160,
+        40,
+        32
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.288207021817535,
+          -0.07225543409170265,
+          -5.2205250694630365
+        ],
+        [
+          0.07225543409170265,
+          1.288207021817535,
+          -16.916592483166937
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/011.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "8e809191274a9e70fbbe31ea03417b943a659b9e30537bad06792980a70d0467",
+      "metrics": {
+        "eye_y": 0.42000000000000004,
+        "eye_x": 0.5,
+        "mouth_y": 0.6113565349911361,
+        "interocular": 0.1881885316842392,
+        "eye_mouth_distance": 0.19140029515284346
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "012",
+      "split": "validation_only",
+      "source": "research/data/validation12/source/012.png",
+      "source_sha256": "7c0f050148691c5c17d1ce6ecb4d9b03555087b77c4591600e79990a0e1b3050",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "detector_confidence": 0.9236440062522888,
+      "face_box": [
+        100.23309326171875,
+        47.38774108886719,
+        83.50850677490234,
+        115.11029052734375
+      ],
+      "landmarks_source256": [
+        [
+          133.36129760742188,
+          94.65362548828125
+        ],
+        [
+          170.72940063476562,
+          94.27899169921875
+        ],
+        [
+          159.10792541503906,
+          120.29448699951172
+        ],
+        [
+          135.8833465576172,
+          134.42214965820312
+        ],
+        [
+          166.61758422851562,
+          134.51185607910156
+        ]
+      ],
+      "collar_box_heuristic": [
+        122,
+        176,
+        12,
+        20
+      ],
+      "collar_fallback_used": false,
+      "matrix_source256_to_output256": [
+        [
+          1.3078908820753206,
+          0.007104169672143429,
+          -71.52983046198838
+        ],
+        [
+          -0.007104169672143429,
+          1.3078908820753206,
+          -14.951467715062577
+        ]
+      ],
+      "output": "research/data/validation12/aligned256/012.png",
+      "output_dimensions": [
+        256,
+        256
+      ],
+      "output_sha256": "635710afab8297c4f419fbfbd0123dcd862e54289a75f3e1d51839ead77e7d90",
+      "metrics": {
+        "eye_y": 0.42000000000000004,
+        "eye_x": 0.5000000000000002,
+        "mouth_y": 0.6243835558894563,
+        "interocular": 0.19092413410566,
+        "eye_mouth_distance": 0.2044048584751987
+      },
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0
+    }
+  ]
+}

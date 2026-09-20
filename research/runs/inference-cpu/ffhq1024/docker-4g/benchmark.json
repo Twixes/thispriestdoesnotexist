@@ -1,0 +1,50 @@
+{
+  "model": {
+    "status": "ready",
+    "model_version": "ffhq1024-unadapted-benchmark",
+    "model_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+    "training_step": 0,
+    "reviewed": false,
+    "device": "cpu",
+    "resolution": 1024
+  },
+  "platform": "Linux-7.0.14-orbstack-00380-ga7e0a2dc9535-x86_64-with-glibc2.41",
+  "torch": "2.14.0+cpu",
+  "threads": 1,
+  "model_load_seconds": 2.720758497999668,
+  "peak_rss_bytes": 1232060416,
+  "median_warm_seconds": 4.476326173999951,
+  "max_warm_seconds": 4.528740741000547,
+  "unique_output_hashes": 4,
+  "generations": [
+    {
+      "sample": "sample-000.webp",
+      "seed": "56ed8a605404a40908b06b277024233fe975aa5fb882597388200844290f865f",
+      "seconds": 5.320284929000081,
+      "bytes": 131166,
+      "sha256": "97b58a557dd9e2f13583f14e37658b9e49b3001817f2596b070a90ed0a8dd689"
+    },
+    {
+      "sample": "sample-001.webp",
+      "seed": "9c8cbfac85a73dbcbc0db940d825794a97abee373bccf079ec38219eeb40e06b",
+      "seconds": 4.441417712000657,
+      "bytes": 127050,
+      "sha256": "a3e18a5015d24c80ab94f9b0883ca4dda6aab495c1458c2d5027fe1a0d109fc8"
+    },
+    {
+      "sample": "sample-002.webp",
+      "seed": "25a5656ee7914252f9e6a81f81018d338c20e5ca7075fb495a1eb1c54cc6ad20",
+      "seconds": 4.476326173999951,
+      "bytes": 109422,
+      "sha256": "9469812e8ae0be5a83274184bdc896235a3fb1df25361d4d494d12822a079216"
+    },
+    {
+      "sample": "sample-003.webp",
+      "seed": "31df35c952a336d2369277128c0a8865a3083a9cfe09206b8bbcef6ef6a844d1",
+      "seconds": 4.528740741000547,
+      "bytes": 134196,
+      "sha256": "56d6fa9c62e0c2720afd1f0d632f77f784966b061a873ece7d8809f1e70d5acd"
+    }
+  ],
+  "interpretation": "Local CPU measurement, not a production-host benchmark or visual quality approval."
+}

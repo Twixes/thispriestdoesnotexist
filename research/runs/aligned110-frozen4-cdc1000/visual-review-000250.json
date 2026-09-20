@@ -1,0 +1,13 @@
+{
+  "step": 250,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grid_sha256": "43be9c4e2a5d18cd79d977f2fff50b34301c03a25fd90070624c432a7e741819",
+  "findings": [
+    "Broader visible source variation than later unregularized control, but comparisons require matching image count",
+    "Many source appearances remain outside adult male priest target",
+    "Severe distorted/overlapping facial features persist",
+    "Source resemblance alone is not acceptable diversity or photographic quality"
+  ],
+  "decision": "Do not promote. Continue bounded experiment and compare at matching kimg; no final-convergence conclusion at2kimg."
+}

@@ -1,0 +1,29 @@
+{
+  "reviewer": "Codex visual inspection",
+  "scope": "All12originalimages in generated-image outputs and labeled contact sheet",
+  "originals_accepted_for_validation": true,
+  "training_eligible": false,
+  "checks": [
+    "Photorealistic fictional adult male portraits",
+    "Distinct appearances across the set",
+    "Visible white clerical collars",
+    "Bare heads without hats",
+    "Monochrome photographs without labels or watermarks",
+    "No conspicuous facial/anatomical artifacts in reviewed originals"
+  ],
+  "image_sha256": {
+    "001": "24a377a5ecfb4f4c77b3eab9c4e4f1fd1014c682e6c1274cb16eb72731de22c7",
+    "002": "2e9ca89138e0079343ea55dbbe15f24f866539f4478860a8f0a829a699584473",
+    "003": "7aab1ede6b67adaced6909b55729344068ce2e03d3d1d8632cd03b60ab5bc7f7",
+    "004": "bc37ecfd2469f0c9ed7deaa7e264cf01db79ebceed41a52872e5eb3ef7f1991a",
+    "005": "3eba42380d17614543f898bf14968f29c73c5e55c7fd1f291ac661ff3662f064",
+    "006": "2a40de8a30c5aa7b652ed46aced41e8e8011d281acd7e4ce3b79bac01a80f094",
+    "007": "bcb2421766e8522ab43f5cfe974c6b5e39e2a879e4b6c941282b52d0db35df87",
+    "008": "613c85052a8830e3f5c4cb55ca369ebe2a0250c3229676d93388317cc42ba0aa",
+    "009": "ba818e3b66f542e2f658cbd81eb04b8b9e605865f5670cc47ab53b3291cd0c30",
+    "010": "247d4c3650f7c82c9a19cfe2d7e76040c17349226e2f3a55d5c4562a64520187",
+    "011": "0c48df51202b55054885132ce6f7e71d5979faf3d19704f6e02de4e19bae4f2b",
+    "012": "7c0f050148691c5c17d1ce6ecb4d9b03555087b77c4591600e79990a0e1b3050"
+  },
+  "preprocessing_caveat": "Accepted original images do not waive reflection/framing caveats documented separately in alignment-review.md."
+}
