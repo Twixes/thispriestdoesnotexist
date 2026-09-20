@@ -1,0 +1,40 @@
+{
+  "step": 1000,
+  "images_seen": 8000,
+  "resume_sha256": "fef44b363db5387873474209aa3bcdd8f27aea07d7c54d65c2e819a3fe821a6c",
+  "generator_sha256": "0a27f647e972e64875103d2aebf7f2dfd2d6e48c9895d389ade724a6640f1bd5",
+  "validator_sha256": "70b1afb37adf923cac44da95d39a00b514e63b431150ace954ee4cc1f6a20f55",
+  "finite_state_tensor_counts": {
+    "G": 144,
+    "D": 64,
+    "G_ema": 144
+  },
+  "finite_optimizer_tensor_counts": {
+    "G_opt": 330,
+    "D_opt": 93
+  },
+  "generator_ema_matches_resume": true,
+  "required_state_keys_present": [
+    "D",
+    "D_opt",
+    "G",
+    "G_ema",
+    "G_opt",
+    "aug_p",
+    "cdc_base_sha256",
+    "cdc_batch",
+    "cdc_blocks",
+    "cdc_config",
+    "cdc_rng",
+    "cdc_weight",
+    "device_rng",
+    "freeze_d_layers",
+    "images_seen",
+    "numpy_rng",
+    "python_rng",
+    "step",
+    "torch_rng"
+  ],
+  "quality_approved": false,
+  "scope": "Trusted local CPU tensor and export consistency check; no optimizer update or active-process change"
+}

@@ -40,6 +40,14 @@ trainer. The new reference256-paper-b64 baseline includes both PL and R1 with th
 upstream augmentation pipeline; its measured throughput must be reported separately.
 Its planned 15,625 batch-64 updates equal one million presentations.
 
+The new loop's first measured complete regularization cycle (steps 17–32)
+processed 1,024 presentations in 585.61 seconds, including 16 Gmain, 16 Dmain,
+four PL and one R1 phase. A linear extrapolation is **6.62 days per million**
+while the CDC job shares the local GPU. This is only one early cycle, excludes
+checkpoint/preview overhead, and may change with load and training state.
+See `runs/reference256-paper-b64/throughput-step32.json`; do not substitute
+the old custom-loop timing or treat either estimate as a quality guarantee.
+
 The earlier short-run expectations were too optimistic. Longer training alone
 does not establish that facial artifacts or lost diversity will recover. Assess
 preservation of pretrained facial quality, target-data diversity, and adaptation

@@ -1,0 +1,37 @@
+{
+  "scope": "Early complete 16-update regularization cycle, concurrently with CDC training; not isolated sustained throughput",
+  "steps": [
+    17,
+    32
+  ],
+  "images_presented": 1024,
+  "elapsed_seconds": 585.6055473339511,
+  "phase_totals": {
+    "Gmain": {
+      "calls": 16,
+      "seconds": 120.44780941819772
+    },
+    "Greg": {
+      "calls": 4,
+      "seconds": 156.0667122080922
+    },
+    "Dmain": {
+      "calls": 16,
+      "seconds": 168.9845968761947
+    },
+    "Dreg": {
+      "calls": 1,
+      "seconds": 133.93788662494626
+    }
+  },
+  "seconds_per_kimg": 571.8804173183116,
+  "linear_days_per_million_presentations": 6.618986311554533,
+  "metrics_prefix_through_step32_sha256": "944a6fc7f78ec83a11f4043ae84ed59c712d8425e4b9094d58c2b9dd532d946f",
+  "limitations": [
+    "Only one early full regularization cycle",
+    "Concurrent MPS training competes for resources",
+    "Does not include checkpoint or preview overhead",
+    "Augmentation probability, memory pressure, interruptions and later runtime may change speed",
+    "Training duration does not guarantee visual quality; inspect at every 8 kimg checkpoint before choosing to continue"
+  ]
+}

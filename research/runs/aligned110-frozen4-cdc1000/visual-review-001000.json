@@ -1,0 +1,19 @@
+{
+  "step": 1000,
+  "images_seen": 8000,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grids_sha256": {
+    "samples-001000.png": "857bff4414f5671986b117ad2101ad7e5a33918c79b7a42158a2823b9cc1cab5",
+    "samples-001000-untruncated.png": "5b7a3058ea14f944956ebf12d26184a58eefb990e9d16901b5b7a3ac52943392",
+    "samples-001000-raw.png": "49c26a4126d1e4d4a58286218b53362b16d8402ece38fa622ca3d099d7541455"
+  },
+  "findings": [
+    "EMA psi=.7 faces have become more defined since step 500, and all 16 show clerical collars",
+    "Compared at the same 8 kimg with the paused control, some source hairstyle and apparent-age variation remains more visible",
+    "Ghosted eyes, mouths, glasses and face edges remain prominent; several faces share very similar structure",
+    "Raw and untruncated EMA grids still include severe facial distortions and malformed clothing/backgrounds",
+    "The small fixed-latent grids do not establish identity diversity or quality over unseen latents"
+  ],
+  "decision": "Do not promote. Continue the existing bounded 48-kimg CDC experiment and inspect the next checkpoints while the independent full-reference baseline runs. No claim of final convergence or proven superiority over the control."
+}
