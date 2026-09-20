@@ -1,4 +1,4 @@
-const COUNT = 12;
+const COUNT = 50;
 const STORAGE_KEY = 'last-priest';
 const portrait = document.querySelector('#portrait');
 let current = -1;
