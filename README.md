@@ -1,6 +1,6 @@
 # This Priest Does Not Exist
 
-A personal static website: twelve fictional adult priest portraits, inspired by the black-and-white Calendario Romano souvenir calendars. Each reload or button press randomly chooses a portrait and avoids immediately repeating the previous one in that tab.
+A personal static website: twelve fictional adult priest portraits, inspired by the black-and-white Calendario Romano souvenir calendars. Each reload randomly chooses a portrait and avoids immediately repeating the previous one in that tab.
 
 Plain HTML, CSS, JavaScript, and pre-generated WebP images. No framework, backend, database, analytics, or image-generation calls at runtime.
 
