@@ -1,0 +1,92 @@
+{
+  "model_sha256": "a205a346e86a9ddaae702e118097d014b7b8bd719491396a162cca438f2f524c",
+  "network": "G_ema",
+  "resolution": 1024,
+  "device": "cpu",
+  "cpu_threads": 2,
+  "interop_threads": 1,
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "machine": "arm64",
+  "torch_version": "2.14.0",
+  "noise_mode": "const",
+  "truncation_psi": 1.0,
+  "force_fp32": true,
+  "load_and_release_unused_networks_seconds": 0.14006291690748185,
+  "warm_median_forward_seconds": 0.7823634999804199,
+  "warm_mean_forward_seconds": 0.7561150693024198,
+  "peak_process_rss_bytes": 3848749056,
+  "peak_rss_includes_full_pickle_initial_load": true,
+  "generator_parameter_bytes": 121480240,
+  "script_sha256": "f84a72db422979c077169562fd74e1ae9f1319b17836515b1e37c566cc9db11f",
+  "production_approved": false,
+  "records": [
+    {
+      "seed": 2026092100,
+      "latent_rng": "numpy PCG64 standard_normal float64 cast float32",
+      "kind": "cold",
+      "forward_seconds": 1.3992976249428466,
+      "webp_encode_seconds": 0.08363787503913045,
+      "webp_bytes": 158862,
+      "shape": [
+        1,
+        3,
+        1024,
+        1024
+      ],
+      "image_path": "research/runs/inference-cpu/ffhq1024/threads-2/seed-2026092100.png",
+      "png_sha256": "6b267176bedf58f0ff1b93b6eed15ef53ef3a0f233385afe8aa91b3afda928d5",
+      "rgb_pixels_sha256": "ec1039f0b8b3902f5a9255faff86b91508dd048e2e2160536013753d7aa3f9bd"
+    },
+    {
+      "seed": 2026092101,
+      "latent_rng": "numpy PCG64 standard_normal float64 cast float32",
+      "kind": "warm",
+      "forward_seconds": 0.929482416016981,
+      "webp_encode_seconds": 0.060601582983508706,
+      "webp_bytes": 194040,
+      "shape": [
+        1,
+        3,
+        1024,
+        1024
+      ],
+      "image_path": "research/runs/inference-cpu/ffhq1024/threads-2/seed-2026092101.png",
+      "png_sha256": "c5b21d94c75dd69a30e2ef29d593b5b07402be294024418351e0f95d880ad60e",
+      "rgb_pixels_sha256": "2bafd62603d334cd85805186defc83a814691bdf6ae9331f9a8b4a7d13306a2c"
+    },
+    {
+      "seed": 2026092102,
+      "latent_rng": "numpy PCG64 standard_normal float64 cast float32",
+      "kind": "warm",
+      "forward_seconds": 0.7823634999804199,
+      "webp_encode_seconds": 0.049183957977220416,
+      "webp_bytes": 90570,
+      "shape": [
+        1,
+        3,
+        1024,
+        1024
+      ],
+      "image_path": "research/runs/inference-cpu/ffhq1024/threads-2/seed-2026092102.png",
+      "png_sha256": "267f502d31fac44b54844620dea4b2bf5c0839ed277c89844ad5a4b9831fa0e7",
+      "rgb_pixels_sha256": "c9ba0eb07f5c447e20b0f1cdbcd9a0e9820b43ceb7a563b99b4a53624821b7a0"
+    },
+    {
+      "seed": 2026092103,
+      "latent_rng": "numpy PCG64 standard_normal float64 cast float32",
+      "kind": "warm",
+      "forward_seconds": 0.5564992919098586,
+      "webp_encode_seconds": 0.05420766689348966,
+      "webp_bytes": 112662,
+      "shape": [
+        1,
+        3,
+        1024,
+        1024
+      ],
+      "image_path": "research/runs/inference-cpu/ffhq1024/threads-2/seed-2026092103.png",
+      "png_sha256": "73047dcbb98cbe3ad3f84cc040986e695af82cf1eba25f8c018005113e00a6ea",
+      "rgb_pixels_sha256": "2f5cdb17a724ff107a06f4b3ece2c5fb3e3a788edbb840e46f45d4cd8790c8b9"
+    }
+  ]
+}

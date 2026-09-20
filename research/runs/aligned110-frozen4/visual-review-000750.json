@@ -1,0 +1,15 @@
+{
+  "step": 750,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grids": {
+    "samples-000750.png": "cc9779c0740a17f1dab8ad7a2cf4139959723b50701562d47020fe5e143814a5"
+  },
+  "findings": [
+    "Eyes and mouths are more coherent than step500, though ghosting and malformed details remain in several samples",
+    "Strong similarity of face shape, hairstyle and facial identity across different latents persists",
+    "Target collars and monochrome style remain consistent",
+    "Improved early facial structure does not satisfy reference-level quality or diversity"
+  ],
+  "decision": "Continue bounded control and compare fresh-base CDC at matching kimg. Do not promote; no claim of final convergence failure."
+}

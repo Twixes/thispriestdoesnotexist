@@ -1,0 +1,141 @@
+{
+  "device": "cpu",
+  "threads": 2,
+  "batch": 1,
+  "resolution": 256,
+  "torch_version": "2.14.0",
+  "augmentation": "color",
+  "augmentation_probability": 0.5,
+  "pl_batch_shrink": 1,
+  "r1_gamma": 1,
+  "pl_weight": 2,
+  "style_mixing_probability": 0.9,
+  "source_hashes": {
+    "training/loss.py": "1bd68d7dc1c92c1b78b91f193a45a433b1ff374614f91909ea8cb88eac7bc2d7",
+    "training/augment.py": "fd81c871a9bfbb7feaad138b1e875db05c640060bdbf0342247d209eb48ba8f9",
+    "training/training_loop.py": "0b589a731712c51791eb22efe0dc1ee6856bf3e9335920db02a3e38dee909eb3"
+  },
+  "harness_sha256": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+  "phases": [
+    {
+      "phase": "Gmain",
+      "gain": 1,
+      "seconds": 1.3708159159868956,
+      "finite_gradients": true,
+      "gradient_l2": 13.394962313147598,
+      "gradient_tensors": 110,
+      "parameter_updated": true,
+      "pl_mean": 0.0,
+      "memory": {
+        "process_peak_rss_bytes": 1692909568
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -6.099724292755127,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 6.101965427398682
+      }
+    },
+    {
+      "phase": "Greg",
+      "gain": 4,
+      "seconds": 3.4043446669820696,
+      "finite_gradients": true,
+      "gradient_l2": 3.5808072532063675,
+      "gradient_tensors": 110,
+      "parameter_updated": true,
+      "pl_mean": 0.005341745913028717,
+      "memory": {
+        "process_peak_rss_bytes": 2166816768
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -6.099724292755127,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 6.101965427398682,
+        "Loss/pl_penalty": 0.27966418862342834,
+        "Loss/G/reg": 0.5593283772468567
+      }
+    },
+    {
+      "phase": "Dmain",
+      "gain": 1,
+      "seconds": 1.7942872089333832,
+      "finite_gradients": true,
+      "gradient_l2": 15.067169013298034,
+      "gradient_tensors": 38,
+      "parameter_updated": true,
+      "pl_mean": 0.005341745913028717,
+      "memory": {
+        "process_peak_rss_bytes": 2166816768
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -1.781258225440979,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 6.101965427398682,
+        "Loss/pl_penalty": 0.27966418862342834,
+        "Loss/G/reg": 0.5593283772468567,
+        "Loss/scores/real": -1.5503660440444946,
+        "Loss/signs/real": -1.0,
+        "Loss/D/loss": 1.8984360694885254
+      }
+    },
+    {
+      "phase": "Dreg",
+      "gain": 16,
+      "seconds": 2.186763208010234,
+      "finite_gradients": true,
+      "gradient_l2": 18.1014254590288,
+      "gradient_tensors": 38,
+      "parameter_updated": true,
+      "pl_mean": 0.005341745913028717,
+      "memory": {
+        "process_peak_rss_bytes": 2279391232
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -1.781258225440979,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 6.101965427398682,
+        "Loss/pl_penalty": 0.27966418862342834,
+        "Loss/G/reg": 0.5593283772468567,
+        "Loss/scores/real": 3.6002774238586426,
+        "Loss/signs/real": 1.0,
+        "Loss/D/loss": 1.8984360694885254,
+        "Loss/r1_penalty": 1.0090914964675903,
+        "Loss/D/reg": 0.5045457482337952
+      }
+    }
+  ],
+  "bgc_second_derivative_probe": {
+    "passed": true,
+    "finite": true,
+    "resolution": 32
+  },
+  "optimizers": {
+    "G": {
+      "base_lr": 0.0025,
+      "lazy_ratio": 0.8,
+      "lr": 0.002,
+      "betas": [
+        0.0,
+        0.9919919678228657
+      ],
+      "same_optimizer_for_main_and_reg": true
+    },
+    "D": {
+      "base_lr": 0.0025,
+      "lazy_ratio": 0.9411764705882353,
+      "lr": 0.0023529411764705885,
+      "betas": [
+        0.0,
+        0.9905854573074332
+      ],
+      "same_optimizer_for_main_and_reg": true
+    }
+  },
+  "memory_before_phases": {
+    "process_peak_rss_bytes": 984711168
+  },
+  "phase_seconds_total": 8.761183458031155,
+  "all_four_phases_passed": true,
+  "pl_second_derivative_passed": true,
+  "r1_second_derivative_passed": true
+}

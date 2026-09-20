@@ -1,0 +1,50 @@
+{
+  "model": {
+    "status": "ready",
+    "model_version": "ffhq1024-unadapted-benchmark",
+    "model_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+    "training_step": 0,
+    "reviewed": false,
+    "device": "cpu",
+    "resolution": 1024
+  },
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "torch": "2.14.0",
+  "threads": 1,
+  "model_load_seconds": 0.3605221250327304,
+  "peak_rss_bytes": 3671277568,
+  "median_warm_seconds": 0.9956536249956116,
+  "max_warm_seconds": 1.3929633749648929,
+  "unique_output_hashes": 4,
+  "generations": [
+    {
+      "sample": "sample-000.webp",
+      "seed": "5c10351f27acbcecae72e0f6957e76e3e30fd01ccdb2c2c26cd38b7faf488a30",
+      "seconds": 2.581335041904822,
+      "bytes": 110696,
+      "sha256": "f9e576053cb4976db02ae55e8ec5303ee6425c978cc1c3b032886b85e9ff968b"
+    },
+    {
+      "sample": "sample-001.webp",
+      "seed": "7b9de6fb4450be674c19264cfc969b43199438e250db05f7ca139f8516ee4252",
+      "seconds": 1.3929633749648929,
+      "bytes": 114230,
+      "sha256": "cdb9515a795793e9a6f70ac81710c59f324d3ccda423c1460f54be13f069a248"
+    },
+    {
+      "sample": "sample-002.webp",
+      "seed": "2b355b2fc28815be9797063c9d66d498af68f9dcb99375845ee0f1c4776b983e",
+      "seconds": 0.9956536249956116,
+      "bytes": 98964,
+      "sha256": "924d72a496b6d72c2ee77e48cc61e6d0ea8f51e60b75d894be63ecc5e1e9206e"
+    },
+    {
+      "sample": "sample-003.webp",
+      "seed": "16fe7f7fc4a9c17e18b8014c9bc4e02e519266f5dbf940e96831408d9c9796c0",
+      "seconds": 0.9103057079482824,
+      "bytes": 94112,
+      "sha256": "847eb376fa65a0b01f4fdbf62ef77c84cc6fd4669cd77c9daebcc5376a99cc49"
+    }
+  ],
+  "interpretation": "Local CPU measurement, not a production-host benchmark or visual quality approval."
+}

@@ -1,0 +1,16 @@
+{
+  "model": "NVIDIA original StyleGAN2 FFHQ at 1024px",
+  "source_url": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl",
+  "path": "research/models/ffhq1024.pkl",
+  "sha256": "a205a346e86a9ddaae702e118097d014b7b8bd719491396a162cca438f2f524c",
+  "bytes": 381624121,
+  "verified_resolution": 1024,
+  "verified_channels": 3,
+  "loaded_network": "G_ema",
+  "license": "NVIDIA Source Code License: research/evaluation use only; not MIT",
+  "license_file": "research/vendor/stylegan2-ada-pytorch/LICENSE.txt",
+  "license_url": "https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/LICENSE.txt",
+  "verified_on": "2026-09-21",
+  "production_approved": false,
+  "purpose": "CPU feasibility benchmark of original FFHQ source; not a trained priest generator"
+}

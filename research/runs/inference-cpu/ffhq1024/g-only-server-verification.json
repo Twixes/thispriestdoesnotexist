@@ -1,0 +1,36 @@
+{
+  "gate": {
+    "production_without_override": "refused",
+    "reason": "Production requires a trained, visually reviewed model matching this checksum"
+  },
+  "outputs": [
+    {
+      "path": "research/runs/inference-cpu/ffhq1024/g-only-server-threads-1/sample-000.webp",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "f9e576053cb4976db02ae55e8ec5303ee6425c978cc1c3b032886b85e9ff968b"
+    },
+    {
+      "path": "research/runs/inference-cpu/ffhq1024/g-only-server-threads-1/sample-001.webp",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "cdb9515a795793e9a6f70ac81710c59f324d3ccda423c1460f54be13f069a248"
+    },
+    {
+      "path": "research/runs/inference-cpu/ffhq1024/g-only-server-threads-1/sample-002.webp",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "924d72a496b6d72c2ee77e48cc61e6d0ea8f51e60b75d894be63ecc5e1e9206e"
+    },
+    {
+      "path": "research/runs/inference-cpu/ffhq1024/g-only-server-threads-1/sample-003.webp",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "847eb376fa65a0b01f4fdbf62ef77c84cc6fd4669cd77c9daebcc5376a99cc49"
+    }
+  ]
+}

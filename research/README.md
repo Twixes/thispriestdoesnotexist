@@ -36,6 +36,8 @@ On the owner's Apple M5 Pro (48 GB), warm 256px inference measured 0.128–0.165
 
 The first benchmark attempt hit a PyTorch optimizer parameter-type error before training; its log is retained and the float parameter was corrected. A successful rerun is recorded separately.
 
+The verified official FFHQ 1024px checkpoint is now archived with provenance in `models/ffhq1024.pkl`. A research-only generator export passed the actual CPU serving path: warm median 0.996 seconds including WebP encoding and process peak RSS 3.42 GiB on this Mac. This exceeds the inactive Cloudflare candidate's 3 GiB setting. A larger host limit and actual Linux/container measurement are required before deployment; native Mac timing is not a host guarantee. These baseline faces are not a trained priest model and the production gate rejects this unreviewed export. See [1024 benchmark](runs/inference-cpu/ffhq1024/README.md).
+
 ## Evaluation required before production
 
 - Inspect fixed and unseen random latent grids: realistic adult male faces, clearly visible clerical collar, no hats, calendar-style appearance, no frequent artifacts.

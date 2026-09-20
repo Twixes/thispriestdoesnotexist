@@ -1,0 +1,141 @@
+{
+  "device": "cpu",
+  "threads": 2,
+  "batch": 1,
+  "resolution": 256,
+  "torch_version": "2.14.0",
+  "augmentation": "bgc",
+  "augmentation_probability": 0.5,
+  "pl_batch_shrink": 1,
+  "r1_gamma": 1,
+  "pl_weight": 2,
+  "style_mixing_probability": 0.9,
+  "source_hashes": {
+    "training/loss.py": "1bd68d7dc1c92c1b78b91f193a45a433b1ff374614f91909ea8cb88eac7bc2d7",
+    "training/augment.py": "fd81c871a9bfbb7feaad138b1e875db05c640060bdbf0342247d209eb48ba8f9",
+    "training/training_loop.py": "0b589a731712c51791eb22efe0dc1ee6856bf3e9335920db02a3e38dee909eb3"
+  },
+  "harness_sha256": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+  "phases": [
+    {
+      "phase": "Gmain",
+      "gain": 1,
+      "seconds": 0.723518667044118,
+      "finite_gradients": true,
+      "gradient_l2": 11.051971620191036,
+      "gradient_tensors": 110,
+      "parameter_updated": true,
+      "pl_mean": 0.0,
+      "memory": {
+        "process_peak_rss_bytes": 1847820288
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -4.246436595916748,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 4.260650157928467
+      }
+    },
+    {
+      "phase": "Greg",
+      "gain": 4,
+      "seconds": 1.651251917006448,
+      "finite_gradients": true,
+      "gradient_l2": 2.4673640490933786,
+      "gradient_tensors": 110,
+      "parameter_updated": true,
+      "pl_mean": 0.004072727635502815,
+      "memory": {
+        "process_peak_rss_bytes": 2594734080
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -4.246436595916748,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 4.260650157928467,
+        "Loss/pl_penalty": 0.1625702828168869,
+        "Loss/G/reg": 0.3251405656337738
+      }
+    },
+    {
+      "phase": "Dmain",
+      "gain": 1,
+      "seconds": 1.2114494590787217,
+      "finite_gradients": true,
+      "gradient_l2": 18.38958044566849,
+      "gradient_tensors": 38,
+      "parameter_updated": true,
+      "pl_mean": 0.004072727635502815,
+      "memory": {
+        "process_peak_rss_bytes": 2594734080
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -1.685510277748108,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 4.260650157928467,
+        "Loss/pl_penalty": 0.1625702828168869,
+        "Loss/G/reg": 0.3251405656337738,
+        "Loss/scores/real": -2.1256070137023926,
+        "Loss/signs/real": -1.0,
+        "Loss/D/loss": 2.408402442932129
+      }
+    },
+    {
+      "phase": "Dreg",
+      "gain": 16,
+      "seconds": 2.0754429580410942,
+      "finite_gradients": true,
+      "gradient_l2": 8.117991477027504,
+      "gradient_tensors": 38,
+      "parameter_updated": true,
+      "pl_mean": 0.004072727635502815,
+      "memory": {
+        "process_peak_rss_bytes": 2656206848
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -1.685510277748108,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 4.260650157928467,
+        "Loss/pl_penalty": 0.1625702828168869,
+        "Loss/G/reg": 0.3251405656337738,
+        "Loss/scores/real": -1.3034414052963257,
+        "Loss/signs/real": -1.0,
+        "Loss/D/loss": 2.408402442932129,
+        "Loss/r1_penalty": 0.44835683703422546,
+        "Loss/D/reg": 0.22417841851711273
+      }
+    }
+  ],
+  "bgc_second_derivative_probe": {
+    "passed": true,
+    "finite": true,
+    "resolution": 32
+  },
+  "optimizers": {
+    "G": {
+      "base_lr": 0.0025,
+      "lazy_ratio": 0.8,
+      "lr": 0.002,
+      "betas": [
+        0.0,
+        0.9919919678228657
+      ],
+      "same_optimizer_for_main_and_reg": true
+    },
+    "D": {
+      "base_lr": 0.0025,
+      "lazy_ratio": 0.9411764705882353,
+      "lr": 0.0023529411764705885,
+      "betas": [
+        0.0,
+        0.9905854573074332
+      ],
+      "same_optimizer_for_main_and_reg": true
+    }
+  },
+  "memory_before_phases": {
+    "process_peak_rss_bytes": 961904640
+  },
+  "phase_seconds_total": 5.663157125003636,
+  "all_four_phases_passed": true,
+  "pl_second_derivative_passed": true,
+  "r1_second_derivative_passed": true
+}

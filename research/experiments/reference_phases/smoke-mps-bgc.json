@@ -1,0 +1,152 @@
+{
+  "device": "mps",
+  "threads": 2,
+  "batch": 1,
+  "resolution": 256,
+  "torch_version": "2.14.0",
+  "augmentation": "bgc",
+  "augmentation_probability": 0.5,
+  "pl_batch_shrink": 1,
+  "r1_gamma": 1,
+  "pl_weight": 2,
+  "style_mixing_probability": 0.9,
+  "source_hashes": {
+    "training/loss.py": "1bd68d7dc1c92c1b78b91f193a45a433b1ff374614f91909ea8cb88eac7bc2d7",
+    "training/augment.py": "fd81c871a9bfbb7feaad138b1e875db05c640060bdbf0342247d209eb48ba8f9",
+    "training/training_loop.py": "0b589a731712c51791eb22efe0dc1ee6856bf3e9335920db02a3e38dee909eb3"
+  },
+  "harness_sha256": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+  "phases": [
+    {
+      "phase": "Gmain",
+      "gain": 1,
+      "seconds": 5.6501191249117255,
+      "finite_gradients": true,
+      "gradient_l2": 9.906851357005332,
+      "gradient_tensors": 110,
+      "parameter_updated": true,
+      "pl_mean": 0.0,
+      "memory": {
+        "process_peak_rss_bytes": 1379975168,
+        "current_bytes": 496480768,
+        "driver_bytes": 1395884032
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -3.7104105949401855,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 3.7345833778381348
+      }
+    },
+    {
+      "phase": "Greg",
+      "gain": 4,
+      "seconds": 2.845846917014569,
+      "finite_gradients": true,
+      "gradient_l2": 2.082583295014771,
+      "gradient_tensors": 110,
+      "parameter_updated": true,
+      "pl_mean": 0.003742705564945936,
+      "memory": {
+        "process_peak_rss_bytes": 1379975168,
+        "current_bytes": 496808448,
+        "driver_bytes": 2534637568
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -3.7104105949401855,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 3.7345833778381348,
+        "Loss/pl_penalty": 0.13729089498519897,
+        "Loss/G/reg": 0.27458178997039795
+      }
+    },
+    {
+      "phase": "Dmain",
+      "gain": 1,
+      "seconds": 1.0777049589669332,
+      "finite_gradients": true,
+      "gradient_l2": 19.017579179978917,
+      "gradient_tensors": 38,
+      "parameter_updated": true,
+      "pl_mean": 0.003742705564945936,
+      "memory": {
+        "process_peak_rss_bytes": 1379975168,
+        "current_bytes": 787651072,
+        "driver_bytes": 2534932480
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -4.881225109100342,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 3.7345833778381348,
+        "Loss/pl_penalty": 0.13729089498519897,
+        "Loss/G/reg": 0.27458178997039795,
+        "Loss/scores/real": -1.7265211343765259,
+        "Loss/signs/real": -1.0,
+        "Loss/D/loss": 1.897815227508545
+      }
+    },
+    {
+      "phase": "Dreg",
+      "gain": 16,
+      "seconds": 3.987654958036728,
+      "finite_gradients": true,
+      "gradient_l2": 1.582232643497762,
+      "gradient_tensors": 38,
+      "parameter_updated": true,
+      "pl_mean": 0.003742705564945936,
+      "memory": {
+        "process_peak_rss_bytes": 1379975168,
+        "current_bytes": 787913472,
+        "driver_bytes": 2549809152
+      },
+      "reported_statistics": {
+        "Loss/scores/fake": -4.881225109100342,
+        "Loss/signs/fake": -1.0,
+        "Loss/G/loss": 3.7345833778381348,
+        "Loss/pl_penalty": 0.13729089498519897,
+        "Loss/G/reg": 0.27458178997039795,
+        "Loss/scores/real": -0.5652660131454468,
+        "Loss/signs/real": -1.0,
+        "Loss/D/loss": 1.897815227508545,
+        "Loss/r1_penalty": 0.0913410633802414,
+        "Loss/D/reg": 0.0456705316901207
+      }
+    }
+  ],
+  "bgc_second_derivative_probe": {
+    "passed": true,
+    "finite": true,
+    "resolution": 32
+  },
+  "reporting_adapter": "detached statistics copied to CPU; loss tensors unchanged",
+  "optimizers": {
+    "G": {
+      "base_lr": 0.0025,
+      "lazy_ratio": 0.8,
+      "lr": 0.002,
+      "betas": [
+        0.0,
+        0.9919919678228657
+      ],
+      "same_optimizer_for_main_and_reg": true
+    },
+    "D": {
+      "base_lr": 0.0025,
+      "lazy_ratio": 0.9411764705882353,
+      "lr": 0.0023529411764705885,
+      "betas": [
+        0.0,
+        0.9905854573074332
+      ],
+      "same_optimizer_for_main_and_reg": true
+    }
+  },
+  "memory_before_phases": {
+    "process_peak_rss_bytes": 1123663872,
+    "current_bytes": 197876736,
+    "driver_bytes": 1278197760
+  },
+  "phase_seconds_total": 13.571647832985036,
+  "all_four_phases_passed": true,
+  "pl_second_derivative_passed": true,
+  "r1_second_derivative_passed": true
+}
