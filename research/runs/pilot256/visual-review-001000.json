@@ -1,0 +1,13 @@
+{
+  "step": 1000,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "sample_count": 16,
+  "image_sha256": "4989e120eb965c11336c3c6c14d6b74a254e70db512a19bb417a0f0c9528cd66",
+  "findings": [
+    "Collars consistently present",
+    "Ghosted facial features remain",
+    "Conspicuously repeated facial structure, hair, clothing and composition across fixed latent codes"
+  ],
+  "decision": "Intentional early stop after durable checkpoint1000; fresh pretrained restart using110 collar-preserving aligned portraits and FreezeD4. Not stopped due to observation timeout."
+}

@@ -1,0 +1,20 @@
+{
+  "step": 1,
+  "resumed": false,
+  "freeze_d_layers": 4,
+  "frozen_tensor_count": 7,
+  "frozen_tensors_bitwise_unchanged": true,
+  "trainable_tensor_updated": "b128.conv0.weight",
+  "optimizer_excludes_buffers": true,
+  "r1_finite": true,
+  "all_weights_finite": true,
+  "frozen_sha256": {
+    "b256.conv0.bias": "afbd494d0e0366b7612bc29db4328075b6c289a55868d2f2c21bbac3833f6037",
+    "b256.conv0.weight": "a0909dcf22f02cbeedb77b069fc5088446c8af756232671e2e5e35020592ce6c",
+    "b256.conv1.bias": "397c4f7f72fbf90f324eb2b0dab7536a83fa046cdcde83598c6c42575195e8b8",
+    "b256.conv1.weight": "4ec738816279a72962d82d370781ca1bc023116e64f94f72c246ed64f1a029d6",
+    "b256.fromrgb.bias": "c0caa5c4a85dac1b2e5a0f28000f3e3f60e401b3a23827c12ddb9bb0a3fc8049",
+    "b256.fromrgb.weight": "6cdfdf416a13703677dc4ebad6d092b9027a989c0dc23b5a84881695c02195a2",
+    "b256.skip.weight": "b536ce08cbc1be5ae3c06572107a990a2dc289111f9c3076801b06d7aea0eacf"
+  }
+}

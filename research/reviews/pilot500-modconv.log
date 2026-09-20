@@ -1,0 +1,14 @@
+{
+  "step": 500,
+  "checkpoint_sha256": "22d4b19933c8efbcfe3ee648ce382ebaa4794c1c77b499da8c6c6559e3de846c",
+  "device": "cpu",
+  "threads": 2,
+  "seed": 88142026,
+  "same_styles": true,
+  "max_absolute_difference": 6.86943531036377e-05,
+  "mean_absolute_difference": 8.11827533198084e-07,
+  "max_difference_in_8bit_units": 0.008758530020713806,
+  "finite": true,
+  "allclose_at_1e_minus_4": true,
+  "limitation": "CPU forward equivalence only; does not prove MPS backward equivalence."
+}

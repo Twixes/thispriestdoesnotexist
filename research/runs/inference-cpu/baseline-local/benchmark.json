@@ -1,0 +1,50 @@
+{
+  "model": {
+    "status": "ready",
+    "model_version": "untrained-baseline-plumbing-only",
+    "model_sha256": "e88b7b33f8c1bf0f48aea57869113c261188358c6eabd8eee6b07c226222ca6b",
+    "training_step": 0,
+    "reviewed": false,
+    "device": "cpu",
+    "resolution": 256
+  },
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "torch": "2.14.0",
+  "threads": 2,
+  "model_load_seconds": 0.2250215420499444,
+  "peak_rss_bytes": 751026176,
+  "median_warm_seconds": 0.10766487498767674,
+  "max_warm_seconds": 0.132336208014749,
+  "unique_output_hashes": 4,
+  "generations": [
+    {
+      "sample": "sample-000.webp",
+      "seed": "041c1ecd2b877b911b68758ad47a46eb5b242c4bb3d36f9f3134bafaeeebb536",
+      "seconds": 0.25190425000619143,
+      "bytes": 16762,
+      "sha256": "72766790c223224c7a4dff57edf4c5c47b4dc89d4319e818033e4f203469ac0d"
+    },
+    {
+      "sample": "sample-001.webp",
+      "seed": "9081648bae0af94c70558e218aaa8fbbb1f03af3802a6003edf7f7bb216facde",
+      "seconds": 0.10447020793799311,
+      "bytes": 13648,
+      "sha256": "22934a568708b9986ffffda8ab9ec6ecaff50d4c9a892bb931afbc29d7f4b106"
+    },
+    {
+      "sample": "sample-002.webp",
+      "seed": "e3f9c22d65bce4b1424b3e57204b96a7308fc46e30763f2cec72330426322ac2",
+      "seconds": 0.10766487498767674,
+      "bytes": 14104,
+      "sha256": "8488a776a81b46a045b401ef4e37c0ebd6ca2f4d8365a3880cefb19dcd0bc6bb"
+    },
+    {
+      "sample": "sample-003.webp",
+      "seed": "aaa57014cd1b71a1387c6d4275307da7cb274cbe3d5f50ca5da57e5bba9d16ef",
+      "seconds": 0.132336208014749,
+      "bytes": 16922,
+      "sha256": "a3ead8e7d231195e698f33e22f5675fafcb96475804ce6e7eb0bd47396dc39a6"
+    }
+  ],
+  "interpretation": "Local CPU measurement, not a production-host benchmark or visual quality approval."
+}

@@ -1,0 +1,15 @@
+{
+  "reviewer": "Codex visual inspection",
+  "approved_for_training_preprocessing": true,
+  "production_model_approval": false,
+  "recommended_variant": "eyes42",
+  "count_per_variant": 110,
+  "evidence": [
+    "eyes40-contact.png",
+    "eyes42-contact.png",
+    "comparison-contact.png"
+  ],
+  "observed": "All candidates retain white collars and bare heads; ordinary top-of-hair cropping is allowed. No new facial distortion observed.",
+  "manifest_sha256": "a38078275cff627f4e41a830e6f53361f3fca1fda93bb79bd1bd8471d80d6aa1",
+  "verification": "Each variant110unique256x256RGBimages; all hashes match manifest"
+}

@@ -1,0 +1,54 @@
+{
+  "model": {
+    "status": "ready",
+    "model_version": "pilot256-250",
+    "model_sha256": "affced34b32d45190878b537c88197cca5d6503d9c23b872c1a4f9902666fb73",
+    "training_step": 250,
+    "reviewed": false,
+    "device": "cpu",
+    "resolution": 256
+  },
+  "platform": "Linux-7.0.14-orbstack-00380-ga7e0a2dc9535-x86_64-with-glibc2.41",
+  "torch": "2.14.0+cpu",
+  "threads": 1,
+  "model_load_seconds": 9.293059528999947,
+  "peak_rss_bytes": 624381952,
+  "median_warm_seconds": 4.058290948999911,
+  "max_warm_seconds": 4.616003409999848,
+  "unique_output_hashes": 3,
+  "generations": [
+    {
+      "sample": "sample-000.webp",
+      "seed": "c7c667af51713961c296bcc30328f81d15c333f99ebbfce0f2ff0b72a51b7422",
+      "seconds": 5.599613753000085,
+      "bytes": 10998,
+      "sha256": "c78741007899bfb29cb4988ee3b6bed47f19ae5a839e6457e884c8a899c42f38"
+    },
+    {
+      "sample": "sample-001.webp",
+      "seed": "975513da85d896dd96b4c8f418ca6a78e35e140be7e1b878f0d21a27bd5a1e57",
+      "seconds": 3.5005784879999737,
+      "bytes": 9764,
+      "sha256": "b532c6465d4339a1571817d9db6dcb12db679a3215b7e1d10aa63bba06be5e3e"
+    },
+    {
+      "sample": "sample-002.webp",
+      "seed": "722bbd53d191555c62752df333f9895f53a5d0497b5b5ddf57cd8db44dbc79a2",
+      "seconds": 4.616003409999848,
+      "bytes": 10988,
+      "sha256": "143107fa1ad44701de493cc67f949d65ac11fb7b784b3ef0f6ddccbedda45601"
+    }
+  ],
+  "interpretation": "Local CPU measurement, not a production-host benchmark or visual quality approval.",
+  "resource_simulation": {
+    "cpu_limit": 0.25,
+    "memory_limit_bytes": 1073741824,
+    "cpu_threads": 1,
+    "process_start_to_all_three_samples_seconds": 38.004946794000034,
+    "process_start_to_first_sample_seconds_approx": 29.888366980000228,
+    "cgroup_memory_peak_bytes": 938094592,
+    "cgroup_memory_current_bytes": 870465536,
+    "cgroup_cpu_stat": "usage_usec 9664070\nuser_usec 8703692\nsystem_usec 960378\nnice_usec 0\nnr_periods 386\nnr_throttled 386\nthrottled_usec 42233154\nnr_bursts 0\nburst_usec 0\n",
+    "platform_limit": "Docker linux/amd64 under Apple Silicon emulation; not Cloudflare hardware"
+  }
+}

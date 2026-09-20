@@ -1,0 +1,23 @@
+{
+  "id": 129,
+  "image": "images/129.webp",
+  "prompt": "prompts/129.md",
+  "generator": "OpenAI built-in image_gen",
+  "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-0d049b7e-6f5a-4902-a668-a68c50e51d8f.png",
+  "generated_at": "2026-09-20T21:37:27.812Z",
+  "conversion": "cwebp -q 90 (no crop or resize)",
+  "visual_review": {
+    "status": "accepted",
+    "reviewer": "Codex visual inspection",
+    "method": "Labeled 480px contact sheet",
+    "checks": [
+      "handsome fictional adult male portrait",
+      "black-and-white",
+      "visible white Roman collar",
+      "bare head without hat",
+      "no visible facial/anatomical artifact",
+      "distinct appearance"
+    ],
+    "reviewed_at": "2026-09-20T21:42:04.856222+00:00"
+  }
+}

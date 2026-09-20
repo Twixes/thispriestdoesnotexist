@@ -1,0 +1,22 @@
+Setting up [LPIPS] perceptual loss: trunk [squeeze], v[0.1], spatial [off]
+/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:207: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:222: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=SqueezeNet1_1_Weights.IMAGENET1K_V1`. You can also use `weights=SqueezeNet1_1_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /Users/twixes/Developer/thispriestdoesnotexist/research/.venv/lib/python3.11/site-packages/lpips/weights/v0.1/squeeze.pth
+Evaluated 8/16
+Evaluated 16/16
+{
+  "checkpoint": "research/runs/pilot256/generator-000250.pt",
+  "sha256": "ffce9b46fdf7c32f82d71c2d92cd4fe72d6c441d34baa3f837a67c94ec2c8fce",
+  "count": 16,
+  "training_count": 50,
+  "unique_decoded_images": 16,
+  "nearest_lpips_min": 0.37705928087234497,
+  "nearest_lpips_median": 0.41139695048332214,
+  "generated_pair_lpips_median": 0.3907185047864914,
+  "generated_pair_lpips_min": 0.31856435537338257,
+  "seconds": 24.083570540999062,
+  "metric": "LPIPS v0.1 SqueezeNet; orientation invariant nearest training comparison",
+  "limitations": "Diagnostics only. These scores do not prove new identity or visual acceptability. Human visual inspection required."
+}

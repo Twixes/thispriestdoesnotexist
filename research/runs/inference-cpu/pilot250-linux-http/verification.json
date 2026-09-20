@@ -1,0 +1,63 @@
+{
+  "health": {
+    "status": "ready",
+    "model_version": "pilot256-250",
+    "model_sha256": "affced34b32d45190878b537c88197cca5d6503d9c23b872c1a4f9902666fb73",
+    "training_step": 250,
+    "reviewed": false,
+    "device": "cpu",
+    "resolution": 256
+  },
+  "platform": "linux/amd64 container under Apple Silicon emulation, not native VPS timing",
+  "restrictions": "read-only root; 3GB memory; 2CPU; tmpfs128MB; no capabilities; no-new-privileges",
+  "records": [
+    {
+      "seconds": 1.0620562499389052,
+      "sha256": "3f6808729c0b8aa953b5a14ca69d1fab8432e46306cd853dda94063b4979ee82",
+      "headers": {
+        "Server": "PriestInference/1 Python/3.12.14",
+        "Date": "Sun, 20 Sep 2026 21:27:06 GMT",
+        "Content-Type": "image/webp",
+        "Content-Length": "11074",
+        "Cache-Control": "no-store, max-age=0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Generation-Seed": "925e85640a9e0ccecf586f5161c9e0160e2936eeb484757ffc3e9b645266c2e2",
+        "X-Model-SHA256": "affced34b32d45190878b537c88197cca5d6503d9c23b872c1a4f9902666fb73",
+        "Server-Timing": "inference;dur=1036.0"
+      }
+    },
+    {
+      "seconds": 0.8197037499630824,
+      "sha256": "4a16f035066601277350677e9ef458613221d1b432ccdba9674b7c587522c2d0",
+      "headers": {
+        "Server": "PriestInference/1 Python/3.12.14",
+        "Date": "Sun, 20 Sep 2026 21:27:07 GMT",
+        "Content-Type": "image/webp",
+        "Content-Length": "14814",
+        "Cache-Control": "no-store, max-age=0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Generation-Seed": "6932d04cf36ff64004429d8238cace28e876de0054f1bd139a5782e2f0832924",
+        "X-Model-SHA256": "affced34b32d45190878b537c88197cca5d6503d9c23b872c1a4f9902666fb73",
+        "Server-Timing": "inference;dur=817.6"
+      }
+    },
+    {
+      "seconds": 0.8178273329976946,
+      "sha256": "0acf88ae70c95c71207c395d1e8d9a193e63fcc29bd799dddcf46db076d36d79",
+      "headers": {
+        "Server": "PriestInference/1 Python/3.12.14",
+        "Date": "Sun, 20 Sep 2026 21:27:08 GMT",
+        "Content-Type": "image/webp",
+        "Content-Length": "10846",
+        "Cache-Control": "no-store, max-age=0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Generation-Seed": "9fb19c29cbb4bcc629063758da30b3e6469e407e28a946eef9eac468a0ca6b00",
+        "X-Model-SHA256": "affced34b32d45190878b537c88197cca5d6503d9c23b872c1a4f9902666fb73",
+        "Server-Timing": "inference;dur=815.9"
+      }
+    }
+  ]
+}

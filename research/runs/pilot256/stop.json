@@ -1,0 +1,7 @@
+{
+  "reason": "Intentional early stop after durable checkpoint1000; fresh pretrained restart using110 collar-preserving aligned portraits and FreezeD4. Not stopped due to observation timeout.",
+  "last_durable_step": 1000,
+  "images_seen": 8000,
+  "original_planned_steps": 3000,
+  "checkpoint_preserved": "resume.pt"
+}

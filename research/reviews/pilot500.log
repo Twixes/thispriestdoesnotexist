@@ -1,0 +1,140 @@
+{
+  "step": 500,
+  "resume_sha256": "99713988a29353dc1dfdf29889f07e96c9b34fee6b768e485ef24370c7a69bcd",
+  "seed": 77142026,
+  "threads": 2,
+  "grid_order": [
+    "base-G",
+    "base-EMA",
+    "trained-G",
+    "trained-EMA"
+  ],
+  "results": {
+    "base-G": {
+      "seconds": 1.4279570830985904,
+      "finite": true,
+      "pixel_mean": -0.29802146553993225,
+      "pixel_std": 0.4288802742958069
+    },
+    "base-EMA": {
+      "seconds": 1.3593892089556903,
+      "finite": true,
+      "pixel_mean": -0.2533979117870331,
+      "pixel_std": 0.44025012850761414
+    },
+    "trained-G": {
+      "seconds": 1.3460739169968292,
+      "finite": true,
+      "pixel_mean": -0.4172433912754059,
+      "pixel_std": 0.49762362241744995
+    },
+    "trained-EMA": {
+      "seconds": 1.3349102089414373,
+      "finite": true,
+      "pixel_mean": -0.3313985764980316,
+      "pixel_std": 0.48160427808761597
+    }
+  },
+  "G_vs_EMA_largest_relative_rms": [
+    {
+      "tensor": "synthesis.b16.conv1.noise_strength",
+      "rms": 0.009798970073461533,
+      "relative_rms": 1.5518128871917725
+    },
+    {
+      "tensor": "synthesis.b16.conv0.noise_strength",
+      "rms": 0.011271335184574127,
+      "relative_rms": 1.3966728448867798
+    },
+    {
+      "tensor": "synthesis.b4.torgb.bias",
+      "rms": 0.0014167267363518476,
+      "relative_rms": 0.6763619780540466
+    },
+    {
+      "tensor": "synthesis.b8.conv1.noise_strength",
+      "rms": 0.010865101590752602,
+      "relative_rms": 0.6547510027885437
+    },
+    {
+      "tensor": "synthesis.b32.conv0.noise_strength",
+      "rms": 0.004032144322991371,
+      "relative_rms": 0.5738675594329834
+    },
+    {
+      "tensor": "synthesis.b64.conv1.noise_strength",
+      "rms": 0.0025078230537474155,
+      "relative_rms": 0.485760897397995
+    },
+    {
+      "tensor": "synthesis.b128.conv1.noise_strength",
+      "rms": 0.0016835902351886034,
+      "relative_rms": 0.4390484392642975
+    },
+    {
+      "tensor": "synthesis.b64.torgb.weight",
+      "rms": 0.0075908745639026165,
+      "relative_rms": 0.35816341638565063
+    },
+    {
+      "tensor": "synthesis.b32.torgb.weight",
+      "rms": 0.007159713190048933,
+      "relative_rms": 0.3079742193222046
+    },
+    {
+      "tensor": "synthesis.b256.conv0.noise_strength",
+      "rms": 0.002612045034766197,
+      "relative_rms": 0.29439783096313477
+    },
+    {
+      "tensor": "synthesis.b16.torgb.weight",
+      "rms": 0.007437220774590969,
+      "relative_rms": 0.2629355788230896
+    },
+    {
+      "tensor": "synthesis.b128.conv0.noise_strength",
+      "rms": 0.013497408479452133,
+      "relative_rms": 0.24654066562652588
+    },
+    {
+      "tensor": "synthesis.b8.torgb.weight",
+      "rms": 0.0075365579687058926,
+      "relative_rms": 0.21403026580810547
+    },
+    {
+      "tensor": "synthesis.b8.torgb.bias",
+      "rms": 0.0007908276747912169,
+      "relative_rms": 0.2128596156835556
+    },
+    {
+      "tensor": "synthesis.b4.conv1.noise_strength",
+      "rms": 0.003390914760529995,
+      "relative_rms": 0.19906120002269745
+    },
+    {
+      "tensor": "synthesis.b4.torgb.weight",
+      "rms": 0.007948665879666805,
+      "relative_rms": 0.18534857034683228
+    },
+    {
+      "tensor": "synthesis.b16.torgb.bias",
+      "rms": 0.0004199272079858929,
+      "relative_rms": 0.09198535978794098
+    },
+    {
+      "tensor": "synthesis.b128.torgb.weight",
+      "rms": 0.00863345991820097,
+      "relative_rms": 0.0830170065164566
+    },
+    {
+      "tensor": "synthesis.b8.conv0.bias",
+      "rms": 0.01642046682536602,
+      "relative_rms": 0.08277114480733871
+    },
+    {
+      "tensor": "synthesis.b8.conv1.bias",
+      "rms": 0.01619427278637886,
+      "relative_rms": 0.07607955485582352
+    }
+  ]
+}

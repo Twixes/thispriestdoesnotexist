@@ -1,0 +1,39 @@
+test_actual_model_forward_each_request_with_full_entropy (inference.test_server.InferenceTests.test_actual_model_forward_each_request_with_full_entropy) ... [W920 21:26:33.078503798 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.081688173 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.118315339 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.157804048 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.189753048 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.189978298 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.190982881 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.191353589 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+ok
+test_bounded_capacity_rejects_overload_and_recovers (inference.test_server.InferenceTests.test_bounded_capacity_rejects_overload_and_recovers) ... [W920 21:26:33.228628214 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.228860298 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.229717673 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.230068006 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.233023256 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.233189881 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.233835923 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:33.234185631 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+ok
+test_checksum_and_review_fail_closed (inference.test_server.InferenceTests.test_checksum_and_review_fail_closed) ... ok
+test_failure_is_uncached_503_and_slot_is_released (inference.test_server.InferenceTests.test_failure_is_uncached_503_and_slot_is_released) ... ok
+test_http_images_are_not_cached_or_selected (inference.test_server.InferenceTests.test_http_images_are_not_cached_or_selected) ... [W920 21:26:34.262098965 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:34.262317090 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:34.262999173 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:34.263350840 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:34.265321965 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:34.265576798 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:34.266546007 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:34.267022257 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+ok
+test_origin_token_and_unknown_routes_do_not_run_model (inference.test_server.InferenceTests.test_origin_token_and_unknown_routes_do_not_run_model) ... [W920 21:26:34.782021632 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:34.782238048 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:34.782925257 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:26:34.783258090 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.290s
+
+OK

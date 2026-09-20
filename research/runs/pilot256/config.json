@@ -1,0 +1,21 @@
+{
+  "device": "mps",
+  "steps": 3000,
+  "batch": 8,
+  "snapshot_every": 250,
+  "run": "pilot256",
+  "resume": null,
+  "dataset_count": 50,
+  "seed": 20260920,
+  "r1_gamma": 2.0,
+  "r1_interval": 16,
+  "g_lr": 0.001,
+  "mapping_lr": 0.0001,
+  "d_lr": 0.001,
+  "ema_kimg": 1,
+  "ada_target": 0.6,
+  "ada_kimg": 100,
+  "augment": "DiffAugment color,translation,cutout plus horizontal flip",
+  "path_length_regularization": false,
+  "style_mixing_probability": 0.9
+}

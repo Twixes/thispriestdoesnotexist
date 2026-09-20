@@ -1,0 +1,1751 @@
+{
+  "schema_version": 1,
+  "generator": "OpenAI built-in image_gen",
+  "intended_use": "Additional synthetic training data; not production static portraits",
+  "requested_count": 60,
+  "saved_count": 60,
+  "reviewed_accepted_count": 60,
+  "unique_file_hashes": 60,
+  "entries": [
+    {
+      "id": 81,
+      "image": "images/081.webp",
+      "prompt": "prompts/081.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-edd132dd-3237-43d5-a3ca-903e08abacf5.png",
+      "generated_at": "2026-09-20T21:22:11.858Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.183Z"
+      },
+      "sha256": "d7356ecec886c99f7485b2c7a13ec57c3331eac6235a58c61153bc7c11e1c35c",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 134204,
+      "archived_source_png": "source/081.png",
+      "source_png_sha256": "2ce79cc3644ad1b6267dd64116404ce4e09ada6c1a602aaa6cd72ac47dff8ba9"
+    },
+    {
+      "id": 82,
+      "image": "images/082.webp",
+      "prompt": "prompts/082.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-08263750-9056-49c7-843f-93952dc258a9.png",
+      "generated_at": "2026-09-20T21:25:49.090Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "d219894d61b692ec24c6f727d2bc3657a2bebd50e40d0bcda16623a93f49d2aa",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 151016,
+      "archived_source_png": "source/082.png",
+      "source_png_sha256": "df117329bab913d9c94c9d2fb26b690b3cf97f17c7af6afd65a74271a6fd40be"
+    },
+    {
+      "id": 83,
+      "image": "images/083.webp",
+      "prompt": "prompts/083.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-4e8c08a8-bcf5-448c-aab5-de3c6c6fe1da.png",
+      "generated_at": "2026-09-20T21:25:49.080Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "f97fa579d0c05b98cbd462c7f81cf70679f21274933aebc8e305bed86b63c41f",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 100788,
+      "archived_source_png": "source/083.png",
+      "source_png_sha256": "2b50f240122b7af2c4c39d8cf0b4ffd0366cac5a217db892815292670fe54e21"
+    },
+    {
+      "id": 84,
+      "image": "images/084.webp",
+      "prompt": "prompts/084.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-60dc9aa7-284e-4c15-bd6b-ffedacd9957b.png",
+      "generated_at": "2026-09-20T21:24:30.228Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "257b884bf574180711ff20429e37ff6072e1e04c705d979334e6b8c8ecdc8322",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 125122,
+      "archived_source_png": "source/084.png",
+      "source_png_sha256": "28391281344c734f827ab220736a227aed8bf0d3e318b66fe2e32c2f322b565b"
+    },
+    {
+      "id": 85,
+      "image": "images/085.webp",
+      "prompt": "prompts/085.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-354ec674-57a4-48e2-a098-2200bd5cea47.png",
+      "generated_at": "2026-09-20T21:25:49.099Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "8b0ebd859cdc215d8be089c9726cfc007b0a57cf71c8a624785ec2a1c2c5604d",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 137062,
+      "archived_source_png": "source/085.png",
+      "source_png_sha256": "e668284facdd5f6c2e7559b11bd78e15e99c7f587d77bf75d6b5751dced7599b"
+    },
+    {
+      "id": 86,
+      "image": "images/086.webp",
+      "prompt": "prompts/086.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-6b8ce5b7-9eb9-41ea-bcde-69e85ae3bcda.png",
+      "generated_at": "2026-09-20T21:25:46.453Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "79cf9da3d1ad24e74c899f124f7281c20858f569763dd23ed2b6fd45577f9d9e",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 121622,
+      "archived_source_png": "source/086.png",
+      "source_png_sha256": "b8b038bcfcbf21c17266b70b7269f80a495db94494135f981a47f07fe2f72ead"
+    },
+    {
+      "id": 87,
+      "image": "images/087.webp",
+      "prompt": "prompts/087.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-491444eb-d382-4916-9f9d-c7db62efa667.png",
+      "generated_at": "2026-09-20T21:27:08.446Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "877c18580a516f829da77631b78f5dcefa13e2467ec6515a87a74752536713b8",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 155804,
+      "archived_source_png": "source/087.png",
+      "source_png_sha256": "088edb6eae2fba8d98675550128297567655e5e76882b3810e1620536ace5c13"
+    },
+    {
+      "id": 88,
+      "image": "images/088.webp",
+      "prompt": "prompts/088.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-cb16350e-e41d-4ced-870e-7cfc9dc84dba.png",
+      "generated_at": "2026-09-20T21:25:05.251Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "21d54a6f4ec77abc3b7a7a2dc7b1f05842de24743e67e82f07ed31e007f17dc2",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 110642,
+      "archived_source_png": "source/088.png",
+      "source_png_sha256": "b1c1c335d498a606374d13c372033a2e67f25034248b88b6ffc33e458eb3c414"
+    },
+    {
+      "id": 89,
+      "image": "images/089.webp",
+      "prompt": "prompts/089.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-ebf4910e-03ac-489c-bef1-bc165ea3db9d.png",
+      "generated_at": "2026-09-20T21:25:46.584Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "65cdf00c4ab05951d0215f4db33502f84789a0fd7791422279a279e212bb4fe3",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 121946,
+      "archived_source_png": "source/089.png",
+      "source_png_sha256": "6582d5e01abb420ec6a16e93c4d04c32c7cd81756d48875ebf4616000d9a9049"
+    },
+    {
+      "id": 90,
+      "image": "images/090.webp",
+      "prompt": "prompts/090.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-fefd4064-ee3e-4a45-907b-6ee320a06a4b.png",
+      "generated_at": "2026-09-20T21:26:26.430Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "a667ce2efff8f571bda05735a8e64bc4ebf4eade3214fa9c9a9a4a7e026ace19",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 138308,
+      "archived_source_png": "source/090.png",
+      "source_png_sha256": "51b35c23de9cf14e987fbe331e2d830ee548c6295f7a1993de4199c3025ed8ca"
+    },
+    {
+      "id": 91,
+      "image": "images/091.webp",
+      "prompt": "prompts/091.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-50a8ed57-7744-47bd-b84a-4daede67e56f.png",
+      "generated_at": "2026-09-20T21:27:39.279Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "f1c8d6f4e6f33ef1d03ac11720a9330334eaf79e2389ff60c017a4edf11ac3fe",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 117694,
+      "archived_source_png": "source/091.png",
+      "source_png_sha256": "f7aa67d81d65da713b8eb7f250464807de79c019b41b5d786411b43f906a04a5"
+    },
+    {
+      "id": 92,
+      "image": "images/092.webp",
+      "prompt": "prompts/092.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-11b6b32a-dbca-4f62-bce3-46ba7013b319.png",
+      "generated_at": "2026-09-20T21:27:02.766Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "e1402d591f86a49e293387acd6bd7746d64fceea7c81dc0fb4365a8f9ed9999a",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 114082,
+      "archived_source_png": "source/092.png",
+      "source_png_sha256": "adb0157bf19d644ba54d5f9a8099e3837c087f7aeac8b45e8b9289a5d1b48b00"
+    },
+    {
+      "id": 93,
+      "image": "images/093.webp",
+      "prompt": "prompts/093.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-a7d1a99e-6411-45fb-9557-6d7bdd8c42ac.png",
+      "generated_at": "2026-09-20T21:27:39.284Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "806a136336a23a1f082e4f00c074c133470e78e2484ac1ebdd62a8c15c6570db",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 143678,
+      "archived_source_png": "source/093.png",
+      "source_png_sha256": "e06a77768c3e9a8144f4acc3845a7de0312529df3ffb3f81441f616cdace544a"
+    },
+    {
+      "id": 94,
+      "image": "images/094.webp",
+      "prompt": "prompts/094.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-a3c462c4-be10-4af1-94e2-2f553ce4b14e.png",
+      "generated_at": "2026-09-20T21:28:53.875Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "5dbdc3db07ef065238ea9c414e6155db04bae916851cd90234c259a6a3fcc7d1",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 137034,
+      "archived_source_png": "source/094.png",
+      "source_png_sha256": "2986aa354c0ea400818c8447545e61f5a4a29b3275f5b148ec5545c868cbb840"
+    },
+    {
+      "id": 95,
+      "image": "images/095.webp",
+      "prompt": "prompts/095.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-fa5be617-f483-405b-aa69-3eadb332c2d8.png",
+      "generated_at": "2026-09-20T21:28:42.667Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "63dbe9e421ed293731299eaed8cb0a70b092af74e3c6b715a5b2aaf5c02ce9ae",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 106038,
+      "archived_source_png": "source/095.png",
+      "source_png_sha256": "a2fd93e9f8a8ce8966b087e808cb7d59130095220159e16780f494458d87fb67"
+    },
+    {
+      "id": 96,
+      "image": "images/096.webp",
+      "prompt": "prompts/096.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-191f196a-ef74-43dc-bc67-b6d6ea8aad7e.png",
+      "generated_at": "2026-09-20T21:30:23.270Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "f3f992a8e0b7869bccbdd8e829b0bbd6f3f9fbe505d730255eaf46f51a7a2444",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 141880,
+      "archived_source_png": "source/096.png",
+      "source_png_sha256": "ffae6fd867fa6e20c99c3fef72ed48ff2cca0fa96319584ea07eca21f6a847ef"
+    },
+    {
+      "id": 97,
+      "image": "images/097.webp",
+      "prompt": "prompts/097.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-29d0b069-3af1-4e5b-833d-8008a4384d05.png",
+      "generated_at": "2026-09-20T21:29:33.119Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "f8e7d2c1da3f8974fd7788e797464f7c29d91b57c1cf42ea1413b828d17914a4",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 135208,
+      "archived_source_png": "source/097.png",
+      "source_png_sha256": "0d7aee362ad441929bf2003a7f5e6a12f90c8ec6aef9e0df4bd97f7a1b4dd150"
+    },
+    {
+      "id": 98,
+      "image": "images/098.webp",
+      "prompt": "prompts/098.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-938e0b40-b947-4549-b062-cc3309ff4939.png",
+      "generated_at": "2026-09-20T21:29:04.779Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "7c6d1b126686395f011557c76ffdb6b73b8c392bd24b91e2fcaacb26ee6f560c",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 128532,
+      "archived_source_png": "source/098.png",
+      "source_png_sha256": "ff3ecaead79c532bc02d465324a28929ee44b80d5b3d12512d472e4775c0ec6a"
+    },
+    {
+      "id": 99,
+      "image": "images/099.webp",
+      "prompt": "prompts/099.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-6726fa5d-674c-4b6d-bc54-078fb9ba9085.png",
+      "generated_at": "2026-09-20T21:29:33.124Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "b004516faccc64237bf8a94db0567a76d1c09f72ddbeba5ed935fc7d4c7ca2b9",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 131742,
+      "archived_source_png": "source/099.png",
+      "source_png_sha256": "57846588baaec3a560d082c2451969e2adbaaa127190550fdb5c80f4683c3923"
+    },
+    {
+      "id": 100,
+      "image": "images/100.webp",
+      "prompt": "prompts/100.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-526dbf2a-30ea-4b8f-ab85-1f0543510b71.png",
+      "generated_at": "2026-09-20T21:29:05.135Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "e2569fba7ce666829b4bd7435853c39e062a3575308732fe51266a5d599a9659",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 126680,
+      "archived_source_png": "source/100.png",
+      "source_png_sha256": "1a67bf92fc0f8febd05de654f511da9293aeb578837f85578e40ed3d80efe815"
+    },
+    {
+      "id": 101,
+      "image": "images/101.webp",
+      "prompt": "prompts/101.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-b31f335e-6032-4624-ac3b-0f77665fd495.png",
+      "generated_at": "2026-09-20T21:30:36.172Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389732+00:00"
+      },
+      "sha256": "cb76687c6a726a91845638923742d63ab4ef1f9bb0448a21d5772ea2b30af3c4",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 139446,
+      "archived_source_png": "source/101.png",
+      "source_png_sha256": "47bbc2d2a8bb43dc401fe0bad5ab07714b28fca1c806788f61c80a4fe742a4f2"
+    },
+    {
+      "id": 102,
+      "image": "images/102.webp",
+      "prompt": "prompts/102.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-545f7de6-eb09-4c7f-afcb-d740f6aeba0b.png",
+      "generated_at": "2026-09-20T21:30:51.775Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "8909230031adcc6c21a8432269f9882dd970a943d5b7182c918c377c53094b22",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 139238,
+      "archived_source_png": "source/102.png",
+      "source_png_sha256": "793cf8fdffb2f129ad3bc5426f920a492dfa097a570de0711b19dd7865fa672c"
+    },
+    {
+      "id": 103,
+      "image": "images/103.webp",
+      "prompt": "prompts/103.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-b6e48e1f-1504-4fc5-b41d-0dc200ab3c00.png",
+      "generated_at": "2026-09-20T21:30:13.547Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "51f058cf354a2f64011ffa5349971bca60634959167763f5749755bf7e695351",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 124342,
+      "archived_source_png": "source/103.png",
+      "source_png_sha256": "2433296f55f7b92860abe88ea0fed7268ab0f6bf8667476008e14e20e99c6265"
+    },
+    {
+      "id": 104,
+      "image": "images/104.webp",
+      "prompt": "prompts/104.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-bc760932-a17c-4b4b-a6e8-0ee64ba6fbd2.png",
+      "generated_at": "2026-09-20T21:30:51.916Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389734+00:00"
+      },
+      "sha256": "7a97da174c053611df2095c92a52022a7d891ac88aeb8b81c20235af20a4364b",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 142426,
+      "archived_source_png": "source/104.png",
+      "source_png_sha256": "d9ccaa4fa5feae74b8e9987598aa731234204033afd33bc39575d7a17c2a5c3a"
+    },
+    {
+      "id": 105,
+      "image": "images/105.webp",
+      "prompt": "prompts/105.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-32e2e64d-b867-4920-bd31-b8ad4087024c.png",
+      "generated_at": "2026-09-20T21:31:53.200Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389735+00:00"
+      },
+      "sha256": "d7d0f7c6087c663429f3ccc8e7abfbbc823b9e7a7c315b4f86975830ddb9931e",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 143744,
+      "archived_source_png": "source/105.png",
+      "source_png_sha256": "8a0721ee2416435e1430c56439307e824e4d40d0cead7b0a7d911ef43b4a42a9"
+    },
+    {
+      "id": 106,
+      "image": "images/106.webp",
+      "prompt": "prompts/106.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-e99f2f9e-82d3-4bd4-80fe-381ed3be06a0.png",
+      "generated_at": "2026-09-20T21:30:51.778Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet plus individual 081 full-size",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:31:21.184Z"
+      },
+      "sha256": "e7590daff55585f2e819aeec9fd2b47b7e0994d292c9405826f7ae24e7d46d58",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 126568,
+      "archived_source_png": "source/106.png",
+      "source_png_sha256": "9e8a56d8c1d34c65172bf7b978f48ef312ec0d53fc8da9f9eeeb79286b8bc894"
+    },
+    {
+      "id": 107,
+      "image": "images/107.webp",
+      "prompt": "prompts/107.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-b8e893c3-58ab-4d47-ab7b-c7c82be83d24.png",
+      "generated_at": "2026-09-20T21:31:53.340Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389737+00:00"
+      },
+      "sha256": "8ae08b9578d1821d4b2417cd482bcab650e43c7e163a368102da79a933bc76cc",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 123054,
+      "archived_source_png": "source/107.png",
+      "source_png_sha256": "f04a7d504096d2acc56c21a5385fbd5bc493340c0f35e5072f9e3e2189d12b6a"
+    },
+    {
+      "id": 108,
+      "image": "images/108.webp",
+      "prompt": "prompts/108.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-46497a41-0de2-439d-b13f-5eb2574518c5.png",
+      "generated_at": "2026-09-20T21:31:53.350Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389738+00:00"
+      },
+      "sha256": "dc87938d6c1648b049b676c0f29b0218852aa6e493354b8f39267f433bf6654b",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 141334,
+      "archived_source_png": "source/108.png",
+      "source_png_sha256": "66163bc7833319fa2f36d02ce1b8415cee8aa45d0869e9f807d2cc6e8e3970ed"
+    },
+    {
+      "id": 109,
+      "image": "images/109.webp",
+      "prompt": "prompts/109.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-b802f70c-8758-4e5a-819a-d2a174ca7c2f.png",
+      "generated_at": "2026-09-20T21:32:40.748Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389738+00:00"
+      },
+      "sha256": "9c4f8287ad23061cfa29c64683d85fb760a1ac0538eb013128048ded9479a005",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 123884,
+      "archived_source_png": "source/109.png",
+      "source_png_sha256": "76d867bb716885b8ff23f4b48fd466cf935fcc0a8eea5a7573114a9da54299e2"
+    },
+    {
+      "id": 110,
+      "image": "images/110.webp",
+      "prompt": "prompts/110.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-50ab29cb-4369-44a9-bce6-b487af65d626.png",
+      "generated_at": "2026-09-20T21:31:11.523Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389739+00:00"
+      },
+      "sha256": "577b2a9df32c40b32e4e4a177222c135c142aacf083d3e503397ffec23ac0ce6",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 122320,
+      "archived_source_png": "source/110.png",
+      "source_png_sha256": "e08bdf40085fcdc891ca3a27d970d7893e4a9f02cd72d11fd6752d7de0b4346a"
+    },
+    {
+      "id": 111,
+      "image": "images/111.webp",
+      "prompt": "prompts/111.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-59f5e345-3da0-4db0-9f06-1c7b5f8507de.png",
+      "generated_at": "2026-09-20T21:31:53.201Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389740+00:00"
+      },
+      "sha256": "8741a4b72650980d03b8d8f28648692b89b6b06fd46f90788bf482bcdf690715",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 124934,
+      "archived_source_png": "source/111.png",
+      "source_png_sha256": "1b07ae9da6209f3048e49e8be8827e440028203ef882baabca1f22cc078efae4"
+    },
+    {
+      "id": 112,
+      "image": "images/112.webp",
+      "prompt": "prompts/112.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-fbed4ebe-12c1-496a-a016-de5796a018c7.png",
+      "generated_at": "2026-09-20T21:32:16.892Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389741+00:00"
+      },
+      "sha256": "514fe207f387b691e3f47f25deddec5e9324c8e75e39f944546295cb27298af3",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 147718,
+      "archived_source_png": "source/112.png",
+      "source_png_sha256": "e0fd495fd9743f27322d050debb65a3bade7b7e6509552622213a97e77325687"
+    },
+    {
+      "id": 113,
+      "image": "images/113.webp",
+      "prompt": "prompts/113.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-b774ae5f-d95a-4e3f-86e2-b10e1d556d22.png",
+      "generated_at": "2026-09-20T21:33:19.664Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389741+00:00"
+      },
+      "sha256": "b905bec55e57fc874c7ef60a476bf8b836d1e88e396a39480c8c90fec82ef536",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 158894,
+      "archived_source_png": "source/113.png",
+      "source_png_sha256": "ddfefd2f9824613345b1d9509eb96d66449537a7d7790622dc8d15c96fdc8cff"
+    },
+    {
+      "id": 114,
+      "image": "images/114.webp",
+      "prompt": "prompts/114.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-7809640d-3624-4012-8bd6-2eceb5897f87.png",
+      "generated_at": "2026-09-20T21:33:19.531Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389742+00:00"
+      },
+      "sha256": "6373383edd24054a8236cb7a7f0d2a5cd08cfdfabe1bd494de54a2690290ba97",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 142010,
+      "archived_source_png": "source/114.png",
+      "source_png_sha256": "4507d9a02f99745d144e90932df556af97bf2897604e62cff43c82eaf9444130"
+    },
+    {
+      "id": 115,
+      "image": "images/115.webp",
+      "prompt": "prompts/115.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-fef98740-fb19-4837-b010-c7171c552e8e.png",
+      "generated_at": "2026-09-20T21:33:19.533Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389743+00:00"
+      },
+      "sha256": "7ebe30a12fe1791dfc80b7eef7c0165016f57f299afde238071c3b9d74c2566d",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 118432,
+      "archived_source_png": "source/115.png",
+      "source_png_sha256": "a3757aa157eb6d8fbb913cf3393821e0632acbb78b0725e1c9cf4084ef0cac0c"
+    },
+    {
+      "id": 116,
+      "image": "images/116.webp",
+      "prompt": "prompts/116.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-7341a30f-c8a4-4d53-b248-f364df817d69.png",
+      "generated_at": "2026-09-20T21:33:56.238Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389745+00:00"
+      },
+      "sha256": "6ba2884593a99445d27c96f35b891b7995adb90491a942d5ff5cee6a76f4d988",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 108798,
+      "archived_source_png": "source/116.png",
+      "source_png_sha256": "10331fcf4909f4e6bbbb3e980fcba53e7ae89e138f555d60972d61ded2f954f5"
+    },
+    {
+      "id": 117,
+      "image": "images/117.webp",
+      "prompt": "prompts/117.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-ff5e75c2-6e4c-4a12-bbf2-8f2b598337d9.png",
+      "generated_at": "2026-09-20T21:34:45.290Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389746+00:00"
+      },
+      "sha256": "5f20dac5547ddd128b69810c3b4834154625160ae5296b31a669f40bb9df012b",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 112110,
+      "archived_source_png": "source/117.png",
+      "source_png_sha256": "ca124438016d580e4854a7e62ad2781866febc559560cedacac50c1b1354dd0a"
+    },
+    {
+      "id": 118,
+      "image": "images/118.webp",
+      "prompt": "prompts/118.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-d44f89c2-29d5-4adc-8f37-a861c27e7478.png",
+      "generated_at": "2026-09-20T21:34:56.726Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389747+00:00"
+      },
+      "sha256": "2d1dd7edaef7eef824f456ee4377b568be87f881bc9266c7538d073234c134a1",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 144564,
+      "archived_source_png": "source/118.png",
+      "source_png_sha256": "41c90a922729d1868d6ef0323c3b407273e5ea184e55064d54adac305b2bf0f0"
+    },
+    {
+      "id": 119,
+      "image": "images/119.webp",
+      "prompt": "prompts/119.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-c102e44a-694d-4dd5-8e2e-5ad3bd9f8d8d.png",
+      "generated_at": "2026-09-20T21:34:19.010Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389748+00:00"
+      },
+      "sha256": "caec47589d8f0e3f97e35e95c0865938c938e82b431a4244215322cb3180898f",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 113608,
+      "archived_source_png": "source/119.png",
+      "source_png_sha256": "5ad77dc1c2070163ad049aecfd5e5a16d5598d1b2a305a85c3157c84f8afae3c"
+    },
+    {
+      "id": 120,
+      "image": "images/120.webp",
+      "prompt": "prompts/120.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-5e73c2b3-5886-486f-b1ad-2f3c61a35835.png",
+      "generated_at": "2026-09-20T21:36:18.239Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389748+00:00"
+      },
+      "sha256": "57cce47c4d1085c7a30263c37b6b4c59044bf5e9c10cb9f5498e135ad937fa8c",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 137754,
+      "archived_source_png": "source/120.png",
+      "source_png_sha256": "ab7057c6ba2287d7eb2a46817095879f70c7075d05741b5614881d1aa935f022"
+    },
+    {
+      "id": 121,
+      "image": "images/121.webp",
+      "prompt": "prompts/121.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-f7f3c029-04be-4998-8288-ebc10e58abcb.png",
+      "generated_at": "2026-09-20T21:34:45.289Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389749+00:00"
+      },
+      "sha256": "7d186543cc0fdef7ab50ef42b8322342d7d3d38c667770881d10e2116b640c7d",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 143484,
+      "archived_source_png": "source/121.png",
+      "source_png_sha256": "c89f48c1308dfe855c9dd2259f172bb1d10f0fb3ccca8ba44405544c21160a3a"
+    },
+    {
+      "id": 122,
+      "image": "images/122.webp",
+      "prompt": "prompts/122.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-ac65bd27-7c42-464a-a82a-bdf2fbdd5ea3.png",
+      "generated_at": "2026-09-20T21:34:45.300Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389750+00:00"
+      },
+      "sha256": "2a9554dc8dbe73932b464e9560637a9a4dcbfaf7b9f79f1343f7e456c2b971d1",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 124992,
+      "archived_source_png": "source/122.png",
+      "source_png_sha256": "6a7b985a19a6814d7b886b219c9192756aa196ad54b3d9c813bf9d6c87b79b1e"
+    },
+    {
+      "id": 123,
+      "image": "images/123.webp",
+      "prompt": "prompts/123.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-5c8f5e1f-0906-4ea7-b7a3-0f90e0a6cbe7.png",
+      "generated_at": "2026-09-20T21:36:42.125Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389751+00:00"
+      },
+      "sha256": "d7ad999850f453f9dfa163b310c4f4421d25f3a3828b971be3cbe8b89c4a6da3",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 148544,
+      "archived_source_png": "source/123.png",
+      "source_png_sha256": "0e8ac5058d828fcd5ed0cd795516492a792e3de67b6083b7c8cc0f93e5fa6267"
+    },
+    {
+      "id": 124,
+      "image": "images/124.webp",
+      "prompt": "prompts/124.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-89368cea-27f7-4606-bc91-adf4349481db.png",
+      "generated_at": "2026-09-20T21:35:38.919Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389752+00:00"
+      },
+      "sha256": "ca40d841805b5fd8e685a7662d124c34c960fba6d6e1af2d92364f3adb57befb",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 125924,
+      "archived_source_png": "source/124.png",
+      "source_png_sha256": "f612c8b77dc2922e8a1b7de8c9054f1c06ea7a4c0c3654d477686a2dfea7e741"
+    },
+    {
+      "id": 125,
+      "image": "images/125.webp",
+      "prompt": "prompts/125.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-c7f825ff-cbb9-4e6a-a769-5ab7d7e970ca.png",
+      "generated_at": "2026-09-20T21:36:52.451Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389753+00:00"
+      },
+      "sha256": "90efb0d1dbccb15aafa4c4f1868b059f5e4ac269de07b2f5a163c4708cbc9ebb",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 152546,
+      "archived_source_png": "source/125.png",
+      "source_png_sha256": "2112c9ebd051b89459ab7ddc7ba315a2ae7cbef8420163f54304f77b136c859f"
+    },
+    {
+      "id": 126,
+      "image": "images/126.webp",
+      "prompt": "prompts/126.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-04716dd0-032f-487c-b364-037717a1ea50.png",
+      "generated_at": "2026-09-20T21:36:42.121Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389754+00:00"
+      },
+      "sha256": "e82156af65c0d92ba075249f959cee46c09bbbbdb9254d00ed00fff6df471506",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 133686,
+      "archived_source_png": "source/126.png",
+      "source_png_sha256": "f7bdcf9fa0f9b5509d1cc1d20a4a598187b39e7cdb615847b3d5c4ee76a0c94b"
+    },
+    {
+      "id": 127,
+      "image": "images/127.webp",
+      "prompt": "prompts/127.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-2f9db873-8bed-41e1-9912-1ea50999c78b.png",
+      "generated_at": "2026-09-20T21:36:16.325Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:38:44.389755+00:00"
+      },
+      "sha256": "fee3975719c220d44d102c67a1439f98454fef8b5d7efae25a199f83dd4464d9",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 119510,
+      "archived_source_png": "source/127.png",
+      "source_png_sha256": "6c31832a60a1668c183e2f0cbec85ccffb357912536dfe16dd20f72dae265e09"
+    },
+    {
+      "id": 128,
+      "image": "images/128.webp",
+      "prompt": "prompts/128.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-1b9300b2-231b-4227-bb0e-80f07b4457a0.png",
+      "generated_at": "2026-09-20T21:37:07.215Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.856134+00:00"
+      },
+      "sha256": "f9182d2b7244fc1bfc87f2206876105e50dab640460285795718ef1c1f984319",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 149448,
+      "archived_source_png": "source/128.png",
+      "source_png_sha256": "e9d4e08e39a526a3e9dc1b2d5f58edbf460684109581925aa8a5e821e1d9f5c5"
+    },
+    {
+      "id": 129,
+      "image": "images/129.webp",
+      "prompt": "prompts/129.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-0d049b7e-6f5a-4902-a668-a68c50e51d8f.png",
+      "generated_at": "2026-09-20T21:37:27.812Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.856222+00:00"
+      },
+      "sha256": "d86081852717da39c08cf4d745f8fe95aa063ea11d131e4aecc5e94a7d368006",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 107884,
+      "archived_source_png": "source/129.png",
+      "source_png_sha256": "e6708acce3182f82e97c6c036c210e179ddbff7aded8bb2c82af01da9f0214c4"
+    },
+    {
+      "id": 130,
+      "image": "images/130.webp",
+      "prompt": "prompts/130.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-d86278d9-5673-4fa3-868c-84c6409327d9.png",
+      "generated_at": "2026-09-20T21:39:21.092Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.856305+00:00"
+      },
+      "sha256": "69fd00eacd2077ca5f9c22767581ca7fadaa529034db305861883c10f14bdea9",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 144180,
+      "archived_source_png": "source/130.png",
+      "source_png_sha256": "93acb94c564e41e9beda3ccb663619de2f37e4794bde63b507233ebdf6dc2903"
+    },
+    {
+      "id": 131,
+      "image": "images/131.webp",
+      "prompt": "prompts/131.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-e7ae3902-06a0-438b-82b7-1fa75ce377e7.png",
+      "generated_at": "2026-09-20T21:38:05.597Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.856416+00:00"
+      },
+      "sha256": "3d4ede580b64b9dcca1cabab17795a363f5c0386a7a3701a9d29fc66128cd226",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 150606,
+      "archived_source_png": "source/131.png",
+      "source_png_sha256": "82e60a79796d05c3192ba257dba0605ee6e0a1e24c2543cda57ce9e76132911a"
+    },
+    {
+      "id": 132,
+      "image": "images/132.webp",
+      "prompt": "prompts/132.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-6ce53981-52d3-44fd-9e1d-cdf5e5a65813.png",
+      "generated_at": "2026-09-20T21:38:44.456Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.856504+00:00"
+      },
+      "sha256": "7478fc8e12e4acea1ad582ef9577e249f0e8a6426b21466eed1e527319a8e934",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 138280,
+      "archived_source_png": "source/132.png",
+      "source_png_sha256": "b90cb96acb975db9b8a24eb93a94c9b2019ba4b7807fe5e96c96afb954ef2b85"
+    },
+    {
+      "id": 133,
+      "image": "images/133.webp",
+      "prompt": "prompts/133.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-fb54d172-2181-49e1-867d-98988da41cea.png",
+      "generated_at": "2026-09-20T21:39:21.094Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.856633+00:00"
+      },
+      "sha256": "00c373bb69013eeff13a411fdec198408762571b60097cf418e573c170d29c78",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 149480,
+      "archived_source_png": "source/133.png",
+      "source_png_sha256": "1c702aecec5a6d9b84d952ffe289bc7932df73236bc2276bd94626dcc29fc4fb"
+    },
+    {
+      "id": 134,
+      "image": "images/134.webp",
+      "prompt": "prompts/134.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-f991099d-a978-4c48-bb06-0f32cc1ce890.png",
+      "generated_at": "2026-09-20T21:39:22.259Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.856752+00:00"
+      },
+      "sha256": "b4487a8682cbcdeb0482c12a9be5e4e352f5dc72fcde2f1903025d4dee6a7d13",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 148768,
+      "archived_source_png": "source/134.png",
+      "source_png_sha256": "c16934046491d23f93c11ca4f5a9e2506e42f215a6a49da6e699b06b76543306"
+    },
+    {
+      "id": 135,
+      "image": "images/135.webp",
+      "prompt": "prompts/135.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-4ff3f358-b9a7-47a6-8be3-a091bf83624b.png",
+      "generated_at": "2026-09-20T21:41:17.434Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.856858+00:00"
+      },
+      "sha256": "a4cc6cb9cabd2fc793164e5252382a0c3ba7de7db152722795c02cae40f05d28",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 122472,
+      "archived_source_png": "source/135.png",
+      "source_png_sha256": "24c18fff22136f34f66953108c50e88f0dd62dc60ff284e7eb31f134a3af2fbc"
+    },
+    {
+      "id": 136,
+      "image": "images/136.webp",
+      "prompt": "prompts/136.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-a35a39ae-a24b-495b-aa28-2ebb9fdd9e6c.png",
+      "generated_at": "2026-09-20T21:41:17.568Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.856940+00:00"
+      },
+      "sha256": "1e2e4e29b3fa33f7c7892b3cab191035924980cf156248ae8a902aa3cf95e98b",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 146364,
+      "archived_source_png": "source/136.png",
+      "source_png_sha256": "41f6115875397fc353c61433b55e14ad414438faa945cb4f72527133a4e31ca3"
+    },
+    {
+      "id": 137,
+      "image": "images/137.webp",
+      "prompt": "prompts/137.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-27e67713-5a9b-4433-ac76-bc088f157eee.png",
+      "generated_at": "2026-09-20T21:40:00.073Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.857069+00:00"
+      },
+      "sha256": "6ff3c112f4d55ffaecf956cbe5b1370d31781f00d0ba33fbf5f242e7459961bd",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 123500,
+      "archived_source_png": "source/137.png",
+      "source_png_sha256": "d4f5b170676ebae95618e769331033275bd018e6ad3db0c84ac2220e956c0794"
+    },
+    {
+      "id": 138,
+      "image": "images/138.webp",
+      "prompt": "prompts/138.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-60b90fa3-9d8e-48cb-b19c-58c1b1882df5.png",
+      "generated_at": "2026-09-20T21:40:40.021Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.857188+00:00"
+      },
+      "sha256": "7fe4ed831f4bb542c30d6a88914aacbe809eb77190b15e8e56867f2a61c7e9f9",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 173948,
+      "archived_source_png": "source/138.png",
+      "source_png_sha256": "8a12cebc0fd7705862d6a008ec0d301795c854a63ff7b453c7787c4eecc2a8f4"
+    },
+    {
+      "id": 139,
+      "image": "images/139.webp",
+      "prompt": "prompts/139.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-766fbb91-53c0-4f4c-a25c-e848b578db7d.png",
+      "generated_at": "2026-09-20T21:41:17.438Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.857275+00:00"
+      },
+      "sha256": "5e8603ab25113563296cbb28e70237e0a4fd5c574a42c6b4530dc035822614fc",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 131476,
+      "archived_source_png": "source/139.png",
+      "source_png_sha256": "edee2e890865c086b1fd21f848f6f21c03521fa6fb679144292ad7d519708de8"
+    },
+    {
+      "id": 140,
+      "image": "images/140.webp",
+      "prompt": "prompts/140.md",
+      "generator": "OpenAI built-in image_gen",
+      "source_png": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-3ca2a307-e4af-4f74-9663-42db5859cb6e.png",
+      "generated_at": "2026-09-20T21:40:36.562Z",
+      "conversion": "cwebp -q 90 (no crop or resize)",
+      "visual_review": {
+        "status": "accepted",
+        "reviewer": "Codex visual inspection",
+        "method": "Labeled 480px contact sheet",
+        "checks": [
+          "handsome fictional adult male portrait",
+          "black-and-white",
+          "visible white Roman collar",
+          "bare head without hat",
+          "no visible facial/anatomical artifact",
+          "distinct appearance"
+        ],
+        "reviewed_at": "2026-09-20T21:42:04.857379+00:00"
+      },
+      "sha256": "98cc549f1093b001ea0ff7963f976c15f6d295d02bef5f4e6d60548da2da756b",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 150058,
+      "archived_source_png": "source/140.png",
+      "source_png_sha256": "a3a751a2117bfa45cac6a2d1835560aaad1f4b7356e6d0f97b92493b6fe26bb2"
+    }
+  ]
+}

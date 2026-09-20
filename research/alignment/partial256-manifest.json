@@ -1,0 +1,2883 @@
+{
+  "version": "partial-align-v1-2026-09-20",
+  "count": 110,
+  "resolution": 256,
+  "source_manifest_sha256": "50d61295d0f259b65092cfc1417b728c3299de03ae69d1703a9e09411982feb3",
+  "analysis_script_sha256": "5aa2e54e561ed63b1ecefdcb80a63199a6939f191f4aca6c6b3275447d990bcd",
+  "detector_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+  "settings": {
+    "target_eye_y": 0.4,
+    "target_eye_x": 0.5,
+    "desired_interocular": 0.24,
+    "top_guard": 0.02,
+    "collar_bottom_guard": 0.96,
+    "collar_padding_source_pixels": 4,
+    "border": "OpenCV BORDER_REFLECT_101",
+    "resize": "Pillow Lanczos to256square",
+    "warp": "OpenCV INTER_LANCZOS4",
+    "scale_clamped_to_preserve_head_and_collar": true
+  },
+  "visual_review": {
+    "status": "accepted_as_training_candidates",
+    "reviewer": "Codex",
+    "evidence": [
+      "partial-aligned-contact.png",
+      "comparison-contact.png",
+      "partial-aligned/original-013.png",
+      "partial-aligned/synthetic-083.png"
+    ],
+    "finding": "All110 displayed candidates retain clearly visible white collars and bare heads. The two heuristic collar misses were individually inspected. This is preprocessing review, not a generated-model approval."
+  },
+  "entries": [
+    {
+      "id": "original-001",
+      "image": "original-001.png",
+      "source": "public/portraits/01.webp",
+      "source_sha256": "527cb78585c384bc28a79e5f206fb0281c16bdf3fafac064e798d35c3442e086",
+      "training_sha256": "08e64498412b5ae1c33c0fe1d3d602311e35c32ae30a66b5c52e4097081b9cbb",
+      "matrix_source256_to_output256": [
+        [
+          1.2041020147370403,
+          -0.0746742850935796,
+          -18.363711516249055
+        ],
+        [
+          0.0746742850935796,
+          1.2041020147370403,
+          -15.009662873639954
+        ]
+      ],
+      "collar_box_heuristic": [
+        139,
+        147,
+        30,
+        20
+      ],
+      "reflected_padding_fraction": 0.00042724609375
+    },
+    {
+      "id": "original-002",
+      "image": "original-002.png",
+      "source": "public/portraits/02.webp",
+      "source_sha256": "3d37823184b6c70b5582ff5880265cb8c978996c08280844020d3cc1c827dcd3",
+      "training_sha256": "bd75f488db4d1cd564be485e7ccbcbc6ef3a290d37decac46371daa0d09a99ea",
+      "matrix_source256_to_output256": [
+        [
+          1.3327775506660866,
+          -0.03423760485278945,
+          -37.31960199827782
+        ],
+        [
+          0.03423760485278945,
+          1.3327775506660866,
+          -22.81356211814115
+        ]
+      ],
+      "collar_box_heuristic": [
+        132,
+        173,
+        19,
+        14
+      ],
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "original-003",
+      "image": "original-003.png",
+      "source": "public/portraits/03.webp",
+      "source_sha256": "a454709938e5499d1bbecf03d1b684895072dc233aa6edcaeccc8a9ca988fb25",
+      "training_sha256": "4e3fcae0594bf5d6712a741abfbb5095c75a2240d6994366131423bfe7a1a7c5",
+      "matrix_source256_to_output256": [
+        [
+          1.2622983120116187,
+          -0.05633570672573471,
+          -19.84966828433042
+        ],
+        [
+          0.05633570672573471,
+          1.2622983120116187,
+          -25.100668063717208
+        ]
+      ],
+      "collar_box_heuristic": [
+        126,
+        167,
+        37,
+        28
+      ],
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "original-004",
+      "image": "original-004.png",
+      "source": "public/portraits/04.webp",
+      "source_sha256": "26b47de31425e6b314cc885b59132164d0ae3bcb246854f1715a382518588588",
+      "training_sha256": "7a72c23d0b7c681e6a02ed0e6c1b20bbafd96fa5a7dfdec1bf5a4fcf1c0abe5f",
+      "matrix_source256_to_output256": [
+        [
+          1.3914578088705531,
+          -0.07243975499913825,
+          -33.97473563952738
+        ],
+        [
+          0.07243975499913825,
+          1.3914578088705531,
+          -37.33810888443762
+        ]
+      ],
+      "collar_box_heuristic": [
+        104,
+        161,
+        34,
+        22
+      ],
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "original-007",
+      "image": "original-007.png",
+      "source": "public/portraits/07.webp",
+      "source_sha256": "137dcb51bd6e029997bc0bdc258ea8806183126a6103f714c03636950a820ced",
+      "training_sha256": "9e657a9f22f732a0987ebcc46e530ed3f369ee25215508a28f0cabb0172cab8e",
+      "matrix_source256_to_output256": [
+        [
+          1.1715307000604522,
+          -0.03699900473679476,
+          -24.678161754366812
+        ],
+        [
+          0.03699900473679476,
+          1.1715307000604522,
+          0.20112667823740082
+        ]
+      ],
+      "collar_box_heuristic": [
+        126,
+        175,
+        23,
+        17
+      ],
+      "reflected_padding_fraction": 0.01922607421875
+    },
+    {
+      "id": "original-009",
+      "image": "original-009.png",
+      "source": "public/portraits/09.webp",
+      "source_sha256": "082e73f1ef892e0b41b2ceead466d455a27a389af237dac2a0f0d87330d505cd",
+      "training_sha256": "c62b62cbe8f03ef4f4ceed829095554ae42f58bab45602a6858fbee7f12abbf3",
+      "matrix_source256_to_output256": [
+        [
+          1.332084357263824,
+          -0.0670516230574348,
+          -13.617941735937364
+        ],
+        [
+          0.0670516230574348,
+          1.332084357263824,
+          -31.186942302641853
+        ]
+      ],
+      "collar_box_heuristic": [
+        113,
+        177,
+        23,
+        15
+      ],
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "original-010",
+      "image": "original-010.png",
+      "source": "public/portraits/10.webp",
+      "source_sha256": "fb5bb164a2c5211815ad3eb11e2e90dd59bc60e2eb6298e7a56de39ad1350ecc",
+      "training_sha256": "946cb2f33a1efdd4c0eac7fc3dd40c42b151a21142857af0daffe528eddaae0e",
+      "matrix_source256_to_output256": [
+        [
+          1.2293565150856607,
+          -0.06472157979990352,
+          -16.754097043070885
+        ],
+        [
+          0.06472157979990352,
+          1.2293565150856607,
+          -20.157682652003587
+        ]
+      ],
+      "collar_box_heuristic": [
+        124,
+        177,
+        17,
+        16
+      ],
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "original-013",
+      "image": "original-013.png",
+      "source": "public/portraits/13.webp",
+      "source_sha256": "77b05f08ae45c3ecefb005f1ab571217213da40dba8e5bcdad9a727d7212206d",
+      "training_sha256": "2fc74ea26bf03f9e1e237978f5308d09527624af9f0207e3149af994bce9f2a1",
+      "matrix_source256_to_output256": [
+        [
+          1.313233340700778,
+          -0.12931410945620753,
+          -5.924819971137509
+        ],
+        [
+          0.12931410945620753,
+          1.313233340700778,
+          -21.31298340711183
+        ]
+      ],
+      "collar_box_heuristic": null,
+      "reflected_padding_fraction": 0.00140380859375
+    },
+    {
+      "id": "original-018",
+      "image": "original-018.png",
+      "source": "public/portraits/18.webp",
+      "source_sha256": "ca0f2bdb141154cff9570a0c21ba226d9ceb677010c7091bb774ea372647e825",
+      "training_sha256": "1f52daf83aebcac851e9412963ab06701abe273a7f252c5952795ea842da8c4f",
+      "matrix_source256_to_output256": [
+        [
+          1.246029511333936,
+          -0.0834224402657879,
+          -11.252878955841823
+        ],
+        [
+          0.0834224402657879,
+          1.246029511333936,
+          -17.872560698411917
+        ]
+      ],
+      "collar_box_heuristic": [
+        101,
+        146,
+        61,
+        37
+      ],
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "original-020",
+      "image": "original-020.png",
+      "source": "public/portraits/20.webp",
+      "source_sha256": "728c528e8dd6415b6a088e5c564cf55e6a9bdde5a7dde2a356dcd6e7c52257fb",
+      "training_sha256": "8b66bc4bd9fde8ecedc3e4006d719f399c337d435c14b76ff72816bc26ded94c",
+      "matrix_source256_to_output256": [
+        [
+          1.141613715569267,
+          -0.02992303105571672,
+          -5.892303416250712
+        ],
+        [
+          0.02992303105571672,
+          1.141613715569267,
+          -4.584233573309902
+        ]
+      ],
+      "collar_box_heuristic": [
+        116,
+        177,
+        22,
+        16
+      ],
+      "reflected_padding_fraction": 0.00140380859375
+    },
+    {
+      "id": "original-022",
+      "image": "original-022.png",
+      "source": "public/portraits/22.webp",
+      "source_sha256": "838915839a3575edc2a73d619fb44dc3e70c0f04d2c73ce5b470246a4a58886d",
+      "training_sha256": "27e677f6a2cb9750e91289a792c799873e8ea9ef5c67ade81bfd8aa5e2288a94",
+      "matrix_source256_to_output256": [
+        [
+          1.0706237618953038,
+          0.04184278042620105,
+          -25.559156281665565
+        ],
+        [
+          -0.04184278042620105,
+          1.0706237618953038,
+          10.590055534591016
+        ]
+      ],
+      "collar_box_heuristic": [
+        110,
+        166,
+        23,
+        17
+      ],
+      "reflected_padding_fraction": 0.0288848876953125
+    },
+    {
+      "id": "original-023",
+      "image": "original-023.png",
+      "source": "public/portraits/23.webp",
+      "source_sha256": "4cadc1c5bfe440b2f010b4c6276198a67aab2df952e8adba44b0c105c001facd",
+      "training_sha256": "0b1776fee51c3b87eeac4bcf32b866586bce548885992e106354c22b610b8e83",
+      "matrix_source256_to_output256": [
+        [
+          1.0197893836023866,
+          -0.1476571374545578,
+          5.803948480108403
+        ],
+        [
+          0.1476571374545578,
+          1.0197893836023866,
+          -16.867199580993187
+        ]
+      ],
+      "collar_box_heuristic": [
+        134,
+        185,
+        28,
+        17
+      ],
+      "reflected_padding_fraction": 0.0510711669921875
+    },
+    {
+      "id": "original-025",
+      "image": "original-025.png",
+      "source": "public/portraits/25.webp",
+      "source_sha256": "3c139090920a54d61edf1b368aba29c14b14960f3f29e70424dd21309b1271e9",
+      "training_sha256": "ed85f8c6285b76fa75c1a2f7e300843c6899f2f4d78aaabd2ac37e5408c2b635",
+      "matrix_source256_to_output256": [
+        [
+          1.3261776447048699,
+          -0.08146988244284373,
+          -19.710286234742085
+        ],
+        [
+          0.08146988244284373,
+          1.3261776447048699,
+          -14.210543529037679
+        ]
+      ],
+      "collar_box_heuristic": [
+        108,
+        153,
+        28,
+        19
+      ],
+      "reflected_padding_fraction": 0.000762939453125
+    },
+    {
+      "id": "original-027",
+      "image": "original-027.png",
+      "source": "public/portraits/27.webp",
+      "source_sha256": "c87694746099edda7cee174f8c28807f761b4f068d6263ce2dd92cd8b21fcace",
+      "training_sha256": "02c246a13ba0570c5a197c14571ac18341c5a138965ae9f0c23558ff5950193e",
+      "matrix_source256_to_output256": [
+        [
+          1.3450334230782903,
+          -0.0660661566324615,
+          -26.064105579737543
+        ],
+        [
+          0.0660661566324615,
+          1.3450334230782903,
+          -21.05763951357676
+        ]
+      ],
+      "collar_box_heuristic": [
+        122,
+        163,
+        20,
+        15
+      ],
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "original-033",
+      "image": "original-033.png",
+      "source": "public/portraits/33.webp",
+      "source_sha256": "6454ec0848ac834bf32a7385867c8bec09113c01bcf8f34b86e11689689986a2",
+      "training_sha256": "8a3b332a92640c6182eeeb8c437aefebe3f368a0031e57cfa626f95ea7be62ba",
+      "matrix_source256_to_output256": [
+        [
+          1.1546589628332053,
+          -0.008401883755043983,
+          -24.17653947472772
+        ],
+        [
+          0.008401883755043983,
+          1.1546589628332053,
+          4.007535643209849
+        ]
+      ],
+      "collar_box_heuristic": [
+        137,
+        175,
+        19,
+        17
+      ],
+      "reflected_padding_fraction": 0.0196685791015625
+    },
+    {
+      "id": "original-036",
+      "image": "original-036.png",
+      "source": "public/portraits/36.webp",
+      "source_sha256": "c88160bdbcd4a63c2f4cd93a7bf4f7046f3e0216aff3ee00e4150c5c2b81933f",
+      "training_sha256": "c7d77607bb3551c8fcfe3eaa292b685deb608583e1c70b4d9f4c4019fb053c74",
+      "matrix_source256_to_output256": [
+        [
+          1.3018814454989176,
+          0.09078072703155736,
+          -51.683427758925404
+        ],
+        [
+          -0.09078072703155736,
+          1.3018814454989176,
+          14.33247457923322
+        ]
+      ],
+      "collar_box_heuristic": [
+        108,
+        162,
+        22,
+        14
+      ],
+      "reflected_padding_fraction": 0.0123138427734375
+    },
+    {
+      "id": "original-038",
+      "image": "original-038.png",
+      "source": "public/portraits/38.webp",
+      "source_sha256": "321fa50d7c7b07c47e9fe5914746de6f7ddddbb0c3e9964db005fd735bce0ca4",
+      "training_sha256": "9ca0afe388161f21c17c36cfb02a33436dcaaa46027401967805e36d8d9f385e",
+      "matrix_source256_to_output256": [
+        [
+          1.1408677439727724,
+          -0.027103730564437985,
+          -24.252690483955746
+        ],
+        [
+          0.027103730564437985,
+          1.1408677439727724,
+          -11.5850290807915
+        ]
+      ],
+      "collar_box_heuristic": [
+        97,
+        157,
+        53,
+        36
+      ],
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "original-045",
+      "image": "original-045.png",
+      "source": "public/portraits/45.webp",
+      "source_sha256": "61793b125584245a3866b1a8d2f9fbea43933f71bc9f58beaae255f6f961357e",
+      "training_sha256": "4be7579c12409ba93acd35fa7e0fbb34f6ea92c50d287c3225fabe3ed63ffc76",
+      "matrix_source256_to_output256": [
+        [
+          1.201890813088765,
+          -0.06626219525194595,
+          8.320899535475675
+        ],
+        [
+          0.06626219525194595,
+          1.201890813088765,
+          -1.773785644773966
+        ]
+      ],
+      "collar_box_heuristic": [
+        85,
+        139,
+        54,
+        42
+      ],
+      "reflected_padding_fraction": 0.0283050537109375
+    },
+    {
+      "id": "original-046",
+      "image": "original-046.png",
+      "source": "public/portraits/46.webp",
+      "source_sha256": "e0e2c88957f947e3baf23aa966d5d0649bc4051fe36a52af8cdfe55e7fc5934a",
+      "training_sha256": "7a70527a3e9f724c7705dcaf96dab54eb44d50602959525e2c1a266035b9f143",
+      "matrix_source256_to_output256": [
+        [
+          1.141400233164366,
+          -0.08594472657168302,
+          -2.192605290530196
+        ],
+        [
+          0.08594472657168302,
+          1.141400233164366,
+          -11.400071847882515
+        ]
+      ],
+      "collar_box_heuristic": [
+        126,
+        173,
+        25,
+        18
+      ],
+      "reflected_padding_fraction": 0.006378173828125
+    },
+    {
+      "id": "original-047",
+      "image": "original-047.png",
+      "source": "public/portraits/47.webp",
+      "source_sha256": "afb0315ba101f64b6343b13cf8efafcb92bc20ade1b7f4a8acc4c742b2a2922f",
+      "training_sha256": "986137a57209b0052ab3d795281762ead4859826de04cdcf46df5ffd05652ab8",
+      "matrix_source256_to_output256": [
+        [
+          1.1692366019094123,
+          -0.01756450340239158,
+          -32.53771345475249
+        ],
+        [
+          0.01756450340239158,
+          1.1692366019094123,
+          2.6864178990171155
+        ]
+      ],
+      "collar_box_heuristic": [
+        135,
+        161,
+        29,
+        21
+      ],
+      "reflected_padding_fraction": 0.019561767578125
+    },
+    {
+      "id": "original-051",
+      "image": "original-051.png",
+      "source": "public/portraits/51.webp",
+      "source_sha256": "4a7eae18c5a59587bb258f203b1cd63ea4b11a289cfca342494bedef906b6292",
+      "training_sha256": "4f93f3ca7272ef40948a921d674d4c8d6e8fa026dd591178662f832586c89dde",
+      "matrix_source256_to_output256": [
+        [
+          1.0959198266356456,
+          0.08292425700526736,
+          -34.78771749789675
+        ],
+        [
+          -0.08292425700526736,
+          1.0959198266356456,
+          16.880586351814657
+        ]
+      ],
+      "collar_box_heuristic": [
+        107,
+        181,
+        30,
+        20
+      ],
+      "reflected_padding_fraction": 0.0305023193359375
+    },
+    {
+      "id": "original-052",
+      "image": "original-052.png",
+      "source": "public/portraits/52.webp",
+      "source_sha256": "f4dd3fc100a5058f9f1d06ba054157c726cbe0505784090ef88e0f0ece50db76",
+      "training_sha256": "3e4a85b1d52ff0a2962329bd0cacbf01d1e9466f72283bc869d50f488e0424ea",
+      "matrix_source256_to_output256": [
+        [
+          1.171445078664977,
+          -0.05852827165716085,
+          8.250983100931848
+        ],
+        [
+          0.05852827165716085,
+          1.171445078664977,
+          -1.1057897265221612
+        ]
+      ],
+      "collar_box_heuristic": [
+        106,
+        176,
+        26,
+        18
+      ],
+      "reflected_padding_fraction": 0.0290985107421875
+    },
+    {
+      "id": "original-053",
+      "image": "original-053.png",
+      "source": "public/portraits/53.webp",
+      "source_sha256": "cc67f2037d65130353b79b3ea6af1b6fe70319c2e82d4508bd09e28d9b21c2f4",
+      "training_sha256": "510f21fad03951be28d2d8daff4e022c163788b12783ef171ebbadc111872340",
+      "matrix_source256_to_output256": [
+        [
+          1.2142832194587254,
+          -0.05946360424505259,
+          -9.602169226072618
+        ],
+        [
+          0.05946360424505259,
+          1.2142832194587254,
+          -12.854926070206801
+        ]
+      ],
+      "collar_box_heuristic": [
+        125,
+        172,
+        20,
+        16
+      ],
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "original-054",
+      "image": "original-054.png",
+      "source": "public/portraits/54.webp",
+      "source_sha256": "9ecf2cffe6a5a1b7eaa68ea1f90393a86c412c12dd570c36771adc8e3cc4ba17",
+      "training_sha256": "a526c7f0c8e7d8ed306203cfa3b2e0b99cfc95578b0234339de147561c7ee795",
+      "matrix_source256_to_output256": [
+        [
+          1.1147149922870234,
+          -0.14901516508547435,
+          7.69957184981719
+        ],
+        [
+          0.14901516508547435,
+          1.1147149922870234,
+          -12.700196664252218
+        ]
+      ],
+      "collar_box_heuristic": [
+        124,
+        184,
+        28,
+        21
+      ],
+      "reflected_padding_fraction": 0.0257110595703125
+    },
+    {
+      "id": "original-055",
+      "image": "original-055.png",
+      "source": "public/portraits/55.webp",
+      "source_sha256": "01a1065100942705910d28711a03d443c7745cc975a75cd6cafe4a3b09866501",
+      "training_sha256": "329e1f63ca9e3089c10ed9de8bc1165a42cd5b01c52146e2ff4fb5ac03466fcd",
+      "matrix_source256_to_output256": [
+        [
+          1.1495429784070164,
+          0.051436228552253056,
+          -22.899547240886477
+        ],
+        [
+          -0.051436228552253056,
+          1.1495429784070164,
+          11.67722558349385
+        ]
+      ],
+      "collar_box_heuristic": [
+        103,
+        180,
+        26,
+        19
+      ],
+      "reflected_padding_fraction": 0.019134521484375
+    },
+    {
+      "id": "original-056",
+      "image": "original-056.png",
+      "source": "public/portraits/56.webp",
+      "source_sha256": "7169965ffacaa1a73b82e3ff47e3979e536c7e6dd9de78233dcee6437276744c",
+      "training_sha256": "1d8c2ec7bc16336a9f68eba24b0437657aaba1cd7dbe183b1ec23066190696fe",
+      "matrix_source256_to_output256": [
+        [
+          1.0235878715279103,
+          -0.09764492070816068,
+          16.90654154666204
+        ],
+        [
+          0.09764492070816068,
+          1.0235878715279103,
+          -7.8177628890007895
+        ]
+      ],
+      "collar_box_heuristic": [
+        127,
+        185,
+        30,
+        20
+      ],
+      "reflected_padding_fraction": 0.0388641357421875
+    },
+    {
+      "id": "original-057",
+      "image": "original-057.png",
+      "source": "public/portraits/57.webp",
+      "source_sha256": "1aa12c908eeb62d4ca141da30e4c77b4709058d5f30b2313b7780958d45e90ed",
+      "training_sha256": "0600cf30d83e89233f147a5b462caf71b3afd1535cd6df1ce1fcf1c3a5f188d6",
+      "matrix_source256_to_output256": [
+        [
+          1.0561102085879683,
+          -0.1184341550712876,
+          21.305521725211563
+        ],
+        [
+          0.1184341550712876,
+          1.0561102085879683,
+          -17.973885506066864
+        ]
+      ],
+      "collar_box_heuristic": [
+        117,
+        189,
+        24,
+        16
+      ],
+      "reflected_padding_fraction": 0.030487060546875
+    },
+    {
+      "id": "original-058",
+      "image": "original-058.png",
+      "source": "public/portraits/58.webp",
+      "source_sha256": "04d72ec6329a81227021b7a5a98922ec9e138331e32d1ed7b41ee360e387b5e0",
+      "training_sha256": "4d265ef6c4290ad70d8096c64ae04a33c54eca645e40f216e42907a33e45903d",
+      "matrix_source256_to_output256": [
+        [
+          1.0949653882837347,
+          -0.038610400465613134,
+          2.52870900989042
+        ],
+        [
+          0.038610400465613134,
+          1.0949653882837347,
+          -4.681038490940097
+        ]
+      ],
+      "collar_box_heuristic": [
+        115,
+        185,
+        25,
+        16
+      ],
+      "reflected_padding_fraction": 0.0049591064453125
+    },
+    {
+      "id": "original-059",
+      "image": "original-059.png",
+      "source": "public/portraits/59.webp",
+      "source_sha256": "c81a7023f9caada6776059e5102220a2722c2b07059b7a4ebf37f7ff8bb8c5ec",
+      "training_sha256": "b3a5b72ae806c3ceefbffbdbd671b8947f7a3a5989d207b0eca62e744e0f5f2c",
+      "matrix_source256_to_output256": [
+        [
+          1.1071945776600614,
+          -0.07162645472277906,
+          8.297083967787444
+        ],
+        [
+          0.07162645472277906,
+          1.1071945776600614,
+          -7.717087324730386
+        ]
+      ],
+      "collar_box_heuristic": [
+        122,
+        180,
+        20,
+        17
+      ],
+      "reflected_padding_fraction": 0.01507568359375
+    },
+    {
+      "id": "original-060",
+      "image": "original-060.png",
+      "source": "public/portraits/60.webp",
+      "source_sha256": "a993ceaefe3cb85556b405729f0dfa6aad2ad3386f4dc6356c858900539ac25d",
+      "training_sha256": "61112bf4d24d90689e6fdd60bfa4bbbbeeed41ddd602271c48493b4b784ff5c0",
+      "matrix_source256_to_output256": [
+        [
+          1.0936653677621304,
+          -0.04627758894500908,
+          10.410404562133522
+        ],
+        [
+          0.04627758894500908,
+          1.0936653677621304,
+          -1.1452242253206464
+        ]
+      ],
+      "collar_box_heuristic": [
+        121,
+        184,
+        26,
+        19
+      ],
+      "reflected_padding_fraction": 0.034423828125
+    },
+    {
+      "id": "original-061",
+      "image": "original-061.png",
+      "source": "public/portraits/61.webp",
+      "source_sha256": "a751f9d5d418fb9a02e2cdd951918fb861db1bffef12b347ebde114fda17d221",
+      "training_sha256": "5d86a00833f88271bc1b4e3c32df6cb8dcff8531ff030a1df5e6b96bbbcffaa1",
+      "matrix_source256_to_output256": [
+        [
+          1.078981585734344,
+          -0.08083543225607558,
+          12.720788678355945
+        ],
+        [
+          0.08083543225607558,
+          1.078981585734344,
+          -6.906032175951964
+        ]
+      ],
+      "collar_box_heuristic": [
+        117,
+        181,
+        27,
+        17
+      ],
+      "reflected_padding_fraction": 0.0279998779296875
+    },
+    {
+      "id": "original-062",
+      "image": "original-062.png",
+      "source": "public/portraits/62.webp",
+      "source_sha256": "ccde0407557caa640f6afd6f439b989233a516d18ba243c8a551f7ac3b17a816",
+      "training_sha256": "3365f53f8d607ba6078cec063c338f95c49e9fc422bf884d38c55c0f32a0d95b",
+      "matrix_source256_to_output256": [
+        [
+          1.2480475011734686,
+          -0.047224943410827086,
+          -16.16226034774772
+        ],
+        [
+          0.047224943410827086,
+          1.2480475011734686,
+          -0.4742492787711825
+        ]
+      ],
+      "collar_box_heuristic": [
+        121,
+        168,
+        24,
+        18
+      ],
+      "reflected_padding_fraction": 0.0188751220703125
+    },
+    {
+      "id": "original-063",
+      "image": "original-063.png",
+      "source": "public/portraits/63.webp",
+      "source_sha256": "2f912e1e6325fc810bcc4d9c09daa83c1632570c81ba4d024c3c98dddde01b1f",
+      "training_sha256": "fd21076e4bdf090a72d50a87285490d85949fa173cc918e4d9a2757e63424e69",
+      "matrix_source256_to_output256": [
+        [
+          1.1090999297607735,
+          -0.10086041872994377,
+          14.40642875302251
+        ],
+        [
+          0.10086041872994377,
+          1.1090999297607735,
+          -12.628767352391606
+        ]
+      ],
+      "collar_box_heuristic": [
+        117,
+        177,
+        24,
+        17
+      ],
+      "reflected_padding_fraction": 0.021820068359375
+    },
+    {
+      "id": "original-064",
+      "image": "original-064.png",
+      "source": "public/portraits/64.webp",
+      "source_sha256": "cde376ff913778d5b65b4abfe4a1cf4931c6ce9a64561c95f0d51dea81a7fe35",
+      "training_sha256": "c80217e241d748784432198f0fc6d90ee2a25485db95dbbb5ccdbbe06f71bfa0",
+      "matrix_source256_to_output256": [
+        [
+          1.2057266541173806,
+          -0.060426193250866886,
+          -28.66951789279588
+        ],
+        [
+          0.060426193250866886,
+          1.2057266541173806,
+          -5.642622927326059
+        ]
+      ],
+      "collar_box_heuristic": [
+        139,
+        170,
+        21,
+        15
+      ],
+      "reflected_padding_fraction": 0.010986328125
+    },
+    {
+      "id": "original-065",
+      "image": "original-065.png",
+      "source": "public/portraits/65.webp",
+      "source_sha256": "e5f13487e5667883dec95f0ffa7e9f18a4cd0cbf6ea8ed2d8e1cc45e77df4edc",
+      "training_sha256": "906a94156cbbf5821bc36a4a6522785edb4a1d2d38b6e534f27dd5874b821bff",
+      "matrix_source256_to_output256": [
+        [
+          1.142018621428198,
+          -0.07112059747927008,
+          3.315255291329109
+        ],
+        [
+          0.07112059747927008,
+          1.142018621428198,
+          -4.287274405670814
+        ]
+      ],
+      "collar_box_heuristic": [
+        117,
+        174,
+        22,
+        17
+      ],
+      "reflected_padding_fraction": 0.016876220703125
+    },
+    {
+      "id": "original-066",
+      "image": "original-066.png",
+      "source": "public/portraits/66.webp",
+      "source_sha256": "f367280e44b540505c293ec82ee0e462b87d0323570a723c212fb1b4dac75219",
+      "training_sha256": "25fb527cd774d16e9396cfc1088898582ce4ed8dfbd92c05ff901ce1ef530f58",
+      "matrix_source256_to_output256": [
+        [
+          1.0559723656507722,
+          -0.11572783324917951,
+          6.3896552028375595
+        ],
+        [
+          0.11572783324917951,
+          1.0559723656507722,
+          -18.480151917545683
+        ]
+      ],
+      "collar_box_heuristic": [
+        131,
+        200,
+        23,
+        16
+      ],
+      "reflected_padding_fraction": 0.0094757080078125
+    },
+    {
+      "id": "original-067",
+      "image": "original-067.png",
+      "source": "public/portraits/67.webp",
+      "source_sha256": "5c6bf6f60494417f29df7906276105c5807d7dafd5d885c08756bc4c9e9233a3",
+      "training_sha256": "276eea2f2269f688d8ff6760e5c01555781c076bbaaaadf25503e731c8cf727b",
+      "matrix_source256_to_output256": [
+        [
+          1.2355909754370427,
+          -0.06675715317446952,
+          2.04967346394956
+        ],
+        [
+          0.06675715317446952,
+          1.2355909754370427,
+          -2.295227336817632
+        ]
+      ],
+      "collar_box_heuristic": [
+        113,
+        162,
+        23,
+        17
+      ],
+      "reflected_padding_fraction": 0.018402099609375
+    },
+    {
+      "id": "original-068",
+      "image": "original-068.png",
+      "source": "public/portraits/68.webp",
+      "source_sha256": "e472c12d3f61a9a4671db844bad2a187ac7e3a0b94741b2e598d0a94434634e7",
+      "training_sha256": "14cb601f5754edad2ce37c8eb151964dff7dddac5a793338753192a4fb3c1fb7",
+      "matrix_source256_to_output256": [
+        [
+          1.0444781839669735,
+          0.05190150288249775,
+          -21.054943729854728
+        ],
+        [
+          -0.05190150288249775,
+          1.0444781839669735,
+          12.286530904714226
+        ]
+      ],
+      "collar_box_heuristic": [
+        102,
+        182,
+        28,
+        18
+      ],
+      "reflected_padding_fraction": 0.0337066650390625
+    },
+    {
+      "id": "original-069",
+      "image": "original-069.png",
+      "source": "public/portraits/69.webp",
+      "source_sha256": "987e3c61db0eee48b9bb12488d719bde4a4263185cd675a00669abdc262ef1e7",
+      "training_sha256": "3989ff1d841637f425aa0ccdb2799a4bd2a7705787f1aab2ea68900c3ff09346",
+      "matrix_source256_to_output256": [
+        [
+          1.1080848012206876,
+          -0.027576776148519007,
+          4.844573779526456
+        ],
+        [
+          0.027576776148519007,
+          1.1080848012206876,
+          -3.771848252287853
+        ]
+      ],
+      "collar_box_heuristic": [
+        117,
+        171,
+        17,
+        14
+      ],
+      "reflected_padding_fraction": 0.008514404296875
+    },
+    {
+      "id": "original-070",
+      "image": "original-070.png",
+      "source": "public/portraits/70.webp",
+      "source_sha256": "da3480d384726d7626dc05fb542284e9af4561c107eda13d3752b0e7eddf021d",
+      "training_sha256": "b86c343b17a0235aed890d718e852eff8842f2bf09f13e064e8a3b01f6f2b447",
+      "matrix_source256_to_output256": [
+        [
+          1.0710995229494702,
+          -0.05229453578790269,
+          2.1801756679473243
+        ],
+        [
+          0.05229453578790269,
+          1.0710995229494702,
+          -4.127173017164694
+        ]
+      ],
+      "collar_box_heuristic": [
+        136,
+        191,
+        28,
+        18
+      ],
+      "reflected_padding_fraction": 0.0111083984375
+    },
+    {
+      "id": "original-071",
+      "image": "original-071.png",
+      "source": "public/portraits/71.webp",
+      "source_sha256": "7ed3227fce2bc31d9a55be5a45eb79eef02202594a9c329b0929decb493f5fa8",
+      "training_sha256": "3aad9bb20f529ee2236ece4a8310c385f9a4a985ffdbe2a2ecdf7da714b4424f",
+      "matrix_source256_to_output256": [
+        [
+          1.2638978341621085,
+          -0.04815993026803887,
+          -7.404663678306321
+        ],
+        [
+          0.04815993026803887,
+          1.2638978341621085,
+          -9.659650840444485
+        ]
+      ],
+      "collar_box_heuristic": [
+        113,
+        168,
+        22,
+        16
+      ],
+      "reflected_padding_fraction": 0.0
+    },
+    {
+      "id": "original-072",
+      "image": "original-072.png",
+      "source": "public/portraits/72.webp",
+      "source_sha256": "70887ef7bb49a050e4893c9043975fe1abda958361ca8a393b5694b9f0d88e53",
+      "training_sha256": "aedf3b1bf99a521cd65d7736435febb1667e32e8e6580cf4055a27d392edf1cb",
+      "matrix_source256_to_output256": [
+        [
+          1.2125725481267997,
+          0.030596277035620286,
+          -20.46115187281029
+        ],
+        [
+          -0.030596277035620286,
+          1.2125725481267997,
+          8.804114636942899
+        ]
+      ],
+      "collar_box_heuristic": [
+        93,
+        174,
+        27,
+        17
+      ],
+      "reflected_padding_fraction": 0.0193939208984375
+    },
+    {
+      "id": "original-073",
+      "image": "original-073.png",
+      "source": "public/portraits/73.webp",
+      "source_sha256": "56195796a2f8d4d329dc911fc5e7b953ddff3e70dc1b494d04d87cf220e33306",
+      "training_sha256": "65d4c02727c541dcebf55983f29f3b4f31f5d7e6285c27a0e02a8b26d68fd866",
+      "matrix_source256_to_output256": [
+        [
+          1.0429049897054443,
+          -0.10051076325142198,
+          10.857793706715839
+        ],
+        [
+          0.10051076325142198,
+          1.0429049897054443,
+          -7.147164078711555
+        ]
+      ],
+      "collar_box_heuristic": [
+        133,
+        176,
+        28,
+        20
+      ],
+      "reflected_padding_fraction": 0.02960205078125
+    },
+    {
+      "id": "original-074",
+      "image": "original-074.png",
+      "source": "public/portraits/74.webp",
+      "source_sha256": "79a5bf0dffac62011b2b6a7c69e92ed5658cce31f79e4edea3da8e5a4f3dc338",
+      "training_sha256": "6be40ff285a4ae6af40d5fc679f366598590dfe7d178e1e6375a40ffe15e2915",
+      "matrix_source256_to_output256": [
+        [
+          1.185400127309791,
+          -0.021188575698520333,
+          -11.822723298649095
+        ],
+        [
+          0.021188575698520333,
+          1.185400127309791,
+          -2.5672604375446326
+        ]
+      ],
+      "collar_box_heuristic": [
+        128,
+        180,
+        23,
+        16
+      ],
+      "reflected_padding_fraction": 0.001922607421875
+    },
+    {
+      "id": "original-075",
+      "image": "original-075.png",
+      "source": "public/portraits/75.webp",
+      "source_sha256": "8f9a0af98abb0e23a4e9fd20f708cdf5b3a80df2563d9bddbfed7ba19db9f566",
+      "training_sha256": "f0ae4a31651e5825a9549daafffad8a5968fcc5deee1f29e142c578defccd6dc",
+      "matrix_source256_to_output256": [
+        [
+          1.2090064879866762,
+          -0.02876655002683057,
+          -2.95286723555418
+        ],
+        [
+          0.02876655002683057,
+          1.2090064879866762,
+          -4.646311681447244
+        ]
+      ],
+      "collar_box_heuristic": [
+        115,
+        171,
+        23,
+        17
+      ],
+      "reflected_padding_fraction": 0.000579833984375
+    },
+    {
+      "id": "original-076",
+      "image": "original-076.png",
+      "source": "public/portraits/76.webp",
+      "source_sha256": "478b445dbb9352d278ead1682f1771705d3cb3d7530c0f763059bd0239ae6719",
+      "training_sha256": "893849e576c699956c5d43b9916dacd787bfd7b735b6fa8cd7f2908b57f76fbe",
+      "matrix_source256_to_output256": [
+        [
+          1.1753473619568677,
+          -0.06052685849478228,
+          3.286428605315777
+        ],
+        [
+          0.06052685849478228,
+          1.1753473619568677,
+          -1.5603550797104901
+        ]
+      ],
+      "collar_box_heuristic": [
+        113,
+        176,
+        27,
+        17
+      ],
+      "reflected_padding_fraction": 0.020477294921875
+    },
+    {
+      "id": "original-077",
+      "image": "original-077.png",
+      "source": "public/portraits/77.webp",
+      "source_sha256": "83d8af44538c32b05110418768bf91625c459e694642a989ea67a959f6ecf494",
+      "training_sha256": "2c7d16d56fc11f17563ff022670061935d31e644eee72e08473973f15774052f",
+      "matrix_source256_to_output256": [
+        [
+          1.141291223408838,
+          0.06349555267516634,
+          -35.76519977623826
+        ],
+        [
+          -0.06349555267516634,
+          1.141291223408838,
+          13.929945926303674
+        ]
+      ],
+      "collar_box_heuristic": [
+        111,
+        168,
+        29,
+        18
+      ],
+      "reflected_padding_fraction": 0.0194091796875
+    },
+    {
+      "id": "original-078",
+      "image": "original-078.png",
+      "source": "public/portraits/78.webp",
+      "source_sha256": "1f3e50c9e9a1dd8d642af67f13cdf707ad3531c66efe69b4c24939c367d11892",
+      "training_sha256": "5f89ae210681ce52ff3286f32bc59f87069384fe366fda72b3527fb811d60746",
+      "matrix_source256_to_output256": [
+        [
+          1.1143332056798403,
+          -0.08804062372800796,
+          7.312353572241193
+        ],
+        [
+          0.08804062372800796,
+          1.1143332056798403,
+          -14.19813152606126
+        ]
+      ],
+      "collar_box_heuristic": [
+        119,
+        179,
+        25,
+        18
+      ],
+      "reflected_padding_fraction": 0.00640869140625
+    },
+    {
+      "id": "original-079",
+      "image": "original-079.png",
+      "source": "public/portraits/79.webp",
+      "source_sha256": "9c01dbe21b265174cb6510d46cc86ff433e16d306ae8510fbd2ab53f5ec47a1b",
+      "training_sha256": "1db9251fd4e3da9725a632dc3dda663d5cc2f680d63cee254d9f73d8912cd600",
+      "matrix_source256_to_output256": [
+        [
+          1.1992559519288764,
+          -0.06787568761055764,
+          -8.402615487453005
+        ],
+        [
+          0.06787568761055764,
+          1.1992559519288764,
+          -2.9117600156393735
+        ]
+      ],
+      "collar_box_heuristic": [
+        118,
+        172,
+        26,
+        18
+      ],
+      "reflected_padding_fraction": 0.019134521484375
+    },
+    {
+      "id": "original-080",
+      "image": "original-080.png",
+      "source": "public/portraits/80.webp",
+      "source_sha256": "162ce1c04d0cd1276b76f8d10efeb5426a0716147ab2014868213a8474f98a31",
+      "training_sha256": "25d999f9f6b47b799963c2fb93d05c0321022e4b43c9f8b370db2d43ec5bc358",
+      "matrix_source256_to_output256": [
+        [
+          1.0572011442365357,
+          0.09207173833807428,
+          -25.947092593886623
+        ],
+        [
+          -0.09207173833807428,
+          1.0572011442365357,
+          16.31590831800594
+        ]
+      ],
+      "collar_box_heuristic": [
+        109,
+        181,
+        21,
+        16
+      ],
+      "reflected_padding_fraction": 0.027435302734375
+    },
+    {
+      "id": "synthetic-081",
+      "image": "synthetic-081.png",
+      "source": "research/data/synthetic/images/081.webp",
+      "source_sha256": "d7356ecec886c99f7485b2c7a13ec57c3331eac6235a58c61153bc7c11e1c35c",
+      "training_sha256": "0425a0e586c5cbbc56cb9f5aecf5e965ea7b03d6f0a490bc7c2c29e2e7dc2370",
+      "matrix_source256_to_output256": [
+        [
+          1.107520788352668,
+          -0.09416294973050054,
+          1.1755329586825383
+        ],
+        [
+          0.09416294973050054,
+          1.107520788352668,
+          -6.365993332193739
+        ]
+      ],
+      "collar_box_heuristic": [
+        117,
+        185,
+        24,
+        18
+      ],
+      "reflected_padding_fraction": 0.020751953125
+    },
+    {
+      "id": "synthetic-082",
+      "image": "synthetic-082.png",
+      "source": "research/data/synthetic/images/082.webp",
+      "source_sha256": "d219894d61b692ec24c6f727d2bc3657a2bebd50e40d0bcda16623a93f49d2aa",
+      "training_sha256": "ed4d738d51b476b88a2f4a1dcecb0f50a5bf5fd5e60e2d8208bb5ccf4071a22f",
+      "matrix_source256_to_output256": [
+        [
+          1.0374804199300116,
+          -0.12307236455838334,
+          36.795834536819044
+        ],
+        [
+          0.12307236455838334,
+          1.0374804199300116,
+          -7.068145314010408
+        ]
+      ],
+      "collar_box_heuristic": [
+        102,
+        187,
+        25,
+        20
+      ],
+      "reflected_padding_fraction": 0.1041412353515625
+    },
+    {
+      "id": "synthetic-083",
+      "image": "synthetic-083.png",
+      "source": "research/data/synthetic/images/083.webp",
+      "source_sha256": "f97fa579d0c05b98cbd462c7f81cf70679f21274933aebc8e305bed86b63c41f",
+      "training_sha256": "ab0894bffb1838f592b81f32362d086cb68e717343b278578d1526e4cadfeb4c",
+      "matrix_source256_to_output256": [
+        [
+          1.1535416496660336,
+          -0.040761055262179165,
+          9.565881617461216
+        ],
+        [
+          0.040761055262179165,
+          1.1535416496660336,
+          -2.4052026321825934
+        ]
+      ],
+      "collar_box_heuristic": null,
+      "reflected_padding_fraction": 0.027435302734375
+    },
+    {
+      "id": "synthetic-084",
+      "image": "synthetic-084.png",
+      "source": "research/data/synthetic/images/084.webp",
+      "source_sha256": "257b884bf574180711ff20429e37ff6072e1e04c705d979334e6b8c8ecdc8322",
+      "training_sha256": "8c5432f8533e3ea1b01b41f3e90897abd903b4a1830cae4f7f429daaadc5d854",
+      "matrix_source256_to_output256": [
+        [
+          1.1429075576779928,
+          -0.09457707739119092,
+          -16.185058725004694
+        ],
+        [
+          0.09457707739119092,
+          1.1429075576779928,
+          -7.477651627780631
+        ]
+      ],
+      "collar_box_heuristic": [
+        140,
+        179,
+        16,
+        18
+      ],
+      "reflected_padding_fraction": 0.020538330078125
+    },
+    {
+      "id": "synthetic-085",
+      "image": "synthetic-085.png",
+      "source": "research/data/synthetic/images/085.webp",
+      "source_sha256": "8b0ebd859cdc215d8be089c9726cfc007b0a57cf71c8a624785ec2a1c2c5604d",
+      "training_sha256": "59ebccb9452f9896c23dd3ad99b17afed2b5bdf116a9b6a382ea5f0ac560b8a7",
+      "matrix_source256_to_output256": [
+        [
+          1.1783892385102817,
+          -0.05366793216872277,
+          -9.583721173343065
+        ],
+        [
+          0.05366793216872277,
+          1.1783892385102817,
+          -1.3478186554176261
+        ]
+      ],
+      "collar_box_heuristic": [
+        125,
+        169,
+        19,
+        17
+      ],
+      "reflected_padding_fraction": 0.0189666748046875
+    },
+    {
+      "id": "synthetic-086",
+      "image": "synthetic-086.png",
+      "source": "research/data/synthetic/images/086.webp",
+      "source_sha256": "79cf9da3d1ad24e74c899f124f7281c20858f569763dd23ed2b6fd45577f9d9e",
+      "training_sha256": "c3a46e22e3be4eee58d58aca234de857c188b99fbb5511848caf70b2159e9582",
+      "matrix_source256_to_output256": [
+        [
+          1.1184458944865636,
+          -0.09621582934127809,
+          32.276587604523755
+        ],
+        [
+          0.09621582934127809,
+          1.1184458944865636,
+          -3.8346607607598315
+        ]
+      ],
+      "collar_box_heuristic": [
+        101,
+        176,
+        23,
+        19
+      ],
+      "reflected_padding_fraction": 0.102447509765625
+    },
+    {
+      "id": "synthetic-087",
+      "image": "synthetic-087.png",
+      "source": "research/data/synthetic/images/087.webp",
+      "source_sha256": "877c18580a516f829da77631b78f5dcefa13e2467ec6515a87a74752536713b8",
+      "training_sha256": "d3531fec19ba52955f71966371e7b3cbff3cb9532af47bf25569df76f1571c54",
+      "matrix_source256_to_output256": [
+        [
+          1.3038682580845722,
+          -0.07421741936105708,
+          -41.49984649463403
+        ],
+        [
+          0.07421741936105708,
+          1.3038682580845722,
+          -4.843278878942144
+        ]
+      ],
+      "collar_box_heuristic": [
+        136,
+        158,
+        20,
+        19
+      ],
+      "reflected_padding_fraction": 0.0189971923828125
+    },
+    {
+      "id": "synthetic-088",
+      "image": "synthetic-088.png",
+      "source": "research/data/synthetic/images/088.webp",
+      "source_sha256": "21d54a6f4ec77abc3b7a7a2dc7b1f05842de24743e67e82f07ed31e007f17dc2",
+      "training_sha256": "d6cf1ab815290704aca8d1795c53ae81d67289e0d805e4d3df6aecaca0934d6a",
+      "matrix_source256_to_output256": [
+        [
+          1.1715559960165558,
+          0.002963547564786002,
+          -21.288760489957042
+        ],
+        [
+          -0.002963547564786002,
+          1.1715559960165558,
+          5.497015764397688
+        ]
+      ],
+      "collar_box_heuristic": [
+        118,
+        174,
+        25,
+        16
+      ],
+      "reflected_padding_fraction": 0.01953125
+    },
+    {
+      "id": "synthetic-089",
+      "image": "synthetic-089.png",
+      "source": "research/data/synthetic/images/089.webp",
+      "source_sha256": "65cdf00c4ab05951d0215f4db33502f84789a0fd7791422279a279e212bb4fe3",
+      "training_sha256": "32f29b546fae1739a75b29964df4fdfb431bd015a7d0d97d3bfe78db4e2ac17b",
+      "matrix_source256_to_output256": [
+        [
+          1.051642281009308,
+          -0.06815468637069343,
+          -0.4091344736531539
+        ],
+        [
+          0.06815468637069343,
+          1.051642281009308,
+          -3.698933629073764
+        ]
+      ],
+      "collar_box_heuristic": [
+        128,
+        187,
+        20,
+        15
+      ],
+      "reflected_padding_fraction": 0.02044677734375
+    },
+    {
+      "id": "synthetic-090",
+      "image": "synthetic-090.png",
+      "source": "research/data/synthetic/images/090.webp",
+      "source_sha256": "a667ce2efff8f571bda05735a8e64bc4ebf4eade3214fa9c9a9a4a7e026ace19",
+      "training_sha256": "8de3f791de5648cf2029702dd9603f74d98b34b4740670a0a728e2def37d63a6",
+      "matrix_source256_to_output256": [
+        [
+          1.2193320761658188,
+          -0.08573513723571116,
+          17.883983969162628
+        ],
+        [
+          0.08573513723571116,
+          1.2193320761658188,
+          -3.103556239778001
+        ]
+      ],
+      "collar_box_heuristic": [
+        102,
+        166,
+        27,
+        21
+      ],
+      "reflected_padding_fraction": 0.0532684326171875
+    },
+    {
+      "id": "synthetic-091",
+      "image": "synthetic-091.png",
+      "source": "research/data/synthetic/images/091.webp",
+      "source_sha256": "f1c8d6f4e6f33ef1d03ac11720a9330334eaf79e2389ff60c017a4edf11ac3fe",
+      "training_sha256": "0607a6162049729cfe8fec1fe7a233405ef0aa99a15b22110160b91387ab198b",
+      "matrix_source256_to_output256": [
+        [
+          1.1964507723754434,
+          -0.05745645976421043,
+          -1.772852111278496
+        ],
+        [
+          0.05745645976421043,
+          1.1964507723754434,
+          -3.2866249019674143
+        ]
+      ],
+      "collar_box_heuristic": [
+        120,
+        172,
+        20,
+        17
+      ],
+      "reflected_padding_fraction": 0.012786865234375
+    },
+    {
+      "id": "synthetic-092",
+      "image": "synthetic-092.png",
+      "source": "research/data/synthetic/images/092.webp",
+      "source_sha256": "e1402d591f86a49e293387acd6bd7746d64fceea7c81dc0fb4365a8f9ed9999a",
+      "training_sha256": "c0a82632c4ceee2790598b92d8de68a5ca76078f3257b483ab151be19f88629e",
+      "matrix_source256_to_output256": [
+        [
+          1.0856733050537,
+          -0.06959142838767171,
+          6.01041933888736
+        ],
+        [
+          0.06959142838767171,
+          1.0856733050537,
+          -9.249726713677347
+        ]
+      ],
+      "collar_box_heuristic": [
+        109,
+        181,
+        20,
+        17
+      ],
+      "reflected_padding_fraction": 0.0087890625
+    },
+    {
+      "id": "synthetic-093",
+      "image": "synthetic-093.png",
+      "source": "research/data/synthetic/images/093.webp",
+      "source_sha256": "806a136336a23a1f082e4f00c074c133470e78e2484ac1ebdd62a8c15c6570db",
+      "training_sha256": "e6e3e7f6ac95aefb18304adbf4c616ecf7b99d76de3464d0515d6a966c0b6103",
+      "matrix_source256_to_output256": [
+        [
+          1.1693145667960994,
+          -0.07405233032238365,
+          -14.05073985624216
+        ],
+        [
+          0.07405233032238365,
+          1.1693145667960994,
+          -2.9408635989328786
+        ]
+      ],
+      "collar_box_heuristic": [
+        123,
+        177,
+        30,
+        22
+      ],
+      "reflected_padding_fraction": 0.0237579345703125
+    },
+    {
+      "id": "synthetic-094",
+      "image": "synthetic-094.png",
+      "source": "research/data/synthetic/images/094.webp",
+      "source_sha256": "5dbdc3db07ef065238ea9c414e6155db04bae916851cd90234c259a6a3fcc7d1",
+      "training_sha256": "95ec466776f0b1f243128c50241c3dc413a83219463d863fa4d648cc0619790c",
+      "matrix_source256_to_output256": [
+        [
+          1.0545300623152476,
+          -0.12366651115426072,
+          45.03653397855838
+        ],
+        [
+          0.12366651115426072,
+          1.0545300623152476,
+          -5.947122445646883
+        ]
+      ],
+      "collar_box_heuristic": [
+        109,
+        181,
+        23,
+        17
+      ],
+      "reflected_padding_fraction": 0.1374053955078125
+    },
+    {
+      "id": "synthetic-095",
+      "image": "synthetic-095.png",
+      "source": "research/data/synthetic/images/095.webp",
+      "source_sha256": "63dbe9e421ed293731299eaed8cb0a70b092af74e3c6b715a5b2aaf5c02ce9ae",
+      "training_sha256": "e9ba78105462777961388ba4b12979c48e26ef8572f3a89be427ff141c054f51",
+      "matrix_source256_to_output256": [
+        [
+          1.0535455988490445,
+          0.1566608198139181,
+          -50.78092065088569
+        ],
+        [
+          -0.1566608198139181,
+          1.0535455988490445,
+          28.1420535607747
+        ]
+      ],
+      "collar_box_heuristic": [
+        116,
+        173,
+        12,
+        18
+      ],
+      "reflected_padding_fraction": 0.086151123046875
+    },
+    {
+      "id": "synthetic-096",
+      "image": "synthetic-096.png",
+      "source": "research/data/synthetic/images/096.webp",
+      "source_sha256": "f3f992a8e0b7869bccbdd8e829b0bbd6f3f9fbe505d730255eaf46f51a7a2444",
+      "training_sha256": "09556b136a110a057a022299142f54105a5e9948eb44463dd93daaf4e079e666",
+      "matrix_source256_to_output256": [
+        [
+          1.0861162783100717,
+          -0.09646312802004252,
+          3.409736020210687
+        ],
+        [
+          0.09646312802004252,
+          1.0861162783100717,
+          -6.712801293676989
+        ]
+      ],
+      "collar_box_heuristic": [
+        109,
+        173,
+        38,
+        26
+      ],
+      "reflected_padding_fraction": 0.021636962890625
+    },
+    {
+      "id": "synthetic-097",
+      "image": "synthetic-097.png",
+      "source": "research/data/synthetic/images/097.webp",
+      "source_sha256": "f8e7d2c1da3f8974fd7788e797464f7c29d91b57c1cf42ea1413b828d17914a4",
+      "training_sha256": "92745abc24d333558385ffc6c4ba610fb36410d69f8e466d5eb038e3f2621768",
+      "matrix_source256_to_output256": [
+        [
+          1.141424783169428,
+          -0.09875665541597614,
+          -4.371903927397284
+        ],
+        [
+          0.09875665541597614,
+          1.141424783169428,
+          -4.242105218892277
+        ]
+      ],
+      "collar_box_heuristic": [
+        112,
+        182,
+        27,
+        21
+      ],
+      "reflected_padding_fraction": 0.02911376953125
+    },
+    {
+      "id": "synthetic-098",
+      "image": "synthetic-098.png",
+      "source": "research/data/synthetic/images/098.webp",
+      "source_sha256": "7c6d1b126686395f011557c76ffdb6b73b8c392bd24b91e2fcaacb26ee6f560c",
+      "training_sha256": "66b2bef15820e128e9a404584236bddd549be59f908a97023bce5cdf75505e13",
+      "matrix_source256_to_output256": [
+        [
+          1.1557163726901019,
+          -0.07413752647834299,
+          22.0992971315258
+        ],
+        [
+          0.07413752647834299,
+          1.1557163726901019,
+          -3.328384660288961
+        ]
+      ],
+      "collar_box_heuristic": [
+        127,
+        176,
+        19,
+        19
+      ],
+      "reflected_padding_fraction": 0.0691375732421875
+    },
+    {
+      "id": "synthetic-099",
+      "image": "synthetic-099.png",
+      "source": "research/data/synthetic/images/099.webp",
+      "source_sha256": "b004516faccc64237bf8a94db0567a76d1c09f72ddbeba5ed935fc7d4c7ca2b9",
+      "training_sha256": "e75a787bbce7defa3a0004f7829d68f98c76f6f581fdee445c13a8caab609dae",
+      "matrix_source256_to_output256": [
+        [
+          1.1906066035405047,
+          0.07304704775368569,
+          -28.957824523911114
+        ],
+        [
+          -0.07304704775368569,
+          1.1906066035405047,
+          20.531181846201704
+        ]
+      ],
+      "collar_box_heuristic": [
+        95,
+        171,
+        26,
+        20
+      ],
+      "reflected_padding_fraction": 0.0423126220703125
+    },
+    {
+      "id": "synthetic-100",
+      "image": "synthetic-100.png",
+      "source": "research/data/synthetic/images/100.webp",
+      "source_sha256": "e2569fba7ce666829b4bd7435853c39e062a3575308732fe51266a5d599a9659",
+      "training_sha256": "2e496541c85cc6ac606ce4e0068eae61cded2e8778e05142cb92068e4b517abf",
+      "matrix_source256_to_output256": [
+        [
+          1.1285452151055506,
+          0.0121266503404092,
+          -18.90113963881626
+        ],
+        [
+          -0.0121266503404092,
+          1.1285452151055506,
+          6.687276713681598
+        ]
+      ],
+      "collar_box_heuristic": [
+        108,
+        165,
+        45,
+        35
+      ],
+      "reflected_padding_fraction": 0.0196685791015625
+    },
+    {
+      "id": "synthetic-101",
+      "image": "synthetic-101.png",
+      "source": "research/data/synthetic/images/101.webp",
+      "source_sha256": "cb76687c6a726a91845638923742d63ab4ef1f9bb0448a21d5772ea2b30af3c4",
+      "training_sha256": "4ff34be7de367ae72491e2dbfc4f881562c919d6a4a7bd6dc8cd49a2ae0aa57e",
+      "matrix_source256_to_output256": [
+        [
+          1.1129130844062185,
+          -0.05098937349662171,
+          -9.092603251103583
+        ],
+        [
+          0.05098937349662171,
+          1.1129130844062185,
+          -1.3652550951499336
+        ]
+      ],
+      "collar_box_heuristic": [
+        125,
+        174,
+        24,
+        21
+      ],
+      "reflected_padding_fraction": 0.01904296875
+    },
+    {
+      "id": "synthetic-102",
+      "image": "synthetic-102.png",
+      "source": "research/data/synthetic/images/102.webp",
+      "source_sha256": "8909230031adcc6c21a8432269f9882dd970a943d5b7182c918c377c53094b22",
+      "training_sha256": "36f7c5d02390323156398f9b396eda9ce6b2c2098cc89a890d19de7ff4d6853f",
+      "matrix_source256_to_output256": [
+        [
+          1.1775102765735495,
+          -0.12200166843250436,
+          26.76854219098668
+        ],
+        [
+          0.12200166843250436,
+          1.1775102765735495,
+          -6.412877604523402
+        ]
+      ],
+      "collar_box_heuristic": [
+        104,
+        170,
+        26,
+        21
+      ],
+      "reflected_padding_fraction": 0.0717620849609375
+    },
+    {
+      "id": "synthetic-103",
+      "image": "synthetic-103.png",
+      "source": "research/data/synthetic/images/103.webp",
+      "source_sha256": "51f058cf354a2f64011ffa5349971bca60634959167763f5749755bf7e695351",
+      "training_sha256": "8dc7c40aaae5ae72caff1c9aaf9aeaa6e248559a833d51d271ac3bc27f5705d2",
+      "matrix_source256_to_output256": [
+        [
+          1.0933287510311038,
+          0.05875971119165869,
+          -31.323252806673594
+        ],
+        [
+          -0.05875971119165869,
+          1.0933287510311038,
+          13.401663325466671
+        ]
+      ],
+      "collar_box_heuristic": [
+        113,
+        164,
+        24,
+        19
+      ],
+      "reflected_padding_fraction": 0.0272064208984375
+    },
+    {
+      "id": "synthetic-104",
+      "image": "synthetic-104.png",
+      "source": "research/data/synthetic/images/104.webp",
+      "source_sha256": "7a97da174c053611df2095c92a52022a7d891ac88aeb8b81c20235af20a4364b",
+      "training_sha256": "710572d6d253f111547d955c38b0b6a60a73d3cd72d63116e7c5825fc275a274",
+      "matrix_source256_to_output256": [
+        [
+          1.1216676852035692,
+          -0.0762303125471428,
+          -11.311555367293494
+        ],
+        [
+          0.0762303125471428,
+          1.1216676852035692,
+          -4.79714858079403
+        ]
+      ],
+      "collar_box_heuristic": [
+        139,
+        180,
+        10,
+        18
+      ],
+      "reflected_padding_fraction": 0.019775390625
+    },
+    {
+      "id": "synthetic-105",
+      "image": "synthetic-105.png",
+      "source": "research/data/synthetic/images/105.webp",
+      "source_sha256": "d7d0f7c6087c663429f3ccc8e7abfbbc823b9e7a7c315b4f86975830ddb9931e",
+      "training_sha256": "c6311b8b68b1d05b3e130128d024b09e8cee3f1f1eaea001897d277190bcff50",
+      "matrix_source256_to_output256": [
+        [
+          1.1108268363977079,
+          -0.07609356247750663,
+          -9.839220552768353
+        ],
+        [
+          0.07609356247750663,
+          1.1108268363977079,
+          -4.778710540270609
+        ]
+      ],
+      "collar_box_heuristic": [
+        99,
+        156,
+        59,
+        45
+      ],
+      "reflected_padding_fraction": 0.0197906494140625
+    },
+    {
+      "id": "synthetic-106",
+      "image": "synthetic-106.png",
+      "source": "research/data/synthetic/images/106.webp",
+      "source_sha256": "e7590daff55585f2e819aeec9fd2b47b7e0994d292c9405826f7ae24e7d46d58",
+      "training_sha256": "3f0b2ebdcf9c98950f7656c497db0d6f26c0a3c76d2bce7575d0acbf365110b3",
+      "matrix_source256_to_output256": [
+        [
+          1.1528024217135457,
+          -0.08304568226999622,
+          17.20150971516955
+        ],
+        [
+          0.08304568226999622,
+          1.1528024217135457,
+          -3.366544599955077
+        ]
+      ],
+      "collar_box_heuristic": [
+        108,
+        175,
+        23,
+        19
+      ],
+      "reflected_padding_fraction": 0.0502471923828125
+    },
+    {
+      "id": "synthetic-107",
+      "image": "synthetic-107.png",
+      "source": "research/data/synthetic/images/107.webp",
+      "source_sha256": "8ae08b9578d1821d4b2417cd482bcab650e43c7e163a368102da79a933bc76cc",
+      "training_sha256": "a0f2ea99847ea0ba32023ea29ea82baa762aabe4d312f96ad84463a2d331a1ee",
+      "matrix_source256_to_output256": [
+        [
+          1.173506206525366,
+          -0.04623988769668447,
+          -46.173402719181695
+        ],
+        [
+          0.04623988769668447,
+          1.173506206525366,
+          -1.8940256651552971
+        ]
+      ],
+      "collar_box_heuristic": [
+        144,
+        173,
+        14,
+        18
+      ],
+      "reflected_padding_fraction": 0.04400634765625
+    },
+    {
+      "id": "synthetic-108",
+      "image": "synthetic-108.png",
+      "source": "research/data/synthetic/images/108.webp",
+      "source_sha256": "dc87938d6c1648b049b676c0f29b0218852aa6e493354b8f39267f433bf6654b",
+      "training_sha256": "7e61d4614bc3a4ec94a0c5c484a4ad319096a0d4b2b544081acf9ddc97c298b4",
+      "matrix_source256_to_output256": [
+        [
+          1.1896644845658644,
+          -0.07323938022128516,
+          -0.4255291985566316
+        ],
+        [
+          0.07323938022128516,
+          1.1896644845658644,
+          -3.15496007997163
+        ]
+      ],
+      "collar_box_heuristic": [
+        105,
+        170,
+        26,
+        17
+      ],
+      "reflected_padding_fraction": 0.01934814453125
+    },
+    {
+      "id": "synthetic-109",
+      "image": "synthetic-109.png",
+      "source": "research/data/synthetic/images/109.webp",
+      "source_sha256": "9c4f8287ad23061cfa29c64683d85fb760a1ac0538eb013128048ded9479a005",
+      "training_sha256": "aa23eccbb0af9eb39ee3785f4aadba21317ffaa7f051f6fc3bb1cf60f4ae76db",
+      "matrix_source256_to_output256": [
+        [
+          1.0893394681070694,
+          -0.06398808082359593,
+          -6.854367920940547
+        ],
+        [
+          0.06398808082359593,
+          1.0893394681070694,
+          -7.189999039443052
+        ]
+      ],
+      "collar_box_heuristic": [
+        133,
+        186,
+        22,
+        17
+      ],
+      "reflected_padding_fraction": 0.0087127685546875
+    },
+    {
+      "id": "synthetic-110",
+      "image": "synthetic-110.png",
+      "source": "research/data/synthetic/images/110.webp",
+      "source_sha256": "577b2a9df32c40b32e4e4a177222c135c142aacf083d3e503397ffec23ac0ce6",
+      "training_sha256": "eb810c8e247fd61ff6c7ba928c813a702b4c76394ebaec95a8a5657e67225c1a",
+      "matrix_source256_to_output256": [
+        [
+          1.0614324256783272,
+          -0.20381036866765548,
+          37.09998638379727
+        ],
+        [
+          0.20381036866765548,
+          1.0614324256783272,
+          -15.920786480123084
+        ]
+      ],
+      "collar_box_heuristic": [
+        114,
+        182,
+        30,
+        18
+      ],
+      "reflected_padding_fraction": 0.072967529296875
+    },
+    {
+      "id": "synthetic-111",
+      "image": "synthetic-111.png",
+      "source": "research/data/synthetic/images/111.webp",
+      "source_sha256": "8741a4b72650980d03b8d8f28648692b89b6b06fd46f90788bf482bcdf690715",
+      "training_sha256": "e6ddad4b41e969a514410546bad2ab473d7330f0ff9d290da8d6b32168608b71",
+      "matrix_source256_to_output256": [
+        [
+          1.1217848213677721,
+          -0.08315619908228654,
+          21.566397972309147
+        ],
+        [
+          0.08315619908228654,
+          1.1217848213677721,
+          -10.093555733713075
+        ]
+      ],
+      "collar_box_heuristic": [
+        105,
+        173,
+        24,
+        17
+      ],
+      "reflected_padding_fraction": 0.0494384765625
+    },
+    {
+      "id": "synthetic-112",
+      "image": "synthetic-112.png",
+      "source": "research/data/synthetic/images/112.webp",
+      "source_sha256": "514fe207f387b691e3f47f25deddec5e9324c8e75e39f944546295cb27298af3",
+      "training_sha256": "6e5fa22e8a75c3db0f8f73b37e06ce089eebd3b47fc602c24740e79192b307f8",
+      "matrix_source256_to_output256": [
+        [
+          1.1492016480154164,
+          -0.0688578059799251,
+          -5.775884232851695
+        ],
+        [
+          0.0688578059799251,
+          1.1492016480154164,
+          2.900830421660899
+        ]
+      ],
+      "collar_box_heuristic": [
+        113,
+        179,
+        26,
+        20
+      ],
+      "reflected_padding_fraction": 0.0421905517578125
+    },
+    {
+      "id": "synthetic-113",
+      "image": "synthetic-113.png",
+      "source": "research/data/synthetic/images/113.webp",
+      "source_sha256": "b905bec55e57fc874c7ef60a476bf8b836d1e88e396a39480c8c90fec82ef536",
+      "training_sha256": "ed5e7cc3560b6867bc62fae4c30bf6b6d50cef40a7899a85e8bdd42a207e1045",
+      "matrix_source256_to_output256": [
+        [
+          1.1051753372770807,
+          -0.07290598471334966,
+          -0.4086557109858404
+        ],
+        [
+          0.07290598471334966,
+          1.1051753372770807,
+          -3.774174705003702
+        ]
+      ],
+      "collar_box_heuristic": [
+        109,
+        188,
+        26,
+        19
+      ],
+      "reflected_padding_fraction": 0.0196990966796875
+    },
+    {
+      "id": "synthetic-114",
+      "image": "synthetic-114.png",
+      "source": "research/data/synthetic/images/114.webp",
+      "source_sha256": "6373383edd24054a8236cb7a7f0d2a5cd08cfdfabe1bd494de54a2690290ba97",
+      "training_sha256": "4ecb3dcb4e1c2722250072f9c1f8f7301607503c4e2201e9765856aa588b3ccb",
+      "matrix_source256_to_output256": [
+        [
+          1.1795214027244467,
+          -0.0945071554258337,
+          17.07511436611908
+        ],
+        [
+          0.0945071554258337,
+          1.1795214027244467,
+          -4.392181389435379
+        ]
+      ],
+      "collar_box_heuristic": [
+        105,
+        150,
+        43,
+        33
+      ],
+      "reflected_padding_fraction": 0.0467529296875
+    },
+    {
+      "id": "synthetic-115",
+      "image": "synthetic-115.png",
+      "source": "research/data/synthetic/images/115.webp",
+      "source_sha256": "7ebe30a12fe1791dfc80b7eef7c0165016f57f299afde238071c3b9d74c2566d",
+      "training_sha256": "df75f0a84ea259dd8be82dcf0668e1d6ca1a49c6debecef5d9536f8fe7095dd8",
+      "matrix_source256_to_output256": [
+        [
+          1.2612706823073645,
+          0.08125900718388827,
+          -50.482041449010325
+        ],
+        [
+          -0.08125900718388827,
+          1.2612706823073645,
+          16.215153271930916
+        ]
+      ],
+      "collar_box_heuristic": [
+        117,
+        166,
+        11,
+        19
+      ],
+      "reflected_padding_fraction": 0.01959228515625
+    },
+    {
+      "id": "synthetic-116",
+      "image": "synthetic-116.png",
+      "source": "research/data/synthetic/images/116.webp",
+      "source_sha256": "6ba2884593a99445d27c96f35b891b7995adb90491a942d5ff5cee6a76f4d988",
+      "training_sha256": "677b4dcd3b692137e39da989adbd64e1ce48b3cd76ee822fc3c903981e66a5e1",
+      "matrix_source256_to_output256": [
+        [
+          1.1157264945448278,
+          -0.06441867739552759,
+          -9.65944635001793
+        ],
+        [
+          0.06441867739552759,
+          1.1157264945448278,
+          -3.15232918574101
+        ]
+      ],
+      "collar_box_heuristic": [
+        115,
+        176,
+        25,
+        18
+      ],
+      "reflected_padding_fraction": 0.01934814453125
+    },
+    {
+      "id": "synthetic-117",
+      "image": "synthetic-117.png",
+      "source": "research/data/synthetic/images/117.webp",
+      "source_sha256": "5f20dac5547ddd128b69810c3b4834154625160ae5296b31a669f40bb9df012b",
+      "training_sha256": "9911390ac49eb8da0df3b44c8f3f9b305517fae8c480fbc8c8bc4a5fcb270579",
+      "matrix_source256_to_output256": [
+        [
+          1.150333239071214,
+          -0.0936116680485776,
+          -10.115342995231657
+        ],
+        [
+          0.0936116680485776,
+          1.150333239071214,
+          -6.7637552881669905
+        ]
+      ],
+      "collar_box_heuristic": [
+        125,
+        176,
+        26,
+        22
+      ],
+      "reflected_padding_fraction": 0.0204620361328125
+    },
+    {
+      "id": "synthetic-118",
+      "image": "synthetic-118.png",
+      "source": "research/data/synthetic/images/118.webp",
+      "source_sha256": "2d1dd7edaef7eef824f456ee4377b568be87f881bc9266c7538d073234c134a1",
+      "training_sha256": "26a8cef90fc91e5f18f52ef865818acb0234f36323df39c1170793e316bbf04c",
+      "matrix_source256_to_output256": [
+        [
+          1.049807840721656,
+          -0.15613222210599514,
+          32.27086155597
+        ],
+        [
+          0.15613222210599514,
+          1.049807840721656,
+          -11.269011336354623
+        ]
+      ],
+      "collar_box_heuristic": [
+        111,
+        183,
+        23,
+        19
+      ],
+      "reflected_padding_fraction": 0.0727386474609375
+    },
+    {
+      "id": "synthetic-119",
+      "image": "synthetic-119.png",
+      "source": "research/data/synthetic/images/119.webp",
+      "source_sha256": "caec47589d8f0e3f97e35e95c0865938c938e82b431a4244215322cb3180898f",
+      "training_sha256": "e82a8f866d5b5e601c0dc6452c9f6f3fc3fc876c6e84a7e9afeb10feb3e7a0ed",
+      "matrix_source256_to_output256": [
+        [
+          1.1993063170611404,
+          0.09396784748385599,
+          -40.73775546562993
+        ],
+        [
+          -0.09396784748385599,
+          1.1993063170611404,
+          17.74370946942662
+        ]
+      ],
+      "collar_box_heuristic": [
+        112,
+        175,
+        22,
+        17
+      ],
+      "reflected_padding_fraction": 0.020416259765625
+    },
+    {
+      "id": "synthetic-120",
+      "image": "synthetic-120.png",
+      "source": "research/data/synthetic/images/120.webp",
+      "source_sha256": "57cce47c4d1085c7a30263c37b6b4c59044bf5e9c10cb9f5498e135ad937fa8c",
+      "training_sha256": "11d15c39540d6f29d4e0833194442e52da6dc12a3f89ead2b2d4a015baa24d00",
+      "matrix_source256_to_output256": [
+        [
+          1.0135739410211109,
+          -0.11037064338638386,
+          15.353662566868692
+        ],
+        [
+          0.11037064338638386,
+          1.0135739410211109,
+          -8.299852025870734
+        ]
+      ],
+      "collar_box_heuristic": [
+        90,
+        165,
+        55,
+        39
+      ],
+      "reflected_padding_fraction": 0.041046142578125
+    },
+    {
+      "id": "synthetic-121",
+      "image": "synthetic-121.png",
+      "source": "research/data/synthetic/images/121.webp",
+      "source_sha256": "7d186543cc0fdef7ab50ef42b8322342d7d3d38c667770881d10e2116b640c7d",
+      "training_sha256": "973225ea6d32078c45a0ba17fb32a7eb8ae259a416a0fc3aeb0c2daf64a8d970",
+      "matrix_source256_to_output256": [
+        [
+          1.1665298691786365,
+          -0.08688635491125492,
+          -16.464561356641724
+        ],
+        [
+          0.08688635491125492,
+          1.1665298691786365,
+          -6.179796435505494
+        ]
+      ],
+      "collar_box_heuristic": [
+        125,
+        176,
+        25,
+        19
+      ],
+      "reflected_padding_fraction": 0.020050048828125
+    },
+    {
+      "id": "synthetic-122",
+      "image": "synthetic-122.png",
+      "source": "research/data/synthetic/images/122.webp",
+      "source_sha256": "2a9554dc8dbe73932b464e9560637a9a4dcbfaf7b9f79f1343f7e456c2b971d1",
+      "training_sha256": "707f75241c38bb30582873af4a1e4a5fc9654e4d7a04455b87c31aadb8370a25",
+      "matrix_source256_to_output256": [
+        [
+          1.1854512089582205,
+          -0.07456426073018943,
+          14.702315262588556
+        ],
+        [
+          0.07456426073018943,
+          1.1854512089582205,
+          -2.3912382456081502
+        ]
+      ],
+      "collar_box_heuristic": [
+        111,
+        159,
+        31,
+        36
+      ],
+      "reflected_padding_fraction": 0.04486083984375
+    },
+    {
+      "id": "synthetic-123",
+      "image": "synthetic-123.png",
+      "source": "research/data/synthetic/images/123.webp",
+      "source_sha256": "d7ad999850f453f9dfa163b310c4f4421d25f3a3828b971be3cbe8b89c4a6da3",
+      "training_sha256": "a1e324e007259344aa529ae69fe091eab1f195faa98fdfbfc49b5eb298a2e221",
+      "matrix_source256_to_output256": [
+        [
+          1.0292287010732948,
+          0.03249955647362104,
+          -19.502935874385713
+        ],
+        [
+          -0.03249955647362104,
+          1.0292287010732948,
+          9.68064695052766
+        ]
+      ],
+      "collar_box_heuristic": [
+        111,
+        177,
+        21,
+        16
+      ],
+      "reflected_padding_fraction": 0.0509033203125
+    },
+    {
+      "id": "synthetic-124",
+      "image": "synthetic-124.png",
+      "source": "research/data/synthetic/images/124.webp",
+      "source_sha256": "ca40d841805b5fd8e685a7662d124c34c960fba6d6e1af2d92364f3adb57befb",
+      "training_sha256": "b0d60e60e039663a83c015c0b18dfc15a9938d6ed77e4339c2475e7ab99b42a2",
+      "matrix_source256_to_output256": [
+        [
+          1.118265310127226,
+          -0.05860628923006104,
+          6.099627849348735
+        ],
+        [
+          0.05860628923006104,
+          1.118265310127226,
+          -5.9497909808722085
+        ]
+      ],
+      "collar_box_heuristic": [
+        107,
+        180,
+        25,
+        16
+      ],
+      "reflected_padding_fraction": 0.0120697021484375
+    },
+    {
+      "id": "synthetic-125",
+      "image": "synthetic-125.png",
+      "source": "research/data/synthetic/images/125.webp",
+      "source_sha256": "90efb0d1dbccb15aafa4c4f1868b059f5e4ac269de07b2f5a163c4708cbc9ebb",
+      "training_sha256": "0e00c8fbb4f78aa4ddfdf34798d1976e6d84cab620c15a27a701e453d1a71912",
+      "matrix_source256_to_output256": [
+        [
+          1.0913425369228444,
+          -0.10278472502609491,
+          1.1478156860729598
+        ],
+        [
+          0.10278472502609491,
+          1.0913425369228444,
+          -7.69007724977034
+        ]
+      ],
+      "collar_box_heuristic": [
+        122,
+        183,
+        25,
+        19
+      ],
+      "reflected_padding_fraction": 0.02130126953125
+    },
+    {
+      "id": "synthetic-126",
+      "image": "synthetic-126.png",
+      "source": "research/data/synthetic/images/126.webp",
+      "source_sha256": "e82156af65c0d92ba075249f959cee46c09bbbbdb9254d00ed00fff6df471506",
+      "training_sha256": "d632d9727e6793962f44e9dd8604e0643980ef4e4a65f87e997a139ebf351442",
+      "matrix_source256_to_output256": [
+        [
+          1.1230880427796954,
+          0.02779688023251513,
+          -29.566292542199477
+        ],
+        [
+          -0.02779688023251513,
+          1.1230880427796954,
+          8.960237024431748
+        ]
+      ],
+      "collar_box_heuristic": [
+        112,
+        176,
+        23,
+        22
+      ],
+      "reflected_padding_fraction": 0.019561767578125
+    },
+    {
+      "id": "synthetic-127",
+      "image": "synthetic-127.png",
+      "source": "research/data/synthetic/images/127.webp",
+      "source_sha256": "fee3975719c220d44d102c67a1439f98454fef8b5d7efae25a199f83dd4464d9",
+      "training_sha256": "3dfaa648666630f6e588e6a62a83ba1a3b1e7837a60bde61cf437d0aa14d67a9",
+      "matrix_source256_to_output256": [
+        [
+          1.0802256338953398,
+          -0.08590731274226157,
+          18.637826157862406
+        ],
+        [
+          0.08590731274226157,
+          1.0802256338953398,
+          -8.075348572649105
+        ]
+      ],
+      "collar_box_heuristic": [
+        117,
+        181,
+        14,
+        16
+      ],
+      "reflected_padding_fraction": 0.04205322265625
+    },
+    {
+      "id": "synthetic-128",
+      "image": "synthetic-128.png",
+      "source": "research/data/synthetic/images/128.webp",
+      "source_sha256": "f9182d2b7244fc1bfc87f2206876105e50dab640460285795718ef1c1f984319",
+      "training_sha256": "d65e02251bde9f8186a9bc7a71ffbcf9e5da4d1d32ffaaf435a1be25f0c55650",
+      "matrix_source256_to_output256": [
+        [
+          1.1443624291240138,
+          0.04129268695484389,
+          -28.098566771001373
+        ],
+        [
+          -0.04129268695484389,
+          1.1443624291240138,
+          10.625933333291343
+        ]
+      ],
+      "collar_box_heuristic": [
+        116,
+        167,
+        33,
+        26
+      ],
+      "reflected_padding_fraction": 0.0192718505859375
+    },
+    {
+      "id": "synthetic-129",
+      "image": "synthetic-129.png",
+      "source": "research/data/synthetic/images/129.webp",
+      "source_sha256": "d86081852717da39c08cf4d745f8fe95aa063ea11d131e4aecc5e94a7d368006",
+      "training_sha256": "6031b596d6224d7e71c5b0e2c9be70a52c1700f88a11d4a58ee90804e7f7ce72",
+      "matrix_source256_to_output256": [
+        [
+          1.1126323293885145,
+          -0.047591454323215966,
+          -7.9790829149924605
+        ],
+        [
+          0.047591454323215966,
+          1.1126323293885145,
+          -0.8743178118825057
+        ]
+      ],
+      "collar_box_heuristic": [
+        130,
+        181,
+        22,
+        19
+      ],
+      "reflected_padding_fraction": 0.01904296875
+    },
+    {
+      "id": "synthetic-130",
+      "image": "synthetic-130.png",
+      "source": "research/data/synthetic/images/130.webp",
+      "source_sha256": "69fd00eacd2077ca5f9c22767581ca7fadaa529034db305861883c10f14bdea9",
+      "training_sha256": "fa846a463864a9687b358d46e922ca9c9ab4617f24f1b841e109c4ffc7f87ef3",
+      "matrix_source256_to_output256": [
+        [
+          1.1241203049226511,
+          0.060349220428041986,
+          -46.910322707892476
+        ],
+        [
+          -0.060349220428041986,
+          1.1241203049226511,
+          14.22981225018033
+        ]
+      ],
+      "collar_box_heuristic": [
+        125,
+        173,
+        21,
+        17
+      ],
+      "reflected_padding_fraction": 0.0517578125
+    },
+    {
+      "id": "synthetic-131",
+      "image": "synthetic-131.png",
+      "source": "research/data/synthetic/images/131.webp",
+      "source_sha256": "3d4ede580b64b9dcca1cabab17795a363f5c0386a7a3701a9d29fc66128cd226",
+      "training_sha256": "e9e7fd8d7b1fa4596333df075e6110d5617a9811af4d7c70d936dd42892585d3",
+      "matrix_source256_to_output256": [
+        [
+          1.2080542634542548,
+          0.03220549043457926,
+          -25.078575418096108
+        ],
+        [
+          -0.03220549043457926,
+          1.2080542634542548,
+          9.13178117496851
+        ]
+      ],
+      "collar_box_heuristic": [
+        98,
+        171,
+        24,
+        22
+      ],
+      "reflected_padding_fraction": 0.0193939208984375
+    },
+    {
+      "id": "synthetic-132",
+      "image": "synthetic-132.png",
+      "source": "research/data/synthetic/images/132.webp",
+      "source_sha256": "7478fc8e12e4acea1ad582ef9577e249f0e8a6426b21466eed1e527319a8e934",
+      "training_sha256": "9e9a99f2543b2e3ba1e6427ee93fc28fe4684717a1155a2f1f75bc648df6e341",
+      "matrix_source256_to_output256": [
+        [
+          1.0285647069016095,
+          -0.10697001578242797,
+          8.664079414247965
+        ],
+        [
+          0.10697001578242797,
+          1.0285647069016095,
+          -8.343019371291646
+        ]
+      ],
+      "collar_box_heuristic": [
+        113,
+        192,
+        22,
+        17
+      ],
+      "reflected_padding_fraction": 0.03192138671875
+    },
+    {
+      "id": "synthetic-133",
+      "image": "synthetic-133.png",
+      "source": "research/data/synthetic/images/133.webp",
+      "source_sha256": "00c373bb69013eeff13a411fdec198408762571b60097cf418e573c170d29c78",
+      "training_sha256": "d2a96bf44b2a001ed856804c111fd9d2bcb3aa1f5c2bbee3f10ef91c126f5615",
+      "matrix_source256_to_output256": [
+        [
+          1.041904214345867,
+          -0.07670535694389165,
+          8.186985324638528
+        ],
+        [
+          0.07670535694389165,
+          1.041904214345867,
+          -4.227929905417611
+        ]
+      ],
+      "collar_box_heuristic": [
+        125,
+        186,
+        24,
+        19
+      ],
+      "reflected_padding_fraction": 0.0266265869140625
+    },
+    {
+      "id": "synthetic-134",
+      "image": "synthetic-134.png",
+      "source": "research/data/synthetic/images/134.webp",
+      "source_sha256": "b4487a8682cbcdeb0482c12a9be5e4e352f5dc72fcde2f1903025d4dee6a7d13",
+      "training_sha256": "42810a5a94c0d13adc208e6fcb3ce6e4fe331a9c7cb8c4acfcb9a281747af0b8",
+      "matrix_source256_to_output256": [
+        [
+          1.2430023730322928,
+          -0.08449298201186643,
+          15.834131628656493
+        ],
+        [
+          0.08449298201186643,
+          1.2430023730322928,
+          -2.953956410314092
+        ]
+      ],
+      "collar_box_heuristic": [
+        97,
+        157,
+        25,
+        26
+      ],
+      "reflected_padding_fraction": 0.046661376953125
+    },
+    {
+      "id": "synthetic-135",
+      "image": "synthetic-135.png",
+      "source": "research/data/synthetic/images/135.webp",
+      "source_sha256": "a4cc6cb9cabd2fc793164e5252382a0c3ba7de7db152722795c02cae40f05d28",
+      "training_sha256": "9af9d41b83d953f7fa5b07fdc8f2b05b96e04c0d605cfff7f8364495f47d2cc2",
+      "matrix_source256_to_output256": [
+        [
+          1.177973263012257,
+          -0.11548219531828179,
+          -30.82851759019013
+        ],
+        [
+          0.11548219531828179,
+          1.177973263012257,
+          -11.385635850329365
+        ]
+      ],
+      "collar_box_heuristic": [
+        136,
+        174,
+        18,
+        18
+      ],
+      "reflected_padding_fraction": 0.0272216796875
+    },
+    {
+      "id": "synthetic-136",
+      "image": "synthetic-136.png",
+      "source": "research/data/synthetic/images/136.webp",
+      "source_sha256": "1e2e4e29b3fa33f7c7892b3cab191035924980cf156248ae8a902aa3cf95e98b",
+      "training_sha256": "8c6638146dc83b9d2879ec211ee7a326098e599502a57d31702cbdc4b6c44e2a",
+      "matrix_source256_to_output256": [
+        [
+          1.1716648349091074,
+          0.019572350561051437,
+          -34.045901893099455
+        ],
+        [
+          -0.019572350561051437,
+          1.1716648349091074,
+          7.799788040821824
+        ]
+      ],
+      "collar_box_heuristic": [
+        94,
+        157,
+        13,
+        8
+      ],
+      "reflected_padding_fraction": 0.01959228515625
+    },
+    {
+      "id": "synthetic-137",
+      "image": "synthetic-137.png",
+      "source": "research/data/synthetic/images/137.webp",
+      "source_sha256": "6ff3c112f4d55ffaecf956cbe5b1370d31781f00d0ba33fbf5f242e7459961bd",
+      "training_sha256": "ba30364f866e89daabe02169209dbbe3de342c9b7c6197388ef1591d7c05aa45",
+      "matrix_source256_to_output256": [
+        [
+          1.081699809796476,
+          -0.0614309291850447,
+          -3.468174868261599
+        ],
+        [
+          0.0614309291850447,
+          1.081699809796476,
+          -2.659973484371477
+        ]
+      ],
+      "collar_box_heuristic": [
+        126,
+        185,
+        24,
+        17
+      ],
+      "reflected_padding_fraction": 0.0193634033203125
+    },
+    {
+      "id": "synthetic-138",
+      "image": "synthetic-138.png",
+      "source": "research/data/synthetic/images/138.webp",
+      "source_sha256": "7fe4ed831f4bb542c30d6a88914aacbe809eb77190b15e8e56867f2a61c7e9f9",
+      "training_sha256": "13cc43b15bb43161af7e6fda6417528f38d58cadc3ff00bbc01e148341966081",
+      "matrix_source256_to_output256": [
+        [
+          1.1005579019917304,
+          -0.119159246603092,
+          16.93648681571409
+        ],
+        [
+          0.119159246603092,
+          1.1005579019917304,
+          -8.045422163671802
+        ]
+      ],
+      "collar_box_heuristic": [
+        118,
+        180,
+        23,
+        15
+      ],
+      "reflected_padding_fraction": 0.0403289794921875
+    },
+    {
+      "id": "synthetic-139",
+      "image": "synthetic-139.png",
+      "source": "research/data/synthetic/images/139.webp",
+      "source_sha256": "5e8603ab25113563296cbb28e70237e0a4fd5c574a42c6b4530dc035822614fc",
+      "training_sha256": "3b15e29f23824059a3b39e14c1894b322893f062c30dd87161160a302878d6d6",
+      "matrix_source256_to_output256": [
+        [
+          1.1287059545029323,
+          0.00034506897006402485,
+          6.164086698465255
+        ],
+        [
+          -0.00034506897006402485,
+          1.1287059545029323,
+          5.157238689509185
+        ]
+      ],
+      "collar_box_heuristic": [
+        117,
+        175,
+        14,
+        16
+      ],
+      "reflected_padding_fraction": 0.042510986328125
+    },
+    {
+      "id": "synthetic-140",
+      "image": "synthetic-140.png",
+      "source": "research/data/synthetic/images/140.webp",
+      "source_sha256": "98cc549f1093b001ea0ff7963f976c15f6d295d02bef5f4e6d60548da2da756b",
+      "training_sha256": "bea42412b12094247700b3324af5e7c69f9e868f8a38639ee2f5c42e890004c9",
+      "matrix_source256_to_output256": [
+        [
+          1.0890942467818352,
+          -0.09101847100110172,
+          -9.089125412025197
+        ],
+        [
+          0.09101847100110172,
+          1.0890942467818352,
+          -7.016339745335145
+        ]
+      ],
+      "collar_box_heuristic": [
+        96,
+        154,
+        65,
+        45
+      ],
+      "reflected_padding_fraction": 0.0242919921875
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+name: Deploy inference
+on:
+  push:
+    branches: [master]
+permissions:
+  contents: read
+concurrency:
+  group: production-inference
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Verify deployment gates and frontend
+        run: |
+          npm ci
+          npm run check
+          node --test
+          python3 -m unittest discover -s infra -p 'test_*.py' -v
+          for script in infra/*.sh; do bash -n "$script"; done
+      - name: Detect promoted model
+        id: model
+        run: |
+          if test -f models/production/model.json; then
+            echo 'present=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'No model has passed review; inference deployment is intentionally skipped.'
+            echo 'present=false' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Fetch only production weights
+        if: steps.model.outputs.present == 'true'
+        run: git lfs pull --include='models/production/**' --exclude=''
+      - name: Validate promotion
+        if: steps.model.outputs.present == 'true'
+        run: python3 infra/validate-model.py
+      - name: Deploy exact master revision
+        if: steps.model.outputs.present == 'true'
+        env:
+          INFERENCE_HOST: ${{ vars.INFERENCE_HOST }}
+          INFERENCE_HOST_KEY: ${{ vars.INFERENCE_HOST_KEY }}
+          INFERENCE_SSH_KEY: ${{ secrets.INFERENCE_SSH_KEY }}
+        run: bash infra/ci-deploy.sh "$GITHUB_SHA"

@@ -1,0 +1,5431 @@
+{
+  "version": "collar-only-v1",
+  "source_manifest_sha256": "50d61295d0f259b65092cfc1417b728c3299de03ae69d1703a9e09411982feb3",
+  "script_sha256": "9fb3155c77ff89a650a7a1c8a8e37794951608962f7bc146eb15af6e2df895a1",
+  "settings": {
+    "desired_interocular": 0.24,
+    "collar_bottom_guard": 0.96,
+    "collar_padding_source_pixels": 4,
+    "whole_head_constraint": false
+  },
+  "summary": {
+    "eyes40": {
+      "eye_y": {
+        "mean": 0.3999999999999999,
+        "std": 1.1102230246251565e-16
+      },
+      "interocular": {
+        "mean": 0.2066530533011507,
+        "std": 0.01547662875382427
+      },
+      "mouth_y": {
+        "mean": 0.6047510860668591,
+        "std": 0.012127951886092647
+      },
+      "reflected_padding_fraction": {
+        "mean": 0.005888505415482955,
+        "std": 0.011134386777499618
+      }
+    },
+    "eyes42": {
+      "eye_y": {
+        "mean": 0.4200000000000001,
+        "std": 1.1102230246251565e-16
+      },
+      "interocular": {
+        "mean": 0.19950635334559008,
+        "std": 0.015482428214620135
+      },
+      "mouth_y": {
+        "mean": 0.61766127773396,
+        "std": 0.012216236265463384
+      },
+      "reflected_padding_fraction": {
+        "mean": 0.018757213245738636,
+        "std": 0.022753312726889338
+      }
+    }
+  },
+  "entries": [
+    {
+      "id": "original-001",
+      "source": "public/portraits/01.webp",
+      "source_sha256": "527cb78585c384bc28a79e5f206fb0281c16bdf3fafac064e798d35c3442e086",
+      "collar_box_heuristic": [
+        139,
+        147,
+        30,
+        20
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.7072208623506842,
+            -0.10587599375516611,
+            -79.51994327173924
+          ],
+          [
+            0.10587599375516611,
+            1.7072208623506842,
+            -64.06781040659004
+          ]
+        ],
+        "training_sha256": "0793e44bcba5f5181b67a23a5b66d691b50efab9fe991a729a0a461fd1b29f34",
+        "eye_y": 0.4,
+        "interocular": 0.23707175599580677,
+        "mouth_y": 0.644978385626279,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.6462486886953027,
+            -0.10209470826391018,
+            -72.10851672631998
+          ],
+          [
+            0.10209470826391018,
+            1.6462486886953027,
+            -53.00253146349756
+          ]
+        ],
+        "training_sha256": "c1d0cb6ec434c296d7124b4d6233721092220cda9fa25c9bdaeafec13d63be1c",
+        "eye_y": 0.42,
+        "interocular": 0.22860490756738522,
+        "mouth_y": 0.6562291575681976,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-002",
+      "source": "public/portraits/02.webp",
+      "source_sha256": "3d37823184b6c70b5582ff5880265cb8c978996c08280844020d3cc1c827dcd3",
+      "collar_box_heuristic": [
+        132,
+        173,
+        19,
+        14
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.4203946966910699,
+            -0.03648839398292846,
+            -48.18775602881058
+          ],
+          [
+            0.03648839398292846,
+            1.4203946966910699,
+            -31.04513455941654
+          ]
+        ],
+        "training_sha256": "70d837208c37fd3f134ddb05a39165848b2ca7aad6d14dc4a95d9366c705b881",
+        "eye_y": 0.4,
+        "interocular": 0.19275075301549105,
+        "mouth_y": 0.6082332598669129,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.369666314666389,
+            -0.035185237054966734,
+            -41.895336170638785
+          ],
+          [
+            0.035185237054966734,
+            1.369666314666389,
+            -21.159236896580254
+          ]
+        ],
+        "training_sha256": "221975c700492a1755008938dae0de4e5e87db28ce5a6bfa8e82d362e34734fb",
+        "eye_y": 0.42,
+        "interocular": 0.1858667975506521,
+        "mouth_y": 0.6207963577288089,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-003",
+      "source": "public/portraits/03.webp",
+      "source_sha256": "a454709938e5499d1bbecf03d1b684895072dc233aa6edcaeccc8a9ca988fb25",
+      "collar_box_heuristic": [
+        126,
+        167,
+        37,
+        28
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3618594298039453,
+            -0.06077906680937174,
+            -31.51099912787285
+          ],
+          [
+            0.06077906680937174,
+            1.3618594298039453,
+            -35.1570144209127
+          ]
+        ],
+        "training_sha256": "10104e25f5d10d80a3d4ac160cc9c01f18fce2bf69e7ee057723a218af99b916",
+        "eye_y": 0.4,
+        "interocular": 0.1899389581590781,
+        "mouth_y": 0.5907111646481984,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.313221593025233,
+            -0.058608385851894186,
+            -25.814177730448847
+          ],
+          [
+            0.058608385851894186,
+            1.313221593025233,
+            -25.12426390588014
+          ]
+        ],
+        "training_sha256": "ae0dce1238205c63dd8d4340198e4e0bf7b4504f81b79d54b4935e255ea010f0",
+        "eye_y": 0.42,
+        "interocular": 0.183155423939111,
+        "mouth_y": 0.6039000516250483,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-004",
+      "source": "public/portraits/04.webp",
+      "source_sha256": "26b47de31425e6b314cc885b59132164d0ae3bcb246854f1715a382518588588",
+      "collar_box_heuristic": [
+        104,
+        161,
+        34,
+        22
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.5290324670811555,
+            -0.07960193733146173,
+            -49.98932030914682
+          ],
+          [
+            0.07960193733146173,
+            1.5290324670811555,
+            -51.154138695917766
+          ]
+        ],
+        "training_sha256": "b69762909f1fe7887c1d61c12744e17cda54b7527612e8a06251d0ab55cccc51",
+        "eye_y": 0.4,
+        "interocular": 0.21795592594613744,
+        "mouth_y": 0.6165257495475154,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.4744241646854002,
+            -0.07675901099819525,
+            -43.63255886953448
+          ],
+          [
+            0.07675901099819525,
+            1.4744241646854002,
+            -40.55006231392075
+          ]
+        ],
+        "training_sha256": "41d39e6570fa8657d8fcdb50893488a429566ffb41a3d290d171549061a6141d",
+        "eye_y": 0.42,
+        "interocular": 0.21017178573377535,
+        "mouth_y": 0.6287926870636756,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-007",
+      "source": "public/portraits/07.webp",
+      "source_sha256": "137dcb51bd6e029997bc0bdc258ea8806183126a6103f714c03636950a820ced",
+      "collar_box_heuristic": [
+        126,
+        175,
+        23,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2634137746920042,
+            -0.03990083420942287,
+            -36.65269979281584
+          ],
+          [
+            0.03990083420942287,
+            1.2634137746920042,
+            -7.814324136836845
+          ]
+        ],
+        "training_sha256": "ef47b982c9bcbbe2912e55ee317cb546142994c33bb7c9ff11996bbae36596e0",
+        "eye_y": 0.4,
+        "interocular": 0.18884444205371217,
+        "mouth_y": 0.6029272453435434,
+        "reflected_padding_fraction": 0.0003814697265625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2182918541672898,
+            -0.0384758044162292,
+            -30.772246228786685
+          ],
+          [
+            0.0384758044162292,
+            1.2182918541672898,
+            1.2419017251930313
+          ]
+        ],
+        "training_sha256": "6f3558415d3070bed45843907ef4d7195ce8b86bb7ae07d941a6270e2fa7f593",
+        "eye_y": 0.42,
+        "interocular": 0.18209999769465116,
+        "mouth_y": 0.6156798437241311,
+        "reflected_padding_fraction": 0.0239410400390625
+      }
+    },
+    {
+      "id": "original-009",
+      "source": "public/portraits/09.webp",
+      "source_sha256": "082e73f1ef892e0b41b2ceead466d455a27a389af237dac2a0f0d87330d505cd",
+      "collar_box_heuristic": [
+        113,
+        177,
+        23,
+        15
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3977950327050133,
+            -0.07035922697644054,
+            -20.60384360867917
+          ],
+          [
+            0.07035922697644054,
+            1.3977950327050133,
+            -37.77668127897849
+          ]
+        ],
+        "training_sha256": "4889171fe45a0e78bfc4c2334e3f404d0e4694280e5780addc22b8dc8d6b88e0",
+        "eye_y": 0.4,
+        "interocular": 0.1923133973654948,
+        "mouth_y": 0.5801866630978638,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.3478737815369772,
+            -0.06784639744156766,
+            -15.296563479797811
+          ],
+          [
+            0.06784639744156766,
+            1.3478737815369772,
+            -27.650371233300703
+          ]
+        ],
+        "training_sha256": "307328fe32ae7e9c1a6ae3d5d8077a6550e013e920071be2923d6e1a6e07dc15",
+        "eye_y": 0.42,
+        "interocular": 0.18544506174529862,
+        "mouth_y": 0.5937514251300829,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-010",
+      "source": "public/portraits/10.webp",
+      "source_sha256": "fb5bb164a2c5211815ad3eb11e2e90dd59bc60e2eb6298e7a56de39ad1350ecc",
+      "collar_box_heuristic": [
+        124,
+        177,
+        17,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3688448877959556,
+            -0.07206518414473345,
+            -33.17855422201961
+          ],
+          [
+            0.07206518414473345,
+            1.3688448877959556,
+            -34.06363386021067
+          ]
+        ],
+        "training_sha256": "bef3b231f0f5164293090560b62afa6b803320590b2348bb0394cea976923109",
+        "eye_y": 0.4,
+        "interocular": 0.1984210377819968,
+        "mouth_y": 0.6007333541811143,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.3199575703746718,
+            -0.06949142756813584,
+            -27.422177285518956
+          ],
+          [
+            0.06949142756813584,
+            1.3199575703746718,
+            -24.069932650917494
+          ]
+        ],
+        "training_sha256": "745c8cac4eb0912a22e85480c083f54107cb1d1fe5e52ca0b7f88f2dfd3b7c3a",
+        "eye_y": 0.42,
+        "interocular": 0.19133457214692554,
+        "mouth_y": 0.613564305817503,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-013",
+      "source": "public/portraits/13.webp",
+      "source_sha256": "77b05f08ae45c3ecefb005f1ab571217213da40dba8e5bcdad9a727d7212206d",
+      "collar_box_heuristic": null,
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.5239481190434057,
+            -0.15006319727337986,
+            -27.413719072446952
+          ],
+          [
+            0.15006319727337986,
+            1.5239481190434057,
+            -41.16334287394051
+          ]
+        ],
+        "training_sha256": "c14e8964cc5457b50a846cc5f18f8b2bf0ad455f3f08adda53ccbed1c590850e",
+        "eye_y": 0.4,
+        "interocular": 0.20552642720152056,
+        "mouth_y": 0.59981639595678,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.4695214005061414,
+            -0.14470379737075917,
+            -21.86322910557388
+          ],
+          [
+            0.14470379737075917,
+            1.4695214005061414,
+            -30.916080628442685
+          ]
+        ],
+        "training_sha256": "a619ec556f1c613413dfd1fbf382a3844254db0f4271c8931a41d4b0cc0c29f7",
+        "eye_y": 0.42,
+        "interocular": 0.19818619765860898,
+        "mouth_y": 0.6126800961011807,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-018",
+      "source": "public/portraits/18.webp",
+      "source_sha256": "ca0f2bdb141154cff9570a0c21ba226d9ceb677010c7091bb774ea372647e825",
+      "collar_box_heuristic": [
+        101,
+        146,
+        61,
+        37
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.4149041524458386,
+            -0.09472870109863306,
+            -30.125850858643446
+          ],
+          [
+            0.09472870109863306,
+            1.4149041524458386,
+            -34.17312608535042
+          ]
+        ],
+        "training_sha256": "917fe3fa9f80ca2c1830d8e8e2738f34acb1eb5e6efb55b66f57e0199b7bde8d",
+        "eye_y": 0.4,
+        "interocular": 0.20149735608366642,
+        "mouth_y": 0.6031664095543412,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.364371861287059,
+            -0.09134553320225333,
+            -24.478499042263365
+          ],
+          [
+            0.09134553320225333,
+            1.364371861287059,
+            -24.17551443944508
+          ]
+        ],
+        "training_sha256": "8684ac1fe532eaf804884117bf3f49b720ccc078489b1abcf1d578e2963e76f2",
+        "eye_y": 0.42,
+        "interocular": 0.19430102193782117,
+        "mouth_y": 0.615910466355972,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-020",
+      "source": "public/portraits/20.webp",
+      "source_sha256": "728c528e8dd6415b6a088e5c564cf55e6a9bdde5a7dde2a356dcd6e7c52257fb",
+      "collar_box_heuristic": [
+        116,
+        177,
+        22,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3410165242250378,
+            -0.035149611951364464,
+            -29.278936735803825
+          ],
+          [
+            0.035149611951364464,
+            1.3410165242250378,
+            -23.27090172162073
+          ]
+        ],
+        "training_sha256": "f679f2d074f575adb376458471ee482a810a79c833e20832ff5e2ae00dd85264",
+        "eye_y": 0.4,
+        "interocular": 0.20768117830733338,
+        "mouth_y": 0.6030627621784551,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2931230769312865,
+            -0.033894268667387165,
+            -23.661831852382278
+          ],
+          [
+            0.033894268667387165,
+            1.2931230769312865,
+            -13.662655231562866
+          ]
+        ],
+        "training_sha256": "56b940ed9fa8ea9028a05e98a50ef2ea9e2eff921c366fa71cd2369f9e2a5acc",
+        "eye_y": 0.42,
+        "interocular": 0.20026399336778566,
+        "mouth_y": 0.6158105206720816,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-022",
+      "source": "public/portraits/22.webp",
+      "source_sha256": "838915839a3575edc2a73d619fb44dc3e70c0f04d2c73ce5b470246a4a58886d",
+      "collar_box_heuristic": [
+        110,
+        166,
+        23,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3732911463575606,
+            0.053671814453810494,
+            -68.97062335925472
+          ],
+          [
+            -0.053671814453810494,
+            1.3732911463575606,
+            -15.364791301404907
+          ]
+        ],
+        "training_sha256": "b947665ae4304e15ddc896c2f433db1d6f9e5fa86d502279fb56ecd749c4dccb",
+        "eye_y": 0.4,
+        "interocular": 0.24,
+        "mouth_y": 0.6099899193218398,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.3732911463575606,
+            0.053671814453810494,
+            -68.97062335925472
+          ],
+          [
+            -0.053671814453810494,
+            1.3732911463575606,
+            -10.244791301404916
+          ]
+        ],
+        "training_sha256": "ea1c29eb49b0edc899994a9036372db2f0de1386a9e9e396bcf4d87fb4ca96a4",
+        "eye_y": 0.42,
+        "interocular": 0.24,
+        "mouth_y": 0.6299899193218397,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-023",
+      "source": "public/portraits/23.webp",
+      "source_sha256": "4cadc1c5bfe440b2f010b4c6276198a67aab2df952e8adba44b0c105c001facd",
+      "collar_box_heuristic": [
+        134,
+        185,
+        28,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2742715249689252,
+            -0.18450406401771963,
+            -24.68932136299324
+          ],
+          [
+            0.18450406401771963,
+            1.2742715249689252,
+            -46.62959251446915
+          ]
+        ],
+        "training_sha256": "da061a60efc5c43df20a10e902ac175eaa4c4d2aa148e3f117386498a9c43731",
+        "eye_y": 0.4,
+        "interocular": 0.20746430101809496,
+        "mouth_y": 0.595939535751101,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2287618276486065,
+            -0.17791463315994396,
+            -19.236131314314946
+          ],
+          [
+            0.17791463315994396,
+            1.2287618276486065,
+            -36.187107067523854
+          ]
+        ],
+        "training_sha256": "2763b44377d089aabdd48284a91ac59c7bc38cc5fa0ae8bf1eff3bdcf2a63455",
+        "eye_y": 0.42,
+        "interocular": 0.20005486169602013,
+        "mouth_y": 0.6089416951885616,
+        "reflected_padding_fraction": 0.0006256103515625
+      }
+    },
+    {
+      "id": "original-025",
+      "source": "public/portraits/25.webp",
+      "source_sha256": "3c139090920a54d61edf1b368aba29c14b14960f3f29e70424dd21309b1271e9",
+      "collar_box_heuristic": [
+        108,
+        153,
+        28,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.4867519824723476,
+            -0.09133430179381627,
+            -37.59513106551637
+          ],
+          [
+            0.09133430179381627,
+            1.4867519824723476,
+            -28.329813959092235
+          ]
+        ],
+        "training_sha256": "13743f03d7584779f53c52a3eb241f60a9c605dc24eb8989ad42224780815088",
+        "eye_y": 0.4,
+        "interocular": 0.17986018331633552,
+        "mouth_y": 0.5897856028453017,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.43365369738405,
+            -0.08807236244403713,
+            -31.681019241747947
+          ],
+          [
+            0.08807236244403713,
+            1.43365369738405,
+            -18.540892031981826
+          ]
+        ],
+        "training_sha256": "8ff7d2c1086b57f62e6611b95a4ac7b7a58929ed0b4ca9d6170f0cf4a9223b56",
+        "eye_y": 0.42,
+        "interocular": 0.17343660534075198,
+        "mouth_y": 0.6030075456008268,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-027",
+      "source": "public/portraits/27.webp",
+      "source_sha256": "c87694746099edda7cee174f8c28807f761b4f068d6263ce2dd92cd8b21fcace",
+      "collar_box_heuristic": [
+        122,
+        163,
+        20,
+        15
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.4750935656225241,
+            -0.07245452855061232,
+            -40.96157889812676
+          ],
+          [
+            0.07245452855061232,
+            1.4750935656225241,
+            -32.995571997486365
+          ]
+        ],
+        "training_sha256": "3c223867e5ec800c68b6b5a289a664a48adf48c1b33c01a8baf016c3dc44259a",
+        "eye_y": 0.4,
+        "interocular": 0.21839221297604938,
+        "mouth_y": 0.5927427237975982,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.422411652564577,
+            -0.06986686681666189,
+            -34.927236794622274
+          ],
+          [
+            0.06986686681666189,
+            1.422411652564577,
+            -23.040015854719016
+          ]
+        ],
+        "training_sha256": "22a9bb8ddfd43bd5ca6550b980cae6f0d91431275d10ec62fedf9eb8b979d04b",
+        "eye_y": 0.42,
+        "interocular": 0.21059249108404754,
+        "mouth_y": 0.6058590550905409,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-033",
+      "source": "public/portraits/33.webp",
+      "source_sha256": "6454ec0848ac834bf32a7385867c8bec09113c01bcf8f34b86e11689689986a2",
+      "collar_box_heuristic": [
+        137,
+        175,
+        19,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.280895560653177,
+            -0.009320445213150336,
+            -40.813701814133736
+          ],
+          [
+            0.009320445213150336,
+            1.280895560653177,
+            -6.749519341274095
+          ]
+        ],
+        "training_sha256": "3e9b562cdc2e42ae81c316c15b4ff641c42e4a75d9241171f18535e84f6cad67",
+        "eye_y": 0.4,
+        "interocular": 0.18768381825452374,
+        "mouth_y": 0.6007032146122728,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2351492906298491,
+            -0.00898757216982354,
+            -34.78464103505755
+          ],
+          [
+            0.00898757216982354,
+            1.2351492906298491,
+            2.2686777780570964
+          ]
+        ],
+        "training_sha256": "b17847016099fe738fa29a033a9c597bc78758bfb1e0f4e448440838c0450141",
+        "eye_y": 0.42,
+        "interocular": 0.18098082474543348,
+        "mouth_y": 0.6135352426618343,
+        "reflected_padding_fraction": 0.0131072998046875
+      }
+    },
+    {
+      "id": "original-036",
+      "source": "public/portraits/36.webp",
+      "source_sha256": "c88160bdbcd4a63c2f4cd93a7bf4f7046f3e0216aff3ee00e4150c5c2b81933f",
+      "collar_box_heuristic": [
+        108,
+        162,
+        22,
+        14
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.367641813269243,
+            0.09536622444124272,
+            -60.759560099940046
+          ],
+          [
+            -0.09536622444124272,
+            1.367641813269243,
+            9.884025851190486
+          ]
+        ],
+        "training_sha256": "9743efd013f81321608345bfa1040a89d6dd49060c53705814b6d8928be945a2",
+        "eye_y": 0.4,
+        "interocular": 0.20358897857341945,
+        "mouth_y": 0.6030591064458974,
+        "reflected_padding_fraction": 0.0032806396484375
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.3187974627953416,
+            0.0919602878540555,
+            -54.01814723922794
+          ],
+          [
+            -0.0919602878540555,
+            1.3187974627953416,
+            18.308167785076506
+          ]
+        ],
+        "training_sha256": "1cd022f940cdbe5bdbf6a34cafbba3bd9c169a2572c23b662f03552855d4410b",
+        "eye_y": 0.42,
+        "interocular": 0.1963179436243688,
+        "mouth_y": 0.615806995501401,
+        "reflected_padding_fraction": 0.022705078125
+      }
+    },
+    {
+      "id": "original-038",
+      "source": "public/portraits/38.webp",
+      "source_sha256": "321fa50d7c7b07c47e9fe5914746de6f7ddddbb0c3e9964db005fd735bce0ca4",
+      "collar_box_heuristic": [
+        97,
+        157,
+        53,
+        36
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.424302859968514,
+            -0.033837332296131915,
+            -62.07807315075999
+          ],
+          [
+            0.033837332296131915,
+            1.424302859968514,
+            -39.90326325821704
+          ]
+        ],
+        "training_sha256": "1c589484e083a6e69adc8e8d6e5424a761a173e4345c97319cd5084e8506bc32",
+        "eye_y": 0.4,
+        "interocular": 0.1967808688880903,
+        "mouth_y": 0.6138129099456952,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.3734349006839244,
+            -0.03262885614269864,
+            -55.28957053823288
+          ],
+          [
+            0.03262885614269864,
+            1.3734349006839244,
+            -29.701003856137888
+          ]
+        ],
+        "training_sha256": "d5506ed7c72d14e855dd9395bcaff43560473370563fd22b49280317a4fec6e1",
+        "eye_y": 0.42,
+        "interocular": 0.18975298071351585,
+        "mouth_y": 0.6261767345904918,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-045",
+      "source": "public/portraits/45.webp",
+      "source_sha256": "61793b125584245a3866b1a8d2f9fbea43933f71bc9f58beaae255f6f961357e",
+      "collar_box_heuristic": [
+        85,
+        139,
+        54,
+        42
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3526011090748595,
+            -0.07457109898126633,
+            -6.686181355678343
+          ],
+          [
+            0.07457109898126633,
+            1.3526011090748595,
+            -14.836587937245028
+          ]
+        ],
+        "training_sha256": "66f9dffc13e363d527cf5fe67026ec47bc5c6a6d0e4fb8eb59208ce6d4058911",
+        "eye_y": 0.4,
+        "interocular": 0.19919558883455987,
+        "mouth_y": 0.5958845182854466,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.3042939266079003,
+            -0.07190784544622111,
+            -1.8759605929755594
+          ],
+          [
+            0.07190784544622111,
+            1.3042939266079003,
+            -5.529566939486301
+          ]
+        ],
+        "training_sha256": "448a727d2d673e222d32657da12fc50213f701935e3dead43e17f29271cbbede",
+        "eye_y": 0.42,
+        "interocular": 0.19208146066189696,
+        "mouth_y": 0.608888642632395,
+        "reflected_padding_fraction": 0.009979248046875
+      }
+    },
+    {
+      "id": "original-046",
+      "source": "public/portraits/46.webp",
+      "source_sha256": "e0e2c88957f947e3baf23aa966d5d0649bc4051fe36a52af8cdfe55e7fc5934a",
+      "collar_box_heuristic": [
+        126,
+        173,
+        25,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3439859901577473,
+            -0.10119895290370648,
+            -25.300334491356836
+          ],
+          [
+            0.10119895290370648,
+            1.3439859901577473,
+            -31.598309969220423
+          ]
+        ],
+        "training_sha256": "08959b9a976d681bff08de961eacdafb3da6a6032b2cf5c0b28331b96f81f3e8",
+        "eye_y": 0.4,
+        "interocular": 0.1948858564112007,
+        "mouth_y": 0.5910454492840853,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2959864905092566,
+            -0.09758470458571698,
+            -19.825322545236986
+          ],
+          [
+            0.09758470458571698,
+            1.2959864905092566,
+            -21.692656041748293
+          ]
+        ],
+        "training_sha256": "e2c044ff958847e20e8703a00173c99fe5c4b009b1ec45c84c8fc8900af3dd0a",
+        "eye_y": 0.42,
+        "interocular": 0.18792564725365785,
+        "mouth_y": 0.6042223975239395,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-047",
+      "source": "public/portraits/47.webp",
+      "source_sha256": "afb0315ba101f64b6343b13cf8efafcb92bc20ade1b7f4a8acc4c742b2a2922f",
+      "collar_box_heuristic": [
+        135,
+        161,
+        29,
+        21
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3893800250285244,
+            -0.020871541428805804,
+            -62.76369314263647
+          ],
+          [
+            0.020871541428805804,
+            1.3893800250285244,
+            -16.087617449629718
+          ]
+        ],
+        "training_sha256": "8f9743484f6afbf68222a98094294cfecbeafa44b83dce8d799fe2e310831a46",
+        "eye_y": 0.4,
+        "interocular": 0.20088392062384852,
+        "mouth_y": 0.6232319329549502,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.3397593098489347,
+            -0.02012612923491989,
+            -55.95070410182808
+          ],
+          [
+            0.02012612923491989,
+            1.3397593098489347,
+            -6.735916826428692
+          ]
+        ],
+        "training_sha256": "c6227bc5ce8921a7130dc45c8f42cf807fa0ede977dabf5ded060a604bd870ee",
+        "eye_y": 0.42,
+        "interocular": 0.19370949488728262,
+        "mouth_y": 0.6352593639208448,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-051",
+      "source": "public/portraits/51.webp",
+      "source_sha256": "4a7eae18c5a59587bb258f203b1cd63ea4b11a289cfca342494bedef906b6292",
+      "collar_box_heuristic": [
+        107,
+        181,
+        30,
+        20
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2060301865483007,
+            0.09125590642196796,
+            -51.14348890325553
+          ],
+          [
+            -0.09125590642196796,
+            1.2060301865483007,
+            8.288193744748881
+          ]
+        ],
+        "training_sha256": "ce36ef0281ee34df2566f42dd6cf0a186b7fb6f96709d4c37e32c70d50962915",
+        "eye_y": 0.4,
+        "interocular": 0.21336859196079394,
+        "mouth_y": 0.6015835575966539,
+        "reflected_padding_fraction": 0.00189208984375
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1629576798858616,
+            0.0879967669068977,
+            -44.745507156710715
+          ],
+          [
+            -0.0879967669068977,
+            1.1629576798858616,
+            16.769329682436393
+          ]
+        ],
+        "training_sha256": "6ea08fe91ae87e64c78e3f52cd7df462271c0b8efd184c1f3a140af02c97510b",
+        "eye_y": 0.42,
+        "interocular": 0.2057482851050514,
+        "mouth_y": 0.6143841448253449,
+        "reflected_padding_fraction": 0.018646240234375
+      }
+    },
+    {
+      "id": "original-052",
+      "source": "public/portraits/52.webp",
+      "source_sha256": "f4dd3fc100a5058f9f1d06ba054157c726cbe0505784090ef88e0f0ece50db76",
+      "collar_box_heuristic": [
+        106,
+        176,
+        26,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2333349218667489,
+            -0.06162044014350638,
+            1.924397233247987
+          ],
+          [
+            0.06162044014350638,
+            1.2333349218667489,
+            -6.57421262855911
+          ]
+        ],
+        "training_sha256": "89b206d1fed082ff9e67d4be6a2955449160583a23374cc9088d150469de99ee",
+        "eye_y": 0.4,
+        "interocular": 0.19322350259392998,
+        "mouth_y": 0.5809845613871082,
+        "reflected_padding_fraction": 0.00579833984375
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1892872460857937,
+            -0.05941971013838116,
+            6.4270973320605265
+          ],
+          [
+            0.05941971013838116,
+            1.1892872460857937,
+            2.437723536746546
+          ]
+        ],
+        "training_sha256": "ff5f20090804e31fa407aacccf9f42668f2e506e33b119e9a1769a8e02af81cf",
+        "eye_y": 0.42,
+        "interocular": 0.18632266321557547,
+        "mouth_y": 0.5945208270518543,
+        "reflected_padding_fraction": 0.039031982421875
+      }
+    },
+    {
+      "id": "original-053",
+      "source": "public/portraits/53.webp",
+      "source_sha256": "cc67f2037d65130353b79b3ea6af1b6fe70319c2e82d4508bd09e28d9b21c2f4",
+      "collar_box_heuristic": [
+        125,
+        172,
+        20,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3760184174056318,
+            -0.06738379753200018,
+            -27.92994788682273
+          ],
+          [
+            0.06738379753200018,
+            1.3760184174056318,
+            -28.206186784021355
+          ]
+        ],
+        "training_sha256": "a52acd348ca6601039268da67d178974b30d4dd62c2d2c9d34efc8b45a0c2bb5",
+        "eye_y": 0.4,
+        "interocular": 0.1871810490128785,
+        "mouth_y": 0.5943906863484565,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.326874902498288,
+            -0.06497723333442874,
+            -22.3610211765791
+          ],
+          [
+            0.06497723333442874,
+            1.326874902498288,
+            -18.42168011316346
+          ]
+        ],
+        "training_sha256": "c33f9701c263cd45ae41ccf4834769482325a36693695f6f0df8dc86292913d9",
+        "eye_y": 0.42,
+        "interocular": 0.18049601154813288,
+        "mouth_y": 0.6074481618360117,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-054",
+      "source": "public/portraits/54.webp",
+      "source_sha256": "9ecf2cffe6a5a1b7eaa68ea1f90393a86c412c12dd570c36771adc8e3cc4ba17",
+      "collar_box_heuristic": [
+        124,
+        184,
+        28,
+        21
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1371992538031606,
+            -0.15202086247434507,
+            5.2730625575338905
+          ],
+          [
+            0.15202086247434507,
+            1.1371992538031606,
+            -15.021815140961024
+          ]
+        ],
+        "training_sha256": "7f6f051c69adc0f99c29fbde09806632c098480dec104dc666caad56ce9edcbb",
+        "eye_y": 0.4,
+        "interocular": 0.19339606417761657,
+        "mouth_y": 0.5951787221095368,
+        "reflected_padding_fraction": 0.01983642578125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.0965849947387623,
+            -0.1465915459574042,
+            9.656167466193367
+          ],
+          [
+            0.1465915459574042,
+            1.0965849947387623,
+            -5.708178885926742
+          ]
+        ],
+        "training_sha256": "544ac12bd1af37f0389dd3a9c9df4b36a0b57c86545a224e51093021f315c38c",
+        "eye_y": 0.42,
+        "interocular": 0.1864890618855589,
+        "mouth_y": 0.6082080534627676,
+        "reflected_padding_fraction": 0.0464019775390625
+      }
+    },
+    {
+      "id": "original-055",
+      "source": "public/portraits/55.webp",
+      "source_sha256": "01a1065100942705910d28711a03d443c7745cc975a75cd6cafe4a3b09866501",
+      "collar_box_heuristic": [
+        103,
+        180,
+        26,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1999611100768712,
+            0.05369218469522558,
+            -29.517893300687916
+          ],
+          [
+            -0.05369218469522558,
+            1.1999611100768712,
+            7.698189678003388
+          ]
+        ],
+        "training_sha256": "2a6441476cfedb836ae971cf50073e17bb53e72b10a6761097c71b68a93e423a",
+        "eye_y": 0.4,
+        "interocular": 0.22010874165326164,
+        "mouth_y": 0.6130148529549158,
+        "reflected_padding_fraction": 0.0067596435546875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1571053561455547,
+            0.05177460667039611,
+            -23.892254254234814
+          ],
+          [
+            -0.05177460667039611,
+            1.1571053561455547,
+            16.20039718950325
+          ]
+        ],
+        "training_sha256": "c9e28d7e72a0c0c0868949d3f90f856dea09491d2260109037c69d88c2b9b611",
+        "eye_y": 0.42,
+        "interocular": 0.21224771516564517,
+        "mouth_y": 0.6254071796350973,
+        "reflected_padding_fraction": 0.0365447998046875
+      }
+    },
+    {
+      "id": "original-056",
+      "source": "public/portraits/56.webp",
+      "source_sha256": "7169965ffacaa1a73b82e3ff47e3979e536c7e6dd9de78233dcee6437276744c",
+      "collar_box_heuristic": [
+        127,
+        185,
+        30,
+        20
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2326835897574875,
+            -0.11759155684450559,
+            -5.787324932269769
+          ],
+          [
+            0.11759155684450559,
+            1.2326835897574875,
+            -30.33274468390229
+          ]
+        ],
+        "training_sha256": "1f948263b78097f10dfe2273c82df8448a1732d69a312b6e964880bf57df94cc",
+        "eye_y": 0.4,
+        "interocular": 0.21514697864638566,
+        "mouth_y": 0.5956777702234761,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1886591758375775,
+            -0.11339185838577327,
+            -1.0092061846887361
+          ],
+          [
+            0.11339185838577327,
+            1.1886591758375775,
+            -20.472289516620094
+          ]
+        ],
+        "training_sha256": "34d1babe290c7533affb7ab996556f2a321d61f95d0b7fc1c70915e815e3f534",
+        "eye_y": 0.42,
+        "interocular": 0.20746315798044337,
+        "mouth_y": 0.6086892784297806,
+        "reflected_padding_fraction": 0.001220703125
+      }
+    },
+    {
+      "id": "original-057",
+      "source": "public/portraits/57.webp",
+      "source_sha256": "1aa12c908eeb62d4ca141da30e4c77b4709058d5f30b2313b7780958d45e90ed",
+      "collar_box_heuristic": [
+        117,
+        189,
+        24,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2934720358389251,
+            -0.14505235005515177,
+            -2.674169139391836
+          ],
+          [
+            0.14505235005515177,
+            1.2934720358389251,
+            -45.02803684811175
+          ]
+        ],
+        "training_sha256": "e73f273b4741ad8d7a9f5236d6acf5193d5d817e06af8e991e562019509e0cef",
+        "eye_y": 0.4,
+        "interocular": 0.22572173301625925,
+        "mouth_y": 0.6017019200404055,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.247276605987535,
+            -0.13987190898175347,
+            1.9927654727293032
+          ],
+          [
+            0.13987190898175347,
+            1.247276605987535,
+            -34.642749817822065
+          ]
+        ],
+        "training_sha256": "773dad8403bc0df4867a92fa0d436f94ea4d3d7f375ffe10cf626fe9f801028e",
+        "eye_y": 0.42,
+        "interocular": 0.2176602425513928,
+        "mouth_y": 0.6144982800389626,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-058",
+      "source": "public/portraits/58.webp",
+      "source_sha256": "04d72ec6329a81227021b7a5a98922ec9e138331e32d1ed7b41ee360e387b5e0",
+      "collar_box_heuristic": [
+        115,
+        185,
+        25,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2783717685862344,
+            -0.04507763118103102,
+            -18.487695306274645
+          ],
+          [
+            0.04507763118103102,
+            1.2783717685862344,
+            -22.6170809255224
+          ]
+        ],
+        "training_sha256": "8c6a0297d5dab20acefd9caf64be2e66f42f6b539dc8ce0a52c0cc274357cce2",
+        "eye_y": 0.4,
+        "interocular": 0.21094930318343275,
+        "mouth_y": 0.5943482717533072,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.232715633993869,
+            -0.0434677157817085,
+            -13.255991902479138
+          ],
+          [
+            0.0434677157817085,
+            1.232715633993869,
+            -13.032185178182345
+          ]
+        ],
+        "training_sha256": "b15992585b836bff5fb7f860a456ec644e376592b68aab91435f0223986857c3",
+        "eye_y": 0.42,
+        "interocular": 0.2034153994983102,
+        "mouth_y": 0.6074072620478319,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-059",
+      "source": "public/portraits/59.webp",
+      "source_sha256": "c81a7023f9caada6776059e5102220a2722c2b07059b7a4ebf37f7ff8bb8c5ec",
+      "collar_box_heuristic": [
+        122,
+        180,
+        20,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.294677335898968,
+            -0.08375505936486552,
+            -11.97237301816412
+          ],
+          [
+            0.08375505936486552,
+            1.294677335898968,
+            -26.363362945503496
+          ]
+        ],
+        "training_sha256": "7bd52f2c15aff5776449da71246a1023dd3637e478ea1457efacb9578f1b6523",
+        "eye_y": 0.4,
+        "interocular": 0.20765596898721256,
+        "mouth_y": 0.5890825267963473,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.248438859616862,
+            -0.08076380724469176,
+            -6.973359696086874
+          ],
+          [
+            0.08076380724469176,
+            1.248438859616862,
+            -16.644671411735544
+          ]
+        ],
+        "training_sha256": "8cf1236016f403587d35a8f49ba179a6c1dc7768a0800fe2ccf93f76ddc6d1de",
+        "eye_y": 0.42,
+        "interocular": 0.20023968438052642,
+        "mouth_y": 0.6023295794107633,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-060",
+      "source": "public/portraits/60.webp",
+      "source_sha256": "a993ceaefe3cb85556b405729f0dfa6aad2ad3386f4dc6356c858900539ac25d",
+      "collar_box_heuristic": [
+        121,
+        184,
+        26,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2093507646117745,
+            -0.051172725428394995,
+            -2.0279512774173725
+          ],
+          [
+            0.051172725428394995,
+            1.2093507646117745,
+            -12.097998912611416
+          ]
+        ],
+        "training_sha256": "b1aa35d4af68d34b70c58cdc11dbe9e4ebe9bd10a0d03d062a82000895b675a5",
+        "eye_y": 0.4,
+        "interocular": 0.19138404418404806,
+        "mouth_y": 0.5821782958947503,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1661596658756401,
+            -0.04934512809166662,
+            2.615904125347484
+          ],
+          [
+            0.04934512809166662,
+            1.1661596658756401,
+            -2.888784665732473
+          ]
+        ],
+        "training_sha256": "9a9c0aa3848ecba150c78d003456431c0d91c291d14cacde7a9d91f388ebe62c",
+        "eye_y": 0.42,
+        "interocular": 0.18454889974890357,
+        "mouth_y": 0.5956719281842238,
+        "reflected_padding_fraction": 0.0117950439453125
+      }
+    },
+    {
+      "id": "original-061",
+      "source": "public/portraits/61.webp",
+      "source_sha256": "a751f9d5d418fb9a02e2cdd951918fb861db1bffef12b347ebde114fda17d221",
+      "collar_box_heuristic": [
+        117,
+        181,
+        27,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.28593120153901,
+            -0.09633973915989863,
+            -9.389865301936311
+          ],
+          [
+            0.09633973915989863,
+            1.28593120153901,
+            -27.87102514990545
+          ]
+        ],
+        "training_sha256": "fae9a0fe5c3edab74c919d1860e21c21383f4445ae98ccf31e4957806da0a2fe",
+        "eye_y": 0.4,
+        "interocular": 0.21465303172700467,
+        "mouth_y": 0.601569609569903,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2400050871983315,
+            -0.09289903418990228,
+            -4.483084398295773
+          ],
+          [
+            0.09289903418990228,
+            1.2400050871983315,
+            -18.09848853740887
+          ]
+        ],
+        "training_sha256": "fb5406eb2040c186e38f02046e4d1eb8e472ecb5ce6d50ffa109a489d22074f7",
+        "eye_y": 0.42,
+        "interocular": 0.20698685202246897,
+        "mouth_y": 0.6143706949424066,
+        "reflected_padding_fraction": 0.000152587890625
+      }
+    },
+    {
+      "id": "original-062",
+      "source": "public/portraits/62.webp",
+      "source_sha256": "ccde0407557caa640f6afd6f439b989233a516d18ba243c8a551f7ac3b17a816",
+      "collar_box_heuristic": [
+        121,
+        168,
+        24,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2680159867982375,
+            -0.04798053212258923,
+            -18.468824817995454
+          ],
+          [
+            0.04798053212258923,
+            1.2680159867982375,
+            -2.120214649440598
+          ]
+        ],
+        "training_sha256": "86ae99cbf3bac87064173da030b240378706d9875018d3a40a0ad19c17522dcc",
+        "eye_y": 0.4,
+        "interocular": 0.21632571974978884,
+        "mouth_y": 0.5990303074792421,
+        "reflected_padding_fraction": 0.0132598876953125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2227297015554435,
+            -0.04626694168963963,
+            -13.23779536020993
+          ],
+          [
+            0.04626694168963963,
+            1.2227297015554435,
+            6.7326501594679655
+          ]
+        ],
+        "training_sha256": "fa13cc835e04519d808e92c212906b528efd9421baa74e29e3e43b834401eb4d",
+        "eye_y": 0.42,
+        "interocular": 0.2085998011872964,
+        "mouth_y": 0.6119220822121263,
+        "reflected_padding_fraction": 0.0466461181640625
+      }
+    },
+    {
+      "id": "original-063",
+      "source": "public/portraits/63.webp",
+      "source_sha256": "2f912e1e6325fc810bcc4d9c09daa83c1632570c81ba4d024c3c98dddde01b1f",
+      "collar_box_heuristic": [
+        117,
+        177,
+        24,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3384523951251495,
+            -0.1217174984868467,
+            -9.08375902533001
+          ],
+          [
+            0.1217174984868467,
+            1.3384523951251495,
+            -36.41574152142499
+          ]
+        ],
+        "training_sha256": "0e0078749b8717871bc758669dca3f6eb66f8affefb75830c945d1f8059d91e3",
+        "eye_y": 0.4,
+        "interocular": 0.20988805554400788,
+        "mouth_y": 0.6100760155369316,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.29065052387068,
+            -0.11737044496945932,
+            -4.187910488711111
+          ],
+          [
+            0.11737044496945932,
+            1.29065052387068,
+            -26.33803646708843
+          ]
+        ],
+        "training_sha256": "263e6505f19943abd17282f1f9379231b02efca66a5c5fa093416fe00351eb1e",
+        "eye_y": 0.42,
+        "interocular": 0.2023920535602933,
+        "mouth_y": 0.6225733006963267,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-064",
+      "source": "public/portraits/64.webp",
+      "source_sha256": "cde376ff913778d5b65b4abfe4a1cf4931c6ce9a64561c95f0d51dea81a7fe35",
+      "collar_box_heuristic": [
+        139,
+        170,
+        21,
+        15
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3346905141074448,
+            -0.06688934565736475,
+            -45.42680338635387
+          ],
+          [
+            0.06688934565736475,
+            1.3346905141074448,
+            -17.198802471485436
+          ]
+        ],
+        "training_sha256": "8a645b37b3d0f24550be980c3c69931f5186ef49c4420922ba50397e3d274945",
+        "eye_y": 0.4,
+        "interocular": 0.20338894272958427,
+        "mouth_y": 0.5903424128461328,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.287022995746465,
+            -0.06450044045531603,
+            -39.232988979698405
+          ],
+          [
+            0.06450044045531603,
+            1.287022995746465,
+            -7.807416668932419
+          ]
+        ],
+        "training_sha256": "63eaf1ee0dbf6eeb8f9a125ed3c3137fe53f71b9a7d196494264edb1053e07ad",
+        "eye_y": 0.42,
+        "interocular": 0.1961250519178136,
+        "mouth_y": 0.6035444695301995,
+        "reflected_padding_fraction": 0.007049560546875
+      }
+    },
+    {
+      "id": "original-065",
+      "source": "public/portraits/65.webp",
+      "source_sha256": "e5f13487e5667883dec95f0ffa7e9f18a4cd0cbf6ea8ed2d8e1cc45e77df4edc",
+      "collar_box_heuristic": [
+        117,
+        174,
+        22,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3004768670100315,
+            -0.08098877728810995,
+            -13.985098246379806
+          ],
+          [
+            0.08098877728810995,
+            1.3004768670100315,
+            -19.0904291100034
+          ]
+        ],
+        "training_sha256": "a5fa6772acd0a102e7941107c9419726e58ecd3af98560ece843c6a568f3a533",
+        "eye_y": 0.4,
+        "interocular": 0.20738144441854928,
+        "mouth_y": 0.6003010405912359,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2540312646168161,
+            -0.07809632095639175,
+            -8.914201880437673
+          ],
+          [
+            0.07809632095639175,
+            1.2540312646168161,
+            -9.631485213217587
+          ]
+        ],
+        "training_sha256": "b856097d32a4e57be0a45133231eaaec5ec081e1e0c7d5970b3754c60519fdbf",
+        "eye_y": 0.42,
+        "interocular": 0.19997496426074407,
+        "mouth_y": 0.6131474319986917,
+        "reflected_padding_fraction": 0.0054931640625
+      }
+    },
+    {
+      "id": "original-066",
+      "source": "public/portraits/66.webp",
+      "source_sha256": "f367280e44b540505c293ec82ee0e462b87d0323570a723c212fb1b4dac75219",
+      "collar_box_heuristic": [
+        131,
+        200,
+        23,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1711979973368458,
+            -0.12835582724178682,
+            -6.880226902626987
+          ],
+          [
+            0.12835582724178682,
+            1.1711979973368458,
+            -31.67035680934123
+          ]
+        ],
+        "training_sha256": "2f3f6e8f39a12fccae5966b3127d79674892dd8f7bd3a501be483789e5c58e8a",
+        "eye_y": 0.4,
+        "interocular": 0.19027910906020806,
+        "mouth_y": 0.5948901821055035,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1293694974319586,
+            -0.12377169055458019,
+            -2.0630759418189086
+          ],
+          [
+            0.12377169055458019,
+            1.1293694974319586,
+            -21.76212978043621
+          ]
+        ],
+        "training_sha256": "c5a0f18a04958758abc6f200dcb26a709804f8b361279e0c8816ca92a0af811b",
+        "eye_y": 0.42,
+        "interocular": 0.18348342659377215,
+        "mouth_y": 0.6079298184588783,
+        "reflected_padding_fraction": 0.002838134765625
+      }
+    },
+    {
+      "id": "original-067",
+      "source": "public/portraits/67.webp",
+      "source_sha256": "5c6bf6f60494417f29df7906276105c5807d7dafd5d885c08756bc4c9e9233a3",
+      "collar_box_heuristic": [
+        113,
+        162,
+        23,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3573834350326,
+            -0.07333741965613443,
+            -10.365276435035668
+          ],
+          [
+            0.07333741965613443,
+            1.3573834350326,
+            -12.615057684200053
+          ]
+        ],
+        "training_sha256": "14aa81b9b0aab71118aead4545a9b1e875afac675f24dcf1da87f8e88bc36556",
+        "eye_y": 0.4,
+        "interocular": 0.20289815949609397,
+        "mouth_y": 0.6027636615562162,
+        "reflected_padding_fraction": 0.0003204345703125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.308905455210007,
+            -0.07071822609698676,
+            -5.4236594194986765
+          ],
+          [
+            0.07071822609698676,
+            1.308905455210007,
+            -3.3873770526215026
+          ]
+        ],
+        "training_sha256": "8d2e8084270bcb68c280fadef8305a682241b1d053d53b32984826e92ed474d8",
+        "eye_y": 0.42,
+        "interocular": 0.1956517966569477,
+        "mouth_y": 0.6155221022149225,
+        "reflected_padding_fraction": 0.0157318115234375
+      }
+    },
+    {
+      "id": "original-068",
+      "source": "public/portraits/68.webp",
+      "source_sha256": "e472c12d3f61a9a4671db844bad2a187ac7e3a0b94741b2e598d0a94434634e7",
+      "collar_box_heuristic": [
+        102,
+        182,
+        28,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2725530795740068,
+            0.06323484620501191,
+            -53.602957898788105
+          ],
+          [
+            -0.06323484620501191,
+            1.2725530795740068,
+            -7.390873920186181
+          ]
+        ],
+        "training_sha256": "81e6f3337dd76d5e8a0da4803ea1cefcd26b7fa67f6c7986b167557865ef7978",
+        "eye_y": 0.4,
+        "interocular": 0.19531380413758878,
+        "mouth_y": 0.5966490165800655,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2271047553035066,
+            0.060976458840547205,
+            -47.11713797383143
+          ],
+          [
+            -0.060976458840547205,
+            1.2271047553035066,
+            1.6502287198204328
+          ]
+        ],
+        "training_sha256": "f1a37d940c2b96b871d58a0e49f3333f4b648fe7bf0fc01b15e0adfe1defa459",
+        "eye_y": 0.42,
+        "interocular": 0.18833831113267496,
+        "mouth_y": 0.6096258374164916,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-069",
+      "source": "public/portraits/69.webp",
+      "source_sha256": "987e3c61db0eee48b9bb12488d719bde4a4263185cd675a00669abdc262ef1e7",
+      "collar_box_heuristic": [
+        117,
+        171,
+        17,
+        14
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.4853002140886242,
+            -0.03696449177188177,
+            -37.080128100244565
+          ],
+          [
+            0.03696449177188177,
+            1.4853002140886242,
+            -39.91498236018214
+          ]
+        ],
+        "training_sha256": "2e6339c84474ab6ecac7a38d3efc330cfbfedca11777be335ec0991817415813",
+        "eye_y": 0.4,
+        "interocular": 0.21015247525755615,
+        "mouth_y": 0.6163714350014844,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.4322537778711737,
+            -0.03564433135145743,
+            -31.184409239521557
+          ],
+          [
+            0.03564433135145743,
+            1.4322537778711737,
+            -29.71230441874711
+          ]
+        ],
+        "training_sha256": "c950f6ab50bd37c83d1e5de766e9660e0907da49efd6ed1160721a41ad71d160",
+        "eye_y": 0.42,
+        "interocular": 0.20264702971264337,
+        "mouth_y": 0.6286438837514313,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-070",
+      "source": "public/portraits/70.webp",
+      "source_sha256": "da3480d384726d7626dc05fb542284e9af4561c107eda13d3752b0e7eddf021d",
+      "collar_box_heuristic": [
+        136,
+        191,
+        28,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1794216224906164,
+            -0.057583170307575114,
+            -10.54419517110972
+          ],
+          [
+            0.057583170307575114,
+            1.1794216224906164,
+            -14.900445520943592
+          ]
+        ],
+        "training_sha256": "fe425eb6e1718d10f92aea95d5962fa9f4a2b239372d6fbfbc49f4ff04d2fcc8",
+        "eye_y": 0.4,
+        "interocular": 0.21050452253416482,
+        "mouth_y": 0.5909010639699083,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1372994216873802,
+            -0.05552662851087601,
+            -5.596188200712959
+          ],
+          [
+            0.05552662851087601,
+            1.1372994216873802,
+            -5.5911438951956285
+          ]
+        ],
+        "training_sha256": "3b927fadb362592e8327801757cc7d688035486c088ff86209a6ed7e613c4f10",
+        "eye_y": 0.42,
+        "interocular": 0.20298650387223044,
+        "mouth_y": 0.6040831688281258,
+        "reflected_padding_fraction": 0.0078277587890625
+      }
+    },
+    {
+      "id": "original-071",
+      "source": "public/portraits/71.webp",
+      "source_sha256": "7ed3227fce2bc31d9a55be5a45eb79eef02202594a9c329b0929decb493f5fa8",
+      "collar_box_heuristic": [
+        113,
+        168,
+        22,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3721007190096655,
+            -0.052282924428016686,
+            -18.996720279557508
+          ],
+          [
+            0.052282924428016686,
+            1.3721007190096655,
+            -19.253129971599364
+          ]
+        ],
+        "training_sha256": "fe5d552a5f1a2c042444061e4c2553d1561c1857708d466a267a19769a5f5183",
+        "eye_y": 0.4,
+        "interocular": 0.1938510633775367,
+        "mouth_y": 0.5899576159612591,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.3230971219021777,
+            -0.0504156771270161,
+            -13.746837412430494
+          ],
+          [
+            0.0504156771270161,
+            1.3230971219021777,
+            -9.788375329756562
+          ]
+        ],
+        "training_sha256": "b4e258b39df0affd260a715cdf43db243bd68a648e58d6c7794be86cc71f11ac",
+        "eye_y": 0.42,
+        "interocular": 0.18692781111405327,
+        "mouth_y": 0.603173415391214,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-072",
+      "source": "public/portraits/72.webp",
+      "source_sha256": "70887ef7bb49a050e4893c9043975fe1abda958361ca8a393b5694b9f0d88e53",
+      "collar_box_heuristic": [
+        93,
+        174,
+        27,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2415828754602871,
+            0.031328281082191024,
+            -24.01302727918511
+          ],
+          [
+            -0.031328281082191024,
+            1.2415828754602871,
+            6.564869425887764
+          ]
+        ],
+        "training_sha256": "7da4bd0d34f5d49e24988ff7e6d24c2b7fd93cf57684bb33731b0b03f35bd96c",
+        "eye_y": 0.4,
+        "interocular": 0.2033832292275967,
+        "mouth_y": 0.6110397231150125,
+        "reflected_padding_fraction": 0.010345458984375
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1972406299081342,
+            0.030209413900684202,
+            -18.5839905906428
+          ],
+          [
+            -0.030209413900684202,
+            1.1972406299081342,
+            15.10755266067747
+          ]
+        ],
+        "training_sha256": "8b06b9410891dd4b0c23453ed2e828eb71ccdb2bb9f272b482d434860567f9db",
+        "eye_y": 0.42,
+        "interocular": 0.1961195424694682,
+        "mouth_y": 0.6235025901466192,
+        "reflected_padding_fraction": 0.0441741943359375
+      }
+    },
+    {
+      "id": "original-073",
+      "source": "public/portraits/73.webp",
+      "source_sha256": "56195796a2f8d4d329dc911fc5e7b953ddff3e70dc1b494d04d87cf220e33306",
+      "collar_box_heuristic": [
+        133,
+        176,
+        28,
+        20
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2976563386247488,
+            -0.1250626186667849,
+            -17.756639403845952
+          ],
+          [
+            0.1250626186667849,
+            1.2976563386247488,
+            -33.906349330302135
+          ]
+        ],
+        "training_sha256": "6fa5ca824d76bd48cfa1d3a86e2ab8c2db4ae2aed3e6805ae634a6e932c8b84b",
+        "eye_y": 0.4,
+        "interocular": 0.21110755049794463,
+        "mouth_y": 0.6048241717695155,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2513114693881509,
+            -0.12059609657154259,
+            -12.55104513942291
+          ],
+          [
+            0.12059609657154259,
+            1.2513114693881509,
+            -23.9182654256485
+          ]
+        ],
+        "training_sha256": "0d3abcfa8b70ee7568df8cae04707481fcc10890cf19724de97e389b6863df6b",
+        "eye_y": 0.42,
+        "interocular": 0.203567995123018,
+        "mouth_y": 0.6175090227777473,
+        "reflected_padding_fraction": 0.000244140625
+      }
+    },
+    {
+      "id": "original-074",
+      "source": "public/portraits/74.webp",
+      "source_sha256": "79a5bf0dffac62011b2b6a7c69e92ed5658cce31f79e4edea3da8e5a4f3dc338",
+      "collar_box_heuristic": [
+        128,
+        180,
+        23,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2559023655789396,
+            -0.022448776349815333,
+            -20.138746493124728
+          ],
+          [
+            0.022448776349815333,
+            1.2559023655789396,
+            -8.810238344610056
+          ]
+        ],
+        "training_sha256": "bd1631904405f74f2c5f71d71652783e9bcbfd03a6114311634bb4b1ac30ab97",
+        "eye_y": 0.4,
+        "interocular": 0.19887473898272068,
+        "mouth_y": 0.5826177605705285,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2110487096654063,
+            -0.021647034337321933,
+            -14.848076975513152
+          ],
+          [
+            0.021647034337321933,
+            1.2110487096654063,
+            0.2815558819831381
+          ]
+        ],
+        "training_sha256": "a1ef2b77cf541174ba085df3f7e12ff1f9e62b010fdb643c5c6a6cc57a47194d",
+        "eye_y": 0.42,
+        "interocular": 0.19177206973333782,
+        "mouth_y": 0.5960956976930096,
+        "reflected_padding_fraction": 0.01068115234375
+      }
+    },
+    {
+      "id": "original-075",
+      "source": "public/portraits/75.webp",
+      "source_sha256": "8f9a0af98abb0e23a4e9fd20f708cdf5b3a80df2563d9bddbfed7ba19db9f566",
+      "collar_box_heuristic": [
+        115,
+        171,
+        23,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3430416105687295,
+            -0.03195572071980993,
+            -17.470807202624343
+          ],
+          [
+            0.03195572071980993,
+            1.3430416105687295,
+            -16.513878688529843
+          ]
+        ],
+        "training_sha256": "10bb1a814aae6336533b407f6ee8b35d60ad70676c50bca26aa95165e3688648",
+        "eye_y": 0.4,
+        "interocular": 0.19031205576680232,
+        "mouth_y": 0.5855704260176655,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2950758387627037,
+            -0.03081444497981672,
+            -12.275421231102058
+          ],
+          [
+            0.03081444497981672,
+            1.2950758387627037,
+            -7.146954449653805
+          ]
+        ],
+        "training_sha256": "7039716ab1bff85d52aceb27e52c029264da68e22b8edbaaf81af0ddaa809abd",
+        "eye_y": 0.42,
+        "interocular": 0.18351519663227364,
+        "mouth_y": 0.5989429108027489,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-076",
+      "source": "public/portraits/76.webp",
+      "source_sha256": "478b445dbb9352d278ead1682f1771705d3cb3d7530c0f763059bd0239ae6719",
+      "collar_box_heuristic": [
+        113,
+        176,
+        27,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2384368436624922,
+            -0.0637757772870513,
+            -3.407860109339765
+          ],
+          [
+            0.0637757772870513,
+            1.2384368436624922,
+            -7.140667021698178
+          ]
+        ],
+        "training_sha256": "c99ee8c6f2f1a8f5f04df7d8cb710e777ef625c944c5256b84b4626ed712b235",
+        "eye_y": 0.4,
+        "interocular": 0.20203155474159326,
+        "mouth_y": 0.5939946388828345,
+        "reflected_padding_fraction": 0.005462646484375
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.194206956388832,
+            -0.061498070955370916,
+            1.285277751708037
+          ],
+          [
+            0.061498070955370916,
+            1.194206956388832,
+            1.8914996576481542
+          ]
+        ],
+        "training_sha256": "03be09e5ef7ee727ba073c1d5b15684b58a000504260ce9e25ab921e9cb57816",
+        "eye_y": 0.42,
+        "interocular": 0.1948161420722507,
+        "mouth_y": 0.6070662589227334,
+        "reflected_padding_fraction": 0.0326080322265625
+      }
+    },
+    {
+      "id": "original-077",
+      "source": "public/portraits/77.webp",
+      "source_sha256": "83d8af44538c32b05110418768bf91625c459e694642a989ea67a959f6ecf494",
+      "collar_box_heuristic": [
+        111,
+        168,
+        29,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3485468440387178,
+            0.07502618561705716,
+            -65.50454887578175
+          ],
+          [
+            -0.07502618561705716,
+            1.3485468440387178,
+            -2.1359937638630413
+          ]
+        ],
+        "training_sha256": "6820b51dbaef58cc5fb09088c315651287dd7137264460c1bd42f0ff05df872e",
+        "eye_y": 0.4,
+        "interocular": 0.21816697638790403,
+        "mouth_y": 0.6138422580529479,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.300384456751621,
+            0.07234667898787657,
+            -58.59367213021815
+          ],
+          [
+            -0.07234667898787657,
+            1.300384456751621,
+            6.71743458484633
+          ]
+        ],
+        "training_sha256": "7c8ce9afe3a0bc7e6979a2697dfc38f37666702cf26ae389862891158a3b6079",
+        "eye_y": 0.42,
+        "interocular": 0.21037529865976456,
+        "mouth_y": 0.6262050345510569,
+        "reflected_padding_fraction": 0.0015106201171875
+      }
+    },
+    {
+      "id": "original-078",
+      "source": "public/portraits/78.webp",
+      "source_sha256": "1f3e50c9e9a1dd8d642af67f13cdf707ad3531c66efe69b4c24939c367d11892",
+      "collar_box_heuristic": [
+        119,
+        179,
+        25,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3305837644578493,
+            -0.10512602868525393,
+            -16.108622168747416
+          ],
+          [
+            0.10512602868525393,
+            1.3305837644578493,
+            -36.825484786704294
+          ]
+        ],
+        "training_sha256": "cdb8928c303f0304b5ca69b6c3305d1ea18033bd7262bb1036032b8911a2da80",
+        "eye_y": 0.4,
+        "interocular": 0.21471527572171784,
+        "mouth_y": 0.6072127960742233,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.283062915727212,
+            -0.10137152766078059,
+            -10.96188566272076
+          ],
+          [
+            0.10137152766078059,
+            1.283062915727212,
+            -26.733146044322027
+          ]
+        ],
+        "training_sha256": "0e53a39e47cdaf6fb26d30010f2ce5554b7112beb810429b506a164a79892b0b",
+        "eye_y": 0.42,
+        "interocular": 0.2070468730173709,
+        "mouth_y": 0.6198123390715725,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "original-079",
+      "source": "public/portraits/79.webp",
+      "source_sha256": "9c01dbe21b265174cb6510d46cc86ff433e16d306ae8510fbd2ab53f5ec47a1b",
+      "collar_box_heuristic": [
+        118,
+        172,
+        26,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2538495398107496,
+            -0.07096558456762467,
+            -14.612055735762283
+          ],
+          [
+            0.07096558456762467,
+            1.2538495398107496,
+            -7.705854901023386
+          ]
+        ],
+        "training_sha256": "c2ad22e6379e6e44b285b243a5b80c22c95ee01791ca7d96570b8a06060b1fa0",
+        "eye_y": 0.4,
+        "interocular": 0.1979055119705499,
+        "mouth_y": 0.5956849168598835,
+        "reflected_padding_fraction": 0.007476806640625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2090691991032232,
+            -0.06843109940449524,
+            -9.518768030913662
+          ],
+          [
+            0.06843109940449524,
+            1.2090691991032232,
+            1.3464970597274117
+          ]
+        ],
+        "training_sha256": "c24528c402b7bcf1a71f2818bc78fe049bfc6da972ba8d64c409cdeab5ea0658",
+        "eye_y": 0.42,
+        "interocular": 0.19083745797160173,
+        "mouth_y": 0.6086961698291733,
+        "reflected_padding_fraction": 0.035125732421875
+      }
+    },
+    {
+      "id": "original-080",
+      "source": "public/portraits/80.webp",
+      "source_sha256": "162ce1c04d0cd1276b76f8d10efeb5426a0716147ab2014868213a8474f98a31",
+      "collar_box_heuristic": [
+        109,
+        181,
+        21,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3023164401557021,
+            0.11341885048561826,
+            -61.64019353571001
+          ],
+          [
+            -0.11341885048561826,
+            1.3023164401557021,
+            -3.642949768363721
+          ]
+        ],
+        "training_sha256": "fa05215d32d67b61c207b23d0c4706299ddaad5902070efce3bf1b03334c5c5c",
+        "eye_y": 0.4,
+        "interocular": 0.2008511795879262,
+        "mouth_y": 0.5965142341784672,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.25580513872157,
+            0.10936817725398905,
+            -54.86732948086325
+          ],
+          [
+            -0.10936817725398905,
+            1.25580513872157,
+            5.264298437649245
+          ]
+        ],
+        "training_sha256": "98b855137e2f51f9cdc0622119c1e99347c5a0abf03436aefd2b51e9fab9281b",
+        "eye_y": 0.42,
+        "interocular": 0.19367792317407181,
+        "mouth_y": 0.6094958686720933,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "synthetic-081",
+      "source": "research/data/synthetic/images/081.webp",
+      "source_sha256": "d7356ecec886c99f7485b2c7a13ec57c3331eac6235a58c61153bc7c11e1c35c",
+      "collar_box_heuristic": [
+        117,
+        185,
+        24,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1869388381194252,
+            -0.10091518220010928,
+            -7.918790092455112
+          ],
+          [
+            0.10091518220010928,
+            1.1869388381194252,
+            -14.165380180936438
+          ]
+        ],
+        "training_sha256": "8d3b92bc09c1ef1e9d962b3b8f9cd3f62c134a0ef45b525e21cc15f48953a51a",
+        "eye_y": 0.4,
+        "interocular": 0.19757251195357808,
+        "mouth_y": 0.6032269783878147,
+        "reflected_padding_fraction": 0.00592041015625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.144548165329446,
+            -0.09731106855010539,
+            -3.0645475891531646
+          ],
+          [
+            0.09731106855010539,
+            1.144548165329446,
+            -4.8823308887601655
+          ]
+        ],
+        "training_sha256": "d155f227be262f5f5e536b858079648d3e9748216bb845b3fdd5afbeb89107f7",
+        "eye_y": 0.42,
+        "interocular": 0.19051635081237878,
+        "mouth_y": 0.6159688720168214,
+        "reflected_padding_fraction": 0.0260162353515625
+      }
+    },
+    {
+      "id": "synthetic-082",
+      "source": "research/data/synthetic/images/082.webp",
+      "source_sha256": "d219894d61b692ec24c6f727d2bc3657a2bebd50e40d0bcda16623a93f49d2aa",
+      "collar_box_heuristic": [
+        102,
+        187,
+        25,
+        20
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1891956597231228,
+            -0.1410697676343276,
+            23.458655764509757
+          ],
+          [
+            0.1410697676343276,
+            1.1891956597231228,
+            -23.07614469113851
+          ]
+        ],
+        "training_sha256": "b470cb533a9e3ef8ee4424efc58b1fbd2048e8d5f42f6bb05716848598c287dc",
+        "eye_y": 0.4,
+        "interocular": 0.21063557701935806,
+        "mouth_y": 0.6099282510763586,
+        "reflected_padding_fraction": 0.0287017822265625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1467243861615828,
+            -0.13603156164738733,
+            27.192275201491526
+          ],
+          [
+            0.13603156164738733,
+            1.1467243861615828,
+            -13.474853809312165
+          ]
+        ],
+        "training_sha256": "7b37a7df5fd955bd042b6c4a0d02d56b8c197bfd7f992f5e8cff9d7ff8ea9fce",
+        "eye_y": 0.42,
+        "interocular": 0.2031128778400953,
+        "mouth_y": 0.6224308135379172,
+        "reflected_padding_fraction": 0.0537872314453125
+      }
+    },
+    {
+      "id": "synthetic-083",
+      "source": "research/data/synthetic/images/083.webp",
+      "source_sha256": "f97fa579d0c05b98cbd462c7f81cf70679f21274933aebc8e305bed86b63c41f",
+      "collar_box_heuristic": null,
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2897388000178514,
+            -0.04557365962167413,
+            -4.4174794799049835
+          ],
+          [
+            0.04557365962167413,
+            1.2897388000178514,
+            -14.779415513599304
+          ]
+        ],
+        "training_sha256": "a222b5f5af9fbd4af57ef8ab352bdbb43b764460233441dc96581b5de33d63c4",
+        "eye_y": 0.4,
+        "interocular": 0.18062142179983123,
+        "mouth_y": 0.5999668603423856,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.243676700017214,
+            -0.04394602892090006,
+            0.3117162158059017
+          ],
+          [
+            0.04394602892090006,
+            1.243676700017214,
+            -5.474436388113631
+          ]
+        ],
+        "training_sha256": "27e18244a02b653651fc112f9bff3840492754b73e990e498d08685151610d62",
+        "eye_y": 0.42,
+        "interocular": 0.1741706567355515,
+        "mouth_y": 0.6128251867587289,
+        "reflected_padding_fraction": 0.0024871826171875
+      }
+    },
+    {
+      "id": "synthetic-084",
+      "source": "research/data/synthetic/images/084.webp",
+      "source_sha256": "257b884bf574180711ff20429e37ff6072e1e04c705d979334e6b8c8ecdc8322",
+      "collar_box_heuristic": [
+        140,
+        179,
+        16,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2172827930348777,
+            -0.10073172423299437,
+            -25.56796778495149
+          ],
+          [
+            0.10073172423299437,
+            1.2172827930348777,
+            -14.62799038035756
+          ]
+        ],
+        "training_sha256": "6a8a110173cb295ebd95faa5ae3b8a9b6c5e7fca89e3ee13aee1188f7b4edfce",
+        "eye_y": 0.4,
+        "interocular": 0.20625088358031435,
+        "mouth_y": 0.6108421747730964,
+        "reflected_padding_fraction": 0.0066680908203125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1738084075693467,
+            -0.0971341626532446,
+            -20.08339750691752
+          ],
+          [
+            0.0971341626532446,
+            1.1738084075693467,
+            -5.3284192953448155
+          ]
+        ],
+        "training_sha256": "8f5ae074cf62478d95d780f9653c18cd382be4d19fad5a6aa7a8ac460d77a99e",
+        "eye_y": 0.42,
+        "interocular": 0.1988847805953031,
+        "mouth_y": 0.6233120971026287,
+        "reflected_padding_fraction": 0.027862548828125
+      }
+    },
+    {
+      "id": "synthetic-085",
+      "source": "research/data/synthetic/images/085.webp",
+      "source_sha256": "8b0ebd859cdc215d8be089c9726cfc007b0a57cf71c8a624785ec2a1c2c5604d",
+      "collar_box_heuristic": [
+        125,
+        169,
+        19,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3210931068426008,
+            -0.06016716118031428,
+            -26.245218571106307
+          ],
+          [
+            0.06016716118031428,
+            1.3210931068426008,
+            -13.91176151005942
+          ]
+        ],
+        "training_sha256": "4e4369efaec59062f2d732c21b640f12ecec914a31fceaacb3cafb5166d13929",
+        "eye_y": 0.4,
+        "interocular": 0.21224237122239212,
+        "mouth_y": 0.6031245725777936,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.273911210169651,
+            -0.058018333995303074,
+            -20.7364607649954
+          ],
+          [
+            0.058018333995303074,
+            1.273911210169651,
+            -4.6377700275573375
+          ]
+        ],
+        "training_sha256": "9e51def9f8d8fcb30d99a902034fe460ec3d19e668dcb2d31db4579821cc2fa1",
+        "eye_y": 0.42,
+        "interocular": 0.2046622865358781,
+        "mouth_y": 0.6158701235571582,
+        "reflected_padding_fraction": 0.0102081298828125
+      }
+    },
+    {
+      "id": "synthetic-086",
+      "source": "research/data/synthetic/images/086.webp",
+      "source_sha256": "79cf9da3d1ad24e74c899f124f7281c20858f569763dd23ed2b6fd45577f9d9e",
+      "collar_box_heuristic": [
+        101,
+        176,
+        23,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.250053479008104,
+            -0.1075375508074339,
+            21.012808865087166
+          ],
+          [
+            0.1075375508074339,
+            1.250053479008104,
+            -16.335298622734484
+          ]
+        ],
+        "training_sha256": "8ada31dae2189b27eccd59b9ab53aad29afcde38aa18f9803bcae48ddd211139",
+        "eye_y": 0.4,
+        "interocular": 0.22206513211626835,
+        "mouth_y": 0.6062032151301991,
+        "reflected_padding_fraction": 0.0349578857421875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2054087119006718,
+            -0.10369692399288269,
+            24.833779977048337
+          ],
+          [
+            0.10369692399288269,
+            1.2054087119006718,
+            -6.9747522433511335
+          ]
+        ],
+        "training_sha256": "994fd2b596b753ecbd06653c7f829c650a01be57d3abd3f0dd1fa18d8437d8f5",
+        "eye_y": 0.42,
+        "interocular": 0.21413423454068747,
+        "mouth_y": 0.6188388145898349,
+        "reflected_padding_fraction": 0.06585693359375
+      }
+    },
+    {
+      "id": "synthetic-087",
+      "source": "research/data/synthetic/images/087.webp",
+      "source_sha256": "877c18580a516f829da77631b78f5dcefa13e2467ec6515a87a74752536713b8",
+      "collar_box_heuristic": [
+        136,
+        158,
+        20,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.331975835385049,
+            -0.0758173293510413,
+            -45.153766289234824
+          ],
+          [
+            0.0758173293510413,
+            1.331975835385049,
+            -7.155129583456301
+          ]
+        ],
+        "training_sha256": "3d9c3cae8be50b19fd239934565c91c545c459a3d86847b6bb89d5f5c2d1fe11",
+        "eye_y": 0.4,
+        "interocular": 0.19495068217870243,
+        "mouth_y": 0.6166426365984847,
+        "reflected_padding_fraction": 0.012847900390625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2844052698355832,
+            -0.07310956758850412,
+            -38.96970320747647
+          ],
+          [
+            0.07310956758850412,
+            1.2844052698355832,
+            1.87755361595282
+          ]
+        ],
+        "training_sha256": "27bd54661ac88ffe2536052f7c4ba8411bbbd0cf579029aa46135afad5a4f850",
+        "eye_y": 0.42,
+        "interocular": 0.1879881578151772,
+        "mouth_y": 0.6289053995771102,
+        "reflected_padding_fraction": 0.0437469482421875
+      }
+    },
+    {
+      "id": "synthetic-088",
+      "source": "research/data/synthetic/images/088.webp",
+      "source_sha256": "21d54a6f4ec77abc3b7a7a2dc7b1f05842de24743e67e82f07ed31e007f17dc2",
+      "collar_box_heuristic": [
+        118,
+        174,
+        25,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2916659714337777,
+            0.0032673756586752366,
+            -36.59410604192743
+          ],
+          [
+            -0.0032673756586752366,
+            1.2916659714337777,
+            -4.437648130429196
+          ]
+        ],
+        "training_sha256": "817a4a642962b04b734dd26cbba0eaaebb62eae4e2957d3088c1027f014170ab",
+        "eye_y": 0.4,
+        "interocular": 0.22091158602494979,
+        "mouth_y": 0.6120620491786067,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2455350438825714,
+            0.003150683670865407,
+            -30.715745111858638
+          ],
+          [
+            -0.003150683670865407,
+            1.2455350438825714,
+            4.497982159943248
+          ]
+        ],
+        "training_sha256": "7736c968f50b485f0892426aec36be5f7d95567c37bce77b941942e9302fd804",
+        "eye_y": 0.42,
+        "interocular": 0.2130218865240587,
+        "mouth_y": 0.6244884045650849,
+        "reflected_padding_fraction": 0.015625
+      }
+    },
+    {
+      "id": "synthetic-089",
+      "source": "research/data/synthetic/images/089.webp",
+      "source_sha256": "65cdf00c4ab05951d0215f4db33502f84789a0fd7791422279a279e212bb4fe3",
+      "collar_box_heuristic": [
+        128,
+        187,
+        20,
+        15
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2498391735343886,
+            -0.08099940295695375,
+            -24.60965577647437
+          ],
+          [
+            0.08099940295695375,
+            1.2498391735343886,
+            -23.694781385713227
+          ]
+        ],
+        "training_sha256": "ff7f18e461077b22dd8e025e0c8c39cd410e0ac08659fadee890260e76fce475",
+        "eye_y": 0.4,
+        "interocular": 0.22129625686692475,
+        "mouth_y": 0.6059331634962971,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.205202060193875,
+            -0.07810656713706256,
+            -19.159310927314607
+          ],
+          [
+            0.07810656713706256,
+            1.205202060193875,
+            -14.0713963362235
+          ]
+        ],
+        "training_sha256": "db612ba6f557533b9632f61bc00fa1dcd8c2ec4c914c6f4a7852395c2acf25bd",
+        "eye_y": 0.42,
+        "interocular": 0.21339281912167746,
+        "mouth_y": 0.6185784076571437,
+        "reflected_padding_fraction": 0.00152587890625
+      }
+    },
+    {
+      "id": "synthetic-090",
+      "source": "research/data/synthetic/images/090.webp",
+      "source_sha256": "a667ce2efff8f571bda05735a8e64bc4ebf4eade3214fa9c9a9a4a7e026ace19",
+      "collar_box_heuristic": [
+        102,
+        166,
+        27,
+        21
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2625863777493416,
+            -0.08877648549086348,
+            13.977754108015148
+          ],
+          [
+            0.08877648549086348,
+            1.2625863777493416,
+            -6.846164778445626
+          ]
+        ],
+        "training_sha256": "c4bb527887e8efd5b7a3cd723f341598c6a02b9122bba097a94acb98dfcfcaa6",
+        "eye_y": 0.4,
+        "interocular": 0.15016334848994892,
+        "mouth_y": 0.6164277595594014,
+        "reflected_padding_fraction": 0.030303955078125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2174940071154368,
+            -0.08560589672333266,
+            18.049977175586022
+          ],
+          [
+            0.08560589672333266,
+            1.2174940071154368,
+            2.175483963641696
+          ]
+        ],
+        "training_sha256": "12cda26b7f43d0ddb1a1fd43efcffc7b16564de25970a1e9872424f8f78e9ee3",
+        "eye_y": 0.42,
+        "interocular": 0.144800371758165,
+        "mouth_y": 0.6286981967179942,
+        "reflected_padding_fraction": 0.0733795166015625
+      }
+    },
+    {
+      "id": "synthetic-091",
+      "source": "research/data/synthetic/images/091.webp",
+      "source_sha256": "f1c8d6f4e6f33ef1d03ac11720a9330334eaf79e2389ff60c017a4edf11ac3fe",
+      "collar_box_heuristic": [
+        120,
+        172,
+        20,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2870132079617067,
+            -0.06180548695074496,
+            -11.595692993264578
+          ],
+          [
+            0.06180548695074496,
+            1.2870132079617067,
+            -11.28631730971368
+          ]
+        ],
+        "training_sha256": "0c42ab20951c6d1f7137a2555303c7a02fc0bd03c9544580caac52e9afa5dc5a",
+        "eye_y": 0.4,
+        "interocular": 0.18611600578088852,
+        "mouth_y": 0.594576299099274,
+        "reflected_padding_fraction": 0.0002899169921875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.241048450534503,
+            -0.0595981481310755,
+            -6.610132529219413
+          ],
+          [
+            0.0595981481310755,
+            1.241048450534503,
+            -2.106091691509647
+          ]
+        ],
+        "training_sha256": "581faef0a6b0ca79c2092f26c56a90d2e206440ebd472fa49a83eb6365b24e5d",
+        "eye_y": 0.42,
+        "interocular": 0.1794690055744282,
+        "mouth_y": 0.6076271455600142,
+        "reflected_padding_fraction": 0.01702880859375
+      }
+    },
+    {
+      "id": "synthetic-092",
+      "source": "research/data/synthetic/images/092.webp",
+      "source_sha256": "e1402d591f86a49e293387acd6bd7746d64fceea7c81dc0fb4365a8f9ed9999a",
+      "collar_box_heuristic": [
+        109,
+        181,
+        20,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3344538636214824,
+            -0.08553820938083471,
+            -21.943326852578622
+          ],
+          [
+            0.08553820938083471,
+            1.3344538636214824,
+            -34.83410946166711
+          ]
+        ],
+        "training_sha256": "13e0bc3a5d4aabb3123c395026abfa0a5d7f0f114a44307bdb9d1cef90e5b1f2",
+        "eye_y": 0.4,
+        "interocular": 0.21377081368354234,
+        "mouth_y": 0.5937206809340428,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2867947970635725,
+            -0.08248327333151921,
+            -16.588208036415125
+          ],
+          [
+            0.08248327333151921,
+            1.2867947970635725,
+            -24.812891266607622
+          ]
+        ],
+        "training_sha256": "3a78c42676de4782b7a4b41a912595f0604f5bb022c0fd28520224973dbc3db1",
+        "eye_y": 0.42,
+        "interocular": 0.20613614176627296,
+        "mouth_y": 0.6068020851863983,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "synthetic-093",
+      "source": "research/data/synthetic/images/093.webp",
+      "source_sha256": "806a136336a23a1f082e4f00c074c133470e78e2484ac1ebdd62a8c15c6570db",
+      "collar_box_heuristic": [
+        123,
+        177,
+        30,
+        22
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1693145667960994,
+            -0.07405233032238365,
+            -14.05073985624216
+          ],
+          [
+            0.07405233032238365,
+            1.1693145667960994,
+            -2.9408635989328786
+          ]
+        ],
+        "training_sha256": "e6e3e7f6ac95aefb18304adbf4c616ecf7b99d76de3464d0515d6a966c0b6103",
+        "eye_y": 0.4,
+        "interocular": 0.2219453239180705,
+        "mouth_y": 0.6111185963942922,
+        "reflected_padding_fraction": 0.0237579345703125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1275533322676674,
+            -0.07140760423944138,
+            -8.977499147090668
+          ],
+          [
+            0.07140760423944138,
+            1.1275533322676674,
+            5.941310101028989
+          ]
+        ],
+        "training_sha256": "0297bc9726634510be213ee4433966d04358be9c1eb2621038c50b0d6f3b3d4c",
+        "eye_y": 0.42,
+        "interocular": 0.21401870520671082,
+        "mouth_y": 0.6235786465230675,
+        "reflected_padding_fraction": 0.0567169189453125
+      }
+    },
+    {
+      "id": "synthetic-094",
+      "source": "research/data/synthetic/images/094.webp",
+      "source_sha256": "5dbdc3db07ef065238ea9c414e6155db04bae916851cd90234c259a6a3fcc7d1",
+      "collar_box_heuristic": [
+        109,
+        181,
+        23,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2494835830399627,
+            -0.14652903789184177,
+            29.698877547128788
+          ],
+          [
+            0.14652903789184177,
+            1.2494835830399627,
+            -25.97751677579555
+          ]
+        ],
+        "training_sha256": "e1fb706ffd952282a904c9e252934ce64995dbd1dcd40d227efe1e636a2551e6",
+        "eye_y": 0.4,
+        "interocular": 0.21390092099706712,
+        "mouth_y": 0.6129147513101786,
+        "reflected_padding_fraction": 0.0459442138671875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2048591693599642,
+            -0.14129585796713318,
+            33.20963192044559
+          ],
+          [
+            0.14129585796713318,
+            1.2048591693599642,
+            -16.272605462374315
+          ]
+        ],
+        "training_sha256": "5cf2746760b55e626c48013cb695f7a41b7e314ea3ad132adc30171d01cad563",
+        "eye_y": 0.42,
+        "interocular": 0.20626160239002905,
+        "mouth_y": 0.6253106530491007,
+        "reflected_padding_fraction": 0.0695343017578125
+      }
+    },
+    {
+      "id": "synthetic-095",
+      "source": "research/data/synthetic/images/095.webp",
+      "source_sha256": "63dbe9e421ed293731299eaed8cb0a70b092af74e3c6b715a5b2aaf5c02ce9ae",
+      "collar_box_heuristic": [
+        116,
+        173,
+        12,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3364767800757722,
+            0.19873230760744293,
+            -98.79279324170332
+          ],
+          [
+            -0.19873230760744293,
+            1.3364767800757722,
+            8.199975567687787
+          ]
+        ],
+        "training_sha256": "d83e9311f79160d4d6c41c98bd01ad1ae4cc08adcdcedf16fbf75fecbd0bee6c",
+        "eye_y": 0.4,
+        "interocular": 0.22296038500955012,
+        "mouth_y": 0.6064950477906635,
+        "reflected_padding_fraction": 0.002197265625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2887454665016378,
+            0.19163472519289146,
+            -90.69305062592824
+          ],
+          [
+            -0.19163472519289146,
+            1.2887454665016378,
+            16.684262154556052
+          ]
+        ],
+        "training_sha256": "21c86a6ac12eb51279bc708ee00d8dfddfaae370b83ef92d9ceed6925ca04afe",
+        "eye_y": 0.42,
+        "interocular": 0.21499751411635207,
+        "mouth_y": 0.6191202246552827,
+        "reflected_padding_fraction": 0.0081329345703125
+      }
+    },
+    {
+      "id": "synthetic-096",
+      "source": "research/data/synthetic/images/096.webp",
+      "source_sha256": "f3f992a8e0b7869bccbdd8e829b0bbd6f3f9fbe505d730255eaf46f51a7a2444",
+      "collar_box_heuristic": [
+        109,
+        173,
+        38,
+        26
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2401992427999722,
+            -0.11014796547816749,
+            -14.265385515077327
+          ],
+          [
+            0.11014796547816749,
+            1.2401992427999722,
+            -22.192197213685006
+          ]
+        ],
+        "training_sha256": "a7c4b585ee9730f9b356f390ac9b9194b90f0162dda9560d8cce9f707c58e345",
+        "eye_y": 0.4,
+        "interocular": 0.2185659029390499,
+        "mouth_y": 0.6211773792757482,
+        "reflected_padding_fraction": 0.0002288818359375
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1959064126999734,
+            -0.10621410956823295,
+            -9.184478889538866
+          ],
+          [
+            0.10621410956823295,
+            1.1959064126999734,
+            -12.622475884624848
+          ]
+        ],
+        "training_sha256": "cc1d1c65b2f8387a0e4ff0ae4ffcebdabb6670b6d6dbd194687338617666fe03",
+        "eye_y": 0.42,
+        "interocular": 0.21075997783408407,
+        "mouth_y": 0.6332781871587574,
+        "reflected_padding_fraction": 0.009979248046875
+      }
+    },
+    {
+      "id": "synthetic-097",
+      "source": "research/data/synthetic/images/097.webp",
+      "source_sha256": "f8e7d2c1da3f8974fd7788e797464f7c29d91b57c1cf42ea1413b828d17914a4",
+      "collar_box_heuristic": [
+        112,
+        182,
+        27,
+        21
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.141424783169428,
+            -0.09875665541597614,
+            -4.371903927397284
+          ],
+          [
+            0.09875665541597614,
+            1.141424783169428,
+            -4.242105218892277
+          ]
+        ],
+        "training_sha256": "92745abc24d333558385ffc6c4ba610fb36410d69f8e466d5eb038e3f2621768",
+        "eye_y": 0.4,
+        "interocular": 0.20130316526169775,
+        "mouth_y": 0.601554980854768,
+        "reflected_padding_fraction": 0.02911376953125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1006596123419488,
+            -0.09522963200826273,
+            0.35566407000972333
+          ],
+          [
+            0.09522963200826273,
+            1.1006596123419488,
+            4.686541396068108
+          ]
+        ],
+        "training_sha256": "885362703757a30aeaedcef6740bbe6070ea9041295fcf91bc8cc1b556715a37",
+        "eye_y": 0.42,
+        "interocular": 0.19411376650235154,
+        "mouth_y": 0.6143565886813834,
+        "reflected_padding_fraction": 0.0610809326171875
+      }
+    },
+    {
+      "id": "synthetic-098",
+      "source": "research/data/synthetic/images/098.webp",
+      "source_sha256": "7c6d1b126686395f011557c76ffdb6b73b8c392bd24b91e2fcaacb26ee6f560c",
+      "collar_box_heuristic": [
+        127,
+        176,
+        19,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2265287982107413,
+            -0.07868004071114934,
+            15.610606816442726
+          ],
+          [
+            0.07868004071114934,
+            1.2265287982107413,
+            -9.80651678776536
+          ]
+        ],
+        "training_sha256": "67bc07204500b3208b18582909e61eac066e3e300681ea040d987a093983128f",
+        "eye_y": 0.4,
+        "interocular": 0.17340410492187672,
+        "mouth_y": 0.5915686752227323,
+        "reflected_padding_fraction": 0.0299224853515625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1827241982746437,
+            -0.07587003925717972,
+            19.62451371585547
+          ],
+          [
+            0.07587003925717972,
+            1.1827241982746437,
+            -0.6791411882023368
+          ]
+        ],
+        "training_sha256": "955d22f3a74c140386db7aa6bc32e97e79d237063484ad71bfb1568f061b9bf2",
+        "eye_y": 0.42,
+        "interocular": 0.1672111011746669,
+        "mouth_y": 0.6047269368219206,
+        "reflected_padding_fraction": 0.068634033203125
+      }
+    },
+    {
+      "id": "synthetic-099",
+      "source": "research/data/synthetic/images/099.webp",
+      "source_sha256": "b004516faccc64237bf8a94db0567a76d1c09f72ddbeba5ed935fc7d4c7ca2b9",
+      "collar_box_heuristic": [
+        95,
+        171,
+        26,
+        20
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1906066035405047,
+            0.07304704775368569,
+            -28.957824523911114
+          ],
+          [
+            -0.07304704775368569,
+            1.1906066035405047,
+            20.531181846201704
+          ]
+        ],
+        "training_sha256": "e75a787bbce7defa3a0004f7829d68f98c76f6f581fdee445c13a8caab609dae",
+        "eye_y": 0.4,
+        "interocular": 0.21508492709508809,
+        "mouth_y": 0.6219905377841695,
+        "reflected_padding_fraction": 0.0423126220703125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.148084939128344,
+            0.07043822461962551,
+            -23.35218793377149
+          ],
+          [
+            -0.07043822461962551,
+            1.148084939128344,
+            28.575068208837337
+          ]
+        ],
+        "training_sha256": "644c5e9259ac2f1dfb4fea2ca59c7036ef9d0200bd187f71744845b993698f38",
+        "eye_y": 0.42,
+        "interocular": 0.20740332255597782,
+        "mouth_y": 0.6340623042918776,
+        "reflected_padding_fraction": 0.0751953125
+      }
+    },
+    {
+      "id": "synthetic-100",
+      "source": "research/data/synthetic/images/100.webp",
+      "source_sha256": "e2569fba7ce666829b4bd7435853c39e062a3575308732fe51266a5d599a9659",
+      "collar_box_heuristic": [
+        108,
+        165,
+        45,
+        35
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.21461894283319,
+            0.01305154549363622,
+            -30.105235431264248
+          ],
+          [
+            -0.01305154549363622,
+            1.21461894283319,
+            -0.6126974246580374
+          ]
+        ],
+        "training_sha256": "53af5c4e16cf20b8d748104ba180820b7f04062c24232a21bb9bea66bd1add56",
+        "eye_y": 0.4,
+        "interocular": 0.22715469869979704,
+        "mouth_y": 0.6186644796432699,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.171239694874862,
+            0.0125854188688635,
+            -24.458619880147694
+          ],
+          [
+            -0.0125854188688635,
+            1.171239694874862,
+            8.186327483365432
+          ]
+        ],
+        "training_sha256": "0f27d74323c1cabb60b38f10158a37ca1fb01d7a75da421810b93ed0f647bf55",
+        "eye_y": 0.42,
+        "interocular": 0.21904203088909005,
+        "mouth_y": 0.6308550339417245,
+        "reflected_padding_fraction": 0.0252532958984375
+      }
+    },
+    {
+      "id": "synthetic-101",
+      "source": "research/data/synthetic/images/101.webp",
+      "source_sha256": "cb76687c6a726a91845638923742d63ab4ef1f9bb0448a21d5772ea2b30af3c4",
+      "collar_box_heuristic": [
+        125,
+        174,
+        24,
+        21
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.273302830180554,
+            -0.05833781136378828,
+            -28.849984210208675
+          ],
+          [
+            0.05833781136378828,
+            1.273302830180554,
+            -16.319597099134725
+          ]
+        ],
+        "training_sha256": "de5efc9cbf685e30f6f9d7063cb55813a64d4cc1a73b92ac48aca2648a7ef890",
+        "eye_y": 0.4,
+        "interocular": 0.20475422131546928,
+        "mouth_y": 0.6115958964871784,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2278277291026773,
+            -0.05625431810079585,
+            -23.248199059844097
+          ],
+          [
+            0.05625431810079585,
+            1.2278277291026773,
+            -6.9596114884513725
+          ]
+        ],
+        "training_sha256": "9f744839fe20ad3da5383014f63e8477bb203db855eb38fd12108d88c1f0c431",
+        "eye_y": 0.42,
+        "interocular": 0.19744157055420264,
+        "mouth_y": 0.6240389001840648,
+        "reflected_padding_fraction": 0.0053863525390625
+      }
+    },
+    {
+      "id": "synthetic-102",
+      "source": "research/data/synthetic/images/102.webp",
+      "source_sha256": "8909230031adcc6c21a8432269f9882dd970a943d5b7182c918c377c53094b22",
+      "collar_box_heuristic": [
+        104,
+        170,
+        26,
+        21
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.235223155694285,
+            -0.12798129144119866,
+            21.806921894348434
+          ],
+          [
+            0.12798129144119866,
+            1.235223155694285,
+            -11.74608324774141
+          ]
+        ],
+        "training_sha256": "720cdb0c1dbde3f1d18e01359a7f9f7e7e5468b3ef9b5cf839608356974af181",
+        "eye_y": 0.4,
+        "interocular": 0.20649497912543266,
+        "mouth_y": 0.6072299422895153,
+        "reflected_padding_fraction": 0.04217529296875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.191108042990918,
+            -0.12341053103258445,
+            25.599531826693124
+          ],
+          [
+            0.12341053103258445,
+            1.191108042990918,
+            -2.549437417464958
+          ]
+        ],
+        "training_sha256": "a4739bb14af4e9eed993e4f183a46b8e2f026c6a666ff244e9293790488821d0",
+        "eye_y": 0.42,
+        "interocular": 0.19912015844238154,
+        "mouth_y": 0.6198288729220327,
+        "reflected_padding_fraction": 0.0800628662109375
+      }
+    },
+    {
+      "id": "synthetic-103",
+      "source": "research/data/synthetic/images/103.webp",
+      "source_sha256": "51f058cf354a2f64011ffa5349971bca60634959167763f5749755bf7e695351",
+      "collar_box_heuristic": [
+        113,
+        164,
+        24,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.4404321921832073,
+            0.07741439116462526,
+            -81.90424160129612
+          ],
+          [
+            -0.07741439116462526,
+            1.4404321921832073,
+            -14.852993736657112
+          ]
+        ],
+        "training_sha256": "306eb5940900c723bf388602528455508d888e14a0b6394a41a65b0b40bd2156",
+        "eye_y": 0.4,
+        "interocular": 0.2195642444620338,
+        "mouth_y": 0.6182241637490566,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.3889881853195216,
+            0.07464959148017437,
+            -74.40766154410704
+          ],
+          [
+            -0.07464959148017437,
+            1.3889881853195216,
+            -5.545386817490822
+          ]
+        ],
+        "training_sha256": "1ed06eabbf6ad91a2748a7cafd7ef0606fa7a92afb4423dd1bee74358df26afb",
+        "eye_y": 0.42,
+        "interocular": 0.2117226643026755,
+        "mouth_y": 0.6304304436151618,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "synthetic-104",
+      "source": "research/data/synthetic/images/104.webp",
+      "source_sha256": "7a97da174c053611df2095c92a52022a7d891ac88aeb8b81c20235af20a4364b",
+      "collar_box_heuristic": [
+        139,
+        180,
+        10,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2299578520450782,
+            -0.083589883811436,
+            -24.76123549330731
+          ],
+          [
+            0.083589883811436,
+            1.2299578520450782,
+            -15.146378801009774
+          ]
+        ],
+        "training_sha256": "cc3389c3e978c390dc3fa477a2b1db4a09a5b02c4b8d70b5c97057844ba34bcd",
+        "eye_y": 0.4,
+        "interocular": 0.21805423995789439,
+        "mouth_y": 0.6121895863665507,
+        "reflected_padding_fraction": 0.0016021728515625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1860307859006114,
+            -0.08060453081817046,
+            -19.305477082832084
+          ],
+          [
+            0.08060453081817046,
+            1.1860307859006114,
+            -5.828293843830892
+          ]
+        ],
+        "training_sha256": "26e84fbd0b070d02b32d35b3c3dcb7aba0b9afc5e21e0155ec50e472e46129f3",
+        "eye_y": 0.42,
+        "interocular": 0.21026658853082675,
+        "mouth_y": 0.6246113868534597,
+        "reflected_padding_fraction": 0.01824951171875
+      }
+    },
+    {
+      "id": "synthetic-105",
+      "source": "research/data/synthetic/images/105.webp",
+      "source_sha256": "d7d0f7c6087c663429f3ccc8e7abfbbc823b9e7a7c315b4f86975830ddb9931e",
+      "collar_box_heuristic": [
+        99,
+        156,
+        59,
+        45
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2012963343534886,
+            -0.08229087979955785,
+            -21.065313291457244
+          ],
+          [
+            0.08229087979955785,
+            1.2012963343534886,
+            -13.507707550795331
+          ]
+        ],
+        "training_sha256": "37390e63c5bce5b165b41d2834c50e680962eff1475f0872e38202a6dd2c137c",
+        "eye_y": 0.4,
+        "interocular": 0.19728691045816635,
+        "mouth_y": 0.6065865869110404,
+        "reflected_padding_fraction": 0.0031585693359375
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1583928938408645,
+            -0.07935191980671652,
+            -15.741552102476675
+          ],
+          [
+            0.07935191980671652,
+            1.1583928938408645,
+            -4.2481465668384
+          ]
+        ],
+        "training_sha256": "22ad39544ca97f1f3e373a5aa8769892e0f6f2955df8e77d02ba813437261fb5",
+        "eye_y": 0.42,
+        "interocular": 0.19024094937037478,
+        "mouth_y": 0.6192084945213604,
+        "reflected_padding_fraction": 0.0226287841796875
+      }
+    },
+    {
+      "id": "synthetic-106",
+      "source": "research/data/synthetic/images/106.webp",
+      "source_sha256": "e7590daff55585f2e819aeec9fd2b47b7e0994d292c9405826f7ae24e7d46d58",
+      "collar_box_heuristic": [
+        108,
+        175,
+        23,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.23917730425381,
+            -0.08926796365702251,
+            8.899821235225588
+          ],
+          [
+            0.08926796365702251,
+            1.23917730425381,
+            -11.291209481324316
+          ]
+        ],
+        "training_sha256": "46b856fa3fd3d63556d6cd7b1d6627bd7572a375f577f449e725b139ec909cb6",
+        "eye_y": 0.4,
+        "interocular": 0.18836182156269196,
+        "mouth_y": 0.5891016774712998,
+        "reflected_padding_fraction": 0.0110321044921875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.194920971959031,
+            -0.08607982209784314,
+            13.153399048253235
+          ],
+          [
+            0.08607982209784314,
+            1.194920971959031,
+            -2.1108091427056053
+          ]
+        ],
+        "training_sha256": "44d6fea64f16829d6f65b54b526314a1605f668d62f9be39f0cd092b0642d99a",
+        "eye_y": 0.42,
+        "interocular": 0.18163461364973868,
+        "mouth_y": 0.6023480461330392,
+        "reflected_padding_fraction": 0.0423431396484375
+      }
+    },
+    {
+      "id": "synthetic-107",
+      "source": "research/data/synthetic/images/107.webp",
+      "source_sha256": "8ae08b9578d1821d4b2417cd482bcab650e43c7e163a368102da79a933bc76cc",
+      "collar_box_heuristic": [
+        144,
+        173,
+        14,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2759915122666843,
+            -0.05027813564261597,
+            -61.384412537812125
+          ],
+          [
+            0.05027813564261597,
+            1.2759915122666843,
+            -11.002290323536798
+          ]
+        ],
+        "training_sha256": "a5961b8ed8992c963eff41f47331f3367f7780ccd96c7cb942f1a76d8780dfb8",
+        "eye_y": 0.4,
+        "interocular": 0.1850227436964458,
+        "mouth_y": 0.6074148822965567,
+        "reflected_padding_fraction": 0.000457763671875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2304203868285888,
+            -0.04848248794109398,
+            -54.62068351860458
+          ],
+          [
+            0.04848248794109398,
+            1.2304203868285888,
+            -1.8322085262676495
+          ]
+        ],
+        "training_sha256": "c24db6b7efe3a038d56cb5a0e3dd350e74abbe064712558e2a644993e893dc65",
+        "eye_y": 0.42,
+        "interocular": 0.17841478856442997,
+        "mouth_y": 0.6200072079288227,
+        "reflected_padding_fraction": 0.026031494140625
+      }
+    },
+    {
+      "id": "synthetic-108",
+      "source": "research/data/synthetic/images/108.webp",
+      "source_sha256": "dc87938d6c1648b049b676c0f29b0218852aa6e493354b8f39267f433bf6654b",
+      "collar_box_heuristic": [
+        105,
+        170,
+        26,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2992792508983733,
+            -0.0799876001214729,
+            -12.258558222168887
+          ],
+          [
+            0.0799876001214729,
+            1.2992792508983733,
+            -12.88071253750229
+          ]
+        ],
+        "training_sha256": "1f3de4a2f51901bf3b1fde3b20793c97a9e1d284812b780bbbfa274134ec20d3",
+        "eye_y": 0.4,
+        "interocular": 0.21293527665659298,
+        "mouth_y": 0.6099010851432114,
+        "reflected_padding_fraction": 0.0014495849609375
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2528764205091458,
+            -0.0771309001171346,
+            -7.249323999948587
+          ],
+          [
+            0.0771309001171346,
+            1.2528764205091458,
+            -3.6435442325915233
+          ]
+        ],
+        "training_sha256": "c4ad62d51ca12d04915e09e8f70452b8a10f438be3d0d1434a8b4bd712f98a85",
+        "eye_y": 0.42,
+        "interocular": 0.2053304453474289,
+        "mouth_y": 0.6224046178166681,
+        "reflected_padding_fraction": 0.01904296875
+      }
+    },
+    {
+      "id": "synthetic-109",
+      "source": "research/data/synthetic/images/109.webp",
+      "source_sha256": "9c4f8287ad23061cfa29c64683d85fb760a1ac0538eb013128048ded9479a005",
+      "collar_box_heuristic": [
+        133,
+        186,
+        22,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.241185339862697,
+            -0.07290754642554682,
+            -25.65207025021732
+          ],
+          [
+            0.07290754642554682,
+            1.241185339862697,
+            -22.466035047538043
+          ]
+        ],
+        "training_sha256": "2e3e24c438cff002adac83bcabc3ce6f1e778e91a2d7db99c820e39e3f3f962f",
+        "eye_y": 0.4,
+        "interocular": 0.21118280358863611,
+        "mouth_y": 0.5922106515742207,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.196857292010458,
+            -0.0703037054817773,
+            -20.164496312709588
+          ],
+          [
+            0.0703037054817773,
+            1.196857292010458,
+            -12.886533795840279
+          ]
+        ],
+        "training_sha256": "8c2601eb385eae1d62207fc219ed991592edc9eb9657ec47c2de07bb60a0c75d",
+        "eye_y": 0.42,
+        "interocular": 0.20364056060332777,
+        "mouth_y": 0.60534598544657,
+        "reflected_padding_fraction": 0.0013275146484375
+      }
+    },
+    {
+      "id": "synthetic-110",
+      "source": "research/data/synthetic/images/110.webp",
+      "source_sha256": "577b2a9df32c40b32e4e4a177222c135c142aacf083d3e503397ffec23ac0ce6",
+      "collar_box_heuristic": [
+        114,
+        182,
+        30,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.192903791716653,
+            -0.22905477135715074,
+            25.840909805853798
+          ],
+          [
+            0.22905477135715074,
+            1.192903791716653,
+            -30.576260585626926
+          ]
+        ],
+        "training_sha256": "8d82b517561c8eb0a819091adc96774961484d28bf622741d29ac75235e0b111",
+        "eye_y": 0.4,
+        "interocular": 0.2034504033831948,
+        "mouth_y": 0.6068826458696512,
+        "reflected_padding_fraction": 0.02294921875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1503000848696299,
+            -0.22087424380868112,
+            29.489448741359
+          ],
+          [
+            0.22087424380868112,
+            1.1503000848696299,
+            -20.707108421854556
+          ]
+        ],
+        "training_sha256": "c7a9d661f063f8533ff46b5b5bcc5d9b3c7f00425737ba3d5c1ee7eee958dd98",
+        "eye_y": 0.42,
+        "interocular": 0.19618431754808083,
+        "mouth_y": 0.6194939799457352,
+        "reflected_padding_fraction": 0.0461273193359375
+      }
+    },
+    {
+      "id": "synthetic-111",
+      "source": "research/data/synthetic/images/111.webp",
+      "source_sha256": "8741a4b72650980d03b8d8f28648692b89b6b06fd46f90788bf482bcdf690715",
+      "collar_box_heuristic": [
+        105,
+        173,
+        24,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3880483443771712,
+            -0.102893908227543,
+            -3.696366599526982
+          ],
+          [
+            0.102893908227543,
+            1.3880483443771712,
+            -36.79469297052427
+          ]
+        ],
+        "training_sha256": "8f170b64c6ee8e272d7cc57278011311d7dfe1164452368550a9318fdc49f9fc",
+        "eye_y": 0.4,
+        "interocular": 0.2130507533190086,
+        "mouth_y": 0.6147463756666376,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.3384751892208437,
+            -0.09921912579084505,
+            1.0070750647418265
+          ],
+          [
+            0.09921912579084505,
+            1.3384751892208437,
+            -26.703453935862697
+          ]
+        ],
+        "training_sha256": "e98183391a2e674e5d537b6951868b7253b62778fec629383bb1758da1271a11",
+        "eye_y": 0.42,
+        "interocular": 0.20544179784332978,
+        "mouth_y": 0.6270768622499721,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "synthetic-112",
+      "source": "research/data/synthetic/images/112.webp",
+      "source_sha256": "514fe207f387b691e3f47f25deddec5e9324c8e75e39f944546295cb27298af3",
+      "collar_box_heuristic": [
+        113,
+        179,
+        26,
+        20
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1492016480154164,
+            -0.0688578059799251,
+            -5.775884232851695
+          ],
+          [
+            0.0688578059799251,
+            1.1492016480154164,
+            2.900830421660899
+          ]
+        ],
+        "training_sha256": "6e5fa22e8a75c3db0f8f73b37e06ce089eebd3b47fc602c24740e79192b307f8",
+        "eye_y": 0.4,
+        "interocular": 0.21745935512176998,
+        "mouth_y": 0.6194108653136787,
+        "reflected_padding_fraction": 0.0421905517578125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1081587320148658,
+            -0.0663985986234992,
+            -0.9981740816784566
+          ],
+          [
+            0.0663985986234992,
+            1.1081587320148658,
+            11.574372192315835
+          ]
+        ],
+        "training_sha256": "6c84d847eee1c98569a54a0990a1abcea95955886fde1153a9498e62aaf4f843",
+        "eye_y": 0.42,
+        "interocular": 0.20969294958170676,
+        "mouth_y": 0.6315747629810472,
+        "reflected_padding_fraction": 0.0750885009765625
+      }
+    },
+    {
+      "id": "synthetic-113",
+      "source": "research/data/synthetic/images/113.webp",
+      "source_sha256": "b905bec55e57fc874c7ef60a476bf8b836d1e88e396a39480c8c90fec82ef536",
+      "collar_box_heuristic": [
+        109,
+        188,
+        26,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1576632073226005,
+            -0.07636849398414382,
+            -6.50714217403322
+          ],
+          [
+            0.07636849398414382,
+            1.1576632073226005,
+            -8.816683432928173
+          ]
+        ],
+        "training_sha256": "d8da24ed8339ca86fe1bce79943e40256815104dd465a19162a7b8a91ec7e9e7",
+        "eye_y": 0.4,
+        "interocular": 0.22147091886746573,
+        "mouth_y": 0.6082852450840441,
+        "reflected_padding_fraction": 0.00811767578125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.116318092775365,
+            -0.0736410477704244,
+            -1.703315667817776
+          ],
+          [
+            0.0736410477704244,
+            1.116318092775365,
+            0.2753409753906624
+          ]
+        ],
+        "training_sha256": "029df6784e61733d689881ead6b46aed443c73c13d740f52c8ae0d3762117a40",
+        "eye_y": 0.42,
+        "interocular": 0.2135612431936277,
+        "mouth_y": 0.6208464863310427,
+        "reflected_padding_fraction": 0.0341339111328125
+      }
+    },
+    {
+      "id": "synthetic-114",
+      "source": "research/data/synthetic/images/114.webp",
+      "source_sha256": "6373383edd24054a8236cb7a7f0d2a5cd08cfdfabe1bd494de54a2690290ba97",
+      "collar_box_heuristic": [
+        105,
+        150,
+        43,
+        33
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3234898874515664,
+            -0.1060423865213446,
+            3.5359893732598806
+          ],
+          [
+            0.1060423865213446,
+            1.3234898874515664,
+            -17.426882158601913
+          ]
+        ],
+        "training_sha256": "bcf1fc295cc263417d85039b30617526017e6a8622e43642b337a6f876692567",
+        "eye_y": 0.4,
+        "interocular": 0.1830438065122682,
+        "mouth_y": 0.5988559076252908,
+        "reflected_padding_fraction": 0.001007080078125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2762223914711535,
+            -0.10225515843129658,
+            7.981132609929162
+          ],
+          [
+            0.10225515843129658,
+            1.2762223914711535,
+            -8.02735065293757
+          ]
+        ],
+        "training_sha256": "dc974a6562ca51c54a5506859add3235c57ef2aa9330824bb75f61670643d1ee",
+        "eye_y": 0.42,
+        "interocular": 0.17650652770825864,
+        "mouth_y": 0.6117539109243877,
+        "reflected_padding_fraction": 0.017913818359375
+      }
+    },
+    {
+      "id": "synthetic-115",
+      "source": "research/data/synthetic/images/115.webp",
+      "source_sha256": "7ebe30a12fe1791dfc80b7eef7c0165016f57f299afde238071c3b9d74c2566d",
+      "collar_box_heuristic": [
+        117,
+        166,
+        11,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2672106581271334,
+            0.08164169786605628,
+            -51.32260567153759
+          ],
+          [
+            -0.08164169786605628,
+            1.2672106581271334,
+            15.809264264300381
+          ]
+        ],
+        "training_sha256": "a359db3538c91e17d1d8faefbbc660689c1f7132709d4ca619e550e9eb3d73d9",
+        "eye_y": 0.4,
+        "interocular": 0.21047826567044414,
+        "mouth_y": 0.6112274363155323,
+        "reflected_padding_fraction": 0.0182037353515625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.221953134622593,
+            0.07872592294226857,
+            -44.91822689755412
+          ],
+          [
+            -0.07872592294226857,
+            1.221953134622593,
+            24.021790540575353
+          ]
+        ],
+        "training_sha256": "04067bc16eb758b998877230c646f43b4b7e38b777dce38c6d8a8911492e3f6a",
+        "eye_y": 0.42,
+        "interocular": 0.20296118475364264,
+        "mouth_y": 0.6236835993042633,
+        "reflected_padding_fraction": 0.0500335693359375
+      }
+    },
+    {
+      "id": "synthetic-116",
+      "source": "research/data/synthetic/images/116.webp",
+      "source_sha256": "6ba2884593a99445d27c96f35b891b7995adb90491a942d5ff5cee6a76f4d988",
+      "collar_box_heuristic": [
+        115,
+        176,
+        25,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2859815168193447,
+            -0.07424868807331902,
+            -30.66568060116515
+          ],
+          [
+            0.07424868807331902,
+            1.2859815168193447,
+            -19.25915666049491
+          ]
+        ],
+        "training_sha256": "deafd5fe0ed9efe78e5da33ea3a854f7bab0e7dafa78532a630788dae7791546",
+        "eye_y": 0.4,
+        "interocular": 0.20304754024518723,
+        "mouth_y": 0.6063273340318408,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2400536055043683,
+            -0.07159694921355765,
+            -24.999049151123558
+          ],
+          [
+            0.07159694921355765,
+            1.2400536055043683,
+            -9.794186779762981
+          ]
+        ],
+        "training_sha256": "797c91996f6055dd51267b633ce1ebdc883eb2205ee243d97bbd86c1dc8c5a43",
+        "eye_y": 0.42,
+        "interocular": 0.19579584237928777,
+        "mouth_y": 0.6189585006735607,
+        "reflected_padding_fraction": 0.00518798828125
+      }
+    },
+    {
+      "id": "synthetic-117",
+      "source": "research/data/synthetic/images/117.webp",
+      "source_sha256": "5f20dac5547ddd128b69810c3b4834154625160ae5296b31a669f40bb9df012b",
+      "collar_box_heuristic": [
+        125,
+        176,
+        26,
+        22
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2007650278385196,
+            -0.09771569956642956,
+            -16.170461257382726
+          ],
+          [
+            0.09771569956642956,
+            1.2007650278385196,
+            -11.549606257911805
+          ]
+        ],
+        "training_sha256": "09adeb81714ba2970e7b9933084ec5e1898ba901fb464fbb5e58739a30ebdb1a",
+        "eye_y": 0.4,
+        "interocular": 0.22286741154923484,
+        "mouth_y": 0.6173008751247961,
+        "reflected_padding_fraction": 0.010223388671875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1578805625585726,
+            -0.09422585315334281,
+            -11.021516212476229
+          ],
+          [
+            0.09422585315334281,
+            1.1578805625585726,
+            -2.3599774629864214
+          ]
+        ],
+        "training_sha256": "2d2c8f1b174e91f984a150d978fcc5487716ddb27d92be97f1a553b85da1e583",
+        "eye_y": 0.42,
+        "interocular": 0.21490786113676202,
+        "mouth_y": 0.6295401295846248,
+        "reflected_padding_fraction": 0.034698486328125
+      }
+    },
+    {
+      "id": "synthetic-118",
+      "source": "research/data/synthetic/images/118.webp",
+      "source_sha256": "2d1dd7edaef7eef824f456ee4377b568be87f881bc9266c7538d073234c134a1",
+      "collar_box_heuristic": [
+        111,
+        183,
+        23,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2184976792633857,
+            -0.18122054619406505,
+            16.888491295940767
+          ],
+          [
+            0.18122054619406505,
+            1.2184976792633857,
+            -29.534075118262166
+          ]
+        ],
+        "training_sha256": "11773c1dd44eb436a2a458ab20aa55f000d6bd8b73f890c5a6448408cee73d2d",
+        "eye_y": 0.4,
+        "interocular": 0.19171849424936305,
+        "mouth_y": 0.620056237694717,
+        "reflected_padding_fraction": 0.009674072265625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.174979905003979,
+            -0.1747483838299913,
+            20.85675946394288
+          ],
+          [
+            0.1747483838299913,
+            1.174979905003979,
+            -19.702143864038533
+          ]
+        ],
+        "training_sha256": "9dd45fe5d7a5f090d8c57d93654a0c67a13056b85a0352cc4e490f80055bf313",
+        "eye_y": 0.42,
+        "interocular": 0.18487140516902847,
+        "mouth_y": 0.6321970863484772,
+        "reflected_padding_fraction": 0.0281219482421875
+      }
+    },
+    {
+      "id": "synthetic-119",
+      "source": "research/data/synthetic/images/119.webp",
+      "source_sha256": "caec47589d8f0e3f97e35e95c0865938c938e82b431a4244215322cb3180898f",
+      "collar_box_heuristic": [
+        112,
+        175,
+        22,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2291137952987992,
+            0.09630331802133994,
+            -44.93155224828854
+          ],
+          [
+            -0.09630331802133994,
+            1.2291137952987992,
+            15.639667739825398
+          ]
+        ],
+        "training_sha256": "67e7868120a4ba7b2956d0da1c6ac21e14ee744f443641328eb95bc10c0d1f18",
+        "eye_y": 0.4,
+        "interocular": 0.20527254660874147,
+        "mouth_y": 0.594278427349147,
+        "reflected_padding_fraction": 0.0141143798828125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1852168740381281,
+            0.09286391380629212,
+            -38.755425382278275
+          ],
+          [
+            -0.09286391380629212,
+            1.1852168740381281,
+            23.85825103483161
+          ]
+        ],
+        "training_sha256": "916ea50c07bb836cef3afbc99e06f502022f1476b2b277c00051618572d9ef11",
+        "eye_y": 0.42,
+        "interocular": 0.19794138422985785,
+        "mouth_y": 0.6073399120866775,
+        "reflected_padding_fraction": 0.04193115234375
+      }
+    },
+    {
+      "id": "synthetic-120",
+      "source": "research/data/synthetic/images/120.webp",
+      "source_sha256": "57cce47c4d1085c7a30263c37b6b4c59044bf5e9c10cb9f5498e135ad937fa8c",
+      "collar_box_heuristic": [
+        90,
+        165,
+        55,
+        39
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.251264745452057,
+            -0.1362533993949307,
+            -11.06276101808129
+          ],
+          [
+            0.1362533993949307,
+            1.251264745452057,
+            -34.259809966292835
+          ]
+        ],
+        "training_sha256": "6074370abfc548c1814665fb24cacf2d0e6436059fde69fdbb1d2c055853db27",
+        "eye_y": 0.4,
+        "interocular": 0.21239859872687591,
+        "mouth_y": 0.6194658171326177,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2065767188287695,
+            -0.13138720655939748,
+            -6.096233838864123
+          ],
+          [
+            0.13138720655939748,
+            1.2065767188287695,
+            -24.259102467496703
+          ]
+        ],
+        "training_sha256": "b2aca6003f35fa5de3a7f461954b133ce95c50c12dce575423aa95d9252b0583",
+        "eye_y": 0.42,
+        "interocular": 0.20481293448663043,
+        "mouth_y": 0.6316277522350243,
+        "reflected_padding_fraction": 0.001190185546875
+      }
+    },
+    {
+      "id": "synthetic-121",
+      "source": "research/data/synthetic/images/121.webp",
+      "source_sha256": "7d186543cc0fdef7ab50ef42b8322342d7d3d38c667770881d10e2116b640c7d",
+      "collar_box_heuristic": [
+        125,
+        176,
+        25,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.224324898314379,
+            -0.0911910877314528,
+            -23.62197219822454
+          ],
+          [
+            0.0911910877314528,
+            1.224324898314379,
+            -11.559317924279341
+          ]
+        ],
+        "training_sha256": "a49b8a795d176a996690fc3dbe67bd8ce40330afb9280e32bf0b8db35be9b95a",
+        "eye_y": 0.4,
+        "interocular": 0.20382380174722461,
+        "mouth_y": 0.6070812122486203,
+        "reflected_padding_fraction": 0.008514404296875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1805990090888656,
+            -0.08793426316961522,
+            -18.206901762573693
+          ],
+          [
+            0.08793426316961522,
+            1.1805990090888656,
+            -2.3693422841265317
+          ]
+        ],
+        "training_sha256": "9402844c87ff856609eef73bde8e846e374f74bef81153c1b36e4646315f67a2",
+        "eye_y": 0.42,
+        "interocular": 0.1965443802562523,
+        "mouth_y": 0.6196854546683124,
+        "reflected_padding_fraction": 0.032928466796875
+      }
+    },
+    {
+      "id": "synthetic-122",
+      "source": "research/data/synthetic/images/122.webp",
+      "source_sha256": "2a9554dc8dbe73932b464e9560637a9a4dcbfaf7b9f79f1343f7e456c2b971d1",
+      "collar_box_heuristic": [
+        111,
+        159,
+        31,
+        36
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.1993244433061767,
+            -0.07543687991120246,
+            13.3764021254091
+          ],
+          [
+            0.07543687991120246,
+            1.1993244433061767,
+            -3.617601165319911
+          ]
+        ],
+        "training_sha256": "aba5d134a01535a482aaf0d3b0a475846103f1cfa996957ee273c7ffe9e10e30",
+        "eye_y": 0.4,
+        "interocular": 0.1738690626228107,
+        "mouth_y": 0.5927015273248448,
+        "reflected_padding_fraction": 0.036773681640625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1564914274738134,
+            -0.07274270562865953,
+            17.47010204950162
+          ],
+          [
+            0.07274270562865953,
+            1.1564914274738134,
+            5.288741733441498
+          ]
+        ],
+        "training_sha256": "d78be1f3eee8a82766051e2c1f9dcc268583f7ce0238c893caac4ad9e728877b",
+        "eye_y": 0.42,
+        "interocular": 0.16765945324342463,
+        "mouth_y": 0.6058193299203861,
+        "reflected_padding_fraction": 0.0840606689453125
+      }
+    },
+    {
+      "id": "synthetic-123",
+      "source": "research/data/synthetic/images/123.webp",
+      "source_sha256": "d7ad999850f453f9dfa163b310c4f4421d25f3a3828b971be3cbe8b89c4a6da3",
+      "collar_box_heuristic": [
+        111,
+        177,
+        21,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.32401080274437,
+            0.04180777684357511,
+            -61.74935340468039
+          ],
+          [
+            -0.04180777684357511,
+            1.32401080274437,
+            -16.87516686325705
+          ]
+        ],
+        "training_sha256": "ee430198bb6d3764e1760b98ea49fab4c23643a91921bfe6239672ac02f586f7",
+        "eye_y": 0.4,
+        "interocular": 0.24000000000000005,
+        "mouth_y": 0.6295979041760831,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.32401080274437,
+            0.04180777684357511,
+            -61.74935340468039
+          ],
+          [
+            -0.04180777684357511,
+            1.32401080274437,
+            -11.75516686325706
+          ]
+        ],
+        "training_sha256": "006f82f23be2cff08cada4a73e46e6691a8114bb8217752ac9bce82079239ff5",
+        "eye_y": 0.42,
+        "interocular": 0.24000000000000005,
+        "mouth_y": 0.6495979041760831,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "synthetic-124",
+      "source": "research/data/synthetic/images/124.webp",
+      "source_sha256": "ca40d841805b5fd8e685a7662d124c34c960fba6d6e1af2d92364f3adb57befb",
+      "collar_box_heuristic": [
+        107,
+        180,
+        25,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.30295371695388,
+            -0.06828547903403576,
+            -14.03296977323032
+          ],
+          [
+            0.06828547903403576,
+            1.30295371695388,
+            -23.844426623268745
+          ]
+        ],
+        "training_sha256": "6773be828eb0012c671532e4cab74fe45c3447c23b7df930233a8f09e34921cc",
+        "eye_y": 0.4,
+        "interocular": 0.19106652858036335,
+        "mouth_y": 0.5899979017173231,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.256419655634099,
+            -0.06584671192567736,
+            -8.960363709900719
+          ],
+          [
+            0.06584671192567736,
+            1.256419655634099,
+            -14.215697101009184
+          ]
+        ],
+        "training_sha256": "608781ebcccee664384e060acd03cf4ee85fc62cc151cd6943961555ffe05509",
+        "eye_y": 0.42,
+        "interocular": 0.1842427239882075,
+        "mouth_y": 0.6032122623702759,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "synthetic-125",
+      "source": "research/data/synthetic/images/125.webp",
+      "source_sha256": "90efb0d1dbccb15aafa4c4f1868b059f5e4ac269de07b2f5a163c4708cbc9ebb",
+      "collar_box_heuristic": [
+        122,
+        183,
+        25,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2050206335275264,
+            -0.11349114533474285,
+            -12.065556261851953
+          ],
+          [
+            0.11349114533474285,
+            1.2050206335275264,
+            -19.157448870877673
+          ]
+        ],
+        "training_sha256": "41a5b30cea9e2415692072b57ea717d68dd75b03b8f9c5a97dd62bed3cc5f23d",
+        "eye_y": 0.4,
+        "interocular": 0.20768371177848072,
+        "mouth_y": 0.6068545516591909,
+        "reflected_padding_fraction": 0.0028533935546875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.161984182330115,
+            -0.10943789014421633,
+            -7.063214966785836
+          ],
+          [
+            0.10943789014421633,
+            1.161984182330115,
+            -9.69611141120349
+          ]
+        ],
+        "training_sha256": "21006186bd4cb5cf4f3a16ec3134fa19c3e747083c7276ca6d85d1c9a77715ca",
+        "eye_y": 0.42,
+        "interocular": 0.20026643635782068,
+        "mouth_y": 0.6194668890999341,
+        "reflected_padding_fraction": 0.018096923828125
+      }
+    },
+    {
+      "id": "synthetic-126",
+      "source": "research/data/synthetic/images/126.webp",
+      "source_sha256": "e82156af65c0d92ba075249f959cee46c09bbbbdb9254d00ed00fff6df471506",
+      "collar_box_heuristic": [
+        112,
+        176,
+        23,
+        22
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.235553289099875,
+            0.030580440259158185,
+            -45.344870202643875
+          ],
+          [
+            -0.030580440259158185,
+            1.235553289099875,
+            -0.396755089149039
+          ]
+        ],
+        "training_sha256": "f88b268d7e3944877eb41e792d750d966ae27328f6a63fc076a5106f35af8e87",
+        "eye_y": 0.4,
+        "interocular": 0.22443857011241294,
+        "mouth_y": 0.6147348455564932,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1914263859177368,
+            0.02948828167847397,
+            -39.15398198112092
+          ],
+          [
+            -0.02948828167847397,
+            1.1914263859177368,
+            8.394557592606262
+          ]
+        ],
+        "training_sha256": "b6acdace67e291933058354e11fd89b0ac4030940963222c57a790c2f7340002",
+        "eye_y": 0.42,
+        "interocular": 0.21642290689411248,
+        "mouth_y": 0.6270657439294756,
+        "reflected_padding_fraction": 0.016265869140625
+      }
+    },
+    {
+      "id": "synthetic-127",
+      "source": "research/data/synthetic/images/127.webp",
+      "source_sha256": "fee3975719c220d44d102c67a1439f98454fef8b5d7efae25a199f83dd4464d9",
+      "collar_box_heuristic": [
+        117,
+        181,
+        14,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.313452710525991,
+            -0.1044552075370022,
+            -4.974111291907519
+          ],
+          [
+            0.1044552075370022,
+            1.313452710525991,
+            -31.927627003071507
+          ]
+        ],
+        "training_sha256": "b682f7141837444e575f66c7b3765186aeb68ef70c8c80691970ef4b032cb0a7",
+        "eye_y": 0.4,
+        "interocular": 0.23851306496471367,
+        "mouth_y": 0.5916766745407493,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.266543685150063,
+            -0.1007246644106807,
+            -0.22503588862514334
+          ],
+          [
+            0.1007246644106807,
+            1.266543685150063,
+            -22.010211752961837
+          ]
+        ],
+        "training_sha256": "b5945abb40b2c51f8cb74719f158f37753eed33d50be8e74cff5a9a76d82a58f",
+        "eye_y": 0.42,
+        "interocular": 0.2299947412159739,
+        "mouth_y": 0.604831079021437,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "synthetic-128",
+      "source": "research/data/synthetic/images/128.webp",
+      "source_sha256": "f9182d2b7244fc1bfc87f2206876105e50dab640460285795718ef1c1f984319",
+      "collar_box_heuristic": [
+        116,
+        167,
+        33,
+        26
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2729801270424264,
+            0.04593367323841414,
+            -45.64286724390172
+          ],
+          [
+            -0.04593367323841414,
+            1.2729801270424264,
+            0.3112210682980532
+          ]
+        ],
+        "training_sha256": "00f5f5ebaad7e1a924cdcd778e8157e790bef77b3379e4169b240c2ba7351be2",
+        "eye_y": 0.4,
+        "interocular": 0.23667037855839604,
+        "mouth_y": 0.6223055213397034,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2275165510766257,
+            0.04429318490847079,
+            -39.44133627090525
+          ],
+          [
+            -0.04429318490847079,
+            1.2275165510766257,
+            9.077248887287382
+          ]
+        ],
+        "training_sha256": "8e20c08bdb98e83d1e33268204cd480075ee634db3311f8ac412388f7542a84a",
+        "eye_y": 0.42,
+        "interocular": 0.22821786503845332,
+        "mouth_y": 0.6343660384347141,
+        "reflected_padding_fraction": 0.0120391845703125
+      }
+    },
+    {
+      "id": "synthetic-129",
+      "source": "research/data/synthetic/images/129.webp",
+      "source_sha256": "d86081852717da39c08cf4d745f8fe95aa063ea11d131e4aecc5e94a7d368006",
+      "collar_box_heuristic": [
+        130,
+        181,
+        22,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2182002358769162,
+            -0.052106989299987215,
+            -20.880943422171725
+          ],
+          [
+            0.052106989299987215,
+            1.2182002358769162,
+            -10.67311049248896
+          ]
+        ],
+        "training_sha256": "9804209c79b68eaa6b653c362e6418c63d636bb9d57108a3c2af1e44ad610cf9",
+        "eye_y": 0.4,
+        "interocular": 0.19215676768712225,
+        "mouth_y": 0.5925124493891257,
+        "reflected_padding_fraction": 0.0001983642578125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1746930845955978,
+            -0.050246025396416254,
+            -15.563766871379897
+          ],
+          [
+            0.050246025396416254,
+            1.1746930845955978,
+            -1.5147851177572562
+          ]
+        ],
+        "training_sha256": "a1afa8db12bad3cc55528728b56e7f9d9edca0f3cda75278157e5be69325dd9f",
+        "eye_y": 0.42,
+        "interocular": 0.18529402598401085,
+        "mouth_y": 0.6056370047680854,
+        "reflected_padding_fraction": 0.0178070068359375
+      }
+    },
+    {
+      "id": "synthetic-130",
+      "source": "research/data/synthetic/images/130.webp",
+      "source_sha256": "69fd00eacd2077ca5f9c22767581ca7fadaa529034db305861883c10f14bdea9",
+      "collar_box_heuristic": [
+        125,
+        173,
+        21,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3169879453444704,
+            0.07070346071200662,
+            -76.92004771540527
+          ],
+          [
+            -0.07070346071200662,
+            1.3169879453444704,
+            -0.8977288078264536
+          ]
+        ],
+        "training_sha256": "e4ef966cc1b7227134a509df7e56d72c9358cfeb57eee84423f03e92af5864e5",
+        "eye_y": 0.4,
+        "interocular": 0.19847289183745379,
+        "mouth_y": 0.6210199412776986,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2699526615821681,
+            0.06817833711514924,
+            -69.60147458271226
+          ],
+          [
+            -0.06817833711514924,
+            1.2699526615821681,
+            7.9114757924530466
+          ]
+        ],
+        "training_sha256": "76e924beebf827a11de5462504c9a6d15eef5b6d079978de7f8515eca098ced7",
+        "eye_y": 0.42,
+        "interocular": 0.19138457427183037,
+        "mouth_y": 0.6331263719463522,
+        "reflected_padding_fraction": 0.002349853515625
+      }
+    },
+    {
+      "id": "synthetic-131",
+      "source": "research/data/synthetic/images/131.webp",
+      "source_sha256": "3d4ede580b64b9dcca1cabab17795a363f5c0386a7a3701a9d29fc66128cd226",
+      "collar_box_heuristic": [
+        98,
+        171,
+        24,
+        22
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2233950622519012,
+            0.032614460431939905,
+            -27.0224844764563
+          ],
+          [
+            -0.032614460431939905,
+            1.2233950622519012,
+            7.947389858705549
+          ]
+        ],
+        "training_sha256": "2b86ee3cad0d5056e6d1407986d7fc174a00906b0d3d5a1fe05ddb9f1f8697a4",
+        "eye_y": 0.4,
+        "interocular": 0.2118862492565086,
+        "mouth_y": 0.6021908872265163,
+        "reflected_padding_fraction": 0.014556884765625
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1797023814571905,
+            0.03144965827365634,
+            -21.485967173725726
+          ],
+          [
+            -0.03144965827365634,
+            1.1797023814571905,
+            16.440697363751767
+          ]
+        ],
+        "training_sha256": "feab92a9494660e0da22a286574dc2ff9c02d17c53ef92d8a0697e79a72e254e",
+        "eye_y": 0.42,
+        "interocular": 0.20431888321163327,
+        "mouth_y": 0.6149697841112836,
+        "reflected_padding_fraction": 0.0483245849609375
+      }
+    },
+    {
+      "id": "synthetic-132",
+      "source": "research/data/synthetic/images/132.webp",
+      "source_sha256": "7478fc8e12e4acea1ad582ef9577e249f0e8a6426b21466eed1e527319a8e934",
+      "collar_box_heuristic": [
+        113,
+        192,
+        22,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2009478407426335,
+            -0.12489774208284309,
+            -11.336120701838013
+          ],
+          [
+            0.12489774208284309,
+            1.2009478407426335,
+            -26.903085259364786
+          ]
+        ],
+        "training_sha256": "44d682b45347c5706f42274a13b23fce8b0f661ab9899cf727d3479c4e3e2228",
+        "eye_y": 0.4,
+        "interocular": 0.22426926677101425,
+        "mouth_y": 0.6112610870429956,
+        "reflected_padding_fraction": 3.0517578125e-05
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1580568464303969,
+            -0.12043710843702728,
+            -6.35983067677239
+          ],
+          [
+            0.12043710843702728,
+            1.1580568464303969,
+            -17.16511792867321
+          ]
+        ],
+        "training_sha256": "39c3b6fc72c624352555bd5ef1f842396aa633d74deeb2fb7fb0632aaf544619",
+        "eye_y": 0.42,
+        "interocular": 0.21625965010062081,
+        "mouth_y": 0.6237160482200316,
+        "reflected_padding_fraction": 0.0073089599609375
+      }
+    },
+    {
+      "id": "synthetic-133",
+      "source": "research/data/synthetic/images/133.webp",
+      "source_sha256": "00c373bb69013eeff13a411fdec198408762571b60097cf418e573c170d29c78",
+      "collar_box_heuristic": [
+        125,
+        186,
+        24,
+        19
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2187371509422038,
+            -0.08972386030945717,
+            -12.14778915442028
+          ],
+          [
+            0.08972386030945717,
+            1.2187371509422038,
+            -22.324919733029745
+          ]
+        ],
+        "training_sha256": "2cd5bb73aed1c89f778f27a9b065684299b1d877629baabd0f26904bb120995a",
+        "eye_y": 0.4,
+        "interocular": 0.21129702848880197,
+        "mouth_y": 0.5974672251773455,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1752108241228396,
+            -0.08651943672697658,
+            -7.142510970333859
+          ],
+          [
+            0.08651943672697658,
+            1.1752108241228396,
+            -12.750458313992993
+          ]
+        ],
+        "training_sha256": "dfd4157bce18e82991543fa2646c4ce8095dea7165b1e3755179e3677e738b3c",
+        "eye_y": 0.42,
+        "interocular": 0.2037507060427734,
+        "mouth_y": 0.6104148242781546,
+        "reflected_padding_fraction": 0.0043487548828125
+      }
+    },
+    {
+      "id": "synthetic-134",
+      "source": "research/data/synthetic/images/134.webp",
+      "source_sha256": "b4487a8682cbcdeb0482c12a9be5e4e352f5dc72fcde2f1903025d4dee6a7d13",
+      "collar_box_heuristic": [
+        97,
+        157,
+        25,
+        26
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2969613276898728,
+            -0.08816083742725073,
+            10.964991281954852
+          ],
+          [
+            0.08816083742725073,
+            1.2969613276898728,
+            -7.5273904441307735
+          ]
+        ],
+        "training_sha256": "de9e95f6c7f8c7f8ef456dcf1551e0657701fcc628955d2b31823de5355921cd",
+        "eye_y": 0.4,
+        "interocular": 0.19459264320374545,
+        "mouth_y": 0.6239656580676799,
+        "reflected_padding_fraction": 0.020965576171875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2506412802723776,
+            -0.08501223609056323,
+            15.144813021885014
+          ],
+          [
+            0.08501223609056323,
+            1.2506412802723776,
+            1.5185877860167238
+          ]
+        ],
+        "training_sha256": "42f424def56004514eb0301f056be8782c7f307719a878cff3d41bb5a1e2d9a4",
+        "eye_y": 0.42,
+        "interocular": 0.18764290594646882,
+        "mouth_y": 0.6359668845652628,
+        "reflected_padding_fraction": 0.0608367919921875
+      }
+    },
+    {
+      "id": "synthetic-135",
+      "source": "research/data/synthetic/images/135.webp",
+      "source_sha256": "a4cc6cb9cabd2fc793164e5252382a0c3ba7de7db152722795c02cae40f05d28",
+      "collar_box_heuristic": [
+        136,
+        174,
+        18,
+        18
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2520204401673687,
+            -0.12274138433682323,
+            -40.81244825191874
+          ],
+          [
+            0.12274138433682323,
+            1.2520204401673687,
+            -18.53817946067504
+          ]
+        ],
+        "training_sha256": "3085a568a81b850cace9199851249524c94620c13e0e05c55c54fe5aea041c37",
+        "eye_y": 0.4,
+        "interocular": 0.23475524667689718,
+        "mouth_y": 0.6204132370019327,
+        "reflected_padding_fraction": 0.0083770751953125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2073054244471055,
+            -0.11835776346765098,
+            -34.78343224292166
+          ],
+          [
+            0.11835776346765098,
+            1.2073054244471055,
+            -9.098958765650949
+          ]
+        ],
+        "training_sha256": "90dc2d25cba94b7ad801cf0fee0fafa7bc8e7f311a3bbfa08a8b3e9632112216",
+        "eye_y": 0.42,
+        "interocular": 0.22637113072415077,
+        "mouth_y": 0.6325413356804351,
+        "reflected_padding_fraction": 0.030609130859375
+      }
+    },
+    {
+      "id": "synthetic-136",
+      "source": "research/data/synthetic/images/136.webp",
+      "source_sha256": "1e2e4e29b3fa33f7c7892b3cab191035924980cf156248ae8a902aa3cf95e98b",
+      "collar_box_heuristic": [
+        94,
+        157,
+        13,
+        8
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.332941081790893,
+            0.022266427524952004,
+            -56.35104761501617
+          ],
+          [
+            -0.022266427524952004,
+            1.332941081790893,
+            -5.221655194846534
+          ]
+        ],
+        "training_sha256": "3ba5a12ff5ce3edf1fdb1d1e910424887e2c592fc3e44a2bd1b2ca21c082d4cc",
+        "eye_y": 0.4,
+        "interocular": 0.24000000000000005,
+        "mouth_y": 0.6464219785267722,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.332941081790893,
+            0.022266427524952004,
+            -56.35104761501617
+          ],
+          [
+            -0.022266427524952004,
+            1.332941081790893,
+            -0.1016551948465434
+          ]
+        ],
+        "training_sha256": "bc7c6fcc88be483cb736b4c423b731814c04712e1038ae305a65e79dc24d8936",
+        "eye_y": 0.42,
+        "interocular": 0.24000000000000005,
+        "mouth_y": 0.6664219785267722,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "synthetic-137",
+      "source": "research/data/synthetic/images/137.webp",
+      "source_sha256": "6ff3c112f4d55ffaecf956cbe5b1370d31781f00d0ba33fbf5f242e7459961bd",
+      "collar_box_heuristic": [
+        126,
+        185,
+        24,
+        17
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2211890880851894,
+            -0.06935267965501955,
+            -20.421492844492548
+          ],
+          [
+            0.06935267965501955,
+            1.2211890880851894,
+            -16.207854093801984
+          ]
+        ],
+        "training_sha256": "c434090e2faedf94f11e37980142a3288f0da823e8b34f97151a2622de4c6373",
+        "eye_y": 0.4,
+        "interocular": 0.22953553928692913,
+        "mouth_y": 0.597747350051882,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.1775751920821471,
+            -0.06687579823876887,
+            -15.120725242903546
+          ],
+          [
+            0.06687579823876887,
+            1.1775751920821471,
+            -6.851859304737644
+          ]
+        ],
+        "training_sha256": "19f0b1c284cc02d6aba1c6080aa88cb4247fbd37d76607170acf742aef9b828c",
+        "eye_y": 0.42,
+        "interocular": 0.22133784145525312,
+        "mouth_y": 0.6106849446928863,
+        "reflected_padding_fraction": 0.009521484375
+      }
+    },
+    {
+      "id": "synthetic-138",
+      "source": "research/data/synthetic/images/138.webp",
+      "source_sha256": "7fe4ed831f4bb542c30d6a88914aacbe809eb77190b15e8e56867f2a61c7e9f9",
+      "collar_box_heuristic": [
+        118,
+        180,
+        23,
+        15
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.2585123097732154,
+            -0.13626123478092145,
+            0.9964154942445589
+          ],
+          [
+            0.13626123478092145,
+            1.2585123097732154,
+            -23.896783748979814
+          ]
+        ],
+        "training_sha256": "7f343cdf066945caf951338718b9bf99b207f8567ab4ab0eda0a3f6529bda779",
+        "eye_y": 0.4,
+        "interocular": 0.21080362671650038,
+        "mouth_y": 0.6203826665496358,
+        "reflected_padding_fraction": 0.0008544921875
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2135654415670294,
+            -0.13139476211017426,
+            5.532257798021533
+          ],
+          [
+            0.13139476211017426,
+            1.2135654415670294,
+            -14.266184329373417
+          ]
+        ],
+        "training_sha256": "33bec28577a55b61d59c014b208980d78db3eea1080654c8e70928522e8ed101",
+        "eye_y": 0.42,
+        "interocular": 0.20327492576233963,
+        "mouth_y": 0.632511857030006,
+        "reflected_padding_fraction": 0.012420654296875
+      }
+    },
+    {
+      "id": "synthetic-139",
+      "source": "research/data/synthetic/images/139.webp",
+      "source_sha256": "5e8603ab25113563296cbb28e70237e0a4fd5c574a42c6b4530dc035822614fc",
+      "collar_box_heuristic": [
+        117,
+        175,
+        14,
+        16
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.3175256211298751,
+            0.00040279508343381347,
+            -14.217675656032156
+          ],
+          [
+            -0.00040279508343381347,
+            1.3175256211298751,
+            -11.110369095563911
+          ]
+        ],
+        "training_sha256": "a9638be644efaf09b8031723e46a03d2def89f71bec8cbe3cf8facd18bdb4f9e",
+        "eye_y": 0.4,
+        "interocular": 0.19947320327697585,
+        "mouth_y": 0.6060237362366481,
+        "reflected_padding_fraction": 0.0
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.2704711346609512,
+            0.00038840954473974874,
+            -9.138472954031016
+          ],
+          [
+            -0.00038840954473974874,
+            1.2704711346609512,
+            -1.9364273421509353
+          ]
+        ],
+        "training_sha256": "9774d71977fb9c5d95b826cb15820c103bee5506dea70d9571538fd89ac7c6dc",
+        "eye_y": 0.42,
+        "interocular": 0.1923491603027982,
+        "mouth_y": 0.6186657456567678,
+        "reflected_padding_fraction": 0.0
+      }
+    },
+    {
+      "id": "synthetic-140",
+      "source": "research/data/synthetic/images/140.webp",
+      "source_sha256": "98cc549f1093b001ea0ff7963f976c15f6d295d02bef5f4e6d60548da2da756b",
+      "collar_box_heuristic": [
+        96,
+        154,
+        65,
+        45
+      ],
+      "eyes40": {
+        "matrix_source256_to_output256": [
+          [
+            1.235971313529486,
+            -0.10329337382057818,
+            -27.577193531948467
+          ],
+          [
+            0.10329337382057818,
+            1.235971313529486,
+            -21.772409831598765
+          ]
+        ],
+        "training_sha256": "cd4ac1af489aae184af8564ff337e7db7dfe7dd7c88dee264ed00b541689ebc2",
+        "eye_y": 0.4,
+        "interocular": 0.21883958778539314,
+        "mouth_y": 0.600001628247993,
+        "reflected_padding_fraction": 0.000274658203125
+      },
+      "eyes42": {
+        "matrix_source256_to_output256": [
+          [
+            1.191829480903433,
+            -0.09960432475555754,
+            -22.02086519152178
+          ],
+          [
+            0.09960432475555754,
+            1.191829480903433,
+            -12.21768090904169
+          ]
+        ],
+        "training_sha256": "21e2624aad0abcd853998ca6cc45ae948d0f6575406581fc677db89ac72ff712",
+        "eye_y": 0.42,
+        "interocular": 0.21102388822162907,
+        "mouth_y": 0.6128587129534218,
+        "reflected_padding_fraction": 0.0107421875
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+usage: train.py [-h] [--device DEVICE] [--threads THREADS] [--smoke-test]
+                [--steps STEPS] [--batch BATCH]
+                [--snapshot-every SNAPSHOT_EVERY] [--run RUN]
+                [--resume RESUME] [--base BASE] [--data DATA]
+                [--mapping-lr MAPPING_LR] [--synthesis-lr SYNTHESIS_LR]
+                [--d-lr D_LR] [--ema-kimg EMA_KIMG] [--ada-kimg ADA_KIMG]
+                [--augment-p AUGMENT_P] [--r1-gamma R1_GAMMA]
+                [--freeze-d-layers FREEZE_D_LAYERS]
+
+options:
+  -h, --help            show this help message and exit
+  --device DEVICE
+  --threads THREADS
+  --smoke-test          One real update including R1, without saving large
+                        checkpoints
+  --steps STEPS
+  --batch BATCH
+  --snapshot-every SNAPSHOT_EVERY
+  --run RUN
+  --resume RESUME
+  --base BASE
+  --data DATA
+  --mapping-lr MAPPING_LR
+  --synthesis-lr SYNTHESIS_LR
+  --d-lr D_LR
+  --ema-kimg EMA_KIMG
+  --ada-kimg ADA_KIMG
+  --augment-p AUGMENT_P
+  --r1-gamma R1_GAMMA
+  --freeze-d-layers FREEZE_D_LAYERS
+                        Freeze input-side discriminator layers using NVIDIA
+                        FreezeD buffers

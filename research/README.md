@@ -4,25 +4,27 @@ Goal: train a real generative model and run fresh server-side inference on every
 
 ## Current experiment
 
-Transfer learning from NVIDIA's FFHQ StyleGAN2 at 256px. The training set contains the original curated 20 hot-priest portraits and all 30 subsequently commissioned handsome priest portraits (50 total). All are fictional adults, without hats. `data/manifest.json` pins the source commit, image identities, hashes, and preprocessing. Existing 80-image originals stay in the repo; excluded portraits are not used for training.
+Transfer learning from NVIDIA's FFHQ StyleGAN2 at 256px. The initial 50-image pilot was deliberately stopped after its durable step-1000 checkpoint: collars appeared, but fixed samples showed overlapping facial features and conspicuously similar faces/compositions. Its source, weights, logs, and rejected visual reviews remain in `runs/pilot256/`.
+
+The current fresh pretrained restart, `aligned110-frozen4`, uses those 50 selected portraits plus 60 newly generated and visually reviewed fictional adult portraits. Original generations, prompts, reviews, and hashes are archived in `data/synthetic/`. The training inputs are `alignment/collar-only/eyes42/`: 110 separate images with a collar-preserving crop that reduces the measured framing mismatch with FFHQ. No hats were introduced. Full FFHQ cropping was rejected because it removed most collars; the earlier whole-head constraint was also relaxed because it unnecessarily limited face size. See `alignment/README.md` and `alignment/collar-only/README.md` for evidence and exact transforms.
 
 The reference network code is reused without modifications. `train.py` provides a portable PyTorch training loop with non-saturating logistic losses, lazy R1, style mixing, EMA, and MIT Han Lab's differentiable color/translation/cutout augmentation. Augmentation probability follows the ADA discriminator-sign heuristic. This is a documented adaptation, not a claim to reproduce the entire NVIDIA training recipe: path-length regularization is currently disabled and augmentation differs from their full pipeline.
 
-A 3000-step, batch-8 pilot is used to test adaptation and identify overfitting before choosing a longer/higher-resolution run. Pilot checkpoints are research outputs, not approved production models.
+The current experiment freezes the first four discriminator layers using NVIDIA's built-in FreezeD buffers, uses mapping LR .0005 and EMA half-life .5 kimg, and allows up to 6000 batch-8 steps on the local Apple GPU. Frozen weights, optimizer restoration, R1, and side-effect-free snapshots passed real CPU smoke checks. Every 250 steps it saves matched raw-G and EMA grids at truncation 1.0, plus the usual EMA grid at .7. Review these before deciding to continue; a long run is not itself evidence of acceptable quality. This combines several evidence-driven changes and is not an isolated causal ablation. See `reviews/few-shot-options.md`.
 
 ## Reproduce
 
 ```sh
 uv venv --python 3.11 research/.venv
 uv pip install --python research/.venv/bin/python -r research/requirements-lock.txt
-git lfs pull
-research/.venv/bin/python research/prepare_data.py
+git lfs pull --include="research/**" --exclude=""
+research/.venv/bin/python research/prepare_data.py --synthetic --output research/data/hot110-256
 research/.venv/bin/python research/benchmark.py --device cpu
 research/.venv/bin/python research/benchmark.py --device mps --training
-research/.venv/bin/python -u research/train.py --device mps --steps 3000 --batch 8 --snapshot-every 250
+research/.venv/bin/python -u research/train.py --device mps --data research/alignment/collar-only/eyes42 --freeze-d-layers 4 --run aligned110-frozen4 --steps 6000 --batch 8 --snapshot-every 250
 ```
 
-Resume with `--resume research/runs/pilot256/resume.pt`. The initial pretrained pickle is trusted NVIDIA code, fetched only from the URL and SHA256 in `sources.json`. Do not load arbitrary pickles.
+Resume the current run with `--resume research/runs/aligned110-frozen4/resume.pt` and the same `--freeze-d-layers 4`. A mismatch is rejected rather than silently corrupting discriminator optimizer state. Use a new run name when changing experimental settings. Reproduce the alignment inputs with the separate instructions in `alignment/`; they are also stored directly in Git LFS. The initial pretrained pickle is trusted NVIDIA code, fetched only from the URL and SHA256 in `sources.json`. Do not load arbitrary pickles.
 
 ## Measured feasibility
 
@@ -50,3 +52,5 @@ References checked 2026-09-20:
 - https://developers.cloudflare.com/workers/ci-cd/builds/build-image/
 
 The repo default branch and CI production branch have been changed to `master` per the new instruction. Git LFS stores all raster images and models. CI explicitly hydrates `public/**` before validating and deploying, avoiding image-pointer files being published.
+
+Default clones hydrate only `public/**` through `.lfsconfig`, so frontend CI does not repeatedly download experimental checkpoints. Research reproduction explicitly fetches `research/**`; inference CI explicitly fetches only `models/production/**`. All artifacts remain versioned in Git LFS.

@@ -1,0 +1,78 @@
+{
+  "model": {
+    "status": "ready",
+    "model_version": "pilot256-250",
+    "model_sha256": "affced34b32d45190878b537c88197cca5d6503d9c23b872c1a4f9902666fb73",
+    "training_step": 250,
+    "reviewed": false,
+    "device": "cpu",
+    "resolution": 256
+  },
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "torch": "2.14.0",
+  "threads": 2,
+  "model_load_seconds": 0.24578916700556874,
+  "peak_rss_bytes": 768966656,
+  "median_warm_seconds": 0.14175054198130965,
+  "max_warm_seconds": 0.171021124930121,
+  "unique_output_hashes": 8,
+  "generations": [
+    {
+      "sample": "sample-000.webp",
+      "seed": "d4962eea7bf238739e1426ef69d00d496d4225947c71ad99c287fe9426e782a9",
+      "seconds": 0.29371791693847626,
+      "bytes": 12548,
+      "sha256": "d79109b3179120233a389fb93104260bd8f310d687c77d9d6c3cc54611f98410"
+    },
+    {
+      "sample": "sample-001.webp",
+      "seed": "96849eb99488cfd92c886b79907d4adce1cfbf4745da6c0065dfb47b96f6193a",
+      "seconds": 0.14175054198130965,
+      "bytes": 8794,
+      "sha256": "dba65858de039e6c7a6b6fbcb6cf5336fc96df9de3d30af0a3297a1cd173e76a"
+    },
+    {
+      "sample": "sample-002.webp",
+      "seed": "b3f8cd75b661fea0b5ecab22dcd1c3f454ba44d11fed366bcff43de3655ad531",
+      "seconds": 0.14943095901980996,
+      "bytes": 8830,
+      "sha256": "8e79e7217121937b34c53fa13bcd72147a2aa599fa4a1720ae59884d2d19247c"
+    },
+    {
+      "sample": "sample-003.webp",
+      "seed": "b5d0bb054a132f75cb9e500a138966594e1b33ab9984dbb05aabb117179884b6",
+      "seconds": 0.13637054210994393,
+      "bytes": 8684,
+      "sha256": "b0f5ed5cb2d4a3b8865da77ec97e4b2dd7328d62bcbc057d319a2107dc45c490"
+    },
+    {
+      "sample": "sample-004.webp",
+      "seed": "141cf52fc1d78f11290551befec627edc88a7d4ff322cfab3585695e540f0438",
+      "seconds": 0.13358612498268485,
+      "bytes": 11920,
+      "sha256": "8f5ae53a175e88299684509aeeeb2465a4311bbdf100ad6a15eb8a05d4c7829f"
+    },
+    {
+      "sample": "sample-005.webp",
+      "seed": "6134b2029ee779d8d4dcde849ffb62db5874fd4a6b6f24eedb1c876b56a4c099",
+      "seconds": 0.171021124930121,
+      "bytes": 11812,
+      "sha256": "65fb2242d9ea2f8974ae30a8f7271e563964eaaf792180086b8e77eca87128a1"
+    },
+    {
+      "sample": "sample-006.webp",
+      "seed": "19b428eecccb4cb1dab5f2bd749bcf8fef49bc0d23dbe6b929f42411e69ccced",
+      "seconds": 0.15879741695243865,
+      "bytes": 11062,
+      "sha256": "4d22fd90a58de634910c3920ae9426e6911c7eb43ff87ba44ce69c60659bdf47"
+    },
+    {
+      "sample": "sample-007.webp",
+      "seed": "c379eb234a51508a3e36bf8ff6a32f32430c02cc8a0b5c609b3a8c5c16260a08",
+      "seconds": 0.13248154195025563,
+      "bytes": 11550,
+      "sha256": "aa340d6e34252945419bffa32e5580ef89bf2f6ea61a9b8980a4f174babbd585"
+    }
+  ],
+  "interpretation": "Local CPU measurement, not a production-host benchmark or visual quality approval."
+}

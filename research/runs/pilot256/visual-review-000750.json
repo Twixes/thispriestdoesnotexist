@@ -1,0 +1,14 @@
+{
+  "step": 750,
+  "approved": false,
+  "reviewer": "Codex visual inspection, independently corroborated by alignment audit",
+  "sample_count": 16,
+  "image_sha256": "53782106b0251b3e06117afccc1abf05738b13557bc71965405ad744f1906d07",
+  "findings": [
+    "Visible white collars and black clerical clothing",
+    "Persistent displaced or overlapping facial features",
+    "Conspicuously similar facial structure, swept hairstyles, clothing, and backgrounds across distinct fixed latent samples"
+  ],
+  "decision": "Do not promote. Start a fresh pretrained experiment with110 reviewed partially aligned portraits and FreezeD; preserve this pilot as research evidence.",
+  "limits": "Qualitative diversity-contraction finding, not a biometric identity test or proof of exact duplicates."
+}

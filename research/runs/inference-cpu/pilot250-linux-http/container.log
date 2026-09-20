@@ -1,0 +1,13 @@
+INFO:__main__:Model loaded: {"status": "ready", "model_version": "pilot256-250", "model_sha256": "affced34b32d45190878b537c88197cca5d6503d9c23b872c1a4f9902666fb73", "training_step": 250, "reviewed": false, "device": "cpu", "resolution": 256}
+INFO:__main__:127.0.0.1 "GET /health HTTP/1.1" 200 -
+INFO:__main__:192.168.215.1 "GET /health HTTP/1.1" 200 -
+[W920 21:27:05.268366938 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:27:05.275327105 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+INFO:__main__:192.168.215.1 "GET /generate HTTP/1.1" 200 -
+[W920 21:27:06.283203855 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:27:06.286505814 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+INFO:__main__:192.168.215.1 "GET /generate HTTP/1.1" 200 -
+[W920 21:27:07.102331356 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 21:27:07.105707064 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+INFO:__main__:192.168.215.1 "GET /generate HTTP/1.1" 200 -
+INFO:__main__:127.0.0.1 "GET /health HTTP/1.1" 200 -

@@ -1,0 +1,13 @@
+{
+  "purpose": "Fresh pretrained transfer after rejected pilot1000; broader data, reduced framing mismatch, FreezeD4",
+  "dataset": "research/alignment/collar-only/eyes42",
+  "dataset_count": 110,
+  "comparison": "Compared against failed50-image unaligned pilot; multiple changes mean this is an integrated next experiment, not an isolated causal ablation.",
+  "freeze_d_layers": 4,
+  "mapping_lr": 0.0005,
+  "ema_kimg": 0.5,
+  "planned_steps": 6000,
+  "snapshot_every": 250,
+  "review": "Review matched rawG/EMA grids at psi1 and EMApsi.7; stop or adapt based on actual diversity and facial quality. No promotion on losses alone.",
+  "hardware": "Local Apple M5 Pro MPS; no rented GPU. Connected toAC, prevent idle sleep only while training."
+}

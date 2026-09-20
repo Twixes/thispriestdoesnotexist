@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "model_version": "pilot256-250",
+  "training_step": 250,
+  "init_kwargs": {
+    "z_dim": 512,
+    "c_dim": 0,
+    "w_dim": 512,
+    "img_resolution": 256,
+    "img_channels": 3,
+    "mapping_kwargs": {
+      "num_layers": 8,
+      "embed_features": null,
+      "layer_features": 512,
+      "activation": "lrelu",
+      "lr_multiplier": 0.01,
+      "w_avg_beta": 0.995
+    },
+    "synthesis_kwargs": {
+      "channel_base": 16384,
+      "channel_max": 512,
+      "num_fp16_res": 4,
+      "conv_clamp": 256,
+      "architecture": "skip",
+      "resample_filter": [
+        1,
+        3,
+        3,
+        1
+      ],
+      "use_noise": true,
+      "activation": "lrelu"
+    }
+  },
+  "truncation_psi": 0.7,
+  "weights_sha256": "affced34b32d45190878b537c88197cca5d6503d9c23b872c1a4f9902666fb73",
+  "review": {
+    "approved": false
+  },
+  "source_checkpoint": "research/runs/pilot256/generator-000250.pt",
+  "source_checkpoint_sha256": "ffce9b46fdf7c32f82d71c2d92cd4fe72d6c441d34baa3f837a67c94ec2c8fce",
+  "license": "NVIDIA Source Code License \u2014 research/evaluation only; see LICENSE.txt"
+}

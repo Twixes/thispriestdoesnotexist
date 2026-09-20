@@ -1,0 +1,19 @@
+{
+  "retrieved": "2026-09-20",
+  "opencv_zoo_commit": "47534e27c9851bb1128ccc0102f1145e27f23f98",
+  "ffhq_dataset_commit": "4826aa6ea77aa7f1a7802b938ed7c40afb985cda",
+  "urls": {
+    "ffhq_recipe": "https://raw.githubusercontent.com/NVlabs/ffhq-dataset/4826aa6ea77aa7f1a7802b938ed7c40afb985cda/download_ffhq.py",
+    "yunet_model": "https://media.githubusercontent.com/media/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_detection_yunet/face_detection_yunet_2023mar.onnx",
+    "cross_domain_correspondence": "https://arxiv.org/abs/2104.06820",
+    "cross_domain_code": "https://github.com/WisconsinAIVision/few-shot-gan-adaptation",
+    "freezed": "https://arxiv.org/abs/2002.10964"
+  },
+  "files": {
+    "vendor/FFHQ-LICENSE.txt": "620105e38526e788e422e21599ecbad75e78216cb594ea7680b2c2431a2433d9",
+    "vendor/download_ffhq.py": "07313017632ee48e90166d94db93839ad6a5e4c0ba10cbe0327bdad2063579f9",
+    "vendor/YUNET-LICENSE": "c83b8120c50ccbd4c4f96edf53141bdd566ebb8f8e9227e415326aa1b1aba958",
+    "vendor/YUNET-README.md": "a140c9e9574ff99d3dc1c435d5e8b5e60690dc91597e66387cbbb52be12cce4c",
+    "models/face_detection_yunet_2023mar.onnx": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4"
+  }
+}

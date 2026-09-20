@@ -1,0 +1,8 @@
+{
+  "checkpoint": "generator-000250.pt",
+  "approved": false,
+  "samples_reviewed": "samples-000250.png (16 fixed latents)",
+  "findings": ["Ghosted and duplicated facial features", "Broad FFHQ age and gender range still visible", "Dark beard-like patches rather than consistent male priest portraits", "No reliable clerical collars"],
+  "decision": "Research checkpoint only. Continue adaptation and evaluate later checkpoints. Do not deploy.",
+  "training_images_seen": 2000
+}

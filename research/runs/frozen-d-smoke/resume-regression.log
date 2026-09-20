@@ -1,0 +1,20 @@
+{
+  "device": "cpu",
+  "resolution": 8,
+  "freeze_d_layers": 4,
+  "frozen_tensors": [
+    "b8.conv0.bias",
+    "b8.conv0.weight",
+    "b8.conv1.bias",
+    "b8.conv1.weight",
+    "b8.fromrgb.bias",
+    "b8.fromrgb.weight",
+    "b8.skip.weight"
+  ],
+  "updates_with_r1": 2,
+  "checkpoint_round_trip": true,
+  "adam_state_restored": true,
+  "requires_grad_toggles_keep_buffers_frozen": true,
+  "frozen_tensors_bitwise_unchanged": true,
+  "initialization_rng_preserved": true
+}

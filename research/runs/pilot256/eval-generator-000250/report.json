@@ -1,0 +1,130 @@
+{
+  "checkpoint": "research/runs/pilot256/generator-000250.pt",
+  "sha256": "ffce9b46fdf7c32f82d71c2d92cd4fe72d6c441d34baa3f837a67c94ec2c8fce",
+  "count": 16,
+  "training_count": 50,
+  "unique_decoded_images": 16,
+  "nearest_lpips_min": 0.37705928087234497,
+  "nearest_lpips_median": 0.41139695048332214,
+  "generated_pair_lpips_median": 0.3907185047864914,
+  "generated_pair_lpips_min": 0.31856435537338257,
+  "seconds": 24.083570540999062,
+  "metric": "LPIPS v0.1 SqueezeNet; orientation invariant nearest training comparison",
+  "limitations": "Diagnostics only. These scores do not prove new identity or visual acceptability. Human visual inspection required.",
+  "records": [
+    {
+      "seed": 10000,
+      "nearest_training_file": "research/data/priests256/45.png",
+      "lpips": 0.3948048949241638,
+      "decoded_sha256": "57958775be08e8adaf4ab183eb2c2a3b842b25c57e3cd1b9852c431e7e234868"
+    },
+    {
+      "seed": 10001,
+      "nearest_training_file": "research/data/priests256/54.png",
+      "lpips": 0.40063661336898804,
+      "decoded_sha256": "dbda915f92dba185f5ffab1da91e193f6693a13d499dd205ed877d46faa59079"
+    },
+    {
+      "seed": 10002,
+      "nearest_training_file": "research/data/priests256/46.png",
+      "lpips": 0.44987061619758606,
+      "decoded_sha256": "32fb46053ea91105622641eabd38b27fd7e87b0343663d4c5878347d5db79d0f"
+    },
+    {
+      "seed": 10003,
+      "nearest_training_file": "research/data/priests256/46.png",
+      "lpips": 0.40907686948776245,
+      "decoded_sha256": "d329a139184666fbb9b79893ab2ccec0da15b4a8dc05e3702b821b33936ad379"
+    },
+    {
+      "seed": 10004,
+      "nearest_training_file": "research/data/priests256/20.png",
+      "lpips": 0.37705928087234497,
+      "decoded_sha256": "57dae5caa70e98a579062559a328a4f8b23e7940902b5d4f738ff326fb414bdf"
+    },
+    {
+      "seed": 10005,
+      "nearest_training_file": "research/data/priests256/20.png",
+      "lpips": 0.41952797770500183,
+      "decoded_sha256": "587677dc695ea393e72820c1f0404509d047fba07f7e9ce392e30cbd10b9b737"
+    },
+    {
+      "seed": 10006,
+      "nearest_training_file": "research/data/priests256/45.png",
+      "lpips": 0.41193920373916626,
+      "decoded_sha256": "f4a02eee0819a6b8d51bcb043f2404934c5eb805f1897477685d548ba56676ae"
+    },
+    {
+      "seed": 10007,
+      "nearest_training_file": "research/data/priests256/79.png",
+      "lpips": 0.41391080617904663,
+      "decoded_sha256": "3424a4e531448a342ef1720a9538643f4ef399a22b46c9953ba0ae59b0b84989"
+    },
+    {
+      "seed": 10008,
+      "nearest_training_file": "research/data/priests256/66.png",
+      "lpips": 0.410854697227478,
+      "decoded_sha256": "90a626b287c627b180f311e8053f07c851973ed872afc9edcbbd99585034f69c"
+    },
+    {
+      "seed": 10009,
+      "nearest_training_file": "research/data/priests256/46.png",
+      "lpips": 0.3897654712200165,
+      "decoded_sha256": "84e5031013f9dfa3703c0ad55098cc66269939e3c1ecc7ee0daeeed4bac81181"
+    },
+    {
+      "seed": 10010,
+      "nearest_training_file": "research/data/priests256/51.png",
+      "lpips": 0.46745389699935913,
+      "decoded_sha256": "5fbd6e233f76186888e8dc5df191d662010e8a8fa898b7eec718d724aa510b4f"
+    },
+    {
+      "seed": 10011,
+      "nearest_training_file": "research/data/priests256/18.png",
+      "lpips": 0.3948627710342407,
+      "decoded_sha256": "02dbc8b3b4726bd33c48d153c12d205e944c476d9fd5869d8a10d9d2bd0c425c"
+    },
+    {
+      "seed": 10012,
+      "nearest_training_file": "research/data/priests256/51.png",
+      "lpips": 0.4574858546257019,
+      "decoded_sha256": "4be7beffa7e22b6dbe7f3bd43f3116649673f736e49fdef14aac45fdf859b55c"
+    },
+    {
+      "seed": 10013,
+      "nearest_training_file": "research/data/priests256/80.png",
+      "lpips": 0.4224616289138794,
+      "decoded_sha256": "7205d5b96a1ae84e66e099d80994a3dfe4511e990fc295094888030e730d3c75"
+    },
+    {
+      "seed": 10014,
+      "nearest_training_file": "research/data/priests256/25.png",
+      "lpips": 0.447632372379303,
+      "decoded_sha256": "e723f581846b686b34c49f4b6942ade3a5951686f15862dbe91f00e9a2cd2619"
+    },
+    {
+      "seed": 10015,
+      "nearest_training_file": "research/data/priests256/58.png",
+      "lpips": 0.39052337408065796,
+      "decoded_sha256": "4120e23bba57ce86e643fe762751f6e0d955478557fa0a76b6c6108d6ca364bf"
+    }
+  ],
+  "generated_pair_distances": [
+    0.32929015159606934,
+    0.33484748005867004,
+    0.38208186626434326,
+    0.40146970748901367,
+    0.33183082938194275,
+    0.4280634820461273,
+    0.31856435537338257,
+    0.3810558617115021,
+    0.36662226915359497,
+    0.3580073118209839,
+    0.4385404884815216,
+    0.3993551433086395,
+    0.44182461500167847,
+    0.46403899788856506,
+    0.4174507260322571,
+    0.41904792189598083
+  ]
+}
