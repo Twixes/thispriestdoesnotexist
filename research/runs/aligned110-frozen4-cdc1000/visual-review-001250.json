@@ -1,0 +1,14 @@
+{
+  "step": 1250,
+  "images_seen": 10000,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grid_sha256": "050cdcf840a2ac12011ff2015e720ae083fe14971ef993a75f04ea2a7abf2767",
+  "findings": [
+    "Several faces show better-defined eyes and mouths than at step 1000",
+    "Ghosted facial features remain in multiple samples, especially the first row and glasses-like details",
+    "White clerical collars remain visible and no hats appear in this grid",
+    "Many faces still share closely similar hair and face structure; this small fixed grid cannot prove diversity on unseen latents"
+  ],
+  "decision": "Continue bounded training while monitoring improvement; do not promote this checkpoint."
+}

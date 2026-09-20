@@ -1,0 +1,267 @@
+{
+  "started_unix": 1789946610.7959263,
+  "server_command": [
+    "/usr/local/bin/python",
+    "-m",
+    "inference.server",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8080",
+    "--threads",
+    "1",
+    "--capacity",
+    "3",
+    "--allow-unreviewed"
+  ],
+  "platform": "Linux-7.0.14-orbstack-00380-ga7e0a2dc9535-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "model_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+  "local_research_override": true,
+  "server_source_sha256": "5d1b0fc6bc019de7296ffa0470def3e818e811c61ecb4c9963236bb655a7919d",
+  "metrics_before": {
+    "memory.current": "60112896",
+    "memory.peak": "61255680",
+    "memory.max": "3221225472",
+    "memory.swap.max": "0",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+    "cpu.stat": "usage_usec 508991\nuser_usec 396001\nsystem_usec 112989\nnice_usec 0\nnr_periods 5\nnr_throttled 1\nthrottled_usec 2627\nnr_bursts 0\nburst_usec 0",
+    "pids.current": "1"
+  },
+  "images": [
+    {
+      "label": "sequential-0",
+      "status": 200,
+      "headers": {
+        "Server": "PriestInference/1 Python/3.12.14",
+        "Date": "Sun, 20 Sep 2026 23:23:41 GMT",
+        "Content-Type": "image/webp",
+        "Content-Length": "160524",
+        "Cache-Control": "no-store, max-age=0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Generation-Seed": "ac6e55b17a5f2e61825e3da763e7faf8277799ab32a4b738221ef959196335d6",
+        "X-Model-SHA256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+        "Server-Timing": "inference;dur=5144.5"
+      },
+      "http_elapsed_seconds": 5.175003180999738,
+      "sha256": "6dcabcb55be30dc5f4230b476bd30ad6c4427a457c75f7e3fcda4f2f2ef678b9",
+      "seed": "ac6e55b17a5f2e61825e3da763e7faf8277799ab32a4b738221ef959196335d6",
+      "decoded_size": [
+        1024,
+        1024
+      ],
+      "decoded_mode": "RGB",
+      "bytes": 160524
+    },
+    {
+      "label": "sequential-1",
+      "status": 200,
+      "headers": {
+        "Server": "PriestInference/1 Python/3.12.14",
+        "Date": "Sun, 20 Sep 2026 23:23:46 GMT",
+        "Content-Type": "image/webp",
+        "Content-Length": "91278",
+        "Cache-Control": "no-store, max-age=0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Generation-Seed": "ec8e1b033f3f2fcb3ee9b85cf10b7364646377daa944d052c548528239f3686a",
+        "X-Model-SHA256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+        "Server-Timing": "inference;dur=4531.2"
+      },
+      "http_elapsed_seconds": 4.534839619000195,
+      "sha256": "558b8cf348d361b92583ffe9a0b1233ecaef297d7a7b74c9b028ca143d728bd5",
+      "seed": "ec8e1b033f3f2fcb3ee9b85cf10b7364646377daa944d052c548528239f3686a",
+      "decoded_size": [
+        1024,
+        1024
+      ],
+      "decoded_mode": "RGB",
+      "bytes": 91278
+    },
+    {
+      "label": "concurrent-0",
+      "status": 200,
+      "headers": {
+        "Server": "PriestInference/1 Python/3.12.14",
+        "Date": "Sun, 20 Sep 2026 23:23:50 GMT",
+        "Content-Type": "image/webp",
+        "Content-Length": "132500",
+        "Cache-Control": "no-store, max-age=0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Generation-Seed": "b795cef7ffbe8ff45b5c92dee6f37b7524c9f6733c35c47f50902c3ae8c513f1",
+        "X-Model-SHA256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+        "Server-Timing": "inference;dur=4529.1"
+      },
+      "http_elapsed_seconds": 4.534121947000131,
+      "sha256": "8917ad900d291f5042522dbc5c191fbb7c71005eee9761abcdf9a8e3d8033a30",
+      "seed": "b795cef7ffbe8ff45b5c92dee6f37b7524c9f6733c35c47f50902c3ae8c513f1",
+      "decoded_size": [
+        1024,
+        1024
+      ],
+      "decoded_mode": "RGB",
+      "bytes": 132500
+    },
+    {
+      "label": "concurrent-1",
+      "status": 200,
+      "headers": {
+        "Server": "PriestInference/1 Python/3.12.14",
+        "Date": "Sun, 20 Sep 2026 23:23:55 GMT",
+        "Content-Type": "image/webp",
+        "Content-Length": "134170",
+        "Cache-Control": "no-store, max-age=0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Generation-Seed": "e3ca9dcf09711a6f0ef614c3de55bdd92667f55048067186c26b23994c1f48db",
+        "X-Model-SHA256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+        "Server-Timing": "inference;dur=9124.3"
+      },
+      "http_elapsed_seconds": 9.133987107000394,
+      "sha256": "04d4bcf0c9a7d276c7898739295ca79fd672a7ee9ac5f0b7deb326aed8f7b9cc",
+      "seed": "e3ca9dcf09711a6f0ef614c3de55bdd92667f55048067186c26b23994c1f48db",
+      "decoded_size": [
+        1024,
+        1024
+      ],
+      "decoded_mode": "RGB",
+      "bytes": 134170
+    },
+    {
+      "label": "concurrent-2",
+      "status": 200,
+      "headers": {
+        "Server": "PriestInference/1 Python/3.12.14",
+        "Date": "Sun, 20 Sep 2026 23:24:00 GMT",
+        "Content-Type": "image/webp",
+        "Content-Length": "170106",
+        "Cache-Control": "no-store, max-age=0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Generation-Seed": "761aa6455ad5d5893457776872f89a08d74effb8661bdcee23c7d895fc05b869",
+        "X-Model-SHA256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+        "Server-Timing": "inference;dur=13748.7"
+      },
+      "http_elapsed_seconds": 13.753829395000139,
+      "sha256": "425e8a90b9ada49655fe7f0b7debbde54160cad9c5c4c2ab49453b1152fb3945",
+      "seed": "761aa6455ad5d5893457776872f89a08d74effb8661bdcee23c7d895fc05b869",
+      "decoded_size": [
+        1024,
+        1024
+      ],
+      "decoded_mode": "RGB",
+      "bytes": 170106
+    },
+    {
+      "label": "recovery",
+      "status": 200,
+      "headers": {
+        "Server": "PriestInference/1 Python/3.12.14",
+        "Date": "Sun, 20 Sep 2026 23:24:04 GMT",
+        "Content-Type": "image/webp",
+        "Content-Length": "108576",
+        "Cache-Control": "no-store, max-age=0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Generation-Seed": "bf6a6ae115720a8403b2d8fb2ecf80c3a4a6afa269b69618ded9bcbb9359cfca",
+        "X-Model-SHA256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+        "Server-Timing": "inference;dur=4724.2"
+      },
+      "http_elapsed_seconds": 4.726742349000233,
+      "sha256": "79ae3cfa2d4cc5efac9b3f4c00f07c781b21facc2b8cf6ab1c02ec82ca34e7b6",
+      "seed": "bf6a6ae115720a8403b2d8fb2ecf80c3a4a6afa269b69618ded9bcbb9359cfca",
+      "decoded_size": [
+        1024,
+        1024
+      ],
+      "decoded_mode": "RGB",
+      "bytes": 108576
+    }
+  ],
+  "overload": [
+    {
+      "path": "/generate?nonce=overload",
+      "status": 503,
+      "headers": {
+        "Content-Length": "0",
+        "Cache-Control": "no-store",
+        "Retry-After": "3",
+        "Connection": "close"
+      },
+      "seconds": 0.0011876329999722657
+    },
+    {
+      "path": "/health",
+      "status": 503,
+      "headers": {
+        "Content-Length": "0",
+        "Cache-Control": "no-store",
+        "Retry-After": "3",
+        "Connection": "close"
+      },
+      "seconds": 0.0008768799998506438
+    }
+  ],
+  "passed": true,
+  "health": {
+    "body": {
+      "status": "ready",
+      "model_version": "ffhq1024-unadapted-benchmark",
+      "model_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+      "training_step": 0,
+      "reviewed": false,
+      "device": "cpu",
+      "resolution": 1024
+    },
+    "headers": {
+      "Server": "PriestInference/1 Python/3.12.14",
+      "Date": "Sun, 20 Sep 2026 23:23:36 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "228",
+      "Cache-Control": "no-store, max-age=0",
+      "X-Content-Type-Options": "nosniff",
+      "Connection": "close"
+    }
+  },
+  "process_launch_to_health_seconds": 5.740334931000689,
+  "admission_threads": {
+    "baseline": 1,
+    "with_three_held_requests": 4
+  },
+  "recovery_health": {
+    "status": 200,
+    "headers": {
+      "Server": "PriestInference/1 Python/3.12.14",
+      "Date": "Sun, 20 Sep 2026 23:24:00 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "228",
+      "Cache-Control": "no-store, max-age=0",
+      "X-Content-Type-Options": "nosniff",
+      "Connection": "close"
+    },
+    "seconds": 0.002767851000498922
+  },
+  "metrics_after_requests": {
+    "memory.current": "1077624832",
+    "memory.peak": "1740255232",
+    "memory.max": "3221225472",
+    "memory.swap.max": "0",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+    "cpu.stat": "usage_usec 34277182\nuser_usec 31543294\nsystem_usec 2733887\nnice_usec 0\nnr_periods 346\nnr_throttled 77\nthrottled_usec 186671\nnr_bursts 0\nburst_usec 0",
+    "pids.current": "2"
+  },
+  "server_proc_status_before_stop": "Name:\tpython\nUmask:\t0022\nState:\tS (sleeping)\nTgid:\t7\nNgid:\t0\nPid:\t7\nPPid:\t1\nTracerPid:\t0\nUid:\t10001\t10001\t10001\t10001\nGid:\t10001\t10001\t10001\t10001\nFDSize:\t64\nGroups:\t10001 \nNStgid:\t7\nNSpid:\t7\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2403656 kB\nVmSize:\t 1812004 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 1295972 kB\nVmRSS:\t  649080 kB\nRssAnon:\t  537676 kB\nRssFile:\t  110792 kB\nRssShmem:\t     612 kB\nVmData:\t 1354308 kB\nVmStk:\t     132 kB\nVmExe:\t     456 kB\nVmLib:\t  415300 kB\nVmPTE:\t    1748 kB\nVmSwap:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t1\nSigQ:\t0/64272\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000412\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tvulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\t3ffff\nCpus_allowed_list:\t0-17\nMems_allowed:\t1\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t104\nnonvoluntary_ctxt_switches:\t43\n",
+  "server_exit_code": 0,
+  "total_seconds": 34.51288187400041,
+  "metrics_after_server_exit": {
+    "memory.current": "527466496",
+    "memory.peak": "1740255232",
+    "memory.max": "3221225472",
+    "memory.swap.max": "0",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+    "cpu.stat": "usage_usec 34693601\nuser_usec 31932371\nsystem_usec 2761230\nnice_usec 0\nnr_periods 350\nnr_throttled 79\nthrottled_usec 193999\nnr_bursts 0\nburst_usec 0",
+    "pids.current": "1"
+  }
+}

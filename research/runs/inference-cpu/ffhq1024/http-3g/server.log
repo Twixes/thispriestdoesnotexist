@@ -1,0 +1,69 @@
+INFO:__main__:Model loaded: {"status": "ready", "model_version": "ffhq1024-unadapted-benchmark", "model_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d", "training_step": 0, "reviewed": false, "device": "cpu", "resolution": 1024}
+INFO:__main__:127.0.0.1 "GET /health HTTP/1.1" 200 -
+[W920 23:23:36.449158130 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:36.479257406 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:36.680625948 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:36.759786580 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:37.920997739 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:37.470181093 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:38.168380445 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:39.966658772 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:40.962709992 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:41.379915745 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+INFO:__main__:127.0.0.1 "GET /generate?nonce=sequential-0 HTTP/1.1" 200 -
+[W920 23:23:41.616592929 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:41.619097445 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:41.638297485 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:41.686541003 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:41.825982522 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:42.363840846 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:43.065066592 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:43.825205799 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:44.745545367 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:46.018222402 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+INFO:__main__:127.0.0.1 "GET /generate?nonce=sequential-1 HTTP/1.1" 200 -
+[W920 23:23:46.194639450 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:46.197980388 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:46.220778992 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:46.271679944 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:46.420270896 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:47.958125053 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:47.630864784 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:48.403225986 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:49.346566243 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:50.601097828 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+INFO:__main__:127.0.0.1 "GET /generate?nonce=concurrent-0 HTTP/1.1" 200 -
+[W920 23:23:50.723981949 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:50.727576472 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:50.748363772 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:50.807604986 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:51.954507344 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:51.515880360 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:52.192925243 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:53.941666294 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:54.871334130 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:55.191122050 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+INFO:__main__:127.0.0.1 "GET /generate?nonce=concurrent-1 HTTP/1.1" 200 -
+[W920 23:23:55.323385065 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:55.327023422 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:55.348840645 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:55.405635509 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:55.553023287 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:56.117716366 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:56.814414042 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:57.594547711 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:58.558116014 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:23:59.813261937 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+INFO:__main__:127.0.0.1 "GET /generate?nonce=concurrent-2 HTTP/1.1" 200 -
+INFO:__main__:127.0.0.1 "GET /health HTTP/1.1" 200 -
+[W920 23:24:00.964062279 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:24:00.967273466 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:24:00.988927730 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:24:00.035464736 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:24:00.185850826 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:24:00.740202505 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:24:01.471331151 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:24:02.296678860 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:24:03.259833910 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+[W920 23:24:04.558023026 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+INFO:__main__:127.0.0.1 "GET /generate?nonce=recovery HTTP/1.1" 200 -

@@ -1,0 +1,73 @@
+{
+  "Id": "6ad702d2fdd03e9e51260a9cb2dffe598d49fe780719c95e62d76fd986fe669c",
+  "Name": "/priest-ffhq1024-http-3g",
+  "Image": "sha256:84943e91972961818c8cd240e0856017094f95a11c6282a5bbe62db6e8b34796",
+  "Created": "2026-09-20T23:23:30.069309988Z",
+  "State": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-20T23:23:30.223330184Z",
+    "FinishedAt": "2026-09-20T23:24:05.354732065Z"
+  },
+  "Path": "python",
+  "Args": [
+    "/results/run.py"
+  ],
+  "HostConfig": {
+    "Memory": 3221225472,
+    "MemorySwap": 3221225472,
+    "NanoCpus": 1000000000,
+    "NetworkMode": "none",
+    "ReadonlyRootfs": true,
+    "CapDrop": [
+      "ALL"
+    ],
+    "SecurityOpt": [
+      "no-new-privileges"
+    ],
+    "PidsLimit": 128,
+    "Tmpfs": {
+      "/tmp": "rw,nosuid,size=128m"
+    }
+  },
+  "Mounts": [
+    {
+      "Type": "bind",
+      "Source": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/inference-cpu/ffhq1024/baseline-bundle",
+      "Destination": "/app/model",
+      "Mode": "ro",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/inference-cpu/ffhq1024/http-3g",
+      "Destination": "/results",
+      "Mode": "",
+      "RW": true
+    }
+  ],
+  "Config": {
+    "Image": "priest-inference:test",
+    "User": "10001",
+    "Cmd": [
+      "python",
+      "/results/run.py"
+    ],
+    "Entrypoint": null,
+    "Healthcheck": {
+      "Test": [
+        "NONE"
+      ],
+      "Interval": 30000000000,
+      "Timeout": 10000000000,
+      "StartPeriod": 60000000000
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "exact_gradients_parameters_pl_rng_stats_ada_match": true,
+  "checked_fields": [
+    "device",
+    "threads",
+    "resolution",
+    "batch",
+    "pl_batch_shrink",
+    "initial_rng",
+    "latents",
+    "input_sha256",
+    "phases",
+    "ada_sign_mean",
+    "ada_probability",
+    "checkpoint_counters",
+    "final_g",
+    "final_d",
+    "report_count",
+    "all_gradients_and_weights_finite",
+    "adapter_sha256",
+    "harness_sha256",
+    "loss_sha256"
+  ],
+  "fixtures": {
+    "passed": true,
+    "mutation_snapshot_preserved": true,
+    "dtype_order_values_exact": true,
+    "mixed_types": [
+      "float16",
+      "float32",
+      "float64",
+      "int64",
+      "bool",
+      "Python scalar/list",
+      "NumPy",
+      "noncontiguous",
+      "empty"
+    ],
+    "checkpoint_guard_passed": true,
+    "no_autograd_graph_retained": true,
+    "packing": {
+      "reports": 9,
+      "packs": 5,
+      "elements": 25
+    }
+  },
+  "memory_preflights": [
+    {
+      "variant": "baseline",
+      "free_percent": 24
+    },
+    {
+      "variant": "deferred",
+      "free_percent": 19
+    }
+  ],
+  "baseline_reports": 14,
+  "candidate_packs": 4,
+  "baseline_seconds": 8.063069543102756,
+  "deferred_seconds": 8.000546459108591,
+  "timing_caveat": "CPU equivalence test with state hashing, not an MPS speed benchmark"
+}

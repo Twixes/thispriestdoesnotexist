@@ -1,0 +1,28 @@
+{
+  "passed": false,
+  "status": "allocator_oom",
+  "exit_code": 1,
+  "phase": "Gmain",
+  "batch": 8,
+  "trials_requested": 1,
+  "memory_cap_bytes": 4294967296,
+  "completed_warmup_pairs": 0,
+  "completed_measured_pairs": 0,
+  "failed_variant": "deferred",
+  "failed_stage": "first excluded warmup; generator synthesis forward before backward",
+  "exception": "RuntimeError: MPS backend out of memory (MPS allocated: 4.23 GiB, other allocations: 13.33 MiB, max allowed: 4.00 GiB). Tried to allocate 128.00 MiB on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).",
+  "preflight_at_least_25_percent_passed": true,
+  "preflight_exact_percentage_not_saved": true,
+  "post_exit_free_percent": 27,
+  "mps_equivalence_verified": false,
+  "timing_result_available": false,
+  "dmain_run": false,
+  "dmain_skip_reason": "Gmain pass prerequisite not met",
+  "active_trainers_modified": false,
+  "optimizer_updates": 0,
+  "source_sha256": {
+    "adapter.py": "e14f8e0d40607c8600001d6db1a254bf42d63f1567d210c53547dfb7ad9baccb",
+    "benchmark_mps.py": "17c5e9c64d72112d34f71ad4552efd658bda858246cbb7b1595db4991a991e59"
+  },
+  "log_sha256": "e346616ff74a26e697b69e5858c35a374f5924baef05b266086eed0eafd0493f"
+}

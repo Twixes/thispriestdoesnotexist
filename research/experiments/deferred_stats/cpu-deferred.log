@@ -1,0 +1,9 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/grid_sample_gradfix.py:39: UserWarning: grid_sample_gradfix not supported on PyTorch 2.14.0. Falling back to torch.nn.functional.grid_sample().
+  warnings.warn(f'grid_sample_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.grid_sample().')
+/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/grid_sample_gradfix.py:39: UserWarning: grid_sample_gradfix not supported on PyTorch 2.14.0. Falling back to torch.nn.functional.grid_sample().
+  warnings.warn(f'grid_sample_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.grid_sample().')
+/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/grid_sample_gradfix.py:39: UserWarning: grid_sample_gradfix not supported on PyTorch 2.14.0. Falling back to torch.nn.functional.grid_sample().
+  warnings.warn(f'grid_sample_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.grid_sample().')
+/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/grid_sample_gradfix.py:39: UserWarning: grid_sample_gradfix not supported on PyTorch 2.14.0. Falling back to torch.nn.functional.grid_sample().
+  warnings.warn(f'grid_sample_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.grid_sample().')
+{"variant": "deferred", "passed": true, "timings": [{"phase": "Gmain", "seconds": 1.0254617920145392}, {"phase": "Greg", "seconds": 2.976473667076789}, {"phase": "Dmain", "seconds": 1.173850291990675}, {"phase": "Dreg", "seconds": 2.824760708026588}], "report_count": 14, "peak_rss_bytes": 2251276288}

@@ -1,0 +1,14 @@
+{
+  "image_id": "sha256:84943e91972961818c8cd240e0856017094f95a11c6282a5bbe62db6e8b34796",
+  "architecture": "linux/amd64 emulated on arm64 macOS via local Docker",
+  "model_bundle": "research/runs/inference-cpu/ffhq1024/baseline-bundle",
+  "model_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+  "model_reviewed": false,
+  "training_step": 0,
+  "server_source_matches_current_workspace": true,
+  "server_sha256": "5d1b0fc6bc019de7296ffa0470def3e818e811c61ecb4c9963236bb655a7919d",
+  "harness_sha256": "c527d5d64cc0f39e6ab8399cf1fefdbad6deb5ba98a88cf051089e184cd51021",
+  "invocation_sha256": "a8f06dfdb17f197046989d135747ba65566c0f9e3a04aeb2e1984cc2fc308ce9",
+  "network": "none; server and client use container-local127.0.0.1; no host ports",
+  "production_approval": false
+}

@@ -1,0 +1,27 @@
+{
+  "purpose": "Framing feasibility only; active data unchanged",
+  "images": [
+    {
+      "id": 1,
+      "file": "001.png",
+      "sha256": "9830ade4a38939c49f6c47b952343e9d6c2c1a309538a50bdd9bade4b89b3f64",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "training_eligible": false
+    },
+    {
+      "id": 2,
+      "file": "002.png",
+      "sha256": "a8bd7d43d7ca14315b2877141e92955f0009d7d78badbe3434c09eec3f8f5cc6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "training_eligible": false
+    }
+  ]
+}

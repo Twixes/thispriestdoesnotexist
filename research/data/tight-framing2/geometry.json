@@ -1,0 +1,280 @@
+{
+  "purpose": "Two-image geometry calibration only; excluded from all training",
+  "script_sha256": "3630d1d24a70a0d9ec91e35953d2cb5687c952763d316654d71506dc267c9c83",
+  "input_manifest_sha256": "5203f2316bdb7384dfdd267631dd649cb847ab1b71202a59f9db48658964b95c",
+  "helper_sources": {
+    "alignment/analyze.py": "5aa2e54e561ed63b1ecefdcb80a63199a6939f191f4aca6c6b3275447d990bcd",
+    "data/validation12/align_validation.py": "3466f34df29021a51496bb582a23fb54cdaf1e5e7630bfef177ab0ea02929b16"
+  },
+  "detector_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+  "opencv_version": "5.0.0",
+  "pillow_version": "12.3.0",
+  "source_reference_metrics": {
+    "eye_y": 0.46592684532515705,
+    "interocular": 0.25215683925633725,
+    "mouth_y": 0.7293239613063633
+  },
+  "existing110_raw_mean_metrics": {
+    "eye_y": 0.3420700444416566,
+    "interocular": 0.1606140482606904,
+    "mouth_y": 0.5004801840944724
+  },
+  "existing110_eyes42_metrics": {
+    "eye_y": {
+      "mean": 0.4200000000000001,
+      "std": 1.1102230246251565e-16
+    },
+    "interocular": {
+      "mean": 0.19950635334559008,
+      "std": 0.015482428214620135
+    },
+    "mouth_y": {
+      "mean": 0.61766127773396,
+      "std": 0.012216236265463384
+    },
+    "reflected_padding_fraction": {
+      "mean": 0.018757213245738636,
+      "std": 0.022753312726889338
+    }
+  },
+  "entries": [
+    {
+      "id": "001",
+      "source": "001.png",
+      "source_sha256": "9830ade4a38939c49f6c47b952343e9d6c2c1a309538a50bdd9bade4b89b3f64",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "face_confidence": 0.9448602199554443,
+      "landmarks_source256": [
+        [
+          90.00665283203125,
+          94.24336242675781
+        ],
+        [
+          159.81788635253906,
+          93.80615234375
+        ],
+        [
+          123.4942398071289,
+          133.6000518798828
+        ],
+        [
+          94.94322967529297,
+          160.9355010986328
+        ],
+        [
+          158.63897705078125,
+          161.06280517578125
+        ]
+      ],
+      "collar_box_heuristic": [
+        116,
+        233,
+        32,
+        18
+      ],
+      "training_eligible": false,
+      "variants": {
+        "raw": {
+          "matrix_source256_to_output256": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "metrics": {
+            "eye_y": 0.36728420853614807,
+            "eye_x": 0.4879385530948639,
+            "mouth_y": 0.628902941942215,
+            "interocular": 0.2727054788090599,
+            "eye_mouth_distance": 0.2617216564285142
+          },
+          "reflected_padding_fraction": 0.0,
+          "detected_collar_fully_visible": true,
+          "detected_collar_area_fraction_inside_crop": 1.0,
+          "output": "candidates/001-raw.png",
+          "output_sha256": "67f29340ee0ebfb8c7bf92b639b7ccb910c4f5aa2993fdb380a03e424dbce2bc"
+        },
+        "eyes42": {
+          "matrix_source256_to_output256": [
+            [
+              0.8566851812274429,
+              -0.014505328221554288,
+              22.353369653627112
+            ],
+            [
+              0.014505328221554288,
+              0.8566851812274429,
+              25.158490210212037
+            ]
+          ],
+          "metrics": {
+            "eye_y": 0.42000000000000004,
+            "eye_x": 0.5,
+            "mouth_y": 0.6442313494643708,
+            "interocular": 0.2336562287925594,
+            "eye_mouth_distance": 0.2242452021920905
+          },
+          "reflected_padding_fraction": 0.26580810546875,
+          "detected_collar_fully_visible": true,
+          "detected_collar_area_fraction_inside_crop": 1.0000000356349337,
+          "output": "candidates/001-eyes42.png",
+          "output_sha256": "12b45906a186062ca2ee2abab94ebecd8fe1904408df53b3fa0563d37afef655"
+        },
+        "ffhq": {
+          "matrix_source256_to_output256": [
+            [
+              0.9166085424455027,
+              -0.015519946008407249,
+              14.89533418571952
+            ],
+            [
+              0.015519946008407249,
+              0.9166085424455027,
+              33.735626232445824
+            ]
+          ],
+          "metrics": {
+            "eye_y": 0.4760084130195129,
+            "eye_x": 0.49973331403199595,
+            "mouth_y": 0.7159242828243835,
+            "interocular": 0.24999999999999986,
+            "eye_mouth_distance": 0.23993069150231827
+          },
+          "reflected_padding_fraction": 0.2112579345703125,
+          "detected_collar_fully_visible": false,
+          "detected_collar_area_fraction_inside_crop": 0.34220067118700975,
+          "output": "candidates/001-ffhq.png",
+          "output_sha256": "0656f6064c91539d705e93182fd4951d989df0827f9e1180d3360dbfeaf5a655"
+        }
+      }
+    },
+    {
+      "id": "002",
+      "source": "002.png",
+      "source_sha256": "a8bd7d43d7ca14315b2877141e92955f0009d7d78badbe3434c09eec3f8f5cc6",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "face_confidence": 0.9497387409210205,
+      "landmarks_source256": [
+        [
+          87.71672058105469,
+          87.81452941894531
+        ],
+        [
+          159.87332153320312,
+          83.6575927734375
+        ],
+        [
+          120.79771423339844,
+          123.7103271484375
+        ],
+        [
+          95.10935974121094,
+          151.8147735595703
+        ],
+        [
+          164.110595703125,
+          146.93006896972656
+        ]
+      ],
+      "collar_box_heuristic": [
+        112,
+        223,
+        38,
+        28
+      ],
+      "training_eligible": false,
+      "variants": {
+        "raw": {
+          "matrix_source256_to_output256": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "metrics": {
+            "eye_y": 0.3349064886569977,
+            "eye_x": 0.4835743010044098,
+            "mouth_y": 0.583486020565033,
+            "interocular": 0.2823290710042846,
+            "eye_mouth_distance": 0.24961518407345257
+          },
+          "reflected_padding_fraction": 0.0,
+          "detected_collar_fully_visible": true,
+          "detected_collar_area_fraction_inside_crop": 1.0,
+          "output": "candidates/002-raw.png",
+          "output_sha256": "3ba01d75b68673d447ec145d6c83a0a69d5c21268d5d2c8e7fe033b29b9b9d92"
+        },
+        "eyes42": {
+          "matrix_source256_to_output256": [
+            [
+              0.8075318730735689,
+              -0.05930072970427176,
+              33.11578575352897
+            ],
+            [
+              0.05930072970427176,
+              0.8075318730735689,
+              30.94426291059918
+            ]
+          ],
+          "metrics": {
+            "eye_y": 0.42,
+            "eye_x": 0.5,
+            "mouth_y": 0.6220828917806793,
+            "interocular": 0.2286036292633723,
+            "eye_mouth_distance": 0.20211498870964656
+          },
+          "reflected_padding_fraction": 0.3443450927734375,
+          "detected_collar_fully_visible": true,
+          "detected_collar_area_fraction_inside_crop": 0.9999999606472787,
+          "output": "candidates/002-eyes42.png",
+          "output_sha256": "e1387d1464cf7f6361fbc3a8fd05681462d7af553a0248947e4322ab5740c0e8"
+        },
+        "ffhq": {
+          "matrix_source256_to_output256": [
+            [
+              0.8831135748759465,
+              -0.0648510370278854,
+              24.134170553309275
+            ],
+            [
+              0.0648510370278854,
+              0.8831135748759465,
+              38.59956114607019
+            ]
+          ],
+          "metrics": {
+            "eye_y": 0.4779002970740393,
+            "eye_x": 0.49960610030523167,
+            "mouth_y": 0.6988973263336462,
+            "interocular": 0.2499999999999999,
+            "eye_mouth_distance": 0.22103213033069516
+          },
+          "reflected_padding_fraction": 0.2748870849609375,
+          "detected_collar_fully_visible": false,
+          "detected_collar_area_fraction_inside_crop": 0.4436663910811885,
+          "output": "candidates/002-ffhq.png",
+          "output_sha256": "7dcec38215da932c4042efc7645e27aaf68ed80127e1161ae07f5f087cf5153f"
+        }
+      }
+    }
+  ]
+}
