@@ -30,13 +30,22 @@ main {
   visibility: hidden;
 }
 
-.credit {
+.credit,
+.collection-link {
   position: fixed;
   right: max(12px, env(safe-area-inset-right));
-  bottom: max(12px, env(safe-area-inset-bottom));
   color: #fff;
   opacity: .5;
   font: 12px Arial, Helvetica, sans-serif;
+}
+
+.credit {
+  bottom: max(12px, env(safe-area-inset-bottom));
+}
+
+.collection-link {
+  text-decoration: underline;
+  top: max(12px, env(safe-area-inset-top));
 }
 
 .credit a {
@@ -44,7 +53,8 @@ main {
   text-decoration: underline;
 }
 
-.credit a:focus-visible {
+.credit a:focus-visible,
+.collection-link:focus-visible {
   outline: 1px solid currentColor;
   outline-offset: 4px;
 }
