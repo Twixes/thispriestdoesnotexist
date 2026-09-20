@@ -1,0 +1,13 @@
+{
+  "name": "thispriestdoesnotexist",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "node --check public/app.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.135.0"
+  }
+}
