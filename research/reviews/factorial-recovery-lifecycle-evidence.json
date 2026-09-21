@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "tested_source": "research/runs/recover-factorial-CD.py",
+  "source_sha256": "816b3aabb6252e0f0d2887bfaa3889b6203ba4d33e23982e66b20e71d7a478c9",
+  "harness_sha256": "3e32eb3dc68e3cbb3ad19de6402bc5b668e4fd35c6c6fe722f6e1d3f9c54bacd",
+  "wall_seconds": 1.5626314580440521,
+  "source_unchanged": true,
+  "real_launcher_commands_executed": false,
+  "real_model_imports_or_loads": false,
+  "fixture_policy": "Temporary fake run/provenance, fake memory guard; Popen substitutes only harmless Python sleep group. Recovery main/cleanup/wait/signal handlers are real unmodified code.",
+  "results": [
+    {
+      "scenario": "write_failure",
+      "passed": true,
+      "wall_seconds": 0.06021770799998194,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 19529,
+        "pgid": 19529,
+        "grandchild_pid": 19530
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "OSError('Injected record-write failure after dummy spawn')",
+      "only_C_spawned": true,
+      "no_comparison_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py\", line 172, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py\", line 84, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/runs/recover-factorial-CD.py\", line 96, in main\n    write(record_path, record)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py\", line 78, in fail_after_spawn\n    raise OSError('Injected record-write failure after dummy spawn')\nOSError: Injected record-write failure after dummy spawn\n"
+    },
+    {
+      "scenario": "sigint",
+      "passed": true,
+      "wall_seconds": 0.33042308292351663,
+      "coordinator_exit_code": -2,
+      "dummy_pids": {
+        "pid": 19532,
+        "pgid": 19532,
+        "grandchild_pid": 19533
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "KeyboardInterrupt()",
+      "only_C_spawned": true,
+      "no_comparison_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py\", line 172, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py\", line 84, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/runs/recover-factorial-CD.py\", line 97, in main\n    code = process.wait(timeout=remaining)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/subprocess.py\", line 1264, in wait\n    return self._wait(timeout=timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/subprocess.py\", line 2047, in _wait\n    time.sleep(delay)\nKeyboardInterrupt\n"
+    },
+    {
+      "scenario": "sigterm",
+      "passed": true,
+      "wall_seconds": 0.06576962501276284,
+      "coordinator_exit_code": 143,
+      "dummy_pids": {
+        "pid": 19535,
+        "pgid": 19535,
+        "grandchild_pid": 19536
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "SystemExit(143)",
+      "only_C_spawned": true,
+      "no_comparison_published": true,
+      "coordinator_log": ""
+    },
+    {
+      "scenario": "deadline",
+      "passed": true,
+      "wall_seconds": 1.1028200419386849,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 19538,
+        "pgid": 19538,
+        "grandchild_pid": 19539
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "RuntimeError('Original total deadline expired; terminated only this recovery child group')",
+      "only_C_spawned": true,
+      "no_comparison_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/runs/recover-factorial-CD.py\", line 97, in main\n    code = process.wait(timeout=remaining)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/subprocess.py\", line 1264, in wait\n    return self._wait(timeout=timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/subprocess.py\", line 2045, in _wait\n    raise TimeoutExpired(self.args, timeout)\nsubprocess.TimeoutExpired: Command '['/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python', '/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py', '--dummy', '/var/folders/3x/clqbt75x14s8_5hbp72b59980000gn/T/priest-recovery-lifecycle-_11kj7q2']' timed out after 0.9991328716278076 seconds\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py\", line 172, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py\", line 84, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/runs/recover-factorial-CD.py\", line 99, in main\n    raise RuntimeError('Original total deadline expired; terminated only this recovery child group')\nRuntimeError: Original total deadline expired; terminated only this recovery child group\n"
+    }
+  ]
+}

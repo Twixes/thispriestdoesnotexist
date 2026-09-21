@@ -1,0 +1,20 @@
+{
+  "requested_unix": 1789962741.714199,
+  "pid": 82281,
+  "verified_command": "research/.venv/bin/python -u research/experiments/reference_phases/trainer.py --device mps --threads 2 --data research/alignment/collar-only/eyes42 --base research/models/ffhq256.pkl --run research/runs/reference256-paper-b64 --resume research/runs/reference256-b64-m8-smoke/resume.pt --batch 64 --microbatch 8 --pl-batch-shrink 2 --mirror --steps 15625 --checkpoint-every 125 --snapshot-every 125",
+  "signal": "SIGINT",
+  "reason": "Preserve500 and release MPS memory to finish remaining C/D within original factorial deadline and unchanged memory guards.",
+  "candidate_sha256": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+  "candidate_numeric_validation_pending": true,
+  "last_completed_metrics_step": 512,
+  "retained_checkpoint_expected_step": 500,
+  "completed_updates_after_retained_checkpoint": 12,
+  "may_discard_one_additional_in_flight_update": true,
+  "production_approved": false,
+  "terminal_exit_pending": false,
+  "pause_script_sha256": "cf0259000adf145516c2a0df275cd33f337e3e9c85a48b74553320da16745dc1",
+  "signal_sent_unix": 1789962741.714518,
+  "terminal_exit_code": 130,
+  "terminal_observed_unix": 1789962766.382496,
+  "pid_absent": true
+}

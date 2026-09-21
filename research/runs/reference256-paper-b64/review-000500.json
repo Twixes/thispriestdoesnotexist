@@ -1,0 +1,130 @@
+{
+  "reviewed_utc": "2026-09-21T03:51:56.560081+00:00",
+  "step": 500,
+  "images_seen": 32000,
+  "production_approved": false,
+  "decision": "reject_current_checkpoint_for_production",
+  "review_method": "Direct native display of all three 1024x1024 step500 PNG sheets and all three375 sheets; each is a 4x4 grid of native256px samples. No new inference, crop, restoration or compositing.",
+  "coordinate_convention": "One-based rows and columns.",
+  "grid_sha256": {
+    "samples-000500-ema.png": "13a0ce3db5bd28f1a34a51b8f8a853cbb0291cf5aa921c69bfa8439aa0b17dc2",
+    "samples-000500-raw.png": "f35f750f4b9ae92b04a8e1bdf4090c989f3205ee2674baca3a7633de8e738092",
+    "samples-000500-untruncated.png": "760603f5a19f756f91d041736b1386d1ddf94f3102c99830a88a04ec8417562d"
+  },
+  "grid_properties": {
+    "samples-000500-ema.png": {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    "samples-000500-raw.png": {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    "samples-000500-untruncated.png": {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB"
+    }
+  },
+  "comparison_review_path": "review-000375.json",
+  "comparison_review_sha256": "799f86581122a22d35170d9b4f86d4051ccd9a7a3a1fa5c6ff5c059b79670e76",
+  "step375_grid_sha256": {
+    "samples-000375-ema.png": "adf3a8c623b4e23a150af1b2280af70423a34584db8e9707b5da566652a7e5c6",
+    "samples-000375-raw.png": "58cf956527319064e5b4458f6dc6e73c06d09d618432622186824650a015ea65",
+    "samples-000375-untruncated.png": "667a8af91f6bc53c70c865326af63abe74d5f403aeed88f3efd6c3afd40f3fbb"
+  },
+  "step375_grid_hashes_verified": true,
+  "checkpoint_numeric_validation": {
+    "status": "passed",
+    "validation_artifact": "checkpoint-000500-validation.json",
+    "validation_artifact_sha256": "2b8176d79da4a7896603c95c39d54c65dd247664b21b3602b8b2819c8b322df6",
+    "validated_resume_input": "resume-000500-candidate.pt",
+    "resume_batch_idx": 500,
+    "images_seen": 32000,
+    "finite_tensors": 989,
+    "ema_equal_tensors": 144,
+    "memory_preflight_free_percent": 78,
+    "peak_rss_bytes": 997015552,
+    "duration_seconds": 1.818854207987897,
+    "preserved_checkpoint": "resume-000500.pt",
+    "preserved_checkpoint_sha256": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+    "preserved_copy_matches_validated_source": true,
+    "candidate_metadata_remains_historical_unvalidated_capture": true
+  },
+  "snapshots": {
+    "ema": {
+      "file": "samples-000500-ema.png",
+      "generator": "G_ema",
+      "truncation_psi": 0.7,
+      "quality_approval": false,
+      "observations": [
+        "Many faces remain severely distorted: doubled or stretched mouths, smeared cheeks/chins, uneven eyes and pasted-looking facial texture. Examples include r1c1, r2c1, r2c4 and r3c2.",
+        "Some lower-face contours look slightly more coherent than375, but skin/eye detail remains patchy and mouths visibly malformed. This is not a recovery to convincing photographs.",
+        "Black neck regions and white tabs appear across the sheet, often attached to implausibly shaped neck/chin regions. Collar presence does not offset face failures.",
+        "Hair and backgrounds vary, but fixed-source remnants and mixed apparent age/presentation remain; an adult-male-only distribution is not established. No obvious hats in this fixed sheet."
+      ]
+    },
+    "raw": {
+      "file": "samples-000500-raw.png",
+      "generator": "G",
+      "truncation_psi": 1.0,
+      "quality_approval": false,
+      "observations": [
+        "The same catastrophic failures from375 persist at r4c3 and r4c4: large architectural/bar-like background structures replace most of each face. At500 these regions are at least as pronounced; they are not resolved transient defects.",
+        "The other14 tiles retain recognizable faces, usually adult masculine presentation with black clerical shirts and white tabs. Beards, mouths and some eye contours are clearer than375, especially several upper rows.",
+        "Facial rendering remains uneven: soft or painted skin detail, irregular eye boundaries, heavy dark facial-hair regions and occasional odd hair/forehead contours. Native samples are only256px; this sheet does not establish high-resolution photorealism.",
+        "Several beards, hairstyles and poses remain, but dark hair, related facial proportions, frontal or slight-turn portraits and repeated architecture dominate. This fixed grid cannot establish broad diversity or absence of memorization.",
+        "No obvious hats in sixteen samples. Most intact portraits have recognizable tabs; two faces destroyed by background structure make the overall set unacceptable."
+      ]
+    },
+    "untruncated": {
+      "file": "samples-000500-untruncated.png",
+      "generator": "G_ema",
+      "truncation_psi": 1.0,
+      "quality_approval": false,
+      "observations": [
+        "Severe mouth/chin/cheek deformation persists, including r1c3, r2c4, r3c2 and r4c4. Eyes and skin look smeared or uneven rather than naturally photographed.",
+        "Source-like glasses, microphone at r3c2, variable presentation and extra person/object context around r4c3 remain. This is not a clean distribution of solo adult male priests.",
+        "Background architecture is prominent in lower-right samples, although raw G has much more extreme face-erasing structures. White collar-like patches do not fix the anatomy.",
+        "No obvious hats, but age/sex eligibility and subjective hotness are not established by this small fixed sheet."
+      ]
+    }
+  },
+  "comparison_to_375": "Most intact raw portraits improve modestly in local legibility, but the same two catastrophic raw failures persist or worsen. EMA variants remain far below acceptable facial quality. No broad quality recovery or production approval.",
+  "interpretation": [
+    "Persistence at the same two fixed latents across375 and500 is stronger evidence of sustained local failure than one grid, but does not establish irreversible collapse of the entire model.",
+    "Source identity preservation is not a user requirement. Rejection concerns malformed or missing faces and inadequate photoreal detail, not identity change.",
+    "Numeric validity, learned tabs, lower losses and no obvious hats in16 samples do not establish acceptable unseen output quality.",
+    "Root retains the continuation/pause decision; this review issued no signals."
+  ],
+  "monitoring": {
+    "started_utc": "2026-09-21T03:18:11+00:00",
+    "deadline_utc": "2026-09-21T04:03:11+00:00",
+    "first_observed_step": 440,
+    "checkpoint_first_observed_utc": "2026-09-21T03:47:28.447115+00:00",
+    "capture_metrics_step": 500,
+    "pid": 82281,
+    "pid_observed_live_at_capture": true,
+    "poll_interval_seconds": 45,
+    "log": "checkpoint-000500-monitor.jsonl",
+    "root_confirmed_stop": {
+      "source": "pause-for-factorial-after500.json",
+      "sha256": "a129eb25200bb63f4a6ab474455895a5599c005cc200c2437d2acddaf802aaaa",
+      "reported_exec_session": 80836,
+      "reported_terminal_exit_code": 130
+    }
+  },
+  "scope_limits": [
+    "No training, model inference, downloads or active source/input edits.",
+    "PNG review, provisional disk capture, guarded CPU1 mmap numeric validation, and exact separate checkpoint preservation completed. No generator forward or optimizer update.",
+    "No production approval."
+  ]
+}

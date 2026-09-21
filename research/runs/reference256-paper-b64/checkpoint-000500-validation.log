@@ -1,0 +1,97 @@
+{
+  "reviewed_utc": "2026-09-21T03:53:02.302351+00:00",
+  "validation": "passed",
+  "production_approved": false,
+  "scope": "CPU mmap finite-tensor and exact G_ema export validation; no inference or training",
+  "resume_step_field": "batch_idx",
+  "resume_batch_idx": 500,
+  "generator_step_field": "step",
+  "generator_step": 500,
+  "images_seen": 32000,
+  "sampler": {
+    "seed": 20260920,
+    "consumed": 32000
+  },
+  "schema_source": "train-source.py:73-82, 250-259, 329-337",
+  "load_policy": {
+    "resume": "mmap=True, CPU, weights_only=False: trusted own trainer output with NumPy RNG state",
+    "generator": "mmap=True, CPU, weights_only=True"
+  },
+  "torch_version": "2.14.0",
+  "threads": 1,
+  "memory_preflight_free_percent": 78,
+  "peak_rss_bytes": 997015552,
+  "duration_seconds": 1.818854207987897,
+  "finite_tensors": 989,
+  "total_tensor_elements": 196381429,
+  "nonfinite_tensors": [],
+  "ema_equal_tensors": 144,
+  "ema_equal_elements": 24943026,
+  "hashes_before": {
+    "resume-000500-candidate.pt": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+    "generator-000500.pt": "5c2da2bad4f59fee107e7adfb84ad3cbcf734c233561e2c1329e52888f89f73d",
+    "config.json": "0576aec7d45958bfcb510b3d817a81d045408bc042039669bcbfe608f3cf1039",
+    "train-source.py": "00b5266875dbe07169025eb7b38b22a412230019c52d1bae77eeb8daf0045b13",
+    "adapters-source.py": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+    "samples-000500-ema.png": "13a0ce3db5bd28f1a34a51b8f8a853cbb0291cf5aa921c69bfa8439aa0b17dc2",
+    "samples-000500-raw.png": "f35f750f4b9ae92b04a8e1bdf4090c989f3205ee2674baca3a7633de8e738092",
+    "samples-000500-untruncated.png": "760603f5a19f756f91d041736b1386d1ddf94f3102c99830a88a04ec8417562d"
+  },
+  "hashes_after": {
+    "resume-000500-candidate.pt": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+    "generator-000500.pt": "5c2da2bad4f59fee107e7adfb84ad3cbcf734c233561e2c1329e52888f89f73d",
+    "config.json": "0576aec7d45958bfcb510b3d817a81d045408bc042039669bcbfe608f3cf1039",
+    "train-source.py": "00b5266875dbe07169025eb7b38b22a412230019c52d1bae77eeb8daf0045b13",
+    "adapters-source.py": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+    "samples-000500-ema.png": "13a0ce3db5bd28f1a34a51b8f8a853cbb0291cf5aa921c69bfa8439aa0b17dc2",
+    "samples-000500-raw.png": "f35f750f4b9ae92b04a8e1bdf4090c989f3205ee2674baca3a7633de8e738092",
+    "samples-000500-untruncated.png": "760603f5a19f756f91d041736b1386d1ddf94f3102c99830a88a04ec8417562d"
+  },
+  "artifacts_unchanged": true,
+  "validated_resume_input": "resume-000500-candidate.pt",
+  "provisional_capture_metadata": {
+    "captured_utc": "2026-09-21T03:47:42.378784+00:00",
+    "status": "UNVALIDATED_CANDIDATE",
+    "production_approved": false,
+    "numeric_validation_performed": false,
+    "checkpoint_step_verified": false,
+    "candidate": "resume-000500-candidate.pt",
+    "candidate_sha256": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+    "before": {
+      "metrics_step": 500,
+      "images_seen": 32000,
+      "hashes": {
+        "resume.pt": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+        "generator-000500.pt": "5c2da2bad4f59fee107e7adfb84ad3cbcf734c233561e2c1329e52888f89f73d",
+        "samples-000500-ema.png": "13a0ce3db5bd28f1a34a51b8f8a853cbb0291cf5aa921c69bfa8439aa0b17dc2",
+        "samples-000500-raw.png": "f35f750f4b9ae92b04a8e1bdf4090c989f3205ee2674baca3a7633de8e738092",
+        "samples-000500-untruncated.png": "760603f5a19f756f91d041736b1386d1ddf94f3102c99830a88a04ec8417562d"
+      }
+    },
+    "after": {
+      "metrics_step": 500,
+      "images_seen": 32000,
+      "hashes": {
+        "resume.pt": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+        "generator-000500.pt": "5c2da2bad4f59fee107e7adfb84ad3cbcf734c233561e2c1329e52888f89f73d",
+        "samples-000500-ema.png": "13a0ce3db5bd28f1a34a51b8f8a853cbb0291cf5aa921c69bfa8439aa0b17dc2",
+        "samples-000500-raw.png": "f35f750f4b9ae92b04a8e1bdf4090c989f3205ee2674baca3a7633de8e738092",
+        "samples-000500-untruncated.png": "760603f5a19f756f91d041736b1386d1ddf94f3102c99830a88a04ec8417562d"
+      }
+    },
+    "claim": "Exact stable live-resume bytes captured in checkpoint500 save-order window; tensor/schema step not inspected",
+    "capture_script_sha256": "947ba4982603b001db89f34429479da87b0a5cb957b6c1704b8370226b074141"
+  },
+  "preserved_checkpoint": "resume-000500.pt",
+  "preserved_checkpoint_sha256": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+  "preserved_copy_matches_validated_source": true,
+  "template_validator": "verify-checkpoint-000375.py",
+  "template_validator_sha256": "403dea888eb9b751df7570a5e209f4a92096d4cb49db042641a939743bcad024",
+  "validator_sha256": "532853d5dae4c27120d113f0a79a85b5d98245906a9d3485411b9fdb55f29d20",
+  "limits": [
+    "Numeric finiteness and export equality are not image-quality approval.",
+    "Saved grids are checked by hashes and trainer save order; no forward was rerun to reproduce pixels.",
+    "Only step500 artifacts are reviewed; the live training process continued unchanged.",
+    "An exact copy of the validated live resume was preserved separately as resume-000500.pt."
+  ]
+}

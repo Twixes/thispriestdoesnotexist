@@ -1,1 +1,30 @@
 {"arm": "A", "complete": true, "seconds": 1330.895043166005, "peak_rss_bytes": 6516506624}
+{"arm": "B", "complete": true, "seconds": 1445.4625086669112, "peak_rss_bytes": 6368116736}
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_factorial/runner.py", line 278, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_factorial/runner.py", line 264, in main
+    memory_guard()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_factorial/runner.py", line 33, in memory_guard
+    if not match or int(match.group(1))<MIN_FREE_PERCENT:raise RuntimeError('Defer: at least 35% free memory required')
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Defer: at least 35% free memory required
+     2777.49 real      3425.40 user       633.18 sys
+          6516506624  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+           311941371  page reclaims
+               16866  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                5960  voluntary context switches
+            23980029  involuntary context switches
+          2341337437  instructions retired
+          5391839318  cycles elapsed
+            13779376  peak memory footprint

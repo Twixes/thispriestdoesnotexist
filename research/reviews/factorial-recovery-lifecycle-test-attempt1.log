@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py", line 174, in <module>
+    main()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py", line 116, in main
+    wait_for(directory / 'spawn-ready.json')
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/test_factorial_recovery_lifecycle.py", line 26, in wait_for
+    raise RuntimeError(f'Timed out waiting for dummy fixture {path.name}')
+RuntimeError: Timed out waiting for dummy fixture spawn-ready.json

@@ -1,0 +1,69 @@
+{
+  "reviewed_utc": "2026-09-21T03:44:03.193659+00:00",
+  "scope": "Static source and small existing JSON inspection only; no launcher execution, imports of experiment code, model/tensor loads, process changes or source edits.",
+  "decision": "fix_child_cleanup_before_first_execution",
+  "source_sha256": "51285c6f7a1b97318ae2586ecfd92ef3a02656f36851125a32392b61efe838f4",
+  "input_sha256": {
+    "research/runs/recover-factorial-CD.py": "51285c6f7a1b97318ae2586ecfd92ef3a02656f36851125a32392b61efe838f4",
+    "research/experiments/paired_factorial/runner.py": "10791901f013c4ae8e89491093c35b1c264e00635f07d5e292a2f3cf806b2011",
+    "research/runs/paired-factorial-600/launch.json": "7f7a53e4f6a5bfb596be32be23af46ce09361f448b6d691b2a36cfda94b18177",
+    "research/runs/paired-factorial-600/source-hashes.json": "2dee152bbfddeb3d796aa99f224067cece9ac005ecc50cc85ec242c8bef2b7ab",
+    "research/runs/paired-factorial-600.launch.json": "253bac81557f1c9f54e2aa514b48f5f7e57bd996ce2d3a22911ffebd3079e6d4",
+    "research/runs/paired-factorial-600/A/complete.json": "5956132e89e6b5224cbeec7b82f0f98f5e2476c71b91c290578f69a7c1fdfc87",
+    "research/runs/paired-factorial-600/B/complete.json": "e7e60826a6bf1569c27996ae1de208d2c5a62c22cbb4cbc80c8460298b340a9b"
+  },
+  "findings": [
+    {
+      "severity": "material",
+      "file": "research/runs/recover-factorial-CD.py",
+      "lines": [
+        89,
+        98,
+        117,
+        120
+      ],
+      "title": "Non-timeout coordinator exit can orphan the live recovery worker",
+      "detail": "Popen creates a new session/process group. Cleanup is only inside TimeoutExpired; KeyboardInterrupt bypasses except Exception, default SIGTERM exits the coordinator, and a launch-record write failure immediately after Popen also leaves the worker running. The detached worker then continues independently until its own watchdog rather than stopping with the one-shot coordinator.",
+      "recommended_change": "Own the process immediately after Popen inside a try/finally, and terminate/reap the owned child group whenever control leaves with a live child. Handle SIGTERM as a controlled exception/exit as well as KeyboardInterrupt. Tolerate ProcessLookupError during group kill. Persist the interruption/failure when possible without letting record-writing failure bypass cleanup. Never target unrelated processes or restart an arm."
+    }
+  ],
+  "verified_design": [
+    {
+      "topic": "Original deadline",
+      "assessment": "Reads the existing absolute deadline, observed exactly1789973494.608341, passes it unchanged to each worker, checks before launch and final comparison. Does not create a fresh four-hour budget."
+    },
+    {
+      "topic": "Resource constraints",
+      "assessment": "Coordinator requires35% free memory; pinned worker independently rechecks35% before imports, retains10GiB observed peak RSS watchdog and original absolute deadline. The RSS limit is sampled, not a hard allocation cap; coordinator metadata should preserve that distinction."
+    },
+    {
+      "topic": "No reruns or retries",
+      "assessment": "Requires no recovery record/comparison and absent C/D directories/logs. Checks original supervisor exit1 and memory-deferral text, validates A/B300-update completion, launches only C then D once, stops on nonzero exit. A guard failure after recovery-record creation intentionally prevents automatic retry."
+    },
+    {
+      "topic": "Source/data provenance",
+      "assessment": "Hashes all experiment Python sources and parent-pins against original launch/source-hashes before launch and at completion. Pinned worker verifies original weights, helper files and data. Existing expected/current hashes and A/B results remain the provenance basis; recovery source hash is separately recorded."
+    },
+    {
+      "topic": "Matched comparison",
+      "assessment": "Final checks require all four initial student hashes, initial tensor RNG hashes and all300 recorded pair/fresh-latent draws to match. This supports the limited initial-weights/sampling statement; it does not certify equal outcomes, quality or identical machine load."
+    },
+    {
+      "topic": "Timeout group targeting",
+      "assessment": "Timeout cleanup targets the new child process group and waits for its wrapper; this correctly avoids stopping the reference or unrelated jobs. The timeout remaining is calculated before Popen and record IO, so parent timeout can lag that overhead slightly; pinned worker independently checks the absolute deadline."
+    }
+  ],
+  "nonblocking_notes": [
+    {
+      "topic": "Historical environment comparison",
+      "detail": "Pausing reference before C/D changes contention relative to A/B. Wall-time comparisons are consequently descriptive of these runs, not a controlled same-load causal speed comparison; initialization/loss matching remains a separate claim."
+    },
+    {
+      "topic": "Audit strengthening",
+      "detail": "Recording hashes of original launch/source-hashes and A/B complete JSONs in the recovery record, and asserting each result arm equals its directory name, would improve audit specificity. Existing files are trusted local evidence, so these are not the primary execution blocker."
+    }
+  ],
+  "execution_performed": false,
+  "source_files_modified": false,
+  "models_loaded": false
+}

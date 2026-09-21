@@ -1,0 +1,33 @@
+{
+  "captured_utc": "2026-09-21T03:47:42.378784+00:00",
+  "status": "UNVALIDATED_CANDIDATE",
+  "production_approved": false,
+  "numeric_validation_performed": false,
+  "checkpoint_step_verified": false,
+  "candidate": "resume-000500-candidate.pt",
+  "candidate_sha256": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+  "before": {
+    "metrics_step": 500,
+    "images_seen": 32000,
+    "hashes": {
+      "resume.pt": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+      "generator-000500.pt": "5c2da2bad4f59fee107e7adfb84ad3cbcf734c233561e2c1329e52888f89f73d",
+      "samples-000500-ema.png": "13a0ce3db5bd28f1a34a51b8f8a853cbb0291cf5aa921c69bfa8439aa0b17dc2",
+      "samples-000500-raw.png": "f35f750f4b9ae92b04a8e1bdf4090c989f3205ee2674baca3a7633de8e738092",
+      "samples-000500-untruncated.png": "760603f5a19f756f91d041736b1386d1ddf94f3102c99830a88a04ec8417562d"
+    }
+  },
+  "after": {
+    "metrics_step": 500,
+    "images_seen": 32000,
+    "hashes": {
+      "resume.pt": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+      "generator-000500.pt": "5c2da2bad4f59fee107e7adfb84ad3cbcf734c233561e2c1329e52888f89f73d",
+      "samples-000500-ema.png": "13a0ce3db5bd28f1a34a51b8f8a853cbb0291cf5aa921c69bfa8439aa0b17dc2",
+      "samples-000500-raw.png": "f35f750f4b9ae92b04a8e1bdf4090c989f3205ee2674baca3a7633de8e738092",
+      "samples-000500-untruncated.png": "760603f5a19f756f91d041736b1386d1ddf94f3102c99830a88a04ec8417562d"
+    }
+  },
+  "claim": "Exact stable live-resume bytes captured in checkpoint500 save-order window; tensor/schema step not inspected",
+  "capture_script_sha256": "947ba4982603b001db89f34429479da87b0a5cb957b6c1704b8370226b074141"
+}

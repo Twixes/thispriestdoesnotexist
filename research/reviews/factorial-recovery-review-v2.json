@@ -1,0 +1,77 @@
+{
+  "reviewed_utc": "2026-09-21T03:48:30.207864+00:00",
+  "decision": "previous_material_cleanup_finding_resolved_for_tested_source",
+  "source_path": "research/runs/recover-factorial-CD.py",
+  "source_sha256": "816b3aabb6252e0f0d2887bfaa3889b6203ba4d33e23982e66b20e71d7a478c9",
+  "prior_review_path": "research/reviews/factorial-recovery-review.json",
+  "prior_review_sha256": "870ac98b7d88397dc7f2aa7f00220fcca4325bc54ee2212c2877b1fa3df94bb9",
+  "original_review_preserved": true,
+  "finding_resolution": "Owned child process is covered by finally immediately after Popen. It kills only the new-session group, tolerates ProcessLookupError, waits/reaps the direct child and records returncode. Outer BaseException records failures, and SIGTERM raises SystemExit so cleanup runs. The four requested interruption/failure paths now passed controlled process tests.",
+  "test_evidence": {
+    "test_factorial_recovery_lifecycle.py": "3e32eb3dc68e3cbb3ad19de6402bc5b668e4fd35c6c6fe722f6e1d3f9c54bacd",
+    "factorial-recovery-lifecycle-evidence.json": "654aa2c440b0a6cb7ce9ef48a30bf09355140807bd2027bf46549683d7dff7b2",
+    "factorial-recovery-lifecycle-test.log": "bd18d8bdf02116d811dccbf75f42a8b7c47214615fd2813d068d2509550d4a30",
+    "factorial-recovery-lifecycle-test-attempt1.log": "956ab2a41e46124729bd9d23a241d4d759de71a21b57f7b1f44d32189483e860"
+  },
+  "test_result": {
+    "exit_code": 0,
+    "wall_seconds": 1.5626314580440521,
+    "scenarios": [
+      {
+        "name": "write_failure",
+        "coordinator_exit_code": 1,
+        "child_reaped_returncode": -9,
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true,
+        "only_C_spawned": true
+      },
+      {
+        "name": "sigint",
+        "coordinator_exit_code": -2,
+        "child_reaped_returncode": -9,
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true,
+        "only_C_spawned": true
+      },
+      {
+        "name": "sigterm",
+        "coordinator_exit_code": 143,
+        "child_reaped_returncode": -9,
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true,
+        "only_C_spawned": true
+      },
+      {
+        "name": "deadline",
+        "coordinator_exit_code": 1,
+        "child_reaped_returncode": -9,
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true,
+        "only_C_spawned": true
+      }
+    ]
+  },
+  "first_test_attempt": "Harness proxy omitted subprocess.STDOUT; initial attempt failed before spawning a dummy. Corrected only the harness proxy and narrowed injected write failure to records with wrapper_pid. Failed log retained. No real model or runner could be launched because the only Popen implementation is the dummy substitute.",
+  "remaining_notes": [
+    "No further substantive blocker found in the reviewed bounded C/D coordinator. This does not certify model quality.",
+    "Original absolute deadline,35% free-memory requirement, sampled10GiB peak-RSS watchdog, no-rerun/no-retry behavior and final matching checks remain unchanged.",
+    "SIGKILL or host power loss cannot be handled by Python finally; those were not tested. The tests establish ordinary controlled SIGINT/SIGTERM, timeout and write-failure cleanup.",
+    "Test fixture substitutes paths/provenance/memory guard and spawned command; actual recovery wait/finally/signal/error-recording code runs unmodified. No model loading or training occurs.",
+    "A/B and later C/D wall time still have different reference-run contention; treat throughput comparisons accordingly."
+  ],
+  "recovery_code_modified_by_reviewer": false,
+  "real_training_processes_touched": false,
+  "real_model_imports_or_loads": false
+}

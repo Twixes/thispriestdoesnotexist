@@ -1,0 +1,26 @@
+{
+  "decision": "Reject B for production. Recover only unstarted C/D after reference500 capture and resource pause, retaining original deadline and guards.",
+  "all300_pair_and_fresh_draws_equal_A_B": true,
+  "initial_weights_and_sampling_rng_equal_A_B": true,
+  "B_seconds": 1445.4625086669112,
+  "B_peak_rss_bytes": 6368116736,
+  "training_fit_gate_passed": false,
+  "observations": [
+    "No robust four-of-six photographic collar fit; native030 still has pitted dark neck texture bordering a pale patch.",
+    "Native held-out028 retains ordinary clothing with neck darkening, not a convincing clerical collar.",
+    "b2-051 has a partial plausible tab, but independent all14 review finds no overall collar-structure pass."
+  ],
+  "scope": "Root viewed B300 contact, native030 and held-out028; independent reviewer inspected all14 native final portraits plus source30 contact and four source/student pairs. Separate audit checked232 native PNGs and allfour checkpoints.",
+  "evidence_sha256": {
+    "research/runs/paired-factorial-600/B/complete.json": "e7e60826a6bf1569c27996ae1de208d2c5a62c22cbb4cbc80c8460298b340a9b",
+    "research/runs/paired-factorial-600/reviews/B-300.json": "294409c384fc9892e4f2809b04e1af2a1da4ad9a36a2869e47d7f572a1caf78f",
+    "research/runs/paired-factorial-600/reviews/B-source30-final.json": "0f93683f9a4485796d3735deab84597c3d90845cb7f3c10db687b95cab4330bf",
+    "research/runs/paired-factorial-600/B/preview-300/contact.png": "05f658319857088d6241d21ca7da55b14cff04aa1f866027c5f544a69d67e21b",
+    "research/runs/paired-factorial-600/B/preview-300/030-gray.png": "f8542b29796625e60d43c6b23fac392ee1eaf619136ee1b769c8ea37b409fbf2",
+    "research/runs/paired-factorial-600/B/source30-final/028-gray.png": "eb9275937c7bfd891f99c75b27c80859bc81ad6f12e36d17a7f0f4e9d9bd43bc"
+  },
+  "supervisor_terminal_exit": 1,
+  "supervisor_stop_reason": "Between-arm free memory below35%; C not started.",
+  "original_deadline_unix": 1789973494.608341,
+  "production_approved": false
+}

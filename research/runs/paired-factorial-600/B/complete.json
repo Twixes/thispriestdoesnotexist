@@ -1,0 +1,1557 @@
+{
+  "complete": true,
+  "arm": "B",
+  "smoke": false,
+  "updates_per_trajectory": 300,
+  "actual_optimizer_calls": 300,
+  "milestones": [
+    {
+      "fork_step": 0,
+      "checkpoint": "checkpoint-000.pt",
+      "sha256": "a31941f46a0aba374f132d634ef00e970d6dfddbbe94edefaa69871433700f25",
+      "student_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4",
+      "preview_seconds": 8.976178458076902
+    },
+    {
+      "fork_step": 100,
+      "checkpoint": "checkpoint-100.pt",
+      "sha256": "bbb9d9615a4124971efdb8e5487d390bafe9edf6ba8baa2416ee14048e8fe87c",
+      "student_sha256": "6c4551d5cdc83d7404b9166c2f51080b424c87e208060e71d69e34a385e06339",
+      "preview_seconds": 8.766946874908172
+    },
+    {
+      "fork_step": 200,
+      "checkpoint": "checkpoint-200.pt",
+      "sha256": "e5b5de3d25c1a9ae878dacf08167fb80a5d413c2814738f8caf6a91b32fc43b8",
+      "student_sha256": "9bad4decc05d923a91028a8b566d5b620b07ac675360059eebfd1f694131a10c",
+      "preview_seconds": 9.98112037498504
+    },
+    {
+      "fork_step": 300,
+      "checkpoint": "checkpoint-300.pt",
+      "sha256": "18ee4c1323b16af6301975a4a4216f92ae4ade6bb0d7fbeb282ee7b0fa9ed469",
+      "student_sha256": "306f1389ce507d1a1dfe177c27e15806bf3e50a4b118c101f7d410eba18776bf",
+      "preview_seconds": 10.294750625034794
+    }
+  ],
+  "schedule": [
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "14059a960b6c022f18c6f1c3e5efd412117fdb4ec6d28669ef6b67e47bd35d0f"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "786ff58b897ef3c1f68d1070fc4de0bdadf929f774a3915cbed9571436ce258a"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "0d747a54b9faac8d40c7643d39ea3d51316bd2708397569e64d815b6ca7f0ca4"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "5dcb5583a7009fe62399ccc61a0d529d32b227bebcf204614d96ad9e1601c860"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "8ba00682984888f995c727e4bf47f2d4664416c6bc691ddc7752cad76589bbd8"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "3b65375b0141184516acee6d858d60d5290819be02960aa940f6099fa0c7771b"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "7407d6ba2f867fc08cbfa98ff6c765842c08d20f644b20e9fe9e3da708ac4179"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "31a12c105e1b17a4351ab99bc83e4e82fd75b2cff0f0e22c444570bf13b50af9"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "f84dd72cbc60a7ba2771c4418645b4ec0d571eb810c17c2c01773f28f40a7606"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "7df5f34452754b234a059b2547d5f7d3c8c6927d84f53a998e4f2940db4f8516"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "9f04d67781c17578a91eb4dc3965093e08b142aaee0d201259c2a31cb8a432c5"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "c748907ebb37ea8edf1d78f365ac6fab0d21d595e68ebdaf1b4412b1785140e5"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "f40197df7f9a278efd7ab897dc9052e673f4c816c7db299f0b6f80605f9129b8"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "c0d6a11e13c55c49f6c29377c099db6e1c7083e2757caa92ae7baa52e3e1a027"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "6d02200157b5f2f47781e145dffe19b0794fcfa75acbbf5bf1c46472f818b72a"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "3f425efffd277be43581e4f06ce680314b28762a21003f71284cd50c5aa1a8f4"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "cfd0b1a58fb9b386c8818747f9ae7efa96c25ff17d6fccaa217db75c111b5166"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "142a31a1af24e0a92cfe907965729cd78ead03eb650af7d47a004102645a1013"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "a57a6e78e31b3e317078f81389bf10c797c0f0587b1c44a8b13e54f8bc649a46"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "0f2e87694218df027e7051d3b499e1f4fc88855f6c965e6d0f857edde85fb00d"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "eae2196bd155d15cca812b7d7f566408f94acfa0d7fb944a49674a4f71e1543d"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "ba884308f8ca3f58df12492dc1fce1a7abcf7a23838cd1abbac1f36caf271286"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "ddd7678f16d2eb19061195ce16c11a4c80d3add682392e731d0cff76f7b91f11"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "73f6c708b985a97729ca515c7f26a933722977fa8b45df48374b1149af4456e6"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "ad3e62d969cf5a3d84dd4dae9a903f9ad7bb5ea8d772fcd2a97701929ec9e380"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "aafb11823f1da8892ae588a07c7bf98279ec9b2f171c8f79e4c7323a285edec4"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "afdbae844dc300431d89ae8de8ba5f44a9ba3468786e7057707a672ca38f365a"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "154ed27eab24d94e94c9740be22756c78fbf25e99d25abf6e75fe30326138eff"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "31411c8843d47a1d444a2834e6c429d1b085de40e8cf0bb315806505961524fc"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "6fe17e0cc107d926d110564120ed25b863cee268ffd8b4c934a8a92ec3aca036"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "37e4f7b3a3cf42716230e7809ea20a30469e590ec27baf3752a2d010dd7f68df"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "a5409c4390641d6e5abb96d92e464128bdd39e6d9dbeb338dfcd1318cf18ae7a"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "6d61337beb0c6b66245d293a3a05669306f90c4820370fcc541c9b2b69cebc27"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "a97d143a952133728aa8be2c151839418a5d6d0142ea089a40dfd0d3ed7a32bc"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "0126b14f07220804f41cd0e96d54215df5c8d40e7bfdd4e6b596b4635cb4b092"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "9c08959c30950fcc25f7f3d2d4bbe684841acaad309fb7764c6205937f0da32f"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "4bfb2bdfbb47d6f42aff2c99d9d0384bc35270cd03ee47b1ba8b97d63cdf9f47"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "207f3a259c73d174a62d1c39385617c521abb5495fbb9263eedcb8a59f514641"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "dafe582c7f12b9cf7b2a18f32a8fcb6e1083e22c031ce20d22b3f8b75b067a66"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "3cf84e08d107ef630d91c4404f09f36ef0e4a65fd03ca815b23b1ea5456b0a97"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "ba3bf0b852fc5acdd9d487ce89ce8e22e21d3a357faaf4abcf3bf666d38e474f"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "d9e17190b7f970c7242fd6b779bc59cbadf45391d45789be75d50a12f63a656f"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "206cd1df0362fc0632ad7d473ba10ea3af76121c0f9139759bfad3e776e65d5f"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "21cae3563735a90abc8e2d5eba6bbf9896d40b1d1102ccd65b940f90572ab0ca"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "98564cf2fa154d73c543b4cbde2c0fa7c32983d779820bfc1e58016ac3382307"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "9c4be97a6db358b3452c9ef49454c707bfd45862c4e98f6bdbac89122c685928"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "14f03ec37ad63cc429089fb096d2872e02eb16663891ed85e15bd27540781000"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "496d7505f03c5b607359d6196b417f0bacbdf8e492e9200b2fd45573c139992e"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "f04c03e5835b255f7dde8ee7784ad37a931a0bff0b7b51ad5aa79140c29931fb"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "ab33d335a89c4abc7f9cf21aeb399ffebd396c78a365b70877c25092251096ac"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "43911165c68736405b2ae090b13914e1cb2b7e560ab58dbd045f7a250f0ebb67"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "2063e0a40ce659480f79ad7edfedba5d8e8063291adb7c0aabcb97d2d397a510"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "b7936778a7385f2c6c2e8c56f872c0edc97c867d21bd0cec7f87d044c633cd92"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "2857c16e36d01f8fe243faa33524d71747d91b7842ac270767c103cbac233ab2"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "e0088b388bf85c43217680d099bbaf7186d0202359f749ecb844ad9ab281c483"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "4f02d906d6cdae8b01dfa42d2d62241a9d6903beaa1b1307faf34e06a7c33bf1"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "9228794c3e3da1bd10e3bd960e8c0a3cc25e6a78c907ad4391060c57f1008e6a"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "f42b96d853192482709ce3ffb8a4f8d82eefe00e016c0241fbd1a4137baaba40"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "e44579f582bf29e3cfef684a272bd33dfe83cb1b061b9f0fcd3cc2e271588ee2"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "befa8912fe02d53f7fb6e1b17ff3e87e31ce202dcd5d56728011456ea9cfd3ff"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "d586fd3d3b5858eaef930953abca2fcd42afc0e0a6e7d5f738110a38c9feb879"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "da456aaf688ef237255f5c8a347043a66efdb151145111fc6a88ee7c5afcee42"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "9ad9fbae7cda2d248a6c8fa391e05d01bdcba7e4f5f8f150a6a95a492166cba6"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "e49bd33a8567bcc4e9089095e5437cc0c170b25f43a66692f7c579a1bb7ff5e6"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "56f9b6f9b049e9704bf87e31201f280d92544b023ea57454f2d795c61330c2dc"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "6b5b70bb8637b313a7b9b057837438f21e658e62dc74b02baef2e81a62917a74"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "6a6a41453e3107bb977cc4b15117e5d3f9d4f0e52e50070a43c5793dd9994a64"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "55384c140ea2652320b0953f3f0028fae6f2d777997bc47366ccffa4374a187b"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "02d431b0b577bf1474845263edf63c39693d5f14ce47fee09a6835ede1b41165"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "91b3456771a46f62ba62ceba0ec59b05f5b9c329fd0599fd094e0c71aab21a3c"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "ebd1b864fbb50a8a1dc1387924a0ba8028d53f89a4337cf9c919b714f864f2e3"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "168e2785b73c16234b1b31efbc197bc5510413eaf5f7617ccfc04c68c0a94d92"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "9bf6a0a32230a429498dace73857fd8e1fab2459e2550b8829fbca99352be116"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "68ade17767d10c8a97154d5763205ce0f41b91522fefe96244155326683cd1e2"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "064983d28f539dda802fd425c2bcdae79a4351d3ab852ccd26ff58390ac0598e"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "7dade3f3dd33c2ea40d39661d8b288110c49cbac36e59411524a43b251d69276"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "ab3e635316de766ebb8d5a64fbb9afd064c596221af2d3f10240b6d3f2ac845f"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "99eafb0c4e3835c615cab2443bcb20916f275af7f2cae63040a0fba3bb4c5112"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "f7d148c1a286e420a3b79c43b2c5434542b698813cfd42f4c0f69f2ce0db88d6"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "0eb0b8c54ed5cae8f14afefc9d8e89686494a9ac576e28cd8df015559e7a36c1"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "0aef909dfb0cd2b078ecfa1dd86fd0e6fba53e1dc27db52c432a7edf94037409"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "edcc79ae2200fa2d77e24cdf7fbc55d14534bbbbb7bfdc9e3898d7359fb66d76"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "f0d4b2b88881e86d5dd1e025af5b3f38119ddc178f48c88b4cf8fc492fb25071"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "c503a7a2eebc44374e27b5c56739cbd895775856b12812f272f770aee7cda570"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "fffb9c27b7aaf2a1b144b5748b723a630f214d22fae39f36933e0bf6896fd27e"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "100d72c3f306737562421c8afdf9b0eefd8cbe46e44136453c5a2fcc81763729"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "a693c21bf4cbba9249ff886451c13effcb78657d4f035c41440f8f97c2351204"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "2f4094d63842b948da5a1bb45e0a568fde06478efae61a90fc8b94cef58affea"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "44ff21ae3b86176544bb6a55f7b0702a7993e78c09ba20d7bd59147e790dc444"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "6d9b690dff59cde6873dc1c30a990c798694cf6d15da0c517cbf6e114274b921"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "e35d9fcb524601d95fc4bba0ec8d3f1c9fcde4ed12b74dda547babae6bd2124b"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "69d0468836203367420a0b87370a0682dddf10a6c2eb00b097da907b5488f402"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "e5c1d806322e3a5f44362ad7a8ed585d5780ad098cb1f5795f877a0e9b0636a4"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "9e1cd7604630381ed12ba3e012d40a416d6e39ccc9483dfb3eab0274221e6c93"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "04dc0a629fccaab2192e7e2a1b4aefa97d82c02e7e05aa69e82ea91db1697f08"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "f8fc7b81f9ddf093a8be0343d22fa9578f994dfab33c94195d3c267062584d86"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "df96f5d84b34d9c130bb84d6beeeded3d6e28f68a49863ea172d16dbeb9b2191"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "36d2c891b3ba4b8ca2f8cd976131e567418b9f841162eeb95c2afab3af031714"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "863a272dc294bc91f4341459003d25e945d741b0df0aa70238046e4db64f7309"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "b789c25bc6c2feb91e37b21483c3e70f02e66100385aaf13cfc7647c4e56291d"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "d065907bfb893e5d63c51affdf6113ff438e71af81ef28bd16671240c8f20035"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "7cd06e118edda943bce76c88cafcddc481a1c887aac007cf1ff2bb4d12644132"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "9731480e23d01654bd240eb8f101a260324880e61e766b01432cc6c6ee185af6"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "b726c21d2e3cfcfdb6149fe9ecf05ba76d29a16c185463d464eeb509635c33ad"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "89f3acbca6e965088d173af2163d625e089600b1b2211864ba206e6705afe85b"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "ed8bd491a0f1bac87e9a4ad8fa4c43b12e45a543a63746ea050e85a93bc6a062"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "07e20d857d6d57cebe536f94f2db0f08d6eda6343603b12ac79690d2d6be0fc1"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "79769303fdadfb571fe33ecb7d692245af38d2b0dd8be28555e4498c7022fe66"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "7b1164ea53f1777b9e31253f39d5a94f78977b1aa89a1c2b89aa5bef4980ac8c"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "dcef6448973fd9b9a7043a22afd986f2378752d7f72dd4305b02520b40fc09f5"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "0f5c4aab240f9d57fcf6f1955ad8d8c4bee2d305f5ada77372d7255f951daaa7"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "4313fdf10df5e6a99a6bf211587c55005c43ff0824abff5ad38b333330d476a3"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "06fbb0281f2b827fd2257fcb58f42a189e179030a824e56f38c09550fa5781bc"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "4b4ce861465dcb2fb153d5db9f2149543e89fd0327601746c1d415167988ebf2"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "d578b0f2594ee2108da5af1c6fe3698df98172f431620d20c57cbef0fc20944f"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "743b0513bc2fa0c2eceff43fe2b51f141a8e19dfcf064ab3772b1ae247ad7e70"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "55f4fe7daad6f01a5bd5cab5761d25ebb23d752851423d07b290de247858ee2d"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "79ffd9ae4d9743255c8dff608dc1060a5ad5ac4012e7b5d1d60f57e2545ccb6c"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "305cbd7b6b0b406b026d5974a434ca69b7dadea19641c9a39a4553933ba69f13"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "913fe49fb363b89a8b0e857a54732519808a17c95934ba28933dd14fe9548607"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "d0110ecc30abb9af0e001486b660c4e2aa8379dc268e46562823f8e1c9a53137"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "5cb5b13a3067108db4965334a5d73df2e8fb5d3459905dc83206ceff11f5da54"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "0d61aa432dbb32b7944989a899afabeb79395c7c7cd4616f8b9cb1495e8e9615"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "80946407e2906fd4a5d44842361dc4f34a663c4917afc06c0f35a9cd2d413ee3"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "567149994dcc1765ba79baad6d6fd2d81ffb73edc1f897efa22bc890811327db"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "8d02dbe80f9a994da22ed716d2b0506e361d074b670c4988c7647bc73cf1480e"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "29ae19c6fa532872894bacc35bb958420e150d5f735f33ffbcec6df26be4ef81"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "1099755e4e23ccf8f5f62dc8aa0dd89d15b90077851d184ae340d12952f49cc8"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "8aaee2d8159e7fc908012f21d947fdc084602a3cf05f5648a4196d6ac6d28c67"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "2b63a99b5185c7d6c29b903b18b641d64f9f9acf034a2745ab8937f6a595346b"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "23b3dc2ba660658b8db33976606f51754fc7e8d4abbfde3e77a5e2f3826f3494"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "50aee8b8ec23c7a3a6c36e8b7dd068625a6bd7e2bce733cb9e208d50a1ca0b1b"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "10e790a18fe11ceb405c6ff678c570c3d2aa285e5296fbb891a0be8ac9de63a3"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "dc882acbe8e3ef655a897af7fb75147359967bdbbe37318e585d9c1f9477fb5e"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "4fe675f3973ecfc19d0f647036e31acef5e4897df8c034db8e54a188584a0e3c"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "93f8c630646bd74c19867b85af9ddd78fefe7a0330b0a73ce596e51e3ffcb807"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "dacbf394bffe49263c0fc19f8d83472c8e1d3855c1e3f1f2c8d073bd3cd9ecfc"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "f804cda195a0e027658c34c43d1d6634e17a3e4c7c7427755df43476eef8d22e"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "279df1c8685d21af1d986d8a771a864630f87f759eaf1e07b2fe2185549451c4"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "f196e20bd6fdf05bca444374ae8d4a38009b5bf34e90883af675af8e8c287f16"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "5f7ad92f726201e4773736cd99474a280e85a0625241bcc1a5e6fce581d6d252"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "14c21f921233405a0f3c25606326e83ec27929c8d0495c0da4f83ae3aad64a16"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "a4f3acc8f1ebcb31c79b76c98e4793f5a890f53f829470b6955eea315d94ee75"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "fd7944c0b179fc700807acce2b3bb691682dfa447953e61d95bca2a9124ecd7f"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "6f6c8d43c33440a57f55c846af8cff18a9f342b274410d8c4829648ab5d05440"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "3ad42203e1a296865c833c05dee8e696ca461b601e076548161dcf2e965574df"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "b502d80588e2fc4b18c617cd6c1525bba2b5f4ae2da1a260b8d0bc69d938b5ed"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "4492356fe133110b145acb0b82d88ed537cf9b1c2256e73f0d488ac0480c0891"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "45c97d94ffa2fab58f3b00b02ce29c6831d95616a6666300e217b95fc7ede3a2"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "89ff9b0acde4bb7eb136408ad2325934712053aba7a983e1767fc639684114ea"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "8360e1f6e26e6af8cc0894fbc218864a01e1655b675f0cb94915bb53824f5780"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "0d3c1f74fa69e1b3fc230980a68adbca230b13cc403a32233319c45d025f5a59"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "5e28cfce8e21da1a8a88f227e3b262eeb6758d6c9197877ccf8c13423c4a666e"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "0645169c34ceb38eec871e4b807a946748e97f7d4f762f664051bd17672f03dd"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "200fd5ccb71389c3611e006116797dd36bdc39bbe4a193e5438d449cfcb6bee7"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "ceb90c873feb3f63cca87786f6e0021aa5e0df72b2fa554db87d2af4832d3875"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "b1d06333ef0798e638ad67f9600402f89ca059aed982ddc3378bf1eda9cce975"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "3877630796575cd63df5a46e248ea9a789cff63537e8d79d075d88114d6884b3"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "d36037c2bfd2e6e365a482f1126f32f017a2737456e7456e2d6bdfb018361134"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "9cd09f42868f6f2928faa3c6d236b931fb7c62d888677d4b83f52ee392f38c80"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "e973503b241310f44ddbd83ad4437e8bdfd99055bb4d8ff14f0a253d4dd769b5"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "72090f3cac5af6ccc080f68fd7c38a7a7e1c17a2ea38202ded1f15830c2f7f3a"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "9af1341e1abbe125d75c49da467f425ce8ce90624c5b5cbf205d951e8a304848"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "c5f098fefd47fe465d02763fcab2fbe83c633bedce517ba68dafcee8f84a5192"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "7da1069502751a98e36a030264b9f9b4333a32d8af9b8309f84d059680a98961"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "2e53e271c45cf0a43c0959b660e81fedff820214bc9c4debdf9436cf1c57945c"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "aeb62ef1bcc096ecf645eca08846fb7dba93a05aae542ad80b3da51cb68c511a"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "e763bb036f1cec573028cf3921776589901b6f8c6d7606f33c37b5f3801c9764"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "aafd151ee283c3518874bc2437988c621f9512853ad939b0bcf7b3ac263048a5"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "8e406fee4f7fd0823fd58fdfe67eca6486de6de612244d4af3f99a11181d5ce5"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "cd8995e226843a7e7f4ce7d2c95976ddd6fac377ac7e4a072fe072fc71d0f8eb"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "4726edf914603b643a030c49458f02c5ee6c33f55cd9990e2973ba55db2db040"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "28e57645d580b6a019744d4815f218d478340b9913a45f9ea6558a7732114dd8"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "211a882b222fb4af8c632a302b01444cd9f585774d6717f43aefb28c2ba9c74b"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "b3ea5ecd2142808db1161138aa4d67c3fa0661a39f33e7d48b52d2469c5d97a4"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "b99a50a2d1585af754ab47e47b46803432191ff376a9a009cebc25c900f797b0"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "6a04ae1449dcc46fd6b918d8638f6e71eebf7234fe63c2ee20694ccd71287c56"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "7699340d6e753abaf3420ada3b2bb47e92e53f8268c88c853af6146324648dde"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "b19229ac8c3a0569e2897cd99ac9052b562e63a710b5ce0a54ba09ed71dc8944"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "a8510dee99ae73db135c0ef0de00d7f97b0a5f8e6caa82e582d2cecab9aa96a9"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "8efb89c24c1b46136043c96e05c2ff502f1a7428be44863bfa20eb36fc7a1831"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "6a022b17df19bafc1596aa20a8c2bac52d5d638bce9ce6323ad93195c1c6cd8e"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "be672e321f554e13708ebe396cb4b717eed80782e5d143e55f6dec99828f5e48"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "c83f581af79ba928c6baa008b4a492f02fc869df49d53a4a221a124a47a18477"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "3584e559474e57f7a36248107bc6ebab82fcdbd8f4b7071808ede0480913c0bc"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "522482fb20744d09af84fe2422b008bc37cd510b0259fc7363a51b487b9c93c2"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "becff2c74d2eda471e160bec3e156c12c509cb2032c22732ff52337ec0cff7ce"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "4c4c340e3c81c4dac7b60272554af057ca86c4127fc29fc485b12e8329e5e31f"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "022cc55e61d1f506ae4b19abadbd6ff3310fc976814f186e78d73c5da57c5035"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "dc84a9aee6140bdddf13394b28109512721b2bdec0ab60979250ef3b26a14e7f"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "b98ff2f4bd4b639104be13e3feb85d96024db1e6df020fd401b48dc63aaa00a6"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "1a2f446f7c4e4e5af36a977b63d13c3e5369825f136f78efa64ba93a4a48a22b"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "73642707a0de9f27b68168696a9935e6aa6b855ba69a44206d5948c83c6943b8"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "61eede94254d57bdffe40fb96068826c21f425d0547c44a53aba64d5af247ab2"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "36ac890d870febde6e0edfb65f2eeeb8bef3dc068259f86d565237eb50e31b7a"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "396e8269a00471aba3012cb62c453945d1734de80e4a84169c41716eaf6b746a"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "f4e7b59beb097308793158b063ced0c6ac8ddb4ecdc0c4ae0997751f0145eead"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "973bb80a37eff13393904d04742406f179b3435927184ac8d7be863c33c5dd31"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "2d05275c07d88b49751fa601eda304e713342c9c231dcbaaf2e8b05540167135"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "a04b3aaae20281a9814cb9dbe79a520dafd582e00a454421806e6864048bd26d"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "3b2e0ed44fe52014dd1b885da13a7c1d3665c290f3039b07c30261e70f3c3307"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "6efad2c0c0ada36c2457085bc41f8981f5b7ef2a7679f5a253bd2f2345efe960"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "dbebf8245fe4af8ddaa938872993cad243cb289e0067aaa2d6a6eaf244630eea"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "73519bc6152bf5161ecaa28d1a3385b0223073237cef22de3264a34294a2406b"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "a47da8276d353bf3508a7cd3bbaf864e1b3d1ad66da3341c8e23de1de0567e0a"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "e1098b11089e14c11af3485342fc83cd52a93a1696d7072421555a0d41aa8c6c"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "d507ddc5938feb321f29f4666d5819470f2a6c3f5372ea8d1185729dd04eae00"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "bd4f16fcb744fe57bbeed5c01d5ebcda456f0c305bd3d0943d1feebdd0a99a87"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "737d4e3f078540e7cdbbbfd99d6a0e84c88cc9a774c725aa91475d2ad02ec903"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "4b868501da5b040520248830dbea0c47f2ea89d36f2304ef08508518772ffdce"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "f050579d98f7f68dcdca2dece3c3a469beca3804694fed301894d552b1f46e23"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "0a5e36029310d07d1d0cf59fd9e7150064eae29217411985c418fede06f61e69"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "6449fa2e5431840d4fea2fa8859556c9025a32da69ff618c5b07c60632f81169"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "9a5e14582f495f7f6792148d7cb2f5466b3740a49980f2dff600f1e8252299ad"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "94705b141a0226d0b0827adc29924a376a09085a2a0bbb5b41010b7dbb06ed7c"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "497e16e6fba2e8002074c963ee42e6993b74968d073dcea3b587d8abd32577d5"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "ba344fca0ad33c8a22fe5ed71445d4ad6fdf5bb440fbae6e7405ed2b74bd7df2"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "c8d003634486a19a1bba2ba176dd2b9b57679cf02c2a027001473271526054aa"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "c1946364bd2026171acea07b1ac14e2489bec026e101b50dc2abb033fb2103ab"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "4a3fbb641beb6f9e889a3efd5bd7742260b77043b23b735ed9a0c4206e4eba5f"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "591a5aec1844667342c1cb0984d6f3a5e68f246a0ef5b541a249a2f12ec5d8ee"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "423b5899ea612fd305415549cb8cd1c4650219ff33110d46f7f7d48c63b8b398"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "dc7af119f7c0f2bb8edf2b06c9da9183a64bc5d9c6c629fe5395f59c817990f3"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "c328e992d66ebb0ae752c56f7bd549fb8fd737d643c15ca3144e4ad937d7254f"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "deb4f8fd4545e183ea7cb2f46eee5c2e8ecb281c3debf0fd6f8a89fd9ed19266"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "918d74670f80f3a00dba6ef21932e01ad3dd773d5a3cb71b5192e1e32257eca5"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "38ad79c38ce0d0dcc38d7a8744ea92270e27c619cc4d15bcccfd5526925fbe66"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "375cb94d47d02743eca7500ae8b2a447c4351e252fa6103cf03090d37516da0a"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "651b5fa523a03ee37fa0873b5e291e811e74542cecf01c1ab40c97085f354940"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "0f645320fcfc888a0ffa51aab0abf9da5af9c952b68bd8f590dff94118d02b28"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "db93f2912482777523e74ef4470ca4687eb97ee99cc7e19593cfb1f757a3b7b4"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "c68ec249538d63d9b4b30afb4ce740a3642febdd89d978cb949ffba2f8bcf2f8"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "44f915a5d26cb387e46562eb41e9564445d55b380a138a662a9a2a799dd67a1c"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "117fa7fc3cf819633928be86c553000068181e2a436ff91c827cc7dd5e45cacd"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "50c22f7ba786003214e8b67a2d5f38619d95eb034944e035cc2918ef41535985"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "028ea4a5bf0eeb143e4954398246c4246cacfcc52e4876b79f969bd3d5eeff7d"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "ddf011a1abb9e6018460a836fa6d2474785db9998f80f7ffc2b44e9ced65783c"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "cddee692278a6c6ecdf427212cf34b8bcc624a32390fddba8c69e56e9a2e56d0"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "b86c242c0779dcae56c613613075b11850715f363d2fe3b963f32a8e90b084c6"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "581521163db6060f8e2a3a3b05cf3fe25eb263750b515d1b3b68efff9a5febbc"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "fe72a32a7ee990207808981ae8411a1936ee00b1c1f391f24c97549b96ea6e45"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "784e6d1a78ff88c5f075f28f0c642c3a203ac8bddc93854e229e51283d5340f5"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "b6dd24f05a07f29998e25c81f2427a52b143ef4ba04c10cfe0a09cdb19d5f21a"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "abe6dfb9b21bd340c736ed0001b35ba119dd3202fbad2a12f03324b0d3f1d5c9"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "7799874d6cbb16f4ad3c34394409b270c4833343458486aad8c94f6f9a22df67"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "f98e4a87dfa9390d9ff3e9187007890cc7944232db6a086b29a74057ca9c93fa"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "dc6bf02ec001b3aa568c05b8b6d86282330d29a4191e868d7bb4abca75a2ec91"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "48766982c3e8d6d1a14adda9cedf650147373ce2e99624ef325c4c6c23551627"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "e01a878487bdea6f4cd93ddc25e0d1648358edc78fac2f1626e2648871fdb9b2"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "bb74795c3055af0ed0e463223efc26a9fb7f35c6ff595b899f782579945e3e50"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "24faed50a36158d829612fc7977b4a52e392892e7a16bc2f5aa2f561ceb26638"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "b195637441b754ab971db3107ddd37aaba5b51b2151523a703f0bacce83bbc5b"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "822e5b7ebccf059e742ac79364c7f97bbe00d2ab03bec4e3f200b51afffc7ae1"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "5b6eaac86a8a8219b9f9681fc4475c6529f028fac96b2da8d1148e8d8fba6eae"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "25b959284615842c5560a07041e51c6f938ee4777674ebb4afd6ec5eb412432e"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "e3f44c86659121270218b06a3329b55dfac8879da45c61cc2c1169c704501bac"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "49d279704ee69bd39c9dc6b3c64772629bb35d1325b394075acf116ce9443306"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "4344a9af9562a69aa5861c1048e1f5e434db6133fbd1f14f2ab0f0c19323acb6"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "5b2015ca124dcad243a9b4ebd89bc87e1c75e8cfc7732c8aa418cc34ddfe9e42"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "961580cf615be5a7f875f806ef1b16e3362f257b0892c19267b509f405d249f1"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "80441ff3df1b979868caba7c63405cc562b1f7402cebd581f9544ea6be27c915"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "a128fba442a52d562ba78795513cec91cbaf3e85712f118f2b4465c789ee13db"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "096bbf94100696c6adb86148b5e6ab084df6a66c57288b5c6276c8bfc148f05d"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "cd65cf986f7f4c8af9f371c6c874758bc4de3c57a8a3171e1792ac5d0070419f"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "8a842c86fa500f7765d0098affd0afedab35b0d089d3d3c94c06cdfcac2e93f0"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "c0446d0bcb255075a4205adba9f9dab7fdddf9f1aab5d62543d22a3d19fde4d7"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "b91f8461e40f8a9975efad706834bb938ed9b806b650f4bdf234a8a438d6d2fb"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "dae43229d6a16fbba1908bdd192b5f611450aeff73f2f02b518d97f8be473765"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "becc5f14f3667f59de225b28b62251af325d3be021d6c988a290dccd6dcfb695"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "795ba4b79cff3fb1ce75d79180242579ca12f6bd1498e5bbf322a8e69ebe0eff"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "b26ecdb5e27531ae3eae51cbaf7889f9bc4b2c9c82ba7d86dbde990e4164a6d3"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "03f70b94557b9cb6f2e61bfd1c33ccc33989356ec34707682c8ce080682dfa2c"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "87dac577cbd49da7467ac97742fed720331d15e73abec9a2a339c9ba5ef984c6"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "400c360a8d80f79af6695e4d2e7485fac3e8dacdc91fe90d5a77e8f0a10109a5"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "6f0c3ad1e926ab939e37ff6822c544d9415fd42d3c6cbbd30a3524168c5de3f0"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "15d8fbf001a1871e29e99677e7334684aeb8ce65922880205a2b00c9f159f016"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "b2eb0dc801d24be7c2da8acc06fcd07a5a22223b8aa2480d45399b3fdea9bc6f"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "0e72fe52f290cdbb4466c70138903e58cd65096478cc0af95b313b673d74a425"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "212ddadf758457fa893082563c318935fa21bc718ec49c079b7c6dd23d3da168"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "de24471d55e4df3c27ef68ce42568784177cf27f8d31f84de3a593814bf29910"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "68d1b4e699ec2a5d48aa721a3102ba961f10ec7c4dc3b8a8037666f51cfc5b3b"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "49ea8e4edb36ef016bff98f13b380348c63c7759c25bb811ce18095627b4cbcf"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "96243fabb7474ab4ee18ed3b1a11a351bd53ffd4ac1606775be03e126b388814"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "8c5e12ee8e32819c7ec6f4e4a402e1f10a54cc2cb298dd9d86462a8f0fa7666d"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "d1eb3967965d852e0a073d6e0231900ca24ea8f287f34a105cd5834f29fc6f45"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "be7e4326fc7924ccd72010456c2864e1aeb18da5c3bc23e29e97ecf2ae97ac3e"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "db25b42d29d342a09329a6788d0591d2211c94b11340250ef6ef49625c81931e"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "7bb66c58830b50b50ac68840fb6d521136049b5cd144e0e0e5890681b52f2fe3"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "a109d7c2d35abbedea448ae14ef799883ae4de12dac4fd67c0cae09e2051d063"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "cdde36fdd244b3a4f8deadd0dbcb51474922afda7737c0d19dc15a0ddd4da685"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "8509d071c87f9a8f309ba681b8e680ad4f62b202f18efe5da19dfb6bbe9ce38f"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "f291988f5b22a659ed3df29372ba9dbfad76a10e88f92ee9c72374e9566a963e"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "ee7dd3cd0637795f9b1288371893e24689872638bd2fc8b2b4c0f9f1d770686c"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "10f423eaac7a5fdcafa444cbdcefc0533b68bbd7e4b4be4b594d5a47ab16194f"
+    },
+    {
+      "pair_index": 1,
+      "pair_id": "000",
+      "fresh_z_sha256": "318f9fd0b48f61902d48a28f65d1349b72dc1ec1885bf071a70d4f9780095efc"
+    },
+    {
+      "pair_index": 5,
+      "pair_id": "b2-020",
+      "fresh_z_sha256": "eae19befa9ee2c7f0a78a1da3d2b33bf341b878bd9fc452824dd256f3cd6384b"
+    },
+    {
+      "pair_index": 3,
+      "pair_id": "b2-055",
+      "fresh_z_sha256": "07caa6dfbcc17daed23ec20aacc0a94e600bd19133570163a85203ec5172293e"
+    },
+    {
+      "pair_index": 4,
+      "pair_id": "b2-051",
+      "fresh_z_sha256": "69a294631a53d1e58def7ad74a3f36c39ee6d6feb44b98fbb7e4a91400801f7a"
+    },
+    {
+      "pair_index": 0,
+      "pair_id": "calibration-original",
+      "fresh_z_sha256": "ea0427c9c53ce79978efff79c2b2b8929631b851d9b75f3f3df417332d30289b"
+    },
+    {
+      "pair_index": 2,
+      "pair_id": "030",
+      "fresh_z_sha256": "2560a030a9a3ab64e8d63305965ff984c9637f2ee0037eee21160e7643204c03"
+    }
+  ],
+  "initial_student_state_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4",
+  "initial_rng_sha256": "42a287d23f4a6748e394185ed12ee9dbf5942c8549faf324681bc65c082044a4",
+  "final_student_state_sha256": "306f1389ce507d1a1dfe177c27e15806bf3e50a4b118c101f7d410eba18776bf",
+  "source_and_frozen_checks_passed": true,
+  "full_checkpoint_roundtrip": true,
+  "final_source30_count": 30,
+  "peak_rss_bytes": 6368116736,
+  "wall_seconds": 1445.4625086669112,
+  "source_files": {
+    "optimizer.py": "e7caab2126b318f292e593d524f9e69b434dea5f978b082033dbbcd7f354dedf",
+    "render.py": "09b7fdef845e010ae6d6ec704a90542e98935ef76b92f02fc2595383ce941387",
+    "runner.py": "10791901f013c4ae8e89491093c35b1c264e00635f07d5e292a2f3cf806b2011",
+    "test_runner.py": "aff671154ae9a34e7d8a561aeb002fa20608389d207184bc04a780a997fec39e",
+    "update.py": "b53a0b7c75d7e4ab4f067467f4ca52d2e668c9e7bbe6944d46d0af2ddafb0b64",
+    "parent-pins.json": "fd911b1ce03e2b224063662a8c1e9d7e1c1a7191fedcb8010692ce5af7fd5136"
+  },
+  "ordinary_update_seconds": null,
+  "gradient_calibration": null
+}

@@ -1,0 +1,21 @@
+{
+  "arm": "B",
+  "step": 300,
+  "notes": {
+    "calibration-original": "Face and eyes coherent. Lower-neck bright skin-like patch and fuzzy dark boundary persist; original folded garment remains, not a clean fabric tab.",
+    "000": "Face coherent. Wide curved pale band below chin blends into skin, with streaked lateral edges; not a clean clerical tab.",
+    "030": "Face and smile coherent. Severe pitted dark texture on right lower neck persists around white bottom patch; partial second person at left is preexisting.",
+    "028": "Held-out adult face, beard and smile coherent. Ordinary shirt edges and darkened neck remain; no central clerical tab.",
+    "b2-055": "Face and glasses coherent. Broad ragged white strip under chin has streaked edges and glossy black surrounding neckline; fabric structure remains unconvincing.",
+    "b2-051": "Face coherent. Most plausible partial white rectangular tab in this panel, but right boundary blends into rough neck. Not a convincing panel-wide improvement or quality pass.",
+    "b2-020": "Face and smile coherent under strong lighting. Bright chin merges with lower pale neck patch; no distinct clean tab.",
+    "b2-042": "Mature face and glasses coherent. Ordinary patterned shirt persists, no clerical tab.",
+    "b2-058": "Mature moustached face coherent. Ordinary dress shirt and dark tie persist, no clerical collar.",
+    "b2-059": "Mature face and glasses coherent. Open dark ordinary neckline persists, no clerical tab.",
+    "unseen-000": "Face coherent, but graduation cap and partial extra person remain. Ineligible bareheaded-priest output, no tab.",
+    "unseen-001": "Mature masculine face coherent; ordinary white shirt collar remains, no clerical tab.",
+    "unseen-002": "Mature face coherent; microphone and ambiguous foreground hand/chin detail remain. No clerical tab.",
+    "unseen-003": "Face and smile coherent but cap, extra-person fragment and uncertain adult age remain. Not eligible for adult/hot success count, no clerical tab."
+  },
+  "summary": "All 14 native grayscale portraits and contact reviewed. No broad new facial collapse. Persistent skin-like white neck patches, rough boundaries and pitting dominate training examples; b2-051 has a partial plausible tab but this is not a quality pass. Held-out and unseen examples retain ordinary clothing, with no persuasive collar generalization. Eligibility remains unsolved."
+}
