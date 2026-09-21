@@ -1,0 +1,43 @@
+{
+  "first_launch_refused_before_output_creation": true,
+  "no_worker_started_by_refused_launch": true,
+  "observations": [
+    {
+      "time_unix": 1789993320.587287,
+      "available_fraction": 0.31072362263997394,
+      "available_gib": 14.91473388671875
+    },
+    {
+      "time_unix": 1789993325.588943,
+      "available_fraction": 0.3097705841064453,
+      "available_gib": 14.868988037109375
+    },
+    {
+      "time_unix": 1789993330.594382,
+      "available_fraction": 0.31486765543619794,
+      "available_gib": 15.1136474609375
+    },
+    {
+      "time_unix": 1789993335.5998578,
+      "available_fraction": 0.31007544199625653,
+      "available_gib": 14.883621215820312
+    },
+    {
+      "time_unix": 1789993340.605134,
+      "available_fraction": 0.3130432764689128,
+      "available_gib": 15.026077270507812
+    },
+    {
+      "time_unix": 1789993345.609875,
+      "available_fraction": 0.3131558100382487,
+      "available_gib": 15.031478881835938
+    },
+    {
+      "time_unix": 1789993350.614866,
+      "available_fraction": 0.31232674916585285,
+      "available_gib": 14.991683959960938
+    }
+  ],
+  "guard_unchanged": 0.35,
+  "ready": false
+}
