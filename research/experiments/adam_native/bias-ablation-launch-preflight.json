@@ -39,5 +39,44 @@
     }
   ],
   "guard_unchanged": 0.35,
-  "ready": false
+  "ready": false,
+  "subsequent_readiness_checks": [
+    [
+      {
+        "time_unix": 1789993624.903305,
+        "available_fraction": 0.3159182866414388,
+        "available_gib": 15.164077758789062
+      },
+      {
+        "time_unix": 1789993629.913744,
+        "available_fraction": 0.31639353434244794,
+        "available_gib": 15.1868896484375
+      },
+      {
+        "time_unix": 1789993634.922785,
+        "available_fraction": 0.31680933634440106,
+        "available_gib": 15.20684814453125
+      },
+      {
+        "time_unix": 1789993639.932826,
+        "available_fraction": 0.31777413686116535,
+        "available_gib": 15.253158569335938
+      },
+      {
+        "time_unix": 1789993644.9362729,
+        "available_fraction": 0.3101339340209961,
+        "available_gib": 14.886428833007812
+      },
+      {
+        "time_unix": 1789993649.947099,
+        "available_fraction": 0.3105017344156901,
+        "available_gib": 14.904083251953125
+      },
+      {
+        "time_unix": 1789993654.954836,
+        "available_fraction": 0.30954456329345703,
+        "available_gib": 14.858139038085938
+      }
+    ]
+  ]
 }
