@@ -1,0 +1,42 @@
+{
+  "reviewer": "root",
+  "step": 10,
+  "protocol_sha256": "fb373e6e729c012a3f0a5a7c033adfde85afd60fefe1a3da7f2963a2cfb20169",
+  "snapshot_manifest_sha256": "c76d42b4a913e9aa19bf099e7521e8b27c3d6fe682e535af5133648a5e3ee40b",
+  "scope": "Native untouched1024 baseline/raw/EMA for fixed indices000001; no attractiveness assessment",
+  "images": [
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/ema-000.png",
+      "sha256": "7471cd3b4bf0d6bf8de3287ad8c4f85eea1546e5d16ce6f379152054051c16ec"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/ema-001.png",
+      "sha256": "fe619c33099b49b3507d7038d735e8578932b3ab71a76435da895a59fd9906a4"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/raw-000.png",
+      "sha256": "9b9918b80817c4e8f5bfd9e31f050184acc20b94e7d622a38a2303437d991746"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/raw-001.png",
+      "sha256": "b59a975a6a345658aeb28c8fb8ef2703f374382c77002e38ddbc138a7fc2416d"
+    }
+  ],
+  "baselines": [
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-000.png",
+      "sha256": "139bd356e72ad296f58229097b7bd5f4e1425902f16491386ed82cd5f65d3884"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-001.png",
+      "sha256": "b6183481bdf66c62ad4d2a8bdc4ac67e06c88e8df225c73369bb8cbeb3c47600"
+    }
+  ],
+  "observations": {
+    "000": "Raw retains original child identity, facial structure and continuous skin shading, with a small cooler/greenish tone change. No dense grain, blackened eyes or etched appearance like the old100-step raw failure. EMA visually near baseline. Not a priest portrait.",
+    "001": "Raw retains original adult-looking face, bright skin and head covering; modest overall color shift, no image-wide grain/etched failure. Baseline already has bright highlights. EMA visually near baseline. Not a target priest portrait."
+  },
+  "decision": "No early catastrophic texture failure in these two cases; continue bounded100 stability experiment pending other two reviews. Ten steps does not establish long-run stability, priest conversion, diversity, quality acceptance or latency.",
+  "production_approved": false,
+  "server_latency_proven": false
+}

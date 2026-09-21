@@ -1,0 +1,20 @@
+{
+  "observed_live_at_unix": 1789996000.9358878,
+  "exec_session_id": 51876,
+  "processes": [
+    {
+      "pid": 27039,
+      "worker": false,
+      "started_unix": 1789995869.290004
+    },
+    {
+      "pid": 27045,
+      "worker": true,
+      "started_unix": 1789995869.47958
+    }
+  ],
+  "inspection_policy": "Revalidate process/session before treating this record as live. No automatic restart.",
+  "source": "research/experiments/adam_native/probe_output_rank1_fixed_offsets100.py",
+  "planned_iterations": 100,
+  "production_approved": false
+}

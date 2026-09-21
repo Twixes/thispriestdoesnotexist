@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "title": "AdAM bias-family ablation \u00b7 checkpoint 100",
+  "run": "research/runs/adam-native1024-bias-ablation100-v1",
+  "run_complete": true,
+  "scope": "Diagnostic only; source-layout probing control, not a priest-generation candidate.",
+  "conv_layout": "source_flattened",
+  "checkpoint_state": "G",
+  "checkpoint_step": 100,
+  "checkpoint_sha256": "d406240601ec748f95ad09c2b2799106d04f0510cd9383526bdc0618bd7416ba",
+  "checkpoint_verification": "Completed checkpoint marker and run load record agree; builder does not reread model weights.",
+  "no_new_training": true,
+  "unfiltered": true,
+  "image_editing": false,
+  "production_approved": false,
+  "server_latency_proven": false,
+  "exact_noise_reset_control_reproduction": true,
+  "available_images": 24,
+  "ablation_images": 20,
+  "offset_family_counts": {
+    "noise": 17,
+    "torgb_bias": 9,
+    "synthesis_bias": 17,
+    "style_affine_bias": 26,
+    "mapping_bias": 8
+  },
+  "intervention_partition_complete_and_disjoint": true,
+  "sampling": {
+    "truncation_psi": 1,
+    "noise_mode": "const",
+    "force_fp32": true,
+    "fused_modconv": false
+  },
+  "preview_seed": 2026092210,
+  "arms": [
+    "reset_all_noise_offsets",
+    "noise_plus_torgb_bias",
+    "noise_plus_synthesis_bias",
+    "noise_plus_style_affine_bias",
+    "noise_plus_mapping_bias"
+  ],
+  "rows": [
+    {
+      "index": 0,
+      "images": {
+        "reset_all_noise_offsets": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/000.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/000.png",
+          "sha256": "08a95099b32c1ea06709126517c781606484ad6375b7f1f1b1b8acbcbdbcf958",
+          "bytes": 1615329,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_torgb_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/000.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/000.png",
+          "sha256": "e3d54bbe0b645d12b7601a409f3fa223a6ee2efe1c0ea9c28d00899d8ab0bd3c",
+          "bytes": 1648534,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_synthesis_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/000.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/000.png",
+          "sha256": "dc963bad128db8b09f48c4a95a6704da88a6f25c19fb36a2c51bcc1fa1ee1fa5",
+          "bytes": 1325869,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_style_affine_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/000.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/000.png",
+          "sha256": "cfd119968b70368e7d8c56aae23515dbbd1d5a7237f7e849fab73dce60675ca6",
+          "bytes": 1608627,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_mapping_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/000.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/000.png",
+          "sha256": "493b91326ae44931c0ee32498fe6c7ee7cd46d5bce4227f886302badf41fd649",
+          "bytes": 1611884,
+          "width": 1024,
+          "height": 1024
+        },
+        "baseline": {
+          "path": "research/runs/adam-native1024-probing500-v1/baseline-000.png",
+          "url": "../../runs/adam-native1024-probing500-v1/baseline-000.png",
+          "sha256": "139bd356e72ad296f58229097b7bd5f4e1425902f16491386ed82cd5f65d3884",
+          "bytes": 1283288,
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      "latent_tensor_sha256": "8be204ade986770e5aea36f2eb48b42433ab4c08a26667971cc95b5208e21b5f"
+    },
+    {
+      "index": 1,
+      "images": {
+        "reset_all_noise_offsets": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/001.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/001.png",
+          "sha256": "dec5592fe193ddd19c93749a2026225f4eaaf9ae514f9db57c52de3e71c60ad4",
+          "bytes": 1861014,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_torgb_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/001.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/001.png",
+          "sha256": "ab9933ca6571b3fce71cd4721d67c6c1c0b2fc731e234d0d22682b04d1e705a2",
+          "bytes": 1866468,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_synthesis_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/001.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/001.png",
+          "sha256": "6d522533966eb40a6672c8dcc3117b05a5b767a7ebe25f7c9f5812cd1db4f495",
+          "bytes": 1543972,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_style_affine_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/001.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/001.png",
+          "sha256": "9300a09a4803adf7cbed4a0236a2bba7a2c7b3ee8c36052648e4e4972f299f10",
+          "bytes": 1852285,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_mapping_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/001.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/001.png",
+          "sha256": "d454c1580577dc110553e62a62c1f9020f1ef4ae203c07eade7585bbb324d93b",
+          "bytes": 1859609,
+          "width": 1024,
+          "height": 1024
+        },
+        "baseline": {
+          "path": "research/runs/adam-native1024-probing500-v1/baseline-001.png",
+          "url": "../../runs/adam-native1024-probing500-v1/baseline-001.png",
+          "sha256": "b6183481bdf66c62ad4d2a8bdc4ac67e06c88e8df225c73369bb8cbeb3c47600",
+          "bytes": 1479508,
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      "latent_tensor_sha256": "97bf394403ee515addbaa05f9f4d7177983be4d98b5efa0b4d21decbb6b6f4ca"
+    },
+    {
+      "index": 2,
+      "images": {
+        "reset_all_noise_offsets": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/002.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/002.png",
+          "sha256": "4587fa5ad357c20d6383cde04e085037fa01a2baa772aa360badd76e9fd94ab3",
+          "bytes": 1790146,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_torgb_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/002.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/002.png",
+          "sha256": "1fe10e722a73dc2e4c59167297c75bc2980390572348253d1f8450198556f1ef",
+          "bytes": 1826170,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_synthesis_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/002.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/002.png",
+          "sha256": "7747d2e8c42a2685240ebed558afcbf1662ac0a0004f301b7dda643b891c7bc4",
+          "bytes": 1381879,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_style_affine_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/002.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/002.png",
+          "sha256": "2e964919be65ed1db8a38c0939c500598cd810d12a5a4fe9897fc5ac84799e3f",
+          "bytes": 1800244,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_mapping_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/002.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/002.png",
+          "sha256": "e657ca606bf7caac09d5addb655fc67ffe497faa95842ecad1b6aa97eb6282ba",
+          "bytes": 1790063,
+          "width": 1024,
+          "height": 1024
+        },
+        "baseline": {
+          "path": "research/runs/adam-native1024-probing500-v1/baseline-002.png",
+          "url": "../../runs/adam-native1024-probing500-v1/baseline-002.png",
+          "sha256": "175d7d5a4d1ca45f0c878cd11e4d8bca99eafe6a5eb3eaa2582f8ced18646ff8",
+          "bytes": 1320444,
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      "latent_tensor_sha256": "537cf360c1db196e1bd1ceb63ed62886d698ebef8c0723d248bb2674c1bd1681"
+    },
+    {
+      "index": 3,
+      "images": {
+        "reset_all_noise_offsets": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/003.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/003.png",
+          "sha256": "315940c230538d9b5291264e5e8e7c8160bb975ee9bd5f81c517c195e546fb04",
+          "bytes": 1879223,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_torgb_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/003.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/003.png",
+          "sha256": "8dbfb7f0a65522afe90b64c9e78110fd4704ff30e7c0fb3acd08d5a660a12590",
+          "bytes": 1891146,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_synthesis_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/003.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/003.png",
+          "sha256": "c00e997e6efa5c3599d8173aabcd4004d1c24f317402f8e314d1dd93ceb1d4db",
+          "bytes": 1692364,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_style_affine_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/003.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/003.png",
+          "sha256": "d40f4cb143c6539840f190e85317e31aec94a49dbd6f7bb5043f774cdcfe04d0",
+          "bytes": 1876600,
+          "width": 1024,
+          "height": 1024
+        },
+        "noise_plus_mapping_bias": {
+          "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/003.png",
+          "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/003.png",
+          "sha256": "494f610b0601195957ed72a0475bc6ae14c28a10b78195d3ac23a5c3b8c18401",
+          "bytes": 1877559,
+          "width": 1024,
+          "height": 1024
+        },
+        "baseline": {
+          "path": "research/runs/adam-native1024-probing500-v1/baseline-003.png",
+          "url": "../../runs/adam-native1024-probing500-v1/baseline-003.png",
+          "sha256": "17e01e3036f8e4d1d0d92f56f84aabcb3cb7ec014965ccb850a3a907477c44b4",
+          "bytes": 1664784,
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      "latent_tensor_sha256": "e3a2c38f36b2ca785886658f6f9f7d9cffd9bbadbadf0328d35f8ca7b7b27e59"
+    }
+  ],
+  "sources": {
+    "research/runs/adam-native1024-bias-ablation100-v1/protocol.json": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/protocol.json",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/protocol.json",
+      "sha256": "94f204c757f4b246e124cf3a932f60ebee0b70901c14aa12b0aa12fa9f1b4aaf",
+      "bytes": 9954
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/result.json": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/result.json",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/result.json",
+      "sha256": "f20c52b4e9a782fb2716296ae78600f4fd72370ad4504a3a797c0ed7385b7f54",
+      "bytes": 37560
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/supervisor.json": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/supervisor.json",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/supervisor.json",
+      "sha256": "47626ec9ad5f73b7a5f00a0edb953dbde1bf8a90bff376adbaf7ffac119bb3cc",
+      "bytes": 248
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/loaded-state.json": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/loaded-state.json",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/loaded-state.json",
+      "sha256": "7dcdd88bf22dc7c19527a1dd491d9f1d7eccd8cf17f4764fd004113cf4f41574",
+      "bytes": 56885
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/runtime.json": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/runtime.json",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/runtime.json",
+      "sha256": "f8643dd7b53e2b474a4d374b1e1d5e99ecf3de420ffebe020e9139cdba9285e4",
+      "bytes": 374
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/source-noise_ablation.py": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/source-noise_ablation.py",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/source-noise_ablation.py",
+      "sha256": "6c031d25c297c09f69966cec3f8808f86824c85997df94ab932f244f485e44e8",
+      "bytes": 14546
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/bias_ablation.py": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/bias_ablation.py",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/bias_ablation.py",
+      "sha256": "d1f728323b59fac7555af28c70bd79245d64f46d8844240ff8f3cb85f62008c3",
+      "bytes": 18667
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/modulation.py": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/modulation.py",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/modulation.py",
+      "sha256": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+      "bytes": 11955
+    },
+    "research/runs/adam-native1024-noise-ablation100-v1/protocol.json": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/protocol.json",
+      "url": "../../runs/adam-native1024-noise-ablation100-v1/protocol.json",
+      "sha256": "4541ef0050e08498ea47ddd38ade166afc2fe5a206f7f21e49fa24743ce6a987",
+      "bytes": 7850
+    },
+    "research/runs/adam-native1024-noise-ablation100-v1/result.json": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/result.json",
+      "url": "../../runs/adam-native1024-noise-ablation100-v1/result.json",
+      "sha256": "d79ace00890cf07280acf359feb0c46ecda76e99e624665d406d373c23060eb4",
+      "bytes": 12823
+    },
+    "research/runs/adam-native1024-noise-ablation100-v1/supervisor.json": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/supervisor.json",
+      "url": "../../runs/adam-native1024-noise-ablation100-v1/supervisor.json",
+      "sha256": "fe1002f4a0c91adf3f1ac9bed292cb4767aba9984de28b36a5ef1a31b0d8323e",
+      "bytes": 249
+    },
+    "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/manifest.json": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/manifest.json",
+      "url": "../../runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/manifest.json",
+      "sha256": "1eb36c38d343e255f1e842cb75a97ab6d2fb54e9c881c8e29d48098f4c79e71d",
+      "bytes": 4055
+    },
+    "research/runs/adam-native1024-probing500-v1/protocol.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/protocol.json",
+      "url": "../../runs/adam-native1024-probing500-v1/protocol.json",
+      "sha256": "9fd791ccd1e01c2bfa93dfa41a3119f052f873b48d998eb4b52168f2b68ac9ca",
+      "bytes": 11243
+    },
+    "research/runs/adam-native1024-probing500-v1/checkpoint-100.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/checkpoint-100.json",
+      "url": "../../runs/adam-native1024-probing500-v1/checkpoint-100.json",
+      "sha256": "0ba27983f4cc3fde03eae3652bd3577580c1341b6cc4f646cedbf6e19e23c416",
+      "bytes": 553
+    },
+    "research/runs/adam-native1024-probing500-v1/step-000/manifest.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/step-000/manifest.json",
+      "url": "../../runs/adam-native1024-probing500-v1/step-000/manifest.json",
+      "sha256": "fe1b93ef3db5d434c79c9bbe89d9b7714767e9cfdcf8b0dc05cf02f610045670",
+      "bytes": 1255
+    },
+    "research/runs/adam-native1024-probing500-v1/step-100/manifest.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/step-100/manifest.json",
+      "url": "../../runs/adam-native1024-probing500-v1/step-100/manifest.json",
+      "sha256": "b95fbdf2ecd6097ecbf2f314dc5701fff042d7ed01749860eaf7e5d67c29cfbe",
+      "bytes": 1257
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/eval-z.npz": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/eval-z.npz",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/eval-z.npz",
+      "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
+      "bytes": 8448
+    },
+    "research/runs/adam-native1024-probing500-v1/eval-z.npz": {
+      "path": "research/runs/adam-native1024-probing500-v1/eval-z.npz",
+      "url": "../../runs/adam-native1024-probing500-v1/eval-z.npz",
+      "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
+      "bytes": 8448
+    },
+    "research/runs/adam-native1024-noise-ablation100-v1/eval-z.npz": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/eval-z.npz",
+      "url": "../../runs/adam-native1024-noise-ablation100-v1/eval-z.npz",
+      "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
+      "bytes": 8448
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/manifest.json": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/manifest.json",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/reset_all_noise_offsets/manifest.json",
+      "sha256": "ed2db62c3cd589523e1d1fcb6e40469fbfa4b674e31483f96ae2890c16ea7ce7",
+      "bytes": 4232
+    },
+    "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/000.png": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/000.png",
+      "url": "../../runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/000.png",
+      "sha256": "08a95099b32c1ea06709126517c781606484ad6375b7f1f1b1b8acbcbdbcf958",
+      "bytes": 1615329,
+      "width": 1024,
+      "height": 1024
+    },
+    "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/001.png": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/001.png",
+      "url": "../../runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/001.png",
+      "sha256": "dec5592fe193ddd19c93749a2026225f4eaaf9ae514f9db57c52de3e71c60ad4",
+      "bytes": 1861014,
+      "width": 1024,
+      "height": 1024
+    },
+    "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/002.png": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/002.png",
+      "url": "../../runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/002.png",
+      "sha256": "4587fa5ad357c20d6383cde04e085037fa01a2baa772aa360badd76e9fd94ab3",
+      "bytes": 1790146,
+      "width": 1024,
+      "height": 1024
+    },
+    "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/003.png": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/003.png",
+      "url": "../../runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/003.png",
+      "sha256": "315940c230538d9b5291264e5e8e7c8160bb975ee9bd5f81c517c195e546fb04",
+      "bytes": 1879223,
+      "width": 1024,
+      "height": 1024
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/manifest.json": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/manifest.json",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_torgb_bias/manifest.json",
+      "sha256": "731fa859b8d48d048da6caf20050dfbd7259e3cb2d05dc5029af60395a6861f1",
+      "bytes": 5122
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/manifest.json": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/manifest.json",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_synthesis_bias/manifest.json",
+      "sha256": "6a702616838a6050a6f43a776adca0e83280a8210b89757ff0d8a891839a6359",
+      "bytes": 6126
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/manifest.json": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/manifest.json",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_style_affine_bias/manifest.json",
+      "sha256": "e60b5ac0b3d2b19e36f2d37a720f0acf1c537689c140f43a74e15da39783a4ee",
+      "bytes": 7603
+    },
+    "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/manifest.json": {
+      "path": "research/runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/manifest.json",
+      "url": "../../runs/adam-native1024-bias-ablation100-v1/noise_plus_mapping_bias/manifest.json",
+      "sha256": "ba265aa4b0f11b1e15fa1f98e919c983d6edc6700cb51f6d97ea77bcd5243d6f",
+      "bytes": 4886
+    }
+  },
+  "builder": {
+    "path": "research/reviews/adam-bias-ablation/build.py",
+    "url": "build.py",
+    "sha256": "5081ad9406113a009dfc745e8dc88a9abd6b22025fa6349ba22f0249d9ddb73c",
+    "bytes": 15829
+  }
+}

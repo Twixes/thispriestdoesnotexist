@@ -1,0 +1,59 @@
+{
+  "time_unix": 1789995596.462261,
+  "authorized_by_user": true,
+  "services": [
+    {
+      "service": "Vite3012",
+      "root_pid": 60278,
+      "pids": [
+        60278,
+        60280,
+        60296,
+        60803
+      ],
+      "rss_gib_before": 0.2149810791015625,
+      "remaining_pids": []
+    },
+    {
+      "service": "Vite3002",
+      "root_pid": 36909,
+      "pids": [
+        36909,
+        36910,
+        36966,
+        36981,
+        36986,
+        37052,
+        38816
+      ],
+      "rss_gib_before": 0.055938720703125,
+      "remaining_pids": []
+    },
+    {
+      "service": "Expo dev",
+      "root_pid": 80454,
+      "pids": [
+        80454,
+        80458,
+        80514,
+        80518,
+        80526
+      ],
+      "rss_gib_before": 0.076171875,
+      "remaining_pids": []
+    },
+    {
+      "service": "Sketchviz Next dev",
+      "root_pid": 66049,
+      "pids": [
+        66049,
+        92055,
+        92090
+      ],
+      "rss_gib_before": 0.076446533203125,
+      "remaining_pids": []
+    }
+  ],
+  "available_gib_after": 21.226776123046875,
+  "available_fraction_after": 0.44222450256347656
+}

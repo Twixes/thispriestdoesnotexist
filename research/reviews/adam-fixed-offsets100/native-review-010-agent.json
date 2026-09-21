@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "scope": "Early stability review of exactly latents002/003 baseline/raw10/EMA10 at native1024, from completed atomic snapshot. Training remains live; this is not a completed-run evaluation. No model execution, runner changes, image editing or attractiveness assessment.",
+  "run": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1",
+  "step": 10,
+  "sources": {
+    "protocol.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/protocol.json",
+      "sha256": "fb373e6e729c012a3f0a5a7c033adfde85afd60fefe1a3da7f2963a2cfb20169",
+      "bytes": 12782
+    },
+    "baseline-manifest.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-manifest.json",
+      "sha256": "2abf27e18403c124c75040fe2d6b0079b85a3abe1f2e7650b97e94e3d71f2275",
+      "bytes": 751
+    },
+    "step-010/manifest.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/manifest.json",
+      "sha256": "c76d42b4a913e9aa19bf099e7521e8b27c3d6fe682e535af5133648a5e3ee40b",
+      "bytes": 1293
+    },
+    "eval-z.npz": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/eval-z.npz",
+      "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
+      "bytes": 8448
+    },
+    "fixed-offset-policy.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/fixed-offset-policy.json",
+      "sha256": "a143364428177cbba2522ec798054933741eb985cba6bb9dbc135347058e8157",
+      "bytes": 166842
+    }
+  },
+  "rows": [
+    {
+      "latent_index": 2,
+      "images": {
+        "baseline": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-002.png",
+          "sha256": "175d7d5a4d1ca45f0c878cd11e4d8bca99eafe6a5eb3eaa2582f8ced18646ff8",
+          "bytes": 1320444
+        },
+        "raw10": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/raw-002.png",
+          "sha256": "8f7575c5d28a65770fe977621412f5dc4f8fb5f69341ddcf151f0ebb9f4dbe27",
+          "bytes": 1324877
+        },
+        "ema10": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/ema-002.png",
+          "sha256": "96f06e89f0133d9f30a070d00ba9b7b573d3ba83694d6feeeca5d2efb20cd56e",
+          "bytes": 1320497
+        }
+      },
+      "observations": {
+        "baseline": "Adult-looking face with glasses and gray hair; coherent facial geometry with shaded eyes. Ordinary shirt collar, no hat, no clear clergy cue.",
+        "raw10": "Very close in apparent identity, framing and facial geometry to baseline. Mild green/yellow tonal shift and small contrast changes; skin and hair remain readable. No dense image-wide grain, severe red/dark shift or new major facial distortion observed. Still ordinary shirt collar and no priest-domain change.",
+        "ema10": "Visually near baseline, with at most subtle tonal changes. No heavy grain or major new facial distortion observed; apparent identity and non-clergy clothing remain."
+      },
+      "early_major_collapse_observed": false,
+      "heavy_grain_observed": false,
+      "clear_priest_domain_change": false
+    },
+    {
+      "latent_index": 3,
+      "images": {
+        "baseline": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-003.png",
+          "sha256": "17e01e3036f8e4d1d0d92f56f84aabcb3cb7ec014965ccb850a3a907477c44b4",
+          "bytes": 1664784
+        },
+        "raw10": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/raw-003.png",
+          "sha256": "e5cc65718712149ea80bfd2594d840ca113073a1a456fc39eac5c5ccde06c9fd",
+          "bytes": 1660045
+        },
+        "ema10": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/ema-003.png",
+          "sha256": "f15b169e1775620779bd5a6e93031803e329f381d27f4b96678053659b4b2d34",
+          "bytes": 1664806
+        }
+      },
+      "observations": {
+        "baseline": "Apparent infant/toddler with knitted purple hat and patterned outer clothing; coherent eyes and open smile. No clergy cue.",
+        "raw10": "Same apparent child, hat and smile. Mild warmer/greenish tonal shift with bright face/background, but no dense grain, major new geometry damage or collapse observed. No adult or priest-domain conversion.",
+        "ema10": "Visually near baseline; apparent child, knitted hat, facial features and clothing remain. No dense grain or major new distortion observed."
+      },
+      "early_major_collapse_observed": false,
+      "heavy_grain_observed": false,
+      "clear_priest_domain_change": false
+    }
+  ],
+  "summary": "Both raw10 portraits stay near their source identities and facial structure, with mild color changes and no recurrence of the dense grain or severe dark-red tone seen in the earlier failed source control. EMA10 remains closer still to baseline. No visible priest-domain conversion; one subject remains an apparent child wearing a hat.",
+  "continuation_assessment": "These two reviewed rows do not supply a visual early-stop reason for the already planned bounded100-iteration stability run, provided resource and finite-state guards remain satisfied. They do not establish final stability, adaptation success, generalization or production quality.",
+  "native_images_inspected": 6,
+  "quality_approved": false,
+  "production_approved": false,
+  "server_latency_proven": false,
+  "attractiveness_not_assessed": true
+}

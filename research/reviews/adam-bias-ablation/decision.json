@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "images_reviewed": 20,
+  "latent_count": 4,
+  "inputs": {
+    "research/reviews/adam-bias-ablation/native-review-root.json": "4ffdb739aed3606ec12dd686739f21cc7e8089d2b52c46fdeef66b5e1c6f7360",
+    "research/reviews/adam-bias-ablation/native-review-agent.json": "6f8ab24445c6df4f3372c66da75fff627aef4eec9be8c7ed0414206f3e53fc92",
+    "research/runs/adam-native1024-bias-ablation100-v1/result.json": "f20c52b4e9a782fb2716296ae78600f4fd72370ad4504a3a797c0ed7385b7f54",
+    "research/runs/adam-native1024-bias-ablation100-v1/supervisor.json": "47626ec9ad5f73b7a5f00a0edb953dbde1bf8a90bff376adbaf7ffac119bb3cc"
+  },
+  "finding": "Across all four reviewed fixed latents, resetting17 synthesis activation-bias offsets on top of common17 noise-offset reset gives the largest restoration of brightness, continuous facial shading and readable details. ToRGB bias reset partly reduces color cast; affine/mapping bias resets give no comparable visible improvement.",
+  "limitations": [
+    "Conditional inference intervention at one source-layout checkpoint, not training outcome",
+    "Residual warm/red coloration and some detail defects",
+    "Source identities including apparent children/headwear/non-clergy retained",
+    "No attractiveness assessment or production-quality approval"
+  ],
+  "decision": "Fresh original-source output_rank1 stability run with17 noise and17 synthesis activation-bias offsets fixed at zero; leave mapping/style-affine/ToRGB biases trainable. Observe all four original latents early. Do not run prior noise-only variant unchanged after this evidence.",
+  "running_experiment": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1",
+  "production_approved": false,
+  "server_latency_proven": false
+}

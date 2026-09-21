@@ -1,0 +1,50 @@
+{
+  "status": "prepared_not_launched",
+  "source_sha256": "1a2dddaf8610def1ea23ceb2de14773e4eaed9d239f4ddb59cc27f2f6e3945dd",
+  "test_sha256": "d6d465e44c9ff246785223a32cf19be337b9c28639dd84477059663ed0c22b60",
+  "derived_from_fixed_noise_parent_sha256": "3a81f0931152deecf7a3f883f3d0075bc3d5db17a56cfccf4a449cac2be1f755",
+  "iterations": 100,
+  "expected_optimizer_steps": {
+    "g": 125,
+    "d": 107
+  },
+  "preview_steps": [
+    0,
+    10,
+    25,
+    50,
+    100
+  ],
+  "review_latents_unchanged": true,
+  "fixed_offset_policy": {
+    "total": 34,
+    "noise": 17,
+    "synthesis_activation_bias": 17,
+    "value": 0,
+    "optimizer_excluded": true,
+    "originals_bit_exact": true,
+    "raw_and_ema": true,
+    "mapping_affine_torgb_offsets_trainable": true
+  },
+  "validation": {
+    "command": "research/.venv/bin/python research/experiments/adam_native/test_fixed_offsets100.py",
+    "tests": 4,
+    "passed": true,
+    "seconds": 0.414,
+    "syntax": "passed",
+    "cli_help": "passed",
+    "loss_block_and_generate_update_ast_comparison": "unchanged"
+  },
+  "native_execution": false,
+  "pretrained_model_loads": 0,
+  "stability_test_only": true,
+  "production_approved": false,
+  "launch_constraint": "Root review and scheduling only; no concurrent heavy workers; fresh memory preflight",
+  "guards": {
+    "start_available_fraction": 0.35,
+    "runtime_available_fraction": 0.2,
+    "rss_gib": 12,
+    "swap_growth_mib": 512,
+    "seconds": 2400
+  }
+}

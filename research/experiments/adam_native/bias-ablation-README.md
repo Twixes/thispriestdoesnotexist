@@ -26,3 +26,7 @@ This isolates inference contributions of learned offsets at one checkpoint. It d
 ## Launch preflight
 
 The first native launch was refused before output-directory creation because available memory was below the unchanged35% guard. A bounded30-second readiness check remained below the threshold (about31%); no native worker started. Observations are preserved in `bias-ablation-launch-preflight.json`. The runner remains prepared, not executed. Do not lower guards, close unrelated applications, or treat elapsed waiting as permission to start. A future launch must pass a fresh preflight.
+
+## Completed execution after authorized service cleanup
+
+The user authorized stopping expendable high-memory Node development services. Four detached dev-server trees were stopped and verified absent; available memory was21.2GiB afterward. The unchanged native guard then passed. `research/runs/adam-native1024-bias-ablation100-v1` completed in14.281s with3.551GiB peak RSS and38.14% minimum available memory. All20 native PNGs were preserved; the four common controls reproduced prior noise-reset PNGs exactly. Reviews and interpretation are under `research/reviews/adam-bias-ablation/`. Previous refused launches above remain historical evidence; this diagnostic is now executed.
