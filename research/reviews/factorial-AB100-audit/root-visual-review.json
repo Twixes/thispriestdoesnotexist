@@ -1,0 +1,17 @@
+{
+  "milestone": "B100 versus A100",
+  "viewed_sha256": {
+    "research/runs/paired-factorial-600/B/preview-100/contact.png": "27447f295c8c7d8bb4ce17e96f45e9760216a1155593ea01d22635897fa2a5a8",
+    "research/runs/paired-factorial-600/B/preview-100/b2-055-gray.png": "9ca2ed44ca3eab64ee63f87d9aa58107cb2fb38b450fe41e19c7a7ad4e2ad996",
+    "research/runs/paired-factorial-600/B/preview-100/030-gray.png": "798d5c2059016c5ce59eea485c8ad8d1e2e2934c8086bb1ed1d5ae6b41abbcc1"
+  },
+  "numeric_audit_sha256": "f5414dd0a08f661cbf525283033381ce7d888fea4a02908a11f0226277b592a5",
+  "observations": [
+    "Native b2-055 retains a ragged, wide pale neck band with skin-like texture rather than a bounded photographic Roman collar.",
+    "Native030 retains porous dark neck texture adjacent to the white patch.",
+    "The contact shows coherent faces and ordinary clothing on held-out images. Small aggregate pixel-error gains do not constitute a structure pass."
+  ],
+  "decision": "Continue predeclared bounded run; no new broad facial collapse seen in this review. Final B and feature arms remain pending.",
+  "scope": "Root viewed contact plus two native images, not every native output.",
+  "production_approved": false
+}

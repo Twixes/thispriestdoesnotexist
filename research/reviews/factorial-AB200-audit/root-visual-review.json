@@ -1,0 +1,17 @@
+{
+  "milestone": "B200 versus A200",
+  "viewed_sha256": {
+    "research/runs/paired-factorial-600/B/preview-200/contact.png": "dc3ff2095626d2fe5beaefc62d9f5f6ab30d45516efd45d2ed9868eac50ee989",
+    "research/runs/paired-factorial-600/B/preview-200/calibration-original-gray.png": "32c687dd387c585a044cf93e0415beacf50972225f715ceab3d7fcb7497164c9",
+    "research/runs/paired-factorial-600/B/preview-200/b2-051-gray.png": "1e10e679ba52a58470d4d2167219de4f2a723eb5917f16fa88156f911b8116fe",
+    "research/runs/paired-factorial-600/A/preview-200/b2-051-gray.png": "1bff71ed0db70e67d1f1e3d9c7bba9d5290bcf6cc6f056858ddc1d09de2eee6a"
+  },
+  "observations": [
+    "Calibration retains a pale patch of neck with skin texture and soft boundaries, rather than a convincing white collar.",
+    "b2-051 has a partial bottom-edge white tab and is one of the more plausible examples, but direct native A200/B200 comparison shows no convincing structural advantage. Partial crop is allowed; the issue is the lack of a robust improvement across training faces.",
+    "Faces in the full contact remain coherent, while held-out examples retain ordinary clothing."
+  ],
+  "decision": "Continue through the planned final B checkpoint and feature-loss arms. No quality approval or new broad facial collapse found.",
+  "scope": "Full contact plus three native files; independent reviewer covers the other selected native outputs.",
+  "production_approved": false
+}

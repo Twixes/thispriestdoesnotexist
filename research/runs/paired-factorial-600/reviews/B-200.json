@@ -1,0 +1,122 @@
+{
+  "arm": "B",
+  "fork_step": 200,
+  "parent_step": 600,
+  "reviewed_unix": 1789961592.2095628,
+  "review_kind": "PNG-only; no inference",
+  "evaluation_sha256": "e8a0676d7c94a043875a787c8d8fabca7ad2dfb0ef6764bfcb9e67ed01c87538",
+  "student_state_sha256": "9bad4decc05d923a91028a8b566d5b620b07ac675360059eebfd1f694131a10c",
+  "contact_sha256": "dc3ff2095626d2fe5beaefc62d9f5f6ab30d45516efd45d2ed9868eac50ee989",
+  "contact_count": 14,
+  "native_review_ids": [
+    "calibration-original",
+    "030",
+    "b2-042",
+    "b2-058",
+    "b2-059"
+  ],
+  "summary": "Full 14-image contact and five native images reviewed. No new broad facial collapse observed. B200 still has skin-like neck patches and roughened boundaries on training examples; the three new held-out portraits do not acquire clerical collars. Pixel improvements reported separately by root do not establish collar structure or photographic quality.",
+  "new_broad_face_collapse_observed": false,
+  "production_approved": false,
+  "limits": "Small fixed panel. Contact-level coherence does not establish native photographic quality, identity preservation or distributional diversity. Held-out cases remain excluded from training.",
+  "rows": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "image_sha256": "32c687dd387c585a044cf93e0415beacf50972225f715ceab3d7fcb7497164c9",
+      "review_resolution": "native1024",
+      "visual_note": "Eyes, nose, mouth and face detail remain coherent. Bright lower-neck patch has a fuzzy skin-textured left boundary and does not read as a clean fabric tab; original folded jacket/shirt remains visible."
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "image_sha256": "6e52e5d693dbdfa094b1dbff450b4572a5136af91be499bd5274d9ae3a408af4",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "image_sha256": "b914834665c46bef21d73aca6860ba068692261e92bf1b15942c83b91bcbbf69",
+      "review_resolution": "native1024",
+      "visual_note": "Face and smile remain coherent. Pronounced rough dark pitting on right lower neck surrounds a white bottom patch, not a clean clerical garment. Preexisting partial second person at left remains."
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "image_sha256": "5db42db926cfabb9b3c26cd1f176e002fca9ede56ed6258ef11ae65f51c08b4d",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "image_sha256": "0beab8de2b8ae83d81f203d30fbdf9d12ed6d71d04fa2b256c51d7d5b47646e4",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "image_sha256": "1e10e679ba52a58470d4d2167219de4f2a723eb5917f16fa88156f911b8116fe",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "image_sha256": "b5fa6a55f8f63411117e1b37ef17df4e4246a7ef7bf5936a3aa1971d64994950",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-042",
+      "split": "diagnostic-heldout",
+      "image_sha256": "303a4c806f5a5729d28497292e5d6da6a20840389d96c456541fc0755b52613a",
+      "review_resolution": "native1024",
+      "visual_note": "Mature adult face, glasses and teeth coherent. Ordinary patterned shirt collar persists; no clerical tab."
+    },
+    {
+      "id": "b2-058",
+      "split": "diagnostic-heldout",
+      "image_sha256": "4b30adffd04545e470c17722a7ae11bfb1a87a1c3764acad075a61e556337aee",
+      "review_resolution": "native1024",
+      "visual_note": "Mature face and moustache coherent; ordinary white dress shirt and dark tie remain, not a clerical collar."
+    },
+    {
+      "id": "b2-059",
+      "split": "diagnostic-heldout",
+      "image_sha256": "b247d1fbff347dc9a02c7d94cf4418f93393c8104ffff3a0bc490d13fa27673a",
+      "review_resolution": "native1024",
+      "visual_note": "Mature face, glasses and teeth coherent; ordinary open dark neckline persists, with no white clerical tab."
+    },
+    {
+      "id": "unseen-000",
+      "split": "unseen",
+      "image_sha256": "fef539d18f9792668bd6f91647d9676f93c4d3ae4d22b6193fddf9d00da98c86",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "unseen-001",
+      "split": "unseen",
+      "image_sha256": "e8411e500539dba6745ce891859f7a5bc074a2cc4c8e8b369314575813e71420",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "unseen-002",
+      "split": "unseen",
+      "image_sha256": "1babbb0c409c64019654b70fc2b5c31df98cb454ac54d32ccd903717ec45a0d1",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "unseen-003",
+      "split": "unseen",
+      "image_sha256": "7e1a68df90ff84b157ecc2beca6fee3124a59bf3975d89756d354f73c1a15f6a",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    }
+  ]
+}

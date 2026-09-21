@@ -1,0 +1,22 @@
+{
+  "completed_unix": 1789960967.896052,
+  "scope": "A100/A200 full14 contact +native5; A300 native14 +source30 contact/native source-student017024025028; B100 full14 contact+native5.",
+  "reviews": [
+    "A-100.json",
+    "A-200.json",
+    "A-300.json",
+    "A-source30-final.json",
+    "B-100.json"
+  ],
+  "A_terminal_complete": true,
+  "B_latest_step_observed": 116,
+  "active_processes_at_handoff": "  PID ELAPSED  %CPU    RSS COMMAND\n13497   31:13   0.0  11552 /Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python /Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_factorial/runner.py --execute --output /Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-factorial-600\n15908   09:01 138.2 5719360 /Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python /Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_factorial/runner.py --execute --output /Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-factorial-600/B --worker B --deadline 1789973494.608341 --source-hashes /Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-factorial-600/source-hashes.json\n",
+  "active_training_interrupted": false,
+  "restarts": 0,
+  "additional_model_compute": false,
+  "active_code_or_input_edits": false,
+  "resource_failure_observed": false,
+  "new_broad_facial_collapse_observed": false,
+  "production_approved": false,
+  "continuation_owner": "root"
+}

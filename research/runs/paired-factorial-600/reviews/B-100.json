@@ -1,0 +1,122 @@
+{
+  "arm": "B",
+  "fork_step": 100,
+  "parent_step": 600,
+  "reviewed_unix": 1789960967.8711731,
+  "review_kind": "PNG-only; no inference",
+  "evaluation_sha256": "ab9a7aba569d0fd2787e6473678b5ab5a01b26441df914ccaa7e0ce6b1f1086f",
+  "student_state_sha256": "6c4551d5cdc83d7404b9166c2f51080b424c87e208060e71d69e34a385e06339",
+  "contact_sha256": "27447f295c8c7d8bb4ce17e96f45e9760216a1155593ea01d22635897fa2a5a8",
+  "contact_count": 14,
+  "native_review_ids": [
+    "calibration-original",
+    "030",
+    "b2-042",
+    "b2-058",
+    "b2-059"
+  ],
+  "summary": "B100: all14 contact and5native images viewed. No broad facial collapse; no convincing native collar-structure advantage versus A100 yet. Calibration neck patch and030 pitting persist. Three new held-outs retain ordinary clothing. This is an interim comparison, not a verdict on B300 or the full factorial.",
+  "new_broad_face_collapse_observed": false,
+  "production_approved": false,
+  "limits": "Small fixed panel. Contact-level coherence does not establish native photographic quality, identity preservation or distributional diversity. Held-out cases remain excluded from training.",
+  "rows": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "image_sha256": "2a1608a2372bfa378060ccf1f34603212c1144c92ea141dfc0187c952a1ba438",
+      "review_resolution": "native1024",
+      "visual_note": "Face/eyes/mouth remain coherent. Broad bright lower-neck patch and original folded shirt remain; no convincing collar-structure improvement versus A100 at native size."
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "image_sha256": "87cc54f887d2e210856ea1c1b8137c149b3d0d61a056ec7bf04ed31e678a65aa",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "image_sha256": "798d5c2059016c5ce59eea485c8ad8d1e2e2934c8086bb1ed1d5ae6b41abbcc1",
+      "review_resolution": "native1024",
+      "visual_note": "Face/eyes/smile remain coherent. Pronounced dark pitted neck region remains; no clean cloth/tab construction versus A100. Left partial extra person is preexisting."
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "image_sha256": "a868df579757653dbb3470220b8f8ba04d0371cae16f7a901ecf8ecead57047a",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "image_sha256": "9ca2ed44ca3eab64ee63f87d9aa58107cb2fb38b450fe41e19c7a7ad4e2ad996",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "image_sha256": "ce17e0e8d1ff4bad2164ff2b076be8769179e277b7d4d9ec71b2817863d313f8",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "image_sha256": "006745d15016a64c7ca9d720b1029cb0d7244ab012b6e214bbdf707cbd35e6cb",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-042",
+      "split": "diagnostic-heldout",
+      "image_sha256": "554715fcd74ff2e517e98e68ec802df11cd464afe3fa024202cd10396b970c4e",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out face, glasses and smile coherent versus start. Patterned shirt edge remains, no white clerical tab."
+    },
+    {
+      "id": "b2-058",
+      "split": "diagnostic-heldout",
+      "image_sha256": "6fb489f58dc14d5144b570f032bc45d829c22b23b5a1d0ca7d7133e316b8ba17",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out mature face/moustache coherent versus start. Conventional white shirt and dark tie remain; these are not a clerical collar."
+    },
+    {
+      "id": "b2-059",
+      "split": "diagnostic-heldout",
+      "image_sha256": "10c0eeadc6f6183ec9b542ae06a2582648d63746a8d3e062b163be88ebf093f5",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out face/glasses/smile coherent versus start. Open hoodie neckline remains; no white clerical tab."
+    },
+    {
+      "id": "unseen-000",
+      "split": "unseen",
+      "image_sha256": "4b3cb81eda34cffbbc3f90ec4853c5c708769cf0e0328c74d575855338900590",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "unseen-001",
+      "split": "unseen",
+      "image_sha256": "a7bed824fb8c64e52dedeb08d33c572a9d87ded83cd3cd4f4ecabaece781d85f",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "unseen-002",
+      "split": "unseen",
+      "image_sha256": "fe9a846b9816494bee7f4605ea7efd6c28ac9eb900f5892f57a172e1e8fe537a",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "unseen-003",
+      "split": "unseen",
+      "image_sha256": "1d550635e96b831edf553852badde19cfe54d0bbe95c5370e85678a5d5b5e293",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    }
+  ]
+}
