@@ -1,0 +1,19 @@
+{
+  "status": "prospective protocol, no restoration model downloaded/loaded or run",
+  "purpose": "Test whether pretrained face restoration can improve photographic detail from our genuinely trained priest GAN, without accepting malformed raw samples or disguising exclusions.",
+  "inputs": "All32 raw-psi1 images from fixed625 matched evaluation, indices000\u2013031, unfiltered. Keep all original images.",
+  "evaluation_design": [
+    "Run one pinned official CPU restoration recipe after NADA terminal. Preserve every output and failure; no retries or manual seed selection.",
+    "Compare face anatomy, eye/skin detail, clerical collar and image boundaries at actual displayed size; especially severe raw architectural failures and hat-like outputs.",
+    "Any learned/hallucinated detail is generated refinement, not recovered evidence; exact identity preservation is not a user requirement.",
+    "Keep restoration quality separate from raw-sample rejection. Catastrophic heads and hats remain failures even if a detector or restoration produces a plausible face.",
+    "Record end-to-end timing/memory including actual face detection and compositing; quantify rejection rate only after a separately specified gate is evaluated.",
+    "A positive32-case diagnostic would justify new unseen latent end-to-end testing, not production deployment."
+  ],
+  "serving_contract": "Fresh random latent -> trained priest generator -> independently evaluated quality/headwear gate -> restoration if validated -> new uncached image. No finite seed bank or generated image cache.",
+  "pending": [
+    "Primary-source method/license/runtime review",
+    "Pinned runtime/weights and actual CPU feasibility",
+    "Visual improvement and separately validated rejection"
+  ]
+}

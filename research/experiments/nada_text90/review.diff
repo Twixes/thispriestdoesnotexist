@@ -1,0 +1,138 @@
+--- research/experiments/nada_clean24_continue500/runner.py
++++ research/experiments/nada_text90/runner.py
+@@ -1,4 +1,4 @@
+-"""Guarded, explicit native1024 NADA-style 10-to-500 continuation; stdlib supervisor."""
++"""Guarded, explicit native1024 NADA-style 10-to-100 text-direction probe; stdlib supervisor."""
+ import argparse
+ import hashlib
+ import importlib.metadata
+@@ -19,7 +19,7 @@
+ 
+ HERE = Path(__file__).resolve().parent
+ ROOT = HERE.parents[2]
+-MAX_SECONDS = 3600
++MAX_SECONDS = 1200
+ MAX_RSS = 12 * 1024**3
+ HANDSHAKE_SECONDS = 5
+ NUMERIC_ENV = {'OMP_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1',
+@@ -125,7 +125,7 @@
+             if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss > MAX_RSS:
+                 reason = '12GiB observed peak RSS exceeded'
+             if time.time() >= deadline:
+-                reason = 'Original sixty-minute absolute deadline expired'
++                reason = 'Original twenty-minute absolute deadline expired'
+             if reason:
+                 try:
+                     write_new(output / 'watchdog-failure.json', {'reason': reason})
+@@ -166,8 +166,8 @@
+               'runner_sha256': sha(Path(__file__)), 'worker_sha256': sha(HERE / 'worker.py'),
+               'pins_sha256': sha(HERE / 'pins.json'), 'memory_preflight': pressure,
+               'rss_abort_bytes': MAX_RSS, 'sampled_not_hard_allocation_cap': True,
+-              'numeric_environment': NUMERIC_ENV, 'maximum_updates': 0 if restore_only else 490, 'start_step': 10,
+-              'end_step': 10 if restore_only else 500, 'restore_only': restore_only,
++              'numeric_environment': NUMERIC_ENV, 'maximum_updates': 0 if restore_only else 90, 'start_step': 10,
++              'end_step': 10 if restore_only else 100, 'restore_only': restore_only,
+               'automatic_retry': False, 'production_approved': False}
+     write_new(output / 'launch.json', launch)
+     environment = os.environ.copy()
+@@ -190,7 +190,7 @@
+                     concurrency_guard(owned_pid=process.pid)
+                     next_process_check = time.monotonic() + 2
+                 if time.time() >= deadline:
+-                    raise RuntimeError('Sixty-minute absolute deadline expired')
++                    raise RuntimeError('Twenty-minute absolute deadline expired')
+                 sample = subprocess.run(['ps', '-o', 'rss=', '-p', str(process.pid)],
+                     capture_output=True, text=True, timeout=min(2, max(.01, deadline-time.time())))
+                 if sample.returncode == 0 and sample.stdout.strip():
+@@ -203,7 +203,7 @@
+             if time.time() >= deadline or not (output / 'worker-provenance-complete.json').exists():
+                 raise RuntimeError('Incomplete provenance or expired deadline')
+             result = json.loads((output / 'worker-result.json').read_text())
+-            expected_updates, expected_step = (0, 10) if restore_only else (490, 500)
++            expected_updates, expected_step = (0, 10) if restore_only else (90, 100)
+             if (not result['complete'] or result['updates'] != expected_updates
+                     or result['optimizer_calls'] != expected_updates or result['total_step'] != expected_step
+                     or result['restore_only'] != restore_only):
+--- research/experiments/nada_clean24_continue500/worker.py
++++ research/experiments/nada_text90/worker.py
+@@ -1,4 +1,4 @@
+-"""Exact 10-to-500 NADA-style CPU continuation worker. Imported only after the supervisor guards."""
++"""Exact 10-to-100 text-direction NADA-style CPU probe. Imported only after the supervisor guards."""
+ import copy
+ import hashlib
+ import importlib.abc
+@@ -45,8 +45,8 @@
+         latent_arrays = {name: archive[name].copy() for name in archive.files}
+     require({k: list(v.shape) for k, v in latent_arrays.items()} == manifest['array_shapes'], 'Latent shape changed')
+     require(all(v.dtype == np.float32 and np.isfinite(v).all() for v in latent_arrays.values()), 'Bad latent dtype/value')
+-    require(len({row.tobytes() for name in ['source_z', 'previous_train_z', 'train_z', 'eval_z'] for row in latent_arrays[name]}) == 540,
+-            'Original50/fresh490 z overlap')
++    require(len({row.tobytes() for name in ['source_z', 'previous_train_z', 'train_z', 'eval_z'] for row in latent_arrays[name]}) == 140,
++            'Original50/first90 fresh z overlap')
+     latents = {name: torch.from_numpy(value) for name, value in latent_arrays.items()}
+     bundle = root / 'research/runs/inference-cpu/ffhq1024/baseline-bundle'
+     metadata = json.loads((bundle / 'model.json').read_text())
+@@ -93,9 +93,10 @@
+     require(parent_recipe['lr'] == .0016 and parent_recipe['betas'] == [0., .99 ** .8]
+             and parent_recipe['threads'] == 1 and parent_recipe['dtype'] == 'float32', 'Prior recipe mismatch')
+     recipe = {**parent_recipe, 'continuation': continuation, 'input_pins': pins,
+-              'updates': 490, 'start_step': 10, 'end_step': 500,
++              'updates': 90, 'start_step': 10, 'end_step': 100,
+               'first_update': 'Already completed in checkpoint010; no bootstrap repeats',
+-              'updates_11_to_500': 'Unchanged directional cosine loss',
++              'updates_11_to_100': 'Unchanged directional cosine with fixed text guidance direction',
++              'text_guidance': manifest['text_guidance'],
+               'fresh_source_features': 'Per-step no-grad, overhead included and separately measured'}
+     dump(output / 'recipe.json', recipe)
+ 
+@@ -208,6 +209,27 @@
+             'initial_native_png_matches': 16, 'actual_optimizer_and_rng_reload': True,
+             'previews': previews, 'production_approved': False, 'quality_approved': False})
+         return
++
++    # Sole objective change: a fixed clothing-specific text contrast replaces image-centroid direction.
++    text_spec = manifest['text_guidance']
++    source_prompts = [template.format(text_spec['source_class']) for template in text_spec['templates']]
++    target_prompts = [template.format(text_spec['target_class']) for template in text_spec['templates']]
++    before_text_rng = nested_hash(rng())
++    with torch.no_grad():
++        text_source = unit(encoder.encode_text(clip.tokenize(source_prompts))).detach()
++        text_target = unit(encoder.encode_text(clip.tokenize(target_prompts))).detach()
++        text_difference = (text_target - text_source).mean(0, keepdim=True)
++        require(float(text_difference.norm()) > 1e-6, 'Degenerate fixed text direction')
++        direction = unit(text_difference).detach()
++    require(nested_hash(rng()) == before_text_rng, 'Fixed text encoding consumed training RNG')
++    require(tuple(direction.shape) == (1, 512), 'Unexpected text embedding shape')
++    require(base.state_digest(encoder.state_dict()) == initial_clip_hash, 'Text encoding changed CLIP')
++    dump(output / 'text-direction.json', {'source_prompts': source_prompts, 'target_prompts': target_prompts,
++        'norm_before_normalization': float(text_difference.norm()), 'unit_direction': direction.tolist(),
++        'source_unit_embeddings': text_source.tolist(), 'target_unit_embeddings': text_target.tolist(),
++        'direction_nested_sha256': nested_hash(direction), 'encoding_rng_unchanged': True,
++        'replaces_image_centroid_direction_only': True, 'text_direction_is_not_quality_approval': True})
++    del text_source, text_target, text_difference
+ 
+     checkpoints = []
+     def save_checkpoint(step):
+@@ -295,18 +317,18 @@
+         with (output / 'metrics.jsonl').open('a') as stream: stream.write(json.dumps(metric)+'\n')
+         print(json.dumps(metric), flush=True)
+         del generated, features, delta, loss, gradients, current_source_feature
+-        if index+11 in [50, 100, 250, 500]:
++        if index+11 in [50, 100]:
+             snapshot(index+11)
+             save_checkpoint(index+11)
+ 
+     require(base.state_digest(source.state_dict()) == initial_source_hash, 'Frozen source changed')
+     require(base.state_digest(encoder.state_dict()) == initial_clip_hash, 'Frozen CLIP changed')
+     frozen_checks()
+-    dump(output / 'worker-result.json', {'complete': True, 'updates': 490, 'optimizer_calls': 490, 'restore_only': False,
+-        'start_step': 10, 'total_step': 500, 'raw_generator_only': True,
++    dump(output / 'worker-result.json', {'complete': True, 'updates': 90, 'optimizer_calls': 90, 'restore_only': False,
++        'start_step': 10, 'total_step': 100, 'raw_generator_only': True,
+         'actual_optimizer_and_rng_reload': True, 'checkpoints': checkpoints,
+         'source_and_clip_unchanged': True, 'frozen_student_unchanged': True,
+-        'snapshot_rng_and_state_checks': [10, 50, 100, 250, 500], 'initial_native_png_matches': 16,
++        'snapshot_rng_and_state_checks': [10, 50, 100], 'initial_native_png_matches': 16,
+         'checkpoint_reloaded_native_preview_equal': True, 'bootstrap_repeated': False,
+         'uninterrupted_vs_resumed_training_equivalence_tested': False,
+         'latents_sha256': manifest['latents_npz_sha256'], 'previews': previews,

@@ -1,0 +1,35 @@
+{
+  "prepared_utc": "2026-09-21T06:16:28.574376+00:00",
+  "status": "prepared_not_executed",
+  "model_imports_or_loads": false,
+  "training_launched": false,
+  "runner_command_executed": false,
+  "lifecycle_subprocesses_started": false,
+  "active_source_or_input_files_modified": false,
+  "lightweight_tests_passed": 4,
+  "pinned_files": 265,
+  "matched_previous_checkpoint_sha256": "ce683dd7e79a4038abdea2c70b3addd056cbc306eeea435c090a17999d20a6fd",
+  "matched_training_rows": "Exactly first90 of image-guided continuation NPZ",
+  "evaluation_rows": "Original eight unchanged",
+  "changes": [
+    "Detached guidance vector from fixed photo-only text contrast",
+    "90new updates/total100 horizon,50+100 checkpoint schedule,20minute cap"
+  ],
+  "pending_execution_gates": [
+    "Real checkpoint/Adam/RNG restoration",
+    "All16 step10 native PNG byte matches",
+    "Finite normalized text direction and RNG/CLIP unchanged by encoding",
+    "Native50/100 clothing and facial quality review"
+  ],
+  "files_sha256": {
+    "research/experiments/nada_text90/runner.py": "682bd4ee41295bf553c1c2d25ba2ba44af7fb5cd18a99d24989c86a871e3779e",
+    "research/experiments/nada_text90/worker.py": "665699e3fa67db7f4136ac30164c01aff3ebc238c87dd83c5e6c36e988267ca0",
+    "research/experiments/nada_text90/inputs.json": "00f898608d2c18835a42b94884f662cb13893ec0d0c0933074c49cc65804a0c9",
+    "research/experiments/nada_text90/latents.npz": "200218187a9fb830abedf291dba3229c580e59703e6ad2962a925aeedf2967d5",
+    "research/experiments/nada_text90/pins.json": "d7f9549c05b8c490265b73c1778e9b4e4fc31c2dab05f65694f8107fb8348ca4",
+    "research/experiments/nada_text90/review.diff": "e2e65768e0467bbd2701878a95b0e981c890e8e0c6ffc3f482adf8e8ba026ff1",
+    "research/experiments/nada_text90/test_preparation.py": "fdf40571d75664dbbf7ba5d3d8bfc9c39826581bfa6814087e86f3fc8192ec15",
+    "research/experiments/nada_text90/preparation-test.log": "b41fa84150068e2adb7c32ee89dd5f26db82959a6e790f723c6c5a3c9497d293",
+    "research/experiments/nada_text90/README.md": "ac942a999c6986c266cfe50ddab9b3e2ebc78b0bc096757edd0fbdc2fcdfb5d3"
+  }
+}

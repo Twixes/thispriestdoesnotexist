@@ -1,0 +1,12 @@
+{
+  "reviewer": "root and hosting_ci",
+  "status": "prepared, not executed",
+  "independent_findings_fixed": [
+    "tolerate group cleanup races and clean group after leader exit",
+    "check final elapsed and worker peakRSS before success"
+  ],
+  "syntax_checked": true,
+  "numpy_rows": 32,
+  "source_sha256": "2ba21947054aa2ed00998f9ca28eefbe06dcc5fce3e022c251a31d9fbf03b0ea",
+  "model_imports": false
+}

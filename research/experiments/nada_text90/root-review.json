@@ -1,0 +1,14 @@
+{
+  "reviewed_utc": "2026-09-21T06:20:48.593276+00:00",
+  "reviewer": "root",
+  "decision": "Conditional research execution after currentNADA500 and fresh32 evaluation finish; no simultaneous heavy jobs",
+  "review": "Read full delta vs reviewed continuation. Only normalized CLIP text guidance direction changes, plus predeclared90-update horizon. Same initialcheckpoint010+Adam+RNG+16PNG restore gate; exact first90 latents and8evaluation. Four static data/math/provenance checks rerun without model imports.",
+  "quality_approved": false,
+  "sha256": {
+    "runner.py": "682bd4ee41295bf553c1c2d25ba2ba44af7fb5cd18a99d24989c86a871e3779e",
+    "worker.py": "665699e3fa67db7f4136ac30164c01aff3ebc238c87dd83c5e6c36e988267ca0",
+    "pins.json": "d7f9549c05b8c490265b73c1778e9b4e4fc31c2dab05f65694f8107fb8348ca4",
+    "inputs.json": "00f898608d2c18835a42b94884f662cb13893ec0d0c0933074c49cc65804a0c9",
+    "latents.npz": "200218187a9fb830abedf291dba3229c580e59703e6ad2962a925aeedf2967d5"
+  }
+}
