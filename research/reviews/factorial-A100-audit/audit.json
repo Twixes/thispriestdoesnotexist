@@ -1,0 +1,168 @@
+{
+  "milestone": 100,
+  "available_arms": [
+    "A"
+  ],
+  "all_four_snapshots_available": false,
+  "provenance": {
+    "A": {
+      "evaluation_sha256": "ad292036df075c67c232f13c806bd8441f3f8d1fd5fb76d5c5faa55a13c172e0",
+      "state_sha256": "7327d36729641c01fa328c11a749da98f9f2d95cc8eb33b09b3db3782b689d59"
+    }
+  },
+  "verified_native_png_count": 28,
+  "train_means_minus1_to1": {
+    "A": {
+      "protected_l1": 0.021230760496109724,
+      "clothing_l1": 0.18578220655520758,
+      "tab_l1": 0.057560643181204796,
+      "rest_l1": 0.19278787697354952,
+      "surround_l1": 0.6483031709988912,
+      "remainder_l1": 0.1773573582371076
+    }
+  },
+  "factor_differences": {},
+  "per_image": {
+    "A": [
+      {
+        "id": "calibration-original",
+        "split": "train",
+        "metrics": {
+          "protected_l1": 0.017178330570459366,
+          "clothing_l1": 0.2979608476161957,
+          "tab_l1": 0.04313362389802933,
+          "rest_l1": 0.31164783239364624,
+          "surround_l1": 0.6783173680305481,
+          "remainder_l1": 0.29391252994537354
+        }
+      },
+      {
+        "id": "000",
+        "split": "train",
+        "metrics": {
+          "protected_l1": 0.015779942274093628,
+          "clothing_l1": 0.14042618870735168,
+          "tab_l1": 0.06222830340266228,
+          "rest_l1": 0.1432473361492157,
+          "surround_l1": 0.9143686890602112,
+          "remainder_l1": 0.12821854650974274
+        }
+      },
+      {
+        "id": "030",
+        "split": "train",
+        "metrics": {
+          "protected_l1": 0.033731963485479355,
+          "clothing_l1": 0.2929965555667877,
+          "tab_l1": 0.06477368623018265,
+          "rest_l1": 0.30878445506095886,
+          "surround_l1": 0.9073646068572998,
+          "remainder_l1": 0.2821056842803955
+        }
+      },
+      {
+        "id": "028",
+        "split": "validation",
+        "metrics": {
+          "protected_l1": 0.02553548477590084,
+          "clothing_l1": 0.8223392963409424
+        }
+      },
+      {
+        "id": "b2-055",
+        "split": "train",
+        "metrics": {
+          "protected_l1": 0.016461584717035294,
+          "clothing_l1": 0.15986044704914093,
+          "tab_l1": 0.07280511409044266,
+          "rest_l1": 0.1619400829076767,
+          "surround_l1": 0.586656928062439,
+          "remainder_l1": 0.1459825038909912
+        }
+      },
+      {
+        "id": "b2-051",
+        "split": "train",
+        "metrics": {
+          "protected_l1": 0.013795710168778896,
+          "clothing_l1": 0.1703137755393982,
+          "tab_l1": 0.036286257207393646,
+          "rest_l1": 0.17804652452468872,
+          "surround_l1": 0.4696590304374695,
+          "remainder_l1": 0.16744448244571686
+        }
+      },
+      {
+        "id": "b2-020",
+        "split": "train",
+        "metrics": {
+          "protected_l1": 0.030437031760811806,
+          "clothing_l1": 0.053135424852371216,
+          "tab_l1": 0.06613687425851822,
+          "rest_l1": 0.05306103080511093,
+          "surround_l1": 0.33345240354537964,
+          "remainder_l1": 0.04648040235042572
+        }
+      },
+      {
+        "id": "b2-042",
+        "split": "diagnostic-heldout",
+        "metrics": {
+          "protected_l1": 0.03238419443368912,
+          "clothing_l1": 0.39293715357780457,
+          "tab_l1": 0.6005579233169556,
+          "rest_l1": 0.38318318128585815,
+          "surround_l1": 0.5303407907485962,
+          "remainder_l1": 0.374542236328125
+        }
+      },
+      {
+        "id": "b2-058",
+        "split": "diagnostic-heldout",
+        "metrics": {
+          "protected_l1": 0.02799459733068943,
+          "clothing_l1": 0.27425432205200195,
+          "tab_l1": 1.1525815725326538,
+          "rest_l1": 0.24083364009857178,
+          "surround_l1": 0.8526474237442017,
+          "remainder_l1": 0.21074555814266205
+        }
+      },
+      {
+        "id": "b2-059",
+        "split": "diagnostic-heldout",
+        "metrics": {
+          "protected_l1": 0.021528208628296852,
+          "clothing_l1": 0.5377457141876221,
+          "tab_l1": 0.7175271511077881,
+          "rest_l1": 0.5278033018112183,
+          "surround_l1": 0.567542314529419,
+          "remainder_l1": 0.5249752998352051
+        }
+      },
+      {
+        "id": "unseen-000",
+        "split": "unseen",
+        "metrics": {}
+      },
+      {
+        "id": "unseen-001",
+        "split": "unseen",
+        "metrics": {}
+      },
+      {
+        "id": "unseen-002",
+        "split": "unseen",
+        "metrics": {}
+      },
+      {
+        "id": "unseen-003",
+        "split": "unseen",
+        "metrics": {}
+      }
+    ]
+  },
+  "quality_approved": false,
+  "production_approved": false,
+  "limitations": "Only saved PNG hashes, formats and reported metrics audited. No model or checkpoint validation here. Numeric improvement does not establish collar structure, facial integrity, attractiveness, or unseen generalization. A complete experiment additionally requires successful terminal processes, matched sampling, source30 evaluation, and native visual review."
+}

@@ -1,0 +1,122 @@
+{
+  "arm": "A",
+  "fork_step": 100,
+  "parent_step": 600,
+  "reviewed_unix": 1789959648.174489,
+  "review_kind": "PNG-only; no inference",
+  "evaluation_sha256": "ad292036df075c67c232f13c806bd8441f3f8d1fd5fb76d5c5faa55a13c172e0",
+  "student_state_sha256": "7327d36729641c01fa328c11a749da98f9f2d95cc8eb33b09b3db3782b689d59",
+  "contact_sha256": "704ad8a7fe5ad1eacf99e3a0fad3a13ec774cc7cd78dc1a4a5ca11415b21628a",
+  "contact_count": 14,
+  "native_review_ids": [
+    "calibration-original",
+    "030",
+    "b2-042",
+    "b2-058",
+    "b2-059"
+  ],
+  "summary": "No new broad facial collapse in14contact or5native views. Existing calibration white neck spill and030 pitted neck texture persist; none of the three newly held-out portraits shows a clerical collar.",
+  "new_broad_face_collapse_observed": false,
+  "production_approved": false,
+  "limits": "Small fixed panel. Contact-level coherence does not establish native photographic quality, identity preservation or distributional diversity. Held-out cases remain excluded from training.",
+  "rows": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "image_sha256": "d6827adb51e328d6290cca37a02085f0e2561b8a748dc607c73e20d8a8b3024d",
+      "review_resolution": "native1024",
+      "visual_note": "Eyes, mouth, face detail coherent. Broad bright lower-neck patch with textured dark edge and ordinary folded shirt persists; no convincing clerical tab."
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "image_sha256": "e2f34b475d4a756ea348a802ed220337c227c5d7e4c78485586ced6fd0adfd6b",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "image_sha256": "4859ea7ce6b40f673365b885580d27e740af9af6009c87a4fbe3408d0898e644",
+      "review_resolution": "native1024",
+      "visual_note": "Face/eyes/smile coherent. Pronounced pitted/scratch-like dark right-neck texture persists. Lower white patch is not clean collar fabric. Partial extra person at left predates this arm."
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "image_sha256": "324fc4a3da5307b3c004620cb73fb6cdfa37c22d570bd5892f7859d8df6398d8",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "image_sha256": "c068b5d1f6e92563346402acc5aa528b353006bcb3ca25fc0afa3205dd60cbd4",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "image_sha256": "43bdb3bc98f315d585efe8fdb70e84e0e852b3f1c31c52f1e4f4e48aadb30aaa",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "image_sha256": "68bed989f41de5a5f39d09371084a7d2a626e671dc6a3f004d63b0c71bcdbfe1",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "b2-042",
+      "split": "diagnostic-heldout",
+      "image_sha256": "3ce9819caa79635378b0a6ee9b62e4b5ff084472de6d3a30800adb4c4dae0917",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out face, glasses and smile coherent versus start. Patterned shirt edge remains, no white clerical tab."
+    },
+    {
+      "id": "b2-058",
+      "split": "diagnostic-heldout",
+      "image_sha256": "c25c93dca91f6cf27021fe436cabc76beb3a63576741d954c71e6b4386de388d",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out mature face/moustache coherent versus start. Conventional white shirt and dark tie remain; these are not a clerical collar."
+    },
+    {
+      "id": "b2-059",
+      "split": "diagnostic-heldout",
+      "image_sha256": "a3f5b804f35fc3acd6af87317a6b4bc56cd6abda458cfd911ce614a4268be963",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out face/glasses/smile coherent versus start. Open hoodie neckline remains; no white clerical tab."
+    },
+    {
+      "id": "unseen-000",
+      "split": "unseen",
+      "image_sha256": "9ae7f7f5e07afd92747debf1e40152c5c72f86d995d79ea1e57674e6a33a7e5d",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "unseen-001",
+      "split": "unseen",
+      "image_sha256": "b0bd9009fe691cdfe5f68e68d0d8a95a24b1660a60309d08327a5f0f337019f9",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "unseen-002",
+      "split": "unseen",
+      "image_sha256": "a98e53a6226e13a1683b0b569c36d429b2529b3c2e917efc07c04e91adbdd487",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    },
+    {
+      "id": "unseen-003",
+      "split": "unseen",
+      "image_sha256": "bb7444065615c3fa050ce0ae207a8e68f2fb9797006c667edaf4dd224d3ed55c",
+      "review_resolution": "contact256",
+      "visual_note": "Viewed in full contact sheet; no broad anatomical collapse apparent at contact resolution. Native detail not assessed at this milestone."
+    }
+  ]
+}

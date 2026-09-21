@@ -1,0 +1,18 @@
+{
+  "milestone": "A100",
+  "reviewer": "root assistant",
+  "viewed_files_sha256": {
+    "research/runs/paired-factorial-600/A/preview-100/contact.png": "704ad8a7fe5ad1eacf99e3a0fad3a13ec774cc7cd78dc1a4a5ca11415b21628a",
+    "research/runs/paired-factorial-600/A/preview-100/calibration-original-gray.png": "d6827adb51e328d6290cca37a02085f0e2561b8a748dc607c73e20d8a8b3024d",
+    "research/runs/paired-factorial-600/A/preview-100/030-gray.png": "4859ea7ce6b40f673365b885580d27e740af9af6009c87a4fbe3408d0898e644"
+  },
+  "evaluation_sha256": "ad292036df075c67c232f13c806bd8441f3f8d1fd5fb76d5c5faa55a13c172e0",
+  "observations": [
+    "Full contact has recognizable faces but no convincing learned clerical collars.",
+    "Native calibration has a wide pale neck patch with skin texture and fuzzy boundaries.",
+    "Native 030 has severe porous neck texture adjacent to the white patch; facial detail remains coherent.",
+    "This review does not independently inspect all 14 native outputs; agent review covers five selected natives."
+  ],
+  "decision": "Continue the predeclared matched experiment; A100 is not quality-approved and is insufficient evidence about B/C/D.",
+  "production_approved": false
+}
