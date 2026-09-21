@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "audit_scope": "Independent implementation verifies stored schema, CSV consistency, completeness, summaries, source/manifest/contact/code hashes. It does not independently relabel images or validate subjective judgments.",
+  "labels_sha256": "8649c025472c1d73f6addd1980f3dab446a40132149da20761c4e7e16459d7b1",
+  "audit_script_sha256": "4203a0701a2a390953c9b4c3b4dabf015f8498ef86b5b46c42016c2aff28f8ff",
+  "records": 96,
+  "source_png_hashes_verified": 96,
+  "source_manifests_verified": 2,
+  "contact_hashes_verified": 2,
+  "unique_ids_and_source_hashes": 96,
+  "adult_male_counts": {
+    "yes": 31,
+    "no": 59,
+    "uncertain": 6
+  },
+  "review_scope_counts": {
+    "contact_and_native_current_review": 14,
+    "contact_only": 67,
+    "contact_current_and_native_prior_same_source_review": 15
+  },
+  "strict_candidate_ids": [
+    "b2-055"
+  ],
+  "csv_rows_match_json": true,
+  "stored_counts_match_recalculation": true,
+  "labels_unchanged": true,
+  "model_compute": false,
+  "image_edits": false
+}

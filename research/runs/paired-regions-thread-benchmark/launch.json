@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-21T00:51:40.372235+00:00",
+  "prior_training_pid": 94814,
+  "prior_training_exited": true,
+  "prior_evaluation": "research/runs/paired-regions1024-cpu-200/evaluation32/evaluation.json",
+  "prior_evaluation_completion": "inference_service confirmed process exited0; no model compute remains",
+  "configs": [
+    1,
+    2,
+    4
+  ],
+  "max_total_updates": 12
+}

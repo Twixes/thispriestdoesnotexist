@@ -1,0 +1,26 @@
+{
+  "completed_utc": "2026-09-21T01:00:51.559180+00:00",
+  "step": 3000,
+  "memory_preflight_free_percent": 28,
+  "device": "cpu",
+  "threads": 1,
+  "interop_threads": 1,
+  "mmap": true,
+  "peak_rss_bytes": 1046659072,
+  "wall_seconds": 2.6663565419148654,
+  "before_sha256": {
+    "research/runs/aligned110-frozen4-cdc1000/resume.pt": "cd7b8e24f870627ea01a87cbcca0cf7e2477b726215e3c5838b49b1cfa5de6bb",
+    "research/runs/aligned110-frozen4-cdc1000/generator-003000.pt": "3156c5acd150351e95f80793ae1d80d3c3ef599843cd26cb29800465967dfe74",
+    "research/reviews/check_checkpoint.py": "70b1afb37adf923cac44da95d39a00b514e63b431150ace954ee4cc1f6a20f55"
+  },
+  "after_sha256": {
+    "research/runs/aligned110-frozen4-cdc1000/resume.pt": "cd7b8e24f870627ea01a87cbcca0cf7e2477b726215e3c5838b49b1cfa5de6bb",
+    "research/runs/aligned110-frozen4-cdc1000/generator-003000.pt": "3156c5acd150351e95f80793ae1d80d3c3ef599843cd26cb29800465967dfe74",
+    "research/reviews/check_checkpoint.py": "70b1afb37adf923cac44da95d39a00b514e63b431150ace954ee4cc1f6a20f55"
+  },
+  "artifacts_unchanged": true,
+  "wrapper_sha256": "80959cd041305c2202615be1fb05cd097e875a66adf4f4a4ae349735e42d8d61",
+  "inference_or_training_performed": false,
+  "active_processes_changed": false,
+  "note": "Stable at validation time only; resume.pt is live and can be atomically replaced later."
+}

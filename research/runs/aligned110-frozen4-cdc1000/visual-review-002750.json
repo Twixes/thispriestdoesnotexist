@@ -1,0 +1,67 @@
+{
+  "step": 2750,
+  "images_seen": 22000,
+  "reviewed_utc": "2026-09-21T00:59:29.763874+00:00",
+  "approved": false,
+  "production_approved": false,
+  "reviewer": "Codex native PNG visual inspection",
+  "scope": "Three immutable native1024x1024 saved grids, each16 fixed-latent256x256 outputs. No generator inference or checkpoint load.",
+  "grid_sha256": {
+    "samples-002750.png": "97b41b5288c4b5229b0b5813008fc7d69e42d5d12ecf4dc48f0f3f69a8b51fda",
+    "samples-002750-untruncated.png": "64d80fdf9a671e646c12cebb62a875a29916248e8bcbb0aad1c4b75700fba17d",
+    "samples-002750-raw.png": "2c8fff94eafe55ee87dbbe6ba1415cd423bd87ef8dba314c4a23688fb8f205f9"
+  },
+  "comparison_review_path": "visual-review-002500.json",
+  "comparison_review_sha256": "7b55e5c97258495ae41af525efa4c7771bd8e8ce71b5c02943bfac5d2797672b",
+  "comparison_step2500_grid_hashes_verified": true,
+  "comparison_images_reviewed": [
+    "samples-002500.png",
+    "samples-002500-untruncated.png"
+  ],
+  "findings": {
+    "ema_psi_0_7": {
+      "face_detail": "Most tiles have more coherent eyes and face contours than their untruncated counterparts, but detail remains soft and uneven at native256px. Row1 column1 has conspicuously dark, malformed eye regions. Several cheeks and mouths still appear modeled or smeared rather than photographic.",
+      "specific_artifacts": [
+        "r1c1 dark malformed eyes",
+        "r2c3 asymmetric cheek/mouth treatment",
+        "r3c3 eye/cheek distortion remains noticeable although reduced by truncation"
+      ],
+      "collars": "Recognizable white Roman tabs and black clerical shirts across all sixteen tiles.",
+      "no_hats": "No obvious headwear in these sixteen tiles."
+    },
+    "ema_psi_1": {
+      "face_detail": "Conspicuous failure remains: row1 column1 has opaque blurred eye patches; row3 column3 has dark ghosted eyes. Row2 column3 has a wedge-like cheek transition and warped expression. Other faces have smeared skin, asymmetrical mouths, or over-smooth cheeks.",
+      "specific_artifacts": [
+        "r1c1 opaque eye smears",
+        "r3c3 dark ghosted eye region",
+        "r2c3 unnatural cheek/mouth plane",
+        "r4c2 beard/neckline softness"
+      ],
+      "collars": "Clerical tabs recognizable in most tiles, but r1c2 is unusually tiny/dim; several necklines are warped.",
+      "no_hats": "No obvious headwear; some background shapes touch hair but are not clear hats."
+    },
+    "raw_psi_1": {
+      "face_detail": "Very similar broad failures to untruncated EMA. Dark opaque eyes at r1c1 and r3c3, unnatural cheek/mouth plane at r2c3, and inconsistent facial sharpness.",
+      "specific_artifacts": [
+        "r1c1 eye patches",
+        "r3c3 ghosted dark eyes",
+        "r2c3 warped cheek",
+        "several smeared mouth edges"
+      ],
+      "collars": "Tabs and black clergy clothing are learned; r1c2 remains tiny/dim and neck contours are inconsistent.",
+      "no_hats": "No obvious headwear in the fixed grid."
+    }
+  },
+  "apparent_subjects": "All grids consistently suggest adult masculine priest portraits. This does not establish subjective hot-only eligibility.",
+  "diversity_assessment": "Some facial-hair, hair-curl and skin-tone variation is present, but similar long/oval proportions, dark swept hair, mild smiles, head angles, clerical-shirt framing and Roman architectural backgrounds dominate. These sixteen fixed latents show a narrow visual range; they do not establish unseen-latent diversity or a numerical collapse rate.",
+  "comparison_to_2500": "Compared with the recorded2500 review and re-viewed2500 EMA/truncated and untruncated grids, the same eye/cheek failures persist. Some truncated faces look a little more coherent, but the visual difference is small and does not demonstrate a material quality or diversity recovery.",
+  "coordinate_convention": "One-based rows/columns in each4x4 grid.",
+  "decision": "Not approved. Preserve research evidence; facial artifacts and narrow visual diversity remain below the requested production standard.",
+  "limits": [
+    "Sixteen fixed latent images per variant, each256x256; no unseen-latent generation, identity embedding, hotness score or distribution metric.",
+    "Displayed grids reviewed at their native1024x1024 size; a256px face tile cannot establish1024px photographic detail.",
+    "Only saved PNGs and prior review were read; generator/checkpoint state was not loaded or validated.",
+    "Synthetic apparent adult-male descriptions are visual presentation judgments, not facts about real people.",
+    "No active training data, trainer, checkpoint, or production deployment changed."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "cwd": "/Users/twixes/Developer/thispriestdoesnotexist",
+  "command": "research/.venv/bin/python research/experiments/paired_regions/evaluate.py --source-bundle research/runs/inference-cpu/ffhq1024/baseline-bundle --checkpoint research/runs/paired-regions1024-cpu-200/resume.pt --sources research/data/ffhq-paired-sources32/manifest.json --expected-step 200 --output research/runs/paired-regions1024-cpu-200/evaluation32 > research/runs/paired-regions1024-cpu-200/evaluation32.log 2>&1",
+  "evaluator_exec_session": 31182,
+  "evaluator_exit_code": 0,
+  "training_observation": {
+    "pid": 94814,
+    "process_absent_before_evaluation": true,
+    "final_logged_step": 200,
+    "checkpoint_verified_frozen_source": true,
+    "training_exit_code_independently_observed": false
+  },
+  "memory_preflight_free_percent": 29,
+  "memory_after_evaluator_exit_observed_percent": 30,
+  "no_restart": true,
+  "no_concurrent_model_compute_from_this_agent": true,
+  "no_training_or_dataset_mutation": true,
+  "checkpoint_sha256": "37a796c838f8cbb58e22ef5c3f2108a7754ae0038aaac31f558ca57d1f168bb4",
+  "evaluator_sha256": "4b10d1f5f19ca68f104b4ccb06ecd160152a54e05c2af5b9d3179c55b9e4c682",
+  "artifacts_verified_png_count": 96
+}

@@ -1,0 +1,357 @@
+{
+  "created_utc": "2026-09-21T00:52:30.466911+00:00",
+  "purpose": "Thread scaling of actual fresh-source region training; no model approval",
+  "production_approved": false,
+  "checkpoint_saved": false,
+  "device": "cpu",
+  "threads": 2,
+  "interop_threads": 1,
+  "seed": 20260921,
+  "resolution": 1024,
+  "updates_total": 4,
+  "warmup_updates": 1,
+  "timed_updates": 3,
+  "fresh_latent_updates": 4,
+  "strict_source_verification_threads": 1,
+  "source_max_uint8_error_allowed": 0,
+  "w_atol_allowed": 0,
+  "memory_preflight_free_percent": 26,
+  "load_verify_setup_seconds": 2.863643290940672,
+  "strict_source_verification_seconds": 0.8486215409357101,
+  "warmup_wall_seconds": 5.157339375000447,
+  "timed_mean_wall_seconds": 4.621198888984509,
+  "timed_median_wall_seconds": 4.866454667062499,
+  "timed_min_wall_seconds": 4.074827874894254,
+  "timed_max_wall_seconds": 4.922314124996774,
+  "final_hash_finite_checks_seconds": 0.1398046249523759,
+  "final_preview_seconds": 0.6983556250343099,
+  "total_process_work_seconds": 22.72462066600565,
+  "peak_rss_bytes": 5677760512,
+  "frozen_source_preserved": true,
+  "frozen_student_preserved": true,
+  "finite_changed_student": true,
+  "source_validation_discrepancy_at_training_threads": [
+    {
+      "id": "calibration-original",
+      "w_max_abs_error": 0.0,
+      "source_float_max_abs_error": 0.0,
+      "source_float_mean_abs_error": 0.0,
+      "source_uint8_max_abs_error": 0,
+      "source_uint8_mean_abs_error": 0.0,
+      "source_uint8_changed_channel_fraction": 0.0
+    }
+  ],
+  "updates": [
+    {
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "clothing_l1": 0.8518772125244141,
+      "collar_l1": 0.6990350484848022,
+      "rest_clothing_l1": 1.0047193765640259,
+      "protected_l1": 0.0,
+      "paired_loss": 0.8518772125244141,
+      "fresh_preservation_l1": 0.0,
+      "update": 1,
+      "warmup": true,
+      "wall_seconds": 5.157339375000447,
+      "cpu_seconds": 7.150119,
+      "peak_rss_bytes": 5591121920
+    },
+    {
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "clothing_l1": 0.8426119089126587,
+      "collar_l1": 0.6839672923088074,
+      "rest_clothing_l1": 1.0012565851211548,
+      "protected_l1": 0.0022504893131554127,
+      "paired_loss": 0.8448624014854431,
+      "fresh_preservation_l1": 0.001280587282963097,
+      "update": 2,
+      "warmup": false,
+      "wall_seconds": 4.074827874894254,
+      "cpu_seconds": 5.98823,
+      "peak_rss_bytes": 5666619392
+    },
+    {
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "clothing_l1": 0.8355334997177124,
+      "collar_l1": 0.6753871440887451,
+      "rest_clothing_l1": 0.9956799149513245,
+      "protected_l1": 0.002402413869276643,
+      "paired_loss": 0.8379359245300293,
+      "fresh_preservation_l1": 0.0026337469462305307,
+      "update": 3,
+      "warmup": false,
+      "wall_seconds": 4.922314124996774,
+      "cpu_seconds": 7.170123,
+      "peak_rss_bytes": 5677760512
+    },
+    {
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "clothing_l1": 0.8290938138961792,
+      "collar_l1": 0.6638458371162415,
+      "rest_clothing_l1": 0.9943417906761169,
+      "protected_l1": 0.0021739474032074213,
+      "paired_loss": 0.831267774105072,
+      "fresh_preservation_l1": 0.0012327033327892423,
+      "update": 4,
+      "warmup": false,
+      "wall_seconds": 4.866454667062499,
+      "cpu_seconds": 6.976870999999999,
+      "peak_rss_bytes": 5677760512
+    }
+  ],
+  "options": {
+    "batch": 1,
+    "clothing_weight": 1,
+    "protected_weight": 1,
+    "fresh_weight": 1,
+    "upper_fraction": 0.75
+  },
+  "lr": 0.0001,
+  "adam_betas": [
+    0.9,
+    0.999
+  ],
+  "freeze": "unchanged paired_regions/base policy: mapping, all buffers/noise_strength, blocks<=32",
+  "trainable_parameters": [
+    "synthesis.b64.conv0.weight",
+    "synthesis.b64.conv0.bias",
+    "synthesis.b64.conv0.affine.weight",
+    "synthesis.b64.conv0.affine.bias",
+    "synthesis.b64.conv1.weight",
+    "synthesis.b64.conv1.bias",
+    "synthesis.b64.conv1.affine.weight",
+    "synthesis.b64.conv1.affine.bias",
+    "synthesis.b64.torgb.weight",
+    "synthesis.b64.torgb.bias",
+    "synthesis.b64.torgb.affine.weight",
+    "synthesis.b64.torgb.affine.bias",
+    "synthesis.b128.conv0.weight",
+    "synthesis.b128.conv0.bias",
+    "synthesis.b128.conv0.affine.weight",
+    "synthesis.b128.conv0.affine.bias",
+    "synthesis.b128.conv1.weight",
+    "synthesis.b128.conv1.bias",
+    "synthesis.b128.conv1.affine.weight",
+    "synthesis.b128.conv1.affine.bias",
+    "synthesis.b128.torgb.weight",
+    "synthesis.b128.torgb.bias",
+    "synthesis.b128.torgb.affine.weight",
+    "synthesis.b128.torgb.affine.bias",
+    "synthesis.b256.conv0.weight",
+    "synthesis.b256.conv0.bias",
+    "synthesis.b256.conv0.affine.weight",
+    "synthesis.b256.conv0.affine.bias",
+    "synthesis.b256.conv1.weight",
+    "synthesis.b256.conv1.bias",
+    "synthesis.b256.conv1.affine.weight",
+    "synthesis.b256.conv1.affine.bias",
+    "synthesis.b256.torgb.weight",
+    "synthesis.b256.torgb.bias",
+    "synthesis.b256.torgb.affine.weight",
+    "synthesis.b256.torgb.affine.bias",
+    "synthesis.b512.conv0.weight",
+    "synthesis.b512.conv0.bias",
+    "synthesis.b512.conv0.affine.weight",
+    "synthesis.b512.conv0.affine.bias",
+    "synthesis.b512.conv1.weight",
+    "synthesis.b512.conv1.bias",
+    "synthesis.b512.conv1.affine.weight",
+    "synthesis.b512.conv1.affine.bias",
+    "synthesis.b512.torgb.weight",
+    "synthesis.b512.torgb.bias",
+    "synthesis.b512.torgb.affine.weight",
+    "synthesis.b512.torgb.affine.bias",
+    "synthesis.b1024.conv0.weight",
+    "synthesis.b1024.conv0.bias",
+    "synthesis.b1024.conv0.affine.weight",
+    "synthesis.b1024.conv0.affine.bias",
+    "synthesis.b1024.conv1.weight",
+    "synthesis.b1024.conv1.bias",
+    "synthesis.b1024.conv1.affine.weight",
+    "synthesis.b1024.conv1.affine.bias",
+    "synthesis.b1024.torgb.weight",
+    "synthesis.b1024.torgb.bias",
+    "synthesis.b1024.torgb.affine.weight",
+    "synthesis.b1024.torgb.affine.bias"
+  ],
+  "source_state_digest": "a02240d17aae05f0eb862d230d782448063586522a763a93e24eca64c6ae2d7e",
+  "initial_student_digest": "a02240d17aae05f0eb862d230d782448063586522a763a93e24eca64c6ae2d7e",
+  "final_student_digest": "e25a7aa181c3dbd9e6a891c36b61697407d3ac3289d12cfda1a50376a17f6447",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "python": "3.11.16",
+  "packages": {
+    "torch": "2.14.0",
+    "numpy": "2.4.6",
+    "pillow": "12.3.0",
+    "safetensors": "0.8.0"
+  },
+  "provenance": {
+    "benchmark_sha256": "8feeaadbc1c8068b3e815413feb85ee0d872ffb4a9fffbc49429f51cc76f226e",
+    "manifest_sha256": "71ce8502bc12283c4241d442f2329c8d5f64018118b8e0b9495a75afd1ee085c",
+    "source_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+    "metadata_sha256": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+    "trainer_sources": {
+      "regions_trainer": "7842039b65b0230dcc745c023761350da7bdeb49720fdac30f679fdaa38cb821",
+      "paired_edit_helpers": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+      "training/__init__.py": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+      "training/augment.py": "fd81c871a9bfbb7feaad138b1e875db05c640060bdbf0342247d209eb48ba8f9",
+      "training/dataset.py": "10e433ffde6e3e63963711390ee8eeaa6f0e5a00da9f883117331a48b36e5145",
+      "training/loss.py": "1bd68d7dc1c92c1b78b91f193a45a433b1ff374614f91909ea8cb88eac7bc2d7",
+      "training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24",
+      "training/training_loop.py": "0b589a731712c51791eb22efe0dc1ee6856bf3e9335920db02a3e38dee909eb3",
+      "torch_utils/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+      "torch_utils/custom_ops.py": "ee123ae0458fbe463000d5962a5b804d9e91b25d3fda8500eeaa6ddf6b5c932a",
+      "torch_utils/misc.py": "8b66e614f3dbb27b9b3280030efcb65a94e5cfd0e9d940302692452cb7c44012",
+      "torch_utils/ops/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+      "torch_utils/ops/bias_act.cpp": "4a3eb091ce936451ac3a0e9c7c771cc5576cba195332cd777ec275cb806f4f53",
+      "torch_utils/ops/bias_act.cu": "bc6b93e2c347cc00b07dfe0f6dca35011c2291645806239cc86632902694d017",
+      "torch_utils/ops/bias_act.h": "f0ca2d087bb22b20f6642e4affd7c77e2ff5b601a2f6d1632a79002608d87aa4",
+      "torch_utils/ops/bias_act.py": "ae9d4a2efbb61f7d21d2e361a5a145704351cc9733d2bd3e5ba4e64938d8e3e3",
+      "torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3",
+      "torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+      "torch_utils/ops/fma.py": "f3fdd6b890e250124557cba35360a1297cac5bdbc4925325403b44bf290956e9",
+      "torch_utils/ops/grid_sample_gradfix.py": "a49a8195b734ecba95c9b63d035f26faa5d794a0b26eb3e9d5f3c521be29c536",
+      "torch_utils/ops/upfirdn2d.cpp": "a3930ed91584ab11786f44aca9abad9beab9f4020b564d4c547727da49d70b11",
+      "torch_utils/ops/upfirdn2d.cu": "af059a0dd7be4ba24e2b6b2f8fb5bcb0a89c4ac8320d17a59f228580164528ca",
+      "torch_utils/ops/upfirdn2d.h": "9f703976585fd9c07d18cf1c00edd3a495dc641ff1e1e1671e2df2ab24126535",
+      "torch_utils/ops/upfirdn2d.py": "7b5865e70ac4156edaefb2a372fee27dc55eb5661568b337cb4168e8936384a8",
+      "torch_utils/persistence.py": "1f24073d03fbb2d772babbf7b8a1175bec6c3423314c2649e9a8a13d37757121",
+      "torch_utils/training_stats.py": "c1c105b7e5c2fa5883516bf2bc05b588da5f45939d37f3fe281abca4579e7616",
+      "dnnlib/__init__.py": "01ee5300565a54d4a309ae87784f314a0c82db6c63e6735d1e9a124327f4c12d",
+      "dnnlib/util.py": "8f4c1e9e7eac60f9bf541b2fc0e649a022b2ddde8178df7f85f924f63e3db426"
+    },
+    "pairs": [
+      {
+        "collar_polygons": [
+          [
+            [
+              0.37,
+              0.923
+            ],
+            [
+              0.484,
+              0.931
+            ],
+            [
+              0.472,
+              0.986
+            ],
+            [
+              0.452,
+              0.993
+            ],
+            [
+              0.4,
+              0.994
+            ],
+            [
+              0.357,
+              0.987
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 7923,
+          "collar_intersection_pixels": 7198,
+          "rest_clothing_pixels": 134014,
+          "trace_outside_clothing_pixels": 725,
+          "trace_retained_fraction": 0.908494234085083,
+          "collar_fraction_of_clothing": 0.05097300559282303
+        },
+        "id": "calibration-original",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.13467025756835938,
+        "clothing_polygons": [
+          [
+            [
+              0.0,
+              0.765
+            ],
+            [
+              0.123,
+              0.687
+            ],
+            [
+              0.15,
+              0.75
+            ],
+            [
+              0.18,
+              0.82
+            ],
+            [
+              0.275,
+              0.892
+            ],
+            [
+              0.39,
+              0.93
+            ],
+            [
+              0.5,
+              0.94
+            ],
+            [
+              0.565,
+              0.91
+            ],
+            [
+              0.635,
+              0.8
+            ],
+            [
+              0.7,
+              0.84
+            ],
+            [
+              1.0,
+              0.97
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/reproduction-sample002.npz",
+            "sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/reproduction-sample002.png",
+            "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edit1/001.png",
+            "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+          }
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "Three timed updates are a small scheduling-sensitive benchmark, not a long-run speed guarantee.",
+    "Update timing includes fresh forwards/backward, finite gradient checks and optimizer; checkpoint I/O excluded.",
+    "Different thread counts can change floating-point reduction results; differences are measured, not declared exact.",
+    "This single-pair, four-update preview is not a quality or generalization evaluation."
+  ]
+}

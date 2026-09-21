@@ -1,0 +1,48 @@
+{
+  "count": 96,
+  "summary": {
+    "review_scope": {
+      "contact_and_native_current_review": 14,
+      "contact_only": 67,
+      "contact_current_and_native_prior_same_source_review": 15
+    },
+    "apparent_adult": {
+      "yes": 68,
+      "uncertain": 17,
+      "no": 11
+    },
+    "apparent_adult_male": {
+      "yes": 31,
+      "no": 59,
+      "uncertain": 6
+    },
+    "headwear": {
+      "no": 74,
+      "yes": 22
+    },
+    "extra_people": {
+      "uncertain": 7,
+      "no": 66,
+      "yes": 23
+    },
+    "usable_neck": {
+      "yes": 23,
+      "uncertain": 49,
+      "no": 24
+    },
+    "facial_artifact_concerns": {
+      "no": 25,
+      "uncertain": 70,
+      "yes": 1
+    },
+    "hot_candidate": {
+      "yes": 11,
+      "no": 67,
+      "uncertain": 18
+    }
+  },
+  "strict_example_ids": [
+    "b2-055"
+  ],
+  "labels_sha256": "8649c025472c1d73f6addd1980f3dab446a40132149da20761c4e7e16459d7b1"
+}

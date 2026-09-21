@@ -1,0 +1,101 @@
+{
+  "count_updates": 12,
+  "all_runs_passed": true,
+  "all_source_frozen_checks_passed": true,
+  "no_checkpoint_saved": true,
+  "configs": [
+    {
+      "threads": 1,
+      "mean_seconds": 5.722452443985579,
+      "median_seconds": 5.936770208063535,
+      "minimum_seconds": 5.277261707931757,
+      "maximum_seconds": 5.953325415961444,
+      "warmup_seconds": 5.666746250004508,
+      "cpu_mean_seconds": 6.3522523333333325,
+      "peak_rss_gib": 5.2996063232421875,
+      "free_memory_percent": 31,
+      "speedup_vs_1thread_mean": 1.0,
+      "initial_model_digest_matches_thread1": true,
+      "final_model_digest_matches_thread1": true,
+      "final_png_sha256": "20f502bcbac9de3db3cb1104325ded89c60bddc72ef884a68c1cba27619173fe",
+      "final_png_max_delta_vs_thread1": 0,
+      "final_png_mean_delta_vs_thread1": 0.0,
+      "final_png_changed_channel_fraction_vs_thread1": 0.0,
+      "max_loss_metric_delta_vs_thread1": 0.0,
+      "source_validation_at_threads": [
+        {
+          "id": "calibration-original",
+          "w_max_abs_error": 0.0,
+          "source_float_max_abs_error": 0.0,
+          "source_float_mean_abs_error": 0.0,
+          "source_uint8_max_abs_error": 0,
+          "source_uint8_mean_abs_error": 0.0,
+          "source_uint8_changed_channel_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "threads": 2,
+      "mean_seconds": 4.621198888984509,
+      "median_seconds": 4.866454667062499,
+      "minimum_seconds": 4.074827874894254,
+      "maximum_seconds": 4.922314124996774,
+      "warmup_seconds": 5.157339375000447,
+      "cpu_mean_seconds": 6.711741333333333,
+      "peak_rss_gib": 5.2878265380859375,
+      "free_memory_percent": 26,
+      "speedup_vs_1thread_mean": 1.2383047303214136,
+      "initial_model_digest_matches_thread1": true,
+      "final_model_digest_matches_thread1": true,
+      "final_png_sha256": "20f502bcbac9de3db3cb1104325ded89c60bddc72ef884a68c1cba27619173fe",
+      "final_png_max_delta_vs_thread1": 0,
+      "final_png_mean_delta_vs_thread1": 0.0,
+      "final_png_changed_channel_fraction_vs_thread1": 0.0,
+      "max_loss_metric_delta_vs_thread1": 0.0,
+      "source_validation_at_threads": [
+        {
+          "id": "calibration-original",
+          "w_max_abs_error": 0.0,
+          "source_float_max_abs_error": 0.0,
+          "source_float_mean_abs_error": 0.0,
+          "source_uint8_max_abs_error": 0,
+          "source_uint8_mean_abs_error": 0.0,
+          "source_uint8_changed_channel_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "threads": 4,
+      "mean_seconds": 4.77463076399484,
+      "median_seconds": 4.857561041950248,
+      "minimum_seconds": 4.3964050830109045,
+      "maximum_seconds": 5.069926167023368,
+      "warmup_seconds": 5.235217291978188,
+      "cpu_mean_seconds": 8.660483999999999,
+      "peak_rss_gib": 5.4809112548828125,
+      "free_memory_percent": 26,
+      "speedup_vs_1thread_mean": 1.1985120372319042,
+      "initial_model_digest_matches_thread1": true,
+      "final_model_digest_matches_thread1": true,
+      "final_png_sha256": "20f502bcbac9de3db3cb1104325ded89c60bddc72ef884a68c1cba27619173fe",
+      "final_png_max_delta_vs_thread1": 0,
+      "final_png_mean_delta_vs_thread1": 0.0,
+      "final_png_changed_channel_fraction_vs_thread1": 0.0,
+      "max_loss_metric_delta_vs_thread1": 1.1920928955078125e-07,
+      "source_validation_at_threads": [
+        {
+          "id": "calibration-original",
+          "w_max_abs_error": 0.0,
+          "source_float_max_abs_error": 0.0,
+          "source_float_mean_abs_error": 0.0,
+          "source_uint8_max_abs_error": 0,
+          "source_uint8_mean_abs_error": 0.0,
+          "source_uint8_changed_channel_fraction": 0.0
+        }
+      ]
+    }
+  ],
+  "fastest_mean_threads": 2,
+  "summarizer_sha256": "c78ec68870e818e4684cabfd249f9a68914c5d8c2a570c50a7b5ba2659efc32f",
+  "caveat": "Only three timed updates each, sequential order 1/2/4 and concurrent pre-existing MPS activity; no long-run speed guarantee."
+}

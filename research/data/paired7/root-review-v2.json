@@ -1,0 +1,13 @@
+{
+  "reviewer": "Codex root native overlay review",
+  "research_masks_approved": true,
+  "production_approved": false,
+  "manifest_sha256": "9c27b19b0b7cfea4ca797a488b5d249410f3988b512373f713a599f02164bab6",
+  "findings": [
+    "Reviewed full native b2-055 v2 overlay: added strips cover obvious source sweater edges along both jaw sides, while visible skin, chin, mouth, nose, glasses and upper face remain protected.",
+    "Other training masks and complete heldout028 record remain unchanged.",
+    "b2-020 retains only the lower part of the target tab because original source chin preservation takes precedence. No full-collar visibility requirement is introduced.",
+    "These are manually traced regions, not semantic segmentation ground truth. Coarse landmark checks do not prove exact edited-face identity."
+  ],
+  "next_action": "After controlled region200 completion and unseen evaluation, run strict CPU source/tab preflight for all seven pairs before selecting a fresh multi-identity training run. CPU thread benchmark must complete before choosing its threading options."
+}

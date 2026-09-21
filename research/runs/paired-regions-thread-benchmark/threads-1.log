@@ -1,0 +1,78 @@
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8518772125244141, "collar_l1": 0.6990350484848022, "rest_clothing_l1": 1.0047193765640259, "protected_l1": 0.0, "paired_loss": 0.8518772125244141, "fresh_preservation_l1": 0.0, "update": 1, "warmup": true, "wall_seconds": 5.666746250004508, "cpu_seconds": 6.3006709999999995, "peak_rss_bytes": 5509201920}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8426119089126587, "collar_l1": 0.6839672923088074, "rest_clothing_l1": 1.0012565851211548, "protected_l1": 0.0022504893131554127, "paired_loss": 0.8448624014854431, "fresh_preservation_l1": 0.001280587282963097, "update": 2, "warmup": false, "wall_seconds": 5.277261707931757, "cpu_seconds": 6.071384, "peak_rss_bytes": 5644812288}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8355334997177124, "collar_l1": 0.6753871440887451, "rest_clothing_l1": 0.9956799149513245, "protected_l1": 0.002402413869276643, "paired_loss": 0.8379359245300293, "fresh_preservation_l1": 0.0026337469462305307, "update": 3, "warmup": false, "wall_seconds": 5.953325415961444, "cpu_seconds": 6.549370999999999, "peak_rss_bytes": 5690408960}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8290938138961792, "collar_l1": 0.6638458371162415, "rest_clothing_l1": 0.9943417906761169, "protected_l1": 0.0021739474032074213, "paired_loss": 0.831267774105072, "fresh_preservation_l1": 0.0012327033327892423, "update": 4, "warmup": false, "wall_seconds": 5.936770208063535, "cpu_seconds": 6.4360019999999984, "peak_rss_bytes": 5690408960}
+{
+  "created_utc": "2026-09-21T00:52:07.277214+00:00",
+  "purpose": "Thread scaling of actual fresh-source region training; no model approval",
+  "production_approved": false,
+  "checkpoint_saved": false,
+  "device": "cpu",
+  "threads": 1,
+  "interop_threads": 1,
+  "seed": 20260921,
+  "resolution": 1024,
+  "updates_total": 4,
+  "warmup_updates": 1,
+  "timed_updates": 3,
+  "fresh_latent_updates": 4,
+  "strict_source_verification_threads": 1,
+  "source_max_uint8_error_allowed": 0,
+  "w_atol_allowed": 0,
+  "memory_preflight_free_percent": 31,
+  "load_verify_setup_seconds": 3.1614026250317693,
+  "strict_source_verification_seconds": 0.9013182501075789,
+  "warmup_wall_seconds": 5.666746250004508,
+  "timed_mean_wall_seconds": 5.722452443985579,
+  "timed_median_wall_seconds": 5.936770208063535,
+  "timed_min_wall_seconds": 5.277261707931757,
+  "timed_max_wall_seconds": 5.953325415961444,
+  "final_hash_finite_checks_seconds": 0.14321875001769513,
+  "final_preview_seconds": 0.7265682920115069,
+  "total_process_work_seconds": 26.8695285419235,
+  "peak_rss_bytes": 5690408960,
+  "frozen_source_preserved": true,
+  "frozen_student_preserved": true,
+  "finite_changed_student": true,
+  "source_validation_discrepancy_at_training_threads": [
+    {
+      "id": "calibration-original",
+      "w_max_abs_error": 0.0,
+      "source_float_max_abs_error": 0.0,
+      "source_float_mean_abs_error": 0.0,
+      "source_uint8_max_abs_error": 0,
+      "source_uint8_mean_abs_error": 0.0,
+      "source_uint8_changed_channel_fraction": 0.0
+    }
+  ],
+  "options": {
+    "batch": 1,
+    "clothing_weight": 1,
+    "protected_weight": 1,
+    "fresh_weight": 1,
+    "upper_fraction": 0.75
+  },
+  "lr": 0.0001,
+  "adam_betas": [
+    0.9,
+    0.999
+  ],
+  "freeze": "unchanged paired_regions/base policy: mapping, all buffers/noise_strength, blocks<=32",
+  "source_state_digest": "a02240d17aae05f0eb862d230d782448063586522a763a93e24eca64c6ae2d7e",
+  "initial_student_digest": "a02240d17aae05f0eb862d230d782448063586522a763a93e24eca64c6ae2d7e",
+  "final_student_digest": "e25a7aa181c3dbd9e6a891c36b61697407d3ac3289d12cfda1a50376a17f6447",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "python": "3.11.16",
+  "packages": {
+    "torch": "2.14.0",
+    "numpy": "2.4.6",
+    "pillow": "12.3.0",
+    "safetensors": "0.8.0"
+  },
+  "limitations": [
+    "Three timed updates are a small scheduling-sensitive benchmark, not a long-run speed guarantee.",
+    "Update timing includes fresh forwards/backward, finite gradient checks and optimizer; checkpoint I/O excluded.",
+    "Different thread counts can change floating-point reduction results; differences are measured, not declared exact.",
+    "This single-pair, four-update preview is not a quality or generalization evaluation."
+  ]
+}

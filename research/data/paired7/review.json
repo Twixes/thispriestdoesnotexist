@@ -1,0 +1,16 @@
+{
+  "status": "Prospective manual mask review complete; awaiting root review and separate single-pair result before use",
+  "native_source_target_overlays_reviewed": [
+    "b2-055",
+    "b2-051",
+    "b2-020"
+  ],
+  "source_face_protected": true,
+  "remaining_caveats": [
+    "020 effective tab retains only44.63% of raw trace to preserve source chin",
+    "051 tab is frame-truncated",
+    "055 conservative jaw boundary may preserve narrow strips of original light neckline"
+  ],
+  "manifest_sha256": "b3e15a2168db5507219fc59042b14b4445fcd70c30acedcaabeff8b855c4a94c",
+  "no_model_preflight_or_training": true
+}

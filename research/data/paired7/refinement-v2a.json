@@ -1,0 +1,105 @@
+{
+  "base_manifest_sha256": "b3e15a2168db5507219fc59042b14b4445fcd70c30acedcaabeff8b855c4a94c",
+  "candidate_manifest_sha256": "0e9dc04e3968785deb1f67b1f6eeb28d84ab29edd4ebfda136d831c55366cccf",
+  "script_sha256": "37b69ba939ff78f91f4d324ad3756eab11c69e671f8f49eeebdca8e5c8167674",
+  "changed_pair": "b2-055",
+  "changed_field_only": "clothing_polygons",
+  "all_other_pairs_and_tab_polygons_unchanged": true,
+  "old_clothing_pixels": 252686,
+  "new_clothing_pixels": 259212,
+  "previously_protected_pixels_added_to_clothing": 6668,
+  "old_clothing_pixels_removed": 142,
+  "left_side_added_pixels": 2119,
+  "central_chin_added_pixels": 190,
+  "right_side_added_pixels": 4359,
+  "raw_tab_pixels": 6895,
+  "old_effective_tab_pixels": 6015,
+  "new_effective_tab_pixels": 6178,
+  "raw_tab_retained_fraction": 0.8960116026105874,
+  "native_manual_boundary_points": [
+    [
+      242,
+      598
+    ],
+    [
+      246,
+      637
+    ],
+    [
+      252,
+      676
+    ],
+    [
+      267,
+      738
+    ],
+    [
+      289,
+      791
+    ],
+    [
+      319,
+      835
+    ],
+    [
+      367,
+      881
+    ],
+    [
+      419,
+      916
+    ],
+    [
+      465,
+      936
+    ],
+    [
+      513,
+      943
+    ],
+    [
+      562,
+      940
+    ],
+    [
+      613,
+      924
+    ],
+    [
+      647,
+      895
+    ],
+    [
+      678,
+      860
+    ],
+    [
+      701,
+      820
+    ],
+    [
+      719,
+      780
+    ],
+    [
+      733,
+      733
+    ],
+    [
+      743,
+      683
+    ],
+    [
+      750,
+      631
+    ],
+    [
+      755,
+      580
+    ]
+  ],
+  "source_native_sha256": "6840845f45473f8a0f4be4950ad65b4957a4ce9314d007ffc4ff561a15e607b2",
+  "mask_method": "Manual visual trace just outside source skin/cloth boundary; no automatic skin classification. Added pixels reported geometrically, not claimed semantic ground truth.",
+  "model_compute": false,
+  "training": false
+}

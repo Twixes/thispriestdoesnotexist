@@ -1,0 +1,19 @@
+{
+  "step": 200,
+  "training_exec_session": 47116,
+  "training_exit_code": 0,
+  "wall_seconds_for_resume_steps_11_to_200": 1069.57,
+  "peak_rss_bytes": 5803442176,
+  "peak_memory_footprint_bytes": 6029596048,
+  "reported_swaps": 0,
+  "production_approved": false,
+  "checkpoint_sha256": "37a796c838f8cbb58e22ef5c3f2108a7754ae0038aaac31f558ca57d1f168bb4",
+  "native_review": {
+    "path": "000200-pair-000-train.png",
+    "sha256": "e0da92b04f7b856204240483fba6b7e0a75d847c8a7d4830a3920e61dec8a8b5",
+    "finding": "Face remains recognizable and photographic. Neck contains a broad soft white patch without the rectangular boundary and black shirt of the edited target. Shirt is darker but still textured gray near the crop. This training identity is not a convincing clerical conversion."
+  },
+  "controlled_comparison": "comparison200/comparison.json",
+  "interpretation": "Balancing the small tab region greatly improves its pixel error but does not establish semantic collar geometry. The separate held-out evaluation remains negative for collar generalization.",
+  "next_experiment": "Fresh six-identity paired run using reviewed paired7 v2 masks, original source weights, unchanged loss/freezing and CPU2 benchmark choice; never resume this checkpoint under changed training data."
+}

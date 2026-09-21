@@ -1,0 +1,67 @@
+{
+  "step": 125,
+  "production_approved": false,
+  "model_inference_performed": false,
+  "scope": "One training identity, saved post-update clipped PNGs. Not exact float-tensor loss, identity validation, collar recognition or unseen generalization.",
+  "rendering": "Fixed .299/.587/.114 grayscale; target resized with Lanczos; no crop/warp or model-output compositing. Contact sheet is diagnostic only.",
+  "areas": {
+    "tab_pixels": 7198,
+    "rest_clothing_pixels": 134014,
+    "protected_pixels": 907364
+  },
+  "manifest_sha256": "71ce8502bc12283c4241d442f2329c8d5f64018118b8e0b9495a75afd1ee085c",
+  "script_sha256": "a177845a1d7233ae4c53e784f35083e78edf63179d185d4a5b67eae66bf9d835",
+  "inputs": {
+    "Source (unadapted)": {
+      "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/reproduction-sample002.png",
+      "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+    },
+    "Broad clothing loss": {
+      "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired1024-cpu-200/000125-pair-000-train.png",
+      "sha256": "f7ec869ff2907f3a71c77a0dbcadd5ef5105d5396b0a93f868b9e2279a89da7c"
+    },
+    "Balanced collar/rest loss": {
+      "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-regions1024-cpu-200/000125-pair-000-train.png",
+      "sha256": "dd02470521ce54eceaf06d682851713af5d349f49b5ed50065cddbbc332f075e"
+    },
+    "Edited target (reference only)": {
+      "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edit1/001.png",
+      "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+    }
+  },
+  "measurements": {
+    "Source (unadapted)": {
+      "tab_mae_to_target_uint8": 89.62947845458984,
+      "rest_clothing_mae_to_target_uint8": 127.61136627197266,
+      "protected_mae_to_source_uint8": 0.0,
+      "tab_mean_uint8": 86.59452819824219,
+      "rest_clothing_mean_uint8": 138.61181640625,
+      "tab_minus_rest_mean_uint8": -52.01728820800781
+    },
+    "Broad clothing loss": {
+      "tab_mae_to_target_uint8": 135.8304443359375,
+      "rest_clothing_mae_to_target_uint8": 20.59044075012207,
+      "protected_mae_to_source_uint8": 4.553038597106934,
+      "tab_mean_uint8": 40.39358139038086,
+      "rest_clothing_mean_uint8": 27.59111785888672,
+      "tab_minus_rest_mean_uint8": 12.80246353149414
+    },
+    "Balanced collar/rest loss": {
+      "tab_mae_to_target_uint8": 6.30735969543457,
+      "rest_clothing_mae_to_target_uint8": 69.36471557617188,
+      "protected_mae_to_source_uint8": 1.8227547407150269,
+      "tab_mean_uint8": 171.56724548339844,
+      "rest_clothing_mean_uint8": 80.40486145019531,
+      "tab_minus_rest_mean_uint8": 91.16238403320312
+    },
+    "Edited target (reference only)": {
+      "tab_mae_to_target_uint8": 0.0,
+      "rest_clothing_mae_to_target_uint8": 0.0,
+      "protected_mae_to_source_uint8": 9.690567016601562,
+      "tab_mean_uint8": 176.22401428222656,
+      "rest_clothing_mean_uint8": 12.172330856323242,
+      "tab_minus_rest_mean_uint8": 164.0516815185547
+    }
+  },
+  "comparison_sha256": "1dc028a50960e13d9bd5d9c3316b7f1bd53e200203b378e700a11ea03d523781"
+}

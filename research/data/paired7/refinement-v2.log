@@ -1,0 +1,117 @@
+{
+  "base_manifest_sha256": "b3e15a2168db5507219fc59042b14b4445fcd70c30acedcaabeff8b855c4a94c",
+  "candidate_manifest_sha256": "9c27b19b0b7cfea4ca797a488b5d249410f3988b512373f713a599f02164bab6",
+  "script_sha256": "8f0f86276a2e938f9dc110271ce530fd29b4e6959d15fc84f4e227ec672ac799",
+  "changed_pair": "b2-055",
+  "changed_field_only": "clothing_polygons",
+  "all_other_pairs_and_tab_polygons_unchanged": true,
+  "old_clothing_pixels": 252686,
+  "new_clothing_pixels": 267793,
+  "previously_protected_pixels_added_to_clothing": 15109,
+  "old_clothing_pixels_removed": 2,
+  "left_side_added_pixels": 7230,
+  "central_chin_added_pixels": 302,
+  "right_side_added_pixels": 7577,
+  "raw_tab_pixels": 6895,
+  "old_effective_tab_pixels": 6015,
+  "new_effective_tab_pixels": 6248,
+  "raw_tab_retained_fraction": 0.9061638868745467,
+  "native_manual_boundary_points": [
+    [
+      252,
+      598
+    ],
+    [
+      262,
+      637
+    ],
+    [
+      271,
+      676
+    ],
+    [
+      288,
+      738
+    ],
+    [
+      307,
+      791
+    ],
+    [
+      332,
+      835
+    ],
+    [
+      374,
+      881
+    ],
+    [
+      426,
+      916
+    ],
+    [
+      474,
+      936
+    ],
+    [
+      513,
+      943
+    ],
+    [
+      562,
+      940
+    ],
+    [
+      596,
+      926
+    ],
+    [
+      626,
+      900
+    ],
+    [
+      651,
+      874
+    ],
+    [
+      671,
+      849
+    ],
+    [
+      690,
+      819
+    ],
+    [
+      703,
+      790
+    ],
+    [
+      716,
+      757
+    ],
+    [
+      727,
+      725
+    ],
+    [
+      736,
+      686
+    ],
+    [
+      743,
+      645
+    ],
+    [
+      748,
+      611
+    ],
+    [
+      753,
+      580
+    ]
+  ],
+  "source_native_sha256": "6840845f45473f8a0f4be4950ad65b4957a4ce9314d007ffc4ff561a15e607b2",
+  "mask_method": "Manual visual trace just outside source skin/cloth boundary; no automatic skin classification. Added pixels reported geometrically, not claimed semantic ground truth.",
+  "model_compute": false,
+  "training": false
+}

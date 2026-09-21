@@ -1,0 +1,11 @@
+# Bounded CPU thread-count experiment
+
+`benchmark_threads.py` compares one, two and four intra-op threads in three separate sequential CPU processes. Each starts from the original FFHQ1024 source and the same single calibration manifest, seed, Adam LR `1e-4`, freeze policy, batch one, and fresh preservation weight one. Interop threads remain one. Each process performs exactly one warmup update plus three timed updates: twelve total updates across the experiment.
+
+The source model and saved W/source PNG are strictly verified at one CPU thread before switching to the requested training count. Both original tolerances remain zero. After switching threads, one source forward and mapping computation report floating-point and quantized-pixel discrepancies against that verified reference. Those diagnostic discrepancies are not silently accepted as a new source tolerance. Any future trainer using more threads must retain explicit verification semantics.
+
+Timed calls invoke the existing `paired_regions.update` unchanged, including paired loss, fresh source/student forward, both backward passes, gradient checks, optimizer update and parameter finiteness checks. Final source/frozen-state hashing and preview time are reported separately. No checkpoint is written. Each process retains metrics, source validation differences, peak RSS, full provenance, and a native grayscale final generated preview. The benchmark never composites output pixels.
+
+Execution is authorized only after the current region run (PID 94814) and its scheduled 32-image evaluation have both exited. A fresh in-process `memory_pressure` check must show at least 25% free before each model load. The coordinating agent enforces the sequencing; the script enforces the memory threshold. It will not stop jobs, change threads in another process, or modify any trainer/source/model input.
+
+Results should be interpreted as a small, scheduling-sensitive local training-speed comparison. Three timed updates cannot establish a long-run throughput guarantee, numerical equivalence across thread counts, or image quality after meaningful training. Other already-running MPS jobs remain untouched and may contribute system contention.

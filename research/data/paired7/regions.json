@@ -1,0 +1,45 @@
+{
+  "coordinate_system": "Manually traced normalized x,y; all masks rasterized at1024 with round(coord*1023).",
+  "effective_collar": "raw tab intersection clothing",
+  "new_pairs": [
+    {
+      "id": "b2-055",
+      "source_sha256": "6840845f45473f8a0f4be4950ad65b4957a4ce9314d007ffc4ff561a15e607b2",
+      "target_sha256": "596309dbe97cc0da9b5387411c3113de29ec7e7a360629aa9c59efd9a79177ad",
+      "latent_sha256": "46e8d2212064619855775974395992936a086b19aeef542ccf0fb289acbe9459",
+      "clothing_pixels": 252686,
+      "raw_tab_pixels": 6895,
+      "effective_tab_pixels": 6015,
+      "rest_clothing_pixels": 246671,
+      "raw_tab_retained_fraction": 0.8723712835387962,
+      "effective_tab_fraction_of_clothing": 0.023804247168422468,
+      "face_protection": "Manual source jaw contour; collar is intersected with clothing, never expands the clothing boundary."
+    },
+    {
+      "id": "b2-051",
+      "source_sha256": "23af87180b4c694a1d572041c922537ecdd8ab0c5201872bdc98751d063012d8",
+      "target_sha256": "2b18b2cda36e6128856978ac570837923082a70dff8c02bf92b72710663329b7",
+      "latent_sha256": "9aedebdadc19fc9685b5b89030c5c1cbd22151993157b073a68655ff47af65a7",
+      "clothing_pixels": 90269,
+      "raw_tab_pixels": 6302,
+      "effective_tab_pixels": 4924,
+      "rest_clothing_pixels": 85345,
+      "raw_tab_retained_fraction": 0.78133925737861,
+      "effective_tab_fraction_of_clothing": 0.054548072981865314,
+      "face_protection": "Manual source jaw contour; collar is intersected with clothing, never expands the clothing boundary."
+    },
+    {
+      "id": "b2-020",
+      "source_sha256": "ab9ccd0bd1d65dac07d8616723f219db306d77e44e5d2a314bcf83bf0fce3ccd",
+      "target_sha256": "24049cb2689461bbffffe40c9603aca036547a87e25ed32e29c4432c517387c8",
+      "latent_sha256": "02dc78bb0d0cb8f576461841b7371907d12b8dc840f8d1b6cbd780aa99099a99",
+      "clothing_pixels": 314638,
+      "raw_tab_pixels": 4011,
+      "effective_tab_pixels": 1790,
+      "rest_clothing_pixels": 312848,
+      "raw_tab_retained_fraction": 0.4462727499376714,
+      "effective_tab_fraction_of_clothing": 0.005689077606646368,
+      "face_protection": "Manual source jaw contour; collar is intersected with clothing, never expands the clothing boundary."
+    }
+  ]
+}
