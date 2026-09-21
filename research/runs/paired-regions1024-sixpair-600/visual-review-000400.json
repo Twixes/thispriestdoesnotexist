@@ -1,0 +1,52 @@
+{
+  "step": 400,
+  "reviewed_at_utc": "2026-09-21T01:33:06.614187+00:00",
+  "reviewer": "Codex inference agent; native view of all six saved previews",
+  "production_approved": false,
+  "continue_bounded_run": true,
+  "clear_facial_collapse": false,
+  "scope": "One TRAIN calibration identity, HOLDOUT028 and four fixed random latents. Other five training identities are not previewed. PNG-only inspection; no model compute.",
+  "findings": {
+    "training_calibration": "Coherent face and fine skin/hair detail. Neck has a wide soft white patch under the chin and darkening at some shirt edges, but much of the shirt remains light. No convincing rectangular tab with dark clerical band.",
+    "validation028": "Eyes, smile and beard remain coherent at native size; ordinary white shirt edges remain below beard. No recognizable new clerical tab.",
+    "unseen000": "Coherent face with glasses, graduation cap and partial additional person. Headwear makes this ineligible; no clerical collar.",
+    "unseen001": "Coherent mature masculine face with ordinary white shirt at the lower edge; no recognizable priest tab.",
+    "unseen002": "Mature masculine face remains coherent. Microphone and ambiguous hand/chin region obstruct the lower face; source has not been separately rendered, so artifact origin is unassigned. No priest tab.",
+    "unseen003": "Youthful masculine face with cap and additional person. Facial features coherent; no eligibility/hot-success claim and no clerical collar."
+  },
+  "decision": "Continue only the existing bounded 600-step run: no clear facial-collapse stop criterion was observed. Priest conversion remains unsuccessful in the previewed examples.",
+  "actual_training_pair_counts_through_step": {
+    "b2-051": 62,
+    "b2-020": 71,
+    "030": 65,
+    "000": 77,
+    "b2-055": 57,
+    "calibration-original": 68
+  },
+  "checkpoint_logged_metrics": {
+    "pair_ids": [
+      "b2-020"
+    ],
+    "clothing_l1": 0.07394839823246002,
+    "collar_l1": 0.07834755629301071,
+    "rest_clothing_l1": 0.06954923272132874,
+    "protected_l1": 0.035454947501420975,
+    "paired_loss": 0.1094033420085907,
+    "fresh_preservation_l1": 0.058143630623817444,
+    "step": 400,
+    "paired_images_seen": 400,
+    "fresh_images_seen": 400,
+    "seconds": 5.545534000033513,
+    "checkpoint_verified_frozen_source": true
+  },
+  "images": {
+    "000400-pair-000-train.png": "2154d3ce2d2052387be90fbd1a968bbe1cf3015b483505f8e7ca6ec263f480e9",
+    "000400-pair-001-validation.png": "3775846fcb3b3474c1496d6030deb265a5e33b27c6a052c73238bd9891346826",
+    "000400-unseen-000.png": "c8e17d5f36dbaba543d9fab993b0e9e6c65a926ccae3fc40a03ed6e48bcb5a41",
+    "000400-unseen-001.png": "8a889bafb162a20600e25c7be9224e475404881ddb47f64429f202228380a2d5",
+    "000400-unseen-002.png": "49d18355c61f3a2faf8a9d6ae02e0cb523c067819e42f733e4fb294ece476369",
+    "000400-unseen-003.png": "a7a112e4eda6616cf68b05b7bf1092f3c8f3078a1460013b23f7b6700331ab8f"
+  },
+  "config_sha256": "80d02fabf3bf2fa6c3fd98503e6558bcd5302e8cf89ec3e27434036bb6338c50",
+  "comparison_to_previous": "All six step400 images were explicitly viewed at native size. No clear new facial collapse relative to step300. Broad neckline whitening/darkening remains insufficient; no convincing collar on heldout028 or four random previews."
+}

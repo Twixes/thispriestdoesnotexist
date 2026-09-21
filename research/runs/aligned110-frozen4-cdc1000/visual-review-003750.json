@@ -1,0 +1,42 @@
+{
+  "step": 3750,
+  "images_seen": 30000,
+  "reviewed_utc": "2026-09-21T01:36:45.907215+00:00",
+  "approved": false,
+  "production_approved": false,
+  "reviewer": "Codex native PNG visual inspection",
+  "scope": "Three native 1024x1024 sheets, sixteen fixed-latent 256x256 images each; PNG-only, no model load.",
+  "grid_sha256": {
+    "samples-003750.png": "50589276b4f1fa76d4d16418a61fa475eb269be9c7e807acd0ed5564b5e2f74d",
+    "samples-003750-raw.png": "c3a3b378fa75118f4e3fb6d4cadea69cff9d2974c6f4c81e1bedfa71576ee0fa",
+    "samples-003750-untruncated.png": "1193d20df60ab224acd0606b1bb6f5376b51f3d76214e4299018b8edcea248cf"
+  },
+  "comparison_review_path": "visual-review-003500.json",
+  "comparison_review_sha256": "8063413288ef4cdac4f0b94ab34bc9a0fb6999614029ca4a66c27f5941ac1e76",
+  "findings": {
+    "ema_psi_0_7": [
+      "Most fixed tiles have recognizable adult masculine faces, white collar tabs, and black clerical shirts; no obvious hats.",
+      "The first face retains dark abnormal eye sockets. Mouth/cheek structure is still soft or uneven, including r2c3 and r3c3.",
+      "The truncated view is more coherent than the untruncated variants, but does not establish reliable photographic faces."
+    ],
+    "raw_psi_1": [
+      "r1c1 eyes remain opaque blurred dark regions; r3c3 retains ghosted/dark eyes.",
+      "The angular cheek and uneven mouth at r2c3 persist, along with smeared skin/neck transitions elsewhere.",
+      "Clerical attire is learned. The r1c2 tab is still comparatively small, though visible. No definite hats."
+    ],
+    "ema_psi_1": [
+      "The same first-face eye blobs and r3c3 eye-region distortion remain conspicuous.",
+      "Some individual portraits are more coherent, but facial fidelity is uneven and multiple mouths/cheeks remain unnatural.",
+      "White tabs and dark shirts are broadly present; no clear headwear is visible in these fixed sixteen samples."
+    ]
+  },
+  "diversity_assessment": "The fixed grid continues to occupy a narrow range of face proportions, dark swept/curly hair, mild smiles and closely related architectural portrait layouts. Some beard and skin-tone variation is visible; no broad diversity recovery is established.",
+  "comparison_to_3500": "The prior review's main failure modes remain at the same positions. Small contrast/expression variations do not change the production decision. This is a qualitative comparison against the prior review record, not a numerical convergence claim.",
+  "decision": "Not approved for production; retain research evidence.",
+  "coordinate_convention": "One-based rows and columns in each 4x4 sheet.",
+  "limits": [
+    "No newly sampled identities, generator inference, checkpoint loading or numeric state validation.",
+    "No calibrated adult/attractiveness classifier or quantitative diversity metric used.",
+    "Only a new review JSON was written; trainers, inputs, images and live jobs remained unchanged."
+  ]
+}

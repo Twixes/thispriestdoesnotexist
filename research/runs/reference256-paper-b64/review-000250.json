@@ -1,0 +1,91 @@
+{
+  "reviewed_utc": "2026-09-21T01:39:01.971643+00:00",
+  "step": 250,
+  "images_seen": 16000,
+  "production_approved": false,
+  "decision": "reject_current_checkpoint_for_production",
+  "review_method": "PNG-only direct native display of three 1024x1024 sheets, each sixteen 256x256 tiles. Step125 EMA/raw also displayed for direct comparison; prior125 review and all125 PNG hashes checked. No model deserialization or inference.",
+  "coordinate_convention": "One-based rows and columns in each 4x4 grid.",
+  "grid_sha256": {
+    "samples-000250-ema.png": "88af54f4d8f29297cb2f596a46f39eaa18b19d30c1c53bee05d481f87f19c3c2",
+    "samples-000250-raw.png": "b6d71730bb86ad419b2e01e0175f691ed2755187ae3c1a0bbc3256eaf6410a7b",
+    "samples-000250-untruncated.png": "a23c35f1a9d84061a499e81fe6506f8be8322799d8797c0714086613c7d32db4"
+  },
+  "grid_properties": {
+    "samples-000250-ema.png": {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    "samples-000250-raw.png": {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    "samples-000250-untruncated.png": {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB"
+    }
+  },
+  "comparison_review_path": "review-000125.json",
+  "comparison_review_sha256": "bc80b8d13993373c609dd31f8a631725edbd493d29c013ca17a3b65416deefc2",
+  "step125_grid_hashes_verified": true,
+  "checkpoint_numeric_validation": "deferred; previous guard was24% free, below25%; not retried during this PNG review",
+  "snapshots": {
+    "ema": {
+      "file": "samples-000250-ema.png",
+      "generator": "G_ema",
+      "truncation_psi": 0.7,
+      "observations": [
+        "Compared with125, originally source-like faces now show stronger distortion and changing dark neck areas; image quality has not simply improved with adaptation.",
+        "The clearly childlike r1c3 face and multiple female-presenting faces remain.",
+        "Bright rectangular/chin patches appear at locations such as r2c1, r3c2 and r4c2, with dark necks. Several look pasted onto the chin or lower face instead of forming anatomically plausible shirt collars.",
+        "Eyes and mouths show visible warping or texture changes, including r1c2, r2c3 and r3c2.",
+        "No obvious headwear in the fixed grid; this does not establish hat-free generation."
+      ],
+      "quality_approval": false
+    },
+    "raw": {
+      "file": "samples-000250-raw.png",
+      "generator": "G",
+      "truncation_psi": 1.0,
+      "observations": [
+        "Raw250 is more legible than raw125: eyes, noses and mouths are more defined and the extremely smeared125 surfaces are somewhat reduced.",
+        "Consistent black clerical shirts and white tabs are visible, with predominantly adult masculine presentation. This is a domain adaptation observation, not eligibility certification.",
+        "Faces still have a strongly stylized/metallic gray treatment, harsh shading, uneven eyes and mouth/cheek geometry; r2c3 and r4c3 remain conspicuously distorted.",
+        "Several heads and backgrounds retain warped or doubled-looking contours. The grid remains below the requested photographic quality.",
+        "Face shapes, dark hair and smiles are narrower in variety than the source-like EMA grid; a fixed sheet cannot quantify collapse or unseen diversity."
+      ],
+      "quality_approval": false
+    },
+    "untruncated": {
+      "file": "samples-000250-untruncated.png",
+      "generator": "G_ema",
+      "truncation_psi": 1.0,
+      "observations": [
+        "The childlike r1c3 face, multiple female-presenting identities, source clothing and source objects remain, while facial distortion and darkened neck areas are more pronounced than at125.",
+        "False bright chin/neck patches are visible, for example r2c1 and r2c3; they are not dependable white clerical collars.",
+        "Skin, eyes and lips have unnatural texture or geometry in several images; identity variety persists but the appearance is not a valid adult male priest set."
+      ],
+      "quality_approval": false
+    }
+  },
+  "comparison_to_125": "Raw G makes limited visual progress toward more coherent clerical portraits, but still has substantial rendering defects. EMA remains in a mixed source/adapted phase and now has conspicuous chin/neck artifacts while preserving disallowed source age/presentation categories. No variant meets the production quality gate.",
+  "interpretation": [
+    "The EMA half-life is20k images and the run has seen16k images; this explains lag as a possible mechanism but predicts neither later quality nor successful adaptation.",
+    "These fixed previews do not establish fresh-sample eligibility, owner attractiveness preference, or diverse photorealistic results.",
+    "Numeric validity remains a separate pending check. This review does not authorize deployment."
+  ],
+  "scope_limits": [
+    "No model was loaded, no numerical validation retry occurred, and no generator forward or optimizer update was run.",
+    "Both active MPS jobs, the scheduled heavy CPU slot, all inputs and trainers were left unchanged.",
+    "Only this new hash-bound review JSON was written."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "rasterization": "round(normalized_coordinate * 1023), PIL polygon fill; 1024x1024",
+  "effective_tab": "raw tab intersection clothing; face remains protected",
+  "new_pairs": [
+    {
+      "id": "b2-042",
+      "source_sha256": "9e0f4fa636f8af16ca2dc1d981e05574db511eb7affd02e1336bd68658a024a3",
+      "target_sha256": "3912b6e9f0e2632126c5bfd4a9e1930fc354949c171d1023385e3ea981d9b4ed",
+      "latent_sha256": "31a557b69802210cb8a6aa13a544eb36c3d7397a3b86ff2f606e6c5a68651379",
+      "clothing_pixels": 26602,
+      "raw_tab_pixels": 5397,
+      "effective_tab_pixels": 798,
+      "rest_clothing_pixels": 25804,
+      "protected_pixels": 1021974,
+      "raw_tab_retained_fraction": 0.14785992217898833,
+      "effective_tab_fraction_of_clothing": 0.02999774453048643
+    },
+    {
+      "id": "b2-058",
+      "source_sha256": "68eba0b90abafc0f3e762081e0da4d9d901f6b4f100cd759f673c64e3672c4eb",
+      "target_sha256": "c30e362bb2f837224adde21f55c77c1d91ba7bb49c0450c1cfaf3aa05b768e97",
+      "latent_sha256": "ef783ae9c62de3a9b37171bf76f1e5bc19ec5003320d68ecd0102cd3564522f7",
+      "clothing_pixels": 130594,
+      "raw_tab_pixels": 6315,
+      "effective_tab_pixels": 4787,
+      "rest_clothing_pixels": 125807,
+      "protected_pixels": 917982,
+      "raw_tab_retained_fraction": 0.7580364212193191,
+      "effective_tab_fraction_of_clothing": 0.03665558907759928
+    },
+    {
+      "id": "b2-059",
+      "source_sha256": "445390bde78c5067d8442906605f01f642d75463a74c365757a11e34ce9560fe",
+      "target_sha256": "93c8609b1188c5808f8799efca69b5682b702db98e57042df97d16b2c46039e0",
+      "latent_sha256": "f1b0fc7ad4d625a871720633a08cc166c881be13cc0d59d50ab31849eeaa8380",
+      "clothing_pixels": 81328,
+      "raw_tab_pixels": 4262,
+      "effective_tab_pixels": 4262,
+      "rest_clothing_pixels": 77066,
+      "protected_pixels": 967248,
+      "raw_tab_retained_fraction": 1.0,
+      "effective_tab_fraction_of_clothing": 0.05240507574267165
+    }
+  ]
+}

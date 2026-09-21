@@ -1,0 +1,870 @@
+{
+  "resolution": 1024,
+  "upper_fraction": 0.75,
+  "band_height": 768,
+  "band_rows_inclusive": [
+    0,
+    767
+  ],
+  "band_pixels": 786432,
+  "rasterization": "PIL polygon(fill=255), round(coord*(resolution-1)); mirrors paired_edit.polygon_mask without importing model code",
+  "source_files": {
+    "research/reviews/fresh-band-overlap/measure.py": "4c273b4fbcc346d6efcd52c257decc998ee591022947970a840be0d36f555498",
+    "research/experiments/paired_edit/trainer.py": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+    "research/experiments/paired_regions/trainer.py": "7842039b65b0230dcc745c023761350da7bdeb49720fdac30f679fdaa38cb821",
+    "research/runs/paired-regions1024-sixpair-600/config.json": "80d02fabf3bf2fa6c3fd98503e6558bcd5302e8cf89ec3e27434036bb6338c50"
+  },
+  "active_run_loss_options": {
+    "clothing_weight": 1.0,
+    "protected_weight": 1.0,
+    "fresh_weight": 1.0,
+    "upper_fraction": 0.75
+  },
+  "interpretation": "Geometric support only across saved training masks. Fresh preservation samples different independent random z/W images; these are not same-example opposing targets. Spatial loss mass assumes unit absolute error and ignores Jacobian/gradient magnitude. No causal failure inference.",
+  "cohorts": {
+    "current6": {
+      "manifest_path": "research/data/paired7/manifest-proposed-v2.json",
+      "manifest_sha256": "9c27b19b0b7cfea4ca797a488b5d249410f3988b512373f713a599f02164bab6",
+      "train_count": 6,
+      "excluded_validation_ids": [
+        "028"
+      ],
+      "per_pair": [
+        {
+          "id": "calibration-original",
+          "regions": {
+            "clothing": {
+              "pixels": 141212,
+              "fraction_of_image": 0.13467025756835938,
+              "band_overlap_pixels": 4217,
+              "fraction_of_region_in_band": 0.02986290116987225,
+              "fraction_of_band_covered": 0.005362192789713542
+            },
+            "raw_tab": {
+              "pixels": 7923,
+              "fraction_of_image": 0.007555961608886719,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 7198,
+              "fraction_of_image": 0.0068645477294921875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 134014,
+              "fraction_of_image": 0.1278057098388672,
+              "band_overlap_pixels": 4217,
+              "fraction_of_region_in_band": 0.03146686167116868,
+              "fraction_of_band_covered": 0.005362192789713542
+            },
+            "protected": {
+              "pixels": 907364,
+              "fraction_of_image": 0.8653297424316406,
+              "band_overlap_pixels": 782215,
+              "fraction_of_region_in_band": 0.8620740959526717,
+              "fraction_of_band_covered": 0.9946378072102865
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.01573343083558434,
+            "paired_clothing_total": 0.01573343083558434,
+            "paired_protected_component": 0.8620740959526717,
+            "fresh_band_at_clothing_coordinates": 0.005362192789713542
+          }
+        },
+        {
+          "id": "000",
+          "regions": {
+            "clothing": {
+              "pixels": 121997,
+              "fraction_of_image": 0.11634540557861328,
+              "band_overlap_pixels": 1539,
+              "fraction_of_region_in_band": 0.012615064304859955,
+              "fraction_of_band_covered": 0.001956939697265625
+            },
+            "raw_tab": {
+              "pixels": 7668,
+              "fraction_of_image": 0.007312774658203125,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 4248,
+              "fraction_of_image": 0.00405120849609375,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 117749,
+              "fraction_of_image": 0.11229419708251953,
+              "band_overlap_pixels": 1539,
+              "fraction_of_region_in_band": 0.013070174693627971,
+              "fraction_of_band_covered": 0.001956939697265625
+            },
+            "protected": {
+              "pixels": 926579,
+              "fraction_of_image": 0.8836545944213867,
+              "band_overlap_pixels": 784893,
+              "fraction_of_region_in_band": 0.8470869726164741,
+              "fraction_of_band_covered": 0.9980430603027344
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.006535087346813986,
+            "paired_clothing_total": 0.006535087346813986,
+            "paired_protected_component": 0.8470869726164741,
+            "fresh_band_at_clothing_coordinates": 0.001956939697265625
+          }
+        },
+        {
+          "id": "030",
+          "regions": {
+            "clothing": {
+              "pixels": 64975,
+              "fraction_of_image": 0.061964988708496094,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "raw_tab": {
+              "pixels": 4918,
+              "fraction_of_image": 0.0046901702880859375,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 4204,
+              "fraction_of_image": 0.004009246826171875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 60771,
+              "fraction_of_image": 0.05795574188232422,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "protected": {
+              "pixels": 983601,
+              "fraction_of_image": 0.9380350112915039,
+              "band_overlap_pixels": 786432,
+              "fraction_of_region_in_band": 0.7995437174220035,
+              "fraction_of_band_covered": 1.0
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.0,
+            "paired_clothing_total": 0.0,
+            "paired_protected_component": 0.7995437174220035,
+            "fresh_band_at_clothing_coordinates": 0.0
+          }
+        },
+        {
+          "id": "b2-055",
+          "regions": {
+            "clothing": {
+              "pixels": 267793,
+              "fraction_of_image": 0.2553873062133789,
+              "band_overlap_pixels": 56894,
+              "fraction_of_region_in_band": 0.21245514259147924,
+              "fraction_of_band_covered": 0.07234446207682292
+            },
+            "raw_tab": {
+              "pixels": 6895,
+              "fraction_of_image": 0.006575584411621094,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 6248,
+              "fraction_of_image": 0.00595855712890625,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 261545,
+              "fraction_of_image": 0.24942874908447266,
+              "band_overlap_pixels": 56894,
+              "fraction_of_region_in_band": 0.2175304440918389,
+              "fraction_of_band_covered": 0.07234446207682292
+            },
+            "protected": {
+              "pixels": 780783,
+              "fraction_of_image": 0.7446126937866211,
+              "band_overlap_pixels": 729538,
+              "fraction_of_region_in_band": 0.934367167317936,
+              "fraction_of_band_covered": 0.9276555379231771
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.10876522204591944,
+            "paired_clothing_total": 0.10876522204591944,
+            "paired_protected_component": 0.934367167317936,
+            "fresh_band_at_clothing_coordinates": 0.07234446207682292
+          }
+        },
+        {
+          "id": "b2-051",
+          "regions": {
+            "clothing": {
+              "pixels": 90269,
+              "fraction_of_image": 0.08608722686767578,
+              "band_overlap_pixels": 13,
+              "fraction_of_region_in_band": 0.00014401400259225205,
+              "fraction_of_band_covered": 1.6530354817708332e-05
+            },
+            "raw_tab": {
+              "pixels": 6302,
+              "fraction_of_image": 0.0060100555419921875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 4924,
+              "fraction_of_image": 0.004695892333984375,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 85345,
+              "fraction_of_image": 0.0813913345336914,
+              "band_overlap_pixels": 13,
+              "fraction_of_region_in_band": 0.0001523229246001523,
+              "fraction_of_band_covered": 1.6530354817708332e-05
+            },
+            "protected": {
+              "pixels": 958307,
+              "fraction_of_image": 0.9139127731323242,
+              "band_overlap_pixels": 786419,
+              "fraction_of_region_in_band": 0.8206336800211206,
+              "fraction_of_band_covered": 0.9999834696451823
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 7.616146230007616e-05,
+            "paired_clothing_total": 7.616146230007616e-05,
+            "paired_protected_component": 0.8206336800211206,
+            "fresh_band_at_clothing_coordinates": 1.6530354817708332e-05
+          }
+        },
+        {
+          "id": "b2-020",
+          "regions": {
+            "clothing": {
+              "pixels": 314638,
+              "fraction_of_image": 0.3000621795654297,
+              "band_overlap_pixels": 118600,
+              "fraction_of_region_in_band": 0.37694111963589905,
+              "fraction_of_band_covered": 0.15080769856770834
+            },
+            "raw_tab": {
+              "pixels": 4011,
+              "fraction_of_image": 0.0038251876831054688,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 1790,
+              "fraction_of_image": 0.0017070770263671875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 312848,
+              "fraction_of_image": 0.2983551025390625,
+              "band_overlap_pixels": 118600,
+              "fraction_of_region_in_band": 0.37909783664910757,
+              "fraction_of_band_covered": 0.15080769856770834
+            },
+            "protected": {
+              "pixels": 733938,
+              "fraction_of_image": 0.6999378204345703,
+              "band_overlap_pixels": 667832,
+              "fraction_of_region_in_band": 0.909929721584112,
+              "fraction_of_band_covered": 0.8491923014322916
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.18954891832455378,
+            "paired_clothing_total": 0.18954891832455378,
+            "paired_protected_component": 0.909929721584112,
+            "fresh_band_at_clothing_coordinates": 0.15080769856770834
+          }
+        }
+      ],
+      "aggregate": {
+        "clothing": {
+          "sum_region_pixels_across_seeds": 1000884,
+          "sum_overlap_pixels_across_seeds": 181263,
+          "pooled_region_fraction_in_band": 0.18110290503195176,
+          "mean_fraction_of_region_in_band": 0.10533637361745045,
+          "mean_fraction_of_band_covered": 0.03841463724772135,
+          "union_region_pixels": 347470,
+          "union_band_overlap_pixels": 132522,
+          "union_fraction_of_band_covered": 0.16851043701171875
+        },
+        "raw_tab": {
+          "sum_region_pixels_across_seeds": 37717,
+          "sum_overlap_pixels_across_seeds": 0,
+          "pooled_region_fraction_in_band": 0.0,
+          "mean_fraction_of_region_in_band": 0.0,
+          "mean_fraction_of_band_covered": 0.0,
+          "union_region_pixels": 20607,
+          "union_band_overlap_pixels": 0,
+          "union_fraction_of_band_covered": 0.0
+        },
+        "effective_tab": {
+          "sum_region_pixels_across_seeds": 28612,
+          "sum_overlap_pixels_across_seeds": 0,
+          "pooled_region_fraction_in_band": 0.0,
+          "mean_fraction_of_region_in_band": 0.0,
+          "mean_fraction_of_band_covered": 0.0,
+          "union_region_pixels": 18857,
+          "union_band_overlap_pixels": 0,
+          "union_fraction_of_band_covered": 0.0
+        },
+        "rest_clothing": {
+          "sum_region_pixels_across_seeds": 972272,
+          "sum_overlap_pixels_across_seeds": 181263,
+          "pooled_region_fraction_in_band": 0.18643239751838991,
+          "mean_fraction_of_region_in_band": 0.10688627333839056,
+          "mean_fraction_of_band_covered": 0.03841463724772135,
+          "union_region_pixels": 345713,
+          "union_band_overlap_pixels": 132522,
+          "union_fraction_of_band_covered": 0.16851043701171875
+        },
+        "protected": {
+          "sum_region_pixels_across_seeds": 5290572,
+          "sum_overlap_pixels_across_seeds": 4537329,
+          "pooled_region_fraction_in_band": 0.8576254136603755,
+          "mean_fraction_of_region_in_band": 0.8622725591523862,
+          "mean_fraction_of_band_covered": 0.9615853627522787,
+          "union_region_pixels": 1011805,
+          "union_band_overlap_pixels": 786432,
+          "union_fraction_of_band_covered": 1.0
+        }
+      },
+      "uniform_seed_mean_normalized_spatial_loss_mass_in_band": {
+        "tab_component": 0.0,
+        "rest_component": 0.05344313666919528,
+        "paired_clothing_total": 0.05344313666919528,
+        "paired_protected_component": 0.8622725591523862,
+        "fresh_band_at_clothing_coordinates": 0.03841463724772135
+      }
+    },
+    "proposed9": {
+      "manifest_path": "research/data/paired10/manifest-proposed.json",
+      "manifest_sha256": "8d0660f1ccf5115a356e9e6b479e4d225c1e9993402fc71575b0fcb9ed8dcff1",
+      "train_count": 9,
+      "excluded_validation_ids": [
+        "028"
+      ],
+      "per_pair": [
+        {
+          "id": "calibration-original",
+          "regions": {
+            "clothing": {
+              "pixels": 141212,
+              "fraction_of_image": 0.13467025756835938,
+              "band_overlap_pixels": 4217,
+              "fraction_of_region_in_band": 0.02986290116987225,
+              "fraction_of_band_covered": 0.005362192789713542
+            },
+            "raw_tab": {
+              "pixels": 7923,
+              "fraction_of_image": 0.007555961608886719,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 7198,
+              "fraction_of_image": 0.0068645477294921875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 134014,
+              "fraction_of_image": 0.1278057098388672,
+              "band_overlap_pixels": 4217,
+              "fraction_of_region_in_band": 0.03146686167116868,
+              "fraction_of_band_covered": 0.005362192789713542
+            },
+            "protected": {
+              "pixels": 907364,
+              "fraction_of_image": 0.8653297424316406,
+              "band_overlap_pixels": 782215,
+              "fraction_of_region_in_band": 0.8620740959526717,
+              "fraction_of_band_covered": 0.9946378072102865
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.01573343083558434,
+            "paired_clothing_total": 0.01573343083558434,
+            "paired_protected_component": 0.8620740959526717,
+            "fresh_band_at_clothing_coordinates": 0.005362192789713542
+          }
+        },
+        {
+          "id": "000",
+          "regions": {
+            "clothing": {
+              "pixels": 121997,
+              "fraction_of_image": 0.11634540557861328,
+              "band_overlap_pixels": 1539,
+              "fraction_of_region_in_band": 0.012615064304859955,
+              "fraction_of_band_covered": 0.001956939697265625
+            },
+            "raw_tab": {
+              "pixels": 7668,
+              "fraction_of_image": 0.007312774658203125,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 4248,
+              "fraction_of_image": 0.00405120849609375,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 117749,
+              "fraction_of_image": 0.11229419708251953,
+              "band_overlap_pixels": 1539,
+              "fraction_of_region_in_band": 0.013070174693627971,
+              "fraction_of_band_covered": 0.001956939697265625
+            },
+            "protected": {
+              "pixels": 926579,
+              "fraction_of_image": 0.8836545944213867,
+              "band_overlap_pixels": 784893,
+              "fraction_of_region_in_band": 0.8470869726164741,
+              "fraction_of_band_covered": 0.9980430603027344
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.006535087346813986,
+            "paired_clothing_total": 0.006535087346813986,
+            "paired_protected_component": 0.8470869726164741,
+            "fresh_band_at_clothing_coordinates": 0.001956939697265625
+          }
+        },
+        {
+          "id": "030",
+          "regions": {
+            "clothing": {
+              "pixels": 64975,
+              "fraction_of_image": 0.061964988708496094,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "raw_tab": {
+              "pixels": 4918,
+              "fraction_of_image": 0.0046901702880859375,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 4204,
+              "fraction_of_image": 0.004009246826171875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 60771,
+              "fraction_of_image": 0.05795574188232422,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "protected": {
+              "pixels": 983601,
+              "fraction_of_image": 0.9380350112915039,
+              "band_overlap_pixels": 786432,
+              "fraction_of_region_in_band": 0.7995437174220035,
+              "fraction_of_band_covered": 1.0
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.0,
+            "paired_clothing_total": 0.0,
+            "paired_protected_component": 0.7995437174220035,
+            "fresh_band_at_clothing_coordinates": 0.0
+          }
+        },
+        {
+          "id": "b2-055",
+          "regions": {
+            "clothing": {
+              "pixels": 267793,
+              "fraction_of_image": 0.2553873062133789,
+              "band_overlap_pixels": 56894,
+              "fraction_of_region_in_band": 0.21245514259147924,
+              "fraction_of_band_covered": 0.07234446207682292
+            },
+            "raw_tab": {
+              "pixels": 6895,
+              "fraction_of_image": 0.006575584411621094,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 6248,
+              "fraction_of_image": 0.00595855712890625,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 261545,
+              "fraction_of_image": 0.24942874908447266,
+              "band_overlap_pixels": 56894,
+              "fraction_of_region_in_band": 0.2175304440918389,
+              "fraction_of_band_covered": 0.07234446207682292
+            },
+            "protected": {
+              "pixels": 780783,
+              "fraction_of_image": 0.7446126937866211,
+              "band_overlap_pixels": 729538,
+              "fraction_of_region_in_band": 0.934367167317936,
+              "fraction_of_band_covered": 0.9276555379231771
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.10876522204591944,
+            "paired_clothing_total": 0.10876522204591944,
+            "paired_protected_component": 0.934367167317936,
+            "fresh_band_at_clothing_coordinates": 0.07234446207682292
+          }
+        },
+        {
+          "id": "b2-051",
+          "regions": {
+            "clothing": {
+              "pixels": 90269,
+              "fraction_of_image": 0.08608722686767578,
+              "band_overlap_pixels": 13,
+              "fraction_of_region_in_band": 0.00014401400259225205,
+              "fraction_of_band_covered": 1.6530354817708332e-05
+            },
+            "raw_tab": {
+              "pixels": 6302,
+              "fraction_of_image": 0.0060100555419921875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 4924,
+              "fraction_of_image": 0.004695892333984375,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 85345,
+              "fraction_of_image": 0.0813913345336914,
+              "band_overlap_pixels": 13,
+              "fraction_of_region_in_band": 0.0001523229246001523,
+              "fraction_of_band_covered": 1.6530354817708332e-05
+            },
+            "protected": {
+              "pixels": 958307,
+              "fraction_of_image": 0.9139127731323242,
+              "band_overlap_pixels": 786419,
+              "fraction_of_region_in_band": 0.8206336800211206,
+              "fraction_of_band_covered": 0.9999834696451823
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 7.616146230007616e-05,
+            "paired_clothing_total": 7.616146230007616e-05,
+            "paired_protected_component": 0.8206336800211206,
+            "fresh_band_at_clothing_coordinates": 1.6530354817708332e-05
+          }
+        },
+        {
+          "id": "b2-020",
+          "regions": {
+            "clothing": {
+              "pixels": 314638,
+              "fraction_of_image": 0.3000621795654297,
+              "band_overlap_pixels": 118600,
+              "fraction_of_region_in_band": 0.37694111963589905,
+              "fraction_of_band_covered": 0.15080769856770834
+            },
+            "raw_tab": {
+              "pixels": 4011,
+              "fraction_of_image": 0.0038251876831054688,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 1790,
+              "fraction_of_image": 0.0017070770263671875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 312848,
+              "fraction_of_image": 0.2983551025390625,
+              "band_overlap_pixels": 118600,
+              "fraction_of_region_in_band": 0.37909783664910757,
+              "fraction_of_band_covered": 0.15080769856770834
+            },
+            "protected": {
+              "pixels": 733938,
+              "fraction_of_image": 0.6999378204345703,
+              "band_overlap_pixels": 667832,
+              "fraction_of_region_in_band": 0.909929721584112,
+              "fraction_of_band_covered": 0.8491923014322916
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.18954891832455378,
+            "paired_clothing_total": 0.18954891832455378,
+            "paired_protected_component": 0.909929721584112,
+            "fresh_band_at_clothing_coordinates": 0.15080769856770834
+          }
+        },
+        {
+          "id": "b2-042",
+          "regions": {
+            "clothing": {
+              "pixels": 44928,
+              "fraction_of_image": 0.0428466796875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "raw_tab": {
+              "pixels": 5397,
+              "fraction_of_image": 0.005146980285644531,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 2016,
+              "fraction_of_image": 0.001922607421875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 42912,
+              "fraction_of_image": 0.040924072265625,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "protected": {
+              "pixels": 1003648,
+              "fraction_of_image": 0.9571533203125,
+              "band_overlap_pixels": 786432,
+              "fraction_of_region_in_band": 0.7835735237852315,
+              "fraction_of_band_covered": 1.0
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.0,
+            "paired_clothing_total": 0.0,
+            "paired_protected_component": 0.7835735237852315,
+            "fresh_band_at_clothing_coordinates": 0.0
+          }
+        },
+        {
+          "id": "b2-058",
+          "regions": {
+            "clothing": {
+              "pixels": 130594,
+              "fraction_of_image": 0.12454414367675781,
+              "band_overlap_pixels": 7108,
+              "fraction_of_region_in_band": 0.0544282279430908,
+              "fraction_of_band_covered": 0.009038289388020834
+            },
+            "raw_tab": {
+              "pixels": 6315,
+              "fraction_of_image": 0.006022453308105469,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 4787,
+              "fraction_of_image": 0.004565238952636719,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 125807,
+              "fraction_of_image": 0.1199789047241211,
+              "band_overlap_pixels": 7108,
+              "fraction_of_region_in_band": 0.05649924090074479,
+              "fraction_of_band_covered": 0.009038289388020834
+            },
+            "protected": {
+              "pixels": 917982,
+              "fraction_of_image": 0.8754558563232422,
+              "band_overlap_pixels": 779324,
+              "fraction_of_region_in_band": 0.848953465318492,
+              "fraction_of_band_covered": 0.9909617106119791
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.028249620450372395,
+            "paired_clothing_total": 0.028249620450372395,
+            "paired_protected_component": 0.848953465318492,
+            "fresh_band_at_clothing_coordinates": 0.009038289388020834
+          }
+        },
+        {
+          "id": "b2-059",
+          "regions": {
+            "clothing": {
+              "pixels": 81328,
+              "fraction_of_image": 0.0775604248046875,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "raw_tab": {
+              "pixels": 4262,
+              "fraction_of_image": 0.0040645599365234375,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "effective_tab": {
+              "pixels": 4262,
+              "fraction_of_image": 0.0040645599365234375,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "rest_clothing": {
+              "pixels": 77066,
+              "fraction_of_image": 0.07349586486816406,
+              "band_overlap_pixels": 0,
+              "fraction_of_region_in_band": 0.0,
+              "fraction_of_band_covered": 0.0
+            },
+            "protected": {
+              "pixels": 967248,
+              "fraction_of_image": 0.9224395751953125,
+              "band_overlap_pixels": 786432,
+              "fraction_of_region_in_band": 0.8130613865316858,
+              "fraction_of_band_covered": 1.0
+            }
+          },
+          "normalized_spatial_loss_mass_in_band": {
+            "tab_component": 0.0,
+            "rest_component": 0.0,
+            "paired_clothing_total": 0.0,
+            "paired_protected_component": 0.8130613865316858,
+            "fresh_band_at_clothing_coordinates": 0.0
+          }
+        }
+      ],
+      "aggregate": {
+        "clothing": {
+          "sum_region_pixels_across_seeds": 1257734,
+          "sum_overlap_pixels_across_seeds": 188371,
+          "pooled_region_fraction_in_band": 0.14977014217632664,
+          "mean_fraction_of_region_in_band": 0.07627182996086596,
+          "mean_fraction_of_band_covered": 0.026614012541594328,
+          "union_region_pixels": 352497,
+          "union_band_overlap_pixels": 132522,
+          "union_fraction_of_band_covered": 0.16851043701171875
+        },
+        "raw_tab": {
+          "sum_region_pixels_across_seeds": 53691,
+          "sum_overlap_pixels_across_seeds": 0,
+          "pooled_region_fraction_in_band": 0.0,
+          "mean_fraction_of_region_in_band": 0.0,
+          "mean_fraction_of_band_covered": 0.0,
+          "union_region_pixels": 23266,
+          "union_band_overlap_pixels": 0,
+          "union_fraction_of_band_covered": 0.0
+        },
+        "effective_tab": {
+          "sum_region_pixels_across_seeds": 39677,
+          "sum_overlap_pixels_across_seeds": 0,
+          "pooled_region_fraction_in_band": 0.0,
+          "mean_fraction_of_region_in_band": 0.0,
+          "mean_fraction_of_band_covered": 0.0,
+          "union_region_pixels": 21002,
+          "union_band_overlap_pixels": 0,
+          "union_fraction_of_band_covered": 0.0
+        },
+        "rest_clothing": {
+          "sum_region_pixels_across_seeds": 1218057,
+          "sum_overlap_pixels_across_seeds": 188371,
+          "pooled_region_fraction_in_band": 0.15464875617479312,
+          "mean_fraction_of_region_in_band": 0.07753520899234312,
+          "mean_fraction_of_band_covered": 0.026614012541594328,
+          "union_region_pixels": 352324,
+          "union_band_overlap_pixels": 132522,
+          "union_fraction_of_band_covered": 0.16851043701171875
+        },
+        "protected": {
+          "sum_region_pixels_across_seeds": 8179450,
+          "sum_overlap_pixels_across_seeds": 6889517,
+          "pooled_region_fraction_in_band": 0.8422958756395601,
+          "mean_fraction_of_region_in_band": 0.8465804145055252,
+          "mean_fraction_of_band_covered": 0.9733859874584057,
+          "union_region_pixels": 1032364,
+          "union_band_overlap_pixels": 786432,
+          "union_fraction_of_band_covered": 1.0
+        }
+      },
+      "uniform_seed_mean_normalized_spatial_loss_mass_in_band": {
+        "tab_component": 0.0,
+        "rest_component": 0.03876760449617156,
+        "paired_clothing_total": 0.03876760449617156,
+        "paired_protected_component": 0.8465804145055252,
+        "fresh_band_at_clothing_coordinates": 0.02661401254159433
+      }
+    }
+  },
+  "model_or_image_inference": false
+}

@@ -1,0 +1,29 @@
+{
+  "reviewer": "Codex expand_dataset manual image review, not automatic segmentation",
+  "manifest_sha256": "8d0660f1ccf5115a356e9e6b479e4d225c1e9993402fc71575b0fcb9ed8dcff1",
+  "review_scope": "All three source/target coordinate grids and final individual full-size overlay panels viewed; final contact sheet also viewed. Target tab detail crops reviewed for042 and059.",
+  "root_approval_pending": true,
+  "production_approved": false,
+  "training_eligible": false,
+  "findings": {
+    "b2-042": "Source face and upper neck protected conservatively. Allowed region includes blue shirt and beige jacket; edited background/expanded shoulder outside original garment remains protected. The target white tab overlaps protected source lower jaw/upper neck, so only37.35% is retained. Bottom clipping is accepted; boundary is not expanded to recover the tab.",
+    "b2-058": "Boundary follows original source chin and jaw to white shirt edge, preserving facial skin, mustache, lips and nose. Target nose/mouth shift is ignored by target clothing supervision. The high target tab is clipped above original source chin;75.80% retained. No visible white shirt strip was deliberately left protected along the inspected jaw boundary.",
+    "b2-059": "Mask follows original lower jaw, leaves chin/stubble and mouth protected, and permits lower neck plus original hoodie. All visible target tab is inside allowed lower-neck region;100% retained. Target shoulder expansion beyond original right garment remains protected background."
+  },
+  "limitations": [
+    "Manual source chin boundaries are subjective, especially shadowed042 lower jaw versus upper neck; root should inspect before research use.",
+    "Masked target losses do not prove identity preservation or quality of any trained model.",
+    "Sources are diverse clothing teachers, not approved hot-output selections.",
+    "Native target pixels remain1254x1254; diagnostic target resizing does not modify source or target files."
+  ],
+  "draft_history": {
+    "draft-v1": "Initial polygons and overlays preserved before tab-outline corrections.",
+    "draft-v2a": "Intermediate042 exterior-boundary update had an unintended diagonal closure excluding bottom clothing; rejected and preserved. Final polygon explicitly includes bottom-left corner."
+  },
+  "visual_artifact_sha256": {
+    "b2-042-overlay.png": "56d5b2b66a2b119aa00062d5c2bd9ee781a79f49dcbf2ce494fab43f767a6290",
+    "b2-058-overlay.png": "c7b9d66e0d413e24918f76b154087a12f168cf642ae9a499be6264f3777b0140",
+    "b2-059-overlay.png": "c7e3a1399374faba2b2c4086ab683976e45d0e633b75f9885edb23ef424a07b5",
+    "mask-contact-sheet.png": "21b96d2c75a4b67c7cb527aaab611e85846a9e0b80892a124403fef306094489"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "reviewer": "Codex root",
+  "reviewed_at": "2026-09-21T01:36:59.162252+00:00",
+  "scope": "Contact sheet and all three full-size source/target overlay panels viewed; proposal README, annotations and reviewer findings read.",
+  "manifest_sha256": "8d0660f1ccf5115a356e9e6b479e4d225c1e9993402fc71575b0fcb9ed8dcff1",
+  "mask_research_approved": true,
+  "training_eligible_after_strict_source_preflight": true,
+  "source_model_preflight_performed": false,
+  "production_approved": false,
+  "findings": {
+    "b2-042": "Conservative source jaw protection removes the upper part of the target tab; the retained lower white region remains useful clothing supervision. Do not move the boundary into source chin to recover target pixels.",
+    "b2-058": "Jaw boundary follows source anatomy; target nose/mouth changes are excluded. Tab remains visibly distinct within allowed clothing.",
+    "b2-059": "Source chin/stubble remain outside the clothing mask; lower neck and hoodie are allowed. The tab reaching the frame edge is acceptable."
+  },
+  "limitations": [
+    "Manual boundaries cannot establish exact skin segmentation.",
+    "Shared generator parameters can still affect faces despite locally masked losses.",
+    "The nine training faces are clothing teachers, not approved final hot-priest outputs.",
+    "Use a separate run; preserve current six-pair inputs."
+  ],
+  "reviewed_images_sha256": {
+    "mask-contact-sheet.png": "21b96d2c75a4b67c7cb527aaab611e85846a9e0b80892a124403fef306094489",
+    "b2-042-overlay.png": "56d5b2b66a2b119aa00062d5c2bd9ee781a79f49dcbf2ce494fab43f767a6290",
+    "b2-058-overlay.png": "c7b9d66e0d413e24918f76b154087a12f168cf642ae9a499be6264f3777b0140",
+    "b2-059-overlay.png": "c7e3a1399374faba2b2c4086ab683976e45d0e633b75f9885edb23ef424a07b5"
+  }
+}

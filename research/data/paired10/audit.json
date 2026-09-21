@@ -1,0 +1,197 @@
+{
+  "manifest_sha256": "8d0660f1ccf5115a356e9e6b479e4d225c1e9993402fc71575b0fcb9ed8dcff1",
+  "old_seven_exact_JSON_equal": true,
+  "heldout_028_unchanged": true,
+  "source_W_shapes_finite_all_ten": true,
+  "training_preflight_performed": false,
+  "model_inference": false,
+  "all_pairs": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "source_path_sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce",
+      "target_path_sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec",
+      "latent_path_sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "target_size": [
+        1254,
+        1254
+      ],
+      "clothing_pixels": 141212,
+      "raw_tab_pixels": 7923,
+      "effective_tab_pixels": 7198,
+      "tab_retention": 0.9084942572257984
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "source_path_sha256": "64f6368f73a25e21c6d8ae22c90a6c5095ab986d204c9acf26aa22f6050d4548",
+      "target_path_sha256": "802ce72546efaa10c1cdbcbf7d4779b86c7e40c72ac4801d680ed6508c2551c6",
+      "latent_path_sha256": "40978912da666c81c646643e681fec554e4771fe69c558359ee28cb6ae751572",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "target_size": [
+        1254,
+        1254
+      ],
+      "clothing_pixels": 121997,
+      "raw_tab_pixels": 7668,
+      "effective_tab_pixels": 4248,
+      "tab_retention": 0.5539906103286385
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "source_path_sha256": "9b3e097dd62f65b98156099a98682cf1d7840a56e223f75ae67a2984e39e12f8",
+      "target_path_sha256": "29fdc4ccd182d3986cba59b5df625cc5cf9feb4b09ca6898e18869a6f765f513",
+      "latent_path_sha256": "0b696035e53809458d988e45abdcfc4e1afb4cdc712f687bc72c3b1f9b4d5e59",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "target_size": [
+        1254,
+        1254
+      ],
+      "clothing_pixels": 64975,
+      "raw_tab_pixels": 4918,
+      "effective_tab_pixels": 4204,
+      "tab_retention": 0.8548190321268808
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "source_path_sha256": "eb246b66e7fd614935b677c1ca26b9f5da574fa7f1deda5c096c760d9f71d5d2",
+      "target_path_sha256": "338bc64f196a24f40e9a7a513b0e497aa354f6a364d458c7d85ad2c822f5d8a2",
+      "latent_path_sha256": "dbd37130b8c58a35f8b7802ae909ce2fbdaa0964ee02e23cabb574e690d50933",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "target_size": [
+        1254,
+        1254
+      ],
+      "clothing_pixels": 49859
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "source_path_sha256": "6840845f45473f8a0f4be4950ad65b4957a4ce9314d007ffc4ff561a15e607b2",
+      "target_path_sha256": "596309dbe97cc0da9b5387411c3113de29ec7e7a360629aa9c59efd9a79177ad",
+      "latent_path_sha256": "46e8d2212064619855775974395992936a086b19aeef542ccf0fb289acbe9459",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "target_size": [
+        1254,
+        1254
+      ],
+      "clothing_pixels": 267793,
+      "raw_tab_pixels": 6895,
+      "effective_tab_pixels": 6248,
+      "tab_retention": 0.9061638868745467
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "source_path_sha256": "23af87180b4c694a1d572041c922537ecdd8ab0c5201872bdc98751d063012d8",
+      "target_path_sha256": "2b18b2cda36e6128856978ac570837923082a70dff8c02bf92b72710663329b7",
+      "latent_path_sha256": "9aedebdadc19fc9685b5b89030c5c1cbd22151993157b073a68655ff47af65a7",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "target_size": [
+        1254,
+        1254
+      ],
+      "clothing_pixels": 90269,
+      "raw_tab_pixels": 6302,
+      "effective_tab_pixels": 4924,
+      "tab_retention": 0.78133925737861
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "source_path_sha256": "ab9ccd0bd1d65dac07d8616723f219db306d77e44e5d2a314bcf83bf0fce3ccd",
+      "target_path_sha256": "24049cb2689461bbffffe40c9603aca036547a87e25ed32e29c4432c517387c8",
+      "latent_path_sha256": "02dc78bb0d0cb8f576461841b7371907d12b8dc840f8d1b6cbd780aa99099a99",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "target_size": [
+        1254,
+        1254
+      ],
+      "clothing_pixels": 314638,
+      "raw_tab_pixels": 4011,
+      "effective_tab_pixels": 1790,
+      "tab_retention": 0.4462727499376714
+    },
+    {
+      "id": "b2-042",
+      "split": "train",
+      "source_path_sha256": "9e0f4fa636f8af16ca2dc1d981e05574db511eb7affd02e1336bd68658a024a3",
+      "target_path_sha256": "3912b6e9f0e2632126c5bfd4a9e1930fc354949c171d1023385e3ea981d9b4ed",
+      "latent_path_sha256": "31a557b69802210cb8a6aa13a544eb36c3d7397a3b86ff2f606e6c5a68651379",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "target_size": [
+        1254,
+        1254
+      ],
+      "clothing_pixels": 44928,
+      "raw_tab_pixels": 5397,
+      "effective_tab_pixels": 2016,
+      "tab_retention": 0.3735408560311284
+    },
+    {
+      "id": "b2-058",
+      "split": "train",
+      "source_path_sha256": "68eba0b90abafc0f3e762081e0da4d9d901f6b4f100cd759f673c64e3672c4eb",
+      "target_path_sha256": "c30e362bb2f837224adde21f55c77c1d91ba7bb49c0450c1cfaf3aa05b768e97",
+      "latent_path_sha256": "ef783ae9c62de3a9b37171bf76f1e5bc19ec5003320d68ecd0102cd3564522f7",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "target_size": [
+        1254,
+        1254
+      ],
+      "clothing_pixels": 130594,
+      "raw_tab_pixels": 6315,
+      "effective_tab_pixels": 4787,
+      "tab_retention": 0.7580364212193191
+    },
+    {
+      "id": "b2-059",
+      "split": "train",
+      "source_path_sha256": "445390bde78c5067d8442906605f01f642d75463a74c365757a11e34ce9560fe",
+      "target_path_sha256": "93c8609b1188c5808f8799efca69b5682b702db98e57042df97d16b2c46039e0",
+      "latent_path_sha256": "f1b0fc7ad4d625a871720633a08cc166c881be13cc0d59d50ab31849eeaa8380",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "target_size": [
+        1254,
+        1254
+      ],
+      "clothing_pixels": 81328,
+      "raw_tab_pixels": 4262,
+      "effective_tab_pixels": 4262,
+      "tab_retention": 1.0
+    }
+  ]
+}

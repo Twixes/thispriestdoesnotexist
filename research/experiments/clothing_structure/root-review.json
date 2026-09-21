@@ -1,0 +1,27 @@
+{
+  "reviewer": "Codex root",
+  "reviewed_at": "2026-09-21T01:36:59.168586+00:00",
+  "scope": "Read losses.py and all seven tiny CPU tests; reran test_losses.py successfully in root session23356 (exit0).",
+  "source_sha256": {
+    "losses.py": "e3178228116ed60e90fda73365b88046978885b13a9938421c0e2025d038b585",
+    "test_losses.py": "0d5986ac2471f6cbb7d8c7d77c8e68022ba0b01ead22e103d9efce823e1a63d8"
+  },
+  "test_evidence_sha256": "235600a76729e93e95134c7d084fd4265ef11180880a883db555b38a088bc56f",
+  "root_test_log_sha256": "22e4dc38332089406c0f8941df1ffddd04bdf1380e736a6220e7883c96fb0f98",
+  "isolated_component_approved": true,
+  "integrated": false,
+  "real_weight_experiment_performed": false,
+  "production_approved": false,
+  "findings": [
+    "Prefix explicitly ends before minibatch statistics; D frozen/eval and target/source detached, student image retains autograd.",
+    "Region normalization gives collar/rest equal weight independent of area; feature masks remain fractional.",
+    "Boundary comparison only uses edges whose endpoints are in original clothing.",
+    "Neither helper edits or replaces the generated output."
+  ],
+  "limitations": [
+    "Tiny random D64 tests do not establish real D1024 compute cost or improvement.",
+    "Input gradient confinement does not guarantee face preservation after shared-parameter optimization.",
+    "Coefficient0.05 and selected D taps are unvalidated choices.",
+    "Actual source D constructor/state provenance requires verification before real-weight use."
+  ]
+}

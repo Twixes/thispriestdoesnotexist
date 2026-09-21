@@ -1,0 +1,56 @@
+test_boundary_empty_edges_rejected (__main__.LossTests.test_boundary_empty_edges_rejected) ... ok
+test_boundary_gradients_detach_and_image_preservation (__main__.LossTests.test_boundary_gradients_detach_and_image_preservation) ... ok
+test_boundary_zero_for_matching_differences (__main__.LossTests.test_boundary_zero_for_matching_differences) ... ok
+test_invalid_masks_and_nonfinite_inputs (__main__.LossTests.test_invalid_masks_and_nonfinite_inputs) ... ok
+test_prefix_rejects_unfrozen_or_train_mode_and_bad_taps (__main__.LossTests.test_prefix_rejects_unfrozen_or_train_mode_and_bad_taps) ... ok
+test_real_vendor_prefix_gradients_and_preservation (__main__.LossTests.test_real_vendor_prefix_gradients_and_preservation) ... ok
+test_unequal_area_normalization_and_feature_partition (__main__.LossTests.test_unequal_area_normalization_and_feature_partition) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.031s
+
+OK
+{
+  "passed": true,
+  "tests": 7,
+  "seconds": 0.03217899997252971,
+  "device": "cpu",
+  "threads": 1,
+  "interop_threads": 1,
+  "real_weights_loaded": false,
+  "largest_test_resolution": 64,
+  "max_discriminator_channels": 16,
+  "mps_used": false,
+  "peak_process_rss_bytes": 229490688,
+  "torch_version": "2.14.0",
+  "source_sha256": {
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/clothing_structure/losses.py": "e3178228116ed60e90fda73365b88046978885b13a9938421c0e2025d038b585",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/clothing_structure/test_losses.py": "0d5986ac2471f6cbb7d8c7d77c8e68022ba0b01ead22e103d9efce823e1a63d8",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/training/__init__.py": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/training/augment.py": "fd81c871a9bfbb7feaad138b1e875db05c640060bdbf0342247d209eb48ba8f9",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/training/dataset.py": "10e433ffde6e3e63963711390ee8eeaa6f0e5a00da9f883117331a48b36e5145",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/training/loss.py": "1bd68d7dc1c92c1b78b91f193a45a433b1ff374614f91909ea8cb88eac7bc2d7",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/training/training_loop.py": "0b589a731712c51791eb22efe0dc1ee6856bf3e9335920db02a3e38dee909eb3",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/custom_ops.py": "ee123ae0458fbe463000d5962a5b804d9e91b25d3fda8500eeaa6ddf6b5c932a",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/misc.py": "8b66e614f3dbb27b9b3280030efcb65a94e5cfd0e9d940302692452cb7c44012",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/bias_act.cpp": "4a3eb091ce936451ac3a0e9c7c771cc5576cba195332cd777ec275cb806f4f53",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/bias_act.cu": "bc6b93e2c347cc00b07dfe0f6dca35011c2291645806239cc86632902694d017",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/bias_act.h": "f0ca2d087bb22b20f6642e4affd7c77e2ff5b601a2f6d1632a79002608d87aa4",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/bias_act.py": "ae9d4a2efbb61f7d21d2e361a5a145704351cc9733d2bd3e5ba4e64938d8e3e3",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/fma.py": "f3fdd6b890e250124557cba35360a1297cac5bdbc4925325403b44bf290956e9",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/grid_sample_gradfix.py": "a49a8195b734ecba95c9b63d035f26faa5d794a0b26eb3e9d5f3c521be29c536",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/upfirdn2d.cpp": "a3930ed91584ab11786f44aca9abad9beab9f4020b564d4c547727da49d70b11",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/upfirdn2d.cu": "af059a0dd7be4ba24e2b6b2f8fb5bcb0a89c4ac8320d17a59f228580164528ca",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/upfirdn2d.h": "9f703976585fd9c07d18cf1c00edd3a495dc641ff1e1e1671e2df2ab24126535",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/ops/upfirdn2d.py": "7b5865e70ac4156edaefb2a372fee27dc55eb5661568b337cb4168e8936384a8",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/persistence.py": "1f24073d03fbb2d772babbf7b8a1175bec6c3423314c2649e9a8a13d37757121",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/torch_utils/training_stats.py": "c1c105b7e5c2fa5883516bf2bc05b588da5f45939d37f3fe281abca4579e7616",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/dnnlib/__init__.py": "01ee5300565a54d4a309ae87784f314a0c82db6c63e6735d1e9a124327f4c12d",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan2-ada-pytorch/dnnlib/util.py": "8f4c1e9e7eac60f9bf541b2fc0e649a022b2ddde8178df7f85f924f63e3db426"
+  }
+}

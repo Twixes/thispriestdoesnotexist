@@ -1,0 +1,18 @@
+{
+  "base_manifest_sha256": "9c27b19b0b7cfea4ca797a488b5d249410f3988b512373f713a599f02164bab6",
+  "manifest_sha256": "5ca69315d959eda910eb14d292fd89e4b527aaf141bb1d60d08030b65216f416",
+  "script_sha256": "e2c108f6a81a89721d58dda9821cc1e813ba70d7cd03e31a037812ee69ef8d77",
+  "root_edit_review_sha256": "20e922f58c8c608aef45e824b050563c3dac07feeeb5fb77eec519634117ed2e",
+  "old_seven_records_exact_JSON_equal": true,
+  "prior_paths_unchanged": true,
+  "same_source_bundle": true,
+  "heldout028_unchanged": true,
+  "distinct_latents": 10,
+  "split_counts": {
+    "train": 9,
+    "validation": 1
+  },
+  "model_compute": false,
+  "training": false,
+  "all_new_source_and_latent_hashes_match_source_manifest": true
+}
