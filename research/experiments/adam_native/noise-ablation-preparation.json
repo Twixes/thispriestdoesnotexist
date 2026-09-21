@@ -1,0 +1,38 @@
+{
+  "status": "prepared_not_launched",
+  "source_sha256": "6c031d25c297c09f69966cec3f8808f86824c85997df94ab932f244f485e44e8",
+  "checkpoint100_sha256": "d406240601ec748f95ad09c2b2799106d04f0510cd9383526bdc0618bd7416ba",
+  "parent_modulation_sha256": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+  "validation": {
+    "syntax": "passed",
+    "cli_help": "passed",
+    "tiny_helper_checks": 5,
+    "tiny_helper_seconds": 0.0003643330419436097,
+    "cases": [
+      "unchanged restore",
+      "single offset reset",
+      "all declared offsets reset",
+      "restore original offsets and preserve unrelated tensor",
+      "undeclared reset rejected without mutation"
+    ]
+  },
+  "native_model_loads": 0,
+  "native_renders": 0,
+  "training_executed": false,
+  "pending_execution_gates": [
+    "parent control terminal",
+    "fresh memory preflight",
+    "all4 unchanged native PNG hashes and pixels reproduce archived checkpoint100",
+    "reset arms alter only declared offset state",
+    "all12 raw output images retained",
+    "native visual review"
+  ],
+  "guards": {
+    "start_available_fraction": 0.35,
+    "runtime_available_fraction": 0.25,
+    "rss_gib": 4,
+    "swap_growth_mib": 512,
+    "seconds": 600
+  },
+  "worker_checkpoint_sha256_rechecked_before_load": true
+}
