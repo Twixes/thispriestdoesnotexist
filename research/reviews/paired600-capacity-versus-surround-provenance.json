@@ -1,0 +1,19 @@
+{
+  "reviewed_utc": "2026-09-21T01:56:17.640061+00:00",
+  "scope": "Read-only source/metrics and PNG visual review; no model load or inference",
+  "input_sha256": {
+    "research/runs/paired-regions1024-sixpair-600/evaluation-pairs7/evaluation.json": "91f3b7ea1e140d85b02a5bdefa8d113da4250ef6dc8bef21471e88099663b938",
+    "research/runs/paired-regions1024-sixpair-600/evaluation-pairs7/collar-surrounds.json": "2d80627d2d70c1beaa66e9868f686cd29dc8a82defa2654f4864879448e48e47",
+    "research/runs/paired-regions1024-sixpair-600/evaluation-pairs7/comparison.png": "0ebb9c9b7041abd2993e072efc0b3e08954b72b7060dd34f7ec4478bb75d0a76",
+    "research/runs/paired-regions1024-sixpair-600/evaluation-pairs7/calibration-original-student-gray.png": "e00b05aa4437120b758fcc62aca363a8c2c2bf88961bdf578c769fce05a2909e",
+    "research/runs/paired-regions1024-sixpair-600/evaluation-pairs7/030-student-gray.png": "263058fbbc415332586f8aea8b7ecacf938dd363f85ad4cb230d54965b743b90",
+    "research/runs/paired-regions1024-sixpair-600/evaluation-pairs7/b2-055-student-gray.png": "3535e8d6a9441dffb71e9794c26924a790c8f8e866413ba1d3026fbfcb323bd3",
+    "research/runs/paired-regions1024-sixpair-600/evaluation-pairs7/b2-020-student-gray.png": "fe162c06280f683563bf938143083ef6cc9b60f85e139be9701cc29a00cd821b",
+    "research/experiments/paired_regions/analyze_pair_surrounds.py": "74b7719dca768d291b13c65dcbfc05ce97a9a5ba469761dbf2abf55507d962c2",
+    "research/experiments/paired_regions/trainer.py": "7842039b65b0230dcc745c023761350da7bdeb49720fdac30f679fdaa38cb821",
+    "research/experiments/paired_edit/trainer.py": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+    "research/vendor/stylegan2-ada-pytorch/training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24"
+  },
+  "review_sha256": "a720e7d4787fbd7bef2d1aa7642b7ce2086eaba6a0730b3c7e99d645d5fee973",
+  "latest_parent_direction": "b32 deferred; baseline versus equal-thirds tab/30px exterior ring/remainder, 50 updates, same freeze/Adam/RNG"
+}

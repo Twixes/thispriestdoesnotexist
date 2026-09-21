@@ -1,0 +1,2494 @@
+{
+  "purpose": "Research-only collar-region student disjoint-latent comparison",
+  "production_approved": false,
+  "checkpoint_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-regions1024-sixpair-600/resume.pt",
+  "checkpoint_sha256": "0f433c7ec50d9e80026681125d7fa7e17e9be6e8e2d31b11976fb51d1b0f3fc4",
+  "checkpoint_step": 600,
+  "student_state_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4",
+  "source_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+  "source_metadata_sha256": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+  "source_state_sha256": "a02240d17aae05f0eb862d230d782448063586522a763a93e24eca64c6ae2d7e",
+  "frozen_state_sha256": "cafd15b661c9f5754dd8e660091466ecd0361bc756373f4f50926947af979428",
+  "source_manifest_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/paired7/evaluation-source30.json",
+  "source_manifest_sha256": "032cf19ba03e8c76b0c30552cf4424bb8e9002eaf12248c64db9a9a6f55d3f3a",
+  "training_provenance": {
+    "manifest_sha256": "9c27b19b0b7cfea4ca797a488b5d249410f3988b512373f713a599f02164bab6",
+    "source_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+    "source_metadata_sha256": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+    "pairs": [
+      {
+        "collar_polygons": [
+          [
+            [
+              0.37,
+              0.923
+            ],
+            [
+              0.484,
+              0.931
+            ],
+            [
+              0.472,
+              0.986
+            ],
+            [
+              0.452,
+              0.993
+            ],
+            [
+              0.4,
+              0.994
+            ],
+            [
+              0.357,
+              0.987
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 7923,
+          "collar_intersection_pixels": 7198,
+          "rest_clothing_pixels": 134014,
+          "trace_outside_clothing_pixels": 725,
+          "trace_retained_fraction": 0.908494234085083,
+          "collar_fraction_of_clothing": 0.05097300559282303
+        },
+        "id": "calibration-original",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.13467025756835938,
+        "clothing_polygons": [
+          [
+            [
+              0.0,
+              0.765
+            ],
+            [
+              0.123,
+              0.687
+            ],
+            [
+              0.15,
+              0.75
+            ],
+            [
+              0.18,
+              0.82
+            ],
+            [
+              0.275,
+              0.892
+            ],
+            [
+              0.39,
+              0.93
+            ],
+            [
+              0.5,
+              0.94
+            ],
+            [
+              0.565,
+              0.91
+            ],
+            [
+              0.635,
+              0.8
+            ],
+            [
+              0.7,
+              0.84
+            ],
+            [
+              1.0,
+              0.97
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/reproduction-sample002.npz",
+            "sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/reproduction-sample002.png",
+            "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edit1/001.png",
+            "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+          }
+        }
+      },
+      {
+        "collar_polygons": [
+          [
+            [
+              0.437,
+              0.948
+            ],
+            [
+              0.49,
+              0.956
+            ],
+            [
+              0.539,
+              0.955
+            ],
+            [
+              0.587,
+              0.946
+            ],
+            [
+              0.588,
+              1
+            ],
+            [
+              0.435,
+              1
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 7668,
+          "collar_intersection_pixels": 4248,
+          "rest_clothing_pixels": 117749,
+          "trace_outside_clothing_pixels": 3420,
+          "trace_retained_fraction": 0.5539906024932861,
+          "collar_fraction_of_clothing": 0.03482052683830261
+        },
+        "id": "000",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.11634540557861328,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.838
+            ],
+            [
+              0.181,
+              0.8
+            ],
+            [
+              0.218,
+              0.724
+            ],
+            [
+              0.238,
+              0.692
+            ],
+            [
+              0.254,
+              0.758
+            ],
+            [
+              0.262,
+              0.835
+            ],
+            [
+              0.281,
+              0.886
+            ],
+            [
+              0.32,
+              0.935
+            ],
+            [
+              0.4,
+              0.966
+            ],
+            [
+              0.49,
+              0.978
+            ],
+            [
+              0.56,
+              0.975
+            ],
+            [
+              0.64,
+              0.948
+            ],
+            [
+              0.702,
+              0.906
+            ],
+            [
+              0.723,
+              0.839
+            ],
+            [
+              0.733,
+              0.779
+            ],
+            [
+              0.774,
+              0.825
+            ],
+            [
+              1,
+              0.932
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/000.npz",
+            "sha256": "40978912da666c81c646643e681fec554e4771fe69c558359ee28cb6ae751572"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/000.png",
+            "sha256": "64f6368f73a25e21c6d8ae22c90a6c5095ab986d204c9acf26aa22f6050d4548"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits3/000.png",
+            "sha256": "802ce72546efaa10c1cdbcbf7d4779b86c7e40c72ac4801d680ed6508c2551c6"
+          }
+        }
+      },
+      {
+        "collar_polygons": [
+          [
+            [
+              0.505,
+              0.966
+            ],
+            [
+              0.563,
+              0.967
+            ],
+            [
+              0.629,
+              0.955
+            ],
+            [
+              0.635,
+              1
+            ],
+            [
+              0.509,
+              1
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 4918,
+          "collar_intersection_pixels": 4204,
+          "rest_clothing_pixels": 60771,
+          "trace_outside_clothing_pixels": 714,
+          "trace_retained_fraction": 0.8548190593719482,
+          "collar_fraction_of_clothing": 0.06470181047916412
+        },
+        "id": "030",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.061964988708496094,
+        "clothing_polygons": [
+          [
+            [
+              0.16,
+              1
+            ],
+            [
+              0.33,
+              0.895
+            ],
+            [
+              0.367,
+              0.944
+            ],
+            [
+              0.415,
+              0.972
+            ],
+            [
+              0.477,
+              0.982
+            ],
+            [
+              0.55,
+              0.976
+            ],
+            [
+              0.65,
+              0.944
+            ],
+            [
+              0.75,
+              0.893
+            ],
+            [
+              0.83,
+              0.84
+            ],
+            [
+              0.866,
+              0.806
+            ],
+            [
+              0.889,
+              0.854
+            ],
+            [
+              0.918,
+              0.891
+            ],
+            [
+              1,
+              0.918
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/030.npz",
+            "sha256": "0b696035e53809458d988e45abdcfc4e1afb4cdc712f687bc72c3b1f9b4d5e59"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/030.png",
+            "sha256": "9b3e097dd62f65b98156099a98682cf1d7840a56e223f75ae67a2984e39e12f8"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits3/030.png",
+            "sha256": "29fdc4ccd182d3986cba59b5df625cc5cf9feb4b09ca6898e18869a6f765f513"
+          }
+        }
+      },
+      {
+        "collar_polygons": null,
+        "partition": null,
+        "id": "028",
+        "split": "validation",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.04754924774169922,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.995
+            ],
+            [
+              0.226,
+              0.904
+            ],
+            [
+              0.24,
+              0.866
+            ],
+            [
+              0.255,
+              0.884
+            ],
+            [
+              0.3,
+              0.933
+            ],
+            [
+              0.35,
+              0.963
+            ],
+            [
+              0.43,
+              0.99
+            ],
+            [
+              0.49,
+              1
+            ],
+            [
+              0.58,
+              1
+            ],
+            [
+              0.645,
+              0.972
+            ],
+            [
+              0.7,
+              0.921
+            ],
+            [
+              0.734,
+              0.865
+            ],
+            [
+              0.746,
+              0.839
+            ],
+            [
+              0.782,
+              0.881
+            ],
+            [
+              0.803,
+              0.932
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/028.npz",
+            "sha256": "dbd37130b8c58a35f8b7802ae909ce2fbdaa0964ee02e23cabb574e690d50933"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/028.png",
+            "sha256": "eb246b66e7fd614935b677c1ca26b9f5da574fa7f1deda5c096c760d9f71d5d2"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits3/028.png",
+            "sha256": "338bc64f196a24f40e9a7a513b0e497aa354f6a364d458c7d85ad2c822f5d8a2"
+          }
+        }
+      },
+      {
+        "collar_polygons": [
+          [
+            [
+              0.465,
+              0.915
+            ],
+            [
+              0.513,
+              0.916
+            ],
+            [
+              0.579,
+              0.904
+            ],
+            [
+              0.571,
+              0.961
+            ],
+            [
+              0.551,
+              0.973
+            ],
+            [
+              0.498,
+              0.975
+            ],
+            [
+              0.463,
+              0.971
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 6895,
+          "collar_intersection_pixels": 6248,
+          "rest_clothing_pixels": 261545,
+          "trace_outside_clothing_pixels": 647,
+          "trace_retained_fraction": 0.9061638712882996,
+          "collar_fraction_of_clothing": 0.023331454023718834
+        },
+        "id": "b2-055",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.2553873062133789,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.755
+            ],
+            [
+              0.17,
+              0.68
+            ],
+            [
+              0.2,
+              0.59
+            ],
+            [
+              0.225,
+              0.55
+            ],
+            [
+              0.24633431085043989,
+              0.5845552297165201
+            ],
+            [
+              0.2561094819159335,
+              0.6226783968719453
+            ],
+            [
+              0.2649071358748778,
+              0.6608015640273704
+            ],
+            [
+              0.28152492668621704,
+              0.7214076246334311
+            ],
+            [
+              0.30009775171065495,
+              0.7732160312805474
+            ],
+            [
+              0.32453567937438904,
+              0.8162267839687195
+            ],
+            [
+              0.3655913978494624,
+              0.8611925708699902
+            ],
+            [
+              0.41642228739002934,
+              0.895405669599218
+            ],
+            [
+              0.4633431085043988,
+              0.9149560117302052
+            ],
+            [
+              0.501466275659824,
+              0.9217986314760508
+            ],
+            [
+              0.5493646138807429,
+              0.9188660801564027
+            ],
+            [
+              0.5826001955034213,
+              0.9051808406647116
+            ],
+            [
+              0.6119257086999023,
+              0.8797653958944281
+            ],
+            [
+              0.6363636363636364,
+              0.8543499511241447
+            ],
+            [
+              0.6559139784946236,
+              0.8299120234604106
+            ],
+            [
+              0.6744868035190615,
+              0.8005865102639296
+            ],
+            [
+              0.6871945259042033,
+              0.772238514173998
+            ],
+            [
+              0.6999022482893451,
+              0.739980449657869
+            ],
+            [
+              0.7106549364613881,
+              0.7086999022482894
+            ],
+            [
+              0.7194525904203324,
+              0.6705767350928641
+            ],
+            [
+              0.7262952101661779,
+              0.6304985337243402
+            ],
+            [
+              0.7311827956989247,
+              0.5972629521016618
+            ],
+            [
+              0.7360703812316716,
+              0.5669599217986315
+            ],
+            [
+              0.771,
+              0.566
+            ],
+            [
+              0.81,
+              0.642
+            ],
+            [
+              1,
+              0.67
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/latents/055.npz",
+            "sha256": "46e8d2212064619855775974395992936a086b19aeef542ccf0fb289acbe9459"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/055.png",
+            "sha256": "6840845f45473f8a0f4be4950ad65b4957a4ce9314d007ffc4ff561a15e607b2"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits-b2/055.png",
+            "sha256": "596309dbe97cc0da9b5387411c3113de29ec7e7a360629aa9c59efd9a79177ad"
+          }
+        }
+      },
+      {
+        "collar_polygons": [
+          [
+            [
+              0.395,
+              0.948
+            ],
+            [
+              0.457,
+              0.958
+            ],
+            [
+              0.524,
+              0.956
+            ],
+            [
+              0.522,
+              1
+            ],
+            [
+              0.389,
+              1
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 6302,
+          "collar_intersection_pixels": 4924,
+          "rest_clothing_pixels": 85345,
+          "trace_outside_clothing_pixels": 1378,
+          "trace_retained_fraction": 0.7813392281532288,
+          "collar_fraction_of_clothing": 0.054548073559999466
+        },
+        "id": "b2-051",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.08608722686767578,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.855
+            ],
+            [
+              0.11,
+              0.861
+            ],
+            [
+              0.17,
+              0.805
+            ],
+            [
+              0.181,
+              0.746
+            ],
+            [
+              0.209,
+              0.798
+            ],
+            [
+              0.258,
+              0.865
+            ],
+            [
+              0.325,
+              0.93
+            ],
+            [
+              0.407,
+              0.962
+            ],
+            [
+              0.49,
+              0.97
+            ],
+            [
+              0.55,
+              0.956
+            ],
+            [
+              0.608,
+              0.924
+            ],
+            [
+              0.638,
+              0.888
+            ],
+            [
+              0.655,
+              0.843
+            ],
+            [
+              0.683,
+              0.898
+            ],
+            [
+              0.75,
+              0.933
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/latents/051.npz",
+            "sha256": "9aedebdadc19fc9685b5b89030c5c1cbd22151993157b073a68655ff47af65a7"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/051.png",
+            "sha256": "23af87180b4c694a1d572041c922537ecdd8ab0c5201872bdc98751d063012d8"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits-b2/051.png",
+            "sha256": "2b18b2cda36e6128856978ac570837923082a70dff8c02bf92b72710663329b7"
+          }
+        }
+      },
+      {
+        "collar_polygons": [
+          [
+            [
+              0.422,
+              0.921
+            ],
+            [
+              0.456,
+              0.938
+            ],
+            [
+              0.491,
+              0.943
+            ],
+            [
+              0.523,
+              0.934
+            ],
+            [
+              0.517,
+              0.963
+            ],
+            [
+              0.507,
+              0.97
+            ],
+            [
+              0.472,
+              0.975
+            ],
+            [
+              0.44,
+              0.973
+            ],
+            [
+              0.408,
+              0.965
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 4011,
+          "collar_intersection_pixels": 1790,
+          "rest_clothing_pixels": 312848,
+          "trace_outside_clothing_pixels": 2221,
+          "trace_retained_fraction": 0.44627276062965393,
+          "collar_fraction_of_clothing": 0.005689077544957399
+        },
+        "id": "b2-020",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.3000621795654297,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.59
+            ],
+            [
+              0.146,
+              0.57
+            ],
+            [
+              0.165,
+              0.59
+            ],
+            [
+              0.184,
+              0.616
+            ],
+            [
+              0.21,
+              0.646
+            ],
+            [
+              0.24,
+              0.735
+            ],
+            [
+              0.277,
+              0.81
+            ],
+            [
+              0.341,
+              0.881
+            ],
+            [
+              0.421,
+              0.94
+            ],
+            [
+              0.481,
+              0.965
+            ],
+            [
+              0.53,
+              0.965
+            ],
+            [
+              0.58,
+              0.937
+            ],
+            [
+              0.615,
+              0.89
+            ],
+            [
+              0.65,
+              0.824
+            ],
+            [
+              0.69,
+              0.75
+            ],
+            [
+              0.736,
+              0.677
+            ],
+            [
+              0.77,
+              0.602
+            ],
+            [
+              0.792,
+              0.552
+            ],
+            [
+              0.792,
+              0.469
+            ],
+            [
+              0.815,
+              0.388
+            ],
+            [
+              1,
+              0.46
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/latents/020.npz",
+            "sha256": "02dc78bb0d0cb8f576461841b7371907d12b8dc840f8d1b6cbd780aa99099a99"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/020.png",
+            "sha256": "ab9ccd0bd1d65dac07d8616723f219db306d77e44e5d2a314bcf83bf0fce3ccd"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits-b2/020.png",
+            "sha256": "24049cb2689461bbffffe40c9603aca036547a87e25ed32e29c4432c517387c8"
+          }
+        }
+      }
+    ],
+    "source_files": {
+      "regions_trainer": "7842039b65b0230dcc745c023761350da7bdeb49720fdac30f679fdaa38cb821",
+      "paired_edit_helpers": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+      "training/__init__.py": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+      "training/augment.py": "fd81c871a9bfbb7feaad138b1e875db05c640060bdbf0342247d209eb48ba8f9",
+      "training/dataset.py": "10e433ffde6e3e63963711390ee8eeaa6f0e5a00da9f883117331a48b36e5145",
+      "training/loss.py": "1bd68d7dc1c92c1b78b91f193a45a433b1ff374614f91909ea8cb88eac7bc2d7",
+      "training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24",
+      "training/training_loop.py": "0b589a731712c51791eb22efe0dc1ee6856bf3e9335920db02a3e38dee909eb3",
+      "torch_utils/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+      "torch_utils/custom_ops.py": "ee123ae0458fbe463000d5962a5b804d9e91b25d3fda8500eeaa6ddf6b5c932a",
+      "torch_utils/misc.py": "8b66e614f3dbb27b9b3280030efcb65a94e5cfd0e9d940302692452cb7c44012",
+      "torch_utils/ops/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+      "torch_utils/ops/bias_act.cpp": "4a3eb091ce936451ac3a0e9c7c771cc5576cba195332cd777ec275cb806f4f53",
+      "torch_utils/ops/bias_act.cu": "bc6b93e2c347cc00b07dfe0f6dca35011c2291645806239cc86632902694d017",
+      "torch_utils/ops/bias_act.h": "f0ca2d087bb22b20f6642e4affd7c77e2ff5b601a2f6d1632a79002608d87aa4",
+      "torch_utils/ops/bias_act.py": "ae9d4a2efbb61f7d21d2e361a5a145704351cc9733d2bd3e5ba4e64938d8e3e3",
+      "torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3",
+      "torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+      "torch_utils/ops/fma.py": "f3fdd6b890e250124557cba35360a1297cac5bdbc4925325403b44bf290956e9",
+      "torch_utils/ops/grid_sample_gradfix.py": "a49a8195b734ecba95c9b63d035f26faa5d794a0b26eb3e9d5f3c521be29c536",
+      "torch_utils/ops/upfirdn2d.cpp": "a3930ed91584ab11786f44aca9abad9beab9f4020b564d4c547727da49d70b11",
+      "torch_utils/ops/upfirdn2d.cu": "af059a0dd7be4ba24e2b6b2f8fb5bcb0a89c4ac8320d17a59f228580164528ca",
+      "torch_utils/ops/upfirdn2d.h": "9f703976585fd9c07d18cf1c00edd3a495dc641ff1e1e1671e2df2ab24126535",
+      "torch_utils/ops/upfirdn2d.py": "7b5865e70ac4156edaefb2a372fee27dc55eb5661568b337cb4168e8936384a8",
+      "torch_utils/persistence.py": "1f24073d03fbb2d772babbf7b8a1175bec6c3423314c2649e9a8a13d37757121",
+      "torch_utils/training_stats.py": "c1c105b7e5c2fa5883516bf2bc05b588da5f45939d37f3fe281abca4579e7616",
+      "dnnlib/__init__.py": "01ee5300565a54d4a309ae87784f314a0c82db6c63e6735d1e9a124327f4c12d",
+      "dnnlib/util.py": "8f4c1e9e7eac60f9bf541b2fc0e649a022b2ddde8178df7f85f924f63e3db426"
+    },
+    "versions": {
+      "torch": "2.14.0",
+      "numpy": "2.4.6",
+      "pillow": "12.3.0"
+    }
+  },
+  "init_kwargs": {
+    "z_dim": 512,
+    "c_dim": 0,
+    "w_dim": 512,
+    "img_resolution": 1024,
+    "img_channels": 3,
+    "mapping_kwargs": {
+      "num_layers": 8,
+      "embed_features": null,
+      "layer_features": null,
+      "activation": "lrelu",
+      "lr_multiplier": 0.01,
+      "w_avg_beta": 0.995
+    },
+    "synthesis_kwargs": {
+      "channel_base": 32768,
+      "channel_max": 512,
+      "num_fp16_res": 4,
+      "conv_clamp": 256,
+      "architecture": "skip",
+      "resample_filter": [
+        1,
+        3,
+        3,
+        1
+      ],
+      "use_noise": true,
+      "activation": "lrelu"
+    }
+  },
+  "runtime": {
+    "platform": "macOS-26.6-arm64-arm-64bit",
+    "python": "3.11.16 (main, Aug 14 2026, 15:24:25) [Clang 22.1.3 ]",
+    "torch": "2.14.0",
+    "numpy": "2.4.6",
+    "pillow": "12.3.0",
+    "cpu_threads": 1,
+    "interop_threads": 1
+  },
+  "load_and_verify_seconds": 0.8325333329848945,
+  "total_seconds": 37.34780879190657,
+  "peak_rss_bytes": 3943874560,
+  "memory_preflight_free_percent": 33,
+  "count": 30,
+  "excluded_training_latents": [],
+  "original_training_seed_reproduction_excluded": "Only source manifest entries are enumerated, never its reproduction field",
+  "metrics_caveat": "Unclipped luminance MAE on fixed top75/bottom25 regions; these are not detected face/clothing masks, identity scores, collar recognition, or perceptual quality measures. Background and hair contribute. Values can exceed1 if raw generator luminance is out of range.",
+  "rendering": "Actual source and student synthesis forwards; same exact source-mapped W verified against frozen student mapping; const noise and FP32. RGB student saved unchanged, grayscale is fixed display conversion, no output compositing.",
+  "script_sha256": "4b10d1f5f19ca68f104b4ccb06ecd160152a54e05c2af5b9d3179c55b9e4c682",
+  "shared_evaluation_helpers_sha256": "ce488de8f61f24c15dc7275141d21bd34d6f43072b89277479af210d3a4e4ed3",
+  "contact_sha256": "46374cdf64a7489253fafd5ea35dba2af2a86cd2a24fcb4bfc66df62f484b4a9",
+  "mean_metrics": {
+    "full_mae_0_1": 0.021795269482698623,
+    "top75_mae_0_1": 0.013214264656968074,
+    "bottom25_mae_0_1": 0.04753828395989027,
+    "max_absolute_difference_0_1": 0.5546034753322602
+  },
+  "entries": [
+    {
+      "id": "001",
+      "seed_hex": "b04ce4196d6a235ec8df4c6906066b64105932f8aae58640968ed027cffb5231",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/001.png",
+      "source_png_sha256": "0afb9413517ffc5d33cc00ea3790fd2dcf8487fce03dcc73366d62621214bfda",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/001.npz",
+      "latent_npz_sha256": "9b66c2e0ee14264adb5b0dbc5cf09129489e9cdef15fbbfe2402f5bbb0dddfa9",
+      "z_raw_sha256": "ceb87744706a12f6260cec4d1ef73a5baf4b27f00acf2737dee5aa447d8fdb7b",
+      "w_raw_sha256": "2f25e2ea02b5f309e16da999a6eecb41b131b2db14222b52f425832824e0b242",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 1.2400445831008255,
+      "student_seconds": 0.8895376670407131,
+      "metrics": {
+        "full_mae_0_1": 0.011442460989684378,
+        "top75_mae_0_1": 0.007278461635337408,
+        "bottom25_mae_0_1": 0.023934459052725288,
+        "max_absolute_difference_0_1": 0.4423288404941559
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "001-source-gray.png",
+          "sha256": "8dd2107b3a357920a22326e1d5db2e22003d8c36b5f37885f4b014d038968426",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "001-student-gray.png",
+          "sha256": "50d25c67d82cd4f0168403e77fab78d1b80f1ece1fec220a1dd3cb15eca3edf8",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "001-student-rgb.png",
+          "sha256": "973fc9b8f5238f398742a936e1cfedcc6e758cd17f9ae647b4cf56fff1f5fe53",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "002",
+      "seed_hex": "823ff2d2098136263cb731a3c90fc115fb28e437e35e3a3764e2f0e48e207a33",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/002.png",
+      "source_png_sha256": "4781fb8f28b6b74227b823b68fb2ea73fad9e94311e9a18080925e9e0010d343",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/002.npz",
+      "latent_npz_sha256": "70a4cd392c309e8f5f7a1f91b6da648f06c1eaaf2edfe3fd52d7359cfc08ae22",
+      "z_raw_sha256": "a79df45a0fe1e804a391bf8f684879ae594ba6402cbf17e983fd333d4fbacf1b",
+      "w_raw_sha256": "d7cedfbf3c73165517a536ef94c74695f30ee3e3736e8b0f6999d1288e3cd201",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6217279999982566,
+      "student_seconds": 0.5717836250551045,
+      "metrics": {
+        "full_mae_0_1": 0.03821649920135428,
+        "top75_mae_0_1": 0.013555812350546148,
+        "bottom25_mae_0_1": 0.11219855975377868,
+        "max_absolute_difference_0_1": 0.7084998488426208
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "002-source-gray.png",
+          "sha256": "76d6b674a4bb1eeeb51b54d75554e27316dec4617fe8b856e46c382906335a02",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "002-student-gray.png",
+          "sha256": "c41c51317cedcefa590f81958cfffb402abe3259d6223c34eaaabc5f9790cebb",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "002-student-rgb.png",
+          "sha256": "08d97f125e5059dee8095b9958e41c9d6d586fa933e99b58d042b0e371cbd0f8",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "003",
+      "seed_hex": "2b9000fd5dc946d9144677f005ed94eec6e29052eda4f8623c8756a23ed38bb1",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/003.png",
+      "source_png_sha256": "4f39e9043a116a88bc2827b3b3188819a5a7e614c81ff5aa36204a4e5907e768",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/003.npz",
+      "latent_npz_sha256": "fb27175191e4d6cfeb9797ab55e4b9140f05ef6a2e71f0b12c8a5c440ec6fa72",
+      "z_raw_sha256": "a60e25cda3d375deecdc6092972a90853979c3e4b916de94fb13557d6bf3fda6",
+      "w_raw_sha256": "5e83328d11d81db37ebb9a0d3b9a0248563499794afead51849dd76218792ec1",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5700618330156431,
+      "student_seconds": 0.5752081669634208,
+      "metrics": {
+        "full_mae_0_1": 0.01204616841644679,
+        "top75_mae_0_1": 0.00990595134017743,
+        "bottom25_mae_0_1": 0.018466819645254873,
+        "max_absolute_difference_0_1": 0.4446485936641693
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "003-source-gray.png",
+          "sha256": "87f7c5f5f42fd2809f1ef579cc8433472557b6c06e6fdb49f5def66adb846de4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "003-student-gray.png",
+          "sha256": "61d9e7cb31c2259c9cb9c60198359ce79b457ff56f4a46ac9d19e4a19b9b8014",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "003-student-rgb.png",
+          "sha256": "ad2f23dd7b3559290e4828cb1862df0c81f80d0e9cbaae458a251cb8cae421b5",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "004",
+      "seed_hex": "21a82436a8d492f23b6fefe2a2d1e763834f734bd814f96d149ffea1488b2cef",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/004.png",
+      "source_png_sha256": "0210ed96dfe3f2a00cf1bb6d3e542ebf28fdad539f744ac649bfde849072af5d",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/004.npz",
+      "latent_npz_sha256": "7522f1cd94a37455d0224d515d0abd8e928650b93306302b499a11e3f60517ca",
+      "z_raw_sha256": "2940940751fdd6c95538e3af0bac51418e44233186269b51cc5e293b6345fbef",
+      "w_raw_sha256": "f73a6fe799606231694354be67c6150c00c1858c6ba061a2a24b370326de1cd9",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5519545000279322,
+      "student_seconds": 0.5384485840331763,
+      "metrics": {
+        "full_mae_0_1": 0.04901509838327911,
+        "top75_mae_0_1": 0.022312120671548048,
+        "bottom25_mae_0_1": 0.1291240315184723,
+        "max_absolute_difference_0_1": 0.8721011877059937
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "004-source-gray.png",
+          "sha256": "0ba7ce59497f917d731d6572b752236708533fd11cc47c03c55b4ebaaea874bd",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "004-student-gray.png",
+          "sha256": "ae9164cc33a664fad11a62033cc602e3da638a6485c030d41486b432251bd985",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "004-student-rgb.png",
+          "sha256": "4c567ec62af41537e08bd8e877fae8f0d21098a0058dff67ffd79563f1e7c2ab",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "005",
+      "seed_hex": "9f04423a60d820e1527853c9a9cfe2b4f59c07c37b23889a562927e885556aab",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/005.png",
+      "source_png_sha256": "406530e33f10663a268a924e39d97fbd25b3ab3eb6e03af6f038c1d785bb36a8",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/005.npz",
+      "latent_npz_sha256": "f7bab7bc5384b1073ba97479a8aea073d0a8d4566167af9c7eaec9fa48a193d5",
+      "z_raw_sha256": "7760b54a1a4cbf2eea4af0a9b833bd27257f9dbf7f301c5512af6839b884a650",
+      "w_raw_sha256": "01ca7956c0648888fed060ed51488d89d868fc0ca2ceb3cbec37a83769ce924b",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5584550419589505,
+      "student_seconds": 0.5365347920451313,
+      "metrics": {
+        "full_mae_0_1": 0.022497734842346517,
+        "top75_mae_0_1": 0.014589956425500835,
+        "bottom25_mae_0_1": 0.046221070092883565,
+        "max_absolute_difference_0_1": 0.5400537252426147
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "005-source-gray.png",
+          "sha256": "df382cf6fe6344fc8f8dfb2ebb53b8385c215d1b032f9ab1834b10ceb836e855",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "005-student-gray.png",
+          "sha256": "1d610d7b033209e00f603f21b9d583cbaf43757ed8e79235f1aaf3f00794a537",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "005-student-rgb.png",
+          "sha256": "b3f39df39630369f652849361136e946203ab238576f344d701ad67e6c8ff125",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "006",
+      "seed_hex": "79b171118477be35735d590c313446d73c4e390af6fd6899afead0711b32188b",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/006.png",
+      "source_png_sha256": "b11f1a08aeb6ef067d59f61e1af4b209c42381779d56ecf27ac0019c332ad6ec",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/006.npz",
+      "latent_npz_sha256": "1d8eb465d86af944fd26e271fbd14b32a7bafb28a49fc3a09091b4da0d8794c4",
+      "z_raw_sha256": "17e7aca91257959bfddeac0ed4dc931e804e7550c71e3a36bff453501f482d7c",
+      "w_raw_sha256": "37385f5e3945e01715bec68929b25f3b1aee1ca81e6333f89c05e2fc6353a975",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5636630830122158,
+      "student_seconds": 0.5410806250292808,
+      "metrics": {
+        "full_mae_0_1": 0.016077127777151645,
+        "top75_mae_0_1": 0.011024571062042318,
+        "bottom25_mae_0_1": 0.03123479792247963,
+        "max_absolute_difference_0_1": 0.4349464476108551
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "006-source-gray.png",
+          "sha256": "4dc431f33e60756d45d9f5959c04aa66809a5cb9fd7fb770a29bd4da94d8b06e",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "006-student-gray.png",
+          "sha256": "4cb2fd536e47ed715e7d09661df00d4d62b3d7f4edeb2c5fac9ddd97036b6bb8",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "006-student-rgb.png",
+          "sha256": "5188e9eefb5187c1619b0390a2ff3b17125c6fedf0ae1c32fa6cdf1dac2acf76",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "007",
+      "seed_hex": "3712119ea675a99a83615964165ecfd47e1c04fb266ed2171d6e8e0ca0233b32",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/007.png",
+      "source_png_sha256": "5397aba80681f041b274cd618e49ab2bc861a290344444fe1123153b1795ad7d",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/007.npz",
+      "latent_npz_sha256": "26507796b84357cd5cfc89d90c90e039843c54fd3734cc7dbb0b8f3aa39974fd",
+      "z_raw_sha256": "acd05816bceb322c2c1cf213d18b3be13c754b95bc9d87d71f7e1c98265cf24d",
+      "w_raw_sha256": "9860c82b981aece034febf22a27df48702ede6c351c66eb1374f2811b3a97981",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5729436250403523,
+      "student_seconds": 0.5342883750563487,
+      "metrics": {
+        "full_mae_0_1": 0.015366135941803805,
+        "top75_mae_0_1": 0.009473257466159643,
+        "bottom25_mae_0_1": 0.03304477136873629,
+        "max_absolute_difference_0_1": 0.5894026458263397
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "007-source-gray.png",
+          "sha256": "086a5fb2258a0944c8c1d63b7f54d849bf6bd7bca80c5d09c177aed1d1c4e825",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "007-student-gray.png",
+          "sha256": "77b5857cb1b665313e3af293fa1ee27239b29d3b83c1ea0933467370507b0827",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "007-student-rgb.png",
+          "sha256": "d3cb2f8a82c8dd0a0c7c4e7607459c2078ce3806d45da51629f61f545a031f69",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "008",
+      "seed_hex": "d507490857ff57b6c3a1e77775c62a6a1d65527d3409b32da8e31f056270cd78",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/008.png",
+      "source_png_sha256": "d0fe7c5b867b835c121e75a2a14f12b5f3d4ba81fb36264f0c80428d9015a0b5",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/008.npz",
+      "latent_npz_sha256": "9eda4890d27e48b28578c4be2263ccf4edf467ce80b6a9896bf2bee065b1158c",
+      "z_raw_sha256": "e58531ea25e403602f7c92b42e289a4dd70652da3db50eda8740db43bffcc22f",
+      "w_raw_sha256": "0fa687a53d7ef1a1ecf7a234015e9eff51a9b5ecf923cfb0fb8d69d8dfc0738b",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5605311250546947,
+      "student_seconds": 0.53342337498907,
+      "metrics": {
+        "full_mae_0_1": 0.05611546860444605,
+        "top75_mae_0_1": 0.029754387632200025,
+        "bottom25_mae_0_1": 0.13519871152118412,
+        "max_absolute_difference_0_1": 0.7211380302906036
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "008-source-gray.png",
+          "sha256": "b74a754da061a8405663549fbb577dd9328779ae352c80dd52adac67348b5dac",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "008-student-gray.png",
+          "sha256": "ae70af342435975fd6524bbf79825069af20bbd1e094e00e7bbb9f28645646ac",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "008-student-rgb.png",
+          "sha256": "c96c53e887b52714109524dec92922a9fc4532164b9c5d949fd4c9ef84e35671",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "009",
+      "seed_hex": "d809dfb8fc8362c81096be362b175ea0be3b187c762f8b813e7f9ee8d5f0f820",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/009.png",
+      "source_png_sha256": "db4682b8cde369a38ff6983b04fe1d8a2de4fce766e28db28519d794887108c3",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/009.npz",
+      "latent_npz_sha256": "9ff8c7aa4f94827b75434d7827299b3ee014e49003ed22cd00004399950ce2a2",
+      "z_raw_sha256": "494c55e1e57379b421ce27ebfa6dac87565d58c0f3a44efe55b322f4be18c688",
+      "w_raw_sha256": "343cfff3ff82645bcdf847200041181cf563473a04f79fa8d198cc6194c7603c",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.53908783395309,
+      "student_seconds": 0.5816266249166802,
+      "metrics": {
+        "full_mae_0_1": 0.022786049127319075,
+        "top75_mae_0_1": 0.011398892061038168,
+        "bottom25_mae_0_1": 0.056947520326161793,
+        "max_absolute_difference_0_1": 0.9552096128463745
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "009-source-gray.png",
+          "sha256": "502a9504262581a671aeab61ff0ef88e09a2c7883249dbe1cffdf30bfb8c45c4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "009-student-gray.png",
+          "sha256": "7583b5a5ed27384d8d2cf8dec98f09898b22053c05a7913de15909a8b67297da",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "009-student-rgb.png",
+          "sha256": "33d0e3e992cdd6ea0b1047cd4543ad1556ff4da313c450a08f273c6d7c092b13",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "010",
+      "seed_hex": "470e25aa66c83f13fdaaf8e7de1a5012e32ee55fc750442fecfdf991c3dba8a5",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/010.png",
+      "source_png_sha256": "c763b269a9fb72c3292e39090b546329ab29dd877d636abfffb9477749bc394f",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/010.npz",
+      "latent_npz_sha256": "745e7d951ce1cf20f22f9d7a30ed9c9c0872c152d1e052f494cdd6eee76dcf67",
+      "z_raw_sha256": "159bf68f9d0391c22092a4a4d440cd6d4ebdcbf3aa33577fd7d18d2ae9238d34",
+      "w_raw_sha256": "930728ebd6c3af27bf6c0f2d947214b56bb777206af3a8a13d0c40c3704fc086",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6061614580685273,
+      "student_seconds": 0.5389696670463309,
+      "metrics": {
+        "full_mae_0_1": 0.021326264855758836,
+        "top75_mae_0_1": 0.01343750654162553,
+        "bottom25_mae_0_1": 0.04499253979815876,
+        "max_absolute_difference_0_1": 0.6216556131839752
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "010-source-gray.png",
+          "sha256": "cfc4bd55aba36f9062430a7bf647fbe23a3ad6a1508e1572714fdfc781cbd45e",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "010-student-gray.png",
+          "sha256": "97b6ef85d584399c2d431c2858ccb43eacd713db3dcafd7c1fc76a523c7328db",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "010-student-rgb.png",
+          "sha256": "ba573a279591097479464db396e7e67f1701f5b8aef8a94d0cc7bc6855a6d6fa",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "011",
+      "seed_hex": "fa5ff0610d5ae031c44c8f8779390d9335359438f7f100dfdaedfadc2190f3f3",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/011.png",
+      "source_png_sha256": "77e8165d7ddcce6d96f686849a9c82dff5248eb9613cea778805bc7ee1d09f85",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/011.npz",
+      "latent_npz_sha256": "a887c6c9ee53912331592a4fdc1a33ef3077269b2339e4c1b914a339f11d7e6b",
+      "z_raw_sha256": "9f185904bc851be76e82ec9f701b2e1ad647e5ce6fcc339ba54b73d4f7022376",
+      "w_raw_sha256": "f56ee1564e8f4e460774f388ba62605d064ea3c762a9bfa7ced4658b44614cc2",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.570833541918546,
+      "student_seconds": 0.5544436250347644,
+      "metrics": {
+        "full_mae_0_1": 0.014421406849834284,
+        "top75_mae_0_1": 0.012091288085798624,
+        "bottom25_mae_0_1": 0.021411763141941265,
+        "max_absolute_difference_0_1": 0.2259855568408966
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "011-source-gray.png",
+          "sha256": "9a8ccfb6ef9e66a021e40e5e43e15a6545fbaf3d4edd5e84c283d9d9a3000596",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "011-student-gray.png",
+          "sha256": "74cabe161e38beeb1addd14c8b1d272fa411fbc853fa202ccf403ee829b98024",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "011-student-rgb.png",
+          "sha256": "e0ac4b1c4194864670af2b0ee2bafad8e842f5734774f58408020590b0eb3697",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "012",
+      "seed_hex": "ea485615db7e4fe9f1ae4d25e9c0717d5b846751bd5cd3e0b1e2650fa53ce28b",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/012.png",
+      "source_png_sha256": "91fe895125146301d9adb59eeeab567c9ee4810dff9c18d0dbbb29f42e707a83",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/012.npz",
+      "latent_npz_sha256": "6aa9e1167c496c2f583fa2194e9a75840c7ae2821adfe4a40c48f67b440f574e",
+      "z_raw_sha256": "2873b2b1ad63dace0c2e8ec3e2a84f7985f488be11d21d61d2b71121a85b7482",
+      "w_raw_sha256": "e09c12c35887c37ebff49389a3396dbbbe9d70b14f77c12b51b0d4a5dcb8a95f",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5464534590719268,
+      "student_seconds": 0.5640262080123648,
+      "metrics": {
+        "full_mae_0_1": 0.014284402359407977,
+        "top75_mae_0_1": 0.010971837174793109,
+        "bottom25_mae_0_1": 0.024222097913252583,
+        "max_absolute_difference_0_1": 0.5094403624534607
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "012-source-gray.png",
+          "sha256": "a111c16b418d6d39490c240b4ce0bbada4466b605b2f4c2261774aa2fc6be0fe",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "012-student-gray.png",
+          "sha256": "b9b2641f93140ae1a85518dc03390288bf2c17a5217ef5fe3ff0ad4d5f9f6602",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "012-student-rgb.png",
+          "sha256": "cbdf874ba30f08535646a8c3f4c12fb7f4b9494751fccd7d6681347a5f1f2978",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "013",
+      "seed_hex": "8f1ea2b4fb06d22f74984b0366981c335f6ec652b27c5cb22d796313ce6dbc8b",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/013.png",
+      "source_png_sha256": "016d970c7721c0c2d18c2c5f941039193982ba42464637d8d13a22bcb72138b7",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/013.npz",
+      "latent_npz_sha256": "d58d0bc114d3e629acdf3f0b0925ec930bc17bbba0d074ead3fdc0b75e5cbedc",
+      "z_raw_sha256": "dba87c4c834664ac05b8c8201c8790ec14d9ddf7029457a86edda330c4398481",
+      "w_raw_sha256": "3af8360d9da74e416b0721d3e28df35a47c1bbcfe929e044ccb82a0caebab244",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5483117500552908,
+      "student_seconds": 0.5756065000314265,
+      "metrics": {
+        "full_mae_0_1": 0.017284574843955625,
+        "top75_mae_0_1": 0.008240822738533401,
+        "bottom25_mae_0_1": 0.0444158311602223,
+        "max_absolute_difference_0_1": 0.7618367373943329
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "013-source-gray.png",
+          "sha256": "c4680354bda4cef30a185e13accd0c28f9831492c43b9052df4c24aa3772a098",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "013-student-gray.png",
+          "sha256": "cf325c7af08050052e0ad04f4f36f0fdce4e88f8e1dc6150efee78acc657ca1a",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "013-student-rgb.png",
+          "sha256": "f3d2f0d3410a45ca0442e8b1886e847d8253ea4a5c9aad6194a2b14c44c7b11c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "014",
+      "seed_hex": "83154f53888a3cb8d262a597709acecfaab9d6b277d70dfb9fcddc9609e457db",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/014.png",
+      "source_png_sha256": "e530ac664f8686fcf1fc2fda16894d4a805aaf6c11a3e165e13cdb50ed105832",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/014.npz",
+      "latent_npz_sha256": "9fef6f902bf366055c2dcba1da3e84ff998e8af8bf1ee8066870966a288d9d67",
+      "z_raw_sha256": "ce438bf45801b91361512f107fe6e988990b0b51e942c4ecf41405472d714d59",
+      "w_raw_sha256": "22f6c0f999912329a2634fa689a09907f72eec78c6ba707a96e66232fe08e8f6",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.580620166962035,
+      "student_seconds": 0.5150747910374776,
+      "metrics": {
+        "full_mae_0_1": 0.013624882347215816,
+        "top75_mae_0_1": 0.010897422421294323,
+        "bottom25_mae_0_1": 0.021807262124980298,
+        "max_absolute_difference_0_1": 0.40103578567504883
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "014-source-gray.png",
+          "sha256": "a6ec89a520b1cd18e056c152cd9046a3056c5afaab8e38bc1a60e3fe2b48345d",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "014-student-gray.png",
+          "sha256": "e5cb3867dec3ac10dda0b34d7b47e363f5f8253e610956a90a0ea07cbe0a56fa",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "014-student-rgb.png",
+          "sha256": "848a3e22e8d0952b21537f026dbeb807c4b7be433cf036e4b54683bdb555073c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "015",
+      "seed_hex": "2cb498e2deb77974c2bffb3b9caf43881c0699f1c22ead2a5534d029b0389d49",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/015.png",
+      "source_png_sha256": "f71136ab77a4bca89f1328ff28ea750fa245c94a09c96cc98dff33e2e98e3641",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/015.npz",
+      "latent_npz_sha256": "3d17b5bb3c2d8cc4c60e337a966572859d03fb23c55621b16f74ccbbc98fe038",
+      "z_raw_sha256": "d43c4bd1dd9f911260697ef3fd685f1b6db984ff7e90454f217b8cb910040864",
+      "w_raw_sha256": "56505fec1f64034d68da05c5471d8c5e1916161c674be3a61163e4a3b332b436",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5780472920741886,
+      "student_seconds": 0.5550934589700773,
+      "metrics": {
+        "full_mae_0_1": 0.009130713957318903,
+        "top75_mae_0_1": 0.008225397280095118,
+        "bottom25_mae_0_1": 0.011846663988990258,
+        "max_absolute_difference_0_1": 0.1734839677810669
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "015-source-gray.png",
+          "sha256": "b524eb10f3c34c28cc085086dff6f558235fbd651384637e576f5889891c54c7",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "015-student-gray.png",
+          "sha256": "fff51afe9f42d92a40c339a86c0d04e154faff4cac758dc6c5491228910e7d91",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "015-student-rgb.png",
+          "sha256": "65cec387dd6281b24cd3301cec08a678f58034684f6c3bc4668feae6e7e21dce",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "016",
+      "seed_hex": "9ab16c189de5d0101e11f00939057dabd1b777ce0185828a022844f6124ef6f0",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/016.png",
+      "source_png_sha256": "8a3304b0659b98d5a0bb057f049463e59eac462fe6876fec10777fb92893d1b5",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/016.npz",
+      "latent_npz_sha256": "76c74219a79bccc5cb59626f616b49bbddf04a62c4508faac9b69a12de354560",
+      "z_raw_sha256": "3d1d75460d3192bc88262e2370c9c7c8ebd64af13b6a2d821e0860e7b1d42e84",
+      "w_raw_sha256": "0a66ccc3217dd08aa0c52c1b186658f1bfc19faab1e1a060552f007074e5c143",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.551010791095905,
+      "student_seconds": 0.5548570420360193,
+      "metrics": {
+        "full_mae_0_1": 0.020354811057671895,
+        "top75_mae_0_1": 0.007882077695702113,
+        "bottom25_mae_0_1": 0.05777301114358124,
+        "max_absolute_difference_0_1": 0.5430567264556885
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "016-source-gray.png",
+          "sha256": "dac14aa7fad629426320515ce4f32193fb2e1e1b40f6aa0ba4053761aa34e9b2",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "016-student-gray.png",
+          "sha256": "d25b601379edb63ecce3d43ddd19ee9764c21f806fe7a2fae67b13235441c31c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "016-student-rgb.png",
+          "sha256": "08364a1dc6874f4d0c2dad3f4b992a92eb2e8e288a3c84e2b2ea2021627f144c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "017",
+      "seed_hex": "d7b376af027942f1942241ee47e38f94982e67e4c68baf2481fefeab76a75543",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/017.png",
+      "source_png_sha256": "6751e10aad84a019faf4b1aa56e6d1e946bcf42c36c138e64b86875f3b98a1e7",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/017.npz",
+      "latent_npz_sha256": "ad1809998877f4e25429981c83be1c0da6bbda2d1bac3a339f13427dabecad39",
+      "z_raw_sha256": "77e24d7f4327d2c95920f0da0aac4eccf14ecbff4d8027c4d81eca291052e48c",
+      "w_raw_sha256": "9e21ebab3dc95b12f5c31efec77241fb6800a4ae191d19fd4e18c0839e13f0f8",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5803506659576669,
+      "student_seconds": 0.542509917053394,
+      "metrics": {
+        "full_mae_0_1": 0.013081143849603905,
+        "top75_mae_0_1": 0.007338370892095251,
+        "bottom25_mae_0_1": 0.030309462722129865,
+        "max_absolute_difference_0_1": 0.5667701363563538
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "017-source-gray.png",
+          "sha256": "eabae87a7039c6d96ddc08751754be31164e65cfaf987651b8096a338e116f7a",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "017-student-gray.png",
+          "sha256": "a2cfa67d4f0dd0c1d16d137768ae1ecfc7d510090f5d13b2c51f2c70930adb34",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "017-student-rgb.png",
+          "sha256": "c89ab13587a4c3b4b4379ddfeb8523c70cc3f1cb8542e937b32e2891f9004ed4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "018",
+      "seed_hex": "d448e792891ae65aeb13916e4d6d8b4201e0fc24ba724e03e0dbec0b840f1e4a",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/018.png",
+      "source_png_sha256": "07e3fa19d33b6d9175fe22b599a6be8de1cd9da972d0569ec111e7abd818399f",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/018.npz",
+      "latent_npz_sha256": "fdb7532423c7cd67a6d58c6bac18c70aae45290fbce90045ffbebc18ff3cd73f",
+      "z_raw_sha256": "4a84f560e0b4a92534ab222fbcd5c4bf99d474fad52c944e84184081a7c5cca1",
+      "w_raw_sha256": "8024d874bbe27d2cb8ed3d4698ec341fc1cb5dd460e915ff9e7b0f3387a4c2a0",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5758458749623969,
+      "student_seconds": 0.5501365410163999,
+      "metrics": {
+        "full_mae_0_1": 0.010706379113202047,
+        "top75_mae_0_1": 0.008670020069719916,
+        "bottom25_mae_0_1": 0.01681545624364844,
+        "max_absolute_difference_0_1": 0.23611241579055786
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "018-source-gray.png",
+          "sha256": "c2426626ad2ea697778beca3ab1b388ec7e63778ce5de63904d1573504864b7f",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "018-student-gray.png",
+          "sha256": "8a5ed0e405a9a915f24997addb8574849828bf927033f84fade545d47d753845",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "018-student-rgb.png",
+          "sha256": "6d347120b5807d3d7211e9bdc6df28570b6818a142265c0ccdef98702934bf7a",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "019",
+      "seed_hex": "514976962c13570d9683e38849e3365d2af0536be8c95891a369707b77e97965",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/019.png",
+      "source_png_sha256": "8ec1598fe01771a077d6ceb6ffe0b2778e94e9ab25aae4b6093b8f1f877174c3",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/019.npz",
+      "latent_npz_sha256": "6dbeaed23c8d62eab86f52c62e44b13ab36c9db9267ef1491605501e71b83831",
+      "z_raw_sha256": "13f0136bb3a6915d74ae7c93322a286abbc11e44675b5008dec076e00cf21242",
+      "w_raw_sha256": "625cfefead07c82eefd192a9be8fc198302e632bac4e98d451987521cd432b07",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.49112770799547434,
+      "student_seconds": 0.47479766700416803,
+      "metrics": {
+        "full_mae_0_1": 0.03016333775167368,
+        "top75_mae_0_1": 0.012191007316649424,
+        "bottom25_mae_0_1": 0.08408032905674645,
+        "max_absolute_difference_0_1": 0.7370515465736389
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "019-source-gray.png",
+          "sha256": "e3fb83831b736b9f695f2a2b002ea521bd964e17c58aaffaf059f75167c80228",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "019-student-gray.png",
+          "sha256": "b9e1646a90c45df1b359c0768818440de0d1e385d47d308263e9a69cc087ad2c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "019-student-rgb.png",
+          "sha256": "730e961c188beb37446052332b4c0c234ac100fd64b02c988ecba295344506f4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "020",
+      "seed_hex": "16818e0a652a33a53e035ba1015b1657a9935b591c442f0e8a5f786da8968837",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/020.png",
+      "source_png_sha256": "5d46fc9bcb2e90f5ff34a2184ee4549193f07ef61545d25145c110f6eac82029",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/020.npz",
+      "latent_npz_sha256": "3197f6317911c4a39d9fa21a0b26373603b265013d8bb2c310ffa610cd11ab23",
+      "z_raw_sha256": "32c841f706a3a8da490a3de35e02cd3fad2e85c568594853a251232226856298",
+      "w_raw_sha256": "f41eccac5053cca3b35b131a39873b84c2931f8a72554f8bc3e9c963823925ad",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.49336108402349055,
+      "student_seconds": 0.4651320830453187,
+      "metrics": {
+        "full_mae_0_1": 0.010768840833520699,
+        "top75_mae_0_1": 0.00851846791757301,
+        "bottom25_mae_0_1": 0.017519959581363764,
+        "max_absolute_difference_0_1": 0.37062883377075195
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "020-source-gray.png",
+          "sha256": "16b3d3a873a675c6116ee1f8f7165ba4e864675ddaa4592772544da1147a7941",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "020-student-gray.png",
+          "sha256": "09fa097cafa09a9079aad5e0c287c179489c00cf8164e2df3b6c1dbfb7f3ebad",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "020-student-rgb.png",
+          "sha256": "09bd77a374dbbe64706065da6d2795f56585482e78518922ff4deae2aa082a5e",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "021",
+      "seed_hex": "a5cd1817b6c1d5d384d26dc924dee05f260a88328d1c8dfc8d415025307b9592",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/021.png",
+      "source_png_sha256": "9861a73d6e5900371d9ec44b3915ecf8c0c822abe45d9ce8faedb724be0ca922",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/021.npz",
+      "latent_npz_sha256": "55b36480c13c1bf6f0563fbf12121b8adc16e4bb76a49a569d1561a10f402eee",
+      "z_raw_sha256": "45a75a564266eb6e73d5a5a0643236e5e3220916735d1821a8664d5b32e70e18",
+      "w_raw_sha256": "c572906541c56837f2151f2c265f50c7fcc3ae3a2fcefbda9be8fe483bf9e56a",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5188050420256332,
+      "student_seconds": 0.46509366598911583,
+      "metrics": {
+        "full_mae_0_1": 0.04318616584384927,
+        "top75_mae_0_1": 0.017722654498205277,
+        "bottom25_mae_0_1": 0.11957669988078123,
+        "max_absolute_difference_0_1": 0.9888314604759216
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "021-source-gray.png",
+          "sha256": "daa549b1bd4106ab13861df46116e07df9cf32a02ab46dc95fa0c190ea098a8d",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "021-student-gray.png",
+          "sha256": "2a07f3a157da18072b971d71fd01c3659c73e753dfbb330f265573c2cf1cd153",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "021-student-rgb.png",
+          "sha256": "561033efabea9a7236af6934cad0195a23f9050ba689cd264536a4ee3306c509",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "022",
+      "seed_hex": "fbde46df0734c26303f8b615bc777c5d8491c60e6e1d15b93cd1eaabd516e16b",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/022.png",
+      "source_png_sha256": "d6820764a707fd8e6df17adb808a07186d7dc439d129688799eaec83133bfa19",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/022.npz",
+      "latent_npz_sha256": "d1fce230d31e536310832acf889cef4e8c6cd30e9b2320420adbfe67edc5e6db",
+      "z_raw_sha256": "1611c167b02d6e6a5e88a07d81401051ded9ca78ee0ec1f198eb7171b4c4e221",
+      "w_raw_sha256": "4f49d8739e3ab83a5339c592e67fdc2522692ac0f649293222b6e20a43687693",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.4794201669283211,
+      "student_seconds": 0.4660165829118341,
+      "metrics": {
+        "full_mae_0_1": 0.018997919766206905,
+        "top75_mae_0_1": 0.010876740098979099,
+        "bottom25_mae_0_1": 0.043361458767890326,
+        "max_absolute_difference_0_1": 0.3967922329902649
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "022-source-gray.png",
+          "sha256": "e28e3cf1fe46c4ce1dbf56ce7e922635b30a71d795becb78b2e4520bf483bd15",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "022-student-gray.png",
+          "sha256": "748c403f6ad822ff73b5aca5707b70de6f93ccf80efbd3e816668a5bcc215a49",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "022-student-rgb.png",
+          "sha256": "31a3f828d9aa300940af028a03039180fbad78f92ee91bb0064671d532570a6e",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "023",
+      "seed_hex": "b35cf70955b8c61ef568be0f65dfb20a1a7c7ca001be5684bb8eac5b8ce038a2",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/023.png",
+      "source_png_sha256": "4f0c27782285ffeceea35bb23d6b2455968a591aaf22d1c04737895a5c4ba974",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/023.npz",
+      "latent_npz_sha256": "fb8e4694b039bbc02c8d8ba4409ffac2dbebd4ac2f3b4100b76dee4820786ed3",
+      "z_raw_sha256": "0b759ee290462f0468793d01a829d5e938cc549b1f2cf59d70ab1920ada8030c",
+      "w_raw_sha256": "2b85faecefee545d67e406f75eab2b89095c809e6ab416118b5a29fd56fcac59",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.4860744590405375,
+      "student_seconds": 0.4762692920630798,
+      "metrics": {
+        "full_mae_0_1": 0.02250635324162431,
+        "top75_mae_0_1": 0.022273378715605457,
+        "bottom25_mae_0_1": 0.023205276819680876,
+        "max_absolute_difference_0_1": 0.5546598732471466
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "023-source-gray.png",
+          "sha256": "3110bf1e13f72b2c3b4a7d8bb0cb3cd899b92905ecc415107d9ca45b33aa8131",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "023-student-gray.png",
+          "sha256": "31a300a67af9ec0f22c477693ee5cbd9a06e759c34912f6f96003dafcd276f6f",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "023-student-rgb.png",
+          "sha256": "5b29c3bb40835f86c3e250767dee8c1cc9211d1a1387c356fef9ad8c82349330",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "024",
+      "seed_hex": "9c053b96c8f34f687bb1db7c4479eda52a2ac4360ce69e1339d9e1a07edafb0e",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/024.png",
+      "source_png_sha256": "f3bddd7756589dbede9b3ba92a06aec2cb170a760cb1dbf7ab66534af1f9c595",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/024.npz",
+      "latent_npz_sha256": "f913bd5d07ca84fd81b96b6029971815bd81b9eb3a2434bdf1d5d0a896676110",
+      "z_raw_sha256": "856439ebc27914e18afd6f6f2c59b68db9042d2ab1c297872e8f4390d2ef90a4",
+      "w_raw_sha256": "19faa3c7f4fa6223a60f0278239789d5e54633180612d44ee1b7c08a62dfa35f",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5533912499668077,
+      "student_seconds": 0.4655302920145914,
+      "metrics": {
+        "full_mae_0_1": 0.013497438662597006,
+        "top75_mae_0_1": 0.007860127379141582,
+        "bottom25_mae_0_1": 0.030409372512963273,
+        "max_absolute_difference_0_1": 0.5625680983066559
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "024-source-gray.png",
+          "sha256": "c2279eda48735c435ee743dc8e0b142e42cf6beedc1548fc0675820cf865476c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "024-student-gray.png",
+          "sha256": "bfe17326a4e4d6df74bb091772956ec0585482eb501a6445bfb3d68b24bee75d",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "024-student-rgb.png",
+          "sha256": "1fa27fae950d46b8ebacb1934e1af140e4ecb80465f134adf8f818fd8baf260c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "025",
+      "seed_hex": "2b97b43f8a44e9e87dddf5cabad2978fc990f7404d4b9e4c691e033ba8ff566b",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/025.png",
+      "source_png_sha256": "df2b8a66a6b624d0a836afb1b8f9ad311ea911f62976b1698454dc0676928207",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/025.npz",
+      "latent_npz_sha256": "bca46b765599c9129a6da36614188f515ced82aab039190e6db24c1121f596f8",
+      "z_raw_sha256": "2febe67d501e50570404656abe2fcb36a0bdd93f0af50c109f472079ea0e4dd3",
+      "w_raw_sha256": "e0a1b604dc619881f3cfbb6f444eab2babd950fe1811d5285bacea6e7aecae8d",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.48944858310278505,
+      "student_seconds": 0.4611083340132609,
+      "metrics": {
+        "full_mae_0_1": 0.04637072655023644,
+        "top75_mae_0_1": 0.02421225035675434,
+        "bottom25_mae_0_1": 0.11284615513068275,
+        "max_absolute_difference_0_1": 0.8708260953426361
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "025-source-gray.png",
+          "sha256": "fb9c943a61984b94fccd63e1290f9bb0c90e9f326c3bc1cf1d4eb9fac7494974",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "025-student-gray.png",
+          "sha256": "8a752f7555c991e84b02bf71ed14ed30df5072ac64f26ab6abaf5c2cf7356c60",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "025-student-rgb.png",
+          "sha256": "e7c4d764cd3065c0971ceb9f304d06cbd23df7275943af7518166ad71b75d992",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "026",
+      "seed_hex": "131ab727d208dde28e3e338c5716acfa0ce6ea75e964e9c1e1e8b81cb4fbe308",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/026.png",
+      "source_png_sha256": "d8872d7e7b651947d50bd453f4c46ddd85044186e8d7b39362c8be749e47ff36",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/026.npz",
+      "latent_npz_sha256": "67e4cc481a51cfbe93e08b569e2abb87b23fc0985f3b0b165b9020e2352d7ffb",
+      "z_raw_sha256": "f33f9b310a5ead84f48b74393fd5747febce3f7b2de66464d28ef222d2ce8bf7",
+      "w_raw_sha256": "3eb09f5a98a36f34f5d53b8718b18faa72a01f1fba61344fb56798e9537f09b7",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.47809866594616324,
+      "student_seconds": 0.4704502500826493,
+      "metrics": {
+        "full_mae_0_1": 0.011700043686374784,
+        "top75_mae_0_1": 0.008511191793521297,
+        "bottom25_mae_0_1": 0.021266599364935246,
+        "max_absolute_difference_0_1": 0.3343566954135895
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "026-source-gray.png",
+          "sha256": "2f674a9af348be64d1c607363ee97294b9c814ad54f9c6ede222a6b87de0e7d9",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "026-student-gray.png",
+          "sha256": "184d15960a344ae067dac6c2ef3e962443d9244672aa0adb8f4b71c37bfd1714",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "026-student-rgb.png",
+          "sha256": "dcd5637ae9acdf68d4fdcc70d72f116a16d6784d8b56cbfc3bee4918100dbbdf",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "027",
+      "seed_hex": "875989c1d862be004380d5ecef9651bcf0d6e9cf00db65a2db6205a8449896c3",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/027.png",
+      "source_png_sha256": "0d95a589665b90717ff1f4f2c3f6671c2fdd63e1afa056349ab3c5bff20fa02c",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/027.npz",
+      "latent_npz_sha256": "752331fabc512db0b1514376b8afcba3d7ec1f09de4f802d5f7359bdbd05be16",
+      "z_raw_sha256": "dee5d66adfa8925b122cc7cf7feb4234748085f59343fd0f5068890fbe444130",
+      "w_raw_sha256": "4e80f7e52418293ccb71007d1e9aeda7aac5f8d1edc252bff633834363e009bb",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.49760704208165407,
+      "student_seconds": 0.5365484589710832,
+      "metrics": {
+        "full_mae_0_1": 0.011991120696762891,
+        "top75_mae_0_1": 0.012615030801384819,
+        "bottom25_mae_0_1": 0.010119390382897109,
+        "max_absolute_difference_0_1": 0.3108997344970703
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "027-source-gray.png",
+          "sha256": "220721c3f1c4c803b8d2bb3de85352894f644302e5015694960f925a62821584",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "027-student-gray.png",
+          "sha256": "275cae678aee61698468fe60cab16437001ef2e21e75e0306402175f2c4b6cbe",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "027-student-rgb.png",
+          "sha256": "a6419939a766c63748dbf790c78347cb21b73eebf835bc09ccefa0325363a47f",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "028",
+      "seed_hex": "415d92377dfc36cc8f30c3777e78c12966aea12fc59a021028870975e8ca1259",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/028.png",
+      "source_png_sha256": "eb246b66e7fd614935b677c1ca26b9f5da574fa7f1deda5c096c760d9f71d5d2",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/028.npz",
+      "latent_npz_sha256": "dbd37130b8c58a35f8b7802ae909ce2fbdaa0964ee02e23cabb574e690d50933",
+      "z_raw_sha256": "7c728e67685d2c8da4d03a08d62389a1d4657dc1238c58ff761daf0196f6f13f",
+      "w_raw_sha256": "32d1ab66311b5ae9b173e1f5c10316a9ed9b233f5d9eadb5b1dbf66c516a62a3",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5824456670088693,
+      "student_seconds": 0.5569894580403343,
+      "metrics": {
+        "full_mae_0_1": 0.017620957820071226,
+        "top75_mae_0_1": 0.010692157916878386,
+        "bottom25_mae_0_1": 0.038407357529649744,
+        "max_absolute_difference_0_1": 0.651430755853653
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "028-source-gray.png",
+          "sha256": "70dae87fec9506265cefa81e0d10ff900880a9d79fbffbf26261894480daf771",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "028-student-gray.png",
+          "sha256": "c51e50ec737556c26ca5c7149d118fb73bd22cd2adf72edc51338df5ccaedc70",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "028-student-rgb.png",
+          "sha256": "bf07ee3f4b5b2d24210f470f37cd43489b3a3899f28313c45300611023aa0ad4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "029",
+      "seed_hex": "825048bf8a3ea1e2307f798108ac4dba0c4c2c3732a4180f82c33f33f28f40d8",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/029.png",
+      "source_png_sha256": "b88e6a1c611e285c0519e1278905953ed09ffa790f870d0f1f547c597eb04acc",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/029.npz",
+      "latent_npz_sha256": "13addd29dc72dfc39edc4162ca2987fbf5735c2f2760aa03389fc7db8d819c8e",
+      "z_raw_sha256": "4d4d54ed5f29703531b9daef765bb2241179a0c2190bd150072db881052575f3",
+      "w_raw_sha256": "fafa7757958bc61899cf1d52273e41c90e39070ecc8c0602ea126bdb4b1da5f6",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5640919160796329,
+      "student_seconds": 0.5474316669860855,
+      "metrics": {
+        "full_mae_0_1": 0.01904337080409846,
+        "top75_mae_0_1": 0.013551232080241485,
+        "bottom25_mae_0_1": 0.035519786975669376,
+        "max_absolute_difference_0_1": 0.4624079763889313
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "029-source-gray.png",
+          "sha256": "7073a9f8cbc1c00b91c65f6fef25dbc4f0f951eb8f28c17b3389c2e1c15048e9",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "029-student-gray.png",
+          "sha256": "c454e7a47b2ac1ec58146a7a5cc6c80d68b089d8ffebdac6e44fe704f772d4e1",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "029-student-rgb.png",
+          "sha256": "b03f1b395e7f46175df7c067a4152eea5b83e56310bf3bfc2db0522bb9a9a4c3",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "031",
+      "seed_hex": "9ec5e694b608c90fb0e95111b8f34449a2accbebda637bdab7318272525e8e33",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/031.png",
+      "source_png_sha256": "dd342637ebf808887ba494c6567f14f71df5f69622c10e21383733bcca42c5c6",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/031.npz",
+      "latent_npz_sha256": "fce5bcd1bad42b546ecddb5a61caf351fe88284bae0f15a81b6d9871fc191ff4",
+      "z_raw_sha256": "8c33dc081284bd340efb75775deed59968d378b3642fde44c5b9bbe1b6c2000a",
+      "w_raw_sha256": "77a0f773003483b3ae8f2ae087f937b9974faf28382e5f6760aefe66dfb1ca59",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5679090840276331,
+      "student_seconds": 0.5336602500174195,
+      "metrics": {
+        "full_mae_0_1": 0.030234486306142117,
+        "top75_mae_0_1": 0.030355547289900642,
+        "bottom25_mae_0_1": 0.02987130335486654,
+        "max_absolute_difference_0_1": 0.6499447226524353
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "031-source-gray.png",
+          "sha256": "a37b0683174af4b4f309d012130635fa25b5d4a7a279cf0f4760e642727d1131",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "031-student-gray.png",
+          "sha256": "12e15d179c705640c3c7400fc7a24afc706cecbe779ca2cfbf1a9765517d7e49",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "031-student-rgb.png",
+          "sha256": "7648e78d828cb534c1279a481c56d1071ff8ff061d8fa3d3f63b028969cface7",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    }
+  ]
+}

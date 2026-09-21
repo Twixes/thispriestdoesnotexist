@@ -1,0 +1,24 @@
+{
+  "recorded_at_utc": "2026-09-21T01:56:31.193735+00:00",
+  "cwd": "/Users/twixes/Developer/thispriestdoesnotexist",
+  "command": "research/.venv/bin/python research/experiments/paired_regions/evaluate.py --source-bundle research/runs/inference-cpu/ffhq1024/baseline-bundle --checkpoint research/runs/paired-regions1024-sixpair-600/resume.pt --sources research/data/paired7/evaluation-source30.json --expected-step 600 --output research/runs/paired-regions1024-sixpair-600/evaluation30 > research/runs/paired-regions1024-sixpair-600/evaluation30.log 2>&1",
+  "exec_session": 35300,
+  "exit_code": 0,
+  "checkpoint_sha256": "0f433c7ec50d9e80026681125d7fa7e17e9be6e8e2d31b11976fb51d1b0f3fc4",
+  "evaluator_script_sha256": "4b10d1f5f19ca68f104b4ccb06ecd160152a54e05c2af5b9d3179c55b9e4c682",
+  "actual_evaluator_memory_preflight_free_percent": 33,
+  "sequential_order": 2,
+  "verified_output_pngs": 90,
+  "no_concurrent_evaluation_jobs": true,
+  "training_terminal_evidence": {
+    "observed_original_pids_absent": [
+      98309,
+      98300
+    ],
+    "final_step": 600,
+    "launcher_exit_code": 0,
+    "launcher_record_sha256": "74c902bc329399f5f56e7ee6908c4085cbdeabf26435311390e10577f5948864"
+  },
+  "no_restart": true,
+  "production_approved": false
+}

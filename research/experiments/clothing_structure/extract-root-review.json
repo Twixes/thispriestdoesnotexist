@@ -1,0 +1,19 @@
+{
+  "reviewer": "Codex root",
+  "source_sha256": "f11a0d2d24ab1c5e52f78736c3782d88390603b0417c6f17ede39428771e8115",
+  "reviewed": "Full extraction utility and six tiny CPU tests read; root test log reports six tests passing in0.613s.",
+  "real_pickle_extraction_performed": false,
+  "real_forward_performed": false,
+  "production_approved": false,
+  "decision": "Retain unused research utility. Defer full extraction while the simpler surround-objective probe is evaluated.",
+  "findings": [
+    "Resource checks precede torch/legacy/pickle imports; fixed local official pickle and recorded vendor bytes must match.",
+    "Strict state/constructor reconstruction and safetensors roundtrip are checked by code, with explicit prefix traversal and no training."
+  ],
+  "limitations": [
+    "Full pretrained constructor/tensor/prefix checks have not been executed.",
+    "State equality does not independently prove source-pickle and reconstructed-prefix functional equivalence; compare their outputs if that assurance is needed before adopting features.",
+    "Observed-RSS watchdog is sampled, not an allocation hard limit."
+  ],
+  "root_test_log_sha256": "7b7ad0de862a27033c93ce079530bb24cf0c51fa41a4259fdb3432a99e2fa2c7"
+}

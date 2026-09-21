@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-09-21T01:56:31.193735+00:00",
+  "training_exit_code": 0,
+  "training_elapsed_seconds": 3067.6050302910153,
+  "final_step": 600,
+  "checkpoint_sha256": "0f433c7ec50d9e80026681125d7fa7e17e9be6e8e2d31b11976fb51d1b0f3fc4",
+  "student_state_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4",
+  "actual_training_pair_counts": {
+    "b2-051": 97,
+    "b2-020": 102,
+    "030": 95,
+    "000": 116,
+    "b2-055": 88,
+    "calibration-original": 102
+  },
+  "evaluations": [
+    {
+      "directory": "evaluation-pairs7",
+      "exit_code": 0,
+      "count": 7,
+      "seconds": 11.506599416024983,
+      "peak_rss_bytes": 4204707840,
+      "memory_preflight_free_percent": 31,
+      "output_png_hashes_verified": 28
+    },
+    {
+      "directory": "evaluation30",
+      "exit_code": 0,
+      "count": 30,
+      "seconds": 37.34780879190657,
+      "peak_rss_bytes": 3943874560,
+      "memory_preflight_free_percent": 33,
+      "output_png_hashes_verified": 90
+    }
+  ],
+  "no_model_compute_remaining": true,
+  "hosting_agent_notified_after_both_exits": true,
+  "production_approved": false,
+  "no_training_restart_or_input_mutation": true,
+  "finding": "Coherent faces but insufficient clerical clothing; artifacts on supervised necks and no collar successes among native-reviewed unseen adult subset."
+}

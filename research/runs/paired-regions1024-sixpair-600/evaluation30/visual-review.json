@@ -1,0 +1,241 @@
+{
+  "reviewed_at_utc": "2026-09-21T01:56:31.193735+00:00",
+  "checkpoint_sha256": "0f433c7ec50d9e80026681125d7fa7e17e9be6e8e2d31b11976fb51d1b0f3fc4",
+  "checkpoint_step": 600,
+  "production_approved": false,
+  "scope": "All 30 source/student pairs reviewed on contact; 017, 024, 025, 004 individually viewed at native 1024, and 028 native paired views verified byte-identical across both evaluators.",
+  "summary": "No convincing clerical collar on the four clearly adult masculine native-reviewed unseen identities. Faces are mostly preserved, while unrestricted sampling retains women, children and hats. Source 004 is age-uncertain and never counted as an eligible-adult/hot success.",
+  "eligible_adult_subset_ids": [
+    "017",
+    "024",
+    "025",
+    "028"
+  ],
+  "eligible_adult_subset_collar_successes": 0,
+  "records": [
+    {
+      "id": "017",
+      "native_source_student_reviewed": true,
+      "manual_eligibility_note": "Adult masculine, bareheaded; beard and glasses.",
+      "count_in_eligible_adult_subset": true,
+      "observation": "Source face, glasses and beard remain coherent. Ordinary dark neckline persists; no visible priest tab. Beard leaves little neck space.",
+      "recognizable_clerical_collar": false,
+      "production_approved": false,
+      "metrics": {
+        "full_mae_0_1": 0.013081143849603905,
+        "top75_mae_0_1": 0.007338370892095251,
+        "bottom25_mae_0_1": 0.030309462722129865,
+        "max_absolute_difference_0_1": 0.5667701363563538
+      },
+      "images": {
+        "source-gray": {
+          "path": "017-source-gray.png",
+          "sha256": "eabae87a7039c6d96ddc08751754be31164e65cfaf987651b8096a338e116f7a",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "017-student-gray.png",
+          "sha256": "a2cfa67d4f0dd0c1d16d137768ae1ecfc7d510090f5d13b2c51f2c70930adb34",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "017-student-rgb.png",
+          "sha256": "c89ab13587a4c3b4b4379ddfeb8523c70cc3f1cb8542e937b32e2891f9004ed4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "024",
+      "native_source_student_reviewed": true,
+      "manual_eligibility_note": "Adult masculine, bareheaded; glasses.",
+      "count_in_eligible_adult_subset": true,
+      "observation": "Face and smile remain coherent. Additional dark coarse texture emphasizes lower neck creases; only a thin original shirt edge is visible. No recognizable clerical collar.",
+      "recognizable_clerical_collar": false,
+      "production_approved": false,
+      "metrics": {
+        "full_mae_0_1": 0.013497438662597006,
+        "top75_mae_0_1": 0.007860127379141582,
+        "bottom25_mae_0_1": 0.030409372512963273,
+        "max_absolute_difference_0_1": 0.5625680983066559
+      },
+      "images": {
+        "source-gray": {
+          "path": "024-source-gray.png",
+          "sha256": "c2279eda48735c435ee743dc8e0b142e42cf6beedc1548fc0675820cf865476c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "024-student-gray.png",
+          "sha256": "bfe17326a4e4d6df74bb091772956ec0585482eb501a6445bfb3d68b24bee75d",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "024-student-rgb.png",
+          "sha256": "1fa27fae950d46b8ebacb1934e1af140e4ecb80465f134adf8f818fd8baf260c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "025",
+      "native_source_student_reviewed": true,
+      "manual_eligibility_note": "Adult masculine, bareheaded.",
+      "count_in_eligible_adult_subset": true,
+      "observation": "Angled source face and eyes remain coherent. Conventional striped shirt is still visible with some darkening, without a white clerical tab.",
+      "recognizable_clerical_collar": false,
+      "production_approved": false,
+      "metrics": {
+        "full_mae_0_1": 0.04637072655023644,
+        "top75_mae_0_1": 0.02421225035675434,
+        "bottom25_mae_0_1": 0.11284615513068275,
+        "max_absolute_difference_0_1": 0.8708260953426361
+      },
+      "images": {
+        "source-gray": {
+          "path": "025-source-gray.png",
+          "sha256": "fb9c943a61984b94fccd63e1290f9bb0c90e9f326c3bc1cf1d4eb9fac7494974",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "025-student-gray.png",
+          "sha256": "8a752f7555c991e84b02bf71ed14ed30df5072ac64f26ab6abaf5c2cf7356c60",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "025-student-rgb.png",
+          "sha256": "e7c4d764cd3065c0971ceb9f304d06cbd23df7275943af7518166ad71b75d992",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "028",
+      "native_source_student_reviewed": true,
+      "manual_eligibility_note": "Adult masculine, bareheaded; beard.",
+      "count_in_eligible_adult_subset": true,
+      "observation": "Same byte-identical source/student PNGs as the paired holdout review: ordinary white shirt edges remain, no central tab. Face and beard coherent.",
+      "recognizable_clerical_collar": false,
+      "production_approved": false,
+      "metrics": {
+        "full_mae_0_1": 0.017620957820071226,
+        "top75_mae_0_1": 0.010692157916878386,
+        "bottom25_mae_0_1": 0.038407357529649744,
+        "max_absolute_difference_0_1": 0.651430755853653
+      },
+      "images": {
+        "source-gray": {
+          "path": "028-source-gray.png",
+          "sha256": "70dae87fec9506265cefa81e0d10ff900880a9d79fbffbf26261894480daf771",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "028-student-gray.png",
+          "sha256": "c51e50ec737556c26ca5c7149d118fb73bd22cd2adf72edc51338df5ccaedc70",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "028-student-rgb.png",
+          "sha256": "bf07ee3f4b5b2d24210f470f37cd43489b3a3899f28313c45300611023aa0ad4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "004",
+      "native_source_student_reviewed": true,
+      "manual_eligibility_note": "Age uncertain; additional person in original background. Excluded from eligible adult/hot success counts.",
+      "count_in_eligible_adult_subset": false,
+      "observation": "Face remains coherent. Shirt gains darker coarse texture at the right shoulder/neckline, but remains conventional clothing without a tab. Diagnostic preservation case only.",
+      "recognizable_clerical_collar": false,
+      "production_approved": false,
+      "metrics": {
+        "full_mae_0_1": 0.04901509838327911,
+        "top75_mae_0_1": 0.022312120671548048,
+        "bottom25_mae_0_1": 0.1291240315184723,
+        "max_absolute_difference_0_1": 0.8721011877059937
+      },
+      "images": {
+        "source-gray": {
+          "path": "004-source-gray.png",
+          "sha256": "0ba7ce59497f917d731d6572b752236708533fd11cc47c03c55b4ebaaea874bd",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "004-student-gray.png",
+          "sha256": "ae9164cc33a664fad11a62033cc602e3da638a6485c030d41486b432251bd985",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "004-student-rgb.png",
+          "sha256": "4c567ec62af41537e08bd8e877fae8f0d21098a0058dff67ffd79563f1e7c2ab",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    }
+  ],
+  "excluded_training_source_ids": [
+    "000",
+    "030"
+  ],
+  "contact_findings": [
+    "No obvious whole-cohort facial identity collapse in this small fixed contact; this is not an identity/diversity guarantee.",
+    "Women, children and headwear remain; eligibility sampling is unsolved.",
+    "Clothing changes can add rough neck/shirt texture, without a recognizable collar."
+  ],
+  "qualitative025_clothing_reference": {
+    "path": "research/data/ffhq-clothing-edits-validation/025.png",
+    "sha256": "5ee5e5eca7a9e892795f2d5467b830227efb5d96435434cc7b04c75f67dc37ed",
+    "native_reviewed": true,
+    "training_input": false,
+    "exact_face_ground_truth": false,
+    "observation": "The separately generated reference shows a clear white tab inside black clerical clothing, unlike student 025, whose striped shirt remains. Its face/chin changed, so comparison is qualitative clothing only; original source remains facial ground truth."
+  },
+  "metrics_caveat": "Unclipped luminance MAE on fixed top75/bottom25 regions; these are not detected face/clothing masks, identity scores, collar recognition, or perceptual quality measures. Background and hair contribute. Values can exceed1 if raw generator luminance is out of range.",
+  "recommendation": "Do not deploy and do not count training 000/030 as generalization. The six-pair run has not demonstrated collar generalization on this native subset. Further work requires an explicitly evaluated method change; no automatic identical extension."
+}

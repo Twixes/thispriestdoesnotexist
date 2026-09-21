@@ -1,0 +1,42 @@
+{
+  "step": 4000,
+  "images_seen": 32000,
+  "reviewed_utc": "2026-09-21T01:49:48.236523+00:00",
+  "approved": false,
+  "production_approved": false,
+  "reviewer": "Codex native PNG visual inspection",
+  "scope": "Three native 1024x1024 sheets, sixteen fixed-latent 256x256 images each; PNG-only, no model load.",
+  "grid_sha256": {
+    "samples-004000.png": "6f684dcc3b433fd89561cee8b246ac18b21f844c91c364384fb63f48b3f45ceb",
+    "samples-004000-raw.png": "e2f268cc926189db5a78b8fa1dacd524b1177fe58558f385055cc3f24919e385",
+    "samples-004000-untruncated.png": "0bc3d2f79a159acffc7af4f1734bbe698a39c749f44bb96bb9a1da051c119d39"
+  },
+  "comparison_review_path": "visual-review-003750.json",
+  "comparison_review_sha256": "f99e52cb84a702265a68ceeb9175f47f70c74d19cbf88dc9a2163a91282aa056",
+  "findings": {
+    "ema_psi_0_7": [
+      "Most fixed tiles have recognizable adult masculine faces, white collar tabs, and black clerical shirts; no obvious hats.",
+      "The first face retains dark abnormal eye sockets. Mouth/cheek structure is still soft or uneven, including r2c3 and r3c3.",
+      "Some individual portraits are plausible at this resolution, but uneven photographic detail and the persistent eye/cheek defects prevent approval."
+    ],
+    "raw_psi_1": [
+      "r1c1 eyes remain opaque blurred dark regions; r3c3 retains ghosted/dark eyes.",
+      "The angular cheek and uneven mouth at r2c3 persist, along with smeared skin/neck transitions elsewhere.",
+      "Clerical attire is learned. The r1c2 tab is still comparatively small, though visible. No definite hats."
+    ],
+    "ema_psi_1": [
+      "The same first-face eye blobs and r3c3 eye-region distortion remain conspicuous.",
+      "Some individual portraits are more coherent, but facial fidelity is uneven and multiple mouths/cheeks remain unnatural.",
+      "White tabs and dark shirts are broadly present; no clear headwear is visible in these fixed sixteen samples."
+    ]
+  },
+  "diversity_assessment": "The fixed grid continues to occupy a narrow range of face proportions, dark swept/curly hair, mild smiles and closely related architectural portrait layouts. Some beard and skin-tone variation is visible; no broad diversity recovery is established.",
+  "decision": "Not approved for production; retain research evidence.",
+  "coordinate_convention": "One-based rows and columns in each 4x4 sheet.",
+  "limits": [
+    "No newly sampled identities, generator inference, checkpoint loading or numeric state validation.",
+    "No calibrated adult/attractiveness classifier or quantitative diversity metric used.",
+    "Only a new review JSON was written; trainers, inputs, images and live jobs remained unchanged."
+  ],
+  "comparison_to_3750": "The same conspicuous eye-region failures at r1c1 and r3c3 and unnatural cheek/mouth structure at r2c3 persist. Small expression and contrast changes do not establish a material quality improvement or change the production decision. Comparison is qualitative against the prior review record, not a convergence metric."
+}

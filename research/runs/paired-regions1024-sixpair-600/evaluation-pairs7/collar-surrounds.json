@@ -1,0 +1,476 @@
+{
+  "checkpoint_step": 600,
+  "checkpoint_sha256": "0f433c7ec50d9e80026681125d7fa7e17e9be6e8e2d31b11976fb51d1b0f3fc4",
+  "evaluation_sha256": "91f3b7ea1e140d85b02a5bdefa8d113da4250ef6dc8bef21471e88099663b938",
+  "manifest_sha256": "9c27b19b0b7cfea4ca797a488b5d249410f3988b512373f713a599f02164bab6",
+  "script_sha256": "74b7719dca768d291b13c65dcbfc05ce97a9a5ba469761dbf2abf55507d962c2",
+  "mask_helper_sha256": "ab567f74a2549f94862cf2a8c7720d0273c02a288d20839a1464f44202ca820f",
+  "model_inference_performed": false,
+  "production_approved": false,
+  "method": "Square dilation outside raw traced tab, intersected with original clothing; radii5/15/30px.",
+  "limitations": "Clipped post-update grayscale PNGs, not unclipped training tensors. Manually traced boundaries may be inset or imperfect. A ring may include bright collar antialiasing; target means describe actual pixels. Training reconstruction errors do not establish unseen generalization or a causal fix.",
+  "records": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "rings": [
+        {
+          "radius_px": 5,
+          "pixels": 1423,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 90.36894226074219,
+            "student-gray": 152.35910034179688,
+            "target-gray": 116.2248764038086
+          },
+          "target_mae_uint8": {
+            "source-gray": 71.4947280883789,
+            "student-gray": 58.91004943847656,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 15,
+          "pixels": 3583,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 92.15350341796875,
+            "student-gray": 143.6653594970703,
+            "target-gray": 58.520233154296875
+          },
+          "target_mae_uint8": {
+            "source-gray": 77.04828643798828,
+            "student-gray": 94.7990493774414,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 30,
+          "pixels": 6183,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 97.97137451171875,
+            "student-gray": 127.89212036132812,
+            "target-gray": 37.2419548034668
+          },
+          "target_mae_uint8": {
+            "source-gray": 85.88807678222656,
+            "student-gray": 96.24454498291016,
+            "target-gray": 0.0
+          }
+        }
+      ],
+      "inputs": {
+        "source-gray": {
+          "path": "calibration-original-source-gray.png",
+          "sha256": "7bbac75807b27663219e7dce4f7a319fe48a3a9eea2b8ff450f1691ec2d8bcd6",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "calibration-original-student-gray.png",
+          "sha256": "e00b05aa4437120b758fcc62aca363a8c2c2bf88961bdf578c769fce05a2909e",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "target-gray": {
+          "path": "calibration-original-target-gray.png",
+          "sha256": "fa1c642fac213a3fc95f292ed2a926057e7e01af686bde96ed9ac7200d7abefe",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "rings": [
+        {
+          "radius_px": 5,
+          "pixels": 350,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 108.7028579711914,
+            "student-gray": 161.8685760498047,
+            "target-gray": 46.69428634643555
+          },
+          "target_mae_uint8": {
+            "source-gray": 62.29999923706055,
+            "student-gray": 115.17428588867188,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 15,
+          "pixels": 1084,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 108.17527770996094,
+            "student-gray": 156.14944458007812,
+            "target-gray": 27.56273078918457
+          },
+          "target_mae_uint8": {
+            "source-gray": 80.7066421508789,
+            "student-gray": 128.5867156982422,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 30,
+          "pixels": 2251,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 107.58196258544922,
+            "student-gray": 146.54908752441406,
+            "target-gray": 22.170146942138672
+          },
+          "target_mae_uint8": {
+            "source-gray": 85.4571304321289,
+            "student-gray": 124.37894439697266,
+            "target-gray": 0.0
+          }
+        }
+      ],
+      "inputs": {
+        "source-gray": {
+          "path": "000-source-gray.png",
+          "sha256": "3de52698d7bc58bda75b0c28349c27ff9b6754a404df444eb88b78154598a89b",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "000-student-gray.png",
+          "sha256": "4939a8a46ab7658a2d985455f8cae4f7db2bf2991948ddb1934c274b9e258f2a",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "target-gray": {
+          "path": "000-target-gray.png",
+          "sha256": "616761a61881e86f27a7350264459dfe293121b1262945c4aad6aa9d9877c0f7",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "rings": [
+        {
+          "radius_px": 5,
+          "pixels": 478,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 107.22384643554688,
+            "student-gray": 189.10459899902344,
+            "target-gray": 58.21548080444336
+          },
+          "target_mae_uint8": {
+            "source-gray": 62.88284683227539,
+            "student-gray": 131.44142150878906,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 15,
+          "pixels": 1314,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 112.32267761230469,
+            "student-gray": 177.6689453125,
+            "target-gray": 36.19786834716797
+          },
+          "target_mae_uint8": {
+            "source-gray": 81.19939422607422,
+            "student-gray": 141.6719970703125,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 30,
+          "pixels": 2593,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 114.61434936523438,
+            "student-gray": 161.515625,
+            "target-gray": 29.59699249267578
+          },
+          "target_mae_uint8": {
+            "source-gray": 87.58966827392578,
+            "student-gray": 132.02044677734375,
+            "target-gray": 0.0
+          }
+        }
+      ],
+      "inputs": {
+        "source-gray": {
+          "path": "030-source-gray.png",
+          "sha256": "13a47244770126d2a46524a4d8563a7da13131a48a69ddaa5ee286d39f1e5fa0",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "030-student-gray.png",
+          "sha256": "263058fbbc415332586f8aea8b7ecacf938dd363f85ad4cb230d54965b743b90",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "target-gray": {
+          "path": "030-target-gray.png",
+          "sha256": "c33f14f864020a4ec98c3d642dbbf438582505a8fce493f3cee7b370af86fac7",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "rings": [
+        {
+          "radius_px": 5,
+          "pixels": 1323,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 216.77853393554688,
+            "student-gray": 143.3212432861328,
+            "target-gray": 48.5948600769043
+          },
+          "target_mae_uint8": {
+            "source-gray": 168.1836700439453,
+            "student-gray": 95.12547302246094,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 15,
+          "pixels": 4361,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 209.1162567138672,
+            "student-gray": 116.03370666503906,
+            "target-gray": 28.183902740478516
+          },
+          "target_mae_uint8": {
+            "source-gray": 180.93235778808594,
+            "student-gray": 88.57716369628906,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 30,
+          "pixels": 9471,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 209.6212615966797,
+            "student-gray": 99.77056121826172,
+            "target-gray": 24.630451202392578
+          },
+          "target_mae_uint8": {
+            "source-gray": 184.99081420898438,
+            "student-gray": 78.60057067871094,
+            "target-gray": 0.0
+          }
+        }
+      ],
+      "inputs": {
+        "source-gray": {
+          "path": "b2-055-source-gray.png",
+          "sha256": "597cea7ef768e8649eddaf06150b8b7a061be414b077b9750a15c94d739379e1",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "b2-055-student-gray.png",
+          "sha256": "3535e8d6a9441dffb71e9794c26924a790c8f8e866413ba1d3026fbfcb323bd3",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "target-gray": {
+          "path": "b2-055-target-gray.png",
+          "sha256": "f6053653459ab566fe7d20ffab4c0981d5900a57edc4f0b716b864ef8fa99d93",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "rings": [
+        {
+          "radius_px": 5,
+          "pixels": 466,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 68.92489624023438,
+            "student-gray": 127.22103118896484,
+            "target-gray": 53.697425842285156
+          },
+          "target_mae_uint8": {
+            "source-gray": 47.012874603271484,
+            "student-gray": 73.52360534667969,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 15,
+          "pixels": 1438,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 61.004173278808594,
+            "student-gray": 105.23991394042969,
+            "target-gray": 27.75521469116211
+          },
+          "target_mae_uint8": {
+            "source-gray": 43.57719039916992,
+            "student-gray": 77.48470306396484,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 30,
+          "pixels": 2994,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 55.09819793701172,
+            "student-gray": 83.99432373046875,
+            "target-gray": 19.83300018310547
+          },
+          "target_mae_uint8": {
+            "source-gray": 40.22578430175781,
+            "student-gray": 64.16132354736328,
+            "target-gray": 0.0
+          }
+        }
+      ],
+      "inputs": {
+        "source-gray": {
+          "path": "b2-051-source-gray.png",
+          "sha256": "4d9e30ccf14719ebc2321d6f0bdca531e602866bb07e8f38181b1dd1ae0e6c5a",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "b2-051-student-gray.png",
+          "sha256": "7ce569815493f0261bdb102f9da725ae1a18534607081cf6bac95d3423b297f7",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "target-gray": {
+          "path": "b2-051-target-gray.png",
+          "sha256": "e5214305940ea8ead4aa12ee0761de37ecf554d05aade75e51e0cb045f80de66",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "rings": [
+        {
+          "radius_px": 5,
+          "pixels": 925,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 58.71675491333008,
+            "student-gray": 113.8497314453125,
+            "target-gray": 32.03459548950195
+          },
+          "target_mae_uint8": {
+            "source-gray": 33.83243179321289,
+            "student-gray": 81.81513214111328,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 15,
+          "pixels": 3154,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 52.45529556274414,
+            "student-gray": 88.34115600585938,
+            "target-gray": 20.72130584716797
+          },
+          "target_mae_uint8": {
+            "source-gray": 34.579898834228516,
+            "student-gray": 67.7155990600586,
+            "target-gray": 0.0
+          }
+        },
+        {
+          "radius_px": 30,
+          "pixels": 7174,
+          "protected_pixels": 0,
+          "mean_luminance_uint8": {
+            "source-gray": 45.84527587890625,
+            "student-gray": 62.78087615966797,
+            "target-gray": 18.87775230407715
+          },
+          "target_mae_uint8": {
+            "source-gray": 30.400753021240234,
+            "student-gray": 44.945777893066406,
+            "target-gray": 0.0
+          }
+        }
+      ],
+      "inputs": {
+        "source-gray": {
+          "path": "b2-020-source-gray.png",
+          "sha256": "c8d442257c24420f3f8b3441b049176e2ade3fdc2499032db56a7668c5b81338",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "b2-020-student-gray.png",
+          "sha256": "fe162c06280f683563bf938143083ef6cc9b60f85e139be9701cc29a00cd821b",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "target-gray": {
+          "path": "b2-020-target-gray.png",
+          "sha256": "5a5fa610d215e38377dcc6ab61d3ad28b2b66ef49427041177e4532c93f6088e",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    }
+  ]
+}

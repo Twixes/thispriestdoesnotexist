@@ -1,0 +1,34 @@
+{
+  "reviewer": "Codex root",
+  "reviewed_at": "2026-09-21T01:58:26.336098+00:00",
+  "checkpoint_sha256": "0f433c7ec50d9e80026681125d7fa7e17e9be6e8e2d31b11976fb51d1b0f3fc4",
+  "production_approved": false,
+  "root_scope": "All seven paired triples and all30 unseen comparisons on contacts; native student views calibration-original,030,b2-055,b2-051 and unseen017,024,025,028. Agent separately viewed all seven native triples.",
+  "findings": [
+    "Facial texture and recognizable features generally remain intact in the inspected images.",
+    "Calibration neck is a broad white patch;030 neck develops dark pitting;055 garment is smeared and ring-shaped;051 has only a partial collar-like patch.",
+    "No convincing collar on the four root-native-reviewed unseen adult masculine faces. Beards restrict available neck area in017/028.",
+    "All six training30px exterior rings remain brighter than edited references, with student-to-target MAE44.95\u2013132.02 on clipped uint8 scale. These are training reconstruction errors, not generalization scores."
+  ],
+  "decision": "Reject production promotion and automatic extension of the same recipe. Run a separate matched baseline-versus-collar-surround objective experiment, preserving source/face protection, original masks, frozen layers, optimizer lineage and sampled latents. Defer b32 unfreezing and real pretrainedD extraction.",
+  "next_probe": {
+    "steps_per_branch": 50,
+    "branches": [
+      "unchanged baseline",
+      "equal thirds: effective tab,30px raw-trace exterior surround clipped to clothing, remaining clothing"
+    ],
+    "same_parent_and_rng": true,
+    "same_6_training_pairs": true,
+    "same_optimizer_state_and_trainable_parameters": true,
+    "new_data_not_added": true,
+    "purpose": "Test local weighting hypothesis; short-run outcomes cannot establish production quality or broad generalization.",
+    "tradeoff": "Equal thirds reduces tab weight from0.5 to1/3 and changes remaining garment weighting. Compare the whole objective and report tab, surround, garment and protected-face behavior separately.",
+    "interpretation": "No predetermined claim that b32 is necessary or that ring supervision will solve unseen generation."
+  },
+  "evidence_sha256": {
+    "evaluation-completion.json": "ce88c6c21efcd65593003c6ba0a30cc6b1f73f3866ae7d4e9e32d692202f653f",
+    "evaluation-pairs7/evaluation.json": "91f3b7ea1e140d85b02a5bdefa8d113da4250ef6dc8bef21471e88099663b938",
+    "evaluation-pairs7/collar-surrounds.json": "2d80627d2d70c1beaa66e9868f686cd29dc8a82defa2654f4864879448e48e47",
+    "evaluation30/evaluation.json": "7bc2ed04060bfe608249ca05f984bf2d372e4d374e5899141e0d66f66467b51b"
+  }
+}

@@ -1,0 +1,11 @@
+test_constructor_rejects_unreviewed_shape_and_payload (__main__.GuardTests.test_constructor_rejects_unreviewed_shape_and_payload) ... ok
+test_import_and_help_do_not_import_torch_or_legacy (__main__.GuardTests.test_import_and_help_do_not_import_torch_or_legacy) ... ok
+test_no_execute_flag_cannot_create_output (__main__.GuardTests.test_no_execute_flag_cannot_create_output) ... ok
+test_pinned_vendor_and_source_identity_constant (__main__.GuardTests.test_pinned_vendor_and_source_identity_constant) ... ok
+test_pressure_guard_fail_closed (__main__.GuardTests.test_pressure_guard_fail_closed) ... ok
+test_exact_reconstruction_prefix_and_safetensors (__main__.TinyStateTests.test_exact_reconstruction_prefix_and_safetensors) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.613s
+
+OK
