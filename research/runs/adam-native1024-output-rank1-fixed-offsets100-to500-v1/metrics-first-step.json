@@ -1,0 +1,50 @@
+{
+  "iteration": 100,
+  "step": 101,
+  "real_id": 170,
+  "horizontal_flip": false,
+  "d_gradient_families": {
+    "u_vector": {
+      "parameters": 25,
+      "nonzero_gradients": 25,
+      "finite": true
+    },
+    "v_vector": {
+      "parameters": 25,
+      "nonzero_gradients": 25,
+      "finite": true
+    },
+    "b_vector": {
+      "parameters": 17,
+      "nonzero_gradients": 17,
+      "finite": true
+    }
+  },
+  "d_loss": 0.006966705899685621,
+  "g_loss": 6.02791166305542,
+  "g_gradient_families": {
+    "u_vector": {
+      "parameters": 60,
+      "nonzero_gradients": 60,
+      "finite": true
+    },
+    "v_vector": {
+      "parameters": 60,
+      "nonzero_gradients": 60,
+      "finite": true
+    },
+    "b_vector": {
+      "parameters": 43,
+      "nonzero_gradients": 43,
+      "finite": true
+    }
+  },
+  "path_loss": 1.2889025211334229,
+  "raw_and_ema_offsets_fixed": true,
+  "seconds": 20.19177629193291,
+  "path_mean": 0.11647454649209976,
+  "optimizer_steps": {
+    "g": 127,
+    "d": 108
+  }
+}

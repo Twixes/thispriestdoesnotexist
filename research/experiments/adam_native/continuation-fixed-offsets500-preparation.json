@@ -1,0 +1,57 @@
+{
+  "status": "prepared_not_launched",
+  "source_sha256": "951afabe41f7f41e83edc1162c72d59eeb33b745d9d7b5d5069f25311608f5f5",
+  "test_sha256": "d3fcde4e6ba149eace45b409fd6126760c0258dad9187711f577174dabb8e498",
+  "parent_checkpoint_sha256": "e8d50115da9e3be7e98e4982316d290f7379ad0339699e100c0710e355de14ff",
+  "parent_protocol_sha256": "fb373e6e729c012a3f0a5a7c033adfde85afd60fefe1a3da7f2963a2cfb20169",
+  "parent_state_sha256": "1ca40b33ba6b1d51b55bdeb3f98f909fe2bf710b6e84edf041782891b6338a26",
+  "iteration_range": [
+    100,
+    500
+  ],
+  "additional_iterations": 400,
+  "final_optimizer_steps": {
+    "g": 625,
+    "d": 532
+  },
+  "additional_optimizer_steps": {
+    "g": 500,
+    "d": 425
+  },
+  "preview_steps": [
+    100,
+    250,
+    500
+  ],
+  "checkpoint_steps": [
+    250,
+    500
+  ],
+  "initial_parent_png_reproduction_required": 8,
+  "fixed_offsets": 34,
+  "noise": 17,
+  "synthesis_activation_bias": 17,
+  "validation": {
+    "command": "research/.venv/bin/python research/experiments/adam_native/test_continue_fixed_offsets500.py",
+    "tests": 3,
+    "passed": true,
+    "seconds": 0.697,
+    "exact_next_update_toy_resume": "passed",
+    "native_loop_body_and_loss_helpers_ast": "unchanged",
+    "syntax": "passed",
+    "cli_help": "passed"
+  },
+  "native_model_loads": 0,
+  "native_forwards": 0,
+  "native_training_launched": false,
+  "fisher_estimated": false,
+  "main_adaptation_run": false,
+  "production_approved": false,
+  "guards": {
+    "start_available_fraction": 0.35,
+    "runtime_available_fraction": 0.2,
+    "rss_gib": 12,
+    "swap_growth_mib": 512,
+    "seconds": 7200
+  }
+}

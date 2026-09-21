@@ -1,0 +1,44 @@
+{
+  "observed_at_utc": "2026-09-21T23:38:41.599183+00:00",
+  "observation_only_not_completion": true,
+  "state": "running",
+  "first_new_step": 101,
+  "last_step_at_observation": 107,
+  "parent_state_restored_exactly": true,
+  "all_eight_parent_pngs_reproduced_exactly": true,
+  "tests": {
+    "command": "research/.venv/bin/python -m unittest discover -s research/experiments/adam_native -p test_continue_fixed_offsets500.py -v",
+    "passed": 3,
+    "seconds": 0.764
+  },
+  "processes": [
+    {
+      "pid": 56051,
+      "created_at": 1790033810.563787,
+      "command": [
+        "research/.venv/bin/python",
+        "research/experiments/adam_native/continue_output_rank1_fixed_offsets500.py",
+        "--output",
+        "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1"
+      ],
+      "rss_bytes": 17530880
+    },
+    {
+      "pid": 56057,
+      "created_at": 1790033810.974663,
+      "command": [
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python",
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/adam_native/continue_output_rank1_fixed_offsets500.py",
+        "--worker",
+        "--output",
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1"
+      ],
+      "rss_bytes": 6768230400
+    }
+  ],
+  "available_memory_fraction": 0.3556938171386719,
+  "source_sha256": "951afabe41f7f41e83edc1162c72d59eeb33b745d9d7b5d5069f25311608f5f5",
+  "production_approved": false,
+  "fisher_estimated": false,
+  "main_adaptation_run": false
+}
