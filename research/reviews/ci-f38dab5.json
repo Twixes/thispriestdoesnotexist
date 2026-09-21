@@ -1,0 +1,21 @@
+{
+  "commit": "f38dab5e534952b6a2cd1cd609cb9189e3b78d4c",
+  "checks": [
+    {
+      "name": "Workers Builds: thispriestdoesnotexist",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/Twixes/thispriestdoesnotexist/runs/106181997214"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/Twixes/thispriestdoesnotexist/actions/runs/35549658240/job/106181915136"
+    }
+  ],
+  "trained_model_deployed": false,
+  "inference_workflow": "Tests and approval gate passed; unapproved model deployment intentionally skipped.",
+  "local_application_tests": 22,
+  "local_application_tests_passed": true
+}

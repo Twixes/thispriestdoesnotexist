@@ -1,0 +1,21 @@
+{
+  "purpose": "One fixed research-only linear baseline for apparent adult-male appearance from stored exact FFHQ W; no attractiveness prediction",
+  "written_before_fit": true,
+  "features": "float64 copy of saved w[0,0,:], after asserting all18 W rows are identical; 512 dimensions",
+  "train_batch": "b2",
+  "held_out_batch": "v1",
+  "exclude_label": "uncertain",
+  "target": "manual96 apparent_adult_male yes=1 no=0",
+  "preprocessing": "Per-feature mean/std learned from b2 training records only; std floor1e-8",
+  "model": "Linear logistic regression with intercept; mean binary log loss +0.5*lambda*sum(weight^2); intercept unpenalized",
+  "lambda": 1.0,
+  "class_weight": "none",
+  "optimizer": "scipy L-BFGS-B, maxiter300, gtol1e-8, ftol1e-12; deterministic zero weights and training-prior logit intercept",
+  "thresholds": [0.5, 0.8],
+  "threshold_selection": "Both fixed before fitting, report both; do not select a preferred threshold from test results. Scores are not calibrated probabilities.",
+  "baselines": ["accept all", "reject all"],
+  "cpu_threads": 1,
+  "no_tuning_on_test": true,
+  "no_image_or_generator_inference": true,
+  "no_production_integration": true
+}

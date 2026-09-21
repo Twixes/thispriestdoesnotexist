@@ -1,0 +1,48 @@
+{
+  "step": 100,
+  "reviewer": "Codex root native view of all six saved previews",
+  "production_approved": false,
+  "continue_bounded_run": true,
+  "scope": "One training identity, heldout028, four fixed random latents. Other five training identities are not previewed by this helper.",
+  "findings": {
+    "training_calibration": "Face remains coherent; original white shirt still dominates, with local neck whitening rather than a clerical collar.",
+    "validation028": "Coherent bearded face; no newly recognizable priest tab.",
+    "unseen000": "Graduation cap, glasses, partial extra person; no priest collar.",
+    "unseen001": "Coherent mature masculine face, ordinary shirt at frame edge; no visible priest tab.",
+    "unseen002": "Mature masculine face with microphone and ambiguous hand/chin area. Original fixed-latent source has not been rendered for comparison, so artifact origin is unassigned. No visible priest tab.",
+    "unseen003": "Cap and ordinary clothing; youthful masculine face. No eligible-adult or hot-success claim."
+  },
+  "decision": "No observed clear facial collapse requiring early halt. Continue only the already bounded600 updates; all source/frozen checks passed at100. None of these is a successful priest conversion.",
+  "actual_training_pair_counts_through100": {
+    "b2-051": 18,
+    "b2-020": 20,
+    "030": 17,
+    "000": 15,
+    "b2-055": 13,
+    "calibration-original": 17
+  },
+  "checkpoint_logged_metrics": {
+    "pair_ids": [
+      "b2-051"
+    ],
+    "clothing_l1": 0.2874061167240143,
+    "collar_l1": 0.25579920411109924,
+    "rest_clothing_l1": 0.3190130293369293,
+    "protected_l1": 0.008837689645588398,
+    "paired_loss": 0.296243816614151,
+    "fresh_preservation_l1": 0.007234399672597647,
+    "step": 100,
+    "paired_images_seen": 100,
+    "fresh_images_seen": 100,
+    "seconds": 5.487360000028275,
+    "checkpoint_verified_frozen_source": true
+  },
+  "images": {
+    "000100-pair-000-train.png": "ea1a98f1d55f60732f38ba24d439fe8372ecf272523e7d9c811d8c8937431213",
+    "000100-pair-001-validation.png": "818c07d72c59a22200eea6863f56ef75e16da4439381926f9e6e3042db6a2f07",
+    "000100-unseen-000.png": "ae26391a92c923feb8a09312e903de82002d2e7a39ba6acbbfa1d84e0b34a941",
+    "000100-unseen-001.png": "3e1daf20a54f3aecad644c08560807bbbe7fe366cc974acab17e6df691f130f9",
+    "000100-unseen-002.png": "54607c4bdca81a3f7f407ce9611e24bb3d0a3924470af4de57b19c775f2d8de8",
+    "000100-unseen-003.png": "658dc9844d97c899cae452c1b5e2e294708c5da6491ed85e84c4031ef81e90f6"
+  }
+}

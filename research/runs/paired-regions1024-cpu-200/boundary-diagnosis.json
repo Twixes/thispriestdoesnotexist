@@ -1,0 +1,84 @@
+{
+  "production_approved": false,
+  "model_inference_performed": false,
+  "scope": "Single training identity at step200. Three preselected exterior collar bands clipped to existing clothing protection; no face pixels reclassified. Target remains imagegen reference.",
+  "limitations": "Post-update clipped PNG grayscale/resizing. Bands are manually traced geometry, not semantic collar ground truth; errors do not prove a causal loss fix or generalization.",
+  "tab_pixels": 7198,
+  "rings": [
+    {
+      "radius_px": 5,
+      "shape": "square/Chebyshev dilation",
+      "pixels": 1423,
+      "outside_clothing_pixels": 0,
+      "mean_luminance_uint8": {
+        "source": 90.36763000488281,
+        "target": 116.64664459228516,
+        "broad200": 34.90793991088867,
+        "balanced200": 158.59100341796875
+      },
+      "mae_to_target_uint8": {
+        "source": 71.48882293701172,
+        "target": 0.0,
+        "broad200": 93.29865264892578,
+        "balanced200": 57.5695915222168
+      }
+    },
+    {
+      "radius_px": 15,
+      "shape": "square/Chebyshev dilation",
+      "pixels": 3583,
+      "outside_clothing_pixels": 0,
+      "mean_luminance_uint8": {
+        "source": 92.14814758300781,
+        "target": 59.088645935058594,
+        "broad200": 31.873010635375977,
+        "balanced200": 150.60647583007812
+      },
+      "mae_to_target_uint8": {
+        "source": 76.6703109741211,
+        "target": 0.0,
+        "broad200": 52.9944953918457,
+        "balanced200": 98.24422454833984
+      }
+    },
+    {
+      "radius_px": 30,
+      "shape": "square/Chebyshev dilation",
+      "pixels": 6183,
+      "outside_clothing_pixels": 0,
+      "mean_luminance_uint8": {
+        "source": 97.96564483642578,
+        "target": 37.856300354003906,
+        "broad200": 26.675886154174805,
+        "balanced200": 133.42665100097656
+      },
+      "mae_to_target_uint8": {
+        "source": 85.3814697265625,
+        "target": 0.0,
+        "broad200": 35.44344711303711,
+        "balanced200": 99.47248840332031
+      }
+    }
+  ],
+  "inputs": {
+    "source": {
+      "path": "research/data/ffhq-paired-sources32/images/reproduction-sample002.png",
+      "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+    },
+    "target": {
+      "path": "research/data/ffhq-clothing-edit1/001.png",
+      "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+    },
+    "broad200": {
+      "path": "research/runs/paired1024-cpu-200/000200-pair-000-train.png",
+      "sha256": "f47407de2c18e76419d51710747aaddafba0e808415cab33a238c314ef342cc6"
+    },
+    "balanced200": {
+      "path": "research/runs/paired-regions1024-cpu-200/000200-pair-000-train.png",
+      "sha256": "e0da92b04f7b856204240483fba6b7e0a75d847c8a7d4830a3920e61dec8a8b5"
+    }
+  },
+  "manifest_sha256": "71ce8502bc12283c4241d442f2329c8d5f64018118b8e0b9495a75afd1ee085c",
+  "script_sha256": "169bf41eab39ab973a484df0913ce87c17b295dc0a80035ac29918f973b4b6ba",
+  "helper_sha256": "ab567f74a2549f94862cf2a8c7720d0273c02a288d20839a1464f44202ca820f"
+}

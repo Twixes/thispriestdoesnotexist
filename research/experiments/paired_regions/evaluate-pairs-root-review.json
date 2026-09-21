@@ -1,0 +1,13 @@
+{
+  "reviewer": "Codex root",
+  "reviewed_file": "evaluate_pairs.py",
+  "sha256": "59947032b05a97058005cb0508c30b9ae9d97f18aed45905828577b77c0ee49e",
+  "review": "Read complete evaluator and related source/quantization/freeze helpers. Separate supervised and heldout reporting; exact source and training provenance retained; no changes to training loop. No actionable issue found.",
+  "executed_validation": {
+    "command": "research/.venv/bin/python -m unittest research.experiments.paired_regions.test_evaluate_pairs -v",
+    "tests": 5,
+    "passed": true
+  },
+  "actual_1024_evaluation_performed": false,
+  "production_approved": false
+}

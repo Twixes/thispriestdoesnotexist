@@ -1,0 +1,255 @@
+{
+  "optimizer": {
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 21,
+    "objective": 0.24489234414709493,
+    "gradient_max_abs": 9.321676438600948e-08
+  },
+  "metrics": {
+    "train_b2": {
+      "logistic_fixed_thresholds": {
+        "0.5": {
+          "n": 61,
+          "positive_count": 22,
+          "accepted": 22,
+          "tp": 22,
+          "fp": 0,
+          "fn": 0,
+          "tn": 39,
+          "precision": 1.0,
+          "recall": 1.0,
+          "acceptance": 0.36065573770491804,
+          "accuracy": 1.0,
+          "precision_wilson95": [
+            0.8513451253913791,
+            1.0
+          ],
+          "recall_wilson95": [
+            0.8513451253913791,
+            1.0
+          ]
+        },
+        "0.8": {
+          "n": 61,
+          "positive_count": 22,
+          "accepted": 15,
+          "tp": 15,
+          "fp": 0,
+          "fn": 7,
+          "tn": 39,
+          "precision": 1.0,
+          "recall": 0.6818181818181818,
+          "acceptance": 0.2459016393442623,
+          "accuracy": 0.8852459016393442,
+          "precision_wilson95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "recall_wilson95": [
+            0.47318597741042745,
+            0.8363940681864375
+          ]
+        }
+      },
+      "accept_all": {
+        "n": 61,
+        "positive_count": 22,
+        "accepted": 61,
+        "tp": 22,
+        "fp": 39,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.36065573770491804,
+        "recall": 1.0,
+        "acceptance": 1.0,
+        "accuracy": 0.36065573770491804,
+        "precision_wilson95": [
+          0.2517411151987451,
+          0.4860809463466307
+        ],
+        "recall_wilson95": [
+          0.8513451253913791,
+          1.0
+        ]
+      },
+      "reject_all": {
+        "n": 61,
+        "positive_count": 22,
+        "accepted": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 22,
+        "tn": 39,
+        "precision": null,
+        "recall": 0.0,
+        "acceptance": 0.0,
+        "accuracy": 0.639344262295082,
+        "precision_wilson95": null,
+        "recall_wilson95": [
+          0.0,
+          0.14865487460862087
+        ]
+      }
+    },
+    "heldout_v1": {
+      "logistic_fixed_thresholds": {
+        "0.5": {
+          "n": 29,
+          "positive_count": 9,
+          "accepted": 7,
+          "tp": 7,
+          "fp": 0,
+          "fn": 2,
+          "tn": 20,
+          "precision": 1.0,
+          "recall": 0.7777777777777778,
+          "acceptance": 0.2413793103448276,
+          "accuracy": 0.9310344827586207,
+          "precision_wilson95": [
+            0.6456695649333126,
+            1.0
+          ],
+          "recall_wilson95": [
+            0.45258896910698887,
+            0.9367748928821533
+          ]
+        },
+        "0.8": {
+          "n": 29,
+          "positive_count": 9,
+          "accepted": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 7,
+          "tn": 20,
+          "precision": 1.0,
+          "recall": 0.2222222222222222,
+          "acceptance": 0.06896551724137931,
+          "accuracy": 0.7586206896551724,
+          "precision_wilson95": [
+            0.34238022750665303,
+            1.0
+          ],
+          "recall_wilson95": [
+            0.06322510711784671,
+            0.5474110308930111
+          ]
+        }
+      },
+      "accept_all": {
+        "n": 29,
+        "positive_count": 9,
+        "accepted": 29,
+        "tp": 9,
+        "fp": 20,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.3103448275862069,
+        "recall": 1.0,
+        "acceptance": 1.0,
+        "accuracy": 0.3103448275862069,
+        "precision_wilson95": [
+          0.17275616744483216,
+          0.4923013423309317
+        ],
+        "recall_wilson95": [
+          0.7008549515804559,
+          1.0
+        ]
+      },
+      "reject_all": {
+        "n": 29,
+        "positive_count": 9,
+        "accepted": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "tn": 20,
+        "precision": null,
+        "recall": 0.0,
+        "acceptance": 0.0,
+        "accuracy": 0.6896551724137931,
+        "precision_wilson95": null,
+        "recall_wilson95": [
+          0.0,
+          0.2991450484195441
+        ]
+      }
+    }
+  },
+  "heldout_errors": {
+    "0.5": [
+      {
+        "id": "v1-017",
+        "label": "yes",
+        "score": 0.4994280359652796,
+        "manual_note": "Appealing adult bearded face and glasses; beard almost reaches frame edge, limiting collar room."
+      },
+      {
+        "id": "v1-024",
+        "label": "yes",
+        "score": 0.37700883139178376,
+        "manual_note": "Mature adult masculine face and glasses; native anatomy plausible; subjective appeal uncertain."
+      }
+    ],
+    "0.8": [
+      {
+        "id": "v1-000",
+        "label": "yes",
+        "score": 0.5693018518633176,
+        "manual_note": "Adult short-haired face; neck visible; blurred background shapes could be people."
+      },
+      {
+        "id": "v1-016",
+        "label": "yes",
+        "score": 0.7353848441797415,
+        "manual_note": "Mature adult masculine appearance; intact face and glasses; not selected aesthetically."
+      },
+      {
+        "id": "v1-017",
+        "label": "yes",
+        "score": 0.4994280359652796,
+        "manual_note": "Appealing adult bearded face and glasses; beard almost reaches frame edge, limiting collar room."
+      },
+      {
+        "id": "v1-021",
+        "label": "yes",
+        "score": 0.7328433824934931,
+        "manual_note": "Clearly adult smiling bearded face; cap on head; subjective aesthetic uncertain at contact size."
+      },
+      {
+        "id": "v1-024",
+        "label": "yes",
+        "score": 0.37700883139178376,
+        "manual_note": "Mature adult masculine face and glasses; native anatomy plausible; subjective appeal uncertain."
+      },
+      {
+        "id": "v1-028",
+        "label": "yes",
+        "score": 0.775542574168948,
+        "manual_note": "Appealing adult bearded face; beard reaches lower frame and limits collar; background lettering."
+      },
+      {
+        "id": "v1-030",
+        "label": "yes",
+        "score": 0.586898136670465,
+        "manual_note": "Appealing adult short-haired face; partial second person along left edge; neck visible."
+      }
+    ]
+  },
+  "runtime": {
+    "elapsed_seconds": 0.031958292005583644,
+    "peak_rss_bytes": 77135872,
+    "platform": "macOS-26.6-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  }
+}
