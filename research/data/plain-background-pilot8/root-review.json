@@ -1,0 +1,24 @@
+{
+  "reviewed_utc": "2026-09-21T04:18:05.662607+00:00",
+  "scope": "All8 original1254x1254 images viewed byroot",
+  "source_review": "Accepted as prospective synthetic training candidates, not model output quality evidence",
+  "observations": [
+    "All8 appear clearly adult masculine with plausible face anatomy, full bare heads, black clerical shirts and crisp white tabs.",
+    "Simple backgrounds contain no prominent columns or architectural patterns.",
+    "146 is color despite monochrome prompt; separate training preprocessing records grayscale conversion, original retained unchanged.",
+    "Images are posed and polished; greater casual expression/pose variety would be needed in a larger expansion."
+  ],
+  "files": {
+    "141.png": "7a6b1d4e20a3b58316c0d63f57fff20845820fc25d928d70002fb161266d0115",
+    "142.png": "e0cbf2e73ad9b9874c80f0f28d953181c896b9e8a294f3f5c3a314b0bc28f2d6",
+    "143.png": "fe6d148cb76cc44b887cb7ceee9baaadfbf37a64e6280f65832432ffac9e0cdf",
+    "144.png": "9c863f812717949f7db8c29f601b4e2d57c7b17359f75b6dbfa4128ca9f88b63",
+    "145.png": "b5828fa79eab62484189679ee693076cc62c0a0f0e99fb8f34623545b1d62a08",
+    "146.png": "ca0b2d85e2eaeb22f58e2b67b41b39a390e8011b7b41d2f3902cf30fc2149fac",
+    "147.png": "ff3a9d27f073388d3b03c7f340fe5d72a2f05e81713803e6665214cc721679d8",
+    "148.png": "671b5105d55113b1e68d32b4c49426da1f90e49b2194fa8ebb67eee702e0e2aa"
+  },
+  "active_dataset_changed": false,
+  "alignment_status": "Initial eyes42 copies show reflected edge artifact on141; prepare separate border-independent crop before training inclusion.",
+  "production_approved": false
+}

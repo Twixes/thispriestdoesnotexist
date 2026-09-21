@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/prepare_plain_background_zero_reflection.py", line 198, in <module>
+    main()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/reviews/prepare_plain_background_zero_reflection.py", line 167, in main
+    record.update(native_output=str(native.relative_to(ROOT)), native_sha256=sha(native),
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/pathlib.py", line 730, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'research/data/plain-background-pilot8-zero-reflection/native1024/141.png' is not in the subpath of '/Users/twixes/Developer/thispriestdoesnotexist' OR one path is relative and the other is absolute.

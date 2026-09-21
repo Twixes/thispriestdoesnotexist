@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-09-21T04:14:38.254988+00:00",
+  "method": "Four independent built-in image_gen generation calls, one portrait per call, no references, no retries. Original native bytes copied; no resizing/grayscale/compositing/editing.",
+  "model_name": "Not exposed by built-in tool; no model identifier invented.",
+  "skill": "/Users/twixes/.codex/skills/.system/imagegen/SKILL.md",
+  "prompts_file": "prompts-part145-148.json",
+  "prompts_file_sha256": "32da2c697af3c8322805d3693fe7a65ed60398784f294ea35a972842005aa121",
+  "entries": [
+    {
+      "id": 145,
+      "path": "research/data/plain-background-pilot8/145.png",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-18e1-7f72-a811-441ea57a7d66/exec-2cac4978-53fb-4623-985b-ecc872dae96e.png",
+      "source_sha256": "b5828fa79eab62484189679ee693076cc62c0a0f0e99fb8f34623545b1d62a08",
+      "copied_sha256": "b5828fa79eab62484189679ee693076cc62c0a0f0e99fb8f34623545b1d62a08",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "copied_without_transformation": true,
+      "prompt_sha256": "efe8629fb278946d3de68513295bec3b56c545df6dbc2a63ae8892073d143b67"
+    },
+    {
+      "id": 146,
+      "path": "research/data/plain-background-pilot8/146.png",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-18e1-7f72-a811-441ea57a7d66/exec-932fc10c-289e-4f3e-9e9c-abc1ee355705.png",
+      "source_sha256": "ca0b2d85e2eaeb22f58e2b67b41b39a390e8011b7b41d2f3902cf30fc2149fac",
+      "copied_sha256": "ca0b2d85e2eaeb22f58e2b67b41b39a390e8011b7b41d2f3902cf30fc2149fac",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "copied_without_transformation": true,
+      "prompt_sha256": "662e7007f93ded5fefb192c593c53a8bd038fcb3ec6ffc035bce6cd46bfc4220"
+    },
+    {
+      "id": 147,
+      "path": "research/data/plain-background-pilot8/147.png",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-18e1-7f72-a811-441ea57a7d66/exec-6d9ace9f-516d-4233-93c7-2e1ed4413649.png",
+      "source_sha256": "ff3a9d27f073388d3b03c7f340fe5d72a2f05e81713803e6665214cc721679d8",
+      "copied_sha256": "ff3a9d27f073388d3b03c7f340fe5d72a2f05e81713803e6665214cc721679d8",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "copied_without_transformation": true,
+      "prompt_sha256": "b211642070d8e560eed967ab7730c4b6cf3158cf669c84c350a357a6ae238d32"
+    },
+    {
+      "id": 148,
+      "path": "research/data/plain-background-pilot8/148.png",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-18e1-7f72-a811-441ea57a7d66/exec-bbf623cb-f3a5-4d4c-b38e-b5590d4dd2d8.png",
+      "source_sha256": "671b5105d55113b1e68d32b4c49426da1f90e49b2194fa8ebb67eee702e0e2aa",
+      "copied_sha256": "671b5105d55113b1e68d32b4c49426da1f90e49b2194fa8ebb67eee702e0e2aa",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "copied_without_transformation": true,
+      "prompt_sha256": "3af39e468263b93d1cf554fccd32a746b417de21f19b8ce99654a0ae200737dc"
+    }
+  ],
+  "active_dataset_modified": false,
+  "production_approved": false
+}

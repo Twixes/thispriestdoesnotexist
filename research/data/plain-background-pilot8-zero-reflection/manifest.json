@@ -1,0 +1,1277 @@
+{
+  "created_utc": "2026-09-21T04:22:53.593105+00:00",
+  "version": "plain-background-pilot-zero-reflection-v1",
+  "script_sha256": "bddab6a4e5b63d60c2656914988d4494fef7e40b8e8af57c36057640f198c909",
+  "reference_algorithms": {
+    "research/alignment/solve_1024_bounds.py": "fd21a93b99ba673bd3bc528dd7324ff8a0b82cb9a8430ac9c3ebfa43a34a48a1",
+    "research/alignment/render_1024_bounds.py": "f50be7e1af637ccd1eeed1c1dece8360890d9b407367f55926a0ff99dc4cc0d0"
+  },
+  "method": "Copied constrained LP from solve_1024_bounds.py; preserved rotation and lexicographic exact-eyes/eyeY/eyeX/scale objectives. No reference top-level code executed.",
+  "pixel_coordinates": "source256=(native+.5)*256/1254-.5; output1024=(output256+.5)*4-.5",
+  "color": "Every native source normalized Pillow L then RGB before warp, including146",
+  "render": "Native1254 to1024 cv2.INTER_LANCZOS4, source margin4; Pillow LANCZOS1024 to256",
+  "border_test": "Different constant magenta versus reflected101 border rules produce byte-identical1024 arrays; inverse sampled corners lie within4px source support margin.",
+  "versions": {
+    "opencv": "5.0.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pillow": "12.3.0"
+  },
+  "wall_seconds": 1.1508473750436679,
+  "peak_rss_bytes": 163217408,
+  "inputs_before": {
+    "research/data/plain-background-pilot8-aligned256-monochrome/manifest.json": "f95086c8c24d3046439ac7fc66f4746ac988207587a523460ff96d3c78a2415c",
+    "research/alignment/solve_1024_bounds.py": "fd21a93b99ba673bd3bc528dd7324ff8a0b82cb9a8430ac9c3ebfa43a34a48a1",
+    "research/alignment/render_1024_bounds.py": "f50be7e1af637ccd1eeed1c1dece8360890d9b407367f55926a0ff99dc4cc0d0",
+    "research/data/plain-background-pilot8/141.png": "7a6b1d4e20a3b58316c0d63f57fff20845820fc25d928d70002fb161266d0115",
+    "research/data/plain-background-pilot8/142.png": "e0cbf2e73ad9b9874c80f0f28d953181c896b9e8a294f3f5c3a314b0bc28f2d6",
+    "research/data/plain-background-pilot8/143.png": "fe6d148cb76cc44b887cb7ceee9baaadfbf37a64e6280f65832432ffac9e0cdf",
+    "research/data/plain-background-pilot8/144.png": "9c863f812717949f7db8c29f601b4e2d57c7b17359f75b6dbfa4128ca9f88b63",
+    "research/data/plain-background-pilot8/145.png": "b5828fa79eab62484189679ee693076cc62c0a0f0e99fb8f34623545b1d62a08",
+    "research/data/plain-background-pilot8/146.png": "ca0b2d85e2eaeb22f58e2b67b41b39a390e8011b7b41d2f3902cf30fc2149fac",
+    "research/data/plain-background-pilot8/147.png": "ff3a9d27f073388d3b03c7f340fe5d72a2f05e81713803e6665214cc721679d8",
+    "research/data/plain-background-pilot8/148.png": "671b5105d55113b1e68d32b4c49426da1f90e49b2194fa8ebb67eee702e0e2aa",
+    "research/data/plain-background-pilot8-aligned256-monochrome/141.png": "3f7a182371ce2dfb1933768ddcd01172335d6ba82059efc189c8f7a107c203ce",
+    "research/data/plain-background-pilot8-aligned256-monochrome/142.png": "4bda35ed7b88eeedcb2e19ebe35b8b4930bd823805d3974bde5cb125cc1e0e5f",
+    "research/data/plain-background-pilot8-aligned256-monochrome/143.png": "bb6f0e0738aa3ba62d3cc17964b4c6b323f3086ad334bb9613654449418371d9",
+    "research/data/plain-background-pilot8-aligned256-monochrome/144.png": "a4422b2bfeb0e910ffb9e6e811ad42964ac2702747756d309901a388146961b2",
+    "research/data/plain-background-pilot8-aligned256-monochrome/145.png": "9a0ad599827396475b0fa9ca88cfd64125dc2ff713394b37eb4becc135808077",
+    "research/data/plain-background-pilot8-aligned256-monochrome/146.png": "388002c33072c7df8ee0dc962e34aaba5145eec24db36f00e0025d60b15d6e29",
+    "research/data/plain-background-pilot8-aligned256-monochrome/147.png": "d5f22a8c0083688802b0f5f245bd843482efe0713717f2c381f4be95badeed7d",
+    "research/data/plain-background-pilot8-aligned256-monochrome/148.png": "f047872657011a8ff0ba2483e87d294cb75feb9d29460c34b0e268ed1a5da6f0"
+  },
+  "inputs_after": {
+    "research/data/plain-background-pilot8-aligned256-monochrome/manifest.json": "f95086c8c24d3046439ac7fc66f4746ac988207587a523460ff96d3c78a2415c",
+    "research/alignment/solve_1024_bounds.py": "fd21a93b99ba673bd3bc528dd7324ff8a0b82cb9a8430ac9c3ebfa43a34a48a1",
+    "research/alignment/render_1024_bounds.py": "f50be7e1af637ccd1eeed1c1dece8360890d9b407367f55926a0ff99dc4cc0d0",
+    "research/data/plain-background-pilot8/141.png": "7a6b1d4e20a3b58316c0d63f57fff20845820fc25d928d70002fb161266d0115",
+    "research/data/plain-background-pilot8/142.png": "e0cbf2e73ad9b9874c80f0f28d953181c896b9e8a294f3f5c3a314b0bc28f2d6",
+    "research/data/plain-background-pilot8/143.png": "fe6d148cb76cc44b887cb7ceee9baaadfbf37a64e6280f65832432ffac9e0cdf",
+    "research/data/plain-background-pilot8/144.png": "9c863f812717949f7db8c29f601b4e2d57c7b17359f75b6dbfa4128ca9f88b63",
+    "research/data/plain-background-pilot8/145.png": "b5828fa79eab62484189679ee693076cc62c0a0f0e99fb8f34623545b1d62a08",
+    "research/data/plain-background-pilot8/146.png": "ca0b2d85e2eaeb22f58e2b67b41b39a390e8011b7b41d2f3902cf30fc2149fac",
+    "research/data/plain-background-pilot8/147.png": "ff3a9d27f073388d3b03c7f340fe5d72a2f05e81713803e6665214cc721679d8",
+    "research/data/plain-background-pilot8/148.png": "671b5105d55113b1e68d32b4c49426da1f90e49b2194fa8ebb67eee702e0e2aa",
+    "research/data/plain-background-pilot8-aligned256-monochrome/141.png": "3f7a182371ce2dfb1933768ddcd01172335d6ba82059efc189c8f7a107c203ce",
+    "research/data/plain-background-pilot8-aligned256-monochrome/142.png": "4bda35ed7b88eeedcb2e19ebe35b8b4930bd823805d3974bde5cb125cc1e0e5f",
+    "research/data/plain-background-pilot8-aligned256-monochrome/143.png": "bb6f0e0738aa3ba62d3cc17964b4c6b323f3086ad334bb9613654449418371d9",
+    "research/data/plain-background-pilot8-aligned256-monochrome/144.png": "a4422b2bfeb0e910ffb9e6e811ad42964ac2702747756d309901a388146961b2",
+    "research/data/plain-background-pilot8-aligned256-monochrome/145.png": "9a0ad599827396475b0fa9ca88cfd64125dc2ff713394b37eb4becc135808077",
+    "research/data/plain-background-pilot8-aligned256-monochrome/146.png": "388002c33072c7df8ee0dc962e34aaba5145eec24db36f00e0025d60b15d6e29",
+    "research/data/plain-background-pilot8-aligned256-monochrome/147.png": "d5f22a8c0083688802b0f5f245bd843482efe0713717f2c381f4be95badeed7d",
+    "research/data/plain-background-pilot8-aligned256-monochrome/148.png": "f047872657011a8ff0ba2483e87d294cb75feb9d29460c34b0e268ed1a5da6f0"
+  },
+  "inputs_unchanged": true,
+  "active_dataset_changed": false,
+  "quality_approved": false,
+  "production_approved": false,
+  "summary": {
+    "count": 8,
+    "feasible": 8,
+    "infeasible": 0,
+    "exact_eye_position_feasible": 1,
+    "eye_y_fraction_range": [
+      0.36238785378849314,
+      0.42146484375
+    ],
+    "max_abs_eye_shift256_xy": [
+      23.210912428295472,
+      15.123709430145752
+    ],
+    "border_independence_verified_count": 8
+  },
+  "entries": [
+    {
+      "id": "141",
+      "feasible": true,
+      "exact_eye_position_feasible": false,
+      "eye_40_to_44_band_feasible": false,
+      "matrix_source_to_output1024": [
+        [
+          0.9516736490762401,
+          -0.07153270163547941,
+          2.2245208959269576
+        ],
+        [
+          0.07153270163547941,
+          0.9516736490762401,
+          -80.55495337606129
+        ]
+      ],
+      "original_matrix_source_to_output1024": [
+        [
+          0.8578259365796569,
+          -0.06447862335590678,
+          21.481255988751904
+        ],
+        [
+          0.06447862335590678,
+          0.8578259365796569,
+          24.477622430577846
+        ]
+      ],
+      "inverse_output_corners": [
+        [
+          4.0023022402480235,
+          84.34473095054057
+        ],
+        [
+          1072.9115079541477,
+          4.000000000000014
+        ],
+        [
+          84.34703319078858,
+          1153.25393666444
+        ],
+        [
+          1153.2562389046882,
+          1072.9092057138994
+        ]
+      ],
+      "original_output_eye1024": [
+        513.5,
+        431.58
+      ],
+      "corrected_output_eye1024": [
+        548.0710074151797,
+        371.085162279417
+      ],
+      "eye_shift1024_xy": [
+        34.57100741517968,
+        -60.49483772058301
+      ],
+      "eye_shift256_xy": [
+        8.64275185379492,
+        -15.123709430145752
+      ],
+      "eye_y_fraction": 0.36238785378849314,
+      "scale_ratio_vs_eyes42": 1.1094018127625924,
+      "source_border_support_margin": 4,
+      "landmarks_output1024": [
+        [
+          423.89621116534227,
+          368.97973181961265
+        ],
+        [
+          672.245803665017,
+          373.1905927392213
+        ],
+        [
+          543.9151402034402,
+          500.42460397126894
+        ],
+        [
+          448.3306277110002,
+          608.2417428603442
+        ],
+        [
+          656.2331089585764,
+          610.6463515590838
+        ]
+      ],
+      "collar_guard_output1024": [
+        [
+          513.6649292498653,
+          873.9231183080349
+        ],
+        [
+          620.8843487289937,
+          881.9822830758885
+        ],
+        [
+          505.95616295017925,
+          976.4808238967667
+        ],
+        [
+          613.1755824293077,
+          984.5399886646201
+        ]
+      ],
+      "collar_guard_fully_visible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "source": "research/data/plain-background-pilot8/141.png",
+      "source_sha256": "7a6b1d4e20a3b58316c0d63f57fff20845820fc25d928d70002fb161266d0115",
+      "original_landmarks_source256": [
+        [
+          96.75566101074219,
+          88.730712890625
+        ],
+        [
+          149.79818725585938,
+          85.64704895019531
+        ],
+        [
+          124.46418762207031,
+          114.84468078613281
+        ],
+        [
+          105.80389404296875,
+          139.37550354003906
+        ],
+        [
+          150.18975830078125,
+          136.5550537109375
+        ]
+      ],
+      "collar_box_source256": [
+        124,
+        195,
+        23,
+        18
+      ],
+      "prior_reflected_padding_fraction": 0.062896728515625,
+      "native_output": "research/data/plain-background-pilot8-zero-reflection/native1024/141.png",
+      "native_sha256": "5de0f98e7e966b2448fcf155a5afb4e10ab1477581a35b96938da297ced8a847",
+      "output256": "research/data/plain-background-pilot8-zero-reflection/aligned256/141.png",
+      "output256_sha256": "9a600feb118543afbdb4750e2e17b56451a9a9d7e33e2d7cd6f58bfbb4712246",
+      "native_rgb_sha256": "7e64c3fed2a5370cf27f57101ef6af2e250f068e595dfdb0e38736085ec8a749",
+      "reflected_padding_fraction": 0,
+      "constant_vs_reflected_render_bitwise_equal": true,
+      "native_grayscale_channels_equal": true,
+      "quality_approved": false
+    },
+    {
+      "id": "142",
+      "feasible": true,
+      "exact_eye_position_feasible": false,
+      "eye_40_to_44_band_feasible": false,
+      "matrix_source_to_output1024": [
+        [
+          0.9757449932587123,
+          -0.06854679917221762,
+          1.392615680189465
+        ],
+        [
+          0.06854679917221762,
+          0.9757449932587123,
+          -75.6909074996679
+        ]
+      ],
+      "original_matrix_source_to_output1024": [
+        [
+          0.9264400481425529,
+          -0.06508309072951543,
+          -35.532732901167044
+        ],
+        [
+          0.06508309072951543,
+          0.9264400481425529,
+          -22.116832496874935
+        ]
+      ],
+      "inverse_output_corners": [
+        [
+          4.002533334300471,
+          77.29124635234004
+        ],
+        [
+          1047.2834383743073,
+          3.999999999999872
+        ],
+        [
+          77.29377968664063,
+          1120.5721513923468
+        ],
+        [
+          1120.5746847266473,
+          1047.2809050400065
+        ]
+      ],
+      "original_output_eye1024": [
+        513.5,
+        431.58000000000004
+      ],
+      "corrected_output_eye1024": [
+        579.644755511077,
+        402.1515752964176
+      ],
+      "eye_shift1024_xy": [
+        66.14475551107705,
+        -29.428424703582436
+      ],
+      "eye_shift256_xy": [
+        16.536188877769263,
+        -7.357106175895609
+      ],
+      "eye_y_fraction": 0.3927261477504078,
+      "scale_ratio_vs_eyes42": 1.053219790330753,
+      "source_border_support_margin": 4,
+      "landmarks_output1024": [
+        [
+          467.20537301592185,
+          399.64962780717985
+        ],
+        [
+          692.0841380062321,
+          404.65352278565535
+        ],
+        [
+          586.1586006929473,
+          521.2348277283284
+        ],
+        [
+          492.52074800331667,
+          614.9426304824475
+        ],
+        [
+          676.7765529757884,
+          616.4235472352284
+        ]
+      ],
+      "collar_guard_output1024": [
+        [
+          527.5939768694428,
+          870.993916229311
+        ],
+        [
+          647.0846235048359,
+          879.388221518565
+        ],
+        [
+          520.2069882148993,
+          976.1456852684569
+        ],
+        [
+          639.6976348502924,
+          984.539990557711
+        ]
+      ],
+      "collar_guard_fully_visible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "source": "research/data/plain-background-pilot8/142.png",
+      "source_sha256": "e0cbf2e73ad9b9874c80f0f28d953181c896b9e8a294f3f5c3a314b0bc28f2d6",
+      "original_landmarks_source256": [
+        [
+          103.53368377685547,
+          91.75221252441406
+        ],
+        [
+          150.42526245117188,
+          89.50496673583984
+        ],
+        [
+          130.07730102539062,
+          115.32572937011719
+        ],
+        [
+          111.95301818847656,
+          136.20465087890625
+        ],
+        [
+          150.3356170654297,
+          133.81808471679688
+        ]
+      ],
+      "collar_box_source256": [
+        123,
+        189,
+        25,
+        18
+      ],
+      "prior_reflected_padding_fraction": 0.0185699462890625,
+      "native_output": "research/data/plain-background-pilot8-zero-reflection/native1024/142.png",
+      "native_sha256": "c3b0e252d435dc61a40116d448c867e1ed7fc67c2faabd73dc0da45043891fe1",
+      "output256": "research/data/plain-background-pilot8-zero-reflection/aligned256/142.png",
+      "output256_sha256": "33ee46e9abb21a0e221601d8dc94662b3ff31c6bee3c9ec78e81cee06532cba3",
+      "native_rgb_sha256": "4d53497e6cb967d6f23ef2e109f5e347c7162eda7127d7190ca570a1571ad770",
+      "reflected_padding_fraction": 0,
+      "constant_vs_reflected_render_bitwise_equal": true,
+      "native_grayscale_channels_equal": true,
+      "quality_approved": false
+    },
+    {
+      "id": "143",
+      "feasible": true,
+      "exact_eye_position_feasible": true,
+      "eye_40_to_44_band_feasible": true,
+      "matrix_source_to_output1024": [
+        [
+          0.9801523533597728,
+          0.03716491896698036,
+          -169.3303257673872
+        ],
+        [
+          -0.03716491896698036,
+          0.9801523533597728,
+          -33.06068433283616
+        ]
+      ],
+      "original_matrix_source_to_output1024": [
+        [
+          0.9801523533597726,
+          0.037164918966980355,
+          -169.33032576738708
+        ],
+        [
+          -0.037164918966980355,
+          0.9801523533597726,
+          -33.06068433283609
+        ]
+      ],
+      "inverse_output_corners": [
+        [
+          171.2340371031916,
+          40.22291362258667
+        ],
+        [
+          1213.4508965155371,
+          79.74116299811307
+        ],
+        [
+          131.7157877276652,
+          1082.439773034932
+        ],
+        [
+          1173.9326471400107,
+          1121.9580224104584
+        ]
+      ],
+      "original_output_eye1024": [
+        513.5,
+        431.58
+      ],
+      "corrected_output_eye1024": [
+        513.5,
+        431.58
+      ],
+      "eye_shift1024_xy": [
+        0.0,
+        0.0
+      ],
+      "eye_shift256_xy": [
+        0.0,
+        0.0
+      ],
+      "eye_y_fraction": 0.42146484375,
+      "scale_ratio_vs_eyes42": 1.0000000000000002,
+      "source_border_support_margin": 4,
+      "landmarks_output1024": [
+        [
+          399.39098611444126,
+          431.252109824371
+        ],
+        [
+          627.6090138855587,
+          431.90789017562895
+        ],
+        [
+          530.4781883312065,
+          548.2710601669185
+        ],
+        [
+          419.23557470704634,
+          632.0881917510699
+        ],
+        [
+          609.0759859954696,
+          629.7435243640309
+        ]
+      ],
+      "collar_guard_output1024": [
+        [
+          429.89456460029214,
+          883.7144840883741
+        ],
+        [
+          545.1237256421505,
+          879.3452833023184
+        ],
+        [
+          433.71761528809077,
+          984.5400000000002
+        ],
+        [
+          548.9467763299491,
+          980.1707992139445
+        ]
+      ],
+      "collar_guard_fully_visible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "source": "research/data/plain-background-pilot8/143.png",
+      "source_sha256": "fe6d148cb76cc44b887cb7ceee9baaadfbf37a64e6280f65832432ffac9e0cdf",
+      "original_landmarks_source256": [
+        [
+          114.2239990234375,
+          100.65560150146484
+        ],
+        [
+          161.68397521972656,
+          102.59175109863281
+        ],
+        [
+          140.5648956298828,
+          126.02716064453125
+        ],
+        [
+          116.76748657226562,
+          142.58230590820312
+        ],
+        [
+          156.269287109375,
+          143.59176635742188
+        ]
+      ],
+      "collar_box_source256": [
+        117,
+        195,
+        24,
+        17
+      ],
+      "prior_reflected_padding_fraction": 0.0,
+      "native_output": "research/data/plain-background-pilot8-zero-reflection/native1024/143.png",
+      "native_sha256": "6661441d4a48276aff195c7bce7c1c6a2904347bb2d2f85de08d3a5ecc52389c",
+      "output256": "research/data/plain-background-pilot8-zero-reflection/aligned256/143.png",
+      "output256_sha256": "898ad267217966f4f9e6a746ac951f8e70f6a9442c0a0e86cc7c3735685ed4d1",
+      "native_rgb_sha256": "0401e14352553c9e2003916b6f563859bce7cf48a346263d73a33544ad0b86bb",
+      "reflected_padding_fraction": 0,
+      "constant_vs_reflected_render_bitwise_equal": true,
+      "native_grayscale_channels_equal": true,
+      "quality_approved": false
+    },
+    {
+      "id": "144",
+      "feasible": true,
+      "exact_eye_position_feasible": false,
+      "eye_40_to_44_band_feasible": false,
+      "matrix_source_to_output1024": [
+        [
+          0.8938307345586821,
+          -0.06927148348904001,
+          2.8094090590712426
+        ],
+        [
+          0.06927148348904001,
+          0.8938307345586821,
+          -82.66119846729453
+        ]
+      ],
+      "original_matrix_source_to_output1024": [
+        [
+          0.8248231175300744,
+          -0.06392342393056513,
+          80.64889411462129
+        ],
+        [
+          0.06392342393056513,
+          0.8248231175300744,
+          -0.2685179995388203
+        ]
+      ],
+      "inverse_output_corners": [
+        [
+          4.000000000000055,
+          92.16970210138778
+        ],
+        [
+          1141.678892886102,
+          4.000095041165423
+        ],
+        [
+          92.16960706022242,
+          1229.8485949874898
+        ],
+        [
+          1229.8484999463244,
+          1141.6789879272674
+        ]
+      ],
+      "original_output_eye1024": [
+        513.4999999999999,
+        431.58
+      ],
+      "corrected_output_eye1024": [
+        471.8743682064596,
+        385.3172927484683
+      ],
+      "eye_shift1024_xy": [
+        -41.625631793540265,
+        -46.26270725153171
+      ],
+      "eye_shift256_xy": [
+        -10.406407948385066,
+        -11.565676812882927
+      ],
+      "eye_y_fraction": 0.37628641869967605,
+      "scale_ratio_vs_eyes42": 1.0836635341105016,
+      "source_border_support_margin": 4,
+      "landmarks_output1024": [
+        [
+          378.25976041372564,
+          383.694732249657
+        ],
+        [
+          565.4889759991938,
+          386.9398532472795
+        ],
+        [
+          454.17285259607644,
+          481.4451268434219
+        ],
+        [
+          398.6200050864004,
+          588.9958809974447
+        ],
+        [
+          551.6189733217639,
+          587.8131582998283
+        ]
+      ],
+      "collar_guard_output1024": [
+        [
+          444.41081920116073,
+          891.5104358430332
+        ],
+        [
+          571.3836648767897,
+          901.3507747827301
+        ],
+        [
+          437.9637005854972,
+          974.6995416305142
+        ],
+        [
+          564.9365462611263,
+          984.5398805702114
+        ]
+      ],
+      "collar_guard_fully_visible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "source": "research/data/plain-background-pilot8/144.png",
+      "source_sha256": "9c863f812717949f7db8c29f601b4e2d57c7b17359f75b6dbfa4128ca9f88b63",
+      "original_landmarks_source256": [
+        [
+          93.04666900634766,
+          98.8736572265625
+        ],
+        [
+          135.61073303222656,
+          96.31613159179688
+        ],
+        [
+          112.00125122070312,
+          119.73041534423828
+        ],
+        [
+          101.28133392333984,
+          145.1252899169922
+        ],
+        [
+          135.9961395263672,
+          142.16477966308594
+        ]
+      ],
+      "collar_box_source256": [
+        117,
+        213,
+        29,
+        15
+      ],
+      "prior_reflected_padding_fraction": 0.0727996826171875,
+      "native_output": "research/data/plain-background-pilot8-zero-reflection/native1024/144.png",
+      "native_sha256": "51461cacf5512a2f77e6c5cf8ae79a4810126c3d9d3e208139764db07f98a646",
+      "output256": "research/data/plain-background-pilot8-zero-reflection/aligned256/144.png",
+      "output256_sha256": "5bf35f1830d282aa10a1b38d11ecc348fc0f502db78492d86bc9b306d328e575",
+      "native_rgb_sha256": "84cd86d92f6218438817b4e437c68afefcac263f97804eedb8b46f613de05581",
+      "reflected_padding_fraction": 0,
+      "constant_vs_reflected_render_bitwise_equal": true,
+      "native_grayscale_channels_equal": true,
+      "quality_approved": false
+    },
+    {
+      "id": "145",
+      "feasible": true,
+      "exact_eye_position_feasible": false,
+      "eye_40_to_44_band_feasible": true,
+      "matrix_source_to_output1024": [
+        [
+          1.0021169179726233,
+          -0.06091783982791995,
+          -0.0013235931453436933
+        ],
+        [
+          0.06091783982791995,
+          1.0021169179726233,
+          -66.2106654287569
+        ]
+      ],
+      "original_matrix_source_to_output1024": [
+        [
+          0.9756894047988288,
+          -0.059311333655138784,
+          -76.85463377355553
+        ],
+        [
+          0.059311333655138784,
+          0.9756894047988288,
+          -38.50059070869811
+        ]
+      ],
+      "inverse_output_corners": [
+        [
+          4.002916718713952,
+          65.82746504539494
+        ],
+        [
+          1021.0834450560698,
+          4.0000000000000355
+        ],
+        [
+          65.83038176410885,
+          1082.9079933827506
+        ],
+        [
+          1082.9109101014647,
+          1021.0805283373559
+        ]
+      ],
+      "original_output_eye1024": [
+        513.5,
+        431.58
+      ],
+      "corrected_output_eye1024": [
+        606.3436497131819,
+        416.60252332046275
+      ],
+      "eye_shift1024_xy": [
+        92.84364971318189,
+        -14.977476679537233
+      ],
+      "eye_shift256_xy": [
+        23.210912428295472,
+        -3.7443691698843082
+      ],
+      "eye_y_fraction": 0.4068384016801394,
+      "scale_ratio_vs_eyes42": 1.0270859897051392,
+      "source_border_support_margin": 4,
+      "landmarks_output1024": [
+        [
+          489.79459741999574,
+          414.52005047361934
+        ],
+        [
+          722.8927020063682,
+          418.68499616730605
+        ],
+        [
+          601.8084604746253,
+          543.9480482302171
+        ],
+        [
+          510.0973597167687,
+          633.6558165012019
+        ],
+        [
+          710.9198310969686,
+          634.0101338159747
+        ]
+      ],
+      "collar_guard_output1024": [
+        [
+          545.8017338141005,
+          875.486998669163
+        ],
+        [
+          643.9778756217311,
+          881.4550432898045
+        ],
+        [
+          539.5352869624269,
+          978.571947567175
+        ],
+        [
+          637.7114287700574,
+          984.5399921878164
+        ]
+      ],
+      "collar_guard_fully_visible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "source": "research/data/plain-background-pilot8/145.png",
+      "source_sha256": "b5828fa79eab62484189679ee693076cc62c0a0f0e99fb8f34623545b1d62a08",
+      "original_landmarks_source256": [
+        [
+          104.94503021240234,
+          91.13065338134766
+        ],
+        [
+          152.30728149414062,
+          89.10000610351562
+        ],
+        [
+          129.27687072753906,
+          116.01802825927734
+        ],
+        [
+          111.7695083618164,
+          135.35714721679688
+        ],
+        [
+          152.53390502929688,
+          132.9512939453125
+        ]
+      ],
+      "collar_box_source256": [
+        122,
+        184,
+        20,
+        17
+      ],
+      "prior_reflected_padding_fraction": 0.0063323974609375,
+      "native_output": "research/data/plain-background-pilot8-zero-reflection/native1024/145.png",
+      "native_sha256": "c151c336c813742364b91e2e1af8b3d539b47d5a6af1fcd02125dda5ba51cc84",
+      "output256": "research/data/plain-background-pilot8-zero-reflection/aligned256/145.png",
+      "output256_sha256": "fdf69834ae19a42b2b3929dc99ee256f4fb649b9afa7737288e25ac5c487b78c",
+      "native_rgb_sha256": "c2fc599f66d13333b805bb8bbb77784630f8b55d38af65cb315385aed11ee22c",
+      "reflected_padding_fraction": 0,
+      "constant_vs_reflected_render_bitwise_equal": true,
+      "native_grayscale_channels_equal": true,
+      "quality_approved": false
+    },
+    {
+      "id": "146",
+      "feasible": true,
+      "exact_eye_position_feasible": false,
+      "eye_40_to_44_band_feasible": true,
+      "matrix_source_to_output1024": [
+        [
+          0.9944441344035139,
+          -0.04085070878892076,
+          -2.0953703922581326
+        ],
+        [
+          0.04085070878892076,
+          0.9944441344035139,
+          -46.09431795954231
+        ]
+      ],
+      "original_matrix_source_to_output1024": [
+        [
+          0.9869917256973758,
+          -0.04054457175487503,
+          -78.50738161908573
+        ],
+        [
+          0.04054457175487503,
+          0.9869917256973758,
+          -38.37069329900422
+        ]
+      ],
+      "inverse_output_corners": [
+        [
+          4.004404140476966,
+          46.187345898195325
+        ],
+        [
+          1030.986797304992,
+          3.999999999999943
+        ],
+        [
+          46.191750038672346,
+          1073.1697390627105
+        ],
+        [
+          1073.1741432031874,
+          1030.982393164515
+        ]
+      ],
+      "original_output_eye1024": [
+        513.5,
+        431.5799999999999
+      ],
+      "corrected_output_eye1024": [
+        594.3820395462229,
+        427.40479884394716
+      ],
+      "eye_shift1024_xy": [
+        80.88203954622293,
+        -4.175201156052765
+      ],
+      "eye_shift256_xy": [
+        20.220509886555732,
+        -1.0438002890131912
+      ],
+      "eye_y_fraction": 0.41738749887104215,
+      "scale_ratio_vs_eyes42": 1.0075506293640633,
+      "source_border_support_margin": 4,
+      "landmarks_output1024": [
+        [
+          489.8559716742572,
+          424.22221068335006
+        ],
+        [
+          698.9081074181886,
+          430.58738700454427
+        ],
+        [
+          599.3355752270435,
+          538.4310670999014
+        ],
+        [
+          511.2779120294806,
+          636.6565163600005
+        ],
+        [
+          690.2165197053537,
+          632.5892466616237
+        ]
+      ],
+      "collar_guard_output1024": [
+        [
+          571.846942279664,
+          877.2417075293074
+        ],
+        [
+          693.6275032700943,
+          882.2443236251381
+        ],
+        [
+          567.6447447591662,
+          979.5373787612688
+        ],
+        [
+          689.4253057495965,
+          984.5399948570997
+        ]
+      ],
+      "collar_guard_fully_visible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "source": "research/data/plain-background-pilot8/146.png",
+      "source_sha256": "ca0b2d85e2eaeb22f58e2b67b41b39a390e8011b7b41d2f3902cf30fc2149fac",
+      "original_landmarks_source256": [
+        [
+          104.38278198242188,
+          91.84779357910156
+        ],
+        [
+          147.27981567382812,
+          91.39231872558594
+        ],
+        [
+          127.78118896484375,
+          114.33223724365234
+        ],
+        [
+          110.56146240234375,
+          135.20404052734375
+        ],
+        [
+          147.19915771484375,
+          132.86404418945312
+        ]
+      ],
+      "collar_box_source256": [
+        125,
+        184,
+        25,
+        17
+      ],
+      "prior_reflected_padding_fraction": 0.00054931640625,
+      "native_output": "research/data/plain-background-pilot8-zero-reflection/native1024/146.png",
+      "native_sha256": "2fd44e3374f30285a9ecc1f7141a8cd483e681b332ad1a00817d06e18c76d50c",
+      "output256": "research/data/plain-background-pilot8-zero-reflection/aligned256/146.png",
+      "output256_sha256": "ca36be219205f23b6182f93883b795767eb9cc37acc2c8e24b0caa608ce4eb24",
+      "native_rgb_sha256": "c42f7b0bcde8c6cb055b3066245b25fb01b115cc251c27ae2ddac74e6206b1d3",
+      "reflected_padding_fraction": 0,
+      "constant_vs_reflected_render_bitwise_equal": true,
+      "native_grayscale_channels_equal": true,
+      "quality_approved": false
+    },
+    {
+      "id": "147",
+      "feasible": true,
+      "exact_eye_position_feasible": false,
+      "eye_40_to_44_band_feasible": false,
+      "matrix_source_to_output1024": [
+        [
+          0.9686890550718581,
+          -0.08642006724273583,
+          4.546824689443611
+        ],
+        [
+          0.08642006724273583,
+          0.9686890550718581,
+          -94.76529033442978
+        ]
+      ],
+      "original_matrix_source_to_output1024": [
+        [
+          0.8946899874831575,
+          -0.07981835706191741,
+          -25.04489176799961
+        ],
+        [
+          0.07981835706191741,
+          0.8946899874831575,
+          -12.31613292688397
+        ]
+      ],
+      "inverse_output_corners": [
+        [
+          4.00196208968567,
+          97.47136091522388
+        ],
+        [
+          1051.7295000344072,
+          3.9999999999999716
+        ],
+        [
+          97.47332300490959,
+          1145.198898859945
+        ],
+        [
+          1145.200860949631,
+          1051.7275379447212
+        ]
+      ],
+      "original_output_eye1024": [
+        513.4999999999999,
+        431.57999999999987
+      ],
+      "corrected_output_eye1024": [
+        587.6343182558564,
+        385.8451239663
+      ],
+      "eye_shift1024_xy": [
+        74.13431825585656,
+        -45.73487603369989
+      ],
+      "eye_shift256_xy": [
+        18.53357956396414,
+        -11.433719008424973
+      ],
+      "eye_y_fraction": 0.3768018788733398,
+      "scale_ratio_vs_eyes42": 1.0827091714716364,
+      "source_border_support_margin": 4,
+      "landmarks_output1024": [
+        [
+          469.16180113946064,
+          383.0836241102106
+        ],
+        [
+          706.1068353722521,
+          388.6066238223894
+        ],
+        [
+          597.7802836824602,
+          508.85562294112947
+        ],
+        [
+          496.47208574414697,
+          610.1003628277147
+        ],
+        [
+          689.8425501919232,
+          611.5111105400088
+        ]
+      ],
+      "collar_guard_output1024": [
+        [
+          513.3762730585114,
+          870.8354934138224
+        ],
+        [
+          617.7676545089896,
+          880.1486059727779
+        ],
+        [
+          504.0631604995559,
+          975.2268748643006
+        ],
+        [
+          608.4545419500341,
+          984.5399874232561
+        ]
+      ],
+      "collar_guard_fully_visible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "source": "research/data/plain-background-pilot8/147.png",
+      "source_sha256": "ff3a9d27f073388d3b03c7f340fe5d72a2f05e81713803e6665214cc721679d8",
+      "original_landmarks_source256": [
+        [
+          105.6576156616211,
+          90.84494018554688
+        ],
+        [
+          155.30140686035156,
+          87.57999420166016
+        ],
+        [
+          134.8953399658203,
+          114.7424087524414
+        ],
+        [
+          115.6021957397461,
+          137.80047607421875
+        ],
+        [
+          156.05865478515625,
+          134.488525390625
+        ]
+      ],
+      "collar_box_source256": [
+        124,
+        192,
+        22,
+        18
+      ],
+      "prior_reflected_padding_fraction": 0.0358734130859375,
+      "native_output": "research/data/plain-background-pilot8-zero-reflection/native1024/147.png",
+      "native_sha256": "8e814f926fe8d7f5af7973a46ad585e459f6c02faba7dfc8a5a2fcefd5bcc80f",
+      "output256": "research/data/plain-background-pilot8-zero-reflection/aligned256/147.png",
+      "output256_sha256": "eb76777bc62eb880a76b969e37c28dfa32d2eee429c8e0f0481631cdb3ee7ae8",
+      "native_rgb_sha256": "982b390340c3eed67d61f51f367579667df8dfa0808b62fa50713d7581bb443a",
+      "reflected_padding_fraction": 0,
+      "constant_vs_reflected_render_bitwise_equal": true,
+      "native_grayscale_channels_equal": true,
+      "quality_approved": false
+    },
+    {
+      "id": "148",
+      "feasible": true,
+      "exact_eye_position_feasible": false,
+      "eye_40_to_44_band_feasible": false,
+      "matrix_source_to_output1024": [
+        [
+          0.9512424983363205,
+          -0.07928558716876329,
+          3.5679622448037662
+        ],
+        [
+          0.07928558716876329,
+          0.9512424983363205,
+          -88.800554873968
+        ]
+      ],
+      "original_matrix_source_to_output1024": [
+        [
+          0.9069226676631901,
+          -0.07559155141627641,
+          -17.36276229956391
+        ],
+        [
+          0.07559155141627641,
+          0.9069226676631901,
+          -38.79198016904016
+        ]
+      ],
+      "inverse_output_corners": [
+        [
+          4.002209117935835,
+          93.01859150409429
+        ],
+        [
+          1072.0181046235484,
+          3.9999999999999716
+        ],
+        [
+          93.02080062203015,
+          1161.034487009707
+        ],
+        [
+          1161.0366961276427,
+          1072.0158955056127
+        ]
+      ],
+      "original_output_eye1024": [
+        513.5000000000001,
+        431.5799999999999
+      ],
+      "corrected_output_eye1024": [
+        560.3731213712211,
+        404.55773632001484
+      ],
+      "eye_shift1024_xy": [
+        46.87312137122103,
+        -27.022263679985087
+      ],
+      "eye_shift256_xy": [
+        11.718280342805258,
+        -6.755565919996272
+      ],
+      "eye_y_fraction": 0.3950759143750145,
+      "scale_ratio_vs_eyes42": 1.0488683680024522,
+      "source_border_support_margin": 4,
+      "landmarks_output1024": [
+        [
+          444.68150469390935,
+          402.07907700286796
+        ],
+        [
+          676.0647380485328,
+          407.0363956371617
+        ],
+        [
+          558.3496182757227,
+          528.4088397042644
+        ],
+        [
+          472.43750015975957,
+          632.2990415279805
+        ],
+        [
+          658.2233798512701,
+          632.5582717390826
+        ]
+      ],
+      "collar_guard_output1024": [
+        [
+          517.4209693856092,
+          861.4466535714744
+        ],
+        [
+          652.5494252234944,
+          872.7095428799871
+        ],
+        [
+          508.0999575440814,
+          973.2770997821381
+        ],
+        [
+          643.2284133819666,
+          984.5399890906508
+        ]
+      ],
+      "collar_guard_fully_visible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "source": "research/data/plain-background-pilot8/148.png",
+      "source_sha256": "671b5105d55113b1e68d32b4c49426da1f90e49b2194fa8ebb67eee702e0e2aa",
+      "original_landmarks_source256": [
+        [
+          102.33670806884766,
+          96.38716888427734
+        ],
+        [
+          151.73947143554688,
+          93.33336639404297
+        ],
+        [
+          128.80694580078125,
+          121.29259490966797
+        ],
+        [
+          112.34203338623047,
+          144.96087646484375
+        ],
+        [
+          151.94317626953125,
+          141.7157745361328
+        ]
+      ],
+      "collar_box_source256": [
+        126,
+        193,
+        29,
+        20
+      ],
+      "prior_reflected_padding_fraction": 0.01318359375,
+      "native_output": "research/data/plain-background-pilot8-zero-reflection/native1024/148.png",
+      "native_sha256": "1dd171712a8c4436902152d3f225dada5488b8621f6b39f9c59d0382fc64f29a",
+      "output256": "research/data/plain-background-pilot8-zero-reflection/aligned256/148.png",
+      "output256_sha256": "93772f0d9aeac97944dc50f3c3c2913ae1cac934101ec2f23539014f3cc9393b",
+      "native_rgb_sha256": "0f1950fef9bcf2d064aa2ff6e01e362eacd6c35e496dbaea87d8a008ee1f6132",
+      "reflected_padding_fraction": 0,
+      "constant_vs_reflected_render_bitwise_equal": true,
+      "native_grayscale_channels_equal": true,
+      "quality_approved": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "completed_utc": "2026-09-21T04:25:01.070134+00:00",
+  "exit_code": 0,
+  "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 research/alignment/.venv/bin/python research/reviews/prepare_plain_background_zero_reflection.py --manifest research/data/plain-background-pilot8-aligned256-monochrome/manifest.json --output research/data/plain-background-pilot8-zero-reflection",
+  "script_sha256": "bddab6a4e5b63d60c2656914988d4494fef7e40b8e8af57c36057640f198c909",
+  "manifest_sha256": "af4d8499a81edaa6cdc15b0ee878098d9046d30c14cc61428710eebe538d7424",
+  "visual_review_sha256": "0e15a67d2f06424e12370141e9f08c6360d6aad7f4e77f202da65d7566c77dc9",
+  "versions": {
+    "opencv": "5.0.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pillow": "12.3.0"
+  },
+  "wall_seconds": 1.1508473750436679,
+  "peak_rss_bytes": 163217408,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 1,
+      "failure": "SciPy absent from alignment venv; failed before output creation.",
+      "log": "research/reviews/plain-background-zero-reflection-attempt1.log"
+    },
+    {
+      "attempt": 2,
+      "exit_code": 1,
+      "failure": "New script mixed relative output path with absolute ROOT while recording first image. Partial141 output retained separately; script fixed to resolve args.",
+      "log": "research/reviews/plain-background-zero-reflection-attempt2.log",
+      "partial_output": "research/data/plain-background-pilot8-zero-reflection-attempt2-incomplete",
+      "script_snapshot": "research/reviews/prepare_plain_background_zero_reflection-attempt2.py"
+    },
+    {
+      "attempt": 3,
+      "exit_code": 0,
+      "log": "research/reviews/plain-background-zero-reflection.log"
+    }
+  ],
+  "dependency_change": {
+    "environment": "research/alignment/.venv",
+    "command": "uv pip install --python research/alignment/.venv/bin/python scipy==1.17.1",
+    "installed_packages_only": [
+      "scipy==1.17.1"
+    ],
+    "verification": "uv reported Installed1 package,+scipy1.17.1 only; existing NumPy/OpenCV/Pillow not replaced. Final imported versions recorded in manifest. No legacy requirements lock or training environment modified."
+  },
+  "source_and_aligned_input_hashes_unchanged": true,
+  "reference_scripts_imported_or_executed": false,
+  "model_loads_or_training": false,
+  "active_datasets_changed": false
+}

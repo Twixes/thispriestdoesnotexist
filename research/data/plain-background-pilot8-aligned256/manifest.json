@@ -1,0 +1,525 @@
+{
+  "script_sha256": "5ea59418050e88abd313dfbd6f5764afd6bf811d2984b7840a0b24d1d3a6912e",
+  "helper_sha256": "5aa2e54e561ed63b1ecefdcb80a63199a6939f191f4aca6c6b3275447d990bcd",
+  "recipe_sha256": "3466f34df29021a51496bb582a23fb54cdaf1e5e7630bfef177ab0ea02929b16",
+  "detector_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+  "existing110_matrices_reproduced": true,
+  "active_dataset_changed": false,
+  "opencv_version": "5.0.0",
+  "entries": [
+    {
+      "id": "141",
+      "source": "research/data/plain-background-pilot8/141.png",
+      "source_sha256": "7a6b1d4e20a3b58316c0d63f57fff20845820fc25d928d70002fb161266d0115",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "visual_approval": false,
+      "training_status": "candidate_only_not_added_to_training",
+      "output": "research/data/plain-background-pilot8-aligned256/141.png",
+      "output_sha256": "af4d261266ea6553f60307db3062d409854be1d19b0bfc33d1aaffd8f9f0d288",
+      "landmarks": [
+        [
+          96.72913360595703,
+          88.73959350585938
+        ],
+        [
+          149.75405883789062,
+          85.68782043457031
+        ],
+        [
+          124.42018127441406,
+          114.8628921508789
+        ],
+        [
+          105.7232666015625,
+          139.37318420410156
+        ],
+        [
+          150.13327026367188,
+          136.57667541503906
+        ]
+      ],
+      "detector_confidence": 0.9445505142211914,
+      "collar_box_heuristic": [
+        124,
+        195,
+        23,
+        18
+      ],
+      "collar_fallback_used": false,
+      "matrix": [
+        [
+          1.050793251074345,
+          -0.07834866431818852,
+          5.331639889727171
+        ],
+        [
+          0.07834866431818852,
+          1.050793251074345,
+          6.2206108620934515
+        ]
+      ],
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0626983642578125,
+      "metrics": {
+        "eye_y": 0.42000000000000004,
+        "eye_x": 0.5,
+        "mouth_y": 0.6297919722018774,
+        "interocular": 0.2186146861927574,
+        "eye_mouth_distance": 0.20982462819551212
+      }
+    },
+    {
+      "id": "142",
+      "source": "research/data/plain-background-pilot8/142.png",
+      "source_sha256": "e0cbf2e73ad9b9874c80f0f28d953181c896b9e8a294f3f5c3a314b0bc28f2d6",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "visual_approval": false,
+      "training_status": "candidate_only_not_added_to_training",
+      "output": "research/data/plain-background-pilot8-aligned256/142.png",
+      "output_sha256": "e7c03c56e90e99c1c39dcc9a9b59dfcfc192e5916a8892787e23bfc8ecc67fad",
+      "landmarks": [
+        [
+          103.484130859375,
+          91.82353210449219
+        ],
+        [
+          150.36846923828125,
+          89.61434936523438
+        ],
+        [
+          129.92625427246094,
+          115.34839630126953
+        ],
+        [
+          111.85911560058594,
+          136.196044921875
+        ],
+        [
+          150.20962524414062,
+          133.84722900390625
+        ]
+      ],
+      "detector_confidence": 0.9268283843994141,
+      "collar_box_heuristic": [
+        123,
+        189,
+        25,
+        18
+      ],
+      "collar_fallback_used": false,
+      "matrix": [
+        [
+          1.135525395159681,
+          -0.0786669000494344,
+          -8.991459175721758
+        ],
+        [
+          0.0786669000494344,
+          1.135525395159681,
+          -5.478559586009013
+        ]
+      ],
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0179595947265625,
+      "metrics": {
+        "eye_y": 0.41999999999999993,
+        "eye_x": 0.5,
+        "mouth_y": 0.6177734601657852,
+        "interocular": 0.20869207760284933,
+        "eye_mouth_distance": 0.19782713598099844
+      }
+    },
+    {
+      "id": "143",
+      "source": "research/data/plain-background-pilot8/143.png",
+      "source_sha256": "fe6d148cb76cc44b887cb7ceee9baaadfbf37a64e6280f65832432ffac9e0cdf",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "visual_approval": false,
+      "training_status": "candidate_only_not_added_to_training",
+      "output": "research/data/plain-background-pilot8-aligned256/143.png",
+      "output_sha256": "ee3855971c2cbc1c5da8e6d5962f19377ab7ca86a403a471b0e2a8e8caf9238e",
+      "landmarks": [
+        [
+          114.2099609375,
+          100.72176361083984
+        ],
+        [
+          161.65933227539062,
+          102.70853424072266
+        ],
+        [
+          140.4968719482422,
+          126.1197738647461
+        ],
+        [
+          116.72850036621094,
+          142.71095275878906
+        ],
+        [
+          156.21005249023438,
+          143.76588439941406
+        ]
+      ],
+      "detector_confidence": 0.9306710362434387,
+      "collar_box_heuristic": [
+        117,
+        195,
+        24,
+        17
+      ],
+      "collar_fallback_used": false,
+      "matrix": [
+        [
+          1.2010726672334409,
+          0.046601651045361535,
+          -42.4096277797716
+        ],
+        [
+          -0.046601651045361535,
+          1.2010726672334409,
+          -8.219302950115946
+        ]
+      ],
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0,
+      "metrics": {
+        "eye_y": 0.4199999999999999,
+        "eye_x": 0.49999999999999994,
+        "mouth_y": 0.6150810660330649,
+        "interocular": 0.22298046150909626,
+        "eye_mouth_distance": 0.19508226424217945
+      }
+    },
+    {
+      "id": "144",
+      "source": "research/data/plain-background-pilot8/144.png",
+      "source_sha256": "9c863f812717949f7db8c29f601b4e2d57c7b17359f75b6dbfa4128ca9f88b63",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "visual_approval": false,
+      "training_status": "candidate_only_not_added_to_training",
+      "output": "research/data/plain-background-pilot8-aligned256/144.png",
+      "output_sha256": "6fad35f0441fcc3b3731b965003abf651773470084c67dbd00254bdf9269867b",
+      "landmarks": [
+        [
+          93.11131286621094,
+          98.92121124267578
+        ],
+        [
+          135.58135986328125,
+          96.34214782714844
+        ],
+        [
+          111.97075653076172,
+          119.71721649169922
+        ],
+        [
+          101.34890747070312,
+          145.07232666015625
+        ],
+        [
+          136.0167236328125,
+          142.09649658203125
+        ]
+      ],
+      "detector_confidence": 0.9231312870979309,
+      "collar_box_heuristic": [
+        117,
+        213,
+        29,
+        15
+      ],
+      "collar_fallback_used": false,
+      "matrix": [
+        [
+          1.0102017482904568,
+          -0.07900784503600072,
+          20.200799701023683
+        ],
+        [
+          0.07900784503600072,
+          1.0102017482904568,
+          -0.14195097864210027
+        ]
+      ],
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0723724365234375,
+      "metrics": {
+        "eye_y": 0.42000000000000004,
+        "eye_x": 0.5,
+        "mouth_y": 0.6026724459679411,
+        "interocular": 0.16841252943346535,
+        "eye_mouth_distance": 0.1826959433115984
+      }
+    },
+    {
+      "id": "145",
+      "source": "research/data/plain-background-pilot8/145.png",
+      "source_sha256": "b5828fa79eab62484189679ee693076cc62c0a0f0e99fb8f34623545b1d62a08",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "visual_approval": false,
+      "training_status": "candidate_only_not_added_to_training",
+      "output": "research/data/plain-background-pilot8-aligned256/145.png",
+      "output_sha256": "d79181fe3d5a5fda6e94517bd72c65a55850a7cbfbae20a660fff14c9fd15793",
+      "landmarks": [
+        [
+          104.8974380493164,
+          91.05232238769531
+        ],
+        [
+          152.08493041992188,
+          89.04344177246094
+        ],
+        [
+          129.00973510742188,
+          115.9051513671875
+        ],
+        [
+          111.66709899902344,
+          135.20668029785156
+        ],
+        [
+          152.3248291015625,
+          132.8200225830078
+        ]
+      ],
+      "detector_confidence": 0.9405059218406677,
+      "collar_box_heuristic": [
+        122,
+        184,
+        20,
+        17
+      ],
+      "collar_fallback_used": false,
+      "matrix": [
+        [
+          1.194099581020848,
+          -0.07222869652739683,
+          -18.927228111734507
+        ],
+        [
+          0.07222869652739683,
+          1.194099581020848,
+          -9.286889016164125
+        ]
+      ],
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0065460205078125,
+      "metrics": {
+        "eye_y": 0.4200000000000001,
+        "eye_x": 0.5,
+        "mouth_y": 0.6260636492979781,
+        "interocular": 0.22070579134361457,
+        "eye_mouth_distance": 0.20610137617707092
+      }
+    },
+    {
+      "id": "146",
+      "source": "research/data/plain-background-pilot8/146.png",
+      "source_sha256": "ca0b2d85e2eaeb22f58e2b67b41b39a390e8011b7b41d2f3902cf30fc2149fac",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "visual_approval": false,
+      "training_status": "candidate_only_not_added_to_training",
+      "output": "research/data/plain-background-pilot8-aligned256/146.png",
+      "output_sha256": "1a655c2acd7f21471b314c81ea5f71c1eda54c5527ddbcf160d21f56e1d6ada7",
+      "landmarks": [
+        [
+          106.46400451660156,
+          89.02606964111328
+        ],
+        [
+          152.94558715820312,
+          86.89183044433594
+        ],
+        [
+          132.17381286621094,
+          113.62974548339844
+        ],
+        [
+          113.3669662475586,
+          134.52572631835938
+        ],
+        [
+          152.98208618164062,
+          132.09201049804688
+        ]
+      ],
+      "detector_confidence": 0.9388923048973083,
+      "collar_box_heuristic": [
+        125,
+        184,
+        25,
+        17
+      ],
+      "collar_fallback_used": false,
+      "matrix": [
+        [
+          1.168756518374405,
+          -0.07132275849274958,
+          -17.319850648212338
+        ],
+        [
+          0.07132275849274958,
+          1.168756518374405,
+          -4.533500040665473
+        ]
+      ],
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.018096923828125,
+      "metrics": {
+        "eye_y": 0.42000000000000004,
+        "eye_x": 0.4999999999999999,
+        "mouth_y": 0.6280097009340936,
+        "interocular": 0.2128283412622335,
+        "eye_mouth_distance": 0.20803440926733083
+      }
+    },
+    {
+      "id": "147",
+      "source": "research/data/plain-background-pilot8/147.png",
+      "source_sha256": "ff3a9d27f073388d3b03c7f340fe5d72a2f05e81713803e6665214cc721679d8",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "visual_approval": false,
+      "training_status": "candidate_only_not_added_to_training",
+      "output": "research/data/plain-background-pilot8-aligned256/147.png",
+      "output_sha256": "a26c1c7dcc5a09002c08ce8d1869aea7af2caee1c3d47be6fb526653689d093d",
+      "landmarks": [
+        [
+          105.63697052001953,
+          90.77359771728516
+        ],
+        [
+          155.32777404785156,
+          87.54114532470703
+        ],
+        [
+          134.87306213378906,
+          114.70828247070312
+        ],
+        [
+          115.51307678222656,
+          137.73135375976562
+        ],
+        [
+          156.085205078125,
+          134.43777465820312
+        ]
+      ],
+      "detector_confidence": 0.9325268268585205,
+      "collar_box_heuristic": [
+        124,
+        192,
+        22,
+        18
+      ],
+      "collar_fallback_used": false,
+      "matrix": [
+        [
+          1.0952678439826742,
+          -0.09691452174191009,
+          -6.272502548447619
+        ],
+        [
+          0.09691452174191009,
+          1.0952678439826742,
+          -2.7768387866111652
+        ]
+      ],
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.0362091064453125,
+      "metrics": {
+        "eye_y": 0.41999999999999993,
+        "eye_x": 0.4999999999999999,
+        "mouth_y": 0.6227856142581842,
+        "interocular": 0.21387838406172466,
+        "eye_mouth_distance": 0.20284680032277408
+      }
+    },
+    {
+      "id": "148",
+      "source": "research/data/plain-background-pilot8/148.png",
+      "source_sha256": "671b5105d55113b1e68d32b4c49426da1f90e49b2194fa8ebb67eee702e0e2aa",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "visual_approval": false,
+      "training_status": "candidate_only_not_added_to_training",
+      "output": "research/data/plain-background-pilot8-aligned256/148.png",
+      "output_sha256": "fb9f54ceafbcaf9e8ec09fd829647dd17635f38976e1a8f5f61428b25ee9ae00",
+      "landmarks": [
+        [
+          102.3344955444336,
+          96.34510803222656
+        ],
+        [
+          151.84017944335938,
+          93.29515838623047
+        ],
+        [
+          128.85397338867188,
+          121.30663299560547
+        ],
+        [
+          112.30683135986328,
+          144.9741973876953
+        ],
+        [
+          152.00796508789062,
+          141.75778198242188
+        ]
+      ],
+      "detector_confidence": 0.9268158674240112,
+      "collar_box_heuristic": [
+        126,
+        193,
+        29,
+        20
+      ],
+      "collar_fallback_used": false,
+      "matrix": [
+        [
+          1.1104379945170024,
+          -0.09195947358801618,
+          -4.40299863976162
+        ],
+        [
+          0.09195947358801618,
+          1.1104379945170024,
+          -9.458763216332017
+        ]
+      ],
+      "detected_collar_fully_visible": true,
+      "reflected_padding_fraction": 0.013275146484375,
+      "metrics": {
+        "eye_y": 0.41999999999999993,
+        "eye_x": 0.5,
+        "mouth_y": 0.6323961079020284,
+        "interocular": 0.21588187534370723,
+        "eye_mouth_distance": 0.21244491629772763
+      }
+    }
+  ],
+  "quality_approved": false,
+  "production_approved": false
+}

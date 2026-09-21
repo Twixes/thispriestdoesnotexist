@@ -42,7 +42,32 @@
       ],
       "memory_before": "The system has 51539607552 (3145728 pages with a page size of 16384).\n\nStats: \nPages free: 1434274 \nPages purgeable: 7055 \nPages purged: 89110046 \n\nSwap I/O:\nSwapins: 9460070 \nSwapouts: 13574459 \n\nPage Q counts:\nPages active: 445641 \nPages inactive: 529333 \nPages speculative: 16415 \nPages throttled: 0 \nPages wired down: 341474 \n\nCompressor Stats:\nPages used by compressor: 291508 \nPages decompressed: 338443754 \nPages compressed: 451397499 \n\nFile I/O:\nPageins: 67201929 \nPageouts: 759137 \n\nSystem-wide memory free percentage: 78%\n",
       "started_unix": 1789962840.793448,
-      "wrapper_pid": 20243
+      "wrapper_pid": 20243,
+      "exit_code": 0,
+      "ended_unix": 1789964590.012415
+    },
+    {
+      "arm": "D",
+      "command": [
+        "/usr/bin/time",
+        "-l",
+        "caffeinate",
+        "-i",
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python",
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_factorial/runner.py",
+        "--execute",
+        "--output",
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-factorial-600/D",
+        "--worker",
+        "D",
+        "--deadline",
+        "1789973494.608341",
+        "--source-hashes",
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-factorial-600/source-hashes.json"
+      ],
+      "memory_before": "The system has 51539607552 (3145728 pages with a page size of 16384).\n\nStats: \nPages free: 857176 \nPages purgeable: 16377 \nPages purged: 89131315 \n\nSwap I/O:\nSwapins: 9550594 \nSwapouts: 13637588 \n\nPage Q counts:\nPages active: 806303 \nPages inactive: 892434 \nPages speculative: 55664 \nPages throttled: 0 \nPages wired down: 310877 \n\nCompressor Stats:\nPages used by compressor: 145204 \nPages decompressed: 338697767 \nPages compressed: 451397499 \n\nFile I/O:\nPageins: 67371210 \nPageouts: 759137 \n\nSystem-wide memory free percentage: 84%\n",
+      "started_unix": 1789964590.0157912,
+      "wrapper_pid": 23604
     }
   ]
 }

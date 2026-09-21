@@ -1,0 +1,27 @@
+{
+  "reviewed_utc": "2026-09-21T04:30:27.663812+00:00",
+  "schedule_comparison_fields": [
+    "fork_step",
+    "pair_id",
+    "fresh_z_sha256"
+  ],
+  "all_300_ABC_schedule_entries_equal": true,
+  "matching_config_fields": {
+    "parent_checkpoint_sha256": true,
+    "parent_student_state_sha256": true,
+    "fixed_z_sha256": true,
+    "train_ids": true,
+    "deadline_unix": true
+  },
+  "root_visual_scope": [
+    "ABC300 all14 comparison contact",
+    "C300 native030 and b2-051 (previous review)",
+    "C final source30 complete contact",
+    "C final source30 native025"
+  ],
+  "decision": "Reject C for production and do not extend this arm. C does not achieve four of six convincing trained collars; unseen and held-out portraits retain ordinary clothing. Faces are generally coherent, but pitted necks and skin-like bands persist. D remains a separate running comparison.",
+  "independent_agent_review": "research/runs/paired-factorial-600/reviews/C-300-observations.json",
+  "source30_agent_review": "research/runs/paired-factorial-600/reviews/C-source30-final.json",
+  "limitations": "Root did not inspect all source30 images at native size. Agent separately inspected all14 C300 images plus four selected native source30 outputs. Artifact hash audit is separate from visual quality.",
+  "production_approved": false
+}

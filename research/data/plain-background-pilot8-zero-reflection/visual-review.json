@@ -1,0 +1,143 @@
+{
+  "reviewed_utc": "2026-09-21T04:25:01.069626+00:00",
+  "method": "All eight native1024 outputs individually displayed at original resolution, plus all eight256 outputs in contact sheet. No model inference or automated attractiveness judgment.",
+  "manifest_sha256": "af4d8499a81edaa6cdc15b0ee878098d9046d30c14cc61428710eebe538d7424",
+  "production_approved": false,
+  "active_training_inclusion": false,
+  "overall": "All8 are mathematically feasible zero-border crops and retain the detected face landmarks plus collar guard. This is not universal visual crop acceptance:144 clips upper hair,147 is borderline/tight,145 is very tight and horizontally shifted.141 reflection artifact is removed.",
+  "summary": {
+    "count": 8,
+    "feasible": 8,
+    "infeasible": 0,
+    "exact_eye_position_feasible": 1,
+    "eye_y_fraction_range": [
+      0.36238785378849314,
+      0.42146484375
+    ],
+    "max_abs_eye_shift256_xy": [
+      23.210912428295472,
+      15.123709430145752
+    ],
+    "border_independence_verified_count": 8
+  },
+  "entries": [
+    {
+      "id": "141",
+      "native_sha256": "5de0f98e7e966b2448fcf155a5afb4e10ab1477581a35b96938da297ced8a847",
+      "output256_sha256": "9a600feb118543afbdb4750e2e17b56451a9a9d7e33e2d7cd6f58bfbb4712246",
+      "decision": "candidate_with_eye_shift",
+      "observations": "Duplicated reflected hair fragment is absent. Main head and complete collar visible; eyes shift upward to36.24%, beyond original40\u201344% preferred band.",
+      "eye_shift256_xy": [
+        8.64275185379492,
+        -15.123709430145752
+      ],
+      "eye_y_fraction": 0.36238785378849314,
+      "collar_guard_fully_visible": true,
+      "constant_vs_reflected_render_bitwise_equal": true
+    },
+    {
+      "id": "142",
+      "native_sha256": "c3b0e252d435dc61a40116d448c867e1ed7fc67c2faabd73dc0da45043891fe1",
+      "output256_sha256": "33ee46e9abb21a0e221601d8dc94662b3ff31c6bee3c9ec78e81cee06532cba3",
+      "decision": "candidate_with_eye_shift",
+      "observations": "Full main hair silhouette and white collar visible; eye line39.27%, horizontal center shifts16.54px at256.",
+      "eye_shift256_xy": [
+        16.536188877769263,
+        -7.357106175895609
+      ],
+      "eye_y_fraction": 0.3927261477504078,
+      "collar_guard_fully_visible": true,
+      "constant_vs_reflected_render_bitwise_equal": true
+    },
+    {
+      "id": "143",
+      "native_sha256": "6661441d4a48276aff195c7bce7c1c6a2904347bb2d2f85de08d3a5ecc52389c",
+      "output256_sha256": "898ad267217966f4f9e6a746ac951f8e70f6a9442c0a0e86cc7c3735685ed4d1",
+      "decision": "candidate_geometry_preserved",
+      "observations": "Exact prior eye position retained; full head, face and collar visible. No reflected fragment.",
+      "eye_shift256_xy": [
+        0.0,
+        0.0
+      ],
+      "eye_y_fraction": 0.42146484375,
+      "collar_guard_fully_visible": true,
+      "constant_vs_reflected_render_bitwise_equal": true
+    },
+    {
+      "id": "144",
+      "native_sha256": "51461cacf5512a2f77e6c5cf8ae79a4810126c3d9d3e208139764db07f98a646",
+      "output256_sha256": "5bf35f1830d282aa10a1b38d11ecc348fc0f502db78492d86bc9b306d328e575",
+      "decision": "crop_failure_if_full_hair_required",
+      "observations": "Uppermost hair visibly exits the top frame. Face and complete collar remain visible, but this does not satisfy a strict uncropped full-head criterion. Eye line37.63%.",
+      "eye_shift256_xy": [
+        -10.406407948385066,
+        -11.565676812882927
+      ],
+      "eye_y_fraction": 0.37628641869967605,
+      "collar_guard_fully_visible": true,
+      "constant_vs_reflected_render_bitwise_equal": true
+    },
+    {
+      "id": "145",
+      "native_sha256": "c151c336c813742364b91e2e1af8b3d539b47d5a6af1fcd02125dda5ba51cc84",
+      "output256_sha256": "fdf69834ae19a42b2b3929dc99ee256f4fb649b9afa7737288e25ac5c487b78c",
+      "decision": "candidate_tight_top_and_horizontal_shift",
+      "observations": "Main hair silhouette is very close to the top with negligible space for flyaway hairs. Face is shifted right; max horizontal change23.21px at256. Collar complete.",
+      "eye_shift256_xy": [
+        23.210912428295472,
+        -3.7443691698843082
+      ],
+      "eye_y_fraction": 0.4068384016801394,
+      "collar_guard_fully_visible": true,
+      "constant_vs_reflected_render_bitwise_equal": true
+    },
+    {
+      "id": "146",
+      "native_sha256": "2fd44e3374f30285a9ecc1f7141a8cd483e681b332ad1a00817d06e18c76d50c",
+      "output256_sha256": "ca36be219205f23b6182f93883b795767eb9cc37acc2c8e24b0caa608ce4eb24",
+      "decision": "candidate_with_horizontal_shift",
+      "observations": "Monochrome normalization resolves original color deviation. Full short hair/head and collar visible; face shifts20.22px right at256.",
+      "eye_shift256_xy": [
+        20.220509886555732,
+        -1.0438002890131912
+      ],
+      "eye_y_fraction": 0.41738749887104215,
+      "collar_guard_fully_visible": true,
+      "constant_vs_reflected_render_bitwise_equal": true
+    },
+    {
+      "id": "147",
+      "native_sha256": "8e814f926fe8d7f5af7973a46ad585e459f6c02faba7dfc8a5a2fcefd5bcc80f",
+      "output256_sha256": "eb76777bc62eb880a76b969e37c28dfa32d2eee429c8e0f0481631cdb3ee7ae8",
+      "decision": "candidate_needs_tight_hair_review",
+      "observations": "Upper hair touches or nearly touches the top boundary; topmost strands may be clipped. Face/collar coherent, eye line37.68%. Review full-head requirement before inclusion.",
+      "eye_shift256_xy": [
+        18.53357956396414,
+        -11.433719008424973
+      ],
+      "eye_y_fraction": 0.3768018788733398,
+      "collar_guard_fully_visible": true,
+      "constant_vs_reflected_render_bitwise_equal": true
+    },
+    {
+      "id": "148",
+      "native_sha256": "1dd171712a8c4436902152d3f225dada5488b8621f6b39f9c59d0382fc64f29a",
+      "output256_sha256": "93772f0d9aeac97944dc50f3c3c2913ae1cac934101ec2f23539014f3cc9393b",
+      "decision": "candidate_with_eye_shift",
+      "observations": "Main head and complete collar visible with narrow top clearance. Eye line39.51%; no duplicated borders.",
+      "eye_shift256_xy": [
+        11.718280342805258,
+        -6.755565919996272
+      ],
+      "eye_y_fraction": 0.3950759143750145,
+      "collar_guard_fully_visible": true,
+      "constant_vs_reflected_render_bitwise_equal": true
+    }
+  ],
+  "limitations": [
+    "Constrained LP protects five face landmarks and detected collar box, not a hair segmentation mask. Thus feasible crops can still cut hair.",
+    "Only143 preserves exact prior eye position. Five images fall outside40\u201344% eye-height band; data geometry is different from uniform eyes42.",
+    "Bounds and rotations follow the existing reference algorithm unchanged; no hidden reflection/compositing/inpainting is used.",
+    "Any further relaxed-eye or hair-preserving variant should be a separate output; neither original nor previous aligned set was overwritten."
+  ]
+}

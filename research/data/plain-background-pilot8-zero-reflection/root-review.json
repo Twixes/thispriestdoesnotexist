@@ -1,0 +1,8 @@
+{
+  "reviewed_utc": "2026-09-21T04:30:27.673213+00:00",
+  "scope": "All8 256px crops in contact sheet; reviewed script and manifest; independently verified all source/native1024/output256 file hashes. Agent separately reviewed every native1024.",
+  "decision": "Zero-border method removes the duplicate-hair artifact. Retain as candidate preprocessing, not an accepted complete training dataset. 144 loses top hair,145/147 are tight, multiple eye positions shift. Source photographs remain usable for a separate whole-image resize experiment.",
+  "user_requirement_note": "No hats is required; an uncropped hair silhouette is not an explicit user requirement. Tight crops are a dataset consistency concern, not by themselves a production disqualifier.",
+  "active_training_dataset_changed": false,
+  "production_approved": false
+}

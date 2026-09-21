@@ -1,0 +1,108 @@
+{
+  "reviewed_utc": "2026-09-21T04:14:57.176073+00:00",
+  "reviewer": "expand_dataset agent",
+  "method": "Direct original-resolution view_image inspection of each unmodified1254x1254 built-in output. No crops, compositing, face correction or training.",
+  "generation": "Four independent built-in image_gen.imagegen calls, one per requested asset; no references and no retries. Built-in native output was1254x1254, retained without resizing.",
+  "prompt_file": "prompts-141-144.json",
+  "provenance_file": "provenance-141-144.json",
+  "candidate_count": 4,
+  "excluded_count": 0,
+  "active_dataset_modified": false,
+  "production_approved": false,
+  "entries": [
+    {
+      "id": 141,
+      "path": "research/data/plain-background-pilot8/141.png",
+      "sha256": "7a6b1d4e20a3b58316c0d63f57fff20845820fc25d928d70002fb161266d0115",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "candidate_status": "retain_for_root_training_candidate_review",
+      "clearly_adult_masculine_appearance": true,
+      "subjectively_handsome": true,
+      "bareheaded": true,
+      "full_head_visible": true,
+      "recognizable_white_roman_tab": true,
+      "black_clerical_shirt": true,
+      "no_obvious_face_anatomy_artifact": true,
+      "discernible_architecture": false,
+      "extra_people_hands_text_or_watermark": false,
+      "excluded": false,
+      "exclusion_notes": [],
+      "observation": "Coherent clearly adult masculine face, short natural hair and near-clean-shaven skin. Detailed pores, believable eyes and lips, broad distinct face. Black shirt with crisp white tab; entire bare head visible. Plain charcoal backdrop with no architecture. Eye line is visually around35% of height, higher than requested42%."
+    },
+    {
+      "id": 142,
+      "path": "research/data/plain-background-pilot8/142.png",
+      "sha256": "e0cbf2e73ad9b9874c80f0f28d953181c896b9e8a294f3f5c3a314b0bc28f2d6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "candidate_status": "retain_for_root_training_candidate_review",
+      "clearly_adult_masculine_appearance": true,
+      "subjectively_handsome": true,
+      "bareheaded": true,
+      "full_head_visible": true,
+      "recognizable_white_roman_tab": true,
+      "black_clerical_shirt": true,
+      "no_obvious_face_anatomy_artifact": true,
+      "discernible_architecture": false,
+      "extra_people_hands_text_or_watermark": false,
+      "excluded": false,
+      "exclusion_notes": [],
+      "observation": "Coherent clearly adult masculine face, side-parted short hair, faint natural stubble and subtle smile. Believable eyelids, pores and individual hair strands. Clear white tab and black shirt; full bare head. Defocused foliage only. Eye line visually around35\u201336%, higher than requested42%."
+    },
+    {
+      "id": 143,
+      "path": "research/data/plain-background-pilot8/143.png",
+      "sha256": "fe6d148cb76cc44b887cb7ceee9baaadfbf37a64e6280f65832432ffac9e0cdf",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "candidate_status": "retain_for_root_training_candidate_review",
+      "clearly_adult_masculine_appearance": true,
+      "subjectively_handsome": true,
+      "bareheaded": true,
+      "full_head_visible": true,
+      "recognizable_white_roman_tab": true,
+      "black_clerical_shirt": true,
+      "no_obvious_face_anatomy_artifact": true,
+      "discernible_architecture": false,
+      "extra_people_hands_text_or_watermark": false,
+      "excluded": false,
+      "exclusion_notes": [],
+      "observation": "Coherent clearly adult masculine face, curly hair and short beard. Natural asymmetry and textured skin/beard; clear pupils and mouth, no obvious anatomical defect. Black shirt and sharp white tab, bare head fully visible, neutral plaster background. Eye line visually around38\u201339%, slightly higher than requested42%."
+    },
+    {
+      "id": 144,
+      "path": "research/data/plain-background-pilot8/144.png",
+      "sha256": "9c863f812717949f7db8c29f601b4e2d57c7b17359f75b6dbfa4128ca9f88b63",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "candidate_status": "retain_for_root_training_candidate_review",
+      "clearly_adult_masculine_appearance": true,
+      "subjectively_handsome": true,
+      "bareheaded": true,
+      "full_head_visible": true,
+      "recognizable_white_roman_tab": true,
+      "black_clerical_shirt": true,
+      "no_obvious_face_anatomy_artifact": true,
+      "discernible_architecture": false,
+      "extra_people_hands_text_or_watermark": false,
+      "excluded": false,
+      "exclusion_notes": [],
+      "observation": "Coherent mature masculine face with wavy hair and light stubble, distinctive longer proportions. Natural wrinkles/pores and convincing eyes/lips; tab clearly visible on black shirt. Full bare head with small top margin. Background is abstract defocused tonal bokeh without discernible buildings. Eye line visually around39%, slightly higher than42%; auburn hue cannot be verified in monochrome."
+    }
+  ],
+  "limits": [
+    "All images are new fictional synthetic portrait requests; exact identity uniqueness against every real or generated person is not proven.",
+    "Handsome/hot suitability is a subjective visual judgment, not a measured attribute.",
+    "The four outputs share a near-frontal head-and-chest composition but show distinguishable facial proportions, hair, beard and skin appearance.",
+    "Eye positioning is approximate and consistently above the requested42%; no alignment or pixel editing was performed. Final training inclusion requires root review."
+  ]
+}

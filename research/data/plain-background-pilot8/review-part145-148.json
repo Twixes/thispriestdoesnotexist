@@ -1,0 +1,61 @@
+{
+  "reviewed_utc": "2026-09-21T04:14:38.255427+00:00",
+  "method": "Each generated full native image visually inspected in tool output; all four originals retained. No quantitative face/age/attractiveness classifier used.",
+  "production_approved": false,
+  "active_training_inclusion": false,
+  "entries": [
+    {
+      "id": 145,
+      "sha256": "b5828fa79eab62484189679ee693076cc62c0a0f0e99fb8f34623545b1d62a08",
+      "decision": "retain_candidate_for_root_dataset_review",
+      "findings": [
+        "Clearly adult masculine appearance, clean-shaven, swept short dark hair, coherent eyes and visible skin texture.",
+        "Full bare head, plain gray background, black clerical shirt and clear white tab; no obvious hats, text, hands or architecture."
+      ],
+      "caveats": [
+        "Eye line is visually around35%, above requested42%; exact alignment is not measured here.",
+        "Very centered studio-like pose; diversity across the candidate batch should be reviewed."
+      ]
+    },
+    {
+      "id": 146,
+      "sha256": "ca0b2d85e2eaeb22f58e2b67b41b39a390e8011b7b41d2f3902cf30fc2149fac",
+      "decision": "retain_original_with_monochrome_failure_flag",
+      "findings": [
+        "Clearly adult masculine appearance, short tight curls, neat beard, photographic pores, crisp clerical tab.",
+        "Full head visible, simple leafy bokeh; no recognizable architecture, text, hats or hands."
+      ],
+      "caveats": [
+        "PROMPT DEVIATION: generated in color despite explicit monochrome request. Original retained unchanged; exclude from a strictly monochrome native set unless root explicitly chooses the standard training grayscale preprocessing.",
+        "Eye line visually around35%, above requested42%."
+      ]
+    },
+    {
+      "id": 147,
+      "sha256": "ff3a9d27f073388d3b03c7f340fe5d72a2f05e81713803e6665214cc721679d8",
+      "decision": "retain_candidate_for_root_dataset_review",
+      "findings": [
+        "Clearly adult masculine appearance with light wavy hair, fine age lines and coherent eyes/skin detail.",
+        "Bare full head, plain softly lit wall, clear black shirt/white collar; no recognizable architecture, hats, hands or text."
+      ],
+      "caveats": [
+        "Eye line visually around35%, above requested42%.",
+        "Some portrait polish remains; it is a synthetic training candidate, not a guarantee of photographic indistinguishability."
+      ]
+    },
+    {
+      "id": 148,
+      "sha256": "671b5105d55113b1e68d32b4c49426da1f90e49b2194fa8ebb67eee702e0e2aa",
+      "decision": "retain_candidate_for_root_dataset_review",
+      "findings": [
+        "Clearly middle-aged masculine appearance, receding short dark hair and salt-and-pepper facial hair, visible fine lines and pores.",
+        "Full bare head, neutral blur, black clerical shirt and white Roman tab; no obvious architecture, hats, hands or text."
+      ],
+      "caveats": [
+        "Facial hair is closer to a short beard than the requested stubble.",
+        "Eye line visually around36%, above requested42%."
+      ]
+    }
+  ],
+  "overall": "All four are coherent adult priest portrait candidates with simple backgrounds.146 fails the requested native monochrome constraint; all four eye lines are higher than the requested42% and need later alignment review. No regeneration performed."
+}
