@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_regions/trainer.py", line 338, in <module>
+    main()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_regions/trainer.py", line 285, in main
+    raise ValueError('Exact resume requires matching options, source/data/code hashes and versions')
+ValueError: Exact resume requires matching options, source/data/code hashes and versions

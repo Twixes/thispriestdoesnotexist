@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_regions/trainer.py", line 338, in <module>
+    main()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_regions/trainer.py", line 245, in main
+    pairs, pair_provenance = load_pairs(args.manifest, source, args.source_max_uint8_error, args.w_atol)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_regions/trainer.py", line 119, in load_pairs
+    raise ValueError(f'{pair_id}: source uint8 mismatch {source_error}, allowed {source_max_error}')
+ValueError: 0: source uint8 mismatch 81, allowed 0

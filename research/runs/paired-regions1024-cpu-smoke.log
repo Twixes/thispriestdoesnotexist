@@ -1,0 +1,28 @@
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8518772125244141, "collar_l1": 0.6990350484848022, "rest_clothing_l1": 1.0047193765640259, "protected_l1": 0.0, "paired_loss": 0.8518772125244141, "fresh_preservation_l1": 0.0, "step": 1, "paired_images_seen": 1, "fresh_images_seen": 1, "seconds": 6.573573749978095}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8426119089126587, "collar_l1": 0.6839672923088074, "rest_clothing_l1": 1.0012565851211548, "protected_l1": 0.0022504893131554127, "paired_loss": 0.8448624014854431, "fresh_preservation_l1": 0.001280587282963097, "step": 2, "paired_images_seen": 2, "fresh_images_seen": 2, "seconds": 6.316585916909389}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8355334997177124, "collar_l1": 0.6753871440887451, "rest_clothing_l1": 0.9956799149513245, "protected_l1": 0.002402413869276643, "paired_loss": 0.8379359245300293, "fresh_preservation_l1": 0.0026337469462305307, "step": 3, "paired_images_seen": 3, "fresh_images_seen": 3, "seconds": 6.635092249955051}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8290938138961792, "collar_l1": 0.6638458371162415, "rest_clothing_l1": 0.9943417906761169, "protected_l1": 0.0021739474032074213, "paired_loss": 0.831267774105072, "fresh_preservation_l1": 0.0012327033327892423, "step": 4, "paired_images_seen": 4, "fresh_images_seen": 4, "seconds": 5.317744291969575}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8227336406707764, "collar_l1": 0.6534619331359863, "rest_clothing_l1": 0.9920052886009216, "protected_l1": 0.0022056675516068935, "paired_loss": 0.8249393105506897, "fresh_preservation_l1": 0.0020254210103303194, "step": 5, "paired_images_seen": 5, "fresh_images_seen": 5, "seconds": 5.812793666031212, "checkpoint_verified_frozen_source": true}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8164753317832947, "collar_l1": 0.6436302661895752, "rest_clothing_l1": 0.9893203973770142, "protected_l1": 0.0022752913646399975, "paired_loss": 0.8187506198883057, "fresh_preservation_l1": 0.0012160824844613671, "step": 6, "paired_images_seen": 6, "fresh_images_seen": 6, "seconds": 7.137660624925047}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8101543188095093, "collar_l1": 0.6339676976203918, "rest_clothing_l1": 0.9863409996032715, "protected_l1": 0.0024328851141035557, "paired_loss": 0.8125872015953064, "fresh_preservation_l1": 0.003288722364231944, "step": 7, "paired_images_seen": 7, "fresh_images_seen": 7, "seconds": 6.925551749998704}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.8038861751556396, "collar_l1": 0.6243377327919006, "rest_clothing_l1": 0.9834345579147339, "protected_l1": 0.002622911473736167, "paired_loss": 0.8065090775489807, "fresh_preservation_l1": 0.00357730477117002, "step": 8, "paired_images_seen": 8, "fresh_images_seen": 8, "seconds": 6.334835208952427}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.7977253198623657, "collar_l1": 0.6146042346954346, "rest_clothing_l1": 0.9808463454246521, "protected_l1": 0.002843869384378195, "paired_loss": 0.8005691766738892, "fresh_preservation_l1": 0.003608233528211713, "step": 9, "paired_images_seen": 9, "fresh_images_seen": 9, "seconds": 7.083698375034146}
+{"pair_ids": ["calibration-original"], "clothing_l1": 0.7915931940078735, "collar_l1": 0.6049121618270874, "rest_clothing_l1": 0.9782741665840149, "protected_l1": 0.0031386250630021095, "paired_loss": 0.7947317957878113, "fresh_preservation_l1": 0.002259148983284831, "step": 10, "paired_images_seen": 10, "fresh_images_seen": 10, "seconds": 6.874613916967064, "checkpoint_verified_frozen_source": true}
+       73.79 real        63.02 user        15.83 sys
+          5546328064  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             8059230  page reclaims
+                  27  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3852  voluntary context switches
+              189405  involuntary context switches
+        785763408826  instructions retired
+        325081543139  cycles elapsed
+          5797401832  peak memory footprint

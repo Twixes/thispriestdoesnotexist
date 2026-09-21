@@ -1,0 +1,33 @@
+{
+  "args": [
+    "/usr/bin/time",
+    "-l",
+    "caffeinate",
+    "-i",
+    "research/.venv/bin/python",
+    "-u",
+    "research/experiments/paired_regions/trainer.py",
+    "--manifest",
+    "research/data/paired4-tabs/single-pair.json",
+    "--run",
+    "research/runs/paired-regions1024-cpu-smoke",
+    "--device",
+    "cpu",
+    "--threads",
+    "1",
+    "--total-steps",
+    "10",
+    "--batch",
+    "1",
+    "--fresh-weight",
+    "1",
+    "--checkpoint-every",
+    "5",
+    "--preview-count",
+    "2"
+  ],
+  "memory_free_percent": 27,
+  "started_at": "2026-09-21T00:29:11.368112+00:00",
+  "trainer_sha256": "7842039b65b0230dcc745c023761350da7bdeb49720fdac30f679fdaa38cb821",
+  "purpose": "Controlled single-pair collar-balanced smoke; actual1024 updates, no production approval"
+}

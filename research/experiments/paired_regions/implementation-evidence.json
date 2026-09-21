@@ -1,0 +1,13 @@
+{
+  "scope": "new paired_regions directory only",
+  "base_trainer_sha256_before": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+  "base_trainer_sha256_after": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+  "base_trainer_unchanged": true,
+  "actual_1024_model_loaded": false,
+  "mps_used": false,
+  "production_approved": false,
+  "diagnosis_sha256": "8ea284413dad8780650a57a488388e358e763de1ba4a9b2fe5abe74a9e544bc6",
+  "diagnosis_readme_sha256": "6b486b161823b88fee72d6559fd6ebc6d6371ef14e164c37036b99c03db66b2c",
+  "cpu_evidence_sha256": "18ff7eedfea3bc583b33dc5ca793eafdb149038d44130098ab662549724601f3",
+  "intended_initial_experiment": "fresh single-calibration-pair run; parent chooses separately"
+}

@@ -1,0 +1,36 @@
+{
+  "production_approved": false,
+  "verified_exit_code": 0,
+  "completed_steps": 10,
+  "device": "cpu",
+  "threads": 1,
+  "wall_seconds": 73.79,
+  "max_rss_bytes": 5546328064,
+  "peak_memory_footprint_bytes": 5797401832,
+  "reported_swaps": 0,
+  "checkpoint_sha256": "77fc793400c7d2f0254578ecc579ee78cfbf58e37103b862f15a74a32a58512e",
+  "final_metrics": {
+    "pair_ids": [
+      "calibration-original"
+    ],
+    "clothing_l1": 0.7915931940078735,
+    "collar_l1": 0.6049121618270874,
+    "rest_clothing_l1": 0.9782741665840149,
+    "protected_l1": 0.0031386250630021095,
+    "paired_loss": 0.7947317957878113,
+    "fresh_preservation_l1": 0.002259148983284831,
+    "step": 10,
+    "paired_images_seen": 10,
+    "fresh_images_seen": 10,
+    "seconds": 6.874613916967064,
+    "checkpoint_verified_frozen_source": true
+  },
+  "root_native_visual_review": {
+    "path": "000010-pair-000-train.png",
+    "observations": [
+      "Face remains intact with coherent eyes, mouth, skin detail and source framing.",
+      "White open shirt remains; no convincing clerical tab after ten updates."
+    ],
+    "decision": "Continue bounded controlled comparison to200, preserving options and all source/data/code hashes. No production approval."
+  }
+}

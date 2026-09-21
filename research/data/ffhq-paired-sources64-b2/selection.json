@@ -1,0 +1,123 @@
+{
+  "status": "Subjective prospective edit shortlist only; no targets, training eligibility, or production approval.",
+  "manifest_sha256": "3a8247b04ea75c9822bcabc8f68299e79084f3ba29bc6c5801c6c997c89402ed",
+  "all_sources_preserved": 64,
+  "contact_sheet_all_64_inspected": true,
+  "native_1024_images_inspected": [
+    "001",
+    "007",
+    "012",
+    "015",
+    "020",
+    "025",
+    "040",
+    "042",
+    "050",
+    "051",
+    "055",
+    "058",
+    "059",
+    "060",
+    "061"
+  ],
+  "priority_count": 2,
+  "priority_candidates": [
+    {
+      "id": "055",
+      "reason": "Clearly adult appearance, attractive direct gaze, red hair, glasses, clean background, substantial clothing below chin.",
+      "caveat": "High neckline hides most neck; existing glasses and facial geometry must remain protected."
+    },
+    {
+      "id": "051",
+      "reason": "Clearly mature adult appearance, angular face, red hair, subtle smile, no glasses, plain wall, usable neck.",
+      "caveat": "Subjective attractiveness is less conventional calendar-model styling; root should review native image before editing."
+    }
+  ],
+  "conditional_candidates": [
+    {
+      "id": "020",
+      "reason": "Clearly adult appearance, strong smile, short hair, usable neck and shirt area.",
+      "caveat": "Harsh sunlight and blurred crowd; source is not an uncluttered studio portrait."
+    },
+    {
+      "id": "025",
+      "reason": "Clearly adult appearance, attractive smile and stubble.",
+      "caveat": "Very tight chin/lower-neck crop and partial second-person fragment at left; prefer not to spend an edit on this unless root accepts the composition."
+    }
+  ],
+  "requested_8_to_12_strong_candidates_available": false,
+  "shortfall_explanation": "This unfiltered FFHQ batch does not contain 8-12 clearly adult, attractive, bareheaded male-presenting portraits with acceptable composition. Do not lower the visual gate to fill a quota.",
+  "native_review_exclusions_and_reserves": {
+    "001": "Exclude: unmistakable second face at left.",
+    "007": "Exclude: youthful/ambiguous age appearance for this adult-only shortlist, squinting and harsh light.",
+    "012": "Exclude: partial person at right, glasses reflections and tight collar space.",
+    "015": "Exclude despite attractive adult face: unmistakable second face at left.",
+    "040": "Reserve only: appealing mature adult face, glasses, clean background, but chin touches bottom and collar space is inadequate.",
+    "042": "Reserve only: friendly mature adult, bareheaded and usable neck; not a strong match for the requested hot-only calendar selection.",
+    "050": "Do not select: intact mature adult portrait but not a strong match for the requested hot-only calendar selection.",
+    "058": "Do not select: intact older adult portrait, formal jacket, but not a strong match for requested hot-only calendar selection.",
+    "059": "Reserve only: intact mature adult smiling portrait and usable neck, but weaker subjective match than priority candidates.",
+    "060": "Reserve only: intact mature adult portrait with usable neck, but weaker subjective match than priority candidates.",
+    "061": "Hard exclusion: ornate headwear, crowded background and another person; fails no-hats criterion."
+  },
+  "contact_level_hard_exclusions": {
+    "headcovering_or_head_ornament": [
+      "003",
+      "004",
+      "006",
+      "018",
+      "023",
+      "028",
+      "029",
+      "033",
+      "036",
+      "038",
+      "041",
+      "046",
+      "047",
+      "049",
+      "061"
+    ],
+    "child_or_age_ambiguous": [
+      "007",
+      "009",
+      "011",
+      "014",
+      "030",
+      "033",
+      "039",
+      "043",
+      "044",
+      "045",
+      "048",
+      "049",
+      "054",
+      "057",
+      "063"
+    ],
+    "obvious_partial_second_person": [
+      "001",
+      "002",
+      "012",
+      "015",
+      "031",
+      "039",
+      "044",
+      "053",
+      "061"
+    ],
+    "face_obscuring_accessory": [
+      "013",
+      "021",
+      "038"
+    ]
+  },
+  "selection_limits": "All identities are synthetic. Adult appearance and attractiveness are subjective visual judgments, not measured age or a demographic classifier. Unlisted contact images were not shortlisted for the requested masculine calendar aesthetic; no factual gender identity is assigned.",
+  "verification": {
+    "png_and_npz_sha256_passed": 64,
+    "rgb_sha256_passed": 64,
+    "finite_float32_z_1_512_and_w_1_18_512_passed": 64,
+    "unique_seed_and_rgb_counts": 64,
+    "no_model_loaded_by_review": true
+  }
+}

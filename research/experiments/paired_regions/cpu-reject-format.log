@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_regions/trainer.py", line 338, in <module>
+    main()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_regions/trainer.py", line 283, in main
+    raise ValueError('Only paired-regions research checkpoints can resume; broad-mask runs require a fresh initial run')
+ValueError: Only paired-regions research checkpoints can resume; broad-mask runs require a fresh initial run

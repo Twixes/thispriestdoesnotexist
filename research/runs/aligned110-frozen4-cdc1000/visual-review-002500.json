@@ -1,0 +1,40 @@
+{
+  "step": 2500,
+  "images_seen": 20000,
+  "reviewed_utc": "2026-09-21T00:35:02.537107+00:00",
+  "approved": false,
+  "reviewer": "Codex native visual inspection",
+  "scope": "All three saved native1024x1024 grids, each sixteen256x256 generated outputs; no inference rerun.",
+  "grid_sha256": {
+    "samples-002500.png": "73c7bc97e0ac1e58f68f3bb17ed2acf4c87fd5d243e71a83e688c517e6e2f487",
+    "samples-002500-raw.png": "141b1f3cd91f6313626dfa9dc4da903f23bdf0b464b9961ac06ddb96a7b5a0e9",
+    "samples-002500-untruncated.png": "198d4b65c62d24e56ac3eab48fec685dd082f8ca1e9877585ab2cea392eca932"
+  },
+  "checkpoint_validation_file": "checkpoint-002500-validation.json",
+  "checkpoint_resume_sha256": "5b50722766706f65365988c355f9fd05421f7853e75638fab762679dfd18e76e",
+  "generator_sha256": "21107935d8f5b8f8fd8ebc845dc5110e5874dcc40383ad15134a54e09f278321",
+  "generator_ema_matches_resume": true,
+  "memory_preflight_free_percent": 26,
+  "findings": {
+    "ema_psi_0_7": [
+      "Adult male presentation, bare heads and white clerical tabs are visually consistent across this fixed grid.",
+      "Truncated EMA is more coherent than raw/untruncated views, but the first face still has dark malformed eye regions and several other eyes, mouths and cheeks look smeared or unnatural.",
+      "Most outputs have similar face proportions and dark swept hair; this fixed grid does not establish unseen-latent diversity or photorealistic quality."
+    ],
+    "raw_psi_1": [
+      "Severe soft/dark eye regions in row1 column1 and row3 column3, plus distorted mouth/cheek surfaces in several tiles.",
+      "Collars and clergy clothing are learned, but facial rendering remains visibly below the requested photographic standard."
+    ],
+    "ema_psi_1": [
+      "The same conspicuous first-face eye distortion and third-row third-face ghosting remain.",
+      "Fine detail remains smeared across multiple faces; the untruncated grid does not support quality approval."
+    ]
+  },
+  "coordinate_convention": "Rows and columns are one-based in each4x4 grid.",
+  "decision": "Retain research evidence; current checkpoint is not approved for production.",
+  "limits": [
+    "Appearance descriptions concern synthetic images, not real ages or identities.",
+    "No hotness score, quantitative diversity estimate, or later-convergence claim is made.",
+    "Live trainer, data, checkpoints and active deployment were not modified."
+  ]
+}
