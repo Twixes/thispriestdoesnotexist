@@ -1,0 +1,104 @@
+{
+  "reviewed_utc": "2026-09-21T02:49:38.502991+00:00",
+  "step": 375,
+  "images_seen": 24000,
+  "production_approved": false,
+  "decision": "reject_current_checkpoint_for_production",
+  "review_method": "Direct native display of all three1024x1024 step375 PNG sheets and all three250 sheets; each is4x4 native256px samples. PNG decoding and hashing only, no tensor/model load or generator computation.",
+  "coordinate_convention": "One-based rows and columns.",
+  "grid_sha256": {
+    "samples-000375-ema.png": "adf3a8c623b4e23a150af1b2280af70423a34584db8e9707b5da566652a7e5c6",
+    "samples-000375-raw.png": "58cf956527319064e5b4458f6dc6e73c06d09d618432622186824650a015ea65",
+    "samples-000375-untruncated.png": "667a8af91f6bc53c70c865326af63abe74d5f403aeed88f3efd6c3afd40f3fbb"
+  },
+  "grid_properties": {
+    "samples-000375-ema.png": {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    "samples-000375-raw.png": {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    "samples-000375-untruncated.png": {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB"
+    }
+  },
+  "comparison_review_path": "review-000250.json",
+  "comparison_review_sha256": "58f0f1fa6ab8226c85cd28bd46be0891e6333f71536a17848bfeb962e0ec734d",
+  "step250_grid_sha256": {
+    "samples-000250-ema.png": "88af54f4d8f29297cb2f596a46f39eaa18b19d30c1c53bee05d481f87f19c3c2",
+    "samples-000250-raw.png": "b6d71730bb86ad419b2e01e0175f691ed2755187ae3c1a0bbc3256eaf6410a7b",
+    "samples-000250-untruncated.png": "a23c35f1a9d84061a499e81fe6506f8be8322799d8797c0714086613c7d32db4"
+  },
+  "step250_grid_hashes_verified": true,
+  "checkpoint_numeric_validation": "Not performed in this task.",
+  "snapshots": {
+    "ema": {
+      "file": "samples-000375-ema.png",
+      "generator": "G_ema",
+      "truncation_psi": 0.7,
+      "quality_approval": false,
+      "observations": [
+        "Black neck regions and white tab/chin patches are now more prominent, but they often sit implausibly on the lower face rather than a shirt collar.",
+        "Mouths, teeth, cheeks and eyes are more distorted than at250 across much of the sheet; r1c1 and r2c3 have crushed or hollow mouths, and r3c2 has an abnormally stretched mouth/chin.",
+        "The childlike r1c3 and multiple female-presenting source identities remain; no reliable adult-male-only distribution is established.",
+        "Backgrounds and upper hair remain more source-like than the raw generator; this identity variety does not compensate for severe facial deformation."
+      ]
+    },
+    "raw": {
+      "file": "samples-000375-raw.png",
+      "generator": "G",
+      "truncation_psi": 1.0,
+      "quality_approval": false,
+      "observations": [
+        "Most tiles have black clerical shirts, white tabs, adult masculine presentation, and increasingly legible beards/skin relative to250. Some individual eyes/mouths are more coherent, although gray stylized rendering and uneven facial contours remain.",
+        "NEW MAJOR REGRESSION: r4c3 and r4c4 have large architectural/bar-like background patterns through or over the face, removing substantial facial structure. Both faces were recognizable at250.",
+        "Elsewhere geometry remains uneven, including cheek/mouth distortions and abnormal eyes; the two catastrophic tiles preclude interpreting the checkpoint as a general quality improvement.",
+        "Dark hair, related face proportions, mild smiles and architecture dominate. No obvious hats in these sixteen fixed samples; neither no-hat safety nor broad diversity is established."
+      ]
+    },
+    "untruncated": {
+      "file": "samples-000375-untruncated.png",
+      "generator": "G_ema",
+      "truncation_psi": 1.0,
+      "quality_approval": false,
+      "observations": [
+        "Compared with250, source identities acquire larger distorted cheek/mouth regions and implausible chin/neck patches; faces are not dependable photographs.",
+        "The childlike r1c3, multiple female-presenting faces, glasses and the r3c2 microphone remain. This is still a mixed source/adapted distribution.",
+        "The fixed architectural patterns wiping out raw r4c3/r4c4 are not present in the same way in EMA; EMA has its own severe interpolation-like appearance, with mangled mouths and patchy lower faces. This is a visual description, not a claim about the generation mechanism."
+      ]
+    }
+  },
+  "comparison_to_250": "Mixed and concerning: most raw portraits improve in local legibility, but two acquire catastrophic face/background structure failures; EMA dark clothing/tab adaptation comes with much worse facial distortion and still unsuitable source categories. No variant supports production use.",
+  "interpretation": [
+    "This review supports flagging a new local failure, not declaring irreversible mode collapse from one fixed-latent grid.",
+    "A short further checkpoint can test whether the raw architecture-through-face failure is transient only if root chooses to continue; the evidence does not justify an open-ended unchanged run.",
+    "EMA lag is not evidence that these defects will resolve, nor a reason to substitute EMA for raw quality review."
+  ],
+  "monitoring": {
+    "started_utc": "2026-09-21T02:41:59+00:00",
+    "deadline_utc": "2026-09-21T02:56:59+00:00",
+    "first_observed_step": 364,
+    "latest_observed_step": 376,
+    "pid": 82281,
+    "pid_observed_live": true,
+    "poll_interval_seconds": 45,
+    "completed_within_15_minutes": true
+  },
+  "scope_limits": [
+    "No tensor loading, validation, inference, optimizer update, or signal was performed.",
+    "No active code, model, inputs or checkpoints changed.",
+    "Only this new review and the separate requested CI evidence were written."
+  ]
+}

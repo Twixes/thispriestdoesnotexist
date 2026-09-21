@@ -1,0 +1,35 @@
+{
+  "reviewer": "root assistant",
+  "previous_calibration_commit": "1a8bc07",
+  "coefficient_revision": 3,
+  "fixed_feature_weight": 1.0,
+  "reason": "At weight0.05 the measured feature gradient was0.885% of shared b64+ paired-pixel norm and0.803% of b32 norm. Select a single fixed1.0 before any full-arm training, making the factor more informative. No coefficient sweep or held-out output tuning.",
+  "analytical_feature_to_paired_pixel_norm": {
+    "existing64plus": 0.1770110507371891,
+    "b32": 0.16063006222303633
+  },
+  "limitations": [
+    "Single calibration pair, source step600 only.",
+    "Fresh preservation excluded; not Adam update percentages.",
+    "No visual quality or generalization predicted by gradient norms."
+  ],
+  "source_sha256": {
+    "update.py": "b53a0b7c75d7e4ab4f067467f4ca52d2e668c9e7bbe6944d46d0af2ddafb0b64",
+    "runner.py": "10791901f013c4ae8e89491093c35b1c264e00635f07d5e292a2f3cf806b2011",
+    "render.py": "09b7fdef845e010ae6d6ec704a90542e98935ef76b92f02fc2595383ce941387",
+    "test_runner.py": "aff671154ae9a34e7d8a561aeb002fa20608389d207184bc04a780a997fec39e",
+    "optimizer.py": "e7caab2126b318f292e593d524f9e69b434dea5f978b082033dbbcd7f354dedf"
+  },
+  "pins_sha256": "fd911b1ce03e2b224063662a8c1e9d7e1c1a7191fedcb8010692ce5af7fd5136",
+  "root_tests": {
+    "exit_code": 0,
+    "count": 6,
+    "log_sha256": "32b622af44fd17482d390af3cea739420ba7e046c16b3962d8f2592cb7472f8a"
+  },
+  "approved_final_smoke": true,
+  "approved_full_factorial": false,
+  "max_rss_bytes": 10737418240,
+  "minimum_free_percent": 35,
+  "further_automatic_budget_or_coefficient_changes": false,
+  "production_approved": false
+}

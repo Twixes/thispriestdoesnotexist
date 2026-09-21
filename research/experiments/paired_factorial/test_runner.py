@@ -41,11 +41,11 @@ class Tiny(unittest.TestCase):
         torch.set_num_threads(2);torch.set_num_interop_threads(1);cls.t=torch
         from research.experiments.paired_regions import trainer
         from research.experiments.paired_factorial.optimizer import fork_optimizer
-        from research.experiments.paired_factorial.update import update
+        from research.experiments.paired_factorial.update import update, FEATURE_WEIGHT
         from research.experiments.clothing_structure.losses import FrozenDPrefix,feature_reconstruction_loss
         from research.experiments.paired_factorial import render
         from training.networks import Discriminator
-        cls.tr=trainer;cls.fork=staticmethod(fork_optimizer);cls.update=staticmethod(update)
+        cls.tr=trainer;cls.fork=staticmethod(fork_optimizer);cls.update=staticmethod(update);cls.feature_weight=FEATURE_WEIGHT
         cls.Prefix=FrozenDPrefix;cls.feature=staticmethod(feature_reconstruction_loss);cls.D=Discriminator;cls.render=render
 
     def fixture(self):
@@ -120,7 +120,10 @@ class Tiny(unittest.TestCase):
                 cal=metrics['gradient_calibration']
                 for key in ['existing64plus','new_b32']:
                     self.assertGreater(cal['pixel_l2'][key],0);self.assertGreater(cal['weighted_feature_l2'][key],0)
-                    self.assertEqual(cal['raw_feature_l2'][key],cal['weighted_feature_l2'][key]/.05)
+                    self.assertEqual(self.feature_weight,1.0)
+                    self.assertEqual(metrics['feature_weight'],1.0)
+                    self.assertEqual(cal['feature'],'weighted 1.0 frozen-D term')
+                    self.assertEqual(cal['raw_feature_l2'][key],cal['weighted_feature_l2'][key]/self.feature_weight)
             replicas.append({'student':copy.deepcopy(student.state_dict()),'optimizer':copy.deepcopy(optimizer.state_dict()),'rng':tr.capture_rng('cpu',s,p)})
         self.assertTrue(runner.equal_tree(replicas[0],replicas[1],t))
         with tempfile.TemporaryDirectory() as temp:

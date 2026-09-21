@@ -114,7 +114,7 @@ def worker(arm,output,deadline,expected_hashes,smoke=False):
         from safetensors.torch import load_file
         from research.experiments.paired_regions import trainer
         from research.experiments.paired_factorial.optimizer import fork_optimizer
-        from research.experiments.paired_factorial.update import update
+        from research.experiments.paired_factorial.update import update, FEATURE_WEIGHT
         from research.experiments.paired_factorial import render
         from research.experiments.paired_surround import objective as regions
         checkpoint=torch.load(ROOT/pins['parent_checkpoint'],map_location='cpu',weights_only=True,mmap=True)
@@ -156,7 +156,7 @@ def worker(arm,output,deadline,expected_hashes,smoke=False):
         fork={'format':'paired-factorial-smoke-v1' if smoke else 'paired-factorial-fork-v1','production_approved':False,'exact_resume':False,
               'arm':arm,'smoke':smoke,'parent_step':600,'parent_checkpoint_sha256':pins['parent_checkpoint_sha256'],
               'updates':1 if smoke else UPDATES,'actual_optimizer_calls':2 if smoke else UPDATES,
-              'b32_open':arm in ('B','D'),'feature_weight':.05 if prefix is not None else 0.,
+              'b32_open':arm in ('B','D'),'feature_weight':FEATURE_WEIGHT if prefix is not None else 0.,
               'pixel_objective':'original 0.5 tab + 0.5 remaining clothing; protected/fresh unchanged',
               'schedule':'50 shuffled cycles of all six identities using restored parent sampling RNG; fresh RNG unchanged',
               'train_ids':[p['id'] for p in train_pairs],'diagnostic_heldout_ids':pins['extra_manifest']['heldout_ids'],
@@ -165,7 +165,8 @@ def worker(arm,output,deadline,expected_hashes,smoke=False):
               'parent_student_state_sha256':initial_digest,'fixed_z_sha256':hashlib.sha256(fixed_z.numpy().tobytes()).hexdigest(),
               'rss_abort_bytes':MAX_RSS,'rss_limit_is_sampled_not_hard_allocation_cap':True,'deadline_unix':deadline,
               'torch_threads':2,'interop_threads':1,'resource_revision':2,'minimum_free_percent':MIN_FREE_PERCENT,
-              'resource_revision_reason':'archived 8 GiB smoke guard abort; explicit one-time 10 GiB retry, no automatic cap increases'}
+              'resource_revision_reason':'archived 8 GiB smoke guard abort; explicit one-time 10 GiB retry, no automatic cap increases',
+              'coefficient_revision':3,'coefficient_revision_reason':'fixed 1.0 after archived 0.05 calibration gradient measurement; no further weight tuning'}
         write_json(output/'config.json',fork)
         schedule=[];milestones=[];last_metrics={};diagnostic_report=None
         def check_invariants():

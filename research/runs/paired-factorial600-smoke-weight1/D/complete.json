@@ -1,0 +1,112 @@
+{
+  "complete": true,
+  "arm": "D",
+  "smoke": true,
+  "updates_per_trajectory": 1,
+  "actual_optimizer_calls": 2,
+  "milestones": [
+    {
+      "fork_step": 0,
+      "checkpoint": "checkpoint-000.pt",
+      "sha256": "b626ae78b115faa3ca40339178d92c84e90ea71b7e14d6e75f2724e75e16c387",
+      "student_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4",
+      "preview_seconds": 8.189638291019946
+    },
+    {
+      "fork_step": 1,
+      "checkpoint": "checkpoint-001.pt",
+      "sha256": "12e4a5e061352c2c870ad38431dd89828602f043214ebaacd4b39cbc2ba50f5d",
+      "student_sha256": "4018957318a24599a02ca91e994a6be472d51f9bedcd045180272761aed35d62",
+      "preview_seconds": 9.356442083022557
+    }
+  ],
+  "schedule": [],
+  "initial_student_state_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4",
+  "initial_rng_sha256": "42a287d23f4a6748e394185ed12ee9dbf5942c8549faf324681bc65c082044a4",
+  "final_student_state_sha256": "4018957318a24599a02ca91e994a6be472d51f9bedcd045180272761aed35d62",
+  "source_and_frozen_checks_passed": true,
+  "full_checkpoint_roundtrip": true,
+  "final_source30_count": 0,
+  "peak_rss_bytes": 8679129088,
+  "wall_seconds": 45.38911558291875,
+  "source_files": {
+    "optimizer.py": "e7caab2126b318f292e593d524f9e69b434dea5f978b082033dbbcd7f354dedf",
+    "render.py": "09b7fdef845e010ae6d6ec704a90542e98935ef76b92f02fc2595383ce941387",
+    "runner.py": "10791901f013c4ae8e89491093c35b1c264e00635f07d5e292a2f3cf806b2011",
+    "test_runner.py": "aff671154ae9a34e7d8a561aeb002fa20608389d207184bc04a780a997fec39e",
+    "update.py": "b53a0b7c75d7e4ab4f067467f4ca52d2e668c9e7bbe6944d46d0af2ddafb0b64",
+    "parent-pins.json": "fd911b1ce03e2b224063662a8c1e9d7e1c1a7191fedcb8010692ce5af7fd5136"
+  },
+  "ordinary_update_seconds": 5.970763250021264,
+  "gradient_calibration": {
+    "pair_ids": [
+      "calibration-original"
+    ],
+    "clothing_l1": 0.23339973390102386,
+    "tab_l1": 0.05253678187727928,
+    "rest_l1": 0.41426268219947815,
+    "protected_l1": 0.016700616106390953,
+    "paired_pixel_loss": 0.25010034441947937,
+    "feature_loss": 0.0860711932182312,
+    "feature_weight": 1.0,
+    "fresh_preservation_l1": 0.049139562994241714,
+    "feature_diagnostics": {
+      "layers": [
+        {
+          "shape": [
+            1,
+            128,
+            256,
+            256
+          ],
+          "tab_l1": 0.04461652413010597,
+          "rest_l1": 0.08541710674762726,
+          "scale_mean": 1.0,
+          "normalized_loss": 0.06501681357622147
+        },
+        {
+          "shape": [
+            1,
+            256,
+            128,
+            128
+          ],
+          "tab_l1": 0.10544528812170029,
+          "rest_l1": 0.10880584269762039,
+          "scale_mean": 1.0,
+          "normalized_loss": 0.10712556540966034
+        }
+      ]
+    },
+    "gradient_calibration": {
+      "pixel": "paired clothing plus protected pixel loss; fresh term excluded",
+      "feature": "weighted 1.0 frozen-D term",
+      "pixel_l2": {
+        "all": 0.4360074901187924,
+        "existing64plus": 0.4160305441367892,
+        "new_b32": 0.13046500597836944
+      },
+      "weighted_feature_l2": {
+        "all": 0.07656581482123744,
+        "existing64plus": 0.07364200468065184,
+        "new_b32": 0.0209566014862829
+      },
+      "raw_feature_l2": {
+        "all": 0.07656581482123744,
+        "existing64plus": 0.07364200468065184,
+        "new_b32": 0.0209566014862829
+      },
+      "raw_norm_derivation": "weighted norm / 1.0; exact scalar homogeneity, no third autograd pass",
+      "feature_over_pixel": {
+        "all": 0.17560665024441827,
+        "existing64plus": 0.17701105295874295,
+        "new_b32": 0.1606300580690382
+      },
+      "extra_autograd_passes": 2,
+      "optimizer_updates": 1
+    },
+    "seconds_with_two_extra_autograd_passes": 9.796128000016324,
+    "ordinary_update_seconds": 5.970763250021264,
+    "independent_updates_equal": true
+  }
+}

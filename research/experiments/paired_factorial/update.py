@@ -3,7 +3,7 @@ import math
 import torch
 from research.experiments.clothing_structure.losses import feature_reconstruction_loss
 
-FEATURE_WEIGHT=.05
+FEATURE_WEIGHT=1.0
 
 
 def gradient_norms(loss,named_parameters):
@@ -45,9 +45,9 @@ def update(student,source,optimizer,pair,options,preservation,trainer,prefix=Non
         feature_norms=gradient_norms(FEATURE_WEIGHT*feature,params)
         if trace is not None:trace('after_diagnostic_feature_autograd')
         metrics['gradient_calibration']={'pixel':'paired clothing plus protected pixel loss; fresh term excluded',
-            'feature':'weighted 0.05 frozen-D term','pixel_l2':pixel_norms,'weighted_feature_l2':feature_norms,
+            'feature':f'weighted {FEATURE_WEIGHT} frozen-D term','pixel_l2':pixel_norms,'weighted_feature_l2':feature_norms,
             'raw_feature_l2':{k:v/FEATURE_WEIGHT for k,v in feature_norms.items()},
-            'raw_norm_derivation':'weighted norm / 0.05; exact scalar homogeneity, no third autograd pass',
+            'raw_norm_derivation':f'weighted norm / {FEATURE_WEIGHT}; exact scalar homogeneity, no third autograd pass',
             'feature_over_pixel':{k:feature_norms[k]/pixel_norms[k] if pixel_norms[k]>0 else None for k in pixel_norms},
             'extra_autograd_passes':2,'optimizer_updates':1}
     loss=paired if feature is None else paired+FEATURE_WEIGHT*feature
