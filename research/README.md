@@ -1,8 +1,14 @@
 # Priest generator research
 
-Goal: train a real generative model and run fresh server-side inference on every page load. Sampling the static gallery, pixel morphing, or adding noise does not meet this goal. The production site remains on its curated static gallery until a model passes evaluation.
+Goal: train a real, unconditional priest generator and run fresh server-side inference on every page load. Its input is random noise only, with no text prompt or cached prompt embedding. Sampling the static gallery, pixel morphing, or adding noise does not meet this goal. The production site remains on its curated static gallery until a model passes evaluation.
 
-## Current status (2026-09-21)
+## Latest owner correction: no-prompt generator
+
+The owner explicitly rejects a general-purpose prompt-conditioned serving model, including one with a hidden fixed prompt. Return the serving architecture to a priest-specific, feed-forward generative model adapted from a pretrained face GAN. The completed diffusion comparisons remain useful only as offline image-quality references or prospective training-image tools. They are not candidates for the production request path. The [full Juggernaut realism preview](reviews/juggernaut-realism/index.html) contains all eight latest comparisons; skin and hair look less synthetic in the full model, but collar/beard defects remain and it is not owner-approved. The completed20-update Hyper adapter did not materially improve photographic realism and remains stopped.
+
+This architecture correction does not rehabilitate earlier failed GAN experiments. Review the existing transfer, CDC, reference625, NADA and paired-training evidence before choosing a materially different experiment. Preserve face realism and identity diversity while learning the priest domain; do not infer success from a learned white collar, distinct hashes, a hidden selector, or a lower loss. GPU hosting is allowed, with the prior preference below$15/month. The final unconditional pipeline still needs actual server generation below500ms, including encoding and any quality checks/retries.
+
+## Earlier research status (2026-09-21; diffusion serving direction superseded above)
 
 The [latest matched review](reviews/sdxl-pilot-preview/index.html) now contains actual priest-adapted SDXL-Turbo outputs. Local20- and100-update rank16 LoRA runs completed in42.9s and173.0s, with finite updates and unchanged frozen base weights. All144 unique native development outputs are retained. Training is feasible locally, but this ordinary-denoising recipe did not improve one-step quality: same-trigger joint agent-review passes fell from12/24 at baseline/20 updates to9/24 at100. Cloudier eyes and more airbrushed textures trigger the declared stop before250. No sealed test or production deployment follows a failed gate. The initial four-step fallback attempt stopped at the unchanged memory reserve before producing images. Full provenance and failure evidence are in [diffusion research](diffusion/README.md).
 
