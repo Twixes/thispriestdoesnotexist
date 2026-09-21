@@ -47,3 +47,11 @@ Validation performed during preparation: Python compilation/AST parsing, pinned 
 - `runs/juggernaut-hyper-tcd4-512-v1`: all eight plus warmup completed, full-image VAE, based on hash-bound exploratory native review.
 
 The six-step/CFG1.5 arm uses the publisher's suggested step count and CFG midpoint but retains TCD rather than its concrete DPM++SDE example. It is a quality reference with two CFG branches per call; six calls are not equivalent work to six CFG1 calls. All variants retain original prompts, seeds, outputs and distinct run directories. See each completed result.json for measured timings; none proves server performance.
+
+## Fixed development cohort and staged conditioning
+
+`--case-manifest juggernaut-development-cases.json --prompt-prefix 'PR1EST_CAL. ' --steps 6 --guidance-scale 1.5 --resolution 1024 --tiled-vae --cached-text` opens the fixed24-case development cohort (16 varied appearance prompts, eight fresh seeds of one generic prompt). CLI sampling/prefix must match the frozen manifest. No sealed test cases are opened.
+
+Cached mode now uses the exact tensor-verified `models/juggernaut-x-hyper-components` export: load only both CLIPs, save positive/negative/pooled conditioning on CPU, verify saved tensor values, release text encoders and clear the unused MPS pool, then load UNet and VAE directly on MPS. This avoids the earlier single-file CPU-to-MPS peak. The final denoising callback clears unused MPS allocations before decoding. Both actions and the exported component provenance are recorded; these conservative local timings include cache-clear overhead and exclude initial text preparation.
+
+`--lora /absolute/path/pytorch_lora_weights.safetensors` adds a hash-pinned UNet-only adapter at strength1 after conditioning preparation. Text encoders remain unchanged. Paired review must compare case/prompt/noise/generator-state and all conditioning tensor-value hashes, not merely the same seed number. The preview builder enforces these checks. All native outputs and failed resource-bound attempts remain archived.

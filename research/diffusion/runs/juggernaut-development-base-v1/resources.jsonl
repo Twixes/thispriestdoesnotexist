@@ -1,0 +1,5 @@
+{"phase": "before_model_file_verification", "elapsed_seconds": 3.0459021218121052e-05, "rss_bytes": 387203072, "mps_driver_bytes": 458752, "mps_allocated_bytes": 0, "available_fraction": 0.41059303283691406, "swap_growth_bytes": 0}
+{"phase": "verified_all_upstream_files", "elapsed_seconds": 5.21572791703511, "rss_bytes": 404045824, "mps_driver_bytes": 458752, "mps_allocated_bytes": 0, "available_fraction": 0.41317494710286456, "swap_growth_bytes": 0}
+{"phase": "single_file_cpu_assembly_complete", "elapsed_seconds": 5.589762459043413, "rss_bytes": 1597112320, "mps_driver_bytes": 458752, "mps_allocated_bytes": 0, "available_fraction": 0.4040397008260091, "swap_growth_bytes": 0}
+{"phase": "text_encoder_transferred", "elapsed_seconds": 5.813773459056392, "rss_bytes": 1604616192, "mps_driver_bytes": 1082605568, "mps_allocated_bytes": 247825664, "available_fraction": 0.3771375020345052, "swap_growth_bytes": 0}
+{"phase": "text_encoder_2_transferred", "elapsed_seconds": 6.3556687500094995, "rss_bytes": 1493860352, "mps_driver_bytes": 2156347392, "mps_allocated_bytes": 1638981120, "available_fraction": 0.3321847915649414, "swap_growth_bytes": 0}

@@ -1,0 +1,310 @@
+{
+  "complete": true,
+  "created_at_utc": "2026-09-21T10:41:34.242325+00:00",
+  "model": "RunDiffusion/Juggernaut-X-v10",
+  "revision": "35e4f3ccbe745c3e1221715d04a452aaa1ee5761",
+  "checkpoint_name": "Juggernaut-X-RunDiffusion-NSFW.safetensors",
+  "checkpoint_kind": "publisher single-file complete SDXL full non-Hyper checkpoint; no conversion performed",
+  "license": "creativeml-openrail-m",
+  "license_notice": "Publisher card additionally requires licensing for paid API deployment; preserve both card and LICENSE.txt. Not MIT.",
+  "license_origin": {
+    "repo": "CompVis/stable-diffusion-license",
+    "revision": "14d42d09bffd871b1666a084fc954a50cff72ac0",
+    "path": "license.txt",
+    "linked_by_publisher_card": true
+  },
+  "files": [
+    {
+      "path": "Juggernaut-X-RunDiffusion-NSFW.safetensors",
+      "bytes": 7105348672,
+      "sha256": "d91d35736d8f2be038f760a9b0009a771ecf0a417e9b38c244a84ea4cb9c0c45",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/Juggernaut-X-RunDiffusion-NSFW.safetensors",
+      "upstream_entry": {
+        "rfilename": "Juggernaut-X-RunDiffusion-NSFW.safetensors",
+        "blobId": "b11c78551a49f61f922af333ad6b97d3f2f724b2",
+        "size": 7105348672,
+        "lfs": {
+          "sha256": "d91d35736d8f2be038f760a9b0009a771ecf0a417e9b38c244a84ea4cb9c0c45",
+          "size": 7105348672,
+          "pointerSize": 135
+        }
+      },
+      "chunks": [
+        {
+          "path": "Juggernaut-X-RunDiffusion-NSFW.safetensors.weights-part-000",
+          "bytes": 1073741824,
+          "sha256": "019f639a4365a4b778de52b3a3c838403b290861340ab468204f6aac4f16abc3"
+        },
+        {
+          "path": "Juggernaut-X-RunDiffusion-NSFW.safetensors.weights-part-001",
+          "bytes": 1073741824,
+          "sha256": "6548bc49d1d19cd9b33de93209ebbbc754250332cf21d201e81fcedd918ee3bb"
+        },
+        {
+          "path": "Juggernaut-X-RunDiffusion-NSFW.safetensors.weights-part-002",
+          "bytes": 1073741824,
+          "sha256": "8108789324c077915957eba635c57beb3e7ef81b9ceae34d2bb4ba2c7b364ac9"
+        },
+        {
+          "path": "Juggernaut-X-RunDiffusion-NSFW.safetensors.weights-part-003",
+          "bytes": 1073741824,
+          "sha256": "5860759e7013b44a0f095cc5e3cb8a87b58a6c48dc0ed0b68dd9dd45fdbd9ec9"
+        },
+        {
+          "path": "Juggernaut-X-RunDiffusion-NSFW.safetensors.weights-part-004",
+          "bytes": 1073741824,
+          "sha256": "480f6ca45fe112a5aad03538d9fe9854bf0c08c439e81218ef4732a9df8f12cd"
+        },
+        {
+          "path": "Juggernaut-X-RunDiffusion-NSFW.safetensors.weights-part-005",
+          "bytes": 1073741824,
+          "sha256": "2e6041332192995aa5cc9ccc77d496d9f25e59f970a5e7dd478edf96512c604a"
+        },
+        {
+          "path": "Juggernaut-X-RunDiffusion-NSFW.safetensors.weights-part-006",
+          "bytes": 662897728,
+          "sha256": "73bb065ecf756800e927725a4ee9ede67eb44629c939baa1674d01690f8c48a3"
+        }
+      ]
+    },
+    {
+      "path": "sources/publisher-model-card.md",
+      "bytes": 9140,
+      "sha256": "72c395debad9113e30ae82e6167c3ac91b072be7c5b9d4b78590960ccada38c2",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/README.md",
+      "upstream_entry": {
+        "rfilename": "README.md",
+        "blobId": "3c4ea0e15ef996560d0c0c1f4231fdfaa7eddfb0",
+        "size": 9140
+      },
+      "chunks": []
+    },
+    {
+      "path": "model_index.json",
+      "bytes": 671,
+      "sha256": "a69fbd2647d5334cf1c44f7cc90453ff24e0d7c98d45092f62b114dd0436a6d2",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/model_index.json",
+      "upstream_entry": {
+        "rfilename": "model_index.json",
+        "blobId": "c4971ec3f753cbdc0dcf0021d8f29bc84ba0ea7f",
+        "size": 671
+      },
+      "chunks": []
+    },
+    {
+      "path": "scheduler/scheduler_config.json",
+      "bytes": 558,
+      "sha256": "93fb2cd3c439d000f8dca6658fff5e3dfd019bfdc4fb054ebf736c2b92b81299",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/scheduler/scheduler_config.json",
+      "upstream_entry": {
+        "rfilename": "scheduler/scheduler_config.json",
+        "blobId": "fc79d9b7d87cc4422536aa872b855f2341001d15",
+        "size": 558
+      },
+      "chunks": []
+    },
+    {
+      "path": "text_encoder/config.json",
+      "bytes": 560,
+      "sha256": "5a457bd0feec890cd67f850f7503e90cb531a28982504c0a67882bbb8e3aa2ca",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/text_encoder/config.json",
+      "upstream_entry": {
+        "rfilename": "text_encoder/config.json",
+        "blobId": "7f361ca3d9da2cd471438f1cd5834794b08d98f7",
+        "size": 560
+      },
+      "chunks": []
+    },
+    {
+      "path": "text_encoder_2/config.json",
+      "bytes": 570,
+      "sha256": "f241b78655046d32eeea5595666cd1f2bd984d28731af46408c1f987b7fb718f",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/text_encoder_2/config.json",
+      "upstream_entry": {
+        "rfilename": "text_encoder_2/config.json",
+        "blobId": "528790d1a982a736149fc6863711cd0fdf988172",
+        "size": 570
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/merges.txt",
+      "bytes": 524619,
+      "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/tokenizer/merges.txt",
+      "upstream_entry": {
+        "rfilename": "tokenizer/merges.txt",
+        "blobId": "76e821f1b6f0a9709293c3b6b51ed90980b3166b",
+        "size": 524619
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/special_tokens_map.json",
+      "bytes": 472,
+      "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/tokenizer/special_tokens_map.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer/special_tokens_map.json",
+        "blobId": "2c2130b544c0c5a72d5d00da071ba130a9800fb2",
+        "size": 472
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "bytes": 737,
+      "sha256": "19d7b034cb0cc3ce9766c2231373ab8aa8991fc72e2c8f76558bfaae3de0d563",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/tokenizer/tokenizer_config.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer/tokenizer_config.json",
+        "blobId": "2e8612a429492973fe60635b3f44a28b065cfac0",
+        "size": 737
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/vocab.json",
+      "bytes": 1059962,
+      "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/tokenizer/vocab.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer/vocab.json",
+        "blobId": "469be27c5c010538f845f518c4f5e8574c78f7c8",
+        "size": 1059962
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/merges.txt",
+      "bytes": 524619,
+      "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/tokenizer_2/merges.txt",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/merges.txt",
+        "blobId": "76e821f1b6f0a9709293c3b6b51ed90980b3166b",
+        "size": 524619
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/special_tokens_map.json",
+      "bytes": 460,
+      "sha256": "f118ab3a983206e4f32583448de6bd6aae4ee21869135cef1f5848a753cdaab6",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/tokenizer_2/special_tokens_map.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/special_tokens_map.json",
+        "blobId": "ae0c5be6f35217e51c4c000fd325d8de0294e99c",
+        "size": 460
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/tokenizer_config.json",
+      "bytes": 725,
+      "sha256": "c9d23941f76a41cbd50eda9290f57be7828f0a7a677939e9ef181f7e12bd1bdf",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/tokenizer_2/tokenizer_config.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/tokenizer_config.json",
+        "blobId": "a8438e020c4497a429240d6b89e0bf9a6e2ffa92",
+        "size": 725
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/vocab.json",
+      "bytes": 1059962,
+      "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/tokenizer_2/vocab.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/vocab.json",
+        "blobId": "469be27c5c010538f845f518c4f5e8574c78f7c8",
+        "size": 1059962
+      },
+      "chunks": []
+    },
+    {
+      "path": "unet/config.json",
+      "bytes": 1773,
+      "sha256": "bb8ab4a15cda73d5e75f466e020fbd97e0d1a3bbee6e5378b94f0dc2eb8af2f2",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/unet/config.json",
+      "upstream_entry": {
+        "rfilename": "unet/config.json",
+        "blobId": "ae0e13ab9e256164d01be6cadae046b03a3e1a07",
+        "size": 1773
+      },
+      "chunks": []
+    },
+    {
+      "path": "vae/config.json",
+      "bytes": 602,
+      "sha256": "ec13eefd4a3ea11116879c105665881d5b31d1f8425e73cc6016e7cba72d14c0",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-v10/resolve/35e4f3ccbe745c3e1221715d04a452aaa1ee5761/vae/config.json",
+      "upstream_entry": {
+        "rfilename": "vae/config.json",
+        "blobId": "e9b208cce788aac2a8b78350d8273d8f76157de4",
+        "size": 602
+      },
+      "chunks": []
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 14385,
+      "sha256": "be351ebe7ac01bcdbb018639aadcfd38f136b7dc3f2a3d4d3a24db51d1b210ef",
+      "source_url": "https://huggingface.co/spaces/CompVis/stable-diffusion-license/resolve/14d42d09bffd871b1666a084fc954a50cff72ac0/license.txt",
+      "upstream_entry": {
+        "rfilename": "license.txt",
+        "blobId": "0e609df0d8cd3b5d11a1ea962a56b604b70846a5",
+        "size": 14385
+      },
+      "chunks": []
+    }
+  ],
+  "upstream_metadata_sha256": "bd74a66c5ef55b0c3857ba6caed5b17718644d2ed72812b1e644d0bb83411bb0",
+  "license_metadata_sha256": "475767c73ac2bc6bbde7d11c9db2fb3d92f7fd434fe41533b4e04dad6ecc60ce",
+  "prepare_source_sha256": "c5156ea2cdcc00a044d9f4a52c006e66f17b69191f8dd4bcad564960496770ab",
+  "header": {
+    "tensor_count": 2515,
+    "dtypes": [
+      "F16",
+      "F32"
+    ],
+    "bytes": 365048
+  },
+  "inference_reference": {
+    "author_steps": [
+      30,
+      40
+    ],
+    "chosen_steps": 35,
+    "author_samplers": [
+      "DPM++ 2M Karras"
+    ],
+    "author_cfg_range": [
+      3.0,
+      7.0
+    ],
+    "chosen_cfg": 3.0,
+    "author_resolutions": [
+      [
+        832,
+        1216
+      ],
+      [
+        1216,
+        832
+      ]
+    ],
+    "comparison_resolution": [
+      1024,
+      1024
+    ],
+    "resolution_note": "Square SDXL native-pixel-count comparison for site; differs from author portrait/landscape framing",
+    "sampler_mapping": "DPMSolverMultistepScheduler algorithm_type=dpmsolver++,solver_order=2,use_karras_sigmas=True; deterministic 2M, not SDE",
+    "candidate": "Full non-distilled quality reference35steps,CFG3; not a latency candidate and not more steps on Hyper",
+    "lora": "SDXL structure compatibility does not establish transfer quality"
+  },
+  "oversized_weights": "Full checkpoint ignored locally; concatenate <=1GiB manifest chunks in order and verify upstream SHA256 before loading.",
+  "model_load_or_inference_performed": false,
+  "production_approved": false
+}

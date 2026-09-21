@@ -1,0 +1,303 @@
+{
+  "complete": true,
+  "model": "RunDiffusion/Juggernaut-X-Hyper",
+  "revision": "42fee7475922d8de7246cdcbe5e3a5e22c0ecf61",
+  "kind": "Local verified FP16 Diffusers conversion of pinned single-file checkpoint",
+  "upstream_checkpoint_sha256": "010be7341cd98a136da775330ba3eb4e87025c6cfd2f5455dc64daee2200ae98",
+  "upstream_provenance_sha256": "da4b21ed1fb3ff4dcc3cbd9881afc1549351214643d1ffe324421611fcdbe330",
+  "license": "creativeml-openrail-m",
+  "license_caveat": "Publisher also requires explicit licensing for paid API deployment; see original model card.",
+  "tensor_equality_scope": "Each tensor in the proven FP16 single-file loader output compared to fresh CPU FP16 component reload; original mixed-precision checkpoint may be cast by the loader, which is preserved.",
+  "verifications": [
+    {
+      "component": "text_encoder",
+      "tensor_count": 196,
+      "equal": true,
+      "report_sha256": "bd903808ae23025a83cdcbb2a929eb4a37fb9937dd15bd5dea589e79ec568faa"
+    },
+    {
+      "component": "text_encoder_2",
+      "tensor_count": 517,
+      "equal": true,
+      "report_sha256": "d6c39ae9c065f88721d163dccb32ea396dad80e9dd7ef1e4591b5e01844e5cf0"
+    },
+    {
+      "component": "unet",
+      "tensor_count": 1680,
+      "equal": true,
+      "report_sha256": "0e0c29bd3e3f8b4af1d957e62793fd658f721a3960f3dbca972639bd9dddc4ab"
+    },
+    {
+      "component": "vae",
+      "tensor_count": 248,
+      "equal": true,
+      "report_sha256": "044216757b458c2369bd801bd822594d19b60c27cdd7c099850b2e74621afe63"
+    }
+  ],
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 14385,
+      "sha256": "be351ebe7ac01bcdbb018639aadcfd38f136b7dc3f2a3d4d3a24db51d1b210ef",
+      "chunks": []
+    },
+    {
+      "path": "model_index.json",
+      "bytes": 676,
+      "sha256": "1e9794b5019fa110a58e8fc451751a6b7e2ee8fbdf828d2250cff4aba422aec7",
+      "chunks": []
+    },
+    {
+      "path": "scheduler/scheduler_config.json",
+      "bytes": 579,
+      "sha256": "c7ffb7d92ca2592cbfc1c2a2dcd622541ac6fff200344d47ca27ee3b78ff867b",
+      "chunks": []
+    },
+    {
+      "path": "sources/loader-resolved-scheduler.json",
+      "bytes": 761,
+      "sha256": "0b1c18ec6b049d1958f26c311f321f3d757d54bffbe9c17f5b00bad94ae16cb8",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/LICENSE.txt",
+      "bytes": 14385,
+      "sha256": "be351ebe7ac01bcdbb018639aadcfd38f136b7dc3f2a3d4d3a24db51d1b210ef",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/model_index.json",
+      "bytes": 712,
+      "sha256": "933febe543062203b3d777c7c1b71be3637ecb1cc0dd4efc574f5c4b9fb3be99",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/scheduler/scheduler_config.json",
+      "bytes": 579,
+      "sha256": "c7ffb7d92ca2592cbfc1c2a2dcd622541ac6fff200344d47ca27ee3b78ff867b",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/sources/publisher-model-card.md",
+      "bytes": 8362,
+      "sha256": "645f5b46bdeaa09b941990de7709e4b5d790929e977f689a08427abe3648a2cb",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/text_encoder/config.json",
+      "bytes": 584,
+      "sha256": "b8b43991f1143b36b0e4695a61b85b7518f527b90d792ff97a2eb33242330a39",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/text_encoder_2/config.json",
+      "bytes": 594,
+      "sha256": "85850e9f7c74a3c4d3799754deb543f12fbc6df8bf2cea092b9196ac74d9eb06",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/tokenizer/merges.txt",
+      "bytes": 573514,
+      "sha256": "0bc7695944744789d6fd6d0ab754bcbbb9e36f1c182df0a006d619ce70a1e052",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/tokenizer/special_tokens_map.json",
+      "bytes": 496,
+      "sha256": "c8227988aadac941e93b5ffef08b4add8ccbdb26404a62b3e41f61eef119b252",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/tokenizer/tokenizer_config.json",
+      "bytes": 770,
+      "sha256": "b4f741ef4015d9e71521322666260278f20d9398a2ef41fd5aa2fb72370a3f03",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/tokenizer/vocab.json",
+      "bytes": 1109372,
+      "sha256": "fd67774a869730a6b27bf53d3e434e72054f2a825873c7af3bece183bb1f791e",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/tokenizer_2/merges.txt",
+      "bytes": 573514,
+      "sha256": "0bc7695944744789d6fd6d0ab754bcbbb9e36f1c182df0a006d619ce70a1e052",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/tokenizer_2/special_tokens_map.json",
+      "bytes": 484,
+      "sha256": "a83f5831a70d1d21c057186d35aaa504894103d24ee905baa99bc7e83ceb70ee",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/tokenizer_2/tokenizer_config.json",
+      "bytes": 758,
+      "sha256": "a067a5dc4ee35a6a4bf22d9b02bea1fc7d721a30bfcea76bd115cb0f77605f14",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/tokenizer_2/vocab.json",
+      "bytes": 1109372,
+      "sha256": "fd67774a869730a6b27bf53d3e434e72054f2a825873c7af3bece183bb1f791e",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/unet/config.json",
+      "bytes": 1845,
+      "sha256": "8638ce290977b27c317a2c92460fa9207fd5403f1982a06aff6bb6cab9236578",
+      "chunks": []
+    },
+    {
+      "path": "sources/original/vae/config.json",
+      "bytes": 633,
+      "sha256": "e30d181960a636e79970fd300749d97912458f2d0124f1482aa2818e570d420d",
+      "chunks": []
+    },
+    {
+      "path": "sources/upstream-provenance.json",
+      "bytes": 12148,
+      "sha256": "da4b21ed1fb3ff4dcc3cbd9881afc1549351214643d1ffe324421611fcdbe330",
+      "chunks": []
+    },
+    {
+      "path": "text_encoder/config.json",
+      "bytes": 554,
+      "sha256": "7a80acd27a42947a7bb2019e02c375b78408fdde53938ddf05fac50a23590c30",
+      "chunks": []
+    },
+    {
+      "path": "text_encoder/model.fp16.safetensors",
+      "bytes": 246142000,
+      "sha256": "0c1d27673777497beb59aa00438652ef81494a6e25e614ffa72ae48dcf7a7b96",
+      "chunks": []
+    },
+    {
+      "path": "text_encoder_2/config.json",
+      "bytes": 564,
+      "sha256": "77c5ffba2431ba0fd3f663d313e79fc28afa33fc4f2501974860e45d38d95dde",
+      "chunks": []
+    },
+    {
+      "path": "text_encoder_2/model.fp16.safetensors",
+      "bytes": 1389382176,
+      "sha256": "8d17bcfa80130be63ab58192e900671c1c427dcd7a8985e4778092b08c56fe27",
+      "chunks": [
+        {
+          "path": "text_encoder_2/model.fp16.safetensors.weights-part-000",
+          "bytes": 1073741824,
+          "sha256": "5877734d5f024838fc5ed8839e0ea831fc6f4ebb1629a9e699550650d3e575e5"
+        },
+        {
+          "path": "text_encoder_2/model.fp16.safetensors.weights-part-001",
+          "bytes": 315640352,
+          "sha256": "ccd17778a3ac5250d5f3eb164f21fa7944baf4a179bda7ea16d33819865e43cf"
+        }
+      ]
+    },
+    {
+      "path": "tokenizer/merges.txt",
+      "bytes": 573514,
+      "sha256": "0bc7695944744789d6fd6d0ab754bcbbb9e36f1c182df0a006d619ce70a1e052",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/special_tokens_map.json",
+      "bytes": 496,
+      "sha256": "c8227988aadac941e93b5ffef08b4add8ccbdb26404a62b3e41f61eef119b252",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "bytes": 770,
+      "sha256": "b4f741ef4015d9e71521322666260278f20d9398a2ef41fd5aa2fb72370a3f03",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/vocab.json",
+      "bytes": 1109372,
+      "sha256": "fd67774a869730a6b27bf53d3e434e72054f2a825873c7af3bece183bb1f791e",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/merges.txt",
+      "bytes": 573514,
+      "sha256": "0bc7695944744789d6fd6d0ab754bcbbb9e36f1c182df0a006d619ce70a1e052",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/special_tokens_map.json",
+      "bytes": 484,
+      "sha256": "a83f5831a70d1d21c057186d35aaa504894103d24ee905baa99bc7e83ceb70ee",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/tokenizer_config.json",
+      "bytes": 758,
+      "sha256": "a067a5dc4ee35a6a4bf22d9b02bea1fc7d721a30bfcea76bd115cb0f77605f14",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/vocab.json",
+      "bytes": 1109372,
+      "sha256": "fd67774a869730a6b27bf53d3e434e72054f2a825873c7af3bece183bb1f791e",
+      "chunks": []
+    },
+    {
+      "path": "unet/config.json",
+      "bytes": 1778,
+      "sha256": "fb3006fa29cff3e6f33315c3e84601c2d747efb77d66b905e07271974006c40b",
+      "chunks": []
+    },
+    {
+      "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 5135149760,
+      "sha256": "a913326b73c0315e3ff1fd56d1f7672058e11648af8d161a3a0550b9a428ed62",
+      "chunks": [
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-000",
+          "bytes": 1073741824,
+          "sha256": "c3a0dc97b310fc8905e2cded606e7d7a92e38eaab29cd1b98623b9966160da8e"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-001",
+          "bytes": 1073741824,
+          "sha256": "7813e85c144a6b8fcbdd972af30b272aa7184a6d69271ca5de490ef2aea8bd21"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-002",
+          "bytes": 1073741824,
+          "sha256": "5b426e34823d1bb36e249429878f7f209ade4b7db2a7a27e3560e988aac2c5d7"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-003",
+          "bytes": 1073741824,
+          "sha256": "5be70e6db28c381ffcefb319ed93d6e538eae8bf4f8400585fd886093898f993"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-004",
+          "bytes": 840182464,
+          "sha256": "9778d43c44169c2e3a2a77aa6acc8a0bc227133d94b133ee4514a6fbf0bb41ca"
+        }
+      ]
+    },
+    {
+      "path": "vae/config.json",
+      "bytes": 770,
+      "sha256": "797460456bda78f0921d3072ae9a25e2ec1b63bc5877de295aecb4ad062144b6",
+      "chunks": []
+    },
+    {
+      "path": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 167335342,
+      "sha256": "6353737672c94b96174cb590f711eac6edf2fcce5b6e91aa9d73c5adc589ee48",
+      "chunks": []
+    }
+  ],
+  "runtime_sha256": "d62f77703e92135a340e02488e2ed86566349073c5a27409f0bf7a8f5575fde1",
+  "script_sha256": "bb891150454436da6f4d9dd14adcd5bd009bf2a07cb664f8df40f84cf4da51d7",
+  "model_loading_performed": true,
+  "inference_or_training_performed": false,
+  "production_approved": false
+}

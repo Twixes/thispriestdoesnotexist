@@ -1,0 +1,270 @@
+{
+  "protocol_id": "juggernaut-hyper-priest-lora-pilot-v1",
+  "status": "frozen_before_training",
+  "production_approved": false,
+  "base": {
+    "model_id": "RunDiffusion/Juggernaut-X-Hyper",
+    "revision": "42fee7475922d8de7246cdcbe5e3a5e22c0ecf61",
+    "checkpoint_sha256": "010be7341cd98a136da775330ba3eb4e87025c6cfd2f5455dc64daee2200ae98",
+    "source_provenance_sha256": "da4b21ed1fb3ff4dcc3cbd9881afc1549351214643d1ffe324421611fcdbe330",
+    "components_path": "research/diffusion/models/juggernaut-x-hyper-components",
+    "component_manifest_policy": "Require completed exact-source export with component hashes; bind actual component provenance hash in cache and every launch. No Turbo component substitution.",
+    "scheduler_config_source_sha256": "c7ffb7d92ca2592cbfc1c2a2dcd622541ac6fff200344d47ca27ee3b78ff867b",
+    "components_provenance_sha256": "8e1c607e04bef6fcee8e778e9e4fc5d163ae19f29d67d80149debd61ad78774d"
+  },
+  "dataset": {
+    "manifest_path": "research/data/flux-priest-domain-v1/manifest.json",
+    "manifest_sha256": "6796be940a10610843c154c7063b3bb907d0ffab18e014737c6abc6f02ee340b",
+    "counts": {
+      "train": 20,
+      "validation": 5,
+      "test": 5
+    },
+    "training_directory": "research/data/flux-priest-domain-v1/train",
+    "heldout_teacher_images_are_not_generated_test_seeds": true,
+    "trigger": "PR1EST_CAL",
+    "known_limitations": [
+      "Only20 training portraits; narrow monochrome clerical-shirt framing and background range",
+      "Multiple close synthetic face-family variants were excluded; visual grouping is not biometric uniqueness proof",
+      "Few balding faces, little extreme old age and no deliberate coverage balance; apparent demographic coverage is not verified identity data",
+      "New prompt descriptors are requested generation attributes, not sensitive inferences about teacher images"
+    ]
+  },
+  "training": {
+    "status": "experimental_not_distillation_preserving",
+    "objective": "ordinary epsilon noise-prediction LoRA; not Hyper distillation",
+    "train_components": [
+      "UNet attention LoRA"
+    ],
+    "frozen_components": [
+      "base UNet parameters",
+      "both text encoders",
+      "VAE"
+    ],
+    "rank": 16,
+    "lora_alpha": 16,
+    "target_modules": [
+      "to_q",
+      "to_k",
+      "to_v",
+      "to_out.0"
+    ],
+    "learning_rate": 1e-05,
+    "lr_scheduler": "constant",
+    "lr_warmup_steps": 0,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 1,
+    "optimizer": "AdamW",
+    "optimizer_betas": [
+      0.9,
+      0.999
+    ],
+    "optimizer_weight_decay": 0.01,
+    "optimizer_epsilon": 1e-08,
+    "max_grad_norm": 1.0,
+    "seed": 2026092199,
+    "resolution": 512,
+    "base_weight_dtype": "float16",
+    "trainable_adapter_dtype": "float32",
+    "gradient_checkpointing": true,
+    "image_preprocessing": "resize native square to512; no random crop, flip, color jitter or synthetic image additions",
+    "checkpoints": [
+      20,
+      100
+    ],
+    "max_optimizer_updates": 100,
+    "step_semantics": "total optimizer updates, not additional updates per checkpoint",
+    "stop_on": [
+      "NaN/Inf loss or gradients",
+      "nonfinite adapter tensors",
+      "hardware resource supervisor failure",
+      "native image face quality regression or identity collapse at development gate"
+    ],
+    "checkpoint20_role": "Compatibility plus fixed-control native1024 visual-benefit gate. Finite loss alone never allows continuation.",
+    "checkpoint100_role": "Fresh-base bounded100-update run only after recorded20-update native visual benefit.",
+    "risk": "Ordinary denoising LoRA may damage Hyper distilled sampling. Training512 and inference1024 is a deliberate cross-resolution pilot; training success does not establish native1024 quality."
+  },
+  "cache": {
+    "resolution": 512,
+    "transform": "Lanczos Resize512,CenterCrop512,normalize[-1,1],no flip",
+    "text_compute": "Exact-base dual CLIP FP16, penultimate concatenation and CLIP2 pooled; no CFG negatives for training",
+    "vae_compute": "Exact-base VAE FP32 encode, raw posterior mean/std cached before0.13025 scaling; no fixed sampled training latent",
+    "sampling": "Fresh independent posterior Gaussian and diffusion noise every update",
+    "training_split_only": true,
+    "forbidden": "Do not read validation/test images or reuse Turbo caches/adapters"
+  },
+  "inference": {
+    "primary": {
+      "steps": 6,
+      "width": 1024,
+      "height": 1024,
+      "guidance_scale": 1.5,
+      "eta": 0.3,
+      "negative_prompt": null,
+      "adapter_scale": 1.0,
+      "scheduler": "TCDScheduler from exact publisher scheduler config",
+      "vae_tiling": {
+        "enabled": true,
+        "sample_tile": 512,
+        "latent_tile": 64,
+        "overlap": 0.25
+      }
+    },
+    "arms": [
+      {
+        "id": "base-trigger",
+        "adapter": false,
+        "prompt_transform": "prefix PR1EST_CAL. "
+      },
+      {
+        "id": "adapter-trigger",
+        "adapter": true,
+        "prompt_transform": "prefix PR1EST_CAL. "
+      }
+    ],
+    "noise": {
+      "shape": [
+        1,
+        4,
+        128,
+        128
+      ],
+      "recipe": "Fresh CPU float32 randn using each case seed; save tensor and generator state; reset both identically for every arm including TCD stochastic draws. Existing512 latents cannot be reused at1024.",
+      "cache_conditioning": "If conditioning is precomputed, regenerate from exact-base encoders; same prompt tensor values across controls/checkpoints, preserve hashes and exclude startup text encoding explicitly from timing."
+    },
+    "retain": "Every raw native RGB PNG, initial latent, generator-state hash, complete prompt, tokenization/truncation diagnostics, adapter/base/software hashes, scheduler config, run timing and unmodified failure records. No best-of, face repair, crop, prompt retry or output selection.",
+    "cross_resolution_caveat": "512 training is a compatibility/style pilot. All benefit decisions use native1024 inference. No inference512 substitution or resolution success claim.",
+    "base_run": "research/diffusion/runs/juggernaut-development-base-v2-cached",
+    "adapter_runs": {
+      "20": "research/diffusion/runs/juggernaut-development-step20-v1",
+      "100": "research/diffusion/runs/juggernaut-development-step100-v1"
+    },
+    "control_policy": "Both primary arms use identical prefixed prompts and per-case noise/RNG. No additional plain-prompt arms required in this bounded pilot.",
+    "conditioning_policy": "Both frozen CLIP encoders encode exact prefixed case prompts before inference; release both encoders, then load renderer. Preserve conditioning tensors and hashes; same values in base and adapter arms. Startup encoding excluded, conditioning transfer included in generation timing."
+  },
+  "development_cases": {
+    "manifest_path": "research/diffusion/juggernaut-development-cases.json",
+    "manifest_sha256": "ac6c1d1b223104d8b67feb29f3f4416a4b4c706967bdd287aa0997ed50095374",
+    "count": 24,
+    "scope": "16 varied hot-priest appearance prompts age28\u201346 plus8 same generic priest prompts; seeds202609220000\u2013202609220023; development only"
+  },
+  "review": {
+    "unit": "Each of24 outputs per primary arm individually reviewed at native1024 and common512 display; both arms use identical trigger prefix. Explicit family assessment within8 repeated generic-prompt samples.",
+    "blind_if_possible": "Randomize model-arm display ordering with a recorded mapping; reviewer must see every output",
+    "per_image_labels": {
+      "face_integrity": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "photographic_texture": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "recognizable_clerical_clothing": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "adult_male_appearance": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "bareheaded": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "single_person": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "prompt_pose_age_attributes": [
+        "matches",
+        "partial",
+        "misses",
+        "uncertain"
+      ],
+      "calendar_appeal": [
+        "strong",
+        "adequate",
+        "weak",
+        "uncertain"
+      ],
+      "suspected_teacher_memorization": [
+        "none_observed",
+        "possible",
+        "strong"
+      ]
+    },
+    "face_integrity_definition": "coherent pupils/irises/eyelids, natural mouth/teeth where visible, plausible anatomy and facial detail without smeared/doubled features",
+    "collar_definition": "recognizable legitimate white clerical collar; exact small Roman tab is a prompt-match diagnostic only, not a user quality gate",
+    "joint_pass": "all six pass: face_integrity, photographic_texture, recognizable_clerical_clothing, adult_male_appearance, bareheaded, single_person. Uncertain counts as not passed.",
+    "set_labels": [
+      "conservative visual face-family assignments with notes",
+      "largest family fraction",
+      "number of distinct plausible face families",
+      "strong resemblance to training teachers only",
+      "paired wins/ties/losses for photographic priest quality and calendar appeal"
+    ],
+    "development_candidate_gate": {
+      "scope": "engineering go/no-go heuristic, not user approval or a statistically proven quality threshold",
+      "joint_pass_minimum_of24": 22,
+      "face_integrity_minimum_of24": 23,
+      "no_reduction_in_joint_or_face_passes_vs_same_trigger_base": true,
+      "strong_teacher_memorization_maximum": 0,
+      "largest_visual_family_maximum_of24": 4,
+      "distinct_visual_families_minimum_of24": 16,
+      "calendar_appeal_nonregression": "paired calendar-appeal wins must be at least losses against base-trigger; ties allowed",
+      "no_passing_checkpoint_action": "Stop pilot; no250, no automatic rank/LR/steps/scale sweep."
+    },
+    "checkpoint_selection": "Among passing development checkpoints, maximize joint_pass then face_integrity then distinct face families then paired calendar appeal net wins; exact tie selects earlier checkpoint. Freeze choice and all labels before test generation."
+  },
+  "continue100_gate": {
+    "requires_saved_decision": true,
+    "changed_finite_adapter_and_frozen_base_verified": true,
+    "adapter_trigger_joint_and_face_passes_not_below_base": true,
+    "photographic_quality_wins_gt_losses": true,
+    "photographic_quality_wins_minimum": 1,
+    "calendar_appeal_wins_at_least_losses": true,
+    "no_new_severe_face_or_identity_regression": true,
+    "teacher_memorization": "Compare only20 training teachers at this stage; no strong copy. Validation/test images remain unopened.",
+    "fresh_base100_same_seed": true,
+    "otherwise": "Stop after20 and retain all outputs; low loss or compatibility alone is insufficient.",
+    "all24_cases_both_primary_arms_reviewed": true
+  },
+  "heldout_policy": {
+    "dataset_splits": {
+      "train": 20,
+      "validation": 5,
+      "test": 5
+    },
+    "validation_and_test_images": "Not loaded by cache/trainer. Only train manifest rows are used.",
+    "generated_test": "No SDXL sealed test outputs or labels may be opened. This pilot has no automatic test execution; freeze a separately specified disjoint test protocol only if a candidate passes development."
+  },
+  "resources": {
+    "preflight_available_fraction": 0.35,
+    "runtime_available_fraction": 0.2,
+    "max_rss_gib": 24,
+    "max_mps_driver_gib": 22,
+    "max_swap_growth_mib": 512,
+    "training_timeout_seconds": 1800,
+    "cache_timeout_seconds": 1200,
+    "mps_memory_fraction": 0.55,
+    "cpu_threads": 2,
+    "interop_threads": 1
+  },
+  "shared_trainer": {
+    "path": "research/diffusion/vendor/sdxl-train/run_training.py",
+    "files": {
+      "run_training.py": "9e780d9d652f610c543f480ff10a2757a7dc94458d1eab146c2588cc3d5e46c2",
+      "guards.py": "46950b072ca11c7f7fdd9390168248d9d72401d676b92564490e6a0a20381002",
+      "priest_cache.py": "027c2b9580acabde6a39f810d87b640aaddff6080beeec5c3e03bed214b1b30a",
+      "patch-provenance.json": "ece6a3c0c47970556ca0e66f8b88c8682554aefe10ca813cbac6a227978dd8a0"
+    },
+    "reuse": "Generic exact-base cached SDXL trainer, unchanged; no previous trained adapter or optimizer state loaded."
+  }
+}

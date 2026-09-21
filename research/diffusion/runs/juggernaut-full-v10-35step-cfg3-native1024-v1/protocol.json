@@ -1,0 +1,125 @@
+{
+  "protocol_id": "juggernaut-full-v10-quality-reference-v1",
+  "model": "juggernaut-x-v10",
+  "revision": "35e4f3ccbe745c3e1221715d04a452aaa1ee5761",
+  "model_provenance_sha256": "154d5e4735df58e6af795657e19a436b540dafdd1d6cb34374ab03befce64e70",
+  "checkpoint_sha256": "d91d35736d8f2be038f760a9b0009a771ecf0a417e9b38c244a84ea4cb9c0c45",
+  "original_comparison_result_sha256": "cb605b4146090d2457d232dc4671f0c1c1beb2e57210a67a84f5a84500c83c21",
+  "resolution": 1024,
+  "steps": 35,
+  "guidance_scale": 3.0,
+  "negative_prompt": null,
+  "scheduler": "DPMSolverMultistepScheduler; dpmsolver++, order2, midpoint, Karras, lower_order_final=True",
+  "eta": null,
+  "scheduler_overrides": {
+    "algorithm_type": "dpmsolver++",
+    "solver_order": 2,
+    "solver_type": "midpoint",
+    "use_karras_sigmas": true,
+    "lower_order_final": true,
+    "final_sigmas_type": "zero",
+    "prediction_type": "epsilon"
+  },
+  "author_reference": "30\u201340steps,CFG3\u20137,DPM++2M Karras,portrait832x1216/landscape1216x832;35/CFG3 chosen for realism; square1024 is our site-framing choice",
+  "eta_basis": "Not applicable: deterministic DPM++2M Karras",
+  "native_reference_resolution": 1024,
+  "non_native_tradeoff": false,
+  "cases": [
+    {
+      "index": -1,
+      "seed": 202609213999,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "warmup": true,
+      "original_noise_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/sdxl-turbo-1step-v1/warmup/noise.npz",
+      "original_noise_sha256": "4b74c8a9c565f3da94b85974d6cd3f53475246dc231d46b759a02acc8484c992"
+    },
+    {
+      "index": 0,
+      "seed": 202609214000,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "warmup": false,
+      "original_noise_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/sdxl-turbo-1step-v1/000/noise.npz",
+      "original_noise_sha256": "bbc90260c3ebfd64a39b622e10045a0053647f3a0e47317d1d37ebde704a7b9b"
+    },
+    {
+      "index": 1,
+      "seed": 202609214001,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "warmup": false,
+      "original_noise_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/sdxl-turbo-1step-v1/001/noise.npz",
+      "original_noise_sha256": "6ace506e4866fc84e6c4d6b5df631b7dd76ae45628475684745bf9a42ee5b3ef"
+    },
+    {
+      "index": 2,
+      "seed": 202609214002,
+      "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+      "warmup": false,
+      "original_noise_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/sdxl-turbo-1step-v1/002/noise.npz",
+      "original_noise_sha256": "0ebb7e751f1f9f3169e17fa199ab6f590476e880844760bf98d276eb1a8b138e"
+    },
+    {
+      "index": 3,
+      "seed": 202609214003,
+      "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+      "warmup": false,
+      "original_noise_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/sdxl-turbo-1step-v1/003/noise.npz",
+      "original_noise_sha256": "6fe0c06d46f0e9b229e07956d21a3af13ea147d8093ea540919f0476ae44b339"
+    },
+    {
+      "index": 4,
+      "seed": 202609214004,
+      "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+      "warmup": false,
+      "original_noise_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/sdxl-turbo-1step-v1/004/noise.npz",
+      "original_noise_sha256": "d34ccca02a5f73a86f2a92eb2db2f6aa50d797d73b08aee43a9dd1cb51b46a8b"
+    },
+    {
+      "index": 5,
+      "seed": 202609214005,
+      "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+      "warmup": false,
+      "original_noise_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/sdxl-turbo-1step-v1/005/noise.npz",
+      "original_noise_sha256": "6c9dd1721504893c3146711b91773058b7111dead63dfbdf5e55f90565c7266c"
+    },
+    {
+      "index": 6,
+      "seed": 202609214006,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+      "warmup": false,
+      "original_noise_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/sdxl-turbo-1step-v1/006/noise.npz",
+      "original_noise_sha256": "3788bf4a71384a620895b2fc872fbdf2a1a96fd678fa1d3c9ff32c69071c8345"
+    },
+    {
+      "index": 7,
+      "seed": 202609214007,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+      "warmup": false,
+      "original_noise_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/sdxl-turbo-1step-v1/007/noise.npz",
+      "original_noise_sha256": "d363df90a431c42c6149fb76bb444483bbab5267a3996d849e0f9d481b542877"
+    }
+  ],
+  "count": 8,
+  "case_manifest_sha256": null,
+  "prompt_prefix": "",
+  "lora": null,
+  "cached_text": true,
+  "warmup_count": 1,
+  "all_outputs_retained": true,
+  "component_provenance_sha256": "4e18b462e1e07d35fb753ecb89dadabfd2d66213646f30467ee351f2bb36b40a",
+  "text_encoders_trained": false,
+  "clear_unused_mps_cache_before_vae": true,
+  "noise": "Fresh CPU float32 randn [1,4,resolution/8,resolution/8]; same numeric seeds, different512/1024 latent shapes, not matched identities",
+  "timing_scope": "CPU RNG/fresh noise + transfer + text encoding or cached-embedding transfer + DPM++2M/UNet + originalVAE + PIL + grayscaleWebP; fixed conditioning preparation excluded in cached mode; excludes other artifact writes, model load, warmup, HTTP, queueing and hypothetical retries",
+  "load_strategy": "Verified FP16 components: CLIPs directly toMPS, save all conditioning onCPU, release CLIPs and clearcache, then UNet/VAE directly toMPS",
+  "vae_tiling": {
+    "enabled": true,
+    "sample_tile": 512,
+    "latent_tile": 64,
+    "overlap": 0.25
+  },
+  "post_trained": false,
+  "production_approved": false,
+  "server_latency_proven": false,
+  "source_sha256": "29074f11186a683ab8ae42d4cfa05e89857b874b27eea26747e93e2830abdc03",
+  "native_review_sha256": null
+}

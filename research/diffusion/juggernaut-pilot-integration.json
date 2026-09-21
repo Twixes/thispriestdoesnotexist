@@ -1,0 +1,21 @@
+{
+  "purpose": "Minimal separate Juggernaut wrappers around proven SDXL cache/trainer; no model execution",
+  "shared_trainer_unchanged": true,
+  "sources": {
+    "cache_sdxl_training.py": "8efdc451bf70d8c6a838b06a950c7dd71a4871913c587aa07130ae6670122b4c",
+    "train_sdxl_pilot.py": "49cd791d62923686628013164ea0f486d53f5e67dc27cf8c09bbbaa941d52760"
+  },
+  "prepared_files": {
+    "juggernaut_pilot.py": "b1cece699ab0d83f1658850ebe940acbf725103d26a4da7564fff754f8b80f92",
+    "cache_juggernaut_training.py": "f618333d10a4a066a577ddf48be205fdabae30340899b4958d4132557dcbc79d",
+    "train_juggernaut_pilot.py": "cfaf985e23604dc4906facf56b2f032f6d1ba4bdb1f323a48e302200bc075a3f",
+    "juggernaut-pilot-protocol.json": "df1b70eff72814ff626921b077efe3bc90cc8ff21d25b1cafefd6a2e3d404a27",
+    "juggernaut-pilot-integration.patch": "814576ea16309a1b2d9b3f99673d8e95cfc590c21817b3027848527ab480736a"
+  },
+  "validation": [
+    "Python AST parse",
+    "Exact exported component file hashes and tensor-equality manifest",
+    "Source model, dataset, development-manifest and shared trainer hashes"
+  ],
+  "model_load_or_training_performed": false
+}

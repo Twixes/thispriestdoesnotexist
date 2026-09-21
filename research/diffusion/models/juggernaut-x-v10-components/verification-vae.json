@@ -1,0 +1,3882 @@
+{
+  "component": "vae",
+  "tensor_count": 248,
+  "equal": true,
+  "before": {
+    "decoder.conv_in.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "3242ada8dab6e67ac48c67c0025a46393a79a9929008452d7d49237fd15e6c3b"
+    },
+    "decoder.conv_in.weight": {
+      "shape": [
+        512,
+        4,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "542d5f9721677056967265d48dc32d7498c7bcb5c8881244e3608ca2a0c87171"
+    },
+    "decoder.conv_norm_out.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c84a9cacb1817cbc85726356e1a2156e028c208ee4c5a17a16f5baa4768811e8"
+    },
+    "decoder.conv_norm_out.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e8718db0209cb164ed24d91e1a8b659013d35c342af996cc7c526978b99cae80"
+    },
+    "decoder.conv_out.bias": {
+      "shape": [
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4d67c787ab6bbc2f2ceebc1ad495f3a22352cabd5babd8f286e18c1041268b7e"
+    },
+    "decoder.conv_out.weight": {
+      "shape": [
+        3,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8d38d20b04b700458b466422a94289e07e744b97b7c37a72894c9a59873ccc27"
+    },
+    "decoder.mid_block.attentions.0.group_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "bf80c9f7454dc1bc394513e1cb926900280050cc6cdac46917038bc9cee808eb"
+    },
+    "decoder.mid_block.attentions.0.group_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "de5ebf647f0ce5369326206736adc1b83310707acb64c2a812b1af4df5b695c7"
+    },
+    "decoder.mid_block.attentions.0.to_k.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d696a1c674dbfd7df2ceb9e5391ebab87cf2066d807bd945dc46283f33470a6b"
+    },
+    "decoder.mid_block.attentions.0.to_k.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b27427141fe7a43134441bc5bc8a1acc03878d69b9b11335745b6cb9ca6f52ac"
+    },
+    "decoder.mid_block.attentions.0.to_out.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "823c480dcea45f6cf5b67507811140788165cc0ddb150e6beaeee54783a450ad"
+    },
+    "decoder.mid_block.attentions.0.to_out.0.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "92866f79cbcc80e2c1a82b1545c3b44910e5d45c86bb3d0ca8b638c96237d85b"
+    },
+    "decoder.mid_block.attentions.0.to_q.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f10724f9f046cef869deba32e67c5818b0003db111f7161fc58abea63b226f40"
+    },
+    "decoder.mid_block.attentions.0.to_q.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "418e9f969fb41dda35a138b189e2ded84bfe6b9315f83aece42737e598346266"
+    },
+    "decoder.mid_block.attentions.0.to_v.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c06f54790c20205957f5557c23f48d9451956408a963394c5206435a9fd1e538"
+    },
+    "decoder.mid_block.attentions.0.to_v.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6b6e9244d2e17e3666b0a8004d53b035976e9448ca4f0acaf6b4f046f6799bbc"
+    },
+    "decoder.mid_block.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "85fe25aeb1ea528b57e84c33fbdcebae173bc00fedd11f4381e8680b4d40b001"
+    },
+    "decoder.mid_block.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "68ba41a01da6d225d6990fa9e89658d2ce191c6b163df9a86edaa79126d64f91"
+    },
+    "decoder.mid_block.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9a5ac1aa70e9e8de4411b6b50a53a4853a02058e6e70fa684b584637243ff04d"
+    },
+    "decoder.mid_block.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c597d4555fa3cc5a98a7cfdc7c587a49fe975e90eecb533250edc69aab7e9ebe"
+    },
+    "decoder.mid_block.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "81c032b02fce6dd7abe81840e54e0470b6510e5b30671ccf6b2a8b478439a250"
+    },
+    "decoder.mid_block.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "10d8f54dc6a2862bdad19b7cd11b85af305deef84a688b5c0a31836f364219a7"
+    },
+    "decoder.mid_block.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "34e97f59151561915a90b46b5aae2030945ea818a7072f7ca51c5cfd861ff185"
+    },
+    "decoder.mid_block.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6b82eaaf36c54f8fdf74b0d029d2fb3a53c040af6ad21bf5adcfb1e27da4ece8"
+    },
+    "decoder.mid_block.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7614bd0ad058a38501455156f202466f3a84e20fc440583d3814ed6c2f023ad9"
+    },
+    "decoder.mid_block.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "64761aee780a0528a414bad1c8bce5332b8cf99a40f05f4cc71566c5f7493472"
+    },
+    "decoder.mid_block.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2cbd9d358b838ef0b4d3c952fce63635ef1964070ac5327bdbdab82b853b610d"
+    },
+    "decoder.mid_block.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "26419f8b6a89ef8cd624835bdd88ff82107ac709e939c4e96ba83c4e25ac7835"
+    },
+    "decoder.mid_block.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "44429c87b900bd2372e931ccf19f61a75d8e39674bdd38773aaa3dccf4349967"
+    },
+    "decoder.mid_block.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7c2aa592a2d5d60acd2e7f2e2eb0dab54358b91e82d066cd717a6415f782cba2"
+    },
+    "decoder.mid_block.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "fc0e4ca19b4ed49032eb017877d436c477e58fa026f54f62f6d4491e2f18fb63"
+    },
+    "decoder.mid_block.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "05fce4237d6990bb5262c8ce305fce28c85c767a69e20d0c2f3029c2f309496b"
+    },
+    "decoder.up_blocks.0.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d6db8c4270c3b004e2e0bb27bd86f78d697f37f56f641b15881c16159661d81e"
+    },
+    "decoder.up_blocks.0.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2414fb6f21e9f5c04a5cabf3d01d6aa6bc7fba3dac7cef881ff6559eeaf2b967"
+    },
+    "decoder.up_blocks.0.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5b5cf62e791fbb89cb3d9e4ea5b2a9dcbefc93894ae56f0b3072115cb2edd272"
+    },
+    "decoder.up_blocks.0.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0964ce87148760ae40a04284f7a7da72b7e0a5c040b2e8607197cb1407446aa1"
+    },
+    "decoder.up_blocks.0.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9f092dfb7a2b2018995275cb9f2e9bcc588a9dc60786fbead392d4f77e862770"
+    },
+    "decoder.up_blocks.0.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "967e4dff039614e734084ec9422df6bcf0d81065ceb2a9e21b018db10e79cc67"
+    },
+    "decoder.up_blocks.0.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9d7a629ee6b73fa2e1bfd7e552af9bcf72c250ca0b40f530e1b3c00ca919aec8"
+    },
+    "decoder.up_blocks.0.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9431f47ab78ac4b6df22d3f8651a306d8fef95a4a677c66a9f0f80a33cde1755"
+    },
+    "decoder.up_blocks.0.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "126bc4c8a6872f53fc87274eec11cce4a69e4732c571cacecf48a6fdcba190a7"
+    },
+    "decoder.up_blocks.0.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f99975dc43760d6613ff62cc44e9687a476cc746c4f860fa5bdcf879012b44a0"
+    },
+    "decoder.up_blocks.0.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e51ab79f0749e5f0f7a3f41d6094adc48d58c74f495d73276cd80e08bdbb71c4"
+    },
+    "decoder.up_blocks.0.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "97bc6b940c66f87b085f7683c6c3287896164b37d5d9e9d01a13f6aa1c08a1b6"
+    },
+    "decoder.up_blocks.0.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "82285b019cc3c48e5e35d0b7e5beb4dcb841526ffd5b40f31223c5e6d9b79d3a"
+    },
+    "decoder.up_blocks.0.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f979ab1fcd6a742b2f2ea8deb2321835452b4ed5cf552e4117e4e742e1e1528b"
+    },
+    "decoder.up_blocks.0.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f493efb2bec480442ce79424938a682091b1c127ea968960bf37a63db194dadb"
+    },
+    "decoder.up_blocks.0.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "362c88cbaa394e335fd8771fc051228f8398cd44389705a2f48313490c84ef44"
+    },
+    "decoder.up_blocks.0.resnets.2.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8d704be950f2683d78a49a2b8931d4a12aaf5ca9a271717124ddeeaa17502328"
+    },
+    "decoder.up_blocks.0.resnets.2.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e127a9322613fec5b268927c31f7abc52d3421433aa222e9d6113f4bcd154dcc"
+    },
+    "decoder.up_blocks.0.resnets.2.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "95bed9ec07ae0a42fc73fd3ca3107b24800ee86cfad28820e20a1a1f25a41df5"
+    },
+    "decoder.up_blocks.0.resnets.2.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5f1360a2fec49b54eb8efc8d650ae269f137c424d35138dd623407d40fc8041e"
+    },
+    "decoder.up_blocks.0.resnets.2.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9170adf77478a466271dd15ef6cb9bed36286c2e8a54f82c675da92791e4327d"
+    },
+    "decoder.up_blocks.0.resnets.2.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "499228fdd92608ad6c0219f9cef580dd35349b3bf9e78dc75eb19535bb989830"
+    },
+    "decoder.up_blocks.0.resnets.2.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "06a85406e9e934b79731c92ec1be38bb872068dcaca4e1a962b1dfaf59c0082d"
+    },
+    "decoder.up_blocks.0.resnets.2.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "192f1a8ec442c52e65fbe153273f3e4341b9f4a54aad9db6e383a412e56435f8"
+    },
+    "decoder.up_blocks.0.upsamplers.0.conv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e6c39fd89848822fd76a6f7b78b138c8472329d4fc02564e588c97c58093b5e5"
+    },
+    "decoder.up_blocks.0.upsamplers.0.conv.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7130bb9bb0e1ac2f0154603d8f532f7af835e091008070574b86c824ef69844e"
+    },
+    "decoder.up_blocks.1.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "50a611d7e307efa344513aba6d5a47b3967ad4c60d13d46e404f71e3a74a4856"
+    },
+    "decoder.up_blocks.1.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d7d0567d6df5b8a0ed385af58b3726839855d6148f32069e92c9a136e0a80318"
+    },
+    "decoder.up_blocks.1.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d6d6066ea3817301616d7346f0d8b2cac64fbc0aafdf4d7c77d1d19c3e949137"
+    },
+    "decoder.up_blocks.1.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8ca3013a980b19d159e14eaa172ccee2387199216cba94d8f7c0a6707b843e04"
+    },
+    "decoder.up_blocks.1.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "95a3b8741a6ccd9f918c0a59f5575d7291043c97255105b36b356c20e8d220fe"
+    },
+    "decoder.up_blocks.1.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c7334309adb675402610828f5435a5bdd815a3d28a5b0a51f8fee59476b77c06"
+    },
+    "decoder.up_blocks.1.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "94a7138d15b98e3e5cb54a03df8555da812bd0ec3aaff471c1cede122d0c281a"
+    },
+    "decoder.up_blocks.1.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6c19bf6a10380c9d4fc056fef1fcdd5036aecc9872c616fcb6e3cb16c12d5e5a"
+    },
+    "decoder.up_blocks.1.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "bb39b92f7bee15ecfff1e81c85e74cb0f0594e609a1783b72fa6b777999679bf"
+    },
+    "decoder.up_blocks.1.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "af32a2ee14857fafc373bcf342c66b10ce18ada508bae1aea7a2d104f5745a99"
+    },
+    "decoder.up_blocks.1.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8bab9672239c4a8267d722d2eebe93d44c6ca08e5c1a740e222ca8d6ff6c18fb"
+    },
+    "decoder.up_blocks.1.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "02a0bc1459f9b697cc42baec1dec018635d80d5f963d4a27f487f752fc1761ff"
+    },
+    "decoder.up_blocks.1.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2e1a0294882ddefe0d91952385ea397e67af3126135f67aec3d313123e028665"
+    },
+    "decoder.up_blocks.1.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2497399b0445be2103bd06ee9c1b1821c1f72c7dbc7c5d7612261c2ddca33806"
+    },
+    "decoder.up_blocks.1.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "397792cbdaf287e9e9c6cf34ae3823bfb03f1eeb15b0d6c6878660198c686333"
+    },
+    "decoder.up_blocks.1.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9af426f3ab0fb312441ae57d2cf8e12802701ee5b125a55f854e6c5714731917"
+    },
+    "decoder.up_blocks.1.resnets.2.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "90c48425a84a363713f23a8319d7c8c3c6c3d9932a43ccaaf33e34d670013080"
+    },
+    "decoder.up_blocks.1.resnets.2.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "75dcf6ef6f6acb37c4b99eddaacedd3fcd87f40735708ce1e462ed270a668656"
+    },
+    "decoder.up_blocks.1.resnets.2.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "963c7d2e31906e2a2ca1c6322946baace0d25b5a2958e04e841eae5037657758"
+    },
+    "decoder.up_blocks.1.resnets.2.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6aed666d1feef4bea2b38a1d71c4b7ea322b01168d038b8c72b8e8601512f555"
+    },
+    "decoder.up_blocks.1.resnets.2.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ffb5b7103aafd78e0951beb8aaf97d3b91319b58121aaf25fc8e8fc7a10e1a35"
+    },
+    "decoder.up_blocks.1.resnets.2.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7453b1fc98d7cc8582901c3f1cb5846b1795fde63dd28653766b53d40a806b5d"
+    },
+    "decoder.up_blocks.1.resnets.2.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "375b6a31732ab5ae3e0465c250693482da403c5e86ed138057ce99c82b5a18a0"
+    },
+    "decoder.up_blocks.1.resnets.2.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "55d8ca65bddb0d003ebf5166fa51963e9f112d2ddfbf73f480ec85fad32118a4"
+    },
+    "decoder.up_blocks.1.upsamplers.0.conv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "92f75ca598c48940df53f2a485d2e0f901560e78a1383d4bf104a9bf66242065"
+    },
+    "decoder.up_blocks.1.upsamplers.0.conv.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "81c340835aa867156bf841ea6f2238834d84380fb7f4c88755d44984e5c48e52"
+    },
+    "decoder.up_blocks.2.resnets.0.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "fb720ec1ddf55809a303d5191f35da7d5d8b423a4d9efdfd0739d7901ea61a3e"
+    },
+    "decoder.up_blocks.2.resnets.0.conv1.weight": {
+      "shape": [
+        256,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5caf088701fa908c8cf621609f6df9b16412e65a683909f524206d84fc011e29"
+    },
+    "decoder.up_blocks.2.resnets.0.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b3dfd4da276d9ee726e3b6ae8d49684af07277c8dfb770960c3b5767ddd594ea"
+    },
+    "decoder.up_blocks.2.resnets.0.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "577128c524ffd739a387fea04802a8563ffec56412b3c4d117e6ec7638061477"
+    },
+    "decoder.up_blocks.2.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "20ad0725a625dda9064a107e21e4e6a1c1b48d093c5d309a6c0c97903082da7f"
+    },
+    "decoder.up_blocks.2.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        256,
+        512,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5e48cbd957ba9b4b158ede02a7801860eaf8d9707f669f2127369c7cd1cbaa67"
+    },
+    "decoder.up_blocks.2.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b1ecb07f47e1c2b0fb6624acf5cddd24f13d2afffc5c5143d7a1751b509d3d1e"
+    },
+    "decoder.up_blocks.2.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "07042fb5ade5d4ca6ac1095b0687c7ebbe63affc89b1a2ac2b3fcfc445f586a5"
+    },
+    "decoder.up_blocks.2.resnets.0.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "800ef08ac9c808f6a9a3f3063fb8cf4385a412dd9f2520563b43bbc91cccfeaa"
+    },
+    "decoder.up_blocks.2.resnets.0.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "937dbebb23dd22a62e3b90a58148d14d01252bcf5be07b9d2fe2e8c94771981b"
+    },
+    "decoder.up_blocks.2.resnets.1.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5d783dbcf3309b5fba4113e3f77b8c1f6833caaea2ee7bc600fefdfdbd899c07"
+    },
+    "decoder.up_blocks.2.resnets.1.conv1.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c4f5aec705f6881ac23760daaef5a64fc19d6d1253804900d5f19da169970c36"
+    },
+    "decoder.up_blocks.2.resnets.1.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "80f6bab5ef48b603ab6f0f380bcd2d004377fe6b403114fcc311ed76a5474be1"
+    },
+    "decoder.up_blocks.2.resnets.1.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "3a8932be135ee33b95df4e705101ec907bc978d3939b3665ab0b429e8b337ec8"
+    },
+    "decoder.up_blocks.2.resnets.1.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2490e9a48ecb8a98261c75db35a8d10d9fa8491dfdd34a72f0efebc605afc1a7"
+    },
+    "decoder.up_blocks.2.resnets.1.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0fac2d91f54174ceeccf63be906d182c383f4d582675502f7bb8241cd76679ed"
+    },
+    "decoder.up_blocks.2.resnets.1.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "cc4a51ff4d11fafaa49f3973fe59514bc49c7907c4f9cdfba49979b2f35215ec"
+    },
+    "decoder.up_blocks.2.resnets.1.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e56f4847cf9ebc04a6ed39adb484e9915598bca4a0b33547b915c4453bbf44ad"
+    },
+    "decoder.up_blocks.2.resnets.2.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "53345d13dabf6ff5be0861466fda1c91ded6a83ed69fe39fdcd5ea52a3b340cb"
+    },
+    "decoder.up_blocks.2.resnets.2.conv1.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "df7720b31e1921d37a12d57bdb007b233602547c70f90389dd4d15f50fcedac8"
+    },
+    "decoder.up_blocks.2.resnets.2.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5c79a1bcd004a90f2509528d72a34da91243fdbacb3665a3305ad6d9631f4fd6"
+    },
+    "decoder.up_blocks.2.resnets.2.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ddbd38d1f4d953915efc7b3fe4ea02cbf2253df14d4975126e4ee792a59afb67"
+    },
+    "decoder.up_blocks.2.resnets.2.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2b6e6f98a32e63b64672ef93dbee6ee12dca8bfeec0ed985f3c959e88a87d8ba"
+    },
+    "decoder.up_blocks.2.resnets.2.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "322c5ce7774b024d66fe7ff62a2dbf5083cf73ff3fbbfb2a9ab9bbb2a9182733"
+    },
+    "decoder.up_blocks.2.resnets.2.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7c25a15c501332b0f7b0e573fb08f48692c19356c886f5268ea649ccb0d797dc"
+    },
+    "decoder.up_blocks.2.resnets.2.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0b5baa64b105c9a87d83608b407cddc2d4389353bc22ae2edd349ced7c30aad9"
+    },
+    "decoder.up_blocks.2.upsamplers.0.conv.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "08c76829e87fa1871e0ebc37280b49d1d2d82359f20d9e9f9070122c719bdec0"
+    },
+    "decoder.up_blocks.2.upsamplers.0.conv.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "269135bce6d834d2ca5acdf514adc502ddca3805e75acf6a047698ed13f2740c"
+    },
+    "decoder.up_blocks.3.resnets.0.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2566cfd246a2796e7955b1f4dd3b16445c4ecb134988e0829cc75d9c76c1e37e"
+    },
+    "decoder.up_blocks.3.resnets.0.conv1.weight": {
+      "shape": [
+        128,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7962fb7f2d5b2a868b13136a48d3b2cce8f8ff64d0d7c1fefabe9ef618679ddb"
+    },
+    "decoder.up_blocks.3.resnets.0.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "31948993f62cbedb82a0b8dc1ec074e8c14ca762dc20da4be9ade5bb77a52077"
+    },
+    "decoder.up_blocks.3.resnets.0.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b2dac393d68504f9d652b518e2c1e73c4858b03c31cce5d7421e827adbe266d5"
+    },
+    "decoder.up_blocks.3.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a6c836b6f4ae9831347af9d6153581bf221b94d1e190a3a596e9391e7c9c6c4f"
+    },
+    "decoder.up_blocks.3.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5a4fb12cecfc05c38df960d21aaece5930f34ffe054c49d39351d6ef06001095"
+    },
+    "decoder.up_blocks.3.resnets.0.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "33bfc895b9b07cab81b1f78dc18d9f28872b7960986f472894f070176013a6b0"
+    },
+    "decoder.up_blocks.3.resnets.0.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "50bddf6ba40f38183d21653cca20c5a1f2f636c9ebe59acabfd9eaadbfafbde0"
+    },
+    "decoder.up_blocks.3.resnets.0.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "959d2e3d6ee918c793af7e7954375f33052ea801dc275d5f7c4aecbcbeb80888"
+    },
+    "decoder.up_blocks.3.resnets.0.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f178a66bfe98d3198419759e6bc21360a709431b132a06861f2f2db6045f2889"
+    },
+    "decoder.up_blocks.3.resnets.1.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ed245d404fc62d8b028cd72e0c41144f72c6e8f47b6f8651a8d581f4f0d3db25"
+    },
+    "decoder.up_blocks.3.resnets.1.conv1.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2217eed36becbc1e39becb3bc048294e46ab96c441982fc53be744d107f5bf82"
+    },
+    "decoder.up_blocks.3.resnets.1.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8b76777f1bc951b2c8e035b6fac46eecc9742cc24d170de521886276a56b0021"
+    },
+    "decoder.up_blocks.3.resnets.1.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "cbe339ce246961b564c14d2b5db6bdfa6abf55accef9409081ffa47bf7af98b5"
+    },
+    "decoder.up_blocks.3.resnets.1.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "002d52b367b50d2075693ad48f06054b7aadbeb11ca2e20756ae74917a8a6bd2"
+    },
+    "decoder.up_blocks.3.resnets.1.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "dd67d044379b21257a914938ec43cba32c7bccda3b137b87302ae80952d15cea"
+    },
+    "decoder.up_blocks.3.resnets.1.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "322ceb7d14880bcc9bb085b9fbce2113cf2e122c4059856421627289a0740ba3"
+    },
+    "decoder.up_blocks.3.resnets.1.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c81879f9adce3d1812e67167c593e96cd58920f12e383edff676971634dca142"
+    },
+    "decoder.up_blocks.3.resnets.2.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e9a627700f49bef3f39216a69318712c7c6cb01e6477e12fc8a121f4214cebd6"
+    },
+    "decoder.up_blocks.3.resnets.2.conv1.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4ff1cefebbceb83f0b80a61dd6c0d56256f7645d45697795829c00bda4c2f1a7"
+    },
+    "decoder.up_blocks.3.resnets.2.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "314cd7f4b1bf0c84b7872d417c164569822dbcd2e5aa89a79d82a588e7caf091"
+    },
+    "decoder.up_blocks.3.resnets.2.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "521ed5970b94aa21939c215671b6cc5fe405edccbf375f5d92306247fca91ec6"
+    },
+    "decoder.up_blocks.3.resnets.2.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "04315b1ab1deff8ee06f4a8d0d7c4c35e52d892ec048a72f2426b61ab61c35f7"
+    },
+    "decoder.up_blocks.3.resnets.2.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c43a74006ed9dd7728b1815dfe6e4c513489481642439a0ab0f5093d09ba612d"
+    },
+    "decoder.up_blocks.3.resnets.2.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a53e7e62bb9bf1d7f73616d140d29ccf4686edce74abf728342aa7b5fc9dce1e"
+    },
+    "decoder.up_blocks.3.resnets.2.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c3f7ebfdda16039d3e63960afd1afebbbf0f9c583a4160c8ad5ef0cbc7ea7e96"
+    },
+    "encoder.conv_in.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f3cfd41c4bcea7c6e2f9fb3a89d37b700369131176f2b50ad322745136127436"
+    },
+    "encoder.conv_in.weight": {
+      "shape": [
+        128,
+        3,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "fc88dda11fe113db79ec33b848832d4a3a1aef9d54785cec60ce64cc97410c88"
+    },
+    "encoder.conv_norm_out.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9fd1bfaf3141bcf1b3d904230503a6eca53c1c42847f0f65c5f052b6dcea73cc"
+    },
+    "encoder.conv_norm_out.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5286350e31a33954c0a1403d1680b30c36d29a9517c9a2ec10330e4b9c2ac790"
+    },
+    "encoder.conv_out.bias": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "82e5ad481aea07a4ae0859a0a8434ce8ea78d701e6175e4bfe9638417a75f14e"
+    },
+    "encoder.conv_out.weight": {
+      "shape": [
+        8,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e3fdb571fc4f2f4b1d8ce03f00096f75e3b284f40d729e697bffaf9aacef3474"
+    },
+    "encoder.down_blocks.0.downsamplers.0.conv.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6b5fc14c728f199cb60c735b1ff7feb468a4d3b460962048b66074cf75874241"
+    },
+    "encoder.down_blocks.0.downsamplers.0.conv.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4fafe913d3fdfc6f281361478b995ddec163a26081d624b9ec6bedf11af0ecc6"
+    },
+    "encoder.down_blocks.0.resnets.0.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "62317c6c780e59e418004f30312d017ae10ed8ff2398eba4c299a7c5a4164418"
+    },
+    "encoder.down_blocks.0.resnets.0.conv1.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "98783aa428080689e9f7a848319ee77f4fb4a375a67ab5cb629dbd796520f228"
+    },
+    "encoder.down_blocks.0.resnets.0.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "afd6dce9ed0ea2a4382785b9231da76e60bfe51a720e14fd48079d1507d2596f"
+    },
+    "encoder.down_blocks.0.resnets.0.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4a28e53fb0bb71043b6b6dbe560e16fea2d7058c8a54d3fe280eb60cdefd1f15"
+    },
+    "encoder.down_blocks.0.resnets.0.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4c6ffceba75ebd12835aa9e02da07b5ff81adf9c39e5960aec58868a6250ca9b"
+    },
+    "encoder.down_blocks.0.resnets.0.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ffdc8056d9d86b84a703e9adf698ad26a6b9718ad95a674c060b268fbe39ef94"
+    },
+    "encoder.down_blocks.0.resnets.0.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7465b56e2b290d62ef083ebd6f1621269cfe5e81894b9f678064e0fe815d7d02"
+    },
+    "encoder.down_blocks.0.resnets.0.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "df54f4fbf539f39121be04df6adfee76d37c8fce40a04ad6b60a65bd3e76f7f3"
+    },
+    "encoder.down_blocks.0.resnets.1.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f9d7f756b8c039d077ffe80285bf78aba16f1c5ed1dbf402c353b8740ff06673"
+    },
+    "encoder.down_blocks.0.resnets.1.conv1.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ae506f6bf6025249d91abfcee6886c005f3d067effd3a0d2ee210509e85eadcc"
+    },
+    "encoder.down_blocks.0.resnets.1.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "953eebd5994c65ad6dcc111f310b56180275fde15c658e5067db8c3ba0c2168c"
+    },
+    "encoder.down_blocks.0.resnets.1.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d00e4c1fceadb1a73abc670bb5175dee68e01f0a881278fbd3d0bd9118402a98"
+    },
+    "encoder.down_blocks.0.resnets.1.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "68744bd7412e7dff832f7b689ca5e74d45f091cb1594e386976aae06d7306587"
+    },
+    "encoder.down_blocks.0.resnets.1.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9468fdd4f43146f307c36cbd7f24dcd00e9dbd70415683dd0f5ea15b41d81207"
+    },
+    "encoder.down_blocks.0.resnets.1.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9a73802fd1f61d65d65fddd4903665a02c516b4092a0af9585a5fc4c7a2c7e90"
+    },
+    "encoder.down_blocks.0.resnets.1.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b62e8c28b69d7be6ee5d71facc2edab6a8c27dbba0ecd51b3faafe24bab6f1fc"
+    },
+    "encoder.down_blocks.1.downsamplers.0.conv.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0acb24f6176aaa3282f495993e0f8f790d94006bd522f5e1f502486ee58e026c"
+    },
+    "encoder.down_blocks.1.downsamplers.0.conv.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e1054c55f3e5a6b9a9ac88ad77d6c14ba6a85ecc0fcf935bad76fe8029355c92"
+    },
+    "encoder.down_blocks.1.resnets.0.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b5c9773c11a4952b7962f08741fc82755668ce5b8412bbc1c3623dc982bc7211"
+    },
+    "encoder.down_blocks.1.resnets.0.conv1.weight": {
+      "shape": [
+        256,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f141a7398a9b3d2607b8445f580ebb5db7b81b4fd4186d11edb7f0ade366bdde"
+    },
+    "encoder.down_blocks.1.resnets.0.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "93d86268afbef770cbfe1c9f1b8954bfa06efcd2dfa338fd7bc65f59c4d575df"
+    },
+    "encoder.down_blocks.1.resnets.0.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b75be2b8953f67ac6f4ed75cca22b822ab83e1983ae1ebd88e02b135bfa2cc01"
+    },
+    "encoder.down_blocks.1.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f4daf5a91b40c9518a3b5394457b57cf3d7972c933e6b96ff8f92f778e77c3b9"
+    },
+    "encoder.down_blocks.1.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        256,
+        128,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "43d5d03c7331a4f617105d938fad8b345a8d5c74b7180321049757d809524410"
+    },
+    "encoder.down_blocks.1.resnets.0.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c34a22722b8f1e236e147782b110426d73c9057172040ff94227a8cdbc461f8b"
+    },
+    "encoder.down_blocks.1.resnets.0.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ecb53135d505e8866125cdb73fafa431077355b74116df46156f7fcd94f83489"
+    },
+    "encoder.down_blocks.1.resnets.0.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5326b62edc9c87f374209a80b22c2c227b44fd1f785ecafedee1f2ce5e44f8ba"
+    },
+    "encoder.down_blocks.1.resnets.0.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "119d9a849c99600d2734658704a1a9993fd7af64db01134045139ec54d531cd0"
+    },
+    "encoder.down_blocks.1.resnets.1.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "18cb77e0fe41485a7fcff2f62e1b466dc8cd361c1d7eb89c6b315357de9e9732"
+    },
+    "encoder.down_blocks.1.resnets.1.conv1.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a78d006a7c73fc4a8d128fd5c38d9db8128a57de93dabdd28c58d1a086e2f14d"
+    },
+    "encoder.down_blocks.1.resnets.1.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ce08bdef6e0b7d86d59545e8e5780f83bd08d343fd1bbd3f943374c4ccd88161"
+    },
+    "encoder.down_blocks.1.resnets.1.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b1d8ff73f29de66ac15188fed4948bbbefc7faa8c79e52376ee3c8af6bfe6942"
+    },
+    "encoder.down_blocks.1.resnets.1.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "1f399c54711026fd1530dde5b995f59d055c1c0763dc7d129383189bdfc43ce4"
+    },
+    "encoder.down_blocks.1.resnets.1.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4a29bf09777a81c3971a853748aed07dc5f189aa3ee542bf19fb4d37bdc8c739"
+    },
+    "encoder.down_blocks.1.resnets.1.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d07a6df68026b6c3b4dcd2704f2f31e6de00b0437830ceddb0c3d89229a5484f"
+    },
+    "encoder.down_blocks.1.resnets.1.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ec923139e9b56c4843e7a9803e87e4bb0d1d9cfe27614eed8321c746086d0750"
+    },
+    "encoder.down_blocks.2.downsamplers.0.conv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a28db8c5948d2263981dcbea91e467ff3a98e099133a8522767f868edbcac8dd"
+    },
+    "encoder.down_blocks.2.downsamplers.0.conv.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7663adf892257d7a28b599c84e2e8c34ac5f13f463db3aae7d1d538490c7393f"
+    },
+    "encoder.down_blocks.2.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "61f2dafb6bfcfe81a2ecdbbfa18eb95159cc99cbc446f4cdb187f3c6d74965ba"
+    },
+    "encoder.down_blocks.2.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "58f3337577efe0c217b7bec18eb1a8ee87070e8635d1162dbe9654b1a3668cbe"
+    },
+    "encoder.down_blocks.2.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8e05b85040d50514f2d7b030fea3c672355c9076282147fb2f67f6dd725ac1d0"
+    },
+    "encoder.down_blocks.2.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6d09d8b1169e05210b0febaec480e52c2cabc4ae67a8a3479b7ea08cee4bac01"
+    },
+    "encoder.down_blocks.2.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "1b85ee26881385ebb7340ac09b0560806321eec177750535e531de8519b1db93"
+    },
+    "encoder.down_blocks.2.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        512,
+        256,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5c0fa7655c45438d1c28f0632ffdf7c291305c9f3c1aa2d70e8a819537a1635e"
+    },
+    "encoder.down_blocks.2.resnets.0.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "fbd3616578ca8f5b2ef5aec26a7df21fd441b9a62f2f6a529eec02c73f299c8a"
+    },
+    "encoder.down_blocks.2.resnets.0.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a4cc19e2a0d4e46d5b77e568fe53155ff5f8f4e171345d6c0c129fd5ef40aa0f"
+    },
+    "encoder.down_blocks.2.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "61b984712ed14ca3b07cc75ea0d698a5d397886ec4a65206be35b7592a0b54df"
+    },
+    "encoder.down_blocks.2.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c16bca2252e458f8a826cda779aec3d28bcedf7a9efec4e2c6fc33c46ee325f0"
+    },
+    "encoder.down_blocks.2.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8e9727397e021125f9d5fd6ca5b3628b303c6148ae1f625bd1bba83d9a8d983b"
+    },
+    "encoder.down_blocks.2.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a5d0250c478467311cb3359d8189299844cf5154785351d0861b36ff0ec2b5fd"
+    },
+    "encoder.down_blocks.2.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "19da25da4437a01d1440be7a8113c811455f7f855c8fa98e2f987522319022d6"
+    },
+    "encoder.down_blocks.2.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7f0609f018e9443aba08da1debf4c446f4e446c7eb6dd2d84157ecc3b8fc05d6"
+    },
+    "encoder.down_blocks.2.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4cdfe7cd5ba09308d9f5c4e2717b5b42248df3b73ee73fefda7dafbe8bbbc359"
+    },
+    "encoder.down_blocks.2.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b86464ff186fb12940cf8dd3f7fb067c46c5b7b92f33166df201af86e6900071"
+    },
+    "encoder.down_blocks.2.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a9ef40a968603721910dead0137901d82ffc50706f79946d48b4ca26ad0587af"
+    },
+    "encoder.down_blocks.2.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "abf76b9484a6a3832372f1c163d406b5ef77aa3591c6d2ba5b129781664bdc56"
+    },
+    "encoder.down_blocks.3.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "12fd9f0e62bfc5e5f3d437d0f68627c2e03f3bd3e04c15b86e3ee32899f54ad4"
+    },
+    "encoder.down_blocks.3.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2978de64905855ceb92a5ce30b1016304d0a54aaf1316b8cb9cec73994f3f48b"
+    },
+    "encoder.down_blocks.3.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a118ba7ac402b5a2727476ab845ca288eb8bf4552b6f63140834bb0df00b50c2"
+    },
+    "encoder.down_blocks.3.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "446e76649dacf473206b62157eaedc96b53791a56ab2346fe43f882ab739250c"
+    },
+    "encoder.down_blocks.3.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "94126f12f43124331328b73e15eb613b2bd6e3e69c37ac799ed2ffdb088a74cd"
+    },
+    "encoder.down_blocks.3.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "06f4c8f7e7bbb4ce214fe9462ae8c143443872e0b789b618cba1774ab3d588e8"
+    },
+    "encoder.down_blocks.3.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a0b9ba23e89421520da5186e0942ef34ad21fa09af5404fec283530b9947b3ff"
+    },
+    "encoder.down_blocks.3.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "dc12400ccbd3a994dd9c70f869a704aa7e0ee7e81567b84012444f519c986e60"
+    },
+    "encoder.down_blocks.3.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f1d132d720f36733f72b1c41c84b211eea6f9d47236492e2f43d28f6db7b5a74"
+    },
+    "encoder.down_blocks.3.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0fc28a7ee7aff039578dc5312081f5503161cfdf87479c551ea77d3b3e71fd74"
+    },
+    "encoder.down_blocks.3.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0d0eb381eab562b1a1cd3a329aacf91b967db5279470b31a502a1cb7dc3163af"
+    },
+    "encoder.down_blocks.3.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "edf5c2a4db71629631a3ee1b12beb09ad327bccb23862b75c25bd3b07571dc4e"
+    },
+    "encoder.down_blocks.3.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4cfd0c1b194407e38525ed588f720b5dcdd3a68e0d95d1615dac8003661faf22"
+    },
+    "encoder.down_blocks.3.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "11e2ecb90b610d49f0c4dc88160b83a856db56aaa049074407da2f5f5faaec2d"
+    },
+    "encoder.down_blocks.3.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d9c06022412db078135d6f9b5ca99c424443761cf225b6c785ed683a221eff3a"
+    },
+    "encoder.down_blocks.3.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9eaea017502182485c7653ba5ce0d901d926e8b6b508d5cd6220a8c7df703791"
+    },
+    "encoder.mid_block.attentions.0.group_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2d33800ed749aa537f465daf254c5241584ec6a921f9057e6d0dceb26af11cf3"
+    },
+    "encoder.mid_block.attentions.0.group_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6d5fcae1b0b6f225e33e47e5dbc73fa686d971a9a6feb384106af0a4860d40db"
+    },
+    "encoder.mid_block.attentions.0.to_k.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2534f1cc4b51bcc5df8f699a8b18ada6df3dfb3603abd51cbd3838f0fc3137be"
+    },
+    "encoder.mid_block.attentions.0.to_k.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "bbe62d6c4d1077a475c722d607f135709a0cd653fcbe1cb76f47a1b19f5e0cb3"
+    },
+    "encoder.mid_block.attentions.0.to_out.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d7e073706fe0d688db1c90bd6dfedbff5f4d5be8de9a22e869f3dda50de1033d"
+    },
+    "encoder.mid_block.attentions.0.to_out.0.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8be46b9a171e3f3c72b3bd486796b456271ac39431138d52beafe0f324bf3d87"
+    },
+    "encoder.mid_block.attentions.0.to_q.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "18543b337598322c1b11e7fdf53350a6448896c021574fe71fe07ef0b5124117"
+    },
+    "encoder.mid_block.attentions.0.to_q.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "42177c1a4494163566e23f6877272d74cbe6b33704512075b9669e766ff932d0"
+    },
+    "encoder.mid_block.attentions.0.to_v.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "967ccc8a61126a6f58603fa5223d5ecfe5d351c1bdf369e092fe60e99eeaa226"
+    },
+    "encoder.mid_block.attentions.0.to_v.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "af4f1b89c7ef3a2da91fe185d1a0055d53c7c73a21d273634ae51efd32f93e40"
+    },
+    "encoder.mid_block.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c7425f29abae0600743a08cca827ce18fe299353646dcc5485b4c533658cc173"
+    },
+    "encoder.mid_block.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a5e5361d89e79f23b9f0e74c0dc27d229f01eb5bda77210347432db9b813d1ac"
+    },
+    "encoder.mid_block.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9dc88a9a09431fe6cbe6650e302aa7cf1fc464163f89325c76e63b9a351e1005"
+    },
+    "encoder.mid_block.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f854fb571a27bd0dc09098be26bb30a5470338cb808204542c1f6e9b3d1325e8"
+    },
+    "encoder.mid_block.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9e82812931ab5b7cb1167ed5c856cd683d4e3dcc41c8bd354d3a9b9933623826"
+    },
+    "encoder.mid_block.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "02fa5e1a836355becb2bfec613282c97133a18b152326140e6dd650dcc6e5918"
+    },
+    "encoder.mid_block.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6334361876dbbcc1b3f9019c723738bf45f1927ac262ce9164cbea6323c2ec4a"
+    },
+    "encoder.mid_block.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "90bcc7a4e6256012ec08092012fc6653c8aa99923bc2f841a7a0629e4904a332"
+    },
+    "encoder.mid_block.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b051379f728eb5d31f4b7473ba0ae9f47a906f66c037e6f1c6cee07004c1bb91"
+    },
+    "encoder.mid_block.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "1b3bd881afdd7247f889ccb7a8478ba6229e1772a372fad590cb3e39b9043afd"
+    },
+    "encoder.mid_block.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0267f30d3cdb6c807d628a3c72d70456826f7d3db00e23c0201f5128819419be"
+    },
+    "encoder.mid_block.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "399f058d2edaa4ed09fe753e31f32b6041c29a183e355209b5354d87d8581fb2"
+    },
+    "encoder.mid_block.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8a3c7902aa0e9bd78d8e7dc3ab57b70b8f3afd3f68163eb4e59f3970fae05686"
+    },
+    "encoder.mid_block.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f5b5df6b71cbb0438ec1cf7478fd2b4d172fff3614a2e07ee5d9b5404a3b6148"
+    },
+    "encoder.mid_block.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "753e98cf02629a8732515443949c5f6e9d2635dd49d9579690ba5732fa9d9e56"
+    },
+    "encoder.mid_block.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "1ba3b7cbf19128974bcacb53ab30b09c0390ccd70be653f278604e9e53989d02"
+    },
+    "post_quant_conv.bias": {
+      "shape": [
+        4
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a2c7a7f5ede34f8a6130f9e12386a2bcda286230406591db6256422e892f86d8"
+    },
+    "post_quant_conv.weight": {
+      "shape": [
+        4,
+        4,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d0b063b4afa136c309b3b48ce2ca8f71b8b7f0f7661db8e5602395b4347034ac"
+    },
+    "quant_conv.bias": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "913315e55184fbc9752a5e5eec27b7c77883a7ee3167f5983d3090f8cf7cd002"
+    },
+    "quant_conv.weight": {
+      "shape": [
+        8,
+        8,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "778b035fb1898508fe725a12782d6e3c19fe210c190d484d2bd2eae855a9a359"
+    }
+  },
+  "after": {
+    "decoder.conv_in.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "3242ada8dab6e67ac48c67c0025a46393a79a9929008452d7d49237fd15e6c3b"
+    },
+    "decoder.conv_in.weight": {
+      "shape": [
+        512,
+        4,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "542d5f9721677056967265d48dc32d7498c7bcb5c8881244e3608ca2a0c87171"
+    },
+    "decoder.conv_norm_out.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c84a9cacb1817cbc85726356e1a2156e028c208ee4c5a17a16f5baa4768811e8"
+    },
+    "decoder.conv_norm_out.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e8718db0209cb164ed24d91e1a8b659013d35c342af996cc7c526978b99cae80"
+    },
+    "decoder.conv_out.bias": {
+      "shape": [
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4d67c787ab6bbc2f2ceebc1ad495f3a22352cabd5babd8f286e18c1041268b7e"
+    },
+    "decoder.conv_out.weight": {
+      "shape": [
+        3,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8d38d20b04b700458b466422a94289e07e744b97b7c37a72894c9a59873ccc27"
+    },
+    "decoder.mid_block.attentions.0.group_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "bf80c9f7454dc1bc394513e1cb926900280050cc6cdac46917038bc9cee808eb"
+    },
+    "decoder.mid_block.attentions.0.group_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "de5ebf647f0ce5369326206736adc1b83310707acb64c2a812b1af4df5b695c7"
+    },
+    "decoder.mid_block.attentions.0.to_k.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d696a1c674dbfd7df2ceb9e5391ebab87cf2066d807bd945dc46283f33470a6b"
+    },
+    "decoder.mid_block.attentions.0.to_k.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b27427141fe7a43134441bc5bc8a1acc03878d69b9b11335745b6cb9ca6f52ac"
+    },
+    "decoder.mid_block.attentions.0.to_out.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "823c480dcea45f6cf5b67507811140788165cc0ddb150e6beaeee54783a450ad"
+    },
+    "decoder.mid_block.attentions.0.to_out.0.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "92866f79cbcc80e2c1a82b1545c3b44910e5d45c86bb3d0ca8b638c96237d85b"
+    },
+    "decoder.mid_block.attentions.0.to_q.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f10724f9f046cef869deba32e67c5818b0003db111f7161fc58abea63b226f40"
+    },
+    "decoder.mid_block.attentions.0.to_q.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "418e9f969fb41dda35a138b189e2ded84bfe6b9315f83aece42737e598346266"
+    },
+    "decoder.mid_block.attentions.0.to_v.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c06f54790c20205957f5557c23f48d9451956408a963394c5206435a9fd1e538"
+    },
+    "decoder.mid_block.attentions.0.to_v.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6b6e9244d2e17e3666b0a8004d53b035976e9448ca4f0acaf6b4f046f6799bbc"
+    },
+    "decoder.mid_block.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "85fe25aeb1ea528b57e84c33fbdcebae173bc00fedd11f4381e8680b4d40b001"
+    },
+    "decoder.mid_block.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "68ba41a01da6d225d6990fa9e89658d2ce191c6b163df9a86edaa79126d64f91"
+    },
+    "decoder.mid_block.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9a5ac1aa70e9e8de4411b6b50a53a4853a02058e6e70fa684b584637243ff04d"
+    },
+    "decoder.mid_block.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c597d4555fa3cc5a98a7cfdc7c587a49fe975e90eecb533250edc69aab7e9ebe"
+    },
+    "decoder.mid_block.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "81c032b02fce6dd7abe81840e54e0470b6510e5b30671ccf6b2a8b478439a250"
+    },
+    "decoder.mid_block.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "10d8f54dc6a2862bdad19b7cd11b85af305deef84a688b5c0a31836f364219a7"
+    },
+    "decoder.mid_block.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "34e97f59151561915a90b46b5aae2030945ea818a7072f7ca51c5cfd861ff185"
+    },
+    "decoder.mid_block.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6b82eaaf36c54f8fdf74b0d029d2fb3a53c040af6ad21bf5adcfb1e27da4ece8"
+    },
+    "decoder.mid_block.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7614bd0ad058a38501455156f202466f3a84e20fc440583d3814ed6c2f023ad9"
+    },
+    "decoder.mid_block.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "64761aee780a0528a414bad1c8bce5332b8cf99a40f05f4cc71566c5f7493472"
+    },
+    "decoder.mid_block.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2cbd9d358b838ef0b4d3c952fce63635ef1964070ac5327bdbdab82b853b610d"
+    },
+    "decoder.mid_block.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "26419f8b6a89ef8cd624835bdd88ff82107ac709e939c4e96ba83c4e25ac7835"
+    },
+    "decoder.mid_block.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "44429c87b900bd2372e931ccf19f61a75d8e39674bdd38773aaa3dccf4349967"
+    },
+    "decoder.mid_block.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7c2aa592a2d5d60acd2e7f2e2eb0dab54358b91e82d066cd717a6415f782cba2"
+    },
+    "decoder.mid_block.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "fc0e4ca19b4ed49032eb017877d436c477e58fa026f54f62f6d4491e2f18fb63"
+    },
+    "decoder.mid_block.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "05fce4237d6990bb5262c8ce305fce28c85c767a69e20d0c2f3029c2f309496b"
+    },
+    "decoder.up_blocks.0.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d6db8c4270c3b004e2e0bb27bd86f78d697f37f56f641b15881c16159661d81e"
+    },
+    "decoder.up_blocks.0.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2414fb6f21e9f5c04a5cabf3d01d6aa6bc7fba3dac7cef881ff6559eeaf2b967"
+    },
+    "decoder.up_blocks.0.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5b5cf62e791fbb89cb3d9e4ea5b2a9dcbefc93894ae56f0b3072115cb2edd272"
+    },
+    "decoder.up_blocks.0.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0964ce87148760ae40a04284f7a7da72b7e0a5c040b2e8607197cb1407446aa1"
+    },
+    "decoder.up_blocks.0.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9f092dfb7a2b2018995275cb9f2e9bcc588a9dc60786fbead392d4f77e862770"
+    },
+    "decoder.up_blocks.0.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "967e4dff039614e734084ec9422df6bcf0d81065ceb2a9e21b018db10e79cc67"
+    },
+    "decoder.up_blocks.0.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9d7a629ee6b73fa2e1bfd7e552af9bcf72c250ca0b40f530e1b3c00ca919aec8"
+    },
+    "decoder.up_blocks.0.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9431f47ab78ac4b6df22d3f8651a306d8fef95a4a677c66a9f0f80a33cde1755"
+    },
+    "decoder.up_blocks.0.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "126bc4c8a6872f53fc87274eec11cce4a69e4732c571cacecf48a6fdcba190a7"
+    },
+    "decoder.up_blocks.0.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f99975dc43760d6613ff62cc44e9687a476cc746c4f860fa5bdcf879012b44a0"
+    },
+    "decoder.up_blocks.0.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e51ab79f0749e5f0f7a3f41d6094adc48d58c74f495d73276cd80e08bdbb71c4"
+    },
+    "decoder.up_blocks.0.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "97bc6b940c66f87b085f7683c6c3287896164b37d5d9e9d01a13f6aa1c08a1b6"
+    },
+    "decoder.up_blocks.0.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "82285b019cc3c48e5e35d0b7e5beb4dcb841526ffd5b40f31223c5e6d9b79d3a"
+    },
+    "decoder.up_blocks.0.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f979ab1fcd6a742b2f2ea8deb2321835452b4ed5cf552e4117e4e742e1e1528b"
+    },
+    "decoder.up_blocks.0.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f493efb2bec480442ce79424938a682091b1c127ea968960bf37a63db194dadb"
+    },
+    "decoder.up_blocks.0.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "362c88cbaa394e335fd8771fc051228f8398cd44389705a2f48313490c84ef44"
+    },
+    "decoder.up_blocks.0.resnets.2.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8d704be950f2683d78a49a2b8931d4a12aaf5ca9a271717124ddeeaa17502328"
+    },
+    "decoder.up_blocks.0.resnets.2.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e127a9322613fec5b268927c31f7abc52d3421433aa222e9d6113f4bcd154dcc"
+    },
+    "decoder.up_blocks.0.resnets.2.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "95bed9ec07ae0a42fc73fd3ca3107b24800ee86cfad28820e20a1a1f25a41df5"
+    },
+    "decoder.up_blocks.0.resnets.2.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5f1360a2fec49b54eb8efc8d650ae269f137c424d35138dd623407d40fc8041e"
+    },
+    "decoder.up_blocks.0.resnets.2.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9170adf77478a466271dd15ef6cb9bed36286c2e8a54f82c675da92791e4327d"
+    },
+    "decoder.up_blocks.0.resnets.2.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "499228fdd92608ad6c0219f9cef580dd35349b3bf9e78dc75eb19535bb989830"
+    },
+    "decoder.up_blocks.0.resnets.2.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "06a85406e9e934b79731c92ec1be38bb872068dcaca4e1a962b1dfaf59c0082d"
+    },
+    "decoder.up_blocks.0.resnets.2.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "192f1a8ec442c52e65fbe153273f3e4341b9f4a54aad9db6e383a412e56435f8"
+    },
+    "decoder.up_blocks.0.upsamplers.0.conv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e6c39fd89848822fd76a6f7b78b138c8472329d4fc02564e588c97c58093b5e5"
+    },
+    "decoder.up_blocks.0.upsamplers.0.conv.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7130bb9bb0e1ac2f0154603d8f532f7af835e091008070574b86c824ef69844e"
+    },
+    "decoder.up_blocks.1.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "50a611d7e307efa344513aba6d5a47b3967ad4c60d13d46e404f71e3a74a4856"
+    },
+    "decoder.up_blocks.1.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d7d0567d6df5b8a0ed385af58b3726839855d6148f32069e92c9a136e0a80318"
+    },
+    "decoder.up_blocks.1.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d6d6066ea3817301616d7346f0d8b2cac64fbc0aafdf4d7c77d1d19c3e949137"
+    },
+    "decoder.up_blocks.1.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8ca3013a980b19d159e14eaa172ccee2387199216cba94d8f7c0a6707b843e04"
+    },
+    "decoder.up_blocks.1.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "95a3b8741a6ccd9f918c0a59f5575d7291043c97255105b36b356c20e8d220fe"
+    },
+    "decoder.up_blocks.1.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c7334309adb675402610828f5435a5bdd815a3d28a5b0a51f8fee59476b77c06"
+    },
+    "decoder.up_blocks.1.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "94a7138d15b98e3e5cb54a03df8555da812bd0ec3aaff471c1cede122d0c281a"
+    },
+    "decoder.up_blocks.1.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6c19bf6a10380c9d4fc056fef1fcdd5036aecc9872c616fcb6e3cb16c12d5e5a"
+    },
+    "decoder.up_blocks.1.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "bb39b92f7bee15ecfff1e81c85e74cb0f0594e609a1783b72fa6b777999679bf"
+    },
+    "decoder.up_blocks.1.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "af32a2ee14857fafc373bcf342c66b10ce18ada508bae1aea7a2d104f5745a99"
+    },
+    "decoder.up_blocks.1.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8bab9672239c4a8267d722d2eebe93d44c6ca08e5c1a740e222ca8d6ff6c18fb"
+    },
+    "decoder.up_blocks.1.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "02a0bc1459f9b697cc42baec1dec018635d80d5f963d4a27f487f752fc1761ff"
+    },
+    "decoder.up_blocks.1.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2e1a0294882ddefe0d91952385ea397e67af3126135f67aec3d313123e028665"
+    },
+    "decoder.up_blocks.1.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2497399b0445be2103bd06ee9c1b1821c1f72c7dbc7c5d7612261c2ddca33806"
+    },
+    "decoder.up_blocks.1.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "397792cbdaf287e9e9c6cf34ae3823bfb03f1eeb15b0d6c6878660198c686333"
+    },
+    "decoder.up_blocks.1.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9af426f3ab0fb312441ae57d2cf8e12802701ee5b125a55f854e6c5714731917"
+    },
+    "decoder.up_blocks.1.resnets.2.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "90c48425a84a363713f23a8319d7c8c3c6c3d9932a43ccaaf33e34d670013080"
+    },
+    "decoder.up_blocks.1.resnets.2.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "75dcf6ef6f6acb37c4b99eddaacedd3fcd87f40735708ce1e462ed270a668656"
+    },
+    "decoder.up_blocks.1.resnets.2.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "963c7d2e31906e2a2ca1c6322946baace0d25b5a2958e04e841eae5037657758"
+    },
+    "decoder.up_blocks.1.resnets.2.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6aed666d1feef4bea2b38a1d71c4b7ea322b01168d038b8c72b8e8601512f555"
+    },
+    "decoder.up_blocks.1.resnets.2.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ffb5b7103aafd78e0951beb8aaf97d3b91319b58121aaf25fc8e8fc7a10e1a35"
+    },
+    "decoder.up_blocks.1.resnets.2.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7453b1fc98d7cc8582901c3f1cb5846b1795fde63dd28653766b53d40a806b5d"
+    },
+    "decoder.up_blocks.1.resnets.2.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "375b6a31732ab5ae3e0465c250693482da403c5e86ed138057ce99c82b5a18a0"
+    },
+    "decoder.up_blocks.1.resnets.2.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "55d8ca65bddb0d003ebf5166fa51963e9f112d2ddfbf73f480ec85fad32118a4"
+    },
+    "decoder.up_blocks.1.upsamplers.0.conv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "92f75ca598c48940df53f2a485d2e0f901560e78a1383d4bf104a9bf66242065"
+    },
+    "decoder.up_blocks.1.upsamplers.0.conv.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "81c340835aa867156bf841ea6f2238834d84380fb7f4c88755d44984e5c48e52"
+    },
+    "decoder.up_blocks.2.resnets.0.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "fb720ec1ddf55809a303d5191f35da7d5d8b423a4d9efdfd0739d7901ea61a3e"
+    },
+    "decoder.up_blocks.2.resnets.0.conv1.weight": {
+      "shape": [
+        256,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5caf088701fa908c8cf621609f6df9b16412e65a683909f524206d84fc011e29"
+    },
+    "decoder.up_blocks.2.resnets.0.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b3dfd4da276d9ee726e3b6ae8d49684af07277c8dfb770960c3b5767ddd594ea"
+    },
+    "decoder.up_blocks.2.resnets.0.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "577128c524ffd739a387fea04802a8563ffec56412b3c4d117e6ec7638061477"
+    },
+    "decoder.up_blocks.2.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "20ad0725a625dda9064a107e21e4e6a1c1b48d093c5d309a6c0c97903082da7f"
+    },
+    "decoder.up_blocks.2.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        256,
+        512,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5e48cbd957ba9b4b158ede02a7801860eaf8d9707f669f2127369c7cd1cbaa67"
+    },
+    "decoder.up_blocks.2.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b1ecb07f47e1c2b0fb6624acf5cddd24f13d2afffc5c5143d7a1751b509d3d1e"
+    },
+    "decoder.up_blocks.2.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "07042fb5ade5d4ca6ac1095b0687c7ebbe63affc89b1a2ac2b3fcfc445f586a5"
+    },
+    "decoder.up_blocks.2.resnets.0.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "800ef08ac9c808f6a9a3f3063fb8cf4385a412dd9f2520563b43bbc91cccfeaa"
+    },
+    "decoder.up_blocks.2.resnets.0.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "937dbebb23dd22a62e3b90a58148d14d01252bcf5be07b9d2fe2e8c94771981b"
+    },
+    "decoder.up_blocks.2.resnets.1.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5d783dbcf3309b5fba4113e3f77b8c1f6833caaea2ee7bc600fefdfdbd899c07"
+    },
+    "decoder.up_blocks.2.resnets.1.conv1.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c4f5aec705f6881ac23760daaef5a64fc19d6d1253804900d5f19da169970c36"
+    },
+    "decoder.up_blocks.2.resnets.1.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "80f6bab5ef48b603ab6f0f380bcd2d004377fe6b403114fcc311ed76a5474be1"
+    },
+    "decoder.up_blocks.2.resnets.1.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "3a8932be135ee33b95df4e705101ec907bc978d3939b3665ab0b429e8b337ec8"
+    },
+    "decoder.up_blocks.2.resnets.1.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2490e9a48ecb8a98261c75db35a8d10d9fa8491dfdd34a72f0efebc605afc1a7"
+    },
+    "decoder.up_blocks.2.resnets.1.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0fac2d91f54174ceeccf63be906d182c383f4d582675502f7bb8241cd76679ed"
+    },
+    "decoder.up_blocks.2.resnets.1.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "cc4a51ff4d11fafaa49f3973fe59514bc49c7907c4f9cdfba49979b2f35215ec"
+    },
+    "decoder.up_blocks.2.resnets.1.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e56f4847cf9ebc04a6ed39adb484e9915598bca4a0b33547b915c4453bbf44ad"
+    },
+    "decoder.up_blocks.2.resnets.2.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "53345d13dabf6ff5be0861466fda1c91ded6a83ed69fe39fdcd5ea52a3b340cb"
+    },
+    "decoder.up_blocks.2.resnets.2.conv1.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "df7720b31e1921d37a12d57bdb007b233602547c70f90389dd4d15f50fcedac8"
+    },
+    "decoder.up_blocks.2.resnets.2.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5c79a1bcd004a90f2509528d72a34da91243fdbacb3665a3305ad6d9631f4fd6"
+    },
+    "decoder.up_blocks.2.resnets.2.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ddbd38d1f4d953915efc7b3fe4ea02cbf2253df14d4975126e4ee792a59afb67"
+    },
+    "decoder.up_blocks.2.resnets.2.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2b6e6f98a32e63b64672ef93dbee6ee12dca8bfeec0ed985f3c959e88a87d8ba"
+    },
+    "decoder.up_blocks.2.resnets.2.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "322c5ce7774b024d66fe7ff62a2dbf5083cf73ff3fbbfb2a9ab9bbb2a9182733"
+    },
+    "decoder.up_blocks.2.resnets.2.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7c25a15c501332b0f7b0e573fb08f48692c19356c886f5268ea649ccb0d797dc"
+    },
+    "decoder.up_blocks.2.resnets.2.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0b5baa64b105c9a87d83608b407cddc2d4389353bc22ae2edd349ced7c30aad9"
+    },
+    "decoder.up_blocks.2.upsamplers.0.conv.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "08c76829e87fa1871e0ebc37280b49d1d2d82359f20d9e9f9070122c719bdec0"
+    },
+    "decoder.up_blocks.2.upsamplers.0.conv.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "269135bce6d834d2ca5acdf514adc502ddca3805e75acf6a047698ed13f2740c"
+    },
+    "decoder.up_blocks.3.resnets.0.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2566cfd246a2796e7955b1f4dd3b16445c4ecb134988e0829cc75d9c76c1e37e"
+    },
+    "decoder.up_blocks.3.resnets.0.conv1.weight": {
+      "shape": [
+        128,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7962fb7f2d5b2a868b13136a48d3b2cce8f8ff64d0d7c1fefabe9ef618679ddb"
+    },
+    "decoder.up_blocks.3.resnets.0.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "31948993f62cbedb82a0b8dc1ec074e8c14ca762dc20da4be9ade5bb77a52077"
+    },
+    "decoder.up_blocks.3.resnets.0.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b2dac393d68504f9d652b518e2c1e73c4858b03c31cce5d7421e827adbe266d5"
+    },
+    "decoder.up_blocks.3.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a6c836b6f4ae9831347af9d6153581bf221b94d1e190a3a596e9391e7c9c6c4f"
+    },
+    "decoder.up_blocks.3.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5a4fb12cecfc05c38df960d21aaece5930f34ffe054c49d39351d6ef06001095"
+    },
+    "decoder.up_blocks.3.resnets.0.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "33bfc895b9b07cab81b1f78dc18d9f28872b7960986f472894f070176013a6b0"
+    },
+    "decoder.up_blocks.3.resnets.0.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "50bddf6ba40f38183d21653cca20c5a1f2f636c9ebe59acabfd9eaadbfafbde0"
+    },
+    "decoder.up_blocks.3.resnets.0.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "959d2e3d6ee918c793af7e7954375f33052ea801dc275d5f7c4aecbcbeb80888"
+    },
+    "decoder.up_blocks.3.resnets.0.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f178a66bfe98d3198419759e6bc21360a709431b132a06861f2f2db6045f2889"
+    },
+    "decoder.up_blocks.3.resnets.1.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ed245d404fc62d8b028cd72e0c41144f72c6e8f47b6f8651a8d581f4f0d3db25"
+    },
+    "decoder.up_blocks.3.resnets.1.conv1.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2217eed36becbc1e39becb3bc048294e46ab96c441982fc53be744d107f5bf82"
+    },
+    "decoder.up_blocks.3.resnets.1.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8b76777f1bc951b2c8e035b6fac46eecc9742cc24d170de521886276a56b0021"
+    },
+    "decoder.up_blocks.3.resnets.1.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "cbe339ce246961b564c14d2b5db6bdfa6abf55accef9409081ffa47bf7af98b5"
+    },
+    "decoder.up_blocks.3.resnets.1.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "002d52b367b50d2075693ad48f06054b7aadbeb11ca2e20756ae74917a8a6bd2"
+    },
+    "decoder.up_blocks.3.resnets.1.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "dd67d044379b21257a914938ec43cba32c7bccda3b137b87302ae80952d15cea"
+    },
+    "decoder.up_blocks.3.resnets.1.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "322ceb7d14880bcc9bb085b9fbce2113cf2e122c4059856421627289a0740ba3"
+    },
+    "decoder.up_blocks.3.resnets.1.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c81879f9adce3d1812e67167c593e96cd58920f12e383edff676971634dca142"
+    },
+    "decoder.up_blocks.3.resnets.2.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e9a627700f49bef3f39216a69318712c7c6cb01e6477e12fc8a121f4214cebd6"
+    },
+    "decoder.up_blocks.3.resnets.2.conv1.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4ff1cefebbceb83f0b80a61dd6c0d56256f7645d45697795829c00bda4c2f1a7"
+    },
+    "decoder.up_blocks.3.resnets.2.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "314cd7f4b1bf0c84b7872d417c164569822dbcd2e5aa89a79d82a588e7caf091"
+    },
+    "decoder.up_blocks.3.resnets.2.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "521ed5970b94aa21939c215671b6cc5fe405edccbf375f5d92306247fca91ec6"
+    },
+    "decoder.up_blocks.3.resnets.2.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "04315b1ab1deff8ee06f4a8d0d7c4c35e52d892ec048a72f2426b61ab61c35f7"
+    },
+    "decoder.up_blocks.3.resnets.2.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c43a74006ed9dd7728b1815dfe6e4c513489481642439a0ab0f5093d09ba612d"
+    },
+    "decoder.up_blocks.3.resnets.2.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a53e7e62bb9bf1d7f73616d140d29ccf4686edce74abf728342aa7b5fc9dce1e"
+    },
+    "decoder.up_blocks.3.resnets.2.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c3f7ebfdda16039d3e63960afd1afebbbf0f9c583a4160c8ad5ef0cbc7ea7e96"
+    },
+    "encoder.conv_in.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f3cfd41c4bcea7c6e2f9fb3a89d37b700369131176f2b50ad322745136127436"
+    },
+    "encoder.conv_in.weight": {
+      "shape": [
+        128,
+        3,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "fc88dda11fe113db79ec33b848832d4a3a1aef9d54785cec60ce64cc97410c88"
+    },
+    "encoder.conv_norm_out.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9fd1bfaf3141bcf1b3d904230503a6eca53c1c42847f0f65c5f052b6dcea73cc"
+    },
+    "encoder.conv_norm_out.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5286350e31a33954c0a1403d1680b30c36d29a9517c9a2ec10330e4b9c2ac790"
+    },
+    "encoder.conv_out.bias": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "82e5ad481aea07a4ae0859a0a8434ce8ea78d701e6175e4bfe9638417a75f14e"
+    },
+    "encoder.conv_out.weight": {
+      "shape": [
+        8,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e3fdb571fc4f2f4b1d8ce03f00096f75e3b284f40d729e697bffaf9aacef3474"
+    },
+    "encoder.down_blocks.0.downsamplers.0.conv.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6b5fc14c728f199cb60c735b1ff7feb468a4d3b460962048b66074cf75874241"
+    },
+    "encoder.down_blocks.0.downsamplers.0.conv.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4fafe913d3fdfc6f281361478b995ddec163a26081d624b9ec6bedf11af0ecc6"
+    },
+    "encoder.down_blocks.0.resnets.0.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "62317c6c780e59e418004f30312d017ae10ed8ff2398eba4c299a7c5a4164418"
+    },
+    "encoder.down_blocks.0.resnets.0.conv1.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "98783aa428080689e9f7a848319ee77f4fb4a375a67ab5cb629dbd796520f228"
+    },
+    "encoder.down_blocks.0.resnets.0.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "afd6dce9ed0ea2a4382785b9231da76e60bfe51a720e14fd48079d1507d2596f"
+    },
+    "encoder.down_blocks.0.resnets.0.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4a28e53fb0bb71043b6b6dbe560e16fea2d7058c8a54d3fe280eb60cdefd1f15"
+    },
+    "encoder.down_blocks.0.resnets.0.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4c6ffceba75ebd12835aa9e02da07b5ff81adf9c39e5960aec58868a6250ca9b"
+    },
+    "encoder.down_blocks.0.resnets.0.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ffdc8056d9d86b84a703e9adf698ad26a6b9718ad95a674c060b268fbe39ef94"
+    },
+    "encoder.down_blocks.0.resnets.0.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7465b56e2b290d62ef083ebd6f1621269cfe5e81894b9f678064e0fe815d7d02"
+    },
+    "encoder.down_blocks.0.resnets.0.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "df54f4fbf539f39121be04df6adfee76d37c8fce40a04ad6b60a65bd3e76f7f3"
+    },
+    "encoder.down_blocks.0.resnets.1.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f9d7f756b8c039d077ffe80285bf78aba16f1c5ed1dbf402c353b8740ff06673"
+    },
+    "encoder.down_blocks.0.resnets.1.conv1.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ae506f6bf6025249d91abfcee6886c005f3d067effd3a0d2ee210509e85eadcc"
+    },
+    "encoder.down_blocks.0.resnets.1.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "953eebd5994c65ad6dcc111f310b56180275fde15c658e5067db8c3ba0c2168c"
+    },
+    "encoder.down_blocks.0.resnets.1.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d00e4c1fceadb1a73abc670bb5175dee68e01f0a881278fbd3d0bd9118402a98"
+    },
+    "encoder.down_blocks.0.resnets.1.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "68744bd7412e7dff832f7b689ca5e74d45f091cb1594e386976aae06d7306587"
+    },
+    "encoder.down_blocks.0.resnets.1.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9468fdd4f43146f307c36cbd7f24dcd00e9dbd70415683dd0f5ea15b41d81207"
+    },
+    "encoder.down_blocks.0.resnets.1.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9a73802fd1f61d65d65fddd4903665a02c516b4092a0af9585a5fc4c7a2c7e90"
+    },
+    "encoder.down_blocks.0.resnets.1.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b62e8c28b69d7be6ee5d71facc2edab6a8c27dbba0ecd51b3faafe24bab6f1fc"
+    },
+    "encoder.down_blocks.1.downsamplers.0.conv.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0acb24f6176aaa3282f495993e0f8f790d94006bd522f5e1f502486ee58e026c"
+    },
+    "encoder.down_blocks.1.downsamplers.0.conv.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "e1054c55f3e5a6b9a9ac88ad77d6c14ba6a85ecc0fcf935bad76fe8029355c92"
+    },
+    "encoder.down_blocks.1.resnets.0.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b5c9773c11a4952b7962f08741fc82755668ce5b8412bbc1c3623dc982bc7211"
+    },
+    "encoder.down_blocks.1.resnets.0.conv1.weight": {
+      "shape": [
+        256,
+        128,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f141a7398a9b3d2607b8445f580ebb5db7b81b4fd4186d11edb7f0ade366bdde"
+    },
+    "encoder.down_blocks.1.resnets.0.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "93d86268afbef770cbfe1c9f1b8954bfa06efcd2dfa338fd7bc65f59c4d575df"
+    },
+    "encoder.down_blocks.1.resnets.0.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b75be2b8953f67ac6f4ed75cca22b822ab83e1983ae1ebd88e02b135bfa2cc01"
+    },
+    "encoder.down_blocks.1.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f4daf5a91b40c9518a3b5394457b57cf3d7972c933e6b96ff8f92f778e77c3b9"
+    },
+    "encoder.down_blocks.1.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        256,
+        128,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "43d5d03c7331a4f617105d938fad8b345a8d5c74b7180321049757d809524410"
+    },
+    "encoder.down_blocks.1.resnets.0.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c34a22722b8f1e236e147782b110426d73c9057172040ff94227a8cdbc461f8b"
+    },
+    "encoder.down_blocks.1.resnets.0.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ecb53135d505e8866125cdb73fafa431077355b74116df46156f7fcd94f83489"
+    },
+    "encoder.down_blocks.1.resnets.0.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5326b62edc9c87f374209a80b22c2c227b44fd1f785ecafedee1f2ce5e44f8ba"
+    },
+    "encoder.down_blocks.1.resnets.0.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "119d9a849c99600d2734658704a1a9993fd7af64db01134045139ec54d531cd0"
+    },
+    "encoder.down_blocks.1.resnets.1.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "18cb77e0fe41485a7fcff2f62e1b466dc8cd361c1d7eb89c6b315357de9e9732"
+    },
+    "encoder.down_blocks.1.resnets.1.conv1.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a78d006a7c73fc4a8d128fd5c38d9db8128a57de93dabdd28c58d1a086e2f14d"
+    },
+    "encoder.down_blocks.1.resnets.1.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ce08bdef6e0b7d86d59545e8e5780f83bd08d343fd1bbd3f943374c4ccd88161"
+    },
+    "encoder.down_blocks.1.resnets.1.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b1d8ff73f29de66ac15188fed4948bbbefc7faa8c79e52376ee3c8af6bfe6942"
+    },
+    "encoder.down_blocks.1.resnets.1.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "1f399c54711026fd1530dde5b995f59d055c1c0763dc7d129383189bdfc43ce4"
+    },
+    "encoder.down_blocks.1.resnets.1.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4a29bf09777a81c3971a853748aed07dc5f189aa3ee542bf19fb4d37bdc8c739"
+    },
+    "encoder.down_blocks.1.resnets.1.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d07a6df68026b6c3b4dcd2704f2f31e6de00b0437830ceddb0c3d89229a5484f"
+    },
+    "encoder.down_blocks.1.resnets.1.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "ec923139e9b56c4843e7a9803e87e4bb0d1d9cfe27614eed8321c746086d0750"
+    },
+    "encoder.down_blocks.2.downsamplers.0.conv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a28db8c5948d2263981dcbea91e467ff3a98e099133a8522767f868edbcac8dd"
+    },
+    "encoder.down_blocks.2.downsamplers.0.conv.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7663adf892257d7a28b599c84e2e8c34ac5f13f463db3aae7d1d538490c7393f"
+    },
+    "encoder.down_blocks.2.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "61f2dafb6bfcfe81a2ecdbbfa18eb95159cc99cbc446f4cdb187f3c6d74965ba"
+    },
+    "encoder.down_blocks.2.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        256,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "58f3337577efe0c217b7bec18eb1a8ee87070e8635d1162dbe9654b1a3668cbe"
+    },
+    "encoder.down_blocks.2.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8e05b85040d50514f2d7b030fea3c672355c9076282147fb2f67f6dd725ac1d0"
+    },
+    "encoder.down_blocks.2.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6d09d8b1169e05210b0febaec480e52c2cabc4ae67a8a3479b7ea08cee4bac01"
+    },
+    "encoder.down_blocks.2.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "1b85ee26881385ebb7340ac09b0560806321eec177750535e531de8519b1db93"
+    },
+    "encoder.down_blocks.2.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        512,
+        256,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "5c0fa7655c45438d1c28f0632ffdf7c291305c9f3c1aa2d70e8a819537a1635e"
+    },
+    "encoder.down_blocks.2.resnets.0.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "fbd3616578ca8f5b2ef5aec26a7df21fd441b9a62f2f6a529eec02c73f299c8a"
+    },
+    "encoder.down_blocks.2.resnets.0.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a4cc19e2a0d4e46d5b77e568fe53155ff5f8f4e171345d6c0c129fd5ef40aa0f"
+    },
+    "encoder.down_blocks.2.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "61b984712ed14ca3b07cc75ea0d698a5d397886ec4a65206be35b7592a0b54df"
+    },
+    "encoder.down_blocks.2.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c16bca2252e458f8a826cda779aec3d28bcedf7a9efec4e2c6fc33c46ee325f0"
+    },
+    "encoder.down_blocks.2.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8e9727397e021125f9d5fd6ca5b3628b303c6148ae1f625bd1bba83d9a8d983b"
+    },
+    "encoder.down_blocks.2.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a5d0250c478467311cb3359d8189299844cf5154785351d0861b36ff0ec2b5fd"
+    },
+    "encoder.down_blocks.2.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "19da25da4437a01d1440be7a8113c811455f7f855c8fa98e2f987522319022d6"
+    },
+    "encoder.down_blocks.2.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "7f0609f018e9443aba08da1debf4c446f4e446c7eb6dd2d84157ecc3b8fc05d6"
+    },
+    "encoder.down_blocks.2.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4cdfe7cd5ba09308d9f5c4e2717b5b42248df3b73ee73fefda7dafbe8bbbc359"
+    },
+    "encoder.down_blocks.2.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b86464ff186fb12940cf8dd3f7fb067c46c5b7b92f33166df201af86e6900071"
+    },
+    "encoder.down_blocks.2.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a9ef40a968603721910dead0137901d82ffc50706f79946d48b4ca26ad0587af"
+    },
+    "encoder.down_blocks.2.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "abf76b9484a6a3832372f1c163d406b5ef77aa3591c6d2ba5b129781664bdc56"
+    },
+    "encoder.down_blocks.3.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "12fd9f0e62bfc5e5f3d437d0f68627c2e03f3bd3e04c15b86e3ee32899f54ad4"
+    },
+    "encoder.down_blocks.3.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2978de64905855ceb92a5ce30b1016304d0a54aaf1316b8cb9cec73994f3f48b"
+    },
+    "encoder.down_blocks.3.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a118ba7ac402b5a2727476ab845ca288eb8bf4552b6f63140834bb0df00b50c2"
+    },
+    "encoder.down_blocks.3.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "446e76649dacf473206b62157eaedc96b53791a56ab2346fe43f882ab739250c"
+    },
+    "encoder.down_blocks.3.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "94126f12f43124331328b73e15eb613b2bd6e3e69c37ac799ed2ffdb088a74cd"
+    },
+    "encoder.down_blocks.3.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "06f4c8f7e7bbb4ce214fe9462ae8c143443872e0b789b618cba1774ab3d588e8"
+    },
+    "encoder.down_blocks.3.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a0b9ba23e89421520da5186e0942ef34ad21fa09af5404fec283530b9947b3ff"
+    },
+    "encoder.down_blocks.3.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "dc12400ccbd3a994dd9c70f869a704aa7e0ee7e81567b84012444f519c986e60"
+    },
+    "encoder.down_blocks.3.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f1d132d720f36733f72b1c41c84b211eea6f9d47236492e2f43d28f6db7b5a74"
+    },
+    "encoder.down_blocks.3.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0fc28a7ee7aff039578dc5312081f5503161cfdf87479c551ea77d3b3e71fd74"
+    },
+    "encoder.down_blocks.3.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0d0eb381eab562b1a1cd3a329aacf91b967db5279470b31a502a1cb7dc3163af"
+    },
+    "encoder.down_blocks.3.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "edf5c2a4db71629631a3ee1b12beb09ad327bccb23862b75c25bd3b07571dc4e"
+    },
+    "encoder.down_blocks.3.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "4cfd0c1b194407e38525ed588f720b5dcdd3a68e0d95d1615dac8003661faf22"
+    },
+    "encoder.down_blocks.3.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "11e2ecb90b610d49f0c4dc88160b83a856db56aaa049074407da2f5f5faaec2d"
+    },
+    "encoder.down_blocks.3.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d9c06022412db078135d6f9b5ca99c424443761cf225b6c785ed683a221eff3a"
+    },
+    "encoder.down_blocks.3.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9eaea017502182485c7653ba5ce0d901d926e8b6b508d5cd6220a8c7df703791"
+    },
+    "encoder.mid_block.attentions.0.group_norm.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2d33800ed749aa537f465daf254c5241584ec6a921f9057e6d0dceb26af11cf3"
+    },
+    "encoder.mid_block.attentions.0.group_norm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6d5fcae1b0b6f225e33e47e5dbc73fa686d971a9a6feb384106af0a4860d40db"
+    },
+    "encoder.mid_block.attentions.0.to_k.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "2534f1cc4b51bcc5df8f699a8b18ada6df3dfb3603abd51cbd3838f0fc3137be"
+    },
+    "encoder.mid_block.attentions.0.to_k.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "bbe62d6c4d1077a475c722d607f135709a0cd653fcbe1cb76f47a1b19f5e0cb3"
+    },
+    "encoder.mid_block.attentions.0.to_out.0.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d7e073706fe0d688db1c90bd6dfedbff5f4d5be8de9a22e869f3dda50de1033d"
+    },
+    "encoder.mid_block.attentions.0.to_out.0.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8be46b9a171e3f3c72b3bd486796b456271ac39431138d52beafe0f324bf3d87"
+    },
+    "encoder.mid_block.attentions.0.to_q.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "18543b337598322c1b11e7fdf53350a6448896c021574fe71fe07ef0b5124117"
+    },
+    "encoder.mid_block.attentions.0.to_q.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "42177c1a4494163566e23f6877272d74cbe6b33704512075b9669e766ff932d0"
+    },
+    "encoder.mid_block.attentions.0.to_v.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "967ccc8a61126a6f58603fa5223d5ecfe5d351c1bdf369e092fe60e99eeaa226"
+    },
+    "encoder.mid_block.attentions.0.to_v.weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "af4f1b89c7ef3a2da91fe185d1a0055d53c7c73a21d273634ae51efd32f93e40"
+    },
+    "encoder.mid_block.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "c7425f29abae0600743a08cca827ce18fe299353646dcc5485b4c533658cc173"
+    },
+    "encoder.mid_block.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a5e5361d89e79f23b9f0e74c0dc27d229f01eb5bda77210347432db9b813d1ac"
+    },
+    "encoder.mid_block.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9dc88a9a09431fe6cbe6650e302aa7cf1fc464163f89325c76e63b9a351e1005"
+    },
+    "encoder.mid_block.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f854fb571a27bd0dc09098be26bb30a5470338cb808204542c1f6e9b3d1325e8"
+    },
+    "encoder.mid_block.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "9e82812931ab5b7cb1167ed5c856cd683d4e3dcc41c8bd354d3a9b9933623826"
+    },
+    "encoder.mid_block.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "02fa5e1a836355becb2bfec613282c97133a18b152326140e6dd650dcc6e5918"
+    },
+    "encoder.mid_block.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "6334361876dbbcc1b3f9019c723738bf45f1927ac262ce9164cbea6323c2ec4a"
+    },
+    "encoder.mid_block.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "90bcc7a4e6256012ec08092012fc6653c8aa99923bc2f841a7a0629e4904a332"
+    },
+    "encoder.mid_block.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "b051379f728eb5d31f4b7473ba0ae9f47a906f66c037e6f1c6cee07004c1bb91"
+    },
+    "encoder.mid_block.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "1b3bd881afdd7247f889ccb7a8478ba6229e1772a372fad590cb3e39b9043afd"
+    },
+    "encoder.mid_block.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "0267f30d3cdb6c807d628a3c72d70456826f7d3db00e23c0201f5128819419be"
+    },
+    "encoder.mid_block.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "399f058d2edaa4ed09fe753e31f32b6041c29a183e355209b5354d87d8581fb2"
+    },
+    "encoder.mid_block.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "8a3c7902aa0e9bd78d8e7dc3ab57b70b8f3afd3f68163eb4e59f3970fae05686"
+    },
+    "encoder.mid_block.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "f5b5df6b71cbb0438ec1cf7478fd2b4d172fff3614a2e07ee5d9b5404a3b6148"
+    },
+    "encoder.mid_block.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "753e98cf02629a8732515443949c5f6e9d2635dd49d9579690ba5732fa9d9e56"
+    },
+    "encoder.mid_block.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "1ba3b7cbf19128974bcacb53ab30b09c0390ccd70be653f278604e9e53989d02"
+    },
+    "post_quant_conv.bias": {
+      "shape": [
+        4
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "a2c7a7f5ede34f8a6130f9e12386a2bcda286230406591db6256422e892f86d8"
+    },
+    "post_quant_conv.weight": {
+      "shape": [
+        4,
+        4,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "d0b063b4afa136c309b3b48ce2ca8f71b8b7f0f7661db8e5602395b4347034ac"
+    },
+    "quant_conv.bias": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "913315e55184fbc9752a5e5eec27b7c77883a7ee3167f5983d3090f8cf7cd002"
+    },
+    "quant_conv.weight": {
+      "shape": [
+        8,
+        8,
+        1,
+        1
+      ],
+      "dtype": "torch.float16",
+      "value_sha256": "778b035fb1898508fe725a12782d6e3c19fe210c190d484d2bd2eae855a9a359"
+    }
+  },
+  "seconds": 0.3442255000118166
+}

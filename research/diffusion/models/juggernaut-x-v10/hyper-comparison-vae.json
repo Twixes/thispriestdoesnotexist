@@ -1,0 +1,3917 @@
+{
+  "method": "Streaming raw safetensors byte ranges; no model loading or conversion. Each VAE tensor dtype/shape/value SHA compared.",
+  "full_checkpoint_sha256": "d91d35736d8f2be038f760a9b0009a771ecf0a417e9b38c244a84ea4cb9c0c45",
+  "hyper_checkpoint_sha256": "010be7341cd98a136da775330ba3eb4e87025c6cfd2f5455dc64daee2200ae98",
+  "all_tensor_names_dtypes_shapes_equal": true,
+  "vae_tensor_count": 248,
+  "all_vae_tensors_equal": true,
+  "full_vae_tensors": {
+    "first_stage_model.decoder.conv_in.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "6226d5b29c0aa43570836ed33820ebc4cabbd0c818d5bc0b5c9e9acac9a717e3"
+    },
+    "first_stage_model.decoder.conv_in.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        4,
+        3,
+        3
+      ],
+      "sha256": "d134805117a2d2d2f35d1329d90ab48dd15b1c1407ff9ae160940f3254c78774"
+    },
+    "first_stage_model.decoder.conv_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        3
+      ],
+      "sha256": "2e1726c811e388e98d11a8fb17a6075d1739b456628743b7d74b5c0435e57362"
+    },
+    "first_stage_model.decoder.conv_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        3,
+        128,
+        3,
+        3
+      ],
+      "sha256": "dd051523a3f2ab41ee11e963f0fc29ab99734a6fe7763f003bc942af3a4dc7a8"
+    },
+    "first_stage_model.decoder.mid.attn_1.k.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "64b7159e7436c922a266b4b747c09c246cc90b226f987ac14826fea73ed9a7eb"
+    },
+    "first_stage_model.decoder.mid.attn_1.k.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "ab7cdd7c70a242f6ed6d6a787413727310b0692d03d2a6d7073fbc3b8be19514"
+    },
+    "first_stage_model.decoder.mid.attn_1.norm.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "67608eb21c4e5318c10a995ee3f9b9c3c202441953cd7d5b6f5f48bbacd94dca"
+    },
+    "first_stage_model.decoder.mid.attn_1.norm.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "b95c872c8e777e319c67d2e4093c0b099cae466685a4f31c729bdb087a9e6734"
+    },
+    "first_stage_model.decoder.mid.attn_1.proj_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "b63d094c3f1cd9dceb4bd85e1b05ff4f9e2ed85f4e61083bbb51cb7242891a1f"
+    },
+    "first_stage_model.decoder.mid.attn_1.proj_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "b27956109a53307622747f3d2933f1dee9c07b402193a482052945db256f5da0"
+    },
+    "first_stage_model.decoder.mid.attn_1.q.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "a9c3527c76efd9539e474346fe9cb9d26b1cb286ce58d9fcefcdf1bdbb9cba95"
+    },
+    "first_stage_model.decoder.mid.attn_1.q.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "95b1b4a9e063b7d6f02ddd8ead684b89f31d37997c339d77430406aff25febd0"
+    },
+    "first_stage_model.decoder.mid.attn_1.v.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "1f5cefb019cce9aec6f0f1d983678e12ae041ff50782a6d3c6164124f5a993bb"
+    },
+    "first_stage_model.decoder.mid.attn_1.v.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "b535405687b030bd137a5a8aa546414147c6936c398ba2d05fa31832568def5b"
+    },
+    "first_stage_model.decoder.mid.block_1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "33ea46afe1b6173233c58052780fe074eca7a215dcc7ebb037eaa178f0390e32"
+    },
+    "first_stage_model.decoder.mid.block_1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "04cf80a46a1f754915e56429c4b7b224e746a51c7a900bf21e608d89b3c13df3"
+    },
+    "first_stage_model.decoder.mid.block_1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "64a542e5e1e8cae1b16a54938cf83b6424db9b5ba9474da4e8895c8ff5a8f66a"
+    },
+    "first_stage_model.decoder.mid.block_1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "5a99903b100b335a396ff8cb4cd9b855ec5dfbe01ffa6a1f60e52343a7f34870"
+    },
+    "first_stage_model.decoder.mid.block_1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "bea462e9615027927875a39003e474c8a9188c092762313aadb3ef3f9331c157"
+    },
+    "first_stage_model.decoder.mid.block_1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f10987ef508a48564198fa58376160b4f68650b1c2723ec4149c3ddac57393f9"
+    },
+    "first_stage_model.decoder.mid.block_1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "50d20cadf98356e1c12dbf55068adfd26adbda051bed4fb0148c1c24e23beac2"
+    },
+    "first_stage_model.decoder.mid.block_1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "7ec40d41c7f89f08557ad6993e524fc8a61bf9954b3f4a34c9c9da572a990784"
+    },
+    "first_stage_model.decoder.mid.block_2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "d908a352fa270bc3e7a514e9be219b205c5ca47c8bd899ae69d60e30b216cb23"
+    },
+    "first_stage_model.decoder.mid.block_2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "304299b2fae79c8ef324fb154d76b7f2fd00dc1f258d8354bf9939b63b361a67"
+    },
+    "first_stage_model.decoder.mid.block_2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "00b35571698df9fb647ed4a9922f6d53dea35443910ee26012e365982c8dac69"
+    },
+    "first_stage_model.decoder.mid.block_2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "675a68ee7624095ebac458dfa5c8ec89a52ac57d2eea4a23ff3a2217303e6fb3"
+    },
+    "first_stage_model.decoder.mid.block_2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f41ebe24979e913d46b77665a9ef59af0a7e7d45464ad85598bece653ef18846"
+    },
+    "first_stage_model.decoder.mid.block_2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ab95d191208c8b46c96bdfde9f4abf259d349b334f71763a95582b8e3e11b8c6"
+    },
+    "first_stage_model.decoder.mid.block_2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "7ae7f47f46825589d75400c6d1c5844f4faea8b600a6a3e2c987187e3ca04a41"
+    },
+    "first_stage_model.decoder.mid.block_2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "a08d3f14e332c84a35690775545a36c90b05ef6b96ef1bd58079d8dcece7a364"
+    },
+    "first_stage_model.decoder.norm_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "8f04b5b511f9a8bd74ba543b92bf51ec99fb3fc5095c8664d34edc571d7f426b"
+    },
+    "first_stage_model.decoder.norm_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "38f99f4d69e3e9ae4ff4516cb61430c9921e587265a661d4ae4f289c28df8d39"
+    },
+    "first_stage_model.decoder.up.0.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "7467712241511ef479cfe4f8065a362611bac706c798fba069c8dc55add13c66"
+    },
+    "first_stage_model.decoder.up.0.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        256,
+        3,
+        3
+      ],
+      "sha256": "452212927c605cb78446a9fe700755caf98be9147b70fb546ae16e0fb88022f6"
+    },
+    "first_stage_model.decoder.up.0.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "db8510b45622b3b576f810d8a43f6fe72b0d5a1855fe59b713523418621a870e"
+    },
+    "first_stage_model.decoder.up.0.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "7140c1973e58a587793119e4f343736c2631d8567a8d3d0c77f8a4f34de85a2b"
+    },
+    "first_stage_model.decoder.up.0.block.0.nin_shortcut.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "26d16cae7bef783a80e2e8d154385d98008c24da94eee9917aacd96ca9a38f09"
+    },
+    "first_stage_model.decoder.up.0.block.0.nin_shortcut.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "sha256": "f3d3fced78bf00b81708aafd2ef4d843a9295b57493104de1290eee44685a60a"
+    },
+    "first_stage_model.decoder.up.0.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "a7b4e6c4724de1e50e59cf2759d886e6e4c9fc85e9631d3a34af2456ed3453a7"
+    },
+    "first_stage_model.decoder.up.0.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "7ced7eac5db55939af01a034dfabac77bc86d83fa878b9a2c90b646d07686656"
+    },
+    "first_stage_model.decoder.up.0.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "71a68b92045ee66e8a836c7e7d95aa16c27a68c82a68be0e98b72b2875f070ec"
+    },
+    "first_stage_model.decoder.up.0.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "0c762e7b5ea372e7a49dd55849d28dc5a6ccc6475a6833a9d87f8f842d8f4097"
+    },
+    "first_stage_model.decoder.up.0.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "3c91909aaecfa2d48fd6c623986c9be188e24048f2e1e812ff4a72de4b040f3f"
+    },
+    "first_stage_model.decoder.up.0.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "60cb4ce40d24b6501a02d37fe0b3c2030aef9240287b5741905a66bec23c75a0"
+    },
+    "first_stage_model.decoder.up.0.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "75e519e42b80f8ee28c99bbb9dd70ac06cb5b926e1373628159a1b99facef861"
+    },
+    "first_stage_model.decoder.up.0.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "420170aab035abbb7962ce19e6833a819cc3e18701449b27153ed936b5305cb3"
+    },
+    "first_stage_model.decoder.up.0.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "cb7111fd028eb6581d0ee6215cc29cc8afdaec1a9d80db2f32cd68dfa500d4a0"
+    },
+    "first_stage_model.decoder.up.0.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "a50f3b670d382f12c71e4a32e7436f415c4bc96ba92858a622234fbc24ea0568"
+    },
+    "first_stage_model.decoder.up.0.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "bd1295755f80081b099f4fe70fb11e9366b14d04185b6077aae2c9008f0d0352"
+    },
+    "first_stage_model.decoder.up.0.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "5cd1ac47342b4868da1f83a90f5471f7717a349653cf759149c87ae081c31092"
+    },
+    "first_stage_model.decoder.up.0.block.2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "cba52a75b4275117c716f010c217bf2ef7e5f95cdf027ec39b63be70f6fa4ae9"
+    },
+    "first_stage_model.decoder.up.0.block.2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "b31b66f508e09845965336b5b2ec894f4488d4f714352229bd47614d96060850"
+    },
+    "first_stage_model.decoder.up.0.block.2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "69c37468c710dd5b910f829c68f672b4e99e533f216fb56700bb418448dc92d1"
+    },
+    "first_stage_model.decoder.up.0.block.2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "aed6b2f7869ef4616bf25efa02a54ebadc675fc7d40fd061929bafbfc985691e"
+    },
+    "first_stage_model.decoder.up.0.block.2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "a54a7430cf19a8046cf0e92c8bee915aa90934df301c645eb388cfd30da71c3b"
+    },
+    "first_stage_model.decoder.up.0.block.2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "1f00db2a79c50e55bccc7066a14a82f9408ff5c37f69ed6337e9dfc595e2a535"
+    },
+    "first_stage_model.decoder.up.0.block.2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "79bc51c82b4326027201e7069b9c70e3d00e0d190454d38a13f12100aa57a76e"
+    },
+    "first_stage_model.decoder.up.0.block.2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "f2be7b6d5911e7a10054664e2c4f5b93bbbf0561b86c5c1ca8b8ea9f01153a5e"
+    },
+    "first_stage_model.decoder.up.1.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "d6ff98acb34a1c3e4ad96abc88cc88fc543a24f2163bdf4a87aa526d89a2dbdb"
+    },
+    "first_stage_model.decoder.up.1.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        512,
+        3,
+        3
+      ],
+      "sha256": "fd693388d92e21a3bec6a11a404dd63fbb00e7699c4693632cdfb32246306710"
+    },
+    "first_stage_model.decoder.up.1.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "120ebe4f19cea6fe9298017636f327c09baa8f47d24ffc908dfb25bfdb2fbe31"
+    },
+    "first_stage_model.decoder.up.1.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "5271c2085cb91eccabac4079f35067bec7f38c0f00bb8023fd98a6f750420e29"
+    },
+    "first_stage_model.decoder.up.1.block.0.nin_shortcut.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "88579ceb53dd844d2ec3386b9f500bb0c1890dbc0e527fafd5244b1bcec259e7"
+    },
+    "first_stage_model.decoder.up.1.block.0.nin_shortcut.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        512,
+        1,
+        1
+      ],
+      "sha256": "fba05bbf319854f43b66fb81431fbc3d62e6196e5dec261c50a177c99bb5efb8"
+    },
+    "first_stage_model.decoder.up.1.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "01ea99f44feaf1d8bd7ed72cdda0003605d8be5861903e541e09af649822e617"
+    },
+    "first_stage_model.decoder.up.1.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "0f1cec8848acc3fddc04ca4a420ad6816b73d5796da483ee95c3eb9ea7112340"
+    },
+    "first_stage_model.decoder.up.1.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "53218672edfca193f698a54f26f644d1cf00f6f97e3b29c366cf071875cea253"
+    },
+    "first_stage_model.decoder.up.1.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "888e2531ca2615de971619d6cc0fe5456d5c9fd4eb0be1afd6761b9c897f47b3"
+    },
+    "first_stage_model.decoder.up.1.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "523a416705298077607579740715a366ea9236a44c3171dcfb1cc87aa78eefc8"
+    },
+    "first_stage_model.decoder.up.1.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "597f60ce157a6407c3082338292f63ad9a19dded23db3b4ed740d318418abfa0"
+    },
+    "first_stage_model.decoder.up.1.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "7d2931b4bb7760d7d20a3e3bb234765d6f2e3fdf6aed59fbef138313f579220e"
+    },
+    "first_stage_model.decoder.up.1.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "fa270460f5cf56d05113fd868ef882f2430628fea8a140b35ed1248326c65173"
+    },
+    "first_stage_model.decoder.up.1.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "05100960ee78d0128790d21b4e4a9cbfb8acf3d7be26033de54beed041d47074"
+    },
+    "first_stage_model.decoder.up.1.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "5867b7d03bf67e04d0adb656769bdcc12e3c89d9b2348e717fb3500040610b8c"
+    },
+    "first_stage_model.decoder.up.1.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "0964e73ab7c13df0e1eb1fca8e0c80b20850b71d05e62a9013454edaf5360a6e"
+    },
+    "first_stage_model.decoder.up.1.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "93facecce82264930656fb52f1e4181717a78ee28e14011283d8558ced49aec2"
+    },
+    "first_stage_model.decoder.up.1.block.2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "994942ae029a810c93cfcff162a4f72bedffeb958a9ea9097451b9e00a816495"
+    },
+    "first_stage_model.decoder.up.1.block.2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "c655bcf40173388fb10f15bc06f0c6e3edf733e83c60a1c60d610730dc2f1399"
+    },
+    "first_stage_model.decoder.up.1.block.2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "b8c27b5a70787084ded27189e9b4b2d75a798731ae6979fae6e4bf9654886c45"
+    },
+    "first_stage_model.decoder.up.1.block.2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "fc9906c5641a8c5afa12e928f365a882ef6b7b22175e837c4829f53cc81aa1be"
+    },
+    "first_stage_model.decoder.up.1.block.2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "01fb44b4747c6a08c890b92e0d93cfd78e588171d01effff25799860d9e855e7"
+    },
+    "first_stage_model.decoder.up.1.block.2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "b96beb1f0413ed97e714faf59842bcceedf60273b69d8ddb21924fe8de96df0e"
+    },
+    "first_stage_model.decoder.up.1.block.2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "d5ee09011000ca746dd0f532e74aed1d4f52b26992763f8fa88809b0a3e74f7b"
+    },
+    "first_stage_model.decoder.up.1.block.2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "0378b825ef17e9b114e61bd11833019148eb00c55d31292fe3035ded1adf4b3b"
+    },
+    "first_stage_model.decoder.up.1.upsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "a41c25412e160a3d155a6ccca9b11838462bc6fc4842b576bd5310e043bd99d3"
+    },
+    "first_stage_model.decoder.up.1.upsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "b8eaf3e6f4cf6bbcc3c3a9d3d30cefe458bd1de3ad76bd19351bb702ff141bf7"
+    },
+    "first_stage_model.decoder.up.2.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "68c9af0b9fb7ad47bc097a610d6825f895a538bf50cd782d7956f23a21bb95a5"
+    },
+    "first_stage_model.decoder.up.2.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "b87609fe4e9aff5ca2902ad301d5b06b8157f163b8b24f420a6f8a43e50fffc9"
+    },
+    "first_stage_model.decoder.up.2.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3488233a88e8ae1aff7b63cbac7e4b35f7e772faa8aa32ceb7c5bcebb5472bde"
+    },
+    "first_stage_model.decoder.up.2.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "5ac1bd6b673c492dbf5dea9ac56aff1031cd09fa2031b66dcd6308b8679b6e62"
+    },
+    "first_stage_model.decoder.up.2.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "bc4dd83d8a91680f4adb86742c968e15afb1898165c64e60e7c485f29af2a954"
+    },
+    "first_stage_model.decoder.up.2.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "09c5beed10d3699d8c3915199b1052c63a69ffcbd157d29c2d46807c9ea14cfb"
+    },
+    "first_stage_model.decoder.up.2.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3a1ef1c3c4a1fc94e722141262ce89ca28a873ec61053df90cb3681225ea6c3c"
+    },
+    "first_stage_model.decoder.up.2.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "86ff0f2223117124f7bebe4d99efdf8a50c0346135cd155bea0e8ed8a4097b52"
+    },
+    "first_stage_model.decoder.up.2.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "b350ba83d77a60d9c7956dae3b276f87db4e78396fad657e8e670f54f7585d88"
+    },
+    "first_stage_model.decoder.up.2.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "eb1cd3c20a824359978b663d10555147d59f375026c3338dc4f7d7a3e8db7474"
+    },
+    "first_stage_model.decoder.up.2.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "cd9d8062295abd6e2a483277f93a0fec8ed98617e1f7474c297ef723693ba3b6"
+    },
+    "first_stage_model.decoder.up.2.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "bdad87883a34e898929ab8be15339553f5e69ee3ade191421c7abfd2e483161c"
+    },
+    "first_stage_model.decoder.up.2.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "fcc47cc71f7af91bbb54aa80b7dd1089e99429ad7ebe8845818325e239f8b847"
+    },
+    "first_stage_model.decoder.up.2.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f3ee1ee387a3449318d9551197ce835d14399a48287f80b02bd1064275c9817f"
+    },
+    "first_stage_model.decoder.up.2.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ca0b2d1d4982df1ede328aac6b307bd82688818d222c4e2eaef9ee495e9d38b8"
+    },
+    "first_stage_model.decoder.up.2.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "73abd2f6e21cd3b2d6ac71bed1add82569abf5fa45654ad1e682bea18830024b"
+    },
+    "first_stage_model.decoder.up.2.block.2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "7f98939231fe10fb7ecebfb089acad9e5f504b5168b49fb145f3abaf73d3179b"
+    },
+    "first_stage_model.decoder.up.2.block.2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "8c398f299ee7cba5adab97d9f9f6ad7943ef2e07623fbc6de038cbb62a5d7177"
+    },
+    "first_stage_model.decoder.up.2.block.2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ecbbcb4cb63b1ca8ab38c811becfa2a00bb15b1c190c1f1ed0fed264c0d06834"
+    },
+    "first_stage_model.decoder.up.2.block.2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "a03b576b363a1d0177aa0674dbcfa6cf702b40b51e96d643d91c26e4311c1bd2"
+    },
+    "first_stage_model.decoder.up.2.block.2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "c1b83f0de2ef3811fcc510d33165fd7758134337b853e673ddc8c8ce564aa3c8"
+    },
+    "first_stage_model.decoder.up.2.block.2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "c838d716087eaab275d8b27d0701630b2a44e1bd07ddc464fbc331a9da218a39"
+    },
+    "first_stage_model.decoder.up.2.block.2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "024e9b2de4a5fc8f8725a740fa30252b929d89473d01f5dd00866081f6a144fb"
+    },
+    "first_stage_model.decoder.up.2.block.2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "5b1c2376620f1a6c7dc209c44d6d40e7f9e53f15ccd61ec43bfb895655f33d86"
+    },
+    "first_stage_model.decoder.up.2.upsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "cf1fa294f7b1f125651f791537633327799eec2f2b156efefa51ed88ca309ddb"
+    },
+    "first_stage_model.decoder.up.2.upsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "f66e05ee7880c9371d13799472c822649b21aa29901791aff42ef55be3c3be1c"
+    },
+    "first_stage_model.decoder.up.3.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "762b1a23c57ed0f90f22206f3d4cd01ef6f47564ef471e05e0d33169c2522468"
+    },
+    "first_stage_model.decoder.up.3.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "52e48dcd241d7177b7e4ab8a8dc2e45e3d169a0f7df1df119612cd709ce6496b"
+    },
+    "first_stage_model.decoder.up.3.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "a90b303f9ac63d20182ede876c9444c7d66046d1f421b7c7cd80b0c10e762b04"
+    },
+    "first_stage_model.decoder.up.3.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "d68387dc21318768b3a44979c83562d832c77c7c6fb83c910a060286c19ac236"
+    },
+    "first_stage_model.decoder.up.3.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "1079c2c33a4b931710007d966b36377a4738cfe7ca6af6313cbfc4426a755a8a"
+    },
+    "first_stage_model.decoder.up.3.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "7327ecbfcb046275892a3322d6c95abb6941c6c26576acc1e7c8ebb3d9b3f22d"
+    },
+    "first_stage_model.decoder.up.3.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f49c493abfa093a5f22ce377258facbe5135a414853618df0fd92f7f1d5ef501"
+    },
+    "first_stage_model.decoder.up.3.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "93ae46b8ed907c33121b8241fb48868c755faff2370171c92ad5c878aaeb59ea"
+    },
+    "first_stage_model.decoder.up.3.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ddde7096191af233afb51a887a3a13e2cba63bfa4aecf2118945b94753b03363"
+    },
+    "first_stage_model.decoder.up.3.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "494e94e9751aecc46313ed29f198b632c9126f643e98a25f0b1d3c08e9375f4b"
+    },
+    "first_stage_model.decoder.up.3.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "552b605ae5256d40007ec18e33cb23d08bfd2c67eff87f7cd96d47511af0a969"
+    },
+    "first_stage_model.decoder.up.3.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "243482902117568aa2986b4474c6af2bfe015dabe04b9e82fb1d2295749a4f6d"
+    },
+    "first_stage_model.decoder.up.3.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "a312861562db67c771bbd98c4fd52ca622e2f440d7d760084604c88180604fc8"
+    },
+    "first_stage_model.decoder.up.3.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ce9e4ffc5370dbff08da1c787cae5f45b05ddb242fe9e0c6affec97facfc47e6"
+    },
+    "first_stage_model.decoder.up.3.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "711a8c72614042b1a8bf251aef04b8bc76f47ff2c0f534ab2dd8bd3a54442838"
+    },
+    "first_stage_model.decoder.up.3.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "e99f261c36f376f207b19aae37afb56dd568e94d6f9a62feb289f5f8ca15a36e"
+    },
+    "first_stage_model.decoder.up.3.block.2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3763761f4d22a2f53da7766933a8b6dd1db6960c9cf4c1d6405813e9dde9f24a"
+    },
+    "first_stage_model.decoder.up.3.block.2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "f8947d3346c77a7272a35cedbf198616011d28f2f5e251e2ba83bc2c9239658f"
+    },
+    "first_stage_model.decoder.up.3.block.2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "b20555a711d85acf74f955834f5fe0bfceb6ac7d098ec2e93a25e1b659e353d9"
+    },
+    "first_stage_model.decoder.up.3.block.2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "6cb5a663851810166b880df246af6c0e5905369653b02f2a23cb620df36cc70e"
+    },
+    "first_stage_model.decoder.up.3.block.2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "8b223443dd57c916ebfc10c3e36758f3c3f7b29d6f49ebad97414a2e641dd751"
+    },
+    "first_stage_model.decoder.up.3.block.2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "0fc00ae7de296069233a91b43983c2cce654a7e5c7bae13120609a651c33ced7"
+    },
+    "first_stage_model.decoder.up.3.block.2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "9c8be2817ba31db0d5b43ffa3a99f7999f8822532cdbe3842843ccc88d5f0e04"
+    },
+    "first_stage_model.decoder.up.3.block.2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f3ec09940693bad789338c0a1a770fc54b526fbb60586179feb3ccd5092e324d"
+    },
+    "first_stage_model.decoder.up.3.upsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "2956e711b0126f4729bc6a7fed99c83007411f260341d8c91afb95c241af0bcd"
+    },
+    "first_stage_model.decoder.up.3.upsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "e15020d754aaeff62472217e54cb60513b769897f67bd06ab4f82f6fa10c243c"
+    },
+    "first_stage_model.encoder.conv_in.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "bda6f06d9515e0a7b23e127b4c121d24ba782793b4b95cff47e32e91fede54c9"
+    },
+    "first_stage_model.encoder.conv_in.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        3,
+        3,
+        3
+      ],
+      "sha256": "1ea3915b4ae472e24dad8423b1eee9d26b10139a9e924721d48950cb21c8a522"
+    },
+    "first_stage_model.encoder.conv_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        8
+      ],
+      "sha256": "d54108f8853d542c338c690d29cf250d226c80d582186b91088dc8e9ae4bbc82"
+    },
+    "first_stage_model.encoder.conv_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        8,
+        512,
+        3,
+        3
+      ],
+      "sha256": "3685a000ba30694f44a6fb99b908f21e06e99b8f0de5e498485f06f03f3d9d3e"
+    },
+    "first_stage_model.encoder.down.0.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "0d11905c3480658780e9b549a591a689ad3dfc5568779c7067784f9a39e7665e"
+    },
+    "first_stage_model.encoder.down.0.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "434627694a8000f4fcf63cb9e1aad2503e2654a2bdddb1ab351ab5ae661cf0a9"
+    },
+    "first_stage_model.encoder.down.0.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "67f62826baf9c1e3d45c8f099793884f9dba1ce5ef378096e75996ab20cfba45"
+    },
+    "first_stage_model.encoder.down.0.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "5445d33899146a67cad79b6e48af8329c3614c64cc04edb32090c6e5ef45e301"
+    },
+    "first_stage_model.encoder.down.0.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "00f9762b0836104d5aa53818185b2e0a049f535a86488e77c37c5ca5d6fa0a5f"
+    },
+    "first_stage_model.encoder.down.0.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "6d96a819eab0e535b45f5ea2689da3c8d3e962ce7239fa2c60754b4591f20a9f"
+    },
+    "first_stage_model.encoder.down.0.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "6c474f966ed60f3e944f1e44441897d1f5659a070196b0ca3241a97756baa8c6"
+    },
+    "first_stage_model.encoder.down.0.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "8572707156e1fe4ac8b00cf70a499d3996830e51d7219a3080d05e801e26eecf"
+    },
+    "first_stage_model.encoder.down.0.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "e69531b39e07c154d6fff04c3925731bf566d8d3ac8b5d7ed27add22c9c08c59"
+    },
+    "first_stage_model.encoder.down.0.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "ad0f4b91ac50e69f5bb6996963e97d77158bbc01d82bdd3ded7be96005c632b8"
+    },
+    "first_stage_model.encoder.down.0.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "396efe5e1055d1c654c08cf54182758b9496121c85131b7fc6c45e77a73375da"
+    },
+    "first_stage_model.encoder.down.0.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "e9a60d5fec6409194d67699fae88620ac23d8f1d8828a5952225607afd7a468f"
+    },
+    "first_stage_model.encoder.down.0.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "db0181931027d0d76ecd6dcc2795006854f66825e385883a788a20a0fdfaa789"
+    },
+    "first_stage_model.encoder.down.0.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "a8e690b11fccdafb402df4d243262ae53e8d361333c8468a16f356c8d0077659"
+    },
+    "first_stage_model.encoder.down.0.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "f8363843c5031a5307c97d720416bcce5b244bced9e6e0e5d1f22923061b44d2"
+    },
+    "first_stage_model.encoder.down.0.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "69fdf6dcac882345bd0676d7c074a4e2f9bc1365908fd2a2413e1885a4099a52"
+    },
+    "first_stage_model.encoder.down.0.downsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "25a57b9cca128665e5ac5899443a776cea5995b55a9f679671fdf59163aaf4f3"
+    },
+    "first_stage_model.encoder.down.0.downsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "0a9444f355dc35029f779e7ec3ab42cc32fc6ca28983b3bd03deda1b56d7d445"
+    },
+    "first_stage_model.encoder.down.1.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "c9343505120af92e8190a1dd3189d6febaf6a5efe51b8635ea8b85297e14fae2"
+    },
+    "first_stage_model.encoder.down.1.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        128,
+        3,
+        3
+      ],
+      "sha256": "b444d8403f7f6dc9944553a01937feefdf323f8e0b890a17aaa7f794ed0643c7"
+    },
+    "first_stage_model.encoder.down.1.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "2ff36de813090a2083529f5dec09015b4ee93a289a321df9867638c54d73cafd"
+    },
+    "first_stage_model.encoder.down.1.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "1091a6bd59d0f030b00a0b95a8d68e630c21888f78c0c47e9665dcc37d251465"
+    },
+    "first_stage_model.encoder.down.1.block.0.nin_shortcut.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "28d30af6c8f0eb238818ec0a2f84844a275f6d6b320136700d8dc284f001043b"
+    },
+    "first_stage_model.encoder.down.1.block.0.nin_shortcut.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        128,
+        1,
+        1
+      ],
+      "sha256": "a56c9988adf0d427b7a89aba0541f0b5b1aef1a123a2e233b9f712c7a29a531f"
+    },
+    "first_stage_model.encoder.down.1.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "9485aedcba3cfbc1d5e03a3322a3f25edaddd342cb5f8dc9bc1d2a5a7e8691c4"
+    },
+    "first_stage_model.encoder.down.1.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "404a2dc9d89a874572d157afeb462a6455176c44e3042e193e7c5eea73925d40"
+    },
+    "first_stage_model.encoder.down.1.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "755c8aff4e91d0c82fd55f29a67f7fceb5e7775318af6d2a837ca0bd42efbabf"
+    },
+    "first_stage_model.encoder.down.1.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "668a00b0696eda878245229298835419194dc5b3c297786a1e44f82ea16485e2"
+    },
+    "first_stage_model.encoder.down.1.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "23b0577e72c9184e3074e588993464e235bb67dcd0ce1672eec84121b3059f2a"
+    },
+    "first_stage_model.encoder.down.1.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "fff3dd2844b00d17aaba516a96ca88547fdbd4efa2fabba113e065afd83c764e"
+    },
+    "first_stage_model.encoder.down.1.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "ea57377a185290cb12f591faefc0fb0f7b5188f943fd7168ace258ac314b4e1f"
+    },
+    "first_stage_model.encoder.down.1.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "5cdc158069a70d13e4ec14a61bda93e34867faebf2925362d7a2184ef173ec20"
+    },
+    "first_stage_model.encoder.down.1.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "29cb4561babc279a1ed890a671b83a0738bcc48468e495cfd0461031df4995fe"
+    },
+    "first_stage_model.encoder.down.1.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "77e799c83dbdb8172edc90327ba207e9ed6d49c115c2718d93bb35231ebcca15"
+    },
+    "first_stage_model.encoder.down.1.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "b3b54b0de58dffe6d643afd82b7141a0dcc6a425ddb51a5a6e724b3f2ee147f8"
+    },
+    "first_stage_model.encoder.down.1.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "40264ec0fd9367c4eb34185dd157bfe9c7016dea9b8f39f9fd74a76f6ce668cc"
+    },
+    "first_stage_model.encoder.down.1.downsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "61f01fc72b91f16553f767e358104665458add265dba64ca141cb5019e9e879b"
+    },
+    "first_stage_model.encoder.down.1.downsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "33f11faa5300d2dcd0c38bea2da1ab757e961ef033bcdd67e7c4f26ce7b2e44a"
+    },
+    "first_stage_model.encoder.down.2.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "9a070afa7571d633b0f2e1bb21ac2425148dfa35c579b2c41e29da6548ee0fe3"
+    },
+    "first_stage_model.encoder.down.2.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        256,
+        3,
+        3
+      ],
+      "sha256": "57f7525bf514e026ec04d0720ed7811d2e27c762aed6063410611b2ab7311516"
+    },
+    "first_stage_model.encoder.down.2.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "695982272e7a38c1bcc72f162e1567a5f5c804ffaf0dce5299a71a0d139898e9"
+    },
+    "first_stage_model.encoder.down.2.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "4b7495e9adfbfb79cedcca893f26ac5be03797168306d4dceb1f9c2236171fc2"
+    },
+    "first_stage_model.encoder.down.2.block.0.nin_shortcut.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3b1c0f6fb1ac68c6ec364d3480411861e838ebb509944633780e2be95947abd2"
+    },
+    "first_stage_model.encoder.down.2.block.0.nin_shortcut.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        256,
+        1,
+        1
+      ],
+      "sha256": "abf1385f6c0307d3215313da043d0c8c538e747eafce45f8e249f2a762f02ded"
+    },
+    "first_stage_model.encoder.down.2.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "8bbb3690fb62e4de67703a34380f34be9d38d9e0b5f28e050456afd9fbbec42c"
+    },
+    "first_stage_model.encoder.down.2.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "593c5d1b5a46824fbc95a1a274ce98d0a810194ed6b04551b07a81b9559f9a16"
+    },
+    "first_stage_model.encoder.down.2.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "8c2e3041357d43d2a8ca58894e78a5e39bb0ce82f9968c27207dc34ca2fb8eee"
+    },
+    "first_stage_model.encoder.down.2.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "72c4683b40ccc51e5881fe96611fd1bb45638f5c3f6ab6786caf63b2b054501c"
+    },
+    "first_stage_model.encoder.down.2.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "7e42c762b8fdfb23e5a16d5d902180f7f8740704b678bb959339cb11bc37db70"
+    },
+    "first_stage_model.encoder.down.2.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "295ed8380a1a668d4bc74beb8618a1436762bd76cd1fcf6516513fc29f3f37a3"
+    },
+    "first_stage_model.encoder.down.2.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "d6ec5e6e8de6a2cd8578f80ae0913cc0b2b8e4fb96392111f4c4b8d95d2efd0c"
+    },
+    "first_stage_model.encoder.down.2.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "fd2313bf53adf78b8b60ebe7512e1b801b121224357e8d1300d3a6d6b39fbcd2"
+    },
+    "first_stage_model.encoder.down.2.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "9c485c415a1fe449be7233f9e67240b842cfb744abcf269f3318a126dc7f6f1e"
+    },
+    "first_stage_model.encoder.down.2.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "392dd6927ce6250f838c4fad52e5c06953514484f9b0bf2adbc2afba2f53e53a"
+    },
+    "first_stage_model.encoder.down.2.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "da7605f3ff1a6f0a5d97532e56dd1684b7dfa41de7922eeea37d790869563795"
+    },
+    "first_stage_model.encoder.down.2.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f9cfb1a007f3e74a8ef46db7130d7ed2db9ed9f5bf1cceaff362bb6b02a0641d"
+    },
+    "first_stage_model.encoder.down.2.downsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "25f3c096cdb4d40d09a6f38d46c3df08e8f29708699f1ebb6f6916e7c9b3cae2"
+    },
+    "first_stage_model.encoder.down.2.downsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "2d21f1485fab673797d12a8339283f8002bfe870f38640b55fa592b28e7aede1"
+    },
+    "first_stage_model.encoder.down.3.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "2750a0d70a1552cd0d5dc68c468a90a0158ffcdf3f53f406a517141413bc4703"
+    },
+    "first_stage_model.encoder.down.3.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "9a307fca71f8592dec5085d75c39f4773193443ec8532370db73a6b19a6eab5a"
+    },
+    "first_stage_model.encoder.down.3.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "8373ed3ddf226e1227c467e67ff01dce2bc3f45076eef81fbfde63d1071980fa"
+    },
+    "first_stage_model.encoder.down.3.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "267fee30d2e7529ba90d6911b28f924b5aebe0356bb87051f9c0acf0c0fb83ae"
+    },
+    "first_stage_model.encoder.down.3.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "339f02172d58f83737b8bb7d56d6366e45141d9eac0344a60f77138f1ca1ef3d"
+    },
+    "first_stage_model.encoder.down.3.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ed05049d5c6dd8403acc364c55843752aefc26383624e77378fb8571cf2585dc"
+    },
+    "first_stage_model.encoder.down.3.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "0d80d47ec1c26c1c6bc75323d60ce1f38aa6c3aa5e649173f89f8913bc292fed"
+    },
+    "first_stage_model.encoder.down.3.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "30c2c94dca8c9396a14d5b1a80edd2100a84aca37ea0d0492bb56103163a1bd7"
+    },
+    "first_stage_model.encoder.down.3.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "c73fa382c5a5ffc0c34b93c8fb9c9604c75032d507514f2f333ee1434836d85e"
+    },
+    "first_stage_model.encoder.down.3.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "c72092265fc70a2e2b3320e08b18baba0262fc990352e33a2bd8a75c03ee83b9"
+    },
+    "first_stage_model.encoder.down.3.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "943e73576611686d74e9d6a5adcf666abdae7a32d023ee016e2fa6c8e2111602"
+    },
+    "first_stage_model.encoder.down.3.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "9b167aba2f4d47b645b873342a2e4572ff62daffadd6d23227376db6a2e89c4a"
+    },
+    "first_stage_model.encoder.down.3.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "414ebb57a1766baae36063142984351b980cdaa91e0c5aeffa574d976bdc74d8"
+    },
+    "first_stage_model.encoder.down.3.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "4b6a10cae22fc1055bc72d049ca2c02ae37baa86dc686fcad45ffa9bf9b86154"
+    },
+    "first_stage_model.encoder.down.3.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "e17a5afb56a7acee603bc8b76d434cfdab369c520aed8158e178556627c5cd10"
+    },
+    "first_stage_model.encoder.down.3.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3e773f8fd1192b825596b59e3874cfcc5cdc8fb4b882c330280cbeccfb774985"
+    },
+    "first_stage_model.encoder.mid.attn_1.k.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "dc2ef63615238a12d43b93580a764a72227d0a5f1978eecf37b674c5054fd4b4"
+    },
+    "first_stage_model.encoder.mid.attn_1.k.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "615cfee06d4954c6bddd47e56d2b44c66c21f0bae74284f416610c53d2de4b78"
+    },
+    "first_stage_model.encoder.mid.attn_1.norm.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "cb0c531d7902b01422ad314d2e6fc5d95a285b1e1b8053418e63774941bacbda"
+    },
+    "first_stage_model.encoder.mid.attn_1.norm.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "c357c89414c60d8a7fdd340d877fa7637c05fe38aae553a4f2d85bf195be8549"
+    },
+    "first_stage_model.encoder.mid.attn_1.proj_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "483bc999e15fef771dc723dd8767a09378972f03869271c688f648c9aa2e85a5"
+    },
+    "first_stage_model.encoder.mid.attn_1.proj_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "ff7edb1c11e8a13e759fe13dd2d6be5d2710b60e751e9f1d10516941721ed486"
+    },
+    "first_stage_model.encoder.mid.attn_1.q.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "51bb5f9be529e306cdf529b5b88e72ea70a8fd414f34d2fb001399b6dc0ff99d"
+    },
+    "first_stage_model.encoder.mid.attn_1.q.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "7302ed19da686ea4fd59fbce2b2c121213af1c614a9264fd4495df56be2399cf"
+    },
+    "first_stage_model.encoder.mid.attn_1.v.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "c394c8deb0e16dbc247faeb0747da5eac95766c8bb0bd9029e76a958f30d2987"
+    },
+    "first_stage_model.encoder.mid.attn_1.v.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "7739cd49ccb7368cc6ee346fdf82d257bc80f4cd8e543eca30913545f2d48a60"
+    },
+    "first_stage_model.encoder.mid.block_1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3929e5c037b6d31b86d55ec2d274ccf229cc764b7f0e96a4769c7a431abdff7f"
+    },
+    "first_stage_model.encoder.mid.block_1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "c10dbe1f01951cfd3f403af97dfed6ceb35cd6ffb6d97d4221253db233fefdae"
+    },
+    "first_stage_model.encoder.mid.block_1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "88af9ba6d26e87a3da761820f84a78aad90c7d0156337ab07b0fd2fd25214b9a"
+    },
+    "first_stage_model.encoder.mid.block_1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "deaa6e37f06d9fa771e665b458ba67902e6e62d7a32c17cf5922b860607eeab9"
+    },
+    "first_stage_model.encoder.mid.block_1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "2f1973d6bab2a75f96d3e82a1e0e87f4de8ea414d53ec7a069008d4841710ab9"
+    },
+    "first_stage_model.encoder.mid.block_1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "6520b7b33903164d6e75d54503698abc58036f60351ee3bafeb06435ebb52231"
+    },
+    "first_stage_model.encoder.mid.block_1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "9fb44ed452211f215eccc8feef7dd00fbb525363c5e29d8866aaabbdd6c53dd8"
+    },
+    "first_stage_model.encoder.mid.block_1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "5e396831edbfe53ca2455b02e1fa974f63adc0a47e0f9e27e0187b3e650dc952"
+    },
+    "first_stage_model.encoder.mid.block_2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "2b58aa7e2498bc940486a893f951d1501d7b34f5a552e5643d1e018a007a9b36"
+    },
+    "first_stage_model.encoder.mid.block_2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "c314c7964af1ca57189e002a0b253d577d4842a41b3d77766f744ab167d6b3fd"
+    },
+    "first_stage_model.encoder.mid.block_2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ef5e5a3e0906f39ec877a6fcef3a000cb70aa24b0478f53280cd2b3d0b60bbb8"
+    },
+    "first_stage_model.encoder.mid.block_2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "aa74e3ac80f3332d43adc3210b2224bffa02ffbae8015dbcd5521dfe243e141d"
+    },
+    "first_stage_model.encoder.mid.block_2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "cc183297286a5a58191b8b22f738e94237d9fa8722c2d28293882a5dc8ddd521"
+    },
+    "first_stage_model.encoder.mid.block_2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "dffaca4217104144c197d353a96eaa874877298cbc7c6a97eff04a1e0e637afa"
+    },
+    "first_stage_model.encoder.mid.block_2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "b5b122d4eda549c4f78498a478e57d8a4941bda922dc1889f81351915ccd9040"
+    },
+    "first_stage_model.encoder.mid.block_2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "1dd9a2db17791ebd18369db4e01382c29030747454491663cdc29abd8b9073df"
+    },
+    "first_stage_model.encoder.norm_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "259002dc99e1af4a24f5ed9872170b686d6065eae17e866bb06201111931e804"
+    },
+    "first_stage_model.encoder.norm_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "72e8440992c0c362a1901a48d4424f51209225ccac95ab2af22a8520135c5930"
+    },
+    "first_stage_model.post_quant_conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        4
+      ],
+      "sha256": "7ffc9a0bb0db410a65aaa843b480de9469908758f2340ee3ab8b49a04405b83a"
+    },
+    "first_stage_model.post_quant_conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        4,
+        4,
+        1,
+        1
+      ],
+      "sha256": "825ef4ea3f0df5449fef74fb4233ec13a2b57d2b540d8db40bd4aeb5f752b644"
+    },
+    "first_stage_model.quant_conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        8
+      ],
+      "sha256": "d17d6cdae2cf8c66153b655505dda676ed69e87a3b9ca08c8f300af722039afa"
+    },
+    "first_stage_model.quant_conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        8,
+        8,
+        1,
+        1
+      ],
+      "sha256": "e2bac2f3acc4fdafea45863c26de2b97a868844f1252729ec88044df70a6a514"
+    }
+  },
+  "hyper_vae_tensors": {
+    "first_stage_model.decoder.conv_in.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "6226d5b29c0aa43570836ed33820ebc4cabbd0c818d5bc0b5c9e9acac9a717e3"
+    },
+    "first_stage_model.decoder.conv_in.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        4,
+        3,
+        3
+      ],
+      "sha256": "d134805117a2d2d2f35d1329d90ab48dd15b1c1407ff9ae160940f3254c78774"
+    },
+    "first_stage_model.decoder.conv_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        3
+      ],
+      "sha256": "2e1726c811e388e98d11a8fb17a6075d1739b456628743b7d74b5c0435e57362"
+    },
+    "first_stage_model.decoder.conv_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        3,
+        128,
+        3,
+        3
+      ],
+      "sha256": "dd051523a3f2ab41ee11e963f0fc29ab99734a6fe7763f003bc942af3a4dc7a8"
+    },
+    "first_stage_model.decoder.mid.attn_1.k.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "64b7159e7436c922a266b4b747c09c246cc90b226f987ac14826fea73ed9a7eb"
+    },
+    "first_stage_model.decoder.mid.attn_1.k.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "ab7cdd7c70a242f6ed6d6a787413727310b0692d03d2a6d7073fbc3b8be19514"
+    },
+    "first_stage_model.decoder.mid.attn_1.norm.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "67608eb21c4e5318c10a995ee3f9b9c3c202441953cd7d5b6f5f48bbacd94dca"
+    },
+    "first_stage_model.decoder.mid.attn_1.norm.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "b95c872c8e777e319c67d2e4093c0b099cae466685a4f31c729bdb087a9e6734"
+    },
+    "first_stage_model.decoder.mid.attn_1.proj_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "b63d094c3f1cd9dceb4bd85e1b05ff4f9e2ed85f4e61083bbb51cb7242891a1f"
+    },
+    "first_stage_model.decoder.mid.attn_1.proj_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "b27956109a53307622747f3d2933f1dee9c07b402193a482052945db256f5da0"
+    },
+    "first_stage_model.decoder.mid.attn_1.q.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "a9c3527c76efd9539e474346fe9cb9d26b1cb286ce58d9fcefcdf1bdbb9cba95"
+    },
+    "first_stage_model.decoder.mid.attn_1.q.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "95b1b4a9e063b7d6f02ddd8ead684b89f31d37997c339d77430406aff25febd0"
+    },
+    "first_stage_model.decoder.mid.attn_1.v.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "1f5cefb019cce9aec6f0f1d983678e12ae041ff50782a6d3c6164124f5a993bb"
+    },
+    "first_stage_model.decoder.mid.attn_1.v.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "b535405687b030bd137a5a8aa546414147c6936c398ba2d05fa31832568def5b"
+    },
+    "first_stage_model.decoder.mid.block_1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "33ea46afe1b6173233c58052780fe074eca7a215dcc7ebb037eaa178f0390e32"
+    },
+    "first_stage_model.decoder.mid.block_1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "04cf80a46a1f754915e56429c4b7b224e746a51c7a900bf21e608d89b3c13df3"
+    },
+    "first_stage_model.decoder.mid.block_1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "64a542e5e1e8cae1b16a54938cf83b6424db9b5ba9474da4e8895c8ff5a8f66a"
+    },
+    "first_stage_model.decoder.mid.block_1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "5a99903b100b335a396ff8cb4cd9b855ec5dfbe01ffa6a1f60e52343a7f34870"
+    },
+    "first_stage_model.decoder.mid.block_1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "bea462e9615027927875a39003e474c8a9188c092762313aadb3ef3f9331c157"
+    },
+    "first_stage_model.decoder.mid.block_1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f10987ef508a48564198fa58376160b4f68650b1c2723ec4149c3ddac57393f9"
+    },
+    "first_stage_model.decoder.mid.block_1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "50d20cadf98356e1c12dbf55068adfd26adbda051bed4fb0148c1c24e23beac2"
+    },
+    "first_stage_model.decoder.mid.block_1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "7ec40d41c7f89f08557ad6993e524fc8a61bf9954b3f4a34c9c9da572a990784"
+    },
+    "first_stage_model.decoder.mid.block_2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "d908a352fa270bc3e7a514e9be219b205c5ca47c8bd899ae69d60e30b216cb23"
+    },
+    "first_stage_model.decoder.mid.block_2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "304299b2fae79c8ef324fb154d76b7f2fd00dc1f258d8354bf9939b63b361a67"
+    },
+    "first_stage_model.decoder.mid.block_2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "00b35571698df9fb647ed4a9922f6d53dea35443910ee26012e365982c8dac69"
+    },
+    "first_stage_model.decoder.mid.block_2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "675a68ee7624095ebac458dfa5c8ec89a52ac57d2eea4a23ff3a2217303e6fb3"
+    },
+    "first_stage_model.decoder.mid.block_2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f41ebe24979e913d46b77665a9ef59af0a7e7d45464ad85598bece653ef18846"
+    },
+    "first_stage_model.decoder.mid.block_2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ab95d191208c8b46c96bdfde9f4abf259d349b334f71763a95582b8e3e11b8c6"
+    },
+    "first_stage_model.decoder.mid.block_2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "7ae7f47f46825589d75400c6d1c5844f4faea8b600a6a3e2c987187e3ca04a41"
+    },
+    "first_stage_model.decoder.mid.block_2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "a08d3f14e332c84a35690775545a36c90b05ef6b96ef1bd58079d8dcece7a364"
+    },
+    "first_stage_model.decoder.norm_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "8f04b5b511f9a8bd74ba543b92bf51ec99fb3fc5095c8664d34edc571d7f426b"
+    },
+    "first_stage_model.decoder.norm_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "38f99f4d69e3e9ae4ff4516cb61430c9921e587265a661d4ae4f289c28df8d39"
+    },
+    "first_stage_model.decoder.up.0.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "7467712241511ef479cfe4f8065a362611bac706c798fba069c8dc55add13c66"
+    },
+    "first_stage_model.decoder.up.0.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        256,
+        3,
+        3
+      ],
+      "sha256": "452212927c605cb78446a9fe700755caf98be9147b70fb546ae16e0fb88022f6"
+    },
+    "first_stage_model.decoder.up.0.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "db8510b45622b3b576f810d8a43f6fe72b0d5a1855fe59b713523418621a870e"
+    },
+    "first_stage_model.decoder.up.0.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "7140c1973e58a587793119e4f343736c2631d8567a8d3d0c77f8a4f34de85a2b"
+    },
+    "first_stage_model.decoder.up.0.block.0.nin_shortcut.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "26d16cae7bef783a80e2e8d154385d98008c24da94eee9917aacd96ca9a38f09"
+    },
+    "first_stage_model.decoder.up.0.block.0.nin_shortcut.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "sha256": "f3d3fced78bf00b81708aafd2ef4d843a9295b57493104de1290eee44685a60a"
+    },
+    "first_stage_model.decoder.up.0.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "a7b4e6c4724de1e50e59cf2759d886e6e4c9fc85e9631d3a34af2456ed3453a7"
+    },
+    "first_stage_model.decoder.up.0.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "7ced7eac5db55939af01a034dfabac77bc86d83fa878b9a2c90b646d07686656"
+    },
+    "first_stage_model.decoder.up.0.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "71a68b92045ee66e8a836c7e7d95aa16c27a68c82a68be0e98b72b2875f070ec"
+    },
+    "first_stage_model.decoder.up.0.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "0c762e7b5ea372e7a49dd55849d28dc5a6ccc6475a6833a9d87f8f842d8f4097"
+    },
+    "first_stage_model.decoder.up.0.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "3c91909aaecfa2d48fd6c623986c9be188e24048f2e1e812ff4a72de4b040f3f"
+    },
+    "first_stage_model.decoder.up.0.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "60cb4ce40d24b6501a02d37fe0b3c2030aef9240287b5741905a66bec23c75a0"
+    },
+    "first_stage_model.decoder.up.0.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "75e519e42b80f8ee28c99bbb9dd70ac06cb5b926e1373628159a1b99facef861"
+    },
+    "first_stage_model.decoder.up.0.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "420170aab035abbb7962ce19e6833a819cc3e18701449b27153ed936b5305cb3"
+    },
+    "first_stage_model.decoder.up.0.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "cb7111fd028eb6581d0ee6215cc29cc8afdaec1a9d80db2f32cd68dfa500d4a0"
+    },
+    "first_stage_model.decoder.up.0.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "a50f3b670d382f12c71e4a32e7436f415c4bc96ba92858a622234fbc24ea0568"
+    },
+    "first_stage_model.decoder.up.0.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "bd1295755f80081b099f4fe70fb11e9366b14d04185b6077aae2c9008f0d0352"
+    },
+    "first_stage_model.decoder.up.0.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "5cd1ac47342b4868da1f83a90f5471f7717a349653cf759149c87ae081c31092"
+    },
+    "first_stage_model.decoder.up.0.block.2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "cba52a75b4275117c716f010c217bf2ef7e5f95cdf027ec39b63be70f6fa4ae9"
+    },
+    "first_stage_model.decoder.up.0.block.2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "b31b66f508e09845965336b5b2ec894f4488d4f714352229bd47614d96060850"
+    },
+    "first_stage_model.decoder.up.0.block.2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "69c37468c710dd5b910f829c68f672b4e99e533f216fb56700bb418448dc92d1"
+    },
+    "first_stage_model.decoder.up.0.block.2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "aed6b2f7869ef4616bf25efa02a54ebadc675fc7d40fd061929bafbfc985691e"
+    },
+    "first_stage_model.decoder.up.0.block.2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "a54a7430cf19a8046cf0e92c8bee915aa90934df301c645eb388cfd30da71c3b"
+    },
+    "first_stage_model.decoder.up.0.block.2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "1f00db2a79c50e55bccc7066a14a82f9408ff5c37f69ed6337e9dfc595e2a535"
+    },
+    "first_stage_model.decoder.up.0.block.2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "79bc51c82b4326027201e7069b9c70e3d00e0d190454d38a13f12100aa57a76e"
+    },
+    "first_stage_model.decoder.up.0.block.2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "f2be7b6d5911e7a10054664e2c4f5b93bbbf0561b86c5c1ca8b8ea9f01153a5e"
+    },
+    "first_stage_model.decoder.up.1.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "d6ff98acb34a1c3e4ad96abc88cc88fc543a24f2163bdf4a87aa526d89a2dbdb"
+    },
+    "first_stage_model.decoder.up.1.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        512,
+        3,
+        3
+      ],
+      "sha256": "fd693388d92e21a3bec6a11a404dd63fbb00e7699c4693632cdfb32246306710"
+    },
+    "first_stage_model.decoder.up.1.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "120ebe4f19cea6fe9298017636f327c09baa8f47d24ffc908dfb25bfdb2fbe31"
+    },
+    "first_stage_model.decoder.up.1.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "5271c2085cb91eccabac4079f35067bec7f38c0f00bb8023fd98a6f750420e29"
+    },
+    "first_stage_model.decoder.up.1.block.0.nin_shortcut.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "88579ceb53dd844d2ec3386b9f500bb0c1890dbc0e527fafd5244b1bcec259e7"
+    },
+    "first_stage_model.decoder.up.1.block.0.nin_shortcut.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        512,
+        1,
+        1
+      ],
+      "sha256": "fba05bbf319854f43b66fb81431fbc3d62e6196e5dec261c50a177c99bb5efb8"
+    },
+    "first_stage_model.decoder.up.1.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "01ea99f44feaf1d8bd7ed72cdda0003605d8be5861903e541e09af649822e617"
+    },
+    "first_stage_model.decoder.up.1.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "0f1cec8848acc3fddc04ca4a420ad6816b73d5796da483ee95c3eb9ea7112340"
+    },
+    "first_stage_model.decoder.up.1.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "53218672edfca193f698a54f26f644d1cf00f6f97e3b29c366cf071875cea253"
+    },
+    "first_stage_model.decoder.up.1.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "888e2531ca2615de971619d6cc0fe5456d5c9fd4eb0be1afd6761b9c897f47b3"
+    },
+    "first_stage_model.decoder.up.1.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "523a416705298077607579740715a366ea9236a44c3171dcfb1cc87aa78eefc8"
+    },
+    "first_stage_model.decoder.up.1.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "597f60ce157a6407c3082338292f63ad9a19dded23db3b4ed740d318418abfa0"
+    },
+    "first_stage_model.decoder.up.1.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "7d2931b4bb7760d7d20a3e3bb234765d6f2e3fdf6aed59fbef138313f579220e"
+    },
+    "first_stage_model.decoder.up.1.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "fa270460f5cf56d05113fd868ef882f2430628fea8a140b35ed1248326c65173"
+    },
+    "first_stage_model.decoder.up.1.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "05100960ee78d0128790d21b4e4a9cbfb8acf3d7be26033de54beed041d47074"
+    },
+    "first_stage_model.decoder.up.1.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "5867b7d03bf67e04d0adb656769bdcc12e3c89d9b2348e717fb3500040610b8c"
+    },
+    "first_stage_model.decoder.up.1.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "0964e73ab7c13df0e1eb1fca8e0c80b20850b71d05e62a9013454edaf5360a6e"
+    },
+    "first_stage_model.decoder.up.1.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "93facecce82264930656fb52f1e4181717a78ee28e14011283d8558ced49aec2"
+    },
+    "first_stage_model.decoder.up.1.block.2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "994942ae029a810c93cfcff162a4f72bedffeb958a9ea9097451b9e00a816495"
+    },
+    "first_stage_model.decoder.up.1.block.2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "c655bcf40173388fb10f15bc06f0c6e3edf733e83c60a1c60d610730dc2f1399"
+    },
+    "first_stage_model.decoder.up.1.block.2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "b8c27b5a70787084ded27189e9b4b2d75a798731ae6979fae6e4bf9654886c45"
+    },
+    "first_stage_model.decoder.up.1.block.2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "fc9906c5641a8c5afa12e928f365a882ef6b7b22175e837c4829f53cc81aa1be"
+    },
+    "first_stage_model.decoder.up.1.block.2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "01fb44b4747c6a08c890b92e0d93cfd78e588171d01effff25799860d9e855e7"
+    },
+    "first_stage_model.decoder.up.1.block.2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "b96beb1f0413ed97e714faf59842bcceedf60273b69d8ddb21924fe8de96df0e"
+    },
+    "first_stage_model.decoder.up.1.block.2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "d5ee09011000ca746dd0f532e74aed1d4f52b26992763f8fa88809b0a3e74f7b"
+    },
+    "first_stage_model.decoder.up.1.block.2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "0378b825ef17e9b114e61bd11833019148eb00c55d31292fe3035ded1adf4b3b"
+    },
+    "first_stage_model.decoder.up.1.upsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "a41c25412e160a3d155a6ccca9b11838462bc6fc4842b576bd5310e043bd99d3"
+    },
+    "first_stage_model.decoder.up.1.upsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "b8eaf3e6f4cf6bbcc3c3a9d3d30cefe458bd1de3ad76bd19351bb702ff141bf7"
+    },
+    "first_stage_model.decoder.up.2.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "68c9af0b9fb7ad47bc097a610d6825f895a538bf50cd782d7956f23a21bb95a5"
+    },
+    "first_stage_model.decoder.up.2.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "b87609fe4e9aff5ca2902ad301d5b06b8157f163b8b24f420a6f8a43e50fffc9"
+    },
+    "first_stage_model.decoder.up.2.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3488233a88e8ae1aff7b63cbac7e4b35f7e772faa8aa32ceb7c5bcebb5472bde"
+    },
+    "first_stage_model.decoder.up.2.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "5ac1bd6b673c492dbf5dea9ac56aff1031cd09fa2031b66dcd6308b8679b6e62"
+    },
+    "first_stage_model.decoder.up.2.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "bc4dd83d8a91680f4adb86742c968e15afb1898165c64e60e7c485f29af2a954"
+    },
+    "first_stage_model.decoder.up.2.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "09c5beed10d3699d8c3915199b1052c63a69ffcbd157d29c2d46807c9ea14cfb"
+    },
+    "first_stage_model.decoder.up.2.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3a1ef1c3c4a1fc94e722141262ce89ca28a873ec61053df90cb3681225ea6c3c"
+    },
+    "first_stage_model.decoder.up.2.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "86ff0f2223117124f7bebe4d99efdf8a50c0346135cd155bea0e8ed8a4097b52"
+    },
+    "first_stage_model.decoder.up.2.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "b350ba83d77a60d9c7956dae3b276f87db4e78396fad657e8e670f54f7585d88"
+    },
+    "first_stage_model.decoder.up.2.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "eb1cd3c20a824359978b663d10555147d59f375026c3338dc4f7d7a3e8db7474"
+    },
+    "first_stage_model.decoder.up.2.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "cd9d8062295abd6e2a483277f93a0fec8ed98617e1f7474c297ef723693ba3b6"
+    },
+    "first_stage_model.decoder.up.2.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "bdad87883a34e898929ab8be15339553f5e69ee3ade191421c7abfd2e483161c"
+    },
+    "first_stage_model.decoder.up.2.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "fcc47cc71f7af91bbb54aa80b7dd1089e99429ad7ebe8845818325e239f8b847"
+    },
+    "first_stage_model.decoder.up.2.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f3ee1ee387a3449318d9551197ce835d14399a48287f80b02bd1064275c9817f"
+    },
+    "first_stage_model.decoder.up.2.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ca0b2d1d4982df1ede328aac6b307bd82688818d222c4e2eaef9ee495e9d38b8"
+    },
+    "first_stage_model.decoder.up.2.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "73abd2f6e21cd3b2d6ac71bed1add82569abf5fa45654ad1e682bea18830024b"
+    },
+    "first_stage_model.decoder.up.2.block.2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "7f98939231fe10fb7ecebfb089acad9e5f504b5168b49fb145f3abaf73d3179b"
+    },
+    "first_stage_model.decoder.up.2.block.2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "8c398f299ee7cba5adab97d9f9f6ad7943ef2e07623fbc6de038cbb62a5d7177"
+    },
+    "first_stage_model.decoder.up.2.block.2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ecbbcb4cb63b1ca8ab38c811becfa2a00bb15b1c190c1f1ed0fed264c0d06834"
+    },
+    "first_stage_model.decoder.up.2.block.2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "a03b576b363a1d0177aa0674dbcfa6cf702b40b51e96d643d91c26e4311c1bd2"
+    },
+    "first_stage_model.decoder.up.2.block.2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "c1b83f0de2ef3811fcc510d33165fd7758134337b853e673ddc8c8ce564aa3c8"
+    },
+    "first_stage_model.decoder.up.2.block.2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "c838d716087eaab275d8b27d0701630b2a44e1bd07ddc464fbc331a9da218a39"
+    },
+    "first_stage_model.decoder.up.2.block.2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "024e9b2de4a5fc8f8725a740fa30252b929d89473d01f5dd00866081f6a144fb"
+    },
+    "first_stage_model.decoder.up.2.block.2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "5b1c2376620f1a6c7dc209c44d6d40e7f9e53f15ccd61ec43bfb895655f33d86"
+    },
+    "first_stage_model.decoder.up.2.upsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "cf1fa294f7b1f125651f791537633327799eec2f2b156efefa51ed88ca309ddb"
+    },
+    "first_stage_model.decoder.up.2.upsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "f66e05ee7880c9371d13799472c822649b21aa29901791aff42ef55be3c3be1c"
+    },
+    "first_stage_model.decoder.up.3.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "762b1a23c57ed0f90f22206f3d4cd01ef6f47564ef471e05e0d33169c2522468"
+    },
+    "first_stage_model.decoder.up.3.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "52e48dcd241d7177b7e4ab8a8dc2e45e3d169a0f7df1df119612cd709ce6496b"
+    },
+    "first_stage_model.decoder.up.3.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "a90b303f9ac63d20182ede876c9444c7d66046d1f421b7c7cd80b0c10e762b04"
+    },
+    "first_stage_model.decoder.up.3.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "d68387dc21318768b3a44979c83562d832c77c7c6fb83c910a060286c19ac236"
+    },
+    "first_stage_model.decoder.up.3.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "1079c2c33a4b931710007d966b36377a4738cfe7ca6af6313cbfc4426a755a8a"
+    },
+    "first_stage_model.decoder.up.3.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "7327ecbfcb046275892a3322d6c95abb6941c6c26576acc1e7c8ebb3d9b3f22d"
+    },
+    "first_stage_model.decoder.up.3.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f49c493abfa093a5f22ce377258facbe5135a414853618df0fd92f7f1d5ef501"
+    },
+    "first_stage_model.decoder.up.3.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "93ae46b8ed907c33121b8241fb48868c755faff2370171c92ad5c878aaeb59ea"
+    },
+    "first_stage_model.decoder.up.3.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ddde7096191af233afb51a887a3a13e2cba63bfa4aecf2118945b94753b03363"
+    },
+    "first_stage_model.decoder.up.3.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "494e94e9751aecc46313ed29f198b632c9126f643e98a25f0b1d3c08e9375f4b"
+    },
+    "first_stage_model.decoder.up.3.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "552b605ae5256d40007ec18e33cb23d08bfd2c67eff87f7cd96d47511af0a969"
+    },
+    "first_stage_model.decoder.up.3.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "243482902117568aa2986b4474c6af2bfe015dabe04b9e82fb1d2295749a4f6d"
+    },
+    "first_stage_model.decoder.up.3.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "a312861562db67c771bbd98c4fd52ca622e2f440d7d760084604c88180604fc8"
+    },
+    "first_stage_model.decoder.up.3.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ce9e4ffc5370dbff08da1c787cae5f45b05ddb242fe9e0c6affec97facfc47e6"
+    },
+    "first_stage_model.decoder.up.3.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "711a8c72614042b1a8bf251aef04b8bc76f47ff2c0f534ab2dd8bd3a54442838"
+    },
+    "first_stage_model.decoder.up.3.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "e99f261c36f376f207b19aae37afb56dd568e94d6f9a62feb289f5f8ca15a36e"
+    },
+    "first_stage_model.decoder.up.3.block.2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3763761f4d22a2f53da7766933a8b6dd1db6960c9cf4c1d6405813e9dde9f24a"
+    },
+    "first_stage_model.decoder.up.3.block.2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "f8947d3346c77a7272a35cedbf198616011d28f2f5e251e2ba83bc2c9239658f"
+    },
+    "first_stage_model.decoder.up.3.block.2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "b20555a711d85acf74f955834f5fe0bfceb6ac7d098ec2e93a25e1b659e353d9"
+    },
+    "first_stage_model.decoder.up.3.block.2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "6cb5a663851810166b880df246af6c0e5905369653b02f2a23cb620df36cc70e"
+    },
+    "first_stage_model.decoder.up.3.block.2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "8b223443dd57c916ebfc10c3e36758f3c3f7b29d6f49ebad97414a2e641dd751"
+    },
+    "first_stage_model.decoder.up.3.block.2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "0fc00ae7de296069233a91b43983c2cce654a7e5c7bae13120609a651c33ced7"
+    },
+    "first_stage_model.decoder.up.3.block.2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "9c8be2817ba31db0d5b43ffa3a99f7999f8822532cdbe3842843ccc88d5f0e04"
+    },
+    "first_stage_model.decoder.up.3.block.2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f3ec09940693bad789338c0a1a770fc54b526fbb60586179feb3ccd5092e324d"
+    },
+    "first_stage_model.decoder.up.3.upsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "2956e711b0126f4729bc6a7fed99c83007411f260341d8c91afb95c241af0bcd"
+    },
+    "first_stage_model.decoder.up.3.upsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "e15020d754aaeff62472217e54cb60513b769897f67bd06ab4f82f6fa10c243c"
+    },
+    "first_stage_model.encoder.conv_in.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "bda6f06d9515e0a7b23e127b4c121d24ba782793b4b95cff47e32e91fede54c9"
+    },
+    "first_stage_model.encoder.conv_in.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        3,
+        3,
+        3
+      ],
+      "sha256": "1ea3915b4ae472e24dad8423b1eee9d26b10139a9e924721d48950cb21c8a522"
+    },
+    "first_stage_model.encoder.conv_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        8
+      ],
+      "sha256": "d54108f8853d542c338c690d29cf250d226c80d582186b91088dc8e9ae4bbc82"
+    },
+    "first_stage_model.encoder.conv_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        8,
+        512,
+        3,
+        3
+      ],
+      "sha256": "3685a000ba30694f44a6fb99b908f21e06e99b8f0de5e498485f06f03f3d9d3e"
+    },
+    "first_stage_model.encoder.down.0.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "0d11905c3480658780e9b549a591a689ad3dfc5568779c7067784f9a39e7665e"
+    },
+    "first_stage_model.encoder.down.0.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "434627694a8000f4fcf63cb9e1aad2503e2654a2bdddb1ab351ab5ae661cf0a9"
+    },
+    "first_stage_model.encoder.down.0.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "67f62826baf9c1e3d45c8f099793884f9dba1ce5ef378096e75996ab20cfba45"
+    },
+    "first_stage_model.encoder.down.0.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "5445d33899146a67cad79b6e48af8329c3614c64cc04edb32090c6e5ef45e301"
+    },
+    "first_stage_model.encoder.down.0.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "00f9762b0836104d5aa53818185b2e0a049f535a86488e77c37c5ca5d6fa0a5f"
+    },
+    "first_stage_model.encoder.down.0.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "6d96a819eab0e535b45f5ea2689da3c8d3e962ce7239fa2c60754b4591f20a9f"
+    },
+    "first_stage_model.encoder.down.0.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "6c474f966ed60f3e944f1e44441897d1f5659a070196b0ca3241a97756baa8c6"
+    },
+    "first_stage_model.encoder.down.0.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "8572707156e1fe4ac8b00cf70a499d3996830e51d7219a3080d05e801e26eecf"
+    },
+    "first_stage_model.encoder.down.0.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "e69531b39e07c154d6fff04c3925731bf566d8d3ac8b5d7ed27add22c9c08c59"
+    },
+    "first_stage_model.encoder.down.0.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "ad0f4b91ac50e69f5bb6996963e97d77158bbc01d82bdd3ded7be96005c632b8"
+    },
+    "first_stage_model.encoder.down.0.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "396efe5e1055d1c654c08cf54182758b9496121c85131b7fc6c45e77a73375da"
+    },
+    "first_stage_model.encoder.down.0.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "e9a60d5fec6409194d67699fae88620ac23d8f1d8828a5952225607afd7a468f"
+    },
+    "first_stage_model.encoder.down.0.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "db0181931027d0d76ecd6dcc2795006854f66825e385883a788a20a0fdfaa789"
+    },
+    "first_stage_model.encoder.down.0.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "a8e690b11fccdafb402df4d243262ae53e8d361333c8468a16f356c8d0077659"
+    },
+    "first_stage_model.encoder.down.0.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "f8363843c5031a5307c97d720416bcce5b244bced9e6e0e5d1f22923061b44d2"
+    },
+    "first_stage_model.encoder.down.0.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "69fdf6dcac882345bd0676d7c074a4e2f9bc1365908fd2a2413e1885a4099a52"
+    },
+    "first_stage_model.encoder.down.0.downsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "25a57b9cca128665e5ac5899443a776cea5995b55a9f679671fdf59163aaf4f3"
+    },
+    "first_stage_model.encoder.down.0.downsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "sha256": "0a9444f355dc35029f779e7ec3ab42cc32fc6ca28983b3bd03deda1b56d7d445"
+    },
+    "first_stage_model.encoder.down.1.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "c9343505120af92e8190a1dd3189d6febaf6a5efe51b8635ea8b85297e14fae2"
+    },
+    "first_stage_model.encoder.down.1.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        128,
+        3,
+        3
+      ],
+      "sha256": "b444d8403f7f6dc9944553a01937feefdf323f8e0b890a17aaa7f794ed0643c7"
+    },
+    "first_stage_model.encoder.down.1.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "2ff36de813090a2083529f5dec09015b4ee93a289a321df9867638c54d73cafd"
+    },
+    "first_stage_model.encoder.down.1.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "1091a6bd59d0f030b00a0b95a8d68e630c21888f78c0c47e9665dcc37d251465"
+    },
+    "first_stage_model.encoder.down.1.block.0.nin_shortcut.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "28d30af6c8f0eb238818ec0a2f84844a275f6d6b320136700d8dc284f001043b"
+    },
+    "first_stage_model.encoder.down.1.block.0.nin_shortcut.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        128,
+        1,
+        1
+      ],
+      "sha256": "a56c9988adf0d427b7a89aba0541f0b5b1aef1a123a2e233b9f712c7a29a531f"
+    },
+    "first_stage_model.encoder.down.1.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "9485aedcba3cfbc1d5e03a3322a3f25edaddd342cb5f8dc9bc1d2a5a7e8691c4"
+    },
+    "first_stage_model.encoder.down.1.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        128
+      ],
+      "sha256": "404a2dc9d89a874572d157afeb462a6455176c44e3042e193e7c5eea73925d40"
+    },
+    "first_stage_model.encoder.down.1.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "755c8aff4e91d0c82fd55f29a67f7fceb5e7775318af6d2a837ca0bd42efbabf"
+    },
+    "first_stage_model.encoder.down.1.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "668a00b0696eda878245229298835419194dc5b3c297786a1e44f82ea16485e2"
+    },
+    "first_stage_model.encoder.down.1.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "23b0577e72c9184e3074e588993464e235bb67dcd0ce1672eec84121b3059f2a"
+    },
+    "first_stage_model.encoder.down.1.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "fff3dd2844b00d17aaba516a96ca88547fdbd4efa2fabba113e065afd83c764e"
+    },
+    "first_stage_model.encoder.down.1.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "ea57377a185290cb12f591faefc0fb0f7b5188f943fd7168ace258ac314b4e1f"
+    },
+    "first_stage_model.encoder.down.1.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "5cdc158069a70d13e4ec14a61bda93e34867faebf2925362d7a2184ef173ec20"
+    },
+    "first_stage_model.encoder.down.1.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "29cb4561babc279a1ed890a671b83a0738bcc48468e495cfd0461031df4995fe"
+    },
+    "first_stage_model.encoder.down.1.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "77e799c83dbdb8172edc90327ba207e9ed6d49c115c2718d93bb35231ebcca15"
+    },
+    "first_stage_model.encoder.down.1.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "b3b54b0de58dffe6d643afd82b7141a0dcc6a425ddb51a5a6e724b3f2ee147f8"
+    },
+    "first_stage_model.encoder.down.1.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "40264ec0fd9367c4eb34185dd157bfe9c7016dea9b8f39f9fd74a76f6ce668cc"
+    },
+    "first_stage_model.encoder.down.1.downsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "61f01fc72b91f16553f767e358104665458add265dba64ca141cb5019e9e879b"
+    },
+    "first_stage_model.encoder.down.1.downsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "sha256": "33f11faa5300d2dcd0c38bea2da1ab757e961ef033bcdd67e7c4f26ce7b2e44a"
+    },
+    "first_stage_model.encoder.down.2.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "9a070afa7571d633b0f2e1bb21ac2425148dfa35c579b2c41e29da6548ee0fe3"
+    },
+    "first_stage_model.encoder.down.2.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        256,
+        3,
+        3
+      ],
+      "sha256": "57f7525bf514e026ec04d0720ed7811d2e27c762aed6063410611b2ab7311516"
+    },
+    "first_stage_model.encoder.down.2.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "695982272e7a38c1bcc72f162e1567a5f5c804ffaf0dce5299a71a0d139898e9"
+    },
+    "first_stage_model.encoder.down.2.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "4b7495e9adfbfb79cedcca893f26ac5be03797168306d4dceb1f9c2236171fc2"
+    },
+    "first_stage_model.encoder.down.2.block.0.nin_shortcut.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3b1c0f6fb1ac68c6ec364d3480411861e838ebb509944633780e2be95947abd2"
+    },
+    "first_stage_model.encoder.down.2.block.0.nin_shortcut.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        256,
+        1,
+        1
+      ],
+      "sha256": "abf1385f6c0307d3215313da043d0c8c538e747eafce45f8e249f2a762f02ded"
+    },
+    "first_stage_model.encoder.down.2.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "8bbb3690fb62e4de67703a34380f34be9d38d9e0b5f28e050456afd9fbbec42c"
+    },
+    "first_stage_model.encoder.down.2.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        256
+      ],
+      "sha256": "593c5d1b5a46824fbc95a1a274ce98d0a810194ed6b04551b07a81b9559f9a16"
+    },
+    "first_stage_model.encoder.down.2.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "8c2e3041357d43d2a8ca58894e78a5e39bb0ce82f9968c27207dc34ca2fb8eee"
+    },
+    "first_stage_model.encoder.down.2.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "72c4683b40ccc51e5881fe96611fd1bb45638f5c3f6ab6786caf63b2b054501c"
+    },
+    "first_stage_model.encoder.down.2.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "7e42c762b8fdfb23e5a16d5d902180f7f8740704b678bb959339cb11bc37db70"
+    },
+    "first_stage_model.encoder.down.2.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "295ed8380a1a668d4bc74beb8618a1436762bd76cd1fcf6516513fc29f3f37a3"
+    },
+    "first_stage_model.encoder.down.2.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "d6ec5e6e8de6a2cd8578f80ae0913cc0b2b8e4fb96392111f4c4b8d95d2efd0c"
+    },
+    "first_stage_model.encoder.down.2.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "fd2313bf53adf78b8b60ebe7512e1b801b121224357e8d1300d3a6d6b39fbcd2"
+    },
+    "first_stage_model.encoder.down.2.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "9c485c415a1fe449be7233f9e67240b842cfb744abcf269f3318a126dc7f6f1e"
+    },
+    "first_stage_model.encoder.down.2.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "392dd6927ce6250f838c4fad52e5c06953514484f9b0bf2adbc2afba2f53e53a"
+    },
+    "first_stage_model.encoder.down.2.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "da7605f3ff1a6f0a5d97532e56dd1684b7dfa41de7922eeea37d790869563795"
+    },
+    "first_stage_model.encoder.down.2.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "f9cfb1a007f3e74a8ef46db7130d7ed2db9ed9f5bf1cceaff362bb6b02a0641d"
+    },
+    "first_stage_model.encoder.down.2.downsample.conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "25f3c096cdb4d40d09a6f38d46c3df08e8f29708699f1ebb6f6916e7c9b3cae2"
+    },
+    "first_stage_model.encoder.down.2.downsample.conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "2d21f1485fab673797d12a8339283f8002bfe870f38640b55fa592b28e7aede1"
+    },
+    "first_stage_model.encoder.down.3.block.0.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "2750a0d70a1552cd0d5dc68c468a90a0158ffcdf3f53f406a517141413bc4703"
+    },
+    "first_stage_model.encoder.down.3.block.0.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "9a307fca71f8592dec5085d75c39f4773193443ec8532370db73a6b19a6eab5a"
+    },
+    "first_stage_model.encoder.down.3.block.0.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "8373ed3ddf226e1227c467e67ff01dce2bc3f45076eef81fbfde63d1071980fa"
+    },
+    "first_stage_model.encoder.down.3.block.0.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "267fee30d2e7529ba90d6911b28f924b5aebe0356bb87051f9c0acf0c0fb83ae"
+    },
+    "first_stage_model.encoder.down.3.block.0.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "339f02172d58f83737b8bb7d56d6366e45141d9eac0344a60f77138f1ca1ef3d"
+    },
+    "first_stage_model.encoder.down.3.block.0.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ed05049d5c6dd8403acc364c55843752aefc26383624e77378fb8571cf2585dc"
+    },
+    "first_stage_model.encoder.down.3.block.0.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "0d80d47ec1c26c1c6bc75323d60ce1f38aa6c3aa5e649173f89f8913bc292fed"
+    },
+    "first_stage_model.encoder.down.3.block.0.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "30c2c94dca8c9396a14d5b1a80edd2100a84aca37ea0d0492bb56103163a1bd7"
+    },
+    "first_stage_model.encoder.down.3.block.1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "c73fa382c5a5ffc0c34b93c8fb9c9604c75032d507514f2f333ee1434836d85e"
+    },
+    "first_stage_model.encoder.down.3.block.1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "c72092265fc70a2e2b3320e08b18baba0262fc990352e33a2bd8a75c03ee83b9"
+    },
+    "first_stage_model.encoder.down.3.block.1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "943e73576611686d74e9d6a5adcf666abdae7a32d023ee016e2fa6c8e2111602"
+    },
+    "first_stage_model.encoder.down.3.block.1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "9b167aba2f4d47b645b873342a2e4572ff62daffadd6d23227376db6a2e89c4a"
+    },
+    "first_stage_model.encoder.down.3.block.1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "414ebb57a1766baae36063142984351b980cdaa91e0c5aeffa574d976bdc74d8"
+    },
+    "first_stage_model.encoder.down.3.block.1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "4b6a10cae22fc1055bc72d049ca2c02ae37baa86dc686fcad45ffa9bf9b86154"
+    },
+    "first_stage_model.encoder.down.3.block.1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "e17a5afb56a7acee603bc8b76d434cfdab369c520aed8158e178556627c5cd10"
+    },
+    "first_stage_model.encoder.down.3.block.1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3e773f8fd1192b825596b59e3874cfcc5cdc8fb4b882c330280cbeccfb774985"
+    },
+    "first_stage_model.encoder.mid.attn_1.k.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "dc2ef63615238a12d43b93580a764a72227d0a5f1978eecf37b674c5054fd4b4"
+    },
+    "first_stage_model.encoder.mid.attn_1.k.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "615cfee06d4954c6bddd47e56d2b44c66c21f0bae74284f416610c53d2de4b78"
+    },
+    "first_stage_model.encoder.mid.attn_1.norm.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "cb0c531d7902b01422ad314d2e6fc5d95a285b1e1b8053418e63774941bacbda"
+    },
+    "first_stage_model.encoder.mid.attn_1.norm.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "c357c89414c60d8a7fdd340d877fa7637c05fe38aae553a4f2d85bf195be8549"
+    },
+    "first_stage_model.encoder.mid.attn_1.proj_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "483bc999e15fef771dc723dd8767a09378972f03869271c688f648c9aa2e85a5"
+    },
+    "first_stage_model.encoder.mid.attn_1.proj_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "ff7edb1c11e8a13e759fe13dd2d6be5d2710b60e751e9f1d10516941721ed486"
+    },
+    "first_stage_model.encoder.mid.attn_1.q.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "51bb5f9be529e306cdf529b5b88e72ea70a8fd414f34d2fb001399b6dc0ff99d"
+    },
+    "first_stage_model.encoder.mid.attn_1.q.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "7302ed19da686ea4fd59fbce2b2c121213af1c614a9264fd4495df56be2399cf"
+    },
+    "first_stage_model.encoder.mid.attn_1.v.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "c394c8deb0e16dbc247faeb0747da5eac95766c8bb0bd9029e76a958f30d2987"
+    },
+    "first_stage_model.encoder.mid.attn_1.v.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        1,
+        1
+      ],
+      "sha256": "7739cd49ccb7368cc6ee346fdf82d257bc80f4cd8e543eca30913545f2d48a60"
+    },
+    "first_stage_model.encoder.mid.block_1.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "3929e5c037b6d31b86d55ec2d274ccf229cc764b7f0e96a4769c7a431abdff7f"
+    },
+    "first_stage_model.encoder.mid.block_1.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "c10dbe1f01951cfd3f403af97dfed6ceb35cd6ffb6d97d4221253db233fefdae"
+    },
+    "first_stage_model.encoder.mid.block_1.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "88af9ba6d26e87a3da761820f84a78aad90c7d0156337ab07b0fd2fd25214b9a"
+    },
+    "first_stage_model.encoder.mid.block_1.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "deaa6e37f06d9fa771e665b458ba67902e6e62d7a32c17cf5922b860607eeab9"
+    },
+    "first_stage_model.encoder.mid.block_1.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "2f1973d6bab2a75f96d3e82a1e0e87f4de8ea414d53ec7a069008d4841710ab9"
+    },
+    "first_stage_model.encoder.mid.block_1.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "6520b7b33903164d6e75d54503698abc58036f60351ee3bafeb06435ebb52231"
+    },
+    "first_stage_model.encoder.mid.block_1.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "9fb44ed452211f215eccc8feef7dd00fbb525363c5e29d8866aaabbdd6c53dd8"
+    },
+    "first_stage_model.encoder.mid.block_1.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "5e396831edbfe53ca2455b02e1fa974f63adc0a47e0f9e27e0187b3e650dc952"
+    },
+    "first_stage_model.encoder.mid.block_2.conv1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "2b58aa7e2498bc940486a893f951d1501d7b34f5a552e5643d1e018a007a9b36"
+    },
+    "first_stage_model.encoder.mid.block_2.conv1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "c314c7964af1ca57189e002a0b253d577d4842a41b3d77766f744ab167d6b3fd"
+    },
+    "first_stage_model.encoder.mid.block_2.conv2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "ef5e5a3e0906f39ec877a6fcef3a000cb70aa24b0478f53280cd2b3d0b60bbb8"
+    },
+    "first_stage_model.encoder.mid.block_2.conv2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "sha256": "aa74e3ac80f3332d43adc3210b2224bffa02ffbae8015dbcd5521dfe243e141d"
+    },
+    "first_stage_model.encoder.mid.block_2.norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "cc183297286a5a58191b8b22f738e94237d9fa8722c2d28293882a5dc8ddd521"
+    },
+    "first_stage_model.encoder.mid.block_2.norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "dffaca4217104144c197d353a96eaa874877298cbc7c6a97eff04a1e0e637afa"
+    },
+    "first_stage_model.encoder.mid.block_2.norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "b5b122d4eda549c4f78498a478e57d8a4941bda922dc1889f81351915ccd9040"
+    },
+    "first_stage_model.encoder.mid.block_2.norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "1dd9a2db17791ebd18369db4e01382c29030747454491663cdc29abd8b9073df"
+    },
+    "first_stage_model.encoder.norm_out.bias": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "259002dc99e1af4a24f5ed9872170b686d6065eae17e866bb06201111931e804"
+    },
+    "first_stage_model.encoder.norm_out.weight": {
+      "dtype": "F32",
+      "shape": [
+        512
+      ],
+      "sha256": "72e8440992c0c362a1901a48d4424f51209225ccac95ab2af22a8520135c5930"
+    },
+    "first_stage_model.post_quant_conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        4
+      ],
+      "sha256": "7ffc9a0bb0db410a65aaa843b480de9469908758f2340ee3ab8b49a04405b83a"
+    },
+    "first_stage_model.post_quant_conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        4,
+        4,
+        1,
+        1
+      ],
+      "sha256": "825ef4ea3f0df5449fef74fb4233ec13a2b57d2b540d8db40bd4aeb5f752b644"
+    },
+    "first_stage_model.quant_conv.bias": {
+      "dtype": "F32",
+      "shape": [
+        8
+      ],
+      "sha256": "d17d6cdae2cf8c66153b655505dda676ed69e87a3b9ca08c8f300af722039afa"
+    },
+    "first_stage_model.quant_conv.weight": {
+      "dtype": "F32",
+      "shape": [
+        8,
+        8,
+        1,
+        1
+      ],
+      "sha256": "e2bac2f3acc4fdafea45863c26de2b97a868844f1252729ec88044df70a6a514"
+    }
+  },
+  "scope": "Only VAE values compared; UNet/textencoder equality not implied. Evaluator exports and loads full model own weights regardless."
+}

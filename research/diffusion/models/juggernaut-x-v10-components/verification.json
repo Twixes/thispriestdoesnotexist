@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "all_component_tensors_equal": true,
+  "components": [
+    {
+      "component": "text_encoder",
+      "tensor_count": 196,
+      "equal": true,
+      "report_sha256": "296a5f6fe68661a0d9ac89640c8d035ecf4612e93f7bb76d9723a3a4e1182051"
+    },
+    {
+      "component": "text_encoder_2",
+      "tensor_count": 517,
+      "equal": true,
+      "report_sha256": "8c1fa97647b294614d5e329430315cb0080fb802d41e419e5c0b32205224b6c5"
+    },
+    {
+      "component": "unet",
+      "tensor_count": 1680,
+      "equal": true,
+      "report_sha256": "9a0a940f61c3fb82e85569f53d56524f7301dcb3569b3ea5f0467e6c34d465b5"
+    },
+    {
+      "component": "vae",
+      "tensor_count": 248,
+      "equal": true,
+      "report_sha256": "d80eceeb2abb83a14e1544c2a772f2c38af403fbfc91abcc6a1c86372e9a7cf1"
+    }
+  ],
+  "all_part_sizes_at_most_1gib": true,
+  "all_parts_match_saved_files": true,
+  "provenance_sha256": "4e18b462e1e07d35fb753ecb89dadabfd2d66213646f30467ee351f2bb36b40a"
+}

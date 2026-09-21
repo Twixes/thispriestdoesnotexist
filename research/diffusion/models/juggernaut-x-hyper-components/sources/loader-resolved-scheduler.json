@@ -1,0 +1,29 @@
+{
+  "num_train_timesteps": 1000,
+  "beta_start": 0.00085,
+  "beta_end": 0.012,
+  "beta_schedule": "scaled_linear",
+  "trained_betas": null,
+  "prediction_type": "epsilon",
+  "interpolation_type": "linear",
+  "use_karras_sigmas": false,
+  "use_exponential_sigmas": false,
+  "use_beta_sigmas": false,
+  "sigma_min": null,
+  "sigma_max": null,
+  "timestep_spacing": "leading",
+  "timestep_type": "discrete",
+  "steps_offset": 1,
+  "rescale_betas_zero_snr": false,
+  "final_sigmas_type": "zero",
+  "_use_default_values": [
+    "use_exponential_sigmas",
+    "final_sigmas_type",
+    "use_beta_sigmas"
+  ],
+  "_class_name": "EulerDiscreteScheduler",
+  "_diffusers_version": "0.26.3",
+  "sample_max_value": 1.0,
+  "set_alpha_to_one": false,
+  "skip_prk_steps": true
+}

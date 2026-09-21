@@ -1,0 +1,53 @@
+{
+  "decision": "Stop Hyper ordinary-denoising LoRA pilot after20 updates; no100 or production promotion",
+  "continue100": false,
+  "owner_baseline_realism_rejected": true,
+  "reason": [
+    "Owner explicitly requires better photographic realism",
+    "First12:one minor collar-quality win,one collar loss,ten ties; calendar appeal unchanged",
+    "Last12:no clear photographic-realism gain; several collar-detail regressions; seed-only face-template resemblance persists",
+    "Conditioning/noise equality checked across both arms, so this is a valid controlled adapter comparison",
+    "Training success and agent engineering pass counts do not establish owner visual-quality acceptance"
+  ],
+  "trial": {
+    "training_updates": 20,
+    "training_seconds": 42.86,
+    "native_evaluation_cases_per_arm": 24,
+    "warmups_per_arm": 1,
+    "training_resolution": 512,
+    "evaluation_resolution": 1024,
+    "steps": 6,
+    "guidance_scale": 1.5,
+    "cache_conditioning": true,
+    "paid_compute_used": false
+  },
+  "artifacts": [
+    {
+      "path": "research/reviews/juggernaut-development/base-first12-review.json",
+      "sha256": "946e9c3253af5c6f6e3b7c109e76ae3f3f91f33bf64be3909cf535fe50c1d061"
+    },
+    {
+      "path": "research/reviews/juggernaut-development/base-last12-review.json",
+      "sha256": "f6192303cc4bed23870ad81c26a91e98150fbadd103bfbdd8222bca8d8f353af"
+    },
+    {
+      "path": "research/reviews/juggernaut-development/paired-first12-review.json",
+      "sha256": "59599d00cea15b34f0cb109c408a3db3619e1092fb746c10442b6b812dd35fa5"
+    },
+    {
+      "path": "research/reviews/juggernaut-development/step20-last12-review.json",
+      "sha256": "6b61b68e0420d53f754977f0d2da6466e0d0108bcf605f66371782dcaefa1783"
+    },
+    {
+      "path": "research/reviews/juggernaut-development/owner-feedback.json",
+      "sha256": "0f3488bee1f03b10f8cdd0b23a51afb07febf22eecaf9ba437fdb2cf0b5be759"
+    },
+    {
+      "path": "research/reviews/juggernaut-development/paired-input-verification.json",
+      "sha256": "b23a7c8468a23708e6815dd6dafc3fcc19aedccfb79cf4113dc584be6fdc6e27"
+    }
+  ],
+  "next_action": "Compare non-Hyper Juggernaut X v10 full model at author-quality settings before selecting another post-training route",
+  "production_approved": false,
+  "server_latency_proven": false
+}

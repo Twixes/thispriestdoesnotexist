@@ -1,0 +1,11 @@
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:00, 23.65it/s]There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Loading pipeline components...:  86%|████████▌ | 6/7 [00:00<00:00, 23.96it/s]There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 24.38it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 12.86it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]Loading weights: 100%|██████████| 196/196 [00:00<00:00, 3989.98it/s]
+{"component": "text_encoder", "tensor_count": 196, "equal": true, "report_sha256": "296a5f6fe68661a0d9ac89640c8d035ecf4612e93f7bb76d9723a3a4e1182051"}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  6.41it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  6.40it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]Loading weights: 100%|██████████| 517/517 [00:00<00:00, 5312.69it/s]
+{"component": "text_encoder_2", "tensor_count": 517, "equal": true, "report_sha256": "8c1fa97647b294614d5e329430315cb0080fb802d41e419e5c0b32205224b6c5"}
+{"component": "unet", "tensor_count": 1680, "equal": true, "report_sha256": "9a0a940f61c3fb82e85569f53d56524f7301dcb3569b3ea5f0467e6c34d465b5"}
+{"component": "vae", "tensor_count": 248, "equal": true, "report_sha256": "d80eceeb2abb83a14e1544c2a772f2c38af403fbfc91abcc6a1c86372e9a7cf1"}

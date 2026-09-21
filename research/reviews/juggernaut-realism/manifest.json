@@ -1,0 +1,156 @@
+{
+  "purpose": "Photographic realism first, following owner rejection of the accelerated baseline",
+  "all_cases_shown": true,
+  "warmups_excluded": true,
+  "production_approved": false,
+  "server_latency_proven": false,
+  "arms": [
+    {
+      "title": "Accelerated \u00b7 6 steps",
+      "run": "juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled",
+      "complete": true,
+      "protocol_sha256": "3bfa243730f95e3392f8d069f2f4a7753676ea1bb68d696d7a67b0d4ca9c4e2d",
+      "entries": [
+        {
+          "index": 0,
+          "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+          "seed": 202609214000,
+          "native_sha256": "46125030544adb37878e236d6be52d35d355cb60fbffcec51d3a585f939b94be",
+          "record_sha256": "032f5df6cf5c7207b31c6dc7dd66b8bc69c24fec505fc5f58c3beb436f147851",
+          "url": "../../diffusion/runs/juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled/000/native.png"
+        },
+        {
+          "index": 1,
+          "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+          "seed": 202609214001,
+          "native_sha256": "b23f0ee3bdd3a20427099b71cb9058f84724b25f073fc1e28d4260f71f00f0f8",
+          "record_sha256": "95a4ad7c4f0859714f1e89424e660248cde27cce50008bdbb56b6c5f3995b561",
+          "url": "../../diffusion/runs/juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled/001/native.png"
+        },
+        {
+          "index": 2,
+          "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+          "seed": 202609214002,
+          "native_sha256": "87944b4d7e61d558d8bef171e1294b71c397fd38ae661c89883df469f64e4d02",
+          "record_sha256": "080e23d47ac61ecf67240c8e68061d4bf368904de9e49ae40a7b5f0a2af7b09d",
+          "url": "../../diffusion/runs/juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled/002/native.png"
+        },
+        {
+          "index": 3,
+          "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+          "seed": 202609214003,
+          "native_sha256": "3b8acb1a4727c097cb139b96bfea7e7bc52692e8c2c85dae2a55247b141f7885",
+          "record_sha256": "b24a02c4709660e4b0d0e7263f90c0e7279b20a5759eb1c4a1e09b57353152d9",
+          "url": "../../diffusion/runs/juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled/003/native.png"
+        },
+        {
+          "index": 4,
+          "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+          "seed": 202609214004,
+          "native_sha256": "80f81f47105edb05d52848357826e7b3294916d0447eb415734ddc78f4d0449c",
+          "record_sha256": "65b1f014bc410c2e7aa91583e4205b269d78ade46078f5ca0e3d0bc988546bf7",
+          "url": "../../diffusion/runs/juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled/004/native.png"
+        },
+        {
+          "index": 5,
+          "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+          "seed": 202609214005,
+          "native_sha256": "f923177f13323a5c75d2f8d36a756510c87d517484b4d139fab9ee11a67e08cc",
+          "record_sha256": "58d94922c1d67fb2a5702f0263b28c89f816342a9819c116a001f73545bc9f80",
+          "url": "../../diffusion/runs/juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled/005/native.png"
+        },
+        {
+          "index": 6,
+          "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+          "seed": 202609214006,
+          "native_sha256": "f61b781ce30ae6d4bc009b49ab6b3aa4930bdddf8fab28215b8acd99fa57da8e",
+          "record_sha256": "cf087d47127460b8e06caf9c4164c0939360ddebcc1cff9333b6f2d672f951de",
+          "url": "../../diffusion/runs/juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled/006/native.png"
+        },
+        {
+          "index": 7,
+          "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+          "seed": 202609214007,
+          "native_sha256": "ff3c583db7ff56d2c4951c534fcbcfe9dae4e24300f0ab6df5d8bf829481e84f",
+          "record_sha256": "7e7a8d6cdd47c54c044c486a63d4e1147183058b06842c23651dd9be07fe9541",
+          "url": "../../diffusion/runs/juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled/007/native.png"
+        }
+      ],
+      "result_sha256": "18664344fe03f1bbb7de4accdd4012d7a933c88f007ff2e8fff3a60b9a1d45f6"
+    },
+    {
+      "title": "Full model \u00b7 35 steps",
+      "run": "juggernaut-full-v10-35step-cfg3-native1024-v1",
+      "complete": true,
+      "protocol_sha256": "29a857ca7ae86490adc3ad744569ec839a5a4f7c1e338a07ee8a61a0040e85a5",
+      "entries": [
+        {
+          "index": 0,
+          "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+          "seed": 202609214000,
+          "native_sha256": "8abedf4d583c9f5315702d43030bddda048aaa9b5a198f5cffdce0c0cdf548c4",
+          "record_sha256": "9cf8baed61aea23238215b9d931dcb4bcb856fb1f5a1887a3d41c96c9ff33603",
+          "url": "../../diffusion/runs/juggernaut-full-v10-35step-cfg3-native1024-v1/000/native.png"
+        },
+        {
+          "index": 1,
+          "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+          "seed": 202609214001,
+          "native_sha256": "a9e6d4c634855a7e5da5acff34f1e619bad81374c74b17a2940a13b2664fb71c",
+          "record_sha256": "6b176267d252832436e3bc8545928718c89e2bdfa4d45b4992bcae274db7df07",
+          "url": "../../diffusion/runs/juggernaut-full-v10-35step-cfg3-native1024-v1/001/native.png"
+        },
+        {
+          "index": 2,
+          "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+          "seed": 202609214002,
+          "native_sha256": "14037a99315d6cdae53ba3cf8914186755e7cc55a154bb5833e61dce2a44846b",
+          "record_sha256": "91994da56bb7821207bd161160249588014ba16b625a6d603ba9ff1f20c7cbe3",
+          "url": "../../diffusion/runs/juggernaut-full-v10-35step-cfg3-native1024-v1/002/native.png"
+        },
+        {
+          "index": 3,
+          "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+          "seed": 202609214003,
+          "native_sha256": "c513f45841fafa93752f6f6a30d8eb077449727c2ee148eeb2252c11d77370a4",
+          "record_sha256": "824a0d762fdbfe497f7c983047e9baf816e9fc422ca6a82b98f5a1c15407da10",
+          "url": "../../diffusion/runs/juggernaut-full-v10-35step-cfg3-native1024-v1/003/native.png"
+        },
+        {
+          "index": 4,
+          "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+          "seed": 202609214004,
+          "native_sha256": "5784f642bc1abb83099ee045c6052861e5616bb61e36ce82735bd8293f85b3b7",
+          "record_sha256": "846c11a70eb9dabeb4ac89a83ca0e5f89019e15d1d5d6a4e52e278b955378274",
+          "url": "../../diffusion/runs/juggernaut-full-v10-35step-cfg3-native1024-v1/004/native.png"
+        },
+        {
+          "index": 5,
+          "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+          "seed": 202609214005,
+          "native_sha256": "287ccf1caae90c6cc195ffaf7c95dfb700f5aab5ea37a54e4a51de55f9cac792",
+          "record_sha256": "ab9998c79d82bf7e0a3b1a885edc211957b2d00521f9d88a9714c46f478deef3",
+          "url": "../../diffusion/runs/juggernaut-full-v10-35step-cfg3-native1024-v1/005/native.png"
+        },
+        {
+          "index": 6,
+          "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+          "seed": 202609214006,
+          "native_sha256": "58020ccea965e91e01cf1072a3046ca006977e956609770cd5cf457cd2b1db95",
+          "record_sha256": "b31c5133f41cef3e6a8057bc5613f00b9a48acf67cfcf639c217f6cfb2f6f980",
+          "url": "../../diffusion/runs/juggernaut-full-v10-35step-cfg3-native1024-v1/006/native.png"
+        },
+        {
+          "index": 7,
+          "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+          "seed": 202609214007,
+          "native_sha256": "86b058495434d10a4a320161bba16a13e6a1f5a3a378dd9fdde46051a1f30ed3",
+          "record_sha256": "e44349958b3f3692d929256acbafb41f73b93cb4628bf60c9614d8fa7606a7d3",
+          "url": "../../diffusion/runs/juggernaut-full-v10-35step-cfg3-native1024-v1/007/native.png"
+        }
+      ],
+      "result_sha256": "0751e775bcffad609ba31ed025152cd7de64306cb6a3f75d8ad6fd6647894647"
+    }
+  ],
+  "comparison_limit": "Same prompts and numeric seeds; weights, scheduler, guidance and step count change together. This does not isolate distillation or match identities."
+}

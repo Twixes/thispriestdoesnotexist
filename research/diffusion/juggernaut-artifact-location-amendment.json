@@ -1,0 +1,10 @@
+{
+  "scope": "Artifact-location amendment only; training/data/cases/sampling/settings/quality gates unchanged",
+  "frozen_protocol_sha256": "df1b70eff72814ff626921b077efe3bc90cc8ff21d25b1cafefd6a2e3d404a27",
+  "reason": "v2 baseline terminated at runtime memory guard before producing images; v3 stages CLIP encoding before loading renderer from tensor-verified exported components",
+  "base_run": "research/diffusion/runs/juggernaut-development-base-v3-staged",
+  "adapter20_run": "research/diffusion/runs/juggernaut-development-step20-v1-cached",
+  "original_base_run_preserved": "research/diffusion/runs/juggernaut-development-base-v2-cached",
+  "runtime_strategy_changes_must_be_recorded": true,
+  "completed_runs": false
+}

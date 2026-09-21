@@ -1,0 +1,296 @@
+{
+  "complete": true,
+  "created_at_utc": "2026-09-21T09:26:54.527733+00:00",
+  "model": "RunDiffusion/Juggernaut-X-Hyper",
+  "revision": "42fee7475922d8de7246cdcbe5e3a5e22c0ecf61",
+  "checkpoint_name": "JuggernautXRundiffusion_Hyper.safetensors",
+  "checkpoint_kind": "publisher single-file complete SDXL Hyper checkpoint; no conversion performed",
+  "license": "creativeml-openrail-m",
+  "license_notice": "Publisher card additionally requires licensing for paid API deployment; preserve both card and LICENSE.txt. Not MIT.",
+  "license_origin": {
+    "repo": "CompVis/stable-diffusion-license",
+    "revision": "14d42d09bffd871b1666a084fc954a50cff72ac0",
+    "path": "license.txt",
+    "linked_by_publisher_card": true
+  },
+  "files": [
+    {
+      "path": "JuggernautXRundiffusion_Hyper.safetensors",
+      "bytes": 7105348616,
+      "sha256": "010be7341cd98a136da775330ba3eb4e87025c6cfd2f5455dc64daee2200ae98",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/JuggernautXRundiffusion_Hyper.safetensors",
+      "upstream_entry": {
+        "rfilename": "JuggernautXRundiffusion_Hyper.safetensors",
+        "blobId": "5f6751c05dbdeb0ada687b7aeccc31b9e41b41c3",
+        "size": 7105348616,
+        "lfs": {
+          "sha256": "010be7341cd98a136da775330ba3eb4e87025c6cfd2f5455dc64daee2200ae98",
+          "size": 7105348616,
+          "pointerSize": 135
+        }
+      },
+      "chunks": [
+        {
+          "path": "JuggernautXRundiffusion_Hyper.safetensors.weights-part-000",
+          "bytes": 1073741824,
+          "sha256": "919ea190733b049103dd314fce51b378b4b1c8fd6dffeccedccc941b0ce7b58b"
+        },
+        {
+          "path": "JuggernautXRundiffusion_Hyper.safetensors.weights-part-001",
+          "bytes": 1073741824,
+          "sha256": "841f40c76fa1ce6807aee871f783d3e6e87d5e65b3164baa6d2dc535ba8b60c2"
+        },
+        {
+          "path": "JuggernautXRundiffusion_Hyper.safetensors.weights-part-002",
+          "bytes": 1073741824,
+          "sha256": "9d0da81b1cb52236c99e3d254dec6092dacc5539b7b047f58a9a7043ff01c51c"
+        },
+        {
+          "path": "JuggernautXRundiffusion_Hyper.safetensors.weights-part-003",
+          "bytes": 1073741824,
+          "sha256": "5fe0815cc641c1b648693b0f137fa4af8ff7a50efffcbe05681d9b2b131717e7"
+        },
+        {
+          "path": "JuggernautXRundiffusion_Hyper.safetensors.weights-part-004",
+          "bytes": 1073741824,
+          "sha256": "636971954610dfceca8b94f8731d15bc61a526aa4be7fab4dc9b25615cb46e0b"
+        },
+        {
+          "path": "JuggernautXRundiffusion_Hyper.safetensors.weights-part-005",
+          "bytes": 1073741824,
+          "sha256": "a55ed6a9520ac198bc54ca333381881a610282e3c4b853cdcd4bf27ce8a8b03d"
+        },
+        {
+          "path": "JuggernautXRundiffusion_Hyper.safetensors.weights-part-006",
+          "bytes": 662897672,
+          "sha256": "ddcf261916c7c90723e536b80667033c0d4d3f080e9e72877600c1095e2d1fc8"
+        }
+      ]
+    },
+    {
+      "path": "sources/publisher-model-card.md",
+      "bytes": 8362,
+      "sha256": "645f5b46bdeaa09b941990de7709e4b5d790929e977f689a08427abe3648a2cb",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/README.md",
+      "upstream_entry": {
+        "rfilename": "README.md",
+        "blobId": "40ed0121410132b44aa282d160bdf94d401b82b6",
+        "size": 8362
+      },
+      "chunks": []
+    },
+    {
+      "path": "model_index.json",
+      "bytes": 712,
+      "sha256": "933febe543062203b3d777c7c1b71be3637ecb1cc0dd4efc574f5c4b9fb3be99",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/model_index.json",
+      "upstream_entry": {
+        "rfilename": "model_index.json",
+        "blobId": "0e3987a8cce4d54fd35fb119da0787fac04506ea",
+        "size": 712
+      },
+      "chunks": []
+    },
+    {
+      "path": "scheduler/scheduler_config.json",
+      "bytes": 579,
+      "sha256": "c7ffb7d92ca2592cbfc1c2a2dcd622541ac6fff200344d47ca27ee3b78ff867b",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/scheduler/scheduler_config.json",
+      "upstream_entry": {
+        "rfilename": "scheduler/scheduler_config.json",
+        "blobId": "f1f4bf1cdfa97938a04ce7e41ab9db6683ce66f8",
+        "size": 579
+      },
+      "chunks": []
+    },
+    {
+      "path": "text_encoder/config.json",
+      "bytes": 584,
+      "sha256": "b8b43991f1143b36b0e4695a61b85b7518f527b90d792ff97a2eb33242330a39",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/text_encoder/config.json",
+      "upstream_entry": {
+        "rfilename": "text_encoder/config.json",
+        "blobId": "3c9a98dcf09a3ca746b7b17427596a234ae45819",
+        "size": 584
+      },
+      "chunks": []
+    },
+    {
+      "path": "text_encoder_2/config.json",
+      "bytes": 594,
+      "sha256": "85850e9f7c74a3c4d3799754deb543f12fbc6df8bf2cea092b9196ac74d9eb06",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/text_encoder_2/config.json",
+      "upstream_entry": {
+        "rfilename": "text_encoder_2/config.json",
+        "blobId": "fbbb612372ef535b5c83a8547e9532884e71f660",
+        "size": 594
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/merges.txt",
+      "bytes": 573514,
+      "sha256": "0bc7695944744789d6fd6d0ab754bcbbb9e36f1c182df0a006d619ce70a1e052",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/tokenizer/merges.txt",
+      "upstream_entry": {
+        "rfilename": "tokenizer/merges.txt",
+        "blobId": "1876098c4dcbf22af518537b3bd63102a05e1313",
+        "size": 573514
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/special_tokens_map.json",
+      "bytes": 496,
+      "sha256": "c8227988aadac941e93b5ffef08b4add8ccbdb26404a62b3e41f61eef119b252",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/tokenizer/special_tokens_map.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer/special_tokens_map.json",
+        "blobId": "ad919e089d4d032a933a2a9087de2857d55af3bc",
+        "size": 496
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "bytes": 770,
+      "sha256": "b4f741ef4015d9e71521322666260278f20d9398a2ef41fd5aa2fb72370a3f03",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/tokenizer/tokenizer_config.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer/tokenizer_config.json",
+        "blobId": "4dccde201cd9e11e9e8194b6e31e2d3887b5c11e",
+        "size": 770
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/vocab.json",
+      "bytes": 1109372,
+      "sha256": "fd67774a869730a6b27bf53d3e434e72054f2a825873c7af3bece183bb1f791e",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/tokenizer/vocab.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer/vocab.json",
+        "blobId": "521b2c5def638d17b1e463ce25597140a1720005",
+        "size": 1109372
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/merges.txt",
+      "bytes": 573514,
+      "sha256": "0bc7695944744789d6fd6d0ab754bcbbb9e36f1c182df0a006d619ce70a1e052",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/tokenizer_2/merges.txt",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/merges.txt",
+        "blobId": "1876098c4dcbf22af518537b3bd63102a05e1313",
+        "size": 573514
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/special_tokens_map.json",
+      "bytes": 484,
+      "sha256": "a83f5831a70d1d21c057186d35aaa504894103d24ee905baa99bc7e83ceb70ee",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/tokenizer_2/special_tokens_map.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/special_tokens_map.json",
+        "blobId": "4473e143ec2843c3cf9d6db8b1062f1e71076615",
+        "size": 484
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/tokenizer_config.json",
+      "bytes": 758,
+      "sha256": "a067a5dc4ee35a6a4bf22d9b02bea1fc7d721a30bfcea76bd115cb0f77605f14",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/tokenizer_2/tokenizer_config.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/tokenizer_config.json",
+        "blobId": "50e62da0a9667b53c03b4a82a84c20b31b15b00d",
+        "size": 758
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/vocab.json",
+      "bytes": 1109372,
+      "sha256": "fd67774a869730a6b27bf53d3e434e72054f2a825873c7af3bece183bb1f791e",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/tokenizer_2/vocab.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/vocab.json",
+        "blobId": "521b2c5def638d17b1e463ce25597140a1720005",
+        "size": 1109372
+      },
+      "chunks": []
+    },
+    {
+      "path": "unet/config.json",
+      "bytes": 1845,
+      "sha256": "8638ce290977b27c317a2c92460fa9207fd5403f1982a06aff6bb6cab9236578",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/unet/config.json",
+      "upstream_entry": {
+        "rfilename": "unet/config.json",
+        "blobId": "5485b6998b678c914228a340af1f448df29604d0",
+        "size": 1845
+      },
+      "chunks": []
+    },
+    {
+      "path": "vae/config.json",
+      "bytes": 633,
+      "sha256": "e30d181960a636e79970fd300749d97912458f2d0124f1482aa2818e570d420d",
+      "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-X-Hyper/resolve/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61/vae/config.json",
+      "upstream_entry": {
+        "rfilename": "vae/config.json",
+        "blobId": "2347e83090500184ddefd8dbf6fbfd36a63ee495",
+        "size": 633
+      },
+      "chunks": []
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 14385,
+      "sha256": "be351ebe7ac01bcdbb018639aadcfd38f136b7dc3f2a3d4d3a24db51d1b210ef",
+      "source_url": "https://huggingface.co/spaces/CompVis/stable-diffusion-license/resolve/14d42d09bffd871b1666a084fc954a50cff72ac0/license.txt",
+      "upstream_entry": {
+        "rfilename": "license.txt",
+        "blobId": "0e609df0d8cd3b5d11a1ea962a56b604b70846a5",
+        "size": 14385
+      },
+      "chunks": []
+    }
+  ],
+  "upstream_metadata_sha256": "9c0d839a8d0280eea5c4b86ed34b67fe4cc811451518c45420dbd9970db9e25d",
+  "license_metadata_sha256": "475767c73ac2bc6bbde7d11c9db2fb3d92f7fd434fe41533b4e04dad6ecc60ce",
+  "prepare_source_sha256": "142db05ac80437660fc8959b45e8bb6a6e0e796e31deefbf0f344f82ba7c8041",
+  "header": {
+    "tensor_count": 2515,
+    "dtypes": [
+      "F16",
+      "F32"
+    ],
+    "bytes": 364992
+  },
+  "inference_reference": {
+    "author_steps": [
+      4,
+      8
+    ],
+    "author_start_steps": 6,
+    "author_samplers": [
+      "DPM++ SDE",
+      "TCD"
+    ],
+    "author_cfg_range": [
+      1.0,
+      2.0
+    ],
+    "native_resolution": 1024,
+    "candidate": "TCD4steps,CFG1,1024; exact scheduler config/eta to freeze in comparison protocol",
+    "resolution512": "separate non-native quality/latency experiment, not publisher reference",
+    "lora": "SDXL structure compatible; priest adaptation effectiveness/distillation preservation unproven"
+  },
+  "oversized_weights": "Full checkpoint ignored locally; concatenate <=1GiB manifest chunks in order and verify upstream SHA256 before loading.",
+  "model_load_or_inference_performed": false,
+  "production_approved": false
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Config-only comparison; no inference or tensor identity claim",
+  "configs": {
+    "unet/config.json": {
+      "json_equal": true,
+      "differences": {}
+    },
+    "vae/config.json": {
+      "json_equal": true,
+      "differences": {}
+    },
+    "text_encoder/config.json": {
+      "json_equal": true,
+      "differences": {}
+    },
+    "text_encoder_2/config.json": {
+      "json_equal": true,
+      "differences": {}
+    },
+    "scheduler/scheduler_config.json": {
+      "json_equal": true,
+      "differences": {}
+    }
+  }
+}

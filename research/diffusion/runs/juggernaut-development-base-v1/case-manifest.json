@@ -1,0 +1,160 @@
+{
+  "split": "development",
+  "purpose": "Fixed24 case base-vs-adapter cohort;16 varied appearance prompts and8 identical prompts to separate prompt variety from seed-only identity variety",
+  "cases": [
+    {
+      "index": 0,
+      "seed": 202609220000,
+      "prompt": "Handsome Catholic priest, Italian man aged32, olive skin, wavy dark hair, angular face, clean shaven. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 1,
+      "seed": 202609220001,
+      "prompt": "Handsome Catholic priest, West African man aged35, dark skin, close cropped curls, broad jaw, short beard. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 2,
+      "seed": 202609220002,
+      "prompt": "Handsome Catholic priest, Korean man aged33, straight side parted hair, oval face, clean shaven. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 3,
+      "seed": 202609220003,
+      "prompt": "Handsome Catholic priest, Irish man aged38, fair freckled skin, short red hair, light stubble. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 4,
+      "seed": 202609220004,
+      "prompt": "Handsome Catholic priest, Brazilian man aged30, tan skin, curly dark hair, square face, clean shaven. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 5,
+      "seed": 202609220005,
+      "prompt": "Handsome Catholic priest, Indian man aged36, brown skin, thick wavy hair, neat beard, long face. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 6,
+      "seed": 202609220006,
+      "prompt": "Handsome Catholic priest, Polish man aged42, pale skin, short blond hair, blue eyes, square jaw. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 7,
+      "seed": 202609220007,
+      "prompt": "Handsome Catholic priest, Ethiopian man aged31, deep brown skin, tightly curled hair, fine jaw, clean shaven. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 8,
+      "seed": 202609220008,
+      "prompt": "Handsome Catholic priest, Japanese man aged44, straight black hair with gray temples, narrow face, stubble. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 9,
+      "seed": 202609220009,
+      "prompt": "Handsome Catholic priest, Mexican man aged39, medium brown skin, swept back black hair, strong nose, mustache. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 10,
+      "seed": 202609220010,
+      "prompt": "Handsome Catholic priest, Lebanese man aged34, olive skin, dark curls, strong brows, trimmed beard. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 11,
+      "seed": 202609220011,
+      "prompt": "Handsome Catholic priest, Swedish man aged29, fair skin, sandy blond hair, long face, clean shaven. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 12,
+      "seed": 202609220012,
+      "prompt": "Handsome Catholic priest, Filipino man aged37, tan skin, short dark hair, rounded jaw, clean shaven. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 13,
+      "seed": 202609220013,
+      "prompt": "Handsome Catholic priest, Ghanaian man aged43, dark skin, bald head, neat beard, broad face. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 14,
+      "seed": 202609220014,
+      "prompt": "Handsome Catholic priest, Portuguese man aged46, olive skin, salt and pepper hair, dark eyes, stubble. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 15,
+      "seed": 202609220015,
+      "prompt": "Handsome Catholic priest, Colombian man aged32, brown skin, wavy dark hair, cheek dimples, clean shaven. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "varied_appearance"
+    },
+    {
+      "index": 16,
+      "seed": 202609220016,
+      "prompt": "Handsome adult Catholic priest. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "fixed_prompt_identity_control"
+    },
+    {
+      "index": 17,
+      "seed": 202609220017,
+      "prompt": "Handsome adult Catholic priest. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "fixed_prompt_identity_control"
+    },
+    {
+      "index": 18,
+      "seed": 202609220018,
+      "prompt": "Handsome adult Catholic priest. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "fixed_prompt_identity_control"
+    },
+    {
+      "index": 19,
+      "seed": 202609220019,
+      "prompt": "Handsome adult Catholic priest. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "fixed_prompt_identity_control"
+    },
+    {
+      "index": 20,
+      "seed": 202609220020,
+      "prompt": "Handsome adult Catholic priest. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "fixed_prompt_identity_control"
+    },
+    {
+      "index": 21,
+      "seed": 202609220021,
+      "prompt": "Handsome adult Catholic priest. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "fixed_prompt_identity_control"
+    },
+    {
+      "index": 22,
+      "seed": 202609220022,
+      "prompt": "Handsome adult Catholic priest. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "fixed_prompt_identity_control"
+    },
+    {
+      "index": 23,
+      "seed": 202609220023,
+      "prompt": "Handsome adult Catholic priest. Candid head and shoulders photograph, bareheaded, black clerical shirt, visible white collar, natural skin, relaxed expression, soft daylight, blurred stone background.",
+      "group": "fixed_prompt_identity_control"
+    }
+  ],
+  "not_production_approval": true,
+  "sampling": {
+    "resolution": 1024,
+    "steps": 6,
+    "guidance_scale": 1.5,
+    "eta": 0.3,
+    "tiled_vae": true,
+    "prompt_prefix": "PR1EST_CAL. "
+  },
+  "sealed_test_seeds_opened": false
+}
