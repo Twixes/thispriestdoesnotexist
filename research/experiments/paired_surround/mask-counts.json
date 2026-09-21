@@ -1,0 +1,55 @@
+{
+  "manifest_sha256": "9c27b19b0b7cfea4ca797a488b5d249410f3988b512373f713a599f02164bab6",
+  "radius_pixels": 30,
+  "metric": "Chebyshev dilation of raw trace, excluding raw trace, intersect original clothing",
+  "rows": [
+    {
+      "id": "calibration-original",
+      "clothing_pixels": 141212,
+      "collar_pixels": 7198,
+      "surround_pixels": 6183,
+      "remainder_pixels": 127831,
+      "protected_leak_pixels": 0
+    },
+    {
+      "id": "000",
+      "clothing_pixels": 121997,
+      "collar_pixels": 4248,
+      "surround_pixels": 2251,
+      "remainder_pixels": 115498,
+      "protected_leak_pixels": 0
+    },
+    {
+      "id": "030",
+      "clothing_pixels": 64975,
+      "collar_pixels": 4204,
+      "surround_pixels": 2593,
+      "remainder_pixels": 58178,
+      "protected_leak_pixels": 0
+    },
+    {
+      "id": "b2-055",
+      "clothing_pixels": 267793,
+      "collar_pixels": 6248,
+      "surround_pixels": 9471,
+      "remainder_pixels": 252074,
+      "protected_leak_pixels": 0
+    },
+    {
+      "id": "b2-051",
+      "clothing_pixels": 90269,
+      "collar_pixels": 4924,
+      "surround_pixels": 2994,
+      "remainder_pixels": 82351,
+      "protected_leak_pixels": 0
+    },
+    {
+      "id": "b2-020",
+      "clothing_pixels": 314638,
+      "collar_pixels": 1790,
+      "surround_pixels": 7174,
+      "remainder_pixels": 305674,
+      "protected_leak_pixels": 0
+    }
+  ]
+}

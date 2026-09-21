@@ -1,0 +1,23 @@
+{
+  "status": "prepared, tiny synthetic tests passed; no real model execution",
+  "tests_passed": 4,
+  "unittest_wall_seconds": 3.069,
+  "real_weights_loaded": false,
+  "real_checkpoint_loaded": false,
+  "tiny_resolution": 64,
+  "tiny_threads": 2,
+  "interop_threads": 1,
+  "actual_updates_per_branch_in_test": 3,
+  "forecast_steps_per_branch": 50,
+  "real_run_updates_per_branch": 50,
+  "parent_checkpoint_sha256": "0f433c7ec50d9e80026681125d7fa7e17e9be6e8e2d31b11976fb51d1b0f3fc4",
+  "sha256": {
+    "runner.py": "9fe816ee02f6f341f7dac25f6562dc8e011b394b256c30c4d3b527af5b768ed9",
+    "objective.py": "e601a3119c3096c6e222f50c68edb103e6e91f28a353cc01e47eaba67660b10d",
+    "test_runner.py": "1581b79fab823320fd6162eb97491bc4619ef57e38f8b5a852738155f93573a8",
+    "parent-pins.json": "f92f34d7ed5d8b923e49238d850e2b1979a4271064eb4e70fe6e3065d84b0cfa",
+    "test.log": "14901890c4e7abf3dd72003b2d3e7b29c915771a6bed16790c0d897addbde34e",
+    "mask-counts.json": "c59622ba4b125f08a87c8965b3d0516441f49202afed3ef8ff307d4921b7ba79",
+    "README.md": "1486474f9463a22865758dcbd616bb883864b5af5604335b00d015a3ff78d8d3"
+  }
+}

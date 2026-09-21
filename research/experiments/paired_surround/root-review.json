@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex root",
+  "reviewed_at": "2026-09-21T02:06:01.961986+00:00",
+  "reviewed_scope": "Full runner,objective,test_runner and README; original update/RNG functions inspected for comparison.",
+  "source_sha256": {
+    "runner.py": "9fe816ee02f6f341f7dac25f6562dc8e011b394b256c30c4d3b527af5b768ed9",
+    "objective.py": "e601a3119c3096c6e222f50c68edb103e6e91f28a353cc01e47eaba67660b10d",
+    "parent-pins.json": "f92f34d7ed5d8b923e49238d850e2b1979a4271064eb4e70fe6e3065d84b0cfa",
+    "test_runner.py": "1581b79fab823320fd6162eb97491bc4619ef57e38f8b5a852738155f93573a8",
+    "launch_probe.py": "d153fad5df18541837ac67b99ce7e18d9eab5f9269cced8f5bc27b5432e90bee"
+  },
+  "root_test_exit_code": 0,
+  "root_test_session": 84695,
+  "root_tests_passed": 4,
+  "root_test_seconds": 3.171,
+  "root_test_log_sha256": "b39da98401033fa18b61bcf0a1a05e5fdda857ab28409741c657cd8f466ae59e",
+  "approved_bounded_research_execution": true,
+  "production_approved": false,
+  "decision": "Run the two sequential50-update branches with same six training pairs, optimizer, initial weights and sampled latents; change only the declared clothing objective. No b32 unfreezing or real D extraction.",
+  "limitations": [
+    "A short training reconstruction comparison cannot prove generalization or production quality.",
+    "Equal thirds changes tab/remainder weights as well as increasing surround emphasis.",
+    "Shared-parameter updates can damage faces despite fixed protected masks; inspect native outputs at25/50.",
+    "A between-branch memory deferral requires preserving the completed baseline and launching only the pending branch after a fresh guard."
+  ],
+  "stop_criteria": [
+    "Any nonfinite values, provenance mismatch or source/frozen invariant failure.",
+    "Observed process RSS above8GiB.",
+    "Clear new facial collapse in inspected milestone images."
+  ]
+}

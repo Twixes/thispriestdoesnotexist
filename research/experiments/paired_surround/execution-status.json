@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-09-21T02:07:52.740500+00:00",
+  "status": "Real bounded probe launched; baseline updates observed; comparison not complete",
+  "supersedes_preparation_status_in": "README.md and test-evidence.json (historical preparation evidence retained unchanged)",
+  "launch_record": "research/runs/paired-surround-600-probe.launch.json",
+  "root_exec_session": 12334,
+  "supervisor_pid": 8022,
+  "first_worker_pid": 8027,
+  "config_sha256": "56ddce591263a50a1b6b35a33ca91e8f167644f23c0ff743e7490bc74ce9c9e2",
+  "plan_sha256": "c9d31c32f1befede1606e44a15239c04513d7d5c1c8083f78890f436f695c126",
+  "observed_baseline_probe_step": 13,
+  "initial_checkpoint_exists": true,
+  "production_approved": false,
+  "source_files_unchanged": true
+}

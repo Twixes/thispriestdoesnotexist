@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "caffeinate",
+    "-i",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python",
+    "-u",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_surround/runner.py",
+    "--execute",
+    "--output",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-surround-600-probe"
+  ],
+  "cwd": "/Users/twixes/Developer/thispriestdoesnotexist",
+  "source_sha256": {
+    "runner.py": "9fe816ee02f6f341f7dac25f6562dc8e011b394b256c30c4d3b527af5b768ed9",
+    "objective.py": "e601a3119c3096c6e222f50c68edb103e6e91f28a353cc01e47eaba67660b10d",
+    "parent-pins.json": "f92f34d7ed5d8b923e49238d850e2b1979a4271064eb4e70fe6e3065d84b0cfa"
+  },
+  "launcher_sha256": "d153fad5df18541837ac67b99ce7e18d9eab5f9269cced8f5bc27b5432e90bee",
+  "purpose": "Two sequential50-update objective forks from the same completed600 checkpoint.",
+  "production_approved": false,
+  "started_unix": 1789956382.195576,
+  "wrapper_child_pid": 8021
+}

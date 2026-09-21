@@ -1,0 +1,18 @@
+{
+  "branches": [
+    "baseline",
+    "collar-surround"
+  ],
+  "updates_each": 50,
+  "milestones": [
+    0,
+    25,
+    50
+  ],
+  "parent_checkpoint_sha256": "0f433c7ec50d9e80026681125d7fa7e17e9be6e8e2d31b11976fb51d1b0f3fc4",
+  "runner_sha256": "9fe816ee02f6f341f7dac25f6562dc8e011b394b256c30c4d3b527af5b768ed9",
+  "objective_sha256": "e601a3119c3096c6e222f50c68edb103e6e91f28a353cc01e47eaba67660b10d",
+  "pins_sha256": "f92f34d7ed5d8b923e49238d850e2b1979a4271064eb4e70fe6e3065d84b0cfa",
+  "exact_resume": false,
+  "only_experimental_change": "clothing partition0.5/0.5 to equal tab/surround/remainder thirds"
+}
