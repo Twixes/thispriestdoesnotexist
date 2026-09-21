@@ -1,0 +1,19 @@
+{
+  "status": "prepared_not_launched",
+  "smoke_sha256": "a0f58197d99dea71e19f6b1ce0ade2491173bba1576c8e4ba44ed844faf48e63",
+  "variant_sha256": "2d4c5a6bbcf7a35a9fcdb272d433675cd6bc42ca91911cf448c8bdb3499d6568",
+  "syntax_valid": true,
+  "worker_ast_identical_except_two_explicit_conv_layout_arguments": true,
+  "native_training_executed": false,
+  "source_weights_and_data_unchanged": true,
+  "loss_optimizer_regularizer_preview_and_export_code_unchanged": true,
+  "launch_constraint": "After the live source-layout probe terminates; no concurrent heavy worker. Recheck fresh memory preflight.",
+  "independent_review": {
+    "reviewer": "localized_student",
+    "blocking_findings": 0,
+    "worker_ast_comparison_independently_repeated": true,
+    "supervisor_source_pins_archival_and_guards_verified": true,
+    "help_cli_passed": true,
+    "models_loaded": false
+  }
+}

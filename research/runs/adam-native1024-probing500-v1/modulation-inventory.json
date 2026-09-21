@@ -1,0 +1,3264 @@
+{
+  "G": {
+    "component": "G",
+    "upstream_revision": "6428e99cfb36bc8bda3506350824f0c7dac9a5ad",
+    "stage": "importance_probing_only",
+    "conv_layout": "source_flattened",
+    "init_scale": 1e-07,
+    "initialization_seed": 20260922,
+    "initialization": "Source nonzero small factors, exact effective-weight equality checked in actual dtype",
+    "native_equalized_learning_rate_and_forward_unchanged": true,
+    "bias_offsets_active_independently_of_requires_grad": true,
+    "original_parameter_names": [
+      "synthesis.b4.const",
+      "synthesis.b4.conv1.weight",
+      "synthesis.b4.conv1.noise_strength",
+      "synthesis.b4.conv1.bias",
+      "synthesis.b4.conv1.affine.weight",
+      "synthesis.b4.conv1.affine.bias",
+      "synthesis.b4.torgb.weight",
+      "synthesis.b4.torgb.bias",
+      "synthesis.b4.torgb.affine.weight",
+      "synthesis.b4.torgb.affine.bias",
+      "synthesis.b8.conv0.weight",
+      "synthesis.b8.conv0.noise_strength",
+      "synthesis.b8.conv0.bias",
+      "synthesis.b8.conv0.affine.weight",
+      "synthesis.b8.conv0.affine.bias",
+      "synthesis.b8.conv1.weight",
+      "synthesis.b8.conv1.noise_strength",
+      "synthesis.b8.conv1.bias",
+      "synthesis.b8.conv1.affine.weight",
+      "synthesis.b8.conv1.affine.bias",
+      "synthesis.b8.torgb.weight",
+      "synthesis.b8.torgb.bias",
+      "synthesis.b8.torgb.affine.weight",
+      "synthesis.b8.torgb.affine.bias",
+      "synthesis.b16.conv0.weight",
+      "synthesis.b16.conv0.noise_strength",
+      "synthesis.b16.conv0.bias",
+      "synthesis.b16.conv0.affine.weight",
+      "synthesis.b16.conv0.affine.bias",
+      "synthesis.b16.conv1.weight",
+      "synthesis.b16.conv1.noise_strength",
+      "synthesis.b16.conv1.bias",
+      "synthesis.b16.conv1.affine.weight",
+      "synthesis.b16.conv1.affine.bias",
+      "synthesis.b16.torgb.weight",
+      "synthesis.b16.torgb.bias",
+      "synthesis.b16.torgb.affine.weight",
+      "synthesis.b16.torgb.affine.bias",
+      "synthesis.b32.conv0.weight",
+      "synthesis.b32.conv0.noise_strength",
+      "synthesis.b32.conv0.bias",
+      "synthesis.b32.conv0.affine.weight",
+      "synthesis.b32.conv0.affine.bias",
+      "synthesis.b32.conv1.weight",
+      "synthesis.b32.conv1.noise_strength",
+      "synthesis.b32.conv1.bias",
+      "synthesis.b32.conv1.affine.weight",
+      "synthesis.b32.conv1.affine.bias",
+      "synthesis.b32.torgb.weight",
+      "synthesis.b32.torgb.bias",
+      "synthesis.b32.torgb.affine.weight",
+      "synthesis.b32.torgb.affine.bias",
+      "synthesis.b64.conv0.weight",
+      "synthesis.b64.conv0.noise_strength",
+      "synthesis.b64.conv0.bias",
+      "synthesis.b64.conv0.affine.weight",
+      "synthesis.b64.conv0.affine.bias",
+      "synthesis.b64.conv1.weight",
+      "synthesis.b64.conv1.noise_strength",
+      "synthesis.b64.conv1.bias",
+      "synthesis.b64.conv1.affine.weight",
+      "synthesis.b64.conv1.affine.bias",
+      "synthesis.b64.torgb.weight",
+      "synthesis.b64.torgb.bias",
+      "synthesis.b64.torgb.affine.weight",
+      "synthesis.b64.torgb.affine.bias",
+      "synthesis.b128.conv0.weight",
+      "synthesis.b128.conv0.noise_strength",
+      "synthesis.b128.conv0.bias",
+      "synthesis.b128.conv0.affine.weight",
+      "synthesis.b128.conv0.affine.bias",
+      "synthesis.b128.conv1.weight",
+      "synthesis.b128.conv1.noise_strength",
+      "synthesis.b128.conv1.bias",
+      "synthesis.b128.conv1.affine.weight",
+      "synthesis.b128.conv1.affine.bias",
+      "synthesis.b128.torgb.weight",
+      "synthesis.b128.torgb.bias",
+      "synthesis.b128.torgb.affine.weight",
+      "synthesis.b128.torgb.affine.bias",
+      "synthesis.b256.conv0.weight",
+      "synthesis.b256.conv0.noise_strength",
+      "synthesis.b256.conv0.bias",
+      "synthesis.b256.conv0.affine.weight",
+      "synthesis.b256.conv0.affine.bias",
+      "synthesis.b256.conv1.weight",
+      "synthesis.b256.conv1.noise_strength",
+      "synthesis.b256.conv1.bias",
+      "synthesis.b256.conv1.affine.weight",
+      "synthesis.b256.conv1.affine.bias",
+      "synthesis.b256.torgb.weight",
+      "synthesis.b256.torgb.bias",
+      "synthesis.b256.torgb.affine.weight",
+      "synthesis.b256.torgb.affine.bias",
+      "synthesis.b512.conv0.weight",
+      "synthesis.b512.conv0.noise_strength",
+      "synthesis.b512.conv0.bias",
+      "synthesis.b512.conv0.affine.weight",
+      "synthesis.b512.conv0.affine.bias",
+      "synthesis.b512.conv1.weight",
+      "synthesis.b512.conv1.noise_strength",
+      "synthesis.b512.conv1.bias",
+      "synthesis.b512.conv1.affine.weight",
+      "synthesis.b512.conv1.affine.bias",
+      "synthesis.b512.torgb.weight",
+      "synthesis.b512.torgb.bias",
+      "synthesis.b512.torgb.affine.weight",
+      "synthesis.b512.torgb.affine.bias",
+      "synthesis.b1024.conv0.weight",
+      "synthesis.b1024.conv0.noise_strength",
+      "synthesis.b1024.conv0.bias",
+      "synthesis.b1024.conv0.affine.weight",
+      "synthesis.b1024.conv0.affine.bias",
+      "synthesis.b1024.conv1.weight",
+      "synthesis.b1024.conv1.noise_strength",
+      "synthesis.b1024.conv1.bias",
+      "synthesis.b1024.conv1.affine.weight",
+      "synthesis.b1024.conv1.affine.bias",
+      "synthesis.b1024.torgb.weight",
+      "synthesis.b1024.torgb.bias",
+      "synthesis.b1024.torgb.affine.weight",
+      "synthesis.b1024.torgb.affine.bias",
+      "mapping.fc0.weight",
+      "mapping.fc0.bias",
+      "mapping.fc1.weight",
+      "mapping.fc1.bias",
+      "mapping.fc2.weight",
+      "mapping.fc2.bias",
+      "mapping.fc3.weight",
+      "mapping.fc3.bias",
+      "mapping.fc4.weight",
+      "mapping.fc4.bias",
+      "mapping.fc5.weight",
+      "mapping.fc5.bias",
+      "mapping.fc6.weight",
+      "mapping.fc6.bias",
+      "mapping.fc7.weight",
+      "mapping.fc7.bias"
+    ],
+    "ordinary_trainable_names": [],
+    "targets": [
+      {
+        "module": "synthesis.b4.conv1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b4.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b4.conv1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b4.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b4.conv1",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b4.conv1.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b4.conv1.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b4.conv1.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b4.conv1.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b4.conv1.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b4.torgb",
+        "tensor": "weight",
+        "shape": [
+          3,
+          512,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b4.torgb.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b4.torgb",
+        "tensor": "bias",
+        "shape": [
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b4.torgb.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b4.torgb.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b4.torgb.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b4.torgb.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b4.torgb.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.conv0",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b8.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.conv0",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b8.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.conv0",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b8.conv0.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.conv0.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b8.conv0.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.conv0.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b8.conv0.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.conv1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b8.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.conv1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b8.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.conv1",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b8.conv1.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.conv1.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b8.conv1.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.conv1.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b8.conv1.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.torgb",
+        "tensor": "weight",
+        "shape": [
+          3,
+          512,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b8.torgb.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.torgb",
+        "tensor": "bias",
+        "shape": [
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b8.torgb.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.torgb.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b8.torgb.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b8.torgb.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b8.torgb.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.conv0",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b16.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.conv0",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b16.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.conv0",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b16.conv0.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.conv0.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b16.conv0.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.conv0.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b16.conv0.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.conv1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b16.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.conv1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b16.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.conv1",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b16.conv1.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.conv1.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b16.conv1.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.conv1.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b16.conv1.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.torgb",
+        "tensor": "weight",
+        "shape": [
+          3,
+          512,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b16.torgb.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.torgb",
+        "tensor": "bias",
+        "shape": [
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b16.torgb.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.torgb.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b16.torgb.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b16.torgb.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b16.torgb.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.conv0",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b32.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.conv0",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b32.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.conv0",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b32.conv0.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.conv0.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b32.conv0.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.conv0.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b32.conv0.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.conv1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b32.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.conv1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b32.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.conv1",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b32.conv1.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.conv1.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b32.conv1.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.conv1.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b32.conv1.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.torgb",
+        "tensor": "weight",
+        "shape": [
+          3,
+          512,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b32.torgb.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.torgb",
+        "tensor": "bias",
+        "shape": [
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b32.torgb.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.torgb.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b32.torgb.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b32.torgb.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b32.torgb.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.conv0",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b64.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.conv0",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b64.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.conv0",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b64.conv0.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.conv0.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b64.conv0.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.conv0.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b64.conv0.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.conv1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b64.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.conv1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b64.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.conv1",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b64.conv1.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.conv1.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b64.conv1.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.conv1.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b64.conv1.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.torgb",
+        "tensor": "weight",
+        "shape": [
+          3,
+          512,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b64.torgb.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.torgb",
+        "tensor": "bias",
+        "shape": [
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b64.torgb.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.torgb.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b64.torgb.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b64.torgb.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b64.torgb.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.conv0",
+        "tensor": "weight",
+        "shape": [
+          256,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b128.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.conv0",
+        "tensor": "bias",
+        "shape": [
+          256
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b128.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.conv0",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b128.conv0.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.conv0.affine",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b128.conv0.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.conv0.affine",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b128.conv0.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.conv1",
+        "tensor": "weight",
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b128.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.conv1",
+        "tensor": "bias",
+        "shape": [
+          256
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b128.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.conv1",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b128.conv1.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.conv1.affine",
+        "tensor": "weight",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b128.conv1.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.conv1.affine",
+        "tensor": "bias",
+        "shape": [
+          256
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b128.conv1.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.torgb",
+        "tensor": "weight",
+        "shape": [
+          3,
+          256,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b128.torgb.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.torgb",
+        "tensor": "bias",
+        "shape": [
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b128.torgb.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.torgb.affine",
+        "tensor": "weight",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b128.torgb.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b128.torgb.affine",
+        "tensor": "bias",
+        "shape": [
+          256
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b128.torgb.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.conv0",
+        "tensor": "weight",
+        "shape": [
+          128,
+          256,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b256.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.conv0",
+        "tensor": "bias",
+        "shape": [
+          128
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b256.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.conv0",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b256.conv0.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.conv0.affine",
+        "tensor": "weight",
+        "shape": [
+          256,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b256.conv0.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.conv0.affine",
+        "tensor": "bias",
+        "shape": [
+          256
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b256.conv0.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.conv1",
+        "tensor": "weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b256.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.conv1",
+        "tensor": "bias",
+        "shape": [
+          128
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b256.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.conv1",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b256.conv1.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.conv1.affine",
+        "tensor": "weight",
+        "shape": [
+          128,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b256.conv1.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.conv1.affine",
+        "tensor": "bias",
+        "shape": [
+          128
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b256.conv1.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.torgb",
+        "tensor": "weight",
+        "shape": [
+          3,
+          128,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b256.torgb.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.torgb",
+        "tensor": "bias",
+        "shape": [
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b256.torgb.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.torgb.affine",
+        "tensor": "weight",
+        "shape": [
+          128,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b256.torgb.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b256.torgb.affine",
+        "tensor": "bias",
+        "shape": [
+          128
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b256.torgb.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.conv0",
+        "tensor": "weight",
+        "shape": [
+          64,
+          128,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b512.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.conv0",
+        "tensor": "bias",
+        "shape": [
+          64
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b512.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.conv0",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b512.conv0.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.conv0.affine",
+        "tensor": "weight",
+        "shape": [
+          128,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b512.conv0.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.conv0.affine",
+        "tensor": "bias",
+        "shape": [
+          128
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b512.conv0.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.conv1",
+        "tensor": "weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b512.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.conv1",
+        "tensor": "bias",
+        "shape": [
+          64
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b512.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.conv1",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b512.conv1.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.conv1.affine",
+        "tensor": "weight",
+        "shape": [
+          64,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b512.conv1.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.conv1.affine",
+        "tensor": "bias",
+        "shape": [
+          64
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b512.conv1.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.torgb",
+        "tensor": "weight",
+        "shape": [
+          3,
+          64,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b512.torgb.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.torgb",
+        "tensor": "bias",
+        "shape": [
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b512.torgb.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.torgb.affine",
+        "tensor": "weight",
+        "shape": [
+          64,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b512.torgb.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b512.torgb.affine",
+        "tensor": "bias",
+        "shape": [
+          64
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b512.torgb.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.conv0",
+        "tensor": "weight",
+        "shape": [
+          32,
+          64,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b1024.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.conv0",
+        "tensor": "bias",
+        "shape": [
+          32
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b1024.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.conv0",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b1024.conv0.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.conv0.affine",
+        "tensor": "weight",
+        "shape": [
+          64,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b1024.conv0.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.conv0.affine",
+        "tensor": "bias",
+        "shape": [
+          64
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b1024.conv0.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.conv1",
+        "tensor": "weight",
+        "shape": [
+          32,
+          32,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b1024.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.conv1",
+        "tensor": "bias",
+        "shape": [
+          32
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b1024.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.conv1",
+        "tensor": "noise_strength",
+        "shape": [],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b1024.conv1.parametrizations.noise_strength.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.conv1.affine",
+        "tensor": "weight",
+        "shape": [
+          32,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b1024.conv1.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.conv1.affine",
+        "tensor": "bias",
+        "shape": [
+          32
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b1024.conv1.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.torgb",
+        "tensor": "weight",
+        "shape": [
+          3,
+          32,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "synthesis.b1024.torgb.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.torgb",
+        "tensor": "bias",
+        "shape": [
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b1024.torgb.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.torgb.affine",
+        "tensor": "weight",
+        "shape": [
+          32,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "synthesis.b1024.torgb.affine.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "synthesis.b1024.torgb.affine",
+        "tensor": "bias",
+        "shape": [
+          32
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "synthesis.b1024.torgb.affine.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc0",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "mapping.fc0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc0",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "mapping.fc0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "mapping.fc1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "mapping.fc1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc2",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "mapping.fc2.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc2",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "mapping.fc2.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc3",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "mapping.fc3.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc3",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "mapping.fc3.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc4",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "mapping.fc4.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc4",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "mapping.fc4.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc5",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "mapping.fc5.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc5",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "mapping.fc5.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc6",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "mapping.fc6.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc6",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "mapping.fc6.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc7",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "output_rank1",
+        "base_parameter": "mapping.fc7.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "mapping.fc7",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "mapping.fc7.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      }
+    ],
+    "modulation_parameter_count": 112455,
+    "probing_parameter_count": 112455,
+    "probing_parameter_names": [
+      "synthesis.b4.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b4.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b4.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b4.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b4.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b4.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b4.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b4.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b4.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b4.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b4.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b4.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b4.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b8.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b8.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b8.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b8.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b8.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b8.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b8.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b8.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b8.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b8.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b8.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b8.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b8.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b8.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b8.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b8.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b8.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b8.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b8.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b8.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b16.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b16.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b16.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b16.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b16.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b16.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b16.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b16.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b16.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b16.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b16.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b16.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b16.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b16.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b16.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b16.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b16.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b16.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b16.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b16.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b32.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b32.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b32.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b32.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b32.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b32.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b32.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b32.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b32.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b32.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b32.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b32.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b32.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b32.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b32.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b32.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b32.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b32.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b32.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b32.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b64.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b64.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b64.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b64.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b64.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b64.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b64.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b64.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b64.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b64.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b64.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b64.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b64.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b64.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b64.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b64.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b64.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b64.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b64.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b64.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b128.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b128.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b128.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b128.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b128.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b128.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b128.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b128.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b128.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b128.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b128.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b128.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b128.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b128.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b128.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b128.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b128.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b128.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b128.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b128.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b256.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b256.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b256.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b256.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b256.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b256.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b256.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b256.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b256.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b256.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b256.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b256.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b256.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b256.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b256.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b256.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b256.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b256.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b256.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b256.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b512.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b512.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b512.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b512.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b512.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b512.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b512.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b512.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b512.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b512.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b512.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b512.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b512.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b512.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b512.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b512.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b512.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b512.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b512.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b512.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b1024.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b1024.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.torgb.parametrizations.bias.0.b_vector",
+      "mapping.fc0.parametrizations.weight.0.u_vector",
+      "mapping.fc0.parametrizations.weight.0.v_vector",
+      "mapping.fc0.parametrizations.bias.0.b_vector",
+      "mapping.fc1.parametrizations.weight.0.u_vector",
+      "mapping.fc1.parametrizations.weight.0.v_vector",
+      "mapping.fc1.parametrizations.bias.0.b_vector",
+      "mapping.fc2.parametrizations.weight.0.u_vector",
+      "mapping.fc2.parametrizations.weight.0.v_vector",
+      "mapping.fc2.parametrizations.bias.0.b_vector",
+      "mapping.fc3.parametrizations.weight.0.u_vector",
+      "mapping.fc3.parametrizations.weight.0.v_vector",
+      "mapping.fc3.parametrizations.bias.0.b_vector",
+      "mapping.fc4.parametrizations.weight.0.u_vector",
+      "mapping.fc4.parametrizations.weight.0.v_vector",
+      "mapping.fc4.parametrizations.bias.0.b_vector",
+      "mapping.fc5.parametrizations.weight.0.u_vector",
+      "mapping.fc5.parametrizations.weight.0.v_vector",
+      "mapping.fc5.parametrizations.bias.0.b_vector",
+      "mapping.fc6.parametrizations.weight.0.u_vector",
+      "mapping.fc6.parametrizations.weight.0.v_vector",
+      "mapping.fc6.parametrizations.bias.0.b_vector",
+      "mapping.fc7.parametrizations.weight.0.u_vector",
+      "mapping.fc7.parametrizations.weight.0.v_vector",
+      "mapping.fc7.parametrizations.bias.0.b_vector"
+    ],
+    "frozen_parameter_names": [
+      "synthesis.b4.const",
+      "synthesis.b4.conv1.affine.parametrizations.weight.original",
+      "synthesis.b4.conv1.affine.parametrizations.bias.original",
+      "synthesis.b4.conv1.parametrizations.weight.original",
+      "synthesis.b4.conv1.parametrizations.bias.original",
+      "synthesis.b4.conv1.parametrizations.noise_strength.original",
+      "synthesis.b4.torgb.affine.parametrizations.weight.original",
+      "synthesis.b4.torgb.affine.parametrizations.bias.original",
+      "synthesis.b4.torgb.parametrizations.weight.original",
+      "synthesis.b4.torgb.parametrizations.bias.original",
+      "synthesis.b8.conv0.affine.parametrizations.weight.original",
+      "synthesis.b8.conv0.affine.parametrizations.bias.original",
+      "synthesis.b8.conv0.parametrizations.weight.original",
+      "synthesis.b8.conv0.parametrizations.bias.original",
+      "synthesis.b8.conv0.parametrizations.noise_strength.original",
+      "synthesis.b8.conv1.affine.parametrizations.weight.original",
+      "synthesis.b8.conv1.affine.parametrizations.bias.original",
+      "synthesis.b8.conv1.parametrizations.weight.original",
+      "synthesis.b8.conv1.parametrizations.bias.original",
+      "synthesis.b8.conv1.parametrizations.noise_strength.original",
+      "synthesis.b8.torgb.affine.parametrizations.weight.original",
+      "synthesis.b8.torgb.affine.parametrizations.bias.original",
+      "synthesis.b8.torgb.parametrizations.weight.original",
+      "synthesis.b8.torgb.parametrizations.bias.original",
+      "synthesis.b16.conv0.affine.parametrizations.weight.original",
+      "synthesis.b16.conv0.affine.parametrizations.bias.original",
+      "synthesis.b16.conv0.parametrizations.weight.original",
+      "synthesis.b16.conv0.parametrizations.bias.original",
+      "synthesis.b16.conv0.parametrizations.noise_strength.original",
+      "synthesis.b16.conv1.affine.parametrizations.weight.original",
+      "synthesis.b16.conv1.affine.parametrizations.bias.original",
+      "synthesis.b16.conv1.parametrizations.weight.original",
+      "synthesis.b16.conv1.parametrizations.bias.original",
+      "synthesis.b16.conv1.parametrizations.noise_strength.original",
+      "synthesis.b16.torgb.affine.parametrizations.weight.original",
+      "synthesis.b16.torgb.affine.parametrizations.bias.original",
+      "synthesis.b16.torgb.parametrizations.weight.original",
+      "synthesis.b16.torgb.parametrizations.bias.original",
+      "synthesis.b32.conv0.affine.parametrizations.weight.original",
+      "synthesis.b32.conv0.affine.parametrizations.bias.original",
+      "synthesis.b32.conv0.parametrizations.weight.original",
+      "synthesis.b32.conv0.parametrizations.bias.original",
+      "synthesis.b32.conv0.parametrizations.noise_strength.original",
+      "synthesis.b32.conv1.affine.parametrizations.weight.original",
+      "synthesis.b32.conv1.affine.parametrizations.bias.original",
+      "synthesis.b32.conv1.parametrizations.weight.original",
+      "synthesis.b32.conv1.parametrizations.bias.original",
+      "synthesis.b32.conv1.parametrizations.noise_strength.original",
+      "synthesis.b32.torgb.affine.parametrizations.weight.original",
+      "synthesis.b32.torgb.affine.parametrizations.bias.original",
+      "synthesis.b32.torgb.parametrizations.weight.original",
+      "synthesis.b32.torgb.parametrizations.bias.original",
+      "synthesis.b64.conv0.affine.parametrizations.weight.original",
+      "synthesis.b64.conv0.affine.parametrizations.bias.original",
+      "synthesis.b64.conv0.parametrizations.weight.original",
+      "synthesis.b64.conv0.parametrizations.bias.original",
+      "synthesis.b64.conv0.parametrizations.noise_strength.original",
+      "synthesis.b64.conv1.affine.parametrizations.weight.original",
+      "synthesis.b64.conv1.affine.parametrizations.bias.original",
+      "synthesis.b64.conv1.parametrizations.weight.original",
+      "synthesis.b64.conv1.parametrizations.bias.original",
+      "synthesis.b64.conv1.parametrizations.noise_strength.original",
+      "synthesis.b64.torgb.affine.parametrizations.weight.original",
+      "synthesis.b64.torgb.affine.parametrizations.bias.original",
+      "synthesis.b64.torgb.parametrizations.weight.original",
+      "synthesis.b64.torgb.parametrizations.bias.original",
+      "synthesis.b128.conv0.affine.parametrizations.weight.original",
+      "synthesis.b128.conv0.affine.parametrizations.bias.original",
+      "synthesis.b128.conv0.parametrizations.weight.original",
+      "synthesis.b128.conv0.parametrizations.bias.original",
+      "synthesis.b128.conv0.parametrizations.noise_strength.original",
+      "synthesis.b128.conv1.affine.parametrizations.weight.original",
+      "synthesis.b128.conv1.affine.parametrizations.bias.original",
+      "synthesis.b128.conv1.parametrizations.weight.original",
+      "synthesis.b128.conv1.parametrizations.bias.original",
+      "synthesis.b128.conv1.parametrizations.noise_strength.original",
+      "synthesis.b128.torgb.affine.parametrizations.weight.original",
+      "synthesis.b128.torgb.affine.parametrizations.bias.original",
+      "synthesis.b128.torgb.parametrizations.weight.original",
+      "synthesis.b128.torgb.parametrizations.bias.original",
+      "synthesis.b256.conv0.affine.parametrizations.weight.original",
+      "synthesis.b256.conv0.affine.parametrizations.bias.original",
+      "synthesis.b256.conv0.parametrizations.weight.original",
+      "synthesis.b256.conv0.parametrizations.bias.original",
+      "synthesis.b256.conv0.parametrizations.noise_strength.original",
+      "synthesis.b256.conv1.affine.parametrizations.weight.original",
+      "synthesis.b256.conv1.affine.parametrizations.bias.original",
+      "synthesis.b256.conv1.parametrizations.weight.original",
+      "synthesis.b256.conv1.parametrizations.bias.original",
+      "synthesis.b256.conv1.parametrizations.noise_strength.original",
+      "synthesis.b256.torgb.affine.parametrizations.weight.original",
+      "synthesis.b256.torgb.affine.parametrizations.bias.original",
+      "synthesis.b256.torgb.parametrizations.weight.original",
+      "synthesis.b256.torgb.parametrizations.bias.original",
+      "synthesis.b512.conv0.affine.parametrizations.weight.original",
+      "synthesis.b512.conv0.affine.parametrizations.bias.original",
+      "synthesis.b512.conv0.parametrizations.weight.original",
+      "synthesis.b512.conv0.parametrizations.bias.original",
+      "synthesis.b512.conv0.parametrizations.noise_strength.original",
+      "synthesis.b512.conv1.affine.parametrizations.weight.original",
+      "synthesis.b512.conv1.affine.parametrizations.bias.original",
+      "synthesis.b512.conv1.parametrizations.weight.original",
+      "synthesis.b512.conv1.parametrizations.bias.original",
+      "synthesis.b512.conv1.parametrizations.noise_strength.original",
+      "synthesis.b512.torgb.affine.parametrizations.weight.original",
+      "synthesis.b512.torgb.affine.parametrizations.bias.original",
+      "synthesis.b512.torgb.parametrizations.weight.original",
+      "synthesis.b512.torgb.parametrizations.bias.original",
+      "synthesis.b1024.conv0.affine.parametrizations.weight.original",
+      "synthesis.b1024.conv0.affine.parametrizations.bias.original",
+      "synthesis.b1024.conv0.parametrizations.weight.original",
+      "synthesis.b1024.conv0.parametrizations.bias.original",
+      "synthesis.b1024.conv0.parametrizations.noise_strength.original",
+      "synthesis.b1024.conv1.affine.parametrizations.weight.original",
+      "synthesis.b1024.conv1.affine.parametrizations.bias.original",
+      "synthesis.b1024.conv1.parametrizations.weight.original",
+      "synthesis.b1024.conv1.parametrizations.bias.original",
+      "synthesis.b1024.conv1.parametrizations.noise_strength.original",
+      "synthesis.b1024.torgb.affine.parametrizations.weight.original",
+      "synthesis.b1024.torgb.affine.parametrizations.bias.original",
+      "synthesis.b1024.torgb.parametrizations.weight.original",
+      "synthesis.b1024.torgb.parametrizations.bias.original",
+      "mapping.fc0.parametrizations.weight.original",
+      "mapping.fc0.parametrizations.bias.original",
+      "mapping.fc1.parametrizations.weight.original",
+      "mapping.fc1.parametrizations.bias.original",
+      "mapping.fc2.parametrizations.weight.original",
+      "mapping.fc2.parametrizations.bias.original",
+      "mapping.fc3.parametrizations.weight.original",
+      "mapping.fc3.parametrizations.bias.original",
+      "mapping.fc4.parametrizations.weight.original",
+      "mapping.fc4.parametrizations.bias.original",
+      "mapping.fc5.parametrizations.weight.original",
+      "mapping.fc5.parametrizations.bias.original",
+      "mapping.fc6.parametrizations.weight.original",
+      "mapping.fc6.parametrizations.bias.original",
+      "mapping.fc7.parametrizations.weight.original",
+      "mapping.fc7.parametrizations.bias.original"
+    ],
+    "currently_enabled_names": [
+      "synthesis.b4.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b4.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b4.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b4.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b4.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b4.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b4.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b4.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b4.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b4.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b4.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b4.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b4.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b8.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b8.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b8.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b8.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b8.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b8.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b8.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b8.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b8.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b8.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b8.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b8.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b8.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b8.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b8.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b8.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b8.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b8.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b8.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b8.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b16.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b16.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b16.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b16.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b16.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b16.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b16.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b16.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b16.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b16.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b16.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b16.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b16.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b16.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b16.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b16.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b16.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b16.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b16.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b16.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b32.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b32.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b32.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b32.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b32.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b32.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b32.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b32.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b32.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b32.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b32.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b32.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b32.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b32.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b32.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b32.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b32.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b32.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b32.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b32.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b64.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b64.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b64.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b64.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b64.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b64.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b64.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b64.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b64.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b64.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b64.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b64.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b64.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b64.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b64.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b64.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b64.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b64.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b64.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b64.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b128.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b128.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b128.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b128.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b128.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b128.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b128.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b128.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b128.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b128.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b128.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b128.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b128.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b128.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b128.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b128.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b128.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b128.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b128.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b128.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b256.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b256.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b256.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b256.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b256.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b256.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b256.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b256.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b256.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b256.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b256.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b256.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b256.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b256.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b256.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b256.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b256.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b256.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b256.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b256.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b512.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b512.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b512.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b512.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b512.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b512.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b512.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b512.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b512.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b512.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b512.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b512.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b512.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b512.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b512.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b512.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b512.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b512.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b512.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b512.torgb.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.conv0.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.conv0.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.conv0.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.conv0.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.conv0.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.conv0.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.conv0.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b1024.conv1.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.conv1.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.conv1.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.conv1.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.conv1.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.conv1.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.conv1.parametrizations.noise_strength.0.b_vector",
+      "synthesis.b1024.torgb.affine.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.torgb.affine.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.torgb.affine.parametrizations.bias.0.b_vector",
+      "synthesis.b1024.torgb.parametrizations.weight.0.u_vector",
+      "synthesis.b1024.torgb.parametrizations.weight.0.v_vector",
+      "synthesis.b1024.torgb.parametrizations.bias.0.b_vector",
+      "mapping.fc0.parametrizations.weight.0.u_vector",
+      "mapping.fc0.parametrizations.weight.0.v_vector",
+      "mapping.fc0.parametrizations.bias.0.b_vector",
+      "mapping.fc1.parametrizations.weight.0.u_vector",
+      "mapping.fc1.parametrizations.weight.0.v_vector",
+      "mapping.fc1.parametrizations.bias.0.b_vector",
+      "mapping.fc2.parametrizations.weight.0.u_vector",
+      "mapping.fc2.parametrizations.weight.0.v_vector",
+      "mapping.fc2.parametrizations.bias.0.b_vector",
+      "mapping.fc3.parametrizations.weight.0.u_vector",
+      "mapping.fc3.parametrizations.weight.0.v_vector",
+      "mapping.fc3.parametrizations.bias.0.b_vector",
+      "mapping.fc4.parametrizations.weight.0.u_vector",
+      "mapping.fc4.parametrizations.weight.0.v_vector",
+      "mapping.fc4.parametrizations.bias.0.b_vector",
+      "mapping.fc5.parametrizations.weight.0.u_vector",
+      "mapping.fc5.parametrizations.weight.0.v_vector",
+      "mapping.fc5.parametrizations.bias.0.b_vector",
+      "mapping.fc6.parametrizations.weight.0.u_vector",
+      "mapping.fc6.parametrizations.weight.0.v_vector",
+      "mapping.fc6.parametrizations.bias.0.b_vector",
+      "mapping.fc7.parametrizations.weight.0.u_vector",
+      "mapping.fc7.parametrizations.weight.0.v_vector",
+      "mapping.fc7.parametrizations.bias.0.b_vector"
+    ]
+  },
+  "D": {
+    "component": "D",
+    "upstream_revision": "6428e99cfb36bc8bda3506350824f0c7dac9a5ad",
+    "stage": "importance_probing_only",
+    "conv_layout": "source_flattened",
+    "init_scale": 1e-07,
+    "initialization_seed": 20260922,
+    "initialization": "Source nonzero small factors, exact effective-weight equality checked in actual dtype",
+    "native_equalized_learning_rate_and_forward_unchanged": true,
+    "bias_offsets_active_independently_of_requires_grad": true,
+    "original_parameter_names": [
+      "b1024.fromrgb.weight",
+      "b1024.fromrgb.bias",
+      "b1024.conv0.weight",
+      "b1024.conv0.bias",
+      "b1024.conv1.weight",
+      "b1024.conv1.bias",
+      "b1024.skip.weight",
+      "b512.conv0.weight",
+      "b512.conv0.bias",
+      "b512.conv1.weight",
+      "b512.conv1.bias",
+      "b512.skip.weight",
+      "b256.conv0.weight",
+      "b256.conv0.bias",
+      "b256.conv1.weight",
+      "b256.conv1.bias",
+      "b256.skip.weight",
+      "b128.conv0.weight",
+      "b128.conv0.bias",
+      "b128.conv1.weight",
+      "b128.conv1.bias",
+      "b128.skip.weight",
+      "b64.conv0.weight",
+      "b64.conv0.bias",
+      "b64.conv1.weight",
+      "b64.conv1.bias",
+      "b64.skip.weight",
+      "b32.conv0.weight",
+      "b32.conv0.bias",
+      "b32.conv1.weight",
+      "b32.conv1.bias",
+      "b32.skip.weight",
+      "b16.conv0.weight",
+      "b16.conv0.bias",
+      "b16.conv1.weight",
+      "b16.conv1.bias",
+      "b16.skip.weight",
+      "b8.conv0.weight",
+      "b8.conv0.bias",
+      "b8.conv1.weight",
+      "b8.conv1.bias",
+      "b8.skip.weight",
+      "b4.conv.weight",
+      "b4.conv.bias",
+      "b4.fc.weight",
+      "b4.fc.bias",
+      "b4.out.weight",
+      "b4.out.bias"
+    ],
+    "ordinary_trainable_names": [
+      "b4.conv.weight",
+      "b4.conv.bias",
+      "b4.fc.weight",
+      "b4.fc.bias",
+      "b4.out.weight",
+      "b4.out.bias"
+    ],
+    "targets": [
+      {
+        "module": "b1024.fromrgb",
+        "tensor": "weight",
+        "shape": [
+          32,
+          3,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b1024.fromrgb.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b1024.fromrgb",
+        "tensor": "bias",
+        "shape": [
+          32
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b1024.fromrgb.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b1024.conv0",
+        "tensor": "weight",
+        "shape": [
+          32,
+          32,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b1024.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b1024.conv0",
+        "tensor": "bias",
+        "shape": [
+          32
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b1024.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b1024.conv1",
+        "tensor": "weight",
+        "shape": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b1024.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b1024.conv1",
+        "tensor": "bias",
+        "shape": [
+          64
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b1024.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b1024.skip",
+        "tensor": "weight",
+        "shape": [
+          64,
+          32,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b1024.skip.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b512.conv0",
+        "tensor": "weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b512.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b512.conv0",
+        "tensor": "bias",
+        "shape": [
+          64
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b512.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b512.conv1",
+        "tensor": "weight",
+        "shape": [
+          128,
+          64,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b512.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b512.conv1",
+        "tensor": "bias",
+        "shape": [
+          128
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b512.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b512.skip",
+        "tensor": "weight",
+        "shape": [
+          128,
+          64,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b512.skip.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b256.conv0",
+        "tensor": "weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b256.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b256.conv0",
+        "tensor": "bias",
+        "shape": [
+          128
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b256.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b256.conv1",
+        "tensor": "weight",
+        "shape": [
+          256,
+          128,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b256.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b256.conv1",
+        "tensor": "bias",
+        "shape": [
+          256
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b256.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b256.skip",
+        "tensor": "weight",
+        "shape": [
+          256,
+          128,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b256.skip.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b128.conv0",
+        "tensor": "weight",
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b128.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b128.conv0",
+        "tensor": "bias",
+        "shape": [
+          256
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b128.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b128.conv1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          256,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b128.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b128.conv1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b128.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b128.skip",
+        "tensor": "weight",
+        "shape": [
+          512,
+          256,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b128.skip.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b64.conv0",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b64.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b64.conv0",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b64.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b64.conv1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b64.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b64.conv1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b64.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b64.skip",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b64.skip.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b32.conv0",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b32.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b32.conv0",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b32.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b32.conv1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b32.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b32.conv1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b32.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b32.skip",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b32.skip.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b16.conv0",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b16.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b16.conv0",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b16.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b16.conv1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b16.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b16.conv1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b16.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b16.skip",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b16.skip.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b8.conv0",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b8.conv0.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b8.conv0",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b8.conv0.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b8.conv1",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b8.conv1.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b8.conv1",
+        "tensor": "bias",
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "additive_offset",
+        "layout": null,
+        "base_parameter": "b8.conv1.parametrizations.bias.original",
+        "initial_effective_tensor_equal": true
+      },
+      {
+        "module": "b8.skip",
+        "tensor": "weight",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ],
+        "dtype": "torch.float32",
+        "mechanism": "multiplicative_rank_factors",
+        "layout": "source_flattened",
+        "base_parameter": "b8.skip.parametrizations.weight.original",
+        "initial_effective_tensor_equal": true
+      }
+    ],
+    "modulation_parameter_count": 62179,
+    "probing_parameter_count": 6621924,
+    "probing_parameter_names": [
+      "b1024.fromrgb.parametrizations.weight.0.u_vector",
+      "b1024.fromrgb.parametrizations.weight.0.v_vector",
+      "b1024.fromrgb.parametrizations.bias.0.b_vector",
+      "b1024.conv0.parametrizations.weight.0.u_vector",
+      "b1024.conv0.parametrizations.weight.0.v_vector",
+      "b1024.conv0.parametrizations.bias.0.b_vector",
+      "b1024.conv1.parametrizations.weight.0.u_vector",
+      "b1024.conv1.parametrizations.weight.0.v_vector",
+      "b1024.conv1.parametrizations.bias.0.b_vector",
+      "b1024.skip.parametrizations.weight.0.u_vector",
+      "b1024.skip.parametrizations.weight.0.v_vector",
+      "b512.conv0.parametrizations.weight.0.u_vector",
+      "b512.conv0.parametrizations.weight.0.v_vector",
+      "b512.conv0.parametrizations.bias.0.b_vector",
+      "b512.conv1.parametrizations.weight.0.u_vector",
+      "b512.conv1.parametrizations.weight.0.v_vector",
+      "b512.conv1.parametrizations.bias.0.b_vector",
+      "b512.skip.parametrizations.weight.0.u_vector",
+      "b512.skip.parametrizations.weight.0.v_vector",
+      "b256.conv0.parametrizations.weight.0.u_vector",
+      "b256.conv0.parametrizations.weight.0.v_vector",
+      "b256.conv0.parametrizations.bias.0.b_vector",
+      "b256.conv1.parametrizations.weight.0.u_vector",
+      "b256.conv1.parametrizations.weight.0.v_vector",
+      "b256.conv1.parametrizations.bias.0.b_vector",
+      "b256.skip.parametrizations.weight.0.u_vector",
+      "b256.skip.parametrizations.weight.0.v_vector",
+      "b128.conv0.parametrizations.weight.0.u_vector",
+      "b128.conv0.parametrizations.weight.0.v_vector",
+      "b128.conv0.parametrizations.bias.0.b_vector",
+      "b128.conv1.parametrizations.weight.0.u_vector",
+      "b128.conv1.parametrizations.weight.0.v_vector",
+      "b128.conv1.parametrizations.bias.0.b_vector",
+      "b128.skip.parametrizations.weight.0.u_vector",
+      "b128.skip.parametrizations.weight.0.v_vector",
+      "b64.conv0.parametrizations.weight.0.u_vector",
+      "b64.conv0.parametrizations.weight.0.v_vector",
+      "b64.conv0.parametrizations.bias.0.b_vector",
+      "b64.conv1.parametrizations.weight.0.u_vector",
+      "b64.conv1.parametrizations.weight.0.v_vector",
+      "b64.conv1.parametrizations.bias.0.b_vector",
+      "b64.skip.parametrizations.weight.0.u_vector",
+      "b64.skip.parametrizations.weight.0.v_vector",
+      "b32.conv0.parametrizations.weight.0.u_vector",
+      "b32.conv0.parametrizations.weight.0.v_vector",
+      "b32.conv0.parametrizations.bias.0.b_vector",
+      "b32.conv1.parametrizations.weight.0.u_vector",
+      "b32.conv1.parametrizations.weight.0.v_vector",
+      "b32.conv1.parametrizations.bias.0.b_vector",
+      "b32.skip.parametrizations.weight.0.u_vector",
+      "b32.skip.parametrizations.weight.0.v_vector",
+      "b16.conv0.parametrizations.weight.0.u_vector",
+      "b16.conv0.parametrizations.weight.0.v_vector",
+      "b16.conv0.parametrizations.bias.0.b_vector",
+      "b16.conv1.parametrizations.weight.0.u_vector",
+      "b16.conv1.parametrizations.weight.0.v_vector",
+      "b16.conv1.parametrizations.bias.0.b_vector",
+      "b16.skip.parametrizations.weight.0.u_vector",
+      "b16.skip.parametrizations.weight.0.v_vector",
+      "b8.conv0.parametrizations.weight.0.u_vector",
+      "b8.conv0.parametrizations.weight.0.v_vector",
+      "b8.conv0.parametrizations.bias.0.b_vector",
+      "b8.conv1.parametrizations.weight.0.u_vector",
+      "b8.conv1.parametrizations.weight.0.v_vector",
+      "b8.conv1.parametrizations.bias.0.b_vector",
+      "b8.skip.parametrizations.weight.0.u_vector",
+      "b8.skip.parametrizations.weight.0.v_vector",
+      "b4.conv.weight",
+      "b4.conv.bias",
+      "b4.fc.weight",
+      "b4.fc.bias",
+      "b4.out.weight",
+      "b4.out.bias"
+    ],
+    "frozen_parameter_names": [
+      "b1024.fromrgb.parametrizations.weight.original",
+      "b1024.fromrgb.parametrizations.bias.original",
+      "b1024.conv0.parametrizations.weight.original",
+      "b1024.conv0.parametrizations.bias.original",
+      "b1024.conv1.parametrizations.weight.original",
+      "b1024.conv1.parametrizations.bias.original",
+      "b1024.skip.parametrizations.weight.original",
+      "b512.conv0.parametrizations.weight.original",
+      "b512.conv0.parametrizations.bias.original",
+      "b512.conv1.parametrizations.weight.original",
+      "b512.conv1.parametrizations.bias.original",
+      "b512.skip.parametrizations.weight.original",
+      "b256.conv0.parametrizations.weight.original",
+      "b256.conv0.parametrizations.bias.original",
+      "b256.conv1.parametrizations.weight.original",
+      "b256.conv1.parametrizations.bias.original",
+      "b256.skip.parametrizations.weight.original",
+      "b128.conv0.parametrizations.weight.original",
+      "b128.conv0.parametrizations.bias.original",
+      "b128.conv1.parametrizations.weight.original",
+      "b128.conv1.parametrizations.bias.original",
+      "b128.skip.parametrizations.weight.original",
+      "b64.conv0.parametrizations.weight.original",
+      "b64.conv0.parametrizations.bias.original",
+      "b64.conv1.parametrizations.weight.original",
+      "b64.conv1.parametrizations.bias.original",
+      "b64.skip.parametrizations.weight.original",
+      "b32.conv0.parametrizations.weight.original",
+      "b32.conv0.parametrizations.bias.original",
+      "b32.conv1.parametrizations.weight.original",
+      "b32.conv1.parametrizations.bias.original",
+      "b32.skip.parametrizations.weight.original",
+      "b16.conv0.parametrizations.weight.original",
+      "b16.conv0.parametrizations.bias.original",
+      "b16.conv1.parametrizations.weight.original",
+      "b16.conv1.parametrizations.bias.original",
+      "b16.skip.parametrizations.weight.original",
+      "b8.conv0.parametrizations.weight.original",
+      "b8.conv0.parametrizations.bias.original",
+      "b8.conv1.parametrizations.weight.original",
+      "b8.conv1.parametrizations.bias.original",
+      "b8.skip.parametrizations.weight.original"
+    ],
+    "currently_enabled_names": [
+      "b1024.fromrgb.parametrizations.weight.0.u_vector",
+      "b1024.fromrgb.parametrizations.weight.0.v_vector",
+      "b1024.fromrgb.parametrizations.bias.0.b_vector",
+      "b1024.conv0.parametrizations.weight.0.u_vector",
+      "b1024.conv0.parametrizations.weight.0.v_vector",
+      "b1024.conv0.parametrizations.bias.0.b_vector",
+      "b1024.conv1.parametrizations.weight.0.u_vector",
+      "b1024.conv1.parametrizations.weight.0.v_vector",
+      "b1024.conv1.parametrizations.bias.0.b_vector",
+      "b1024.skip.parametrizations.weight.0.u_vector",
+      "b1024.skip.parametrizations.weight.0.v_vector",
+      "b512.conv0.parametrizations.weight.0.u_vector",
+      "b512.conv0.parametrizations.weight.0.v_vector",
+      "b512.conv0.parametrizations.bias.0.b_vector",
+      "b512.conv1.parametrizations.weight.0.u_vector",
+      "b512.conv1.parametrizations.weight.0.v_vector",
+      "b512.conv1.parametrizations.bias.0.b_vector",
+      "b512.skip.parametrizations.weight.0.u_vector",
+      "b512.skip.parametrizations.weight.0.v_vector",
+      "b256.conv0.parametrizations.weight.0.u_vector",
+      "b256.conv0.parametrizations.weight.0.v_vector",
+      "b256.conv0.parametrizations.bias.0.b_vector",
+      "b256.conv1.parametrizations.weight.0.u_vector",
+      "b256.conv1.parametrizations.weight.0.v_vector",
+      "b256.conv1.parametrizations.bias.0.b_vector",
+      "b256.skip.parametrizations.weight.0.u_vector",
+      "b256.skip.parametrizations.weight.0.v_vector",
+      "b128.conv0.parametrizations.weight.0.u_vector",
+      "b128.conv0.parametrizations.weight.0.v_vector",
+      "b128.conv0.parametrizations.bias.0.b_vector",
+      "b128.conv1.parametrizations.weight.0.u_vector",
+      "b128.conv1.parametrizations.weight.0.v_vector",
+      "b128.conv1.parametrizations.bias.0.b_vector",
+      "b128.skip.parametrizations.weight.0.u_vector",
+      "b128.skip.parametrizations.weight.0.v_vector",
+      "b64.conv0.parametrizations.weight.0.u_vector",
+      "b64.conv0.parametrizations.weight.0.v_vector",
+      "b64.conv0.parametrizations.bias.0.b_vector",
+      "b64.conv1.parametrizations.weight.0.u_vector",
+      "b64.conv1.parametrizations.weight.0.v_vector",
+      "b64.conv1.parametrizations.bias.0.b_vector",
+      "b64.skip.parametrizations.weight.0.u_vector",
+      "b64.skip.parametrizations.weight.0.v_vector",
+      "b32.conv0.parametrizations.weight.0.u_vector",
+      "b32.conv0.parametrizations.weight.0.v_vector",
+      "b32.conv0.parametrizations.bias.0.b_vector",
+      "b32.conv1.parametrizations.weight.0.u_vector",
+      "b32.conv1.parametrizations.weight.0.v_vector",
+      "b32.conv1.parametrizations.bias.0.b_vector",
+      "b32.skip.parametrizations.weight.0.u_vector",
+      "b32.skip.parametrizations.weight.0.v_vector",
+      "b16.conv0.parametrizations.weight.0.u_vector",
+      "b16.conv0.parametrizations.weight.0.v_vector",
+      "b16.conv0.parametrizations.bias.0.b_vector",
+      "b16.conv1.parametrizations.weight.0.u_vector",
+      "b16.conv1.parametrizations.weight.0.v_vector",
+      "b16.conv1.parametrizations.bias.0.b_vector",
+      "b16.skip.parametrizations.weight.0.u_vector",
+      "b16.skip.parametrizations.weight.0.v_vector",
+      "b8.conv0.parametrizations.weight.0.u_vector",
+      "b8.conv0.parametrizations.weight.0.v_vector",
+      "b8.conv0.parametrizations.bias.0.b_vector",
+      "b8.conv1.parametrizations.weight.0.u_vector",
+      "b8.conv1.parametrizations.weight.0.v_vector",
+      "b8.conv1.parametrizations.bias.0.b_vector",
+      "b8.skip.parametrizations.weight.0.u_vector",
+      "b8.skip.parametrizations.weight.0.v_vector",
+      "b4.conv.weight",
+      "b4.conv.bias",
+      "b4.fc.weight",
+      "b4.fc.bias",
+      "b4.out.weight",
+      "b4.out.bias"
+    ]
+  }
+}

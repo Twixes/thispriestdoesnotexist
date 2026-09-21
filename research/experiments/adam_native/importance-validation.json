@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "returncode": 0,
+  "elapsed_seconds": 0.5479588750000001,
+  "scope": "Seven tiny analytical accumulator/reducer tests. No pretrained model load, training, image generation, importance ranking, or production evaluation.",
+  "stdout": "",
+  "stderr": "test_cancellation_uses_actual_per_example_autograd (__main__.ImportanceTests.test_cancellation_uses_actual_per_example_autograd) ... ok\ntest_corrupt_state_counts_and_values_rejected (__main__.ImportanceTests.test_corrupt_state_counts_and_values_rejected) ... ok\ntest_discriminator_pair_cross_term_and_sample_normalization (__main__.ImportanceTests.test_discriminator_pair_cross_term_and_sample_normalization) ... ok\ntest_exact_source_reductions_no_broadcasting_or_thresholds (__main__.ImportanceTests.test_exact_source_reductions_no_broadcasting_or_thresholds) ... ok\ntest_failed_add_atomic_even_late_failure (__main__.ImportanceTests.test_failed_add_atomic_even_late_failure) ... ok\ntest_missing_policy_total_denominator_and_counts (__main__.ImportanceTests.test_missing_policy_total_denominator_and_counts) ... ok\ntest_state_serialization_continuation_and_alias_isolation (__main__.ImportanceTests.test_state_serialization_continuation_and_alias_isolation) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.014s\n\nOK\n",
+  "sha256": {
+    "importance.py": "1d1d253e8659863ed567f22201423389f71df36a572657896aadcda8d1ab9bbb",
+    "test_importance.py": "c9035a0ad61fbd74c44bfda746a35ead87a91a0af8a01d6f5c84f207b557aef2"
+  },
+  "root_source_review": "Reviewed per-example denominator, discriminator combined-loss gradient cross term, atomic failure behavior, detached state copies, missing-gradient policy, and source reduction formulas. No blocking finding."
+}

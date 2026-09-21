@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AdAM native importance probing</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#101012;color:#eee}body{max-width:1600px;margin:auto;padding:28px}h1{font-size:clamp(25px,4vw,40px);margin-bottom:12px}p{max-width:1000px;line-height:1.55;color:#bcbcc5}.scope{color:#ffdc9b;border-left:3px solid;padding-left:16px}a{color:#b9caff}nav{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0}nav a[aria-current=true]{color:white;font-weight:700}section{border-top:1px solid #34343b;padding:20px 0}h2{font-size:16px;font-weight:500}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}figure{margin:0;min-width:0}figcaption{font-size:13px;margin-bottom:8px;color:#d8d8e0}img{display:block;width:100%;height:auto;background:black;aspect-ratio:1;object-fit:contain}.pending{display:grid;place-items:center;aspect-ratio:1;background:#222}small{display:block;color:#9696a0;margin-top:8px}footer{border-top:1px solid #34343b;margin-top:24px;padding-top:16px}a:focus-visible{outline:2px solid white;outline-offset:4px}@media(max-width:700px){body{padding:16px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.grid figure:first-child{grid-column:1/-1;max-width:512px;width:100%;justify-self:center}}
+</style>
+<h1>AdAM native importance probing</h1>
+<p class="scope"><strong>NOT a priest-generation candidate.</strong> Progressive review of a 500-iteration probe using the released code’s convolution layout. This is a source-layout control: its factors do not map one-to-one to output kernels as described in the paper. No Fisher estimation or main adaptation has been performed. The original FFHQ model includes children, women and other non-priest subjects. Every sampled latent is shown without filtering, selection or repair.</p>
+<p>Original NVIDIA StyleGAN2 FFHQ at native 1024 × 1024. Each row keeps the same Gaussian latent and constant synthesis noise across the source baseline, raw modulation weights and exponential moving average (EMA). Click any image for the untouched native PNG. The latent vectors originate from the original FFHQ evaluation draw, not a curated priest set. This is a non-blocking probing review, with no quality acceptance, production approval or server-speed claim. The default view uses the latest completed snapshot; choose any later iteration to see its pending state.</p>
+<p id="status"></p>
+<nav aria-label="Snapshot iteration"><a href="#step-500" data-step="500">Iteration 500</a><a href="#step-250" data-step="250">Iteration 250</a><a href="#step-100" data-step="100">Iteration 100</a><a href="#step-0" data-step="0">Iteration 0</a><a href="manifest.json">Hashes & manifest</a></nav>
+<main id="rows"></main>
+<footer><p>Every completed snapshot is retained in its original order: four baselines and raw/EMA at iterations 0, 100, 250 and 500. Pending snapshots are never read. A snapshot is included only after its atomic completion manifest passes all hashes; trained checkpoints also require the completed checkpoint record. Preview RNG seed: 2026092210. Four latents cannot establish population quality or diversity. Ordinary display scaling is the only image transformation.</p></footer>
+<script>
+const data = __DATA__;
+const host = document.querySelector('#rows');
+function render(){
+ const match = location.hash.match(/^#step-(0|100|250|500)$/); const step = match ? Number(match[1]) : data.default_step;
+ document.querySelectorAll('[data-step]').forEach(a=>a.setAttribute('aria-current',String(Number(a.dataset.step)===step)));
+ document.querySelector('#status').textContent=`${data.run_complete?'Run complete':'Run pending'} · completed snapshot iterations: ${data.complete_steps.join(', ') || 'none'} · ${data.available_images} / ${data.expected_images} native images present`;
+ host.replaceChildren();
+ for(const row of data.rows){
+  const section=document.createElement('section');const title=document.createElement('h2');title.textContent=`Latent ${String(row.index).padStart(3,'0')} · unfiltered`;section.append(title);
+  const grid=document.createElement('div');grid.className='grid';
+  for(const [key,label] of [['baseline','Original FFHQ baseline'],[`raw-${step}`,`Raw · iteration ${step}`],[`ema-${step}`,`EMA · iteration ${step}`]]){
+   const fig=document.createElement('figure');const caption=document.createElement('figcaption');caption.textContent=label;fig.append(caption);const item=row.images[key];
+   if(item.status==='complete'){const a=document.createElement('a');a.href=item.url;a.target='_blank';a.rel='noopener';a.title='Open original 1024 × 1024 PNG';const im=document.createElement('img');im.src=item.url;im.alt=`Latent ${row.index}, ${label}`;im.loading='lazy';a.append(im);fig.append(a);const small=document.createElement('small');small.textContent=`SHA-256 ${item.sha256.slice(0,16)}…`;fig.append(small)}
+   else{const p=document.createElement('div');p.className='pending';p.textContent='Snapshot pending';fig.append(p)}
+   grid.append(fig);
+  }section.append(grid);host.append(section);
+ }
+}window.addEventListener('hashchange',render);render();
+</script></html>
