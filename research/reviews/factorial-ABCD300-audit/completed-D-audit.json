@@ -1,0 +1,57 @@
+{
+  "arm": "D",
+  "artifact_audit_passed": true,
+  "completed_worker_record_sha256": "d5ced4a11a278ec454f2ee4fcfd6eed1e705d2026e659ec240def8df88d672db",
+  "config_sha256": "fb5b3bbba19c4f3f77b440e0eb3ef2abe45b81e7769be0797ae4da676e27b9fd",
+  "checkpoint_hashes": [
+    {
+      "path": "research/runs/paired-factorial-600/D/checkpoint-000.pt",
+      "sha256": "2260049ba2b70ab90c56996f757a481870aac4de030c00c67559f6b03fd0de4f"
+    },
+    {
+      "path": "research/runs/paired-factorial-600/D/checkpoint-100.pt",
+      "sha256": "fdbdf1409cb84d10b0931ef4a85718252f132e20a673ce0e11140717e3e7a516"
+    },
+    {
+      "path": "research/runs/paired-factorial-600/D/checkpoint-200.pt",
+      "sha256": "d652a9e1f29ef0cad7e1d81ad5581b38e2c1275587f38086621593f8ebd9823c"
+    },
+    {
+      "path": "research/runs/paired-factorial-600/D/checkpoint-300.pt",
+      "sha256": "d916ec9e55c6fc1da12ad6163efcd8675150247fbe0f159d71b4845f87348a7f"
+    }
+  ],
+  "preview_evaluations": [
+    {
+      "step": 0,
+      "evaluation_sha256": "131d10abf3642e2b8a809a8d744807f819bcd4c09e2309eef888433c5a75bf8c"
+    },
+    {
+      "step": 100,
+      "evaluation_sha256": "3e59e0cdee7d67add3e3b354417f4eee83e33909c3505b18eade6c41f43c3b1d"
+    },
+    {
+      "step": 200,
+      "evaluation_sha256": "2be30807020d135d229503dacfe1c89ccc6b0ae8e04cf964703602c7ee3c2211"
+    },
+    {
+      "step": 300,
+      "evaluation_sha256": "267ab8f83eb92b0f86014a5944b129d1da620654de67e32ec99c263cc55e6d4f"
+    }
+  ],
+  "source30_evaluation_sha256": "7677241788a27340f2729355981c059f586a24791b7b65310c638eaa23776175",
+  "pair_counts": {
+    "b2-055": 50,
+    "calibration-original": 50,
+    "b2-020": 50,
+    "b2-051": 50,
+    "000": 50,
+    "030": 50
+  },
+  "verified_native_pngs": 232,
+  "worker_reported_full_checkpoint_roundtrip": true,
+  "wall_seconds": 1787.7807014170103,
+  "peak_rss_bytes": 8936341504,
+  "production_approved": false,
+  "limitations": "Does not load weights or independently repeat training/roundtrip checks. Native visual quality and cross-arm matching require separate review. Completion here means one worker, not the four-arm experiment."
+}

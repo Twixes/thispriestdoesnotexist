@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-09-21T04:50:21.125128+00:00",
+  "tests": 7,
+  "passed": true,
+  "test_scope": "Temporary non-model provenance fixtures and actual saved small latent NPZ only",
+  "model_loaded": false,
+  "model_inference_run": false,
+  "future625_checked": false,
+  "static": {
+    "static_files": 52,
+    "torch_imported": false,
+    "model_loaded": false,
+    "future625_checked": false
+  },
+  "files_sha256": {
+    "test-initial.log": "ec3ed2faaa9ea0795bbff09f6b9b33c968d91b2d1918f19dffaac0399a99d225",
+    "static-check.json": "63ca0c1c33a76feae85ee7db592dbc3c76a3f8176138cad1e19a196aa544c8ad",
+    "test.log": "9b9d0e68d2e968771c5ba55e7d0690eae5a42fa287c785d34110b4f6f23f6acd",
+    "test_preflight.py": "b18caad72819a49acd53306abf43f2e5269ec26164cdad4c7b92ff2e81238cc9",
+    "test-final.log": "9b9d0e68d2e968771c5ba55e7d0690eae5a42fa287c785d34110b4f6f23f6acd",
+    "README.md": "9a3f26e43783d3a630deb673d753b918cea7293364eda9dbfa1df891662b7d58",
+    "evaluate.py": "d21cca45ea102de1b93854a631b8338fb439b0a9dda905f891f2335afa7324db",
+    "pins.json": "588770d218f66b2c5280fa8083a34b737178239d500b58de2ffd4ab39da0302f"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "reviewed_utc": "2026-09-21T05:06:46.607963+00:00",
+  "reviewer": "root",
+  "decision": "Prepared evaluator accepted for use only after terminal625 completion, independent checkpoint/config validation and immutable checkpoint preservation. No model has been evaluated by this tool yet.",
+  "source_sha256": "fe33cb613315a1b1061c86b88ead72558ec79533b559827f2b28caf18c9fb584",
+  "pins_sha256": "588770d218f66b2c5280fa8083a34b737178239d500b58de2ffd4ab39da0302f",
+  "root_validation": {
+    "light_tests_passed": 8,
+    "static_pins_passed": 52,
+    "torch_imported": false,
+    "npm_check_passed": true,
+    "node_tests_passed": 22
+  },
+  "review_notes": [
+    "Read the evaluator source before the narrow Python version revision; verified revision now enforces sys.version.",
+    "Longitudinal matched32 comparison, not newly unseen seeds.",
+    "Recorded versions and imposed thread counts do not establish full numerical environment parity.",
+    "Successful preparation is not visual approval."
+  ],
+  "production_approved": false
+}

@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-09-21T04:55:31.673950+00:00",
+  "trainer_pid": 27880,
+  "live_process_observation": "27880 01:29 Ss   /Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python -u /Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_phases/trainer.py --run /Users/twixes/Developer/thispriestdoesnotexist/research/runs/reference256-paper-b64-resumed500-to625 --resume /Users/twixes/Developer/thispriestdoesnotexist/research/runs/reference256-paper-b64/resume-000500.pt --data /Users/twixes/Developer/thispriestdoesnotexist/research/alignment/collar-only/eyes42 --base /Users/twixes/Developer/thispriestdoesnotexist/research/models/ffhq256.pkl --device mps --threads 2 --batch 64 --microbatch 8 --pl-batch-shrink 2 --mirror --freeze-d-layers 0 --lr 0.0025 --r1-gamma 1 --ema-kimg 20 --augment-p 0 --ada-target 0.6 --ada-kimg 100 --seed 20260920 --steps 625 --checkpoint-every 125 --snapshot-every 125",
+  "starting_preview_comparisons": [
+    {
+      "filename": "samples-000500-raw.png",
+      "old_sha256": "f35f750f4b9ae92b04a8e1bdf4090c989f3205ee2674baca3a7633de8e738092",
+      "resumed_sha256": "f35f750f4b9ae92b04a8e1bdf4090c989f3205ee2674baca3a7633de8e738092",
+      "byte_equal": true
+    },
+    {
+      "filename": "samples-000500-ema.png",
+      "old_sha256": "13a0ce3db5bd28f1a34a51b8f8a853cbb0291cf5aa921c69bfa8439aa0b17dc2",
+      "resumed_sha256": "13a0ce3db5bd28f1a34a51b8f8a853cbb0291cf5aa921c69bfa8439aa0b17dc2",
+      "byte_equal": true
+    },
+    {
+      "filename": "samples-000500-untruncated.png",
+      "old_sha256": "760603f5a19f756f91d041736b1386d1ddf94f3102c99830a88a04ec8417562d",
+      "resumed_sha256": "760603f5a19f756f91d041736b1386d1ddf94f3102c99830a88a04ec8417562d",
+      "byte_equal": true
+    }
+  ],
+  "latest_logged_step": 504,
+  "interpretation": "Resumed raw/EMA/truncated fixed previews at500 are byte-identical to archived500 PNGs. This verifies this initial render comparison, not all future MPS arithmetic or model quality.",
+  "production_approved": false
+}

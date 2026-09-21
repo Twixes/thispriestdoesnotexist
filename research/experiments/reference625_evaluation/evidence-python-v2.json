@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-09-21T05:02:14.870664+00:00",
+  "revision": "Enforce pinned sys.version; narrow environment documentation; add mismatch fixture only",
+  "tests": 8,
+  "passed": true,
+  "model_loaded": false,
+  "inference_run": false,
+  "active_inputs_modified": false,
+  "previous_test_static_logs_unchanged": true,
+  "previous_evidence_sha256": "cff5e789435abadad8c35099f76e8a2272e83d9f0c373a6228cb3f62e7eb39b2",
+  "static": {
+    "static_files": 52,
+    "torch_imported": false,
+    "model_loaded": false,
+    "future625_checked": false
+  },
+  "files_sha256": {
+    "evaluate.py": "fe33cb613315a1b1061c86b88ead72558ec79533b559827f2b28caf18c9fb584",
+    "pins.json": "588770d218f66b2c5280fa8083a34b737178239d500b58de2ffd4ab39da0302f",
+    "test_preflight.py": "7ccf0fe082d2992c1ff1f07847324b2399afa8e7913effa75ec40b09cc966da8",
+    "README.md": "1f99bba8c8a26da74e39a0790c04f06a28a8512669e307ffc229ecb6906f1a61",
+    "test-python-v2.log": "aef5faff0129463714e64e3ca49df3c923115a9d4307e395ca3e781de39ead91",
+    "static-check-python-v2.json": "63ca0c1c33a76feae85ee7db592dbc3c76a3f8176138cad1e19a196aa544c8ad"
+  }
+}

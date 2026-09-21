@@ -1,0 +1,17 @@
+{
+  "files_sha256": {
+    "research/runs/reference256-paper-b64/resume-000500.pt": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+    "research/models/ffhq256.pkl": "7aa4ddeee38e007ce92a1a0bccd386fc6abba6b5c8692bdbe813d3f1987c0722",
+    "research/experiments/reference_phases/resume-provenance-reference256-paper-b64.json": "8b10b1aecf4064eca43693d08a44e6a9a86199676d36b5f36b8da15fd6cd86b4",
+    "research/experiments/reference_phases/resume_preflight.py": "6e4d02259a84defa4525a915ec22bc2a6fdf5a338fb87af9d29c67373863f437",
+    "research/runs/reference256-paper-b64/config.json": "0576aec7d45958bfcb510b3d817a81d045408bc042039669bcbfe608f3cf1039",
+    "research/runs/reference256-paper-b64/checkpoint-000500-validation.json": "2b8176d79da4a7896603c95c39d54c65dd247664b21b3602b8b2819c8b322df6",
+    "research/experiments/reference_phases/trainer.py": "00b5266875dbe07169025eb7b38b22a412230019c52d1bae77eeb8daf0045b13",
+    "research/experiments/reference_phases/smoke.py": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+    "research/runs/reference256-paper-b64/train-source.py": "00b5266875dbe07169025eb7b38b22a412230019c52d1bae77eeb8daf0045b13",
+    "research/runs/reference256-paper-b64/adapters-source.py": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+    "research/experiments/reference_resume500_625/launch.py": "5365e8e576d89733cb220a0f7aabe223b58b573f490765f925e0ee125365a1ef"
+  },
+  "dataset_sha256": "3a6e258a9b9ddae8d415b70c3be540ff39cf44e8a37d80ab71540058f1ee0553",
+  "source": "Existing immutable resume500-preparation.json; no new checkpoint load"
+}

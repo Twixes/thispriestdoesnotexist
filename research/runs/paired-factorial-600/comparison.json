@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "smoke": false,
+  "arms": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "initial_weights_and_sampling_matched": true,
+  "source_files": {
+    "optimizer.py": "e7caab2126b318f292e593d524f9e69b434dea5f978b082033dbbcd7f354dedf",
+    "render.py": "09b7fdef845e010ae6d6ec704a90542e98935ef76b92f02fc2595383ce941387",
+    "runner.py": "10791901f013c4ae8e89491093c35b1c264e00635f07d5e292a2f3cf806b2011",
+    "test_runner.py": "aff671154ae9a34e7d8a561aeb002fa20608389d207184bc04a780a997fec39e",
+    "update.py": "b53a0b7c75d7e4ab4f067467f4ca52d2e668c9e7bbe6944d46d0af2ddafb0b64",
+    "parent-pins.json": "fd911b1ce03e2b224063662a8c1e9d7e1c1a7191fedcb8010692ce5af7fd5136"
+  },
+  "execution_status": "completed_after_between_arm_memory_deferral",
+  "original_supervisor_exit": 1,
+  "original_deadline_unix": 1789973494.608341,
+  "quality_approved": false,
+  "production_approved": false,
+  "results": [
+    {
+      "arm": "A",
+      "peak_rss_bytes": 6516506624,
+      "wall_seconds": 1330.895043166005,
+      "final_student_state_sha256": "919001cc85bfe6b41775c22eb5d135b3407a89799494a2d5f73c77aab794424e"
+    },
+    {
+      "arm": "B",
+      "peak_rss_bytes": 6368116736,
+      "wall_seconds": 1445.4625086669112,
+      "final_student_state_sha256": "306f1389ce507d1a1dfe177c27e15806bf3e50a4b118c101f7d410eba18776bf"
+    },
+    {
+      "arm": "C",
+      "peak_rss_bytes": 8848048128,
+      "wall_seconds": 1748.958608582965,
+      "final_student_state_sha256": "21bf945b12d2c108aa237a66888d69700aab7597fd11dbf0b50de7f34030c101"
+    },
+    {
+      "arm": "D",
+      "peak_rss_bytes": 8936341504,
+      "wall_seconds": 1787.7807014170103,
+      "final_student_state_sha256": "d24a73438a509ee7e76bab8c64e25bf5b8539693702091fdb7865453acfda9f2"
+    }
+  ]
+}

@@ -1,0 +1,1003 @@
+{
+  "count": 30,
+  "excluded_training_ids": [
+    "000",
+    "030"
+  ],
+  "rows": [
+    {
+      "id": "001",
+      "split": "held-out",
+      "z_sha256": "ceb87744706a12f6260cec4d1ef73a5baf4b27f00acf2737dee5aa447d8fdb7b",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "001-rgb.png",
+          "sha256": "5cc7ebe06220a2161ab1be44fc17cf807712e982a19ff3e9d6443b6e91825175",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "001-gray.png",
+          "sha256": "04960b13c9e3288e09312053e8827578b3173a4b26ed3abdf768db3860e7512c",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "001-source-rgb.png",
+          "sha256": "0afb9413517ffc5d33cc00ea3790fd2dcf8487fce03dcc73366d62621214bfda",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "001-source-gray.png",
+          "sha256": "8dd2107b3a357920a22326e1d5db2e22003d8c36b5f37885f4b014d038968426",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.02404552884399891,
+      "source_top75_mae_minus1_to1": 0.013893489725887775
+    },
+    {
+      "id": "002",
+      "split": "held-out",
+      "z_sha256": "a79df45a0fe1e804a391bf8f684879ae594ba6402cbf17e983fd333d4fbacf1b",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "002-rgb.png",
+          "sha256": "20f7624c6bd41c902573f185bae9d4b4dfe391283fe15abd4c7651e3120a020f",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "002-gray.png",
+          "sha256": "809c1699b184df1056902c079df04a5eddcc9562d5bbd795ac71181f87c1300b",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "002-source-rgb.png",
+          "sha256": "4781fb8f28b6b74227b823b68fb2ea73fad9e94311e9a18080925e9e0010d343",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "002-source-gray.png",
+          "sha256": "76d6b674a4bb1eeeb51b54d75554e27316dec4617fe8b856e46c382906335a02",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.09433118253946304,
+      "source_top75_mae_minus1_to1": 0.02835920639336109
+    },
+    {
+      "id": "003",
+      "split": "held-out",
+      "z_sha256": "a60e25cda3d375deecdc6092972a90853979c3e4b916de94fb13557d6bf3fda6",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "003-rgb.png",
+          "sha256": "8289a49138cf1c02e478f1ad9afde38303afec2ff0451e07fa26fe0820d0a78d",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "003-gray.png",
+          "sha256": "a9be2f75af91259cbe51aa84074cbae1488d0a40235e11df790b158842c4b7cc",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "003-source-rgb.png",
+          "sha256": "4f39e9043a116a88bc2827b3b3188819a5a7e614c81ff5aa36204a4e5907e768",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "003-source-gray.png",
+          "sha256": "87f7c5f5f42fd2809f1ef579cc8433472557b6c06e6fdb49f5def66adb846de4",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.025470439344644547,
+      "source_top75_mae_minus1_to1": 0.01986500434577465
+    },
+    {
+      "id": "004",
+      "split": "held-out",
+      "z_sha256": "2940940751fdd6c95538e3af0bac51418e44233186269b51cc5e293b6345fbef",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "004-rgb.png",
+          "sha256": "ecfbd0b01efc32b056b2a20389622180a543663f57216f5ad2a3d890516c84b2",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "004-gray.png",
+          "sha256": "615ff43e320b5f02e4fd769f7f15792719ac7392460f8c84a659fd2d309264f4",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "004-source-rgb.png",
+          "sha256": "0210ed96dfe3f2a00cf1bb6d3e542ebf28fdad539f744ac649bfde849072af5d",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "004-source-gray.png",
+          "sha256": "0ba7ce59497f917d731d6572b752236708533fd11cc47c03c55b4ebaaea874bd",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.10680156946182251,
+      "source_top75_mae_minus1_to1": 0.0456886850297451
+    },
+    {
+      "id": "005",
+      "split": "held-out",
+      "z_sha256": "7760b54a1a4cbf2eea4af0a9b833bd27257f9dbf7f301c5512af6839b884a650",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "005-rgb.png",
+          "sha256": "1a39f46abaa452fd39e57996477874b0bdf1b20c78836c9c2244ae97883b1c02",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "005-gray.png",
+          "sha256": "7bfcbb2eaa92b6f7a2476b092c140e6f2bb733432d764cccf9be964631c4cb9b",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "005-source-rgb.png",
+          "sha256": "406530e33f10663a268a924e39d97fbd25b3ab3eb6e03af6f038c1d785bb36a8",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "005-source-gray.png",
+          "sha256": "df382cf6fe6344fc8f8dfb2ebb53b8385c215d1b032f9ab1834b10ceb836e855",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.047287680208683014,
+      "source_top75_mae_minus1_to1": 0.03250855952501297
+    },
+    {
+      "id": "006",
+      "split": "held-out",
+      "z_sha256": "17e7aca91257959bfddeac0ed4dc931e804e7550c71e3a36bff453501f482d7c",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "006-rgb.png",
+          "sha256": "3f41d314dc1c8b0170f891ac46195ec0cd884d0c1cdb08ef8be79b9d66b565bb",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "006-gray.png",
+          "sha256": "6d673167beaac03884015f8e78740c029d4e408364a826883be2d5d5e1063fba",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "006-source-rgb.png",
+          "sha256": "b11f1a08aeb6ef067d59f61e1af4b209c42381779d56ecf27ac0019c332ad6ec",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "006-source-gray.png",
+          "sha256": "4dc431f33e60756d45d9f5959c04aa66809a5cb9fd7fb770a29bd4da94d8b06e",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.034046053886413574,
+      "source_top75_mae_minus1_to1": 0.02161405421793461
+    },
+    {
+      "id": "007",
+      "split": "held-out",
+      "z_sha256": "acd05816bceb322c2c1cf213d18b3be13c754b95bc9d87d71f7e1c98265cf24d",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "007-rgb.png",
+          "sha256": "6906fee860945f47c13a809f94fb749a03679ab0735e3fb4d9fde8eae44e145a",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "007-gray.png",
+          "sha256": "932fcfca798c3b7f18ec4b3f28803d410e1f0b62952b196a1210ff8840353a03",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "007-source-rgb.png",
+          "sha256": "5397aba80681f041b274cd618e49ab2bc861a290344444fe1123153b1795ad7d",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "007-source-gray.png",
+          "sha256": "086a5fb2258a0944c8c1d63b7f54d849bf6bd7bca80c5d09c177aed1d1c4e825",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.035967640578746796,
+      "source_top75_mae_minus1_to1": 0.024800175800919533
+    },
+    {
+      "id": "008",
+      "split": "held-out",
+      "z_sha256": "e58531ea25e403602f7c92b42e289a4dd70652da3db50eda8740db43bffcc22f",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "008-rgb.png",
+          "sha256": "ef2ae56149fdf40792b3613cc88d4d43720ff08153286f4baf015cd361cffbc1",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "008-gray.png",
+          "sha256": "9025be663e95fb26534f97bb901b7594e4abde3885c8a5d2e6e82aee81012379",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "008-source-rgb.png",
+          "sha256": "d0fe7c5b867b835c121e75a2a14f12b5f3d4ba81fb36264f0c80428d9015a0b5",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "008-source-gray.png",
+          "sha256": "b74a754da061a8405663549fbb577dd9328779ae352c80dd52adac67348b5dac",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.12491881102323532,
+      "source_top75_mae_minus1_to1": 0.05740772560238838
+    },
+    {
+      "id": "009",
+      "split": "held-out",
+      "z_sha256": "494c55e1e57379b421ce27ebfa6dac87565d58c0f3a44efe55b322f4be18c688",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "009-rgb.png",
+          "sha256": "9f5aca8ec74de2da56263e39e1b57d6e2b7ca9097fe12eeb52e1a9a459d56c58",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "009-gray.png",
+          "sha256": "413bcc5c1da397aee7402ae02d69e853852171398c0e89111ee18b4a6a15153e",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "009-source-rgb.png",
+          "sha256": "db4682b8cde369a38ff6983b04fe1d8a2de4fce766e28db28519d794887108c3",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "009-source-gray.png",
+          "sha256": "502a9504262581a671aeab61ff0ef88e09a2c7883249dbe1cffdf30bfb8c45c4",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.0543021485209465,
+      "source_top75_mae_minus1_to1": 0.02323903888463974
+    },
+    {
+      "id": "010",
+      "split": "held-out",
+      "z_sha256": "159bf68f9d0391c22092a4a4d440cd6d4ebdcbf3aa33577fd7d18d2ae9238d34",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "010-rgb.png",
+          "sha256": "3352db4477903edd3478ec22ebb3d7b342617ae0de22e0ec85e0f289360684e9",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "010-gray.png",
+          "sha256": "bd700e8e66e8f0f09e232901d07af5d1f9d2453cd6074c1079cc972f7d378aae",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "010-source-rgb.png",
+          "sha256": "c763b269a9fb72c3292e39090b546329ab29dd877d636abfffb9477749bc394f",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "010-source-gray.png",
+          "sha256": "cfc4bd55aba36f9062430a7bf647fbe23a3ad6a1508e1572714fdfc781cbd45e",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.045244134962558746,
+      "source_top75_mae_minus1_to1": 0.02803792804479599
+    },
+    {
+      "id": "011",
+      "split": "held-out",
+      "z_sha256": "9f185904bc851be76e82ec9f701b2e1ad647e5ce6fcc339ba54b73d4f7022376",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "011-rgb.png",
+          "sha256": "f7c686b18b3ee0d1e1114dac81b7fe85c55335fd0860124099959dd150d45295",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "011-gray.png",
+          "sha256": "89b9964136072173ff8a31b92779f00fde7125c2c3f4b014bc00ebff70ce272c",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "011-source-rgb.png",
+          "sha256": "77e8165d7ddcce6d96f686849a9c82dff5248eb9613cea778805bc7ee1d09f85",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "011-source-gray.png",
+          "sha256": "9a8ccfb6ef9e66a021e40e5e43e15a6545fbaf3d4edd5e84c283d9d9a3000596",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.03010428324341774,
+      "source_top75_mae_minus1_to1": 0.02076421119272709
+    },
+    {
+      "id": "012",
+      "split": "held-out",
+      "z_sha256": "2873b2b1ad63dace0c2e8ec3e2a84f7985f488be11d21d61d2b71121a85b7482",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "012-rgb.png",
+          "sha256": "a7c96bcd770ad4dd6e9479a19206707b22047ab73dc08510850c9851b4849cfd",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "012-gray.png",
+          "sha256": "e6561a3f911cfe2e7074a0303c27af1c33662924717b89eac4942113c6497c4a",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "012-source-rgb.png",
+          "sha256": "91fe895125146301d9adb59eeeab567c9ee4810dff9c18d0dbbb29f42e707a83",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "012-source-gray.png",
+          "sha256": "a111c16b418d6d39490c240b4ce0bbada4466b605b2f4c2261774aa2fc6be0fe",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.03394568711519241,
+      "source_top75_mae_minus1_to1": 0.023669635877013206
+    },
+    {
+      "id": "013",
+      "split": "held-out",
+      "z_sha256": "dba87c4c834664ac05b8c8201c8790ec14d9ddf7029457a86edda330c4398481",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "013-rgb.png",
+          "sha256": "45e01ff9207eac77c236d1ddd181725097d9ab3439c52394619d09afe0e49daf",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "013-gray.png",
+          "sha256": "ee7ca767ed1243409be8b2c4bde9f3119f77cf0f2edf9e4a41f48d9fb93b4588",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "013-source-rgb.png",
+          "sha256": "016d970c7721c0c2d18c2c5f941039193982ba42464637d8d13a22bcb72138b7",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "013-source-gray.png",
+          "sha256": "c4680354bda4cef30a185e13accd0c28f9831492c43b9052df4c24aa3772a098",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.03830482065677643,
+      "source_top75_mae_minus1_to1": 0.01754763536155224
+    },
+    {
+      "id": "014",
+      "split": "held-out",
+      "z_sha256": "ce438bf45801b91361512f107fe6e988990b0b51e942c4ecf41405472d714d59",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "014-rgb.png",
+          "sha256": "97ef9bbcbd788c204da78ed639c8c57d563af69db4a680cdb7ed9d75294f1f4d",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "014-gray.png",
+          "sha256": "4eb7501a3dea46097e8b85e1f5bca0f4cdc2308e1840f66ee0d69533637fdfca",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "014-source-rgb.png",
+          "sha256": "e530ac664f8686fcf1fc2fda16894d4a805aaf6c11a3e165e13cdb50ed105832",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "014-source-gray.png",
+          "sha256": "a6ec89a520b1cd18e056c152cd9046a3056c5afaab8e38bc1a60e3fe2b48345d",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.029394563287496567,
+      "source_top75_mae_minus1_to1": 0.021200289949774742
+    },
+    {
+      "id": "015",
+      "split": "held-out",
+      "z_sha256": "d43c4bd1dd9f911260697ef3fd685f1b6db984ff7e90454f217b8cb910040864",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "015-rgb.png",
+          "sha256": "cb1188d16a67524a590477619db2fb63f7d27ee53fe839f0035be6ae79bcd991",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "015-gray.png",
+          "sha256": "dd163496392f3a1fe072ee0e78987fe0712a8e756893c1a7bfa9b8ab2b0665af",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "015-source-rgb.png",
+          "sha256": "f71136ab77a4bca89f1328ff28ea750fa245c94a09c96cc98dff33e2e98e3641",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "015-source-gray.png",
+          "sha256": "b524eb10f3c34c28cc085086dff6f558235fbd651384637e576f5889891c54c7",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.02040598914027214,
+      "source_top75_mae_minus1_to1": 0.01716601848602295
+    },
+    {
+      "id": "016",
+      "split": "held-out",
+      "z_sha256": "3d1d75460d3192bc88262e2370c9c7c8ebd64af13b6a2d821e0860e7b1d42e84",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "016-rgb.png",
+          "sha256": "59f2d7dea4326b27c3fda30dd9d588563fd48e17d430a4c105d2ce00a89de55d",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "016-gray.png",
+          "sha256": "11b8f2b9b958707179dd121f85bcd0d2baee5591a771476ac6e2f7061a1115ad",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "016-source-rgb.png",
+          "sha256": "8a3304b0659b98d5a0bb057f049463e59eac462fe6876fec10777fb92893d1b5",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "016-source-gray.png",
+          "sha256": "dac14aa7fad629426320515ce4f32193fb2e1e1b40f6aa0ba4053761aa34e9b2",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.04978801682591438,
+      "source_top75_mae_minus1_to1": 0.017145760357379913
+    },
+    {
+      "id": "017",
+      "split": "held-out",
+      "z_sha256": "77e24d7f4327d2c95920f0da0aac4eccf14ecbff4d8027c4d81eca291052e48c",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "017-rgb.png",
+          "sha256": "8b7e18ea3b8a0aed3f0aed476a48e98bb1c67138ab7643c9d1f5668ec0bbd786",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "017-gray.png",
+          "sha256": "cc99cf0aeb67557d8f2ba50325734a046304dfe532e82f7ce114fd5050a3f424",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "017-source-rgb.png",
+          "sha256": "6751e10aad84a019faf4b1aa56e6d1e946bcf42c36c138e64b86875f3b98a1e7",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "017-source-gray.png",
+          "sha256": "eabae87a7039c6d96ddc08751754be31164e65cfaf987651b8096a338e116f7a",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.02974136546254158,
+      "source_top75_mae_minus1_to1": 0.015308857895433903
+    },
+    {
+      "id": "018",
+      "split": "held-out",
+      "z_sha256": "4a84f560e0b4a92534ab222fbcd5c4bf99d474fad52c944e84184081a7c5cca1",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "018-rgb.png",
+          "sha256": "c7dfdd372f08ffef180c54cf24939923839c7effbcec76c27de7a13f76243c67",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "018-gray.png",
+          "sha256": "4e85d7ce1a083b92cade6f1b97a991a4c997cab9947c10496413141b6319a993",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "018-source-rgb.png",
+          "sha256": "07e3fa19d33b6d9175fe22b599a6be8de1cd9da972d0569ec111e7abd818399f",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "018-source-gray.png",
+          "sha256": "c2426626ad2ea697778beca3ab1b388ec7e63778ce5de63904d1573504864b7f",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.022848259657621384,
+      "source_top75_mae_minus1_to1": 0.017444493249058723
+    },
+    {
+      "id": "019",
+      "split": "held-out",
+      "z_sha256": "13f0136bb3a6915d74ae7c93322a286abbc11e44675b5008dec076e00cf21242",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "019-rgb.png",
+          "sha256": "42ef55de841a13477b76857def2acc0fadb1a6b8a96b79b625b89e0ae48f4fad",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "019-gray.png",
+          "sha256": "3caba08af52cb569634e772f09c693377219be4183d29093d9ba6ecb2ce98778",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "019-source-rgb.png",
+          "sha256": "8ec1598fe01771a077d6ceb6ffe0b2778e94e9ab25aae4b6093b8f1f877174c3",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "019-source-gray.png",
+          "sha256": "e3fb83831b736b9f695f2a2b002ea521bd964e17c58aaffaf059f75167c80228",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.07063930481672287,
+      "source_top75_mae_minus1_to1": 0.02553161047399044
+    },
+    {
+      "id": "020",
+      "split": "held-out",
+      "z_sha256": "32c841f706a3a8da490a3de35e02cd3fad2e85c568594853a251232226856298",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "020-rgb.png",
+          "sha256": "ad6cd90fc701bb468bd42434ec6624ed27abd6f1b436563d85dee1a0ce663ce0",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "020-gray.png",
+          "sha256": "181dcf0636eaa9e4c046f1d30d3e304201d0409b193a968812c8058e0198000c",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "020-source-rgb.png",
+          "sha256": "5d46fc9bcb2e90f5ff34a2184ee4549193f07ef61545d25145c110f6eac82029",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "020-source-gray.png",
+          "sha256": "16b3d3a873a675c6116ee1f8f7165ba4e864675ddaa4592772544da1147a7941",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.022268444299697876,
+      "source_top75_mae_minus1_to1": 0.017121916636824608
+    },
+    {
+      "id": "021",
+      "split": "held-out",
+      "z_sha256": "45a75a564266eb6e73d5a5a0643236e5e3220916735d1821a8664d5b32e70e18",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "021-rgb.png",
+          "sha256": "0f1f0b265beb32c4ff5d9c2eb7a026f9142f2fbcf9e5a119be9ef51c7708464c",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "021-gray.png",
+          "sha256": "1229d3b982b2115473122ef6a3025c35dfd31096331391c80818199481d174f3",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "021-source-rgb.png",
+          "sha256": "9861a73d6e5900371d9ec44b3915ecf8c0c822abe45d9ce8faedb724be0ca922",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "021-source-gray.png",
+          "sha256": "daa549b1bd4106ab13861df46116e07df9cf32a02ab46dc95fa0c190ea098a8d",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.08539335429668427,
+      "source_top75_mae_minus1_to1": 0.031578365713357925
+    },
+    {
+      "id": "022",
+      "split": "held-out",
+      "z_sha256": "1611c167b02d6e6a5e88a07d81401051ded9ca78ee0ec1f198eb7171b4c4e221",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "022-rgb.png",
+          "sha256": "47413e405d2026367ab6f4b91aef9b45b56ff8df29503d45a822ac2ae0e85c7d",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "022-gray.png",
+          "sha256": "5a7f5cb3a916ab02712fbd045113b29dfe26d158c7c6bff90f0c4b70ea889531",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "022-source-rgb.png",
+          "sha256": "d6820764a707fd8e6df17adb808a07186d7dc439d129688799eaec83133bfa19",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "022-source-gray.png",
+          "sha256": "e28e3cf1fe46c4ce1dbf56ce7e922635b30a71d795becb78b2e4520bf483bd15",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.0416388139128685,
+      "source_top75_mae_minus1_to1": 0.023617496713995934
+    },
+    {
+      "id": "023",
+      "split": "held-out",
+      "z_sha256": "0b759ee290462f0468793d01a829d5e938cc549b1f2cf59d70ab1920ada8030c",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "023-rgb.png",
+          "sha256": "c7021c875582c2cfccd6b72be44b311bfc009fde613f07ef6c9873bd14302fb1",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "023-gray.png",
+          "sha256": "11579fe152256e7b7449826d77d006e2cfb6a9e1ba7c5fb9d33d5f70394dc2e1",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "023-source-rgb.png",
+          "sha256": "4f0c27782285ffeceea35bb23d6b2455968a591aaf22d1c04737895a5c4ba974",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "023-source-gray.png",
+          "sha256": "3110bf1e13f72b2c3b4a7d8bb0cb3cd899b92905ecc415107d9ca45b33aa8131",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.05371548607945442,
+      "source_top75_mae_minus1_to1": 0.05020257830619812
+    },
+    {
+      "id": "024",
+      "split": "held-out",
+      "z_sha256": "856439ebc27914e18afd6f6f2c59b68db9042d2ab1c297872e8f4390d2ef90a4",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "024-rgb.png",
+          "sha256": "b9b55bf08eda6324e987a3843da6dbf9ca97850f44e569355d26a61996e4992a",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "024-gray.png",
+          "sha256": "928591ac9b0315b0640fd70d9a6db0b80d409a9fc0d86ad38ff789498c10b0b4",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "024-source-rgb.png",
+          "sha256": "f3bddd7756589dbede9b3ba92a06aec2cb170a760cb1dbf7ab66534af1f9c595",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "024-source-gray.png",
+          "sha256": "c2279eda48735c435ee743dc8e0b142e42cf6beedc1548fc0675820cf865476c",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.03417078033089638,
+      "source_top75_mae_minus1_to1": 0.01826656423509121
+    },
+    {
+      "id": "025",
+      "split": "held-out",
+      "z_sha256": "2febe67d501e50570404656abe2fcb36a0bdd93f0af50c109f472079ea0e4dd3",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "025-rgb.png",
+          "sha256": "8b908873c6b8bb5ba11f5f69fbb09d7b163ef0cf8a6ebb14bef9f967bc60b910",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "025-gray.png",
+          "sha256": "999eb54caab9fbff737707c38522449006981d38a907540672cf3fae41f172f1",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "025-source-rgb.png",
+          "sha256": "df2b8a66a6b624d0a836afb1b8f9ad311ea911f62976b1698454dc0676928207",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "025-source-gray.png",
+          "sha256": "fb9c943a61984b94fccd63e1290f9bb0c90e9f326c3bc1cf1d4eb9fac7494974",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.0948668122291565,
+      "source_top75_mae_minus1_to1": 0.04263753071427345
+    },
+    {
+      "id": "026",
+      "split": "held-out",
+      "z_sha256": "f33f9b310a5ead84f48b74393fd5747febce3f7b2de66464d28ef222d2ce8bf7",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "026-rgb.png",
+          "sha256": "414a45adeaae9ff7a68cc276b314c7b833c7fe2d7c6f2e8a1b6682ce8564df57",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "026-gray.png",
+          "sha256": "8f2c4da1f2661d5ea6d2e9c4c7fe5d5a03d27b17b6dfff31fedd214c71aab15b",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "026-source-rgb.png",
+          "sha256": "d8872d7e7b651947d50bd453f4c46ddd85044186e8d7b39362c8be749e47ff36",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "026-source-gray.png",
+          "sha256": "2f674a9af348be64d1c607363ee97294b9c814ad54f9c6ede222a6b87de0e7d9",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.022966623306274414,
+      "source_top75_mae_minus1_to1": 0.01596747897565365
+    },
+    {
+      "id": "027",
+      "split": "held-out",
+      "z_sha256": "dee5d66adfa8925b122cc7cf7feb4234748085f59343fd0f5068890fbe444130",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "027-rgb.png",
+          "sha256": "1ec12971ef8aa5211bb3a571c2b3981fc766957c33148e2556f30cae9cf48dbd",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "027-gray.png",
+          "sha256": "9c9d521988176f4585957460950224acdc05b3b4ef56be0683e24c5591acffeb",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "027-source-rgb.png",
+          "sha256": "0d95a589665b90717ff1f4f2c3f6671c2fdd63e1afa056349ab3c5bff20fa02c",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "027-source-gray.png",
+          "sha256": "220721c3f1c4c803b8d2bb3de85352894f644302e5015694960f925a62821584",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.021474823355674744,
+      "source_top75_mae_minus1_to1": 0.020808735862374306
+    },
+    {
+      "id": "028",
+      "split": "held-out",
+      "z_sha256": "7c728e67685d2c8da4d03a08d62389a1d4657dc1238c58ff761daf0196f6f13f",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "028-rgb.png",
+          "sha256": "0afde6baabc49fbbc064f1ef56994ba48b22cfa21541e776df96d0824ced096a",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "028-gray.png",
+          "sha256": "a1a20226a5232917e1f4b40f4d9e054cbc663a046b9ed10a5934a958962875a5",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "028-source-rgb.png",
+          "sha256": "eb246b66e7fd614935b677c1ca26b9f5da574fa7f1deda5c096c760d9f71d5d2",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "028-source-gray.png",
+          "sha256": "70dae87fec9506265cefa81e0d10ff900880a9d79fbffbf26261894480daf771",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.03418977931141853,
+      "source_top75_mae_minus1_to1": 0.01723761297762394
+    },
+    {
+      "id": "029",
+      "split": "held-out",
+      "z_sha256": "4d4d54ed5f29703531b9daef765bb2241179a0c2190bd150072db881052575f3",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "029-rgb.png",
+          "sha256": "d1045472b0caf8e11d7582796db32be76eb2e989d6e9ed69ba4739c485244470",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "029-gray.png",
+          "sha256": "e6604f5bef1125c74fa9e68ec103e36a12bb3fa8d3fe5273efb3872945f04422",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "029-source-rgb.png",
+          "sha256": "b88e6a1c611e285c0519e1278905953ed09ffa790f870d0f1f547c597eb04acc",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "029-source-gray.png",
+          "sha256": "7073a9f8cbc1c00b91c65f6fef25dbc4f0f951eb8f28c17b3389c2e1c15048e9",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.048869937658309937,
+      "source_top75_mae_minus1_to1": 0.030789652839303017
+    },
+    {
+      "id": "031",
+      "split": "held-out",
+      "z_sha256": "8c33dc081284bd340efb75775deed59968d378b3642fde44c5b9bbe1b6c2000a",
+      "source_uint8_max_error": 0,
+      "w_max_error": 0,
+      "outputs": {
+        "rgb": {
+          "path": "031-rgb.png",
+          "sha256": "21a64417c11b8155f7fc5fc252052388480f84b05dcb8039497c28823b8f195d",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "031-gray.png",
+          "sha256": "def10b0436470ad06acb6d466846f77ba9577638238fdc421c2c3784d89fb3f6",
+          "mode": "L"
+        }
+      },
+      "source_outputs": {
+        "rgb": {
+          "path": "031-source-rgb.png",
+          "sha256": "dd342637ebf808887ba494c6567f14f71df5f69622c10e21383733bcca42c5c6",
+          "mode": "RGB"
+        },
+        "gray": {
+          "path": "031-source-gray.png",
+          "sha256": "a37b0683174af4b4f309d012130635fa25b5d4a7a279cf0f4760e642727d1131",
+          "mode": "L"
+        }
+      },
+      "source_mae_minus1_to1": 0.0642746314406395,
+      "source_top75_mae_minus1_to1": 0.06185932084918022
+    }
+  ],
+  "source_compositing": false,
+  "rng_restored": true,
+  "seconds": 34.110596082988195,
+  "manifest_sha256": "24ec65044e76b377c0320dd8a10b6353f4f1cd150c17a4901f47ded4035330db"
+}

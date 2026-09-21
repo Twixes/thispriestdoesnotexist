@@ -67,7 +67,12 @@
       ],
       "memory_before": "The system has 51539607552 (3145728 pages with a page size of 16384).\n\nStats: \nPages free: 857176 \nPages purgeable: 16377 \nPages purged: 89131315 \n\nSwap I/O:\nSwapins: 9550594 \nSwapouts: 13637588 \n\nPage Q counts:\nPages active: 806303 \nPages inactive: 892434 \nPages speculative: 55664 \nPages throttled: 0 \nPages wired down: 310877 \n\nCompressor Stats:\nPages used by compressor: 145204 \nPages decompressed: 338697767 \nPages compressed: 451397499 \n\nFile I/O:\nPageins: 67371210 \nPageouts: 759137 \n\nSystem-wide memory free percentage: 84%\n",
       "started_unix": 1789964590.0157912,
-      "wrapper_pid": 23604
+      "wrapper_pid": 23604,
+      "exit_code": 0,
+      "ended_unix": 1789966378.046218
     }
-  ]
+  ],
+  "complete": true,
+  "exit_code": 0,
+  "ended_unix": 1789966378.047192
 }

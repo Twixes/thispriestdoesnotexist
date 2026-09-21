@@ -1,0 +1,62 @@
+test_changed_dataset_recipe_is_rejected_even_with_new_config_hash (__main__.PreflightTests.test_changed_dataset_recipe_is_rejected_even_with_new_config_hash) ... ok
+test_changed_immutable_copy_is_rejected_against_completion (__main__.PreflightTests.test_changed_immutable_copy_is_rejected_against_completion) ... FAIL
+test_complete_matching_fixture_passes_without_torch (__main__.PreflightTests.test_complete_matching_fixture_passes_without_torch) ... ERROR
+test_incomplete_training_is_rejected (__main__.PreflightTests.test_incomplete_training_is_rejected) ... FAIL
+test_supplied_wrong_checkpoint_hash_is_rejected (__main__.PreflightTests.test_supplied_wrong_checkpoint_hash_is_rejected) ... ok
+test_wrong_counter_is_rejected (__main__.PreflightTests.test_wrong_counter_is_rejected) ... FAIL
+test_actual_saved32_match_seeds_without_model_import (__main__.SavedLatentTests.test_actual_saved32_match_seeds_without_model_import) ... ok
+
+======================================================================
+ERROR: test_complete_matching_fixture_passes_without_torch (__main__.PreflightTests.test_complete_matching_fixture_passes_without_torch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference625_evaluation/test_preflight.py", line 70, in test_complete_matching_fixture_passes_without_torch
+    self.assertEqual(self.verify()['checkpoint_sha256'], evaluation.sha(self.run / 'resume.pt'))
+                     ^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference625_evaluation/test_preflight.py", line 66, in verify
+    return evaluation.verify_future(evaluation.sha(self.run / 'resume-000625.pt'),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference625_evaluation/evaluate.py", line 82, in verify_future
+    raise RuntimeError(f'Unexpected continuation argument path: {key}')
+RuntimeError: Unexpected continuation argument path: run
+
+======================================================================
+FAIL: test_changed_immutable_copy_is_rejected_against_completion (__main__.PreflightTests.test_changed_immutable_copy_is_rejected_against_completion)
+----------------------------------------------------------------------
+RuntimeError: Unexpected continuation argument path: run
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference625_evaluation/test_preflight.py", line 92, in test_changed_immutable_copy_is_rejected_against_completion
+    with self.assertRaisesRegex(RuntimeError, 'differ from completed launch'):
+AssertionError: "differ from completed launch" does not match "Unexpected continuation argument path: run"
+
+======================================================================
+FAIL: test_incomplete_training_is_rejected (__main__.PreflightTests.test_incomplete_training_is_rejected)
+----------------------------------------------------------------------
+RuntimeError: Unexpected continuation argument path: run
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference625_evaluation/test_preflight.py", line 76, in test_incomplete_training_is_rejected
+    with self.assertRaisesRegex(RuntimeError, 'not successfully complete'):
+AssertionError: "not successfully complete" does not match "Unexpected continuation argument path: run"
+
+======================================================================
+FAIL: test_wrong_counter_is_rejected (__main__.PreflightTests.test_wrong_counter_is_rejected)
+----------------------------------------------------------------------
+RuntimeError: Unexpected continuation argument path: run
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference625_evaluation/test_preflight.py", line 97, in test_wrong_counter_is_rejected
+    with self.assertRaisesRegex(RuntimeError, 'not625/40000'):
+AssertionError: "not625/40000" does not match "Unexpected continuation argument path: run"
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.044s
+
+FAILED (failures=3, errors=1)
