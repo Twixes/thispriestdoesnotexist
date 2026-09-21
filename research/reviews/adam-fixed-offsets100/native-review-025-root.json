@@ -1,0 +1,32 @@
+{
+  "reviewer": "root",
+  "step": 25,
+  "protocol_sha256": "fb373e6e729c012a3f0a5a7c033adfde85afd60fefe1a3da7f2963a2cfb20169",
+  "snapshot_manifest_sha256": "75f74538ee180ebf61f9e72eae259f6d75510b6ae749f599e23e958f33da7d59",
+  "scope": "Native untouched1024 raw/EMA000001 compared with baseline and step10; no attractiveness assessment.",
+  "images": [
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-000.png",
+      "sha256": "08a6efa554a2887dfda6b056275cc171220ab39c8c45e1367481c5860dedb584"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-001.png",
+      "sha256": "caeeacc4fc5df488c62a030373c36457ea7878875a7b8aded5bcc0300de97491"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-000.png",
+      "sha256": "79eaec12cd4af6e602d5c3848bee18d6cdf89e6b507168d093bdc1b125f94e29"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-001.png",
+      "sha256": "845301d2d1e199a149a3b8b719a6983c1902047a8e0af0b0c36997aaa2608451"
+    }
+  ],
+  "observations": {
+    "000": "Raw identity and face/hair geometry remain close to baseline and10; coherent eyes/teeth and continuous skin shading, small color/contrast changes, no dense grain or etched failure. EMA visually near source. Apparent child retained, not a priest.",
+    "001": "Raw remains close to the source adult-looking portrait and head covering. Bright skin, eye structure and hair remain readable; no severe image-wide grain or dark red contrast failure. EMA near source. No convincing priest conversion."
+  },
+  "decision": "No early-stop reason in these two rows at25; continue bounded100 stability run under guards. These preserved source identities are not target-domain success.",
+  "production_approved": false,
+  "server_latency_proven": false
+}

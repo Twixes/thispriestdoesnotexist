@@ -6,12 +6,13 @@
   "termination": null,
   "supervisor": null,
   "run_status": "in_progress_or_awaiting_terminal_record",
-  "built_at_utc": "2026-09-21T13:08:03.125374+00:00",
+  "built_at_utc": "2026-09-21T13:12:29.934185+00:00",
   "complete_steps": [
     0,
-    10
+    10,
+    25
   ],
-  "default_step": 10,
+  "default_step": 25,
   "snapshots": [
     {
       "step": 0,
@@ -25,7 +26,8 @@
     },
     {
       "step": 25,
-      "status": "pending"
+      "status": "complete",
+      "manifest_sha256": "75f74538ee180ebf61f9e72eae259f6d75510b6ae749f599e23e958f33da7d59"
     },
     {
       "step": 50,
@@ -36,7 +38,7 @@
       "status": "pending"
     }
   ],
-  "available_images": 20,
+  "available_images": 28,
   "expected_images": 44,
   "unfiltered": true,
   "preview_seed": 2026092210,
@@ -92,6 +94,12 @@
       "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/manifest.json",
       "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/manifest.json",
       "sha256": "c76d42b4a913e9aa19bf099e7521e8b27c3d6fe682e535af5133648a5e3ee40b",
+      "bytes": 1293
+    },
+    "step-025/manifest.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/manifest.json",
+      "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/manifest.json",
+      "sha256": "75f74538ee180ebf61f9e72eae259f6d75510b6ae749f599e23e958f33da7d59",
       "bytes": 1293
     }
   },
@@ -157,10 +165,22 @@
           "height": 1024
         },
         "raw-25": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-000.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-000.png",
+          "sha256": "79eaec12cd4af6e602d5c3848bee18d6cdf89e6b507168d093bdc1b125f94e29",
+          "bytes": 1299466,
+          "width": 1024,
+          "height": 1024
         },
         "ema-25": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-000.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-000.png",
+          "sha256": "08a6efa554a2887dfda6b056275cc171220ab39c8c45e1367481c5860dedb584",
+          "bytes": 1284015,
+          "width": 1024,
+          "height": 1024
         },
         "raw-50": {
           "status": "pending"
@@ -225,10 +245,22 @@
           "height": 1024
         },
         "raw-25": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-001.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-001.png",
+          "sha256": "845301d2d1e199a149a3b8b719a6983c1902047a8e0af0b0c36997aaa2608451",
+          "bytes": 1498192,
+          "width": 1024,
+          "height": 1024
         },
         "ema-25": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-001.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-001.png",
+          "sha256": "caeeacc4fc5df488c62a030373c36457ea7878875a7b8aded5bcc0300de97491",
+          "bytes": 1480351,
+          "width": 1024,
+          "height": 1024
         },
         "raw-50": {
           "status": "pending"
@@ -293,10 +325,22 @@
           "height": 1024
         },
         "raw-25": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-002.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-002.png",
+          "sha256": "95a8755459f7c4fe9845c81a6456be9120168a2e5f1055f0fe6bc3943d313afb",
+          "bytes": 1336160,
+          "width": 1024,
+          "height": 1024
         },
         "ema-25": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-002.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-002.png",
+          "sha256": "2a124af55c1a42db2de616d070c3b5cd36e46aa814d6b3e5ae4cb277218dcad3",
+          "bytes": 1320868,
+          "width": 1024,
+          "height": 1024
         },
         "raw-50": {
           "status": "pending"
@@ -361,10 +405,22 @@
           "height": 1024
         },
         "raw-25": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-003.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-003.png",
+          "sha256": "789756a566457538977fd700b4a3a3b4cac8313fa0311456d151a833060dfa32",
+          "bytes": 1676872,
+          "width": 1024,
+          "height": 1024
         },
         "ema-25": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-003.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-003.png",
+          "sha256": "599e1f870f1e6b3f85d0497f988d56ca24f22f19754f24b6a9e1642c8a63f267",
+          "bytes": 1664860,
+          "width": 1024,
+          "height": 1024
         },
         "raw-50": {
           "status": "pending"

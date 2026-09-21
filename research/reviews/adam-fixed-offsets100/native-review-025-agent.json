@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "scope": "Iteration25 stability review of raw/EMA latents002/003, compared to baseline and iteration10 native images inspected in the immediately preceding review. Four new native1024 PNGs inspected individually; all10 comparison input hashes verified. Completed snapshot only; training remains live.",
+  "run": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1",
+  "step": 25,
+  "sources": {
+    "protocol.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/protocol.json",
+      "sha256": "fb373e6e729c012a3f0a5a7c033adfde85afd60fefe1a3da7f2963a2cfb20169",
+      "bytes": 12782
+    },
+    "baseline-manifest.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-manifest.json",
+      "sha256": "2abf27e18403c124c75040fe2d6b0079b85a3abe1f2e7650b97e94e3d71f2275",
+      "bytes": 751
+    },
+    "step-010/manifest.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/manifest.json",
+      "sha256": "c76d42b4a913e9aa19bf099e7521e8b27c3d6fe682e535af5133648a5e3ee40b",
+      "bytes": 1293
+    },
+    "step-025/manifest.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/manifest.json",
+      "sha256": "75f74538ee180ebf61f9e72eae259f6d75510b6ae749f599e23e958f33da7d59",
+      "bytes": 1293
+    },
+    "eval-z.npz": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/eval-z.npz",
+      "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
+      "bytes": 8448
+    },
+    "fixed-offset-policy.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/fixed-offset-policy.json",
+      "sha256": "a143364428177cbba2522ec798054933741eb985cba6bb9dbc135347058e8157",
+      "bytes": 166842
+    }
+  },
+  "preceding_review": {
+    "path": "research/reviews/adam-fixed-offsets100/native-review-010-agent.json",
+    "sha256": "0d65e194d696dfbe55c1abd43afba0046eaf2bfb9bed3c059eab915de3dd715a",
+    "bytes": 5598
+  },
+  "rows": [
+    {
+      "latent_index": 2,
+      "images": {
+        "baseline": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-002.png",
+          "sha256": "175d7d5a4d1ca45f0c878cd11e4d8bca99eafe6a5eb3eaa2582f8ced18646ff8",
+          "bytes": 1320444
+        },
+        "raw10": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/raw-002.png",
+          "sha256": "8f7575c5d28a65770fe977621412f5dc4f8fb5f69341ddcf151f0ebb9f4dbe27",
+          "bytes": 1324877
+        },
+        "ema10": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/ema-002.png",
+          "sha256": "96f06e89f0133d9f30a070d00ba9b7b573d3ba83694d6feeeca5d2efb20cd56e",
+          "bytes": 1320497
+        },
+        "raw25": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-002.png",
+          "sha256": "95a8755459f7c4fe9845c81a6456be9120168a2e5f1055f0fe6bc3943d313afb",
+          "bytes": 1336160
+        },
+        "ema25": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-002.png",
+          "sha256": "2a124af55c1a42db2de616d070c3b5cd36e46aa814d6b3e5ae4cb277218dcad3",
+          "bytes": 1320868
+        }
+      },
+      "observations": {
+        "raw25_vs_baseline_and10": "Same adult-looking face, glasses, hair and ordinary shirt. Color is closer to baseline than the slightly green/yellow raw10; skin/hair detail and shaded eyes remain readable. No dense grain, dark-red exposure collapse, new etched/embossed failure or major facial geometry change observed.",
+        "ema25_vs_baseline_and10": "Still very close to baseline and EMA10, with only subtle tone/detail differences visible. No new heavy grain or facial damage observed.",
+        "domain": "No clear clergy appearance; no hat; unchanged ordinary shirt collar."
+      },
+      "new_major_visual_collapse_observed": false,
+      "new_heavy_grain_observed": false,
+      "clear_priest_domain_change": false
+    },
+    {
+      "latent_index": 3,
+      "images": {
+        "baseline": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-003.png",
+          "sha256": "17e01e3036f8e4d1d0d92f56f84aabcb3cb7ec014965ccb850a3a907477c44b4",
+          "bytes": 1664784
+        },
+        "raw10": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/raw-003.png",
+          "sha256": "e5cc65718712149ea80bfd2594d840ca113073a1a456fc39eac5c5ccde06c9fd",
+          "bytes": 1660045
+        },
+        "ema10": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-010/ema-003.png",
+          "sha256": "f15b169e1775620779bd5a6e93031803e329f381d27f4b96678053659b4b2d34",
+          "bytes": 1664806
+        },
+        "raw25": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/raw-003.png",
+          "sha256": "789756a566457538977fd700b4a3a3b4cac8313fa0311456d151a833060dfa32",
+          "bytes": 1676872
+        },
+        "ema25": {
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-025/ema-003.png",
+          "sha256": "599e1f870f1e6b3f85d0497f988d56ca24f22f19754f24b6a9e1642c8a63f267",
+          "bytes": 1664860
+        }
+      },
+      "observations": {
+        "raw25_vs_baseline_and10": "Same apparent child, knitted hat, eyes and open smile. Raw25 has less of the greenish/warm shift seen at10 and remains near baseline. No dense grain, strong darkening, new etched-detail failure or major deformation observed.",
+        "ema25_vs_baseline_and10": "Near baseline/EMA10 subject and composition, with subtle tone changes only. Eyes and smile remain coherent; no new major visual collapse observed.",
+        "domain": "Apparent child and knitted hat remain; no clergy appearance. Attractiveness not assessed."
+      },
+      "new_major_visual_collapse_observed": false,
+      "new_heavy_grain_observed": false,
+      "clear_priest_domain_change": false
+    }
+  ],
+  "summary": "Neither reviewed latent shows new grain, dark/etched failure or major facial collapse at25. Raw colors are closer to baseline than at10, and EMA remains near baseline. Both retain non-priest source identities;003 remains an apparent child wearing a hat.",
+  "continuation_assessment": "No visual early-stop reason found in these two rows for the already bounded100-iteration stability run with unchanged resource/finite-state guards. No conclusion about later stability or priest-domain learning follows.",
+  "new_native_images_inspected": 4,
+  "total_comparison_images_hash_verified": 10,
+  "quality_approved": false,
+  "production_approved": false,
+  "server_latency_proven": false,
+  "attractiveness_not_assessed": true
+}
