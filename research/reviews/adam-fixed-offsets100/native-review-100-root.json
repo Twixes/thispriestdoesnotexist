@@ -1,0 +1,32 @@
+{
+  "reviewer": "root",
+  "step": 100,
+  "protocol_sha256": "fb373e6e729c012a3f0a5a7c033adfde85afd60fefe1a3da7f2963a2cfb20169",
+  "snapshot_manifest_sha256": "0ffdad415f4e7ce8487ead4fbd02c321d4dc2fecbbb6673e36ba62a27d368b85",
+  "scope": "Untouched native1024 raw/EMA000001, compared with previously inspected source and25; no attractiveness assessment.",
+  "images": [
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/ema-000.png",
+      "sha256": "6f0135bf84f59ee2075f5a1bdbc0cb3ecc88590c923654b4dbd7e3849128cb03"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/ema-001.png",
+      "sha256": "7f9ac7b6a812a8a7f55ad7a55cc08801ef66a8ce7edec3cee871a9b6b6c108fb"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-000.png",
+      "sha256": "cbaafaccd9bcb24519b6ca8600b7faf13815f0113784d5ff7449a89c7a4620d5"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-001.png",
+      "sha256": "b0842d63fb06bc69369cd98620e1188eecbea2072862c98526aae6350017c965"
+    }
+  ],
+  "observations": {
+    "000": "Raw retains same apparent child identity and coherent eyes/teeth. Cooler/gray color drift and somewhat stronger fine texture/contrast versus original, but no earlier dense image-wide grain/dark-red collapse. EMA remains visually close to source. Not an adult priest.",
+    "001": "Raw has cooler gray/blue cast and somewhat more emphasized facial/cloth texture. Coherent geometry, eyes and hair retained; no earlier dense grain/crushed-dark failure. EMA close to original. Head covering and non-clergy appearance remain."
+  },
+  "conclusion": "Bounded preservation/stability evidence, not successful priest-domain adaptation. No deployment approval. Main selective adaptation and server latency benchmark have not run.",
+  "production_approved": false,
+  "server_latency_proven": false
+}

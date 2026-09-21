@@ -23,3 +23,7 @@ The completed bias-family inference ablation motivates this restriction: resetti
 ## Native launch and early review
 
 The revised native run is executing at `research/runs/adam-native1024-output-rank1-fixed-offsets100-v1`, exec session51876; live supervisor/worker were independently observed at launch. The first10 steps and all four baseline/raw/EMA comparisons passed early review without the old severe grain/contrast failure. Mild color shifts remain and no priest conversion is established. It continues to its bounded100-step endpoint under the original guards. The progressive review is `research/reviews/adam-fixed-offsets100/`; preparation-only JSON above remains a historical record of prelaunch checks.
+
+## Completed100-step result
+
+The run completed all100 iterations in1362.19s, peak RSS9.93GiB, minimum available memory35.29%. All34 protected offsets/originals held exactly;125G/107D optimizer steps and full checkpoint-state restoration passed. Folded native outputs equal the parametrized model exactly on all four retained latents. Final raw images avoid the severe source-control grain/dark-red failure but show cooler color drift and texture changes; source identities including children/headwear remain. EMA stays near the source. This is successful bounded mechanics/preservation evidence, not successful priest adaptation or production approval.
