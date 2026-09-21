@@ -1,0 +1,14 @@
+{
+  "step": 2000,
+  "images_seen": 16000,
+  "approved": false,
+  "reviewer": "Codex visual inspection",
+  "grid_sha256": "2a109b28a5c53290d27401cd6456add73b69c05ad3893414201bafef7cca530f",
+  "findings": [
+    "White collars and adult male bareheaded appearance are consistent in the fixed truncatedEMA grid.",
+    "Most faces still have strongly similar hair and facial proportions, with limited apparent diversity.",
+    "First sample retains dark ghosted eye/glasses bands; multiple faces have blurry or distorted mouth/cheek detail.",
+    "This remains below the requested photographic quality; identity diversity is not established by this fixed grid."
+  ],
+  "decision": "Continue the originally bounded CDC run while the full reference baseline and separate supervised1024 feasibility test progress; no promotion."
+}

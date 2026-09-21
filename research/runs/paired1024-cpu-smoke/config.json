@@ -1,0 +1,194 @@
+{
+  "method": "paired grayscale masked L1 pixel baseline",
+  "production_approved": false,
+  "resolution": 1024,
+  "train_pairs": 1,
+  "validation_pairs": 0,
+  "total_steps": 10,
+  "resume": null,
+  "options": {
+    "device": "cpu",
+    "batch": 1,
+    "threads": 1,
+    "lr": 0.0001,
+    "clothing_weight": 1,
+    "protected_weight": 1,
+    "fresh_weight": 1.0,
+    "upper_fraction": 0.75,
+    "seed": 20260921,
+    "preview_count": 2,
+    "source_max_uint8_error": 0,
+    "w_atol": 0,
+    "mps_memory_cap_gib": null
+  },
+  "trainable_parameters": [
+    "synthesis.b64.conv0.weight",
+    "synthesis.b64.conv0.bias",
+    "synthesis.b64.conv0.affine.weight",
+    "synthesis.b64.conv0.affine.bias",
+    "synthesis.b64.conv1.weight",
+    "synthesis.b64.conv1.bias",
+    "synthesis.b64.conv1.affine.weight",
+    "synthesis.b64.conv1.affine.bias",
+    "synthesis.b64.torgb.weight",
+    "synthesis.b64.torgb.bias",
+    "synthesis.b64.torgb.affine.weight",
+    "synthesis.b64.torgb.affine.bias",
+    "synthesis.b128.conv0.weight",
+    "synthesis.b128.conv0.bias",
+    "synthesis.b128.conv0.affine.weight",
+    "synthesis.b128.conv0.affine.bias",
+    "synthesis.b128.conv1.weight",
+    "synthesis.b128.conv1.bias",
+    "synthesis.b128.conv1.affine.weight",
+    "synthesis.b128.conv1.affine.bias",
+    "synthesis.b128.torgb.weight",
+    "synthesis.b128.torgb.bias",
+    "synthesis.b128.torgb.affine.weight",
+    "synthesis.b128.torgb.affine.bias",
+    "synthesis.b256.conv0.weight",
+    "synthesis.b256.conv0.bias",
+    "synthesis.b256.conv0.affine.weight",
+    "synthesis.b256.conv0.affine.bias",
+    "synthesis.b256.conv1.weight",
+    "synthesis.b256.conv1.bias",
+    "synthesis.b256.conv1.affine.weight",
+    "synthesis.b256.conv1.affine.bias",
+    "synthesis.b256.torgb.weight",
+    "synthesis.b256.torgb.bias",
+    "synthesis.b256.torgb.affine.weight",
+    "synthesis.b256.torgb.affine.bias",
+    "synthesis.b512.conv0.weight",
+    "synthesis.b512.conv0.bias",
+    "synthesis.b512.conv0.affine.weight",
+    "synthesis.b512.conv0.affine.bias",
+    "synthesis.b512.conv1.weight",
+    "synthesis.b512.conv1.bias",
+    "synthesis.b512.conv1.affine.weight",
+    "synthesis.b512.conv1.affine.bias",
+    "synthesis.b512.torgb.weight",
+    "synthesis.b512.torgb.bias",
+    "synthesis.b512.torgb.affine.weight",
+    "synthesis.b512.torgb.affine.bias",
+    "synthesis.b1024.conv0.weight",
+    "synthesis.b1024.conv0.bias",
+    "synthesis.b1024.conv0.affine.weight",
+    "synthesis.b1024.conv0.affine.bias",
+    "synthesis.b1024.conv1.weight",
+    "synthesis.b1024.conv1.bias",
+    "synthesis.b1024.conv1.affine.weight",
+    "synthesis.b1024.conv1.affine.bias",
+    "synthesis.b1024.torgb.weight",
+    "synthesis.b1024.torgb.bias",
+    "synthesis.b1024.torgb.affine.weight",
+    "synthesis.b1024.torgb.affine.bias"
+  ],
+  "provenance": {
+    "manifest_sha256": "3aab470f2b0da4f6648ed4ce4df43ecc67e5d16ebd1ce5976b33781b85e99d23",
+    "source_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+    "source_metadata_sha256": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+    "pairs": [
+      {
+        "id": "calibration-original",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.13467025756835938,
+        "clothing_polygons": [
+          [
+            [
+              0.0,
+              0.765
+            ],
+            [
+              0.123,
+              0.687
+            ],
+            [
+              0.15,
+              0.75
+            ],
+            [
+              0.18,
+              0.82
+            ],
+            [
+              0.275,
+              0.892
+            ],
+            [
+              0.39,
+              0.93
+            ],
+            [
+              0.5,
+              0.94
+            ],
+            [
+              0.565,
+              0.91
+            ],
+            [
+              0.635,
+              0.8
+            ],
+            [
+              0.7,
+              0.84
+            ],
+            [
+              1.0,
+              0.97
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/reproduction-sample002.npz",
+            "sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/reproduction-sample002.png",
+            "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edit1/001.png",
+            "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+          }
+        }
+      }
+    ],
+    "source_files": {
+      "trainer": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+      "training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24",
+      "torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+      "torch_utils/ops/upfirdn2d.py": "7b5865e70ac4156edaefb2a372fee27dc55eb5661568b337cb4168e8936384a8",
+      "torch_utils/ops/bias_act.py": "ae9d4a2efbb61f7d21d2e361a5a145704351cc9733d2bd3e5ba4e64938d8e3e3",
+      "torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3"
+    },
+    "versions": {
+      "torch": "2.14.0",
+      "numpy": "2.4.6",
+      "pillow": "12.3.0"
+    }
+  },
+  "freeze": "mapping, all buffers/noise_strength, synthesis blocks <=32",
+  "loss_normalization": "per-image region area, then batch mean; images in [-1,1]",
+  "fresh_region": "top upper_fraction rows; not a detected facial region",
+  "noise_mode": "const",
+  "truncation_psi": 1,
+  "output_compositing": false,
+  "native_target_resize": "square LANCZOS to source resolution, no crop/warp"
+}

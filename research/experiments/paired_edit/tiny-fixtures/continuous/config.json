@@ -1,0 +1,200 @@
+{
+  "method": "paired grayscale masked L1 pixel baseline",
+  "production_approved": false,
+  "resolution": 64,
+  "train_pairs": 2,
+  "validation_pairs": 1,
+  "total_steps": 5,
+  "resume": null,
+  "options": {
+    "device": "cpu",
+    "batch": 2,
+    "threads": 1,
+    "lr": 0.0001,
+    "clothing_weight": 1,
+    "protected_weight": 1,
+    "fresh_weight": 0.5,
+    "upper_fraction": 0.75,
+    "seed": 20260921,
+    "preview_count": 2,
+    "source_max_uint8_error": 0,
+    "w_atol": 0,
+    "mps_memory_cap_gib": null
+  },
+  "trainable_parameters": [
+    "synthesis.b64.conv0.weight",
+    "synthesis.b64.conv0.bias",
+    "synthesis.b64.conv0.affine.weight",
+    "synthesis.b64.conv0.affine.bias",
+    "synthesis.b64.conv1.weight",
+    "synthesis.b64.conv1.bias",
+    "synthesis.b64.conv1.affine.weight",
+    "synthesis.b64.conv1.affine.bias",
+    "synthesis.b64.torgb.weight",
+    "synthesis.b64.torgb.bias",
+    "synthesis.b64.torgb.affine.weight",
+    "synthesis.b64.torgb.affine.bias"
+  ],
+  "provenance": {
+    "manifest_sha256": "862e26d8cc99314da9b6d0d758cf92733d92c07fb95acacf72f468db5e23ad9e",
+    "source_weights_sha256": "262afcddacceb6cea9f6fdd54c6e82bbe479c3c3f1459857f4a9341acc4c6e58",
+    "source_metadata_sha256": "0ef6924f18e1b7b801f18a30912988bb98e1da91559282ac33a327ca9da2e9a7",
+    "pairs": [
+      {
+        "id": "0",
+        "split": "train",
+        "native_target_size": [
+          96,
+          96
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.265625,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.75
+            ],
+            [
+              1,
+              0.75
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_edit/tiny-fixtures/latent-0.npz",
+            "sha256": "b2edca8dd4e1a81091758d3998447fdf622a3d2ab977c9be972e216e09604d65"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_edit/tiny-fixtures/source-0.png",
+            "sha256": "b03a60b21e732f3cedcb732dcd03e3c7fad55c00d8a90694f2209bac811dec93"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_edit/tiny-fixtures/target-0.png",
+            "sha256": "350643f9e47961a8b30d62376ab9e2c1012ddcb2365bb7480deee2dc9a44efbb"
+          }
+        }
+      },
+      {
+        "id": "1",
+        "split": "train",
+        "native_target_size": [
+          96,
+          96
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.265625,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.75
+            ],
+            [
+              1,
+              0.75
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_edit/tiny-fixtures/latent-1.npz",
+            "sha256": "f54188ae5a1354d6fa101a2891db202845f72e00d95f4b0f89b38bc8d2ef431f"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_edit/tiny-fixtures/source-1.png",
+            "sha256": "729adb7d8f2b945be5e59b2fee56af8b92227562499fa7b82519dd665cce1874"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_edit/tiny-fixtures/target-1.png",
+            "sha256": "c21a52b9366b1f18ebab4a6a76892a92d7fe3a54dcc2426e96c0d47b671a1c44"
+          }
+        }
+      },
+      {
+        "id": "2",
+        "split": "validation",
+        "native_target_size": [
+          96,
+          96
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.265625,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.75
+            ],
+            [
+              1,
+              0.75
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_edit/tiny-fixtures/latent-2.npz",
+            "sha256": "86c4967a7c0f7c2a5aae3929858ace488d8834ae5c2609faa58c0ff968ad63cc"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_edit/tiny-fixtures/source-2.png",
+            "sha256": "eef5a544684f262c2d990f637ccb05fc49c8555468f9c527f088b0446f7bfb8d"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_edit/tiny-fixtures/target-2.png",
+            "sha256": "cb4ce8ae599fc7f2ba1e32cb3d3051f16173dfd3cc35ea110e8a3d26c0393e9a"
+          }
+        }
+      }
+    ],
+    "source_files": {
+      "trainer": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+      "training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24",
+      "torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+      "torch_utils/ops/upfirdn2d.py": "7b5865e70ac4156edaefb2a372fee27dc55eb5661568b337cb4168e8936384a8",
+      "torch_utils/ops/bias_act.py": "ae9d4a2efbb61f7d21d2e361a5a145704351cc9733d2bd3e5ba4e64938d8e3e3",
+      "torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3"
+    },
+    "versions": {
+      "torch": "2.14.0",
+      "numpy": "2.4.6",
+      "pillow": "12.3.0"
+    }
+  },
+  "freeze": "mapping, all buffers/noise_strength, synthesis blocks <=32",
+  "loss_normalization": "per-image region area, then batch mean; images in [-1,1]",
+  "fresh_region": "top upper_fraction rows; not a detected facial region",
+  "noise_mode": "const",
+  "truncation_psi": 1,
+  "output_compositing": false,
+  "native_target_resize": "square LANCZOS to source resolution, no crop/warp"
+}

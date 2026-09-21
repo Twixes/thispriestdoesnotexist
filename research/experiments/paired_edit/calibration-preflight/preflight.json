@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "preflight_only": true,
+  "device": "cpu",
+  "threads": 1,
+  "backward_or_optimizer_updates": 0,
+  "resolution": 1024,
+  "source_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+  "manifest_sha256": "f0d922d956ca7d1b5b37df0221449d08c978a3dd35026bb26526e10ac80e7ec4",
+  "trainer_sha256": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+  "pairs": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "native_target_size": [
+        1254,
+        1254
+      ],
+      "source_uint8_max_error": 0,
+      "w_max_error": 0.0,
+      "clothing_fraction": 0.12729549407958984,
+      "clothing_polygons": [
+        [
+          [
+            0.0,
+            0.765
+          ],
+          [
+            0.118,
+            0.705
+          ],
+          [
+            0.15,
+            0.75
+          ],
+          [
+            0.18,
+            0.82
+          ],
+          [
+            0.275,
+            0.892
+          ],
+          [
+            0.39,
+            0.93
+          ],
+          [
+            0.5,
+            0.94
+          ],
+          [
+            0.565,
+            0.91
+          ],
+          [
+            0.62,
+            0.84
+          ],
+          [
+            0.7,
+            0.86
+          ],
+          [
+            1.0,
+            0.97
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "files": {
+        "latent_path": {
+          "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/reproduction-sample002.npz",
+          "sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9"
+        },
+        "source_path": {
+          "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/reproduction-sample002.png",
+          "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+        },
+        "target_path": {
+          "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edit1/001.png",
+          "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+        }
+      }
+    }
+  ],
+  "source_state_unchanged": true,
+  "source_max_uint8_error_allowed": 0,
+  "w_atol_allowed": 0,
+  "verification_seconds": 1.5929164580302313,
+  "peak_process_rss_bytes": 3410116608,
+  "production_approved": false
+}

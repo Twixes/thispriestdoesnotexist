@@ -1,0 +1,13 @@
+usage: trainer.py [-h] --manifest MANIFEST --run RUN [--resume RESUME]
+                  [--device {cpu,mps}] [--total-steps TOTAL_STEPS]
+                  [--batch BATCH] [--threads THREADS] [--lr LR]
+                  [--clothing-weight CLOTHING_WEIGHT]
+                  [--protected-weight PROTECTED_WEIGHT]
+                  [--fresh-weight FRESH_WEIGHT]
+                  [--upper-fraction UPPER_FRACTION] [--seed SEED]
+                  [--checkpoint-every CHECKPOINT_EVERY]
+                  [--preview-count PREVIEW_COUNT]
+                  [--source-max-uint8-error SOURCE_MAX_UINT8_ERROR]
+                  [--w-atol W_ATOL] [--mps-memory-cap-gib MPS_MEMORY_CAP_GIB]
+                  [--production-approved] [--preflight-only]
+trainer.py: error: Production approval/export is unavailable in this prototype

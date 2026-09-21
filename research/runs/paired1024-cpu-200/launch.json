@@ -1,0 +1,16 @@
+{
+  "purpose": "Bounded one-pair learning feasibility, not trained model approval or evidence of generalization",
+  "recorded_at_utc": "2026-09-21T00:05:03.256301+00:00",
+  "device": "cpu",
+  "threads": 1,
+  "start_step": 10,
+  "total_steps": 200,
+  "checkpoint_every": 25,
+  "fresh_weight": 1,
+  "source_resume": "research/runs/paired1024-cpu-smoke/resume.pt",
+  "source_resume_sha256": "b91a5d4995eca73743a4337f90e52edc1887f14c7b47bfcf9fb29af10cb0a30a",
+  "trainer_sha256": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+  "command": "/usr/bin/time -l caffeinate -i research/.venv/bin/python -u research/experiments/paired_edit/trainer.py --manifest research/data/ffhq-clothing-edit1/smoke-pair.json --run research/runs/paired1024-cpu-200 --resume research/runs/paired1024-cpu-smoke/resume.pt --device cpu --threads 1 --total-steps 200 --batch 1 --fresh-weight 1 --checkpoint-every 25 --preview-count 2",
+  "production_approved": false,
+  "source_tensor_png_and_w_tolerance": 0
+}

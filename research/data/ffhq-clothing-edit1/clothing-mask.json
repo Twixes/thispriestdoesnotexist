@@ -1,0 +1,67 @@
+{
+  "coordinate_system": "normalized x,y in unchanged square source and target frames",
+  "reviewer": "Codex manual visual inspection of native source and edit",
+  "purpose": "Proposed clothing and lower-neck supervision region for a one-pair feasibility smoke; not a segmentation ground truth",
+  "clothing_polygons": [
+    [
+      [
+        0.0,
+        0.765
+      ],
+      [
+        0.123,
+        0.687
+      ],
+      [
+        0.15,
+        0.75
+      ],
+      [
+        0.18,
+        0.82
+      ],
+      [
+        0.275,
+        0.892
+      ],
+      [
+        0.39,
+        0.93
+      ],
+      [
+        0.5,
+        0.94
+      ],
+      [
+        0.565,
+        0.91
+      ],
+      [
+        0.635,
+        0.8
+      ],
+      [
+        0.7,
+        0.84
+      ],
+      [
+        1.0,
+        0.97
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "limitations": [
+    "The contour is manually approximate and must be viewed over source and target before training.",
+    "Includes part of the lower neck where the new collar replaces exposed skin; protects the face above the jaw.",
+    "No mask or composited pixels are part of the delivered generator output."
+  ],
+  "revision_note": "After first overlay review, extended the mask to cover small existing white-shirt wedges alongside the neck; face above the jaw remains protected."
+}

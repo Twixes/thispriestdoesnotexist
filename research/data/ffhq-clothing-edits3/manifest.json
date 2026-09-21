@@ -1,0 +1,43 @@
+{
+  "purpose": "Three built-in imagegen clothing-edit calibrations, not trained-priest-model outputs",
+  "training_eligible": false,
+  "production_approved": false,
+  "path_resolution": "Image and latent paths are repository-relative",
+  "entries": [
+    {
+      "id": "000",
+      "source_path": "research/data/ffhq-paired-sources32/images/000.png",
+      "source_sha256": "64f6368f73a25e21c6d8ae22c90a6c5095ab986d204c9acf26aa22f6050d4548",
+      "target_path": "research/data/ffhq-clothing-edits3/000.png",
+      "target_sha256": "802ce72546efaa10c1cdbcbf7d4779b86c7e40c72ac4801d680ed6508c2551c6",
+      "latent_path": "research/data/ffhq-paired-sources32/latents/000.npz",
+      "latent_sha256": "40978912da666c81c646643e681fec554e4771fe69c558359ee28cb6ae751572",
+      "training_eligible": false
+    },
+    {
+      "id": "028",
+      "source_path": "research/data/ffhq-paired-sources32/images/028.png",
+      "source_sha256": "eb246b66e7fd614935b677c1ca26b9f5da574fa7f1deda5c096c760d9f71d5d2",
+      "target_path": "research/data/ffhq-clothing-edits3/028.png",
+      "target_sha256": "338bc64f196a24f40e9a7a513b0e497aa354f6a364d458c7d85ad2c822f5d8a2",
+      "latent_path": "research/data/ffhq-paired-sources32/latents/028.npz",
+      "latent_sha256": "dbd37130b8c58a35f8b7802ae909ce2fbdaa0964ee02e23cabb574e690d50933",
+      "training_eligible": false
+    },
+    {
+      "id": "030",
+      "source_path": "research/data/ffhq-paired-sources32/images/030.png",
+      "source_sha256": "9b3e097dd62f65b98156099a98682cf1d7840a56e223f75ae67a2984e39e12f8",
+      "target_path": "research/data/ffhq-clothing-edits3/030.png",
+      "target_sha256": "29fdc4ccd182d3986cba59b5df625cc5cf9feb4b09ca6898e18869a6f765f513",
+      "latent_path": "research/data/ffhq-paired-sources32/latents/030.npz",
+      "latent_sha256": "0b696035e53809458d988e45abdcfc4e1afb4cdc712f687bc72c3b1f9b4d5e59",
+      "training_eligible": false
+    }
+  ],
+  "source_manifest_sha256": "24ec65044e76b377c0320dd8a10b6353f4f1cd150c17a4901f47ded4035330db",
+  "prompts_sha256": "eb6de60aee723997b43a1c4cf9a65a3b83172d9093f18f7e549356c547a09829",
+  "script_sha256": "4c5f798f7d3cf585340bb377a7967dde96f782717afebf1988d7eef593abadf3",
+  "geometry_sha256": "f1adf3838f45d494d620ee69aeaf4b9987b49c580df66b35f2e20bc21f26781d",
+  "comparison_sha256": "5d30eab93539fcdd0afd240f30470e92d607ec87202a74cd5d05b9b71a2ef997"
+}

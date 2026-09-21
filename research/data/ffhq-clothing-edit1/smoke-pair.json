@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "purpose": "One-pair optimizer feasibility only; not production or a claim of unseen-identity generalization",
+  "source_bundle": "../../runs/inference-cpu/ffhq1024/baseline-bundle",
+  "pairs": [
+    {
+      "id": "calibration-original",
+      "latent_path": "../ffhq-paired-sources32/latents/reproduction-sample002.npz",
+      "source_path": "../ffhq-paired-sources32/images/reproduction-sample002.png",
+      "target_path": "001.png",
+      "split": "train",
+      "clothing_polygons": [
+        [
+          [
+            0.0,
+            0.765
+          ],
+          [
+            0.123,
+            0.687
+          ],
+          [
+            0.15,
+            0.75
+          ],
+          [
+            0.18,
+            0.82
+          ],
+          [
+            0.275,
+            0.892
+          ],
+          [
+            0.39,
+            0.93
+          ],
+          [
+            0.5,
+            0.94
+          ],
+          [
+            0.565,
+            0.91
+          ],
+          [
+            0.635,
+            0.8
+          ],
+          [
+            0.7,
+            0.84
+          ],
+          [
+            1.0,
+            0.97
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      ]
+    }
+  ]
+}

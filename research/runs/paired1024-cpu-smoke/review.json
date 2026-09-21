@@ -1,0 +1,156 @@
+{
+  "reviewed_at_utc": "2026-09-21T00:05:20.929598+00:00",
+  "status": "completed_optimizer_feasibility_smoke",
+  "production_approved": false,
+  "exit_code": 0,
+  "exit_code_source": "parent execution result",
+  "device": "cpu",
+  "threads": 1,
+  "batch": 1,
+  "resolution": 1024,
+  "steps": 10,
+  "train_pairs": 1,
+  "validation_pairs": 0,
+  "fresh_weight": 1.0,
+  "wall_seconds": 64.94,
+  "max_rss_bytes": 5577064448,
+  "peak_memory_footprint_bytes": 5766436072,
+  "mean_logged_update_seconds": 5.624341999914032,
+  "step_time_scope": "update only; excludes source loading, previews and checkpoint writes",
+  "source_pair_checks": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "native_target_size": [
+        1254,
+        1254
+      ],
+      "source_uint8_max_error": 0,
+      "w_max_error": 0.0,
+      "clothing_fraction": 0.13467025756835938,
+      "clothing_polygons": [
+        [
+          [
+            0.0,
+            0.765
+          ],
+          [
+            0.123,
+            0.687
+          ],
+          [
+            0.15,
+            0.75
+          ],
+          [
+            0.18,
+            0.82
+          ],
+          [
+            0.275,
+            0.892
+          ],
+          [
+            0.39,
+            0.93
+          ],
+          [
+            0.5,
+            0.94
+          ],
+          [
+            0.565,
+            0.91
+          ],
+          [
+            0.635,
+            0.8
+          ],
+          [
+            0.7,
+            0.84
+          ],
+          [
+            1.0,
+            0.97
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "files": {
+        "latent_path": {
+          "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/reproduction-sample002.npz",
+          "sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9"
+        },
+        "source_path": {
+          "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/reproduction-sample002.png",
+          "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+        },
+        "target_path": {
+          "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edit1/001.png",
+          "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+        }
+      }
+    }
+  ],
+  "manifest_sha256": "3aab470f2b0da4f6648ed4ce4df43ecc67e5d16ebd1ce5976b33781b85e99d23",
+  "source_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+  "trainer_sha256": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+  "finite_logged_metrics": true,
+  "frozen_source_checkpoint_checks": [
+    5,
+    10
+  ],
+  "initial_losses": {
+    "clothing_l1": 0.9891377687454224,
+    "protected_l1": 0.0,
+    "paired_loss": 0.9891377687454224,
+    "fresh_preservation_l1": 0.0
+  },
+  "final_losses": {
+    "clothing_l1": 0.9195043444633484,
+    "protected_l1": 0.005873087327927351,
+    "paired_loss": 0.9253774285316467,
+    "fresh_preservation_l1": 0.0034396208357065916
+  },
+  "root_visual_review": {
+    "attribution": "parent/root inspected the step-10 paired output",
+    "face": "intact",
+    "clothing": "original white shirt mostly unchanged",
+    "quality_approved": false
+  },
+  "independent_checkpoint_tensor_scan": {
+    "performed": false,
+    "reason": "Fresh memory_pressure was 24% free, below the required >=25% guard; no torch checkpoint/model load was performed for this review.",
+    "resume_load_evidence": "Parent continuation configuration indicates successful same-source/options checkpoint loading; this is not an independent finite-optimizer scan."
+  },
+  "limitations": [
+    "One edited training identity, no held-out paired validation set.",
+    "Declining masked L1 is not proof of a clerical collar, photographic quality or unseen-identity generalization.",
+    "Fresh-source preservation retains original FFHQ demographics/framing; it does not enforce adult male hot priests.",
+    "Target edit input was earlier Linux WebP; training source is exact native regenerated PNG; documented codec/backend mismatch remains.",
+    "No MPS training or production change."
+  ],
+  "active_continuation": {
+    "run": "research/runs/paired1024-cpu-200",
+    "resumed_from_step": 10,
+    "target_total_steps": 200,
+    "checkpoint_every": 25,
+    "device": "cpu",
+    "threads": 1,
+    "fresh_weight": 1.0,
+    "status_at_parent_handoff": "running; completion not claimed"
+  },
+  "evidence_files": {
+    "research/runs/paired1024-cpu-smoke/config.json": "31360556c7e1cb41e66a2d9fc9fdc4b9a585cb5008576d9fae81d8bf729d53ea",
+    "research/runs/paired1024-cpu-smoke/metrics.jsonl": "858f3c9cf583ea6ec26ff3b2d71509970865a15aa7a975c89f1baf14aae9ffa8",
+    "research/runs/paired1024-cpu-smoke.log": "747a32e12ee5eae96720f12bb2cf1b914a17ca364e3c5888bd3317d867db002c"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "threads": 1,
+  "resolution": 64,
+  "channels_max": 16,
+  "heavy_ffhq_loaded": false,
+  "mps_used": false,
+  "continuous_updates": 5,
+  "resumed_updates": "2+3",
+  "exact_optimizer_model_rng_resume": true,
+  "frozen_source_noise_and_blocks_unchanged": true,
+  "actual_finite_student_update": true,
+  "validation_excluded_from_training": true,
+  "mask_area_and_batch_normalization_gradients": true,
+  "empty_mask_rejected": true,
+  "fresh_latent_preservation_exercised": true,
+  "previews_equal_full_generated_output": true,
+  "resume_previews_byte_identical": true,
+  "source_mismatch_rejected": true,
+  "changed_options_rejected": true,
+  "production_approval_rejected": true,
+  "seconds": 6.021379332989454,
+  "source_sha256": {
+    "trainer.py": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+    "check_cpu.py": "2511ff7d9333a5f86adb6e04895474959af6229816d8ce1a5ba7c1218e779512",
+    "mask_preview.py": "8a0401599db5724b20c046befc42184888ffc826db5dc1f6b01156ae58890fd3"
+  }
+}

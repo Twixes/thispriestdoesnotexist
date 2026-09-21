@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "production_approved": false,
+  "source_bundle": "bundle",
+  "pairs": [
+    {
+      "id": "0",
+      "split": "train",
+      "source_path": "source-0.png",
+      "target_path": "target-0.png",
+      "latent_path": "latent-0.npz",
+      "clothing_polygons": [
+        [
+          [
+            0,
+            0.75
+          ],
+          [
+            1,
+            0.75
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "1",
+      "split": "train",
+      "source_path": "source-1.png",
+      "target_path": "target-1.png",
+      "latent_path": "latent-1.npz",
+      "clothing_polygons": [
+        [
+          [
+            0,
+            0.75
+          ],
+          [
+            1,
+            0.75
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "2",
+      "split": "validation",
+      "source_path": "source-2.png",
+      "target_path": "target-2.png",
+      "latent_path": "latent-2.npz",
+      "clothing_polygons": [
+        [
+          [
+            0,
+            0.75
+          ],
+          [
+            1,
+            0.75
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ]
+    }
+  ]
+}

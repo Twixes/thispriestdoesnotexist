@@ -1,0 +1,1431 @@
+{
+  "purpose": "Offline paired-data source selection; not a production seed catalog",
+  "training_eligible": false,
+  "production_approved": false,
+  "is_priest_generator": false,
+  "count": 32,
+  "seed_derivation": "SHA256(UTF8('priest-paired-source-v1:' + decimal zero-based index))",
+  "latent_recipe": "SeedSequence integer from full 32-byte big-endian seed; NumPy default_rng PCG64 standard_normal((1,512), dtype=float32)",
+  "mapping_recipe": "Capture actual mapping forward output during exact generator forward; NPZ w preserves all synthesis style inputs [1,18,512]",
+  "noise_mode": "const",
+  "truncation_psi": 1.0,
+  "force_fp32": true,
+  "model": {
+    "status": "ready",
+    "model_version": "ffhq1024-unadapted-benchmark",
+    "model_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+    "training_step": 0,
+    "reviewed": false,
+    "device": "cpu",
+    "resolution": 1024
+  },
+  "model_metadata_sha256": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+  "source_provenance": {
+    "model": "NVIDIA original StyleGAN2 FFHQ at 1024px",
+    "source_url": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl",
+    "path": "research/models/ffhq1024.pkl",
+    "sha256": "a205a346e86a9ddaae702e118097d014b7b8bd719491396a162cca438f2f524c",
+    "bytes": 381624121,
+    "verified_resolution": 1024,
+    "verified_channels": 3,
+    "loaded_network": "G_ema",
+    "license": "NVIDIA Source Code License: research/evaluation use only; not MIT",
+    "license_file": "research/vendor/stylegan2-ada-pytorch/LICENSE.txt",
+    "license_url": "https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/LICENSE.txt",
+    "verified_on": "2026-09-21",
+    "production_approved": false,
+    "purpose": "CPU feasibility benchmark of original FFHQ source; not a trained priest generator"
+  },
+  "constant_noise_raw_hashes": {
+    "synthesis.b4.conv1.noise_const": "c334041314ea1b5de1df1d0a63dd58691b2461bed73dc8c817689f012a622d4c",
+    "synthesis.b8.conv0.noise_const": "bf37391fccf8637122db6a4902c3fb65d7e13663aab62355928046a8602b502a",
+    "synthesis.b8.conv1.noise_const": "f14ae909732c6ce8da58ba111797259bf238e2b98b7ae77bced1b681081a1069",
+    "synthesis.b16.conv0.noise_const": "63d04eaed6395c35960a3df338a51922348d737fc353a448ba5610cfe03abf6f",
+    "synthesis.b16.conv1.noise_const": "89fb6e253858378a941c808a751ba1b61f55f3fcafb6b1e52b50b8ace5759d78",
+    "synthesis.b32.conv0.noise_const": "55a129bf8b988d1d5c423b3fefec37811a941288fcb64bd8d1050893644cc3bd",
+    "synthesis.b32.conv1.noise_const": "c687d9f41c5d3405807a2bcd0a5c741e94c05f9c65d0f6692ad3bbddd28b742c",
+    "synthesis.b64.conv0.noise_const": "90462733811481997389262016c913156fa0eb6816bc1e1116f606ec7c3f9af8",
+    "synthesis.b64.conv1.noise_const": "0a122bf1fd0c548746e34653c8f42c7e7f32efe199e1724e2bbbfbbb2352f839",
+    "synthesis.b128.conv0.noise_const": "293af09ef4b4ddb721e506b4291ef808c9d0b72d53e9ff1131b8709cd3dee19d",
+    "synthesis.b128.conv1.noise_const": "f59f9fedd7859a83e141b1ea55e9aec8d167f58ce3b6275e0ec469bf52318e61",
+    "synthesis.b256.conv0.noise_const": "285602cc56cb2b61551ec014c370d1cf62db1d1675e99e9b05a69fe16e06f216",
+    "synthesis.b256.conv1.noise_const": "36d0766b07aa72ab1e42e624f6451cd108ba81a6a2fcd7b7c837ee2717604d4f",
+    "synthesis.b512.conv0.noise_const": "e968a9320ff664f03c6309ab2ba21acf7952f5c70a036c897465ec2a65731d0c",
+    "synthesis.b512.conv1.noise_const": "fbdbf6a564d57e273f6010529a51ff31dfc5571671714a08a0d566eefc910ac9",
+    "synthesis.b1024.conv0.noise_const": "160080558b6169007b937d99478ff06f193f736241f5183f91114279a922634e",
+    "synthesis.b1024.conv1.noise_const": "c7cb060fd06b5167807b65bef5655a9bfa2ea7d3da62eeff7ce906a72e3c594b"
+  },
+  "constant_noise_manifest_sha256": "7ff859a12c751bd38dfcea5faaa0fb2202b2b7c1fbdd7089175825ef37c3e357",
+  "code_sha256": {
+    "research/data/ffhq-paired-sources32/generate.py": "d261c003f574525f52a96e4a7bef60712f70afbe8c462f567ff518b901d34d93",
+    "inference/server.py": "5d1b0fc6bc019de7296ffa0470def3e818e811c61ecb4c9963236bb655a7919d",
+    "research/vendor/stylegan2-ada-pytorch/training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24"
+  },
+  "runtime": {
+    "platform": "macOS-26.6-arm64-arm-64bit",
+    "python": "3.11.16 (main, Aug 14 2026, 15:24:25) [Clang 22.1.3 ]",
+    "torch": "2.14.0",
+    "numpy": "2.4.6",
+    "pillow": "12.3.0",
+    "libwebp": "1.6.0",
+    "torch_threads": 1,
+    "torch_interop_threads": 1
+  },
+  "memory_preflight_free_percent": 32,
+  "model_load_seconds": 0.30942016700282693,
+  "batch32_seconds": 22.269158915965818,
+  "total_seconds": 24.020373750012368,
+  "peak_rss_bytes": 3936387072,
+  "contact_sha256": "dbe903d79a08656e4db2dca256a63973de55272fc0f8dc84980365fe9513dde6",
+  "entries": [
+    {
+      "id": "000",
+      "seed_hex": "a831376af312b9fa61b8663af1b62b9995fbf8dfdafa43258d37aae322b6dc9d",
+      "image": "images/000.png",
+      "image_sha256": "64f6368f73a25e21c6d8ae22c90a6c5095ab986d204c9acf26aa22f6050d4548",
+      "rgb_sha256": "7c907107f932b6bcf5e46bfae90b1c6ea105e7b6c15d15ad4e32b3de4ee8a7b8",
+      "latents": "latents/000.npz",
+      "latents_sha256": "40978912da666c81c646643e681fec554e4771fe69c558359ee28cb6ae751572",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "86c1d4cd8b5830071b6e55c60d049132bf5c43d8f95a6e03b42cfb95e1ae13b9",
+      "ws_raw_sha256": "28f75e95125bf7dc3a85948c98917054ca1d86f192c7452ce4bff4a9b692e408",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 1.6205549159785733,
+      "total_save_seconds": 1.6800552080385387,
+      "seed_derivation_index": 0,
+      "source_path": "images/000.png",
+      "latent_path": "latents/000.npz"
+    },
+    {
+      "id": "001",
+      "seed_hex": "b04ce4196d6a235ec8df4c6906066b64105932f8aae58640968ed027cffb5231",
+      "image": "images/001.png",
+      "image_sha256": "0afb9413517ffc5d33cc00ea3790fd2dcf8487fce03dcc73366d62621214bfda",
+      "rgb_sha256": "a5e1ae2d3af787bcddff50e618b46f235dd852c89c3d2fee248e5ddb7081ce53",
+      "latents": "latents/001.npz",
+      "latents_sha256": "9b66c2e0ee14264adb5b0dbc5cf09129489e9cdef15fbbfe2402f5bbb0dddfa9",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "ceb87744706a12f6260cec4d1ef73a5baf4b27f00acf2737dee5aa447d8fdb7b",
+      "ws_raw_sha256": "2f25e2ea02b5f309e16da999a6eecb41b131b2db14222b52f425832824e0b242",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6303841250482947,
+      "total_save_seconds": 0.6881669580470771,
+      "seed_derivation_index": 1,
+      "source_path": "images/001.png",
+      "latent_path": "latents/001.npz"
+    },
+    {
+      "id": "002",
+      "seed_hex": "823ff2d2098136263cb731a3c90fc115fb28e437e35e3a3764e2f0e48e207a33",
+      "image": "images/002.png",
+      "image_sha256": "4781fb8f28b6b74227b823b68fb2ea73fad9e94311e9a18080925e9e0010d343",
+      "rgb_sha256": "1713d6a767c4bd137c6bf657841c2406757bf96d4d49e115be49e196010fde6b",
+      "latents": "latents/002.npz",
+      "latents_sha256": "70a4cd392c309e8f5f7a1f91b6da648f06c1eaaf2edfe3fd52d7359cfc08ae22",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "a79df45a0fe1e804a391bf8f684879ae594ba6402cbf17e983fd333d4fbacf1b",
+      "ws_raw_sha256": "d7cedfbf3c73165517a536ef94c74695f30ee3e3736e8b0f6999d1288e3cd201",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.47729066596366465,
+      "total_save_seconds": 0.5347742079757154,
+      "seed_derivation_index": 2,
+      "source_path": "images/002.png",
+      "latent_path": "latents/002.npz"
+    },
+    {
+      "id": "003",
+      "seed_hex": "2b9000fd5dc946d9144677f005ed94eec6e29052eda4f8623c8756a23ed38bb1",
+      "image": "images/003.png",
+      "image_sha256": "4f39e9043a116a88bc2827b3b3188819a5a7e614c81ff5aa36204a4e5907e768",
+      "rgb_sha256": "026a892c60c467381a5880640f7662a6e6fff92ea2a4f919de664fac943e6d8b",
+      "latents": "latents/003.npz",
+      "latents_sha256": "fb27175191e4d6cfeb9797ab55e4b9140f05ef6a2e71f0b12c8a5c440ec6fa72",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "a60e25cda3d375deecdc6092972a90853979c3e4b916de94fb13557d6bf3fda6",
+      "ws_raw_sha256": "5e83328d11d81db37ebb9a0d3b9a0248563499794afead51849dd76218792ec1",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.4882829579291865,
+      "total_save_seconds": 0.5441707079298794,
+      "seed_derivation_index": 3,
+      "source_path": "images/003.png",
+      "latent_path": "latents/003.npz"
+    },
+    {
+      "id": "004",
+      "seed_hex": "21a82436a8d492f23b6fefe2a2d1e763834f734bd814f96d149ffea1488b2cef",
+      "image": "images/004.png",
+      "image_sha256": "0210ed96dfe3f2a00cf1bb6d3e542ebf28fdad539f744ac649bfde849072af5d",
+      "rgb_sha256": "35795d73a8cb5a1b648cfeb1ee7ad7604e9d5418d438da97377051be3e2b6fb2",
+      "latents": "latents/004.npz",
+      "latents_sha256": "7522f1cd94a37455d0224d515d0abd8e928650b93306302b499a11e3f60517ca",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "2940940751fdd6c95538e3af0bac51418e44233186269b51cc5e293b6345fbef",
+      "ws_raw_sha256": "f73a6fe799606231694354be67c6150c00c1858c6ba061a2a24b370326de1cd9",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.5998806670540944,
+      "total_save_seconds": 0.6548045830568299,
+      "seed_derivation_index": 4,
+      "source_path": "images/004.png",
+      "latent_path": "latents/004.npz"
+    },
+    {
+      "id": "005",
+      "seed_hex": "9f04423a60d820e1527853c9a9cfe2b4f59c07c37b23889a562927e885556aab",
+      "image": "images/005.png",
+      "image_sha256": "406530e33f10663a268a924e39d97fbd25b3ab3eb6e03af6f038c1d785bb36a8",
+      "rgb_sha256": "d5f1c4e4f41ea56d3a663f76d422bf0842feafda04aff3ec7a45d124b2f815b6",
+      "latents": "latents/005.npz",
+      "latents_sha256": "f7bab7bc5384b1073ba97479a8aea073d0a8d4566167af9c7eaec9fa48a193d5",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "7760b54a1a4cbf2eea4af0a9b833bd27257f9dbf7f301c5512af6839b884a650",
+      "ws_raw_sha256": "01ca7956c0648888fed060ed51488d89d868fc0ca2ceb3cbec37a83769ce924b",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.5524629999417812,
+      "total_save_seconds": 0.604897249955684,
+      "seed_derivation_index": 5,
+      "source_path": "images/005.png",
+      "latent_path": "latents/005.npz"
+    },
+    {
+      "id": "006",
+      "seed_hex": "79b171118477be35735d590c313446d73c4e390af6fd6899afead0711b32188b",
+      "image": "images/006.png",
+      "image_sha256": "b11f1a08aeb6ef067d59f61e1af4b209c42381779d56ecf27ac0019c332ad6ec",
+      "rgb_sha256": "7716100b5989d4b8a6e4fb1062be869b01b07cfdc83acb7c622c6c7cef64d10c",
+      "latents": "latents/006.npz",
+      "latents_sha256": "1d8eb465d86af944fd26e271fbd14b32a7bafb28a49fc3a09091b4da0d8794c4",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "17e7aca91257959bfddeac0ed4dc931e804e7550c71e3a36bff453501f482d7c",
+      "ws_raw_sha256": "37385f5e3945e01715bec68929b25f3b1aee1ca81e6333f89c05e2fc6353a975",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.5124596660025418,
+      "total_save_seconds": 0.5690146250417456,
+      "seed_derivation_index": 6,
+      "source_path": "images/006.png",
+      "latent_path": "latents/006.npz"
+    },
+    {
+      "id": "007",
+      "seed_hex": "3712119ea675a99a83615964165ecfd47e1c04fb266ed2171d6e8e0ca0233b32",
+      "image": "images/007.png",
+      "image_sha256": "5397aba80681f041b274cd618e49ab2bc861a290344444fe1123153b1795ad7d",
+      "rgb_sha256": "2543f3b6c89a1e1f4b0ea89653d8c1fa61d90e88f729c32884140a26ffd6b36b",
+      "latents": "latents/007.npz",
+      "latents_sha256": "26507796b84357cd5cfc89d90c90e039843c54fd3734cc7dbb0b8f3aa39974fd",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "acd05816bceb322c2c1cf213d18b3be13c754b95bc9d87d71f7e1c98265cf24d",
+      "ws_raw_sha256": "9860c82b981aece034febf22a27df48702ede6c351c66eb1374f2811b3a97981",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.5655914159724489,
+      "total_save_seconds": 0.6189013330731541,
+      "seed_derivation_index": 7,
+      "source_path": "images/007.png",
+      "latent_path": "latents/007.npz"
+    },
+    {
+      "id": "008",
+      "seed_hex": "d507490857ff57b6c3a1e77775c62a6a1d65527d3409b32da8e31f056270cd78",
+      "image": "images/008.png",
+      "image_sha256": "d0fe7c5b867b835c121e75a2a14f12b5f3d4ba81fb36264f0c80428d9015a0b5",
+      "rgb_sha256": "d73a1a45ecb21fa73fa443f8066d4e162b2957f1ffc1e8e08df57495f833717f",
+      "latents": "latents/008.npz",
+      "latents_sha256": "9eda4890d27e48b28578c4be2263ccf4edf467ce80b6a9896bf2bee065b1158c",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "e58531ea25e403602f7c92b42e289a4dd70652da3db50eda8740db43bffcc22f",
+      "ws_raw_sha256": "0fa687a53d7ef1a1ecf7a234015e9eff51a9b5ecf923cfb0fb8d69d8dfc0738b",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.4889509999193251,
+      "total_save_seconds": 0.540930665913038,
+      "seed_derivation_index": 8,
+      "source_path": "images/008.png",
+      "latent_path": "latents/008.npz"
+    },
+    {
+      "id": "009",
+      "seed_hex": "d809dfb8fc8362c81096be362b175ea0be3b187c762f8b813e7f9ee8d5f0f820",
+      "image": "images/009.png",
+      "image_sha256": "db4682b8cde369a38ff6983b04fe1d8a2de4fce766e28db28519d794887108c3",
+      "rgb_sha256": "6cd669a4eca486b94911338b9d52d1d11ed8ebf22af16db8ac69954efcc47594",
+      "latents": "latents/009.npz",
+      "latents_sha256": "9ff8c7aa4f94827b75434d7827299b3ee014e49003ed22cd00004399950ce2a2",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "494c55e1e57379b421ce27ebfa6dac87565d58c0f3a44efe55b322f4be18c688",
+      "ws_raw_sha256": "343cfff3ff82645bcdf847200041181cf563473a04f79fa8d198cc6194c7603c",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.4940821659984067,
+      "total_save_seconds": 0.5479209579061717,
+      "seed_derivation_index": 9,
+      "source_path": "images/009.png",
+      "latent_path": "latents/009.npz"
+    },
+    {
+      "id": "010",
+      "seed_hex": "470e25aa66c83f13fdaaf8e7de1a5012e32ee55fc750442fecfdf991c3dba8a5",
+      "image": "images/010.png",
+      "image_sha256": "c763b269a9fb72c3292e39090b546329ab29dd877d636abfffb9477749bc394f",
+      "rgb_sha256": "2b4758bf3bd9097a8d811e16b4e4eae3f75f668c013bec4758b0d56caa6b5dd6",
+      "latents": "latents/010.npz",
+      "latents_sha256": "745e7d951ce1cf20f22f9d7a30ed9c9c0872c152d1e052f494cdd6eee76dcf67",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "159bf68f9d0391c22092a4a4d440cd6d4ebdcbf3aa33577fd7d18d2ae9238d34",
+      "ws_raw_sha256": "930728ebd6c3af27bf6c0f2d947214b56bb777206af3a8a13d0c40c3704fc086",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.558177207945846,
+      "total_save_seconds": 0.610672166920267,
+      "seed_derivation_index": 10,
+      "source_path": "images/010.png",
+      "latent_path": "latents/010.npz"
+    },
+    {
+      "id": "011",
+      "seed_hex": "fa5ff0610d5ae031c44c8f8779390d9335359438f7f100dfdaedfadc2190f3f3",
+      "image": "images/011.png",
+      "image_sha256": "77e8165d7ddcce6d96f686849a9c82dff5248eb9613cea778805bc7ee1d09f85",
+      "rgb_sha256": "1d824d059224dc773f59098e3b7316a65b8ed7068037161b17d6b7d3468dece8",
+      "latents": "latents/011.npz",
+      "latents_sha256": "a887c6c9ee53912331592a4fdc1a33ef3077269b2339e4c1b914a339f11d7e6b",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "9f185904bc851be76e82ec9f701b2e1ad647e5ce6fcc339ba54b73d4f7022376",
+      "ws_raw_sha256": "f56ee1564e8f4e460774f388ba62605d064ea3c762a9bfa7ced4658b44614cc2",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6906973329605535,
+      "total_save_seconds": 0.7472790409810841,
+      "seed_derivation_index": 11,
+      "source_path": "images/011.png",
+      "latent_path": "latents/011.npz"
+    },
+    {
+      "id": "012",
+      "seed_hex": "ea485615db7e4fe9f1ae4d25e9c0717d5b846751bd5cd3e0b1e2650fa53ce28b",
+      "image": "images/012.png",
+      "image_sha256": "91fe895125146301d9adb59eeeab567c9ee4810dff9c18d0dbbb29f42e707a83",
+      "rgb_sha256": "bf62dc4ea4e0bf643f05259ed90a07b2c229cc89ec25f533381eb9a062556dc3",
+      "latents": "latents/012.npz",
+      "latents_sha256": "6aa9e1167c496c2f583fa2194e9a75840c7ae2821adfe4a40c48f67b440f574e",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "2873b2b1ad63dace0c2e8ec3e2a84f7985f488be11d21d61d2b71121a85b7482",
+      "ws_raw_sha256": "e09c12c35887c37ebff49389a3396dbbbe9d70b14f77c12b51b0d4a5dcb8a95f",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6082840830786154,
+      "total_save_seconds": 0.6730949169723317,
+      "seed_derivation_index": 12,
+      "source_path": "images/012.png",
+      "latent_path": "latents/012.npz"
+    },
+    {
+      "id": "013",
+      "seed_hex": "8f1ea2b4fb06d22f74984b0366981c335f6ec652b27c5cb22d796313ce6dbc8b",
+      "image": "images/013.png",
+      "image_sha256": "016d970c7721c0c2d18c2c5f941039193982ba42464637d8d13a22bcb72138b7",
+      "rgb_sha256": "1cf28cf269bf18868249390031d407bd2017697c5ed5b198bba5532f4586f14c",
+      "latents": "latents/013.npz",
+      "latents_sha256": "d58d0bc114d3e629acdf3f0b0925ec930bc17bbba0d074ead3fdc0b75e5cbedc",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "dba87c4c834664ac05b8c8201c8790ec14d9ddf7029457a86edda330c4398481",
+      "ws_raw_sha256": "3af8360d9da74e416b0721d3e28df35a47c1bbcfe929e044ccb82a0caebab244",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6361780830193311,
+      "total_save_seconds": 0.6935931660700589,
+      "seed_derivation_index": 13,
+      "source_path": "images/013.png",
+      "latent_path": "latents/013.npz"
+    },
+    {
+      "id": "014",
+      "seed_hex": "83154f53888a3cb8d262a597709acecfaab9d6b277d70dfb9fcddc9609e457db",
+      "image": "images/014.png",
+      "image_sha256": "e530ac664f8686fcf1fc2fda16894d4a805aaf6c11a3e165e13cdb50ed105832",
+      "rgb_sha256": "65aba70dc685fc8d7a9fea40928727ca040a3af6a63c2eaa3eb9f671d178e82d",
+      "latents": "latents/014.npz",
+      "latents_sha256": "9fef6f902bf366055c2dcba1da3e84ff998e8af8bf1ee8066870966a288d9d67",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "ce438bf45801b91361512f107fe6e988990b0b51e942c4ecf41405472d714d59",
+      "ws_raw_sha256": "22f6c0f999912329a2634fa689a09907f72eec78c6ba707a96e66232fe08e8f6",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6006434579612687,
+      "total_save_seconds": 0.683904999983497,
+      "seed_derivation_index": 14,
+      "source_path": "images/014.png",
+      "latent_path": "latents/014.npz"
+    },
+    {
+      "id": "015",
+      "seed_hex": "2cb498e2deb77974c2bffb3b9caf43881c0699f1c22ead2a5534d029b0389d49",
+      "image": "images/015.png",
+      "image_sha256": "f71136ab77a4bca89f1328ff28ea750fa245c94a09c96cc98dff33e2e98e3641",
+      "rgb_sha256": "b64a81289f14fb0a0baa3c5287558831b64f88254321ebde76e365d7bca256f3",
+      "latents": "latents/015.npz",
+      "latents_sha256": "3d17b5bb3c2d8cc4c60e337a966572859d03fb23c55621b16f74ccbbc98fe038",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "d43c4bd1dd9f911260697ef3fd685f1b6db984ff7e90454f217b8cb910040864",
+      "ws_raw_sha256": "56505fec1f64034d68da05c5471d8c5e1916161c674be3a61163e4a3b332b436",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.7066458750050515,
+      "total_save_seconds": 0.7641089590033516,
+      "seed_derivation_index": 15,
+      "source_path": "images/015.png",
+      "latent_path": "latents/015.npz"
+    },
+    {
+      "id": "016",
+      "seed_hex": "9ab16c189de5d0101e11f00939057dabd1b777ce0185828a022844f6124ef6f0",
+      "image": "images/016.png",
+      "image_sha256": "8a3304b0659b98d5a0bb057f049463e59eac462fe6876fec10777fb92893d1b5",
+      "rgb_sha256": "b5fad0d9e9e357b1fe8cf65e0acaaa8007b7a6ad1f49010264349f5b76c0a03f",
+      "latents": "latents/016.npz",
+      "latents_sha256": "76c74219a79bccc5cb59626f616b49bbddf04a62c4508faac9b69a12de354560",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "3d1d75460d3192bc88262e2370c9c7c8ebd64af13b6a2d821e0860e7b1d42e84",
+      "ws_raw_sha256": "0a66ccc3217dd08aa0c52c1b186658f1bfc19faab1e1a060552f007074e5c143",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6548838330199942,
+      "total_save_seconds": 0.7128808330744505,
+      "seed_derivation_index": 16,
+      "source_path": "images/016.png",
+      "latent_path": "latents/016.npz"
+    },
+    {
+      "id": "017",
+      "seed_hex": "d7b376af027942f1942241ee47e38f94982e67e4c68baf2481fefeab76a75543",
+      "image": "images/017.png",
+      "image_sha256": "6751e10aad84a019faf4b1aa56e6d1e946bcf42c36c138e64b86875f3b98a1e7",
+      "rgb_sha256": "e9c62a171ed7446608f8b4a2aa2993333ba1f3f35b84e3fed3288e5d690e60f4",
+      "latents": "latents/017.npz",
+      "latents_sha256": "ad1809998877f4e25429981c83be1c0da6bbda2d1bac3a339f13427dabecad39",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "77e24d7f4327d2c95920f0da0aac4eccf14ecbff4d8027c4d81eca291052e48c",
+      "ws_raw_sha256": "9e21ebab3dc95b12f5c31efec77241fb6800a4ae191d19fd4e18c0839e13f0f8",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6012440420454368,
+      "total_save_seconds": 0.6609687500167638,
+      "seed_derivation_index": 17,
+      "source_path": "images/017.png",
+      "latent_path": "latents/017.npz"
+    },
+    {
+      "id": "018",
+      "seed_hex": "d448e792891ae65aeb13916e4d6d8b4201e0fc24ba724e03e0dbec0b840f1e4a",
+      "image": "images/018.png",
+      "image_sha256": "07e3fa19d33b6d9175fe22b599a6be8de1cd9da972d0569ec111e7abd818399f",
+      "rgb_sha256": "45b6bbaa8375316311dd339243cd4169aaef20e6c2991814ccd413b55799c99a",
+      "latents": "latents/018.npz",
+      "latents_sha256": "fdb7532423c7cd67a6d58c6bac18c70aae45290fbce90045ffbebc18ff3cd73f",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "4a84f560e0b4a92534ab222fbcd5c4bf99d474fad52c944e84184081a7c5cca1",
+      "ws_raw_sha256": "8024d874bbe27d2cb8ed3d4698ec341fc1cb5dd460e915ff9e7b0f3387a4c2a0",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6474585420219228,
+      "total_save_seconds": 0.7008050839649513,
+      "seed_derivation_index": 18,
+      "source_path": "images/018.png",
+      "latent_path": "latents/018.npz"
+    },
+    {
+      "id": "019",
+      "seed_hex": "514976962c13570d9683e38849e3365d2af0536be8c95891a369707b77e97965",
+      "image": "images/019.png",
+      "image_sha256": "8ec1598fe01771a077d6ceb6ffe0b2778e94e9ab25aae4b6093b8f1f877174c3",
+      "rgb_sha256": "503e1f0cd9663b0bdf6664683aba1c86f87a9bb27499622fa7d9c68c650f6a61",
+      "latents": "latents/019.npz",
+      "latents_sha256": "6dbeaed23c8d62eab86f52c62e44b13ab36c9db9267ef1491605501e71b83831",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "13f0136bb3a6915d74ae7c93322a286abbc11e44675b5008dec076e00cf21242",
+      "ws_raw_sha256": "625cfefead07c82eefd192a9be8fc198302e632bac4e98d451987521cd432b07",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.7296306251082569,
+      "total_save_seconds": 0.7870249170809984,
+      "seed_derivation_index": 19,
+      "source_path": "images/019.png",
+      "latent_path": "latents/019.npz"
+    },
+    {
+      "id": "020",
+      "seed_hex": "16818e0a652a33a53e035ba1015b1657a9935b591c442f0e8a5f786da8968837",
+      "image": "images/020.png",
+      "image_sha256": "5d46fc9bcb2e90f5ff34a2184ee4549193f07ef61545d25145c110f6eac82029",
+      "rgb_sha256": "bb2d799b51121bf2e4a10077fc059c593861700e0498c3a00b70eac1f737118c",
+      "latents": "latents/020.npz",
+      "latents_sha256": "3197f6317911c4a39d9fa21a0b26373603b265013d8bb2c310ffa610cd11ab23",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "32c841f706a3a8da490a3de35e02cd3fad2e85c568594853a251232226856298",
+      "ws_raw_sha256": "f41eccac5053cca3b35b131a39873b84c2931f8a72554f8bc3e9c963823925ad",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6085667919833213,
+      "total_save_seconds": 0.6628757090074942,
+      "seed_derivation_index": 20,
+      "source_path": "images/020.png",
+      "latent_path": "latents/020.npz"
+    },
+    {
+      "id": "021",
+      "seed_hex": "a5cd1817b6c1d5d384d26dc924dee05f260a88328d1c8dfc8d415025307b9592",
+      "image": "images/021.png",
+      "image_sha256": "9861a73d6e5900371d9ec44b3915ecf8c0c822abe45d9ce8faedb724be0ca922",
+      "rgb_sha256": "01bf54cae4daff03afed8810ae74350089d4f7809a3f739615909915a3e4aa8f",
+      "latents": "latents/021.npz",
+      "latents_sha256": "55b36480c13c1bf6f0563fbf12121b8adc16e4bb76a49a569d1561a10f402eee",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "45a75a564266eb6e73d5a5a0643236e5e3220916735d1821a8664d5b32e70e18",
+      "ws_raw_sha256": "c572906541c56837f2151f2c265f50c7fcc3ae3a2fcefbda9be8fe483bf9e56a",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.5651273749535903,
+      "total_save_seconds": 0.6171963749220595,
+      "seed_derivation_index": 21,
+      "source_path": "images/021.png",
+      "latent_path": "latents/021.npz"
+    },
+    {
+      "id": "022",
+      "seed_hex": "fbde46df0734c26303f8b615bc777c5d8491c60e6e1d15b93cd1eaabd516e16b",
+      "image": "images/022.png",
+      "image_sha256": "d6820764a707fd8e6df17adb808a07186d7dc439d129688799eaec83133bfa19",
+      "rgb_sha256": "94ce9d8dd0621d3865a33fd23a598ad721980105c19a4016855e31819d8693bd",
+      "latents": "latents/022.npz",
+      "latents_sha256": "d1fce230d31e536310832acf889cef4e8c6cd30e9b2320420adbfe67edc5e6db",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "1611c167b02d6e6a5e88a07d81401051ded9ca78ee0ec1f198eb7171b4c4e221",
+      "ws_raw_sha256": "4f49d8739e3ab83a5339c592e67fdc2522692ac0f649293222b6e20a43687693",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.7120028330245987,
+      "total_save_seconds": 0.7612148330081254,
+      "seed_derivation_index": 22,
+      "source_path": "images/022.png",
+      "latent_path": "latents/022.npz"
+    },
+    {
+      "id": "023",
+      "seed_hex": "b35cf70955b8c61ef568be0f65dfb20a1a7c7ca001be5684bb8eac5b8ce038a2",
+      "image": "images/023.png",
+      "image_sha256": "4f0c27782285ffeceea35bb23d6b2455968a591aaf22d1c04737895a5c4ba974",
+      "rgb_sha256": "d25d753287a16eb5adbc19f394335967234b18e3fcaaa24158afc33b2d821ac4",
+      "latents": "latents/023.npz",
+      "latents_sha256": "fb8e4694b039bbc02c8d8ba4409ffac2dbebd4ac2f3b4100b76dee4820786ed3",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "0b759ee290462f0468793d01a829d5e938cc549b1f2cf59d70ab1920ada8030c",
+      "ws_raw_sha256": "2b85faecefee545d67e406f75eab2b89095c809e6ab416118b5a29fd56fcac59",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.7015330420108512,
+      "total_save_seconds": 0.7620687499875203,
+      "seed_derivation_index": 23,
+      "source_path": "images/023.png",
+      "latent_path": "latents/023.npz"
+    },
+    {
+      "id": "024",
+      "seed_hex": "9c053b96c8f34f687bb1db7c4479eda52a2ac4360ce69e1339d9e1a07edafb0e",
+      "image": "images/024.png",
+      "image_sha256": "f3bddd7756589dbede9b3ba92a06aec2cb170a760cb1dbf7ab66534af1f9c595",
+      "rgb_sha256": "3877d596339505b8db079289cb07a5fe6dbc109219a7181f2e9d79350df7c340",
+      "latents": "latents/024.npz",
+      "latents_sha256": "f913bd5d07ca84fd81b96b6029971815bd81b9eb3a2434bdf1d5d0a896676110",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "856439ebc27914e18afd6f6f2c59b68db9042d2ab1c297872e8f4390d2ef90a4",
+      "ws_raw_sha256": "19faa3c7f4fa6223a60f0278239789d5e54633180612d44ee1b7c08a62dfa35f",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6030455000000075,
+      "total_save_seconds": 0.6571124999318272,
+      "seed_derivation_index": 24,
+      "source_path": "images/024.png",
+      "latent_path": "latents/024.npz"
+    },
+    {
+      "id": "025",
+      "seed_hex": "2b97b43f8a44e9e87dddf5cabad2978fc990f7404d4b9e4c691e033ba8ff566b",
+      "image": "images/025.png",
+      "image_sha256": "df2b8a66a6b624d0a836afb1b8f9ad311ea911f62976b1698454dc0676928207",
+      "rgb_sha256": "4885a120e61b1038bc2ca264c5ffea3a4ce2e678c0afcd7448c667792d583da7",
+      "latents": "latents/025.npz",
+      "latents_sha256": "bca46b765599c9129a6da36614188f515ced82aab039190e6db24c1121f596f8",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "2febe67d501e50570404656abe2fcb36a0bdd93f0af50c109f472079ea0e4dd3",
+      "ws_raw_sha256": "e0a1b604dc619881f3cfbb6f444eab2babd950fe1811d5285bacea6e7aecae8d",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6568114589899778,
+      "total_save_seconds": 0.7117654170142487,
+      "seed_derivation_index": 25,
+      "source_path": "images/025.png",
+      "latent_path": "latents/025.npz"
+    },
+    {
+      "id": "026",
+      "seed_hex": "131ab727d208dde28e3e338c5716acfa0ce6ea75e964e9c1e1e8b81cb4fbe308",
+      "image": "images/026.png",
+      "image_sha256": "d8872d7e7b651947d50bd453f4c46ddd85044186e8d7b39362c8be749e47ff36",
+      "rgb_sha256": "39b4667061149ad18840e49c886fb597da3836c8645c0fce7e503f93bfd81690",
+      "latents": "latents/026.npz",
+      "latents_sha256": "67e4cc481a51cfbe93e08b569e2abb87b23fc0985f3b0b165b9020e2352d7ffb",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "f33f9b310a5ead84f48b74393fd5747febce3f7b2de66464d28ef222d2ce8bf7",
+      "ws_raw_sha256": "3eb09f5a98a36f34f5d53b8718b18faa72a01f1fba61344fb56798e9537f09b7",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.622845874982886,
+      "total_save_seconds": 0.6763179589761421,
+      "seed_derivation_index": 26,
+      "source_path": "images/026.png",
+      "latent_path": "latents/026.npz"
+    },
+    {
+      "id": "027",
+      "seed_hex": "875989c1d862be004380d5ecef9651bcf0d6e9cf00db65a2db6205a8449896c3",
+      "image": "images/027.png",
+      "image_sha256": "0d95a589665b90717ff1f4f2c3f6671c2fdd63e1afa056349ab3c5bff20fa02c",
+      "rgb_sha256": "9a14a05b7e89738bd4601a01d72c9f577c82a5059f4d06cf6fc3eea059452865",
+      "latents": "latents/027.npz",
+      "latents_sha256": "752331fabc512db0b1514376b8afcba3d7ec1f09de4f802d5f7359bdbd05be16",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "dee5d66adfa8925b122cc7cf7feb4234748085f59343fd0f5068890fbe444130",
+      "ws_raw_sha256": "4e80f7e52418293ccb71007d1e9aeda7aac5f8d1edc252bff633834363e009bb",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6344074159860611,
+      "total_save_seconds": 0.6877562080044299,
+      "seed_derivation_index": 27,
+      "source_path": "images/027.png",
+      "latent_path": "latents/027.npz"
+    },
+    {
+      "id": "028",
+      "seed_hex": "415d92377dfc36cc8f30c3777e78c12966aea12fc59a021028870975e8ca1259",
+      "image": "images/028.png",
+      "image_sha256": "eb246b66e7fd614935b677c1ca26b9f5da574fa7f1deda5c096c760d9f71d5d2",
+      "rgb_sha256": "716d20fdec74315f9444bbfd483c343168bdb27108525f481adcc3e32730355f",
+      "latents": "latents/028.npz",
+      "latents_sha256": "dbd37130b8c58a35f8b7802ae909ce2fbdaa0964ee02e23cabb574e690d50933",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "7c728e67685d2c8da4d03a08d62389a1d4657dc1238c58ff761daf0196f6f13f",
+      "ws_raw_sha256": "32d1ab66311b5ae9b173e1f5c10316a9ed9b233f5d9eadb5b1dbf66c516a62a3",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6790562920505181,
+      "total_save_seconds": 0.7361169169889763,
+      "seed_derivation_index": 28,
+      "source_path": "images/028.png",
+      "latent_path": "latents/028.npz"
+    },
+    {
+      "id": "029",
+      "seed_hex": "825048bf8a3ea1e2307f798108ac4dba0c4c2c3732a4180f82c33f33f28f40d8",
+      "image": "images/029.png",
+      "image_sha256": "b88e6a1c611e285c0519e1278905953ed09ffa790f870d0f1f547c597eb04acc",
+      "rgb_sha256": "5fa9663425274fe01762c91c9aec2d809dfda0b5322e2a2fab1ec5f8a1f5d3c2",
+      "latents": "latents/029.npz",
+      "latents_sha256": "13addd29dc72dfc39edc4162ca2987fbf5735c2f2760aa03389fc7db8d819c8e",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "4d4d54ed5f29703531b9daef765bb2241179a0c2190bd150072db881052575f3",
+      "ws_raw_sha256": "fafa7757958bc61899cf1d52273e41c90e39070ecc8c0602ea126bdb4b1da5f6",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.5886015000287443,
+      "total_save_seconds": 0.6454324589576572,
+      "seed_derivation_index": 29,
+      "source_path": "images/029.png",
+      "latent_path": "latents/029.npz"
+    },
+    {
+      "id": "030",
+      "seed_hex": "a6b629a0a1f3b34cd5498a4495125bb03ebdb71ff95bfd38a4c63fe91685e2f4",
+      "image": "images/030.png",
+      "image_sha256": "9b3e097dd62f65b98156099a98682cf1d7840a56e223f75ae67a2984e39e12f8",
+      "rgb_sha256": "0b59e09a68888c38b96a903ecf274958dc47b5ff031cf3a907306173c175e19a",
+      "latents": "latents/030.npz",
+      "latents_sha256": "0b696035e53809458d988e45abdcfc4e1afb4cdc712f687bc72c3b1f9b4d5e59",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "e5f00bc587c3aa36c93565bdefa86e95bc3c54be11837c396e08bfe7db314950",
+      "ws_raw_sha256": "d03cb9f441b9b6d905b5d975f65617ca49652126decd883c37380e9f7943af65",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.5998934999806806,
+      "total_save_seconds": 0.6534927089232951,
+      "seed_derivation_index": 30,
+      "source_path": "images/030.png",
+      "latent_path": "latents/030.npz"
+    },
+    {
+      "id": "031",
+      "seed_hex": "9ec5e694b608c90fb0e95111b8f34449a2accbebda637bdab7318272525e8e33",
+      "image": "images/031.png",
+      "image_sha256": "dd342637ebf808887ba494c6567f14f71df5f69622c10e21383733bcca42c5c6",
+      "rgb_sha256": "cd25bc8a69265a2af911ee7e3c15f7f68f5537693f6c42255bb0ed971794aab5",
+      "latents": "latents/031.npz",
+      "latents_sha256": "fce5bcd1bad42b546ecddb5a61caf351fe88284bae0f15a81b6d9871fc191ff4",
+      "z_shape": [
+        1,
+        512
+      ],
+      "w_shape": [
+        1,
+        18,
+        512
+      ],
+      "ws_shape": [
+        1,
+        18,
+        512
+      ],
+      "all_ws_equal_first_w": true,
+      "z_raw_sha256": "8c33dc081284bd340efb75775deed59968d378b3642fde44c5b9bbe1b6c2000a",
+      "ws_raw_sha256": "77a0f773003483b3ae8f2ae087f937b9974faf28382e5f6760aefe66dfb1ca59",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "forward_seconds": 0.6287308329483494,
+      "total_save_seconds": 0.677885957993567,
+      "seed_derivation_index": 31,
+      "source_path": "images/031.png",
+      "latent_path": "latents/031.npz"
+    }
+  ],
+  "reproduction": {
+    "id": "reproduction-sample002",
+    "seed_hex": "25a5656ee7914252f9e6a81f81018d338c20e5ca7075fb495a1eb1c54cc6ad20",
+    "image": "images/reproduction-sample002.png",
+    "image_sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce",
+    "rgb_sha256": "7db27d4efbf1230ef91b46b9fcb85d15ef7451dedf67b746587c3ebc8a89055f",
+    "latents": "latents/reproduction-sample002.npz",
+    "latents_sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9",
+    "z_shape": [
+      1,
+      512
+    ],
+    "w_shape": [
+      1,
+      18,
+      512
+    ],
+    "ws_shape": [
+      1,
+      18,
+      512
+    ],
+    "all_ws_equal_first_w": true,
+    "z_raw_sha256": "dc239be08aa1908968f9ace041e0e3094321a776814856904158070e6f3926ee",
+    "ws_raw_sha256": "e0170472554da1bd3af6d9a00a04effa516e3aa4a070b2bfe48fd169fcb767b3",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "forward_seconds": 0.7522764160530642,
+    "total_save_seconds": 0.8049807500792667,
+    "original_path": "research/runs/inference-cpu/ffhq1024/docker-4g/sample-002.webp",
+    "original_sha256": "9469812e8ae0be5a83274184bdc896235a3fb1df25361d4d494d12822a079216",
+    "encoded_webp_path": "images/reproduction-sample002.webp",
+    "encoded_webp_sha256": "ac271189382ddf9c4b4d1b8e84135fbd2475186cc179f2000c1f45c477837170",
+    "encoded_webp_byte_exact": false,
+    "decoded_reencoded_webp_vs_original_webp": {
+      "max_absolute_channel_difference": 15,
+      "mean_absolute_channel_difference": 0.5111907323201498,
+      "fraction_unequal_channels": 0.2952950795491536,
+      "rmse_channels": 1.0941616192072021
+    },
+    "native_png_pixels_vs_original_decoded_webp": {
+      "max_absolute_channel_difference": 19,
+      "mean_absolute_channel_difference": 1.4856723149617512,
+      "fraction_unequal_channels": 0.7419652938842773,
+      "rmse_channels": 2.038299768670067
+    },
+    "interpretation": "Native macOS CPU versus original Linux amd64 CPU; backend and WebP encoder may differ. No tolerance pass is asserted.",
+    "source_path": "images/reproduction-sample002.png",
+    "latent_path": "latents/reproduction-sample002.npz"
+  },
+  "path_resolution": "source_path and latent_path are relative to this manifest directory",
+  "schema_normalization": {
+    "script_sha256": "cf5115e6bcc958340d5573c2e840285412ac980b7d57362026ffdb03cd10f266",
+    "original_manifest_sha256": "39cde39a884772c62509ab88753ac444f76bd8d6639a4a8cd6bc3273cab945f7",
+    "actual_generation_script": "generate-executed-v1.py",
+    "actual_generation_script_sha256": "d261c003f574525f52a96e4a7bef60712f70afbe8c462f567ff518b901d34d93",
+    "future_generation_script": "generate.py",
+    "future_generation_script_sha256": "ce621c657c7c0062939becf515ba5968cd97815604d7f98bc86d922357724a60",
+    "explanation": "Renamed previously captured full ws array to trainer key w; unchanged z/W tensor hashes and PNG hashes verified. No new model forwards.",
+    "changes": [
+      {
+        "id": "000",
+        "old_npz_sha256": "8f2f81517035501f0a0195336b1fb75e4e22c196a03beb36c2f5fc513d64c44b",
+        "new_npz_sha256": "40978912da666c81c646643e681fec554e4771fe69c558359ee28cb6ae751572"
+      },
+      {
+        "id": "001",
+        "old_npz_sha256": "ffbe4ae052aae6d2dd213970c59023ad8d84237408d0e32b66634214b7e9bc6e",
+        "new_npz_sha256": "9b66c2e0ee14264adb5b0dbc5cf09129489e9cdef15fbbfe2402f5bbb0dddfa9"
+      },
+      {
+        "id": "002",
+        "old_npz_sha256": "2334ccea593d625e835259e882a680998fb1da9e7704590fa66e5facb1986836",
+        "new_npz_sha256": "70a4cd392c309e8f5f7a1f91b6da648f06c1eaaf2edfe3fd52d7359cfc08ae22"
+      },
+      {
+        "id": "003",
+        "old_npz_sha256": "bd9c309dbe84ad1c3ea5219ca8c291823795c482417e9018c8361fbb784adac4",
+        "new_npz_sha256": "fb27175191e4d6cfeb9797ab55e4b9140f05ef6a2e71f0b12c8a5c440ec6fa72"
+      },
+      {
+        "id": "004",
+        "old_npz_sha256": "4c96450d0356cd3d8286f747fc54a8a63a91fa18558af4a2d246963434498aad",
+        "new_npz_sha256": "7522f1cd94a37455d0224d515d0abd8e928650b93306302b499a11e3f60517ca"
+      },
+      {
+        "id": "005",
+        "old_npz_sha256": "1fe3f46ef930fc6eb040810bdfbb754bfdae645585743376c7eb2448ad6aa126",
+        "new_npz_sha256": "f7bab7bc5384b1073ba97479a8aea073d0a8d4566167af9c7eaec9fa48a193d5"
+      },
+      {
+        "id": "006",
+        "old_npz_sha256": "3f9ba0399adc0d6b6d47fa96c4c1b479fe3e65dd26acca93552dfcf9d2c673d5",
+        "new_npz_sha256": "1d8eb465d86af944fd26e271fbd14b32a7bafb28a49fc3a09091b4da0d8794c4"
+      },
+      {
+        "id": "007",
+        "old_npz_sha256": "a02420bddf0bb1b3a8f039fbcb7db78fef7b7a1cc0b51f22a82cffade02059cb",
+        "new_npz_sha256": "26507796b84357cd5cfc89d90c90e039843c54fd3734cc7dbb0b8f3aa39974fd"
+      },
+      {
+        "id": "008",
+        "old_npz_sha256": "ab38313a14601eb10806cc3d76b13dba033825d0f0db3d0e045998c215cd284e",
+        "new_npz_sha256": "9eda4890d27e48b28578c4be2263ccf4edf467ce80b6a9896bf2bee065b1158c"
+      },
+      {
+        "id": "009",
+        "old_npz_sha256": "c697994d2a2bd0a214dbbe33c5fa798a54e93a9584fed4b312eba6383c356fd4",
+        "new_npz_sha256": "9ff8c7aa4f94827b75434d7827299b3ee014e49003ed22cd00004399950ce2a2"
+      },
+      {
+        "id": "010",
+        "old_npz_sha256": "9524c45f811c54883961ba8cbdaeaf7e4389bdc33e1976f1240abaec83c5639f",
+        "new_npz_sha256": "745e7d951ce1cf20f22f9d7a30ed9c9c0872c152d1e052f494cdd6eee76dcf67"
+      },
+      {
+        "id": "011",
+        "old_npz_sha256": "f4d8a1a75595428017959c78cc5114ec927763bffbf39fe778c7ff6f82ab2c3b",
+        "new_npz_sha256": "a887c6c9ee53912331592a4fdc1a33ef3077269b2339e4c1b914a339f11d7e6b"
+      },
+      {
+        "id": "012",
+        "old_npz_sha256": "dff44ce18d96b5f97b054c7cf28b4ff3dad576a4b169ab649c0f24a0de37410a",
+        "new_npz_sha256": "6aa9e1167c496c2f583fa2194e9a75840c7ae2821adfe4a40c48f67b440f574e"
+      },
+      {
+        "id": "013",
+        "old_npz_sha256": "3241ab42bd8b0dd84cc789c502d1d5ea1ce6d1af22264a66d96b34b291e6ab3e",
+        "new_npz_sha256": "d58d0bc114d3e629acdf3f0b0925ec930bc17bbba0d074ead3fdc0b75e5cbedc"
+      },
+      {
+        "id": "014",
+        "old_npz_sha256": "56e073f106609c8ec84ac987a00b6de01d9039d1077748d530bde6967c3a4d75",
+        "new_npz_sha256": "9fef6f902bf366055c2dcba1da3e84ff998e8af8bf1ee8066870966a288d9d67"
+      },
+      {
+        "id": "015",
+        "old_npz_sha256": "adfe96fa7520a68c144b9cca8951f416b60f79afe9705beb0922f497ddd11dcb",
+        "new_npz_sha256": "3d17b5bb3c2d8cc4c60e337a966572859d03fb23c55621b16f74ccbbc98fe038"
+      },
+      {
+        "id": "016",
+        "old_npz_sha256": "550686f7d202623b5b434dce3140ced3cabfc95d8472ac1aca48115f37a1a5bf",
+        "new_npz_sha256": "76c74219a79bccc5cb59626f616b49bbddf04a62c4508faac9b69a12de354560"
+      },
+      {
+        "id": "017",
+        "old_npz_sha256": "2dc45d2af84a4ec8e54f26d272404622b9d9eae341805ae4526c1e3c408f7961",
+        "new_npz_sha256": "ad1809998877f4e25429981c83be1c0da6bbda2d1bac3a339f13427dabecad39"
+      },
+      {
+        "id": "018",
+        "old_npz_sha256": "a33617cba7749d6aa5b9cfacfaa3072cae74d248529cb7e992a1533293b79ce4",
+        "new_npz_sha256": "fdb7532423c7cd67a6d58c6bac18c70aae45290fbce90045ffbebc18ff3cd73f"
+      },
+      {
+        "id": "019",
+        "old_npz_sha256": "6d2984785270e161cc21ca2fcab8c1b0e4b1a7bace96cd74fac87695c44236c5",
+        "new_npz_sha256": "6dbeaed23c8d62eab86f52c62e44b13ab36c9db9267ef1491605501e71b83831"
+      },
+      {
+        "id": "020",
+        "old_npz_sha256": "95513eb56d409faedbf958b66eaafa35f7569cfb9d22c3f740103fd1ac5c0275",
+        "new_npz_sha256": "3197f6317911c4a39d9fa21a0b26373603b265013d8bb2c310ffa610cd11ab23"
+      },
+      {
+        "id": "021",
+        "old_npz_sha256": "3ecbc53befd83cff9f486d938494e02aeb787e3e4287bef11afe86ed40aee4e8",
+        "new_npz_sha256": "55b36480c13c1bf6f0563fbf12121b8adc16e4bb76a49a569d1561a10f402eee"
+      },
+      {
+        "id": "022",
+        "old_npz_sha256": "8dbd05d2472d3b1da6b0b5de42c67924416c6af899c07e93ada722332a996c28",
+        "new_npz_sha256": "d1fce230d31e536310832acf889cef4e8c6cd30e9b2320420adbfe67edc5e6db"
+      },
+      {
+        "id": "023",
+        "old_npz_sha256": "9a70a47cac4ab282cccf9ea31d861f5210f128c7373d5682c5ab01023704f4b7",
+        "new_npz_sha256": "fb8e4694b039bbc02c8d8ba4409ffac2dbebd4ac2f3b4100b76dee4820786ed3"
+      },
+      {
+        "id": "024",
+        "old_npz_sha256": "dc049f4c9d2bccbd433bd2af988205170a0a348c7c57d13af226d69695cdfd60",
+        "new_npz_sha256": "f913bd5d07ca84fd81b96b6029971815bd81b9eb3a2434bdf1d5d0a896676110"
+      },
+      {
+        "id": "025",
+        "old_npz_sha256": "c4909fc511afde29e3c276bd1a916049da180c62390b6a15b1086aecb6b3c7f7",
+        "new_npz_sha256": "bca46b765599c9129a6da36614188f515ced82aab039190e6db24c1121f596f8"
+      },
+      {
+        "id": "026",
+        "old_npz_sha256": "1eb42323f47b927ad04aca488568a855574d57c241b52c2b8b67dacc5ec49a1e",
+        "new_npz_sha256": "67e4cc481a51cfbe93e08b569e2abb87b23fc0985f3b0b165b9020e2352d7ffb"
+      },
+      {
+        "id": "027",
+        "old_npz_sha256": "e42de00dc6543f8d2550d0f6ec186186bac182e3d1cda364f10bc31ef0cc1ad6",
+        "new_npz_sha256": "752331fabc512db0b1514376b8afcba3d7ec1f09de4f802d5f7359bdbd05be16"
+      },
+      {
+        "id": "028",
+        "old_npz_sha256": "d15b5c6108e46c1d783d75d9d6bff47ebec50343346077108f2b428a213d2192",
+        "new_npz_sha256": "dbd37130b8c58a35f8b7802ae909ce2fbdaa0964ee02e23cabb574e690d50933"
+      },
+      {
+        "id": "029",
+        "old_npz_sha256": "a0ca2ab52eb91a41352eeb37af1b9e2fcdc406b8a847df7c51edccdeb073fd87",
+        "new_npz_sha256": "13addd29dc72dfc39edc4162ca2987fbf5735c2f2760aa03389fc7db8d819c8e"
+      },
+      {
+        "id": "030",
+        "old_npz_sha256": "7b9ad30a1b536d836c90458c576342e25a67018477104bc5cf5a750a2886c8fe",
+        "new_npz_sha256": "0b696035e53809458d988e45abdcfc4e1afb4cdc712f687bc72c3b1f9b4d5e59"
+      },
+      {
+        "id": "031",
+        "old_npz_sha256": "fed38dd59464565abad4143ca11fa1800da58c9b2d8196c1726868c1484bfe02",
+        "new_npz_sha256": "fce5bcd1bad42b546ecddb5a61caf351fe88284bae0f15a81b6d9871fc191ff4"
+      },
+      {
+        "id": "reproduction-sample002",
+        "old_npz_sha256": "2829ae0199116f936f8176654708b6b42dc46e4bd2aa8b1d169e0c4586ea9ed1",
+        "new_npz_sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9"
+      }
+    ]
+  }
+}
