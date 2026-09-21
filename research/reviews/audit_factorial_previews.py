@@ -30,6 +30,7 @@ def read_snapshot(directory, step):
     assert len({row['id'] for row in data['rows']}) == 14
     assert sum(row['split'] == 'train' for row in data['rows']) == 6
     for row in data['rows']:
+        assert set(row['outputs']) == {'rgb', 'gray'}
         for key, output in row['outputs'].items():
             file = directory / output['path']
             assert file.parent == directory and digest(file) == output['sha256']

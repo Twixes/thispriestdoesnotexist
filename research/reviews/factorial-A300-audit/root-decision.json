@@ -1,0 +1,33 @@
+{
+  "arm": "A",
+  "decision": "Reject for production; control completed; continue B/C/D within existing deadline.",
+  "training_fit_gate_passed": false,
+  "reason": "No four clear photographic collar fits; white neck patches and porous/coarse texture remain. Held-out adult examples retain ordinary clothes.",
+  "train_means_minus1_to1": {
+    "0": {
+      "protected_l1": 0.021238446701318026,
+      "clothing_l1": 0.2273984414835771,
+      "tab_l1": 0.0629787277430296,
+      "rest_l1": 0.23640271400411925,
+      "surround_l1": 0.7047751049200693,
+      "remainder_l1": 0.22065257405241331
+    },
+    "300": {
+      "protected_l1": 0.020738621708005667,
+      "clothing_l1": 0.13804170613487562,
+      "tab_l1": 0.05084092232088248,
+      "rest_l1": 0.14287138047317663,
+      "surround_l1": 0.5549039393663406,
+      "remainder_l1": 0.12889418626825014
+    }
+  },
+  "evidence_sha256": {
+    "research/runs/paired-factorial-600/reviews/A-300.json": "4e98371f6c4d6bce4b1e5d65e70342bbe042d2e9d951b421abf35510a60ae121",
+    "research/runs/paired-factorial-600/reviews/A-source30-final.json": "c8f9bec69792ab387c956282a86ad350c863f1caeca7f3cd9d9617475132dc11",
+    "research/runs/paired-factorial-600/A/preview-300/contact.png": "7e45816945453f5a9e4e2a9e59f7c5b48fac5d9272fc6a4e58e0cb85aaa053c9",
+    "research/runs/paired-factorial-600/A/source30-final/contact.png": "739f708651baa92a693dacad32faccaa036613a9622e9c6e779987113721e6d3"
+  },
+  "review_scope": "Root viewed final14 and source30 contacts; independent agent reviewed all14 native final outputs and source/student017/024/025/028. Separate artifact audit verified232 native PNGs andfour checkpoint hashes.",
+  "limitations": "A failure alone does not determine B/C/D outcomes or establish the cause. Preservation of existing face identity is an experimental constraint, not a user requirement.",
+  "production_approved": false
+}

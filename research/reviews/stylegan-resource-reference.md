@@ -28,8 +28,10 @@ hardware/trainer settings and do not guarantee results with our small dataset.
 We reuse pretrained FFHQ weights, so we need not repeat scratch training. Our
 current target dataset has 110 synthetic portraits at 256×256. The rejected pilot
 had 50 portraits and stopped after 1,000 updates × batch 8 = 8,000 presentations.
-The paused aligned110-frozen4 run's planned 6,000 updates amount to only 48,000
-presentations, so it is a feasibility experiment, not a full convergence budget.
+The aligned110 CDC run was stopped after preserving checkpoint 4,750 (38,000
+presentations), because its reviewed faces remained unsuitable. Its planned
+6,000 updates would have amounted to only 48,000 presentations, so this was a
+feasibility experiment, not a full convergence budget.
 
 At step 580, the earlier custom-loop MPS run logged 1,408.46 seconds for 4,640 image
 presentations. A straight-line extrapolation to one million is about 84 hours
@@ -47,6 +49,15 @@ while the CDC job shares the local GPU. This is only one early cycle, excludes
 checkpoint/preview overhead, and may change with load and training state.
 See `runs/reference256-paper-b64/throughput-step32.json`; do not substitute
 the old custom-loop timing or treat either estimate as a quality guarantee.
+
+After the CDC GPU job stopped, two complete reference cycles (steps 385–416)
+processed 2,048 presentations in 917.77 seconds while the paired-factorial CPU job
+ran alongside it. Both cycles contain 16 Gmain, 16 Dmain, four PL and one R1 phase;
+the combined extrapolation is **5.19 days per million**. This is an updated
+throughput observation, not a completion promise, and excludes checkpoint and
+preview overhead. Exact selected metric rows and the measurement script are
+stored in `runs/reference256-paper-b64/throughput-step416.json` and
+`measure-throughput-416.py`.
 
 The earlier short-run expectations were too optimistic. Longer training alone
 does not establish that facial artifacts or lost diversity will recover. Assess

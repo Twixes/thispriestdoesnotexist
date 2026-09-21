@@ -1,0 +1,17 @@
+{
+  "matching_config_fields": [
+    "parent_checkpoint_sha256",
+    "parent_student_state_sha256",
+    "source_files",
+    "fixed_z_sha256",
+    "train_ids",
+    "schedule",
+    "options"
+  ],
+  "step0_rows_and_output_hashes_exact": true,
+  "B_observed_updates_with_equal_pair_and_fresh_draws": 25,
+  "B_b32_open": true,
+  "B_feature_weight": 0.0,
+  "complete_experiment": false,
+  "production_approved": false
+}

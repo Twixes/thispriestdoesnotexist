@@ -1,0 +1,131 @@
+{
+  "arm": "A",
+  "fork_step": 300,
+  "parent_step": 600,
+  "reviewed_unix": 1789960551.857739,
+  "review_kind": "PNG-only; no inference",
+  "evaluation_sha256": "7bc664b35a126721c7b54c5ae19dc73b9d374b8522c167de6fa6866f1bcd4d9b",
+  "student_state_sha256": "919001cc85bfe6b41775c22eb5d135b3407a89799494a2d5f73c77aab794424e",
+  "contact_sha256": "7e45816945453f5a9e4e2a9e59f7c5b48fac5d9272fc6a4e58e0cb85aaa053c9",
+  "contact_count": 14,
+  "native_review_ids": [
+    "calibration-original",
+    "030",
+    "b2-042",
+    "b2-058",
+    "b2-059",
+    "000",
+    "028",
+    "b2-055",
+    "b2-051",
+    "b2-020",
+    "unseen-000",
+    "unseen-001",
+    "unseen-002",
+    "unseen-003"
+  ],
+  "summary": "All14native portraits viewed. No broad facial collapse, but no supervised image clearly meets the clean photographic clerical-collar gate; b2-051 is only partial/ambiguous. Four edited holdouts and four fixed unseen portraits show no convincing new clerical collars. Neck artifacts remain serious quality failures.",
+  "new_broad_face_collapse_observed": false,
+  "production_approved": false,
+  "limits": "Small fixed panel. Contact-level coherence does not establish native photographic quality, identity preservation or distributional diversity. Held-out cases remain excluded from training.",
+  "rows": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "image_sha256": "bc61d6523cf98a93c319895fb69c612b061750b861d1d83ad551153aa5acb723",
+      "review_resolution": "native1024",
+      "visual_note": "Face, eyes and mouth remain coherent. Original shirt is darker than at100, but broad bright textured neck patch and rough dark edge remain instead of a bounded fabric collar."
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "image_sha256": "f9a521b8d65e45ab81acc87f0d81159ea3e5acb6180c0db14965f53c8725ff0e",
+      "review_resolution": "native1024",
+      "visual_note": "Face coherent. White curved band beneath chin with dark textured margins remains skin-like, not a bounded rectangular clerical tab."
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "image_sha256": "d0565f93e8618ae2ffba9992838c833fb5d5d284a9dd13ec2b3e2cedac6a1b44",
+      "review_resolution": "native1024",
+      "visual_note": "Face/eyes/smile remain coherent. Severe dark pitted/scratch-like right-neck area remains; white lower patch is not a clean collar. The extra person at left predates training."
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "image_sha256": "9583dea162ad9e237277f4883d0984a67de87aeaadbbc911b427b5c9f09cfe59",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out face, beard and smile coherent; ordinary shirt edges persist, no convincing central clerical tab."
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "image_sha256": "0e89efee819ffe570edef4ee834160937ce0b4ea2a375987e7241e520164db34",
+      "review_resolution": "native1024",
+      "visual_note": "Face/glasses coherent. Broad ragged white strip and glossy smeared black neckline remain; not clean clerical fabric."
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "image_sha256": "0794a4371426f0bf1abfb619af9529a59436b72a7ebae86bf98f9dcf2fc5a68f",
+      "review_resolution": "native1024",
+      "visual_note": "Face coherent. Closest partial collar-like white rectangle, but irregular right edge blends into rough neck skin and garment boundary; not a photographic quality pass."
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "image_sha256": "f3b6ea0444dda6d2d7f71aa657fdd99f3f87910c23a27af9064c996ddb719083",
+      "review_resolution": "native1024",
+      "visual_note": "Face and harsh lighting coherent. Bright chin/neck area remains merged with small lower white patch; no clearly bounded clerical tab."
+    },
+    {
+      "id": "b2-042",
+      "split": "diagnostic-heldout",
+      "image_sha256": "bdaa9f0510134b643f5f6c5e2c5f1bfcfca5581d7f0df60917ede84ffa216c3d",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out face, glasses and smile coherent versus start. Patterned shirt edge remains, no white clerical tab."
+    },
+    {
+      "id": "b2-058",
+      "split": "diagnostic-heldout",
+      "image_sha256": "e2721f992818204c36e72e7f48a0eac82ad553118b50633a43ae2959ec5a5a29",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out mature face/moustache coherent versus start. Conventional white shirt and dark tie remain; these are not a clerical collar."
+    },
+    {
+      "id": "b2-059",
+      "split": "diagnostic-heldout",
+      "image_sha256": "efc5965bddf809c88764d28daf4d8e4b9f41457bae73f50760f2cc7bab65657d",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out face/glasses/smile coherent versus start. Open hoodie neckline remains; no white clerical tab."
+    },
+    {
+      "id": "unseen-000",
+      "split": "unseen",
+      "image_sha256": "6f8e6bafb07cf9608b87d13e001d94dc9cbedc4b6279dd94317a91768b23d17f",
+      "review_resolution": "native1024",
+      "visual_note": "Face coherent; cap and partial extra person remain, no collar. Ineligible due hat."
+    },
+    {
+      "id": "unseen-001",
+      "split": "unseen",
+      "image_sha256": "829129acbc348572c63ff3527791883a59d0f0560ac11b7ff46c70711ae17692",
+      "review_resolution": "native1024",
+      "visual_note": "Face coherent; ordinary shirt neckline, no central clerical tab."
+    },
+    {
+      "id": "unseen-002",
+      "split": "unseen",
+      "image_sha256": "cc51dbbef47f0fc48bb6bcb29c7eeea0cd38e1c77366e7ebd2eacb7893bfc904",
+      "review_resolution": "native1024",
+      "visual_note": "Face coherent; microphone/ambiguous hand-chin detail persists, no clerical tab."
+    },
+    {
+      "id": "unseen-003",
+      "split": "unseen",
+      "image_sha256": "86763235f881cb62dceb12bfe70c91a9aedf756a09aa663f7e134a108da446bd",
+      "review_resolution": "native1024",
+      "visual_note": "Face coherent; cap and partial extra person persist, no collar. Age not established; exclude eligible/adult success counts."
+    }
+  ]
+}
