@@ -1,0 +1,37 @@
+{
+  "prepared_only": true,
+  "actual_fi_artifacts_analyzed": false,
+  "model_constructed_or_loaded": false,
+  "tests": {
+    "command": "research/.venv/bin/python research/experiments/adam_native/test_importance_stability.py",
+    "passed": 5,
+    "seconds": 0.106,
+    "fixture_scope": "Synthetic inventory, raw-sum tensors, and temporary byte-authentication artifacts only"
+  },
+  "files": {
+    "analyze_importance_stability.py": "8596e2474bea4f7d16044763bb2b0de999058342c85cdf5689a98e96ea812421",
+    "test_importance_stability.py": "2617e0153e5bc1afd6855bd15e9271dae6b9be2e6c580c5e1827c27e642b04da",
+    "importance-stability-README.md": "c97149e6dbe942aa6a29a7703045b2ca4778a8b11cb3179c1776129c159eb073"
+  },
+  "unchanged_dependency_sha256": {
+    "importance.py": "1d1d253e8659863ed567f22201423389f71df36a572657896aadcda8d1ab9bbb",
+    "selection.py": "e533d95d485eb0e1ff2e5fd0da8039ef1e4c251b501efa5b37fe031ba8b48192",
+    "selection_fixed_offsets.py": "840700d66e2f069bee8db52ad7593556f27d648265aa2018492f3d9ed4040881",
+    "fixed_offset_policy.py": "60dbcf1b8d9358a3279fa3538af434f81ba849ede76438213061538174eb8af6",
+    "estimate_importance_fixed_offsets.py": "2c80a760a562aad5fb8fa33848729a6ae0acad4683e0fa5123928956cbc03ec5"
+  },
+  "interface": "analyze_accumulators(prefix500_payload, full1000_payload, inventories) -> descriptive JSON; load_verified_run(run_dir) authenticates actual files",
+  "quantiles_descriptive_only": [
+    50,
+    75
+  ],
+  "threshold_selected": null,
+  "pass_criteria_defined": false,
+  "root_validation": {
+    "tests_passed": 5,
+    "seconds": 0.115,
+    "all_source_hashes_verified": true,
+    "actual_fi_analyzed": false,
+    "review": "Verified raw-sum disjoint subtraction before actual-count normalization, per-pool fixed-policy selection, average-rank correlations, undefined constant cases, file lineage checks and synthetic reversal regression."
+  }
+}
