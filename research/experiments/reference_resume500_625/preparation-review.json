@@ -1,0 +1,149 @@
+{
+  "prepared_utc": "2026-09-21T04:38:12.573816+00:00",
+  "scope": "Stdlib-only source/config/package checks and streamed input hashes; no model imports or loads",
+  "training_launched": false,
+  "output_directory_exists": false,
+  "torch_imported": false,
+  "preflight": {
+    "checks": {
+      "provenance": {
+        "status": "pass",
+        "run": "research/runs/reference256-paper-b64",
+        "checked_files": 32,
+        "torch_version": "2.14.0",
+        "baseline_recorded_at_utc": "2026-09-20T23:09:12.824186+00:00"
+      },
+      "pinned_files": 11,
+      "dataset_count": 110,
+      "dataset_sha256": "3a6e258a9b9ddae8d415b70c3be540ff39cf44e8a37d80ab71540058f1ee0553",
+      "torch_imported": false
+    },
+    "command": [
+      "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python",
+      "-u",
+      "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_phases/trainer.py",
+      "--run",
+      "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/reference256-paper-b64-resumed500-to625",
+      "--resume",
+      "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/reference256-paper-b64/resume-000500.pt",
+      "--data",
+      "/Users/twixes/Developer/thispriestdoesnotexist/research/alignment/collar-only/eyes42",
+      "--base",
+      "/Users/twixes/Developer/thispriestdoesnotexist/research/models/ffhq256.pkl",
+      "--device",
+      "mps",
+      "--threads",
+      "2",
+      "--batch",
+      "64",
+      "--microbatch",
+      "8",
+      "--pl-batch-shrink",
+      "2",
+      "--mirror",
+      "--freeze-d-layers",
+      "0",
+      "--lr",
+      "0.0025",
+      "--r1-gamma",
+      "1",
+      "--ema-kimg",
+      "20",
+      "--augment-p",
+      "0",
+      "--ada-target",
+      "0.6",
+      "--ada-kimg",
+      "100",
+      "--seed",
+      "20260920",
+      "--steps",
+      "625",
+      "--checkpoint-every",
+      "125",
+      "--snapshot-every",
+      "125"
+    ],
+    "training_launched": false
+  },
+  "execution_gate_current_state": {
+    "status": "refused_before_launch",
+    "reason": "[Errno 2] No such file or directory: '/Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-factorial-600/comparison.json'"
+  },
+  "new_confirmed_training_correctness_bug": false,
+  "review": "README.md",
+  "metrics_read_only": {
+    "steps": [
+      2,
+      500
+    ],
+    "rows": 499,
+    "nonfinite_logged_numbers": 0,
+    "step500_augment_p": 0.2124800980091095,
+    "step500_pl_mean": 0.30419355630874634,
+    "last32_real_sign_mean": 0.76904296875,
+    "limitation": "No direct gradient-health or held-out-quality conclusion"
+  },
+  "files_sha256": {
+    "research/experiments/reference_resume500_625/launch.py": "5365e8e576d89733cb220a0f7aabe223b58b573f490765f925e0ee125365a1ef",
+    "research/experiments/reference_resume500_625/pins.json": "4ba045ee28c3d6eee6a8545ca9abb499cfd2bf772a294860b977867d1681ed34",
+    "research/experiments/reference_resume500_625/README.md": "696473ab52bc7c4f585abf20f5235287c864986cd280af3905f9a08f8a7861f1",
+    "research/experiments/reference_resume500_625/preflight-check.json": "90af11a9cc6cd18864112932446393127e877ef3ea5400747403eaaf4975af26",
+    "research/reviews/reference-trainer-audit.md": "daef068526d71063959f1de0ff9db926aaea3d5d462c8383630e122e0534362f",
+    "research/runs/reference256-paper-b64/config.json": "0576aec7d45958bfcb510b3d817a81d045408bc042039669bcbfe608f3cf1039",
+    "research/vendor/stylegan2-ada-pytorch/train.py": "269f2073481ab269560ff76d4a866ac98656a494884c3ad0edcf8cc99d9e4c24",
+    "research/vendor/stylegan2-ada-pytorch/training/training_loop.py": "0b589a731712c51791eb22efe0dc1ee6856bf3e9335920db02a3e38dee909eb3",
+    "research/experiments/reference_resume500_625/test_lifecycle.py": "04f25d5918869fca33ee8a0d4c426b4641e846c586c63eb4101911508c647657"
+  },
+  "requires_root_source_review_before_execution": true,
+  "production_approved": false,
+  "harmless_lifecycle_tests": {
+    "passed": true,
+    "source_sha256": "5365e8e576d89733cb220a0f7aabe223b58b573f490765f925e0ee125365a1ef",
+    "scenarios": [
+      {
+        "scenario": "write_failure",
+        "coordinator_exit_code": 1,
+        "child_reaped_returncode": -9,
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true
+      },
+      {
+        "scenario": "sigint",
+        "coordinator_exit_code": -2,
+        "child_reaped_returncode": -9,
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true
+      },
+      {
+        "scenario": "sigterm",
+        "coordinator_exit_code": 143,
+        "child_reaped_returncode": -9,
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true
+      },
+      {
+        "scenario": "deadline",
+        "coordinator_exit_code": 1,
+        "child_reaped_returncode": -9,
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true
+      }
+    ],
+    "wall_seconds": 1.6063428330235183,
+    "real_model_imports_or_loads": false,
+    "evidence_sha256": "4013f0ded3751b1cf5c2536746943759cf6b1a8b0555dffa8847c784fdeecadd"
+  }
+}

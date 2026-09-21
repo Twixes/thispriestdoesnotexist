@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "tested_source": "research/experiments/reference_resume500_625/launch.py",
+  "source_sha256": "5365e8e576d89733cb220a0f7aabe223b58b573f490765f925e0ee125365a1ef",
+  "harness_sha256": "04f25d5918869fca33ee8a0d4c426b4641e846c586c63eb4101911508c647657",
+  "wall_seconds": 1.6063428330235183,
+  "source_unchanged": true,
+  "real_launcher_commands_executed": false,
+  "real_model_imports_or_loads": false,
+  "fixture_policy": "Temporary fake run/provenance, fake memory guard; Popen substitutes only harmless Python sleep group. Continuation main/cleanup/wait/signal handlers are real unmodified code.",
+  "results": [
+    {
+      "scenario": "write_failure",
+      "passed": true,
+      "wall_seconds": 0.061850542086176574,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 25846,
+        "pgid": 25846,
+        "grandchild_pid": 25848
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "OSError('Injected record-write failure after dummy spawn')",
+      "only_one_dummy_spawned": true,
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/test_lifecycle.py\", line 166, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/test_lifecycle.py\", line 79, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/launch.py\", line 130, in main\n    write(OUTPUT / 'launch.json', record)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/test_lifecycle.py\", line 73, in fail_after_spawn\n    raise OSError('Injected record-write failure after dummy spawn')\nOSError: Injected record-write failure after dummy spawn\n"
+    },
+    {
+      "scenario": "sigint",
+      "passed": true,
+      "wall_seconds": 0.3831508330767974,
+      "coordinator_exit_code": -2,
+      "dummy_pids": {
+        "pid": 25850,
+        "pgid": 25850,
+        "grandchild_pid": 25851
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "KeyboardInterrupt()",
+      "only_one_dummy_spawned": true,
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/test_lifecycle.py\", line 166, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/test_lifecycle.py\", line 79, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/launch.py\", line 131, in main\n    code = process.wait(timeout=max(0, MAX_SECONDS - (time.monotonic() - started)))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/subprocess.py\", line 1264, in wait\n    return self._wait(timeout=timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/subprocess.py\", line 2047, in _wait\n    time.sleep(delay)\nKeyboardInterrupt\n"
+    },
+    {
+      "scenario": "sigterm",
+      "passed": true,
+      "wall_seconds": 0.0663592501077801,
+      "coordinator_exit_code": 143,
+      "dummy_pids": {
+        "pid": 25854,
+        "pgid": 25854,
+        "grandchild_pid": 25855
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "SystemExit(143)",
+      "only_one_dummy_spawned": true,
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": ""
+    },
+    {
+      "scenario": "deadline",
+      "passed": true,
+      "wall_seconds": 1.091536583029665,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 25857,
+        "pgid": 25857,
+        "grandchild_pid": 25858
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "TimeoutExpired(['/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python', '/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/test_lifecycle.py', '--dummy', '/var/folders/3x/clqbt75x14s8_5hbp72b59980000gn/T/priest-recovery-lifecycle-nojz2mf_'], 0.9678752500331029)",
+      "only_one_dummy_spawned": true,
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/test_lifecycle.py\", line 166, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/test_lifecycle.py\", line 79, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/launch.py\", line 131, in main\n    code = process.wait(timeout=max(0, MAX_SECONDS - (time.monotonic() - started)))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/subprocess.py\", line 1264, in wait\n    return self._wait(timeout=timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/subprocess.py\", line 2045, in _wait\n    raise TimeoutExpired(self.args, timeout)\nsubprocess.TimeoutExpired: Command '['/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python', '/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_resume500_625/test_lifecycle.py', '--dummy', '/var/folders/3x/clqbt75x14s8_5hbp72b59980000gn/T/priest-recovery-lifecycle-nojz2mf_']' timed out after 0.9678752500331029 seconds\n"
+    }
+  ]
+}
