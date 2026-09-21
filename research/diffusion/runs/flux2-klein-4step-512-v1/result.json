@@ -1,0 +1,196 @@
+{
+  "complete": true,
+  "model": "flux2-klein-4b",
+  "revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+  "steps": 4,
+  "native_resolution": 512,
+  "device": "Apple M5 Pro MPS",
+  "dtype": "bfloat16",
+  "scheduler": {
+    "num_train_timesteps": 1000,
+    "shift": 3.0,
+    "use_dynamic_shifting": true,
+    "base_shift": 0.5,
+    "max_shift": 1.15,
+    "base_image_seq_len": 256,
+    "max_image_seq_len": 4096,
+    "invert_sigmas": false,
+    "shift_terminal": null,
+    "use_karras_sigmas": false,
+    "use_exponential_sigmas": false,
+    "use_beta_sigmas": false,
+    "time_shift_type": "exponential",
+    "stochastic_sampling": false,
+    "_class_name": "FlowMatchEulerDiscreteScheduler",
+    "_diffusers_version": "0.37.0.dev0"
+  },
+  "server_latency_proven": false,
+  "post_trained": false,
+  "all_outputs_included": true,
+  "prompt_embeddings_cached": true,
+  "load_seconds": 1.3580793329747394,
+  "records": [
+    {
+      "index": -1,
+      "seed": 202609213999,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "warmup": true,
+      "generation_seconds": 2.5148999580414966,
+      "encoding_seconds": 0.01713079202454537,
+      "noise_generation_seconds": 0.0008377920603379607,
+      "noise_included_in_generation_seconds": true,
+      "generation_plus_encoding_seconds": 2.532030750066042,
+      "mps_driver_allocated_bytes": 9864740864,
+      "prompt_embedding_cache_used": true,
+      "files": {
+        "native.png": "9f184e536cfb02ac13db15bb2d243d1ad11b16d3bf3b624b9c6d3f858806051e",
+        "display.webp": "70cfa01fbea8d6ebbbb7d38b5c245fa559cc758dfad2f9b58bb26bd0a92d6588",
+        "noise.npz": "10f35485ab4046b08a66c333899ff0a246d521b6cd75990226b56ec4edb61268"
+      }
+    },
+    {
+      "index": 0,
+      "seed": 202609214000,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "warmup": false,
+      "generation_seconds": 2.4916350829880685,
+      "encoding_seconds": 0.012485833023674786,
+      "noise_generation_seconds": 0.0009150829864665866,
+      "noise_included_in_generation_seconds": true,
+      "generation_plus_encoding_seconds": 2.5041209160117432,
+      "mps_driver_allocated_bytes": 9864740864,
+      "prompt_embedding_cache_used": true,
+      "files": {
+        "native.png": "1069cc92cb5deeb1a04c9c5474e952fb940104672d617b75449587d36293456d",
+        "display.webp": "37dbadb1412490412e1180b597ac91c9f9c72d2258d26fdbb985e1e6482d3720",
+        "noise.npz": "87a962276e3879d57bcb0f14072b985990c7c84cb987939093313eafa7423779"
+      }
+    },
+    {
+      "index": 1,
+      "seed": 202609214001,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "warmup": false,
+      "generation_seconds": 3.702694582985714,
+      "encoding_seconds": 0.012660125037655234,
+      "noise_generation_seconds": 0.0008231659885495901,
+      "noise_included_in_generation_seconds": true,
+      "generation_plus_encoding_seconds": 3.7153547080233693,
+      "mps_driver_allocated_bytes": 9864740864,
+      "prompt_embedding_cache_used": true,
+      "files": {
+        "native.png": "4b675bf0e56bab2a03ff933b516290618d14cfe9aed6c01a67304708d5b92499",
+        "display.webp": "155046e1825d79e8ffced1ba9001e58d4715180e7a2ceb8bf33fe28f4f9cd3cc",
+        "noise.npz": "9451a971bb148cea626e15c261a0992939a5bd0ec57f656b73a15619646032cd"
+      }
+    },
+    {
+      "index": 2,
+      "seed": 202609214002,
+      "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+      "warmup": false,
+      "generation_seconds": 3.4742024590959772,
+      "encoding_seconds": 0.012306374963372946,
+      "noise_generation_seconds": 0.0008850420126691461,
+      "noise_included_in_generation_seconds": true,
+      "generation_plus_encoding_seconds": 3.48650883405935,
+      "mps_driver_allocated_bytes": 9864740864,
+      "prompt_embedding_cache_used": true,
+      "files": {
+        "native.png": "e5f3342a11082fc6639bdb967d4e5c8a73b24dc99cbc75a3c3d2d90af4cdff27",
+        "display.webp": "682742828e951a42548641ed9e71f84d9db244305479f12b5e050d0d64bb742c",
+        "noise.npz": "75527483f6ac6e814eac3c0a113c5928d258188fc882dcbd132238d0ccc92c30"
+      }
+    },
+    {
+      "index": 3,
+      "seed": 202609214003,
+      "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+      "warmup": false,
+      "generation_seconds": 3.6967255419585854,
+      "encoding_seconds": 0.011881333077326417,
+      "noise_generation_seconds": 0.0009291669121012092,
+      "noise_included_in_generation_seconds": true,
+      "generation_plus_encoding_seconds": 3.708606875035912,
+      "mps_driver_allocated_bytes": 9864740864,
+      "prompt_embedding_cache_used": true,
+      "files": {
+        "native.png": "c55085af60e9e7bb259bfbfccb37bc842f1d9026aac45397631bd6fc92f37ed1",
+        "display.webp": "50ad63c617d032dca163adc7d78f9526f18fc88039b9045eab46e97339fc8fec",
+        "noise.npz": "8826b1b688585ddffed50e1aff1aa0aabdeaf7261d1f4a2216c50d1d460613a5"
+      }
+    },
+    {
+      "index": 4,
+      "seed": 202609214004,
+      "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+      "warmup": false,
+      "generation_seconds": 3.598898999975063,
+      "encoding_seconds": 0.010725040920078754,
+      "noise_generation_seconds": 0.0008353330194950104,
+      "noise_included_in_generation_seconds": true,
+      "generation_plus_encoding_seconds": 3.6096240408951417,
+      "mps_driver_allocated_bytes": 9864740864,
+      "prompt_embedding_cache_used": true,
+      "files": {
+        "native.png": "0d848c7ea1e7eb6c1618e65da966b52820d7a446b7b8f87a8edd279e8537860c",
+        "display.webp": "ecd8e6d1452430b8258ca6de33fba6931bb774bd2e0aef22116f953280348ae5",
+        "noise.npz": "81dc7cc9d0c6be01711d6572c0269defe08ccd12b2b59c3a3e571694afbeb464"
+      }
+    },
+    {
+      "index": 5,
+      "seed": 202609214005,
+      "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+      "warmup": false,
+      "generation_seconds": 3.671898917062208,
+      "encoding_seconds": 0.010735083022154868,
+      "noise_generation_seconds": 0.0008228330407291651,
+      "noise_included_in_generation_seconds": true,
+      "generation_plus_encoding_seconds": 3.682634000084363,
+      "mps_driver_allocated_bytes": 9864740864,
+      "prompt_embedding_cache_used": true,
+      "files": {
+        "native.png": "c4341227b975abfe4085ce6ae5ed0a58e97410e05249f0c55e7e762e3859b787",
+        "display.webp": "7ff861cc8f9c65e93dbe59bc51439041c0cbe2195605dffdb3f9dbfcb90d17f1",
+        "noise.npz": "d4e32c67f4223b18cdc2db41383552f2d1c28714847e6bca4645784d742c3024"
+      }
+    },
+    {
+      "index": 6,
+      "seed": 202609214006,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+      "warmup": false,
+      "generation_seconds": 3.5622208749409765,
+      "encoding_seconds": 0.01266645803116262,
+      "noise_generation_seconds": 0.0007882079808041453,
+      "noise_included_in_generation_seconds": true,
+      "generation_plus_encoding_seconds": 3.574887332972139,
+      "mps_driver_allocated_bytes": 9864740864,
+      "prompt_embedding_cache_used": true,
+      "files": {
+        "native.png": "bbf831e7ecb716e78d4857646f138205617bdff73b6e62348cdcaf76cde2bf9f",
+        "display.webp": "bd16e95a4d851ac6e6ed91f04509cd02714c9f73106faee283fc6240f03404e8",
+        "noise.npz": "53351da64600c484fce06885e2c409762d5fd14653ea3fbad509bd4842b6c6fd"
+      }
+    },
+    {
+      "index": 7,
+      "seed": 202609214007,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+      "warmup": false,
+      "generation_seconds": 3.5355395841179416,
+      "encoding_seconds": 0.012621124973520637,
+      "noise_generation_seconds": 0.0009049170184880495,
+      "noise_included_in_generation_seconds": true,
+      "generation_plus_encoding_seconds": 3.548160709091462,
+      "mps_driver_allocated_bytes": 9864740864,
+      "prompt_embedding_cache_used": true,
+      "files": {
+        "native.png": "55d8c392397108edb0e5d500210adeb83a6fb138739dc72a7e6fa9b6528a11b4",
+        "display.webp": "c6af47eef764344e5e1aeb2e3eb078512ff56ae6b80c32ea2b5cd452528fdc24",
+        "noise.npz": "9fcb6f91e6a40eb42d3731f5ea25e1026d353dc5efd860a8c1a152b3f529803c"
+      }
+    }
+  ]
+}

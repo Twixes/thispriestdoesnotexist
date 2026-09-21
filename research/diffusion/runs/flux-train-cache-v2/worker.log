@@ -1,0 +1,16 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 398/398 [00:00<00:00, 25599.73it/s]
+Loading pipeline components...:  67%|██████▋   | 2/3 [00:00<00:00,  8.30it/s]Loading pipeline components...: 100%|██████████| 3/3 [00:00<00:00, 12.13it/s]
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/cache_flux_training.py", line 152, in <module>
+    main()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/cache_flux_training.py", line 108, in main
+    return worker(output)
+           ^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/cache_flux_training.py", line 65, in worker
+    guard(f"encoded_{index}")
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/cache_flux_training.py", line 34, in guard
+    raise MemoryError(record)
+MemoryError: {'phase': 'encoded_0', 'rss_bytes': 527007744, 'mps_driver_bytes': 9387589632, 'available_fraction': 0.22652594248453775}

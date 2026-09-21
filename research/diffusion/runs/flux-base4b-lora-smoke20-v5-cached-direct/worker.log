@@ -1,0 +1,40 @@
+09/21/2026 10:47:09 - INFO - __main__ - [RANK 0] Distributed environment: DistributedType.NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: mps
+
+Mixed precision type: fp16
+
+{'decoder_block_out_channels'} was not found in config. Values will be initialized to default values.
+All model checkpoint weights were used when initializing AutoencoderKLFlux2.
+
+All the weights of AutoencoderKLFlux2 were initialized from the model checkpoint at /Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/models/flux2-klein-base-4b.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use AutoencoderKLFlux2 for predictions without further training.
+Instantiating Flux2Transformer2DModel model under default dtype torch.float16.
+All model checkpoint weights were used when initializing Flux2Transformer2DModel.
+
+All the weights of Flux2Transformer2DModel were initialized from the model checkpoint at /Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/models/flux2-klein-base-4b.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Flux2Transformer2DModel for predictions without further training.
+There are modules in Flux2Transformer2DModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/vendor/flux-train/run_training_cached.py", line 1966, in <module>
+    main(args)
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/vendor/flux-train/run_training_cached.py", line 1589, in main
+    accelerator.init_trackers(tracker_name, config=args_cp)
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/lib/python3.11/site-packages/accelerate/accelerator.py", line 910, in _inner
+    return PartialState().on_main_process(function)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/lib/python3.11/site-packages/accelerate/accelerator.py", line 3363, in init_trackers
+    tracker.store_init_configuration(config)
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/lib/python3.11/site-packages/accelerate/tracking.py", line 91, in execute_on_main_process
+    return PartialState().on_main_process(function)(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/lib/python3.11/site-packages/accelerate/tracking.py", line 230, in store_init_configuration
+    self.writer.add_hparams(values, metric_dict={})
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/lib/python3.11/site-packages/torch/utils/tensorboard/writer.py", line 335, in add_hparams
+    exp, ssi, sei = hparams(hparam_dict, metric_dict, hparam_domain_discrete)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/lib/python3.11/site-packages/torch/utils/tensorboard/summary.py", line 318, in hparams
+    raise ValueError(
+ValueError: value should be one of int, float, str, bool, or torch.Tensor

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": 20,
+    "validation": 5,
+    "test": 5
+  },
+  "verified_image_hashes": 30,
+  "unique_native_sha256": 30,
+  "split_overlap": false,
+  "known_family_cross_split": false,
+  "manifest_sha256": "6796be940a10610843c154c7063b3bb907d0ffab18e014737c6abc6f02ee340b",
+  "checks": [
+    "original/native/destination byte hashes",
+    "caption and metadata hashes",
+    "annotations/review/build/source manifest hashes",
+    "split membership and file inventory",
+    "no excluded IDs",
+    "Python syntax"
+  ],
+  "production_approved": false
+}

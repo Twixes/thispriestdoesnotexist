@@ -1,0 +1,74 @@
+{
+  "outcome": "Local FLUX adaptation compatibility not established; no optimizer updates completed.",
+  "pretrained_comparison_complete": true,
+  "pretrained_bases": 4,
+  "comparison_configurations": 8,
+  "comparison_images": 64,
+  "local_smoke_attempts": [
+    {
+      "run": "flux-base4b-lora-smoke20-v1",
+      "exit_code": 1,
+      "failure": null,
+      "seconds": 3.0267309999326244,
+      "peak_sampled_rss_bytes": 388710400,
+      "quality_not_established": true,
+      "production_approved": false,
+      "completed_optimizer_updates": 0
+    },
+    {
+      "run": "flux-base4b-lora-smoke20-v2",
+      "exit_code": -15,
+      "failure": "Available system memory below25%",
+      "seconds": 13.539393875049427,
+      "peak_sampled_rss_bytes": 11030495232,
+      "quality_not_established": true,
+      "production_approved": false,
+      "completed_optimizer_updates": 0
+    },
+    {
+      "run": "flux-base4b-lora-smoke20-v3-cached",
+      "exit_code": 1,
+      "failure": null,
+      "seconds": 2.013592957984656,
+      "peak_sampled_rss_bytes": 384335872,
+      "quality_not_established": true,
+      "production_approved": false,
+      "completed_optimizer_updates": 0
+    },
+    {
+      "run": "flux-base4b-lora-smoke20-v4-cached",
+      "exit_code": -15,
+      "failure": "Available system memory below20%",
+      "seconds": 12.51306691695936,
+      "peak_sampled_rss_bytes": 16151085056,
+      "quality_not_established": true,
+      "production_approved": false,
+      "completed_optimizer_updates": 0
+    },
+    {
+      "run": "flux-base4b-lora-smoke20-v5-cached-direct",
+      "exit_code": 1,
+      "failure": null,
+      "seconds": 8.07463250006549,
+      "peak_sampled_rss_bytes": 4937138176,
+      "quality_not_established": true,
+      "production_approved": false,
+      "completed_optimizer_updates": 0
+    },
+    {
+      "run": "flux-base4b-lora-smoke20-v6-cached-direct",
+      "exit_code": -15,
+      "failure": "Available system memory below20%",
+      "seconds": 16.984953666920774,
+      "peak_sampled_rss_bytes": 8512897024,
+      "quality_not_established": true,
+      "production_approved": false,
+      "completed_optimizer_updates": 0
+    }
+  ],
+  "paid_compute_launched": false,
+  "production_approved": false,
+  "next_decision": "Keep SDXL-Turbo512 as practical speed/appearance leader; assess its adaptation path. Retain documented FLUX base-to-distilled adapter route for a bounded dedicatedGPU test if warranted. Do not further relax local memory guards.",
+  "cache": "flux-train-cache-v3 completed20 captions+20 VAE latents in11.60s; nativeBF16Qwen finiteoutputs castFP16; upstream exact image transforms.",
+  "limits": "Final cacheddirectMPS run loaded all20inputs, then availablememory fell below20% on firstforward under current desktop conditions. This is not a claim that48GB hardware universally cannot train this model."
+}

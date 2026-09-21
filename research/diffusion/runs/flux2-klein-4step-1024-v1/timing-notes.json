@@ -1,0 +1,20 @@
+{
+  "scope": "Clarification only: original protocol/source/results remain unchanged.",
+  "source_sha256": "2cf28939650326afe58fa12c7bbbbd76cee80e14261ef739f355a941b77f3f93",
+  "protocol_sha256": "e92cf75c394fc3a90848c2c2ee45ad42dc13b1a1df517f993affcb4464f45102",
+  "result_sha256": "b29281f287442c29d3f25ec56384382cb1bc6bd2adcbc2eb25bf9e4aecea43a2",
+  "original_protocol_timing_scope": "Fresh noise to PIL image plus monochrome WebP; excludes fixed-prompt initialization, load, warmup, HTTP, queueing and any future quality gates",
+  "correction": "The statement fresh noise to PIL overstates the timed scope. CPU torch.randn noise creation occurs before the timer; its duration was not measured in this run.",
+  "actually_timed_generation": "Starts immediately before pipeline call; includes CPU-to-MPS transfer/cast of already-created noise, four denoising steps, VAE decode, conversion to PIL and MPS synchronization. Fixed prompt embedding construction and model load are separate initialization.",
+  "actually_timed_encoding": "Monochrome conversion and WebP encoding only; diagnostic nativePNG save is outside both measured intervals.",
+  "summed_total": "generation_plus_encoding_seconds sums two intervals separated by an untimed diagnosticPNGwrite. It is a component sum, not continuous full-request wallclock. CPU noise creation, NPZwrite, output-file hashing/record writes, HTTP, queueing, coldstart and future quality gates are not included.",
+  "cpu_noise_creation_seconds": null,
+  "missing_cpu_noise_cost_can_be_recovered_from_this_run": false,
+  "model_initialization_file": "initialization.json",
+  "nonwarmup_samples": 8,
+  "median_recorded_generation_seconds": 10.455603624985088,
+  "median_recorded_component_sum_seconds": 10.506753583496902,
+  "server_latency_proven": false,
+  "gpu_hosting_sub500ms_proven": false,
+  "resource_measurement_limit": "Run used only per-denoising-step MPSdriver checks; text encoding and VAEdecode peak allocation were not independently sampled. External supervisor RSS is not totalMPSdriver memory. Recorded post-image allocation is not peakallocation."
+}

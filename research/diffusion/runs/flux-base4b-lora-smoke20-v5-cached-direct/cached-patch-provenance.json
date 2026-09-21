@@ -1,0 +1,41 @@
+{
+  "source_training_sha256": "66785e3bad79b22c03e1554edfb9f0c5ebda4c17b2337e72a87f1c476e77912b",
+  "files": {
+    "run_training_cached.py": "8039d288de2d571069c250ffaa1ab7cc9ade725129314f123aa88f6056fb465f",
+    "smoke_guards_cached.py": "8ce50c08011347ede6ac5d6dd6ac8025fd5a5b362d8da65173d339d402014fd3",
+    "priest_cache.py": "02ce40f6f91ef0063c5cc6d28baec0530d9233508d27143d35d8941b1539d3af",
+    "cached.patch": "cd29875d8196ed98324939b3e27728f8fe9c3a1a46c0f1278028233d0ca449ff"
+  },
+  "purpose": "Preserve20step smoke math while removing simultaneous Qwen/transformer residency.",
+  "cache_contract": {
+    "manifest": "complete, dataset_manifest_sha256, resolution, max_sequence_length, text_encoder_out_layers, entries",
+    "entries": "file_name, caption, path, sha256",
+    "safetensor_keys": {
+      "prompt_embeds": "FP16[1,512,7680]",
+      "text_ids": "[1,512,4], retain originaldtype",
+      "latents": "FP16[1,32,64,64] raw VAE mode before patchify/BN at512"
+    }
+  },
+  "base_normalization": "Load original VAE inFP32 only to derive unchanged BN mean/std, then delete before transformer load.",
+  "transformer_loading": {
+    "device_map": {
+      "": "mps"
+    },
+    "low_cpu_mem_usage": true,
+    "torch_dtype": "existing weight_dtype (FP16 for smoke)",
+    "reason": "Avoid complete CPU FP16 transformer allocation before MPS placement; failed v4 source and run retained.",
+    "api_review": "Installed Diffusers modeling_utils.py uses meta initialization and per-tensor device placement; Accelerate verify_device_map only flags maps with more than one entry.",
+    "remaining_transient": "Diffusers allocator warmup temporarily allocates half the model element count on MPS; unchanged resource guards remain required."
+  },
+  "cached_phase_resource_policy": {
+    "minimum_system_available_fraction": 0.2,
+    "maximum_rss_gib": 24,
+    "maximum_mps_driver_gib": 22,
+    "maximum_swap_growth_mib": 512,
+    "reason": "Explicit measured-policy revision approved by root after BF16encoder observed8.74GiBdriver/0.49GiBRSS yet psutilavailability22.65%; original25%attempts retained."
+  },
+  "cache_numerical_note": "Root precomputation uses nativeBF16 frozenQwen then finiteFP16cast, VAE FP16 mode; not claimed equivalent to all-FP16Qwen encoding.",
+  "training_objective_changed": false,
+  "training_executed": false,
+  "production_approved": false
+}

@@ -1,0 +1,46 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/3 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 1/3 [00:00<00:00,  6.55it/s]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 398/398 [00:00<00:00, 27996.73it/s]
+Loading pipeline components...: 100%|██████████| 3/3 [00:00<00:00, 12.96it/s]Loading pipeline components...: 100%|██████████| 3/3 [00:00<00:00, 11.80it/s]
+Encoded prompt 1/20
+Encoded prompt 2/20
+Encoded prompt 3/20
+Encoded prompt 4/20
+Encoded prompt 5/20
+Encoded prompt 6/20
+Encoded prompt 7/20
+Encoded prompt 8/20
+Encoded prompt 9/20
+Encoded prompt 10/20
+Encoded prompt 11/20
+Encoded prompt 12/20
+Encoded prompt 13/20
+Encoded prompt 14/20
+Encoded prompt 15/20
+Encoded prompt 16/20
+Encoded prompt 17/20
+Encoded prompt 18/20
+Encoded prompt 19/20
+Encoded prompt 20/20
+There are modules in AutoencoderKLFlux2 that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Encoded image 1/20
+Encoded image 2/20
+Encoded image 3/20
+Encoded image 4/20
+Encoded image 5/20
+Encoded image 6/20
+Encoded image 7/20
+Encoded image 8/20
+Encoded image 9/20
+Encoded image 10/20
+Encoded image 11/20
+Encoded image 12/20
+Encoded image 13/20
+Encoded image 14/20
+Encoded image 15/20
+Encoded image 16/20
+Encoded image 17/20
+Encoded image 18/20
+Encoded image 19/20
+Encoded image 20/20

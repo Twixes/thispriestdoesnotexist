@@ -16,6 +16,8 @@ RUNS = [
     ('sdxl-lightning-2step-1024-v1', 'SDXL Lightning · 2 steps'),
     ('sdxl-lightning-2step-512-v1', 'SDXL Lightning · 2 steps · 512px'),
     ('sdxl-turbo-1step-1024-v1', 'SDXL Turbo · 1 step · 1024px'),
+    ('flux2-klein-4step-1024-v1', 'FLUX.2 klein · 4 steps · 1024px'),
+    ('flux2-klein-4step-512-v1', 'FLUX.2 klein · 4 steps · 512px'),
 ]
 
 def sha(path):
@@ -56,6 +58,7 @@ def main():
                        'native_resolution':result['native_resolution'],'device':result['device'],
                        'result_url':relative(result_path),'result_sha256':sha(result_path),
                        'post_trained':result.get('post_trained',False),'server_latency_proven':result.get('server_latency_proven',False),
+                       'prompt_embeddings_cached':result.get('prompt_embeddings_cached',False),
                        'median_combined_ms':statistics.median(times),'max_combined_ms':max(times),
                        'median_generation_ms':statistics.median(r['generation_ms'] for r in entries),
                        'median_encoding_ms':statistics.median(r['encoding_ms'] for r in entries),
@@ -71,7 +74,8 @@ def main():
     (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     headers=[]
     for model in models:
-        headers.append(f'''<th scope="col"><strong>{html.escape(model['title'])}</strong><span>{model['native_resolution']} × {model['native_resolution']} native</span><span class="timing">{model['median_combined_ms']:.0f} ms median · {model['max_combined_ms']:.0f} ms max</span><small>Generation {model['median_generation_ms']:.0f} ms + WebP {model['median_encoding_ms']:.0f} ms<br>Local MPS medians, eight warm samples</small></th>''')
+        cache_note = '<br>Fixed prompt embeddings cached; every image generated fresh' if model['prompt_embeddings_cached'] else '<br>Includes text encoding per image'
+        headers.append(f'''<th scope="col"><strong>{html.escape(model['title'])}</strong><span>{model['native_resolution']} × {model['native_resolution']} native</span><span class="timing">{model['median_combined_ms']:.0f} ms median · {model['max_combined_ms']:.0f} ms max</span><small>Generation {model['median_generation_ms']:.0f} ms + WebP {model['median_encoding_ms']:.0f} ms<br>Local MPS medians, eight warm samples{cache_note}</small></th>''')
     body=[]
     for i in range(8):
         entry=models[0]['entries'][i]

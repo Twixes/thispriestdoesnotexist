@@ -1,0 +1,256 @@
+{
+  "observed_at_utc": "2026-09-21T07:37:51.781186+00:00",
+  "scope": "Primary source and pinned metadata inspection only. No weights downloaded, model loaded or resources purchased.",
+  "models": [
+    {
+      "model_id": "black-forest-labs/FLUX.2-klein-4B",
+      "revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+      "role": "next_quality_and_latency_candidate",
+      "license_metadata": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/black-forest-labs/FLUX.2-klein-4B/revision/e7b7dc27f91deacad38e78976d1f2b499d76a294?blobs=true",
+      "diffusers_weight_files": [
+        {
+          "rfilename": "text_encoder/model-00001-of-00002.safetensors",
+          "blobId": "7d53e0b41e362367b871a196418998993ca5f5c7",
+          "size": 4967215360,
+          "lfs": {
+            "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea",
+            "size": 4967215360,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "text_encoder/model-00002-of-00002.safetensors",
+          "blobId": "2ad5d9638d4cfb714242e21c74e7c152103bdd05",
+          "size": 3077766632,
+          "lfs": {
+            "sha256": "82f2bd839378541b0557bfabaf37c7d3d637071fdcb73302dedd7cf61162ce07",
+            "size": 3077766632,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "transformer/diffusion_pytorch_model.safetensors",
+          "blobId": "31f2956c304ed56f3411305559c78db615beb577",
+          "size": 7751109744,
+          "lfs": {
+            "sha256": "9f29f9edcfdae452a653ffb51a534ca4decd389952c225724ff3b94042612a6e",
+            "size": 7751109744,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "vae/diffusion_pytorch_model.safetensors",
+          "blobId": "0654e1768dc02cdd4859d2a3548a80102252cc5d",
+          "size": 168120878,
+          "lfs": {
+            "sha256": "ca70d2202afe6415bdbcb8793ba8cd99fd159cfe6192381504d6c4d3036e0f04",
+            "size": 168120878,
+            "pointerSize": 134
+          }
+        }
+      ],
+      "component_bytes": {
+        "transformer": 7751109744,
+        "text_encoder": 8044981992,
+        "vae": 168120878
+      },
+      "diffusers_weight_bytes_total": 15964212614,
+      "top_level_alternate_weight_excluded": true,
+      "weights_downloaded": false
+    },
+    {
+      "model_id": "black-forest-labs/FLUX.2-klein-base-4B",
+      "revision": "a3b4f4849157f664bdbc776fd7453c2783562f4d",
+      "role": "post_training_teacher_base",
+      "license_metadata": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/black-forest-labs/FLUX.2-klein-base-4B/revision/a3b4f4849157f664bdbc776fd7453c2783562f4d?blobs=true",
+      "diffusers_weight_files": [
+        {
+          "rfilename": "text_encoder/model-00001-of-00002.safetensors",
+          "blobId": "7d53e0b41e362367b871a196418998993ca5f5c7",
+          "size": 4967215360,
+          "lfs": {
+            "sha256": "8c0506e7f4936fa7e26183a4fd8da4e2bdbc5990ba64ae441f965d51228f36ea",
+            "size": 4967215360,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "text_encoder/model-00002-of-00002.safetensors",
+          "blobId": "2ad5d9638d4cfb714242e21c74e7c152103bdd05",
+          "size": 3077766632,
+          "lfs": {
+            "sha256": "82f2bd839378541b0557bfabaf37c7d3d637071fdcb73302dedd7cf61162ce07",
+            "size": 3077766632,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "transformer/diffusion_pytorch_model.safetensors",
+          "blobId": "2a29b6aff396f0f6ec23bf0499fab363c58e308f",
+          "size": 7751109744,
+          "lfs": {
+            "sha256": "e109674697ffa1a3983126e32512f5428a9442bd8df59f9c95566ee90a473bb6",
+            "size": 7751109744,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "vae/diffusion_pytorch_model.safetensors",
+          "blobId": "0654e1768dc02cdd4859d2a3548a80102252cc5d",
+          "size": 168120878,
+          "lfs": {
+            "sha256": "ca70d2202afe6415bdbcb8793ba8cd99fd159cfe6192381504d6c4d3036e0f04",
+            "size": 168120878,
+            "pointerSize": 134
+          }
+        }
+      ],
+      "component_bytes": {
+        "transformer": 7751109744,
+        "text_encoder": 8044981992,
+        "vae": 168120878
+      },
+      "diffusers_weight_bytes_total": 15964212614,
+      "top_level_alternate_weight_excluded": true,
+      "weights_downloaded": false
+    },
+    {
+      "model_id": "Tongyi-MAI/Z-Image-Turbo",
+      "revision": "f332072aa78be7aecdf3ee76d5c247082da564a6",
+      "role": "second_modern_quality_comparator",
+      "license_metadata": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/Tongyi-MAI/Z-Image-Turbo/revision/f332072aa78be7aecdf3ee76d5c247082da564a6?blobs=true",
+      "diffusers_weight_files": [
+        {
+          "rfilename": "text_encoder/model-00001-of-00003.safetensors",
+          "blobId": "546625baab99f4de2b975842100c119fec83919f",
+          "size": 3957900840,
+          "lfs": {
+            "sha256": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223",
+            "size": 3957900840,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "text_encoder/model-00002-of-00003.safetensors",
+          "blobId": "3e4d29aad0be87c083e078b50765cd056e793c51",
+          "size": 3987450520,
+          "lfs": {
+            "sha256": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5",
+            "size": 3987450520,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "text_encoder/model-00003-of-00003.safetensors",
+          "blobId": "8a83739c1b3794759b2565002478cf8397b4a09d",
+          "size": 99630640,
+          "lfs": {
+            "sha256": "7ca841ee75b9c61267c0c6148fd8d096d3d21b6d3e161256a9b878154f91fc52",
+            "size": 99630640,
+            "pointerSize": 133
+          }
+        },
+        {
+          "rfilename": "transformer/diffusion_pytorch_model-00001-of-00003.safetensors",
+          "blobId": "e8bfa5eb70da3bc562b36e82cf1c66d6a967621b",
+          "size": 9973693184,
+          "lfs": {
+            "sha256": "95facd593e2549e8252acb571c653d57f7ddb7f1060d4e81712f152555a88804",
+            "size": 9973693184,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "transformer/diffusion_pytorch_model-00002-of-00003.safetensors",
+          "blobId": "4da2251fcbdcf3c20409a920e9a11dc035452459",
+          "size": 9973714824,
+          "lfs": {
+            "sha256": "a4bbe43ee184a1fb5af4b412d27555f532893bdc3165b1149e304ed82b5d7015",
+            "size": 9973714824,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "transformer/diffusion_pytorch_model-00003-of-00003.safetensors",
+          "blobId": "2660af9e9cae7e6b8d7b5d26c9bded9fc1bdd8cb",
+          "size": 4672282880,
+          "lfs": {
+            "sha256": "aba4e37a590e63210878160a718d916d80398f4e1f78ab6c9b2b2a00d92769fa",
+            "size": 4672282880,
+            "pointerSize": 135
+          }
+        },
+        {
+          "rfilename": "vae/diffusion_pytorch_model.safetensors",
+          "blobId": "3557b83a132d75a1f71bde9963021e667b1a0d2d",
+          "size": 167666902,
+          "lfs": {
+            "sha256": "f5b59a26851551b67ae1fe58d32e76486e1e812def4696a4bea97f16604d40a3",
+            "size": 167666902,
+            "pointerSize": 134
+          }
+        }
+      ],
+      "component_bytes": {
+        "transformer": 24619690888,
+        "text_encoder": 8044982000,
+        "vae": 167666902
+      },
+      "diffusers_weight_bytes_total": 32832339790,
+      "top_level_alternate_weight_excluded": true,
+      "weights_downloaded": false
+    }
+  ],
+  "decision": "Download and evaluate distilled FLUX.2-klein-4B next, then its base weights only if post-training is justified. SDXL-Turbo is a current local comparator, not a global winner. Z-Image-Turbo is a subsequent quality comparator with weaker evidence for strict500ms and less direct author-endorsed Turbo fine-tuning.",
+  "latency_evidence": [
+    {
+      "model_family": "FLUX.2-klein",
+      "claim": "under0.5s generation/editing on modern hardware; latency comparison uses GB200 BF16",
+      "hardware": "GB200",
+      "exact_4b_ms": null,
+      "evidence": "https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence",
+      "not_proven": [
+        "4090 latency",
+        "A100 latency",
+        "MPS latency",
+        "HTTP encoding and queueing",
+        "cold start",
+        "p95/p99 <500ms"
+      ]
+    },
+    {
+      "model_family": "Z-Image-Turbo",
+      "claim": "subsecond on H800 with FlashAttention3 and torch.compile",
+      "hardware": "H800",
+      "exact_ms": null,
+      "steps_api": 9,
+      "actual_transformer_forwards": 8,
+      "guidance_scale": 0,
+      "evidence": [
+        "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+        "https://arxiv.org/html/2511.22699v1"
+      ],
+      "not_proven": [
+        "strict<500ms",
+        "HTTP encoding and queueing",
+        "cold start",
+        "consumer GPU latency"
+      ]
+    }
+  ],
+  "post_training_evidence": {
+    "flux2": "https://huggingface.co/blog/black-forest-labs/flux-2-klein-lora",
+    "z_image_base_script": "https://github.com/huggingface/diffusers/blob/9f1246971270c84dcbe71233edb7a519596a5d02/examples/dreambooth/README_z_image.md"
+  },
+  "mps_evidence": {
+    "flux2_diffusers_mps_handling": "https://github.com/huggingface/diffusers/blob/9f1246971270c84dcbe71233edb7a519596a5d02/src/diffusers/pipelines/flux2/pipeline_flux2_klein.py#L884",
+    "z_image_official_merged_mps_flash_attention_pr": "https://github.com/Tongyi-MAI/Z-Image/pull/137",
+    "z_image_pr_merge_commit": "5e066db6d9afc0a5f1ffe7fa4227840d01c12f66",
+    "verified_local_success": false
+  },
+  "quality_prior_only": true,
+  "recognizable_priest_success_unknown": true
+}

@@ -1,0 +1,20 @@
+09/21/2026 10:34:48 - INFO - __main__ - [RANK 0] Distributed environment: DistributedType.NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: mps
+
+Mixed precision type: fp16
+
+{'decoder_block_out_channels'} was not found in config. Values will be initialized to default values.
+All model checkpoint weights were used when initializing AutoencoderKLFlux2.
+
+All the weights of AutoencoderKLFlux2 were initialized from the model checkpoint at /Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/models/flux2-klein-base-4b.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use AutoencoderKLFlux2 for predictions without further training.
+Instantiating Flux2Transformer2DModel model under default dtype torch.float16.
+All model checkpoint weights were used when initializing Flux2Transformer2DModel.
+
+All the weights of Flux2Transformer2DModel were initialized from the model checkpoint at /Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/models/flux2-klein-base-4b.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Flux2Transformer2DModel for predictions without further training.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

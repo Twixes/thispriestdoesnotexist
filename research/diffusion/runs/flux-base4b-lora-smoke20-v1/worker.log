@@ -1,0 +1,21 @@
+09/21/2026 10:34:14 - INFO - __main__ - [RANK 0] Distributed environment: DistributedType.NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: mps
+
+Mixed precision type: fp16
+
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/vendor/flux-train/run_training.py", line 2114, in <module>
+    main(args)
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/vendor/flux-train/run_training.py", line 1130, in main
+    set_seed(args.seed)
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/lib/python3.11/site-packages/accelerate/utils/random.py", line 55, in set_seed
+    np.random.seed(seed)
+  File "numpy/random/mtrand.pyx", line 4831, in numpy.random.mtrand.seed
+  File "numpy/random/mtrand.pyx", line 255, in numpy.random.mtrand.RandomState.seed
+  File "numpy/random/mtrand.pyx", line 256, in numpy.random.mtrand.RandomState.seed
+  File "numpy/random/_mt19937.pyx", line 168, in numpy.random._mt19937.MT19937._legacy_seeding
+  File "numpy/random/_mt19937.pyx", line 182, in numpy.random._mt19937.MT19937._legacy_seeding
+ValueError: Seed must be between 0 and 2**32 - 1

@@ -1,0 +1,60 @@
+Downloading 20 files, 15980151379 bytes; free disk 333720350720 bytes.
+Verified LICENSE.md: 9584 bytes, 0 LFS parts (reused)
+Verified scheduler/scheduler_config.json: 486 bytes, 0 LFS parts (reused)
+Verified text_encoder/config.json: 1536 bytes, 0 LFS parts (reused)
+Verified text_encoder/generation_config.json: 214 bytes, 0 LFS parts (reused)
+Verified README.md: 10084 bytes, 0 LFS parts
+Verified model_index.json: 422 bytes, 0 LFS parts
+Verified text_encoder/model.safetensors.index.json: 32855 bytes, 0 LFS parts (reused)
+Verified tokenizer/added_tokens.json: 707 bytes, 0 LFS parts (reused)
+Verified tokenizer/chat_template.jinja: 4168 bytes, 0 LFS parts (reused)
+Verified tokenizer/merges.txt: 1671853 bytes, 0 LFS parts (reused)
+Verified tokenizer/special_tokens_map.json: 613 bytes, 0 LFS parts (reused)
+Verified tokenizer/tokenizer.json: 11422654 bytes, 0 LFS parts (reused)
+Verified tokenizer/tokenizer_config.json: 5404 bytes, 0 LFS parts (reused)
+Verified tokenizer/vocab.json: 2776833 bytes, 0 LFS parts (reused)
+Verified transformer/config.json: 531 bytes, 0 LFS parts
+Verified text_encoder/model-00002-of-00002.safetensors: 3077766632 bytes, 3 LFS parts (reused)
+Verified vae/config.json: 821 bytes, 0 LFS parts (reused)
+Verified vae/diffusion_pytorch_model.safetensors: 168120878 bytes, 0 LFS parts (reused)
+Verified text_encoder/model-00001-of-00002.safetensors: 4967215360 bytes, 5 LFS parts (reused)
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/prepare_flux2_base.py", line 148, in <module>
+    main()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/prepare_flux2_base.py", line 141, in main
+    files = list(pool.map(fetch, entries))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 608, in result_iterator
+    yield fs.pop().result()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 445, in result
+    return self.__get_result()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/prepare_flux2_base.py", line 94, in fetch
+    verify(temporary, entry)
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/prepare_flux2_base.py", line 32, in verify
+    raise ValueError(f'Size mismatch: {path}')
+ValueError: Size mismatch: /Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/models/flux2-klein-base-4b/transformer/diffusion_pytorch_model.safetensors.partial
+Downloading 20 files, 15980151379 bytes; free disk 330328408064 bytes.
+Verified model_index.json: 422 bytes, 0 LFS parts
+Verified LICENSE.md: 9584 bytes, 0 LFS parts
+Verified README.md: 10084 bytes, 0 LFS parts
+Verified text_encoder/config.json: 1536 bytes, 0 LFS parts
+Verified text_encoder/generation_config.json: 214 bytes, 0 LFS parts
+Verified scheduler/scheduler_config.json: 486 bytes, 0 LFS parts
+Verified text_encoder/model.safetensors.index.json: 32855 bytes, 0 LFS parts
+Verified tokenizer/added_tokens.json: 707 bytes, 0 LFS parts
+Verified tokenizer/chat_template.jinja: 4168 bytes, 0 LFS parts
+Verified tokenizer/merges.txt: 1671853 bytes, 0 LFS parts
+Verified tokenizer/special_tokens_map.json: 613 bytes, 0 LFS parts
+Verified tokenizer/tokenizer.json: 11422654 bytes, 0 LFS parts
+Verified tokenizer/tokenizer_config.json: 5404 bytes, 0 LFS parts
+Verified tokenizer/vocab.json: 2776833 bytes, 0 LFS parts
+Verified transformer/config.json: 531 bytes, 0 LFS parts
+Verified text_encoder/model-00002-of-00002.safetensors: 3077766632 bytes, 3 LFS parts (reused)
+Verified vae/config.json: 821 bytes, 0 LFS parts
+Verified vae/diffusion_pytorch_model.safetensors: 168120878 bytes, 0 LFS parts (reused)
+Verified text_encoder/model-00001-of-00002.safetensors: 4967215360 bytes, 5 LFS parts (reused)
+Verified transformer/diffusion_pytorch_model.safetensors: 7751109744 bytes, 8 LFS parts
+Download complete. Model has not been loaded or executed.

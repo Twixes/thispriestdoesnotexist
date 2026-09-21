@@ -1,0 +1,162 @@
+--- upstream.py
++++ run_training.py
+@@ -42,6 +42,9 @@
+ import random
+ import shutil
+ import warnings
++import time
++
++import smoke_guards as smoke
+ from contextlib import nullcontext
+ from pathlib import Path
+ from typing import Any
+@@ -1102,6 +1105,8 @@
+     if torch.backends.mps.is_available():
+         accelerator.native_amp = False
+ 
++    smoke_state = smoke.initialize(args, accelerator)
++
+     if args.report_to == "wandb":
+         if not is_wandb_available():
+             raise ImportError("Make sure to install wandb if you want to use it for logging during training.")
+@@ -1236,9 +1241,11 @@
+         transformer = prepare_model_for_kbit_training(transformer, use_gradient_checkpointing=False)
+ 
+     text_encoder = Qwen3ForCausalLM.from_pretrained(
+-        args.pretrained_model_name_or_path, subfolder="text_encoder", revision=args.revision, variant=args.variant
++        args.pretrained_model_name_or_path, subfolder="text_encoder", revision=args.revision, variant=args.variant,
++        torch_dtype=weight_dtype,
+     )
+     text_encoder.requires_grad_(False)
++    smoke.resources(smoke_state, "models_loaded_cpu", 0)
+ 
+     # We only train the additional adapter LoRA layers
+     transformer.requires_grad_(False)
+@@ -1277,6 +1284,7 @@
+         )
+ 
+     text_encoder.to(**to_kwargs)
++    smoke.resources(smoke_state, "models_placed", 0)
+     # Initialize a text encoding pipeline and keep it to CPU for now.
+     text_encoding_pipeline = Flux2KleinPipeline.from_pretrained(
+         args.pretrained_model_name_or_path,
+@@ -1299,7 +1307,7 @@
+         # train transformer_blocks and single_transformer_blocks
+         target_modules = ["to_k", "to_q", "to_v", "to_out.0"] + [
+             "to_qkv_mlp_proj",
+-            *[f"single_transformer_blocks.{i}.attn.to_out" for i in range(24)],
++            *[f"single_transformer_blocks.{i}.attn.to_out" for i in range(transformer.config.num_single_layers)],
+         ]
+ 
+     # now we will add new LoRA weights the transformer layers
+@@ -1362,6 +1370,7 @@
+                 transformer_lora_layers=transformer_lora_layers_to_save,
+                 **_collate_lora_metadata(modules_to_save),
+             )
++            smoke.saved_adapter_evidence(output_dir, transformer_lora_layers_to_save.keys())
+ 
+     def load_model_hook(models, input_dir):
+         transformer_ = None
+@@ -1424,6 +1433,7 @@
+         # only upcast trainable parameters (LoRA) into fp32
+         cast_training_params(models, dtype=torch.float32)
+ 
++    smoke.start_evidence(smoke_state, transformer, target_modules)
+     transformer_lora_parameters = list(filter(lambda p: p.requires_grad, transformer.parameters()))
+ 
+     # Optimization parameters
+@@ -1521,6 +1531,11 @@
+         buckets=buckets,
+         use_aspect_ratio_buckets=use_aspect_ratio_buckets,
+     )
++    smoke.write_json(Path(args.output_dir) / "loaded-dataset.json", {
++        "count": train_dataset.num_instance_images, "captions": train_dataset.custom_instance_prompts,
++        "custom_captions_used": bool(train_dataset.custom_instance_prompts)})
++    if not train_dataset.custom_instance_prompts:
++        raise ValueError("Smoke requires the reviewed per-image captions")
+     precompute_latents = args.cache_latents or train_dataset.custom_instance_prompts
+     batch_sampler = BucketBatchSampler(train_dataset, batch_size=args.train_batch_size, drop_last=True, seed=args.seed)
+     train_dataloader = torch.utils.data.DataLoader(
+@@ -1537,6 +1552,9 @@
+                 max_sequence_length=args.max_sequence_length,
+                 text_encoder_out_layers=args.text_encoder_out_layers,
+             )
++        smoke.finite(smoke_state, prompt_embeds, "cached_prompt_embeddings")
++        smoke.finite(smoke_state, text_ids, "cached_text_ids")
++        smoke.resources(smoke_state, "prompt_cached", 0)
+         return prompt_embeds, text_ids
+ 
+     # If no type of tuning is done on the text_encoder and custom instance prompts are NOT
+@@ -1615,6 +1633,7 @@
+             num_workers=args.dataloader_num_workers,
+         )
+         for batch in tqdm(cache_dataloader, desc="Caching latents"):
++            smoke.resources(smoke_state, "before_cache_batch", 0)
+             with torch.no_grad():
+                 sample_indices = batch["indices"]
+                 if args.cache_latents:
+@@ -1623,6 +1642,8 @@
+                             accelerator.device, non_blocking=True, dtype=vae.dtype
+                         )
+                         latents = vae.encode(batch["pixel_values"]).latent_dist.mode()
++                        smoke.finite(smoke_state, latents, "cached_vae_latents")
++                        smoke.resources(smoke_state, "image_latent_cached", 0)
+                     if args.with_prior_preservation:
+                         instance_latents, class_latents = torch.chunk(latents, 2, dim=0)
+                     else:
+@@ -1664,8 +1685,9 @@
+ 
+     # move back to cpu before deleting to ensure memory is freed see: https://github.com/huggingface/diffusers/issues/11376#issue-3008144624
+     text_encoding_pipeline = text_encoding_pipeline.to("cpu")
+-    del text_encoder, tokenizer
++    del text_encoder, tokenizer, text_encoding_pipeline
+     free_memory()
++    smoke.resources(smoke_state, "encoder_released", 0)
+ 
+     # Scheduler and math around the number of training steps.
+     # Check the PR https://github.com/huggingface/diffusers/pull/8312 for detailed explanation.
+@@ -1779,6 +1801,8 @@
+         transformer.train()
+ 
+         for batch in train_dataloader:
++            smoke_step_started = time.monotonic()
++            smoke.resources(smoke_state, "before_training_step", global_step + 1)
+             models_to_accumulate = [transformer]
+             sample_indices = batch["indices"]
+             prompts = batch["prompts"]
+@@ -1907,12 +1931,17 @@
+                     # Add the prior loss to the instance loss.
+                     loss = loss + args.prior_loss_weight * prior_loss
+ 
++                smoke.finite(smoke_state, loss, "loss", global_step + 1)
++                smoke.resources(smoke_state, "before_backward", global_step + 1)
+                 accelerator.backward(loss)
++                smoke.gradient_check(smoke_state, unwrap_model(transformer), global_step + 1)
+                 if accelerator.sync_gradients:
+                     params_to_clip = transformer.parameters()
+-                    accelerator.clip_grad_norm_(params_to_clip, args.max_grad_norm)
++                    smoke_clip_norm = accelerator.clip_grad_norm_(params_to_clip, args.max_grad_norm)
++                    smoke.finite(smoke_state, smoke_clip_norm, "clipped_gradient_norm", global_step + 1)
+ 
+                 optimizer.step()
++                smoke.after_optimizer(smoke_state, unwrap_model(transformer), global_step + 1, loss, smoke_step_started)
+                 lr_scheduler.step()
+                 optimizer.zero_grad()
+ 
+@@ -1976,6 +2005,8 @@
+                 del pipeline
+                 free_memory()
+ 
++    smoke.finish_evidence(smoke_state, unwrap_model(transformer))
++
+     # Save the lora layers
+     accelerator.wait_for_everyone()
+ 
+@@ -2020,6 +2051,7 @@
+             transformer_lora_layers=transformer_lora_layers,
+             **_collate_lora_metadata(modules_to_save),
+         )
++        smoke.saved_adapter_evidence(args.output_dir, transformer_lora_layers.keys())
+ 
+         images = []
+         run_validation = (args.validation_prompt and args.num_validation_images > 0) or (args.final_validation_prompt)

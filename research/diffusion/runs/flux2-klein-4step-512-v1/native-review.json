@@ -1,0 +1,88 @@
+{
+  "reviewer": "root visual inspection of all eight native512PNGs",
+  "human_review": false,
+  "production_approved": false,
+  "summary": "All eight coherent priest portraits with no hats. Smooth/retouched facial texture and conspicuous identity-family repetition in all four prompt pairs. Formal parish-staff portraits rather than the desired calendar aesthetic. No convincing quality/diversity benefit over SDXL-Turbo512 sufficient to justify the measured local slowdown. Training compatibility is a separate advantage, not an output-quality win.",
+  "rows": [
+    {
+      "index": 0,
+      "file": "research/diffusion/runs/flux2-klein-4step-512-v1/000/native.png",
+      "sha256": "1069cc92cb5deeb1a04c9c5474e952fb940104672d617b75449587d36293456d",
+      "adult_male_appearance": true,
+      "clear_clerical_collar": true,
+      "hat": false,
+      "gross_face_anatomy_failure": false,
+      "note": "Coherent smiling face; smooth/high-key skin; strong resemblance to001 and1024Italianpair."
+    },
+    {
+      "index": 1,
+      "file": "research/diffusion/runs/flux2-klein-4step-512-v1/001/native.png",
+      "sha256": "4b675bf0e56bab2a03ff933b516290618d14cfe9aed6c01a67304708d5b92499",
+      "adult_male_appearance": true,
+      "clear_clerical_collar": true,
+      "hat": false,
+      "gross_face_anatomy_failure": false,
+      "note": "Coherent eyes, collar and shoulders; near-identical face family to000."
+    },
+    {
+      "index": 2,
+      "file": "research/diffusion/runs/flux2-klein-4step-512-v1/002/native.png",
+      "sha256": "e5f3342a11082fc6639bdb967d4e5c8a73b24dc99cbc75a3c3d2d90af4cdff27",
+      "adult_male_appearance": true,
+      "clear_clerical_collar": true,
+      "hat": false,
+      "gross_face_anatomy_failure": false,
+      "note": "Coherent face/collar; overly smooth skin and bright facial highlights; resembles003."
+    },
+    {
+      "index": 3,
+      "file": "research/diffusion/runs/flux2-klein-4step-512-v1/003/native.png",
+      "sha256": "c55085af60e9e7bb259bfbfccb37bc842f1d9026aac45397631bd6fc92f37ed1",
+      "adult_male_appearance": true,
+      "clear_clerical_collar": true,
+      "hat": false,
+      "gross_face_anatomy_failure": false,
+      "note": "Coherent anatomy; skin somewhat retouched; same face family as002."
+    },
+    {
+      "index": 4,
+      "file": "research/diffusion/runs/flux2-klein-4step-512-v1/004/native.png",
+      "sha256": "0d848c7ea1e7eb6c1618e65da966b52820d7a446b7b8f87a8edd279e8537860c",
+      "adult_male_appearance": true,
+      "clear_clerical_collar": true,
+      "hat": false,
+      "gross_face_anatomy_failure": false,
+      "note": "Coherent smiling eyes and teeth; bright smooth complexion; strong resemblance to005."
+    },
+    {
+      "index": 5,
+      "file": "research/diffusion/runs/flux2-klein-4step-512-v1/005/native.png",
+      "sha256": "c4341227b975abfe4085ce6ae5ed0a58e97410e05249f0c55e7e762e3859b787",
+      "adult_male_appearance": true,
+      "clear_clerical_collar": true,
+      "hat": false,
+      "gross_face_anatomy_failure": false,
+      "note": "Coherent face and collar; strong resemblance to004."
+    },
+    {
+      "index": 6,
+      "file": "research/diffusion/runs/flux2-klein-4step-512-v1/006/native.png",
+      "sha256": "bbf831e7ecb716e78d4857646f138205617bdff73b6e62348cdcaf76cde2bf9f",
+      "adult_male_appearance": true,
+      "clear_clerical_collar": true,
+      "hat": false,
+      "gross_face_anatomy_failure": false,
+      "note": "Coherent older bearded face; visible texture but high-key etched effect; resembles007."
+    },
+    {
+      "index": 7,
+      "file": "research/diffusion/runs/flux2-klein-4step-512-v1/007/native.png",
+      "sha256": "55d8c392397108edb0e5d500210adeb83a6fb138739dc72a7e6fa9b6528a11b4",
+      "adult_male_appearance": true,
+      "clear_clerical_collar": true,
+      "hat": false,
+      "gross_face_anatomy_failure": false,
+      "note": "Coherent face looking to side; whitecollar; same family as006."
+    }
+  ]
+}

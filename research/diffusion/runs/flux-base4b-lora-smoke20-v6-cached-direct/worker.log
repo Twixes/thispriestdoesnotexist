@@ -1,0 +1,31 @@
+09/21/2026 10:49:00 - INFO - __main__ - [RANK 0] Distributed environment: DistributedType.NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: mps
+
+Mixed precision type: fp16
+
+{'decoder_block_out_channels'} was not found in config. Values will be initialized to default values.
+All model checkpoint weights were used when initializing AutoencoderKLFlux2.
+
+All the weights of AutoencoderKLFlux2 were initialized from the model checkpoint at /Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/models/flux2-klein-base-4b.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use AutoencoderKLFlux2 for predictions without further training.
+Instantiating Flux2Transformer2DModel model under default dtype torch.float16.
+All model checkpoint weights were used when initializing Flux2Transformer2DModel.
+
+All the weights of Flux2Transformer2DModel were initialized from the model checkpoint at /Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/models/flux2-klein-base-4b.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Flux2Transformer2DModel for predictions without further training.
+There are modules in Flux2Transformer2DModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+09/21/2026 10:49:13 - INFO - __main__ - [RANK 0] ***** Running training *****
+09/21/2026 10:49:13 - INFO - __main__ - [RANK 0]   Num examples = 20
+09/21/2026 10:49:13 - INFO - __main__ - [RANK 0]   Num batches each epoch = 20
+09/21/2026 10:49:13 - INFO - __main__ - [RANK 0]   Num Epochs = 1
+09/21/2026 10:49:13 - INFO - __main__ - [RANK 0]   Instantaneous batch size per device = 1
+09/21/2026 10:49:13 - INFO - __main__ - [RANK 0]   Total train batch size (w. parallel, distributed & accumulation) = 1
+09/21/2026 10:49:13 - INFO - __main__ - [RANK 0]   Gradient Accumulation steps = 1
+09/21/2026 10:49:13 - INFO - __main__ - [RANK 0]   Total optimization steps = 20
+Steps:   0%|          | 0/20 [00:00<?, ?it/s]/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/lib/python3.11/site-packages/torch/nn/functional.py:3012: UserWarning: Mismatch dtype between input and weight: input dtype = float, weight dtype = c10::Half, Cannot dispatch to fused implementation. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/native/layer_norm.cpp:350.)
+  return torch.rms_norm(input, normalized_shape, weight, eps)
+/Users/twixes/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

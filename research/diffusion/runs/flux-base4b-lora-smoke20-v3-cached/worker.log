@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/vendor/flux-train/run_training_cached.py", line 1963, in <module>
+    main(args)
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/vendor/flux-train/run_training_cached.py", line 1114, in main
+    validate_contract(args)
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/vendor/flux-train/priest_cache.py", line 31, in validate_contract
+    raise ValueError('Cached text hidden-state layers differ')
+ValueError: Cached text hidden-state layers differ

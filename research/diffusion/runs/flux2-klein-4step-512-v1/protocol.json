@@ -1,0 +1,21 @@
+{
+  "model": "flux2-klein-4b",
+  "steps": 4,
+  "count": 8,
+  "prompts": [
+    "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+    "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+    "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+    "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography."
+  ],
+  "seed_base": 202609214000,
+  "warmup_seed": 202609213999,
+  "guidance_scale": 1.0,
+  "resolution": 512,
+  "all_outputs_retained": true,
+  "prompt_embeddings_cached": true,
+  "images_cached": false,
+  "timing_scope": "Fresh noise to PIL image plus monochrome WebP; excludes fixed-prompt initialization, load, warmup, HTTP, queueing and any future quality gates",
+  "source_sha256": "742e30f99ae1829bbebf224bde6cb07dd890eaf5e8627bc7bfbe7408d90ccc8d",
+  "provenance_sha256": "564b3bf5f2c413969d7d66cdd887b3c78711d3d657fb0068e9385bfb3ee93ada"
+}

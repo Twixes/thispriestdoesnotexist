@@ -1,0 +1,24 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/.venv/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/3 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 1/3 [00:00<00:00,  5.16it/s]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 398/398 [00:00<00:00, 23537.59it/s]
+Loading pipeline components...: 100%|██████████| 3/3 [00:00<00:00,  9.03it/s]Loading pipeline components...: 100%|██████████| 3/3 [00:00<00:00,  8.40it/s]
+Loading pipeline components...:   0%|          | 0/3 [00:00<?, ?it/s]Loading pipeline components...: 100%|██████████| 3/3 [00:00<00:00, 71.17it/s]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  1.60it/s]100%|██████████| 4/4 [00:00<00:00,  6.02it/s]
+{"index": -1, "generation_seconds": 9.525855457992293, "encoding_seconds": 0.0788752919761464}
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 149.44it/s]
+{"index": 0, "generation_seconds": 9.336166541907005, "encoding_seconds": 0.0561922499909997}
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 170.33it/s]
+{"index": 1, "generation_seconds": 9.885523541015573, "encoding_seconds": 0.057538249995559454}
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 168.12it/s]
+{"index": 2, "generation_seconds": 10.345429040957242, "encoding_seconds": 0.06323333294130862}
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 125.66it/s]
+{"index": 3, "generation_seconds": 10.380688417004421, "encoding_seconds": 0.054682709043845534}
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 165.47it/s]
+{"index": 4, "generation_seconds": 10.530518832965754, "encoding_seconds": 0.047617207979783416}
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 179.95it/s]
+{"index": 5, "generation_seconds": 10.595421917038038, "encoding_seconds": 0.05794779199641198}
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 179.73it/s]
+{"index": 6, "generation_seconds": 12.332977666985244, "encoding_seconds": 0.05541850009467453}
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 174.57it/s]
+{"index": 7, "generation_seconds": 13.336564291035756, "encoding_seconds": 0.055563250090926886}

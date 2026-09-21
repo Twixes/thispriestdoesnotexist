@@ -1,0 +1,16 @@
+{
+  "upstream_sha256": "83bccc8c041496aa33939b6ff1f95d0929c1c71a9a29cdc64ecacd4a503fccfe",
+  "patched_sha256": "66785e3bad79b22c03e1554edfb9f0c5ebda4c17b2337e72a87f1c476e77912b",
+  "helper_sha256": "bc2979cf6cabc4a28922ab0408cf93a230617140e7fb6314e67b2ea3ec1fe0a7",
+  "changes": [
+    "Qwen initial load uses existing weight_dtype; transformer already had this upstream.",
+    "VAE initial FP32 load retained because upstream computes batch-normalization mean/std before later casting; no normalization math change.",
+    "LoRA single-block targets follow actual num_single_layers config (20for4B).",
+    "Delete text_encoding_pipeline after caching to release its text encoder reference.",
+    "Finite cached latent/prompt, loss, gradient and updated adapter checks.",
+    "Resource checks and logs at load/cache/forward/backward/update boundaries; external watchdog still required for operation peaks.",
+    "Hash every frozen state tensor before/after20steps and require no changes; record changed adapter tensors and all saved safetensor keys."
+  ],
+  "training_or_import_execution_performed": false,
+  "production_approved": false
+}
