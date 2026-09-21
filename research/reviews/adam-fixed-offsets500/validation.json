@@ -1,0 +1,87 @@
+{
+  "validated_at_utc": "2026-09-21T23:40:58.749621+00:00",
+  "manifest_sha256": "654ade8717928b9c4dc7841a93bc1a629404dc7babf5baff9fc5c49dee313828",
+  "complete_steps": [
+    100
+  ],
+  "displayed_native_images": 12,
+  "child100_reproduction_images_verified": 8,
+  "javascript_syntax": "pass",
+  "source_links_verified": 23,
+  "http_checks": [
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/index.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/manifest.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/README.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-000.png",
+      "status": 200,
+      "sha256": "139bd356e72ad296f58229097b7bd5f4e1425902f16491386ed82cd5f65d3884"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-000.png",
+      "status": 200,
+      "sha256": "cbaafaccd9bcb24519b6ca8600b7faf13815f0113784d5ff7449a89c7a4620d5"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/ema-000.png",
+      "status": 200,
+      "sha256": "6f0135bf84f59ee2075f5a1bdbc0cb3ecc88590c923654b4dbd7e3849128cb03"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-001.png",
+      "status": 200,
+      "sha256": "b6183481bdf66c62ad4d2a8bdc4ac67e06c88e8df225c73369bb8cbeb3c47600"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-001.png",
+      "status": 200,
+      "sha256": "b0842d63fb06bc69369cd98620e1188eecbea2072862c98526aae6350017c965"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/ema-001.png",
+      "status": 200,
+      "sha256": "7f9ac7b6a812a8a7f55ad7a55cc08801ef66a8ce7edec3cee871a9b6b6c108fb"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-002.png",
+      "status": 200,
+      "sha256": "175d7d5a4d1ca45f0c878cd11e4d8bca99eafe6a5eb3eaa2582f8ced18646ff8"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-002.png",
+      "status": 200,
+      "sha256": "6c401af62615f53efb90116eec6cb1fe10cc592b7d425efa89f0293315eefd24"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/ema-002.png",
+      "status": 200,
+      "sha256": "0f401c7ae48111c7122119af872a6ca676c9cdae3fd95b2de7680b224cc3f6ff"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/baseline-003.png",
+      "status": 200,
+      "sha256": "17e01e3036f8e4d1d0d92f56f84aabcb3cb7ec014965ccb850a3a907477c44b4"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-003.png",
+      "status": 200,
+      "sha256": "c44c9aa9723bd55644f9bfb140c8aacdde7f012effa0ed6bddc153075e6f95b0"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-fixed-offsets500/../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/ema-003.png",
+      "status": 200,
+      "sha256": "bb7782fbc9fbf3e3c2bb32a913ed905e1134121be8b5907b951f1abc3d3292e1"
+    }
+  ],
+  "browser_launched": false,
+  "models_loaded": false
+}

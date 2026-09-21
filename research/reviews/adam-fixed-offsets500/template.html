@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Native fixed-offset continuation: 100 to 500</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#101012;color:#eee}body{max-width:1600px;margin:auto;padding:28px}h1{font-size:clamp(25px,4vw,40px);margin-bottom:12px}p{max-width:1000px;line-height:1.55;color:#bcbcc5}.scope{color:#ffdc9b;border-left:3px solid;padding-left:16px}a{color:#b9caff}nav{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0}nav a[aria-current=true]{color:white;font-weight:700}section{border-top:1px solid #34343b;padding:20px 0}h2{font-size:16px;font-weight:500}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}figure{margin:0;min-width:0}figcaption{font-size:13px;margin-bottom:8px;color:#d8d8e0}img{display:block;width:100%;height:auto;background:black;aspect-ratio:1;object-fit:contain}.pending{display:grid;place-items:center;aspect-ratio:1;background:#222}small{display:block;color:#9696a0;margin-top:8px}footer{border-top:1px solid #34343b;margin-top:24px;padding-top:16px}a:focus-visible{outline:2px solid white;outline-offset:4px}@media(max-width:700px){body{padding:16px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.grid figure:first-child{grid-column:1/-1;max-width:512px;width:100%;justify-self:center}}
+</style>
+<h1>Native fixed-offset continuation: 100 to 500</h1>
+<p class="scope"><strong>Stability test, not a priest-generation candidate or full AdAM.</strong> Exact continuation from the completed 100-iteration run, restoring raw and EMA G/D, both optimizers, random streams and path mean. Output-rank1 convolution modulation, native 1024 × 1024. All 17 learned noise-strength offsets and 17 synthesis activation-bias offsets remain zero and are excluded from the optimizer; original coefficients and biases remain intact. This is a deliberate departure from the source probing recipe. No Fisher estimation or main adaptation has occurred.</p>
+<p>All four fixed Gaussian latents are shown without filtering, repairs or selection. Parent iteration 100 is shown from the archived parent run; the resumed worker reproduced all eight raw/EMA PNGs byte-for-byte. Each row compares the original FFHQ baseline, raw G and exponential moving average (EMA), with the same latent and constant synthesis noise. Training uses random synthesis noise. Click an image for its untouched native PNG. Original FFHQ subjects can include children, women and non-clergy. Four latents do not establish population quality, diversity or generalization. There is no production approval or server-latency claim.</p>
+<p>This static page defaults to the latest finalized snapshot. Rebuild and refresh to update it; it does not poll the worker. The status describes recorded artifacts at build time, not a live process-health check.</p>
+<p id="status"></p>
+<nav aria-label="Snapshot iteration"><a href="#step-500" data-step="500">Iteration 500</a><a href="#step-250" data-step="250">Iteration 250</a><a href="#step-100" data-step="100">Parent iteration 100</a><a href="manifest.json">Hashes & manifest</a><a href="README.md">Rebuild instructions</a></nav>
+<main id="rows"></main>
+<footer><p>Four baseline PNGs and every completed raw/EMA snapshot at parent iteration 100 and continuation iterations 250 and 500 are retained in their original order. Only exact finalized manifest paths are read; incomplete files are ignored. Snapshot completion does not imply checkpoint completion: continuation iterations 250 and 500 write full training checkpoints, separately verified when its completion marker exists. Ordinary browser display scaling is the only image transformation.</p></footer>
+<script>
+const data = __DATA__;
+const host = document.querySelector('#rows');
+function render(){
+ const match = location.hash.match(/^#step-(100|250|500)$/); const step = match ? Number(match[1]) : data.default_step;
+ document.querySelectorAll('[data-step]').forEach(a=>a.setAttribute('aria-current',String(Number(a.dataset.step)===step)));
+ const labels={complete:'Completed 500-iteration stability run',stopped:'Run stopped',failed:'Run failed',awaiting_supervisor:'Worker completed; supervisor record pending',in_progress_or_awaiting_terminal_record:'In progress or awaiting a terminal record'};
+ document.querySelector('#status').textContent=`${labels[data.run_status]} · completed snapshot iterations: ${data.complete_steps.join(', ') || 'none'} · ${data.available_images} / ${data.expected_images} native images · built ${data.built_at_utc}`;
+ host.replaceChildren();
+ for(const row of data.rows){
+  const section=document.createElement('section');const title=document.createElement('h2');title.textContent=`Latent ${String(row.index).padStart(3,'0')} · unfiltered`;section.append(title);
+  const grid=document.createElement('div');grid.className='grid';
+  for(const [key,label] of [['baseline','Original FFHQ baseline'],[`raw-${step}`,`Raw · iteration ${step}`],[`ema-${step}`,`EMA · iteration ${step}`]]){
+   const fig=document.createElement('figure');const caption=document.createElement('figcaption');caption.textContent=label;fig.append(caption);const item=row.images[key];
+   if(item.status==='complete'){const a=document.createElement('a');a.href=item.url;a.target='_blank';a.rel='noopener';a.title='Open original 1024 × 1024 PNG';const im=document.createElement('img');im.src=item.url;im.alt=`Latent ${row.index}, ${label}`;im.loading='lazy';a.append(im);fig.append(a);const small=document.createElement('small');small.textContent=`SHA-256 ${item.sha256.slice(0,16)}…`;fig.append(small)}
+   else{const p=document.createElement('div');p.className='pending';p.textContent=['stopped','failed'].includes(data.run_status)?'Not produced — run ended':'Snapshot pending';fig.append(p)}
+   grid.append(fig);
+  }section.append(grid);host.append(section);
+ }
+}window.addEventListener('hashchange',render);render();
+</script></html>
