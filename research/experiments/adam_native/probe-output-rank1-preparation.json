@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_launched",
+  "source_path": "research/experiments/adam_native/probe.py",
+  "source_sha256": "f77541904b211a60ca6be24f89e22153c63a0d74afd8fb37fbb638191e5d28a1",
+  "variant_path": "research/experiments/adam_native/probe_output_rank1.py",
+  "variant_sha256": "e72acd143ce7d269549e8ed91b75e897a7ca9130b517ff630070aedd6e5cb73e",
+  "modulation_path": "research/experiments/adam_native/modulation.py",
+  "modulation_sha256": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+  "only_training_delta": "install_modulation(G, component='G', conv_layout='output_rank1') and equivalent D call; source defaults to source_flattened.",
+  "metadata_changes": [
+    "Protocol name, explicit conv_layout and source probe hash",
+    "Pins include new variant and frozen original probe",
+    "Archive new executed filename plus source-probe.py",
+    "Supervisor executes the new variant filename",
+    "Module description identifies output-rank-one variant"
+  ],
+  "static_verification": {
+    "source_hash_verified": true,
+    "worker_ast_equal_after_removing_exactly_two_layout_keywords": true,
+    "layout_arguments_removed": [
+      "G",
+      "D"
+    ],
+    "supervisor_ast_equal_after_worker_filename_normalization": true,
+    "helper_asts_unchanged": true,
+    "compile_without_execution": true
+  },
+  "unchanged": {
+    "iterations": 500,
+    "checkpoint_steps": [
+      100,
+      250,
+      500
+    ],
+    "full_state_restore_verification": true,
+    "source_weights": "original G_ema and original D",
+    "training_dataset": "20 train-only native1024 images",
+    "native_resolution": 1024,
+    "device": "cpu",
+    "threads": 1,
+    "batch": 1,
+    "all_objective_optimizer_sampling_and_seed_settings": "identical to frozen source",
+    "guards": {
+      "start_available_fraction": 0.35,
+      "runtime_available_fraction": 0.2,
+      "rss_gib": 12,
+      "swap_growth_mib": 512,
+      "seconds": 7200
+    }
+  },
+  "launch_prerequisites": [
+    "Correct output_rank1 layout smoke has actually succeeded",
+    "Current source_flattened control run is terminal",
+    "Root explicitly schedules the new run; never launch concurrently"
+  ],
+  "launch_command_template": "research/.venv/bin/python research/experiments/adam_native/probe_output_rank1.py --output research/runs/adam-native1024-output-rank1-probing500-v1",
+  "model_loaded": false,
+  "training_launched": false,
+  "production_approved": false,
+  "diff": "--- probe.py\n+++ probe_output_rank1.py\n@@ -1,4 +1,4 @@\n-\"\"\"Guarded 500-iteration native1024 AdAM-style importance-probing experiment.\n+\"\"\"Guarded output-rank-one 500-iteration native1024 importance-probing experiment.\n \n Starts from verified original weights, never resumes or changes the objective. It does not\n estimate Fisher importance, perform main adaptation or approve a serving model.\n@@ -27,6 +27,7 @@\n GIB = 2**30\n SMOKE_SHA256 = 'a0f58197d99dea71e19f6b1ce0ade2491173bba1576c8e4ba44ed844faf48e63'\n MODULATION_SHA256 = 'b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a'\n+SOURCE_PROBE_SHA256 = 'f77541904b211a60ca6be24f89e22153c63a0d74afd8fb37fbb638191e5d28a1'\n ITERATIONS = 500\n CHECKPOINT_STEPS = (100, 250, 500)\n \n@@ -63,12 +64,13 @@\n     assert len(training) == 20\n     assert sha(HERE/'smoke.py') == SMOKE_SHA256, 'Frozen smoke source changed'\n     assert sha(HERE/'modulation.py') == MODULATION_SHA256, 'Validated modulation source changed'\n-    sources = [HERE/'probe.py', HERE/'smoke.py', HERE/'modulation.py', HERE/'upstream/provenance.json', GDIR/'model.json', DDIR/'metadata.json']\n+    assert sha(HERE/'probe.py') == SOURCE_PROBE_SHA256, 'Frozen source probe changed'\n+    sources = [HERE/'probe_output_rank1.py', HERE/'probe.py', HERE/'smoke.py', HERE/'modulation.py', HERE/'upstream/provenance.json', GDIR/'model.json', DDIR/'metadata.json']\n     sources += sorted((RESEARCH/'vendor/stylegan2-ada-pytorch').rglob('*.py'))\n     pins = {str(p.relative_to(ROOT)):sha(p) for p in sources}\n     memory = psutil.virtual_memory()\n     assert memory.available/memory.total >= .35, 'Need 35% available system memory before launch'\n-    protocol = {'name':'adam-native1024-probing500', 'iterations':ITERATIONS, 'checkpoint_steps':list(CHECKPOINT_STEPS), 'derived_from_smoke_sha256':SMOKE_SHA256, 'resolution':1024,\n+    protocol = {'name':'adam-native1024-output-rank1-probing500', 'conv_layout':'output_rank1', 'derived_from_probe_sha256':SOURCE_PROBE_SHA256, 'iterations':ITERATIONS, 'checkpoint_steps':list(CHECKPOINT_STEPS), 'derived_from_smoke_sha256':SMOKE_SHA256, 'resolution':1024,\n         'device':'cpu', 'threads':1, 'batch':1, 'seed':2026092209,\n         'g_weights_sha256':G_HASH, 'd_weights_sha256':D_HASH, 'dataset_manifest_sha256':DATA_HASH,\n         'training':training, 'pins':pins, 'g_lr':.002*4/5, 'd_lr':.002*16/17,\n@@ -89,7 +91,8 @@\n     out.mkdir(parents=True)\n     (out/'.gitignore').write_text('*.partial\\n')\n     write(out/'protocol.json', protocol)\n-    shutil.copy2(HERE/'probe.py',out/'probe.py')\n+    shutil.copy2(HERE/'probe_output_rank1.py',out/'probe_output_rank1.py')\n+    shutil.copy2(HERE/'probe.py',out/'source-probe.py')\n     shutil.copy2(HERE/'smoke.py',out/'source-smoke.py')\n     shutil.copy2(HERE/'modulation.py',out/'modulation.py')\n     return protocol\n@@ -102,7 +105,7 @@\n     proc = None; failure = None; peak = 0; min_available = 1.0\n     try:\n         with (out/'worker.log').open('w') as log:\n-            proc = subprocess.Popen([sys.executable, str(HERE/'probe.py'),'--worker','--output',str(out)],\n+            proc = subprocess.Popen([sys.executable, str(HERE/'probe_output_rank1.py'),'--worker','--output',str(out)],\n                                     stdout=log, stderr=subprocess.STDOUT, start_new_session=True)\n             while proc.poll() is None:\n                 mem = psutil.virtual_memory()\n@@ -198,7 +201,7 @@\n             x=G(z[None],None,truncation_psi=1,noise_mode='const',force_fp32=True,fused_modconv=False)\n             baseline.append(x.cpu());save_tensor(x,out/f'baseline-{i:03}.png')\n         d_input=baseline[0];d_reference=D(d_input,None,force_fp32=True)\n-    inventories={'G':install_modulation(G,component='G'),'D':install_modulation(D,component='D')}\n+    inventories={'G':install_modulation(G,component='G',conv_layout='output_rank1'),'D':install_modulation(D,component='D',conv_layout='output_rank1')}\n     write(out/'modulation-inventory.json',inventories)\n     frozen_g=frozen(G); frozen_d=frozen(D)\n     with torch.no_grad():\n",
+  "root_independent_worker_ast_review": true
+}

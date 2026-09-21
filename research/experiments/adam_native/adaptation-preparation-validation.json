@@ -1,0 +1,40 @@
+{
+  "status": "prepared_not_native_executed",
+  "scope": "Tiny random32px native-network and analytical metadata/gradient tests. No pretrained weights loaded, native1024 training, importance measurement, threshold choice or main-adaptation run.",
+  "tests": [
+    {
+      "test": "test_estimate_importance.py",
+      "returncode": 0,
+      "seconds": 1.335794584,
+      "stdout": "",
+      "stderr": "test_existing_source_layout_is_rejected_before_checkpoint_access (__main__.EstimatorTests.test_existing_source_layout_is_rejected_before_checkpoint_access) ... ok\ntest_phased_factor_gradients_match_joint_graph_all_parameters_enabled (__main__.EstimatorTests.test_phased_factor_gradients_match_joint_graph_all_parameters_enabled) ... ok\ntest_plan_prefix_balanced_cycles_and_global_rng_unchanged (__main__.EstimatorTests.test_plan_prefix_balanced_cycles_and_global_rng_unchanged) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.342s\n\nOK\n"
+    },
+    {
+      "test": "test_selection.py",
+      "returncode": 0,
+      "seconds": 0.688782292,
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.010s\n\nOK\n"
+    },
+    {
+      "test": "test_adaptation_masks.py",
+      "returncode": 0,
+      "seconds": 1.883623875,
+      "stdout": "",
+      "stderr": "test_all_high_and_all_low_ties_have_explicit_parameter_policy (__main__.AdaptationMaskTests.test_all_high_and_all_low_ties_have_explicit_parameter_policy) ... ok\ntest_inventory_exclusions_exact_initial_output_and_support (__main__.AdaptationMaskTests.test_inventory_exclusions_exact_initial_output_and_support) ... ok\ntest_multiple_actual_adversarial_and_r1_path_adam_steps (__main__.AdaptationMaskTests.test_multiple_actual_adversarial_and_r1_path_adam_steps) ... ok\ntest_optimizer_guard_and_requires_grad_misuse (__main__.AdaptationMaskTests.test_optimizer_guard_and_requires_grad_misuse) ... ok\ntest_optimizer_state_corruption_and_bypassing_masks_detected (__main__.AdaptationMaskTests.test_optimizer_state_corruption_and_bypassing_masks_detected) ... ok\ntest_preflight_rejection_is_nonmutating_and_no_source_flattened (__main__.AdaptationMaskTests.test_preflight_rejection_is_nonmutating_and_no_source_flattened) ... ok\ntest_selector_contract_works_for_actual_native_inventory (__main__.AdaptationMaskTests.test_selector_contract_works_for_actual_native_inventory) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.971s\n\nOK\n"
+    }
+  ],
+  "source_sha256": {
+    "estimate_importance.py": "a54deac92d67685195d104f8ee27029923198add23c57a8dcf09747dede68d25",
+    "test_estimate_importance.py": "fbf5f967afbfe60ae9c3ab4ef90f57c9952e1f85472fa89bfd577ec993f32bc5",
+    "selection.py": "e533d95d485eb0e1ff2e5fd0da8039ef1e4c251b501efa5b37fe031ba8b48192",
+    "test_selection.py": "3e74500331777e889d5f158d70a2573f447ca3a741edcbfc4c5ef86e8c95f6c8",
+    "adaptation_masks.py": "37b34e7046f154c9345cdd462c1a8cdf79e39095cf0d98b244e1de8903668948",
+    "test_adaptation_masks.py": "a0d6dbdbd061015ddfd79313b69c25b3f4eeb1792b525fc042c6b78c3b9e1afa"
+  },
+  "estimator_read_only_review": {
+    "reviewer": "heldout_report",
+    "blocking_findings": 0,
+    "followup": "Real per-layer magnitude/zero diagnostics and ranking stability remain to be evaluated before actual selection."
+  }
+}
