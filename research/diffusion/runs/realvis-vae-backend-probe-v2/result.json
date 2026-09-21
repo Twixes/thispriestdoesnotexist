@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "timings_seconds": {
+    "load_vae_cpu_fp32": 0.035276458016596735,
+    "encode_cpu_fp32_posterior_mean": 8.414546541986056,
+    "decode_cpu_fp32": 18.32031704194378,
+    "transfer_vae_to_mps_fp32": 0.12947783304844052,
+    "transfer_matched_latent_to_mps": 0.0002639580052345991,
+    "decode_mps_fp32": 2.3140869580674917
+  },
+  "raw_decoder_mps_vs_cpu_range_minus1_plus1": {
+    "mae": 4.492234851820248e-07,
+    "rmse": 6.456399596708715e-07,
+    "max_absolute": 2.7105212211608887e-05,
+    "p99_absolute": 2.086162567138672e-06,
+    "psnr_db_for_unit_range": 123.80019196573502
+  },
+  "display_pixel_mps_vs_cpu_range0_1": {
+    "mae": 2.2461606855965025e-07,
+    "rmse": 3.228967094542922e-07,
+    "max_absolute": 1.3560056686401367e-05,
+    "p99_absolute": 1.043081283569336e-06,
+    "psnr_db_for_unit_range": 129.81872761456077
+  },
+  "cpu_reconstruction_vs_source_range0_1": {
+    "mae": 0.011159599699660294,
+    "rmse": 0.018796330949377226,
+    "max_absolute": 0.3196393549442291,
+    "p99_absolute": 0.07961323648691175,
+    "psnr_db_for_unit_range": 34.518538338077505
+  },
+  "mps_reconstruction_vs_source_range0_1": {
+    "mae": 0.011159598772894666,
+    "rmse": 0.0187963296110134,
+    "max_absolute": 0.3196417987346649,
+    "p99_absolute": 0.07961301594972607,
+    "psnr_db_for_unit_range": 34.51853895654293
+  },
+  "fraction_rounded_rgb_channels_differ": 5.6584676106770836e-05,
+  "latent_scaling": "Raw posterior mean, no scaling factor applied; same tensor decoded on both backends",
+  "scope": "One teacher reconstruction; isolates decoder backend numerics, not UNet or generated-latent behavior",
+  "files": {
+    "latent-unscaled-fp32.npy": "90d26753f63a7622ccd224a913d669871ac46a7f4f3838d555d9ca522a938198",
+    "decoded-cpu.png": "fdd10a16d07d9b357af6dcc0d8cc42d69bbe98d9aee8f0b941dd58514b9f45f3",
+    "decoded-mps.png": "44a3f9b62d2f237bbd4f1d0deea8437156d81b63cc1cb277177d2cfb4a773f27",
+    "source.png": "751d3492a88e8b2b348ad56012d2de89001cf8256b6bd82e9fe0aeb7b29ed22b",
+    "decoded-cpu-raw-fp32.npy": "323c210594075970da59ce5b0197be6ad144ba6f6da3a54273d2b24a472154ea",
+    "decoded-mps-raw-fp32.npy": "04397a0ce5bc927b9096bb7409faad42aee6be4b8d43b809bdb4a4315132eeb0"
+  }
+}

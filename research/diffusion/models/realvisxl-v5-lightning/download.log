@@ -1,0 +1,21 @@
+Verified model_index.json: 708 bytes, 0 parts
+Verified scheduler/scheduler_config.json: 526 bytes, 0 parts
+Verified sources/publisher-model-card.md: 2482 bytes, 0 parts
+Verified text_encoder/config.json: 584 bytes, 0 parts
+Verified text_encoder_2/config.json: 594 bytes, 0 parts
+Verified tokenizer/merges.txt: 573514 bytes, 0 parts
+Verified tokenizer/special_tokens_map.json: 496 bytes, 0 parts
+Verified tokenizer/tokenizer_config.json: 734 bytes, 0 parts
+Verified tokenizer/vocab.json: 1109372 bytes, 0 parts
+Verified tokenizer_2/merges.txt: 573514 bytes, 0 parts
+Verified tokenizer_2/special_tokens_map.json: 484 bytes, 0 parts
+Verified tokenizer_2/tokenizer_config.json: 893 bytes, 0 parts
+Verified tokenizer_2/vocab.json: 1109372 bytes, 0 parts
+Verified unet/config.json: 1850 bytes, 0 parts
+Verified text_encoder/model.fp16.safetensors: 246144152 bytes, 0 parts
+Verified vae/config.json: 807 bytes, 0 parts
+Verified vae/diffusion_pytorch_model.fp16.safetensors: 167335342 bytes, 0 parts
+Verified LICENSE.md: 14109 bytes, 0 parts
+Verified text_encoder_2/model.fp16.safetensors: 1389382176 bytes, 2 parts
+Verified unet/diffusion_pytorch_model.fp16.safetensors: 5135149760 bytes, 5 parts
+{"complete": true, "verified_files": 20, "all_parts_concatenate_to_upstream_hash": true, "provenance_sha256": "f9c32b593d32f2461d11a0149473c0a4cf73c808a4303b87a958b07cff9a95a1", "model_load_or_inference_performed": false}

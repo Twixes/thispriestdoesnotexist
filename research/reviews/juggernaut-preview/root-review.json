@@ -1,0 +1,109 @@
+{
+  "reviewer": "root agent",
+  "review_type": "Exploratory subjective visual comparison, not owner approval or calibrated score",
+  "native_images_inspected": true,
+  "production_approved": false,
+  "server_latency_proven": false,
+  "runs": [
+    {
+      "run": "research/diffusion/runs/juggernaut-hyper-tcd4-native1024-v2-tiled",
+      "result_sha256": "1f16a090b652de3f3f0dda142fa31cd3e601ca87805f1ebb9a2bfefa24c866cc",
+      "native_images_reviewed": [
+        {
+          "case": 4,
+          "sha256": "d8d679836780f202326b54b37bfd07082508922eedeb2046b0a8031454168af7"
+        },
+        {
+          "case": 5,
+          "sha256": "3b9c17c9b23d8b84945597c1b20aae7fa266a37b3cfae044882c589e0a4eaf24"
+        },
+        {
+          "case": 6,
+          "sha256": "b23b3da859080ee755d588c0372bc52f985b588430433974763b19af9695381b"
+        },
+        {
+          "case": 7,
+          "sha256": "71bdee8e75ad266ac1e67f64e555de79c44207b29cb70e5f794cdaeb68b864a7"
+        }
+      ],
+      "observation": "Faces and eyes coherent; fine skin/hair detail and moderate smoothing. Strong within-prompt family resemblance004/005 and006/007. Some regular etched hair/beard texture; photographic quality not cleared.",
+      "warm_local_generation_plus_webp": {
+        "median": 3.0669887080439366,
+        "p95_nearest_rank": 3.2363152500474826,
+        "max": 3.2363152500474826
+      }
+    },
+    {
+      "run": "research/diffusion/runs/juggernaut-hyper-tcd4-512-v1",
+      "result_sha256": "6090f4be56be9f5ad6d1041ed691cdc585a75032add232b53109f4a78c574ee7",
+      "native_images_reviewed": [
+        {
+          "case": 0,
+          "sha256": "f5f5e32927f3ce4ebd4b9961241fd7634d033b388f9335630571643ba46b835f"
+        },
+        {
+          "case": 1,
+          "sha256": "effa791f5ba0bdaa8b3b7189869d0fd180ead3bd66dfa8edc395e463e64c566f"
+        },
+        {
+          "case": 2,
+          "sha256": "e8be24602ab8544388a2d40eadac5a7a1a14614a5eba8337f85223240a6d47d3"
+        },
+        {
+          "case": 3,
+          "sha256": "d7affaa03a521db5e8b32df5241dc9e05a74473338397d4b27de3f327b1689ea"
+        },
+        {
+          "case": 4,
+          "sha256": "4b51803c69fc86eb91f35688339e2d868844af0df03bf6a656c419dc991a98d9"
+        },
+        {
+          "case": 5,
+          "sha256": "018c475203c1af52914bc73d39a11cf7342d05786b6898be018dcd6dedc13bde"
+        },
+        {
+          "case": 6,
+          "sha256": "5d148d13146c840f20e0313aec406ce264fd2d65f113369f7be8065323b4c209"
+        },
+        {
+          "case": 7,
+          "sha256": "fe2946885c9fad15dbe290a1cd001b4d8b4fc4420fa223c1dc3ff0c1ed5dd75b"
+        }
+      ],
+      "observation": "All8 have adult male faces, clerical collars and no hats. Faces/skin noticeably smoother and more sculpted than native1024.000 particularly mannequin-like;005 has flat light iris.006/007 etched beard.000/001 more distinct than native pair, but pairs002/003 and004/005 still strongly resemble each other. Reject512 for desired visual quality.",
+      "warm_local_generation_plus_webp": {
+        "median": 0.680560770444572,
+        "p95_nearest_rank": 0.6839276659302413,
+        "max": 0.6839276659302413
+      }
+    },
+    {
+      "run": "research/diffusion/runs/juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled",
+      "result_sha256": "18664344fe03f1bbb7de4accdd4012d7a933c88f007ff2e8fff3a60b9a1d45f6",
+      "native_images_reviewed": [
+        {
+          "case": 4,
+          "sha256": "80f81f47105edb05d52848357826e7b3294916d0447eb415734ddc78f4d0449c"
+        },
+        {
+          "case": 5,
+          "sha256": "f923177f13323a5c75d2f8d36a756510c87d517484b4d139fab9ee11a67e08cc"
+        },
+        {
+          "case": 6,
+          "sha256": "f61b781ce30ae6d4bc009b49ab6b3aa4930bdddf8fab28215b8acd99fa57da8e"
+        },
+        {
+          "case": 7,
+          "sha256": "ff3c583db7ff56d2c4951c534fcbcfe9dae4e24300f0ab6df5d8bf829481e84f"
+        }
+      ],
+      "observation": "004/005 eyes and faces coherent; contrast and fine skin texture stronger than fourstep, with recognizably same prompt-specific family.006/007 coarse/etched beard remains. No hats, intact collars. Improved detail does not demonstrate robust photographic quality or new identities.",
+      "warm_local_generation_plus_webp": {
+        "median": 5.44873985403683,
+        "p95_nearest_rank": 5.660618958878331,
+        "max": 5.660618958878331
+      }
+    }
+  ]
+}

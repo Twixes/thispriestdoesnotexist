@@ -1,0 +1,20 @@
+{
+  "native_1024_promising": true,
+  "source_result": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/juggernaut-hyper-tcd4-native1024-v2-tiled/result.json",
+  "source_result_sha256": "1f16a090b652de3f3f0dda142fa31cd3e601ca87805f1ebb9a2bfefa24c866cc",
+  "scope": "Promising for a512 exploratory comparison, not production clearance",
+  "reviewer": "root agent",
+  "reviewed_native_cases": [
+    "004",
+    "005",
+    "006",
+    "007"
+  ],
+  "observations": [
+    "Intact adult male faces, eyes and visible clerical collars; no hats",
+    "Photo-like fine skin, hair and beard detail; some smoothing",
+    "Strong within-prompt resemblance in004/005 and006/007; eight distinct identities not demonstrated",
+    "Tiled original VAE512 tiles,25 percent overlap; no gross seams observed in reviewed images"
+  ],
+  "production_approved": false
+}

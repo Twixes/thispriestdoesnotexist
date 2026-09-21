@@ -1,0 +1,4 @@
+# Reassembled originals; <=1GiB parts tracked in LFS.
+/text_encoder_2/model.fp16.safetensors
+/unet/diffusion_pytorch_model.fp16.safetensors
+*.partial

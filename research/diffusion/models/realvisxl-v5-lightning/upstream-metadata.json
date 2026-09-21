@@ -1,0 +1,339 @@
+{
+  "_id": "66d5a9a82e0412fa2ac641d3",
+  "id": "SG161222/RealVisXL_V5.0_Lightning",
+  "private": false,
+  "pipeline_tag": "text-to-image",
+  "library_name": "diffusers",
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "downloads": 23247,
+  "likes": 62,
+  "modelId": "SG161222/RealVisXL_V5.0_Lightning",
+  "author": "SG161222",
+  "sha": "f4454158cedaab9f0688c199561d6c92525f3a85",
+  "lastModified": "2024-10-08T16:34:35.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "diffusers": {
+      "_class_name": "StableDiffusionXLPipeline"
+    }
+  },
+  "cardData": {
+    "license": "openrail++"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "9c0f6f8528a38d01c3f7dc7859c45c5f92eabb2a",
+      "size": 2482
+    },
+    {
+      "rfilename": "RealVisXL_V5.0_Lightning_fp16.safetensors",
+      "blobId": "8afc5262b76c63e64863bd1f209370f3dfe41cc4",
+      "size": 6938065512,
+      "lfs": {
+        "sha256": "fabcadd9330dcc4f9702063428d40b9d4d07168d8acefc819b8d1d9db466b3ec",
+        "size": 6938065512,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "RealVisXL_V5.0_Lightning_fp32.safetensors",
+      "blobId": "1bffccd4afba789221c0c2b69d713a2eea223379",
+      "size": 13875766984,
+      "lfs": {
+        "sha256": "963559c9659571c889af1b5d5af6697aeecf4ff13f2eee8e956e3ece51a05931",
+        "size": 13875766984,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "model_index.json",
+      "blobId": "76b03ea2dd74a0f91f68951013d899c82e0b2752",
+      "size": 708
+    },
+    {
+      "rfilename": "scheduler/scheduler_config.json",
+      "blobId": "b60b9eed5dcaee8d28e4dad5d34132bf45d5e9cf",
+      "size": 526
+    },
+    {
+      "rfilename": "text_encoder/config.json",
+      "blobId": "ac4122e37529c597f3c7f68e967534b63aa6a632",
+      "size": 584
+    },
+    {
+      "rfilename": "text_encoder/model.fp16.safetensors",
+      "blobId": "e8274d2f25201a5036de2e53b0f06074765c2633",
+      "size": 246144152,
+      "lfs": {
+        "sha256": "0a873801e35a008b17e228189a83a8b41e068ffe7bde7c1105e8c6e947758bc5",
+        "size": 246144152,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "text_encoder/model.safetensors",
+      "blobId": "bd0af65d178721a47f63dcc4240d50494cd8e5dc",
+      "size": 492265168,
+      "lfs": {
+        "sha256": "8bea904268d19b5a2d46d3d17c0aedc1b3d1706fc4327b64da1f46db1aecc62b",
+        "size": 492265168,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "text_encoder_2/config.json",
+      "blobId": "024774b3a5a47f06f7a5a3efced2c837a772d512",
+      "size": 594
+    },
+    {
+      "rfilename": "text_encoder_2/model.fp16.safetensors",
+      "blobId": "3fc3a87bced37cd1e0b9ab0ce0998f9d406f6f01",
+      "size": 1389382176,
+      "lfs": {
+        "sha256": "dfa429b268cd3f6297927f1fd3eacac04781b17ab4caa97892a461ff41400a5e",
+        "size": 1389382176,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text_encoder_2/model.safetensors",
+      "blobId": "166161a0e759562b7ee52eab9e465361f14ffee8",
+      "size": 2778702264,
+      "lfs": {
+        "sha256": "4b7c9b2c9668d61f13594e9043f7ef75712f952e0621b57c8ffc4d5504e4ab82",
+        "size": 2778702264,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "tokenizer/merges.txt",
+      "blobId": "1876098c4dcbf22af518537b3bd63102a05e1313",
+      "size": 573514
+    },
+    {
+      "rfilename": "tokenizer/special_tokens_map.json",
+      "blobId": "ad919e089d4d032a933a2a9087de2857d55af3bc",
+      "size": 496
+    },
+    {
+      "rfilename": "tokenizer/tokenizer_config.json",
+      "blobId": "d3269e79768869e2475079df12936e4f5a5f00e2",
+      "size": 734
+    },
+    {
+      "rfilename": "tokenizer/vocab.json",
+      "blobId": "521b2c5def638d17b1e463ce25597140a1720005",
+      "size": 1109372
+    },
+    {
+      "rfilename": "tokenizer_2/merges.txt",
+      "blobId": "1876098c4dcbf22af518537b3bd63102a05e1313",
+      "size": 573514
+    },
+    {
+      "rfilename": "tokenizer_2/special_tokens_map.json",
+      "blobId": "4473e143ec2843c3cf9d6db8b1062f1e71076615",
+      "size": 484
+    },
+    {
+      "rfilename": "tokenizer_2/tokenizer_config.json",
+      "blobId": "5f7b9260a5b05507390f563c9277c19128c9a74c",
+      "size": 893
+    },
+    {
+      "rfilename": "tokenizer_2/vocab.json",
+      "blobId": "521b2c5def638d17b1e463ce25597140a1720005",
+      "size": 1109372
+    },
+    {
+      "rfilename": "unet/config.json",
+      "blobId": "e8514f0869ff13b3364bd674adaf3f681c978bab",
+      "size": 1850
+    },
+    {
+      "rfilename": "unet/diffusion_pytorch_model-00001-of-00002.safetensors",
+      "blobId": "0301c2fec81a1147106bd1981445c5b503f1cfed",
+      "size": 9988139160,
+      "lfs": {
+        "sha256": "74d381bc3512f41b53d61f12220a631faded08ebc36f9a133b8e40dc4959a31b",
+        "size": 9988139160,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "unet/diffusion_pytorch_model-00002-of-00002.safetensors",
+      "blobId": "170fdec763f55032dc596f5b9167a16af9d9c0a0",
+      "size": 281938304,
+      "lfs": {
+        "sha256": "4073392b6ba308c5efd21b9f98550b3e7e4dbe521cad7a8c74b320e8c62701fc",
+        "size": 281938304,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "blobId": "a24836b878ef7cb19eeab2b120ee0b74f080bf47",
+      "size": 5135149760,
+      "lfs": {
+        "sha256": "1143cd2aaf65d24af34b5699d090aed724f6c0978c2ec5a5f56821ccb36260ce",
+        "size": 5135149760,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "unet/diffusion_pytorch_model.safetensors.index.json",
+      "blobId": "0efab08d53d8e2888545cb44ffbbef4cc77ec5cf",
+      "size": 202851
+    },
+    {
+      "rfilename": "vae/config.json",
+      "blobId": "88ddc47ac1dfd7b81dd7f248f56fc6245cd565b9",
+      "size": 807
+    },
+    {
+      "rfilename": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "blobId": "c4663db966f401ce4f88d6b895023bf966ed6f92",
+      "size": 167335342,
+      "lfs": {
+        "sha256": "6353737672c94b96174cb590f711eac6edf2fcce5b6e91aa9d73c5adc589ee48",
+        "size": 167335342,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "vae/diffusion_pytorch_model.safetensors",
+      "blobId": "4c1622aabca6d653aff336025ebd82e98f9545a6",
+      "size": 334643268,
+      "lfs": {
+        "sha256": "78f6189c8492013e3cac81637a1f657f790a237387f8a9dfd6bfa5fee28eb646",
+        "size": 334643268,
+        "pointerSize": 134
+      }
+    }
+  ],
+  "spaces": [
+    "fffiloni/diffusers-image-outpaint",
+    "OzzyGT/diffusers-fast-inpaint",
+    "OzzyGT/diffusers-image-fill",
+    "seawolf2357/REALVISXL-V5",
+    "VIDraft/ReSize-Image-Outpainting",
+    "multimodalart/outpaint-video-zoom",
+    "Profakerr/Inpaint",
+    "jallenjia/diffusers-image-outpaint",
+    "elismasilva/mod-control-tile-upscaler-sdxl",
+    "ameerazam08/diffusers-image-fill-with-prompt",
+    "aiqtech/imaginpaint",
+    "ameerazam08/REALVISXL-V5",
+    "VIDraft/PHI4-Multimodal",
+    "Gemini899/ReSize-Image-Outpainting",
+    "LPX55/Lightning-Painter-Multitool",
+    "raymerjacque/makulu-inpaint",
+    "MartsoBodziu1994/diffusers-image-outpaint",
+    "nuwandaa/edit-image",
+    "jozee/outpainting-image",
+    "guardiancc/diffusers-image-outpaint",
+    "fcyai/diffusers-image-outpaint",
+    "elismasilva/gradio_livelog",
+    "raymerjacque/makulu-outpaint",
+    "Ishankagg/image_resizer",
+    "pbriesch/diffusers-image-outpaint",
+    "tsqn/PhotoMaker-V2",
+    "knaimero/create-image",
+    "fernandofurundarena/diffusers-image-outpaint",
+    "Profakerr/ProFaker-Inpainting",
+    "Perry1323/outpaint",
+    "mattringer1977/diffusers-image-outpaint",
+    "smartfeed/turbo_fm",
+    "victorestrada/diffusers-image-outpaint",
+    "TobDeBer/PuLID-V5",
+    "TobDeBer/PuLID-dream8",
+    "Latyrine/diffusers-image-outpaint",
+    "OminduAnjana/lennox-text-2-image",
+    "Achyuth4/SeculexAI",
+    "aryantandon/image_outpainting",
+    "makululinux/makulu-inpaint",
+    "doevent/diffusers-image-outpaint2",
+    "user-agent/Image-Outpainting",
+    "r3gm/stablediffusion-infinity",
+    "Jonny001/Image-Uncrop",
+    "mohamedshawkat654/MyPerfumeStudio",
+    "Joyshreeeeeee/Nuton",
+    "TobDeBer/RefineRealVis",
+    "rol-box/GSDEE",
+    "Shad0ws/Creative-Resizing-AI",
+    "cocktailpeanut/diffusers-image-fill",
+    "mdgolike/go-image-like",
+    "rizwan1999/instant_id",
+    "openfree/SORA",
+    "K00B404/diffusers-image-outpaint",
+    "Reindeer0v0/diffusers-image-outpaint",
+    "rapid12k4/diffusers-fast-inpaint",
+    "ankush13r/Text-to-Image",
+    "kp-forks/diffusers-image-fill",
+    "bedead/diffusers-image-fill",
+    "Sathya-BOT/Text-to-Image",
+    "Mekasiu1018/diffusers-image-outpaint",
+    "matjarm/image-to-text-comparison",
+    "Faketoshi/4K",
+    "Aklavya/SnapScribe",
+    "Festrcze/diffusers-image-outpaint",
+    "ford442/RealVis_v5.0_BF16_D",
+    "RobinsAIWorld/diffusers-outpaint-cpu",
+    "piekeniuss/imagefile",
+    "damiano216/inpainting",
+    "moralec/diffusers-image-outpaint",
+    "gnosticdev/diffusers-image-outpaint",
+    "tom-cheung/diffusers-image-outpaint",
+    "GHGFDSA/diffusers-image-outpaint",
+    "waloneai/diffusers-image-outpaint",
+    "tsqn/diffusers-image-outpaint-2560w",
+    "tanmaykule/test-space",
+    "abdullahalioo/diffusers-image-outpaint",
+    "acecalisto3/PHI4-Multimodal",
+    "makululinux/outpaint",
+    "hazael00/mod-control-tile-upscaler-sdxl",
+    "fedor868686/diffusers-image-outpaint",
+    "hiinikhil/diffusers-fast-inpaint",
+    "DrBigNose/TestDuplicateSpace",
+    "Holanino24/diffusers-image-outpaint",
+    "0-Masa-0/diffusers-image-outpaint",
+    "Cris12389/diffusers-image-outpaint",
+    "MartsoBodziu1994/mod-control-tile-upscaler-sdxl",
+    "svjack/ReSize-Image-Outpainting",
+    "csansolo/diffusers-image-outpaint",
+    "TNT7722/diffusers-image-outpaint",
+    "TheDrunkenBeholder/diffusers-image-outpaint",
+    "rson/diffusers-image-outpaint",
+    "PrimWong/diffusers-image-outpaint",
+    "Gtazer/gtaz-image-outpaint",
+    "fbyt129/diffusers-image-outpaint",
+    "Sam8848/diffusers-image-outpaint",
+    "Dimmp/diffusers-image-outpaint",
+    "Red1618/Lightning-Painter-Multitool",
+    "Rirpt/diffusers-image-outpaint",
+    "jihuayang3/diffusers_image_outpaint_jupyter"
+  ],
+  "createdAt": "2024-09-02T12:03:52.000Z",
+  "safetensors": {
+    "parameters": {
+      "F32": 2567463684
+    },
+    "total": 2567463684
+  },
+  "usedStorage": 41627532090
+}

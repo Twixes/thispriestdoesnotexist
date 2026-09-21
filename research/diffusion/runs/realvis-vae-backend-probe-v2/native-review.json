@@ -1,0 +1,29 @@
+{
+  "reviewed_images": [
+    "source.png",
+    "decoded-cpu.png",
+    "decoded-mps.png"
+  ],
+  "method": "Each image individually inspected at native1024 with view_image, not just a contact sheet.",
+  "visual_observations": "Both reconstructions preserve coherent eyes, mouth, clerical collar and source identity. CPU and MPS look indistinguishable at displayed native size. Source already has pronounced fine skin texture; reconstructions soften some of it and retain fine texture on cheeks and forehead. No backend-specific repeating mesh is visible.",
+  "conclusion": "No evidence that MPS FP32 decoder numerical error explains generated-image mesh for this tested latent. CPU/MPS pixel differences are negligible; swapping decoder backend is not justified by this test.",
+  "limitations": [
+    "One teacher posterior-mean reconstruction, not arbitrary generated latents.",
+    "Does not isolate learned VAE reconstruction texture from teacher texture.",
+    "Does not test CPU versus MPS UNet/scheduler denoising.",
+    "No upstream FP16 generated-latent quantization simulation.",
+    "Both arms use matched VAE tiling; no untiled comparison."
+  ],
+  "timings_seconds": {
+    "load_vae_cpu_fp32": 0.035276458016596735,
+    "encode_cpu_fp32_posterior_mean": 8.414546541986056,
+    "decode_cpu_fp32": 18.32031704194378,
+    "transfer_vae_to_mps_fp32": 0.12947783304844052,
+    "transfer_matched_latent_to_mps": 0.0002639580052345991,
+    "decode_mps_fp32": 2.3140869580674917
+  },
+  "result_sha256": "eb9b0098c3a1fe8b43942640bfdf7780f98af37be11025b96c3c0f2317843fb2",
+  "precision_policy_sha256": "efdf4690b735c30021ee8630af376720f33ae42b6ef664c6975456d12a925baa",
+  "production_approved": false,
+  "earlier_attempt": "v1 stopped before encode due to runtime JSON PosixPath serialization; retained and fixed for this fresh v2 run."
+}

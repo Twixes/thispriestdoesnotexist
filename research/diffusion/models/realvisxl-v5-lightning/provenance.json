@@ -1,0 +1,328 @@
+{
+  "complete": true,
+  "created_at_utc": "2026-09-21T10:01:38.717817+00:00",
+  "model": "SG161222/RealVisXL_V5.0_Lightning",
+  "revision": "f4454158cedaab9f0688c199561d6c92525f3a85",
+  "license": "openrail++",
+  "license_source": {
+    "model": "stabilityai/stable-diffusion-xl-base-1.0",
+    "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+    "path": "LICENSE.md",
+    "reason": "Canonical SDXL OpenRAIL++ license text matching publisher card tag; RealVis repo has no standalone license file"
+  },
+  "checkpoint_kind": "FP16 Diffusers components only",
+  "files": [
+    {
+      "path": "sources/publisher-model-card.md",
+      "bytes": 2482,
+      "sha256": "d1220d40da8a0996d845bd61202b5e4356c1072c1fdef26564f136bd31f4cbe0",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/README.md",
+      "upstream_entry": {
+        "rfilename": "README.md",
+        "blobId": "9c0f6f8528a38d01c3f7dc7859c45c5f92eabb2a",
+        "size": 2482
+      },
+      "chunks": []
+    },
+    {
+      "path": "model_index.json",
+      "bytes": 708,
+      "sha256": "f15de0dfcd39efb54005fe7110fc07580dc7b90e73b2a7fb2ad4500381592e96",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/model_index.json",
+      "upstream_entry": {
+        "rfilename": "model_index.json",
+        "blobId": "76b03ea2dd74a0f91f68951013d899c82e0b2752",
+        "size": 708
+      },
+      "chunks": []
+    },
+    {
+      "path": "scheduler/scheduler_config.json",
+      "bytes": 526,
+      "sha256": "4276ecb13fc42b6667fe47bac67a376e99e4c26d477e189c4630dd7037a25a9a",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/scheduler/scheduler_config.json",
+      "upstream_entry": {
+        "rfilename": "scheduler/scheduler_config.json",
+        "blobId": "b60b9eed5dcaee8d28e4dad5d34132bf45d5e9cf",
+        "size": 526
+      },
+      "chunks": []
+    },
+    {
+      "path": "text_encoder/config.json",
+      "bytes": 584,
+      "sha256": "c5975e04befd9ced7cb307e2b6e935449e775d1963445c139d0bae8abdfacc34",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/text_encoder/config.json",
+      "upstream_entry": {
+        "rfilename": "text_encoder/config.json",
+        "blobId": "ac4122e37529c597f3c7f68e967534b63aa6a632",
+        "size": 584
+      },
+      "chunks": []
+    },
+    {
+      "path": "text_encoder/model.fp16.safetensors",
+      "bytes": 246144152,
+      "sha256": "0a873801e35a008b17e228189a83a8b41e068ffe7bde7c1105e8c6e947758bc5",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/text_encoder/model.fp16.safetensors",
+      "upstream_entry": {
+        "rfilename": "text_encoder/model.fp16.safetensors",
+        "blobId": "e8274d2f25201a5036de2e53b0f06074765c2633",
+        "size": 246144152,
+        "lfs": {
+          "sha256": "0a873801e35a008b17e228189a83a8b41e068ffe7bde7c1105e8c6e947758bc5",
+          "size": 246144152,
+          "pointerSize": 134
+        }
+      },
+      "chunks": []
+    },
+    {
+      "path": "text_encoder_2/config.json",
+      "bytes": 594,
+      "sha256": "a07d5cbb8a2b6c5834e67008de0aee108bd6396edfe909ef7b6c08c21d5c4c07",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/text_encoder_2/config.json",
+      "upstream_entry": {
+        "rfilename": "text_encoder_2/config.json",
+        "blobId": "024774b3a5a47f06f7a5a3efced2c837a772d512",
+        "size": 594
+      },
+      "chunks": []
+    },
+    {
+      "path": "text_encoder_2/model.fp16.safetensors",
+      "bytes": 1389382176,
+      "sha256": "dfa429b268cd3f6297927f1fd3eacac04781b17ab4caa97892a461ff41400a5e",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/text_encoder_2/model.fp16.safetensors",
+      "upstream_entry": {
+        "rfilename": "text_encoder_2/model.fp16.safetensors",
+        "blobId": "3fc3a87bced37cd1e0b9ab0ce0998f9d406f6f01",
+        "size": 1389382176,
+        "lfs": {
+          "sha256": "dfa429b268cd3f6297927f1fd3eacac04781b17ab4caa97892a461ff41400a5e",
+          "size": 1389382176,
+          "pointerSize": 135
+        }
+      },
+      "chunks": [
+        {
+          "path": "text_encoder_2/model.fp16.safetensors.weights-part-000",
+          "bytes": 1073741824,
+          "sha256": "779e67ece2c0c828b011fec26615337a3b6bc3ebcd1697534ca9b762045c2528"
+        },
+        {
+          "path": "text_encoder_2/model.fp16.safetensors.weights-part-001",
+          "bytes": 315640352,
+          "sha256": "b0ea33617fe54a84726f10a14e2051399a0b143d8d3c8a3da47407303b3314eb"
+        }
+      ]
+    },
+    {
+      "path": "tokenizer/merges.txt",
+      "bytes": 573514,
+      "sha256": "0bc7695944744789d6fd6d0ab754bcbbb9e36f1c182df0a006d619ce70a1e052",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/tokenizer/merges.txt",
+      "upstream_entry": {
+        "rfilename": "tokenizer/merges.txt",
+        "blobId": "1876098c4dcbf22af518537b3bd63102a05e1313",
+        "size": 573514
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/special_tokens_map.json",
+      "bytes": 496,
+      "sha256": "c8227988aadac941e93b5ffef08b4add8ccbdb26404a62b3e41f61eef119b252",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/tokenizer/special_tokens_map.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer/special_tokens_map.json",
+        "blobId": "ad919e089d4d032a933a2a9087de2857d55af3bc",
+        "size": 496
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "bytes": 734,
+      "sha256": "2edbd316072af0382bb999f82b007ad8af159d6277648e29b7747d72c3add791",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/tokenizer/tokenizer_config.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer/tokenizer_config.json",
+        "blobId": "d3269e79768869e2475079df12936e4f5a5f00e2",
+        "size": 734
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/vocab.json",
+      "bytes": 1109372,
+      "sha256": "fd67774a869730a6b27bf53d3e434e72054f2a825873c7af3bece183bb1f791e",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/tokenizer/vocab.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer/vocab.json",
+        "blobId": "521b2c5def638d17b1e463ce25597140a1720005",
+        "size": 1109372
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/merges.txt",
+      "bytes": 573514,
+      "sha256": "0bc7695944744789d6fd6d0ab754bcbbb9e36f1c182df0a006d619ce70a1e052",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/tokenizer_2/merges.txt",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/merges.txt",
+        "blobId": "1876098c4dcbf22af518537b3bd63102a05e1313",
+        "size": 573514
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/special_tokens_map.json",
+      "bytes": 484,
+      "sha256": "a83f5831a70d1d21c057186d35aaa504894103d24ee905baa99bc7e83ceb70ee",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/tokenizer_2/special_tokens_map.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/special_tokens_map.json",
+        "blobId": "4473e143ec2843c3cf9d6db8b1062f1e71076615",
+        "size": 484
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/tokenizer_config.json",
+      "bytes": 893,
+      "sha256": "6e6c80bd367c7b39df2d7add74577ffd79d0840f3aa96e3b5893b95230743bcf",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/tokenizer_2/tokenizer_config.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/tokenizer_config.json",
+        "blobId": "5f7b9260a5b05507390f563c9277c19128c9a74c",
+        "size": 893
+      },
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/vocab.json",
+      "bytes": 1109372,
+      "sha256": "fd67774a869730a6b27bf53d3e434e72054f2a825873c7af3bece183bb1f791e",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/tokenizer_2/vocab.json",
+      "upstream_entry": {
+        "rfilename": "tokenizer_2/vocab.json",
+        "blobId": "521b2c5def638d17b1e463ce25597140a1720005",
+        "size": 1109372
+      },
+      "chunks": []
+    },
+    {
+      "path": "unet/config.json",
+      "bytes": 1850,
+      "sha256": "a7f46710bde141386d8b1249b16beabb769affd8873eb9c6def581e8a110798a",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/unet/config.json",
+      "upstream_entry": {
+        "rfilename": "unet/config.json",
+        "blobId": "e8514f0869ff13b3364bd674adaf3f681c978bab",
+        "size": 1850
+      },
+      "chunks": []
+    },
+    {
+      "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 5135149760,
+      "sha256": "1143cd2aaf65d24af34b5699d090aed724f6c0978c2ec5a5f56821ccb36260ce",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/unet/diffusion_pytorch_model.fp16.safetensors",
+      "upstream_entry": {
+        "rfilename": "unet/diffusion_pytorch_model.fp16.safetensors",
+        "blobId": "a24836b878ef7cb19eeab2b120ee0b74f080bf47",
+        "size": 5135149760,
+        "lfs": {
+          "sha256": "1143cd2aaf65d24af34b5699d090aed724f6c0978c2ec5a5f56821ccb36260ce",
+          "size": 5135149760,
+          "pointerSize": 135
+        }
+      },
+      "chunks": [
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-000",
+          "bytes": 1073741824,
+          "sha256": "756724c620d2c77c0f18e5fcc46b74e7a7d17008d79f9e6a78bbaa0c021b0096"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-001",
+          "bytes": 1073741824,
+          "sha256": "c5777344d9155a8010bb4f1e403840b5231f93b48be2cfd92debeaccdde4255d"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-002",
+          "bytes": 1073741824,
+          "sha256": "1f47457599edeeee4be6fa5e157c568145f180d26b114d6ceb3190e3381f5688"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-003",
+          "bytes": 1073741824,
+          "sha256": "a5c588d23df7300b7c4d69c7bae88b9818ce3c40c96c49436fea836754afe617"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-004",
+          "bytes": 840182464,
+          "sha256": "6aa2c9cf7ca1f8d6e94f96176868eaa3f64b66618863e092af89c8048994f0a3"
+        }
+      ]
+    },
+    {
+      "path": "vae/config.json",
+      "bytes": 807,
+      "sha256": "5d301324288c14277bab2b284004b91b81faffc800202ddba59e401c82683959",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/vae/config.json",
+      "upstream_entry": {
+        "rfilename": "vae/config.json",
+        "blobId": "88ddc47ac1dfd7b81dd7f248f56fc6245cd565b9",
+        "size": 807
+      },
+      "chunks": []
+    },
+    {
+      "path": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 167335342,
+      "sha256": "6353737672c94b96174cb590f711eac6edf2fcce5b6e91aa9d73c5adc589ee48",
+      "source_url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/f4454158cedaab9f0688c199561d6c92525f3a85/vae/diffusion_pytorch_model.fp16.safetensors",
+      "upstream_entry": {
+        "rfilename": "vae/diffusion_pytorch_model.fp16.safetensors",
+        "blobId": "c4663db966f401ce4f88d6b895023bf966ed6f92",
+        "size": 167335342,
+        "lfs": {
+          "sha256": "6353737672c94b96174cb590f711eac6edf2fcce5b6e91aa9d73c5adc589ee48",
+          "size": 167335342,
+          "pointerSize": 134
+        }
+      },
+      "chunks": []
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 14109,
+      "sha256": "19b6998b569b53ac1fc2158a8a3202c8699a9a4605b47075715d9c96be7fb6d0",
+      "source_url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/462165984030d82259a11f4367a4eed129e94a7b/LICENSE.md",
+      "upstream_entry": {
+        "rfilename": "LICENSE.md",
+        "blobId": "af7e355e31c0d976933aa0d06759611151ad8c39",
+        "size": 14109
+      },
+      "chunks": []
+    }
+  ],
+  "prepare_source_sha256": "180df26b16d7b598693a30990c4de8e200dd3cb761a28a6549736f0ff0ff5330",
+  "upstream_metadata_sha256": "586e480208fa894f33722a4e6c77cf7765d5101975e69a213dec901cfa647777",
+  "license_metadata_sha256": "55b8606f6cb3ee0adc64fdd279e4cc9e275b35295e77dc98067ee9937afdb4ef",
+  "inference_reference": {
+    "steps": 5,
+    "author_sampler": "DPM++ SDE Karras / DPM++ SDE",
+    "guidance_range": [
+      1,
+      2
+    ],
+    "quality_comparison_resolution": 1024,
+    "exact_diffusers_sampler": "to be frozen in RealVis evaluator, not baked DDIM defaults"
+  },
+  "model_load_or_inference_performed": false,
+  "production_approved": false
+}

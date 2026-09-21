@@ -1,0 +1,12 @@
+{"phase": "load_vae_cpu_fp32-before", "rss_bytes": 383139840, "mps_driver_bytes": 458752, "available_fraction": 0.44420846303304035, "swap_growth_bytes": 0, "elapsed_seconds": 0.00016479101032018661}
+{"phase": "load_vae_cpu_fp32-after", "rss_bytes": 717750272, "mps_driver_bytes": 458752, "available_fraction": 0.44420846303304035, "swap_growth_bytes": 0, "elapsed_seconds": 0.03631079092156142}
+{"phase": "encode_cpu_fp32_posterior_mean-before", "rss_bytes": 768081920, "mps_driver_bytes": 458752, "available_fraction": 0.44420846303304035, "swap_growth_bytes": 0, "elapsed_seconds": 0.055773790925741196}
+{"phase": "encode_cpu_fp32_posterior_mean-after", "rss_bytes": 4528373760, "mps_driver_bytes": 458752, "available_fraction": 0.40237776438395184, "swap_growth_bytes": 0, "elapsed_seconds": 8.47122737497557}
+{"phase": "decode_cpu_fp32-before", "rss_bytes": 4528865280, "mps_driver_bytes": 458752, "available_fraction": 0.4023628234863281, "swap_growth_bytes": 0, "elapsed_seconds": 8.473568457993679}
+{"phase": "decode_cpu_fp32-after", "rss_bytes": 7256064000, "mps_driver_bytes": 458752, "available_fraction": 0.3671099344889323, "swap_growth_bytes": 0, "elapsed_seconds": 26.794869374949485}
+{"phase": "transfer_vae_to_mps_fp32-before", "rss_bytes": 7256145920, "mps_driver_bytes": 458752, "available_fraction": 0.3671449025472005, "swap_growth_bytes": 0, "elapsed_seconds": 26.861381249967963}
+{"phase": "transfer_vae_to_mps_fp32-after", "rss_bytes": 2309521408, "mps_driver_bytes": 386351104, "available_fraction": 0.3671449025472005, "swap_growth_bytes": 0, "elapsed_seconds": 26.991850332939066}
+{"phase": "transfer_matched_latent_to_mps-before", "rss_bytes": 2309521408, "mps_driver_bytes": 386351104, "available_fraction": 0.3671449025472005, "swap_growth_bytes": 0, "elapsed_seconds": 26.991962415981106}
+{"phase": "transfer_matched_latent_to_mps-after", "rss_bytes": 2309521408, "mps_driver_bytes": 386351104, "available_fraction": 0.3671449025472005, "swap_growth_bytes": 0, "elapsed_seconds": 26.9926288749557}
+{"phase": "decode_mps_fp32-before", "rss_bytes": 2309636096, "mps_driver_bytes": 386351104, "available_fraction": 0.3671449025472005, "swap_growth_bytes": 0, "elapsed_seconds": 26.993369999923743}
+{"phase": "decode_mps_fp32-after", "rss_bytes": 2495987712, "mps_driver_bytes": 2745942016, "available_fraction": 0.36568133036295575, "swap_growth_bytes": 0, "elapsed_seconds": 29.30830266594421}

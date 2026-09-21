@@ -1,0 +1,20 @@
+{
+  "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/flux-priest-domain-v1/train/141.png",
+  "source_sha256": "751d3492a88e8b2b348ad56012d2de89001cf8256b6bd82e9fe0aeb7b29ed22b",
+  "weight_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/models/realvisxl-v5-lightning/vae/diffusion_pytorch_model.fp16.safetensors",
+  "weight_sha256": "6353737672c94b96174cb590f711eac6edf2fcce5b6e91aa9d73c5adc589ee48",
+  "model_revision": "f4454158cedaab9f0688c199561d6c92525f3a85",
+  "config_sha256": "5d301324288c14277bab2b284004b91b81faffc800202ddba59e401c82683959",
+  "script_sha256": "12ff91ed6be96284b7083c3e1be923e82ff56d8f996b1648c00d2cf9be48c95b",
+  "source_selection": "First accepted train image141; viewed native before diagnostic",
+  "dtype": "float32 on CPU and MPS from same publisherFP16 weights",
+  "posterior": "CPU encoder mean, deterministic, no sampling",
+  "tiling": {
+    "sample": 512,
+    "latent": 64,
+    "overlap": 0.25
+  },
+  "total_deadline_seconds": 300,
+  "operation_deadline_seconds": 60,
+  "production_approved": false
+}

@@ -1,0 +1,51 @@
+{
+  "decision": "Select Juggernaut X Hyper for the next bounded adaptation/identity-variety trial, not production",
+  "model": "RunDiffusion/Juggernaut-X-Hyper",
+  "revision": "42fee7475922d8de7246cdcbe5e3a5e22c0ecf61",
+  "basis": [
+    "Native1024 Juggernaut sixstep is comparatively more photographic than the RealVis fivestep configuration in the matched8-case cohort",
+    "Same SDXL architecture family as the locally executed20/100-update LoRA pilot; compatible tooling is evidence of practical ease, not a proven Juggernaut training result",
+    "RealVis does not offer a visual-quality advantage in this tested configuration",
+    "CPU/MPS FP32 VAE reconstruction test found no material backend discrepancy"
+  ],
+  "limitations": [
+    "No priest post-training on either new base",
+    "No CUDA/server latency measurements or production approval",
+    "Native1024 training memory remains untested; existing local SDXL updates were512",
+    "Few-step distillation can regress under ordinary denoising LoRA",
+    "Strong within-prompt family resemblance;8 seeds do not establish identity diversity",
+    "Full image VAE vs tiled decode differs; all successfulnative comparisons use tiled original VAE",
+    "Small subjective agent reviews are not owner approval"
+  ],
+  "next_trial": [
+    "New broader appearance prompts and held-back fresh seeds to test identity variety",
+    "If training, fresh adapter and caches bound to this exact base with a base-only control; do not reuse failed Turbo adapter",
+    "Compare calendar appearance, facial detail and identity variety after a small bounded update budget; stop regression",
+    "Only a quality-promising exact candidate proceeds to actual deployment-GPU latency benchmarking"
+  ],
+  "source_results": [
+    {
+      "path": "research/diffusion/runs/juggernaut-hyper-tcd4-native1024-v2-tiled/result.json",
+      "sha256": "1f16a090b652de3f3f0dda142fa31cd3e601ca87805f1ebb9a2bfefa24c866cc"
+    },
+    {
+      "path": "research/diffusion/runs/juggernaut-hyper-tcd4-512-v1/result.json",
+      "sha256": "6090f4be56be9f5ad6d1041ed691cdc585a75032add232b53109f4a78c574ee7"
+    },
+    {
+      "path": "research/diffusion/runs/juggernaut-hyper-tcd6-cfg1p5-native1024-v1-tiled/result.json",
+      "sha256": "18664344fe03f1bbb7de4accdd4012d7a933c88f007ff2e8fff3a60b9a1d45f6"
+    },
+    {
+      "path": "research/diffusion/runs/realvis-v5-lightning-sde5-native1024-tiled-v1/result.json",
+      "sha256": "28487c022b91da2e086e0f16255b451a44c532841539f6378b10b30093d2fe59"
+    },
+    {
+      "path": "research/diffusion/runs/realvis-vae-backend-probe-v2/result.json",
+      "sha256": "eb9b0098c3a1fe8b43942640bfdf7780f98af37be11025b96c3c0f2317843fb2"
+    }
+  ],
+  "production_approved": false,
+  "server_latency_proven": false,
+  "paid_compute_used": false
+}

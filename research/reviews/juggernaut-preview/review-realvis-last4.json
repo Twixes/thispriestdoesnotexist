@@ -1,0 +1,54 @@
+{
+  "reviewer": "root agent",
+  "run": "research/diffusion/runs/realvis-v5-lightning-sde5-native1024-tiled-v1",
+  "result_sha256": "28487c022b91da2e086e0f16255b451a44c532841539f6378b10b30093d2fe59",
+  "review_type": "Subjective native visual inspection, not owner approval",
+  "cases": [
+    {
+      "index": 4,
+      "native_sha256": "d53d2ca3e5c6c1c71374b29ae408857949c0b24ac8b00c97fd8af4ba663c43e3",
+      "face_structure": "coherent",
+      "collar_visible": true,
+      "hat": false,
+      "photo_texture": "fail - regular mesh and overly smooth/sculpted surfaces"
+    },
+    {
+      "index": 5,
+      "native_sha256": "f16bbaa9f9e9e07ede73f795f8b9b0b13a260b665dbdea607021a221b6879694",
+      "face_structure": "coherent",
+      "collar_visible": true,
+      "hat": false,
+      "photo_texture": "fail - regular mesh and overly smooth/sculpted surfaces"
+    },
+    {
+      "index": 6,
+      "native_sha256": "e72edc213edad12c10f30ad05632436e3e87029b36ac71b2e83b61b5490db964",
+      "face_structure": "coherent",
+      "collar_visible": true,
+      "hat": false,
+      "photo_texture": "fail - regular mesh and overly smooth/sculpted surfaces"
+    },
+    {
+      "index": 7,
+      "native_sha256": "ceabbf05c932fe47c8e66ea6e5c0599c715edc88e00b1df0db19e653a5d474b7",
+      "face_structure": "coherent",
+      "collar_visible": true,
+      "hat": false,
+      "photo_texture": "fail - regular mesh and overly smooth/sculpted surfaces"
+    }
+  ],
+  "observations": [
+    "004/005 strongly resemble one another;006/007 also form a similar-faced pair.",
+    "007 irises look flat/light and uncertain despite coherent overall face.",
+    "006/007 beard and hair have artificial regular etched texture.",
+    "All4 have noticeable fine mesh over skin/background; decoder backend diagnostic warranted before assigning cause.",
+    "Juggernaut sixstep is comparatively more photographic, but not production-cleared."
+  ],
+  "warm_local_generation_plus_webp": {
+    "median": 3.593750271422323,
+    "p95_nearest_rank": 3.647777416044846,
+    "max": 3.647777416044846
+  },
+  "production_approved": false,
+  "server_latency_proven": false
+}

@@ -1,0 +1,30 @@
+{
+  "model": "SG161222/RealVisXL_V5.0_Lightning",
+  "revision": "f4454158cedaab9f0688c199561d6c92525f3a85",
+  "download_bytes": 6941401469,
+  "additional_part_bytes": 6524531936,
+  "free_bytes_before": 271406051328,
+  "selected_paths": [
+    "sources/publisher-model-card.md",
+    "model_index.json",
+    "scheduler/scheduler_config.json",
+    "text_encoder/config.json",
+    "text_encoder/model.fp16.safetensors",
+    "text_encoder_2/config.json",
+    "text_encoder_2/model.fp16.safetensors",
+    "tokenizer/merges.txt",
+    "tokenizer/special_tokens_map.json",
+    "tokenizer/tokenizer_config.json",
+    "tokenizer/vocab.json",
+    "tokenizer_2/merges.txt",
+    "tokenizer_2/special_tokens_map.json",
+    "tokenizer_2/tokenizer_config.json",
+    "tokenizer_2/vocab.json",
+    "unet/config.json",
+    "unet/diffusion_pytorch_model.fp16.safetensors",
+    "vae/config.json",
+    "vae/diffusion_pytorch_model.fp16.safetensors",
+    "LICENSE.md"
+  ],
+  "max_network_threads": 3
+}
