@@ -1,0 +1,172 @@
+{
+  "reviewed_unix": 1789970253.2351758,
+  "reviewer": "inference_service",
+  "kind": "PNG-only visual comparison, no model loads",
+  "scope": "24 native1024 images: all8 source RGB, all8 step10 student RGB, all8 step10 student grayscale. No downsized contact used as native evidence. Source grayscale and preview000 student duplicates not separately viewed; source color carries original face/clothing detail.",
+  "rows": [
+    {
+      "id": "000",
+      "note": "Visibly a child; bareheaded. Face and teeth retain source structure; freckles/skin contrast and brows strengthen. No clerical collar.",
+      "viewed_native1024": [
+        {
+          "path": "preview-000/000-source-rgb.png",
+          "sha256": "23e94b3020b38a7ca5ca03aa2f0356a5af0d72802e61cb31b134ff7d3a81f586"
+        },
+        {
+          "path": "preview-010/000-student-rgb.png",
+          "sha256": "df53fbc10f0e211cd3562b3516fd0592fa42e39366ced352991067228b5bf399"
+        },
+        {
+          "path": "preview-010/000-student-gray.png",
+          "sha256": "b1a0aae489acad33c15af6eb27015c450b6366500beef615416269fb2914dfcb"
+        }
+      ]
+    },
+    {
+      "id": "001",
+      "note": "Feminine-presenting face remains coherent; source cheek decoration persists. Skin speckling and brows strengthen. No clerical collar; not an adult-male priest result.",
+      "viewed_native1024": [
+        {
+          "path": "preview-000/001-source-rgb.png",
+          "sha256": "9ed018f560a258996a61c3e2ca98146a538a4103bb8defd841fa5d5af6b5b0d2"
+        },
+        {
+          "path": "preview-010/001-student-rgb.png",
+          "sha256": "50b07397b5d8cd47bc9914848f9751c31f64a6b33c4be78946da51792c69595e"
+        },
+        {
+          "path": "preview-010/001-student-gray.png",
+          "sha256": "08a6d3133d8cb6750f0c110a4ab2bb6c474acd16e8d78afa4a3c30e9240de8c9"
+        }
+      ]
+    },
+    {
+      "id": "002",
+      "note": "Visibly a child with elaborate hat. Face remains coherent but freckles/contrast increase; clothing and hat persist, no clerical collar.",
+      "viewed_native1024": [
+        {
+          "path": "preview-000/002-source-rgb.png",
+          "sha256": "ee55cc45023dba076c0395688858dda26a856e2e3ee085f9eaa57375b261c226"
+        },
+        {
+          "path": "preview-010/002-student-rgb.png",
+          "sha256": "448ac205a4b0d9a4fb1c6b1311093a6e9373cec49ca7d7eb3f5a25698007f16d"
+        },
+        {
+          "path": "preview-010/002-student-gray.png",
+          "sha256": "a4069e539b5e730b1625ced691d774a1b54739359e52a4384c40542a11e166ee"
+        }
+      ]
+    },
+    {
+      "id": "003",
+      "note": "Adult masculine face, glasses and beard remain coherent. Hat and blue ordinary shirt persist. Stronger brows, speckling and contrast; no clerical collar.",
+      "viewed_native1024": [
+        {
+          "path": "preview-000/003-source-rgb.png",
+          "sha256": "c5e5a8361fdb8663d2dd8fdfa77e0b6a06dd04014d412fc03bf651145eab57cb"
+        },
+        {
+          "path": "preview-010/003-student-rgb.png",
+          "sha256": "a99cc1a6fcdfad25989e49aa83242cdf54a2231c1ff598ff29e21610dabdca30"
+        },
+        {
+          "path": "preview-010/003-student-gray.png",
+          "sha256": "57b5e32f4592e56470dc831df25b4d6665b22bb740ad104509963cf5e43e6d8d"
+        }
+      ]
+    },
+    {
+      "id": "004",
+      "note": "Youthful face, age uncertain; excluded from adult success counts. Knitted hat/scarf persist. Face coherent with stronger brows/texture; no collar.",
+      "viewed_native1024": [
+        {
+          "path": "preview-000/004-source-rgb.png",
+          "sha256": "3676b5c67e429141c0e04816bf11793dee4064c4efca4ed78956be5b291f3ce2"
+        },
+        {
+          "path": "preview-010/004-student-rgb.png",
+          "sha256": "3e0c81a60e4ead06756d45ab217b244fc199c62b1af7e942c95402ea00b32fb0"
+        },
+        {
+          "path": "preview-010/004-student-gray.png",
+          "sha256": "38ec3eb6f165d9276f67845af1d614d19890a109336ade191d76b9c75654b8aa"
+        }
+      ]
+    },
+    {
+      "id": "005",
+      "note": "Visibly a child. Face/smile coherent, red ordinary top and crew neckline persist. Stronger skin texture and brows; no clerical collar.",
+      "viewed_native1024": [
+        {
+          "path": "preview-000/005-source-rgb.png",
+          "sha256": "473bd9b4220ac67cd8a1506c9fb2d6803444ed84c28e1730f1f91d00402c94e1"
+        },
+        {
+          "path": "preview-010/005-student-rgb.png",
+          "sha256": "48aa145e0593559fbb4cc4def95da31709d769e2311b8b45b31204ea0d328240"
+        },
+        {
+          "path": "preview-010/005-student-gray.png",
+          "sha256": "7e50a906993de7f217409e7dd23c6143e1cba365c11e70cee6c905f8f0ed7211"
+        }
+      ]
+    },
+    {
+      "id": "006",
+      "note": "Adult masculine bareheaded face retains glasses and pose. Source eye/glasses peculiarities persist; stubble/freckles/contrast increase. Mixed pale open shirt/dark garment unchanged in kind; no clerical collar.",
+      "viewed_native1024": [
+        {
+          "path": "preview-000/006-source-rgb.png",
+          "sha256": "cac15190503243af4ae7331f38fb19751509ccc93c205368db2fa75934853b29"
+        },
+        {
+          "path": "preview-010/006-student-rgb.png",
+          "sha256": "2a658f165bf52286a26fdd7e07ecc2adb0fa1abce01999b5b107343bfc86c8f5"
+        },
+        {
+          "path": "preview-010/006-student-gray.png",
+          "sha256": "afb0182cfa4f0a68386673da4a5a07c020e55628aef0ea2eb352420e60582d6e"
+        }
+      ]
+    },
+    {
+      "id": "007",
+      "note": "Adult masculine bareheaded face and glasses remain coherent. Heavier brow, stronger chin/cheek speckling and contrast. Ordinary white shirt edge at bottom, no recognizable clerical tab.",
+      "viewed_native1024": [
+        {
+          "path": "preview-000/007-source-rgb.png",
+          "sha256": "0231819d183c4cd826d91d221eb4fed387d14a12685d391f807ffcbf9b6eec57"
+        },
+        {
+          "path": "preview-010/007-student-rgb.png",
+          "sha256": "b86835e8da90e528d380651cd895795868abfdc6c8b4c51f4b3e1c27e655eeee"
+        },
+        {
+          "path": "preview-010/007-student-gray.png",
+          "sha256": "9e3286bc33f40025fa3955d97b23638f29f99ee5df3239ba5c33aecb34f54d15"
+        }
+      ]
+    }
+  ],
+  "summary": "No new broad anatomical collapse in this fixed8 panel. Outputs remain close to source identities/poses with a consistent increase in skin speckling, contrast and eyebrow weight. This is a visible texture shift, not clerical clothing adaptation. Zero convincing new clerical collars. Hats, children and other ineligible source categories persist. Grayscale conversion does not solve those failures.",
+  "face_preservation": "Qualitative source resemblance remains high at10, but no biometric identity claim. Source artifacts such as001 cheek decoration and006 glasses/eyes remain; modest new texture changes are visible.",
+  "recommendation": {
+    "bounded_500_feasibility": "Reasonable only as a finite research experiment to determine whether longer optimization learns target structure;10 updates are insufficient to establish either success or eventual failure. Current outputs provide no positive collar-generalization evidence.",
+    "review_milestones": [
+      100,
+      250,
+      500
+    ],
+    "stop_or_reassess": "At native milestones, stop/reassess on new broad facial/anatomical failures or escalating speckled/pitted skin artifacts. Do not extend beyond500 solely because CLIP loss improves; require visible clean clerical clothing progress and preserved faces. Evaluate additional adult male bareheaded latent examples alongside this unfiltered fixed panel, without hiding current ineligible samples.",
+    "production_approved": false
+  },
+  "evidence_sha256": {
+    "recipe.json": "15a4729b3f881b0a3b9fc63ab9f2f866d63f8fddf450eb0879805d86213ef0f1",
+    "worker-result.json": "4cd4b12d43cd8882c14e0c592ab206dfca6c322ee4a4e8ecb70be4bf8adb2912",
+    "source-reproduction.json": "2838c735dba0abd013cf4d7c0ce1da570a75547ece8de4fe2f1bc7f19613dab5",
+    "worker-provenance-complete.json": "06b95f39090313f05c6546504736d719286c9108424f3f53898f9e1912b1fe18",
+    "supervisor-result.json": "76feca2618d187e87ed773780c402b22df0b2fc631ed06412b5ca35ca665d036"
+  },
+  "limits": "Eight fixed latent samples, not a distributional eligibility assessment. No model inference, numerical validation, input mutations or training launch performed. No success claim for adult-only/no-hat/hot-priest sampling."
+}

@@ -65,8 +65,20 @@
   "stop_step": 625,
   "additional_updates": 125,
   "source_sha256": "5365e8e576d89733cb220a0f7aabe223b58b573f490765f925e0ee125365a1ef",
-  "complete": false,
+  "complete": true,
   "automatic_retry": false,
   "production_approved": false,
-  "pid": 27880
+  "pid": 27880,
+  "child_exit_code": 0,
+  "outputs_sha256": {
+    "resume.pt": "c04482a462abf4ece7034cdc09be19dc857ee201b11427f6526c49ae378bf6dc",
+    "generator-000625.pt": "94f94018e8705ae6dac665702099610db3c5ab8f7d8a5e7799dbaa3d82d7208d",
+    "samples-000625-ema.png": "b527c6509cdcc42bec0237e3649213939e25408e571a323750f6e6b0d76e7327",
+    "samples-000625-raw.png": "bbdd680118a73f2de04dd9558bf190c878bb5c1d5bbe503048ec60f2a172d708",
+    "samples-000625-untruncated.png": "b35d4de4e155903a1f40eed8d7a0b5b79b7a4f07a82a07513a1cbe4c8e10d216",
+    "config.json": "b330c97f252c2b0f20d041923900676c806cfdac6b47241e062f50cabef09997"
+  },
+  "numeric_and_visual_review_pending": true,
+  "ended_unix": 1789969864.049869,
+  "wall_seconds": 3421.406386082992
 }

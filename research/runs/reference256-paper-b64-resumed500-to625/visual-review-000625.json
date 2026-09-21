@@ -1,0 +1,95 @@
+{
+  "reviewed_unix": 1789969962.569344,
+  "reviewer": "inference_service",
+  "scope": "PNG-only. All16 native256 tiles inspected in each unresized1024 grid, for raw psi1, EMA psi0.7 and EMA psi1, at500 and625. No new rendering or model load.",
+  "image_sha256": {
+    "samples-000500-raw.png": "f35f750f4b9ae92b04a8e1bdf4090c989f3205ee2674baca3a7633de8e738092",
+    "samples-000500-ema.png": "13a0ce3db5bd28f1a34a51b8f8a853cbb0291cf5aa921c69bfa8439aa0b17dc2",
+    "samples-000500-untruncated.png": "760603f5a19f756f91d041736b1386d1ddf94f3102c99830a88a04ec8417562d",
+    "samples-000625-raw.png": "bbdd680118a73f2de04dd9558bf190c878bb5c1d5bbe503048ec60f2a172d708",
+    "samples-000625-ema.png": "b527c6509cdcc42bec0237e3649213939e25408e571a323750f6e6b0d76e7327",
+    "samples-000625-untruncated.png": "b35d4de4e155903a1f40eed8d7a0b5b79b7a4f07a82a07513a1cbe4c8e10d216"
+  },
+  "terminal": {
+    "pid": 27880,
+    "ps_stdout": "",
+    "child_exit_code": 0,
+    "step": 625,
+    "kimg": 40,
+    "launcher_wall_seconds": 3421.406386082992,
+    "launch_sha256": "8b7d7e0e2326269efbb6acb251199abb3a2ac4036d0ad65404c7fa61476d1a0d",
+    "completed_sha256": "d0a9380d5a16c7310aaa8e01994ab39d5a1571e861da3e39ecd384984ac5b105"
+  },
+  "raw_625_tiles": [
+    {
+      "tile": "r1c1",
+      "observation": "Bearded face legible, black shirt/tab; eyes and facial texture remain somewhat stylized."
+    },
+    {
+      "tile": "r1c2",
+      "observation": "Wavy-haired face legible, pale mouth/skin blending and painterly detail remain."
+    },
+    {
+      "tile": "r1c3",
+      "observation": "Short-haired face legible, tab clear, uneven eyes/skin texture."
+    },
+    {
+      "tile": "r1c4",
+      "observation": "Curly-haired pale face legible but washed-out/painterly; tab clear."
+    },
+    {
+      "tile": "r2c1",
+      "observation": "Short-haired darker face legible, bright high neckline and tab; texture uneven."
+    },
+    {
+      "tile": "r2c2",
+      "observation": "Curly-haired bearded face legible with tab; dark eyes and patchy texture."
+    },
+    {
+      "tile": "r2c3",
+      "observation": "Angled bearded face legible, tab clear; uneven eyes/skin texture."
+    },
+    {
+      "tile": "r2c4",
+      "observation": "Side-part face legible, tab clear, softened mouth and eye detail."
+    },
+    {
+      "tile": "r3c1",
+      "observation": "Curly-haired angled face legible, tab clear; somewhat painterly."
+    },
+    {
+      "tile": "r3c2",
+      "observation": "Short-haired face legible, tab clear; eyes and smile are stylized."
+    },
+    {
+      "tile": "r3c3",
+      "observation": "Side-part face legible, tab clear; flattened mouth/cheek texture."
+    },
+    {
+      "tile": "r3c4",
+      "observation": "Swept-haired face legible, tab clear; uneven eyes/skin."
+    },
+    {
+      "tile": "r4c1",
+      "observation": "Bearded face legible, tab clear; similar hairstyle/appearance to other grid members."
+    },
+    {
+      "tile": "r4c2",
+      "observation": "Short-haired bearded face legible, tab clear; dark eye texture."
+    },
+    {
+      "tile": "r4c3",
+      "observation": "Catastrophic face failure persists: architectural bars occupy most of facial region."
+    },
+    {
+      "tile": "r4c4",
+      "observation": "Catastrophic face failure persists: architectural bars occupy most of facial region; some hair/ear outline remains."
+    }
+  ],
+  "raw_comparison": "Fourteen recognizable male priest portraits remain, with clearer black shirts and white tabs than paired-loss variants. Some contrast/framing/detail changes, but no decisive photographic-quality improvement. The same two bottom-right catastrophic architectural face failures persist. Fixed grid remains dominated by similar dark wavy hair and faces; no unseen diversity conclusion.",
+  "ema_psi07_comparison": "Mouth and eye legibility improve somewhat in several tiles relative to500, but lower-face texture remains patchy, smeared or visibly synthetic. All16 contain recognizable faces and white tabs; no raw-style whole-face architectural replacement in this truncated grid. Similar faces and hair dominate. No photographic-quality pass.",
+  "ema_psi1_comparison": "Some previously ghosted facial detail becomes more legible, but severe lower-face distortions persist. r2c2 has conflicting pale torso/black collar structure; r3c2 retains microphone/ambiguous mixed clothing. r4c3 has malformed face and extra-person/background content. r4c4 now shows prominent architectural stripes over right face, worse than500. Color traces persist, particularly r1c3 clothing; raw saved grid is near monochrome.",
+  "eligibility": "Visible adult male presentation and collars in recognizable raw samples do not offset two failed faces. No obvious hats in this fixed16, but it does not establish no-hat eligibility or attractiveness over unseen latents.",
+  "limits": "Only fixed16 per variant. No numerical weight validation, memorization assessment or new-seed evaluation performed by this reviewer. completed.json finite_update_checks=false is not a numeric pass; root owns separate numeric validation.",
+  "production_approved": false
+}

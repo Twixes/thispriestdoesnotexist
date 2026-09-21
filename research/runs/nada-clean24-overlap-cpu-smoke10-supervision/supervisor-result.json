@@ -1,0 +1,19 @@
+{
+  "complete": false,
+  "worker_exit_code": -9,
+  "error": "RuntimeError('Another known heavy research process is active (PID 33493)')",
+  "wall_seconds": 27.20227313041687,
+  "deadline_unix": 1789970603.073171,
+  "peak_sampled_worker_rss_bytes": 4832559104,
+  "last_pressure": {
+    "observed_unix": 1789969430.152027,
+    "monotonic": 744052.688442708,
+    "free_percent": 48,
+    "command_seconds": 0.003245792002417147,
+    "raw": "The system has 51539607552 (3145728 pages with a page size of 16384).\n\nStats: \nPages free: 6143 \nPages purgeable: 18761 \nPages purged: 89204691 \n\nSwap I/O:\nSwapins: 9560047 \nSwapouts: 13637588 \n\nPage Q counts:\nPages active: 743550 \nPages inactive: 741466 \nPages speculative: 1082 \nPages throttled: 0 \nPages wired down: 1021934 \n\nCompressor Stats:\nPages used by compressor: 571170 \nPages decompressed: 338884119 \nPages compressed: 452518958 \n\nFile I/O:\nPageins: 67788374 \nPageouts: 765491 \n\nSystem-wide memory free percentage: 48%\n"
+  },
+  "allowed_reference_pid": 27880,
+  "reference_signaled": false,
+  "pressure_log": "research/runs/nada-clean24-overlap-cpu-smoke10-supervision/pressure.jsonl",
+  "production_approved": false
+}

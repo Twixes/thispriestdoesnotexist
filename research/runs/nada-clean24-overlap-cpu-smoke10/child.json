@@ -1,0 +1,17 @@
+{
+  "pid": 33111,
+  "supervisor_pid": 33102,
+  "nonce": "1f0a90b1a7994523b75880bef3bdbe1d",
+  "command": [
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/selection/.venv/bin/python",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/runner.py",
+    "--execute",
+    "--output",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/nada-clean24-overlap-cpu-smoke10",
+    "--_worker",
+    "--_deadline",
+    "1789970603.073171",
+    "--_nonce",
+    "1f0a90b1a7994523b75880bef3bdbe1d"
+  ]
+}

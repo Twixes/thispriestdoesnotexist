@@ -1,0 +1,28 @@
+{
+  "reviewed_utc": "2026-09-21T05:45:31.792993+00:00",
+  "complete": false,
+  "outcome": "competing_process_policy_abort_before_any_recorded_training_update",
+  "supervisor_wall_seconds": 27.20227313041687,
+  "root_reported_supervisor_exit_code": 1,
+  "worker_exit_code": -9,
+  "error": "RuntimeError('Another known heavy research process is active (PID 33493)')",
+  "pressure_observations": 15,
+  "minimum_free_percent": 47,
+  "last_free_percent": 48,
+  "peak_sampled_worker_rss_bytes": 4832559104,
+  "peak_sampled_worker_rss_gib": 4.50067138671875,
+  "post_terminal_process_observation": "27880 51:29 3588448 Ss  \n",
+  "reference_signaled_by_supervisor": false,
+  "source_reproduction_or_update_evidence_present": false,
+  "cause_evidence": "Supervisor persisted rejected PID33493 but not its command. Root reports concurrently running reference625_validation/test_guards.py and validate.py --check-static. Both match the deliberate conservative path rule, supporting a metadata-only process false positive; exact rejected command cannot be independently reconstructed from saved process observations.",
+  "interpretation": "No memory/time guard failure and no recorded source verification/training update. This run does not test full backward fit or visual quality.",
+  "next_action": "Preserve failed attempt. Once reference, numeric validation and evaluations are terminal, root may explicitly launch the original non-overlap smoke once in a fresh directory; avoid concurrent validator commands, including static checks. No automatic retry or policy change.",
+  "source_and_evidence_sha256": {
+    "research/runs/nada-clean24-overlap-cpu-smoke10/supervisor-result.json": "cd6b2cd9fe929aab26abed700e027964cb03436406fbf7ad4cd3d1b3f8cca4a0",
+    "research/runs/nada-clean24-overlap-cpu-smoke10/launch.json": "5eea277ac8c0676b71136db0d7fad5e5989ca333e3d29796435e4d5b28be1ac8",
+    "research/runs/nada-clean24-overlap-cpu-smoke10/worker.log": "158456ecfde04e9ddf1bce01db42f53e555b05bdc163907482dd3b35f2b64d72",
+    "research/runs/nada-clean24-overlap-cpu-smoke10-supervision/pressure.jsonl": "912e668e2a2bec799d61697c5256b6ee7953ac6ad804e2716d81b39acb31a3a7",
+    "research/runs/nada-clean24-overlap-cpu-smoke10-supervision/process-observations.jsonl": "0484631097a1b3483f3b0a4567b86a9f69cf18011a7be6499bd345238a24da6f",
+    "research/experiments/nada_clean24_overlap/supervise.py": "55d22c0606cd300352319650b2c8dfdb2562c557e17c1967f70c730d0c5cba11"
+  }
+}

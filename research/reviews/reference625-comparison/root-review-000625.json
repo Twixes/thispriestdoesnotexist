@@ -1,0 +1,24 @@
+{
+  "reviewed_utc": "2026-09-21T05:55:27.459730+00:00",
+  "reviewer": "root",
+  "scope": "All32 raw matched500/625 pairs at native256 tiles across four pages, plus full fixed16 raw grids. EMA judgment separately recorded by inference_service.",
+  "decision": "reject625 for deployment; do not extend this adversarial run now; prioritize native1024 NADA whose CPU smoke succeeded",
+  "quality_approved": false,
+  "observations": [
+    "Raw fixed16 retains two completely architectural heads.",
+    "Matched raw32 indices03,07,10 retain severe architectural distortion across face/head;00 and04 retain tall hat-like architectural headgear;08 still has merged pale head/background, despite some newly visible hair.",
+    "625 commonly increases contrast/sharpness but eyes and facial textures remain synthetic; index31 still has malformed patterned clothing without a proper clerical tab.",
+    "Several faces remain strongly similar in composition and appearance. This visual observation is not a quantified identity-collapse or memorization result.",
+    "No evidence of recovery sufficient to justify serving these outputs."
+  ],
+  "limitations": [
+    "Same32 seeds establish longitudinal change, not a new unseen-seed test.",
+    "40k presentations are an early transfer-learning checkpoint, not proof this method cannot converge with more data/training."
+  ],
+  "page_sha256": {
+    "raw-psi1-page1.png": "aaa9492df5b9760c1cd3f9747cb85abbe6f576902d5c33820efcdfebd4815859",
+    "raw-psi1-page2.png": "2a23dfea7d8d633c930eb603ef2962c2fc3b6812eda68676534b88fd0e950921",
+    "raw-psi1-page3.png": "b39ec76c279ffbd0d4ec92ee115bff748ac2b36fcc07519e9949fcf85c626f8d",
+    "raw-psi1-page4.png": "0800795d4556f309fa166d8902e7e9617ca45ad6dfa5b50cb002dbb1688bd9db"
+  }
+}

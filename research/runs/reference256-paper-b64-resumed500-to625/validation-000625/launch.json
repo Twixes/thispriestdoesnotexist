@@ -1,0 +1,29 @@
+{
+  "started_unix": 1789969876.66499,
+  "deadline_unix": 1789970176.66499,
+  "nonce": "c911a6bf8b5343e794da02539124a4f9",
+  "script_sha256": "f14efccfc68fc39dbfc1e668f3e14a2e1e5b7d3cd78aa3454c45bec43621286b",
+  "pins_sha256": "5c2d525fc90823fad62a2e8c940827c66790b8713f9f543c9e24b8d782d3d315",
+  "hashes_before": {
+    "resume.pt": "c04482a462abf4ece7034cdc09be19dc857ee201b11427f6526c49ae378bf6dc",
+    "generator-000625.pt": "94f94018e8705ae6dac665702099610db3c5ab8f7d8a5e7799dbaa3d82d7208d",
+    "samples-000625-ema.png": "b527c6509cdcc42bec0237e3649213939e25408e571a323750f6e6b0d76e7327",
+    "samples-000625-raw.png": "bbdd680118a73f2de04dd9558bf190c878bb5c1d5bbe503048ec60f2a172d708",
+    "samples-000625-untruncated.png": "b35d4de4e155903a1f40eed8d7a0b5b79b7a4f07a82a07513a1cbe4c8e10d216",
+    "config.json": "b330c97f252c2b0f20d041923900676c806cfdac6b47241e062f50cabef09997",
+    "completed.json": "d0a9380d5a16c7310aaa8e01994ab39d5a1571e861da3e39ecd384984ac5b105",
+    "launch.json": "8b7d7e0e2326269efbb6acb251199abb3a2ac4036d0ad65404c7fa61476d1a0d",
+    "train-source.py": "00b5266875dbe07169025eb7b38b22a412230019c52d1bae77eeb8daf0045b13",
+    "adapters-source.py": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+    "launch-source.py": "5365e8e576d89733cb220a0f7aabe223b58b573f490765f925e0ee125365a1ef",
+    "launch-pins.json": "4ba045ee28c3d6eee6a8545ca9abb499cfd2bf772a294860b977867d1681ed34"
+  },
+  "memory_preflight": {
+    "free_percent": 80,
+    "raw": "The system has 51539607552 (3145728 pages with a page size of 16384).\n\nStats: \nPages free: 1254252 \nPages purgeable: 4492 \nPages purged: 89811336 \n\nSwap I/O:\nSwapins: 9566359 \nSwapouts: 13637588 \n\nPage Q counts:\nPages active: 522286 \nPages inactive: 717798 \nPages speculative: 4285 \nPages throttled: 0 \nPages wired down: 344253 \n\nCompressor Stats:\nPages used by compressor: 222799 \nPages decompressed: 339256107 \nPages compressed: 452634408 \n\nFile I/O:\nPageins: 67914890 \nPageouts: 765561 \n\nSystem-wide memory free percentage: 80%\n",
+    "recorded_trainer_pid_absent": true,
+    "other_known_model_processes": []
+  },
+  "rss_abort_bytes": 4294967296,
+  "production_approved": false
+}

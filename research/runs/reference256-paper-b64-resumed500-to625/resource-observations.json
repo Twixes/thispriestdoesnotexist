@@ -1,0 +1,55 @@
+{
+  "kind": "Read-only ps and memory_pressure observations, no model imports",
+  "samples": [
+    {
+      "step": 528,
+      "process_elapsed": "12:17",
+      "rss_kib": 5073616,
+      "system_free_percent": 64
+    },
+    {
+      "step": 544,
+      "process_elapsed": "18:21",
+      "rss_kib": 6791856,
+      "system_free_percent": 64
+    },
+    {
+      "observed_unix": 1789967966.9884338,
+      "step": 560,
+      "process_elapsed": "25:24",
+      "rss_kib": 8500832,
+      "system_free_percent": 63
+    },
+    {
+      "observed_unix": 1789968414.764162,
+      "step": 576,
+      "process_elapsed": "32:52",
+      "rss_kib": 7090320,
+      "system_free_percent": 61
+    },
+    {
+      "observed_unix": 1789968878.6069682,
+      "step": 592,
+      "process_elapsed": "40:36",
+      "rss_kib": 5886352,
+      "system_free_percent": 57
+    },
+    {
+      "observed_unix": 1789969334.941488,
+      "step": 608,
+      "process_elapsed": "48:12",
+      "rss_kib": 6204480,
+      "system_free_percent": 56
+    }
+  ],
+  "limits": "RSS is process residency, not an MPS allocation measurement. Free percentage is a separate system-level observation; no cache, leak or failure cause inferred. Earlier observations transcribed from actual tool outputs.",
+  "created_unix": 1789967597.098436,
+  "terminal": {
+    "observed_unix": 1789969962.572511,
+    "pid_present": false,
+    "child_exit_code": 0,
+    "system_free_percent": 81,
+    "context": "Parent launched a separate CPU overlap job after step608 and subsequent numeric validation after reference terminal; terminal system memory is not attributable solely to reference."
+  },
+  "summary": "Sampled system free declined from64% at528/544 to63% at560,61% at576,57% at592 and56% at608. Sampled RSS first rose to8,500,832KiB at560 then fell to5,886,352KiB at592 and was6,204,480KiB at608. No observed resource failure. Not a peak-memory measurement or proof of allocation cause."
+}

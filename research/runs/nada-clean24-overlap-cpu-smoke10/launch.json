@@ -1,0 +1,44 @@
+{
+  "started_unix": 1789969403.073171,
+  "deadline_unix": 1789970603.073171,
+  "nonce": "1f0a90b1a7994523b75880bef3bdbe1d",
+  "supervisor_pid": 33102,
+  "runner_sha256": "7bf6ab6513a6ecfb54f9219fd138c53f57388e9f9316e179efc9ed5a73745855",
+  "worker_sha256": "963cd1396d9f114590e9b639b0f1728ca7117685bd402538f761f1a71581605b",
+  "pins_sha256": "1bd426f603eb1e993c8eda5e600eff0d7d332ea95636308330f289c2113ec86d",
+  "memory_preflight": {
+    "observed_unix": 1789969403.305058,
+    "monotonic": 744025.841620958,
+    "free_percent": 58,
+    "command_seconds": 0.005720291985198855,
+    "raw": "The system has 51539607552 (3145728 pages with a page size of 16384).\n\nStats: \nPages free: 8415 \nPages purgeable: 20749 \nPages purged: 89199139 \n\nSwap I/O:\nSwapins: 9559594 \nSwapouts: 13637588 \n\nPage Q counts:\nPages active: 902830 \nPages inactive: 901211 \nPages speculative: 371 \nPages throttled: 0 \nPages wired down: 927043 \n\nCompressor Stats:\nPages used by compressor: 345228 \nPages decompressed: 338786706 \nPages compressed: 451943407 \n\nFile I/O:\nPageins: 67779119 \nPageouts: 765327 \n\nSystem-wide memory free percentage: 58%\n"
+  },
+  "rss_abort_bytes": 12884901888,
+  "sampled_not_hard_allocation_cap": true,
+  "numeric_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "maximum_updates": 10,
+  "automatic_retry": false,
+  "production_approved": false,
+  "overlap_supervisor_sha256": "55d22c0606cd300352319650b2c8dfdb2562c557e17c1967f70c730d0c5cba11",
+  "allowed_reference": {
+    "pid": 27880,
+    "ppid": 27871,
+    "pgid": 27880,
+    "start_time": "Mon Sep 21 06:54:02 2026",
+    "command": "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python -u /Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_phases/trainer.py --run /Users/twixes/Developer/thispriestdoesnotexist/research/runs/reference256-paper-b64-resumed500-to625 --resume /Users/twixes/Developer/thispriestdoesnotexist/research/runs/reference256-paper-b64/resume-000500.pt --data /Users/twixes/Developer/thispriestdoesnotexist/research/alignment/collar-only/eyes42 --base /Users/twixes/Developer/thispriestdoesnotexist/research/models/ffhq256.pkl --device mps --threads 2 --batch 64 --microbatch 8 --pl-batch-shrink 2 --mirror --freeze-d-layers 0 --lr 0.0025 --r1-gamma 1 --ema-kimg 20 --augment-p 0 --ada-target 0.6 --ada-kimg 100 --seed 20260920 --steps 625 --checkpoint-every 125 --snapshot-every 125"
+  },
+  "allowed_reference_command_sha256": "307ca34e1050453a6bc1873cb0eba596ba5cf850759eb055f92c597ee7c5da1a",
+  "system_pressure_policy": {
+    "initial_min": 55,
+    "running_min": 35,
+    "interval_seconds": 2,
+    "maximum_gap_seconds": 5
+  },
+  "supervision_records": "research/runs/nada-clean24-overlap-cpu-smoke10-supervision"
+}
