@@ -1,0 +1,144 @@
+{
+  "purpose": "Prospective original-PNG sources for clothing-only teachers; root selection review required before imagegen",
+  "training_shortlist_count": 5,
+  "priority_count": 3,
+  "conditional_count": 2,
+  "no_forced_sixth_candidate": true,
+  "manual96_labels_sha256": "8649c025472c1d73f6addd1980f3dab446a40132149da20761c4e7e16459d7b1",
+  "script_sha256": "456b9bfde9a03feaa154a5871ac7b19815e6b159499f2b086ea495c3536d1761",
+  "source_images_unchanged": true,
+  "imagegen_or_model_inference": false,
+  "active_training_manifest_changed": false,
+  "candidates": [
+    {
+      "id": "b2-042",
+      "status": "priority",
+      "source_path": "research/data/ffhq-paired-sources64-b2/images/042.png",
+      "source_absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/042.png",
+      "source_sha256": "9e0f4fa636f8af16ca2dc1d981e05574db511eb7affd02e1336bd68658a024a3",
+      "native_png_inspected_this_pass": true,
+      "reason": "Bald head, glasses, broad smile, darker skin tone, three-quarter pose and textured jacket provide useful clothing/identity variation. Face appears clearly adult and anatomically plausible; no obvious hat or other person.",
+      "caveat": "Neck is partly angled toward bottom edge; retain natural tooth spacing and exact glasses/face. This is a clothing teacher, not an approved hot output.",
+      "manual96_hot_candidate": "uncertain",
+      "production_approved": false,
+      "generation_authorized_by_this_file": false,
+      "generation_owner": "not_assigned",
+      "root_native_suitability_review": "suitable_clothing_teacher_not_hot_approval"
+    },
+    {
+      "id": "b2-058",
+      "status": "priority",
+      "source_path": "research/data/ffhq-paired-sources64-b2/images/058.png",
+      "source_absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/058.png",
+      "source_sha256": "68eba0b90abafc0f3e762081e0da4d9d901f6b4f100cd759f673c64e3672c4eb",
+      "native_png_inspected_this_pass": true,
+      "reason": "Clearly mature adult masculine face, grey mustache, receding slicked hair, serious three-quarter pose, jacket/shirt/tie. Different pose and facial-hair case; no obvious other person or hat.",
+      "caveat": "Collar room is restricted beneath chin but existing tie/shirt is visible. Do not redraw mustache or jaw to enlarge collar. Not selected for hot appearance.",
+      "manual96_hot_candidate": "no",
+      "production_approved": false,
+      "generation_authorized_by_this_file": false,
+      "generation_owner": "not_assigned",
+      "root_native_suitability_review": "pending"
+    },
+    {
+      "id": "b2-059",
+      "status": "priority",
+      "source_path": "research/data/ffhq-paired-sources64-b2/images/059.png",
+      "source_absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/059.png",
+      "source_sha256": "445390bde78c5067d8442906605f01f642d75463a74c365757a11e34ce9560fe",
+      "native_png_inspected_this_pass": true,
+      "reason": "Clearly mature adult masculine face, short grey hair, small mustache, glasses and open smile. Visible neck and casual layered clothing; no obvious headwear or extra people.",
+      "caveat": "Glasses reflections and natural teeth need preservation; garment/collar reaches frame edge. Subjective hot eligibility remains uncertain.",
+      "manual96_hot_candidate": "uncertain",
+      "production_approved": false,
+      "generation_authorized_by_this_file": false,
+      "generation_owner": "root_in_progress_do_not_duplicate",
+      "root_native_suitability_review": "suitable_clothing_teacher_not_hot_approval"
+    },
+    {
+      "id": "b2-050",
+      "status": "conditional_tight_neck",
+      "source_path": "research/data/ffhq-paired-sources64-b2/images/050.png",
+      "source_absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/050.png",
+      "source_sha256": "716f6119e3407107e5b764064b17983fee31606f9c84abc90d53ad46a1672219",
+      "native_png_inspected_this_pass": true,
+      "reason": "Clearly mature adult bald masculine face, glasses, gentle smile, textured blue shirt; clean foliage background with no visible person/headwear.",
+      "caveat": "Very little front neck remains beneath chin; only edit if a partial collar can be placed without moving face. Less useful than priority three; not hot-qualified.",
+      "manual96_hot_candidate": "no",
+      "production_approved": false,
+      "generation_authorized_by_this_file": false,
+      "generation_owner": "not_assigned",
+      "root_native_suitability_review": "pending"
+    },
+    {
+      "id": "b2-060",
+      "status": "conditional_tight_neck",
+      "source_path": "research/data/ffhq-paired-sources64-b2/images/060.png",
+      "source_absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/060.png",
+      "source_sha256": "d2cecacfe7ed4fa7b47a50d9be41d433146c65931b423a1a134dadae3291b212",
+      "native_png_inspected_this_pass": true,
+      "reason": "Clearly mature adult masculine face, short hair, glasses, neutral expression and dark jacket/white shirt, against an uncluttered blurred background.",
+      "caveat": "Chin/neck are close to lower frame; a small partial tab may be possible, but do not move jaw or recrop. Subjective hot eligibility remains uncertain.",
+      "manual96_hot_candidate": "uncertain",
+      "production_approved": false,
+      "generation_authorized_by_this_file": false,
+      "generation_owner": "not_assigned",
+      "root_native_suitability_review": "suitable_clothing_teacher_not_hot_approval"
+    }
+  ],
+  "v1_reserved_validation": [
+    {
+      "id": "v1-017",
+      "source_path": "research/data/ffhq-paired-sources32/images/017.png",
+      "source_absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/017.png",
+      "source_sha256": "6751e10aad84a019faf4b1aa56e6d1e946bcf42c36c138e64b86875f3b98a1e7",
+      "purpose": "Reserved for possible additional edited validation; not new training",
+      "native_png_inspected_this_pass": true,
+      "note": "Attractive adult full-beard/glasses case, but beard leaves very little front collar room."
+    },
+    {
+      "id": "v1-024",
+      "source_path": "research/data/ffhq-paired-sources32/images/024.png",
+      "source_absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/024.png",
+      "source_sha256": "f3bddd7756589dbede9b3ba92a06aec2cb170a760cb1dbf7ab66534af1f9c595",
+      "purpose": "Reserved for possible additional edited validation; not new training",
+      "native_png_inspected_this_pass": true,
+      "note": "Mature adult curly grey hair, glasses, stubble and three-quarter pose; neck visible."
+    },
+    {
+      "id": "v1-025",
+      "source_path": "research/data/ffhq-paired-sources32/images/025.png",
+      "source_absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/025.png",
+      "source_sha256": "df2b8a66a6b624d0a836afb1b8f9ad311ea911f62976b1698454dc0676928207",
+      "purpose": "Reserved for possible additional edited validation; not new training",
+      "native_png_inspected_this_pass": true,
+      "note": "Mature adult short upright hair, no glasses, three-quarter pose and open striped shirt; useful neck."
+    }
+  ],
+  "excluded_existing_or_ambiguous_ids": [
+    "v1-000",
+    "v1-028",
+    "v1-030",
+    "b2-055",
+    "b2-051",
+    "b2-020",
+    "v1-004",
+    "calibration-original"
+  ],
+  "other_exclusions": [
+    {
+      "id": "b2-040",
+      "native_reviewed_this_pass": true,
+      "reason": "Chin is cropped by lower frame; insufficient safe front collar area."
+    },
+    {
+      "id": "b2-013",
+      "reason": "Cheek microphone is an avoidable accessory; preserve for later hard case rather than force sixth candidate."
+    },
+    {
+      "id": "b2-021",
+      "reason": "Sunglasses prevent inspecting eyes; avoid as current teacher."
+    }
+  ],
+  "aesthetic_limitation": "Most proposed teachers are mature-looking faces with glasses, and are not hot-approved. They provide clothing variation while source-face supervision preserves identity. Final output hot eligibility must be separate; this is not an attractiveness training set or representative demographic sample."
+}

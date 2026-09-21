@@ -1,0 +1,114 @@
+{
+  "step": 3250,
+  "images_seen": 26000,
+  "reviewed_utc": "2026-09-21T01:11:09.806066+00:00",
+  "approved": false,
+  "production_approved": false,
+  "reviewer": "Codex native PNG visual inspection",
+  "scope": "All three immutable1024x1024 grids; sixteen fixed-latent256x256 portraits per variant. No generator inference or checkpoint deserialization.",
+  "grid_sha256": {
+    "samples-003250.png": "3103db30c0fd5ea6f911411f3525d06cbe536ed98ddc827f6aa3300b8108442d",
+    "samples-003250-untruncated.png": "76e75ee449fd7b86fe3ed7554febe5c16b9352bca4cf921e0e80168f1903187b",
+    "samples-003250-raw.png": "b80fcb6cc2a224cb654102e16e9e3fa78d9482e56aa7deb0c4bb8199edd2c377"
+  },
+  "completion_evidence": {
+    "step3250_metrics_record": {
+      "step": 3250,
+      "kimg": 26.0,
+      "seconds": 9776.10374987498,
+      "g_loss": 1.8822734355926514,
+      "cdc_loss": 0.0005206780042499304,
+      "cdc_weighted_loss": 0.5206780042499304,
+      "cdc_details": {
+        "per_block_kl": {
+          "32": 0.0006492547690868378,
+          "64": 0.000616564997471869,
+          "128": 0.0002962143043987453
+        },
+        "feature_shapes": {
+          "32": [
+            4,
+            32768
+          ],
+          "64": [
+            4,
+            16384
+          ],
+          "128": [
+            4,
+            8192
+          ]
+        },
+        "batch": 4,
+        "blocks": [
+          32,
+          64,
+          128
+        ],
+        "pool_size": 8,
+        "temperature": 1.0,
+        "reduction": "mean over examples and blocks; sum over neighbors"
+      },
+      "d_loss": 0.3899705708026886,
+      "r1": 0.0,
+      "augment_p": 0.7342399999999905,
+      "real_sign_mean": 1.0,
+      "real_logit_mean": 2.5601344108581543,
+      "fake_logit_mean": -1.2556337118148804
+    },
+    "generator_snapshot_exists": true,
+    "generator_snapshot_bytes": 99819557,
+    "generator_snapshot_not_deserialized": true,
+    "latest_metrics_step_observed": 3340,
+    "pid_observation": "77688 02:47:19 Ss   research/.venv/bin/python -u research/train.py --device mps --data research/alignment/collar-only/eyes42 --freeze-d-layers 4 --cdc-weight 1000 --cdc-batch 4 --run aligned110-frozen4-cdc1000 --steps 6000 --batch 8 --snapshot-every 250",
+    "ps_exit_code": 0,
+    "all_three_pngs_decode": true
+  },
+  "comparison_review_path": "visual-review-003000.json",
+  "comparison_review_sha256": "5321902a390a61752d5fef816e9f40fce28d7a891e998272a366db07f7f59463",
+  "step3000_grid_hashes_verified": true,
+  "findings": {
+    "ema_psi_0_7": {
+      "face_detail": "Generally coherent adult masculine faces and hair at256px, but r1c1 retains conspicuously dark malformed eye sockets. Subtle cheek/mouth distortion and soft skin persist in several tiles. This is not a reliable photographic face generator.",
+      "specific_artifacts": [
+        "r1c1 dark malformed eyes",
+        "r2c3 unnatural asymmetric cheek/mouth treatment",
+        "r3c3 residual eye/cheek distortion"
+      ],
+      "collars": "Recognizable white clerical tabs and black shirts across all sixteen tiles.",
+      "no_hats": "No obvious headwear in these sixteen tiles."
+    },
+    "ema_psi_1": {
+      "face_detail": "The gross failure modes documented at3000 remain: opaque blurred eyes in r1c1, dark ghosted eyes and warped cheeks in r3c3, and wedge-like cheek shading/shape in r2c3. Other tiles have soft or smeared mouth and neck transitions.",
+      "specific_artifacts": [
+        "r1c1 opaque eye smears",
+        "r3c3 ghosted dark eye region",
+        "r2c3 sharply unnatural cheek plane",
+        "r4c2 beard/collar edge smear"
+      ],
+      "collars": "Most white tabs are clear; r1c2 remains very small/dim and some necklines merge into clothing unnaturally.",
+      "no_hats": "No obvious headwear; background shapes touching hair do not appear to be definite hats."
+    },
+    "raw_psi_1": {
+      "face_detail": "Some tiles are individually plausible, but the first face still has opaque blurred eyes, r3c3 has gross dark eye distortion, and r2c3 has a warped cheek/mouth plane. Facial rendering remains uneven.",
+      "specific_artifacts": [
+        "r1c1 dark blurred eyes",
+        "r3c3 dark ghosted eyes",
+        "r2c3 warped cheek and expression",
+        "r4c2 neck/collar smear"
+      ],
+      "collars": "Clerical clothing is learned, but white-tab size and neckline integrity vary; r1c2 tab remains unusually tiny.",
+      "no_hats": "No obvious headwear in the fixed grid."
+    }
+  },
+  "diversity_assessment": "The same narrow range of long/oval face proportions, dark swept/curly hair, mild smiles, almost identical portrait poses and Roman architectural layouts persists. There is some beard/hair/skin-tone variation, but no visible broad diversity recovery in the fixed grid.",
+  "comparison_to_3000": "No material quality-gate change. Minor changes in face contrast, mouth shape and backgrounds are visible, while the same conspicuous eye/cheek failures and stereotyped layout persist. The truncated view remains substantially more coherent than raw/untruncated; this does not establish reliable quality or unseen-latent generalization.",
+  "decision": "Not approved for production. Retain this milestone as research evidence; observed improvement does not resolve malformed faces or narrow visual diversity.",
+  "coordinate_convention": "One-based rows/columns in each4x4 grid.",
+  "limits": [
+    "This reviews fixed saved PNGs, not newly sampled latent identities.",
+    "No quantitative diversity estimate, attractiveness model, facial detector or generator inference was run.",
+    "The snapshot file existence is completion evidence, not a model-state validity check.",
+    "No trainer, data, checkpoint or image file was modified; only this new review JSON was written."
+  ]
+}

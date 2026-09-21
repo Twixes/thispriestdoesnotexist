@@ -1,0 +1,58 @@
+{
+  "step": 3500,
+  "images_seen": 28000,
+  "reviewed_utc": "2026-09-21T01:22:08.380667+00:00",
+  "approved": false,
+  "production_approved": false,
+  "reviewer": "Codex native PNG visual inspection",
+  "scope": "All three native 1024x1024 contact sheets, each sixteen 256x256 portraits. Comparison against the saved step-3250 review record, not a new latent sample.",
+  "grid_sha256": {
+    "samples-003500.png": "c1055c7c2b56fec1aab5616259a4f6c9b47ed3cd2bda691c495b2be4fc9b8e3f",
+    "samples-003500-raw.png": "9598d68838ed1038cb8a7af90426061fad53e77ce328f5f34da001610bccd9bf",
+    "samples-003500-untruncated.png": "1d079e09c2dd7eb0228ae288bf54eebea6b122b21ba33f9f826ec1d26c1579b9"
+  },
+  "comparison_review_path": "visual-review-003250.json",
+  "comparison_review_sha256": "fb8e03380c8b226087a2931274bf3aebede3b83b560840626dc607c3e200385b",
+  "checkpoint_validation_file": "checkpoint-003500-validation.json",
+  "resume_sha256": "aa53f3123edfc1b4fabf3726fa98cfcc37efb9d01c655ded41a5b7ec682725d7",
+  "generator_sha256": "279960ad051afa1a65fad87ab743c31d4fa181c0808f46043b8f66157a0c5dc3",
+  "generator_ema_matches_resume": true,
+  "findings": {
+    "ema_psi_0_7": {
+      "face_detail": "Many faces are coherent at the small native tile size, but the first face retains very dark misshapen eye sockets; several cheeks and mouths remain soft or geometrically unnatural.",
+      "specific_artifacts": [
+        "r1c1 dark malformed eye region",
+        "r2c3 asymmetric cheek/mouth plane",
+        "r3c3 residual eye/cheek distortion"
+      ],
+      "collars": "Visible white clerical tabs and black shirts across the fixed grid.",
+      "headwear": "No obvious hats in these sixteen outputs."
+    },
+    "raw_psi_1": {
+      "face_detail": "The first face still has opaque, blurred eyes; r3c3 has dark malformed eye regions, while r2c3 has a conspicuous angular cheek and uneven mouth. Several other faces retain smeared skin or neck transitions.",
+      "specific_artifacts": [
+        "r1c1 opaque eye smears",
+        "r3c3 dark blurred eyes",
+        "r2c3 warped cheek/mouth",
+        "r4c2 beard/neck transition smear"
+      ],
+      "collars": "Clerical dress is learned, but r1c2 has an unusually tiny/dim tab and some necklines are distorted.",
+      "headwear": "No definite hats; some background forms touch the hair."
+    },
+    "ema_psi_1": {
+      "face_detail": "Very similar visual failure modes to raw: first-face eye blobs, r3c3 dark ghosted eyes, and uneven cheek/mouth geometry. The stronger untruncated variation does not restore dependable photographic detail.",
+      "collars": "White tabs and black shirts are broadly present, with the same tiny r1c2 tab.",
+      "headwear": "No obvious hats in the fixed grid."
+    }
+  },
+  "diversity_assessment": "A narrow range of oval/long faces, dark swept or curly hair, mild smiles and similar Roman architecture persists. Beard and skin-tone variation is visible, but this fixed grid does not demonstrate broad or unseen-latent diversity.",
+  "comparison_to_3250": "The material defects documented in the previous review remain at the same fixed-latent positions. No production quality-gate change is supported. This comparison does not quantify improvement or convergence.",
+  "decision": "Not approved for production. Preserve the checkpoint and previews as research evidence.",
+  "coordinate_convention": "One-based row/column coordinates in each 4x4 grid.",
+  "limits": [
+    "Saved image review only; no generator inference or new sampling.",
+    "Numeric checkpoint validity is separate from photographic quality.",
+    "No attractiveness score or quantitative diversity evaluation was run.",
+    "No trainer, data, checkpoint, source image or active process was modified."
+  ]
+}

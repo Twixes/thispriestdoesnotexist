@@ -1,0 +1,137 @@
+{
+  "reviewer": "Codex root native review of all3 original sources and raw edited targets",
+  "purpose": "Clothing-only research targets, not trained-generator outputs or site catalog additions",
+  "production_approved": false,
+  "training_manifest_changed": false,
+  "mask_review_still_required": true,
+  "findings": {
+    "042": "Recognizable smiling bald mature face with glasses and preserved background. Black shirt and white Roman tab visible at bottom edge. Teeth and fine face textures are similar, not pixel-identical.",
+    "058": "Recognizable mature face with mustache in three-quarter pose; clear full white tab and black shirt. Slight mouth/expression and nose/skin changes in target must remain excluded from clothing supervision.",
+    "059": "Recognizable smiling mature face with glasses and mustache; black shirt and clear rectangular white tab at bottom edge. Root inspected native output and source/target coordinate grid; source skin/chin protection still needs explicit mask annotation."
+  },
+  "geometry": {
+    "042": {
+      "landmark_delta_xy": [
+        [
+          0.0017830729484558105,
+          0.0009407699108123779
+        ],
+        [
+          0.00147169828414917,
+          0.004796624183654785
+        ],
+        [
+          0.0011916160583496094,
+          0.005633413791656494
+        ],
+        [
+          -0.0032986104488372803,
+          0.00123673677444458
+        ],
+        [
+          -0.003008544445037842,
+          0.005180478096008301
+        ]
+      ],
+      "landmark_displacements": [
+        0.002016035010758699,
+        0.005017319941840419,
+        0.005758063891495323,
+        0.003522832488558329,
+        0.005990717234270855
+      ],
+      "max_landmark_displacement": 0.005990717234270855,
+      "mean_landmark_displacement": 0.0044609937133847245,
+      "eye_y_delta": 0.0028686970472335815,
+      "mouth_y_delta": 0.0032086074352264404,
+      "interocular_relative_change": -0.0015322519838123494,
+      "landmark_tolerance_pass": true,
+      "interocular_tolerance_pass": true
+    },
+    "058": {
+      "landmark_delta_xy": [
+        [
+          0.0028764307498931885,
+          0.001598358154296875
+        ],
+        [
+          0.0061318278312683105,
+          0.0030558407306671143
+        ],
+        [
+          0.012668222188949585,
+          0.0034920573234558105
+        ],
+        [
+          0.0005321800708770752,
+          0.004240870475769043
+        ],
+        [
+          0.005266427993774414,
+          0.005326628684997559
+        ]
+      ],
+      "landmark_displacements": [
+        0.0032906842219116686,
+        0.00685109298751088,
+        0.01314071222494793,
+        0.004274131259108484,
+        0.007490543168652699
+      ],
+      "max_landmark_displacement": 0.01314071222494793,
+      "mean_landmark_displacement": 0.007009432772426332,
+      "eye_y_delta": 0.0023270994424819946,
+      "mouth_y_delta": 0.004783749580383301,
+      "interocular_relative_change": 0.017387205007831197,
+      "landmark_tolerance_pass": true,
+      "interocular_tolerance_pass": true
+    },
+    "059": {
+      "landmark_delta_xy": [
+        [
+          0.0017530322074890137,
+          -0.002764195203781128
+        ],
+        [
+          0.00057220458984375,
+          0.0001614093780517578
+        ],
+        [
+          -7.748603820800781e-06,
+          -0.0005506277084350586
+        ],
+        [
+          -0.0016921162605285645,
+          -0.004770815372467041
+        ],
+        [
+          -0.0004996061325073242,
+          -0.0022690296173095703
+        ]
+      ],
+      "landmark_displacements": [
+        0.003273208982802717,
+        0.0005945343387570725,
+        0.0005506822261137685,
+        0.005062009162112709,
+        0.002323381520944621
+      ],
+      "max_landmark_displacement": 0.005062009162112709,
+      "mean_landmark_displacement": 0.0023607632461461773,
+      "eye_y_delta": -0.001301392912864685,
+      "mouth_y_delta": -0.0035199224948883057,
+      "interocular_relative_change": -0.004332322215759854,
+      "landmark_tolerance_pass": true,
+      "interocular_tolerance_pass": true
+    }
+  },
+  "limitations": "All3 coarse landmark tests pass, but YuNet has no chin landmark; this does not prove exact face identity, chin agreement or training eligibility. Subjects were selected for clothing-teacher diversity, not as approved hot output examples.",
+  "inputs": {
+    "042-source": "9e0f4fa636f8af16ca2dc1d981e05574db511eb7affd02e1336bd68658a024a3",
+    "042-target": "3912b6e9f0e2632126c5bfd4a9e1930fc354949c171d1023385e3ea981d9b4ed",
+    "058-source": "68eba0b90abafc0f3e762081e0da4d9d901f6b4f100cd759f673c64e3672c4eb",
+    "058-target": "c30e362bb2f837224adde21f55c77c1d91ba7bb49c0450c1cfaf3aa05b768e97",
+    "059-source": "445390bde78c5067d8442906605f01f642d75463a74c365757a11e34ce9560fe",
+    "059-target": "93c8609b1188c5808f8799efca69b5682b702db98e57042df97d16b2c46039e0"
+  }
+}

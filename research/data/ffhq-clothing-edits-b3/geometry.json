@@ -1,0 +1,816 @@
+{
+  "purpose": "Three built-in imagegen clothing-edit calibrations, not trained-priest-model outputs",
+  "training_eligible": false,
+  "production_approved": false,
+  "prospective_thresholds": {
+    "max_landmark_euclidean_displacement": 0.015,
+    "max_absolute_interocular_relative_change": 0.05
+  },
+  "method": {
+    "resize": "RGB 256x256 Pillow LANCZOS; matched control then L to RGB on both inputs",
+    "cpu_threads": 1,
+    "detector": "YuNet confidence .75, NMS .3, top_k 5000, largest area*confidence",
+    "alignment_warp": false,
+    "padding_or_reflection": false,
+    "landmark_order": [
+      "eye_0",
+      "eye_1",
+      "nose",
+      "mouth_0",
+      "mouth_1"
+    ]
+  },
+  "versions": {
+    "opencv": "5.0.0",
+    "numpy": "2.4.6",
+    "pillow": "12.3.0"
+  },
+  "script_sha256": "a712a2568af50361ba21d05bc1a645d4520f9efd616b2c95b0f532b5240c017c",
+  "helper_sha256": "569483524d63fa68988a4665d364338857c6f7ff51533ae583e44d43034b410e",
+  "detector_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+  "entries": [
+    {
+      "id": "042",
+      "training_eligible": false,
+      "source_rgb": {
+        "path": "research/data/ffhq-paired-sources64-b2/images/042.png",
+        "sha256": "9e0f4fa636f8af16ca2dc1d981e05574db511eb7affd02e1336bd68658a024a3",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "face_confidence": 0.9370291233062744,
+        "grayscale_control": false,
+        "landmarks_normalized": [
+          [
+            0.3929297626018524,
+            0.4698050320148468
+          ],
+          [
+            0.6282138228416443,
+            0.46034860610961914
+          ],
+          [
+            0.5681753158569336,
+            0.5910492539405823
+          ],
+          [
+            0.41951194405555725,
+            0.7142772674560547
+          ],
+          [
+            0.6259198784828186,
+            0.7041717767715454
+          ]
+        ],
+        "eye_y": 0.46507681906223297,
+        "mouth_y": 0.7092245221138,
+        "interocular": 0.23547401766187087
+      },
+      "source_grayscale": {
+        "path": "research/data/ffhq-paired-sources64-b2/images/042.png",
+        "sha256": "9e0f4fa636f8af16ca2dc1d981e05574db511eb7affd02e1336bd68658a024a3",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "face_confidence": 0.9219726920127869,
+        "grayscale_control": true,
+        "landmarks_normalized": [
+          [
+            0.374789834022522,
+            0.4691813886165619
+          ],
+          [
+            0.6268883943557739,
+            0.4623444080352783
+          ],
+          [
+            0.5401000380516052,
+            0.5930951237678528
+          ],
+          [
+            0.4099058508872986,
+            0.7233770489692688
+          ],
+          [
+            0.6194706559181213,
+            0.7151445150375366
+          ]
+        ],
+        "eye_y": 0.4657628983259201,
+        "mouth_y": 0.7192607820034027,
+        "interocular": 0.2521912536658778
+      },
+      "edit_rgb": {
+        "path": "research/data/ffhq-clothing-edits-b3/042.png",
+        "sha256": "3912b6e9f0e2632126c5bfd4a9e1930fc354949c171d1023385e3ea981d9b4ed",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "face_confidence": 0.923884391784668,
+        "grayscale_control": false,
+        "landmarks_normalized": [
+          [
+            0.37691205739974976,
+            0.4706058204174042
+          ],
+          [
+            0.6285077333450317,
+            0.467667818069458
+          ],
+          [
+            0.5413569211959839,
+            0.5990781188011169
+          ],
+          [
+            0.4068758487701416,
+            0.7246479988098145
+          ],
+          [
+            0.6169020533561707,
+            0.7203865051269531
+          ]
+        ],
+        "eye_y": 0.4691368192434311,
+        "mouth_y": 0.7225172519683838,
+        "interocular": 0.25161282958577424
+      },
+      "edit_grayscale": {
+        "path": "research/data/ffhq-clothing-edits-b3/042.png",
+        "sha256": "3912b6e9f0e2632126c5bfd4a9e1930fc354949c171d1023385e3ea981d9b4ed",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "face_confidence": 0.9238962531089783,
+        "grayscale_control": true,
+        "landmarks_normalized": [
+          [
+            0.3765729069709778,
+            0.47012215852737427
+          ],
+          [
+            0.6283600926399231,
+            0.4671410322189331
+          ],
+          [
+            0.5412916541099548,
+            0.5987285375595093
+          ],
+          [
+            0.4066072404384613,
+            0.7246137857437134
+          ],
+          [
+            0.6164621114730835,
+            0.7203249931335449
+          ]
+        ],
+        "eye_y": 0.4686315953731537,
+        "mouth_y": 0.7224693894386292,
+        "interocular": 0.25180483311714813
+      },
+      "unadjusted_comparison": {
+        "landmark_delta_xy": [
+          [
+            -0.01601770520210266,
+            0.000800788402557373
+          ],
+          [
+            0.00029391050338745117,
+            0.007319211959838867
+          ],
+          [
+            -0.026818394660949707,
+            0.008028864860534668
+          ],
+          [
+            -0.01263609528541565,
+            0.010370731353759766
+          ],
+          [
+            -0.00901782512664795,
+            0.016214728355407715
+          ]
+        ],
+        "landmark_displacements": [
+          0.016037709998847623,
+          0.007325110722511284,
+          0.02799444521934993,
+          0.016346956073653572,
+          0.018553667714348722
+        ],
+        "max_landmark_displacement": 0.02799444521934993,
+        "mean_landmark_displacement": 0.017251577945742225,
+        "eye_y_delta": 0.00406000018119812,
+        "mouth_y_delta": 0.01329272985458374,
+        "interocular_relative_change": 0.0685375485760722,
+        "landmark_tolerance_pass": false,
+        "interocular_tolerance_pass": false
+      },
+      "matched_grayscale_comparison": {
+        "landmark_delta_xy": [
+          [
+            0.0017830729484558105,
+            0.0009407699108123779
+          ],
+          [
+            0.00147169828414917,
+            0.004796624183654785
+          ],
+          [
+            0.0011916160583496094,
+            0.005633413791656494
+          ],
+          [
+            -0.0032986104488372803,
+            0.00123673677444458
+          ],
+          [
+            -0.003008544445037842,
+            0.005180478096008301
+          ]
+        ],
+        "landmark_displacements": [
+          0.002016035010758699,
+          0.005017319941840419,
+          0.005758063891495323,
+          0.003522832488558329,
+          0.005990717234270855
+        ],
+        "max_landmark_displacement": 0.005990717234270855,
+        "mean_landmark_displacement": 0.0044609937133847245,
+        "eye_y_delta": 0.0028686970472335815,
+        "mouth_y_delta": 0.0032086074352264404,
+        "interocular_relative_change": -0.0015322519838123494,
+        "landmark_tolerance_pass": true,
+        "interocular_tolerance_pass": true
+      },
+      "source_color_only_control": {
+        "landmark_delta_xy": [
+          [
+            -0.018139928579330444,
+            -0.0006236433982849121
+          ],
+          [
+            -0.0013254284858703613,
+            0.0019958019256591797
+          ],
+          [
+            -0.02807527780532837,
+            0.002045869827270508
+          ],
+          [
+            -0.009606093168258667,
+            0.009099781513214111
+          ],
+          [
+            -0.006449222564697266,
+            0.010972738265991211
+          ]
+        ],
+        "landmark_displacements": [
+          0.01815064571720339,
+          0.002395826787900471,
+          0.028149721263211462,
+          0.013231895160765866,
+          0.012727665015349367
+        ],
+        "max_landmark_displacement": 0.028149721263211462,
+        "mean_landmark_displacement": 0.01493115078888611,
+        "eye_y_delta": 0.0006860792636871338,
+        "mouth_y_delta": 0.010036259889602661,
+        "interocular_relative_change": 0.07099397279580999,
+        "landmark_tolerance_pass": false,
+        "interocular_tolerance_pass": false
+      },
+      "chin_measurement": "YuNet has no chin landmark; assessed visually, not numerically",
+      "collar_complete_in_frame": false,
+      "collar_review": "White Roman tab visible; lower edge cut by frame"
+    },
+    {
+      "id": "058",
+      "training_eligible": false,
+      "source_rgb": {
+        "path": "research/data/ffhq-paired-sources64-b2/images/058.png",
+        "sha256": "68eba0b90abafc0f3e762081e0da4d9d901f6b4f100cd759f673c64e3672c4eb",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "face_confidence": 0.9427963495254517,
+        "grayscale_control": false,
+        "landmarks_normalized": [
+          [
+            0.3756484091281891,
+            0.46303802728652954
+          ],
+          [
+            0.5917625427246094,
+            0.46043887734413147
+          ],
+          [
+            0.4073266386985779,
+            0.6134858131408691
+          ],
+          [
+            0.40681564807891846,
+            0.731133759021759
+          ],
+          [
+            0.5898368954658508,
+            0.7268415689468384
+          ]
+        ],
+        "eye_y": 0.4617384523153305,
+        "mouth_y": 0.7289876639842987,
+        "interocular": 0.2161297626902747
+      },
+      "source_grayscale": {
+        "path": "research/data/ffhq-paired-sources64-b2/images/058.png",
+        "sha256": "68eba0b90abafc0f3e762081e0da4d9d901f6b4f100cd759f673c64e3672c4eb",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "face_confidence": 0.9270557165145874,
+        "grayscale_control": true,
+        "landmarks_normalized": [
+          [
+            0.39249393343925476,
+            0.474784791469574
+          ],
+          [
+            0.5812640190124512,
+            0.47768688201904297
+          ],
+          [
+            0.40722188353538513,
+            0.6053510308265686
+          ],
+          [
+            0.4213986396789551,
+            0.7297687530517578
+          ],
+          [
+            0.5762713551521301,
+            0.7315779328346252
+          ]
+        ],
+        "eye_y": 0.47623583674430847,
+        "mouth_y": 0.7306733429431915,
+        "interocular": 0.18879239215834204
+      },
+      "edit_rgb": {
+        "path": "research/data/ffhq-clothing-edits-b3/058.png",
+        "sha256": "c30e362bb2f837224adde21f55c77c1d91ba7bb49c0450c1cfaf3aa05b768e97",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "face_confidence": 0.9278899431228638,
+        "grayscale_control": false,
+        "landmarks_normalized": [
+          [
+            0.39509329199790955,
+            0.47585004568099976
+          ],
+          [
+            0.5876848101615906,
+            0.4804338812828064
+          ],
+          [
+            0.418862909078598,
+            0.6089747548103333
+          ],
+          [
+            0.4212879538536072,
+            0.7347612977027893
+          ],
+          [
+            0.5811996459960938,
+            0.7378612756729126
+          ]
+        ],
+        "eye_y": 0.4781419634819031,
+        "mouth_y": 0.736311286687851,
+        "interocular": 0.19264605995819345
+      },
+      "edit_grayscale": {
+        "path": "research/data/ffhq-clothing-edits-b3/058.png",
+        "sha256": "c30e362bb2f837224adde21f55c77c1d91ba7bb49c0450c1cfaf3aa05b768e97",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "face_confidence": 0.9276100993156433,
+        "grayscale_control": true,
+        "landmarks_normalized": [
+          [
+            0.39537036418914795,
+            0.47638314962387085
+          ],
+          [
+            0.5873958468437195,
+            0.4807427227497101
+          ],
+          [
+            0.4198901057243347,
+            0.6088430881500244
+          ],
+          [
+            0.42193081974983215,
+            0.7340096235275269
+          ],
+          [
+            0.5815377831459045,
+            0.7369045615196228
+          ]
+        ],
+        "eye_y": 0.47856293618679047,
+        "mouth_y": 0.7354570925235748,
+        "interocular": 0.19207496418471798
+      },
+      "unadjusted_comparison": {
+        "landmark_delta_xy": [
+          [
+            0.01944488286972046,
+            0.012812018394470215
+          ],
+          [
+            -0.004077732563018799,
+            0.019995003938674927
+          ],
+          [
+            0.011536270380020142,
+            -0.004511058330535889
+          ],
+          [
+            0.01447230577468872,
+            0.0036275386810302734
+          ],
+          [
+            -0.00863724946975708,
+            0.011019706726074219
+          ]
+        ],
+        "landmark_displacements": [
+          0.023286289639128672,
+          0.020406569661830225,
+          0.012386895557096916,
+          0.014920009092438897,
+          0.014001286181330069
+        ],
+        "max_landmark_displacement": 0.023286289639128672,
+        "mean_landmark_displacement": 0.017000210026364957,
+        "eye_y_delta": 0.01640351116657257,
+        "mouth_y_delta": 0.007323622703552246,
+        "interocular_relative_change": -0.10865557080046695,
+        "landmark_tolerance_pass": false,
+        "interocular_tolerance_pass": false
+      },
+      "matched_grayscale_comparison": {
+        "landmark_delta_xy": [
+          [
+            0.0028764307498931885,
+            0.001598358154296875
+          ],
+          [
+            0.0061318278312683105,
+            0.0030558407306671143
+          ],
+          [
+            0.012668222188949585,
+            0.0034920573234558105
+          ],
+          [
+            0.0005321800708770752,
+            0.004240870475769043
+          ],
+          [
+            0.005266427993774414,
+            0.005326628684997559
+          ]
+        ],
+        "landmark_displacements": [
+          0.0032906842219116686,
+          0.00685109298751088,
+          0.01314071222494793,
+          0.004274131259108484,
+          0.007490543168652699
+        ],
+        "max_landmark_displacement": 0.01314071222494793,
+        "mean_landmark_displacement": 0.007009432772426332,
+        "eye_y_delta": 0.0023270994424819946,
+        "mouth_y_delta": 0.004783749580383301,
+        "interocular_relative_change": 0.017387205007831197,
+        "landmark_tolerance_pass": true,
+        "interocular_tolerance_pass": true
+      },
+      "source_color_only_control": {
+        "landmark_delta_xy": [
+          [
+            0.016845524311065674,
+            0.011746764183044434
+          ],
+          [
+            -0.010498523712158203,
+            0.0172480046749115
+          ],
+          [
+            -0.00010475516319274902,
+            -0.008134782314300537
+          ],
+          [
+            0.014582991600036621,
+            -0.0013650059700012207
+          ],
+          [
+            -0.013565540313720703,
+            0.004736363887786865
+          ]
+        ],
+        "landmark_displacements": [
+          0.02053675140052,
+          0.02019189603282755,
+          0.008135456775453504,
+          0.014646736336292725,
+          0.014368612559350088
+        ],
+        "max_landmark_displacement": 0.02053675140052,
+        "mean_landmark_displacement": 0.015575890620888775,
+        "eye_y_delta": 0.014497384428977966,
+        "mouth_y_delta": 0.0016856789588928223,
+        "interocular_relative_change": -0.12648591379387464,
+        "landmark_tolerance_pass": false,
+        "interocular_tolerance_pass": false
+      },
+      "chin_measurement": "YuNet has no chin landmark; assessed visually, not numerically",
+      "collar_complete_in_frame": true,
+      "collar_review": "Recognizable white Roman tab completely visible below chin"
+    },
+    {
+      "id": "059",
+      "training_eligible": false,
+      "source_rgb": {
+        "path": "research/data/ffhq-paired-sources64-b2/images/059.png",
+        "sha256": "445390bde78c5067d8442906605f01f642d75463a74c365757a11e34ce9560fe",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "face_confidence": 0.9494860172271729,
+        "grayscale_control": false,
+        "landmarks_normalized": [
+          [
+            0.3695152997970581,
+            0.4484117329120636
+          ],
+          [
+            0.6238231658935547,
+            0.45350056886672974
+          ],
+          [
+            0.5134132504463196,
+            0.5993058681488037
+          ],
+          [
+            0.37862735986709595,
+            0.7176823019981384
+          ],
+          [
+            0.6069897413253784,
+            0.7200189828872681
+          ]
+        ],
+        "eye_y": 0.45095615088939667,
+        "mouth_y": 0.7188506424427032,
+        "interocular": 0.25435877616061753
+      },
+      "source_grayscale": {
+        "path": "research/data/ffhq-paired-sources64-b2/images/059.png",
+        "sha256": "445390bde78c5067d8442906605f01f642d75463a74c365757a11e34ce9560fe",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "face_confidence": 0.9395945072174072,
+        "grayscale_control": true,
+        "landmarks_normalized": [
+          [
+            0.35850512981414795,
+            0.4597468078136444
+          ],
+          [
+            0.6145995855331421,
+            0.4644682705402374
+          ],
+          [
+            0.49453166127204895,
+            0.6055564880371094
+          ],
+          [
+            0.37361884117126465,
+            0.7244614362716675
+          ],
+          [
+            0.5935213565826416,
+            0.7273929119110107
+          ]
+        ],
+        "eye_y": 0.4621075391769409,
+        "mouth_y": 0.7259271740913391,
+        "interocular": 0.256137975435675
+      },
+      "edit_rgb": {
+        "path": "research/data/ffhq-clothing-edits-b3/059.png",
+        "sha256": "93c8609b1188c5808f8799efca69b5682b702db98e57042df97d16b2c46039e0",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "face_confidence": 0.9410271644592285,
+        "grayscale_control": false,
+        "landmarks_normalized": [
+          [
+            0.3604995608329773,
+            0.45669230818748474
+          ],
+          [
+            0.6156022548675537,
+            0.4642079174518585
+          ],
+          [
+            0.49528273940086365,
+            0.6045958399772644
+          ],
+          [
+            0.37240108847618103,
+            0.7197756767272949
+          ],
+          [
+            0.5933973789215088,
+            0.7250616550445557
+          ]
+        ],
+        "eye_y": 0.46045011281967163,
+        "mouth_y": 0.7224186658859253,
+        "interocular": 0.2552133791287468
+      },
+      "edit_grayscale": {
+        "path": "research/data/ffhq-clothing-edits-b3/059.png",
+        "sha256": "93c8609b1188c5808f8799efca69b5682b702db98e57042df97d16b2c46039e0",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "face_confidence": 0.9410668015480042,
+        "grayscale_control": true,
+        "landmarks_normalized": [
+          [
+            0.36025816202163696,
+            0.4569826126098633
+          ],
+          [
+            0.6151717901229858,
+            0.4646296799182892
+          ],
+          [
+            0.49452391266822815,
+            0.6050058603286743
+          ],
+          [
+            0.3719267249107361,
+            0.7196906208992004
+          ],
+          [
+            0.5930217504501343,
+            0.7251238822937012
+          ]
+        ],
+        "eye_y": 0.46080614626407623,
+        "mouth_y": 0.7224072515964508,
+        "interocular": 0.2550283031943953
+      },
+      "unadjusted_comparison": {
+        "landmark_delta_xy": [
+          [
+            -0.00901573896408081,
+            0.008280575275421143
+          ],
+          [
+            -0.008220911026000977,
+            0.010707348585128784
+          ],
+          [
+            -0.018130511045455933,
+            0.005289971828460693
+          ],
+          [
+            -0.006226271390914917,
+            0.002093374729156494
+          ],
+          [
+            -0.013592362403869629,
+            0.005042672157287598
+          ]
+        ],
+        "landmark_displacements": [
+          0.012241383743693393,
+          0.013499284863313456,
+          0.018886482804252022,
+          0.006568764966871368,
+          0.01449761560409201
+        ],
+        "max_landmark_displacement": 0.018886482804252022,
+        "mean_landmark_displacement": 0.01313870639644445,
+        "eye_y_delta": 0.009493961930274963,
+        "mouth_y_delta": 0.003568023443222046,
+        "interocular_relative_change": 0.0033598328354498275,
+        "landmark_tolerance_pass": false,
+        "interocular_tolerance_pass": true
+      },
+      "matched_grayscale_comparison": {
+        "landmark_delta_xy": [
+          [
+            0.0017530322074890137,
+            -0.002764195203781128
+          ],
+          [
+            0.00057220458984375,
+            0.0001614093780517578
+          ],
+          [
+            -7.748603820800781e-06,
+            -0.0005506277084350586
+          ],
+          [
+            -0.0016921162605285645,
+            -0.004770815372467041
+          ],
+          [
+            -0.0004996061325073242,
+            -0.0022690296173095703
+          ]
+        ],
+        "landmark_displacements": [
+          0.003273208982802717,
+          0.0005945343387570725,
+          0.0005506822261137685,
+          0.005062009162112709,
+          0.002323381520944621
+        ],
+        "max_landmark_displacement": 0.005062009162112709,
+        "mean_landmark_displacement": 0.0023607632461461773,
+        "eye_y_delta": -0.001301392912864685,
+        "mouth_y_delta": -0.0035199224948883057,
+        "interocular_relative_change": -0.004332322215759854,
+        "landmark_tolerance_pass": true,
+        "interocular_tolerance_pass": true
+      },
+      "source_color_only_control": {
+        "landmark_delta_xy": [
+          [
+            -0.011010169982910156,
+            0.01133507490158081
+          ],
+          [
+            -0.009223580360412598,
+            0.01096770167350769
+          ],
+          [
+            -0.01888158917427063,
+            0.006250619888305664
+          ],
+          [
+            -0.005008518695831299,
+            0.006779134273529053
+          ],
+          [
+            -0.013468384742736816,
+            0.007373929023742676
+          ]
+        ],
+        "landmark_displacements": [
+          0.01580214435059442,
+          0.014330558770126598,
+          0.01988931016234641,
+          0.008428636961278373,
+          0.015354875995122216
+        ],
+        "max_landmark_displacement": 0.01988931016234641,
+        "mean_landmark_displacement": 0.014761105247893602,
+        "eye_y_delta": 0.01115138828754425,
+        "mouth_y_delta": 0.007076531648635864,
+        "interocular_relative_change": 0.0069948413100320295,
+        "landmark_tolerance_pass": false,
+        "interocular_tolerance_pass": true
+      },
+      "chin_measurement": "YuNet has no chin landmark; assessed visually, not numerically",
+      "collar_complete_in_frame": false,
+      "collar_review": "White Roman tab visible; lower edge cut by frame"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "step": 200,
+  "reviewed_at_utc": "2026-09-21T01:16:40.581510+00:00",
+  "reviewer": "Codex inference agent; native view of all six saved previews",
+  "production_approved": false,
+  "continue_bounded_run": true,
+  "clear_facial_collapse": false,
+  "scope": "One TRAIN calibration identity, HOLDOUT028 and four fixed random latents. Other five training identities are not previewed. PNG-only inspection; no model compute.",
+  "findings": {
+    "training_calibration": "Coherent detailed face. Original pale shirt remains prominent and a broad bright patch appears across the lower neck; no convincing clerical tab or surrounding black collar.",
+    "validation028": "Coherent bearded face, eyes and smile. Ordinary shirt edges remain under beard; no recognizable new clerical tab.",
+    "unseen000": "Coherent face with glasses, graduation cap and partial additional person. Headwear makes this ineligible; no clerical collar.",
+    "unseen001": "Coherent mature masculine face with ordinary white shirt at the lower edge; no recognizable priest tab.",
+    "unseen002": "Mature masculine face remains coherent. Microphone and ambiguous hand/chin region obstruct the lower face; source has not been separately rendered, so artifact origin is unassigned. No priest tab.",
+    "unseen003": "Youthful masculine face with cap and additional person. Facial features coherent; no eligibility/hot-success claim and no clerical collar."
+  },
+  "decision": "No clear facial collapse warrants halting the already bounded600 run. Collar generalization is not demonstrated. Continue without changing inputs or objective.",
+  "actual_training_pair_counts_through_step": {
+    "b2-051": 38,
+    "b2-020": 34,
+    "030": 27,
+    "000": 37,
+    "b2-055": 29,
+    "calibration-original": 35
+  },
+  "checkpoint_logged_metrics": {
+    "pair_ids": [
+      "b2-020"
+    ],
+    "clothing_l1": 0.10549172013998032,
+    "collar_l1": 0.09397526830434799,
+    "rest_clothing_l1": 0.11700817197561264,
+    "protected_l1": 0.02325536496937275,
+    "paired_loss": 0.1287470906972885,
+    "fresh_preservation_l1": 0.01672804169356823,
+    "step": 200,
+    "paired_images_seen": 200,
+    "fresh_images_seen": 200,
+    "seconds": 5.583196583902463,
+    "checkpoint_verified_frozen_source": true
+  },
+  "images": {
+    "000200-pair-000-train.png": "84d8c0fd4e110e8a9b0ffc0696b89b8c0ac98bd2b00f0da311a7a83ab77b3b80",
+    "000200-pair-001-validation.png": "fb5608161966a384625ab80d04efcdaff0dc5d47eae672dd4ebbd85b6b6710f1",
+    "000200-unseen-000.png": "badba63e0e61518b4b3a5d6197eec5bb7377cba9c8d0965e9bf137184d7c54f9",
+    "000200-unseen-001.png": "317668baf5dab021115e30041cdfbd46d0e572241b0d0740c11c58b72951c9db",
+    "000200-unseen-002.png": "295dfcf4437907c2f7c58bd1758b17b2913fb5c1b8cf17b531a2e89162e8e94a",
+    "000200-unseen-003.png": "5e12e1d1dd796bf9c40a842aa659c90d2d83823d5f8202f09ce0fa8c97ebebc2"
+  },
+  "config_sha256": "80d02fabf3bf2fa6c3fd98503e6558bcd5302e8cf89ec3e27434036bb6338c50"
+}
