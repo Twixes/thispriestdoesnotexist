@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "purpose": "Controlled single-pair collar-balanced test against completed broad-clothing200 baseline",
+  "production_approved": false,
+  "candidate_pending_root_review": false,
+  "source_bundle": "../../runs/inference-cpu/ffhq1024/baseline-bundle",
+  "pairs": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "latent_path": "../ffhq-paired-sources32/latents/reproduction-sample002.npz",
+      "source_path": "../ffhq-paired-sources32/images/reproduction-sample002.png",
+      "target_path": "../ffhq-clothing-edit1/001.png",
+      "clothing_polygons": [
+        [
+          [
+            0.0,
+            0.765
+          ],
+          [
+            0.123,
+            0.687
+          ],
+          [
+            0.15,
+            0.75
+          ],
+          [
+            0.18,
+            0.82
+          ],
+          [
+            0.275,
+            0.892
+          ],
+          [
+            0.39,
+            0.93
+          ],
+          [
+            0.5,
+            0.94
+          ],
+          [
+            0.565,
+            0.91
+          ],
+          [
+            0.635,
+            0.8
+          ],
+          [
+            0.7,
+            0.84
+          ],
+          [
+            1.0,
+            0.97
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "collar_polygons": [
+        [
+          [
+            0.37,
+            0.923
+          ],
+          [
+            0.484,
+            0.931
+          ],
+          [
+            0.472,
+            0.986
+          ],
+          [
+            0.452,
+            0.993
+          ],
+          [
+            0.4,
+            0.994
+          ],
+          [
+            0.357,
+            0.987
+          ]
+        ]
+      ]
+    }
+  ],
+  "requires_trainer_feature": "equal_area_collar_partition_v1",
+  "optional_objective": "0.5*MAE(collar intersection clothing)+0.5*MAE(rest clothing); protected/fresh losses unchanged"
+}

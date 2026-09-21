@@ -1,0 +1,14 @@
+{
+  "command": "research/.venv/bin/python research/experiments/paired_edit/evaluate.py --source-bundle research/runs/inference-cpu/ffhq1024/baseline-bundle --checkpoint research/runs/paired1024-cpu-200/resume.pt --sources research/data/ffhq-paired-sources32/manifest.json --expected-step 200 --output research/runs/paired1024-cpu-200/evaluation32",
+  "training_wait": {
+    "pid": 90542,
+    "ps_absent_before_evaluation": true,
+    "final_logged_step": 200,
+    "final_checkpoint_verified_frozen_source": true,
+    "training_exit_code": "not independently observed; exact PID absent and final checkpoint validated"
+  },
+  "evaluation_exit_code": 0,
+  "external_preflight_free_percent": 30,
+  "recorded_evaluator_preflight_free_percent": 27,
+  "no_training_restart": true
+}

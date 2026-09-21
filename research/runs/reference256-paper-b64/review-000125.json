@@ -1,0 +1,76 @@
+{
+  "reviewed_utc": "2026-09-21T00:20:33.763560+00:00",
+  "step": 125,
+  "images_seen": 8000,
+  "production_approved": false,
+  "decision": "reject_current_checkpoint_for_production",
+  "review_method": "Direct visual inspection of all three saved 1024x1024 contact sheets at native displayed size; each contains sixteen native256x256 outputs. No forward inference performed.",
+  "coordinate_convention": "row and column are one-based; each grid is4x4",
+  "validation_file": "checkpoint-000125-validation.json",
+  "checkpoint_numeric_validation": "passed",
+  "artifacts_unchanged_during_validation": true,
+  "artifact_sha256": {
+    "resume.pt": "06fa850f69b6f9f2f0804a59fb6e25a4baed5b889d6cfa2e623e857486b53f09",
+    "generator-000125.pt": "7519fce4ff6575576547e57d81e5d5e66385c9f18a5363aef5f8a16e685fbc42",
+    "config.json": "0576aec7d45958bfcb510b3d817a81d045408bc042039669bcbfe608f3cf1039",
+    "train-source.py": "00b5266875dbe07169025eb7b38b22a412230019c52d1bae77eeb8daf0045b13",
+    "adapters-source.py": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+    "samples-000125-ema.png": "244867a18115a1a1813b0d0bd24f3dc263aa3c7be3cc2bea2b116139cf8b60dc",
+    "samples-000125-raw.png": "a275bd04c8a1bfdeff9a77753e994de2f992650a0b717a8455435b586a57930f",
+    "samples-000125-untruncated.png": "c0dbb840ed1be0ac498ea6666cd17c9f942d6dc7d0b086c460fc3b399f583050"
+  },
+  "snapshots": {
+    "ema": {
+      "file": "samples-000125-ema.png",
+      "generator": "G_ema",
+      "truncation_psi": 0.7,
+      "noise_mode": "const",
+      "force_fp32": true,
+      "observations": [
+        "Generally coherent photographic facial shapes and varied identities; looks substantially like the source FFHQ domain rather than a consistently clerical domain.",
+        "Clearly childlike face at row1 column3; multiple female-presenting faces across rows2\u20134. These alone fail the adult-male-only requirement.",
+        "Clothing is varied and does not consistently contain white clerical collars.",
+        "No prominent hats observed in this fixed sixteen-image grid; this is not evidence of no hats on unseen latents."
+      ],
+      "quality_approval": false
+    },
+    "untruncated": {
+      "file": "samples-000125-untruncated.png",
+      "generator": "G_ema",
+      "truncation_psi": 1.0,
+      "noise_mode": "const",
+      "force_fp32": true,
+      "observations": [
+        "Retains diverse, mostly coherent source-like faces, but also the childlike row1 column3 and multiple female-presenting outputs.",
+        "Source-like colorful clothing, glasses and scene objects remain; consistent clerical dress is absent.",
+        "Some rendering/background defects remain, but eligibility and absent adaptation are already sufficient rejection reasons."
+      ],
+      "quality_approval": false
+    },
+    "raw": {
+      "file": "samples-000125-raw.png",
+      "generator": "G",
+      "truncation_psi": 1.0,
+      "noise_mode": "const",
+      "force_fp32": true,
+      "observations": [
+        "Black clerical clothing and white collar tabs appear across most tiles; this demonstrates visible domain change, not photorealistic success.",
+        "Severe gray/smeared facial surfaces, ghosted or malformed eyes and mouths, and warped backgrounds occur throughout the grid.",
+        "Especially clear damage appears in row1 column2, row3 column2 and row4 column3.",
+        "Faces look more repetitive and stylized than EMA; this sixteen-image visual impression is not a measured mode-collapse diagnosis."
+      ],
+      "quality_approval": false
+    }
+  },
+  "interpretation": [
+    "EMA is still visually close to the source domain while raw G is heavily altered and degraded at this early checkpoint.",
+    "The configured EMA half-life is20k images;125 batches of64 have seen8k images. EMA lag is consistent with the recipe but does not prove later quality will improve.",
+    "A finite checkpoint and exact G_ema export do not satisfy the user's quality or adult male priest requirements.",
+    "The fixed grids cannot establish unseen-latent diversity, demographic eligibility rates, or final attractiveness. No hotness scoring was performed."
+  ],
+  "scope_limits": [
+    "No trainer, checkpoint, input, active configuration, or deployment was changed.",
+    "Saved preview pixels were not independently regenerated; snapshot settings and save order were inspected in archived train-source.py.",
+    "This review records current evidence and does not prescribe stopping or continuing the live run."
+  ]
+}

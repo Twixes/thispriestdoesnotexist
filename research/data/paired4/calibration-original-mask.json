@@ -1,0 +1,63 @@
+{
+  "id": "calibration-original",
+  "split": "train",
+  "coordinate_system": "normalized x,y in unchanged square frames",
+  "method": "manual native-size source/edit inspection; approximate clothing/lower-neck boundary",
+  "original_mask_sha256": "3213099b75ae8e706f3024f2b33e69988404f036a5dd44f66efdb6cf34ca0984",
+  "clothing_polygons": [
+    [
+      [
+        0.0,
+        0.765
+      ],
+      [
+        0.123,
+        0.687
+      ],
+      [
+        0.15,
+        0.75
+      ],
+      [
+        0.18,
+        0.82
+      ],
+      [
+        0.275,
+        0.892
+      ],
+      [
+        0.39,
+        0.93
+      ],
+      [
+        0.5,
+        0.94
+      ],
+      [
+        0.565,
+        0.91
+      ],
+      [
+        0.635,
+        0.8
+      ],
+      [
+        0.7,
+        0.84
+      ],
+      [
+        1.0,
+        0.97
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  ]
+}

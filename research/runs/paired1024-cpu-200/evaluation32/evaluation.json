@@ -1,0 +1,1677 @@
+{
+  "purpose": "Research-only disjoint-latent source/student comparison",
+  "production_approved": false,
+  "checkpoint_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired1024-cpu-200/resume.pt",
+  "checkpoint_sha256": "3e512e3c80d752396e0ae9f1423751f59ea54db73e82b9ea2061ded23931ba85",
+  "checkpoint_step": 200,
+  "student_state_sha256": "903f88f39d12b24109eecf2ec8ccfb40f74cd31c35c952f012fc830bad8cf832",
+  "source_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+  "source_metadata_sha256": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+  "source_state_sha256": "a02240d17aae05f0eb862d230d782448063586522a763a93e24eca64c6ae2d7e",
+  "frozen_state_sha256": "cafd15b661c9f5754dd8e660091466ecd0361bc756373f4f50926947af979428",
+  "source_manifest_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/manifest.json",
+  "source_manifest_sha256": "24ec65044e76b377c0320dd8a10b6353f4f1cd150c17a4901f47ded4035330db",
+  "training_provenance": {
+    "manifest_sha256": "3aab470f2b0da4f6648ed4ce4df43ecc67e5d16ebd1ce5976b33781b85e99d23",
+    "source_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+    "source_metadata_sha256": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+    "pairs": [
+      {
+        "id": "calibration-original",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.13467025756835938,
+        "clothing_polygons": [
+          [
+            [
+              0.0,
+              0.765
+            ],
+            [
+              0.123,
+              0.687
+            ],
+            [
+              0.15,
+              0.75
+            ],
+            [
+              0.18,
+              0.82
+            ],
+            [
+              0.275,
+              0.892
+            ],
+            [
+              0.39,
+              0.93
+            ],
+            [
+              0.5,
+              0.94
+            ],
+            [
+              0.565,
+              0.91
+            ],
+            [
+              0.635,
+              0.8
+            ],
+            [
+              0.7,
+              0.84
+            ],
+            [
+              1.0,
+              0.97
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/reproduction-sample002.npz",
+            "sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/reproduction-sample002.png",
+            "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edit1/001.png",
+            "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+          }
+        }
+      }
+    ],
+    "source_files": {
+      "trainer": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+      "training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24",
+      "torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+      "torch_utils/ops/upfirdn2d.py": "7b5865e70ac4156edaefb2a372fee27dc55eb5661568b337cb4168e8936384a8",
+      "torch_utils/ops/bias_act.py": "ae9d4a2efbb61f7d21d2e361a5a145704351cc9733d2bd3e5ba4e64938d8e3e3",
+      "torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3"
+    },
+    "versions": {
+      "torch": "2.14.0",
+      "numpy": "2.4.6",
+      "pillow": "12.3.0"
+    }
+  },
+  "init_kwargs": {
+    "z_dim": 512,
+    "c_dim": 0,
+    "w_dim": 512,
+    "img_resolution": 1024,
+    "img_channels": 3,
+    "mapping_kwargs": {
+      "num_layers": 8,
+      "embed_features": null,
+      "layer_features": null,
+      "activation": "lrelu",
+      "lr_multiplier": 0.01,
+      "w_avg_beta": 0.995
+    },
+    "synthesis_kwargs": {
+      "channel_base": 32768,
+      "channel_max": 512,
+      "num_fp16_res": 4,
+      "conv_clamp": 256,
+      "architecture": "skip",
+      "resample_filter": [
+        1,
+        3,
+        3,
+        1
+      ],
+      "use_noise": true,
+      "activation": "lrelu"
+    }
+  },
+  "runtime": {
+    "platform": "macOS-26.6-arm64-arm-64bit",
+    "python": "3.11.16 (main, Aug 14 2026, 15:24:25) [Clang 22.1.3 ]",
+    "torch": "2.14.0",
+    "numpy": "2.4.6",
+    "pillow": "12.3.0",
+    "cpu_threads": 1,
+    "interop_threads": 1
+  },
+  "load_and_verify_seconds": 0.8553687499370426,
+  "total_seconds": 42.35117508296389,
+  "peak_rss_bytes": 3996172288,
+  "memory_preflight_free_percent": 27,
+  "count": 32,
+  "excluded_training_latents": [],
+  "original_training_seed_reproduction_excluded": "Only source manifest entries are enumerated, never its reproduction field",
+  "metrics_caveat": "Unclipped luminance MAE on fixed top75/bottom25 regions; these are not detected face/clothing masks, identity scores, collar recognition, or perceptual quality measures. Background and hair contribute. Values can exceed1 if raw generator luminance is out of range.",
+  "rendering": "Actual source and student synthesis forwards; same exact source-mapped W verified against frozen student mapping; const noise and FP32. RGB student saved unchanged, grayscale is fixed display conversion, no output compositing.",
+  "script_sha256": "ce488de8f61f24c15dc7275141d21bd34d6f43072b89277479af210d3a4e4ed3",
+  "contact_sha256": "14cfc28a1de2e1a4c0a6592eeec717c9a777ba89cd544ecd127e28f063216066",
+  "mean_metrics": {
+    "full_mae_0_1": 0.026762874557075378,
+    "top75_mae_0_1": 0.019019145576321485,
+    "bottom25_mae_0_1": 0.04999406149933705,
+    "max_absolute_difference_0_1": 0.5626781899482012
+  },
+  "entries": [
+    {
+      "id": "000",
+      "seed_hex": "a831376af312b9fa61b8663af1b62b9995fbf8dfdafa43258d37aae322b6dc9d",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/000.png",
+      "source_png_sha256": "64f6368f73a25e21c6d8ae22c90a6c5095ab986d204c9acf26aa22f6050d4548",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/000.npz",
+      "latent_npz_sha256": "40978912da666c81c646643e681fec554e4771fe69c558359ee28cb6ae751572",
+      "z_raw_sha256": "86c1d4cd8b5830071b6e55c60d049132bf5c43d8f95a6e03b42cfb95e1ae13b9",
+      "w_raw_sha256": "28f75e95125bf7dc3a85948c98917054ca1d86f192c7452ce4bff4a9b692e408",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.8710131249390543,
+      "student_seconds": 0.6505368340294808,
+      "metrics": {
+        "full_mae_0_1": 0.01676609975879728,
+        "top75_mae_0_1": 0.012212629530267805,
+        "bottom25_mae_0_1": 0.030426510444385713,
+        "max_absolute_difference_0_1": 0.39752140641212463
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "000-source-gray.png",
+          "sha256": "3de52698d7bc58bda75b0c28349c27ff9b6754a404df444eb88b78154598a89b",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "000-student-gray.png",
+          "sha256": "ab2c2b15f70d949bb34517205453970bbd03dbea4a1defe5b3f994ac9a5ba532",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "000-student-rgb.png",
+          "sha256": "243daf309db70d9957e9344bd385bf1c69289d730933e799440fe20a92fd637e",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "001",
+      "seed_hex": "b04ce4196d6a235ec8df4c6906066b64105932f8aae58640968ed027cffb5231",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/001.png",
+      "source_png_sha256": "0afb9413517ffc5d33cc00ea3790fd2dcf8487fce03dcc73366d62621214bfda",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/001.npz",
+      "latent_npz_sha256": "9b66c2e0ee14264adb5b0dbc5cf09129489e9cdef15fbbfe2402f5bbb0dddfa9",
+      "z_raw_sha256": "ceb87744706a12f6260cec4d1ef73a5baf4b27f00acf2737dee5aa447d8fdb7b",
+      "w_raw_sha256": "2f25e2ea02b5f309e16da999a6eecb41b131b2db14222b52f425832824e0b242",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6326995419804007,
+      "student_seconds": 0.645790624897927,
+      "metrics": {
+        "full_mae_0_1": 0.014389241754457771,
+        "top75_mae_0_1": 0.009713903275345123,
+        "bottom25_mae_0_1": 0.028415257191795718,
+        "max_absolute_difference_0_1": 0.5479536354541779
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "001-source-gray.png",
+          "sha256": "8dd2107b3a357920a22326e1d5db2e22003d8c36b5f37885f4b014d038968426",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "001-student-gray.png",
+          "sha256": "7b8378937dc74347df7e53d11746c934be04b0a899e38b93ceadd6a05bd21657",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "001-student-rgb.png",
+          "sha256": "6372f869649d331b4fd286a6220a306c393d9ead5cff10d9aeeeb518fe2b85f8",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "002",
+      "seed_hex": "823ff2d2098136263cb731a3c90fc115fb28e437e35e3a3764e2f0e48e207a33",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/002.png",
+      "source_png_sha256": "4781fb8f28b6b74227b823b68fb2ea73fad9e94311e9a18080925e9e0010d343",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/002.npz",
+      "latent_npz_sha256": "70a4cd392c309e8f5f7a1f91b6da648f06c1eaaf2edfe3fd52d7359cfc08ae22",
+      "z_raw_sha256": "a79df45a0fe1e804a391bf8f684879ae594ba6402cbf17e983fd333d4fbacf1b",
+      "w_raw_sha256": "d7cedfbf3c73165517a536ef94c74695f30ee3e3736e8b0f6999d1288e3cd201",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6527999580139294,
+      "student_seconds": 0.5948214589152485,
+      "metrics": {
+        "full_mae_0_1": 0.06687324402224704,
+        "top75_mae_0_1": 0.02646768840668301,
+        "bottom25_mae_0_1": 0.18808991086893911,
+        "max_absolute_difference_0_1": 0.8835083246231079
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "002-source-gray.png",
+          "sha256": "76d6b674a4bb1eeeb51b54d75554e27316dec4617fe8b856e46c382906335a02",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "002-student-gray.png",
+          "sha256": "b2ae9a04c4ed973b086b63a598399a87d72b7dc5e60ff0985de4e1ef5bd3c76b",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "002-student-rgb.png",
+          "sha256": "6e95dc1527e63a9d303d40abb9f9d70d820faeffac0c0bb6522a324bdecd9423",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "003",
+      "seed_hex": "2b9000fd5dc946d9144677f005ed94eec6e29052eda4f8623c8756a23ed38bb1",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/003.png",
+      "source_png_sha256": "4f39e9043a116a88bc2827b3b3188819a5a7e614c81ff5aa36204a4e5907e768",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/003.npz",
+      "latent_npz_sha256": "fb27175191e4d6cfeb9797ab55e4b9140f05ef6a2e71f0b12c8a5c440ec6fa72",
+      "z_raw_sha256": "a60e25cda3d375deecdc6092972a90853979c3e4b916de94fb13557d6bf3fda6",
+      "w_raw_sha256": "5e83328d11d81db37ebb9a0d3b9a0248563499794afead51849dd76218792ec1",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6520149999996647,
+      "student_seconds": 0.9273050830233842,
+      "metrics": {
+        "full_mae_0_1": 0.016650997280237334,
+        "top75_mae_0_1": 0.013522138664560165,
+        "bottom25_mae_0_1": 0.026037573127268843,
+        "max_absolute_difference_0_1": 0.42532962560653687
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "003-source-gray.png",
+          "sha256": "87f7c5f5f42fd2809f1ef579cc8433472557b6c06e6fdb49f5def66adb846de4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "003-student-gray.png",
+          "sha256": "a3bee5c5e7851c459959e1e21105be1976ad692225b48a49c551978ae5116015",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "003-student-rgb.png",
+          "sha256": "16bba2752c145db9c3829e6833f19f3d9028d22dab34398ed7c70b6b3cd09aa7",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "004",
+      "seed_hex": "21a82436a8d492f23b6fefe2a2d1e763834f734bd814f96d149ffea1488b2cef",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/004.png",
+      "source_png_sha256": "0210ed96dfe3f2a00cf1bb6d3e542ebf28fdad539f744ac649bfde849072af5d",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/004.npz",
+      "latent_npz_sha256": "7522f1cd94a37455d0224d515d0abd8e928650b93306302b499a11e3f60517ca",
+      "z_raw_sha256": "2940940751fdd6c95538e3af0bac51418e44233186269b51cc5e293b6345fbef",
+      "w_raw_sha256": "f73a6fe799606231694354be67c6150c00c1858c6ba061a2a24b370326de1cd9",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.7660828330554068,
+      "student_seconds": 0.6280465830350295,
+      "metrics": {
+        "full_mae_0_1": 0.03804470936435678,
+        "top75_mae_0_1": 0.02760036234622021,
+        "bottom25_mae_0_1": 0.06937775041876648,
+        "max_absolute_difference_0_1": 0.5823115706443787
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "004-source-gray.png",
+          "sha256": "0ba7ce59497f917d731d6572b752236708533fd11cc47c03c55b4ebaaea874bd",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "004-student-gray.png",
+          "sha256": "0e2daad360502f1a6f82753e70f7198eeed9ed6ac0e678967062b75ab07ca874",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "004-student-rgb.png",
+          "sha256": "c74b3802dddcd79ff1092ccb3e70f5f6419eff6e8ab43209dc6e35fa4ef40285",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "005",
+      "seed_hex": "9f04423a60d820e1527853c9a9cfe2b4f59c07c37b23889a562927e885556aab",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/005.png",
+      "source_png_sha256": "406530e33f10663a268a924e39d97fbd25b3ab3eb6e03af6f038c1d785bb36a8",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/005.npz",
+      "latent_npz_sha256": "f7bab7bc5384b1073ba97479a8aea073d0a8d4566167af9c7eaec9fa48a193d5",
+      "z_raw_sha256": "7760b54a1a4cbf2eea4af0a9b833bd27257f9dbf7f301c5512af6839b884a650",
+      "w_raw_sha256": "01ca7956c0648888fed060ed51488d89d868fc0ca2ceb3cbec37a83769ce924b",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5726198749616742,
+      "student_seconds": 0.6056978750275448,
+      "metrics": {
+        "full_mae_0_1": 0.02657244220270627,
+        "top75_mae_0_1": 0.02178642105745136,
+        "bottom25_mae_0_1": 0.040930505638471004,
+        "max_absolute_difference_0_1": 0.617345005273819
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "005-source-gray.png",
+          "sha256": "df382cf6fe6344fc8f8dfb2ebb53b8385c215d1b032f9ab1834b10ceb836e855",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "005-student-gray.png",
+          "sha256": "ca388735b5c7167b4903bf5b49f2c0b89ff6fee84e1358b4275de9f6c0ec6f93",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "005-student-rgb.png",
+          "sha256": "e1a1cf58ab62b5f3ed1c372aefc5ca2cf33d0b16d07317ae61d20419cc27dc6f",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "006",
+      "seed_hex": "79b171118477be35735d590c313446d73c4e390af6fd6899afead0711b32188b",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/006.png",
+      "source_png_sha256": "b11f1a08aeb6ef067d59f61e1af4b209c42381779d56ecf27ac0019c332ad6ec",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/006.npz",
+      "latent_npz_sha256": "1d8eb465d86af944fd26e271fbd14b32a7bafb28a49fc3a09091b4da0d8794c4",
+      "z_raw_sha256": "17e7aca91257959bfddeac0ed4dc931e804e7550c71e3a36bff453501f482d7c",
+      "w_raw_sha256": "37385f5e3945e01715bec68929b25f3b1aee1ca81e6333f89c05e2fc6353a975",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6038183330092579,
+      "student_seconds": 0.6485515419626608,
+      "metrics": {
+        "full_mae_0_1": 0.017639590579165088,
+        "top75_mae_0_1": 0.014650234257828743,
+        "bottom25_mae_0_1": 0.026607659543174123,
+        "max_absolute_difference_0_1": 0.6178426742553711
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "006-source-gray.png",
+          "sha256": "4dc431f33e60756d45d9f5959c04aa66809a5cb9fd7fb770a29bd4da94d8b06e",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "006-student-gray.png",
+          "sha256": "a3537caee7c89e8fc9b768304a9eee16180ad8380b3f88bc21a9196c018b0639",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "006-student-rgb.png",
+          "sha256": "b3f4847703a7a3252a23fc8a96f532c46bb4c137d4b84abe568083a346b43512",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "007",
+      "seed_hex": "3712119ea675a99a83615964165ecfd47e1c04fb266ed2171d6e8e0ca0233b32",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/007.png",
+      "source_png_sha256": "5397aba80681f041b274cd618e49ab2bc861a290344444fe1123153b1795ad7d",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/007.npz",
+      "latent_npz_sha256": "26507796b84357cd5cfc89d90c90e039843c54fd3734cc7dbb0b8f3aa39974fd",
+      "z_raw_sha256": "acd05816bceb322c2c1cf213d18b3be13c754b95bc9d87d71f7e1c98265cf24d",
+      "w_raw_sha256": "9860c82b981aece034febf22a27df48702ede6c351c66eb1374f2811b3a97981",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6028083749115467,
+      "student_seconds": 0.6297131250612438,
+      "metrics": {
+        "full_mae_0_1": 0.022223328818256505,
+        "top75_mae_0_1": 0.01798698613261725,
+        "bottom25_mae_0_1": 0.034932356875174264,
+        "max_absolute_difference_0_1": 0.7130332291126251
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "007-source-gray.png",
+          "sha256": "086a5fb2258a0944c8c1d63b7f54d849bf6bd7bca80c5d09c177aed1d1c4e825",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "007-student-gray.png",
+          "sha256": "31b55938febd2947688faa76a9cb7a1c1612d68726373fdf99e76ebd4b3846ee",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "007-student-rgb.png",
+          "sha256": "c558d60700b4c8aad385113ac57448d7576d1c6fbc834c7b3c65cc362fe574da",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "008",
+      "seed_hex": "d507490857ff57b6c3a1e77775c62a6a1d65527d3409b32da8e31f056270cd78",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/008.png",
+      "source_png_sha256": "d0fe7c5b867b835c121e75a2a14f12b5f3d4ba81fb36264f0c80428d9015a0b5",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/008.npz",
+      "latent_npz_sha256": "9eda4890d27e48b28578c4be2263ccf4edf467ce80b6a9896bf2bee065b1158c",
+      "z_raw_sha256": "e58531ea25e403602f7c92b42e289a4dd70652da3db50eda8740db43bffcc22f",
+      "w_raw_sha256": "0fa687a53d7ef1a1ecf7a234015e9eff51a9b5ecf923cfb0fb8d69d8dfc0738b",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6450698750559241,
+      "student_seconds": 0.5863462910056114,
+      "metrics": {
+        "full_mae_0_1": 0.05958136346310994,
+        "top75_mae_0_1": 0.027289343826206885,
+        "bottom25_mae_0_1": 0.1564574223738191,
+        "max_absolute_difference_0_1": 0.8173386752605438
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "008-source-gray.png",
+          "sha256": "b74a754da061a8405663549fbb577dd9328779ae352c80dd52adac67348b5dac",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "008-student-gray.png",
+          "sha256": "d48fa8a2e4bd79cecbe2c48e06817d0f8b06fae9dc4b5197d55cb0139ab8d9fe",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "008-student-rgb.png",
+          "sha256": "2f9825b464f84d831e98063a6d1e0de1ddb9d47cd0245f082a8de4cc6dc57339",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "009",
+      "seed_hex": "d809dfb8fc8362c81096be362b175ea0be3b187c762f8b813e7f9ee8d5f0f820",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/009.png",
+      "source_png_sha256": "db4682b8cde369a38ff6983b04fe1d8a2de4fce766e28db28519d794887108c3",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/009.npz",
+      "latent_npz_sha256": "9ff8c7aa4f94827b75434d7827299b3ee014e49003ed22cd00004399950ce2a2",
+      "z_raw_sha256": "494c55e1e57379b421ce27ebfa6dac87565d58c0f3a44efe55b322f4be18c688",
+      "w_raw_sha256": "343cfff3ff82645bcdf847200041181cf563473a04f79fa8d198cc6194c7603c",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6153310409281403,
+      "student_seconds": 0.6137836660491303,
+      "metrics": {
+        "full_mae_0_1": 0.019443768214244983,
+        "top75_mae_0_1": 0.014079276442203081,
+        "bottom25_mae_0_1": 0.03553724353037069,
+        "max_absolute_difference_0_1": 0.9234350621700287
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "009-source-gray.png",
+          "sha256": "502a9504262581a671aeab61ff0ef88e09a2c7883249dbe1cffdf30bfb8c45c4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "009-student-gray.png",
+          "sha256": "6890141f37ccade0028dd8961257854e14a8d66360b4f56bffd482eaca535d74",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "009-student-rgb.png",
+          "sha256": "7ba61081c4524f07200a745a11ca8b82d3bdf29e1214b169e259c07718f97802",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "010",
+      "seed_hex": "470e25aa66c83f13fdaaf8e7de1a5012e32ee55fc750442fecfdf991c3dba8a5",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/010.png",
+      "source_png_sha256": "c763b269a9fb72c3292e39090b546329ab29dd877d636abfffb9477749bc394f",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/010.npz",
+      "latent_npz_sha256": "745e7d951ce1cf20f22f9d7a30ed9c9c0872c152d1e052f494cdd6eee76dcf67",
+      "z_raw_sha256": "159bf68f9d0391c22092a4a4d440cd6d4ebdcbf3aa33577fd7d18d2ae9238d34",
+      "w_raw_sha256": "930728ebd6c3af27bf6c0f2d947214b56bb777206af3a8a13d0c40c3704fc086",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6241355419624597,
+      "student_seconds": 0.6056031249463558,
+      "metrics": {
+        "full_mae_0_1": 0.026392069995267775,
+        "top75_mae_0_1": 0.018865838275019087,
+        "bottom25_mae_0_1": 0.04897076515601384,
+        "max_absolute_difference_0_1": 0.7236829400062561
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "010-source-gray.png",
+          "sha256": "cfc4bd55aba36f9062430a7bf647fbe23a3ad6a1508e1572714fdfc781cbd45e",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "010-student-gray.png",
+          "sha256": "a29ab6ac470a7e949e80edaf32778a356fbe1c791c61e65d4e9daac56fa85100",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "010-student-rgb.png",
+          "sha256": "9a299f67c39941de9e5b337ff33e2ca853b1bc48ee384ad8864ea599943d1734",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "011",
+      "seed_hex": "fa5ff0610d5ae031c44c8f8779390d9335359438f7f100dfdaedfadc2190f3f3",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/011.png",
+      "source_png_sha256": "77e8165d7ddcce6d96f686849a9c82dff5248eb9613cea778805bc7ee1d09f85",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/011.npz",
+      "latent_npz_sha256": "a887c6c9ee53912331592a4fdc1a33ef3077269b2339e4c1b914a339f11d7e6b",
+      "z_raw_sha256": "9f185904bc851be76e82ec9f701b2e1ad647e5ce6fcc339ba54b73d4f7022376",
+      "w_raw_sha256": "f56ee1564e8f4e460774f388ba62605d064ea3c762a9bfa7ced4658b44614cc2",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6116884170332924,
+      "student_seconds": 0.6205716250697151,
+      "metrics": {
+        "full_mae_0_1": 0.02294771421267683,
+        "top75_mae_0_1": 0.02042446069962504,
+        "bottom25_mae_0_1": 0.030517474751832196,
+        "max_absolute_difference_0_1": 0.24085229635238647
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "011-source-gray.png",
+          "sha256": "9a8ccfb6ef9e66a021e40e5e43e15a6545fbaf3d4edd5e84c283d9d9a3000596",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "011-student-gray.png",
+          "sha256": "ffcdc8c8942fea5bd791f1b592bfca082a0896d47cf8cef818d677ae6f0985dd",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "011-student-rgb.png",
+          "sha256": "e5ebffcf4ba1bcd7a4148b5c60cf7ae5ab91fe286f49f14d442df283ce363b93",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "012",
+      "seed_hex": "ea485615db7e4fe9f1ae4d25e9c0717d5b846751bd5cd3e0b1e2650fa53ce28b",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/012.png",
+      "source_png_sha256": "91fe895125146301d9adb59eeeab567c9ee4810dff9c18d0dbbb29f42e707a83",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/012.npz",
+      "latent_npz_sha256": "6aa9e1167c496c2f583fa2194e9a75840c7ae2821adfe4a40c48f67b440f574e",
+      "z_raw_sha256": "2873b2b1ad63dace0c2e8ec3e2a84f7985f488be11d21d61d2b71121a85b7482",
+      "w_raw_sha256": "e09c12c35887c37ebff49389a3396dbbbe9d70b14f77c12b51b0d4a5dcb8a95f",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6320148749509826,
+      "student_seconds": 0.6277407919988036,
+      "metrics": {
+        "full_mae_0_1": 0.01930533114756372,
+        "top75_mae_0_1": 0.015397459057036636,
+        "bottom25_mae_0_1": 0.03102894741914497,
+        "max_absolute_difference_0_1": 0.5032550096511841
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "012-source-gray.png",
+          "sha256": "a111c16b418d6d39490c240b4ce0bbada4466b605b2f4c2261774aa2fc6be0fe",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "012-student-gray.png",
+          "sha256": "9fc3f3e0a54dfbf1925b2487962dfa9b5383fe29a6c892c7dd5df3388a184559",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "012-student-rgb.png",
+          "sha256": "dd1d42aad1aa4b98d4324cd1a54080f8f14a35f6e64c5020b981dd1e09aeee0a",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "013",
+      "seed_hex": "8f1ea2b4fb06d22f74984b0366981c335f6ec652b27c5cb22d796313ce6dbc8b",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/013.png",
+      "source_png_sha256": "016d970c7721c0c2d18c2c5f941039193982ba42464637d8d13a22bcb72138b7",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/013.npz",
+      "latent_npz_sha256": "d58d0bc114d3e629acdf3f0b0925ec930bc17bbba0d074ead3fdc0b75e5cbedc",
+      "z_raw_sha256": "dba87c4c834664ac05b8c8201c8790ec14d9ddf7029457a86edda330c4398481",
+      "w_raw_sha256": "3af8360d9da74e416b0721d3e28df35a47c1bbcfe929e044ccb82a0caebab244",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6086145420558751,
+      "student_seconds": 0.5854602920589969,
+      "metrics": {
+        "full_mae_0_1": 0.015087750991654048,
+        "top75_mae_0_1": 0.009739519271117084,
+        "bottom25_mae_0_1": 0.031132446153264937,
+        "max_absolute_difference_0_1": 0.33114123344421387
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "013-source-gray.png",
+          "sha256": "c4680354bda4cef30a185e13accd0c28f9831492c43b9052df4c24aa3772a098",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "013-student-gray.png",
+          "sha256": "5c735588b640e5237e807a03f3315006e564e22de5added24f40aebf72b21c31",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "013-student-rgb.png",
+          "sha256": "a576eb3844d32aa7f54e02b43b66635c8199b2389b3118ac732ff02c776da277",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "014",
+      "seed_hex": "83154f53888a3cb8d262a597709acecfaab9d6b277d70dfb9fcddc9609e457db",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/014.png",
+      "source_png_sha256": "e530ac664f8686fcf1fc2fda16894d4a805aaf6c11a3e165e13cdb50ed105832",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/014.npz",
+      "latent_npz_sha256": "9fef6f902bf366055c2dcba1da3e84ff998e8af8bf1ee8066870966a288d9d67",
+      "z_raw_sha256": "ce438bf45801b91361512f107fe6e988990b0b51e942c4ecf41405472d714d59",
+      "w_raw_sha256": "22f6c0f999912329a2634fa689a09907f72eec78c6ba707a96e66232fe08e8f6",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5749783749924973,
+      "student_seconds": 0.5744697090703994,
+      "metrics": {
+        "full_mae_0_1": 0.02737765364315692,
+        "top75_mae_0_1": 0.024283795394012486,
+        "bottom25_mae_0_1": 0.036659228390590215,
+        "max_absolute_difference_0_1": 0.6664506494998932
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "014-source-gray.png",
+          "sha256": "a6ec89a520b1cd18e056c152cd9046a3056c5afaab8e38bc1a60e3fe2b48345d",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "014-student-gray.png",
+          "sha256": "8c62f79e65eede7e7c94dbd829f907269af1b2dc396620153fc57bd70fb7e759",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "014-student-rgb.png",
+          "sha256": "60184cf72b1b2a9979cbacde06479eacb55d6db536bc3860720f07bb81566037",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "015",
+      "seed_hex": "2cb498e2deb77974c2bffb3b9caf43881c0699f1c22ead2a5534d029b0389d49",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/015.png",
+      "source_png_sha256": "f71136ab77a4bca89f1328ff28ea750fa245c94a09c96cc98dff33e2e98e3641",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/015.npz",
+      "latent_npz_sha256": "3d17b5bb3c2d8cc4c60e337a966572859d03fb23c55621b16f74ccbbc98fe038",
+      "z_raw_sha256": "d43c4bd1dd9f911260697ef3fd685f1b6db984ff7e90454f217b8cb910040864",
+      "w_raw_sha256": "56505fec1f64034d68da05c5471d8c5e1916161c674be3a61163e4a3b332b436",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.6091517080785707,
+      "student_seconds": 0.5274002921069041,
+      "metrics": {
+        "full_mae_0_1": 0.017256749059242793,
+        "top75_mae_0_1": 0.01750666971266431,
+        "bottom25_mae_0_1": 0.016506987098978243,
+        "max_absolute_difference_0_1": 0.2086995244026184
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "015-source-gray.png",
+          "sha256": "b524eb10f3c34c28cc085086dff6f558235fbd651384637e576f5889891c54c7",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "015-student-gray.png",
+          "sha256": "585a6efb6161b3c9bda421fac0fad1aed69538b97f552e079f46f093ffd49101",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "015-student-rgb.png",
+          "sha256": "ab02db0257c79c095b2302bf4e6febf87b0165641065505ff0e3643dad8f2ccb",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "016",
+      "seed_hex": "9ab16c189de5d0101e11f00939057dabd1b777ce0185828a022844f6124ef6f0",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/016.png",
+      "source_png_sha256": "8a3304b0659b98d5a0bb057f049463e59eac462fe6876fec10777fb92893d1b5",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/016.npz",
+      "latent_npz_sha256": "76c74219a79bccc5cb59626f616b49bbddf04a62c4508faac9b69a12de354560",
+      "z_raw_sha256": "3d1d75460d3192bc88262e2370c9c7c8ebd64af13b6a2d821e0860e7b1d42e84",
+      "w_raw_sha256": "0a66ccc3217dd08aa0c52c1b186658f1bfc19faab1e1a060552f007074e5c143",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5035877500195056,
+      "student_seconds": 0.4866672499338165,
+      "metrics": {
+        "full_mae_0_1": 0.027730519549066912,
+        "top75_mae_0_1": 0.012011003957316765,
+        "bottom25_mae_0_1": 0.07488906632431735,
+        "max_absolute_difference_0_1": 0.5775736272335052
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "016-source-gray.png",
+          "sha256": "dac14aa7fad629426320515ce4f32193fb2e1e1b40f6aa0ba4053761aa34e9b2",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "016-student-gray.png",
+          "sha256": "a4dd093d37c1e68858f91e0e391a90eb00786ea51996b74fa0c0f8958a5999db",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "016-student-rgb.png",
+          "sha256": "8c6605e400d37732f8151438dddea91248c441e87737cd5768ccb855b5da96e5",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "017",
+      "seed_hex": "d7b376af027942f1942241ee47e38f94982e67e4c68baf2481fefeab76a75543",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/017.png",
+      "source_png_sha256": "6751e10aad84a019faf4b1aa56e6d1e946bcf42c36c138e64b86875f3b98a1e7",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/017.npz",
+      "latent_npz_sha256": "ad1809998877f4e25429981c83be1c0da6bbda2d1bac3a339f13427dabecad39",
+      "z_raw_sha256": "77e24d7f4327d2c95920f0da0aac4eccf14ecbff4d8027c4d81eca291052e48c",
+      "w_raw_sha256": "9e21ebab3dc95b12f5c31efec77241fb6800a4ae191d19fd4e18c0839e13f0f8",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5084335000719875,
+      "student_seconds": 0.48953341599553823,
+      "metrics": {
+        "full_mae_0_1": 0.014319211935827525,
+        "top75_mae_0_1": 0.010622170324457633,
+        "bottom25_mae_0_1": 0.025410336769937203,
+        "max_absolute_difference_0_1": 0.41131147742271423
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "017-source-gray.png",
+          "sha256": "eabae87a7039c6d96ddc08751754be31164e65cfaf987651b8096a338e116f7a",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "017-student-gray.png",
+          "sha256": "f287473ba723241464fe4b72e648f0c21dd22fd418501e6f776b52e0c95d5300",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "017-student-rgb.png",
+          "sha256": "81e3f5ce44681dbb0bea94dd002b3a15b30c3eacbb0aedb3c493c4ad312a5681",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "018",
+      "seed_hex": "d448e792891ae65aeb13916e4d6d8b4201e0fc24ba724e03e0dbec0b840f1e4a",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/018.png",
+      "source_png_sha256": "07e3fa19d33b6d9175fe22b599a6be8de1cd9da972d0569ec111e7abd818399f",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/018.npz",
+      "latent_npz_sha256": "fdb7532423c7cd67a6d58c6bac18c70aae45290fbce90045ffbebc18ff3cd73f",
+      "z_raw_sha256": "4a84f560e0b4a92534ab222fbcd5c4bf99d474fad52c944e84184081a7c5cca1",
+      "w_raw_sha256": "8024d874bbe27d2cb8ed3d4698ec341fc1cb5dd460e915ff9e7b0f3387a4c2a0",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.4983437090413645,
+      "student_seconds": 0.5798693749820814,
+      "metrics": {
+        "full_mae_0_1": 0.013626976276157166,
+        "top75_mae_0_1": 0.010809858351990442,
+        "bottom25_mae_0_1": 0.022078330048657335,
+        "max_absolute_difference_0_1": 0.2739218473434448
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "018-source-gray.png",
+          "sha256": "c2426626ad2ea697778beca3ab1b388ec7e63778ce5de63904d1573504864b7f",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "018-student-gray.png",
+          "sha256": "94a1e6872eab0377b517cb58840609bb23f0b777abe5cc98f58d120bb56b19ae",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "018-student-rgb.png",
+          "sha256": "fca0f9e8568cfc2893a5ae1c94d1b86fcf1992f957ad3a648fec94815a173ca2",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "019",
+      "seed_hex": "514976962c13570d9683e38849e3365d2af0536be8c95891a369707b77e97965",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/019.png",
+      "source_png_sha256": "8ec1598fe01771a077d6ceb6ffe0b2778e94e9ab25aae4b6093b8f1f877174c3",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/019.npz",
+      "latent_npz_sha256": "6dbeaed23c8d62eab86f52c62e44b13ab36c9db9267ef1491605501e71b83831",
+      "z_raw_sha256": "13f0136bb3a6915d74ae7c93322a286abbc11e44675b5008dec076e00cf21242",
+      "w_raw_sha256": "625cfefead07c82eefd192a9be8fc198302e632bac4e98d451987521cd432b07",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5036489169578999,
+      "student_seconds": 0.5176435409812257,
+      "metrics": {
+        "full_mae_0_1": 0.04811093909751207,
+        "top75_mae_0_1": 0.0197203836924776,
+        "bottom25_mae_0_1": 0.1332826053126155,
+        "max_absolute_difference_0_1": 0.8222840130329132
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "019-source-gray.png",
+          "sha256": "e3fb83831b736b9f695f2a2b002ea521bd964e17c58aaffaf059f75167c80228",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "019-student-gray.png",
+          "sha256": "ee97b63b6c8f4a05c4be9a216b074ea25675d421daae8ff38e017dc8e5d4f727",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "019-student-rgb.png",
+          "sha256": "421f18ccdfb9d38f021046c9c8ba879e926d2d5b916e6312a1160eeb6c2d6ee8",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "020",
+      "seed_hex": "16818e0a652a33a53e035ba1015b1657a9935b591c442f0e8a5f786da8968837",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/020.png",
+      "source_png_sha256": "5d46fc9bcb2e90f5ff34a2184ee4549193f07ef61545d25145c110f6eac82029",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/020.npz",
+      "latent_npz_sha256": "3197f6317911c4a39d9fa21a0b26373603b265013d8bb2c310ffa610cd11ab23",
+      "z_raw_sha256": "32c841f706a3a8da490a3de35e02cd3fad2e85c568594853a251232226856298",
+      "w_raw_sha256": "f41eccac5053cca3b35b131a39873b84c2931f8a72554f8bc3e9c963823925ad",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.538895667064935,
+      "student_seconds": 0.4944864580174908,
+      "metrics": {
+        "full_mae_0_1": 0.01663161914802913,
+        "top75_mae_0_1": 0.015920611172267247,
+        "bottom25_mae_0_1": 0.01876464307531478,
+        "max_absolute_difference_0_1": 0.25787922739982605
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "020-source-gray.png",
+          "sha256": "16b3d3a873a675c6116ee1f8f7165ba4e864675ddaa4592772544da1147a7941",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "020-student-gray.png",
+          "sha256": "8dc50f36f30f46ac8d74e0584834679367c2a7cfd17dd114b137425b54972c82",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "020-student-rgb.png",
+          "sha256": "f516563799ccb232eb4299e98bf6294bc0f539e7f7f92ca94fc8a945a1ff8c08",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "021",
+      "seed_hex": "a5cd1817b6c1d5d384d26dc924dee05f260a88328d1c8dfc8d415025307b9592",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/021.png",
+      "source_png_sha256": "9861a73d6e5900371d9ec44b3915ecf8c0c822abe45d9ce8faedb724be0ca922",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/021.npz",
+      "latent_npz_sha256": "55b36480c13c1bf6f0563fbf12121b8adc16e4bb76a49a569d1561a10f402eee",
+      "z_raw_sha256": "45a75a564266eb6e73d5a5a0643236e5e3220916735d1821a8664d5b32e70e18",
+      "w_raw_sha256": "c572906541c56837f2151f2c265f50c7fcc3ae3a2fcefbda9be8fe483bf9e56a",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5079307080013677,
+      "student_seconds": 0.4946086249547079,
+      "metrics": {
+        "full_mae_0_1": 0.021990358082717876,
+        "top75_mae_0_1": 0.01931571496803978,
+        "bottom25_mae_0_1": 0.030014287426752162,
+        "max_absolute_difference_0_1": 0.6036366522312164
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "021-source-gray.png",
+          "sha256": "daa549b1bd4106ab13861df46116e07df9cf32a02ab46dc95fa0c190ea098a8d",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "021-student-gray.png",
+          "sha256": "dbecee1609e988c1af636069e4c71f9abdae8945e8d31ef026289eaa8255c5cb",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "021-student-rgb.png",
+          "sha256": "bec7c476cc4166237be6cab1253c9ce1d2de5b0cb628ca082e3f0a7e003b7000",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "022",
+      "seed_hex": "fbde46df0734c26303f8b615bc777c5d8491c60e6e1d15b93cd1eaabd516e16b",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/022.png",
+      "source_png_sha256": "d6820764a707fd8e6df17adb808a07186d7dc439d129688799eaec83133bfa19",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/022.npz",
+      "latent_npz_sha256": "d1fce230d31e536310832acf889cef4e8c6cd30e9b2320420adbfe67edc5e6db",
+      "z_raw_sha256": "1611c167b02d6e6a5e88a07d81401051ded9ca78ee0ec1f198eb7171b4c4e221",
+      "w_raw_sha256": "4f49d8739e3ab83a5339c592e67fdc2522692ac0f649293222b6e20a43687693",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5915904580615461,
+      "student_seconds": 0.5700870000291616,
+      "metrics": {
+        "full_mae_0_1": 0.024256394875038723,
+        "top75_mae_0_1": 0.020698568641364545,
+        "bottom25_mae_0_1": 0.034929873576061254,
+        "max_absolute_difference_0_1": 0.36907124519348145
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "022-source-gray.png",
+          "sha256": "e28e3cf1fe46c4ce1dbf56ce7e922635b30a71d795becb78b2e4520bf483bd15",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "022-student-gray.png",
+          "sha256": "7cd9c4a098c4f44a570e0009435c0436f2c7b630e39e1f3519c10f8c7b9be6ab",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "022-student-rgb.png",
+          "sha256": "853f45e5282bf1a7b333370b3b062f9626fe41b3ced40f50e78b3c7d007bdf82",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "023",
+      "seed_hex": "b35cf70955b8c61ef568be0f65dfb20a1a7c7ca001be5684bb8eac5b8ce038a2",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/023.png",
+      "source_png_sha256": "4f0c27782285ffeceea35bb23d6b2455968a591aaf22d1c04737895a5c4ba974",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/023.npz",
+      "latent_npz_sha256": "fb8e4694b039bbc02c8d8ba4409ffac2dbebd4ac2f3b4100b76dee4820786ed3",
+      "z_raw_sha256": "0b759ee290462f0468793d01a829d5e938cc549b1f2cf59d70ab1920ada8030c",
+      "w_raw_sha256": "2b85faecefee545d67e406f75eab2b89095c809e6ab416118b5a29fd56fcac59",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5882091249804944,
+      "student_seconds": 0.57256524998229,
+      "metrics": {
+        "full_mae_0_1": 0.04115147316929324,
+        "top75_mae_0_1": 0.044786260752061935,
+        "bottom25_mae_0_1": 0.030247110420987156,
+        "max_absolute_difference_0_1": 0.7204476296901703
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "023-source-gray.png",
+          "sha256": "3110bf1e13f72b2c3b4a7d8bb0cb3cd899b92905ecc415107d9ca45b33aa8131",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "023-student-gray.png",
+          "sha256": "3250a1b954d2d4f812551478cfaeda8d21ac2a68cfdffbaa8e10f671ff006165",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "023-student-rgb.png",
+          "sha256": "17b32bedefea0f6e372a0f17f0ecb9a2cca8a8bc70f7372db2140dbe9817f8c8",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "024",
+      "seed_hex": "9c053b96c8f34f687bb1db7c4479eda52a2ac4360ce69e1339d9e1a07edafb0e",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/024.png",
+      "source_png_sha256": "f3bddd7756589dbede9b3ba92a06aec2cb170a760cb1dbf7ab66534af1f9c595",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/024.npz",
+      "latent_npz_sha256": "f913bd5d07ca84fd81b96b6029971815bd81b9eb3a2434bdf1d5d0a896676110",
+      "z_raw_sha256": "856439ebc27914e18afd6f6f2c59b68db9042d2ab1c297872e8f4390d2ef90a4",
+      "w_raw_sha256": "19faa3c7f4fa6223a60f0278239789d5e54633180612d44ee1b7c08a62dfa35f",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5733256669482216,
+      "student_seconds": 0.5829888749867678,
+      "metrics": {
+        "full_mae_0_1": 0.02062838515274734,
+        "top75_mae_0_1": 0.014584649829051463,
+        "bottom25_mae_0_1": 0.03875959112383498,
+        "max_absolute_difference_0_1": 0.3684510588645935
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "024-source-gray.png",
+          "sha256": "c2279eda48735c435ee743dc8e0b142e42cf6beedc1548fc0675820cf865476c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "024-student-gray.png",
+          "sha256": "a5e304d15fd0100ac24bc9224871274c6c6f9761f8cc7d7d5084b4fc74ca4b13",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "024-student-rgb.png",
+          "sha256": "e4ec215bfdb9f7829b41a1823144af26ad43273780c95774ca9f09bcaae8ac3d",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "025",
+      "seed_hex": "2b97b43f8a44e9e87dddf5cabad2978fc990f7404d4b9e4c691e033ba8ff566b",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/025.png",
+      "source_png_sha256": "df2b8a66a6b624d0a836afb1b8f9ad311ea911f62976b1698454dc0676928207",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/025.npz",
+      "latent_npz_sha256": "bca46b765599c9129a6da36614188f515ced82aab039190e6db24c1121f596f8",
+      "z_raw_sha256": "2febe67d501e50570404656abe2fcb36a0bdd93f0af50c109f472079ea0e4dd3",
+      "w_raw_sha256": "e0a1b604dc619881f3cfbb6f444eab2babd950fe1811d5285bacea6e7aecae8d",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5828006250085309,
+      "student_seconds": 0.5814147080527619,
+      "metrics": {
+        "full_mae_0_1": 0.05473510100230783,
+        "top75_mae_0_1": 0.02991351072140939,
+        "bottom25_mae_0_1": 0.12919987184500314,
+        "max_absolute_difference_0_1": 0.9102768003940582
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "025-source-gray.png",
+          "sha256": "fb9c943a61984b94fccd63e1290f9bb0c90e9f326c3bc1cf1d4eb9fac7494974",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "025-student-gray.png",
+          "sha256": "001ccc31bcb51d01242b90ad86384facf1e37f0e429896a0cda80ae18dc16a7f",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "025-student-rgb.png",
+          "sha256": "3fba46f8d6ba0950353800f78e8d315d2fb4b744074fa1f14852124c3ac6f348",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "026",
+      "seed_hex": "131ab727d208dde28e3e338c5716acfa0ce6ea75e964e9c1e1e8b81cb4fbe308",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/026.png",
+      "source_png_sha256": "d8872d7e7b651947d50bd453f4c46ddd85044186e8d7b39362c8be749e47ff36",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/026.npz",
+      "latent_npz_sha256": "67e4cc481a51cfbe93e08b569e2abb87b23fc0985f3b0b165b9020e2352d7ffb",
+      "z_raw_sha256": "f33f9b310a5ead84f48b74393fd5747febce3f7b2de66464d28ef222d2ce8bf7",
+      "w_raw_sha256": "3eb09f5a98a36f34f5d53b8718b18faa72a01f1fba61344fb56798e9537f09b7",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.597339165979065,
+      "student_seconds": 0.5795449160505086,
+      "metrics": {
+        "full_mae_0_1": 0.014169924498332875,
+        "top75_mae_0_1": 0.012124378895047508,
+        "bottom25_mae_0_1": 0.020306561308188975,
+        "max_absolute_difference_0_1": 0.23329412937164307
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "026-source-gray.png",
+          "sha256": "2f674a9af348be64d1c607363ee97294b9c814ad54f9c6ede222a6b87de0e7d9",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "026-student-gray.png",
+          "sha256": "ac46f348ee4b44b6255857c01fdbf079ecbbc5afca3a7227b4d0bac1e4b9675c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "026-student-rgb.png",
+          "sha256": "0ed8f91ef6da864ca36f999e71e0549943b6e406bf6eb1da182fd8039ee42048",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "027",
+      "seed_hex": "875989c1d862be004380d5ecef9651bcf0d6e9cf00db65a2db6205a8449896c3",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/027.png",
+      "source_png_sha256": "0d95a589665b90717ff1f4f2c3f6671c2fdd63e1afa056349ab3c5bff20fa02c",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/027.npz",
+      "latent_npz_sha256": "752331fabc512db0b1514376b8afcba3d7ec1f09de4f802d5f7359bdbd05be16",
+      "z_raw_sha256": "dee5d66adfa8925b122cc7cf7feb4234748085f59343fd0f5068890fbe444130",
+      "w_raw_sha256": "4e80f7e52418293ccb71007d1e9aeda7aac5f8d1edc252bff633834363e009bb",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5798277920112014,
+      "student_seconds": 0.5712297499412671,
+      "metrics": {
+        "full_mae_0_1": 0.014756818660970339,
+        "top75_mae_0_1": 0.014961658895193372,
+        "bottom25_mae_0_1": 0.014142297958301242,
+        "max_absolute_difference_0_1": 0.33235955238342285
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "027-source-gray.png",
+          "sha256": "220721c3f1c4c803b8d2bb3de85352894f644302e5015694960f925a62821584",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "027-student-gray.png",
+          "sha256": "3bed7042a54eed0a9091a367b30be5f509306ac47db8d51cbce28be72d3731b1",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "027-student-rgb.png",
+          "sha256": "072fff7ec7e4df057364dd0c92a8011daf229433e75e6b45779eb8b6c77f6e7a",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "028",
+      "seed_hex": "415d92377dfc36cc8f30c3777e78c12966aea12fc59a021028870975e8ca1259",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/028.png",
+      "source_png_sha256": "eb246b66e7fd614935b677c1ca26b9f5da574fa7f1deda5c096c760d9f71d5d2",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/028.npz",
+      "latent_npz_sha256": "dbd37130b8c58a35f8b7802ae909ce2fbdaa0964ee02e23cabb574e690d50933",
+      "z_raw_sha256": "7c728e67685d2c8da4d03a08d62389a1d4657dc1238c58ff761daf0196f6f13f",
+      "w_raw_sha256": "32d1ab66311b5ae9b173e1f5c10316a9ed9b233f5d9eadb5b1dbf66c516a62a3",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5790300419321284,
+      "student_seconds": 0.5606334999902174,
+      "metrics": {
+        "full_mae_0_1": 0.015605669329033844,
+        "top75_mae_0_1": 0.010494115662784983,
+        "bottom25_mae_0_1": 0.03094033032778043,
+        "max_absolute_difference_0_1": 0.7515871822834015
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "028-source-gray.png",
+          "sha256": "70dae87fec9506265cefa81e0d10ff900880a9d79fbffbf26261894480daf771",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "028-student-gray.png",
+          "sha256": "f305141a6c94c51b793f9a575f8c82c4b80067c054675a63a7dcf10cedecb5f8",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "028-student-rgb.png",
+          "sha256": "dd4081dbc263ef5535c15e9f7dc6cb5cf13e6d1565121fca57a0b32a7720bb13",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "029",
+      "seed_hex": "825048bf8a3ea1e2307f798108ac4dba0c4c2c3732a4180f82c33f33f28f40d8",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/029.png",
+      "source_png_sha256": "b88e6a1c611e285c0519e1278905953ed09ffa790f870d0f1f547c597eb04acc",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/029.npz",
+      "latent_npz_sha256": "13addd29dc72dfc39edc4162ca2987fbf5735c2f2760aa03389fc7db8d819c8e",
+      "z_raw_sha256": "4d4d54ed5f29703531b9daef765bb2241179a0c2190bd150072db881052575f3",
+      "w_raw_sha256": "fafa7757958bc61899cf1d52273e41c90e39070ecc8c0602ea126bdb4b1da5f6",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5809390409849584,
+      "student_seconds": 0.5763358749682084,
+      "metrics": {
+        "full_mae_0_1": 0.026305217571859885,
+        "top75_mae_0_1": 0.02045106601565294,
+        "bottom25_mae_0_1": 0.043867672240480715,
+        "max_absolute_difference_0_1": 0.6796428859233856
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "029-source-gray.png",
+          "sha256": "7073a9f8cbc1c00b91c65f6fef25dbc4f0f951eb8f28c17b3389c2e1c15048e9",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "029-student-gray.png",
+          "sha256": "9305f729f7a0cf4f2dccdd2d1160131fa8e5a8d8c132069418722f28fa907f9c",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "029-student-rgb.png",
+          "sha256": "ff133c88717220f2b589e2c7d0e07279310fea7325ca7dd183c915aa5247e419",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "030",
+      "seed_hex": "a6b629a0a1f3b34cd5498a4495125bb03ebdb71ff95bfd38a4c63fe91685e2f4",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/030.png",
+      "source_png_sha256": "9b3e097dd62f65b98156099a98682cf1d7840a56e223f75ae67a2984e39e12f8",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/030.npz",
+      "latent_npz_sha256": "0b696035e53809458d988e45abdcfc4e1afb4cdc712f687bc72c3b1f9b4d5e59",
+      "z_raw_sha256": "e5f00bc587c3aa36c93565bdefa86e95bc3c54be11837c396e08bfe7db314950",
+      "w_raw_sha256": "d03cb9f441b9b6d905b5d975f65617ca49652126decd883c37380e9f7943af65",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.593714915914461,
+      "student_seconds": 0.5704908749321476,
+      "metrics": {
+        "full_mae_0_1": 0.02911052425122307,
+        "top75_mae_0_1": 0.01758626785647266,
+        "bottom25_mae_0_1": 0.0636832934354743,
+        "max_absolute_difference_0_1": 0.8226604163646698
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "030-source-gray.png",
+          "sha256": "13a47244770126d2a46524a4d8563a7da13131a48a69ddaa5ee286d39f1e5fa0",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "030-student-gray.png",
+          "sha256": "12fb9b6db837419526f792aeb9791531f42f5a0f26423c6dd278eeba241810c4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "030-student-rgb.png",
+          "sha256": "cc30f574e67e716815c3009ccacf1de7c8332574d6e7d7a58d5bf72a72b7bee7",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "id": "031",
+      "seed_hex": "9ec5e694b608c90fb0e95111b8f34449a2accbebda637bdab7318272525e8e33",
+      "source_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/031.png",
+      "source_png_sha256": "dd342637ebf808887ba494c6567f14f71df5f69622c10e21383733bcca42c5c6",
+      "latent_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/031.npz",
+      "latent_npz_sha256": "fce5bcd1bad42b546ecddb5a61caf351fe88284bae0f15a81b6d9871fc191ff4",
+      "z_raw_sha256": "8c33dc081284bd340efb75775deed59968d378b3642fde44c5b9bbe1b6c2000a",
+      "w_raw_sha256": "77a0f773003483b3ae8f2ae087f937b9974faf28382e5f6760aefe66dfb1ca59",
+      "source_quantized_exact": true,
+      "source_w_exact": true,
+      "source_seconds": 0.5654722079634666,
+      "student_seconds": 0.6182243330404162,
+      "metrics": {
+        "full_mae_0_1": 0.0467307987191532,
+        "top75_mae_0_1": 0.043085712357841054,
+        "bottom25_mae_0_1": 0.05766605780308964,
+        "max_absolute_difference_0_1": 0.6716034710407257
+      },
+      "outputs": {
+        "source-gray": {
+          "path": "031-source-gray.png",
+          "sha256": "a37b0683174af4b4f309d012130635fa25b5d4a7a279cf0f4760e642727d1131",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "031-student-gray.png",
+          "sha256": "26b7183d7ebb61f0b21dec2a5f4b7f8f50ff2e706dafd3974cc25b0adf1c7650",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-rgb": {
+          "path": "031-student-rgb.png",
+          "sha256": "fd0806afc9727c66edb8c61eac37a5bfa421b3dda5eeb3f4781d47081b48114f",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      },
+      "production_approved": false
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "method": "PNG-only RGB->LANCZOS1024->fixed .299/.587/.114 grayscale; absolute error in 0..255",
+  "not_exact_training_tensor_loss": "Rendered previews are post-update, uint8-clipped; training uses unclipped float tensors before each update.",
+  "model_inference_performed": false,
+  "training_performed": false,
+  "original_manifest_unchanged_sha256": "ef10bdbdbca5baa88fd8abe9082f07083139d9b01a74e0a67db27c0224cd9cad",
+  "analysis_sha256": "4543a5ffe3185ab59e59f6f6942128e0ca7c76882f84dd58a0aa227b5dd0532b",
+  "target_sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec",
+  "region_definitions": [
+    {
+      "id": "calibration-original",
+      "clothing_pixels": 141212,
+      "traced_tab_pixels": 7923,
+      "effective_tab_pixels": 7198,
+      "rest_clothing_pixels": 134014,
+      "tab_fraction_of_clothing": 0.05097300512704303,
+      "trace_retained_inside_unchanged_clothing_mask": 0.9084942572257984,
+      "equal_partition_tab_per_pixel_multiplier_vs_broad": 9.809113642678522,
+      "equal_partition_rest_per_pixel_multiplier_vs_broad": 0.5268554031668333
+    },
+    {
+      "id": "000",
+      "clothing_pixels": 121997,
+      "traced_tab_pixels": 7668,
+      "effective_tab_pixels": 4248,
+      "rest_clothing_pixels": 117749,
+      "tab_fraction_of_clothing": 0.03482052837364853,
+      "trace_retained_inside_unchanged_clothing_mask": 0.5539906103286385,
+      "equal_partition_tab_per_pixel_multiplier_vs_broad": 14.359345574387948,
+      "equal_partition_rest_per_pixel_multiplier_vs_broad": 0.5180383697526094
+    },
+    {
+      "id": "030",
+      "clothing_pixels": 64975,
+      "traced_tab_pixels": 4918,
+      "effective_tab_pixels": 4204,
+      "rest_clothing_pixels": 60771,
+      "tab_fraction_of_clothing": 0.06470180838784148,
+      "trace_retained_inside_unchanged_clothing_mask": 0.8548190321268808,
+      "equal_partition_tab_per_pixel_multiplier_vs_broad": 7.727759276879163,
+      "equal_partition_rest_per_pixel_multiplier_vs_broad": 0.5345888664000922
+    }
+  ],
+  "samples": [
+    {
+      "step": 150,
+      "path": "research/runs/paired1024-cpu-200/000150-pair-000-train.png",
+      "sha256": "8d97c45a97a4f465a1e8fdb29d659a5621b314298901021bb03d89f014220fc2",
+      "regions": {
+        "full_traced_tab": {
+          "mae_uint8": 134.4350128173828,
+          "mae_on_minus1_plus1_scale": 1.0543922185897827,
+          "target_mean_uint8": 172.9019012451172,
+          "generated_mean_uint8": 38.46686935424805
+        },
+        "effective_tab": {
+          "mae_uint8": 136.40518188476562,
+          "mae_on_minus1_plus1_scale": 1.0698446035385132,
+          "target_mean_uint8": 176.22401428222656,
+          "generated_mean_uint8": 39.81884002685547
+        },
+        "rest_clothing": {
+          "mae_uint8": 13.942054748535156,
+          "mae_on_minus1_plus1_scale": 0.10934945195913315,
+          "target_mean_uint8": 12.172330856323242,
+          "generated_mean_uint8": 18.811758041381836
+        },
+        "broad_clothing": {
+          "mae_uint8": 20.18436622619629,
+          "mae_on_minus1_plus1_scale": 0.15830875933170319,
+          "target_mean_uint8": 20.534536361694336,
+          "generated_mean_uint8": 19.882553100585938
+        }
+      },
+      "effective_tab_fraction_of_broad_absolute_error": 0.34447363018989563,
+      "effective_tab_contribution_to_broad_mae_uint8": 6.952982041186301,
+      "rest_contribution_to_broad_mae_uint8": 13.231386142820723,
+      "proposed_equal_partition_mae_uint8": 75.17361831665039
+    },
+    {
+      "step": 175,
+      "path": "research/runs/paired1024-cpu-200/000175-pair-000-train.png",
+      "sha256": "a6979dec44a8e25d079140742c568796c685dcf32b7ff9e44710912bbfb4d527",
+      "regions": {
+        "full_traced_tab": {
+          "mae_uint8": 127.06432342529297,
+          "mae_on_minus1_plus1_scale": 0.9965829253196716,
+          "target_mean_uint8": 172.9019012451172,
+          "generated_mean_uint8": 45.837562561035156
+        },
+        "effective_tab": {
+          "mae_uint8": 128.9146270751953,
+          "mae_on_minus1_plus1_scale": 1.0110951662063599,
+          "target_mean_uint8": 176.22401428222656,
+          "generated_mean_uint8": 47.309391021728516
+        },
+        "rest_clothing": {
+          "mae_uint8": 12.230751991271973,
+          "mae_on_minus1_plus1_scale": 0.09592746943235397,
+          "target_mean_uint8": 12.172330856323242,
+          "generated_mean_uint8": 17.42858123779297
+        },
+        "broad_clothing": {
+          "mae_uint8": 18.17848014831543,
+          "mae_on_minus1_plus1_scale": 0.14257632195949554,
+          "target_mean_uint8": 20.534536361694336,
+          "generated_mean_uint8": 18.951696395874023
+        }
+      },
+      "effective_tab_fraction_of_broad_absolute_error": 0.3614805042743683,
+      "effective_tab_contribution_to_broad_mae_uint8": 6.5711660482112,
+      "rest_contribution_to_broad_mae_uint8": 11.607313826020452,
+      "proposed_equal_partition_mae_uint8": 70.57268953323364
+    },
+    {
+      "step": 200,
+      "path": "research/runs/paired1024-cpu-200/000200-pair-000-train.png",
+      "sha256": "f47407de2c18e76419d51710747aaddafba0e808415cab33a238c314ef342cc6",
+      "regions": {
+        "full_traced_tab": {
+          "mae_uint8": 117.62206268310547,
+          "mae_on_minus1_plus1_scale": 0.9225260019302368,
+          "target_mean_uint8": 172.9019012451172,
+          "generated_mean_uint8": 55.27981948852539
+        },
+        "effective_tab": {
+          "mae_uint8": 119.08564758300781,
+          "mae_on_minus1_plus1_scale": 0.934005081653595,
+          "target_mean_uint8": 176.22401428222656,
+          "generated_mean_uint8": 57.138370513916016
+        },
+        "rest_clothing": {
+          "mae_uint8": 11.192541122436523,
+          "mae_on_minus1_plus1_scale": 0.08778463304042816,
+          "target_mean_uint8": 12.172330856323242,
+          "generated_mean_uint8": 16.746803283691406
+        },
+        "broad_clothing": {
+          "mae_uint8": 16.692176818847656,
+          "mae_on_minus1_plus1_scale": 0.13091903924942017,
+          "target_mean_uint8": 20.534536361694336,
+          "generated_mean_uint8": 18.805683135986328
+        }
+      },
+      "effective_tab_fraction_of_broad_absolute_error": 0.3636525869369507,
+      "effective_tab_contribution_to_broad_mae_uint8": 6.070153386397757,
+      "rest_contribution_to_broad_mae_uint8": 10.62202397813217,
+      "proposed_equal_partition_mae_uint8": 65.13909435272217
+    }
+  ],
+  "missing_steps": [],
+  "proposed_manifest_sha256": "1d8e57af8c2669becf47e97e499b489e4feada9ac4b859578c8f8ef46d82a90e",
+  "original_clothing_masks_and_heldout_record_unchanged": true
+}

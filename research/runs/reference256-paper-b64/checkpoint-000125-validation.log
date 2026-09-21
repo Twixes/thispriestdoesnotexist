@@ -1,0 +1,57 @@
+{
+  "reviewed_utc": "2026-09-21T00:19:54.965671+00:00",
+  "validation": "passed",
+  "production_approved": false,
+  "scope": "CPU mmap finite-tensor and exact G_ema export validation; no inference or training",
+  "resume_step_field": "batch_idx",
+  "resume_batch_idx": 125,
+  "generator_step_field": "step",
+  "generator_step": 125,
+  "images_seen": 8000,
+  "sampler": {
+    "seed": 20260920,
+    "consumed": 8000
+  },
+  "schema_source": "train-source.py:73-82, 250-259, 329-337",
+  "load_policy": {
+    "resume": "mmap=True, CPU, weights_only=False: trusted own trainer output with NumPy RNG state",
+    "generator": "mmap=True, CPU, weights_only=True"
+  },
+  "torch_version": "2.14.0",
+  "threads": 1,
+  "memory_preflight_free_percent": 25,
+  "peak_rss_bytes": 970768384,
+  "duration_seconds": 1.3853651250246912,
+  "finite_tensors": 989,
+  "total_tensor_elements": 196381429,
+  "nonfinite_tensors": [],
+  "ema_equal_tensors": 144,
+  "ema_equal_elements": 24943026,
+  "hashes_before": {
+    "resume.pt": "06fa850f69b6f9f2f0804a59fb6e25a4baed5b889d6cfa2e623e857486b53f09",
+    "generator-000125.pt": "7519fce4ff6575576547e57d81e5d5e66385c9f18a5363aef5f8a16e685fbc42",
+    "config.json": "0576aec7d45958bfcb510b3d817a81d045408bc042039669bcbfe608f3cf1039",
+    "train-source.py": "00b5266875dbe07169025eb7b38b22a412230019c52d1bae77eeb8daf0045b13",
+    "adapters-source.py": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+    "samples-000125-ema.png": "244867a18115a1a1813b0d0bd24f3dc263aa3c7be3cc2bea2b116139cf8b60dc",
+    "samples-000125-raw.png": "a275bd04c8a1bfdeff9a77753e994de2f992650a0b717a8455435b586a57930f",
+    "samples-000125-untruncated.png": "c0dbb840ed1be0ac498ea6666cd17c9f942d6dc7d0b086c460fc3b399f583050"
+  },
+  "hashes_after": {
+    "resume.pt": "06fa850f69b6f9f2f0804a59fb6e25a4baed5b889d6cfa2e623e857486b53f09",
+    "generator-000125.pt": "7519fce4ff6575576547e57d81e5d5e66385c9f18a5363aef5f8a16e685fbc42",
+    "config.json": "0576aec7d45958bfcb510b3d817a81d045408bc042039669bcbfe608f3cf1039",
+    "train-source.py": "00b5266875dbe07169025eb7b38b22a412230019c52d1bae77eeb8daf0045b13",
+    "adapters-source.py": "456c4110bf0d6d4299090c2d2ecaf01148a4840bb822fb0330a401305cc29657",
+    "samples-000125-ema.png": "244867a18115a1a1813b0d0bd24f3dc263aa3c7be3cc2bea2b116139cf8b60dc",
+    "samples-000125-raw.png": "a275bd04c8a1bfdeff9a77753e994de2f992650a0b717a8455435b586a57930f",
+    "samples-000125-untruncated.png": "c0dbb840ed1be0ac498ea6666cd17c9f942d6dc7d0b086c460fc3b399f583050"
+  },
+  "artifacts_unchanged": true,
+  "validator_sha256": "fa92e9297a16b0005fab09ea5375d5c86e3ef4d9575a1e255f8e01e99856cbb5",
+  "limits": [
+    "Numeric finiteness and export equality are not image-quality approval.",
+    "Saved grids are checked by hashes and trainer save order; no forward was rerun to reproduce pixels.",
+    "Only step125 artifacts are reviewed; the live training process continued unchanged."
+  ]
+}

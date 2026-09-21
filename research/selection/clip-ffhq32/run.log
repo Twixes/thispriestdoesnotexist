@@ -1,0 +1,70 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/selection/.venv/lib/python3.11/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+{"id": "000", "appearance_argmax": "adult_male", "adult_male_margin": 0.059724166989326505, "headwear_margin": -0.016528556744257628, "preprocess_encode_seconds": 0.34192999999504536}
+{"id": "001", "appearance_argmax": "adult_woman", "adult_male_margin": -0.06838752826054889, "headwear_margin": -0.021846860647201566, "preprocess_encode_seconds": 0.03372129192575812}
+{"id": "002", "appearance_argmax": "child", "adult_male_margin": -0.04939288397630057, "headwear_margin": -0.0046789099772771015, "preprocess_encode_seconds": 0.03569433302618563}
+{"id": "003", "appearance_argmax": "adult_woman", "adult_male_margin": -0.06501950820287067, "headwear_margin": -0.007649173339207949, "preprocess_encode_seconds": 0.036944541963748634}
+{"id": "004", "appearance_argmax": "adult_male", "adult_male_margin": 0.0059127708276113244, "headwear_margin": -0.010046948989232363, "preprocess_encode_seconds": 0.04043733305297792}
+{"id": "005", "appearance_argmax": "adult_male", "adult_male_margin": 0.03478597104549408, "headwear_margin": -0.008761743704477964, "preprocess_encode_seconds": 0.040044041932560503}
+{"id": "006", "appearance_argmax": "adult_woman", "adult_male_margin": -0.05823338528474173, "headwear_margin": -0.001353134711583437, "preprocess_encode_seconds": 0.04549416701775044}
+{"id": "007", "appearance_argmax": "adult_woman", "adult_male_margin": -0.05652414262294772, "headwear_margin": -0.020952557524045318, "preprocess_encode_seconds": 0.033522749901749194}
+{"id": "008", "appearance_argmax": "child", "adult_male_margin": -0.05297297736008963, "headwear_margin": 0.024472420414288848, "preprocess_encode_seconds": 0.03540825005620718}
+{"id": "009", "appearance_argmax": "adult_male", "adult_male_margin": 0.04907590647538504, "headwear_margin": -0.020663201808929443, "preprocess_encode_seconds": 0.03854337509255856}
+{"id": "010", "appearance_argmax": "adult_woman", "adult_male_margin": -0.04551649590333304, "headwear_margin": -0.005884562929471315, "preprocess_encode_seconds": 0.04928912501782179}
+{"id": "011", "appearance_argmax": "adult_woman", "adult_male_margin": -0.05050256848335266, "headwear_margin": -0.0064123173554738455, "preprocess_encode_seconds": 0.053879208979196846}
+{"id": "012", "appearance_argmax": "adult_woman", "adult_male_margin": -0.05338222285111746, "headwear_margin": -0.029634758830070496, "preprocess_encode_seconds": 0.06276816606987268}
+{"id": "013", "appearance_argmax": "adult_woman", "adult_male_margin": -0.060827871163686126, "headwear_margin": -0.006697416305541992, "preprocess_encode_seconds": 0.03386629093438387}
+{"id": "014", "appearance_argmax": "adult_woman", "adult_male_margin": -0.04277440905570984, "headwear_margin": -0.03351801633834839, "preprocess_encode_seconds": 0.04978991695679724}
+{"id": "015", "appearance_argmax": "adult_woman", "adult_male_margin": -0.05530122915903726, "headwear_margin": -0.007189944386482239, "preprocess_encode_seconds": 0.0563820410752669}
+{"id": "016", "appearance_argmax": "adult_male", "adult_male_margin": 0.03338654836018881, "headwear_margin": -0.011570950349171966, "preprocess_encode_seconds": 0.04343874996993691}
+{"id": "017", "appearance_argmax": "adult_male", "adult_male_margin": 0.03592270612716675, "headwear_margin": -0.0037847807010014944, "preprocess_encode_seconds": 0.05091866594739258}
+{"id": "018", "appearance_argmax": "adult_woman", "adult_male_margin": -0.054968501130739866, "headwear_margin": -0.02102952202161154, "preprocess_encode_seconds": 0.07161350001115352}
+{"id": "019", "appearance_argmax": "child", "adult_male_margin": -0.07513320446014407, "headwear_margin": -0.011669079462687193, "preprocess_encode_seconds": 0.050793707952834666}
+{"id": "020", "appearance_argmax": "adult_woman", "adult_male_margin": -0.06821366151173908, "headwear_margin": -0.0043301731348038, "preprocess_encode_seconds": 0.05135049996897578}
+{"id": "021", "appearance_argmax": "adult_male", "adult_male_margin": 0.04737897713979086, "headwear_margin": 0.0025535325209299353, "preprocess_encode_seconds": 0.05499299999792129}
+{"id": "022", "appearance_argmax": "adult_woman", "adult_male_margin": -0.06858452161153158, "headwear_margin": -0.020264590779940278, "preprocess_encode_seconds": 0.04449487500824034}
+{"id": "023", "appearance_argmax": "adult_male", "adult_male_margin": 0.016209880510965974, "headwear_margin": 0.025188550353050232, "preprocess_encode_seconds": 0.032079166965559125}
+{"id": "024", "appearance_argmax": "adult_male", "adult_male_margin": 0.05746215581893924, "headwear_margin": -0.01554952561855319, "preprocess_encode_seconds": 0.04946845804806799}
+{"id": "025", "appearance_argmax": "adult_male", "adult_male_margin": 0.051635334889094026, "headwear_margin": -0.0339989016453425, "preprocess_encode_seconds": 0.06112266599666327}
+{"id": "026", "appearance_argmax": "child", "adult_male_margin": -0.07406968375047049, "headwear_margin": 0.001360307137171446, "preprocess_encode_seconds": 0.04464116599410772}
+{"id": "027", "appearance_argmax": "adult_woman", "adult_male_margin": -0.06327825287977853, "headwear_margin": 0.01965012152989709, "preprocess_encode_seconds": 0.06365233310498297}
+{"id": "028", "appearance_argmax": "adult_male", "adult_male_margin": 0.06196480989456177, "headwear_margin": -0.002851416667302459, "preprocess_encode_seconds": 0.051606541965156794}
+{"id": "029", "appearance_argmax": "adult_woman", "adult_male_margin": -0.04411133627096811, "headwear_margin": -0.013115018606185913, "preprocess_encode_seconds": 0.05603912507649511}
+{"id": "030", "appearance_argmax": "adult_male", "adult_male_margin": 0.03627893825372058, "headwear_margin": -0.018960336844126402, "preprocess_encode_seconds": 0.0604485000949353}
+{"id": "031", "appearance_argmax": "adult_woman", "adult_male_margin": -0.045378923416137695, "headwear_margin": 0.009521131714185088, "preprocess_encode_seconds": 0.04522550001274794}
+{
+  "created_utc": "2026-09-21T00:15:37.130370+00:00",
+  "purpose": "Fixed exploratory zero-shot image/text comparison, not calibrated age, attractiveness, or production approval",
+  "production_approved": false,
+  "count": 32,
+  "device": "cpu",
+  "threads": 1,
+  "interop_threads": 1,
+  "image_batch_size": 1,
+  "text_batch_max": 4,
+  "memory_preflight_free_percent": 27,
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "python": "3.11.16 (main, Aug 14 2026, 15:24:25) [Clang 22.1.3 ]",
+  "packages": {
+    "torch": "2.14.0",
+    "torchvision": "0.29.0",
+    "clip": "1.0",
+    "pillow": "12.3.0",
+    "numpy": "2.4.6",
+    "ftfy": "6.3.1",
+    "regex": "2026.9.10"
+  },
+  "source_manifest_sha256": "24ec65044e76b377c0320dd8a10b6353f4f1cd150c17a4901f47ded4035330db",
+  "manual_label_source_sha256": "ea0a620b272ed35e4fe90c7776342a426407400ace99c194334e0dcc53501251",
+  "benchmark_sha256": "513659cfb2add4e68d8165aac02084f33e6aa9cccf5d339c04637c5e2d3966f5",
+  "clip_commit": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+  "clip_weights_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+  "score_definition": "mean of three individual cosine similarities per category; margins are differences, not probabilities",
+  "load_seconds": 1.5677711250027642,
+  "text_encoding_seconds": 0.20812274992931634,
+  "import_load_text_images_seconds": 17.920637750066817,
+  "peak_process_rss_bytes": 2369814528,
+  "image_encode_seconds_total": 1.071418876061216,
+  "first_image_preprocess_encode_seconds": 0.34192999999504536,
+  "warm_image_preprocess_encode_median_seconds": 0.04928912501782179
+}

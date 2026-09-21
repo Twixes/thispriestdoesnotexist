@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "purpose": "Prospective fresh paired experiment: three training seeds, one held-out seed",
+  "production_approved": false,
+  "candidate_pending_root_review": true,
+  "source_bundle": "../../runs/inference-cpu/ffhq1024/baseline-bundle",
+  "pairs": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "latent_path": "../ffhq-paired-sources32/latents/reproduction-sample002.npz",
+      "source_path": "../ffhq-paired-sources32/images/reproduction-sample002.png",
+      "target_path": "../ffhq-clothing-edit1/001.png",
+      "clothing_polygons": [
+        [
+          [
+            0.0,
+            0.765
+          ],
+          [
+            0.123,
+            0.687
+          ],
+          [
+            0.15,
+            0.75
+          ],
+          [
+            0.18,
+            0.82
+          ],
+          [
+            0.275,
+            0.892
+          ],
+          [
+            0.39,
+            0.93
+          ],
+          [
+            0.5,
+            0.94
+          ],
+          [
+            0.565,
+            0.91
+          ],
+          [
+            0.635,
+            0.8
+          ],
+          [
+            0.7,
+            0.84
+          ],
+          [
+            1.0,
+            0.97
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "latent_path": "../ffhq-paired-sources32/latents/000.npz",
+      "source_path": "../ffhq-paired-sources32/images/000.png",
+      "target_path": "../ffhq-clothing-edits3/000.png",
+      "clothing_polygons": [
+        [
+          [
+            0,
+            0.838
+          ],
+          [
+            0.181,
+            0.8
+          ],
+          [
+            0.218,
+            0.724
+          ],
+          [
+            0.236,
+            0.692
+          ],
+          [
+            0.245,
+            0.795
+          ],
+          [
+            0.265,
+            0.88
+          ],
+          [
+            0.31,
+            0.929
+          ],
+          [
+            0.39,
+            0.965
+          ],
+          [
+            0.485,
+            0.978
+          ],
+          [
+            0.56,
+            0.975
+          ],
+          [
+            0.64,
+            0.948
+          ],
+          [
+            0.702,
+            0.906
+          ],
+          [
+            0.736,
+            0.845
+          ],
+          [
+            0.748,
+            0.791
+          ],
+          [
+            0.774,
+            0.825
+          ],
+          [
+            1,
+            0.932
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "latent_path": "../ffhq-paired-sources32/latents/030.npz",
+      "source_path": "../ffhq-paired-sources32/images/030.png",
+      "target_path": "../ffhq-clothing-edits3/030.png",
+      "clothing_polygons": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0.33,
+            0.895
+          ],
+          [
+            0.367,
+            0.944
+          ],
+          [
+            0.415,
+            0.972
+          ],
+          [
+            0.477,
+            0.982
+          ],
+          [
+            0.55,
+            0.976
+          ],
+          [
+            0.65,
+            0.944
+          ],
+          [
+            0.75,
+            0.893
+          ],
+          [
+            0.83,
+            0.84
+          ],
+          [
+            0.866,
+            0.806
+          ],
+          [
+            0.889,
+            0.854
+          ],
+          [
+            0.918,
+            0.891
+          ],
+          [
+            1,
+            0.918
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "latent_path": "../ffhq-paired-sources32/latents/028.npz",
+      "source_path": "../ffhq-paired-sources32/images/028.png",
+      "target_path": "../ffhq-clothing-edits3/028.png",
+      "clothing_polygons": [
+        [
+          [
+            0,
+            0.995
+          ],
+          [
+            0.226,
+            0.904
+          ],
+          [
+            0.24,
+            0.866
+          ],
+          [
+            0.255,
+            0.884
+          ],
+          [
+            0.3,
+            0.933
+          ],
+          [
+            0.35,
+            0.963
+          ],
+          [
+            0.43,
+            0.99
+          ],
+          [
+            0.49,
+            1
+          ],
+          [
+            0.58,
+            1
+          ],
+          [
+            0.645,
+            0.972
+          ],
+          [
+            0.7,
+            0.921
+          ],
+          [
+            0.734,
+            0.865
+          ],
+          [
+            0.746,
+            0.839
+          ],
+          [
+            0.782,
+            0.881
+          ],
+          [
+            0.803,
+            0.932
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ]
+    }
+  ]
+}

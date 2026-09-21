@@ -1,0 +1,13 @@
+{
+  "research_objective_approved": true,
+  "production_approved": false,
+  "source_manifest_sha256": "1d8e57af8c2669becf47e97e499b489e4feada9ac4b859578c8f8ef46d82a90e",
+  "single_pair_manifest_sha256": "71ce8502bc12283c4241d442f2329c8d5f64018118b8e0b9495a75afd1ee085c",
+  "visual_diagnostic_sha256": "fc3457cbe5fc6f438ab95dad99fdcf86f986009375cb11d397be3f222cf5b806",
+  "decision": "Test equal .5/.5 tab/rest-clothing loss on the same single calibration seed first. Keep original source, mask, LR, frozen layers and preservation weights unchanged to isolate region weighting. Expand identities only after demonstrating a convincing tab and retained facial quality.",
+  "limitations": [
+    "Manual trace intersected with existing approved clothing mask; original jaw remains protected.",
+    "Pixel-loss imbalance supports an experiment, not a guarantee that the missing tab is caused only by weighting.",
+    "Single training seed and two fixed unseen previews cannot prove generalization."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "production_approved": false,
+  "step": 200,
+  "execution": {
+    "previous_step": 10,
+    "new_steps": 190,
+    "process_pid": 90542,
+    "exec_session": 52866,
+    "verified_exit_code": 0,
+    "wall_seconds": 1080.21,
+    "max_rss_bytes": 5693980672,
+    "peak_memory_footprint_bytes": 6014293272,
+    "reported_swaps": 0,
+    "device": "cpu",
+    "threads": 1
+  },
+  "checkpoint_sha256": "3e512e3c80d752396e0ae9f1423751f59ea54db73e82b9ea2061ded23931ba85",
+  "final_metrics": {
+    "pair_ids": [
+      "calibration-original"
+    ],
+    "clothing_l1": 0.1327836811542511,
+    "protected_l1": 0.02884736657142639,
+    "paired_loss": 0.1616310477256775,
+    "fresh_preservation_l1": 0.048780739307403564,
+    "step": 200,
+    "paired_images_seen": 200,
+    "fresh_images_seen": 200,
+    "seconds": 5.2126807500608265,
+    "checkpoint_verified_frozen_source": true
+  },
+  "mean_update_seconds": 5.565246856140316,
+  "root_visual_review": {
+    "path": "000200-pair-000-train.png",
+    "sha256": "f47407de2c18e76419d51710747aaddafba0e808415cab33a238c314ef342cc6",
+    "observations": [
+      "Facial detail, expression and framing remain coherent compared with the stored source.",
+      "Shirt changed from pale to dark. Open-neck geometry remains and no clear white clerical tab is present.",
+      "This training-seed result is insufficient as a priest portrait, despite lower clothing loss."
+    ],
+    "decision": "Unapproved; diagnose tab region contribution and evaluate unseen latents before selecting next training objective."
+  }
+}

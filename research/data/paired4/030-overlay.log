@@ -1,0 +1,80 @@
+{
+  "production_approved": false,
+  "diagnostic_only": true,
+  "size": 768,
+  "clothing_fraction": 0.0708041712641716,
+  "clothing_polygons": [
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0.33,
+        0.895
+      ],
+      [
+        0.367,
+        0.944
+      ],
+      [
+        0.415,
+        0.972
+      ],
+      [
+        0.477,
+        0.982
+      ],
+      [
+        0.55,
+        0.976
+      ],
+      [
+        0.65,
+        0.944
+      ],
+      [
+        0.75,
+        0.893
+      ],
+      [
+        0.83,
+        0.84
+      ],
+      [
+        0.866,
+        0.806
+      ],
+      [
+        0.889,
+        0.854
+      ],
+      [
+        0.918,
+        0.891
+      ],
+      [
+        1,
+        0.918
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  ],
+  "inputs": {
+    "source": {
+      "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/030.png",
+      "sha256": "9b3e097dd62f65b98156099a98682cf1d7840a56e223f75ae67a2984e39e12f8"
+    },
+    "target": {
+      "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits3/030.png",
+      "sha256": "29fdc4ccd182d3986cba59b5df625cc5cf9feb4b09ca6898e18869a6f765f513"
+    },
+    "mask": {
+      "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/paired4/030-mask.json",
+      "sha256": "4d4e35422f79c75b9253227a55081209d4dba0317a69e01efa89682502e4b40e"
+    }
+  }
+}

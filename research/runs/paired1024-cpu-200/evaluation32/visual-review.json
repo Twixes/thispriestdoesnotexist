@@ -1,0 +1,227 @@
+{
+  "reviewed_at_utc": "2026-09-21T00:24:17.419388+00:00",
+  "checkpoint_sha256": "3e512e3c80d752396e0ae9f1423751f59ea54db73e82b9ea2061ded23931ba85",
+  "student_state_sha256": "903f88f39d12b24109eecf2ec8ccfb40f74cd31c35c952f012fc830bad8cf832",
+  "checkpoint_step": 200,
+  "production_approved": false,
+  "status": "bounded_one_pair_run_completed_but_unseen_priest_conversion_not_demonstrated",
+  "scope": "All 32 source/student pairs reviewed on the contact sheet; requested IDs 000, 004, 025, 028, 030 additionally viewed at native 1024px each. No extra model inference beyond the completed 32-sample evaluation.",
+  "summary": "Faces are broadly preserved and remain diverse relative to their own sources; recognizable priest clothing does not generalize to any of the five native-reviewed adult male examples. Local darkening/texture changes are not sufficient to call the model a priest generator.",
+  "records": [
+    {
+      "id": "000",
+      "native_source_and_student_grayscale_reviewed": true,
+      "appears_adult_male": true,
+      "bareheaded": true,
+      "recognizable_clerical_collar": false,
+      "production_approved": false,
+      "face": "Recognizable source face, coherent eyes/nose/mouth and fixed framing. Some contrast and lower-face/neck texture change; no gross double features.",
+      "clothing": "White open shirt remains white. Lower-neck boundary darkens and gains texture; no white clerical tab in black clerical clothing.",
+      "issues": [
+        "Not a recognizable priest.",
+        "Source sunlight/squint retained."
+      ],
+      "metrics": {
+        "full_mae_0_1": 0.01676609975879728,
+        "top75_mae_0_1": 0.012212629530267805,
+        "bottom25_mae_0_1": 0.030426510444385713,
+        "max_absolute_difference_0_1": 0.39752140641212463
+      },
+      "evidence": {
+        "source-gray": {
+          "path": "000-source-gray.png",
+          "sha256": "3de52698d7bc58bda75b0c28349c27ff9b6754a404df444eb88b78154598a89b",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "000-student-gray.png",
+          "sha256": "ab2c2b15f70d949bb34517205453970bbd03dbea4a1defe5b3f994ac9a5ba532",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "004",
+      "native_source_and_student_grayscale_reviewed": true,
+      "appears_adult_male": true,
+      "bareheaded": true,
+      "recognizable_clerical_collar": false,
+      "production_approved": false,
+      "face": "Smile, hair, eyes and face silhouette remain recognizable and coherent. No gross facial collapse.",
+      "clothing": "Original pale garment remains; new irregular dark stippling/blotches near the lower-left neckline look like a stain rather than a clerical conversion.",
+      "issues": [
+        "Not a recognizable priest.",
+        "Localized neckline artifact.",
+        "Preexisting partial background person retained."
+      ],
+      "metrics": {
+        "full_mae_0_1": 0.03804470936435678,
+        "top75_mae_0_1": 0.02760036234622021,
+        "bottom25_mae_0_1": 0.06937775041876648,
+        "max_absolute_difference_0_1": 0.5823115706443787
+      },
+      "evidence": {
+        "source-gray": {
+          "path": "004-source-gray.png",
+          "sha256": "0ba7ce59497f917d731d6572b752236708533fd11cc47c03c55b4ebaaea874bd",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "004-student-gray.png",
+          "sha256": "0e2daad360502f1a6f82753e70f7198eeed9ed6ac0e678967062b75ab07ca874",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "025",
+      "native_source_and_student_grayscale_reviewed": true,
+      "appears_adult_male": true,
+      "bareheaded": true,
+      "recognizable_clerical_collar": false,
+      "production_approved": false,
+      "face": "Mature male source identity, three-quarter pose, eyes, hair and expression appear retained, with changed local contrast and neck texture.",
+      "clothing": "Striped conventional shirt remains; its folds/stripes are darkened. No priest tab appears.",
+      "issues": [
+        "Not a recognizable priest.",
+        "Darkened clothing retains original non-clerical structure."
+      ],
+      "metrics": {
+        "full_mae_0_1": 0.05473510100230783,
+        "top75_mae_0_1": 0.02991351072140939,
+        "bottom25_mae_0_1": 0.12919987184500314,
+        "max_absolute_difference_0_1": 0.9102768003940582
+      },
+      "evidence": {
+        "source-gray": {
+          "path": "025-source-gray.png",
+          "sha256": "fb9c943a61984b94fccd63e1290f9bb0c90e9f326c3bc1cf1d4eb9fac7494974",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "025-student-gray.png",
+          "sha256": "001ccc31bcb51d01242b90ad86384facf1e37f0e429896a0cda80ae18dc16a7f",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "028",
+      "native_source_and_student_grayscale_reviewed": true,
+      "appears_adult_male": true,
+      "bareheaded": true,
+      "recognizable_clerical_collar": false,
+      "production_approved": false,
+      "face": "Held-out bearded identity, smile, eyes and beard detail remain broadly intact. No collapse to the training identity.",
+      "clothing": "Original jacket and conventional white shirt edges remain beneath beard; changes around lower neck are small and do not create a central clerical tab.",
+      "issues": [
+        "Not a recognizable priest.",
+        "Little central neck space remains below beard.",
+        "The separately created imagegen edit for028 was not used by this one-pair training run."
+      ],
+      "metrics": {
+        "full_mae_0_1": 0.015605669329033844,
+        "top75_mae_0_1": 0.010494115662784983,
+        "bottom25_mae_0_1": 0.03094033032778043,
+        "max_absolute_difference_0_1": 0.7515871822834015
+      },
+      "evidence": {
+        "source-gray": {
+          "path": "028-source-gray.png",
+          "sha256": "70dae87fec9506265cefa81e0d10ff900880a9d79fbffbf26261894480daf771",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "028-student-gray.png",
+          "sha256": "f305141a6c94c51b793f9a575f8c82c4b80067c054675a63a7dcf10cedecb5f8",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "id": "030",
+      "native_source_and_student_grayscale_reviewed": true,
+      "appears_adult_male": true,
+      "bareheaded": true,
+      "recognizable_clerical_collar": false,
+      "production_approved": false,
+      "face": "Recognizable short-haired source face, eyes, expression and framing remain, with small local shading/texture changes.",
+      "clothing": "Thin original neckline gains dark strokes/textured edging; a recognizable white priest tab is absent.",
+      "issues": [
+        "Not a recognizable priest.",
+        "Preexisting partial second person at left edge retained, not newly introduced."
+      ],
+      "metrics": {
+        "full_mae_0_1": 0.02911052425122307,
+        "top75_mae_0_1": 0.01758626785647266,
+        "bottom25_mae_0_1": 0.0636832934354743,
+        "max_absolute_difference_0_1": 0.8226604163646698
+      },
+      "evidence": {
+        "source-gray": {
+          "path": "030-source-gray.png",
+          "sha256": "13a47244770126d2a46524a4d8563a7da13131a48a69ddaa5ee286d39f1e5fa0",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        },
+        "student-gray": {
+          "path": "030-student-gray.png",
+          "sha256": "12fb9b6db837419526f792aeb9791531f42f5a0f26423c6dd278eeba241810c4",
+          "dimensions": [
+            1024,
+            1024
+          ]
+        }
+      }
+    }
+  ],
+  "contact_sheet_findings": [
+    "Many source women remain women, children remain children (including 008, 019, 026), and headwear remains on 021, 023, 027. The adult bareheaded male sampling requirement is unsolved.",
+    "No obvious wholesale identity collapse on the contact sheet. This small fixed set is not a statistical diversity or identity guarantee.",
+    "New darkening mainly affects lower regions but can create unwanted neckline texture, most apparent on004.",
+    "No production quality or selection yield is inferred from low grayscale MAE."
+  ],
+  "metrics_caveat": "Unclipped luminance MAE on fixed top75/bottom25 regions; these are not detected face/clothing masks, identity scores, collar recognition, or perceptual quality measures. Background and hair contribute. Values can exceed1 if raw generator luminance is out of range.",
+  "recommendation": "Do not deploy or extend this single-pair run automatically as though collars were solved. The stable faces make a separately bounded multi-pair clothing-supervision experiment reasonable, with reviewed masks and held-out identities; inspect neck artifacts and collar recognition explicitly. Adult male/barehead sampling needs a separate validated solution.",
+  "completed_evaluation": {
+    "count": 32,
+    "exact_source_png_and_w_checks_passed": true,
+    "training_original_seed_excluded": true,
+    "additional_training_z_overlap_count": 0,
+    "exit_code": 0,
+    "wall_seconds": 42.35117508296389,
+    "peak_rss_bytes": 3996172288,
+    "mean_metrics": {
+      "full_mae_0_1": 0.026762874557075378,
+      "top75_mae_0_1": 0.019019145576321485,
+      "bottom25_mae_0_1": 0.04999406149933705,
+      "max_absolute_difference_0_1": 0.5626781899482012
+    }
+  }
+}

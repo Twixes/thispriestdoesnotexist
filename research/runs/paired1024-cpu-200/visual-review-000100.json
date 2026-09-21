@@ -1,0 +1,69 @@
+{
+  "reviewed_at_utc": "2026-09-21T00:13:03.802773+00:00",
+  "review_type": "Native visual comparison of immutable previews at100 against previously reviewed50 and10",
+  "production_approved": false,
+  "continuation_reasonable": true,
+  "recommendation": "Continue existing bounded run to200, with no unrequested hyperparameter changes. Clothing darkening is progressing without obvious facial failure in these previews, but no collar/generalization claim follows. Reassess supervision if endpoint still has only a darkened open shirt.",
+  "sampler_unsolved": true,
+  "limitations": [
+    "One training pair, two fixed unseen latents; not a representative production quality assessment.",
+    "No quantitative identity or detail measurement; this review is visual only.",
+    "Hat-bearing unseen sample remains ineligible; broad FFHQ demographics are unconstrained."
+  ],
+  "records": [
+    {
+      "sample": "pair-000-train",
+      "native_reviewed": true,
+      "face": "Eyes, nose, lips, jaw and curls remain coherent, similarly positioned and photographic at native1024; no gross ghosting or anatomical distortion versus50/10.",
+      "clothing": "Lower shirt and neck region are substantially darker than50/10, but original open-shirt folds remain and no clear central white clerical tab has formed. Darkening alone is not priest conversion.",
+      "eligibility": "Bareheaded adult male, but priest clothing not established.",
+      "evidence": {
+        "50": {
+          "path": "research/runs/paired1024-cpu-200/000050-pair-000-train.png",
+          "sha256": "8f5a2da29615ad4e2ab0a49f1819befd1f6e046559afa7f3e39697045624b7f9"
+        },
+        "100": {
+          "path": "research/runs/paired1024-cpu-200/000100-pair-000-train.png",
+          "sha256": "a46ada73396a9a816eceae2025b81af7ebb5ceb8d6a977c267b53e7233c29fbf"
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "sample": "unseen-000",
+      "native_reviewed": true,
+      "face": "Glasses, eyes, facial detail and expression remain stable versus50/10; no obvious gross degradation.",
+      "clothing": "Original garment remains substantially unchanged; no clerical collar.",
+      "eligibility": "Large hat persists, explicitly violates no-hats requirement; partial neighboring person remains.",
+      "evidence": {
+        "50": {
+          "path": "research/runs/paired1024-cpu-200/000050-unseen-000.png",
+          "sha256": "eea03ac06f299b2a8296742f883ba74f413a8c2ecfc37fc7bc9e479266edae47"
+        },
+        "100": {
+          "path": "research/runs/paired1024-cpu-200/000100-unseen-000.png",
+          "sha256": "254c40c50f65e92e31f1603bd6536d83a2ab970896bb9951559ccefc24c816fd"
+        }
+      },
+      "production_approved": false
+    },
+    {
+      "sample": "unseen-001",
+      "native_reviewed": true,
+      "face": "Mature male face retains coherent features, soft photographic detail and consistent framing versus50/10.",
+      "clothing": "Conventional jacket and white business-shirt collar remain; not a recognizable priest tab.",
+      "eligibility": "Adult male and bareheaded, but priest clothing not established.",
+      "evidence": {
+        "50": {
+          "path": "research/runs/paired1024-cpu-200/000050-unseen-001.png",
+          "sha256": "fe1b21d69771ae4d950aeb8ba2a4e25a34c74572ad95f13f32b837ca76ec4a9f"
+        },
+        "100": {
+          "path": "research/runs/paired1024-cpu-200/000100-unseen-001.png",
+          "sha256": "e230ce90bfd29274f696ccbcdd969caa789c209b36cf96726bcc53f1beeaa789"
+        }
+      },
+      "production_approved": false
+    }
+  ]
+}

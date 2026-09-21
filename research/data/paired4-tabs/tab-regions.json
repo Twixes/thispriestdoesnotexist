@@ -1,0 +1,121 @@
+{
+  "coordinate_system": "manual normalized x,y target white-tab traces",
+  "effective_mask": "intersection with unchanged clothing mask; never extend into protected face",
+  "polygons": {
+    "calibration-original": [
+      [
+        [
+          0.37,
+          0.923
+        ],
+        [
+          0.484,
+          0.931
+        ],
+        [
+          0.472,
+          0.986
+        ],
+        [
+          0.452,
+          0.993
+        ],
+        [
+          0.4,
+          0.994
+        ],
+        [
+          0.357,
+          0.987
+        ]
+      ]
+    ],
+    "000": [
+      [
+        [
+          0.437,
+          0.948
+        ],
+        [
+          0.49,
+          0.956
+        ],
+        [
+          0.539,
+          0.955
+        ],
+        [
+          0.587,
+          0.946
+        ],
+        [
+          0.588,
+          1
+        ],
+        [
+          0.435,
+          1
+        ]
+      ]
+    ],
+    "030": [
+      [
+        [
+          0.505,
+          0.966
+        ],
+        [
+          0.563,
+          0.967
+        ],
+        [
+          0.629,
+          0.955
+        ],
+        [
+          0.635,
+          1
+        ],
+        [
+          0.509,
+          1
+        ]
+      ]
+    ]
+  },
+  "measurements": [
+    {
+      "id": "calibration-original",
+      "clothing_pixels": 141212,
+      "traced_tab_pixels": 7923,
+      "effective_tab_pixels": 7198,
+      "rest_clothing_pixels": 134014,
+      "tab_fraction_of_clothing": 0.05097300512704303,
+      "trace_retained_inside_unchanged_clothing_mask": 0.9084942572257984,
+      "equal_partition_tab_per_pixel_multiplier_vs_broad": 9.809113642678522,
+      "equal_partition_rest_per_pixel_multiplier_vs_broad": 0.5268554031668333
+    },
+    {
+      "id": "000",
+      "clothing_pixels": 121997,
+      "traced_tab_pixels": 7668,
+      "effective_tab_pixels": 4248,
+      "rest_clothing_pixels": 117749,
+      "tab_fraction_of_clothing": 0.03482052837364853,
+      "trace_retained_inside_unchanged_clothing_mask": 0.5539906103286385,
+      "equal_partition_tab_per_pixel_multiplier_vs_broad": 14.359345574387948,
+      "equal_partition_rest_per_pixel_multiplier_vs_broad": 0.5180383697526094
+    },
+    {
+      "id": "030",
+      "clothing_pixels": 64975,
+      "traced_tab_pixels": 4918,
+      "effective_tab_pixels": 4204,
+      "rest_clothing_pixels": 60771,
+      "tab_fraction_of_clothing": 0.06470180838784148,
+      "trace_retained_inside_unchanged_clothing_mask": 0.8548190321268808,
+      "equal_partition_tab_per_pixel_multiplier_vs_broad": 7.727759276879163,
+      "equal_partition_rest_per_pixel_multiplier_vs_broad": 0.5345888664000922
+    }
+  ]
+}

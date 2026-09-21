@@ -1,0 +1,16 @@
+{
+  "upstream_repository": "https://github.com/openai/CLIP",
+  "upstream_commit": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+  "upstream_archive_url": "https://codeload.github.com/openai/CLIP/tar.gz/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+  "upstream_archive_sha256": "553c80a6364ac7350dd7800f535531175f22c11fa742bda1b50b62121eb5f40f",
+  "official_weights_url": "https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt",
+  "weights_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+  "weights_bytes": 353976522,
+  "license_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/LICENSE",
+  "model_card_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/model-card.md",
+  "license_note": "Official CLIP repository MIT license retained; source FFHQ generator and derived research assets retain their own existing NVIDIA provenance. No license reclassification.",
+  "installation": "Isolated research/selection/.venv. Official pinned source archive installed after reading setup.py; no remote custom model code or credentials.",
+  "existing_environment_discovery": "No clip, open-clip-torch, transformers, ftfy, regex or packaging in research/.venv; no ~/.cache/clip found. Existing torch/torchvision versions retained in isolated environment.",
+  "preprocessing": "Official ViT-B/32 resize/center-crop224 bicubic, RGB, official normalization. Square1024 sources are resized without spatial cropping.",
+  "production_approved": false
+}

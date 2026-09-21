@@ -1,0 +1,121 @@
+{
+  "reviewed_at_utc": "2026-09-21T00:11:02.259374+00:00",
+  "review_type": "Independent bounded visual comparison of immutable PNG previews; no model inference",
+  "comparison_steps": [
+    10,
+    50
+  ],
+  "preview_latents": "Same fixed previews as provided by the parent; matching seed/options in run configurations",
+  "production_approved": false,
+  "continuation_reasonable": true,
+  "recommendation": "Continue the already configured bounded run to the next 100-step review and, if facial quality remains stable, the existing 200-step endpoint. These six previews provide no visual reason to halt at step 50. This is not a recommendation to increase learning rate or weaken face-preservation loss.",
+  "summary": "Facial anatomy/detail and framing remain stable across all three fixed latents. The paired clothing has begun darkening but remains visibly a light open shirt, and neither unseen preview demonstrates a clerical collar. Early preservation evidence is positive; priest-clothing generalization is unproven.",
+  "stop_or_reassess_conditions": [
+    "New facial ghosting, duplicated parts, blur, loss of eye detail or identity/framing drift at the next immutable preview.",
+    "If the paired output still lacks a recognizable clerical tab at the bounded endpoint, reassess supervision/mask and objective before extending training automatically."
+  ],
+  "sampler_status": "Unsolved. Fresh-source preservation retains broad FFHQ demographics and headwear; it is not an adult attractive bareheaded male-priest sampler.",
+  "eligibility_limits": [
+    "The reviewed unseen-000 explicitly violates the no-hats requirement.",
+    "All three reviewed outputs lack convincing priest clothing at step 50.",
+    "No women or children appear in these two particular unseen previews, but this does not rule them out in the unconstrained latent distribution.",
+    "One training pair and two unseen previews cannot establish diversity, selection yield, distribution safety or production quality."
+  ],
+  "records": [
+    {
+      "sample": "pair-000-train",
+      "step10": {
+        "path": "research/runs/paired1024-cpu-smoke/000010-pair-000-train.png",
+        "sha256": "6fcbac460920249ec3c6b9cc9b37d944f55e9cab2d2e95c9c4192f6a5457cc27",
+        "dimensions": [
+          1024,
+          1024
+        ]
+      },
+      "step50": {
+        "path": "research/runs/paired1024-cpu-200/000050-pair-000-train.png",
+        "sha256": "8f5a2da29615ad4e2ab0a49f1819befd1f6e046559afa7f3e39697045624b7f9",
+        "dimensions": [
+          1024,
+          1024
+        ]
+      },
+      "reviewed_at_native_resolution": true,
+      "face_anatomy": "Eyes, nose, lips, jaw, ears and hair remain coherent and closely match step 10; no doubled features, ghosting or obvious head-position change.",
+      "native_detail": "Skin pores, stubble, curls and eye highlights remain photographic at 1024px; no material facial-detail degradation apparent.",
+      "clothing_change": "The original light open shirt is somewhat darker around the lower left and neckline at step 50, but broad pale shirt panels remain. No unmistakable isolated white clerical tab on a black clerical shirt has formed.",
+      "eligibility": "Adult male and bareheaded; fails recognizable priest clothing. Seen training identity, so it cannot establish unseen-identity generalization.",
+      "recognizable_clerical_collar": false,
+      "bareheaded": true,
+      "appears_adult_male": true,
+      "production_approved": false
+    },
+    {
+      "sample": "unseen-000",
+      "step10": {
+        "path": "research/runs/paired1024-cpu-smoke/000010-unseen-000.png",
+        "sha256": "bb5fd175970337c0af38e1107c1c53aa54f280bdbeeafc47400bfe7b5ca19a3d",
+        "dimensions": [
+          1024,
+          1024
+        ]
+      },
+      "step50": {
+        "path": "research/runs/paired1024-cpu-200/000050-unseen-000.png",
+        "sha256": "eea03ac06f299b2a8296742f883ba74f413a8c2ecfc37fc7bc9e479266edae47",
+        "dimensions": [
+          1024,
+          1024
+        ]
+      },
+      "reviewed_at_native_resolution": true,
+      "face_anatomy": "Face, eyes behind glasses, nose, mouth and jaw remain intact and very similar between steps 10 and 50; no obvious ghosting or anatomical deterioration.",
+      "native_detail": "Glasses rims, eyebrow hairs and skin texture remain visible; no clear material loss of facial detail.",
+      "clothing_change": "Original lower garment and draped material remain; changes are subtle and do not establish clerical clothing. Prominent headwear persists.",
+      "eligibility": "Appears adult male but wears a large hat/cap and has no recognizable clerical collar. A partial neighboring person and busy background are also present. This is an ineligible production sample even though face preservation looks good.",
+      "recognizable_clerical_collar": false,
+      "bareheaded": false,
+      "appears_adult_male": true,
+      "production_approved": false
+    },
+    {
+      "sample": "unseen-001",
+      "step10": {
+        "path": "research/runs/paired1024-cpu-smoke/000010-unseen-001.png",
+        "sha256": "a3be4b427d50c6b714a2c007cdb9d78b8b46281472e72e12808ba5ba2bbf50ce",
+        "dimensions": [
+          1024,
+          1024
+        ]
+      },
+      "step50": {
+        "path": "research/runs/paired1024-cpu-200/000050-unseen-001.png",
+        "sha256": "fe1b21d69771ae4d950aeb8ba2a4e25a34c74572ad95f13f32b837ca76ec4a9f",
+        "dimensions": [
+          1024,
+          1024
+        ]
+      },
+      "reviewed_at_native_resolution": true,
+      "face_anatomy": "Mature male face retains coherent features and the same framing and expression; no doubled facial parts or obvious deformation appears.",
+      "native_detail": "Soft photographic skin rendering, hair texture and facial shading are similar at both checkpoints; source-like softness remains, without an obvious new degradation.",
+      "clothing_change": "Dark jacket and broad white conventional shirt collar remain. Small tone differences do not turn the collar into an unmistakable priest tab.",
+      "eligibility": "Appears adult male and bareheaded, but conventional formalwear is not sufficient evidence of priest appearance. No attractiveness or adult-male-only sampling guarantee follows from this one latent.",
+      "recognizable_clerical_collar": false,
+      "bareheaded": true,
+      "appears_adult_male": true,
+      "production_approved": false
+    }
+  ],
+  "config_evidence": {
+    "research/runs/paired1024-cpu-smoke/config.json": "31360556c7e1cb41e66a2d9fc9fdc4b9a585cb5008576d9fae81d8bf729d53ea",
+    "research/runs/paired1024-cpu-200/config.json": "1858f6f8485d51b7c157d5833eeafa5b6da9134e5e814a092ea5369eacae24e3"
+  },
+  "actions": {
+    "model_inference": false,
+    "gpu_use": false,
+    "training_or_input_mutation": false,
+    "production_change": false,
+    "only_written_file": "research/runs/paired1024-cpu-200/visual-review-000050.json"
+  }
+}

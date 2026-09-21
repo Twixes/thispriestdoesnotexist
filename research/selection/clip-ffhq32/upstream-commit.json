@@ -1,0 +1,101 @@
+{
+  "sha": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+  "node_id": "C_kwDOEzC5_9oAKGQwNWFmYzQzNmQ3OGYxYzQ4ZGMwZGJmOGU1OTgwYTlkNDcxZjM1ZjY",
+  "commit": {
+    "author": {
+      "name": "Drew Hintz",
+      "email": "hintz@openai.com",
+      "date": "2026-03-25T18:46:40Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-03-25T18:46:40Z"
+    },
+    "message": "Pin GitHub Actions workflow references (#537)",
+    "tree": {
+      "sha": "8ff3473dab6037c117401572413d3eb9b30ca23d",
+      "url": "https://api.github.com/repos/openai/CLIP/git/trees/8ff3473dab6037c117401572413d3eb9b30ca23d"
+    },
+    "url": "https://api.github.com/repos/openai/CLIP/git/commits/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpxC2QCRC1aQ7uu5UhlAAAG6UQAJMyWYdufTaVZ3Z2/mSvsiaC\nFVKXRuyDkLDme9YeHF5JMQhALcV9KMkZ09zpdF0i7WSSrk5N5afdps/RclMo69yj\n4Ha68Fbx+8IgBV1AFkL/KaOVpwMlrG2gd5PObGYby/DhhqdCTi0T0lgFHVn+g5YQ\nYw9PElYEFLzMo85u9VD6f4iNo52DNAzdSpmL7UrPoQwnm9fRPS2MzVkk64GmKHdW\nUAeLMVtVvpNqmgQCS7MHkO7fK1W2kcli7dZiHur3ECwzwsRPTfFQNnzkx6hU/VTr\nLSbAL6Ifb1aJgd22KrxzoFDH5vmyI8RjhSgTl2fSqdX7Gj7Tox30NgM/5tZaokcr\nkYiw38WyX+kq7EVvF9vQJBtXOm/xwbNQ6qnVlyhgq9Rm8Gj1YT9dIomVoq1BCvRl\nfbnTt2PMRMBkY1Kz8wwsehKh09ii7HjWi9hNmYOoLz+gWmKyPbYeS4WsgntOfoYj\n5BPhwrtR+2KQKonlB5VGgU9w2tKEmxzE4ia/LGm6D4EfrzYmWkSzeBENT3wx2L7x\nEZKuZaRhkYKSUm4UHlc90sDxqhGlnYKV4kGm9TGAllJKtpTScxhG5wCbd0/icik7\nKSJeAgzt8sMXwPFIe1nBCTPT3VaH5vuzgZPbL0RsFBrmVTLBtBUk8s9vjel4BOQ+\n/3cW1+Ir2JUtltOvXuYh\n=F0Fd\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 8ff3473dab6037c117401572413d3eb9b30ca23d\nparent ded190a052fdf4585bd685cee5bc96e0310d2c93\nauthor Drew Hintz <hintz@openai.com> 1774464400 -0500\ncommitter GitHub <noreply@github.com> 1774464400 -0500\n\nPin GitHub Actions workflow references (#537)",
+      "verified_at": "2026-03-25T18:46:41Z"
+    }
+  },
+  "url": "https://api.github.com/repos/openai/CLIP/commits/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+  "html_url": "https://github.com/openai/CLIP/commit/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+  "comments_url": "https://api.github.com/repos/openai/CLIP/commits/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/comments",
+  "author": {
+    "login": "hintz-openai",
+    "id": 201815723,
+    "node_id": "U_kgDODAd2qw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/201815723?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hintz-openai",
+    "html_url": "https://github.com/hintz-openai",
+    "followers_url": "https://api.github.com/users/hintz-openai/followers",
+    "following_url": "https://api.github.com/users/hintz-openai/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hintz-openai/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hintz-openai/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hintz-openai/subscriptions",
+    "organizations_url": "https://api.github.com/users/hintz-openai/orgs",
+    "repos_url": "https://api.github.com/users/hintz-openai/repos",
+    "events_url": "https://api.github.com/users/hintz-openai/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hintz-openai/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ded190a052fdf4585bd685cee5bc96e0310d2c93",
+      "url": "https://api.github.com/repos/openai/CLIP/commits/ded190a052fdf4585bd685cee5bc96e0310d2c93",
+      "html_url": "https://github.com/openai/CLIP/commit/ded190a052fdf4585bd685cee5bc96e0310d2c93"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "7449d9d72abe92700628c9cd318e5577c43fe0d0",
+      "filename": ".github/workflows/test.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/.github%2Fworkflows%2Ftest.yml",
+      "raw_url": "https://github.com/openai/CLIP/raw/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/.github%2Fworkflows%2Ftest.yml",
+      "contents_url": "https://api.github.com/repos/openai/CLIP/contents/.github%2Fworkflows%2Ftest.yml?ref=d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+      "patch": "@@ -24,9 +24,9 @@ jobs:\n             pytorch-version: 1.10.1\n             torchvision-version: 0.11.2\n     steps:\n-      - uses: conda-incubator/setup-miniconda@v2\n+      - uses: conda-incubator/setup-miniconda@1bff120c1ad2d5f86a1099b0df16632c8da52988 # v2\n       - run: conda install -n test python=${{ matrix.python-version }} pytorch=${{ matrix.pytorch-version }} torchvision=${{ matrix.torchvision-version }} cpuonly -c pytorch\n-      - uses: actions/checkout@v2\n+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2\n       - run: echo \"$CONDA/envs/test/bin\" >> $GITHUB_PATH\n       - run: pip install pytest\n       - run: pip install ."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "manifest_sha256": "3c048560cdf7955fa9ffd1cc437ba9b3ba1cf2cf316662cc19b5cd2c27589c61",
+  "prepare_sha256": "cd59604bc7a87f50dd9f6cf4c6d918aa12e0f93f021a08acd40ee1e84138d9af",
+  "train_ids": [
+    "calibration-original",
+    "000",
+    "030"
+  ],
+  "validation_ids": [
+    "028"
+  ],
+  "source_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+  "original_v2_mask_reused_exactly": true,
+  "original_v2_mask_file_sha256": "3213099b75ae8e706f3024f2b33e69988404f036a5dd44f66efdb6cf34ca0984",
+  "heavy_model_preflight_run": false,
+  "training_run": false,
+  "source_and_target_modified": false,
+  "files": {
+    "calibration-original": {
+      "latent_path": {
+        "path": "../ffhq-paired-sources32/latents/reproduction-sample002.npz",
+        "sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9"
+      },
+      "source_path": {
+        "path": "../ffhq-paired-sources32/images/reproduction-sample002.png",
+        "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+      },
+      "target_path": {
+        "path": "../ffhq-clothing-edit1/001.png",
+        "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+      }
+    },
+    "000": {
+      "latent_path": {
+        "path": "../ffhq-paired-sources32/latents/000.npz",
+        "sha256": "40978912da666c81c646643e681fec554e4771fe69c558359ee28cb6ae751572"
+      },
+      "source_path": {
+        "path": "../ffhq-paired-sources32/images/000.png",
+        "sha256": "64f6368f73a25e21c6d8ae22c90a6c5095ab986d204c9acf26aa22f6050d4548"
+      },
+      "target_path": {
+        "path": "../ffhq-clothing-edits3/000.png",
+        "sha256": "802ce72546efaa10c1cdbcbf7d4779b86c7e40c72ac4801d680ed6508c2551c6"
+      }
+    },
+    "030": {
+      "latent_path": {
+        "path": "../ffhq-paired-sources32/latents/030.npz",
+        "sha256": "0b696035e53809458d988e45abdcfc4e1afb4cdc712f687bc72c3b1f9b4d5e59"
+      },
+      "source_path": {
+        "path": "../ffhq-paired-sources32/images/030.png",
+        "sha256": "9b3e097dd62f65b98156099a98682cf1d7840a56e223f75ae67a2984e39e12f8"
+      },
+      "target_path": {
+        "path": "../ffhq-clothing-edits3/030.png",
+        "sha256": "29fdc4ccd182d3986cba59b5df625cc5cf9feb4b09ca6898e18869a6f765f513"
+      }
+    },
+    "028": {
+      "latent_path": {
+        "path": "../ffhq-paired-sources32/latents/028.npz",
+        "sha256": "dbd37130b8c58a35f8b7802ae909ce2fbdaa0964ee02e23cabb574e690d50933"
+      },
+      "source_path": {
+        "path": "../ffhq-paired-sources32/images/028.png",
+        "sha256": "eb246b66e7fd614935b677c1ca26b9f5da574fa7f1deda5c096c760d9f71d5d2"
+      },
+      "target_path": {
+        "path": "../ffhq-clothing-edits3/028.png",
+        "sha256": "338bc64f196a24f40e9a7a513b0e497aa354f6a364d458c7d85ad2c822f5d8a2"
+      }
+    }
+  }
+}

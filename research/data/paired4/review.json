@@ -1,0 +1,67 @@
+{
+  "candidate_pending_root_review": true,
+  "production_approved": false,
+  "training_run": false,
+  "heavy_generator_forward_run": false,
+  "sources_targets_modified": false,
+  "unique_latent_files": 4,
+  "train_count": 3,
+  "validation_count": 1,
+  "original_v2_mask_exact_reuse": true,
+  "manifest_sha256": "ef10bdbdbca5baa88fd8abe9082f07083139d9b01a74e0a67db27c0224cd9cad",
+  "pairs": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "overlay": "calibration-original-overlay.png",
+      "mask_fraction_at_768_preview": 0.1350182443857193,
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "latent_shapes_verified": true,
+      "overlay_polygons_equal_manifest": true,
+      "visually_reviewed_by_subagent": true
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "overlay": "000-overlay-v2.png",
+      "mask_fraction_at_768_preview": 0.1164008229970932,
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "latent_shapes_verified": true,
+      "overlay_polygons_equal_manifest": true,
+      "visually_reviewed_by_subagent": true
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "overlay": "030-overlay-v2.png",
+      "mask_fraction_at_768_preview": 0.0622541643679142,
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "latent_shapes_verified": true,
+      "overlay_polygons_equal_manifest": true,
+      "visually_reviewed_by_subagent": true
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "overlay": "028-overlay.png",
+      "mask_fraction_at_768_preview": 0.0477633997797966,
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "latent_shapes_verified": true,
+      "overlay_polygons_equal_manifest": true,
+      "visually_reviewed_by_subagent": true
+    }
+  ],
+  "validation_caveat": "028 original beard is protected and leaves almost no central collar area; target beard outline differs, so whole-image target similarity is not valid identity supervision."
+}

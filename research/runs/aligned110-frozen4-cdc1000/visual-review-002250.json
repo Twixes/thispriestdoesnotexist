@@ -1,0 +1,15 @@
+{
+  "step": 2250,
+  "images_seen": 18000,
+  "approved": false,
+  "reviewer": "Codex native visual inspection",
+  "grid_path": "samples-002250-untruncated.png",
+  "grid_sha256": "dfbc8076319a3551ef2411901cfca7537f28ad73db38142e9541442c096e54f1",
+  "findings": [
+    "Adult male bareheaded appearance and recognizable white collars are consistent across this fixed untruncated EMA grid.",
+    "First sample has dark distorted eye/glasses regions, third-row third sample has severely ghosted eyes, and several mouths/cheeks remain smeared or warped.",
+    "Most outputs share similar face proportions and dark swept hair. This fixed grid does not establish diversity on unseen latents.",
+    "Photographic quality remains below the requested result."
+  ],
+  "decision": "Retain evidence, continue existing bounded run; not approved for production."
+}

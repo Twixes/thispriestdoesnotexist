@@ -77,3 +77,7 @@ The active continuation uses the same command options, changing `--run` to `rese
 A future MPS invocation requires an explicit `--mps-memory-cap-gib` allocation limit. No MPS test or memory-fit claim is made here. A larger paired dataset should be considered only after actual visual clothing transfer and face preservation are demonstrated; decreasing pixel loss alone is insufficient.
 
 NVIDIA's network/weights retain `../../vendor/stylegan2-ada-pytorch/LICENSE.txt`; MIT application code does not relicense those research/evaluation artifacts. Keep all research outputs unapproved. Tests establish implementation behavior, not acceptable photorealism, identity generalization, or deployment rights.
+
+## Completed 200-step continuation
+
+The exact CPU continuation finished successfully at step 200 (190 new updates) in 1,080.21 seconds, with maximum RSS 5,693,980,672 bytes and zero reported swaps. Frozen/source state checks passed at each saved checkpoint. The root native visual review finds preserved facial detail and a darkened shirt, but **no convincing white clerical tab**. This is not a successful priest generator. See `../../runs/paired1024-cpu-200/completion-review.json`. Disjoint-latent evaluation is recorded separately; the previous active-run description above is historical.

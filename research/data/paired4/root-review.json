@@ -1,0 +1,14 @@
+{
+  "reviewer": "Codex root",
+  "artifact_sha256": "3eaa5163765d5460f7d1bd19be094477e3706bcae8b72ffe32b3ad86b6bb8f14",
+  "research_masks_approved": true,
+  "production_approved": false,
+  "findings": [
+    "Reviewed source and edited-target overlays for all four pairs. Clothing masks cover shirt/lower neck while excluding visible eyes, mouth and most original jaw/beard.",
+    "000/030 edited mouth movement is excluded from target supervision; original source supplies protected-face supervision.",
+    "028 remains whole-seed validation only; protected beard excludes much of its tiny collar target, so it is chiefly a visual holdout.",
+    "All target collars are close to the bottom edge. Full collar visibility is not added as a user requirement.",
+    "A mask review cannot establish model learning or generalization."
+  ],
+  "next_action": "Finish single-pair200 evaluation, assess missing collar supervision, then choose a fresh-run objective. Do not mutate original active manifest."
+}
