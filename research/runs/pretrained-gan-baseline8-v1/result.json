@@ -1,0 +1,17 @@
+{
+  "complete": false,
+  "device": "cpu",
+  "threads": 1,
+  "torch": "2.14.0",
+  "psi": 0.7,
+  "noise_mode": "const",
+  "force_fp32": true,
+  "native_resolution": 1024,
+  "samples_per_model": 8,
+  "sampling": "PCG64(seed).standard_normal(512), float64 then float32; same saved z for both models, not same identities",
+  "quality_selection": false,
+  "restoration": false,
+  "production_approved": false,
+  "latents_sha256": "5e5fc0c55cb0a935abb08e523c439d35a71ace5c3d601c887ff86e6dea1aab03",
+  "models": {}
+}

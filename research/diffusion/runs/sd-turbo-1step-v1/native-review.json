@@ -1,0 +1,213 @@
+{
+  "reviewer": "localized_student independent native-image review",
+  "scope": "All eight000\u2013007 native512 PNGs opened individually using view_image; warmup not reviewed; no final-WebP review or runtime benchmarking performed.",
+  "model": "sd-turbo",
+  "revision": "b261bac6fd2cf515557d5d0707481eafa0485ec2",
+  "steps": 1,
+  "result_sha256": "0f06556cd7ced64bd75cfe4e08a34793b22df49a234ac824fff929ec3fc97799",
+  "production_approved": false,
+  "post_training_demonstrated": false,
+  "server_latency_demonstrated": false,
+  "summary": {
+    "photographic_faces_with_no_obvious_major_anatomy_defect": 8,
+    "coherent_eyes_at_native512": 8,
+    "apparent_adult_male": 8,
+    "bareheaded": 8,
+    "single_person": 8,
+    "credible_clerical_clothing": 6,
+    "uncertain_clerical_clothing": 2,
+    "strict_small_white_tab_in_black_shirt": 0,
+    "subjective_strong_calendar_appeal": 6,
+    "subjective_moderate_calendar_appeal": 2
+  },
+  "decision": "Promising pretrained baseline worthy of matched comparison and domain post-training. All eight faces look coherent; six outfits are recognizable clerical clothing and acceptable in that respect, including legitimate full white collars.000 and007 have less convincing clerical styling. Missing the prompt-specific small Roman tab alone is NOT a goal rejection. No production approval: only eight samples, no post-training, no server timing, and paired identity similarity remains unresolved.",
+  "quality_caveat": "These are qualitative visual judgments at native512, not real age/gender/identity labels or objective attractiveness scores. Aesthetic appeal is subjective. Softness at512 and enlargement should be reviewed at actual site display size.",
+  "matched_prompt_pairs": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "assessment": "Similar young dark-haired oval-face family; beard, nose/jaw proportions and camera angle differ. Looks plausibly different but related; cannot rule out same-person-like outputs from two samples."
+    },
+    {
+      "indices": [
+        2,
+        3
+      ],
+      "assessment": "Most visibly different pair: facial proportions, gray hair, pose/framing and age appearance differ. Both remain coherent faces."
+    },
+    {
+      "indices": [
+        4,
+        5
+      ],
+      "assessment": "Same centered short-hair portrait family;005 has more angular/narrower face and stronger brow than004. Some variation, still a strong repeated template."
+    },
+    {
+      "indices": [
+        6,
+        7
+      ],
+      "assessment": "Similar silver-haired bearded older-man family;006 front-facing and007 profile could plausibly be views of a similar or same person. Do not count pose change alone as demonstrated identity novelty."
+    }
+  ],
+  "cross_prompt_diversity": "Across four prompts, distinct age/hair/face styles are visible; within-prompt identity diversity is weakly evidenced by just two seeds. Hash uniqueness is not used as an identity measure. Need a larger fixed-prompt fresh-noise set and cross-model paired-seed comparison.",
+  "records": [
+    {
+      "index": 0,
+      "face_photographic": true,
+      "eye_integrity": "Both eyes have coherent dark irises/pupils and natural eyelid outlines; no blank or doubled eye observed.",
+      "clothing": "Black stand collar frames an exposed pale neck opening; no unambiguous separate white Roman tab. White/skin area looks like neck rather than an inserted collar.",
+      "clerical_clothing": "uncertain",
+      "small_white_tab": false,
+      "calendar_appeal": "strong",
+      "defects": [
+        "Collar/neck opening does not satisfy explicit white-tab target."
+      ],
+      "observations": "Good photographic hair and facial detail. Mildly smoothed skin, but no obvious malformed facial structure.",
+      "native_png_sha256": "b60b7e05536800050816b9a3eb13cb17b6885cdc4c47e0a0f18930cff4ad6f0d",
+      "seed": 202609214000,
+      "apparent_adult_male": true,
+      "bareheaded": true,
+      "single_visible_person": true,
+      "production_approved": false
+    },
+    {
+      "index": 1,
+      "face_photographic": true,
+      "eye_integrity": "Coherent eyes, gaze and eyelid structure. Shaded iris detail is plausible at native512.",
+      "clothing": "Plausible full white clerical collar with white front panel and dark outer garment; visually priest-like, though not a small tab in a black shirt.",
+      "clerical_clothing": "yes",
+      "small_white_tab": false,
+      "calendar_appeal": "strong",
+      "defects": [
+        "Prompt requested small tab and black shirt; output uses broader white collar/front."
+      ],
+      "observations": "Convincing stubble and skin texture; slight residual warm color despite monochrome prompt.",
+      "native_png_sha256": "7a14ce511db9939fe27bca2fc8f2c1b560d1abf0fd2fc471d761d8111f8f8e0f",
+      "seed": 202609214001,
+      "apparent_adult_male": true,
+      "bareheaded": true,
+      "single_visible_person": true,
+      "production_approved": false
+    },
+    {
+      "index": 2,
+      "face_photographic": true,
+      "eye_integrity": "Both irises/pupils are readable; multiple small highlights are not obvious duplicated pupils. No glaring eye defect.",
+      "clothing": "Credible complete white clerical collar over black garment. Full-band collar, not a small Roman insert.",
+      "clerical_clothing": "yes",
+      "small_white_tab": false,
+      "calendar_appeal": "moderate",
+      "defects": [
+        "Full white collar differs from small-tab target."
+      ],
+      "observations": "Strong natural face texture, gray hair and coherent lower face. Serious portrait rather than a deliberately glamorous calendar pose.",
+      "native_png_sha256": "cc01f31106a56bb43244812f248d814baa36c98c6f80a6f6a667aa8b8b1a222d",
+      "seed": 202609214002,
+      "apparent_adult_male": true,
+      "bareheaded": true,
+      "single_visible_person": true,
+      "production_approved": false
+    },
+    {
+      "index": 3,
+      "face_photographic": true,
+      "eye_integrity": "Pupils and eyelids coherent; slight soft focus affects whole image rather than an isolated malformed eye.",
+      "clothing": "White clerical collar merges into an almost entirely white garment; priest-like but black-shirt requirement missed.",
+      "clerical_clothing": "yes",
+      "small_white_tab": false,
+      "calendar_appeal": "strong",
+      "defects": [
+        "White garment instead of black shirt.",
+        "Native image is softer than000/001/002."
+      ],
+      "observations": "Plausible three-quarter photographic face and mustache. Head is cropped more tightly.",
+      "native_png_sha256": "0cbd299440439c2880eac2dfb5d446d8b658e0ee00f00af5ce8cfaaaa98b4bc3",
+      "seed": 202609214003,
+      "apparent_adult_male": true,
+      "bareheaded": true,
+      "single_visible_person": true,
+      "production_approved": false
+    },
+    {
+      "index": 4,
+      "face_photographic": true,
+      "eye_integrity": "Dark pupils and eyelid contours coherent. Fine iris detail is limited by overall softness.",
+      "clothing": "Broad white neckband and pale garment; reasonably clerical, with a central rectangular insert but not an isolated tab in black shirt.",
+      "clerical_clothing": "yes",
+      "small_white_tab": false,
+      "calendar_appeal": "strong",
+      "defects": [
+        "Pale garment and broad collar differ from explicit black-shirt/small-tab target.",
+        "Softer texture than highest-detail samples."
+      ],
+      "observations": "Plausible face and slight smile. No hats or extra faces.",
+      "native_png_sha256": "db9345e40852dfbe10e5a20d961abc78eeb28fb27c8003db1f590399f1828b61",
+      "seed": 202609214004,
+      "apparent_adult_male": true,
+      "bareheaded": true,
+      "single_visible_person": true,
+      "production_approved": false
+    },
+    {
+      "index": 5,
+      "face_photographic": true,
+      "eye_integrity": "Coherent pupils and eyelids; catchlight/iris boundaries are slightly sharp but no clear missing or doubled pupil.",
+      "clothing": "White high collar/front with dark garment at sides; recognizable clerical styling, not small-tab black shirt.",
+      "clerical_clothing": "yes",
+      "small_white_tab": false,
+      "calendar_appeal": "strong",
+      "defects": [
+        "Broad white collar/front differs from small-tab target."
+      ],
+      "observations": "Good facial structure and convincing texture at512. Similar pose/style to004, visibly narrower/older-looking face.",
+      "native_png_sha256": "fefce553f8e9f781170056fdf65ae5a942bb9e06023b5c74c95e47135a9b5e20",
+      "seed": 202609214005,
+      "apparent_adult_male": true,
+      "bareheaded": true,
+      "single_visible_person": true,
+      "production_approved": false
+    },
+    {
+      "index": 6,
+      "face_photographic": true,
+      "eye_integrity": "Both eyes are naturally shadowed with identifiable irises; no obvious eye anatomy error.",
+      "clothing": "White clerical neckband, large white front and multiple dark chain/cord-like lines. Priest-like overall, but cluttered lower garment details.",
+      "clerical_clothing": "yes",
+      "small_white_tab": false,
+      "calendar_appeal": "moderate",
+      "defects": [
+        "Layered cords/chains and broad white front diverge from simple black clerical shirt."
+      ],
+      "observations": "Convincing older face and short beard; apparent age is higher than prompt50. Strong photographic texture with stern expression.",
+      "native_png_sha256": "90be7d5b3ca938b3c935cce3c566954eacb80f6f0c316a0a5308bb2918f1a8bc",
+      "seed": 202609214006,
+      "apparent_adult_male": true,
+      "bareheaded": true,
+      "single_visible_person": true,
+      "production_approved": false
+    },
+    {
+      "index": 7,
+      "face_photographic": true,
+      "eye_integrity": "Coherent profile-view gaze and eyelids; visible iris structure plausible.",
+      "clothing": "Black high collar with narrow white edging and angular front trim. Stylized ecclesiastical/military-like stand collar, not a clear white Roman tab.",
+      "clerical_clothing": "uncertain",
+      "small_white_tab": false,
+      "calendar_appeal": "strong",
+      "defects": [
+        "Stylized edged collar rather than recognizable simple white Roman tab."
+      ],
+      "observations": "Strong photographic profile, skin and beard; apparent age higher than50. Face resembles006 despite changed camera angle.",
+      "native_png_sha256": "20e2fe67354a91ff95d744e156562df65b639e8dc542cdfd3419029b41f1d9c9",
+      "seed": 202609214007,
+      "apparent_adult_male": true,
+      "bareheaded": true,
+      "single_visible_person": true,
+      "production_approved": false
+    }
+  ],
+  "goal_vs_prompt_clarification": "The user requires recognizable priests, not a specific small Roman tab. Legitimate broad white clerical collars are acceptable for the goal. small_white_tab and black-shirt observations are research prompt-compliance diagnostics only; missing an exact tab alone does not reject goal quality. Raw observations and counts remain unchanged."
+}

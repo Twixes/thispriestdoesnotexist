@@ -1,0 +1,915 @@
+{
+  "complete": true,
+  "production_approved": false,
+  "conclusion": "FAILED: frozen selector accepts visually defective portraits; production quality and identity diversity are not established.",
+  "fixed_threshold": 0.9,
+  "attempted": 64,
+  "restoration_successes": 61,
+  "restoration_error_indices": [
+    13,
+    22,
+    33
+  ],
+  "manual_acceptable_all_attempts": 43,
+  "accepted_indices": [
+    15,
+    24,
+    44,
+    45,
+    51,
+    54,
+    55,
+    57,
+    61
+  ],
+  "true_accept_indices": [
+    15,
+    24,
+    44,
+    45,
+    54,
+    55,
+    57
+  ],
+  "false_accept_indices": [
+    51,
+    61
+  ],
+  "confusion_matrix_all_attempts": {
+    "true_positive": 7,
+    "false_positive": 2,
+    "false_negative": 36,
+    "true_negative": 19
+  },
+  "acceptance_rate": 0.140625,
+  "precision": 0.7777777777777778,
+  "recall": 0.16279069767441862,
+  "false_accept_share_of_deliveries": 0.2222222222222222,
+  "acceptable_deliveries_per_attempt": 0.109375,
+  "hash_audit": {
+    "all_record_files": 64,
+    "all_record_output_files": 497,
+    "all_original_generation_images": 64,
+    "passed": true
+  },
+  "sources": [
+    {
+      "path": "research/selection/restored-test64-scores-v1/result.json",
+      "sha256": "743fedec849e69760be237fb8042990f22be53416f0e765b1afc591707bf008c"
+    },
+    {
+      "path": "research/selection/restored-calibration32-scores-v1/threshold-selection.json",
+      "sha256": "28ceba722cb6a9b115beee7dddbb5ef9ce2c46a587ec434085f58ef83a70e901"
+    },
+    {
+      "path": "research/experiments/restored_selection/protocol.json",
+      "sha256": "d4c8d2e99ffd9626060d5cc64c8d05f4417c0c542cb6a37aa6e5074dae8b4831"
+    },
+    {
+      "path": "research/runs/reference625-restoration-test64/evaluation.json",
+      "sha256": "a60a3c971af7c4e68ef99c650a0463aadb22f3d91429fd8891ef6b06c3a8d981"
+    },
+    {
+      "path": "research/selection/restored-test64-features-v1/result.json",
+      "sha256": "e3ae398301e0f62907d88dba211c1451b764e0d3dcf0b761c4a845637c5e6986"
+    },
+    {
+      "path": "research/selection/restored-test64-features-v1/features.npz",
+      "sha256": "0f3c21442287e514d52334d658025192442414c545f50dbfac5c42cdb29fba4c"
+    },
+    {
+      "path": "research/selection/restored-development128-probe-v1/result.json",
+      "sha256": "64d695876630f58a9c99cd8bad4c78b61249606aaec17b3d94ef0492c083f1d7"
+    },
+    {
+      "path": "research/selection/restored-development128-probe-v1/weights.npz",
+      "sha256": "f5bb024095a0f9d9653fe832bfcfa15ff64dc5ca4ed1f74800e181bef509e4d6"
+    },
+    {
+      "path": "research/reviews/reference625-test64/evaluate.py",
+      "sha256": "334c1cdfffaf282b9dc3e9c988c1fc64f56f212d192b548067d9f40b083341f1"
+    }
+  ],
+  "label_sources": [
+    {
+      "path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "sha256": "1d08c3da8c083ffdb0dbb4377ba096f30b0abe5f07eff0de20bace6517f66e14",
+      "reviewer": "review_test_a",
+      "blind_review_evidence": "All indices 000\u2013015 final restored 1024 PNGs individually viewed at native resolution where present; classifier scores not read."
+    },
+    {
+      "path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "sha256": "2518e6f4fabb01d43b0a7be14783dd8eefe3f5c0bb01a618d16fa39c009f6d7c",
+      "reviewer": "review_test_b",
+      "blind_review_evidence": "All available final restored1024 PNGs for indices016\u2013031 individually viewed at native resolution; classifier scores not read."
+    },
+    {
+      "path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "sha256": "a375df40b88e2929bb4c3e4e518fcfeb3ef02645708b9873d97643ae3e508581",
+      "reviewer": "review_test_c",
+      "blind_review_evidence": "All 15 available indices032\u2013047 restored1024 PNGs individually viewed at native resolution; classifier scores not read. Index033 restoration failure retained."
+    },
+    {
+      "path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "sha256": "9f19326b6de4c895681965ff5030af709305be3c53781e42c4ca2475ae68935c",
+      "reviewer": "root",
+      "blind_review_evidence": {
+        "scores_hidden": true,
+        "native1024_viewed_individually": true
+      }
+    }
+  ],
+  "family_resemblance_observations": [
+    {
+      "path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "observation": "Strong recurring family resemblance in 023/024/028 (face shape, eyes, beard and smile), and 016/026/030 (eyes, mouth and broad facial shape). Clean-shaven 017/020/025 also share a recognizable facial template despite hair/angle differences. The cohort has some meaningful hair, skin tone and facial-hair variation, but does not look like 16 wholly independent identities. This observation did not change individual acceptance labels."
+    },
+    {
+      "path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "observation": "Several recurring curly-haired bearded face families, with distinct jaw, hair, beard, pose and expression variations. Diversity is narrower than FFHQ; hashes alone do not establish identity diversity."
+    },
+    {
+      "path": "research/restoration/runs/reference625-test64-v1/family-resemblance-032-047.txt",
+      "sha256": "709b8831ae06ac4b7f998ea99d99f482cbbb34141a276d12a54c2b70e7dbd740",
+      "observation": "Strong family resemblance across this group: most share swept or curled voluminous hair, similarly shaped narrow noses, full lips, direct or slightly sideward gazes, black clerical shirts and the same soft architectural setting. Indices037 and038 look especially like neighboring variations; 035 and045, and 032 and044, also share facial templates despite age/hair changes. Graying facial hair and skin tone produce some variety, but the group still feels like a narrow portrait family rather than 15 strongly distinct people. This is a separate diversity observation and does not change individual labels."
+    }
+  ],
+  "limitations": [
+    "No retraining, rescoring, threshold tuning, relabeling, or test-set filtering performed.",
+    "Labels are subjective agent visual reviews performed with classifier scores hidden; they are not independent human production approval.",
+    "PNG review images and final WebP outputs are separately hash-bound; this audit does not claim byte or perceptual equivalence between lossy WebP and PNG.",
+    "Small test cohort and one reviewer per portrait; no inter-rater reliability measurement.",
+    "Family resemblance is a visual observation, not an identity-recognition measurement. Unique hashes do not prove novel identities.",
+    "These diagnostic timing/memory measurements do not establish a viable production hosting budget."
+  ],
+  "rows": [
+    {
+      "index": 0,
+      "seed": 202609213000,
+      "score": 0.8362898594497128,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "966a41d589a8730a39ac6b1b8d517662851084ef95bf408d2e893bbb8a3d4f16",
+      "reason": "Appealing adult with coherent eyes, head outline and clerical tab; soft background stays separate from the subject."
+    },
+    {
+      "index": 1,
+      "seed": 202609213001,
+      "score": 0.58201180423376,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "3efa1363165c33b361ff53c7f73ffe74b8e7e1e6a544bce31dc2a2d4674f7b59",
+      "reason": "Plausible mature adult with coherent gaze and collar; blurry architecture remains behind the head."
+    },
+    {
+      "index": 2,
+      "seed": 202609213002,
+      "score": 0.658365916598908,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "c6d6dbb0f55846327dcd6fa1706f36b5d2e91b92ecf76a3a0d20fc3c235016d5",
+      "reason": "Appealing adult with coherent eyes, hair and collar; mild softening remains photographic."
+    },
+    {
+      "index": 3,
+      "seed": 202609213003,
+      "score": 0.2206668777298193,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "576b8bbfd828f4bcc9e0b6e175b63cb34ec559b0a36cfaf4f0730240fdab72a9",
+      "reason": "Adult portrait with coherent collar and head, but masculine presentation is uncertain for the requested male-priest set."
+    },
+    {
+      "index": 4,
+      "seed": 202609213004,
+      "score": 0.843313171708665,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "3525d3871a322d096c198d5f0b770cd5dc8f884114f8bd7105118a784011be83",
+      "reason": "Appealing adult with natural stubble, coherent gaze and plausible angled clerical tab."
+    },
+    {
+      "index": 5,
+      "seed": 202609213005,
+      "score": 0.39231362562287375,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "85f6ec73f70e3a93da633aef8ef71b374cc9be9db7c81676c3de05f9029ef2f5",
+      "reason": "Large hat-like architectural mass merges with the forehead and head; not a coherent bareheaded portrait."
+    },
+    {
+      "index": 6,
+      "seed": 202609213006,
+      "score": 0.5853932749686251,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "1ac4de4079ccf916ffb74f0b90575260e4e56d892986c0444fb16b5536c8b853",
+      "reason": "Architecture overlaps and replaces the left eye edge and upper cheek, visibly breaking the face outline."
+    },
+    {
+      "index": 7,
+      "seed": 202609213007,
+      "score": 0.6586911474042618,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "3e66d09a72940322dc2b4bc6b9af29ce911292ff93b22ab7e79aa9ed60091215",
+      "reason": "Appealing mature adult with coherent facial structure, gray hair and plausible clerical tab; low contrast is tolerable."
+    },
+    {
+      "index": 8,
+      "seed": 202609213008,
+      "score": 0.6823078796998315,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "bd7bf1bdf9d8532a768ce82aa333a889c61dda22a35ed23972a719c87ec4cc71",
+      "reason": "Appealing adult with coherent eyes, hair and collar; distant background shapes are too indistinct to establish additional people."
+    },
+    {
+      "index": 9,
+      "seed": 202609213009,
+      "score": 0.3697790876005974,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "1b57389b7458d3fbaa885b6ca1d4bdc8a95a01abf9e0f5f9ddcf5a12dcbd9b28",
+      "reason": "Plausible adult with coherent face, hair and collar; low-detail background remains separate from the head."
+    },
+    {
+      "index": 10,
+      "seed": 202609213010,
+      "score": 0.513483728622929,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "70e2ead0512cf6d112004ad4383a247507077546bc354edf50378f4a94648972",
+      "reason": "Appealing adult with coherent gaze and head outline; collar and perspective remain plausible."
+    },
+    {
+      "index": 11,
+      "seed": 202609213011,
+      "score": 0.8584520301894673,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "aba458ff78a4154e3d7b6671fbea06f9aae7ab4e5588321220a4eae6e0b33594",
+      "reason": "Appealing bearded adult with coherent curls, eyes and clerical collar; background stays separate from face."
+    },
+    {
+      "index": 12,
+      "seed": 202609213012,
+      "score": 0.8607764195404244,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "1534de9896bf587644baf40d64331f48f022939d38186fea70abcb3143445944",
+      "reason": "Appealing mature adult with coherent eyes and plausible collar; slight teeth and skin smoothing tolerated."
+    },
+    {
+      "index": 13,
+      "seed": 202609213013,
+      "score": null,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": "RuntimeError: No detected face; no restoration fallback permitted",
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "5cc08fd020191f6a3378aaa9f1ccae31776066f0efbfefd596837a8fd3424157",
+      "reason": "Restoration failed with no detected face; retained as rejection in the attempted denominator."
+    },
+    {
+      "index": 14,
+      "seed": 202609213014,
+      "score": 0.6072125322678683,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "d2c22333171321b0adec6ff806a295476d4f61d9b5949704ca6818981228427b",
+      "reason": "Appealing adult with coherent gaze, hair and angled clerical tab; no major whole-portrait artifact."
+    },
+    {
+      "index": 15,
+      "seed": 202609213015,
+      "score": 0.9429844803273322,
+      "accepted": true,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_a",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-000-015.json",
+      "record_sha256": "97d9c5d6b766ed2c0c113137fc9cb589ab16f53df3fc3107c54add80b2de7bb4",
+      "reason": "Appealing mature bearded adult with coherent gaze and clerical tab; soft skin texture remains photograph-like."
+    },
+    {
+      "index": 16,
+      "seed": 202609213016,
+      "score": 0.8330052942526022,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "986c9a0da415805df6fd1582382da16ea394f5a2a454d88f777738295d929ef9",
+      "reason": "Appealing adult with coherent eyes, stubble, head outline and clerical tab; noisy blurred architecture remains behind subject."
+    },
+    {
+      "index": 17,
+      "seed": 202609213017,
+      "score": 0.5442824374262658,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "3178e9819dfc9ca36c827aedb298b40082e188612a946deb143866a69f53c0d8",
+      "reason": "Appealing mature adult with coherent head, hair and clerical tab; one light iris and soft rendering remain plausible photographic variation."
+    },
+    {
+      "index": 18,
+      "seed": 202609213018,
+      "score": 0.1240827381761638,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "64d9840c7a4b49eb07b1b50a4a334c275f455aa461139862de073fdd8da2d7cb",
+      "reason": "Large architectural beam fuses across forehead and obscures one eye; flat cap-like upper head and impossible scene geometry fail whole-portrait realism."
+    },
+    {
+      "index": 19,
+      "seed": 202609213019,
+      "score": 0.27112238212586776,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "ad9e5c8dc46e6673f0aead3b45d22b34e578f315d9e498ce73b27ef607875710",
+      "reason": "Viewer-left eye has a large white malformed region instead of a coherent iris/pupil; youthful face also leaves adult age uncertain, so appeal not rated."
+    },
+    {
+      "index": 20,
+      "seed": 202609213020,
+      "score": 0.6377408086107501,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "493731a7706f7cb47d6d37c41935581249a0348950ffb543bd8b7f5773bad378",
+      "reason": "Appealing mature adult with gray swept hair, coherent gaze and clear clerical tab; soft photographic rendering is acceptable."
+    },
+    {
+      "index": 21,
+      "seed": 202609213021,
+      "score": 0.052778020488590024,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "f4d2e02180cbf5b6c4044bd8106bd9ce40f9e00b1155c8405d17efaa2191afaa",
+      "reason": "Architecture replaces much of the upper head and crosses the face; extra partial face appears at right edge. Major whole-portrait failure."
+    },
+    {
+      "index": 22,
+      "seed": 202609213022,
+      "score": null,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": "RuntimeError: No detected face; no restoration fallback permitted",
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "82181e30feef9cacd1ad43d55883f73ecff2e7e134df4f27c1c7d148ca271cd4",
+      "reason": "Restoration failed with no detected face; no final restored image to inspect. Retained as a rejection in attempted denominator."
+    },
+    {
+      "index": 23,
+      "seed": 202609213023,
+      "score": 0.7662979857107532,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "d079b29039abcf9a3cba1b12ddd5f791c14024f847ab5a983dca54cb39f1aef6",
+      "reason": "Appealing mature bearded adult with gray hair, coherent eyes and collar; soft background does not intrude into head."
+    },
+    {
+      "index": 24,
+      "seed": 202609213024,
+      "score": 0.9543128840593078,
+      "accepted": true,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "a9fcda03e3818900e9c13bc16716363845fb869a09290f4b261135036545a004",
+      "reason": "Appealing adult with coherent curls, beard, gaze and clerical tab; no major whole-portrait artifact."
+    },
+    {
+      "index": 25,
+      "seed": 202609213025,
+      "score": 0.32240629203598103,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "530dc3d4ecb4a5eb1a06bcfa9fbea3481314f2ef4cc6d1e69feee5a3f5c388f1",
+      "reason": "Appealing mature adult with coherent eyes, gray side-parted hair and collar; background is blurred but separate from head."
+    },
+    {
+      "index": 26,
+      "seed": 202609213026,
+      "score": 0.8641562707786513,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "2acd747b1390cf8a39f05e5ae736f5cfd378a80e29434c586184213240c472fe",
+      "reason": "Appealing adult with stubble, intact short hair, coherent gaze and clerical tab; mild softness is photograph-like."
+    },
+    {
+      "index": 27,
+      "seed": 202609213027,
+      "score": 0.5925082133529774,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "e378dbb99cdc95e0361f6015865d8a054a4bab3c82e0ebcb61dfba2a579a3379",
+      "reason": "Appealing adult with coherent smile, teeth, eyes and clear collar; head remains distinct from background."
+    },
+    {
+      "index": 28,
+      "seed": 202609213028,
+      "score": 0.7032116389947211,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "7211facd05d7bc7c8f4bf15835826aa63e97a8497d648b9bde020eb7ed25c06f",
+      "reason": "Appealing bearded adult with coherent eyes, swept hair and collar; no major whole-portrait artifact."
+    },
+    {
+      "index": 29,
+      "seed": 202609213029,
+      "score": 0.25430036784547067,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "6a42b57454810708f3b0813a0d1563a5cb8eb2d7159e1d7e140fdff5d3924200",
+      "reason": "Appealing adult with coherent beard, short curls and collar; slightly strong eye outline remains plausible and is tolerated."
+    },
+    {
+      "index": 30,
+      "seed": 202609213030,
+      "score": 0.6729302250978673,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "2fc3f2e65198dc19e3fc890aa003d630cab2dbd7f0badaf3f649757d8e2dfbbd",
+      "reason": "Appealing mature adult with coherent gaze, tousled hair and clerical tab; soft architectural background stays behind subject."
+    },
+    {
+      "index": 31,
+      "seed": 202609213031,
+      "score": 0.590761474802819,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_b",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-016-031.json",
+      "record_sha256": "4f2ace0d2a12470ece68be5b7e1feed0505343474b578cf877d67487eb7352ea",
+      "reason": "Appealing adult with coherent short hair, face, gaze and clerical tab; no major whole-portrait artifact."
+    },
+    {
+      "index": 32,
+      "seed": 202609213032,
+      "score": 0.4966101739740071,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "abd28e6763f15e10145a71e840b8dfbed9618d4a3f98d97d4cae1d23073d99d4",
+      "reason": "Appealing mature adult with coherent face, swept graying hair and clerical tab; soft architectural background remains separate."
+    },
+    {
+      "index": 33,
+      "seed": 202609213033,
+      "score": null,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": "RuntimeError: No detected face; no restoration fallback permitted",
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "bc7b3ba8e50bff43aa1cb2e518ca88dd10621b8f07e3754fb7c29b6b2ab51ca2",
+      "reason": "Restoration failed with no detected face; retained as a reject in the attempted denominator."
+    },
+    {
+      "index": 34,
+      "seed": 202609213034,
+      "score": 0.36550050975134546,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "892542f108311d6a10d4c2741ea08050e74b3ec914f4fd4d8662afa7d837ac10",
+      "reason": "Appealing mature adult with coherent stubble, short gray hair and collar; strong eye highlight is tolerated with iris structure still discernible."
+    },
+    {
+      "index": 35,
+      "seed": 202609213035,
+      "score": 0.8454363506941194,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "735be775ea6b3cc353bfce24638217136e4d3dab86c02ff56d04f9c4e75a7018",
+      "reason": "Appealing mature adult with coherent eyes, smile and collar; soft background sculptural forms remain separate from the portrait."
+    },
+    {
+      "index": 36,
+      "seed": 202609213036,
+      "score": 0.8475707224398163,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "55c4f9647943db5b37e02e726a64aa2c8be081403288941298973951a4968194",
+      "reason": "Appealing adult with coherent face and collar; conspicuous eye reflections and modest skin smoothing remain within reasonable photographic quality."
+    },
+    {
+      "index": 37,
+      "seed": 202609213037,
+      "score": 0.6451599496844282,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "01eec4c094dfde71024773e6e39c795dea0e4745312d8418f8e9005efe8f81aa",
+      "reason": "Appealing bearded adult with coherent sideward gaze, hair and clerical tab; minor moustache softness is tolerable."
+    },
+    {
+      "index": 38,
+      "seed": 202609213038,
+      "score": 0.38929480456221677,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "e26989608b712baddb703142f87354ad8c57767d0fddac8771e7c472e8c2a8f4",
+      "reason": "Clearly adult, but the image-right eye is conspicuously enlarged and rounded with a divergent gaze, making the face visibly incoherent."
+    },
+    {
+      "index": 39,
+      "seed": 202609213039,
+      "score": 0.497274887059323,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "b43939495584ebd9c46aa91400c97f9c90e88a0919f0b0671597ac4d921ecad9",
+      "reason": "Youthful smooth face leaves adult age uncertain; excluded from the clearly adult set without rating appeal."
+    },
+    {
+      "index": 40,
+      "seed": 202609213040,
+      "score": 0.6615716931570143,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "17021acb6c55e5f190615e2678abf40a75ef03ccfd16f6d80e774817d23b4c94",
+      "reason": "Appealing mature adult with coherent short hair, facial hair and clerical tab; bright eye reflections retain identifiable pupil structure."
+    },
+    {
+      "index": 41,
+      "seed": 202609213041,
+      "score": 0.6191953695706215,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "08814743da225dd3a4c660fa1e96e54a565a0083a774a3adf58725c80894ce9f",
+      "reason": "Appealing mature adult with gray curls and beard, coherent eyes and intact clerical collar; no major portrait artifact."
+    },
+    {
+      "index": 42,
+      "seed": 202609213042,
+      "score": 0.8743641108165566,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "41c9438f9b5c36a7128c2c99e0068767f56c594c841d99c7438d460962708bf3",
+      "reason": "Adult face is plausible, but architectural fragments visibly overlap and merge into both shoulders and the clothing, especially the image-right chest."
+    },
+    {
+      "index": 43,
+      "seed": 202609213043,
+      "score": 0.8523979351159862,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "59fa967fbe7142fde76ce9edcb5a8271685199c82005d56509e099dc32a77f7b",
+      "reason": "Appealing bearded adult with coherent hair and collar; slightly asymmetric eye highlights and soft teeth remain tolerable at whole-portrait scale."
+    },
+    {
+      "index": 44,
+      "seed": 202609213044,
+      "score": 0.9139988662305651,
+      "accepted": true,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "243807e8f07cdd30366812665734e3abbf91dd7c5bfe0c964717b46f667fcbae",
+      "reason": "Appealing adult with coherent swept hair, eyes and clerical tab; facial smoothing does not break photographic appearance."
+    },
+    {
+      "index": 45,
+      "seed": 202609213045,
+      "score": 0.9562184693652073,
+      "accepted": true,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "ba0901c179b87e71e17785bec85e0ff53f76d8b21a5b926bb9a4a171b877f20a",
+      "reason": "Appealing adult with coherent stubble, gaze, swept hair and collar; head and shoulders remain separate from the background."
+    },
+    {
+      "index": 46,
+      "seed": 202609213046,
+      "score": 0.17009522581066788,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "4a7d859a5a32a3ec240fd10a26100a534aea7d2ec2ca61e011e00a4fcbc2289d",
+      "reason": "Adult portrait has severely washed-out, fragmented iris regions in both eyes; male presentation is also uncertain, so unsuitable for this set."
+    },
+    {
+      "index": 47,
+      "seed": 202609213047,
+      "score": 0.20241621326069914,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "review_test_c",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-032-047.json",
+      "record_sha256": "f3af37ce4696c6739904a7f5306c8a51344d496495a7a2a490cc0a89f59e183b",
+      "reason": "Adult portrait has washed-out, poorly defined irises and an unnatural upward gaze; male presentation is uncertain, so unsuitable for this set."
+    },
+    {
+      "index": 48,
+      "seed": 202609213048,
+      "score": 0.6945125956152974,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "d25816f8c40c4061ccf0c6cb30b32118d5891252cd90ffeb83630f21466bb802",
+      "reason": "Plausible adult male priest with coherent face, visible white collar and appealing portrait; modest smoothing/reflections accepted."
+    },
+    {
+      "index": 49,
+      "seed": 202609213049,
+      "score": 0.7258715820088295,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "635f593f65fb2d1cd84bc42d5559e8db63170f1a1ff05df3a78efafe536cd29f",
+      "reason": "Plausible adult male priest with coherent face, visible white collar and appealing portrait; modest smoothing/reflections accepted."
+    },
+    {
+      "index": 50,
+      "seed": 202609213050,
+      "score": 0.7773224094172544,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "efe88579cf2b4934acca443f753edaa1dfd7cf547456e623d1f1f132a0506830",
+      "reason": "Conspicuous pale blank patch over image-right iris."
+    },
+    {
+      "index": 51,
+      "seed": 202609213051,
+      "score": 0.9287202124966926,
+      "accepted": true,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "30cabdba6ca0bd8f03689545fe63ed34999a07be7fac9b2ed50567de537f7505",
+      "reason": "Image-right iris appears largely blank/white with no convincing pupil."
+    },
+    {
+      "index": 52,
+      "seed": 202609213052,
+      "score": 0.8488409207761325,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "abf68051efef1c5455ccdff4234101e1bd1ac477ffd421dc07aa207ca70ae19e",
+      "reason": "Plausible adult male priest with coherent face, visible white collar and appealing portrait; modest smoothing/reflections accepted."
+    },
+    {
+      "index": 53,
+      "seed": 202609213053,
+      "score": 0.7715760441661109,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "18134ead35289d8934bd7787a44f6a0de63d5a4c8fc4b7338a904092297c7a34",
+      "reason": "Youthful/uncertain adulthood, plus uneven eye rendering."
+    },
+    {
+      "index": 54,
+      "seed": 202609213054,
+      "score": 0.9389600739657199,
+      "accepted": true,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "ad20ec3dfe48fa5ac442d7b4073928e07f42c29bda67f6f94808ce64832e2231",
+      "reason": "Plausible adult male priest with coherent face, visible white collar and appealing portrait; modest smoothing/reflections accepted."
+    },
+    {
+      "index": 55,
+      "seed": 202609213055,
+      "score": 0.907455266073106,
+      "accepted": true,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "1b6c15231d9b0b111eedd8e2f891f6f8c52dc800ed1e94403c9486c9fc0e663c",
+      "reason": "Plausible adult male priest with coherent face, visible white collar and appealing portrait; modest smoothing/reflections accepted."
+    },
+    {
+      "index": 56,
+      "seed": 202609213056,
+      "score": 0.6750368403951844,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "d98e5f913a623ca028697e240603e5c486f5833c23103235acae2618870f4c21",
+      "reason": "Architecture cuts through right half of head and face."
+    },
+    {
+      "index": 57,
+      "seed": 202609213057,
+      "score": 0.9555412284066517,
+      "accepted": true,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "52aeb2b39e8ff7746ab976f719b67336e02666f5bdbd77915473294ae19c7ac8",
+      "reason": "Plausible adult male priest with coherent face, visible white collar and appealing portrait; modest smoothing/reflections accepted."
+    },
+    {
+      "index": 58,
+      "seed": 202609213058,
+      "score": 0.4523661104502405,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "b34ea8937cdb5a72b5f0615a57cf1c38d44ff778e7e9dbe6c0bc4c38f6cd4c64",
+      "reason": "Large pale reflection-like patches obscure iris structure unnaturally."
+    },
+    {
+      "index": 59,
+      "seed": 202609213059,
+      "score": 0.8143829364994702,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "1f1f4adf42b6c68d82eec66459b1f6b43eb56a9921df7db03bf46b34489d1d62",
+      "reason": "Plausible adult male priest with coherent face, visible white collar and appealing portrait; modest smoothing/reflections accepted."
+    },
+    {
+      "index": 60,
+      "seed": 202609213060,
+      "score": 0.3173799467833608,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "48c56d34b46c9abc6e5663eb62f2f7965223e559e8116aeabd7708243c6b99ae",
+      "reason": "Plausible adult male priest with coherent face, visible white collar and appealing portrait; modest smoothing/reflections accepted."
+    },
+    {
+      "index": 61,
+      "seed": 202609213061,
+      "score": 0.9770280998892468,
+      "accepted": true,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "ec6d33cee3ae527cc39291b06d5a9b325420c0c3536ac10d643c9eb1f067647b",
+      "reason": "Image-right iris lacks convincing pupil, markedly washed out against other eye."
+    },
+    {
+      "index": 62,
+      "seed": 202609213062,
+      "score": 0.274453449766179,
+      "accepted": false,
+      "manual_acceptable": false,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "1906e29342ab656a60fcb60a162b6f7def83f6e2197536c724ed853de5e2e9df",
+      "reason": "Image-left iris has large malformed pale band; reject eye defect."
+    },
+    {
+      "index": 63,
+      "seed": 202609213063,
+      "score": 0.8914369371248787,
+      "accepted": false,
+      "manual_acceptable": true,
+      "restoration_error": null,
+      "reviewer": "root",
+      "label_path": "research/restoration/runs/reference625-test64-v1/labels-048-063.json",
+      "record_sha256": "21c10ef279ad098a4862ed018df1f4aa9e1a529e1896be32f2b7a49a9a623f42",
+      "reason": "Plausible adult male priest with coherent face, visible white collar and appealing portrait; modest smoothing/reflections accepted."
+    }
+  ]
+}

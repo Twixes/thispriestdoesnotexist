@@ -1,0 +1,29 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/.venv/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+[transformers] `Siglip2ImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Siglip2ImageProcessor` instead.
+/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/.venv/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00, 17.19it/s]
+Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 26219.25it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 24.34it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.08s/it]100%|██████████| 1/1 [00:03<00:00,  3.08s/it]
+{"index": -1, "generation_seconds": 4.762424875050783, "encoding_seconds": 0.7631760420044884}
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 77.67it/s]
+{"index": 0, "generation_seconds": 0.23858666699379683, "encoding_seconds": 0.01518558303359896}
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 102.17it/s]
+{"index": 1, "generation_seconds": 0.20789916603825986, "encoding_seconds": 0.014213833026587963}
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 110.20it/s]
+{"index": 2, "generation_seconds": 0.21023129194509238, "encoding_seconds": 0.011918458971194923}
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 114.18it/s]
+{"index": 3, "generation_seconds": 0.2057855000020936, "encoding_seconds": 0.011861457955092192}
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 103.40it/s]
+{"index": 4, "generation_seconds": 0.21182162500917912, "encoding_seconds": 0.012017750064842403}
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.81it/s]
+{"index": 5, "generation_seconds": 0.2088048750301823, "encoding_seconds": 0.013139958959072828}
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 109.62it/s]
+{"index": 6, "generation_seconds": 0.20952854200731963, "encoding_seconds": 0.014259416027925909}
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 115.53it/s]
+{"index": 7, "generation_seconds": 0.20759804197587073, "encoding_seconds": 0.013489750097505748}

@@ -1,0 +1,87 @@
+{
+  "index": 52,
+  "path": "research/runs/reference625-restoration-test64/052.png",
+  "sha256": "aebe6bd82b8353d0b4c53c5cf2cf3785e430fc746e194c12882b52f9ab22045a",
+  "raw_challenge_control": null,
+  "error": null,
+  "production_approved": false,
+  "quality_approved": false,
+  "detected_faces": 1,
+  "all_detected_boxes": [
+    [
+      67.92588806152344,
+      47.76978302001953,
+      173.73403930664062,
+      196.71463012695312,
+      0.9998931884765625
+    ]
+  ],
+  "chosen_detection_index": 0,
+  "landmarks": [
+    [
+      [
+        103.82972717285156,
+        102.21630096435547
+      ],
+      [
+        153.08053588867188,
+        108.87640380859375
+      ],
+      [
+        131.13389587402344,
+        135.90145874023438
+      ],
+      [
+        99.62635040283203,
+        154.05523681640625
+      ],
+      [
+        146.50112915039062,
+        159.747314453125
+      ]
+    ]
+  ],
+  "affine_matrices": [
+    [
+      [
+        2.4826591455867,
+        0.3006899075411875,
+        -95.11689582150228
+      ],
+      [
+        -0.3006899075411875,
+        2.4826591455867,
+        17.706166363252443
+      ]
+    ]
+  ],
+  "detect_align_seconds": 0.03871895803604275,
+  "restoration_seconds": 1.2208522920263931,
+  "inverse_affine_matrices": [
+    [
+      [
+        1.5878828506559626,
+        -0.19231812325052203,
+        156.43970436753548
+      ],
+      [
+        0.19231812325052203,
+        1.5878828506559626,
+        -7.822615025263264
+      ]
+    ]
+  ],
+  "paste_encode_seconds": 1.6941847080597654,
+  "total_seconds": 3.1839482079958543,
+  "peak_process_rss_bytes": 4301111296,
+  "outputs": {
+    "aligned-512.png": "92f1d790470fca5fc177a37f20668f2209824099549c6604d297e5c840f1f1cf",
+    "lanczos-1024.png": "9366a250c51dc3810d927db270d9872199c410d3f27888355113345faea88f6b",
+    "lanczos-1024.webp": "960826dfeb26feb0c19b6df94077b4fe3cadc82940ac1ab94b65311e37479fe2",
+    "raw.png": "aebe6bd82b8353d0b4c53c5cf2cf3785e430fc746e194c12882b52f9ab22045a",
+    "restored-1024-rgb.png": "c6723602202b6ae000ab90b9d9cff9d6cd6ab6e9c40f1548c154ecb977e8d10f",
+    "restored-1024.png": "1493458b823dbd144d9eb9e956c17404e490d08d5b2eb33bb0b75cfc2a88a673",
+    "restored-1024.webp": "f9cb850ca0547357d05b234fd84742f33e22e08ca70e747050921d51e68601c6",
+    "restored-512.png": "0592ba77b48bfbf5b787f175b3372882e66e38d60109819ce96145bda1898985"
+  }
+}

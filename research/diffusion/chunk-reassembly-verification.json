@@ -1,0 +1,34 @@
+[
+  {
+    "model": "sd-turbo",
+    "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+    "bytes": 1731904736,
+    "sha256": "40ec400881e27d1376c7c95c5bd495f407b33756e80eb6365e301c33a07af6e5",
+    "chunk_count": 2,
+    "passed": true
+  },
+  {
+    "model": "sdxl-inpaint",
+    "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+    "bytes": 5135178560,
+    "sha256": "6470840731e98cc16713ddf3ac7ee458c9fdbcb881a98c6727cd4a938f227d3f",
+    "chunk_count": 5,
+    "passed": true
+  },
+  {
+    "model": "sdxl-lightning-2step",
+    "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+    "bytes": 5135149736,
+    "sha256": "15a96a3b213b8b4d6ea720b4fa5bf6723cd877170bd1a90f58e34da2968ef854",
+    "chunk_count": 5,
+    "passed": true
+  },
+  {
+    "model": "sdxl-turbo",
+    "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+    "bytes": 5135149760,
+    "sha256": "48fa46161a745f48d4054df3fe13804ee255486bca893403b60373c188fd1bdb",
+    "chunk_count": 5,
+    "passed": true
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "index": 22,
+  "path": "research/runs/reference625-restoration-test64/022.png",
+  "sha256": "d81377559136def6b78aab0b541bcf2df4c96eca174e6e6ce609256a2e2a3bc5",
+  "raw_challenge_control": null,
+  "error": "RuntimeError: No detected face; no restoration fallback permitted",
+  "production_approved": false,
+  "quality_approved": false,
+  "detected_faces": 0,
+  "all_detected_boxes": [],
+  "total_seconds": 0.2277422919869423,
+  "peak_process_rss_bytes": 4266049536,
+  "outputs": {
+    "lanczos-1024.png": "54f31661374b21aa5c174b3e0576edb120fb29dbf6e3f7b92383d9bb07c8175d",
+    "lanczos-1024.webp": "ca49825f3314f93023a51f03ed6a075c373618a931072a6f6530d0f1b32215cb",
+    "raw.png": "d81377559136def6b78aab0b541bcf2df4c96eca174e6e6ce609256a2e2a3bc5"
+  }
+}

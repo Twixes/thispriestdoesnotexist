@@ -1,0 +1,90 @@
+{
+  "reviewer": "localized_student native 1024px image review",
+  "scope": "All ten oracle PNGs viewed individually at native resolution after 1600x700 contact; no learned model inference",
+  "production_approved": false,
+  "training_gate_passed": false,
+  "decision": "Only two of six declared training pairs judged sufficient for exploratory reconstruction, below predeclared minimum four. Do not start editor training on this supervision. No model/trainer implemented.",
+  "mask_semantics": "Existing masks were approved as loss support, not production hard composites. Exact protected-pixel copying is numerically satisfied but boundary plausibility fails.",
+  "new_user_constraints": "Below 500ms server generation; GPU hosting now allowed. No latency claim established.",
+  "train_exploratory_ids": [
+    "030",
+    "b2-051"
+  ],
+  "heldout_exploratory_ids": [
+    "b2-058"
+  ],
+  "records": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "oracle_sha256": "8d5f0ec50450678f762f0dbd1e776d61dd088f517b67918fbd7ed812c562dd8e",
+      "classification": "reject",
+      "notes": "Clearly polygonal jaw-to-shirt boundary; flat cutout lower-left neck edge and shoulder/background triangle. Clothing/tab itself recognizable."
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "oracle_sha256": "734eba1f216d0bd9e3e8800cc2fc5646e1c26c861bdfb602f64bf26093ca65cd",
+      "classification": "reject",
+      "notes": "Very flat cutout chin boundary and shoulder/ear discontinuities; copied face appears pasted onto higher priest collar."
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "oracle_sha256": "e5f5e7c4af00515c777bd80ddd6ee161c955a46ad50049dd13638537682395c5",
+      "classification": "exploratory_only",
+      "notes": "Fairly plausible black shirt/collar fit and chin transition. Small jagged boundary near right neck; unrelated extra person is in source and remains. Not a final hot-priest eligibility pass."
+    },
+    {
+      "id": "028",
+      "split": "heldout",
+      "oracle_sha256": "0ecd5c758a6f20c380793d7ed61141dc34141f075084e0630e74e0c1a7d2e825",
+      "classification": "reject",
+      "notes": "Obvious flat/swept cutout beard base against black collar; narrow gray skin/background strip follows mask edge."
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "oracle_sha256": "39f6da1cb47eab3d0b0fdd5ff1a71322254c87e8ff3119b0695b32bcf19cc906",
+      "classification": "reject",
+      "notes": "Large polygonal background discontinuities on both shoulders behind face; neckline boundary is also cutout. Recognizable teacher tab does not fix geometry mismatch."
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "oracle_sha256": "408e143dc18f227944307c8712a096ffc5dd0aabaef05bab6525c6186946d464",
+      "classification": "exploratory_only",
+      "notes": "Best of training set: plausible mostly dark neck transition and recognizable tab. Small shoulder silhouette step remains, so research-fitting candidate only."
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "oracle_sha256": "0b2b80f4bf06386ce4b4a84d70886c013a4896940eceacb7e50c9d769372852e",
+      "classification": "reject",
+      "notes": "Large polygonal seam at left shoulder/background; doubled gray strip at jaw edge and clipped tab. Mask reaches y397, above proposed bottom-half crop."
+    },
+    {
+      "id": "b2-042",
+      "split": "heldout",
+      "oracle_sha256": "b06e8531ffd20dec505d8006cee74764c59762feefc5bfe2ab4463db95bbbc71",
+      "classification": "reject",
+      "notes": "Angular cheek/chin-to-shirt contour, shoulder wedge containing inconsistent background. Tab partially visible but seam not photographic."
+    },
+    {
+      "id": "b2-058",
+      "split": "heldout",
+      "oracle_sha256": "022914ac0344876c6a32a10a03d6bd33a7878fb80d3da58ded1964550448d180",
+      "classification": "exploratory_only",
+      "notes": "Best heldout seam: source chin meets plausible black collar with small bright boundary near chin; viable garment fitting diagnostic, not source hotness approval."
+    },
+    {
+      "id": "b2-059",
+      "split": "heldout",
+      "oracle_sha256": "b59fa30912fd78b8bb9f30a51b51a008ae09a3a64b1c2bb7ca316bf5ba3b3f8d",
+      "classification": "reject",
+      "notes": "Right shoulder/background narrow duplicate silhouette and angular lower-left chin boundary; preserved face detail does not remove compositing defect."
+    }
+  ],
+  "manifest_sha256": "bb79eb9ef520158d25a456fd89a9e34962213863145c06f70f4e8022508b006d",
+  "prepare_sha256": "2a3ef09d007c7d7b3153786a9c9c2c65ca003147a54c2917a1d9a754ba70e0fb"
+}

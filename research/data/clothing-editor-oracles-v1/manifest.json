@@ -1,0 +1,512 @@
+{
+  "schema": 1,
+  "source_manifest": "research/data/paired10/manifest-proposed.json",
+  "source_manifest_sha256": "8d0660f1ccf5115a356e9e6b479e4d225c1e9993402fc71575b0fcb9ed8dcff1",
+  "purpose": "Oracle-mask clothing compositor diagnostic; no learned inference, no production approval",
+  "train_ids": [
+    "calibration-original",
+    "000",
+    "030",
+    "b2-055",
+    "b2-051",
+    "b2-020"
+  ],
+  "heldout_ids": [
+    "028",
+    "b2-042",
+    "b2-058",
+    "b2-059"
+  ],
+  "records": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "source_files": {
+        "source_path": {
+          "path": "research/data/ffhq-paired-sources32/images/reproduction-sample002.png",
+          "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+        },
+        "target_path": {
+          "path": "research/data/ffhq-clothing-edit1/001.png",
+          "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+        },
+        "latent_path": {
+          "path": "research/data/ffhq-paired-sources32/latents/reproduction-sample002.npz",
+          "sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9"
+        }
+      },
+      "files": {
+        "source": {
+          "path": "research/data/clothing-editor-oracles-v1/calibration-original/source.png",
+          "sha256": "c920e964b66c1ff9c9aa84c7bed77d11a309410f530a13ae30ecb90da13a0eef"
+        },
+        "target": {
+          "path": "research/data/clothing-editor-oracles-v1/calibration-original/target.png",
+          "sha256": "b51435494c7be7891f0eee0105ee121e76fa08cc074239e88d191c5b6cec145d"
+        },
+        "oracle": {
+          "path": "research/data/clothing-editor-oracles-v1/calibration-original/oracle.png",
+          "sha256": "8d5f0ec50450678f762f0dbd1e776d61dd088f517b67918fbd7ed812c562dd8e"
+        },
+        "mask": {
+          "path": "research/data/clothing-editor-oracles-v1/calibration-original/mask.png",
+          "sha256": "bcf4c8eb437d7d6aa092e2caa237d0ab0dd82cadc5f9b59bd2c61d44009483a7"
+        },
+        "tab": {
+          "path": "research/data/clothing-editor-oracles-v1/calibration-original/tab.png",
+          "sha256": "ae3c0bb6e9be1e4f248af7b779c442a003479423542d2aa0ec6e2f81cbf43e57"
+        }
+      },
+      "allowed_pixels": 141212,
+      "tab_pixels": 7198,
+      "allowed_bbox": [
+        0,
+        703,
+        1024,
+        1024
+      ],
+      "protected_exact": true
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "source_files": {
+        "source_path": {
+          "path": "research/data/ffhq-paired-sources32/images/000.png",
+          "sha256": "64f6368f73a25e21c6d8ae22c90a6c5095ab986d204c9acf26aa22f6050d4548"
+        },
+        "target_path": {
+          "path": "research/data/ffhq-clothing-edits3/000.png",
+          "sha256": "802ce72546efaa10c1cdbcbf7d4779b86c7e40c72ac4801d680ed6508c2551c6"
+        },
+        "latent_path": {
+          "path": "research/data/ffhq-paired-sources32/latents/000.npz",
+          "sha256": "40978912da666c81c646643e681fec554e4771fe69c558359ee28cb6ae751572"
+        }
+      },
+      "files": {
+        "source": {
+          "path": "research/data/clothing-editor-oracles-v1/000/source.png",
+          "sha256": "e2612455bde455cfcb4109a68fd5a0c97c19679f4f1b23c059080d7ff092f398"
+        },
+        "target": {
+          "path": "research/data/clothing-editor-oracles-v1/000/target.png",
+          "sha256": "2ba663f9918efa4a7a4f8c8a5b7b09b8a55ee4a2564fc6a4914930e91dc9573b"
+        },
+        "oracle": {
+          "path": "research/data/clothing-editor-oracles-v1/000/oracle.png",
+          "sha256": "734eba1f216d0bd9e3e8800cc2fc5646e1c26c861bdfb602f64bf26093ca65cd"
+        },
+        "mask": {
+          "path": "research/data/clothing-editor-oracles-v1/000/mask.png",
+          "sha256": "01edb1516a3e0e94fac0b6c5d57a6a1c27de60a1e0cc9921eb582b145b393d17"
+        },
+        "tab": {
+          "path": "research/data/clothing-editor-oracles-v1/000/tab.png",
+          "sha256": "355441c11cfcd5981114873687f816fe2ce7fe7274322b99f1f5c55f7b224fa7"
+        }
+      },
+      "allowed_pixels": 121997,
+      "tab_pixels": 4248,
+      "allowed_bbox": [
+        0,
+        708,
+        1024,
+        1024
+      ],
+      "protected_exact": true
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "source_files": {
+        "source_path": {
+          "path": "research/data/ffhq-paired-sources32/images/030.png",
+          "sha256": "9b3e097dd62f65b98156099a98682cf1d7840a56e223f75ae67a2984e39e12f8"
+        },
+        "target_path": {
+          "path": "research/data/ffhq-clothing-edits3/030.png",
+          "sha256": "29fdc4ccd182d3986cba59b5df625cc5cf9feb4b09ca6898e18869a6f765f513"
+        },
+        "latent_path": {
+          "path": "research/data/ffhq-paired-sources32/latents/030.npz",
+          "sha256": "0b696035e53809458d988e45abdcfc4e1afb4cdc712f687bc72c3b1f9b4d5e59"
+        }
+      },
+      "files": {
+        "source": {
+          "path": "research/data/clothing-editor-oracles-v1/030/source.png",
+          "sha256": "9cb8db5fc2ebabe7428e70faef88dd4ef0bbdaceec7dac8fd73f89472a752a27"
+        },
+        "target": {
+          "path": "research/data/clothing-editor-oracles-v1/030/target.png",
+          "sha256": "86777d0ce4dab50fa471bd4ce7f6b610de1b14dd326f43cc1b91716177710282"
+        },
+        "oracle": {
+          "path": "research/data/clothing-editor-oracles-v1/030/oracle.png",
+          "sha256": "e5f5e7c4af00515c777bd80ddd6ee161c955a46ad50049dd13638537682395c5"
+        },
+        "mask": {
+          "path": "research/data/clothing-editor-oracles-v1/030/mask.png",
+          "sha256": "ba17188b8fe4c4d7fb9df51ed03c202083554bc2c57774d70dad7ab924abf094"
+        },
+        "tab": {
+          "path": "research/data/clothing-editor-oracles-v1/030/tab.png",
+          "sha256": "d9f3ac7daa4325921f2d881f765c1fad1c6a396c5cafbed3c4e3cf209e18eb18"
+        }
+      },
+      "allowed_pixels": 64975,
+      "tab_pixels": 4204,
+      "allowed_bbox": [
+        164,
+        825,
+        1024,
+        1024
+      ],
+      "protected_exact": true
+    },
+    {
+      "id": "028",
+      "split": "heldout",
+      "source_files": {
+        "source_path": {
+          "path": "research/data/ffhq-paired-sources32/images/028.png",
+          "sha256": "eb246b66e7fd614935b677c1ca26b9f5da574fa7f1deda5c096c760d9f71d5d2"
+        },
+        "target_path": {
+          "path": "research/data/ffhq-clothing-edits3/028.png",
+          "sha256": "338bc64f196a24f40e9a7a513b0e497aa354f6a364d458c7d85ad2c822f5d8a2"
+        },
+        "latent_path": {
+          "path": "research/data/ffhq-paired-sources32/latents/028.npz",
+          "sha256": "dbd37130b8c58a35f8b7802ae909ce2fbdaa0964ee02e23cabb574e690d50933"
+        }
+      },
+      "files": {
+        "source": {
+          "path": "research/data/clothing-editor-oracles-v1/028/source.png",
+          "sha256": "221e0618c0f5ec9c9c452564d54e27378839d90706b6384fb0b9a7f0720449ad"
+        },
+        "target": {
+          "path": "research/data/clothing-editor-oracles-v1/028/target.png",
+          "sha256": "0c1b3ab94da65a35bcee89fc41dd3f5f0adfd40256fb838c3f191f289f23d265"
+        },
+        "oracle": {
+          "path": "research/data/clothing-editor-oracles-v1/028/oracle.png",
+          "sha256": "0ecd5c758a6f20c380793d7ed61141dc34141f075084e0630e74e0c1a7d2e825"
+        },
+        "mask": {
+          "path": "research/data/clothing-editor-oracles-v1/028/mask.png",
+          "sha256": "8dc8e7e9152c46072a75b99e229569ecfd4fe661677356c54253577e42980905"
+        },
+        "tab": {
+          "path": "research/data/clothing-editor-oracles-v1/028/tab.png",
+          "sha256": "0f4b1668d119f77ceb6b86645573f088ab2341d7b284314d5df0be7226ea5d91"
+        }
+      },
+      "allowed_pixels": 49859,
+      "tab_pixels": 0,
+      "allowed_bbox": [
+        0,
+        858,
+        1024,
+        1024
+      ],
+      "protected_exact": true
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "source_files": {
+        "source_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/images/055.png",
+          "sha256": "6840845f45473f8a0f4be4950ad65b4957a4ce9314d007ffc4ff561a15e607b2"
+        },
+        "target_path": {
+          "path": "research/data/ffhq-clothing-edits-b2/055.png",
+          "sha256": "596309dbe97cc0da9b5387411c3113de29ec7e7a360629aa9c59efd9a79177ad"
+        },
+        "latent_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/latents/055.npz",
+          "sha256": "46e8d2212064619855775974395992936a086b19aeef542ccf0fb289acbe9459"
+        }
+      },
+      "files": {
+        "source": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-055/source.png",
+          "sha256": "4db5de46f24c33a18d2f54ba38cb561df1a83928883e12b6a05b40e77ae21534"
+        },
+        "target": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-055/target.png",
+          "sha256": "7d73acfa70e97fcf59897eff71d0babecd13827b8b1ff3b7a7fb390651049544"
+        },
+        "oracle": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-055/oracle.png",
+          "sha256": "39f6da1cb47eab3d0b0fdd5ff1a71322254c87e8ff3119b0695b32bcf19cc906"
+        },
+        "mask": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-055/mask.png",
+          "sha256": "e25c3ab3ec7c5339b1a7bd64266d838f627ac2199da4e43f65455def7b28c733"
+        },
+        "tab": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-055/tab.png",
+          "sha256": "6c74877c1a4c6bc54ce618d9b1a0a34d42934961dbe0a4ac4ad900edaf94399c"
+        }
+      },
+      "allowed_pixels": 267793,
+      "tab_pixels": 6248,
+      "allowed_bbox": [
+        0,
+        563,
+        1024,
+        1024
+      ],
+      "protected_exact": true
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "source_files": {
+        "source_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/images/051.png",
+          "sha256": "23af87180b4c694a1d572041c922537ecdd8ab0c5201872bdc98751d063012d8"
+        },
+        "target_path": {
+          "path": "research/data/ffhq-clothing-edits-b2/051.png",
+          "sha256": "2b18b2cda36e6128856978ac570837923082a70dff8c02bf92b72710663329b7"
+        },
+        "latent_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/latents/051.npz",
+          "sha256": "9aedebdadc19fc9685b5b89030c5c1cbd22151993157b073a68655ff47af65a7"
+        }
+      },
+      "files": {
+        "source": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-051/source.png",
+          "sha256": "61d1cf702976051605b64314784dbcbce7a5e4718c1f321560973c019fa382ef"
+        },
+        "target": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-051/target.png",
+          "sha256": "50efa112f00b147581ee7cb86dbd9faea2e5635455ebb95504fa0168f9a89f67"
+        },
+        "oracle": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-051/oracle.png",
+          "sha256": "408e143dc18f227944307c8712a096ffc5dd0aabaef05bab6525c6186946d464"
+        },
+        "mask": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-051/mask.png",
+          "sha256": "131717005a187867e1ba8f5cef3d615620b5327e78579415c34a3d3bde8ed69b"
+        },
+        "tab": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-051/tab.png",
+          "sha256": "66a1b06e7c299567d3a92cd3003098660848ba83d9620656b61ff09e1affc064"
+        }
+      },
+      "allowed_pixels": 90269,
+      "tab_pixels": 4924,
+      "allowed_bbox": [
+        0,
+        763,
+        1024,
+        1024
+      ],
+      "protected_exact": true
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "source_files": {
+        "source_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/images/020.png",
+          "sha256": "ab9ccd0bd1d65dac07d8616723f219db306d77e44e5d2a314bcf83bf0fce3ccd"
+        },
+        "target_path": {
+          "path": "research/data/ffhq-clothing-edits-b2/020.png",
+          "sha256": "24049cb2689461bbffffe40c9603aca036547a87e25ed32e29c4432c517387c8"
+        },
+        "latent_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/latents/020.npz",
+          "sha256": "02dc78bb0d0cb8f576461841b7371907d12b8dc840f8d1b6cbd780aa99099a99"
+        }
+      },
+      "files": {
+        "source": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-020/source.png",
+          "sha256": "576edb48df611949c7333998a9121aa65f7299219d7920d169380b06bf9c0a00"
+        },
+        "target": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-020/target.png",
+          "sha256": "6b5574fd63362e64451fea65f25a7e3abe4761a28c4eb188e0c294cd3ed407a0"
+        },
+        "oracle": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-020/oracle.png",
+          "sha256": "0b2b80f4bf06386ce4b4a84d70886c013a4896940eceacb7e50c9d769372852e"
+        },
+        "mask": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-020/mask.png",
+          "sha256": "761f76330c91bff9f283717c6b7b7115db1de7dc57f3d2fc8ef930c2131b2480"
+        },
+        "tab": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-020/tab.png",
+          "sha256": "d68b8db2e03a297bd1b60fafd98912f5dc37e55d94eb1aa5460e15227e3a1087"
+        }
+      },
+      "allowed_pixels": 314638,
+      "tab_pixels": 1790,
+      "allowed_bbox": [
+        0,
+        397,
+        1024,
+        1024
+      ],
+      "protected_exact": true
+    },
+    {
+      "id": "b2-042",
+      "split": "heldout",
+      "source_files": {
+        "source_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/images/042.png",
+          "sha256": "9e0f4fa636f8af16ca2dc1d981e05574db511eb7affd02e1336bd68658a024a3"
+        },
+        "target_path": {
+          "path": "research/data/ffhq-clothing-edits-b3/042.png",
+          "sha256": "3912b6e9f0e2632126c5bfd4a9e1930fc354949c171d1023385e3ea981d9b4ed"
+        },
+        "latent_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/latents/042.npz",
+          "sha256": "31a557b69802210cb8a6aa13a544eb36c3d7397a3b86ff2f606e6c5a68651379"
+        }
+      },
+      "files": {
+        "source": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-042/source.png",
+          "sha256": "a01293e282e422f48cf7041112ba6d6aae495e59b38e7866d1a76919ef601d7b"
+        },
+        "target": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-042/target.png",
+          "sha256": "f884f42850eb719fb77868003e8792e18c537f0f8b39fb9d0ff105f52bf7a921"
+        },
+        "oracle": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-042/oracle.png",
+          "sha256": "b06e8531ffd20dec505d8006cee74764c59762feefc5bfe2ab4463db95bbbc71"
+        },
+        "mask": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-042/mask.png",
+          "sha256": "1e68cbd6600b632b58580eaa621a27090594058fa736c5e0f644820f939fad14"
+        },
+        "tab": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-042/tab.png",
+          "sha256": "da7fd7f5f238145b94c6dfb68bc297786b4a33c4170c9a4408f255737197e0dd"
+        }
+      },
+      "allowed_pixels": 44928,
+      "tab_pixels": 2016,
+      "allowed_bbox": [
+        0,
+        853,
+        638,
+        1024
+      ],
+      "protected_exact": true
+    },
+    {
+      "id": "b2-058",
+      "split": "heldout",
+      "source_files": {
+        "source_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/images/058.png",
+          "sha256": "68eba0b90abafc0f3e762081e0da4d9d901f6b4f100cd759f673c64e3672c4eb"
+        },
+        "target_path": {
+          "path": "research/data/ffhq-clothing-edits-b3/058.png",
+          "sha256": "c30e362bb2f837224adde21f55c77c1d91ba7bb49c0450c1cfaf3aa05b768e97"
+        },
+        "latent_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/latents/058.npz",
+          "sha256": "ef783ae9c62de3a9b37171bf76f1e5bc19ec5003320d68ecd0102cd3564522f7"
+        }
+      },
+      "files": {
+        "source": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-058/source.png",
+          "sha256": "9e6adf84244853391f925ab7b5906165244dadf4a45403388b37bfd1aed537d5"
+        },
+        "target": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-058/target.png",
+          "sha256": "a0ab65ba31817a728fa0aa99606a240a6216c7fed5fabf5b2f19882deb7a1ec9"
+        },
+        "oracle": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-058/oracle.png",
+          "sha256": "022914ac0344876c6a32a10a03d6bd33a7878fb80d3da58ded1964550448d180"
+        },
+        "mask": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-058/mask.png",
+          "sha256": "89a3a8e9c04fb96a4a57a5bdb04f277cdbbfbdd12baaecf5c37e70e77b417b51"
+        },
+        "tab": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-058/tab.png",
+          "sha256": "b140f42518b3929c1e7ed0bef5590dac92e93712748f7345e4de1ac49f899c5c"
+        }
+      },
+      "allowed_pixels": 130594,
+      "tab_pixels": 4787,
+      "allowed_bbox": [
+        143,
+        665,
+        1024,
+        1024
+      ],
+      "protected_exact": true
+    },
+    {
+      "id": "b2-059",
+      "split": "heldout",
+      "source_files": {
+        "source_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/images/059.png",
+          "sha256": "445390bde78c5067d8442906605f01f642d75463a74c365757a11e34ce9560fe"
+        },
+        "target_path": {
+          "path": "research/data/ffhq-clothing-edits-b3/059.png",
+          "sha256": "93c8609b1188c5808f8799efca69b5682b702db98e57042df97d16b2c46039e0"
+        },
+        "latent_path": {
+          "path": "research/data/ffhq-paired-sources64-b2/latents/059.npz",
+          "sha256": "f1b0fc7ad4d625a871720633a08cc166c881be13cc0d59d50ab31849eeaa8380"
+        }
+      },
+      "files": {
+        "source": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-059/source.png",
+          "sha256": "80cae1b7707987c098836533a0fd96d5db56d21c66c8e9e063856b3d917eef32"
+        },
+        "target": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-059/target.png",
+          "sha256": "ce5d08ea70153e18bdf8fa020a4c904dd22fc6969cd1f35627318469479fbd8e"
+        },
+        "oracle": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-059/oracle.png",
+          "sha256": "b59fa30912fd78b8bb9f30a51b51a008ae09a3a64b1c2bb7ca316bf5ba3b3f8d"
+        },
+        "mask": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-059/mask.png",
+          "sha256": "5c13dc2a3bd5aca85c8f931fdb12c3ee74c02fda09083e6838f90572588e1359"
+        },
+        "tab": {
+          "path": "research/data/clothing-editor-oracles-v1/b2-059/tab.png",
+          "sha256": "bf6e11d2d151e0e8eb87e2c94ed409de3b1f853eeb6dbce5e9425c126110c77b"
+        }
+      },
+      "allowed_pixels": 81328,
+      "tab_pixels": 4262,
+      "allowed_bbox": [
+        0,
+        824,
+        810,
+        1024
+      ],
+      "protected_exact": true
+    }
+  ]
+}

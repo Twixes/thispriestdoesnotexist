@@ -1,0 +1,171 @@
+{
+  "date": "2026-09-21",
+  "scope": "Official pretrained face GAN candidate/source compatibility review; one official alternative download, no execution",
+  "candidates": [
+    {
+      "id": "stylegan2-original-ffhq1024",
+      "architecture": "StyleGAN2",
+      "resolution": 1024,
+      "role": "existing easiest adaptation baseline",
+      "local_path": "research/models/ffhq1024.pkl",
+      "official_url": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl",
+      "sha256": "a205a346e86a9ddaae702e118097d014b7b8bd719491396a162cca438f2f524c",
+      "native_sample_review_this_task": false,
+      "sub500ms_server_generation_verified": false,
+      "production_approved": false,
+      "local_bytes": 381624121
+    },
+    {
+      "id": "stylegan3-t-ffhq1024",
+      "architecture": "StyleGAN3-T",
+      "resolution": 1024,
+      "role": "downloaded alternative for next bounded comparison",
+      "official_url": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/stylegan3-t-ffhq-1024x1024.pkl",
+      "local_path": "research/models/stylegan3-t-ffhq1024/stylegan3-t-ffhq-1024x1024.pkl",
+      "sha256": "efd9fa1f967a11b5390399a8ed512dc32e341c245fa2d4dafa6d94e96222085b",
+      "source_commit": "c233a919a6faee6e36a316ddd4eddababad1adf9",
+      "native_sample_review_this_task": false,
+      "sub500ms_server_generation_verified": false,
+      "production_approved": false,
+      "local_bytes": 294775112
+    },
+    {
+      "id": "stylegan3-r-ffhqu1024",
+      "architecture": "StyleGAN3-R",
+      "resolution": 1024,
+      "role": "pose variation candidate; not downloaded",
+      "official_url": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/stylegan3-r-ffhqu-1024x1024.pkl",
+      "native_sample_review_this_task": false,
+      "sub500ms_server_generation_verified": false,
+      "production_approved": false
+    },
+    {
+      "id": "stylegan-xl-ffhq512",
+      "architecture": "StyleGAN-XL",
+      "resolution": 512,
+      "role": "third architecture; not downloaded",
+      "official_url": "https://s3.eu-central-1.amazonaws.com/avg-projects/stylegan_xl/models/ffhq512.pkl",
+      "source_commit": "4241ff9cfeb69d617427107a75d69e9d1c2d92f2",
+      "native_sample_review_this_task": false,
+      "sub500ms_server_generation_verified": false,
+      "production_approved": false
+    },
+    {
+      "id": "stylegan-xl-ffhq1024",
+      "architecture": "StyleGAN-XL",
+      "resolution": 1024,
+      "role": "third architecture; not downloaded",
+      "official_url": "https://s3.eu-central-1.amazonaws.com/avg-projects/stylegan_xl/models/ffhq1024.pkl",
+      "source_commit": "4241ff9cfeb69d617427107a75d69e9d1c2d92f2",
+      "native_sample_review_this_task": false,
+      "sub500ms_server_generation_verified": false,
+      "production_approved": false
+    },
+    {
+      "id": "eg3d-ffhq512",
+      "architecture": "EG3D",
+      "resolution": 512,
+      "role": "lower priority: camera-conditioned 3D unnecessary for stills",
+      "official_listing": "https://github.com/NVlabs/eg3d/blob/7cf1fd1e99e1061e8b6ba850f91c94fe56e7afe4/README.md",
+      "source_commit": "7cf1fd1e99e1061e8b6ba850f91c94fe56e7afe4",
+      "download_not_attempted": true,
+      "native_sample_review_this_task": false,
+      "sub500ms_server_generation_verified": false,
+      "production_approved": false
+    },
+    {
+      "id": "stylegan2-celebahq256",
+      "architecture": "StyleGAN2",
+      "resolution": 256,
+      "role": "lower priority distinct dataset prior",
+      "official_url": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan2/versions/1/files/stylegan2-celebahq-256x256.pkl",
+      "native_sample_review_this_task": false,
+      "sub500ms_server_generation_verified": false,
+      "production_approved": false
+    }
+  ],
+  "recommended_comparison": [
+    "stylegan2-original-ffhq1024",
+    "stylegan3-t-ffhq1024"
+  ],
+  "huggingface_space_revision": "586431359b6a5363f94c10086435838972538c4a",
+  "huggingface_space_uses_official_ngc_weights": true,
+  "source_files": [
+    {
+      "path": "research/reviews/base-selection/gan-sources/download-availability.json",
+      "sha256": "c1e78db867b74ce25e02267fdd9cb3e4c0a61be17c103f36231a432927d3abe2"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/eg3d/LICENSE.txt",
+      "sha256": "c0739108b0582585e3c46e144dba73aed4bb674f030a47e2c7c23c891571b356"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/eg3d/README.md",
+      "sha256": "b31106ea3980364bb98e788b98a9cd2bc26381d190f8d3982814e6aa1fd43922"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/eg3d/docs/models.md",
+      "sha256": "fb97e81681150d3d65307c31443d5c6b8b0e65f98cb42f56c2195bfa5002d297"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/ffhq-dataset/README.md",
+      "sha256": "c12efdc2759654840c9b2f8fe1cd9a6716be218b831c27056e13e3ec5cd3d663"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/ffhq-dataset/download_ffhq.py",
+      "sha256": "07313017632ee48e90166d94db93839ad6a5e4c0ba10cbe0327bdad2063579f9"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/hf-stylegan3-search.json",
+      "sha256": "ab0bf918743252b44d02255582903d61b1bbda06063eed18a246dfed39949d19"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/huggan-app.py",
+      "sha256": "7b3cfdc560eca116e2716da16b7c018080823fd714d2f671b443811c255467d7"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/huggan-space.json",
+      "sha256": "ef73673536e815833a84bb7e16f7e12bb4640209f8748b50ea14d245695958cf"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/manifest.json",
+      "sha256": "5891efeb31c6ac4f9501a7e152b757bf6e54b9c062bfd27ffcfd9cf1df30e866"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/stylegan-xl/LICENSE.txt",
+      "sha256": "94886913a534d84b82e9af9b962cf6520164cd3af0827206a78077e5ced8ca64"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/stylegan-xl/README.md",
+      "sha256": "39bead1a176e29fdd40b6f4a737053d9f55c08fba001598be4fcc9a8b1041382"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/stylegan3/LICENSE.txt",
+      "sha256": "beed8b547f1bc546269c5a5d31d995212f84e653c0d7c5ec67588be4dbb19629"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/stylegan3/README.md",
+      "sha256": "e442732c0bc86980cf1efb084fd46c80c33713883bb9efaba73e7ab86e434823"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/stylegan3/docs/configs.md",
+      "sha256": "feb93dd2159204756698032ce28276ba7ba33ba043cf3f6d938b7d9224d5fee5"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/stylegan3/legacy.py",
+      "sha256": "87df30e050b05d119cb0a697073e74d6af14158f6a3ebae5d0b963e59f130f65"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/stylegan3/torch_utils/ops/filtered_lrelu.py",
+      "sha256": "63a0e0936f06cb9491e83d2a632c19ec756c8014087dc9d551780f11baef2a7c"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/stylegan3/torch_utils/ops/upfirdn2d.py",
+      "sha256": "d5f1e19b5bd291105216365764d95a7ad9d0d5db375d38fbc6717b113bda2919"
+    },
+    {
+      "path": "research/reviews/base-selection/gan-sources/stylegan3/training/networks_stylegan3.py",
+      "sha256": "06082fb3e8929e477f58fb8bc78e7ecb9a9209eb01444272d1d153c85a6a89f7"
+    }
+  ]
+}

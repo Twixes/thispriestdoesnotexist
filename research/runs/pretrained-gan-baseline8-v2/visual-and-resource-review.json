@@ -1,0 +1,31 @@
+{
+  "complete_baseline": false,
+  "outcome": "resource_gate_stop_after_one_warmup",
+  "supervisor": {
+    "complete": false,
+    "worker_exit_code": -9,
+    "stop_reason": "process group RSS above12GiB",
+    "elapsed_seconds": 17.462031458038837,
+    "sampled_peak_process_group_rss_bytes": 12986810368,
+    "production_approved": false
+  },
+  "warmup_forward_seconds": 15.313205208047293,
+  "evaluation_images_completed": 0,
+  "matched_stylegan2_images_completed": 0,
+  "all_saved_warmup_hashes_verified": true,
+  "viewed_native1024": true,
+  "visual_observations": [
+    "Coherent adult male-appearing portrait with natural skin, facial hair and hair detail.",
+    "Eyes are closed; no assessment of open-eye detail possible.",
+    "Sunglasses visible on top of head.",
+    "Tight head crop and bare neck, almost no visible shirt/chest: this sample does not give useful collar space."
+  ],
+  "limitations": [
+    "One predetermined warmup is not an unbiased8samplediversity evaluation.",
+    "No filtering, manual selection, restoration, or trained priest adaptation occurred.",
+    "CPU reference timings and memory do not establish CUDA service performance or inability to reach500ms.",
+    "RSS supervisor polls every100ms and observed small overshoot of12GiB before processgroup kill."
+  ],
+  "next_action": "Use CUDA nativekernels for this architecture or explicitly select a different base; do not repeat this CPUreference run under same12GiBbudget.",
+  "production_approved": false
+}

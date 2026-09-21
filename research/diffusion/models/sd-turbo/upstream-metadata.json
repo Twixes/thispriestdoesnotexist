@@ -1,0 +1,289 @@
+{
+  "_id": "6564c6b00c754d598ceb53da",
+  "id": "stabilityai/sd-turbo",
+  "private": false,
+  "pipeline_tag": "text-to-image",
+  "library_name": "diffusers",
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "downloads": 339052,
+  "likes": 462,
+  "modelId": "stabilityai/sd-turbo",
+  "author": "stabilityai",
+  "sha": "b261bac6fd2cf515557d5d0707481eafa0485ec2",
+  "lastModified": "2024-07-10T11:38:51.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "diffusers": {
+      "_class_name": "StableDiffusionPipeline"
+    }
+  },
+  "cardData": {
+    "pipeline_tag": "text-to-image",
+    "inference": false
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "LICENSE.md",
+      "blobId": "1d9ce2ee1067327543544de197291726e4fc57a4",
+      "size": 11852
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "a016be12ea42e3d836e86565c02d78efcfc2f47b",
+      "size": 5900
+    },
+    {
+      "rfilename": "image_quality_one_step.png",
+      "blobId": "7c1f01436114b26f7a5c577186f0e3da51e8abc7",
+      "size": 196141
+    },
+    {
+      "rfilename": "model_index.json",
+      "blobId": "f74ca1646745f23bd748f47468afd60f73951da9",
+      "size": 616
+    },
+    {
+      "rfilename": "output_tile.jpg",
+      "blobId": "3a0713b763100a3f16f4fb180774aed5ba1e86a4",
+      "size": 741155
+    },
+    {
+      "rfilename": "prompt_alignment_one_step.png",
+      "blobId": "10f3f959edd89da113c24e61587ef35d9a84c5a1",
+      "size": 196578
+    },
+    {
+      "rfilename": "scheduler/scheduler_config.json",
+      "blobId": "d1cbb1cb9d43687fd217cdbb65a03065b2855375",
+      "size": 553
+    },
+    {
+      "rfilename": "sd_turbo.safetensors",
+      "blobId": "da2bdcb97b529bca2608452b9ae6746dcdbe250d",
+      "size": 5214561328,
+      "lfs": {
+        "sha256": "3f067a1b943cf162f2b8f8588f6cf5824bd5b4c7d1d88d87164b9ca123616549",
+        "size": 5214561328,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text_encoder/config.json",
+      "blobId": "97ea68ede5facd8fc42ac4947694c9000016b83f",
+      "size": 618
+    },
+    {
+      "rfilename": "text_encoder/model.fp16.safetensors",
+      "blobId": "a55e85a6b511d04d31fbcc67af976a8b0adf8030",
+      "size": 680820392,
+      "lfs": {
+        "sha256": "bc1827c465450322616f06dea41596eac7d493f4e95904dcb51f0fc745c4e13f",
+        "size": 680820392,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "text_encoder/model.safetensors",
+      "blobId": "2a15244d500b3f15e33c70fb298b91591701efd0",
+      "size": 1361596304,
+      "lfs": {
+        "sha256": "67e013543d4fac905c882e2993d86a2d454ee69dc9e8f37c0c23d33a48959d15",
+        "size": 1361596304,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "tokenizer/merges.txt",
+      "blobId": "76e821f1b6f0a9709293c3b6b51ed90980b3166b",
+      "size": 524619
+    },
+    {
+      "rfilename": "tokenizer/special_tokens_map.json",
+      "blobId": "eaf8780e3c90b1af01a8574bf8596a9acebe6858",
+      "size": 574
+    },
+    {
+      "rfilename": "tokenizer/tokenizer_config.json",
+      "blobId": "bd2abe19377557ff5771584921f9b65fa041fef0",
+      "size": 855
+    },
+    {
+      "rfilename": "tokenizer/vocab.json",
+      "blobId": "469be27c5c010538f845f518c4f5e8574c78f7c8",
+      "size": 1059962
+    },
+    {
+      "rfilename": "unet/config.json",
+      "blobId": "de5b42a487ee4dddb17df5092e4c4a7b3da24a4e",
+      "size": 1867
+    },
+    {
+      "rfilename": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "blobId": "38abf533555f6554cc8b7890ea173b47d112735d",
+      "size": 1731904736,
+      "lfs": {
+        "sha256": "40ec400881e27d1376c7c95c5bd495f407b33756e80eb6365e301c33a07af6e5",
+        "size": 1731904736,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "unet/diffusion_pytorch_model.safetensors",
+      "blobId": "fd5d1af6917cbf04a12b9556da2a532049766908",
+      "size": 3463726504,
+      "lfs": {
+        "sha256": "438da6db739c8651ec4152341b8133d6896db452ea27afdb6b9b0344f0c40532",
+        "size": 3463726504,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "vae/config.json",
+      "blobId": "c4ee4e6c26ec43107d0684bf5ad1d6d60424f791",
+      "size": 655
+    },
+    {
+      "rfilename": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "blobId": "9a75e3c8e7cf4387be816cdebb751fbd5fc4e1e2",
+      "size": 167335342,
+      "lfs": {
+        "sha256": "3e4c08995484ee61270175e9e7a072b66a6e4eeb5f0c266667fe1f45b90daf9a",
+        "size": 167335342,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "vae/diffusion_pytorch_model.safetensors",
+      "blobId": "d6fc2b1f7ae2b1f4f83c25812f819a17473f0c1a",
+      "size": 334643268,
+      "lfs": {
+        "sha256": "2aa1f43011b553a4cba7f37456465cdbd48aab7b54b9348b890e8058ea7683ec",
+        "size": 334643268,
+        "pointerSize": 134
+      }
+    }
+  ],
+  "spaces": [
+    "rupeshs/fastsdcpu",
+    "Asem75/divid_teacher",
+    "radames/Real-Time-Latent-Consistency-Model",
+    "gparmar/img2img-turbo-sketch",
+    "radames/Real-Time-Latent-Consistency-Model-Text-To-Image",
+    "garibida/ReNoise-Inversion",
+    "radames/Real-Time-SD-Turbo",
+    "radames/real-time-pix2pix-turbo",
+    "tight-inversion/tight-inversion",
+    "Nymbo/image_gen_supaqueue",
+    "latent-consistency/Real-Time-LCM-ControlNet-Lora-SD1.5",
+    "ksort/K-Sort-Arena",
+    "Shizuku-AI/StreamDiffusion-realtime-txt2img",
+    "fffiloni/ReNO",
+    "KwabsHug/GameConfigIdea",
+    "latent-consistency/Real-Time-LCM-Text-to-Image-Lora-SD1.5",
+    "myn0908/S2I-Artwork-Sketch-to-Image-Diffusion",
+    "daily-co/RealtimeSDWebRTC",
+    "build-small-hackathon/toddler-typist",
+    "michaelj/testlcm",
+    "farazify/GENAI_Project",
+    "maldons77/ai-storyboard-creator",
+    "hongyu12321/RedFish",
+    "multimodalart/Real-Time-Latent-SDXL-Lightning",
+    "ahmedmbutt/sd-gal-gen",
+    "douglasgoodwin/Real-Time-SD-Turbo",
+    "Muthuraja18/image",
+    "clone3/FastGUI",
+    "Ntdeseb/ntia",
+    "Speedofmastery/orynxml-backend",
+    "AlekseyCalvin/Deforum_Soonr",
+    "educatedlucifer12/whisper-ai",
+    "HolySmokes1234/BETASAINT",
+    "shaptz/still-life-dismorph",
+    "Araeynn/lyre",
+    "Araeynn/Luminary-Yarn-of-Robotic-Excellence",
+    "Festrcze/Real-Time-SD-Turbooooooo",
+    "jblalock30/quantizing-diffusion-models",
+    "K00B404/image_gen_supaqueue_game_assets",
+    "bh4vay/comic",
+    "Phoenix05003/Image-Generation",
+    "Yeonu1108/yeonu",
+    "tejani/Another",
+    "tejani/testlcm2",
+    "cheeseman182/image_generator_using_sd_turbo",
+    "victor1997s/t2i",
+    "Bilal-ali09/DAY-37",
+    "raghavsingh0027/Ad_Creator",
+    "JayeshM30/Phrase-to-Story-and-Story-to-Image-Generator",
+    "medbert-health-predict/HealthAi",
+    "Mmmma4iio/Still_life_generator",
+    "videopix/Gibhili",
+    "lollydayss/prompts-fp-generator",
+    "SanskarModi/sd-image-gen-toolkit",
+    "Umairbdxn/fastsdcpu",
+    "PromacEthan/Xign",
+    "benmad2007/simple-ai-video-maker",
+    "HopeAismartcompany/hope-ai",
+    "fabricationworkshop/streamdiffusion",
+    "hexanovapixel/ImaginaAI",
+    "Json026/Image_generator",
+    "gsstec/sci-image",
+    "jabiru55/Image_Quality_inhancer_API",
+    "Akshitaaaa/my-image-generator",
+    "build-small-hackathon/lulluna",
+    "build-small-hackathon/aMuseMe",
+    "ZedrixTNDK/ZGenerator",
+    "ChengYou305/DI2FIX_Public_Demo",
+    "mimot/Image-Edit-Full-Wan",
+    "Yankkee/quen_logo_massinteration",
+    "mendeld/ac",
+    "HusseinHE/Magic",
+    "JoPmt/Txt2Img_SD_Trb",
+    "jensinjames/Real-Time-SD-Turbo",
+    "hillman2000hk/Real-Time-Latent-Consistency-Model",
+    "vloikas/NEW-Mycelium",
+    "hady20100/Real-Time-Latent-Consistency-Model",
+    "garrettscott/Real-Time-Latent-Consistency-Model",
+    "ranga-godhandaraman/demo-app-ranga",
+    "MehmetK/Real-Time-Latent-Consistency-Model",
+    "krnl/img2img-turbo-sketch-old",
+    "douglasgoodwin/one-more-gloomy-sunday",
+    "bilegentile/fastsdtest",
+    "malchish61/Real-Time-Latent-Consistency-Model",
+    "ahmed24444/Real-Time-Latent-Consistency-Model",
+    "cocktailpeanut/img2img-turbo-sketch",
+    "torusvektor/Real-Time-Latent-Consistency-Model",
+    "cocktailpeanut/ReNoise-Inversion",
+    "EasonYan/img2img-turbo-sketch",
+    "Festrcze/Real-Time-SD-Turbo",
+    "Satanpapa/Real-Time-Latent-Consistency-Model",
+    "sackfab/Real-Time-SD-TurboFD",
+    "krnl/img2img-turbo-sketch",
+    "Festrcze/Real-Time-SD-Turbonjjj",
+    "Rodneyontherock1067/fastsdcpu",
+    "tianlong12/flux-api",
+    "Danzalionline/stabilityai-sd-turbo",
+    "gaur3009/imagier",
+    "deeme/png",
+    "douglasgoodwin/realtime_animator"
+  ],
+  "createdAt": "2023-11-27T16:41:20.000Z",
+  "safetensors": {
+    "parameters": {
+      "F32": 865910724
+    },
+    "total": 865910724
+  },
+  "usedStorage": 12954587874
+}

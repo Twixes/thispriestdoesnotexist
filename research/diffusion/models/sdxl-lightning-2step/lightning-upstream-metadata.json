@@ -1,0 +1,310 @@
+{
+  "_id": "65d505951e2597ff935d1be2",
+  "id": "ByteDance/SDXL-Lightning",
+  "private": false,
+  "pipeline_tag": "text-to-image",
+  "library_name": "diffusers",
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "stable-diffusion",
+    "arxiv:2402.13929",
+    "license:openrail++",
+    "region:us"
+  ],
+  "downloads": 88690,
+  "likes": 2188,
+  "modelId": "ByteDance/SDXL-Lightning",
+  "author": "ByteDance",
+  "sha": "c9a24f48e1c025556787b0c58dd67a091ece2e44",
+  "lastModified": "2024-04-03T15:59:08.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "license": "openrail++",
+    "tags": [
+      "text-to-image",
+      "stable-diffusion"
+    ],
+    "library_name": "diffusers",
+    "inference": false
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "c7714552740ccb73b60fc3ca9200921ae31b91cd",
+      "size": 1581
+    },
+    {
+      "rfilename": "LICENSE.md",
+      "blobId": "01b6a1bc60459648253ae8fda6b44c772596cc44",
+      "size": 14143
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "5b9be0372c58e3d7e622b95bd21d3af9c08c3d02",
+      "size": 6527
+    },
+    {
+      "rfilename": "comfyui/sdxl_lightning_workflow_full.jpg",
+      "blobId": "6e4a8b67008b9be14a3adc4930edba3c230ec9bd",
+      "size": 269508
+    },
+    {
+      "rfilename": "comfyui/sdxl_lightning_workflow_full.json",
+      "blobId": "e63352485a2177df3a3acc2f9709d6f796262a74",
+      "size": 6644
+    },
+    {
+      "rfilename": "comfyui/sdxl_lightning_workflow_full_1step.jpg",
+      "blobId": "8f3f1b918b70ab79a87bb9f6cb580f074ddd4041",
+      "size": 285298
+    },
+    {
+      "rfilename": "comfyui/sdxl_lightning_workflow_full_1step.json",
+      "blobId": "5654912980b1faa45c98def9860579a26bb4c609",
+      "size": 7184
+    },
+    {
+      "rfilename": "comfyui/sdxl_lightning_workflow_lora.jpg",
+      "blobId": "5c1fa3e13d5ecc03d6d906437c127bfff62eb401",
+      "size": 287313
+    },
+    {
+      "rfilename": "comfyui/sdxl_lightning_workflow_lora.json",
+      "blobId": "8057338f463724675cbea3c7e9324b777a48a483",
+      "size": 7436
+    },
+    {
+      "rfilename": "sdxl_lightning_1step_unet_x0.safetensors",
+      "blobId": "ae341ccc27b0006feb856316b05f6aaf5d42fd76",
+      "size": 5135149736,
+      "lfs": {
+        "sha256": "14d53ad5b440a37fc0f429d595d96bf144c5dd842aa5747383e6098c9dbfa644",
+        "size": 5135149736,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_1step_x0.safetensors",
+      "blobId": "8356ccd991d39b8b3cd3428fbdc478d1ef961cbd",
+      "size": 6938040682,
+      "lfs": {
+        "sha256": "dd8d4c2b341cdbbe88178135786bd4ea1a6f46d6dcb719f05524a5e761ae19a0",
+        "size": 6938040682,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_2step.safetensors",
+      "blobId": "bbac6b6065566b0c5c12659d981aa2f465aa6ff5",
+      "size": 6938040682,
+      "lfs": {
+        "sha256": "87e61f60b85d9f1c577bd9053872c7678b7d39f6f52d470081ff6ea3b49ddf98",
+        "size": 6938040682,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_2step_lora.safetensors",
+      "blobId": "8e48ad603e04ed4314c031b96338735f377d7e69",
+      "size": 393854592,
+      "lfs": {
+        "sha256": "04fafc778385b24144498a8247498ae4fb7a69f702ea0566bdce2845a31fcc43",
+        "size": 393854592,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_2step_unet.safetensors",
+      "blobId": "6db6e5c8daa79600f6d2222aed004244b794c265",
+      "size": 5135149736,
+      "lfs": {
+        "sha256": "15a96a3b213b8b4d6ea720b4fa5bf6723cd877170bd1a90f58e34da2968ef854",
+        "size": 5135149736,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_4step.safetensors",
+      "blobId": "6768e72922448a3b705f8f4943275109263b603d",
+      "size": 6938040682,
+      "lfs": {
+        "sha256": "e0d996ee0013e79d9d3561f50fcafb9a17e3ff07b780358e3b66d67932c4d490",
+        "size": 6938040682,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_4step_lora.safetensors",
+      "blobId": "d8fa1a39d258bcf5ab06bad3f11e32401abd438f",
+      "size": 393854592,
+      "lfs": {
+        "sha256": "bf56cf2657efb15e465d81402ed481d1e11c4677e4bcce1bc11fe71ad8506b79",
+        "size": 393854592,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_4step_unet.safetensors",
+      "blobId": "6319b8da8e8565061fb1eb8edfdae7113534808c",
+      "size": 5135149736,
+      "lfs": {
+        "sha256": "39a90a8a2a25c1372633c1e8eb1a96f85eab937bcb58cfc6ec9baf66242ec23c",
+        "size": 5135149736,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_8step.safetensors",
+      "blobId": "25a0ca2af65db6338c72769d960259f3e8511cba",
+      "size": 6938040682,
+      "lfs": {
+        "sha256": "43f0501ac4ffcef84f3fc32a47779f24c181647fa97ef7f5ec4428107d732ae9",
+        "size": 6938040682,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_8step_lora.safetensors",
+      "blobId": "cb47af62d23f051dd3aec44a8dcf7d0fbae432d1",
+      "size": 393854592,
+      "lfs": {
+        "sha256": "5aa30d94cdf7950a8b53a693682650ee061eddb128c5435a8f88defea73b2ac6",
+        "size": 393854592,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_8step_unet.safetensors",
+      "blobId": "389063825f7916b33adb27d6a5f5c32997a9533e",
+      "size": 5135149736,
+      "lfs": {
+        "sha256": "471d8260fda0b17b8906feb24573ce64933d4b6b99ba7a1fa43ca051b994e869",
+        "size": 5135149736,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_report.pdf",
+      "blobId": "7509c80281412d55adf93cbac3ee3213ced8f313",
+      "size": 16494599,
+      "lfs": {
+        "sha256": "94bb9b70bd134e2639e55b08f4be2984c7ff007f5e071a6f0f61d14c20378e5f",
+        "size": 16494599,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "sdxl_lightning_samples.jpg",
+      "blobId": "311d36b91e0436dd9ea7127ef4ffddc1f9bf91af",
+      "size": 300292
+    }
+  ],
+  "spaces": [
+    "yanze/PuLID-FLUX",
+    "radames/Real-Time-Latent-Consistency-Model",
+    "radames/Real-Time-Text-to-Image-SDXL-Lightning",
+    "yanze/PuLID",
+    "AP123/SDXL-Lightning",
+    "ByteDance/SDXL-Lightning",
+    "TIGER-Lab/GenAI-Arena",
+    "fffiloni/tts-hallo-talking-portrait",
+    "fantaxy/flx-pulid",
+    "fffiloni/text-guided-image-colorization",
+    "openfree/ColorRevive",
+    "multimodalart/one-step-comparison",
+    "radames/Real-Time-SD-Turbo",
+    "radames/real-time-pix2pix-turbo",
+    "aipicasso/emi-latest-demo",
+    "Nymbo/image_gen_supaqueue",
+    "tight-inversion/tight-inversion-pulid-demo",
+    "radames/InstantStyle-SDXL-Lightning",
+    "SakanaAI/EvoSDXL-JP",
+    "ironjr/semantic-draw-canvas-sdxl",
+    "cbensimon/Real-Time-Text-to-Image-SDXL-Lightning",
+    "rynmurdock/generative_recsys",
+    "ameerazam08/Res-Adapter-GPU-Demo",
+    "Deddy/PuLid-FLX-GPU",
+    "sofianhw/PuLID-FLUX",
+    "JournalistsonHF/text-to-image-bias",
+    "SunderAli17/ToonMage",
+    "qiuzhi2046/PuLID-FLUX",
+    "abdur75648/tts-hallo-talking-portrait",
+    "ali-vilab/IDEA-Bench-Arena",
+    "zerhero/DiffuseCraft",
+    "qiuzhi2046/PuLID",
+    "hasan93/hallo-talking-face",
+    "build-small-hackathon/Hackathon-IA-VisualNovel",
+    "CyranoB/SDXL-Lightning",
+    "saikub/chatB",
+    "VIDraft/tight-inversion-pulid-demo",
+    "evijit/text-to-image-bias",
+    "dmaniloff/API-InstantStyle-SDXL-Lightning",
+    "Nickitozi263/tts-hallo-talking-portrait",
+    "randomtable/SDXL-Lightning",
+    "Potre1qw/text-guided-image-colorization",
+    "PiperMy/PuLID-FLUX",
+    "Drjkedwards/Stable-dalle-colorrize-lense",
+    "Ntdeseb/ntia",
+    "Speedofmastery/orynxml-backend",
+    "MCP-1st-Birthday/pipV1",
+    "emiliamzz/Alfred_the_Agent",
+    "JohnAlexander23/Demo-Text-To-Image-Lightning",
+    "Shad0ws/PuLID",
+    "SiddhanthSridhar/Demo-Text-To-Image-Lightning",
+    "cbensimon/Real-Time-Text-to-Image-SDXL-Lightning-2",
+    "chenmiao/SDXL-Lightning",
+    "balaramas/text2image",
+    "NeuralSphere-Labs/VocalChat",
+    "K00B404/image_gen_supaqueue_game_assets",
+    "micohany/sheekoo",
+    "kevinppaulo/PuLID",
+    "MartsoBodziu1994/flx-pulid",
+    "Kingrane/Dreamoji",
+    "fantasticstar/PuLID-FLUX-FS",
+    "kines9661/sc",
+    "MashaKenzie/vk-ai-bot",
+    "multimodalart/Real-Time-Text-to-Image-SDXL-Lightning-fix",
+    "Yankkee/quen_logo_massinteration",
+    "CazC/smallville",
+    "Emerging-Tech/Aaram",
+    "JUST-N/ByteDance-SDXL-Lightning",
+    "emolero/ByteDance-SDXL-Lightning",
+    "joker42/ByteDance-SDXL-Lightning",
+    "javayhu/ByteDance-SDXL-Lightning",
+    "usama7871/ByteDance-SDXL-Lightning",
+    "FaderKun/ByteDance-SDXL-Lightning",
+    "granitek/ByteDance-SDXL-Lightning",
+    "aakashch0179/video",
+    "bomn323/SDXL-Lightning",
+    "Robathan/Real-Time-Text-to-Image-SDXL-Lightning",
+    "JayVv/notJthenwho",
+    "bigghuggs/t2i",
+    "Nikhil0987/Imagegen",
+    "hideosnes/SDXL-Lightning",
+    "oteneto/SDXL-Lightning",
+    "oteneto/Real-Time-Text-to-Image-SDXL-Lightning",
+    "Omnibus/chatbots-zero",
+    "pankaj-munde/PuLID",
+    "nick911/Variations2",
+    "Taf2023/SDXL-Lightning",
+    "someone9000/T-2-Img",
+    "nimatoghiri/image_generator",
+    "Vivawaves/SDXL-Lightning",
+    "Geek7/Testing3",
+    "hackshaw/Real-Time-Text-to-Image-SDXL-Lightning",
+    "Kabatubare/SDXL-Lightning",
+    "sequoia00/myRT_SDXLLight2",
+    "ysharma/dummy_render2",
+    "aiDevzz/Gen",
+    "emilios/SDXL-Lightning-portraits",
+    "denbu1/image-generator",
+    "tsi-org/Real-Time-Text-to-Image-SDXL-Lightning",
+    "Bingnier/SDXL-Lightning"
+  ],
+  "createdAt": "2024-02-20T20:03:33.000Z",
+  "usedStorage": 91793162479
+}

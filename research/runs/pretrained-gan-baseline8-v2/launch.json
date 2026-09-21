@@ -1,0 +1,25 @@
+{
+  "source_sha256": "2ce32bc8814e05c978dc408a236d32d6252201f07b2b72e336acdc3f2d058e88",
+  "supervisor_pid": 70735,
+  "deadline_monotonic": 750893.775370791,
+  "source_commit": "c233a919a6faee6e36a316ddd4eddababad1adf9",
+  "limits": {
+    "rss_bytes": 12884901888,
+    "minimum_system_available_fraction": 0.2,
+    "seconds": 600,
+    "poll_seconds": 0.1
+  },
+  "initial_available_bytes": 28564996096,
+  "initial_total_bytes": 51539607552,
+  "models": {
+    "stylegan3-t": [
+      "research/models/stylegan3-t-ffhq1024/stylegan3-t-ffhq-1024x1024.pkl",
+      "efd9fa1f967a11b5390399a8ed512dc32e341c245fa2d4dafa6d94e96222085b"
+    ],
+    "stylegan2": [
+      "research/models/ffhq1024.pkl",
+      "a205a346e86a9ddaae702e118097d014b7b8bd719491396a162cca438f2f524c"
+    ]
+  },
+  "supervision_note": "RSS sampled every100ms plus worker peak checks; process group killed on gate. Sampling may observe overshoot; not an OS virtual-address cap."
+}

@@ -1,0 +1,11 @@
+{
+  "previous_attempt": "research/runs/pretrained-gan-baseline8-v1",
+  "failure": "ModuleNotFoundError pkg_resources during official network module reconstruction; no forward performed",
+  "correction": "Worker-local sys.path for exact setuptools80.9.0 wheel extracted into experiment dependencies",
+  "wheel_sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+  "shared_environment_modified": false,
+  "nvidia_source_modified": false,
+  "checkpoint_modified": false,
+  "resource_limits_changed": false,
+  "retry_directory": "research/runs/pretrained-gan-baseline8-v2"
+}

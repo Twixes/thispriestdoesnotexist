@@ -1,0 +1,59 @@
+{
+  "method": "CLIP whole-frame nearest pairs for visual diversity inspection; similar background/style can drive similarity; this is not an identity classifier or proof of identity novelty.",
+  "valid": 125,
+  "top_pairs": [
+    {
+      "a": 79,
+      "b": 93,
+      "cosine": 0.9648935794830322
+    },
+    {
+      "a": 22,
+      "b": 24,
+      "cosine": 0.9593130946159363
+    },
+    {
+      "a": 54,
+      "b": 107,
+      "cosine": 0.9554265737533569
+    },
+    {
+      "a": 40,
+      "b": 111,
+      "cosine": 0.9525682926177979
+    },
+    {
+      "a": 30,
+      "b": 79,
+      "cosine": 0.9524051547050476
+    },
+    {
+      "a": 1,
+      "b": 103,
+      "cosine": 0.9510225057601929
+    },
+    {
+      "a": 9,
+      "b": 122,
+      "cosine": 0.9503410458564758
+    },
+    {
+      "a": 20,
+      "b": 22,
+      "cosine": 0.950225293636322
+    },
+    {
+      "a": 19,
+      "b": 27,
+      "cosine": 0.9496755599975586
+    },
+    {
+      "a": 66,
+      "b": 103,
+      "cosine": 0.948939859867096
+    }
+  ],
+  "median_nearest_cosine": 0.9287229180335999,
+  "pairs_gt_0_99": 0,
+  "production_approved": false
+}

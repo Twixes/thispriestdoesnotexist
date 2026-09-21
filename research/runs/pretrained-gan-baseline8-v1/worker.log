@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/pretrained_gan_baseline/run.py", line 157, in <module>
+    (worker if args.worker else supervisor)(args.output.resolve())
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/pretrained_gan_baseline/run.py", line 83, in worker
+    network=legacy.load_network_pkl(stream)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan3/legacy.py", line 23, in load_network_pkl
+    data = _LegacyUnpickler(f).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan3/torch_utils/persistence.py", line 190, in _reconstruct_persistent_obj
+    module = _src_to_module(meta.module_src)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan3/torch_utils/persistence.py", line 226, in _src_to_module
+    exec(src, module.__dict__) # pylint: disable=exec-used
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 10, in <module>
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/vendor/stylegan3/torch_utils/ops/conv2d_gradfix.py", line 14, in <module>
+    from pkg_resources import parse_version
+ModuleNotFoundError: No module named 'pkg_resources'

@@ -1,0 +1,21 @@
+{
+  "outcome": "runtime_dependency_failure_before_forward",
+  "supervision": {
+    "complete": false,
+    "worker_exit_code": 1,
+    "stop_reason": null,
+    "elapsed_seconds": 1.9200658339541405,
+    "sampled_peak_process_group_rss_bytes": 283754496,
+    "production_approved": false
+  },
+  "missing_module": "pkg_resources",
+  "installed_setuptools": "84.0.0",
+  "source_commit": "c233a919a6faee6e36a316ddd4eddababad1adf9",
+  "generated_evaluation_images": 0,
+  "first_checkpoint_sha256_verified": "efd9fa1f967a11b5390399a8ed512dc32e341c245fa2d4dafa6d94e96222085b",
+  "source_integrity_verified": true,
+  "shared_environment_modified": false,
+  "next_fix": "Scoped pinned setuptools<81 package dependency to provide pkg_resources, or explicitly reviewed version-parser-only adapter. Preserve v1; use new output directory for retry.",
+  "cpu_gpu_latency_inference": "No inference measurement exists; no GPU speed claim.",
+  "production_approved": false
+}

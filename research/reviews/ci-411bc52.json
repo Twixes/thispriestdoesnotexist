@@ -1,0 +1,85 @@
+{
+  "observed_at_utc": "2026-09-21T07:16:22.040450+00:00",
+  "repository": "Twixes/thispriestdoesnotexist",
+  "requested_commit": "411bc524c7ef563bfc69a6d851cc19b184cf25e7",
+  "local_head": {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "stdout": "411bc524c7ef563bfc69a6d851cc19b184cf25e7"
+  },
+  "remote_master": {
+    "command": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/master"
+    ],
+    "exit_code": 0,
+    "stdout": "4a8534b937be59ebe452dedff2b68331c8f1d1f2\trefs/heads/master"
+  },
+  "requested_commit_checks": {
+    "command": [
+      "gh",
+      "api",
+      "repos/Twixes/thispriestdoesnotexist/commits/411bc524c7ef563bfc69a6d851cc19b184cf25e7/check-runs"
+    ],
+    "exit_code": 1,
+    "stdout": {
+      "message": "No commit found for SHA: 411bc524c7ef563bfc69a6d851cc19b184cf25e7",
+      "documentation_url": "https://docs.github.com/rest/checks/runs#list-check-runs-for-a-git-reference",
+      "status": "422"
+    },
+    "stderr": "gh: No commit found for SHA: 411bc524c7ef563bfc69a6d851cc19b184cf25e7 (HTTP 422)"
+  },
+  "remote_master_checks": {
+    "command": [
+      "gh",
+      "api",
+      "repos/Twixes/thispriestdoesnotexist/commits/4a8534b937be59ebe452dedff2b68331c8f1d1f2/check-runs",
+      "--jq",
+      "{total_count,check_runs:[.check_runs[]|{id,name,head_sha,status,conclusion,html_url,started_at,completed_at}]}"
+    ],
+    "exit_code": 0,
+    "stdout": {
+      "check_runs": [
+        {
+          "completed_at": "2026-09-21T06:50:19Z",
+          "conclusion": "success",
+          "head_sha": "4a8534b937be59ebe452dedff2b68331c8f1d1f2",
+          "html_url": "https://github.com/Twixes/thispriestdoesnotexist/runs/106239994360",
+          "id": 106239994360,
+          "name": "Workers Builds: thispriestdoesnotexist",
+          "started_at": "2026-09-21T06:50:19Z",
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-09-21T06:51:01Z",
+          "conclusion": "success",
+          "head_sha": "4a8534b937be59ebe452dedff2b68331c8f1d1f2",
+          "html_url": "https://github.com/Twixes/thispriestdoesnotexist/actions/runs/35570157456/job/106239908724",
+          "id": 106239908724,
+          "name": "update-pip-graph",
+          "started_at": "2026-09-21T06:49:57Z",
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-09-21T06:50:09Z",
+          "conclusion": "success",
+          "head_sha": "4a8534b937be59ebe452dedff2b68331c8f1d1f2",
+          "html_url": "https://github.com/Twixes/thispriestdoesnotexist/actions/runs/35570153509/job/106239892864",
+          "id": 106239892864,
+          "name": "deploy",
+          "started_at": "2026-09-21T06:49:52Z",
+          "status": "completed"
+        }
+      ],
+      "total_count": 3
+    }
+  },
+  "conclusion": "411bc52 is present locally but absent from remote master and GitHub reports no commit found. CI success cannot be claimed for 411bc52. The interrupted push did not publish this commit at observation time.",
+  "mutations_performed": "None; saved gh authentication reused; no credentials read."
+}

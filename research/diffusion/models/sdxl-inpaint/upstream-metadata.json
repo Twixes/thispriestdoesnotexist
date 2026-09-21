@@ -1,0 +1,329 @@
+{
+  "_id": "64f1f00e5e0cf1f797040eaa",
+  "id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "private": false,
+  "pipeline_tag": "text-to-image",
+  "library_name": "diffusers",
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "text-to-image",
+    "inpainting",
+    "arxiv:2112.10752",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:finetune:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "diffusers:StableDiffusionXLInpaintPipeline",
+    "region:us"
+  ],
+  "downloads": 104050,
+  "likes": 384,
+  "modelId": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "author": "diffusers",
+  "sha": "115134f363124c53c7d878647567d04daf26e41e",
+  "lastModified": "2023-09-03T16:36:39.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "diffusers": {
+      "_class_name": "StableDiffusionXLInpaintPipeline"
+    }
+  },
+  "cardData": {
+    "license": "openrail++",
+    "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+    "tags": [
+      "stable-diffusion-xl",
+      "stable-diffusion-xl-diffusers",
+      "text-to-image",
+      "diffusers",
+      "inpainting"
+    ],
+    "inference": false
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a69e715492c0b8ea287d4e1d5895d67783aa1991",
+      "size": 1580
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "50a076318d56fcc0f53aadef808cc640c2eeee5e",
+      "size": 4861
+    },
+    {
+      "rfilename": "inpaint-examples-min.png",
+      "blobId": "1f6cbe2381db1f94711c0c7426fae1e0dc50fead",
+      "size": 1683763,
+      "lfs": {
+        "sha256": "dd259b947b7a8e088eb1bb5575c02b5ebc0d121cb247014b63980898480e620c",
+        "size": 1683763,
+        "pointerSize": 132
+      }
+    },
+    {
+      "rfilename": "model_index.json",
+      "blobId": "8cab34157f46b4c35107a65e48a7236057ad6e46",
+      "size": 690
+    },
+    {
+      "rfilename": "scheduler/scheduler_config.json",
+      "blobId": "9e13de2afd2250977d01837deed2b1c35b75e552",
+      "size": 479
+    },
+    {
+      "rfilename": "text_encoder/config.json",
+      "blobId": "a34c80dc728ab0a61bc5f7e849fad01723f94a01",
+      "size": 746
+    },
+    {
+      "rfilename": "text_encoder/model.fp16.safetensors",
+      "blobId": "7d412acb10a08933e52a773be69fc40fedaf30e2",
+      "size": 246144867,
+      "lfs": {
+        "sha256": "fc83cf401d930147807e7c44021c164bcc5508c9d4cc0ff35f4e354685ca9cd0",
+        "size": 246144867,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "text_encoder/model.safetensors",
+      "blobId": "5fed6bbdbc52cb9850c7221fb6ba3fdec19eb63b",
+      "size": 492265879,
+      "lfs": {
+        "sha256": "79f531155c765c22c89e23328793a2e91a1178070af961c57e2eae5f0509b65b",
+        "size": 492265879,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "text_encoder_2/config.json",
+      "blobId": "8f0f26a6056dd0aae0437184a1871eed6006e170",
+      "size": 758
+    },
+    {
+      "rfilename": "text_encoder_2/model.fp16.safetensors",
+      "blobId": "c53a07410de823714536943eca81438ac2b4ac7e",
+      "size": 1389382884,
+      "lfs": {
+        "sha256": "a8622bd41f8d359df484fdf9de091edb9337a2fd747f0a5c9c320a62e24d1fd3",
+        "size": 1389382884,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "text_encoder_2/model.safetensors",
+      "blobId": "340f4a6b535c1c3af770d63279f8f081115acdd2",
+      "size": 2778702976,
+      "lfs": {
+        "sha256": "283bb90f987a133dec11947571aca17692ed32f3fff708441ac8eedcfa4a040e",
+        "size": 2778702976,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "tokenizer/merges.txt",
+      "blobId": "76e821f1b6f0a9709293c3b6b51ed90980b3166b",
+      "size": 524619
+    },
+    {
+      "rfilename": "tokenizer/special_tokens_map.json",
+      "blobId": "2c2130b544c0c5a72d5d00da071ba130a9800fb2",
+      "size": 472
+    },
+    {
+      "rfilename": "tokenizer/tokenizer_config.json",
+      "blobId": "2e8612a429492973fe60635b3f44a28b065cfac0",
+      "size": 737
+    },
+    {
+      "rfilename": "tokenizer/vocab.json",
+      "blobId": "469be27c5c010538f845f518c4f5e8574c78f7c8",
+      "size": 1059962
+    },
+    {
+      "rfilename": "tokenizer_2/merges.txt",
+      "blobId": "76e821f1b6f0a9709293c3b6b51ed90980b3166b",
+      "size": 524619
+    },
+    {
+      "rfilename": "tokenizer_2/special_tokens_map.json",
+      "blobId": "ae0c5be6f35217e51c4c000fd325d8de0294e99c",
+      "size": 460
+    },
+    {
+      "rfilename": "tokenizer_2/tokenizer_config.json",
+      "blobId": "a8438e020c4497a429240d6b89e0bf9a6e2ffa92",
+      "size": 725
+    },
+    {
+      "rfilename": "tokenizer_2/vocab.json",
+      "blobId": "469be27c5c010538f845f518c4f5e8574c78f7c8",
+      "size": 1059962
+    },
+    {
+      "rfilename": "unet/config.json",
+      "blobId": "2fa48c31c3a64ba04fa8a76ac91f086d6309b406",
+      "size": 1932
+    },
+    {
+      "rfilename": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "blobId": "11e0dfbe41c79fa5c7a89c704a8989682d7b1574",
+      "size": 5135178560,
+      "lfs": {
+        "sha256": "6470840731e98cc16713ddf3ac7ee458c9fdbcb881a98c6727cd4a938f227d3f",
+        "size": 5135178560,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "unet/diffusion_pytorch_model.safetensors",
+      "blobId": "b870ecea60086474bb50acdfd3bfd1de3eb3d332",
+      "size": 10270135331,
+      "lfs": {
+        "sha256": "df858870144f8af28e1d23aaf92a5238bfb5e3809775eca4e04b80516412c327",
+        "size": 10270135331,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "vae/config.json",
+      "blobId": "4a3bb2e796869bdfa617fd28162f4087c4f771e3",
+      "size": 659
+    },
+    {
+      "rfilename": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "blobId": "ce2ddaa5ae018a316b68776d3b8524eb080738ac",
+      "size": 167335338,
+      "lfs": {
+        "sha256": "4ad62825e5c8b31eefb77355ba6693785619bf7d669d9b1a6fd9f19dec6d65b3",
+        "size": 167335338,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "vae/diffusion_pytorch_model.safetensors",
+      "blobId": "4126ef9b9ef4772327bef3a9fb83febb8f45c1b9",
+      "size": 334643268,
+      "lfs": {
+        "sha256": "98a14dc6fe8d71c83576f135a87c61a16561c9c080abba418d2cc976ee034f88",
+        "size": 334643268,
+        "pointerSize": 134
+      }
+    }
+  ],
+  "spaces": [
+    "diffusers/stable-diffusion-xl-inpainting",
+    "Nymbo/image_gen_supaqueue",
+    "DawnC/VividFlow",
+    "ameerazam08/SAM_SDXL_Inpainting",
+    "tonyassi/IP-Adapter-Playground",
+    "tonyassi/inpainting-sdxl-sketch-pad",
+    "DawnC/SceneWeaver",
+    "Fabrice-TIERCELIN/Inpaint",
+    "open-gen-fill/open-gen-fill-v1",
+    "Fabrice-TIERCELIN/Uncrop",
+    "smartfeed/image2image",
+    "egg22314/object-to-object-replace",
+    "nimzuk/u2y-stable-diffusion-outpaint",
+    "iocalangiu/genvis-face-rotation",
+    "hauteuar/Dress_swap_beta",
+    "yufiofficial/Ai-Replace",
+    "sdafd/inpaint",
+    "freitassdev/stable-diffusion-xl-inpainting",
+    "LuJingyi/Inpaint4Drag",
+    "Kqp1227/AttrLLM",
+    "williamberman/stable-diffusion-xl-inpainting",
+    "jbilcke-hf/inpainting-api",
+    "K00B404/image_gen_supaqueue_game_assets",
+    "ahmetyaylalioglu/Inpaint-Diffusion-with-Prompts",
+    "shubham6924/Uncrop",
+    "AthuKawaleLogituit/SDXL2",
+    "shishpal123/VTON-APP",
+    "lxzcpro/TextEraser",
+    "rzAI6/dock-demo",
+    "diffusers/benchmark-pt2.1",
+    "noni27/Shift_and_Inpaint",
+    "Pclanglais/Wiki-Model",
+    "Nikhil0987/text_to_image",
+    "markmagic/stable-diffusion-xl-inpainting",
+    "Nikgorby/MMML_final",
+    "utkarshpophli/virtual-try-on-outfit-change",
+    "rimjhimittal/final_final",
+    "uruguayai/Fooocus_app",
+    "CreativesCombined/HB8_replica_workflow_pilot",
+    "Ricoooo/EditGuard",
+    "amarasep/ClothingTryonModel",
+    "Gainward777/Virtual_Try-On",
+    "KheemDH/ViTON",
+    "utitupem/Inpaint",
+    "Anastayysia/card-to-urban-idea-generator",
+    "theoracle/professional_head",
+    "kimyounghun/Inpainting_server_v2",
+    "kimyounghun/inpainting_server_v1",
+    "kimyounghun/inpainting_flux_server_v1",
+    "eugenepiggy/tcdl",
+    "Benrise/VITON-HD",
+    "d0703887/Language-Guided-Fine-Grained-Image-Editing",
+    "dmskrose7/CPTED",
+    "dmskrose7/AI-CPTED",
+    "BoomerMcBlast/bold-app-36",
+    "dass777/curtain-try-on.1",
+    "hello10000/startagain",
+    "dawid0707/VirtueTry",
+    "yurista/AI-Background-Maker",
+    "sync19/tryonapi",
+    "rg321/detectNanoBananaImage",
+    "dawoodshahzad0707/tryonapi",
+    "ERTGDYHUYT/hoodie-cgi-master",
+    "lucasmdzt1/virtual-try-on-maestro",
+    "dawoodshahzad0707/VirtueTry",
+    "arthurzhao120/HairCLIP",
+    "rg321/detectNanoBananaImage2",
+    "AdithyaGunasekara/interior",
+    "intanaprln/Outpanting",
+    "soye/FEAT",
+    "krustl/object-to-object-replace",
+    "ARH1234/CHstudio1",
+    "injectx99/extender",
+    "sudenurgoktepe/stylist-ai-backend",
+    "Affaan/Autocaptioning-with-Inpainting-ImgGen",
+    "Maarij-Aqeel/VTON_Clothes",
+    "builden/ez-clean",
+    "Lin461/testimgtoimg",
+    "longnt04/swap-face",
+    "fanboyd13/tryone",
+    "SAITAN666/VTON_Clothes",
+    "sunhaoyu/SoraWatermarkCleaner",
+    "bep40/ai-image-editor",
+    "obaidy/tryonapi",
+    "dprotech/work",
+    "Doxmaxima/SDXL",
+    "kailashjha123/ai-photo-editor-inpaint",
+    "Lusthunter/nsfw-image-generator",
+    "freebg/magic-grab",
+    "likefree2016/ai-fashion-free",
+    "XciD/tile-visualizer-api",
+    "Mahmoud0007/orion-agents-api",
+    "modventures/room-visualizer",
+    "saramirvakili/door-handle-ai",
+    "Timber13/nail-skrit-v2",
+    "mmrech/AttrLLM",
+    "Hassaan091/AI_Virtual_Try_On",
+    "rmayormartins/aiesthetic",
+    "freebg/magic-eraser-pro",
+    "Glassic/Glassic"
+  ],
+  "createdAt": "2023-09-01T14:07:10.000Z",
+  "safetensors": {
+    "parameters": {
+      "F32": 2567478084
+    },
+    "total": 2567478084
+  },
+  "usedStorage": 20815472866
+}

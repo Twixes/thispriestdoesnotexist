@@ -1,0 +1,96 @@
+{
+  "stylegan3": {
+    "repository": "NVlabs/stylegan3",
+    "commit": "c233a919a6faee6e36a316ddd4eddababad1adf9",
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/NVlabs/stylegan3/c233a919a6faee6e36a316ddd4eddababad1adf9/README.md",
+        "path": "research/reviews/base-selection/gan-sources/stylegan3/README.md",
+        "sha256": "e442732c0bc86980cf1efb084fd46c80c33713883bb9efaba73e7ab86e434823"
+      },
+      "LICENSE.txt": {
+        "url": "https://raw.githubusercontent.com/NVlabs/stylegan3/c233a919a6faee6e36a316ddd4eddababad1adf9/LICENSE.txt",
+        "path": "research/reviews/base-selection/gan-sources/stylegan3/LICENSE.txt",
+        "sha256": "beed8b547f1bc546269c5a5d31d995212f84e653c0d7c5ec67588be4dbb19629"
+      },
+      "docs/configs.md": {
+        "url": "https://raw.githubusercontent.com/NVlabs/stylegan3/c233a919a6faee6e36a316ddd4eddababad1adf9/docs/configs.md",
+        "path": "research/reviews/base-selection/gan-sources/stylegan3/docs/configs.md",
+        "sha256": "feb93dd2159204756698032ce28276ba7ba33ba043cf3f6d938b7d9224d5fee5"
+      },
+      "training/networks_stylegan3.py": {
+        "url": "https://raw.githubusercontent.com/NVlabs/stylegan3/c233a919a6faee6e36a316ddd4eddababad1adf9/training/networks_stylegan3.py",
+        "path": "research/reviews/base-selection/gan-sources/stylegan3/training/networks_stylegan3.py",
+        "sha256": "06082fb3e8929e477f58fb8bc78e7ecb9a9209eb01444272d1d153c85a6a89f7"
+      },
+      "torch_utils/ops/filtered_lrelu.py": {
+        "url": "https://raw.githubusercontent.com/NVlabs/stylegan3/c233a919a6faee6e36a316ddd4eddababad1adf9/torch_utils/ops/filtered_lrelu.py",
+        "path": "research/reviews/base-selection/gan-sources/stylegan3/torch_utils/ops/filtered_lrelu.py",
+        "sha256": "63a0e0936f06cb9491e83d2a632c19ec756c8014087dc9d551780f11baef2a7c"
+      },
+      "torch_utils/ops/upfirdn2d.py": {
+        "url": "https://raw.githubusercontent.com/NVlabs/stylegan3/c233a919a6faee6e36a316ddd4eddababad1adf9/torch_utils/ops/upfirdn2d.py",
+        "path": "research/reviews/base-selection/gan-sources/stylegan3/torch_utils/ops/upfirdn2d.py",
+        "sha256": "d5f1e19b5bd291105216365764d95a7ad9d0d5db375d38fbc6717b113bda2919"
+      },
+      "legacy.py": {
+        "url": "https://raw.githubusercontent.com/NVlabs/stylegan3/c233a919a6faee6e36a316ddd4eddababad1adf9/legacy.py",
+        "path": "research/reviews/base-selection/gan-sources/stylegan3/legacy.py",
+        "sha256": "87df30e050b05d119cb0a697073e74d6af14158f6a3ebae5d0b963e59f130f65"
+      }
+    }
+  },
+  "stylegan-xl": {
+    "repository": "autonomousvision/stylegan-xl",
+    "commit": "4241ff9cfeb69d617427107a75d69e9d1c2d92f2",
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/autonomousvision/stylegan-xl/4241ff9cfeb69d617427107a75d69e9d1c2d92f2/README.md",
+        "path": "research/reviews/base-selection/gan-sources/stylegan-xl/README.md",
+        "sha256": "39bead1a176e29fdd40b6f4a737053d9f55c08fba001598be4fcc9a8b1041382"
+      },
+      "LICENSE.txt": {
+        "url": "https://raw.githubusercontent.com/autonomousvision/stylegan-xl/4241ff9cfeb69d617427107a75d69e9d1c2d92f2/LICENSE.txt",
+        "path": "research/reviews/base-selection/gan-sources/stylegan-xl/LICENSE.txt",
+        "sha256": "94886913a534d84b82e9af9b962cf6520164cd3af0827206a78077e5ced8ca64"
+      }
+    }
+  },
+  "eg3d": {
+    "repository": "NVlabs/eg3d",
+    "commit": "7cf1fd1e99e1061e8b6ba850f91c94fe56e7afe4",
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/NVlabs/eg3d/7cf1fd1e99e1061e8b6ba850f91c94fe56e7afe4/README.md",
+        "path": "research/reviews/base-selection/gan-sources/eg3d/README.md",
+        "sha256": "b31106ea3980364bb98e788b98a9cd2bc26381d190f8d3982814e6aa1fd43922"
+      },
+      "LICENSE.txt": {
+        "url": "https://raw.githubusercontent.com/NVlabs/eg3d/7cf1fd1e99e1061e8b6ba850f91c94fe56e7afe4/LICENSE.txt",
+        "path": "research/reviews/base-selection/gan-sources/eg3d/LICENSE.txt",
+        "sha256": "c0739108b0582585e3c46e144dba73aed4bb674f030a47e2c7c23c891571b356"
+      },
+      "docs/models.md": {
+        "url": "https://raw.githubusercontent.com/NVlabs/eg3d/7cf1fd1e99e1061e8b6ba850f91c94fe56e7afe4/docs/models.md",
+        "path": "research/reviews/base-selection/gan-sources/eg3d/docs/models.md",
+        "sha256": "fb97e81681150d3d65307c31443d5c6b8b0e65f98cb42f56c2195bfa5002d297"
+      }
+    }
+  },
+  "ffhq-dataset": {
+    "repository": "NVlabs/ffhq-dataset",
+    "commit": "4826aa6ea77aa7f1a7802b938ed7c40afb985cda",
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/NVlabs/ffhq-dataset/4826aa6ea77aa7f1a7802b938ed7c40afb985cda/README.md",
+        "path": "research/reviews/base-selection/gan-sources/ffhq-dataset/README.md",
+        "sha256": "c12efdc2759654840c9b2f8fe1cd9a6716be218b831c27056e13e3ec5cd3d663"
+      },
+      "download_ffhq.py": {
+        "url": "https://raw.githubusercontent.com/NVlabs/ffhq-dataset/4826aa6ea77aa7f1a7802b938ed7c40afb985cda/download_ffhq.py",
+        "path": "research/reviews/base-selection/gan-sources/ffhq-dataset/download_ffhq.py",
+        "sha256": "07313017632ee48e90166d94db93839ad6a5e4c0ba10cbe0327bdad2063579f9"
+      }
+    }
+  }
+}

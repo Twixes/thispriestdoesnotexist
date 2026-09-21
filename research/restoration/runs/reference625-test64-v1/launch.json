@@ -1,0 +1,28 @@
+{
+  "supervisor_pid": 61002,
+  "started_unix": 1789973907.9238489,
+  "deadline_unix": 1789974507.9238489,
+  "rss_abort_bytes": 6442450944,
+  "sampled_not_os_hard_limit": true,
+  "memory": {
+    "free_percent": 81,
+    "raw": "The system has 51539607552 (3145728 pages with a page size of 16384).\n\nStats: \nPages free: 64476 \nPages purgeable: 25564 \nPages purged: 89887226 \n\nSwap I/O:\nSwapins: 9767360 \nSwapouts: 13756027 \n\nPage Q counts:\nPages active: 1181488 \nPages inactive: 1266747 \nPages speculative: 7678 \nPages throttled: 0 \nPages wired down: 468096 \n\nCompressor Stats:\nPages used by compressor: 97023 \nPages decompressed: 339619503 \nPages compressed: 452634408 \n\nFile I/O:\nPageins: 68287740 \nPageouts: 765820 \n\nSystem-wide memory free percentage: 81%\n"
+  },
+  "cohort": "manifest256",
+  "nada_checkpoint_sha256": null,
+  "pins_sha256": "eb763cd9cee9a164415fa5e23e96af69651840581693da579b12d2dc799d97df",
+  "source_sha256": "fd7a8340e4ce141e7124e71c9f0598f1e3296a1f7ecb591c9c492baf93241114",
+  "thread_env": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "network_disabled": true,
+  "background_upsampler": null,
+  "decoder_randomize_noise": false,
+  "fixed_seed": 1729,
+  "no_retry": true,
+  "production_approved": false
+}

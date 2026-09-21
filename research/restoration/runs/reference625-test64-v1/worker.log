@@ -1,0 +1,72 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/transforms/functional_tensor.py:5: UserWarning: The torchvision.transforms.functional_tensor module is deprecated in 0.15 and will be **removed in 0.17**. Please don't rely on it. You probably just need to use APIs in torchvision.transforms.functional or in torchvision.transforms.v2.functional.
+  warnings.warn(
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+{"index": 0, "error": null, "seconds": 2.9076350000686944, "peak_rss": 4266049536}
+{"index": 1, "error": null, "seconds": 2.5945689589716494, "peak_rss": 4266049536}
+{"index": 2, "error": null, "seconds": 2.5178232919424772, "peak_rss": 4266049536}
+{"index": 3, "error": null, "seconds": 2.3975290410453454, "peak_rss": 4266049536}
+{"index": 4, "error": null, "seconds": 2.4455976670142263, "peak_rss": 4266049536}
+{"index": 5, "error": null, "seconds": 2.5491492920555174, "peak_rss": 4266049536}
+{"index": 6, "error": null, "seconds": 2.4233757079346105, "peak_rss": 4266049536}
+{"index": 7, "error": null, "seconds": 2.45358470804058, "peak_rss": 4266049536}
+{"index": 8, "error": null, "seconds": 2.5109579160343856, "peak_rss": 4266049536}
+{"index": 9, "error": null, "seconds": 2.4220567499287426, "peak_rss": 4266049536}
+{"index": 10, "error": null, "seconds": 2.427022875053808, "peak_rss": 4266049536}
+{"index": 11, "error": null, "seconds": 2.519060124992393, "peak_rss": 4266049536}
+{"index": 12, "error": null, "seconds": 2.689931708970107, "peak_rss": 4266049536}
+{"index": 13, "error": "RuntimeError: No detected face; no restoration fallback permitted", "seconds": 0.2148579580243677, "peak_rss": 4266049536}
+{"index": 14, "error": null, "seconds": 2.755451707984321, "peak_rss": 4266049536}
+{"index": 15, "error": null, "seconds": 2.5305981249548495, "peak_rss": 4266049536}
+{"index": 16, "error": null, "seconds": 2.453880290966481, "peak_rss": 4266049536}
+{"index": 17, "error": null, "seconds": 2.4862515000859275, "peak_rss": 4266049536}
+{"index": 18, "error": null, "seconds": 2.398650750052184, "peak_rss": 4266049536}
+{"index": 19, "error": null, "seconds": 2.5497141249943525, "peak_rss": 4266049536}
+{"index": 20, "error": null, "seconds": 2.489962083986029, "peak_rss": 4266049536}
+{"index": 21, "error": null, "seconds": 2.388580832979642, "peak_rss": 4266049536}
+{"index": 22, "error": "RuntimeError: No detected face; no restoration fallback permitted", "seconds": 0.2277422919869423, "peak_rss": 4266049536}
+{"index": 23, "error": null, "seconds": 2.4601992500247434, "peak_rss": 4266049536}
+{"index": 24, "error": null, "seconds": 2.4691615409683436, "peak_rss": 4266049536}
+{"index": 25, "error": null, "seconds": 2.451248375000432, "peak_rss": 4266049536}
+{"index": 26, "error": null, "seconds": 2.4521780000068247, "peak_rss": 4266049536}
+{"index": 27, "error": null, "seconds": 2.5745204590493813, "peak_rss": 4266049536}
+{"index": 28, "error": null, "seconds": 2.6558920410461724, "peak_rss": 4266049536}
+{"index": 29, "error": null, "seconds": 2.4753596250666305, "peak_rss": 4266049536}
+{"index": 30, "error": null, "seconds": 2.4902865410549566, "peak_rss": 4266049536}
+{"index": 31, "error": null, "seconds": 2.5323649999918416, "peak_rss": 4266049536}
+{"index": 32, "error": null, "seconds": 2.584013208048418, "peak_rss": 4266049536}
+{"index": 33, "error": "RuntimeError: No detected face; no restoration fallback permitted", "seconds": 0.20274108299054205, "peak_rss": 4266049536}
+{"index": 34, "error": null, "seconds": 2.5094064170261845, "peak_rss": 4266049536}
+{"index": 35, "error": null, "seconds": 3.0705051670083776, "peak_rss": 4266049536}
+{"index": 36, "error": null, "seconds": 3.007061457959935, "peak_rss": 4266049536}
+{"index": 37, "error": null, "seconds": 2.6245397500460967, "peak_rss": 4266049536}
+{"index": 38, "error": null, "seconds": 2.7097726250067353, "peak_rss": 4266049536}
+{"index": 39, "error": null, "seconds": 2.772066541016102, "peak_rss": 4266049536}
+{"index": 40, "error": null, "seconds": 2.801535625010729, "peak_rss": 4266049536}
+{"index": 41, "error": null, "seconds": 2.7836046250304207, "peak_rss": 4266049536}
+{"index": 42, "error": null, "seconds": 2.824249790981412, "peak_rss": 4266049536}
+{"index": 43, "error": null, "seconds": 2.8236108749406412, "peak_rss": 4266049536}
+{"index": 44, "error": null, "seconds": 2.714258583029732, "peak_rss": 4266049536}
+{"index": 45, "error": null, "seconds": 2.7872749579837546, "peak_rss": 4266049536}
+{"index": 46, "error": null, "seconds": 2.6062000829260796, "peak_rss": 4266049536}
+{"index": 47, "error": null, "seconds": 2.7637215829454362, "peak_rss": 4266049536}
+{"index": 48, "error": null, "seconds": 2.9882208749186248, "peak_rss": 4301094912}
+{"index": 49, "error": null, "seconds": 2.909839874948375, "peak_rss": 4301094912}
+{"index": 50, "error": null, "seconds": 3.017980625038035, "peak_rss": 4301111296}
+{"index": 51, "error": null, "seconds": 2.941149999969639, "peak_rss": 4301111296}
+{"index": 52, "error": null, "seconds": 3.1839482079958543, "peak_rss": 4301111296}
+{"index": 53, "error": null, "seconds": 2.993462166050449, "peak_rss": 4301127680}
+{"index": 54, "error": null, "seconds": 3.140999707975425, "peak_rss": 4301127680}
+{"index": 55, "error": null, "seconds": 2.950567999971099, "peak_rss": 4303290368}
+{"index": 56, "error": null, "seconds": 2.8886245830217376, "peak_rss": 4303437824}
+{"index": 57, "error": null, "seconds": 3.406658541993238, "peak_rss": 4303437824}
+{"index": 58, "error": null, "seconds": 4.0886816249694675, "peak_rss": 4303437824}
+{"index": 59, "error": null, "seconds": 3.148442249977961, "peak_rss": 4303437824}
+{"index": 60, "error": null, "seconds": 3.5875520000699908, "peak_rss": 4303437824}
+{"index": 61, "error": null, "seconds": 3.1911742500960827, "peak_rss": 4303437824}
+{"index": 62, "error": null, "seconds": 2.8854849580675364, "peak_rss": 4303437824}
+{"index": 63, "error": null, "seconds": 3.1912209159927443, "peak_rss": 4303437824}
