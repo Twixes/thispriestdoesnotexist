@@ -1,0 +1,13 @@
+{
+  "status": "preflight_refused_before_run_creation",
+  "recorded_unix": 1789992293.450742,
+  "command": "research/.venv/bin/python research/experiments/adam_native/noise_ablation.py --output research/runs/adam-native1024-noise-ablation100-v1",
+  "reason": "35% available system memory assertion failed before output creation or model execution",
+  "native_model_loaded": false,
+  "output_directory_created": false,
+  "later_memory_observation": {
+    "available_gib": 16.47064208984375,
+    "available_fraction": 0.3431383768717448
+  },
+  "next_action": "Finish active Git LFS upload, then recheck fresh memory; do not relax guard or close user apps."
+}
