@@ -5,7 +5,6 @@
   "observed_exit_code": 130,
   "expected_interrupt": true,
   "retained_checkpoint_step": 4750,
-  "completed_training_presentations": 38000,
   "stop_reason": "Persistent eye/mouth defects and narrow variety in native fixed grids through4750; redirect resources to reference and factorial reconstruction experiment.",
   "validation_file": "checkpoint-004750-validation.json",
   "integrity_file": "checkpoint-004750-validation-integrity.json",
@@ -24,5 +23,8 @@
   },
   "reference_pid_82281_left_running": true,
   "production_approved": false,
-  "automatic_restart": false
+  "automatic_restart": false,
+  "retained_checkpoint_presentations": 38000,
+  "last_logged_step_before_signal": 4770,
+  "minimum_completed_updates_after_checkpoint_not_saved": 20
 }

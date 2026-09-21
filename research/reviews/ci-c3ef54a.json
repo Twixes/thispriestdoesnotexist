@@ -1,0 +1,115 @@
+{
+  "checked_utc": "2026-09-21T02:29:54.181150+00:00",
+  "commit": "c3ef54ad938e649b424168307ca5afa147f27ca7",
+  "read_only": true,
+  "workers_checks": [
+    {
+      "id": 106194883297,
+      "name": "Workers Builds: thispriestdoesnotexist",
+      "head_sha": "c3ef54ad938e649b424168307ca5afa147f27ca7",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/1a5e44710a69d21d6822a460e5861578/workers/services/view/thispriestdoesnotexist/production/builds/5c58b175-6ab3-41a0-acbc-22ba8afdc7ef",
+      "started_at": "2026-09-21T02:29:07Z",
+      "completed_at": "2026-09-21T02:29:07Z"
+    }
+  ],
+  "inference_workflow": {
+    "conclusion": "success",
+    "headSha": "c3ef54ad938e649b424168307ca5afa147f27ca7",
+    "jobs": [
+      {
+        "completedAt": "2026-09-21T02:28:50Z",
+        "conclusion": "success",
+        "databaseId": 106194805238,
+        "name": "deploy",
+        "startedAt": "2026-09-21T02:28:37Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-09-21T02:28:38Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-09-21T02:28:38Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T02:28:41Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 2,
+            "startedAt": "2026-09-21T02:28:38Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T02:28:47Z",
+            "conclusion": "success",
+            "name": "Verify deployment gates and frontend",
+            "number": 3,
+            "startedAt": "2026-09-21T02:28:41Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T02:28:47Z",
+            "conclusion": "success",
+            "name": "Detect promoted model",
+            "number": 4,
+            "startedAt": "2026-09-21T02:28:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T02:28:47Z",
+            "conclusion": "skipped",
+            "name": "Fetch only production weights",
+            "number": 5,
+            "startedAt": "2026-09-21T02:28:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T02:28:47Z",
+            "conclusion": "skipped",
+            "name": "Validate promotion",
+            "number": 6,
+            "startedAt": "2026-09-21T02:28:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T02:28:47Z",
+            "conclusion": "skipped",
+            "name": "Deploy exact master revision",
+            "number": 7,
+            "startedAt": "2026-09-21T02:28:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T02:28:48Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 14,
+            "startedAt": "2026-09-21T02:28:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T02:28:48Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 15,
+            "startedAt": "2026-09-21T02:28:48Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/Twixes/thispriestdoesnotexist/actions/runs/35554297546/job/106194805238"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/Twixes/thispriestdoesnotexist/actions/runs/35554297546"
+  },
+  "actual_inference_deployment_performed": false,
+  "log_evidence": {
+    "frontend_tests_passed": 22,
+    "deployment_gate_tests_passed": 6,
+    "model_detection_message": "No model has passed review; inference deployment is intentionally skipped."
+  },
+  "interpretation": "Workers frontend build succeeded. Inference CI gates/tests succeeded, but production weight fetch, promotion validation and application deployment were skipped. No inference model was deployed by this run."
+}

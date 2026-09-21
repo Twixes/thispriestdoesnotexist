@@ -1,0 +1,42 @@
+{
+  "reviewer": "root assistant",
+  "reviewed_files": [
+    "runner.py",
+    "optimizer.py",
+    "update.py",
+    "render.py",
+    "test_runner.py",
+    "parent-pins.json"
+  ],
+  "source_sha256": {
+    "update.py": "09a80401d440fd7c7241a92da3c60e111eb8a24213c16dd6112d872807847591",
+    "runner.py": "ad72a3cedc56931c52430034c0bd3ef66ce9a7785aef4aaf85da67783785d7f8",
+    "render.py": "09b7fdef845e010ae6d6ec704a90542e98935ef76b92f02fc2595383ce941387",
+    "test_runner.py": "8ffa3bac165757f81e3e389901ae2d595ecb44ebd074cf63f635ba0feb6b5a6e",
+    "optimizer.py": "e7caab2126b318f292e593d524f9e69b434dea5f978b082033dbbcd7f354dedf"
+  },
+  "pins_sha256": "fd911b1ce03e2b224063662a8c1e9d7e1c1a7191fedcb8010692ce5af7fd5136",
+  "tests": {
+    "exec_session": 64745,
+    "terminal_exit_code": 0,
+    "count": 6,
+    "seconds": 1.232,
+    "log_sha256": "d604df6f7fe07e3edb64f090240b718dd64a930edc7657d7951f92783c4b2639"
+  },
+  "approved_real_smoke": true,
+  "approved_full_factorial": false,
+  "checks": [
+    "Original600 checkpoint and source bundle pinned; original six TRAIN and four diagnostic held-out teacher IDs are separated.",
+    "Existing optimizer state restored exactly; B/D add only non-noise b32 parameters with empty state.",
+    "Balanced six-pair schedule and fresh draws match across four arms; frozen and source/D invariants checked.",
+    "Original half-tab/rest pixel objective and source/fresh preservation retained; feature weight0.05, loss-only composites.",
+    "Two independent one-update smoke replicas verify diagnostics do not alter update/model/Adam/RNG and separately time ordinary update.",
+    "Native full outputs and source30 use no compositing; region error does not prove perceived quality.",
+    "Fresh25% memory guard, sampled8GiB abort and4hour total bound; sequentialprocesses."
+  ],
+  "limitations": [
+    "Real1024 backward/timing/memory are pending smoke.",
+    "Feature usefulness/gradient strength and held-out priest quality unproven.",
+    "No trained model approved for production."
+  ]
+}

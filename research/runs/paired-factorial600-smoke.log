@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_factorial/runner.py", line 254, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_factorial/runner.py", line 245, in main
+    if completed.returncode!=0:raise RuntimeError(f'Arm {arm} failed with exit {completed.returncode}; see {arm}.log; do not rerun completed arms')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Arm D failed with exit 70; see D.log; do not rerun completed arms
+       21.79 real        22.61 user         2.46 sys
+          8844705792  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              767025  page reclaims
+                  20  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  94  voluntary context switches
+              184470  involuntary context switches
+          1314965415  instructions retired
+           902139618  cycles elapsed
+            13533592  peak memory footprint

@@ -1,0 +1,46 @@
+{
+  "root_exec_session": 37760,
+  "observed_supervisor_exit_code": 1,
+  "observed_worker_exit_code": 70,
+  "failure": {
+    "complete": false,
+    "reason": "8 GiB observed peak RSS exceeded",
+    "peak_rss_bytes": 8844099584
+  },
+  "launch": {
+    "command": [
+      "/usr/bin/time",
+      "-l",
+      "caffeinate",
+      "-i",
+      "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python",
+      "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_factorial/runner.py",
+      "--execute",
+      "--smoke",
+      "--output",
+      "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-factorial600-smoke"
+    ],
+    "cwd": "/Users/twixes/Developer/thispriestdoesnotexist",
+    "started_unix": 1789958264.350264,
+    "source_files": {
+      "update.py": "09a80401d440fd7c7241a92da3c60e111eb8a24213c16dd6112d872807847591",
+      "runner.py": "ad72a3cedc56931c52430034c0bd3ef66ce9a7785aef4aaf85da67783785d7f8",
+      "render.py": "09b7fdef845e010ae6d6ec704a90542e98935ef76b92f02fc2595383ce941387",
+      "test_runner.py": "8ffa3bac165757f81e3e389901ae2d595ecb44ebd074cf63f635ba0feb6b5a6e",
+      "optimizer.py": "e7caab2126b318f292e593d524f9e69b434dea5f978b082033dbbcd7f354dedf",
+      "parent-pins.json": "fd911b1ce03e2b224063662a8c1e9d7e1c1a7191fedcb8010692ce5af7fd5136"
+    },
+    "purpose": "Two independent one-update arm-D replicas, diagnostic and ordinary, both from original600. No full factorial permission inferred from this smoke.",
+    "production_approved": false,
+    "wrapper_child_pid": 11780,
+    "exit_code": 1,
+    "elapsed_seconds": 21.795680046081543
+  },
+  "decision": "Do not start full factorial; preserve initial code and failed smoke, assess explicit resource revision separately.",
+  "initial_snapshot_complete": true,
+  "completed_update_evidence": false,
+  "gradient_strength_or_ordinary_time_known": false,
+  "time_wrapper_swaps": 0,
+  "fresh_memory_free_percent_after_exit": 51,
+  "production_approved": false
+}
