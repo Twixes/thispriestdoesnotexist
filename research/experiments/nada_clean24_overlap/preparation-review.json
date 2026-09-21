@@ -1,0 +1,48 @@
+{
+  "prepared_utc": "2026-09-21T05:38:40.125848+00:00",
+  "status": "prepared_not_executed",
+  "model_imports_or_loads": false,
+  "training_launched": false,
+  "original_prepared_sources_unchanged": true,
+  "active_reference_signaled": false,
+  "policy_tests_passed": 12,
+  "lifecycle_scenarios_passed": 7,
+  "lifecycle_wall_seconds": 1.5693091249559075,
+  "source_check_pinned_files": 235,
+  "observed_free_percent": 55,
+  "pressure_note": "Point observation only; actual launch must repeat >=55% initial check. Monitor <=5s gaps and abort below35%.",
+  "allowed_reference_pid": 27880,
+  "limits": {
+    "cpu_threads": 1,
+    "sampled_rss_bytes": 12884901888,
+    "absolute_seconds": 1200,
+    "initial_free_percent_min": 55,
+    "running_free_percent_min": 35,
+    "pressure_interval_seconds": 2,
+    "maximum_observation_gap_seconds": 5,
+    "retries": 0
+  },
+  "pending_execution_gates": [
+    "Exact CPU1 source W/PNG reproduction",
+    "Full native1024 CLIP backward memory/time and finite gradients",
+    "Actual optimizer/frozen-state/snapshot/reload checks",
+    "Any visual quality judgment; ten steps only feasibility/initial movement"
+  ],
+  "fix": "Refuse reference625_validation commands and another overlap supervisor PID before child spawn; retain own PID exclusion. Previous source and evidence preserved under pre-process-detection-fix.",
+  "files_sha256": {
+    "research/experiments/nada_clean24_overlap/supervise.py": "55d22c0606cd300352319650b2c8dfdb2562c557e17c1967f70c730d0c5cba11",
+    "research/experiments/nada_clean24_overlap/runner.py": "7bf6ab6513a6ecfb54f9219fd138c53f57388e9f9316e179efc9ed5a73745855",
+    "research/experiments/nada_clean24_overlap/worker.py": "963cd1396d9f114590e9b639b0f1728ca7117685bd402538f761f1a71581605b",
+    "research/experiments/nada_clean24_overlap/inputs.json": "cd6ac2304db8c5426652b592c8bc1ee3fb7e37d9975517e676475510462c34ff",
+    "research/experiments/nada_clean24_overlap/latents.npz": "3af23820af109a2d83df4a057e6af9d61c4027f2222169d13b41b275009d9ef5",
+    "research/experiments/nada_clean24_overlap/policy.json": "58c6b03af74efff086c672a0b43b8908e7eacc0b6e8a1ebabec27dac3ceaa093",
+    "research/experiments/nada_clean24_overlap/pins.json": "1bd426f603eb1e993c8eda5e600eff0d7d332ea95636308330f289c2113ec86d",
+    "research/experiments/nada_clean24_overlap/test_policy.py": "00ddee4dc63c76489b04d2957a8db0746c954f2d51bc699c1c594d2cd2baacb6",
+    "research/experiments/nada_clean24_overlap/test_lifecycle.py": "30a7bcf6b70d628704f9bd81f408df2afe76a69cee6aa6e4d3edc01d7de5d8dc",
+    "research/experiments/nada_clean24_overlap/policy-test.log": "1bed6ba96083e855099bb31f2fc553dfc8ccc3f4210e4a1f458b3a168cd7c399",
+    "research/experiments/nada_clean24_overlap/lifecycle-test.log": "e5f297b068f190c5006475dfde53dc8d40049adc85c8a8be374bcda7eeecb05b",
+    "research/experiments/nada_clean24_overlap/lifecycle-evidence.json": "4463924b10657732f980d4d8970df8120af21f6dc7b302d2ec045cb52880fb04",
+    "research/experiments/nada_clean24_overlap/preflight-check.json": "c5a48bd5573701457bbfef8f04f5ed9bb5322dacaa7288c9f1f08edc38a5a3bb",
+    "research/experiments/nada_clean24_overlap/README.md": "34d355ae4192b691312aeedc523eccee7b583d8743536f5537cec39ba176c51e"
+  }
+}

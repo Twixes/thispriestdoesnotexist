@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "tested_source": "research/experiments/nada_clean24_overlap/supervise.py",
+  "source_sha256": "89f03203d2ebd67cd668f6fa32bf79d126ae09f106d9535b299d1dd7f802731e",
+  "harness_sha256": "30a7bcf6b70d628704f9bd81f408df2afe76a69cee6aa6e4d3edc01d7de5d8dc",
+  "wall_seconds": 1.579627375002019,
+  "source_unchanged": true,
+  "real_launcher_commands_executed": false,
+  "real_model_imports_or_loads": false,
+  "fixture_policy": "Temporary fake run/provenance, fake memory guard; Popen substitutes only harmless Python sleep group. Overlap supervisor main/cleanup/wait/signal handlers are real unmodified code.",
+  "results": [
+    {
+      "scenario": "write_failure",
+      "passed": true,
+      "wall_seconds": 0.07399658299982548,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 31806,
+        "pgid": 31806,
+        "grandchild_pid": 31808
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "OSError('Injected record-write failure after dummy spawn')",
+      "only_one_dummy_spawned": true,
+      "protected_fixture_alive": true,
+      "signals": [
+        {
+          "pgid": 31806,
+          "signal": 9
+        }
+      ],
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 202, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 100, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 250, in main\n    supervise(args.output.resolve(), args.allowed_reference_pid)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 182, in supervise\n    base.publish_child(output, {'pid': process.pid, 'supervisor_pid': os.getpid(),\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/runner.py\", line 84, in publish_child\n    write_new(temporary, value)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 94, in fail_after_spawn\n    raise OSError('Injected record-write failure after dummy spawn')\nOSError: Injected record-write failure after dummy spawn\n"
+    },
+    {
+      "scenario": "sigint",
+      "passed": true,
+      "wall_seconds": 0.08025779202580452,
+      "coordinator_exit_code": -2,
+      "dummy_pids": {
+        "pid": 31811,
+        "pgid": 31811,
+        "grandchild_pid": 31812
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "KeyboardInterrupt()",
+      "only_one_dummy_spawned": true,
+      "protected_fixture_alive": true,
+      "signals": [
+        {
+          "pgid": 31811,
+          "signal": 9
+        }
+      ],
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 202, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 100, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 250, in main\n    supervise(args.output.resolve(), args.allowed_reference_pid)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 202, in supervise\n    time.sleep(.1)\nKeyboardInterrupt\n"
+    },
+    {
+      "scenario": "sigterm",
+      "passed": true,
+      "wall_seconds": 0.08374024997465312,
+      "coordinator_exit_code": 143,
+      "dummy_pids": {
+        "pid": 31816,
+        "pgid": 31816,
+        "grandchild_pid": 31817
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "SystemExit(143)",
+      "only_one_dummy_spawned": true,
+      "protected_fixture_alive": true,
+      "signals": [
+        {
+          "pgid": 31816,
+          "signal": 9
+        }
+      ],
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": ""
+    },
+    {
+      "scenario": "deadline",
+      "passed": true,
+      "wall_seconds": 1.1093313749879599,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 31821,
+        "pgid": 31821,
+        "grandchild_pid": 31822
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "RuntimeError('Twenty-minute absolute deadline expired')",
+      "only_one_dummy_spawned": true,
+      "protected_fixture_alive": true,
+      "signals": [
+        {
+          "pgid": 31821,
+          "signal": 9
+        }
+      ],
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 202, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 100, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 250, in main\n    supervise(args.output.resolve(), args.allowed_reference_pid)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 186, in supervise\n    raise RuntimeError('Twenty-minute absolute deadline expired')\nRuntimeError: Twenty-minute absolute deadline expired\n"
+    },
+    {
+      "scenario": "rss",
+      "passed": true,
+      "wall_seconds": 0.07234070892445743,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 31835,
+        "pgid": 31835,
+        "grandchild_pid": 31836
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "RuntimeError('12GiB observed NADA RSS exceeded')",
+      "only_one_dummy_spawned": true,
+      "protected_fixture_alive": true,
+      "signals": [
+        {
+          "pgid": 31835,
+          "signal": 9
+        }
+      ],
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 202, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 100, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 250, in main\n    supervise(args.output.resolve(), args.allowed_reference_pid)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 199, in supervise\n    raise RuntimeError('12GiB observed NADA RSS exceeded')\nRuntimeError: 12GiB observed NADA RSS exceeded\n"
+    },
+    {
+      "scenario": "low_pressure",
+      "passed": true,
+      "wall_seconds": 0.06732120807282627,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 31840,
+        "pgid": 31840,
+        "grandchild_pid": 31841
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "RuntimeError('System free memory 34% is below 35%')",
+      "only_one_dummy_spawned": true,
+      "protected_fixture_alive": true,
+      "signals": [
+        {
+          "pgid": 31840,
+          "signal": 9
+        }
+      ],
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 202, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 100, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 250, in main\n    supervise(args.output.resolve(), args.allowed_reference_pid)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 190, in supervise\n    last = checked_pressure(records / 'pressure.jsonl', 35, last)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 118, in checked_pressure\n    raise RuntimeError(f'System free memory {observation[\"free_percent\"]}% is below {minimum}%')\nRuntimeError: System free memory 34% is below 35%\n"
+    },
+    {
+      "scenario": "pressure_failure",
+      "passed": true,
+      "wall_seconds": 0.07220079202670604,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 31844,
+        "pgid": 31844,
+        "grandchild_pid": 31845
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "TimeoutExpired('fixture memory_pressure', 1)",
+      "only_one_dummy_spawned": true,
+      "protected_fixture_alive": true,
+      "signals": [
+        {
+          "pgid": 31844,
+          "signal": 9
+        }
+      ],
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 202, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 100, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 250, in main\n    supervise(args.output.resolve(), args.allowed_reference_pid)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 190, in supervise\n    last = checked_pressure(records / 'pressure.jsonl', 35, last)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/supervise.py\", line 113, in checked_pressure\n    observation = pressure()\n                  ^^^^^^^^^^\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24_overlap/test_lifecycle.py\", line 61, in fake_pressure\n    raise subprocess.TimeoutExpired('fixture memory_pressure', 1)\nsubprocess.TimeoutExpired: Command 'fixture memory_pressure' timed out after 1 seconds\n"
+    }
+  ]
+}

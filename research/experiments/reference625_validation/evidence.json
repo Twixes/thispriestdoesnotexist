@@ -1,0 +1,24 @@
+{
+  "recorded_utc": "2026-09-21T05:38:51.158364+00:00",
+  "tests": 10,
+  "tests_passed": true,
+  "source_syntax_checked": true,
+  "test_scope": "Metadata completion/refusal/process guards and ordinary byte-copy fixtures only; no fake tensor model success",
+  "real_checkpoint_loaded": false,
+  "model_constructed": false,
+  "inference_or_training_run": false,
+  "active_inputs_changed": false,
+  "static": {
+    "static_files": 53,
+    "torch_imported": false,
+    "checkpoint_loaded": false
+  },
+  "source_sha256": {
+    "static-check.json": "f9e19e1414b3fdf3b9829c3c600d86b4b22b5d36caf5c805cccdc08427a09446",
+    "test.log": "350ba2f72b20029a7456c6211f3224d8ecbb666c577f14d8b0a1bcf619f53f34",
+    "README.md": "4fe7c2cc8a3ec23a1241f137e7e56ee1eb0bd9f74c625f9fa4aca8ec907c550c",
+    "validate.py": "f14efccfc68fc39dbfc1e668f3e14a2e1e5b7d3cd78aa3454c45bec43621286b",
+    "test_guards.py": "ae8ee5f40f40a5ea31be0a6b1f8b63a68e8efca0afa34274ee41d5dacb82a244",
+    "pins.json": "5c2d525fc90823fad62a2e8c940827c66790b8713f9f543c9e24b8d782d3d315"
+  }
+}

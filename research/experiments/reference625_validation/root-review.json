@@ -1,0 +1,12 @@
+{
+  "reviewed_utc": "2026-09-21T05:44:04.848538+00:00",
+  "reviewer": "root",
+  "decision": "approved conditionally after genuine625 terminal success and all other model jobs terminal",
+  "scope": "Numeric integrity, EMA export equality and immutable checkpoint capture only; no visual approval",
+  "review": "Entire source reviewed in prior turn, final source hash checked against agent record; root reran ten lightweight tests and53 static checks. Resource deadline/RSS/process guards retained. Root will explicitly observe overlap supervisor and worker terminal before execution.",
+  "sha256": {
+    "validate.py": "f14efccfc68fc39dbfc1e668f3e14a2e1e5b7d3cd78aa3454c45bec43621286b",
+    "pins.json": "5c2d525fc90823fad62a2e8c940827c66790b8713f9f543c9e24b8d782d3d315",
+    "test_guards.py": "ae8ee5f40f40a5ea31be0a6b1f8b63a68e8efca0afa34274ee41d5dacb82a244"
+  }
+}

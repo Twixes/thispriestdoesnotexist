@@ -1,0 +1,17 @@
+test_actual_copy_identity_and_expanded_pins (__main__.Policy.test_actual_copy_identity_and_expanded_pins) ... ok
+test_additional_model_refused (__main__.Policy.test_additional_model_refused) ... ok
+test_copied_worker_handshake_checks_its_actual_new_pins (__main__.Policy.test_copied_worker_handshake_checks_its_actual_new_pins) ... ok
+test_exact_reference_and_owned_child_allowed (__main__.Policy.test_exact_reference_and_owned_child_allowed) ... ok
+test_initial54_refuses_before_output_or_child (__main__.Policy.test_initial54_refuses_before_output_or_child) ... ok
+test_observation_gap_refused (__main__.Policy.test_observation_gap_refused) ... ok
+test_pressure_parse_failure (__main__.Policy.test_pressure_parse_failure) ... ok
+test_reference_must_exist_initially_but_may_finish (__main__.Policy.test_reference_must_exist_initially_but_may_finish) ... ok
+test_reused_pid_start_time (__main__.Policy.test_reused_pid_start_time) ... ok
+test_validation_and_competing_overlap_coordinators_refused (__main__.Policy.test_validation_and_competing_overlap_coordinators_refused) ... ok
+test_wrong_command_device_or_run (__main__.Policy.test_wrong_command_device_or_run) ... ok
+test_wrong_explicit_pid (__main__.Policy.test_wrong_explicit_pid) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.507s
+
+OK

@@ -1,0 +1,24 @@
+{
+  "source_checks": "pass",
+  "pinned_files": 235,
+  "allowed_reference": {
+    "reference_present": true,
+    "reference": {
+      "pid": 27880,
+      "ppid": 27871,
+      "pgid": 27880,
+      "start_time": "Mon Sep 21 06:54:02 2026",
+      "command": "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python -u /Users/twixes/Developer/thispriestdoesnotexist/research/experiments/reference_phases/trainer.py --run /Users/twixes/Developer/thispriestdoesnotexist/research/runs/reference256-paper-b64-resumed500-to625 --resume /Users/twixes/Developer/thispriestdoesnotexist/research/runs/reference256-paper-b64/resume-000500.pt --data /Users/twixes/Developer/thispriestdoesnotexist/research/alignment/collar-only/eyes42 --base /Users/twixes/Developer/thispriestdoesnotexist/research/models/ffhq256.pkl --device mps --threads 2 --batch 64 --microbatch 8 --pl-batch-shrink 2 --mirror --freeze-d-layers 0 --lr 0.0025 --r1-gamma 1 --ema-kimg 20 --augment-p 0 --ada-target 0.6 --ada-kimg 100 --seed 20260920 --steps 625 --checkpoint-every 125 --snapshot-every 125"
+    }
+  },
+  "pressure": {
+    "observed_unix": 1789969097.566346,
+    "monotonic": 743720.092467125,
+    "free_percent": 55,
+    "command_seconds": 0.00658462499268353,
+    "raw": "The system has 51539607552 (3145728 pages with a page size of 16384).\n\nStats: \nPages free: 6065 \nPages purgeable: 5567 \nPages purged: 89195791 \n\nSwap I/O:\nSwapins: 9558952 \nSwapouts: 13637588 \n\nPage Q counts:\nPages active: 845390 \nPages inactive: 851409 \nPages speculative: 635 \nPages throttled: 0 \nPages wired down: 1042448 \n\nCompressor Stats:\nPages used by compressor: 339219 \nPages decompressed: 338777687 \nPages compressed: 451922256 \n\nFile I/O:\nPageins: 67737326 \nPageouts: 765078 \n\nSystem-wide memory free percentage: 55%\n"
+  },
+  "initial_pressure_requirement_met": true,
+  "torch_imported": false,
+  "training_launched": false
+}

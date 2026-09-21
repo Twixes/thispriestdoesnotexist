@@ -1,0 +1,15 @@
+{
+  "reviewed_utc": "2026-09-21T05:43:23.044927+00:00",
+  "reviewer": "root",
+  "decision": "approve one bounded overlap feasibility execution",
+  "source_review": "Full supervisor review retained in prior turn; narrow competing-process diff reviewed this turn. Twelve policy fixtures and actual 235-file preflight rerun successfully; observed free memory 55%.",
+  "resource_policy_change": "Explicitly permit unchanged CPU1 native1024 NADA worker alongside exact live MPS reference PID27880; initial >=55%, runtime >=35%, 12GiB sampled RSS and 1200s absolute deadline. Original reference never signaled. No automatic retries. Evaluation/validation must wait until both jobs terminal.",
+  "quality_approved": false,
+  "sha256": {
+    "supervise.py": "55d22c0606cd300352319650b2c8dfdb2562c557e17c1967f70c730d0c5cba11",
+    "pins.json": "1bd426f603eb1e993c8eda5e600eff0d7d332ea95636308330f289c2113ec86d",
+    "policy.json": "58c6b03af74efff086c672a0b43b8908e7eacc0b6e8a1ebabec27dac3ceaa093",
+    "runner.py": "7bf6ab6513a6ecfb54f9219fd138c53f57388e9f9316e179efc9ed5a73745855",
+    "worker.py": "963cd1396d9f114590e9b639b0f1728ca7117685bd402538f761f1a71581605b"
+  }
+}
