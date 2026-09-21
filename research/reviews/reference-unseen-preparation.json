@@ -1,0 +1,40 @@
+{
+  "prepared_utc": "2026-09-21T03:59:46.987620+00:00",
+  "status": "ready_for_root_source_review_not_executed",
+  "files_sha256": {
+    "evaluate.py": "bbfb5636c1e593cee7d6120816559dc48a44119c4d18b1acc9b1a7dd28202496",
+    "pins.json": "4df1379f6db47cc33dbf0a9ab733dbec245f961f1a34b96ea7669e0c9c518716",
+    "README.md": "a19dc625fa33baf519ca9c178964ac1a2162b8fd9d35a3f1dbdb9afd18aacbbf"
+  },
+  "checks_performed": [
+    "Read actual archived/current trainer schema and pinned config.",
+    "Verified preserved500 checkpoint SHA against prior numeric validation, without deserialization.",
+    "Parsed and compiled evaluator source using stdlib without running evaluator code.",
+    "Recorded research venv distribution metadata without importing model libraries."
+  ],
+  "requested_scope": {
+    "native_images": 96,
+    "fresh_latents": 32,
+    "variants": [
+      "G psi1",
+      "G_ema psi1",
+      "G_ema psi0.7"
+    ],
+    "baseline_omitted": true,
+    "cpu_threads": 1,
+    "batch": 1,
+    "memory_preflight_min_free_percent": 35,
+    "rss_abort_bytes": 6442450944,
+    "absolute_runtime_seconds": 600,
+    "explicit_execute": true,
+    "no_overwrites_or_retries": true
+  },
+  "notes": [
+    "RSS enforcement is sampled and honestly described; it cannot guarantee zero transient overshoot.",
+    "Resource watchdogs and parent cleanup follow reviewed patterns, but this exact evaluator lifecycle is not executed/tested yet.",
+    "No active C/D sources, model states or processes changed.",
+    "Initial metadata collection accidentally used system Python without torch distribution metadata; failed before evaluator execution or model import. Repeated stdlib-only metadata/hash preparation in research venv."
+  ],
+  "models_imported_or_loaded": false,
+  "evaluator_executed": false
+}

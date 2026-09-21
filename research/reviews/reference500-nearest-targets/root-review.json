@@ -1,0 +1,14 @@
+{
+  "reviewed_utc": "2026-09-21T04:01:55.552329+00:00",
+  "matches_sha256": "3ffcf9a8605652660febaea4c657dd5edb979aaae15fc1ed91564a6ce6184ef5",
+  "viewed": "Entire32-pair contact; native pairs023,016,027,031,029 (five smallest face-crop RMSE)",
+  "observations": [
+    "No exact copied portrait apparent among five closest-by-pixel pairs; generated eyes, hair, face contours and backgrounds differ.",
+    "Pixel nearest often matches pose/lighting rather than apparent identity, so this cannot establish non-memorization across all110 target portraits.",
+    "Generated031 has malformed collar/neck and generated016 has uneven skin/eye detail; native detail is below target photographs.",
+    "Raw32 grid includes architectural patterns covering face/head on several unseen seeds. This failure extends beyond the original fixed16."
+  ],
+  "quality_approved": false,
+  "production_approved": false,
+  "next_decision": "Retain evidence and finish active C/D. Consider bounded continued reference training after actual remaining comparisons; no serving promotion."
+}

@@ -1,0 +1,266 @@
+{
+  "method": "RMSE of grayscale aligned face crop at64x64, both target orientations",
+  "limitations": "Pixel proximity is sensitive to pose and lighting. Neither low nor high distance establishes identity copying or novelty; review native pairs.",
+  "production_approved": false,
+  "script_sha256": "50edbd9d02273f2469a0e71e67405e252cd333ffb80630f80e98f9b334732be6",
+  "sample_count": 32,
+  "training_count": 110,
+  "results": [
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-000.png",
+      "sample_sha256": "4d643bfae050cd257f0e04965ac764940412108be0ac36e6db7176175eed5bf5",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-072.png",
+      "training_sha256": "8b06b9410891dd4b0c23453ed2e828eb71ccdb2bb9f272b482d434860567f9db",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.20716185867786407
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-001.png",
+      "sample_sha256": "e8a730597031fad51f02589a8f86bedafcb5a60c4296cc4ba375381c9316e9a8",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-071.png",
+      "training_sha256": "b4e258b39df0affd260a715cdf43db243bd68a648e58d6c7794be86cc71f11ac",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.1876772940158844
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-002.png",
+      "sample_sha256": "038d866d77d1630c0bd6c054d0882aea25c4dbd1f06c3f48142c5c17fbf59b5b",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-094.png",
+      "training_sha256": "5cf2746760b55e626c48013cb695f7a41b7e314ea3ad132adc30171d01cad563",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.179238423705101
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-003.png",
+      "sample_sha256": "426c59cc586b586ef1c3cd907c8eca2e2cda0e7de172f4e06a4cb362f1542c66",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-140.png",
+      "training_sha256": "21e2624aad0abcd853998ca6cc45ae948d0f6575406581fc677db89ac72ff712",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.21408039331436157
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-004.png",
+      "sample_sha256": "7890ba00e048bac3e64646b03c2c1d7c15c8084bf3aa1c4b51ce2438179ea1e4",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-078.png",
+      "training_sha256": "0e53a39e47cdaf6fb26d30010f2ce5554b7112beb810429b506a164a79892b0b",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.22252628207206726
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-005.png",
+      "sample_sha256": "93547c7b051f5c459c6db6aa279b90b8d67bada2b7a607a74aaf95bdacc285ad",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-027.png",
+      "training_sha256": "22a9bb8ddfd43bd5ca6550b980cae6f0d91431275d10ec62fedf9eb8b979d04b",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.19091066718101501
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-006.png",
+      "sample_sha256": "26593b7f410d2964c48e5addda9611bec62b6df0323a48bbe9edf303d23075a5",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-002.png",
+      "training_sha256": "221975c700492a1755008938dae0de4e5e87db28ce5a6bfa8e82d362e34734fb",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.19840899109840393
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-007.png",
+      "sample_sha256": "0661954bd437618c835d1839304c3c68990f652009059f18fd9d939dfe88be73",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-114.png",
+      "training_sha256": "dc974a6562ca51c54a5506859add3235c57ef2aa9330824bb75f61670643d1ee",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.2286314070224762
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-008.png",
+      "sample_sha256": "b8ba83b420eccd244ef362535dca8a6cda1d87ead77ad7129a4d74fb46d51547",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-136.png",
+      "training_sha256": "bc7c6fcc88be483cb736b4c423b731814c04712e1038ae305a65e79dc24d8936",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.22581638395786285
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-009.png",
+      "sample_sha256": "32fa40f3fb7dc3012d7c552773f8449e53a09f7ce4856e5f31121533cd48f6cc",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-045.png",
+      "training_sha256": "448a727d2d673e222d32657da12fc50213f701935e3dead43e17f29271cbbede",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.19450365006923676
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-010.png",
+      "sample_sha256": "d3e03d548b08fa921a6ac822b141918fa9baeaef7e3d55a8d5f77bc3dd664743",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-078.png",
+      "training_sha256": "0e53a39e47cdaf6fb26d30010f2ce5554b7112beb810429b506a164a79892b0b",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.2529749572277069
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-011.png",
+      "sample_sha256": "7ce84fd1132ca943e625f20f2bb365315c5c59a0ee1c61b27a64f97a349b5193",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-096.png",
+      "training_sha256": "cc1d1c65b2f8387a0e4ff0ae4ffcebdabb6670b6d6dbd194687338617666fe03",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.17985601723194122
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-012.png",
+      "sample_sha256": "9fa354e6b9078608147a1d1f56ee8e769c619ca56c5be92585d9dd2f844cad0c",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-045.png",
+      "training_sha256": "448a727d2d673e222d32657da12fc50213f701935e3dead43e17f29271cbbede",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.1995966136455536
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-013.png",
+      "sample_sha256": "45641762d17fe600f6f3a98c8261cca2f77113c2d1b54c0f4207b489d92c618f",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-115.png",
+      "training_sha256": "04067bc16eb758b998877230c646f43b4b7e38b777dce38c6d8a8911492e3f6a",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.19918620586395264
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-014.png",
+      "sample_sha256": "114ca43cccdab0f58cacdae8290f79d46cafddfcde624b5f633a09e96102fa38",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-009.png",
+      "training_sha256": "307328fe32ae7e9c1a6ae3d5d8077a6550e013e920071be2923d6e1a6e07dc15",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.22522461414337158
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-015.png",
+      "sample_sha256": "a52b4d267601e5488371c19ec44261b4398fa147219ee8c7631f2fe91279fb50",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-002.png",
+      "training_sha256": "221975c700492a1755008938dae0de4e5e87db28ce5a6bfa8e82d362e34734fb",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.16910459101200104
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-016.png",
+      "sample_sha256": "abbc68bc678e10158b697b5f93c30d020c8614c81ffaee50394066e89a2d052e",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-088.png",
+      "training_sha256": "7736c968f50b485f0892426aec36be5f7d95567c37bce77b941942e9302fd804",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.16486966609954834
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-017.png",
+      "sample_sha256": "f1b32e93dbd26301f8965f5ab50db72d5b72a95a65046cd6eec3546b0475ab98",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-045.png",
+      "training_sha256": "448a727d2d673e222d32657da12fc50213f701935e3dead43e17f29271cbbede",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.18421286344528198
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-018.png",
+      "sample_sha256": "5c00c3e061db22b70fdc1426a1c1db9190217d2a62822d806522a9c46b8e3139",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-108.png",
+      "training_sha256": "c4ad62d51ca12d04915e09e8f70452b8a10f438be3d0d1434a8b4bd712f98a85",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.19459351897239685
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-019.png",
+      "sample_sha256": "459964939d64e979172ebe113e68d9c7448a167bb521f1881eee3352e7853c70",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-061.png",
+      "training_sha256": "fb5406eb2040c186e38f02046e4d1eb8e472ecb5ce6d50ffa109a489d22074f7",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.21070729196071625
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-020.png",
+      "sample_sha256": "da4ea01d2b16eb5a8ee6ad9c4babc5f8d9711b83722a31b09afcebfbbeda8595",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-002.png",
+      "training_sha256": "221975c700492a1755008938dae0de4e5e87db28ce5a6bfa8e82d362e34734fb",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.21207480132579803
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-021.png",
+      "sample_sha256": "66461d94d4cadb8fcb80b7e172f750402de96cd73b36a62cc0d67147cbb59a47",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-110.png",
+      "training_sha256": "c7a9d661f063f8533ff46b5b5bcc5d9b3c7f00425737ba3d5c1ee7eee958dd98",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.2119743674993515
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-022.png",
+      "sample_sha256": "1d450dc67832797ba405ba3dd61fae78034d3871854a5ca0476f1ca6662ec114",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-112.png",
+      "training_sha256": "6c84d847eee1c98569a54a0990a1abcea95955886fde1153a9498e62aaf4f843",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.1700325459241867
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-023.png",
+      "sample_sha256": "27dd9133d4f0524e27c1cb5d4829b03145c4e9f9f73d5206eb17a737bd65cc57",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-112.png",
+      "training_sha256": "6c84d847eee1c98569a54a0990a1abcea95955886fde1153a9498e62aaf4f843",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.15880094468593597
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-024.png",
+      "sample_sha256": "45063853f7d76c0a22f602da99733d8636ff3157e6640dd28df11166674c3730",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-027.png",
+      "training_sha256": "22a9bb8ddfd43bd5ca6550b980cae6f0d91431275d10ec62fedf9eb8b979d04b",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.18110303580760956
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-025.png",
+      "sample_sha256": "7aaed162709643bf2d48517d08f95c4c5dbd9a472d5d852e1598f1d7c15819ba",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-081.png",
+      "training_sha256": "d155f227be262f5f5e536b858079648d3e9748216bb845b3fdd5afbeb89107f7",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.20235216617584229
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-026.png",
+      "sample_sha256": "2c39f953825c877a47dd3cc42c2420f2a2ee4b9ab3a91e745700bb2f1a1a87e4",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-139.png",
+      "training_sha256": "9774d71977fb9c5d95b826cb15820c103bee5506dea70d9571538fd89ac7c6dc",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.22051459550857544
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-027.png",
+      "sample_sha256": "328be580fac0960bf82d08f3f1cfba98041c9b6a04730f4fe77974b889a71fc8",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-113.png",
+      "training_sha256": "029df6784e61733d689881ead6b46aed443c73c13d740f52c8ae0d3762117a40",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.16660287976264954
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-028.png",
+      "sample_sha256": "68242a797531b819dcf47b0e9a46dc227f29ffc139bf63c302fa18ac4c159980",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-054.png",
+      "training_sha256": "544ac12bd1af37f0389dd3a9c9df4b36a0b57c86545a224e51093021f315c38c",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.23699170351028442
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-029.png",
+      "sample_sha256": "15623f74c7ff0d23021dc35631c8e88d65d9f2ebca269bde1ec110f3d47b8d05",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-101.png",
+      "training_sha256": "9f744839fe20ad3da5383014f63e8477bb203db855eb38fd12108d88c1f0c431",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.16898024082183838
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-030.png",
+      "sample_sha256": "c1995f49566568f90caab9c10d0ea58811689634c6466e11bdc0d4f63adbb945",
+      "nearest_training": "research/alignment/collar-only/eyes42/original-065.png",
+      "training_sha256": "b856097d32a4e57be0a45133231eaaec5ec081e1e0c7d5970b3754c60519fdbf",
+      "mirrored": true,
+      "face_crop_pixel_rmse": 0.18024539947509766
+    },
+    {
+      "sample": "research/runs/reference256-paper-b64/unseen32-000500/raw-psi1-031.png",
+      "sample_sha256": "f7a1710b13e56b038f2b7a3dd7c4947519462cd5d40286deb0905f12b516006a",
+      "nearest_training": "research/alignment/collar-only/eyes42/synthetic-085.png",
+      "training_sha256": "9e51def9f8d8fcb30d99a902034fe460ec3d19e668dcb2d31db4579821cc2fa1",
+      "mirrored": false,
+      "face_crop_pixel_rmse": 0.1673719733953476
+    }
+  ]
+}

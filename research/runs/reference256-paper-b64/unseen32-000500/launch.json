@@ -1,0 +1,15 @@
+{
+  "started_unix": 1789963238.852442,
+  "deadline_unix": 1789963838.852442,
+  "nonce": "a2957c73a4bc48bca815de1b6c5d9c2d",
+  "script_sha256": "bbfb5636c1e593cee7d6120816559dc48a44119c4d18b1acc9b1a7dd28202496",
+  "pins_sha256": "4df1379f6db47cc33dbf0a9ab733dbec245f961f1a34b96ea7669e0c9c518716",
+  "checkpoint_sha256": "74d9ec9634bd814d94d418925443e8b25bd33c31319361d7efdf0b9b78205f9c",
+  "memory_preflight": {
+    "free_percent": 80,
+    "raw": "The system has 51539607552 (3145728 pages with a page size of 16384).\n\nStats: \nPages free: 909540 \nPages purgeable: 13171 \nPages purged: 89115430 \n\nSwap I/O:\nSwapins: 9545978 \nSwapouts: 13637588 \n\nPage Q counts:\nPages active: 762542 \nPages inactive: 788934 \nPages speculative: 29274 \nPages throttled: 0 \nPages wired down: 310534 \n\nCompressor Stats:\nPages used by compressor: 260113 \nPages decompressed: 338534810 \nPages compressed: 451397499 \n\nFile I/O:\nPageins: 67324141 \nPageouts: 759137 \n\nSystem-wide memory free percentage: 80%\n"
+  },
+  "rss_abort_bytes": 6442450944,
+  "rss_limit_is_sampled_not_hard_allocation_cap": true,
+  "production_approved": false
+}
