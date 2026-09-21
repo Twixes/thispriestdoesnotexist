@@ -1,0 +1,21 @@
+{
+  "production_approved": false,
+  "reviewer": "Codex root native visual inspection",
+  "mode": "built-in image_gen training-target edits, not adaptedmodel output",
+  "sources_targets_accepted_for_mask_preparation": [
+    "055",
+    "051",
+    "020"
+  ],
+  "findings": {
+    "055": "Clear white tab, black shirt, glasses retained; face still resembles original source.",
+    "051": "Clear white tab at lower frame edge, black shirt, coherent mature face.",
+    "020": "Recognizable white tab under chin, black shirt, smiling pose and harsh source lighting retained."
+  },
+  "target_sha256": {
+    "055": "596309dbe97cc0da9b5387411c3113de29ec7e7a360629aa9c59efd9a79177ad",
+    "051": "2b18b2cda36e6128856978ac570837923082a70dff8c02bf92b72710663329b7",
+    "020": "24049cb2689461bbffffe40c9603aca036547a87e25ed32e29c4432c517387c8"
+  },
+  "decision": "Prepare new clothing/tab masks and prospective paired7 manifest. Do not change active single-pair training inputs; source face remains preservation target."
+}

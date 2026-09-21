@@ -1,0 +1,13 @@
+{
+  "step": 75,
+  "production_approved": false,
+  "reviewer": "Codex root native visual inspection",
+  "path": "000075-pair-000-train.png",
+  "sha256": "3e5bfa0a8b1af4cab28edfb9c35dc1f45db7aca2655aad7b79bcbb2a33d1b40d",
+  "observations": [
+    "Face retains coherent source detail and framing.",
+    "Area immediately beneath chin is visibly brighter than in broad-mask200, consistent with lower tab error.",
+    "Remaining shirt is still pale; no fully convincing black-shirt/white-tab appearance yet."
+  ],
+  "decision": "Continue already bounded200run; do not infer unseen collar transfer from the training seed."
+}
