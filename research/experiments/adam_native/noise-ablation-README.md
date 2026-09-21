@@ -1,6 +1,6 @@
 # Checkpoint100 raw-G noise-offset ablation
 
-Prepared, not executed. This diagnostic tests whether particular learned noise-strength offsets contribute to the grain seen in the source-layout control. Its results need native visual review; preparation and passing helper checks do not establish causality or a better model.
+Executed successfully in `research/runs/adam-native1024-noise-ablation100-v1`. All12 native images were preserved; all4 unchanged raw PNGs matched their parent checkpoint renders exactly, and every intervention changed only its declared offsets. Runtime8.893s, peak process-tree RSS3.551GiB. Native comparison and limitations are in `research/reviews/adam-noise-ablation/`. This diagnostic is not a production candidate or training outcome.
 
 Run only after `adam-native1024-probing500-v1/supervisor.json` records the control's terminal state and fresh memory preflight passes:
 

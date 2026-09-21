@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "images_reviewed": 12,
+  "latent_count": 4,
+  "inputs": {
+    "research/reviews/adam-noise-ablation/native-review-root.json": "7f2414ed22285322f1a5f4c8355fa0f6a3e2bd360636f26a9541f6e7d61a5116",
+    "research/reviews/adam-noise-ablation/native-review-agent.json": "f56a6301a1d3434cbe4680ec3398c19ef8085ae03e5e0f94bef33891a590604e",
+    "research/runs/adam-native1024-noise-ablation100-v1/result.json": "d79ace00890cf07280acf359feb0c46ecda76e99e624665d406d373c23060eb4",
+    "research/runs/adam-native1024-noise-ablation100-v1/supervisor.json": "fe1002f4a0c91adf3f1ac9bed292cb4767aba9984de28b36a5ef1a31b0d8323e"
+  },
+  "finding": "Across all four fixed latents, resetting the single learned b1024.conv0 noise-strength offset substantially removes conspicuous fine grain. Resetting all17 also reduces grain but does not visibly improve overall quality over the single reset.",
+  "remaining_failures": [
+    "Unnatural red/purple tone and exposure/contrast",
+    "Etched or painted hair/skin/clothing details",
+    "No successful adult male priest conversion; source children/headwear retained"
+  ],
+  "causal_scope": "Inference interventions at this checkpoint and these four latents only. Original pretrained noise strengths retained. Nonselected model state, fixed synthesis-noise buffers and latent inputs held exact.",
+  "next_experiment": "Investigate residual tone with separate additive bias-family interventions, then run a fresh bounded output_rank1 stability experiment with17 G noise offsets frozen at zero throughout optimization.",
+  "limitations": [
+    "No human approval",
+    "No generalization claim from four latents",
+    "No measured server latency",
+    "Changing layout and noise policy together is not a single-factor training ablation"
+  ],
+  "production_approved": false,
+  "server_latency_proven": false
+}

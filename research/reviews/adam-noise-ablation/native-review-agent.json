@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "scope": "Independent subjective review of six untouched native1024 images: latents002/003 under unchanged_raw, reset_b1024_conv0_offset and reset_all_noise_offsets. No image editing, model execution or attractiveness rating.",
+  "run": "research/runs/adam-native1024-noise-ablation100-v1",
+  "input_sources": {
+    "protocol.json": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/protocol.json",
+      "sha256": "4541ef0050e08498ea47ddd38ade166afc2fe5a206f7f21e49fa24743ce6a987",
+      "bytes": 7850
+    },
+    "result.json": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/result.json",
+      "sha256": "d79ace00890cf07280acf359feb0c46ecda76e99e624665d406d373c23060eb4",
+      "bytes": 12823
+    },
+    "loaded-state.json": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/loaded-state.json",
+      "sha256": "aef776e4b1479cc5669ed1925f393d11a3cc160cb175f6a52b3e46bf345d9c15",
+      "bytes": 51631
+    },
+    "eval-z.npz": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/eval-z.npz",
+      "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
+      "bytes": 8448
+    },
+    "unchanged_raw/manifest.json": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/unchanged_raw/manifest.json",
+      "sha256": "64cb11dd154b5ea94468a5e20dd372b50fd7d6beef51e8905dfa8839c823f88c",
+      "bytes": 1695
+    },
+    "reset_b1024_conv0_offset/manifest.json": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_b1024_conv0_offset/manifest.json",
+      "sha256": "bd47c99c9efdc9ebb5e65f41cb17b1dbbe60660730c763cfc2e09f9707d0501e",
+      "bytes": 1814
+    },
+    "reset_all_noise_offsets/manifest.json": {
+      "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/manifest.json",
+      "sha256": "1eb36c38d343e255f1e842cb75a97ab6d2fb54e9c881c8e29d48098f4c79e71d",
+      "bytes": 4055
+    }
+  },
+  "checkpoint": {
+    "path": "research/runs/adam-native1024-probing500-v1/checkpoint-100.pt",
+    "sha256": "d406240601ec748f95ad09c2b2799106d04f0510cd9383526bdc0618bd7416ba",
+    "state": "G",
+    "step": 100,
+    "layout": "source_flattened"
+  },
+  "intervention_scope": "Inference-only reset of learned additive noise-strength offsets at fixed checkpoint and constant synthesis noise. Original source noise strengths are not set to zero. Manifest records say all nonselected state is exact; this reviewer verified manifest/image hashes and matching latent hashes, without loading model tensors.",
+  "rows": [
+    {
+      "latent_index": 2,
+      "images": {
+        "unchanged_raw": {
+          "path": "research/runs/adam-native1024-noise-ablation100-v1/unchanged_raw/002.png",
+          "sha256": "d4fcdf8754041b5bbc0b8a231eee44869d513502a9c29c15c6deee475028ab00",
+          "bytes": 2995976,
+          "latent_tensor_sha256": "537cf360c1db196e1bd1ceb63ed62886d698ebef8c0723d248bb2674c1bd1681"
+        },
+        "reset_b1024_conv0_offset": {
+          "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_b1024_conv0_offset/002.png",
+          "sha256": "11f35244988fb67b5e551fdff60e186d905b7832d0a8c0197ada2926264426b6",
+          "bytes": 1691345,
+          "latent_tensor_sha256": "537cf360c1db196e1bd1ceb63ed62886d698ebef8c0723d248bb2674c1bd1681"
+        },
+        "reset_all_noise_offsets": {
+          "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/002.png",
+          "sha256": "4587fa5ad357c20d6383cde04e085037fa01a2baa772aa360badd76e9fd94ab3",
+          "bytes": 1790146,
+          "latent_tensor_sha256": "537cf360c1db196e1bd1ceb63ed62886d698ebef8c0723d248bb2674c1bd1681"
+        }
+      },
+      "observations": {
+        "unchanged_raw": "Dense high-frequency speckling covers face, hair, clothing and background. The face is very dark/red, eyes are nearly unreadable behind glasses, and photographic fine detail is overwhelmed.",
+        "reset_b1024_conv0_offset": "The dominant image-wide speckling is substantially removed. Glasses, skin contours and individual hairs are more readable, while coarse identity/framing remain stable. Strong dark red/purple tone, crushed eyes/shadows and etched/embossed hair/skin edges remain; this is not restored natural photography.",
+        "reset_all_noise_offsets": "The dominant original speckling is also substantially reduced. Relative to the single reset, fine skin/hair/background texture is more visibly mottled or etched, without a clear further photographic improvement. The same dark red/purple tone, poorly readable eyes and ordinary open shirt collar remain.",
+        "causal_comparison": "For this fixed latent and checkpoint, the one-offset intervention is sufficient to remove much of the conspicuous fine speckling. Resetting all learned noise offsets does not remove the tone/exposure failure and is not visibly superior overall. The results isolate a contribution from the b1024.conv0 learned noise offset, not a complete explanation of every defect.",
+        "identity_and_domain": "Same recognizable adult-looking face and glasses in all three arms. No hat and no clear clerical collar. No convincing priest-domain conversion."
+      }
+    },
+    {
+      "latent_index": 3,
+      "images": {
+        "unchanged_raw": {
+          "path": "research/runs/adam-native1024-noise-ablation100-v1/unchanged_raw/003.png",
+          "sha256": "419296e0b2052c07ae0dc46c233615a4835f46c88dae915b9072d87ff7addb36",
+          "bytes": 3029717,
+          "latent_tensor_sha256": "e3a2c38f36b2ca785886658f6f9f7d9cffd9bbadbadf0328d35f8ca7b7b27e59"
+        },
+        "reset_b1024_conv0_offset": {
+          "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_b1024_conv0_offset/003.png",
+          "sha256": "965fa110097555f20eb72e5f0ed6ccfab0c780efff78d59ea938fe6650f466ae",
+          "bytes": 1716293,
+          "latent_tensor_sha256": "e3a2c38f36b2ca785886658f6f9f7d9cffd9bbadbadf0328d35f8ca7b7b27e59"
+        },
+        "reset_all_noise_offsets": {
+          "path": "research/runs/adam-native1024-noise-ablation100-v1/reset_all_noise_offsets/003.png",
+          "sha256": "315940c230538d9b5291264e5e8e7c8160bb975ee9bd5f81c517c195e546fb04",
+          "bytes": 1879223,
+          "latent_tensor_sha256": "e3a2c38f36b2ca785886658f6f9f7d9cffd9bbadbadf0328d35f8ca7b7b27e59"
+        }
+      },
+      "observations": {
+        "unchanged_raw": "Dense image-wide fine speckling and pink/magenta cast obscure the apparent child face, knitted hat and clothing. Eyes and mouth are dark, with smeared facial shading beneath the grain.",
+        "reset_b1024_conv0_offset": "Most of the dense fine speckling disappears, making the eyes, open mouth and clothing structure more readable. The same apparent child and hat remain. Persistent pink/purple cast, very dark eye/mouth regions and artificially etched outlines/textures still prevent natural photographic rendering.",
+        "reset_all_noise_offsets": "The dominant speckling is likewise reduced, but fine surface grain is more prominent than with the single reset across hat, skin and clothing. Color cast and unnatural dark/outlined features remain. No clear additional overall photographic improvement over the single reset.",
+        "causal_comparison": "This second fixed latent supports a substantial causal contribution from the single learned b1024.conv0 noise offset to the original dense speckling. Both interventions leave material tonal and texture defects. The comparison does not establish a safe training fix or generalization beyond these images.",
+        "identity_and_domain": "All three retain the apparent child, knitted hat and patterned outerwear. No clergy appearance; no attractiveness assessment performed."
+      }
+    }
+  ],
+  "summary": "For both reviewed latents, resetting only the b1024.conv0 learned noise offset removes much of the conspicuous image-wide speckling. Resetting all17 learned noise offsets also suppresses that dominant pattern, but adds no clear overall photographic advantage over the single reset and leaves more visible fine texture. Both interventions retain serious color/exposure and etched-detail defects. They preserve the same non-priest identities, including one apparent child with a hat. This bounded inference intervention supports a localized causal contribution to grain; it neither restores target quality nor validates a training change.",
+  "native_images_inspected": 6,
+  "quality_approved": false,
+  "production_approved": false,
+  "server_latency_proven": false,
+  "attractiveness_not_assessed": true
+}

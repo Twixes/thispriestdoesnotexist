@@ -1,0 +1,68 @@
+{
+  "reviewer": "root",
+  "scope": "Native1024 unedited originals inspected for indices000 and001 only; no attractiveness ratings.",
+  "run": "research/runs/adam-native1024-noise-ablation100-v1",
+  "protocol_sha256": "4541ef0050e08498ea47ddd38ade166afc2fe5a206f7f21e49fa24743ce6a987",
+  "result_sha256": "d79ace00890cf07280acf359feb0c46ecda76e99e624665d406d373c23060eb4",
+  "images": [
+    {
+      "arm": "unchanged_raw",
+      "index": 0,
+      "path": "unchanged_raw/000.png",
+      "sha256": "707cff6b1a6f931b255cb069b4f5e39dc50e757c1d3db7bbeca1bd4b88e91ce9",
+      "generation_seconds": 0.9884522500215098,
+      "latent_tensor_sha256": "8be204ade986770e5aea36f2eb48b42433ab4c08a26667971cc95b5208e21b5f",
+      "parent_png_exact": true,
+      "observation": "Dense fine grain across face and background; strongly red/dark face, blackened eye and hair areas. Apparent child in casual clothing; not a target priest portrait."
+    },
+    {
+      "arm": "unchanged_raw",
+      "index": 1,
+      "path": "unchanged_raw/001.png",
+      "sha256": "92c79ef295bcaba125cc228eb3f3515762469265fb04caf25bf7b9a325879c5f",
+      "generation_seconds": 0.5145489999558777,
+      "latent_tensor_sha256": "97bf394403ee515addbaa05f9f4d7177983be4d98b5efa0b4d21decbb6b6f4ca",
+      "parent_png_exact": true,
+      "observation": "Dense woven-looking fine grain across skin, head covering and background; strong pink/red cast. Adult-looking face with head covering and patterned clothing, not a target portrait."
+    },
+    {
+      "arm": "reset_b1024_conv0_offset",
+      "index": 0,
+      "path": "reset_b1024_conv0_offset/000.png",
+      "sha256": "7666f2e824ce4416542ef6bfe4aface1e071660ce1ad7f25f9a249b2ef3fe64c",
+      "generation_seconds": 0.5114230409963056,
+      "latent_tensor_sha256": "8be204ade986770e5aea36f2eb48b42433ab4c08a26667971cc95b5208e21b5f",
+      "observation": "Most dense fine grain disappears while identity and framing remain. Red/magenta tone, excessive contrast, black eye/hair areas and contour-like texture remain."
+    },
+    {
+      "arm": "reset_b1024_conv0_offset",
+      "index": 1,
+      "path": "reset_b1024_conv0_offset/001.png",
+      "sha256": "20b4971559ea7fb8944dc7f5b84ab37af9ff96b9f1e722217bc960e6a1b190bb",
+      "generation_seconds": 0.5019615408964455,
+      "latent_tensor_sha256": "97bf394403ee515addbaa05f9f4d7177983be4d98b5efa0b4d21decbb6b6f4ca",
+      "observation": "Large reduction of image-wide grain reveals coherent face geometry, but pink cast and etched/painted texture at forehead, hair, clothing and background persist."
+    },
+    {
+      "arm": "reset_all_noise_offsets",
+      "index": 0,
+      "path": "reset_all_noise_offsets/000.png",
+      "sha256": "08a95099b32c1ea06709126517c781606484ad6375b7f1f1b1b8acbcbdbcf958",
+      "generation_seconds": 0.5066417919006199,
+      "latent_tensor_sha256": "8be204ade986770e5aea36f2eb48b42433ab4c08a26667971cc95b5208e21b5f",
+      "observation": "Fine grain largely removed but tone and contrast still unnatural; small hair/skin texture changes relative to single reset. Not restored to photographic baseline."
+    },
+    {
+      "arm": "reset_all_noise_offsets",
+      "index": 1,
+      "path": "reset_all_noise_offsets/001.png",
+      "sha256": "dec5592fe193ddd19c93749a2026225f4eaaf9ae514f9db57c52de3e71c60ad4",
+      "generation_seconds": 0.5183157499413937,
+      "latent_tensor_sha256": "97bf394403ee515addbaa05f9f4d7177983be4d98b5efa0b4d21decbb6b6f4ca",
+      "observation": "Similarly large reduction of original dense grain, but skin becomes somewhat more mottled/textured than single reset; pink cast, etched contours and head covering remain."
+    }
+  ],
+  "interpretation": "For these two fixed latents at this checkpoint, intervention on the single highest-resolution noise offset removes much fine grain. It does not explain all residual tone/contrast/texture defects, demonstrate successful priest conversion, or predict outcome of training with frozen noise.",
+  "production_approved": false,
+  "server_latency_proven": false
+}
