@@ -1,0 +1,73 @@
+{
+  "purpose": "Validation-only raw clothing edit; never a training target in existing/proposed datasets",
+  "training_eligible": false,
+  "production_approved": false,
+  "root_review_pending": true,
+  "native_source_and_output_viewed": true,
+  "comparison_viewed": true,
+  "visual_findings": "Recognizable adult source face, spiky hair and three-quarter pose; visible unobscured white Roman tab and black clerical shirt; no hat or extra people. Mouth remains slightly open but appears subtly repositioned; face texture is plausible rather than pixel-identical. Target tab reaches bottom edge. Background layout broadly retained, tonal texture changed with grayscale rendering.",
+  "geometry_result": "FAIL prior maximum-landmark threshold0.015: measured0.01697208, driven by one mouth corner. Interocular threshold passes. Do not call this exact identity preservation.",
+  "matched_grayscale": {
+    "landmark_delta_xy": [
+      [
+        0.0009461343288421631,
+        -0.003094881772994995
+      ],
+      [
+        0.0012229681015014648,
+        0.00013586878776550293
+      ],
+      [
+        -0.005433261394500732,
+        -0.005333304405212402
+      ],
+      [
+        -0.004380851984024048,
+        -0.016396939754486084
+      ],
+      [
+        -0.003444671630859375,
+        -0.012709379196166992
+      ]
+    ],
+    "landmark_displacements": [
+      0.0032362730658938924,
+      0.0012304923017958968,
+      0.007613439778420137,
+      0.016972079937891335,
+      0.01316791867367086
+    ],
+    "max_landmark_displacement": 0.016972079937891335,
+    "mean_landmark_displacement": 0.008444040751534423,
+    "eye_y_delta": -0.001479506492614746,
+    "mouth_y_delta": -0.014553159475326538,
+    "interocular_relative_change": 5.9566907206987096e-05,
+    "landmark_tolerance_pass": false,
+    "interocular_tolerance_pass": true
+  },
+  "limitations": [
+    "Five YuNet landmarks are a coarse detector-dependent measure, not proof of identity or chin equivalence.",
+    "This result is only a prospective held-out clothing comparison; whole-face pixel metrics against it would mix garment change with teacher face drift.",
+    "An explicitly reviewed clothing mask and source-protected face comparison would be needed before any quantitative paired validation.",
+    "No mask, model inference, training, generation retry, or active dataset change performed."
+  ],
+  "files": {
+    "025.png": "5ee5e5eca7a9e892795f2d5467b830227efb5d96435434cc7b04c75f67dc37ed",
+    "025-prompt.json": "924f5e7d54e6100d944030ba8f3c9db6305ce15dff345b6bdbb23186bc710e5d",
+    "geometry.json": "0afb36e2b9ce3c2b1140b8eb3ba74e0080c10d97d2ace2e5f4aef84596e6d071",
+    "comparison.png": "038ef822412449f2bdd271f879dd0b3eda6421fb59aaabeffbfdb4bf73a337b8",
+    "manifest.json": "c28fab9ac949d87eeda3a53bc0778e25051cfa4f11bcd6f3045c3b6f6c1472f6"
+  },
+  "unchanged_manifest_checks": {
+    "research/data/paired7/manifest-proposed-v2.json": {
+      "sha256": "9c27b19b0b7cfea4ca797a488b5d249410f3988b512373f713a599f02164bab6",
+      "unchanged": true,
+      "validation025_not_in_manifest": true
+    },
+    "research/data/paired10/manifest-proposed.json": {
+      "sha256": "8d0660f1ccf5115a356e9e6b479e4d225c1e9993402fc71575b0fcb9ed8dcff1",
+      "unchanged": true,
+      "validation025_not_in_manifest": true
+    }
+  }
+}

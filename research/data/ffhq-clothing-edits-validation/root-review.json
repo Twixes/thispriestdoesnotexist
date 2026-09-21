@@ -1,0 +1,13 @@
+{
+  "reviewer": "Codex root; explicit native source and target review relayed to expand_dataset for recording",
+  "source_sha256": "df2b8a66a6b624d0a836afb1b8f9ad311ea911f62976b1698454dc0676928207",
+  "target_sha256": "5ee5e5eca7a9e892795f2d5467b830227efb5d96435434cc7b04c75f67dc37ed",
+  "findings": "Recognizable face, but mouth, nearby texture and chin changed. Root agrees with the matched-grayscale geometry threshold failure.",
+  "decision": "Accept only as a qualitative held-out clothing reference; not exact face or pixel ground truth.",
+  "training_eligible": false,
+  "exact_paired_pixel_ground_truth_approved": false,
+  "qualitative_heldout_clothing_reference_accepted": true,
+  "production_approved": false,
+  "training_or_mask_additions_authorized": false,
+  "geometry_sha256": "0afb36e2b9ce3c2b1140b8eb3ba74e0080c10d97d2ace2e5f4aef84596e6d071"
+}

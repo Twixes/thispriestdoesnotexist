@@ -1,0 +1,25 @@
+{
+  "purpose": "One built-in imagegen clothing edit reserved strictly for held-out validation, not a trained-priest-model output",
+  "training_eligible": false,
+  "production_approved": false,
+  "path_resolution": "Image and latent paths are repository-relative",
+  "entries": [
+    {
+      "id": "025",
+      "source_path": "research/data/ffhq-paired-sources32/images/025.png",
+      "source_sha256": "df2b8a66a6b624d0a836afb1b8f9ad311ea911f62976b1698454dc0676928207",
+      "target_path": "research/data/ffhq-clothing-edits-validation/025.png",
+      "target_sha256": "5ee5e5eca7a9e892795f2d5467b830227efb5d96435434cc7b04c75f67dc37ed",
+      "latent_path": "research/data/ffhq-paired-sources32/latents/025.npz",
+      "latent_sha256": "bca46b765599c9129a6da36614188f515ced82aab039190e6db24c1121f596f8",
+      "training_eligible": false,
+      "split": "validation",
+      "included_in_training_proposal": false
+    }
+  ],
+  "source_manifest_sha256": "24ec65044e76b377c0320dd8a10b6353f4f1cd150c17a4901f47ded4035330db",
+  "prompts_sha256": "7c84267af706263043bd2b21ac7fa7f3e0cf4ba1bc3ad672ef3a2b7159dd5b6a",
+  "script_sha256": "23006e3bdf6175229c8a175232cdeeeab6a660a1ead545215f7947afe6b0bbaf",
+  "geometry_sha256": "0afb36e2b9ce3c2b1140b8eb3ba74e0080c10d97d2ace2e5f4aef84596e6d071",
+  "comparison_sha256": "038ef822412449f2bdd271f879dd0b3eda6421fb59aaabeffbfdb4bf73a337b8"
+}

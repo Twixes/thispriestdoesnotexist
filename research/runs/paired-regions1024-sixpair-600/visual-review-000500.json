@@ -1,0 +1,52 @@
+{
+  "step": 500,
+  "reviewed_at_utc": "2026-09-21T01:42:01.542709+00:00",
+  "reviewer": "Codex inference agent; native view of all six saved previews",
+  "production_approved": false,
+  "continue_bounded_run": true,
+  "clear_facial_collapse": false,
+  "scope": "One TRAIN calibration identity, HOLDOUT028 and four fixed random latents. Other five training identities are not previewed. PNG-only inspection; no model compute.",
+  "findings": {
+    "training_calibration": "Detailed coherent source face retained. Shirt is somewhat darker/gray but keeps its conventional folds; broad white neck patch has soft, smeared boundaries and no convincing clerical tab within a dark collar.",
+    "validation028": "Eyes, smile and beard remain coherent at native size; ordinary white shirt edges remain below beard. No recognizable new clerical tab.",
+    "unseen000": "Coherent face with glasses, graduation cap and partial additional person. Headwear makes this ineligible; no clerical collar.",
+    "unseen001": "Coherent mature masculine face with ordinary white shirt at the lower edge; no recognizable priest tab.",
+    "unseen002": "Mature masculine face remains coherent. Microphone and ambiguous hand/chin region obstruct the lower face; source has not been separately rendered, so artifact origin is unassigned. No priest tab.",
+    "unseen003": "Youthful masculine face with cap and additional person. Facial features coherent; no eligibility/hot-success claim and no clerical collar."
+  },
+  "decision": "Finish only the existing bounded 600-step run, then evaluate all seven pairs and disjoint30 sequentially. No automatic continuation or production approval; no clear facial-collapse early-stop trigger observed.",
+  "actual_training_pair_counts_through_step": {
+    "b2-051": 78,
+    "b2-020": 85,
+    "030": 82,
+    "000": 99,
+    "b2-055": 72,
+    "calibration-original": 84
+  },
+  "checkpoint_logged_metrics": {
+    "pair_ids": [
+      "b2-055"
+    ],
+    "clothing_l1": 0.17725269496440887,
+    "collar_l1": 0.08988714218139648,
+    "rest_clothing_l1": 0.26461824774742126,
+    "protected_l1": 0.015136750414967537,
+    "paired_loss": 0.19238944351673126,
+    "fresh_preservation_l1": 0.018475070595741272,
+    "step": 500,
+    "paired_images_seen": 500,
+    "fresh_images_seen": 500,
+    "seconds": 4.622633249964565,
+    "checkpoint_verified_frozen_source": true
+  },
+  "images": {
+    "000500-pair-000-train.png": "8531c0993d6fb1454e0d40d1f22d754d041a47ec2dd2fc37f1e516a45dff2de2",
+    "000500-pair-001-validation.png": "5ac2e7eba5ce9bde7aa10a1a7f34b10ae23dc71f10970c7f9c0fbe31aab9d0b0",
+    "000500-unseen-000.png": "8171caed42a75d6b235cac619c9e5876ad06e89e9383c89ba02fd219051a7c9d",
+    "000500-unseen-001.png": "8837ca9a88a48f2c9334bdfaf69044ae2f63b9e73dfcb4069a23a5ed3a2a2c48",
+    "000500-unseen-002.png": "0754c0da503c6eac9f426eaec7ba89296b0cd4731494f8063daf171fa263cdf5",
+    "000500-unseen-003.png": "078777d5338cc23d57fc2bbd60b7547f61e50d656ec05ea813223864cc50ed27"
+  },
+  "config_sha256": "80d02fabf3bf2fa6c3fd98503e6558bcd5302e8cf89ec3e27434036bb6338c50",
+  "comparison_to_previous": "All six step500 PNGs explicitly viewed at native size. No clear newly broken eyes, mouth or facial collapse compared with step400. Clothing changes remain insufficient; holdout028 and fixed random examples still do not show convincing priest conversion."
+}
