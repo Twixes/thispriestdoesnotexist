@@ -1,0 +1,172 @@
+{
+  "prepared_utc": "2026-09-21T04:59:40.147700+00:00",
+  "training_launched": false,
+  "models_loaded": false,
+  "torch_imported_during_preparation": false,
+  "scope": "Own new experiment directory only; source inspection, AST, pinned streaming hashes, NumPy latent preparation, lightweight tests and harmless process fixtures",
+  "runtime_correctness_checks_status": "Prepared but not executed: exact32source reproduction, G/CLIP import, actual10updates, differentiable input gradients, frozen states, snapshots and full optimizer reload",
+  "static_preflight": {
+    "status": "pass",
+    "pinned_files": 226,
+    "torch_imported": false,
+    "training_launched": false
+  },
+  "lightweight_tests": {
+    "passed": 7,
+    "model_imports": false
+  },
+  "lifecycle": {
+    "passed": true,
+    "tested_source": "research/experiments/nada_clean24/runner.py",
+    "source_sha256": "cf8a94da98406a2c0429eae965b061e2642e32cfd1e092cc39254b9c1b0c2a6a",
+    "harness_sha256": "1c013163b5044bd3049a21d3cf7ef9d2f5747947e512aba0e6071d2d38adbce9",
+    "wall_seconds": 1.4184489999897778,
+    "source_unchanged": true,
+    "real_launcher_commands_executed": false,
+    "real_model_imports_or_loads": false,
+    "fixture_policy": "Temporary fake run/provenance, fake memory guard; Popen substitutes only harmless Python sleep group. Continuation main/cleanup/wait/signal handlers are real unmodified code.",
+    "results": [
+      {
+        "scenario": "write_failure",
+        "passed": true,
+        "wall_seconds": 0.06997895811218768,
+        "coordinator_exit_code": 1,
+        "dummy_pids": {
+          "pid": 28089,
+          "pgid": 28089,
+          "grandchild_pid": 28090
+        },
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true,
+        "child_reaped_returncode": -9,
+        "recorded_error": "OSError('Injected record-write failure after dummy spawn')",
+        "only_one_dummy_spawned": true,
+        "no_checkpoint_or_completion_published": true,
+        "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 162, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 73, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 222, in main\n    supervise(output)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 156, in supervise\n    write_new(output / 'child.json', {'pid': process.pid, 'command': command})\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 67, in fail_after_spawn\n    raise OSError('Injected record-write failure after dummy spawn')\nOSError: Injected record-write failure after dummy spawn\n"
+      },
+      {
+        "scenario": "sigint",
+        "passed": true,
+        "wall_seconds": 0.08464191702660173,
+        "coordinator_exit_code": -2,
+        "dummy_pids": {
+          "pid": 28092,
+          "pgid": 28092,
+          "grandchild_pid": 28093
+        },
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true,
+        "child_reaped_returncode": -9,
+        "recorded_error": "KeyboardInterrupt()",
+        "only_one_dummy_spawned": true,
+        "no_checkpoint_or_completion_published": true,
+        "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 162, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 73, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 222, in main\n    supervise(output)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 166, in supervise\n    time.sleep(.1)\nKeyboardInterrupt\n"
+      },
+      {
+        "scenario": "sigterm",
+        "passed": true,
+        "wall_seconds": 0.08288366603665054,
+        "coordinator_exit_code": 143,
+        "dummy_pids": {
+          "pid": 28096,
+          "pgid": 28096,
+          "grandchild_pid": 28097
+        },
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true,
+        "child_reaped_returncode": -9,
+        "recorded_error": "SystemExit(143)",
+        "only_one_dummy_spawned": true,
+        "no_checkpoint_or_completion_published": true,
+        "coordinator_log": ""
+      },
+      {
+        "scenario": "deadline",
+        "passed": true,
+        "wall_seconds": 1.0892712499480695,
+        "coordinator_exit_code": 1,
+        "dummy_pids": {
+          "pid": 28100,
+          "pgid": 28100,
+          "grandchild_pid": 28101
+        },
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true,
+        "child_reaped_returncode": -9,
+        "recorded_error": "RuntimeError('Twenty-minute absolute deadline expired')",
+        "only_one_dummy_spawned": true,
+        "no_checkpoint_or_completion_published": true,
+        "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 162, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 73, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 222, in main\n    supervise(output)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 159, in supervise\n    raise RuntimeError('Twenty-minute absolute deadline expired')\nRuntimeError: Twenty-minute absolute deadline expired\n"
+      },
+      {
+        "scenario": "rss",
+        "passed": true,
+        "wall_seconds": 0.08777612505946308,
+        "coordinator_exit_code": 1,
+        "dummy_pids": {
+          "pid": 28113,
+          "pgid": 28113,
+          "grandchild_pid": 28114
+        },
+        "dummy_processes_absent": {
+          "pid": true,
+          "grandchild_pid": true
+        },
+        "dummy_group_absent": true,
+        "child_reaped_returncode": -9,
+        "recorded_error": "RuntimeError('12GiB observed worker RSS exceeded')",
+        "only_one_dummy_spawned": true,
+        "no_checkpoint_or_completion_published": true,
+        "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 162, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 73, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 222, in main\n    supervise(output)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 165, in supervise\n    raise RuntimeError('12GiB observed worker RSS exceeded')\nRuntimeError: 12GiB observed worker RSS exceeded\n"
+      }
+    ]
+  },
+  "concurrency_guard": {
+    "guard": {
+      "status": "refused",
+      "reason": "Defer: another known research model process is active (PID 27880)"
+    },
+    "torch_imported": false,
+    "models_loaded": false,
+    "training_launched": false
+  },
+  "proposed_output": "research/runs/nada-clean24-cpu-smoke10",
+  "proposed_output_exists": false,
+  "files_sha256": {
+    "research/experiments/nada_clean24/README.md": "aeed5120a1ab137d761217e30136dcbf1f047c73105807ef1fef21e87a2fb422",
+    "research/experiments/nada_clean24/concurrency-preparation-check.json": "91697c5b37e5267c30b527ad67fb734f88be8025f9fb3829934b5df01101c270",
+    "research/experiments/nada_clean24/inputs.json": "cd6ac2304db8c5426652b592c8bc1ee3fb7e37d9975517e676475510462c34ff",
+    "research/experiments/nada_clean24/latents.npz": "3af23820af109a2d83df4a057e6af9d61c4027f2222169d13b41b275009d9ef5",
+    "research/experiments/nada_clean24/lifecycle-evidence.json": "78c74eda71a7fb0963feb24da868352c140c2bdb021e1a346ed396b395fd45da",
+    "research/experiments/nada_clean24/lifecycle-test-attempt1.log": "2bb80111f99f9eb18d12d6ce05fa694acfafc635ba475a9f051c364fd48c0130",
+    "research/experiments/nada_clean24/lifecycle-test.log": "f2bbb95f006ef0e62c5d9bb1dfe1173f8a72fb306e27e4c224203c2087061939",
+    "research/experiments/nada_clean24/pins.json": "2383a4883859f51c50769fc7ccd3c21f6703433d13b93ae8d55f3a9325d0c474",
+    "research/experiments/nada_clean24/preflight-check.json": "0bc17fd46c3e800a0ecf878ae0950e49b7819a18f3513eb73547766de229d060",
+    "research/experiments/nada_clean24/preparation-test.log": "d5f07dbdb934d48f3a1fc3e4d46755362e8c75600b3d0b91755a48a1b696050a",
+    "research/experiments/nada_clean24/runner.py": "cf8a94da98406a2c0429eae965b061e2642e32cfd1e092cc39254b9c1b0c2a6a",
+    "research/experiments/nada_clean24/test_lifecycle.py": "1c013163b5044bd3049a21d3cf7ef9d2f5747947e512aba0e6071d2d38adbce9",
+    "research/experiments/nada_clean24/test_preparation.py": "aff514d0f162447278aa99a0c582db573f1622a769e9cdba0ee6f27d91b55292",
+    "research/experiments/nada_clean24/worker.py": "963cd1396d9f114590e9b639b0f1728ca7117685bd402538f761f1a71581605b"
+  },
+  "production_approved": false,
+  "requires_root_code_review_before_execution": true,
+  "finalized_utc": "2026-09-21T05:00:34.046980+00:00",
+  "preparation_wall_minutes_approx": 16,
+  "root_source_review": "Root reviewed worker.py and runner.py; no correction identified. Actual smoke waits for reference completion.",
+  "execution_gate_notes": [
+    "Exact CPU1 W and PNG reproduction of all32 sources has NOT been executed; it must pass before optimizer updates.",
+    "Ten updates assess feasibility and initial movement, not convergence, production quality or a general verdict on NADA."
+  ]
+}

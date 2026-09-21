@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "tested_source": "research/experiments/nada_clean24/runner.py",
+  "source_sha256": "7bf6ab6513a6ecfb54f9219fd138c53f57388e9f9316e179efc9ed5a73745855",
+  "harness_sha256": "718840715ce4ec063ec58616546f814890120c7cf63847f365a48d9329a56110",
+  "wall_seconds": 1.4151656670728698,
+  "source_unchanged": true,
+  "real_launcher_commands_executed": false,
+  "real_model_imports_or_loads": false,
+  "fixture_policy": "Temporary fake run/provenance, fake memory guard; Popen substitutes only harmless Python sleep group. Continuation main/cleanup/wait/signal handlers are real unmodified code.",
+  "results": [
+    {
+      "scenario": "write_failure",
+      "passed": true,
+      "wall_seconds": 0.0630444580456242,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 29527,
+        "pgid": 29527,
+        "grandchild_pid": 29528
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "OSError('Injected record-write failure after dummy spawn')",
+      "only_one_dummy_spawned": true,
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 162, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 73, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 251, in main\n    supervise(output)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 184, in supervise\n    publish_child(output, {'pid': process.pid, 'supervisor_pid': os.getpid(),\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 84, in publish_child\n    write_new(temporary, value)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 67, in fail_after_spawn\n    raise OSError('Injected record-write failure after dummy spawn')\nOSError: Injected record-write failure after dummy spawn\n"
+    },
+    {
+      "scenario": "sigint",
+      "passed": true,
+      "wall_seconds": 0.08310024999082088,
+      "coordinator_exit_code": -2,
+      "dummy_pids": {
+        "pid": 29530,
+        "pgid": 29530,
+        "grandchild_pid": 29531
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "KeyboardInterrupt()",
+      "only_one_dummy_spawned": true,
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 162, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 73, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 251, in main\n    supervise(output)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 195, in supervise\n    time.sleep(.1)\nKeyboardInterrupt\n"
+    },
+    {
+      "scenario": "sigterm",
+      "passed": true,
+      "wall_seconds": 0.0808272500289604,
+      "coordinator_exit_code": 143,
+      "dummy_pids": {
+        "pid": 29534,
+        "pgid": 29534,
+        "grandchild_pid": 29535
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "SystemExit(143)",
+      "only_one_dummy_spawned": true,
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": ""
+    },
+    {
+      "scenario": "deadline",
+      "passed": true,
+      "wall_seconds": 1.1068383749807253,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 29538,
+        "pgid": 29538,
+        "grandchild_pid": 29539
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "RuntimeError('Twenty-minute absolute deadline expired')",
+      "only_one_dummy_spawned": true,
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 162, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 73, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 251, in main\n    supervise(output)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 188, in supervise\n    raise RuntimeError('Twenty-minute absolute deadline expired')\nRuntimeError: Twenty-minute absolute deadline expired\n"
+    },
+    {
+      "scenario": "rss",
+      "passed": true,
+      "wall_seconds": 0.0771286670351401,
+      "coordinator_exit_code": 1,
+      "dummy_pids": {
+        "pid": 29550,
+        "pgid": 29550,
+        "grandchild_pid": 29551
+      },
+      "dummy_processes_absent": {
+        "pid": true,
+        "grandchild_pid": true
+      },
+      "dummy_group_absent": true,
+      "child_reaped_returncode": -9,
+      "recorded_error": "RuntimeError('12GiB observed worker RSS exceeded')",
+      "only_one_dummy_spawned": true,
+      "no_checkpoint_or_completion_published": true,
+      "coordinator_log": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 162, in <module>\n    scenario(sys.argv[2], Path(sys.argv[3]))\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/test_lifecycle.py\", line 73, in scenario\n    module.main()\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 251, in main\n    supervise(output)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_clean24/runner.py\", line 194, in supervise\n    raise RuntimeError('12GiB observed worker RSS exceeded')\nRuntimeError: 12GiB observed worker RSS exceeded\n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Read-only local text/metadata inspection and official online documentation; decision note only",
+  "model_imports_or_loads": false,
+  "weights_or_code_downloaded": false,
+  "training_launched": false,
+  "active_files_modified": false,
+  "source_weights_hashes": "Taken from previously verified local provenance; present file sizes inspected, no new full weight hash or deserialization",
+  "local_files_sha256": {
+    "research/reviews/paired-edit-adaptation.md": "3295c6e5c80a08c80a756a549c548811a69d6d5c11aa3a2f786355f0edf2ab4b",
+    "research/reviews/post-factorial-fallback-feasibility.md": "53f82648946bfa3eb346981b873ab20711c09b54e025f09e8a3bb34867bd9095",
+    "research/data/plain-background24-whole-image/manifest.json": "334ad5bfa22c72baab1d7a24298616483d125a9fccbc3a7816b1b3b2ef59067d",
+    "research/data/plain-background24-whole-image/root-review.json": "084ddc40c61724c3cc934fcc61b0d1068e86e91a18a351e0215b1f868963f32b",
+    "research/selection/clip-ffhq32/provenance.json": "67fb4852b4b719ffd80313c13f638b5024f13f7d911dd2334a54f44e772a4670",
+    "research/selection/clip-ffhq32/results.json": "a926b80692ab051b5c7787144089b6331221f0890db33b78bdcd74c7d0fb81b3",
+    "research/runs/inference-cpu/ffhq1024/baseline-bundle/model.json": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+    "research/vendor/stylegan2-ada-pytorch/training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24",
+    "research/reviews/nada-clean24-decision.md": "860d2fc16fc9d73a13f5def0763d4ab82738af8f6ca77f9dd18e23be1935d8c9"
+  },
+  "official_sources_checked": [
+    "https://github.com/rinongal/StyleGAN-nada/blob/main/ZSSGAN/model/ZSSGAN.py",
+    "https://github.com/rinongal/StyleGAN-nada/blob/main/ZSSGAN/criteria/clip_loss.py",
+    "https://github.com/rinongal/StyleGAN-nada/blob/main/ZSSGAN/train.py",
+    "https://github.com/rinongal/StyleGAN-nada/blob/main/ZSSGAN/options/train_options.py",
+    "https://github.com/rinongal/StyleGAN-nada/blob/main/README.md",
+    "https://arxiv.org/abs/2108.00946"
+  ],
+  "online_source_version_limitation": "Read main via web on2026-09-21; no repository checkout/download. Pin exact implementation commit before any future port.",
+  "production_approved": false
+}

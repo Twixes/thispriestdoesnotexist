@@ -1,0 +1,19 @@
+test_clean (__main__.Pins.test_clean) ... ok
+test_memory_34_refused_35_passes (__main__.Pins.test_memory_34_refused_35_passes) ... ok
+test_new_source_inventory (__main__.Pins.test_new_source_inventory) ... ok
+test_other_trainer_refused (__main__.Pins.test_other_trainer_refused) ... ok
+test_source_changed (__main__.Pins.test_source_changed) ... ok
+test_version_changed (__main__.Pins.test_version_changed) ... ok
+test_actual_saved_arrays_and_sampling (__main__.PreparedLatents.test_actual_saved_arrays_and_sampling) ... ok
+test_child_ready_before_worker_preflight (__main__.WorkerHandshake.test_child_ready_before_worker_preflight) ... ok
+test_existing_results_still_refused (__main__.WorkerHandshake.test_existing_results_still_refused) ... ok
+test_missing_child_refused_without_model_import (__main__.WorkerHandshake.test_missing_child_refused_without_model_import) ... ok
+test_worker_waits_through_partial_temp_write (__main__.WorkerHandshake.test_worker_waits_through_partial_temp_write) ... ok
+test_wrong_child_nonce_refused (__main__.WorkerHandshake.test_wrong_child_nonce_refused) ... ok
+test_wrong_child_pid_refused (__main__.WorkerHandshake.test_wrong_child_pid_refused) ... ok
+test_wrong_parent_refused (__main__.WorkerHandshake.test_wrong_parent_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.156s
+
+OK
