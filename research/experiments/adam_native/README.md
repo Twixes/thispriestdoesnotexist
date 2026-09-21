@@ -1,5 +1,17 @@
 # Native unconditional GAN adaptation
 
+## Current experiment path — 2026-09-22
+
+The completed [fixed-offset100 run](../../runs/adam-native1024-output-rank1-fixed-offsets100-v1/result.json) preserved coherent faces without the earlier severe grain. It did **not** produce an accepted adult priest model. Its [full visual review](../../reviews/adam-fixed-offsets100/index.html) retains every fixed sample.
+
+An exact continuation from100 to500 has [verified launch/restoration evidence](../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/launch-observation.json). This launch record is historical, not proof that the worker is currently live. Check its actual process and terminal supervisor/result records before taking action. The [progressive review](../../reviews/adam-fixed-offsets500/index.html) displays finalized100/250/500 snapshots after its builder is rerun. Do not restart the completed100 run or the earlier source-layout run stopped after128 iterations.
+
+The prepared next stages are [fixed-offset EMA importance measurement and masks](fixed-offset-stages-README.md), followed by a [fresh-source native10 main-adaptation smoke](main-adaptation-fixed-offsets10-README.md). Neither stage has run on native pretrained models. Main adaptation requires actual completed1000-pair importance evidence and a separate ranking review; the four-pair diagnostic alone cannot supply trustworthy selection. The [implementation audit](main-adaptation-implementation-audit.md) distinguishes these stages and their reset/resume rules.
+
+All17 synthesis noise and17 synthesis activation-bias additive offsets remain zero; original source tensors stay exact. This is an explicit change from upstream AdAM. The [training-geometry audit](../../reviews/adam-native-training-geometry-audit.md) records a separate framing and grayscale mismatch hypothesis; no dataset transformation or new training arm has been performed.
+
+The public site still uses its image catalog. No trained candidate has passed quality review or been deployed, and sub500ms generation on the actual server remains unproven. The remainder of this document records the earlier initial compatibility work, not the latest training status.
+
 This experiment ports AdAM-style importance-probing mechanics to the original NVIDIA StyleGAN2 FFHQ1024 networks. The generator takes random noise only. Its static modulation can be folded into ordinary generator weights, without a prompt, text encoder or extra rendering model.
 
 The actual native compatibility run completed in `research/runs/adam-native1024-probing-smoke10-v2`: ten iterations,13 G optimizer updates and11 D optimizer updates including R1 and path regularization, in162.19 seconds total on CPU1. Peak monitored worker RSS was9.93GiB; available system memory stayed above34.76%. Every targeted G/D rank-factor and offset tensor had finite, nonzero gradients on every adversarial update. Frozen original parameters and buffers remained exact. Four original native G outputs and one D output matched exactly before training; checkpoint model states restored exactly; four folded native outputs matched exactly after training.

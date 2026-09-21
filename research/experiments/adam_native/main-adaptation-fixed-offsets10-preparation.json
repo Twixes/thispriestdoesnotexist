@@ -1,0 +1,39 @@
+{
+  "prepared_only": true,
+  "native_model_loaded": false,
+  "native_training_launched": false,
+  "native_completed_importance_input_available": false,
+  "stage": "fresh-source fixed-offset output-rank1 main-adaptation mechanics smoke",
+  "iterations": 10,
+  "source_main_adaptation_revision": "6428e99cfb36bc8bda3506350824f0c7dac9a5ad",
+  "required_input": "Authenticated completed fixed-policy EMA importance1000 from completed probing step500; numerical/rank stability reviewed separately before scheduling",
+  "quantile": "Required explicit CLI argument; source50 first development hypothesis, not priest-calibrated",
+  "tests": {
+    "command": "research/.venv/bin/python research/experiments/adam_native/test_main_adaptation_fixed_offsets10.py",
+    "tests_passed": 4,
+    "seconds": 1.898,
+    "scope": "Actual engine on tiny random native32 G/D:10iterations/adversarial/R1/path/masks/low-original movement/raw+EMA fold; fresh-controller restore and exact next update at global16; reset-momentum negative control; masks/count pre-mutation rejection; protected Adam corruption; missingFI/quantile refusal",
+    "native_quality_memory_latency_proven": false
+  },
+  "pins": {
+    "research/experiments/adam_native/main_adaptation_fixed_offsets10.py": "9ff54a546593aebeffc0320f897ba66865c13674b5b83be3095cf1471eb73b6b",
+    "research/experiments/adam_native/test_main_adaptation_fixed_offsets10.py": "5f378e207c9ef3cd9e992a4a9d8aeca877f8f59962b97b07b177bcfac716f594",
+    "research/experiments/adam_native/main-adaptation-implementation-audit.md": "78f199792304c993cd41037a6dab39240a81321b11ffc6b55e77ac2735835df3",
+    "research/experiments/adam_native/main-adaptation-fixed-offsets10-README.md": "3e845bf45623b6ff4d2dbe2ad6c923351ba00dccc9a6c8318c8f320e0901cefd",
+    "research/experiments/adam_native/adaptation_masks_fixed_offsets.py": "704253fc79a9ff03d2bbd8ad51dd87416b88b7ee5b627473930b11c4c3cb539d",
+    "research/experiments/adam_native/selection_fixed_offsets.py": "840700d66e2f069bee8db52ad7593556f27d648265aa2018492f3d9ed4040881",
+    "research/experiments/adam_native/fixed_offset_policy.py": "60dbcf1b8d9358a3279fa3538af434f81ba849ede76438213061538174eb8af6",
+    "research/experiments/adam_native/estimate_importance_fixed_offsets.py": "2c80a760a562aad5fb8fa33848729a6ae0acad4683e0fa5123928956cbc03ec5",
+    "research/experiments/adam_native/modulation.py": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+    "research/experiments/adam_native/selection.py": "e533d95d485eb0e1ff2e5fd0da8039ef1e4c251b501efa5b37fe031ba8b48192",
+    "research/experiments/adam_native/importance.py": "1d1d253e8659863ed567f22201423389f71df36a572657896aadcda8d1ab9bbb"
+  },
+  "outstanding": [
+    "Actual successful four-pair fixed-policy FI diagnostic",
+    "Actual completed fixed-policy FI1000 at source step500",
+    "Numerical/rank-stability analysis and explicit quantile decision",
+    "Guarded native10 execution with no other heavy worker",
+    "Native visual and memory review before any100/1500 horizon",
+    "Production quality and real-server sub500ms latency"
+  ]
+}
