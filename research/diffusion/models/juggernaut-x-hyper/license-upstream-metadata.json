@@ -1,0 +1,72 @@
+{
+  "_id": "6303943ceedc089484c362cd",
+  "id": "CompVis/stable-diffusion-license",
+  "sdk": "static",
+  "likes": 1432,
+  "tags": [
+    "static",
+    "region:us"
+  ],
+  "private": false,
+  "author": "CompVis",
+  "sha": "14d42d09bffd871b1666a084fc954a50cff72ac0",
+  "lastModified": "2022-08-22T14:47:55.000Z",
+  "cardData": {
+    "title": "License",
+    "emoji": "\u2696\ufe0f",
+    "colorFrom": "red",
+    "colorTo": "indigo",
+    "sdk": "static",
+    "pinned": false
+  },
+  "subdomain": "compvis-stable-diffusion-license",
+  "gated": false,
+  "disabled": false,
+  "host": "https://compvis-stable-diffusion-license.static.hf.space",
+  "region": "us",
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "818d649bf21cdef29b21f885c8f770f9baa1714e",
+      "size": 1338
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "1c8a5bbad633babbf75e3c6811e742306e36c73d",
+      "size": 185
+    },
+    {
+      "rfilename": "app.py",
+      "blobId": "f6f318530f0aeb268c9f9389e556065beef2ac9e",
+      "size": 634
+    },
+    {
+      "rfilename": "index.html",
+      "blobId": "5dacb08ef3076530e5c3f13144d2668b22527d05",
+      "size": 326777
+    },
+    {
+      "rfilename": "license.html",
+      "blobId": "5dacb08ef3076530e5c3f13144d2668b22527d05",
+      "size": 326777
+    },
+    {
+      "rfilename": "license.txt",
+      "blobId": "0e609df0d8cd3b5d11a1ea962a56b604b70846a5",
+      "size": 14385
+    }
+  ],
+  "createdAt": "2022-08-22T14:35:40.000Z",
+  "usedStorage": 14544951,
+  "runtime": {
+    "stage": "RUNNING",
+    "hardware": {
+      "current": null,
+      "requested": null
+    },
+    "replicas": {
+      "requested": 1,
+      "current": 1
+    }
+  }
+}

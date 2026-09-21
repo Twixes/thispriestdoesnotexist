@@ -1,0 +1,87 @@
+{
+  "protocol_sha256": "ac8448d8facd5910d0e512486522a436a8e5360903ac8867bf63d04e7abfb22d",
+  "agent_reviews_not_owner_approval": true,
+  "production_approved": false,
+  "test_opened": false,
+  "steps": {
+    "20": {
+      "arms": {
+        "base-plain": {
+          "total": 24,
+          "joint_pass": 13,
+          "facial_integrity": 23,
+          "photographic_texture": 14
+        },
+        "base-trigger": {
+          "total": 24,
+          "joint_pass": 12,
+          "facial_integrity": 24,
+          "photographic_texture": 13
+        },
+        "adapter-plain": {
+          "total": 24,
+          "joint_pass": 13,
+          "facial_integrity": 23,
+          "photographic_texture": 14
+        },
+        "adapter-trigger": {
+          "total": 24,
+          "joint_pass": 12,
+          "facial_integrity": 24,
+          "photographic_texture": 13
+        }
+      },
+      "source_reviews": [
+        {
+          "path": "research/reviews/sdxl-pilot-preview/review-step20-first12.json",
+          "sha256": "d645a27ab9f993112bdce0c2bb8947c0b9af5d1faa3c0c62d565502702683cc8"
+        },
+        {
+          "path": "research/reviews/sdxl-pilot-preview/review-step20-last12.json",
+          "sha256": "657db23bd9387616266c3ba02326926db0037e32f5e0ac4a3142105211009410"
+        }
+      ]
+    },
+    "100": {
+      "arms": {
+        "base-plain": {
+          "total": 24,
+          "joint_pass": 13,
+          "facial_integrity": 23,
+          "photographic_texture": 14
+        },
+        "base-trigger": {
+          "total": 24,
+          "joint_pass": 12,
+          "facial_integrity": 24,
+          "photographic_texture": 13
+        },
+        "adapter-plain": {
+          "total": 24,
+          "joint_pass": 11,
+          "facial_integrity": 23,
+          "photographic_texture": 12
+        },
+        "adapter-trigger": {
+          "total": 24,
+          "joint_pass": 9,
+          "facial_integrity": 23,
+          "photographic_texture": 10
+        }
+      },
+      "source_reviews": [
+        {
+          "path": "research/reviews/sdxl-pilot-preview/review-step100-first12.json",
+          "sha256": "683a3d04134315a40010a24cea00b114479e49f2e0892c419631ce9d45850b4b"
+        },
+        {
+          "path": "research/reviews/sdxl-pilot-preview/review-step100-last12.json",
+          "sha256": "4772e3fb53a29663ef7e5703fa5e2adb761c69d227a7978034c63982d7c9d319"
+        }
+      ]
+    }
+  },
+  "decision": "Stop ordinary SDXL-Turbo LoRA at100. 1step photo gatefailed; no250. Optional4stepfallback pending memory reserve.",
+  "limitations": "Small agent-reviewed development cohort; no teacher-copying or full-cohort face-family clearance. Test seeds remain unopened.",
+  "four_step_attempt": "Base v1 stopped before image generation at19.72%availablememory, below20%reserve. No threshold relaxation."
+}

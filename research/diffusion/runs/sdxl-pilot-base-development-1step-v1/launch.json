@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "research/diffusion/evaluate_sdxl_pilot.py",
+    "--arms",
+    "base",
+    "--split",
+    "development",
+    "--steps",
+    "1",
+    "--output",
+    "research/diffusion/runs/sdxl-pilot-base-development-1step-v1"
+  ],
+  "protocol_sha256": "ac8448d8facd5910d0e512486522a436a8e5360903ac8867bf63d04e7abfb22d",
+  "source_sha256": "8bacd8f7b5c158302a07cdea1950f0629d3ebff2dc0942a920ffb4395df4aaee",
+  "lora": null,
+  "arms": "base",
+  "split": "development",
+  "steps": 1,
+  "decision_sha256": null,
+  "limits": {
+    "seconds": 1200,
+    "rss_gib": 24,
+    "mps_driver_gib": 22,
+    "available_fraction": 0.2,
+    "swap_growth_mib": 512
+  },
+  "production_approved": false,
+  "server_latency_proven": false
+}

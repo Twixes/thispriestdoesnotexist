@@ -1,0 +1,12 @@
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]Loading weights: 100%|██████████| 196/196 [00:00<00:00, 56191.63it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]Loading weights: 100%|██████████| 517/517 [00:00<00:00, 95488.80it/s]
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/evaluate_sdxl_pilot.py", line 415, in <module>
+    main()
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/evaluate_sdxl_pilot.py", line 350, in main
+    worker(args)
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/evaluate_sdxl_pilot.py", line 201, in worker
+    guard("unet_loaded")
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/evaluate_sdxl_pilot.py", line 141, in guard
+    raise MemoryError("Inference resource/time guard failed: " + phase)
+MemoryError: Inference resource/time guard failed: unet_loaded

@@ -1,0 +1,166 @@
+{
+  "model": "stabilityai/sdxl-turbo",
+  "revision": "71153311d3dbb46851df1931d3ca6e939de83304",
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "bytes": 11852,
+      "sha256": "d6f6b1a4dce5c852bd6d7d9482d002baf0ccdb71e662250b73be9eec8764ee8d",
+      "chunks": []
+    },
+    {
+      "path": "README.md",
+      "bytes": 5883,
+      "sha256": "98dabafc7a0c2981bac309d83ae7012e3f2fe276947ba1cdc5f3ebfc977f8d8b",
+      "chunks": []
+    },
+    {
+      "path": "model_index.json",
+      "bytes": 685,
+      "sha256": "c3c2f99e3e94b5940bb072f7cf66858ab05d115dc5899b3cb36a7781e91769e0",
+      "chunks": []
+    },
+    {
+      "path": "scheduler/scheduler_config.json",
+      "bytes": 459,
+      "sha256": "13847eb34084bc56e9f8b10f84d2c650cf8cb00016b2530429af0b894d4e1aa2",
+      "chunks": []
+    },
+    {
+      "path": "text_encoder/config.json",
+      "bytes": 565,
+      "sha256": "f73737aca344421ae12c5302aad65570218d4911872ac2e656d685a23bee270a",
+      "chunks": []
+    },
+    {
+      "path": "text_encoder/model.fp16.safetensors",
+      "bytes": 246144152,
+      "sha256": "660c6f5b1abae9dc498ac2d21e1347d2abdb0cf6c0c0c8576cd796491d9a6cdd",
+      "chunks": []
+    },
+    {
+      "path": "text_encoder_2/config.json",
+      "bytes": 575,
+      "sha256": "d798a4e0dea19feb3e4f17d311e02507055ce3ee81d015a43123517433f2a7ef",
+      "chunks": []
+    },
+    {
+      "path": "text_encoder_2/model.fp16.safetensors",
+      "bytes": 1389382176,
+      "sha256": "ec310df2af79c318e24d20511b601a591ca8cd4f1fce1d8dff822a356bcdb1f4",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/merges.txt",
+      "bytes": 524619,
+      "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/special_tokens_map.json",
+      "bytes": 586,
+      "sha256": "6a757fc443f84ad1def3b893aac3858178f2a1513e3cf97b35ff131b5d88edd5",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "bytes": 704,
+      "sha256": "7eb36a76a02551ce8583dbee08d062e672997a5fe1db82ebc642d88c7e79cc96",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer/vocab.json",
+      "bytes": 1059962,
+      "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/merges.txt",
+      "bytes": 524619,
+      "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/special_tokens_map.json",
+      "bytes": 460,
+      "sha256": "f118ab3a983206e4f32583448de6bd6aae4ee21869135cef1f5848a753cdaab6",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/tokenizer_config.json",
+      "bytes": 855,
+      "sha256": "516314ccab66918d7cb647480ac27abd3520d14e1e5825aac99f50c851c16071",
+      "chunks": []
+    },
+    {
+      "path": "tokenizer_2/vocab.json",
+      "bytes": 1059962,
+      "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "chunks": []
+    },
+    {
+      "path": "unet/config.json",
+      "bytes": 1776,
+      "sha256": "6ae877bd8daca6088f44c6251e07d7e252da53ace0d5895a0c6cbcbd5c132cb4",
+      "chunks": []
+    },
+    {
+      "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 5135149760,
+      "sha256": "48fa46161a745f48d4054df3fe13804ee255486bca893403b60373c188fd1bdb",
+      "chunks": [
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-000",
+          "bytes": 1073741824,
+          "sha256": "67d8d3f245793f34c7967d928768ef5a651374bc88be99465ce10e239cf8063d"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-001",
+          "bytes": 1073741824,
+          "sha256": "25207622ca2dff31b3a52b46ae8714ff75b8aa199576eec609631384353b727b"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-002",
+          "bytes": 1073741824,
+          "sha256": "7c8c02091abdfdfd2f87ffc135f42f255c94d57d20aaaa41338c2bea234deb99"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-003",
+          "bytes": 1073741824,
+          "sha256": "bc998f5ef2600023b521f72bbd1daa837c3d88c11cb801a07f49b87a5c8c9331"
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors.weights-part-004",
+          "bytes": 840182464,
+          "sha256": "1e5ddbe8518b98acfcc5a67e3d1d267c8d2e4313cd3708450edc2362b7716292"
+        }
+      ]
+    },
+    {
+      "path": "vae/config.json",
+      "bytes": 607,
+      "sha256": "85a181424a5fd0cc292e44e467be66a5263976eee1baf36d208133f9d49d4269",
+      "chunks": []
+    },
+    {
+      "path": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 167335342,
+      "sha256": "02ee4bd18e5d16e7fe5fc5b85b4aefa2cba6db28897f674226c9d6ddd2f34f06",
+      "chunks": []
+    },
+    {
+      "path": "vae_decoder/config.json",
+      "bytes": 607,
+      "sha256": "85a181424a5fd0cc292e44e467be66a5263976eee1baf36d208133f9d49d4269",
+      "chunks": []
+    },
+    {
+      "path": "vae_encoder/config.json",
+      "bytes": 607,
+      "sha256": "85a181424a5fd0cc292e44e467be66a5263976eee1baf36d208133f9d49d4269",
+      "chunks": []
+    }
+  ],
+  "license": "other",
+  "oversized_weights": "Concatenate chunks in listed order and verify full SHA256 to reconstruct ignored local weight."
+}

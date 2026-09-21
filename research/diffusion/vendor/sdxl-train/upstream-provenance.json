@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/huggingface/diffusers",
+  "commit": "9f1246971270c84dcbe71233edb7a519596a5d02",
+  "source_url": "https://raw.githubusercontent.com/huggingface/diffusers/9f1246971270c84dcbe71233edb7a519596a5d02/examples/text_to_image/train_text_to_image_lora_sdxl.py",
+  "source_sha256": "7a00615e035804162fa35a092e6b3cfd02cf560b43dddaed7b38a72b51c23822",
+  "license": "Apache-2.0",
+  "license_sha256": "f9e2070c247517b1ddf65f7b11b393484a18da91a958fd18a97bd0f241c3125c",
+  "local_training_environment": "research/.venv-flux-train (existing; not modified)",
+  "guards_derived_from": "../flux-train/smoke_guards_cached.py; copied and adapted for bounded SDXL scope",
+  "no_training_executed_by_preparation": true
+}

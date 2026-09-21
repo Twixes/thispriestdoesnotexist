@@ -1,0 +1,5 @@
+{
+  "type": "MemoryError",
+  "error": "Inference resource/time guard failed: unet_loaded",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/evaluate_sdxl_pilot.py\", line 350, in main\n    worker(args)\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/evaluate_sdxl_pilot.py\", line 201, in worker\n    guard(\"unet_loaded\")\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/evaluate_sdxl_pilot.py\", line 141, in guard\n    raise MemoryError(\"Inference resource/time guard failed: \" + phase)\nMemoryError: Inference resource/time guard failed: unet_loaded\n"
+}

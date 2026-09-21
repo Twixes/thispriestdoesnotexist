@@ -1,0 +1,10 @@
+{
+  "decision": "continue_to_fresh100_update_run",
+  "protocol_sha256": "ac8448d8facd5910d0e512486522a436a8e5360903ac8867bf63d04e7abfb22d",
+  "review_scope": "All24cases,all96nativeimages splitbetweenrootandheldout_report agent",
+  "reason": "20 successful finite optimizer updates,baseunchanged,adapterreloadsuccessful; allpairedreviews show no materialadaptationregression or newcollapse. Mostchanges tiny; renderedtexture/eyes andwithinpromptfamilyresemblance persist.100updates test learning;20 is notavisualqualitypass.",
+  "primary_one_step_development_failed": true,
+  "production_approved": false,
+  "test_opened": false,
+  "maximum_next_updates": 100
+}

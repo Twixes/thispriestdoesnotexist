@@ -1,0 +1,15 @@
+{
+  "protocol_id": "sdxl-turbo-priest-lora-pilot-v1",
+  "amendments": [
+    {
+      "reason": "Technical preflight: training seed passed via Accelerate to NumPy must fit unsigned32bit. No model training/evaluation has occurred under this protocol.",
+      "changed_field": "training.seed",
+      "previous_value": 202609219900,
+      "new_value": 2026092199,
+      "old_protocol_copy": "research/diffusion/sdxl-pilot-protocol.pre-seed-amendment.json",
+      "old_protocol_sha256": "7b6987b34197e6a76f647dadf69d2e772cece06582c376871419ec98d2b1aeb7",
+      "new_protocol_sha256": "ac8448d8facd5910d0e512486522a436a8e5360903ac8867bf63d04e7abfb22d",
+      "evaluation_prompts_seeds_arms_gates_unchanged": true
+    }
+  ]
+}

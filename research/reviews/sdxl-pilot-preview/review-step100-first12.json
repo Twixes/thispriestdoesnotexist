@@ -1,0 +1,1129 @@
+{
+  "reviewer": "heldout_report agent",
+  "method": "All24 step100 native adapter images individually inspected with view_image alongside12 base-trigger and12 step20-trigger native images in this review (48 image views). Base-plain labels reuse the earlier individual native review of the exact same hash-bound files; no re-labeling of baseline. Agent judgement, not owner approval.",
+  "reviewed_cases": 12,
+  "reviewed_images": 48,
+  "new_adapter_images_reviewed": 24,
+  "protocol_sha256": "ac8448d8facd5910d0e512486522a436a8e5360903ac8867bf63d04e7abfb22d",
+  "prior_review_sha256": "d645a27ab9f993112bdce0c2bb8947c0b9af5d1faa3c0c62d565502702683cc8",
+  "preview_manifest_sha256_at_review": "730f14f8126271707c3582a2cbf2bc19d4ff08bca3aadf4911ff0e85e5b30cdb",
+  "production_approved": false,
+  "rows": [
+    {
+      "case_id": "legacy-00",
+      "seed": 202609214000,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-00/base-plain/native.png",
+          "native_sha256": "8ac94742bc863eb9ee2a1d29f31c5762d57ee6d723e0020677b19abd412d9c9f",
+          "record_sha256": "2ce139c95ccbd26f691558a19329d334d14c8e8424e805f98198fd18bac49fdd",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-00/base-trigger/native.png",
+          "native_sha256": "3e33e53bc373668920ee9e0a6e3b6c51ad1ea95a2df5cc08edd815200c69ffc5",
+          "record_sha256": "d3a55e9b547672891f9ddef376b587170ae08b53c992ae50d6725a194b04edaa",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-00/adapter-plain/native.png",
+          "native_sha256": "83f73439cbf38884cea920ffc4b18ef686222452512502ddfedd54bfb6987075",
+          "record_sha256": "f9a58dbe239a39bf96658d20544b97cbf289c60f72c6b1180e2b4b929cf3eafd",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-00/adapter-trigger/native.png",
+          "native_sha256": "41792d35d95b7d7b4d163309e4a4051a3e93dd378b4f9bb010964375265b2472",
+          "record_sha256": "3a48b69e65cbd572278de57c11d2bb46df2dfe62d9be60a92140f9a78002d47a",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": true,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        }
+      ],
+      "notes": "At100 the face is smoother and less detailed than base/20, with an irregular extra white tab sliver beside the main collar in the trigger arm. Face remains coherent and priest clothing recognizable; no photographic or appeal gain.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "loss",
+      "adapter_plain_vs_base_plain_quality": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "legacy-pair-0",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-00/adapter-plain/native.png",
+          "native_sha256": "29d3b91b534f9718ba011e1a383f6da82d5011703374d08b99e96b0677c3566b"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-00/adapter-trigger/native.png",
+          "native_sha256": "beb2ca287ecd037b3a1c642d398869c1986860fb0062224415fc736e3adb1d62"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "loss",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "tie"
+    },
+    {
+      "case_id": "legacy-01",
+      "seed": 202609214001,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-01/base-plain/native.png",
+          "native_sha256": "9cf634b2bdcf8b61130df9b493091d9be264dfa5574c2242abf43b294546b4a8",
+          "record_sha256": "6c5877ff64ebb41fba45cf50afe5737a391bb82117c9dda68a47288bca988b60",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-01/base-trigger/native.png",
+          "native_sha256": "a544fc760b428223cded46add7f93aaee500a4bf09612ae067ff4ce183e692c8",
+          "record_sha256": "26503b913c1ac79424cec22298ac992bfa4cb2eef363a333a40b7d8f471e4010",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-01/adapter-plain/native.png",
+          "native_sha256": "b165cefd1dca7f960fafffef9d1575d7bfefafc894b2ab8f11ccbddda23605ca",
+          "record_sha256": "eb92143b5ec5580df8e5ad35a892e9198c563beafd9c5206a802e12e378f543b",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-01/adapter-trigger/native.png",
+          "native_sha256": "326854ae4e2fd9b4d3e064972b4cbc5a2a452e7b53a647a91e2fcfaeb9b0800a",
+          "record_sha256": "983aa2db9b237da82ab13b120071293d876495a42ea521680ec02cd97b2fc0a7",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        }
+      ],
+      "notes": "At100 the face/crop and smile shift, shirt seams become more evident, but skin remains soft. Coherent eyes, smile and tab; overall photographic quality and appeal tie base/20.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "tie",
+      "adapter_plain_vs_base_plain_quality": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "legacy-pair-0",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-01/adapter-plain/native.png",
+          "native_sha256": "41970f573a0b01de2721bf9d845b684661a4b1db8a2d455084ded96c7e98bbcd"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-01/adapter-trigger/native.png",
+          "native_sha256": "ef0b85a8920882fc6d20a1c1aef9a17e6f82b826c9b728f7b1b851aaa538de51"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "tie",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "tie"
+    },
+    {
+      "case_id": "legacy-02",
+      "seed": 202609214002,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-02/base-plain/native.png",
+          "native_sha256": "df7f28c966a23face8026e6509971b06b849d9828c936bd171f0d885b9fc7aea",
+          "record_sha256": "27385cbbf75d812d7addb5f97b306be70a72bc09bda6354bac115b444954cb49",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-02/base-trigger/native.png",
+          "native_sha256": "0bf39350c9fb2e3cef24e8db8c70e7a39c0cfce03c01639f4a51e709a8906030",
+          "record_sha256": "b7399abfd2591a1b1567da2ed96cfca8e075b5e39ea6e09ea8c4c4514493ec60",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-02/adapter-plain/native.png",
+          "native_sha256": "3d7ef6432ed734e98e396e27e3a0e00bc6d848dbae1b42ddd8994a27b97c82dd",
+          "record_sha256": "2ddbc492b1c468056d6818f437fb2560a92f1630e848b65e064b49f9cec399c1",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-02/adapter-trigger/native.png",
+          "native_sha256": "1a3787e06dcf74ff393ba3ff4bd5f7102bb179bd5becdc74933c1d62a69ea5ee",
+          "record_sha256": "32a699879cb8e819f7ba62d109a24ab4509d1ffa58fb606327429a8a557d7301",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        }
+      ],
+      "notes": "At100 the broad collar changes toward a white tab in dark fabric. Previous broad collar was already legitimate, so this is style alignment rather than a user-quality improvement. Face/eyes remain coherent but softened; tie.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "tie",
+      "adapter_plain_vs_base_plain_quality": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "legacy-pair-1",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-02/adapter-plain/native.png",
+          "native_sha256": "d22988b28b66979886aade5004f64dadc3535dd702a75a380d2c38a2e3775ffb"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-02/adapter-trigger/native.png",
+          "native_sha256": "62a0f1312185e99220b236f20bd266a911919dc5439962d6812f33b52050553d"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "tie",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "tie"
+    },
+    {
+      "case_id": "legacy-03",
+      "seed": 202609214003,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-03/base-plain/native.png",
+          "native_sha256": "f90ae17274816f587ec7a47c78dd8ed4a72207949fdca4828369949df0eba04f",
+          "record_sha256": "635fc4a4e14a14b412c4496ab0a2d31cd329637f3c396ed87662c369f84ba782",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-03/base-trigger/native.png",
+          "native_sha256": "b4ae6ea201145efe0570c25245152e8041bde9162ae01f371dcdc992019366d8",
+          "record_sha256": "1ffe9e0ab27f5f6556f958f2f0d3809d4c272b3f6e8dae8d4b8e11610e504444",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-03/adapter-plain/native.png",
+          "native_sha256": "57620eeb702491c53657844ddf9917233a739a13298fde54b51f5814ad11e143",
+          "record_sha256": "23ab018a104d2f9087a59535ad469bbc0211b03cad2fe0f8be389d1112bac189",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-03/adapter-trigger/native.png",
+          "native_sha256": "094af6e4067e08b4f65709014bfb57853627035332d6baf951819806cd1005e9",
+          "record_sha256": "e8a1203f5c53d2415f0693bcbcc682f6b794e6a4a591f36b52f926afb219f88b",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        }
+      ],
+      "notes": "At100 the face becomes softer and slightly more frontal, while tight crop and visible broad collar remain. Coherent anatomy; no clear realism or appeal benefit against base/20.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "tie",
+      "adapter_plain_vs_base_plain_quality": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "legacy-pair-1",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-03/adapter-plain/native.png",
+          "native_sha256": "71ed11e08fba5b47eca455a4ba22bcc0b7c53498c81abf1d53d6f7bb7b9c458b"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-03/adapter-trigger/native.png",
+          "native_sha256": "ece434cc463d9b974411cf06649c00af2c8837d5a50d0e43e37ffa5a585d9ad5"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "tie",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "tie"
+    },
+    {
+      "case_id": "legacy-04",
+      "seed": 202609214004,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-04/base-plain/native.png",
+          "native_sha256": "9bd824cd6230b009c37e1f3f770cc5e64e7358ea235720754379ad3143b3a76f",
+          "record_sha256": "356b07f7c0e2c5d95c37957082f6450f413d6eff5ed38ace0b8283e02cb55efa",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-04/base-trigger/native.png",
+          "native_sha256": "5c6c9269d45ef0a53d5281d614a78955b458b5885ee8e04a01b83edd35ba502f",
+          "record_sha256": "fe6f0d7033052525c0d68e514f05ea8ef62cd1d04ab17aff281d063b885e6c7a",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-04/adapter-plain/native.png",
+          "native_sha256": "8875f5e21e6b696b20a54d7d54505ad2872b9bd831d07e0611ed8805b5e43921",
+          "record_sha256": "a852953d070c714a249e7afaebbf0e1fc1ef7de45ec7810f0d04f52d89084647",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "uncertain",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-04/adapter-trigger/native.png",
+          "native_sha256": "439cf3bae9e51bacec5eb47d68327d0d26099a1e37407a5958878f57c0eb9123",
+          "record_sha256": "9afa25bfec5544feb0af94310a72841b9e08793c273677d9a4bbf7dce55da357",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "uncertain",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        }
+      ],
+      "notes": "At100 the face loses irregular skin detail and reads more airbrushed/rendered, despite a clearer tab. Native texture is now uncertain rather than passed; coherent face but material photographic regression against base/20.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "loss",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "loss",
+      "adapter_plain_vs_base_plain_quality": "loss",
+      "material_adapter_quality_regression": true,
+      "within_half_face_family": "legacy-pair-2",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-04/adapter-plain/native.png",
+          "native_sha256": "6eed493cda939bf8d4cd489daaa0e8cbe18d1da21e4b5b1a85523d771f2d3a8d"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-04/adapter-trigger/native.png",
+          "native_sha256": "b1676c897c8b80d779410b65e03e9503fcde4721afed3b56f709210691ac99ae"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "loss",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "loss"
+    },
+    {
+      "case_id": "legacy-05",
+      "seed": 202609214005,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-05/base-plain/native.png",
+          "native_sha256": "e04cfb360205dfcb5e54351c675bf44844807ccce908016aa3ae86d4bf4cfa58",
+          "record_sha256": "ebb6c63486897c585165dd3c58942d427d1b34901775ee8c7068ebd4c3e02bfd",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-05/base-trigger/native.png",
+          "native_sha256": "88d8daabf5cf0b1463eb7f4a680287e5a890389e28ddae0ca3640a63c825959d",
+          "record_sha256": "b25fe803e55b73ec78eb384a916b0bc1efe7669cac87efcd5598d9be9adc42b2",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-05/adapter-plain/native.png",
+          "native_sha256": "c602d710488dc5ceaba2bb0559b46ff4d7afd1d4907ee5ff5d24e1e336b84bae",
+          "record_sha256": "cc945f159360720410c9c20106574e9f7193df16fab386ee9af264cef5f2c06c",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "uncertain",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-05/adapter-trigger/native.png",
+          "native_sha256": "bcff07d265c61d7df90a0117f9b3c1db1df66721f184c54b9201a3a94c0b7a1a",
+          "record_sha256": "c1f24f0b3cf612554f36176fc34aba9b289db2befc820bd51991942442680847",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "uncertain",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        }
+      ],
+      "notes": "At100 facial skin, hairline and mouth detail become noticeably smoother/blurrier. The extra smile does not compensate for an airbrushed rendering; photographic texture uncertain, worse than base/20. No new gross eye/anatomy defect.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "loss",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "loss",
+      "adapter_plain_vs_base_plain_quality": "loss",
+      "material_adapter_quality_regression": true,
+      "within_half_face_family": "legacy-pair-2",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-05/adapter-plain/native.png",
+          "native_sha256": "43e9cee17fb56421c3b0431f9a00033d6facc8017c92276b5553201eec4728cb"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-05/adapter-trigger/native.png",
+          "native_sha256": "4d04beac19420c0e0dbf7dd5be386cf95a0829cc4381650d8bfea6828d969925"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "loss",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "loss"
+    },
+    {
+      "case_id": "legacy-06",
+      "seed": 202609214006,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-06/base-plain/native.png",
+          "native_sha256": "103a54404aa8825b8e9ed08bc92038117719a0f24d753f4cfabb9ee4bf9920d4",
+          "record_sha256": "2da32919c11f73867e2b9f73a4d00a96e28a8f18a34f45271a7411c896b12c0b",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-06/base-trigger/native.png",
+          "native_sha256": "16a88e0e862eda1bbbcee5aa21fecaa7fee7574a41c8439b76f7c57a730f2b7c",
+          "record_sha256": "b38106cf2245601104b3f999113f92b11b9185a208e06281a0d1637b77a26fc2",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-06/adapter-plain/native.png",
+          "native_sha256": "d05a8214b652aeed0d3a5016cc1a87b0216c900e47a860104ba9b958c04aa9a1",
+          "record_sha256": "8007c61ee03e4ef1d85f8c8b9bd49b93469659299fdf353a8021f2b12efdf62b",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-06/adapter-trigger/native.png",
+          "native_sha256": "3458cad05ef509998d7ca4746e53c8251b240f76161c6a2214ea5e6844bbc584",
+          "record_sha256": "c8a2bfbb539a8ca871a733adae38b4566be46373332338b71bfdb3f923621c67",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        }
+      ],
+      "notes": "At100 the crop is wider and collar changes shape; face remains coherent and plausibly photographic, though flatter/softer. Strong appeal persists but no clear net improvement.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "tie",
+      "adapter_plain_vs_base_plain_quality": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "legacy-pair-3",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-06/adapter-plain/native.png",
+          "native_sha256": "4750bca0c49ea81662fcf755304d66586be2f57a1e352bba4c07bb66319d3e70"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-06/adapter-trigger/native.png",
+          "native_sha256": "e0c91258249ed2297c880280d10b788ee136fbe6ec765d8279f51ad34dd7935d"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "tie",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "tie"
+    },
+    {
+      "case_id": "legacy-07",
+      "seed": 202609214007,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-07/base-plain/native.png",
+          "native_sha256": "680e49e0da689b6b2ecce8f8d83ed743b9789381000e9a6dd79be2125706261a",
+          "record_sha256": "4bc15e547ef8ffdedb8e06c8d312777fabb3b4f936abca86ec994515f17bd613",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": false,
+          "clerical_clothing_label": "uncertain",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/legacy-07/base-trigger/native.png",
+          "native_sha256": "ed4dcf9a897807f6e94f5d954a836809337608536e5e4b0d0b23a12724077c6c",
+          "record_sha256": "792b4ff47b8c6af3cd0998a3700699055aa86d2b108c2498995c5ed6a7cce859",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": false,
+          "clerical_clothing_label": "uncertain",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-07/adapter-plain/native.png",
+          "native_sha256": "0baf22d54b14d3d041322c578cc1384fb3e4abea829e2129a037d85afbd5ec32",
+          "record_sha256": "0927e25b03fb390446607161d2126e9c306918209b0fab5de35204b25b197338",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": false,
+          "clerical_clothing_label": "uncertain",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/legacy-07/adapter-trigger/native.png",
+          "native_sha256": "7dd9e0a7aca50938e61e54e8b4c7d8de0813728e9c135b4ca779ab2cc32b4f1d",
+          "record_sha256": "0480103c500798056aea47d405965d7c37c0290b143828f4d6f299737177571c",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": false,
+          "clerical_clothing_label": "uncertain",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": false
+        }
+      ],
+      "notes": "At100 coherent attractive face remains, but crop still hides most collar evidence and clothing remains uncertain. Skin becomes smoother; this does not repair the existing framing problem.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "tie",
+      "adapter_plain_vs_base_plain_quality": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "legacy-pair-3",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-07/adapter-plain/native.png",
+          "native_sha256": "dbb381f1ae617808d3b7bac5528e614140335f9e1b08c76dab5565cc2a396304"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/legacy-07/adapter-trigger/native.png",
+          "native_sha256": "4ce5517073d7abf863febe6fa61907e83226df6f85997339f01e3dbf8a5b9ad0"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "tie",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "tie"
+    },
+    {
+      "case_id": "dev-00",
+      "seed": 202609219000,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-00/base-plain/native.png",
+          "native_sha256": "974c4453c2ec0d39dabc2e03857936ae4f7c78c9edf092181a040759e9b4e9cc",
+          "record_sha256": "58c543486aa34b9033645faffd13650da3720de6a539fd3ce2fe86e4bcfefdee",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "fail",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-00/base-trigger/native.png",
+          "native_sha256": "c7faedf80aa7d052c7ddcc52bb687166aca276f4c6c22cdba2018843f35dd572",
+          "record_sha256": "e6d6711e9d72149f239f9b930ab9b143aa367600c9fa1d18113fd81cd23b1075",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "fail",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/dev-00/adapter-plain/native.png",
+          "native_sha256": "f4dac5c2023d552a5f601be02861241c2f3c6fa643bb9432d37f22dbdf3a81b1",
+          "record_sha256": "d4860bd7990098d8c846ef9953dba5057952e1ad1fb12d476d48bdd7b8b65452",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "fail",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/dev-00/adapter-trigger/native.png",
+          "native_sha256": "3dfd80e1613421f8aa2979eb03fc15e124d96509b5a1e1cbd1aba2b054ad6750",
+          "record_sha256": "350dab6e502e43c02e415ad216ee99bfa29bbc48855c4c2017ac7c59a41b177b",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "fail",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        }
+      ],
+      "notes": "At100 collar/crop and shading shift, but the waxy rendered studio-face appearance remains. Glossier eyes and plastic skin have not become convincingly photographic; no meaningful benefit.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "tie",
+      "adapter_plain_vs_base_plain_quality": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-00",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-00/adapter-plain/native.png",
+          "native_sha256": "4d1b7f6cc406d84619c4ee7537820859317f136194a437946f414af73c9d8b4e"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-00/adapter-trigger/native.png",
+          "native_sha256": "320a2c0a7979ac816b51725f2cbb2af05161942294fc5451d962efdf38b82ed3"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "tie",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "tie"
+    },
+    {
+      "case_id": "dev-01",
+      "seed": 202609219001,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-01/base-plain/native.png",
+          "native_sha256": "c6365668ea840dbf24187abbd29366c5f103a2c44b7a2d38d14a7b09a7c34bff",
+          "record_sha256": "19429bb82a4ee23f5091e4487b57c6578addefde54eebb8ac1f3336ad31b6a2d",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-01/base-trigger/native.png",
+          "native_sha256": "781529ae123e6950e3ad6f45c31f7b2b3b6b056c4bb6251e00bd4d147f541cbe",
+          "record_sha256": "a581b450d8d118d1512e11c5b97cf9cf8ff82b11f9ddcdc24b242dd6ee98b2f3",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/dev-01/adapter-plain/native.png",
+          "native_sha256": "060624a9d0094301716a2001d7698c68a6021b61e8878b84f87972b5bea3519b",
+          "record_sha256": "a407e51933777a74c23b78bc4da9ee31cd74629e8d170851bea37763b3a256c5",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/dev-01/adapter-trigger/native.png",
+          "native_sha256": "b6e013baa74c965a4547c22e1ce24d07c2b25a6360159bdcf1fb53943ef53b4e",
+          "record_sha256": "d751d146accbb9f714169efbfd66d3fd79a4af6164d5d8c66ef75daf000e1c86",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "photographic_texture_label": "pass",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "strong",
+          "joint_pass": true
+        }
+      ],
+      "notes": "At100 coherent shaved-head portrait with natural skin and a clear tab persists; mouth/smile changes slightly. No clear photographic or appeal improvement, and requested three-quarter pose is still mostly absent.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "tie",
+      "adapter_plain_vs_base_plain_quality": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-01",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-01/adapter-plain/native.png",
+          "native_sha256": "e3665168b716860d44f430342738a9184c1c5af6b49bad6079ae9cdaaefbe7f2"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-01/adapter-trigger/native.png",
+          "native_sha256": "d89eccabea538a47ea91bdbdaa7fda5b249350a9a34cc80fe7a3db39b60c4188"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "tie",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "tie"
+    },
+    {
+      "case_id": "dev-02",
+      "seed": 202609219002,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-02/base-plain/native.png",
+          "native_sha256": "ca97451ef9ab5edb1b127369c88abf080ebe9481bd14869bb82c16c9171a15ee",
+          "record_sha256": "965366f8cc5f5e92a2e9fd6a903a503d42a86dea0be68960c7f5f0461b631d93",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "fail",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-02/base-trigger/native.png",
+          "native_sha256": "3ec13c1f40b33ebfe3814b6bbfea47cfb9e2cc93b4add9992c0db14097215282",
+          "record_sha256": "3e8d6cbef67eb6bf3a4f1b514a0851a40c024e11683dd25aea50e0b6b0b08f23",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "fail",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/dev-02/adapter-plain/native.png",
+          "native_sha256": "1d6027554140a8c5fc4ad8f231d56a48a616b13bf07a6709938be8b0a69adda6",
+          "record_sha256": "69be83bae778d5c0b4e1a9cca2d0ea5711cdd3f366519ffdc4adcb5f0d5eb28e",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "fail",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/dev-02/adapter-trigger/native.png",
+          "native_sha256": "3ec76e72a3bb7785dfbaa520b89332e82889c35152c137413749308fd598cc8d",
+          "record_sha256": "52c549134375946b01be9d42b3908ab6711237e537eec595c47f5e514bd81b27",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "fail",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "weak",
+          "joint_pass": false
+        }
+      ],
+      "notes": "At100 eyes and head angle shift slightly, but uniform skin texture and sharply outlined hair retain the rendered appearance. Tab remains visible; no clear improvement.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "tie",
+      "adapter_plain_vs_base_plain_quality": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-02",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-02/adapter-plain/native.png",
+          "native_sha256": "46af8d5790a42e934cf018f8725a7bffff5acc7c16ca95e86f1c7edd04d38649"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-02/adapter-trigger/native.png",
+          "native_sha256": "79c0213be8d13306cc7efdb3d8fe6ef9544cb32e3d78a9ed5702e9f459e9c3d3"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "tie",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "tie"
+    },
+    {
+      "case_id": "dev-03",
+      "seed": 202609219003,
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-03/base-plain/native.png",
+          "native_sha256": "71656dbea70ec0a0bc75c2fd705533086f565aba923b9611a36f2f3175288583",
+          "record_sha256": "dcaee9609892c89e4b092eca68b2e3d5fe0496c364a41ad551574a50058540e8",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "uncertain",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-03/base-trigger/native.png",
+          "native_sha256": "ed8a3b5b3ff04979604eda630cae573f7d957d88741bc42d914f07f821985825",
+          "record_sha256": "6b24ac66319f39e0fd9a48d514b207587b37418e7ef0c3588c03b4bcf553f697",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "uncertain",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/dev-03/adapter-plain/native.png",
+          "native_sha256": "84a987279b8d5aa6191d5be57f76fedf98d5a0c0dbf95bb4ffabf6a193a51ccc",
+          "record_sha256": "33ecac760c7b535a412be011212fe9fb21e5907d5bb67f29cd6fde89cb9aa6d9",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "uncertain",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step100-development-1step-v1/dev-03/adapter-trigger/native.png",
+          "native_sha256": "ab4e663ea76e98d94059b152c07722e47538dbc543c5446bcf9cef1a67b01824",
+          "record_sha256": "872b25aafcefff3e95a55efa2993f78a4879d4bfdcb19355d7be64c30154d7c9",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "photographic_texture_label": "uncertain",
+          "recognizable_clerical_clothing": true,
+          "clerical_clothing_label": "pass",
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "calendar_appeal": "adequate",
+          "joint_pass": false
+        }
+      ],
+      "notes": "At100 the trigger portrait becomes flatter and more frontal, with less hair volume and a narrower white tab. Eyes are less glint-heavy, but uniformly processed texture remains uncertain. No clear overall photographic or calendar improvement.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "adapter_trigger_vs_base_trigger_photographic_priest_quality": "tie",
+      "adapter_plain_vs_base_plain_quality": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-03",
+      "teacher_copying": "not_assessed_in_this_smoke_review",
+      "step20_comparison_sources": [
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-03/adapter-plain/native.png",
+          "native_sha256": "551f13a0f7cb5dd420784656077d95a316c63f4c541659e519ae6e7fbcde3a86"
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-03/adapter-trigger/native.png",
+          "native_sha256": "21543691201f9a5a0fb8895677256fb718bbc686d75fa333e46247d0a534025c"
+        }
+      ],
+      "adapter_trigger_vs_step20_trigger_photographic_priest_quality": "tie",
+      "adapter_trigger_vs_step20_trigger_calendar_appeal": "tie"
+    }
+  ],
+  "summary": {
+    "adapter_trigger_joint_pass": 6,
+    "base_trigger_joint_pass": 8,
+    "step20_trigger_joint_pass": 8,
+    "adapter_trigger_face_integrity_pass": 12,
+    "base_trigger_face_integrity_pass": 12,
+    "paired_trigger_quality": {
+      "wins": 0,
+      "ties": 9,
+      "losses": 3
+    },
+    "paired_trigger_calendar_appeal": {
+      "wins": 0,
+      "ties": 10,
+      "losses": 2
+    },
+    "material_adaptation_regressions": 2,
+    "within_half_plausible_families": 8,
+    "largest_within_half_family": 2,
+    "uncertain_counts_as_not_passed": true,
+    "full24_family_assignment_not_performed": true,
+    "teacher_copying_not_assessed": true,
+    "recommendation": "Do not proceed to250: no observed photographic/appeal wins, two texture regressions and no improvement in existing failures. Consider only the frozen four-step fallback after root records full one-step failure; no test or production approval."
+  }
+}

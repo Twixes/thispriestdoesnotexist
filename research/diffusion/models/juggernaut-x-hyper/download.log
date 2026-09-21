@@ -1,0 +1,19 @@
+Downloading 17 files, 7108744590 bytes, no model execution
+Verified model_index.json: 712 bytes
+Verified sources/publisher-model-card.md: 8362 bytes
+Verified scheduler/scheduler_config.json: 579 bytes
+Verified text_encoder/config.json: 584 bytes
+Verified text_encoder_2/config.json: 594 bytes
+Verified tokenizer/merges.txt: 573514 bytes
+Verified tokenizer/special_tokens_map.json: 496 bytes
+Verified tokenizer/tokenizer_config.json: 770 bytes
+Verified tokenizer/vocab.json: 1109372 bytes
+Verified tokenizer_2/special_tokens_map.json: 484 bytes
+Verified tokenizer_2/merges.txt: 573514 bytes
+Verified tokenizer_2/tokenizer_config.json: 758 bytes
+Verified tokenizer_2/vocab.json: 1109372 bytes
+Verified unet/config.json: 1845 bytes
+Verified vae/config.json: 633 bytes
+Verified LICENSE.txt: 14385 bytes
+Verified JuggernautXRundiffusion_Hyper.safetensors: 7105348616 bytes
+{"complete": true, "verified_files": 17, "full_checkpoint_sha256": "010be7341cd98a136da775330ba3eb4e87025c6cfd2f5455dc64daee2200ae98", "parts_concatenate_to_upstream_sha256": true, "maximum_part_bytes": 1073741824, "provenance_sha256": "da4b21ed1fb3ff4dcc3cbd9881afc1549351214643d1ffe324421611fcdbe330", "model_load_or_inference_performed": false}

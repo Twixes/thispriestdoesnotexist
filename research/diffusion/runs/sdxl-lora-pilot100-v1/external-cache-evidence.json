@@ -1,0 +1,922 @@
+{
+  "manifest_sha256": "8cd21dd65adc33584e19fa01c5fa9da396c1d99be2fa82f3e18c2e61acd0ab35",
+  "entries": [
+    {
+      "file_name": "141.png",
+      "caption": "PR1EST_CAL. An adult man with closely cropped curly hair, a broad clean-shaven face and a slight closed-mouth smile, facing the camera. He wears a black clerical shirt with a white collar insert. His shoulders fill the lower frame against a dark plain background.",
+      "path": "141.safetensors",
+      "sha256": "055a0f44b7ddc82fbf37561a27e2d87f18e4be8993fa605c9217a5789c211f60",
+      "image_sha256": "751d3492a88e8b2b348ad56012d2de89001cf8256b6bd82e9fe0aeb7b29ed22b",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "142.png",
+      "caption": "PR1EST_CAL. An adult man with short side-swept hair, faint facial stubble and a slight smile, facing the camera with his head gently tilted. He wears a black clerical shirt and a white collar insert, with his shoulders visible against blurred foliage.",
+      "path": "142.safetensors",
+      "sha256": "e6ddc4b04f8c0f2b2517a7c517254ace92743e3e3dcbea50809e7be50c246fb8",
+      "image_sha256": "fe9e5ade4c680736811a9f5871e4f1a954e1bb58cece07825eaad96d726f582d",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "143.png",
+      "caption": "PR1EST_CAL. An adult man with short dark curls and a neatly trimmed full beard and mustache, looking into the camera with a gentle closed-mouth smile. He wears a black clerical shirt with a white collar insert against a plain light wall.",
+      "path": "143.safetensors",
+      "sha256": "1d715fac86062d9018144ff0cbe6b7708b808e0a4aa14c9dcc59943df19bd199",
+      "image_sha256": "a994e76f71c3aab6df40c5c48c7124fddceb37edf32f47f62cbc23614732de94",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "145.png",
+      "caption": "PR1EST_CAL. An adult man with thick dark hair swept upward and a clean-shaven face, looking directly at the camera with a small closed-mouth smile. He wears a black clerical shirt with a white collar insert against a plain light background.",
+      "path": "145.safetensors",
+      "sha256": "5b4c74e94337fe8dd8ad43fd887c84841d0b9af07fd4a3997e10f08a0702d086",
+      "image_sha256": "f3cc591b78d89f4bb851369723281d3fc89874678c47fbdb55e8b21b26191829",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "147.png",
+      "caption": "PR1EST_CAL. A middle-aged man with short light wavy hair and an almost clean-shaven face, facing the camera with a slight smile. He wears a black clerical shirt with a white collar insert, with both shoulders visible against a plain light wall.",
+      "path": "147.safetensors",
+      "sha256": "e47c99b733c3d26d50ce432e7d7bce2793e65da28e232003dd68bacaa3be78e0",
+      "image_sha256": "1e4ec03ffaa1124d616388387da30ff5cbf517e6a2185cacfa59049d57f29810",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "148.png",
+      "caption": "PR1EST_CAL. A middle-aged man with a receding hairline, short dark hair and a neatly trimmed salt-and-pepper beard, looking at the camera with a slight smile. He wears a black clerical shirt and white collar insert against a plain softly mottled background.",
+      "path": "148.safetensors",
+      "sha256": "1389cc31b8c2e8998fba1e04302f551e49a82d8092eb905ea2931c97e48ac49a",
+      "image_sha256": "cb118bb768b6b9bb2ce16c6ae00098f3d50bdad0a591b482495178f35d2619d6",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "149.png",
+      "caption": "PR1EST_CAL. An adult man with short curly hair and a trimmed beard with gray strands at the chin, turning his head slightly and looking toward the viewer's right. He wears a black clerical shirt with a white collar insert against blurred foliage.",
+      "path": "149.safetensors",
+      "sha256": "78bb9bb2f98806fa79ecf4d3eb31f56f99f62331565a98b4b1066e7f30fe15ab",
+      "image_sha256": "9e2c1fa38192f4bd3fecfcca53eb052931fa814b7e08b4e17d6c86a2784d77f2",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "152.png",
+      "caption": "PR1EST_CAL. A middle-aged man with short salt-and-pepper hair and a full trimmed gray beard and mustache, turning slightly toward the viewer's right and looking at the camera. He wears a black clerical shirt with a white collar insert against a plain light wall.",
+      "path": "152.safetensors",
+      "sha256": "b77e875254f9e926a00b5201063be1c2eb7c9c2602ec477e6fcec87f342d5e2f",
+      "image_sha256": "f8f9a8e86b6eaf833b2f9d1e1c3dd65e0492ff24fd87f7e8538c922258dcf4be",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "154.png",
+      "caption": "PR1EST_CAL. A middle-aged man with closely cropped graying hair and a clean-shaven face, tilting his head gently and smiling at the camera. He wears a black clerical shirt with a white collar insert, with both shoulders visible against a dark plain background.",
+      "path": "154.safetensors",
+      "sha256": "8adc64716ac54e7f054b64210837360ed37248dbba73001b0fcf888f7245e2b9",
+      "image_sha256": "6d0f9ed146e80c6fc0345299a7e96df21159b9b393795e9d8c7079156b02e0bd",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "155.png",
+      "caption": "PR1EST_CAL. An adult man with short tousled dark hair, a thin mustache and light chin stubble, looking toward the viewer's left with a relaxed expression. He wears a black clerical shirt with a white collar insert against a softly blurred background.",
+      "path": "155.safetensors",
+      "sha256": "4f738d72e3452e2111c69f4a69e8fc680a99eff14e703fcbb827649c74ed58af",
+      "image_sha256": "bfcb9be5cca0b5d78ffa608c5f87d672d7e6fc20748005e609058eea3a2be8c7",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "156.png",
+      "caption": "PR1EST_CAL. A middle-aged man with short curly hair, a trimmed beard, freckles and a slight smile, looking into the camera with his head tilted. He wears a black clerical shirt with a white collar insert against a plain light wall.",
+      "path": "156.safetensors",
+      "sha256": "55946c8ebb822dcb29fbf70144a6b7846d8951868d2b881a1b0528d59446834e",
+      "image_sha256": "69fbdfc13e73f6e9422e8997c141aaaaa7729f891d0b992cb623ff4860ef6e1e",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "157.png",
+      "caption": "PR1EST_CAL. An adult man with short dark wavy hair and a nearly clean-shaven face, looking into the camera with his head tilted and a slight smile. He wears a black clerical shirt with a white collar insert against blurred foliage.",
+      "path": "157.safetensors",
+      "sha256": "5fa677b603f8431a06bcac9c61f58352d66e991f0a31ab2bf096783c363bde76",
+      "image_sha256": "e0e0dedeedc87ba011e278f406dc0155be9e2b910e14220ce8e83d36c6682fb0",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "160.png",
+      "caption": "PR1EST_CAL. A middle-aged man with short side-swept graying hair and a short mustache and goatee, looking at the camera with his head gently tilted and a small smile. He wears a black clerical shirt with a white collar insert and chest pocket against a dark plain background.",
+      "path": "160.safetensors",
+      "sha256": "215d3b41edc673b8678d9bc949d4798d65aa106e81bb3e4bf91dad84878db5fa",
+      "image_sha256": "1c863de27dc6ac5aa619277e3ff69873feb56c6afc37e9f6a339ca7485ddd30d",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "162.png",
+      "caption": "PR1EST_CAL. A middle-aged man with short side-swept gray hair, a mustache and close stubble, turning slightly toward the viewer's left while looking at the camera. He wears a black clerical shirt with a white collar insert and a chest pocket against a plain light wall.",
+      "path": "162.safetensors",
+      "sha256": "2fc249d427e026c4177689796074315fa1853a7bef4c6898d95e60c254593817",
+      "image_sha256": "599f2d58ef0d30b38deb9de5db9b100479e5a5c53fee01d3668c420438334e37",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "163.png",
+      "caption": "PR1EST_CAL. An adult man with short dark curls and a trimmed full beard and mustache, facing the camera with his head slightly tilted and a relaxed closed mouth. He wears a black clerical shirt with a white collar insert against a blurred background.",
+      "path": "163.safetensors",
+      "sha256": "992314fc7fdd34d4ec30b43e0884dc70a0a981ef8d167cd77e9a69874d3ca8f3",
+      "image_sha256": "70188d1beb364146ae2806063e75793fe19d94883dfccb12b8ec6f3523886f91",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "166.png",
+      "caption": "PR1EST_CAL. An adult man with short tight curls and close beard stubble, facing the camera with a calm expression and his head slightly tilted. He wears a black clerical shirt with a white collar insert and chest pocket, framed from the chest upward against a plain background.",
+      "path": "166.safetensors",
+      "sha256": "a8db8259290dea168b6f78b52e68a8486a8a718d9b60806b121395f5fa85f310",
+      "image_sha256": "ce1c9919bd610fa762840d6b9df09736399b3187db8ddd064bfe4982faf9fcb8",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "170.png",
+      "caption": "PR1EST_CAL. An adult man with short dark curly hair and a full trimmed beard, turning his shoulders slightly toward the viewer's left and looking at the camera with a serious expression. He wears a black clerical shirt with a white collar insert against a plain background.",
+      "path": "170.safetensors",
+      "sha256": "ed085949dc324ede6293f8e557b973416c154ad02d96d97326a593b5be2041c8",
+      "image_sha256": "1ef87bee01f5290327f8d3009b7a0870252b5a2e6c20c4ac4ac2400a06ce20a1",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "173.png",
+      "caption": "PR1EST_CAL. An adult man with short tousled hair, a light mustache and chin stubble, turning slightly toward the viewer's left while looking at the camera with a serious expression. He wears a black clerical shirt with a white collar insert, framed from the chest upward against a plain background.",
+      "path": "173.safetensors",
+      "sha256": "bd3e07b9bae8342c3574e954e5e8c21ad1df420bec05b1a62f3fdb56a9e9862c",
+      "image_sha256": "7e192004c33f9bd7ab83349893e4d7571e6d247a63ae2c7e183973eb83ad85d1",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "174.png",
+      "caption": "PR1EST_CAL. An older man with swept-back gray hair and a full salt-and-pepper beard and mustache, facing forward while glancing slightly toward the viewer's left with a small smile. He wears a black clerical shirt with a white collar insert against a plain background.",
+      "path": "174.safetensors",
+      "sha256": "eea24d3c32550157df052aff6e26a8931724fa552f923f3ae273adbf7fc4b07c",
+      "image_sha256": "ca186b3b95c68838fddcfa66b280ca8adc5707e19f416894646b7e9d7aecfedf",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    },
+    {
+      "file_name": "180.png",
+      "caption": "PR1EST_CAL. An older man with short wavy gray hair, a mustache and a short goatee, turning slightly toward the viewer's right while looking at the camera with a slight smile. He wears a black clerical shirt with a white collar insert against a plain background.",
+      "path": "180.safetensors",
+      "sha256": "34140df23e70f4098c248a527050b7e5fc0d091b2b987dd8d50fe5cc9d22770b",
+      "image_sha256": "e4d88955abd1fae56b8ce77db77c0f523b9bd9e884c17cab90641578cc5bec64",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "crop_top_left": [
+        0,
+        0
+      ],
+      "tensor_shapes": {
+        "prompt_embeds": [
+          1,
+          77,
+          2048
+        ],
+        "pooled_prompt_embeds": [
+          1,
+          1280
+        ],
+        "latent_mean": [
+          1,
+          4,
+          64,
+          64
+        ],
+        "latent_std": [
+          1,
+          4,
+          64,
+          64
+        ]
+      },
+      "tensor_dtypes": {
+        "prompt_embeds": "torch.float16",
+        "pooled_prompt_embeds": "torch.float16",
+        "latent_mean": "torch.float32",
+        "latent_std": "torch.float32"
+      }
+    }
+  ],
+  "vae_scaling_factor": 0.13025,
+  "tensor_contract": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16"
+    },
+    "latent_mean": {
+      "shape": [
+        1,
+        4,
+        64,
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "latent_std": {
+      "shape": [
+        1,
+        4,
+        64,
+        64
+      ],
+      "dtype": "torch.float32"
+    }
+  },
+  "posterior_sampling": "Fresh mean + std * randn each update; then scaling and FP16 cast."
+}

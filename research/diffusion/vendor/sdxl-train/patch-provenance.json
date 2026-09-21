@@ -1,0 +1,17 @@
+{
+  "upstream_commit": "9f1246971270c84dcbe71233edb7a519596a5d02",
+  "upstream_path": "examples/text_to_image/train_text_to_image_lora_sdxl.py",
+  "files": {
+    "upstream.py": "7a00615e035804162fa35a092e6b3cfd02cf560b43dddaed7b38a72b51c23822",
+    "LICENSE": "f9e2070c247517b1ddf65f7b11b393484a18da91a958fd18a97bd0f241c3125c",
+    "run_training.py": "9e780d9d652f610c543f480ff10a2757a7dc94458d1eab146c2588cc3d5e46c2",
+    "guards.py": "46950b072ca11c7f7fdd9390168248d9d72401d676b92564490e6a0a20381002",
+    "priest_cache.py": "027c2b9580acabde6a39f810d87b640aaddff6080beeec5c3e03bed214b1b30a",
+    "upstream.patch": "ed59b231bb47722eb6b03aa114bb365d6f192043b05b2d79259949310d9f8b6c"
+  },
+  "objective": "Unchanged ordinary DDPM noise prediction MSE, uniform random training timesteps, fresh stochastic VAE posterior samples; not adversarial diffusion distillation.",
+  "risk": "Ordinary denoising LoRA can degrade distilled SDXL-Turbo one-step behavior. Separate frozen-seed one-step before/after native image review required.",
+  "scope": "Single-process MPS, FP16 frozen UNet, FP32 rank8/16 attention LoRA; 20/100/250 updates only, no resume/in-process inference/publication.",
+  "executed": false,
+  "production_approved": false
+}

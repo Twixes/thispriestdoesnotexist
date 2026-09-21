@@ -1,0 +1,639 @@
+{
+  "protocol_id": "sdxl-turbo-priest-lora-pilot-v1",
+  "status": "frozen_before_training_evaluation",
+  "production_approved": false,
+  "base": {
+    "model_id": "stabilityai/sdxl-turbo",
+    "revision": "71153311d3dbb46851df1931d3ca6e939de83304",
+    "provenance_sha256": "3339ec6460b58e799ef2c323349f949387a8be1e53feca5324b5614e6ff62a09",
+    "comparison_result_sha256": "cb605b4146090d2457d232dc4671f0c1c1beb2e57210a67a84f5a84500c83c21",
+    "scheduler_config_path": "research/diffusion/models/sdxl-turbo/scheduler/scheduler_config.json",
+    "scheduler_config_sha256": "13847eb34084bc56e9f8b10f84d2c650cf8cb00016b2530429af0b894d4e1aa2"
+  },
+  "dataset": {
+    "manifest_path": "research/data/flux-priest-domain-v1/manifest.json",
+    "manifest_sha256": "6796be940a10610843c154c7063b3bb907d0ffab18e014737c6abc6f02ee340b",
+    "counts": {
+      "train": 20,
+      "validation": 5,
+      "test": 5
+    },
+    "training_directory": "research/data/flux-priest-domain-v1/train",
+    "heldout_teacher_images_are_not_generated_test_seeds": true,
+    "trigger": "PR1EST_CAL",
+    "known_limitations": [
+      "Only20 training portraits; narrow monochrome clerical-shirt framing and background range",
+      "Multiple close synthetic face-family variants were excluded; visual grouping is not biometric uniqueness proof",
+      "Few balding faces, little extreme old age and no deliberate coverage balance; apparent demographic coverage is not verified identity data",
+      "New prompt descriptors are requested generation attributes, not sensitive inferences about teacher images"
+    ]
+  },
+  "training": {
+    "status": "experimental_not_distillation_preserving",
+    "objective": "ordinary noise-prediction LoRA adaptation; not ADD re-distillation",
+    "train_components": [
+      "UNet attention LoRA"
+    ],
+    "frozen_components": [
+      "base UNet parameters",
+      "both text encoders",
+      "VAE"
+    ],
+    "rank": 16,
+    "lora_alpha": 16,
+    "target_modules": [
+      "to_q",
+      "to_k",
+      "to_v",
+      "to_out.0"
+    ],
+    "learning_rate": 1e-05,
+    "lr_scheduler": "constant",
+    "lr_warmup_steps": 0,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 1,
+    "optimizer": "AdamW",
+    "optimizer_betas": [
+      0.9,
+      0.999
+    ],
+    "optimizer_weight_decay": 0.01,
+    "optimizer_epsilon": 1e-08,
+    "max_grad_norm": 1.0,
+    "seed": 202609219900,
+    "resolution": 512,
+    "base_weight_dtype": "float16",
+    "trainable_adapter_dtype": "float32",
+    "gradient_checkpointing": true,
+    "image_preprocessing": "resize native square to512; no random crop, flip, color jitter or synthetic image additions",
+    "checkpoints": [
+      20,
+      100,
+      250
+    ],
+    "max_optimizer_updates": 250,
+    "step_semantics": "total optimizer updates, not additional updates per checkpoint",
+    "stop_on": [
+      "NaN/Inf loss or gradients",
+      "nonfinite adapter tensors",
+      "hardware resource supervisor failure",
+      "native image face quality regression or identity collapse at development gate"
+    ],
+    "checkpoint20_role": "compatibility smoke, check finite gradients/actual changed adapter tensors/loadability and development images; low loss alone does not pass",
+    "checkpoint100_role": "bounded visual learning check before continuation",
+    "checkpoint250_role": "last permitted pilot checkpoint; no extra updates or learning-rate/rank sweep within this protocol",
+    "risk": "A low LR and low-rank adapter may reduce but do not remove the risk that ordinary score fine-tuning damages the distilled one-step behavior."
+  },
+  "inference": {
+    "primary": {
+      "steps": 1,
+      "width": 512,
+      "height": 512,
+      "guidance_scale": 0.0,
+      "negative_prompt": null,
+      "adapter_scale": 1.0,
+      "scheduler": "pinned EulerAncestralDiscreteScheduler, trailing timestep spacing"
+    },
+    "secondary": {
+      "steps": 4,
+      "width": 512,
+      "height": 512,
+      "guidance_scale": 0.0,
+      "negative_prompt": null,
+      "adapter_scale": 1.0,
+      "allowed_only_if": "All adapted one-step candidates fail the frozen development gate. Run base and all completed adapted checkpoints on all24 development cases; choose once from development; label primary failure. No two/three-step search."
+    },
+    "noise": {
+      "shape": [
+        1,
+        4,
+        64,
+        64
+      ],
+      "initial_generation": "torch.randn with CPU torch.Generator.manual_seed(case seed), float32; persist noise.npz and hash before any arms",
+      "legacy_initial": "Reuse hash-verified existing noise.npz byte values",
+      "generator_handling": "After generating or reconstructing the initial noise, save the CPU generator state; reset identical state for every arm. Record state hashes. Four-step Euler ancestral draws must also match; initial noise alone is insufficient.",
+      "execution": "cast same initial tensor to fp16 on execution device; pin software/device; compare matched arms on one device"
+    },
+    "arms": [
+      {
+        "id": "base-plain",
+        "adapter": false,
+        "prompt_transform": "identity"
+      },
+      {
+        "id": "base-trigger",
+        "adapter": false,
+        "prompt_transform": "prefix PR1EST_CAL. "
+      },
+      {
+        "id": "adapter-plain",
+        "adapter": true,
+        "prompt_transform": "identity"
+      },
+      {
+        "id": "adapter-trigger",
+        "adapter": true,
+        "prompt_transform": "prefix PR1EST_CAL. "
+      }
+    ],
+    "arm_policy": "All four arms on24 development cases for each completed checkpoint; reuse freshly matched base arms across checkpoints. All four arms on32 tests only for the selected frozen checkpoint/step count.",
+    "retain": "Every raw native RGB PNG, initial latent, generator-state hash, complete prompt, tokenization/truncation diagnostics, adapter/base/software hashes, scheduler config, run timing and unmodified failure records. No best-of, face repair, crop, prompt retry or output selection.",
+    "display": "Optional monochrome WebP quality90 method4 for site parity, preserving raw native RGB PNG. Review both native and display; grayscale is not a repair."
+  },
+  "development_cases": [
+    {
+      "case_id": "legacy-00",
+      "seed": 202609214000,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "source_record": "research/diffusion/runs/sdxl-turbo-1step-v1/000/record.json",
+      "reuse_initial_noise": "research/diffusion/runs/sdxl-turbo-1step-v1/000/noise.npz",
+      "initial_noise_file_sha256": "bbc90260c3ebfd64a39b622e10045a0053647f3a0e47317d1d37ebde704a7b9b",
+      "role": "development_already_seen"
+    },
+    {
+      "case_id": "legacy-01",
+      "seed": 202609214001,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "source_record": "research/diffusion/runs/sdxl-turbo-1step-v1/001/record.json",
+      "reuse_initial_noise": "research/diffusion/runs/sdxl-turbo-1step-v1/001/noise.npz",
+      "initial_noise_file_sha256": "6ace506e4866fc84e6c4d6b5df631b7dd76ae45628475684745bf9a42ee5b3ef",
+      "role": "development_already_seen"
+    },
+    {
+      "case_id": "legacy-02",
+      "seed": 202609214002,
+      "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+      "source_record": "research/diffusion/runs/sdxl-turbo-1step-v1/002/record.json",
+      "reuse_initial_noise": "research/diffusion/runs/sdxl-turbo-1step-v1/002/noise.npz",
+      "initial_noise_file_sha256": "0ebb7e751f1f9f3169e17fa199ab6f590476e880844760bf98d276eb1a8b138e",
+      "role": "development_already_seen"
+    },
+    {
+      "case_id": "legacy-03",
+      "seed": 202609214003,
+      "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+      "source_record": "research/diffusion/runs/sdxl-turbo-1step-v1/003/record.json",
+      "reuse_initial_noise": "research/diffusion/runs/sdxl-turbo-1step-v1/003/noise.npz",
+      "initial_noise_file_sha256": "6fe0c06d46f0e9b229e07956d21a3af13ea147d8093ea540919f0476ae44b339",
+      "role": "development_already_seen"
+    },
+    {
+      "case_id": "legacy-04",
+      "seed": 202609214004,
+      "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+      "source_record": "research/diffusion/runs/sdxl-turbo-1step-v1/004/record.json",
+      "reuse_initial_noise": "research/diffusion/runs/sdxl-turbo-1step-v1/004/noise.npz",
+      "initial_noise_file_sha256": "d34ccca02a5f73a86f2a92eb2db2f6aa50d797d73b08aee43a9dd1cb51b46a8b",
+      "role": "development_already_seen"
+    },
+    {
+      "case_id": "legacy-05",
+      "seed": 202609214005,
+      "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+      "source_record": "research/diffusion/runs/sdxl-turbo-1step-v1/005/record.json",
+      "reuse_initial_noise": "research/diffusion/runs/sdxl-turbo-1step-v1/005/noise.npz",
+      "initial_noise_file_sha256": "6c9dd1721504893c3146711b91773058b7111dead63dfbdf5e55f90565c7266c",
+      "role": "development_already_seen"
+    },
+    {
+      "case_id": "legacy-06",
+      "seed": 202609214006,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+      "source_record": "research/diffusion/runs/sdxl-turbo-1step-v1/006/record.json",
+      "reuse_initial_noise": "research/diffusion/runs/sdxl-turbo-1step-v1/006/noise.npz",
+      "initial_noise_file_sha256": "3788bf4a71384a620895b2fc872fbdf2a1a96fd678fa1d3c9ff32c69071c8345",
+      "role": "development_already_seen"
+    },
+    {
+      "case_id": "legacy-07",
+      "seed": 202609214007,
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+      "source_record": "research/diffusion/runs/sdxl-turbo-1step-v1/007/record.json",
+      "reuse_initial_noise": "research/diffusion/runs/sdxl-turbo-1step-v1/007/noise.npz",
+      "initial_noise_file_sha256": "d363df90a431c42c6149fb76bb444483bbab5267a3996d849e0f9d481b542877",
+      "role": "development_already_seen"
+    },
+    {
+      "case_id": "dev-00",
+      "seed": 202609219000,
+      "prompt": "Catholic priest, head and shoulders. A 28-year-old man with pale skin, straight black hair and a long clean-shaven face, front view, neutral expression. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-01",
+      "seed": 202609219001,
+      "prompt": "Catholic priest, head and shoulders. A 32-year-old man with dark skin, a shaved head and a broad clean-shaven face, three-quarter view facing left, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-02",
+      "seed": 202609219002,
+      "prompt": "Catholic priest, head and shoulders. A 38-year-old East Asian man with short straight hair, a broad jaw and no beard, three-quarter view facing right, calm expression. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-03",
+      "seed": 202609219003,
+      "prompt": "Catholic priest, head and shoulders. A 43-year-old South Asian man with wavy hair, a narrow face and a short full beard, front view, thoughtful expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-04",
+      "seed": 202609219004,
+      "prompt": "Catholic priest, head and shoulders. A 48-year-old man with medium-brown skin, very short curls and a round clean-shaven face, three-quarter view facing left, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred foliage, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-05",
+      "seed": 202609219005,
+      "prompt": "Catholic priest, head and shoulders. A 54-year-old man with olive skin, receding hair, a long nose and a short mustache, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-06",
+      "seed": 202609219006,
+      "prompt": "Catholic priest, head and shoulders. A 61-year-old Black man with closely cropped gray curls and a full gray beard, three-quarter view facing right, serious expression. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-07",
+      "seed": 202609219007,
+      "prompt": "Catholic priest, head and shoulders. A 68-year-old East Asian man with thinning gray hair and a narrow clean-shaven face, front view, warm smile. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-08",
+      "seed": 202609219008,
+      "prompt": "Catholic priest, head and shoulders. A 74-year-old man with pale skin, a bald head, deep facial lines and no beard, three-quarter view facing left, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-09",
+      "seed": 202609219009,
+      "prompt": "Catholic priest, head and shoulders. A 35-year-old man with freckles, short red hair and a square clean-shaven face, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-10",
+      "seed": 202609219010,
+      "prompt": "Catholic priest, head and shoulders. A 46-year-old man with brown skin, long narrow cheeks and a neat mustache, three-quarter view facing right, neutral expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred foliage, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-11",
+      "seed": 202609219011,
+      "prompt": "Catholic priest, head and shoulders. A 58-year-old man with pale skin, thick eyebrows, wavy gray hair and a full beard, front view, serious expression. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-12",
+      "seed": 202609219012,
+      "prompt": "Catholic priest, head and shoulders. A 66-year-old South Asian man with swept-back gray hair and a broad clean-shaven face, three-quarter view facing left, warm smile. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-13",
+      "seed": 202609219013,
+      "prompt": "Catholic priest, head and shoulders. A 30-year-old Black man with short tight curls, angular cheekbones and light stubble, front view, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-14",
+      "seed": 202609219014,
+      "prompt": "Catholic priest, head and shoulders. A 52-year-old East Asian man with a shaved head, round cheeks and no beard, three-quarter view facing right, thoughtful expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    },
+    {
+      "case_id": "dev-15",
+      "seed": 202609219015,
+      "prompt": "Catholic priest, head and shoulders. A 79-year-old man with olive skin, sparse white hair, a long face and a white goatee, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "role": "development_unseen_at_freeze"
+    }
+  ],
+  "test_cases": [
+    {
+      "case_id": "test-varied-00",
+      "seed": 202609229000,
+      "prompt": "Catholic priest, head and shoulders. A 28-year-old man with pale skin, straight black hair and a long clean-shaven face, front view, neutral expression. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-00"
+    },
+    {
+      "case_id": "test-varied-01",
+      "seed": 202609229001,
+      "prompt": "Catholic priest, head and shoulders. A 32-year-old man with dark skin, a shaved head and a broad clean-shaven face, three-quarter view facing left, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-01"
+    },
+    {
+      "case_id": "test-varied-02",
+      "seed": 202609229002,
+      "prompt": "Catholic priest, head and shoulders. A 38-year-old East Asian man with short straight hair, a broad jaw and no beard, three-quarter view facing right, calm expression. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-02"
+    },
+    {
+      "case_id": "test-varied-03",
+      "seed": 202609229003,
+      "prompt": "Catholic priest, head and shoulders. A 43-year-old South Asian man with wavy hair, a narrow face and a short full beard, front view, thoughtful expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-03"
+    },
+    {
+      "case_id": "test-varied-04",
+      "seed": 202609229004,
+      "prompt": "Catholic priest, head and shoulders. A 48-year-old man with medium-brown skin, very short curls and a round clean-shaven face, three-quarter view facing left, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred foliage, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-04"
+    },
+    {
+      "case_id": "test-varied-05",
+      "seed": 202609229005,
+      "prompt": "Catholic priest, head and shoulders. A 54-year-old man with olive skin, receding hair, a long nose and a short mustache, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-05"
+    },
+    {
+      "case_id": "test-varied-06",
+      "seed": 202609229006,
+      "prompt": "Catholic priest, head and shoulders. A 61-year-old Black man with closely cropped gray curls and a full gray beard, three-quarter view facing right, serious expression. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-06"
+    },
+    {
+      "case_id": "test-varied-07",
+      "seed": 202609229007,
+      "prompt": "Catholic priest, head and shoulders. A 68-year-old East Asian man with thinning gray hair and a narrow clean-shaven face, front view, warm smile. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-07"
+    },
+    {
+      "case_id": "test-varied-08",
+      "seed": 202609229008,
+      "prompt": "Catholic priest, head and shoulders. A 74-year-old man with pale skin, a bald head, deep facial lines and no beard, three-quarter view facing left, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-08"
+    },
+    {
+      "case_id": "test-varied-09",
+      "seed": 202609229009,
+      "prompt": "Catholic priest, head and shoulders. A 35-year-old man with freckles, short red hair and a square clean-shaven face, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-09"
+    },
+    {
+      "case_id": "test-varied-10",
+      "seed": 202609229010,
+      "prompt": "Catholic priest, head and shoulders. A 46-year-old man with brown skin, long narrow cheeks and a neat mustache, three-quarter view facing right, neutral expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred foliage, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-10"
+    },
+    {
+      "case_id": "test-varied-11",
+      "seed": 202609229011,
+      "prompt": "Catholic priest, head and shoulders. A 58-year-old man with pale skin, thick eyebrows, wavy gray hair and a full beard, front view, serious expression. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-11"
+    },
+    {
+      "case_id": "test-varied-12",
+      "seed": 202609229012,
+      "prompt": "Catholic priest, head and shoulders. A 66-year-old South Asian man with swept-back gray hair and a broad clean-shaven face, three-quarter view facing left, warm smile. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-12"
+    },
+    {
+      "case_id": "test-varied-13",
+      "seed": 202609229013,
+      "prompt": "Catholic priest, head and shoulders. A 30-year-old Black man with short tight curls, angular cheekbones and light stubble, front view, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-13"
+    },
+    {
+      "case_id": "test-varied-14",
+      "seed": 202609229014,
+      "prompt": "Catholic priest, head and shoulders. A 52-year-old East Asian man with a shaved head, round cheeks and no beard, three-quarter view facing right, thoughtful expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-14"
+    },
+    {
+      "case_id": "test-varied-15",
+      "seed": 202609229015,
+      "prompt": "Catholic priest, head and shoulders. A 79-year-old man with olive skin, sparse white hair, a long face and a white goatee, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "role": "sealed_test_varied",
+      "shared_prompt_with": "dev-15"
+    },
+    {
+      "case_id": "test-generic-00",
+      "seed": 202609229016,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-01",
+      "seed": 202609229017,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-02",
+      "seed": 202609229018,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-03",
+      "seed": 202609229019,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-04",
+      "seed": 202609229020,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-05",
+      "seed": 202609229021,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-06",
+      "seed": 202609229022,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-07",
+      "seed": 202609229023,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-08",
+      "seed": 202609229024,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-09",
+      "seed": 202609229025,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-10",
+      "seed": 202609229026,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-11",
+      "seed": 202609229027,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-12",
+      "seed": 202609229028,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-13",
+      "seed": 202609229029,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-14",
+      "seed": 202609229030,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    },
+    {
+      "case_id": "test-generic-15",
+      "seed": 202609229031,
+      "prompt": "Photographic head-and-shoulders portrait of an adult male Catholic priest, bareheaded, black clerical shirt with a visible white clerical collar, natural skin texture, calm expression, softly blurred neutral background, black-and-white photography.",
+      "role": "sealed_test_same_prompt_diversity"
+    }
+  ],
+  "review": {
+    "unit": "each output individually at native512 and intended display size; contact sheet only for cross-image comparisons",
+    "blind_if_possible": "Randomize model-arm display ordering with a recorded mapping; reviewer must see every output",
+    "per_image_labels": {
+      "face_integrity": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "photographic_texture": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "recognizable_clerical_clothing": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "adult_male_appearance": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "bareheaded": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "single_person": [
+        "pass",
+        "fail",
+        "uncertain"
+      ],
+      "prompt_pose_age_attributes": [
+        "matches",
+        "partial",
+        "misses",
+        "uncertain"
+      ],
+      "calendar_appeal": [
+        "strong",
+        "adequate",
+        "weak",
+        "uncertain"
+      ],
+      "suspected_teacher_memorization": [
+        "none_observed",
+        "possible",
+        "strong"
+      ]
+    },
+    "face_integrity_definition": "coherent pupils/irises/eyelids, natural mouth/teeth where visible, plausible anatomy and facial detail without smeared/doubled features",
+    "collar_definition": "recognizable legitimate white clerical collar; exact small Roman tab is a prompt-match diagnostic only, not a user quality gate",
+    "joint_pass": "all six pass: face_integrity, photographic_texture, recognizable_clerical_clothing, adult_male_appearance, bareheaded, single_person. Uncertain counts as not passed.",
+    "set_labels": [
+      "conservative visual face-family assignments with notes",
+      "largest family fraction",
+      "number of distinct plausible face families",
+      "strong resemblance to training or heldout teachers",
+      "paired wins/ties/losses for photographic priest quality and calendar appeal"
+    ],
+    "development_candidate_gate": {
+      "scope": "engineering go/no-go heuristic, not user approval or a statistically proven quality threshold",
+      "joint_pass_minimum_of24": 22,
+      "face_integrity_minimum_of24": 23,
+      "no_reduction_in_joint_or_face_passes_vs_same_trigger_base": true,
+      "strong_teacher_memorization_maximum": 0,
+      "largest_visual_family_maximum_of24": 4,
+      "distinct_visual_families_minimum_of24": 16,
+      "calendar_appeal_nonregression": "paired calendar-appeal wins must be at least losses against base-trigger; ties allowed",
+      "no_passing_checkpoint_action": "report pilot failure; consider secondary four-step only as specified, then stop if still no pass"
+    },
+    "checkpoint_selection": "Among passing development checkpoints, maximize joint_pass then face_integrity then distinct face families then paired calendar appeal net wins; exact tie selects earlier checkpoint. Freeze choice and all labels before test generation.",
+    "test_success_descriptive_gate": {
+      "joint_pass_minimum_of32": 30,
+      "face_integrity_minimum_of32": 31,
+      "no_reduction_vs_same_trigger_base": true,
+      "same_generic_prompt_distinct_families_minimum_of16": 12,
+      "same_generic_prompt_largest_family_maximum_of16": 3,
+      "strong_teacher_memorization_maximum": 0,
+      "result": "report paired counts and every failed image; passing is a research candidate, not production approval"
+    },
+    "after_test": "No prompt edits, seed replacement, label refinements, adapter-scale change, checkpoint change or reopening250 updates based on these test results. A revised experiment gets a new protocol and fresh disjoint seeds; retain this failed/successful record."
+  },
+  "latency": {
+    "server_requirement_ms": 500,
+    "local_results_are_server_proof": false,
+    "report": [
+      "warm generation including conditioning and VAE",
+      "encoding separately and summed",
+      "cold load/first image",
+      "median/p95/max",
+      "queueing and public request latency separately"
+    ],
+    "production_gate": "Measure complete server pipeline on intended hardware including any future filtering/retries and encoding; uncurated pilot latency does not establish that gate."
+  },
+  "sources": [
+    {
+      "url": "https://huggingface.co/stabilityai/sdxl-turbo/blob/main/README.md",
+      "supports": "ADD-distilled1\u20134-step model, guidance0, preferred512, acknowledged face/photorealism limitations; does not promise ordinary LoRA preserves distillation"
+    }
+  ],
+  "tokenizer_preflight": {
+    "tokenizer": {
+      "max_tokens_with_trigger": 75,
+      "model_max_length": 77,
+      "all_cases_fit": true
+    },
+    "tokenizer_2": {
+      "max_tokens_with_trigger": 75,
+      "model_max_length": 77,
+      "all_cases_fit": true
+    }
+  }
+}

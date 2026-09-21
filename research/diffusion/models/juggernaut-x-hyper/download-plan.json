@@ -1,0 +1,29 @@
+{
+  "model": "RunDiffusion/Juggernaut-X-Hyper",
+  "revision": "42fee7475922d8de7246cdcbe5e3a5e22c0ecf61",
+  "source_api": "https://huggingface.co/api/models/RunDiffusion/Juggernaut-X-Hyper/revision/42fee7475922d8de7246cdcbe5e3a5e22c0ecf61?blobs=true",
+  "download_bytes": 7108744590,
+  "additional_part_bytes": 7105348616,
+  "free_bytes_before": 293834293248,
+  "license_source_api": "https://huggingface.co/api/spaces/CompVis/stable-diffusion-license/revision/14d42d09bffd871b1666a084fc954a50cff72ac0?blobs=true",
+  "selected_paths": [
+    "JuggernautXRundiffusion_Hyper.safetensors",
+    "sources/publisher-model-card.md",
+    "model_index.json",
+    "scheduler/scheduler_config.json",
+    "text_encoder/config.json",
+    "text_encoder_2/config.json",
+    "tokenizer/merges.txt",
+    "tokenizer/special_tokens_map.json",
+    "tokenizer/tokenizer_config.json",
+    "tokenizer/vocab.json",
+    "tokenizer_2/merges.txt",
+    "tokenizer_2/special_tokens_map.json",
+    "tokenizer_2/tokenizer_config.json",
+    "tokenizer_2/vocab.json",
+    "unet/config.json",
+    "vae/config.json",
+    "LICENSE.txt"
+  ],
+  "maximum_network_threads": 3
+}

@@ -1,0 +1,55 @@
+{
+  "python": "3.11.16 (main, Aug 14 2026, 15:24:25) [Clang 22.1.3 ]",
+  "executable": "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv-flux-train/bin/python",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "machine": "arm64",
+  "processor": "arm",
+  "packages": {
+    "torch": "2.14.0",
+    "diffusers": "0.41.0.dev0",
+    "transformers": "5.17.0",
+    "accelerate": "1.15.0",
+    "peft": "0.21.0",
+    "safetensors": "0.8.0",
+    "numpy": "2.4.6",
+    "Pillow": "12.3.0",
+    "psutil": "7.2.2"
+  },
+  "device": "mps",
+  "cpu_threads": 2,
+  "mps_memory_fraction": 0.55,
+  "watermark": false,
+  "base_dtype": "float16",
+  "inference_adapter_dtype": "float16",
+  "vae_force_upcast": true,
+  "vae_precision_policy": "Original pipeline automatic VAE upcast to float32 and restore; no substituted VAE",
+  "scheduler": {
+    "num_train_timesteps": 1000,
+    "beta_start": 0.00085,
+    "beta_end": 0.012,
+    "beta_schedule": "scaled_linear",
+    "trained_betas": null,
+    "prediction_type": "epsilon",
+    "timestep_spacing": "trailing",
+    "steps_offset": 1,
+    "rescale_betas_zero_snr": false,
+    "_use_default_values": [
+      "rescale_betas_zero_snr"
+    ],
+    "_class_name": "EulerAncestralDiscreteScheduler",
+    "_diffusers_version": "0.24.0.dev0",
+    "clip_sample": false,
+    "interpolation_type": "linear",
+    "sample_max_value": 1.0,
+    "set_alpha_to_one": false,
+    "skip_prk_steps": true
+  },
+  "installed_source_sha256": {
+    "pipeline": "e59c859d49b5fec03ee9364f0eaa955e7abf9286fdc1fcf3b6c58c34b82a2112",
+    "scheduler": "9ac11e9c2851863668e35dc685db89bca406958c9f8eb95a4f04e99896ab78b1"
+  },
+  "model_load_seconds": 1.4797946669859812,
+  "lora_load_seconds": 0.5351791250286624,
+  "server_latency_proven": false,
+  "timings_include_per_step_guard_overhead": true
+}

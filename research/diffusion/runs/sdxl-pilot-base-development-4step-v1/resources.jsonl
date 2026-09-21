@@ -1,0 +1,7 @@
+{"phase": "before_file_verification", "elapsed_seconds": 3.450002986937761e-05, "rss_bytes": 384958464, "mps_driver_bytes": 458752, "mps_allocated_bytes": 0, "available_fraction": 0.4099435806274414, "swap_growth_bytes": 0}
+{"phase": "base_files_verified", "elapsed_seconds": 2.6930321250110865, "rss_bytes": 413728768, "mps_driver_bytes": 458752, "mps_allocated_bytes": 0, "available_fraction": 0.40965429941813153, "swap_growth_bytes": 0}
+{"phase": "all_noise_saved_before_model_load", "elapsed_seconds": 2.711995624937117, "rss_bytes": 414760960, "mps_driver_bytes": 458752, "mps_allocated_bytes": 0, "available_fraction": 0.40965429941813153, "swap_growth_bytes": 0}
+{"phase": "text_encoder_loaded", "elapsed_seconds": 2.847529249964282, "rss_bytes": 692764672, "mps_driver_bytes": 255016960, "mps_allocated_bytes": 768, "available_fraction": 0.40965429941813153, "swap_growth_bytes": 0}
+{"phase": "text_encoder_2_loaded", "elapsed_seconds": 3.01599837501999, "rss_bytes": 2085830656, "mps_driver_bytes": 1644331008, "mps_allocated_bytes": 1536, "available_fraction": 0.40965429941813153, "swap_growth_bytes": 0}
+{"phase": "vae_loaded", "elapsed_seconds": 3.0913256659405306, "rss_bytes": 2097872896, "mps_driver_bytes": 2726461440, "mps_allocated_bytes": 167441664, "available_fraction": 0.40965429941813153, "swap_growth_bytes": 0}
+{"phase": "unet_loaded", "elapsed_seconds": 5.451101540937088, "rss_bytes": 126566400, "mps_driver_bytes": 7591837696, "mps_allocated_bytes": 5312524544, "available_fraction": 0.19719314575195312, "swap_growth_bytes": 0}

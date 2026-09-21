@@ -1,0 +1,214 @@
+{
+  "_id": "66350d823bed9ee0097ed763",
+  "id": "RunDiffusion/Juggernaut-X-Hyper",
+  "private": false,
+  "pipeline_tag": "text-to-image",
+  "library_name": "diffusers",
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "sdxl",
+    "hyper-sd",
+    "text-to-image",
+    "photorealistic",
+    "fast",
+    "low-step",
+    "juggernaut",
+    "rundiffusion",
+    "kandooai",
+    "en",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:finetune:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "downloads": 343,
+  "likes": 25,
+  "modelId": "RunDiffusion/Juggernaut-X-Hyper",
+  "author": "RunDiffusion",
+  "sha": "42fee7475922d8de7246cdcbe5e3a5e22c0ecf61",
+  "lastModified": "2026-05-08T17:25:18.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "diffusers": {
+      "_class_name": "StableDiffusionXLPipeline"
+    }
+  },
+  "cardData": {
+    "license": "creativeml-openrail-m",
+    "language": [
+      "en"
+    ],
+    "library_name": "diffusers",
+    "pipeline_tag": "text-to-image",
+    "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+    "tags": [
+      "stable-diffusion",
+      "stable-diffusion-xl",
+      "sdxl",
+      "hyper-sd",
+      "text-to-image",
+      "photorealistic",
+      "fast",
+      "low-step",
+      "juggernaut",
+      "rundiffusion",
+      "kandooai"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "9ab807103731dba363d6b860eda946acb9ded6f4",
+      "size": 1585
+    },
+    {
+      "rfilename": "JuggernautXRundiffusion_Hyper.safetensors",
+      "blobId": "5f6751c05dbdeb0ada687b7aeccc31b9e41b41c3",
+      "size": 7105348616,
+      "lfs": {
+        "sha256": "010be7341cd98a136da775330ba3eb4e87025c6cfd2f5455dc64daee2200ae98",
+        "size": 7105348616,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "40ed0121410132b44aa282d160bdf94d401b82b6",
+      "size": 8362
+    },
+    {
+      "rfilename": "assets/Juggernaut_Banner.webp",
+      "blobId": "6b80b6db51e6dc8902a1136f132c61385dcc4b77",
+      "size": 458462,
+      "lfs": {
+        "sha256": "200223c851be9ce4b42d181222ccc554ac27dea410f5972a12301731bf3351b1",
+        "size": 458462,
+        "pointerSize": 131
+      }
+    },
+    {
+      "rfilename": "model_index.json",
+      "blobId": "0e3987a8cce4d54fd35fb119da0787fac04506ea",
+      "size": 712
+    },
+    {
+      "rfilename": "scheduler/scheduler_config.json",
+      "blobId": "f1f4bf1cdfa97938a04ce7e41ab9db6683ce66f8",
+      "size": 579
+    },
+    {
+      "rfilename": "text_encoder/config.json",
+      "blobId": "3c9a98dcf09a3ca746b7b17427596a234ae45819",
+      "size": 584
+    },
+    {
+      "rfilename": "text_encoder/pytorch_model.bin",
+      "blobId": "bbe3b52a10a4b520d611a1d06f20702e8bee7018",
+      "size": 492307041,
+      "lfs": {
+        "sha256": "c06601130c15bdf465a637c0172f29c7087cc9471d61a375567c7c30cb4f56c5",
+        "size": 492307041,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "text_encoder_2/config.json",
+      "blobId": "fbbb612372ef535b5c83a8547e9532884e71f660",
+      "size": 594
+    },
+    {
+      "rfilename": "text_encoder_2/pytorch_model.bin",
+      "blobId": "4d84d5913f4a01ff4775ca726903d05d9c646c79",
+      "size": 2778810597,
+      "lfs": {
+        "sha256": "82599f66c340f8b2efa299247a318ec8d64925ab247c48ce01c64704ae3275a0",
+        "size": 2778810597,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "tokenizer/merges.txt",
+      "blobId": "1876098c4dcbf22af518537b3bd63102a05e1313",
+      "size": 573514
+    },
+    {
+      "rfilename": "tokenizer/special_tokens_map.json",
+      "blobId": "ad919e089d4d032a933a2a9087de2857d55af3bc",
+      "size": 496
+    },
+    {
+      "rfilename": "tokenizer/tokenizer_config.json",
+      "blobId": "4dccde201cd9e11e9e8194b6e31e2d3887b5c11e",
+      "size": 770
+    },
+    {
+      "rfilename": "tokenizer/vocab.json",
+      "blobId": "521b2c5def638d17b1e463ce25597140a1720005",
+      "size": 1109372
+    },
+    {
+      "rfilename": "tokenizer_2/merges.txt",
+      "blobId": "1876098c4dcbf22af518537b3bd63102a05e1313",
+      "size": 573514
+    },
+    {
+      "rfilename": "tokenizer_2/special_tokens_map.json",
+      "blobId": "4473e143ec2843c3cf9d6db8b1062f1e71076615",
+      "size": 484
+    },
+    {
+      "rfilename": "tokenizer_2/tokenizer_config.json",
+      "blobId": "50e62da0a9667b53c03b4a82a84c20b31b15b00d",
+      "size": 758
+    },
+    {
+      "rfilename": "tokenizer_2/vocab.json",
+      "blobId": "521b2c5def638d17b1e463ce25597140a1720005",
+      "size": 1109372
+    },
+    {
+      "rfilename": "unet/config.json",
+      "blobId": "5485b6998b678c914228a340af1f448df29604d0",
+      "size": 1845
+    },
+    {
+      "rfilename": "unet/diffusion_pytorch_model.bin",
+      "blobId": "06824ddc8703e93d4cbed3c086d798b653e5c5da",
+      "size": 10270603837,
+      "lfs": {
+        "sha256": "3c8d435662c1cce7759aa7344cf5a33bc858bd4f7f7f62898fc9cfeca910ab9e",
+        "size": 10270603837,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "vae/config.json",
+      "blobId": "2347e83090500184ddefd8dbf6fbfd36a63ee495",
+      "size": 633
+    },
+    {
+      "rfilename": "vae/diffusion_pytorch_model.bin",
+      "blobId": "a1f44c213105683604fdcb072bfe8da77c6cfaf5",
+      "size": 334712113,
+      "lfs": {
+        "sha256": "37eb3e09ae1ce3d6891ddf809ca927b618e501091142cf07fdd9cd170e3a046f",
+        "size": 334712113,
+        "pointerSize": 134
+      }
+    }
+  ],
+  "spaces": [
+    "artificialguybr/JUGGERNAUT-XL-FREE-DEMO",
+    "ChenoAi/JuggernautXL-Playground",
+    "qvila/JuggernautXL-Playground",
+    "SpyC0der77/RunDiffusion-Juggernaut-X-Hyper"
+  ],
+  "createdAt": "2024-05-03T16:14:58.000Z",
+  "usedStorage": 41795940532
+}

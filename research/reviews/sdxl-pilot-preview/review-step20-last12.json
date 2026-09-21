@@ -1,0 +1,707 @@
+{
+  "reviewer": "root agent",
+  "method": "All48 native512 RGB files individually inspected with view_image; paired same-prompt/initial-noise comparisons; agent judgement, not owner approval",
+  "reviewed_cases": 12,
+  "reviewed_images": 48,
+  "protocol_sha256": "ac8448d8facd5910d0e512486522a436a8e5360903ac8867bf63d04e7abfb22d",
+  "production_approved": false,
+  "rows": [
+    {
+      "case_id": "dev-04",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-04/base-plain/native.png",
+          "native_sha256": "eed81b83cb8595d083327fcd75d916db7487321d3363d97541121e1603e8ce28",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-04/base-trigger/native.png",
+          "native_sha256": "e3aed35bd1d4f5dfd8cab08bcc39a2dce913569bd984f893cfe74c72906b270a",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-04/adapter-plain/native.png",
+          "native_sha256": "4cfee9c35d65b78cce867000d7659b20835e5d7c09dbf27b9ddff81be1f401a0",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-04/adapter-trigger/native.png",
+          "native_sha256": "6a035fbc38f8c098371236c19cf0dbda335fb2d661191d07a60f8a212b08758f",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        }
+      ],
+      "notes": "Coherent, plausibly photographic three-quarter portrait; slightly soft but natural skin. Adaptation makes small contour changes.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-04",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-05",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-05/base-plain/native.png",
+          "native_sha256": "3503b0348629b96c40e8149c643bc9107723eecece0ec323bc2b59a28be5e026",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-05/base-trigger/native.png",
+          "native_sha256": "6a75831849e89ce11470194b8e60216463114504bf125e9a8727456d894af356",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-05/adapter-plain/native.png",
+          "native_sha256": "c3881e68671afbe90d309fc8a12ce9efbedde6ba15207ae60f4fbeb1b81db396",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-05/adapter-trigger/native.png",
+          "native_sha256": "e06288b60fd2729eb63d789131ed6b959cc45e7b78682fc3810ababeb7c33b54",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        }
+      ],
+      "notes": "Coherent balding face and clear collar; mild smoothing remains plausible portrait photography. Adapter has tiny mouth/collar changes.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-05",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-06",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-06/base-plain/native.png",
+          "native_sha256": "48952d1b870a8f633ab015d2b6a32cd1218f4f540e8636d005bc283fa4c9282e",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-06/base-trigger/native.png",
+          "native_sha256": "0477be4f8104436d6a233d7bf745a1b67cae12d79f82799b6d59e5778dde51cb",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-06/adapter-plain/native.png",
+          "native_sha256": "c1b5abfb26f9d4ff4f9e4ae3f2265b6dc6eb0e95d38778b50e58e9ef227d20aa",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-06/adapter-trigger/native.png",
+          "native_sha256": "25c2d14b06fc82cdf2a8f0be4efb4af5b44fb7f5329d62b648ccddd8271b622e",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        }
+      ],
+      "notes": "Intact features but very etched wiry white beard and washed-out rendering look synthetic in all arms.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-06",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-07",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-07/base-plain/native.png",
+          "native_sha256": "0d91f25ac4455cb86d695947ce9a0c764fe4ac7c6e038d97f93ed58d98766a7d",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-07/base-trigger/native.png",
+          "native_sha256": "4c8dd5b7923b968cb32a217561c219fdcefb3250979a743388b1aad48089e899",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": true,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-07/adapter-plain/native.png",
+          "native_sha256": "a74187d6da5f95e49f7295ded0d96a54b7d798a9a6453c3355dd976ac00d2f87",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-07/adapter-trigger/native.png",
+          "native_sha256": "8c406f30e2e5ebf73e8b118f33606659549b37719d5a2f760254d96099b123bd",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": true,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        }
+      ],
+      "notes": "Plain arms have plausible smiling portraits and a normal collar. Trigger arms have a conspicuously doubled white collar/tab and dark flat eyes; adaptation retains that problem.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-07",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-08",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-08/base-plain/native.png",
+          "native_sha256": "48e1fdf358f343131d4de9aa686a09cccbb1f0c5270b755a92db2afd4bd7500f",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-08/base-trigger/native.png",
+          "native_sha256": "a260699470dae457a6cc793f0053cc851d47f32a2b7d1aa8af891c21d5ea3ba9",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-08/adapter-plain/native.png",
+          "native_sha256": "f4bba2b6a9dfa800beb262a34f108924ad437d0e778c2d964508368bdfd82b19",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-08/adapter-trigger/native.png",
+          "native_sha256": "eb3958125a50f18f925111932cd3d8c6acb7d2d932e6505ba50a716559d215fb",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        }
+      ],
+      "notes": "Intact older face but waxy/smoothed skin and implausibly smooth grey clothing look rendered. No material adapter regression.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-08",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-09",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-09/base-plain/native.png",
+          "native_sha256": "249db2a7b1d7a84d407382e6885d94466cbe243784c213e5ae3d222c1c741e18",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-09/base-trigger/native.png",
+          "native_sha256": "d2424c90f77a59f76b48e0c4941cef3828be3ee5aaa4dc1a8719342a67e319a3",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-09/adapter-plain/native.png",
+          "native_sha256": "555da5e1d20246d06ddbd15ef87d1fd711978452a9f7404504921d072cd17f23",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-09/adapter-trigger/native.png",
+          "native_sha256": "5a9a88a70d34f617d9af35f9422eb8f1284f1c3b3d19d62c57dd5e6af1cdcb97",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        }
+      ],
+      "notes": "Flat chalky face texture, glassy pupils and uniformly etched stubble look rendered rather than photographic.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-09",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-10",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-10/base-plain/native.png",
+          "native_sha256": "3cbe901b7b60658ab0282bc7aeec9a3f238d60a454349358c79009fb90c31e88",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-10/base-trigger/native.png",
+          "native_sha256": "bcbc72192a686c5516f805a8d9b63bc31a2b9a3e52e1f8482edcd2998f876a16",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-10/adapter-plain/native.png",
+          "native_sha256": "3e3621bedf09d7c2c94c25455a8b968aa76e26b230da6480401b55ca6444224f",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-10/adapter-trigger/native.png",
+          "native_sha256": "0df12ecb5ea73753b1c4cf7953ff0a2e0e6b2fbde7c5f5cf145f5c47c59d47fe",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        }
+      ],
+      "notes": "Coherent, plausible three-quarter photographic portrait with moustache. Both prompt variants retain natural detail and clear collar.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-10",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-11",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-11/base-plain/native.png",
+          "native_sha256": "b83ab3f2da4710a58c64296e883f68b2152474fb0f1468baaa8156671d85cd83",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-11/base-trigger/native.png",
+          "native_sha256": "d2d4e3cde477ace36aa1b6dcccbb06ea0839f25f185ac5343e330fb9594df2ec",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-11/adapter-plain/native.png",
+          "native_sha256": "5637dec99861de9ae96342f98b45869d65406be87c237a2008b0376c44e74d2c",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-11/adapter-trigger/native.png",
+          "native_sha256": "f1c245a71a8b9344cbe886c4434c41ecfa6c3fb6dff8c5ec139fd3983f1768be",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        }
+      ],
+      "notes": "Strongly etched white beard, uniformly smoothed cheeks and CG-like eyes; no meaningful adaptation improvement.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-11",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-12",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-12/base-plain/native.png",
+          "native_sha256": "144ade2c92ec857698bdb9b5ab0986880375125145ec61e663e54082c26006b7",
+          "facial_integrity": false,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-12/base-trigger/native.png",
+          "native_sha256": "4c82bb259d5393c95e8d3d97ed07eb33542ac6a7e2285a03b3e3ef94023d97a0",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-12/adapter-plain/native.png",
+          "native_sha256": "46e53d0082c4b9f8c1962ef214025ac181abdd4b0e4e3bd5e86b201c4e45f8e2",
+          "facial_integrity": false,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-12/adapter-trigger/native.png",
+          "native_sha256": "bbd1a4ca0f511a17a98348b3d69f95f4ab8867b90a9a2de42497b5544cfca2ff",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        }
+      ],
+      "notes": "Overly reflective, unnatural pupils and retouched skin. Plain arms have an especially irregular viewer-left iris; retained by adapter.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-12",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-13",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-13/base-plain/native.png",
+          "native_sha256": "186ea5c276b9e83dd0aab0e1dfaeb82f3cfde2d079cb1d6399e75089b524fe0b",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-13/base-trigger/native.png",
+          "native_sha256": "9874b44a191efe7c85895d0ee802ab1e0f464db266550cad6dd56fc379007299",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-13/adapter-plain/native.png",
+          "native_sha256": "15c185822eefe1a1343eb0cd7c0ad099979be264be85e5846c4dfef54b8802ae",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-13/adapter-trigger/native.png",
+          "native_sha256": "4b3ac94ca0fb3e299f4d57315dec22a02ceac4b6455fc3a6d096cdb9306ee58a",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        }
+      ],
+      "notes": "Coherent attractive face but smooth plastic skin and glassy sharply outlined eyes are not sufficiently photographic.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-13",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-14",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-14/base-plain/native.png",
+          "native_sha256": "36ec56018130460823c3b0b382e25356ee329b24d978f8e1caa9f2e306489233",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-14/base-trigger/native.png",
+          "native_sha256": "3ae2fa0130041cd70356280f8b246edeefc6daed7e8592d44e4f3a82946854ac",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-14/adapter-plain/native.png",
+          "native_sha256": "d70e4f250aa041975a272be964c7f8649380d47b590b178a943346361518ec1f",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-14/adapter-trigger/native.png",
+          "native_sha256": "0d5f1fdfaecf42a54b01fb9382ef11dc22d2c2ea8d317620a4189bf1d6892b95",
+          "facial_integrity": true,
+          "photographic_texture": true,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": true
+        }
+      ],
+      "notes": "Coherent, plausible photographic portrait; soft detail but reasonable skin and clerical collar.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-14",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    },
+    {
+      "case_id": "dev-15",
+      "arms": [
+        {
+          "arm": "base-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-15/base-plain/native.png",
+          "native_sha256": "306263a95d5785a0a6db84e89c7d33131fd18abc30fb13263e6582dd935c7dc8",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "base-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-base-development-1step-v1/dev-15/base-trigger/native.png",
+          "native_sha256": "79ca21750fb96e3094bda0d65176cd8b8b85d24c9bc978ff9064d87b70bd8492",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-plain",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-15/adapter-plain/native.png",
+          "native_sha256": "df13d2c908569a775b61a9906ae4928bb8e6efe7cf257adf57359af56e41cd0c",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        },
+        {
+          "arm": "adapter-trigger",
+          "native_path": "research/diffusion/runs/sdxl-pilot-step20-development-1step-v1/dev-15/adapter-trigger/native.png",
+          "native_sha256": "bf981c6b385b980e5218760cc88290b8bf5a42c629f4225946d192c6b0a86f57",
+          "facial_integrity": true,
+          "photographic_texture": false,
+          "recognizable_clerical_clothing": true,
+          "clothing_artifact": false,
+          "single_adult_male_appearance": true,
+          "no_hat": true,
+          "joint_pass": false
+        }
+      ],
+      "notes": "Etched beard/skin and overly modeled throat folds make the portrait look rendered; adaptation barely changes this.",
+      "adapter_trigger_vs_base_trigger_calendar_appeal": "tie",
+      "material_adapter_quality_regression": false,
+      "within_half_face_family": "dev-15",
+      "teacher_copying": "not_assessed_in_this_smoke_review"
+    }
+  ],
+  "summary": "Small visible adapter changes preserve baseline identities; no material quality regression in this half. Numerous pre-existing rendered textures remain. This is compatibility evidence, not a passed visual-quality gate. A bounded100-update run can test stronger learning."
+}

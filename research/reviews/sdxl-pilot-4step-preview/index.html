@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Priest LoRA development review</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header>
+  <p class="eyebrow">SDXL-Turbo · local LoRA pilot · non-blocking review</p>
+  <h1>What changed after training?</h1>
+  <p id="inference-note"></p>
+  <p>All 24 development cases, in their frozen order. Compare the pretrained base with the newly post-trained adapter, both with and without <code>PR1EST_CAL</code>. Each row uses matched initial noise and generator state across its four arms.</p>
+  <p>Native 512 × 512 images are preserved. Click a portrait to inspect the original PNG. Grayscale changes display only. This preview establishes neither production approval nor GPU server latency; successful training alone does not establish quality.</p>
+  <div class="toolbar"><label>Training updates <select id="checkpoint"></select></label><label><input id="grayscale" type="checkbox"> Grayscale display</label><a href="manifest.json">Hash-bound manifest</a></div>
+  <p id="status" role="status"></p>
+</header>
+<main class="scroll"><table><thead><tr><th scope="col">Development case</th><th scope="col">Pretrained base<span>Plain prompt</span></th><th scope="col">Pretrained base<span>With trigger</span></th><th scope="col">Post-trained adapter<span>Plain prompt</span></th><th scope="col">Post-trained adapter<span>With trigger</span></th></tr></thead><tbody id="rows"></tbody></table></main>
+<footer>Review facial and eye integrity, recognizable priest clothing, absence of hats, photographic quality, appeal, and diversity across rows. Every generated result is retained; no selection or face repair is applied. Missing or failed cells remain visible. <a id="other-preview"></a></footer>
+<dialog id="viewer" aria-label="Native portrait inspection"><div class="modalbar"><strong id="image-title"></strong><button id="previous" type="button" aria-label="Previous arm">←</button><button id="next" type="button" aria-label="Next arm">→</button><a id="original" target="_blank" rel="noopener">Open native PNG</a><button id="close" type="button">Close</button></div><div class="native-image"><img id="full" alt=""></div><p id="image-details"></p></dialog>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
