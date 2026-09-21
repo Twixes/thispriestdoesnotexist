@@ -1,0 +1,16 @@
+{
+  "case_id": "dev-08",
+  "seed": 202609219008,
+  "shape": [
+    1,
+    4,
+    64,
+    64
+  ],
+  "dtype": "float32",
+  "noise_file_sha256": "8eb86d6a0e93975471c04495ca76428d9708f8d8cbf0395c08776f3840d2d411",
+  "noise_values_sha256": "e6b6c151aa08b79e2a1d4e307dfac1304c03302f0c62bfe80aa8f7c479c3ac75",
+  "generator_state_after_noise_sha256": "04fc426cbfa656cbdf5146bae576c7da8143ba4f258b4229bde3958bf13d3dac",
+  "legacy_noise_reused": false,
+  "generator_state_reconstruction": "CPU manual_seed then exactly one float32 randn of [1,4,64,64]"
+}

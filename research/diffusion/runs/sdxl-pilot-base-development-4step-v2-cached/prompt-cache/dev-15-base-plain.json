@@ -1,0 +1,29 @@
+{
+  "case_id": "dev-15",
+  "arm": "base-plain",
+  "prompt_variant": "plain",
+  "prompt": "Catholic priest, head and shoulders. A 79-year-old man with olive skin, sparse white hair, a long face and a white goatee, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+  "prompt_sha256": "cd85b4a7432ab724edf31f9d27d40dbad80f87003780d07b59909034dc19b0de",
+  "path": "prompt-cache/dev-15-base-plain.safetensors",
+  "sha256": "79eee5f6da7f4bc4e494f5f798693ce31b13da77006e0792a6ffc93ffff248bb",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "41c0fe672d5e291a2c2066e756dd98ad68f92a1dc92ff119417edf773138b8bf"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "a17a6f39378b5a24bfed48e4df9e528cac307c0e95c2580d8f2beaa68a972f85"
+    }
+  }
+}

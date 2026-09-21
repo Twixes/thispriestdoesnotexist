@@ -1,0 +1,59 @@
+{
+  "protocol_sha256": "ac8448d8facd5910d0e512486522a436a8e5360903ac8867bf63d04e7abfb22d",
+  "inference_steps": 4,
+  "counts": {
+    "base-plain": {
+      "reviewed": 24,
+      "joint_pass": 18
+    },
+    "base-trigger": {
+      "reviewed": 24,
+      "joint_pass": 20
+    },
+    "step20-plain": {
+      "reviewed": 24,
+      "joint_pass": 18
+    },
+    "step20-trigger": {
+      "reviewed": 24,
+      "joint_pass": 19
+    },
+    "step100-plain": {
+      "reviewed": 24,
+      "joint_pass": 17
+    },
+    "step100-trigger": {
+      "reviewed": 24,
+      "joint_pass": 17
+    }
+  },
+  "source_reviews": [
+    {
+      "path": "research/reviews/sdxl-pilot-4step-preview/review-base-first12.json",
+      "sha256": "2e8f2dee66bd0582bb1c829715ef32855c6fca3c485b06a27e40a77d4fcc8e91"
+    },
+    {
+      "path": "research/reviews/sdxl-pilot-4step-preview/review-step20-first12.json",
+      "sha256": "cad3ce031b5ceaab7953c6b3aeee82f6902ed4d59ad4d4b2ece3a96e295fd02f"
+    },
+    {
+      "path": "research/reviews/sdxl-pilot-4step-preview/review-step100-first12.json",
+      "sha256": "6666b4811186b5c6f25e271e157297329035eaa23e26ccb48f07550d89021330"
+    },
+    {
+      "path": "research/reviews/sdxl-pilot-4step-preview/review-last12.json",
+      "sha256": "d383310d45897e831a3b03e02218ce6451ca45d66e604f5ab8f8d364b69e6cc8"
+    }
+  ],
+  "agent_reviews_not_owner_approval": true,
+  "production_approved": false,
+  "test_split_opened": false,
+  "all144_native_outputs_reviewed": true,
+  "decision": "No eligible checkpoint; stop this frozen pilot without exposing test seeds or continuing to250. Compare the already downloaded photographic prior next.",
+  "interpretation": "Fourstep sampling improves baseline photographic detail substantially, but neither priest adapter improves aggregate quality. This is failure on the frozen broad-development stress cohort, not proof that every possible SDXL prompt or posttraining recipe fails.",
+  "limitations": [
+    "Native eyes/texture and framing failures remain.",
+    "No eligible candidate received full teacher-copying/family clearance or a sealed test.",
+    "Local cached generation times do not prove GPU server latency."
+  ]
+}

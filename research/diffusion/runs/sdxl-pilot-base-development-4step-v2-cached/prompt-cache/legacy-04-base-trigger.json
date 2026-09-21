@@ -1,0 +1,29 @@
+{
+  "case_id": "legacy-04",
+  "arm": "base-trigger",
+  "prompt_variant": "trigger",
+  "prompt": "PR1EST_CAL. A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+  "prompt_sha256": "0d1b3b0c20fe333f4ea623f9d2134af67ff4dce05058c41b57b847ea855e9d10",
+  "path": "prompt-cache/legacy-04-base-trigger.safetensors",
+  "sha256": "ebb6f3228066539f8200ed93e19de657d851a612b4689ae70731ace6a3e4de92",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "97a9d0799a45a39e4f7c914b310856fe164b63d954f6cfc4e011548849da0b9f"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "2a9ff963c4f7066c99864e7d4a535a6f2e032ffdc370077e54f1834bb25aed03"
+    }
+  }
+}

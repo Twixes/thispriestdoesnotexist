@@ -1,0 +1,16 @@
+{
+  "decision": "stop_training_at100_and_evaluate_four_step_fallback",
+  "protocol_sha256": "ac8448d8facd5910d0e512486522a436a8e5360903ac8867bf63d04e7abfb22d",
+  "reason": "Step100dev04adapter-trigger has materialeye/photographic regressionagainstbaseand20; no meaningfulpairedcalendarwinsinlast12 andrenderedtexturefailurepersists. No250updates underfrozenregressionstoprule. Bothcompleted1stepcheckpointsfailjointqualitygate evenbefore firsthalfaggregation.",
+  "primary_one_step_development_failed": true,
+  "completed_training_checkpoints": [
+    20,
+    100
+  ],
+  "four_step_fallback_candidates": [
+    20,
+    100
+  ],
+  "production_approved": false,
+  "test_opened": false
+}

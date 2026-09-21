@@ -1,0 +1,29 @@
+{
+  "case_id": "dev-00",
+  "arm": "adapter-trigger",
+  "prompt_variant": "trigger",
+  "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 28-year-old man with pale skin, straight black hair and a long clean-shaven face, front view, neutral expression. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+  "prompt_sha256": "b5502360185e627f794921c101a055d1049eb8faf9d297a41764a4d9abe82c83",
+  "path": "prompt-cache/dev-00-adapter-trigger.safetensors",
+  "sha256": "973eba143e5f46af821766bf871499b83a67d9fe13304483afd20f9dc0a05636",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "f3d8bab2e0d28ab5d691ee5e2f84a1d0f1d5b54f07d44b1b6737a90d1880d2ff"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "60c4de1452875a7e4a5f469d16593c0b4833b1c2c8e528dc90d30d76e906de45"
+    }
+  }
+}

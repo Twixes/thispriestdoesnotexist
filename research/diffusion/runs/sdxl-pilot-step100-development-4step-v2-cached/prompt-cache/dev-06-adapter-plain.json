@@ -1,0 +1,29 @@
+{
+  "case_id": "dev-06",
+  "arm": "adapter-plain",
+  "prompt_variant": "plain",
+  "prompt": "Catholic priest, head and shoulders. A 61-year-old Black man with closely cropped gray curls and a full gray beard, three-quarter view facing right, serious expression. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+  "prompt_sha256": "9400dc177dd7bd1df2b6f1743eac2af82239c9ed66aac7efdde4e0f0b096b2c7",
+  "path": "prompt-cache/dev-06-adapter-plain.safetensors",
+  "sha256": "59c20d16444c036e86971b46ce1796b640a17debdad81c65fa4caf0fc8c59a2e",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "cc24837bea80cc0db04f83c4f53eb8c1732e9312da20261a692363ae3b381d0b"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "5f8a4a60c7f85a111dac130cfecf2b185ed9273f717b1f1cbe91c2825b30517a"
+    }
+  }
+}

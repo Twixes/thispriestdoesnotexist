@@ -1,0 +1,29 @@
+{
+  "case_id": "dev-13",
+  "arm": "base-plain",
+  "prompt_variant": "plain",
+  "prompt": "Catholic priest, head and shoulders. A 30-year-old Black man with short tight curls, angular cheekbones and light stubble, front view, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+  "prompt_sha256": "c2331a2ce2a8486d4e0438895487b3313cd11b260a8301990d45a3b1d15d481a",
+  "path": "prompt-cache/dev-13-base-plain.safetensors",
+  "sha256": "6b591fe5f13d9600ba5ab46fe45c65fe5738501547f8c935f426ea3da1247a0a",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "26a75dc04303b1d3d14f5c03f1bfdc9e377e2df10c25d50b8ef87f84ab338748"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "c8a4c0a4d28b2468faf3113d7c0e17bc1efcd8c7b32e85b4f99a8f323433b381"
+    }
+  }
+}

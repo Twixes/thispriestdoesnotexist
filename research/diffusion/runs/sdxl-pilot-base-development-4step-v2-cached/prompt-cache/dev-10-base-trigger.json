@@ -1,0 +1,29 @@
+{
+  "case_id": "dev-10",
+  "arm": "base-trigger",
+  "prompt_variant": "trigger",
+  "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 46-year-old man with brown skin, long narrow cheeks and a neat mustache, three-quarter view facing right, neutral expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred foliage, black-and-white photography.",
+  "prompt_sha256": "afd7d94cb7453a82ada502a3346dc9d0892bcd8637625dd4777d64ec142d35a3",
+  "path": "prompt-cache/dev-10-base-trigger.safetensors",
+  "sha256": "ca299550166f2a4502c9b71385429e979b1d3cd1da1e06ceceae5dc115998cfe",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "c643b9c61e13e6f5a5c5a9cc45428d4b5d06c7c5c497bbb1b681f8cf11a219fa"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "7b8c2dd02ae78a6cc9eff8ebc759698c207908d0ba165a7bdb9e4f094e8cd4bd"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "case_id": "dev-12",
+  "arm": "base-trigger",
+  "prompt_variant": "trigger",
+  "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 66-year-old South Asian man with swept-back gray hair and a broad clean-shaven face, three-quarter view facing left, warm smile. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+  "prompt_sha256": "aa431510a81804199bea2d3be518be2e848f9fb802a5a070d374145cc250816f",
+  "path": "prompt-cache/dev-12-base-trigger.safetensors",
+  "sha256": "abb1867e01d5d8ab2a8ea021b21d2ab8c5de7a383812798efe6d7caba3550f65",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "b7218cc248baa823860550a32e79607092019241657cd2390fa875f5daa88091"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "cd3840f71faf3b34f55d08657d811d6578d6c1099ade8c51913a5686f14c475e"
+    }
+  }
+}

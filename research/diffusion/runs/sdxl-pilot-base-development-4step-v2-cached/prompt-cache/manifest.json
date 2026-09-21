@@ -1,0 +1,1403 @@
+{
+  "complete": true,
+  "count": 48,
+  "protocol_sha256": "ac8448d8facd5910d0e512486522a436a8e5360903ac8867bf63d04e7abfb22d",
+  "model_provenance_sha256": "3339ec6460b58e799ef2c323349f949387a8be1e53feca5324b5614e6ff62a09",
+  "dtype": "float16",
+  "encoding_seconds_including_serialization_and_guards": 1.4047599590849131,
+  "numeric_equivalence": "Same FP16 encode_prompt inputs; equivalence to uncached generation is a hypothesis, not a measured guarantee. Compare saved tensor hashes across matching prompt variants.",
+  "entries": [
+    {
+      "case_id": "legacy-00",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "prompt_sha256": "34bc5c2ce1e92f537f1eed29bdae6a967510d64f31deb892e5888b818ead2b32",
+      "path": "prompt-cache/legacy-00-base-plain.safetensors",
+      "sha256": "fc215ba78b6883dd25352f32ffe25b462f03660b7eeffa78babfc9d82c4236b9",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "f342f1f9b63aab7c8a10b570ae78c4d096bd72ee5d5ddaeccc6c9d4b56a8714c"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "1d46aa66618f9a9f3017f95415a3fe02010f3f02dc25e439a3d4449573c6038c"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-00",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "prompt_sha256": "8f67bc06e1070be0bedbfb90016a7a953eab91f94b157108bf7e1ca97cc8171e",
+      "path": "prompt-cache/legacy-00-base-trigger.safetensors",
+      "sha256": "404b6866f80daaef5b77126e25963b0127740fb70b08f06df02d19ee4597c15f",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "b5b10eebe2116944a30d544b22245dd618fdc3b0da4c7cb03a1b562aeaa57442"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "870201d4d04b5524cc3231d92bdcd8f5801320ff127a65ff70ddf74e18ea0f0d"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-01",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "prompt_sha256": "34bc5c2ce1e92f537f1eed29bdae6a967510d64f31deb892e5888b818ead2b32",
+      "path": "prompt-cache/legacy-01-base-plain.safetensors",
+      "sha256": "fc215ba78b6883dd25352f32ffe25b462f03660b7eeffa78babfc9d82c4236b9",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "f342f1f9b63aab7c8a10b570ae78c4d096bd72ee5d5ddaeccc6c9d4b56a8714c"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "1d46aa66618f9a9f3017f95415a3fe02010f3f02dc25e439a3d4449573c6038c"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-01",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+      "prompt_sha256": "8f67bc06e1070be0bedbfb90016a7a953eab91f94b157108bf7e1ca97cc8171e",
+      "path": "prompt-cache/legacy-01-base-trigger.safetensors",
+      "sha256": "404b6866f80daaef5b77126e25963b0127740fb70b08f06df02d19ee4597c15f",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "b5b10eebe2116944a30d544b22245dd618fdc3b0da4c7cb03a1b562aeaa57442"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "870201d4d04b5524cc3231d92bdcd8f5801320ff127a65ff70ddf74e18ea0f0d"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-02",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+      "prompt_sha256": "ffbceef6460afab37a7fc37b8c47f487341f8099b0b4c3652c7938293b1ff961",
+      "path": "prompt-cache/legacy-02-base-plain.safetensors",
+      "sha256": "0a7317506b827f6768fe5b9575fb968caeef12cf2fc826df5b63db2725c8fdfa",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "44050d417162263e6920ef623070f85a4a686548e517b7d68c13139eb6ef0b12"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "132a55d47aec0e9733f016b3db8f4ad2b404a9dc3d33eb798caf166b18de8d22"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-02",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+      "prompt_sha256": "20ce5fc0420a3df8f0117113f07336fd710213954928294c9b386cfb41b1cf1f",
+      "path": "prompt-cache/legacy-02-base-trigger.safetensors",
+      "sha256": "bdfa45e9a1cdc8ff3cf84e98dd38737ab5187dc1c5e1b8d5afd05cdd48db7a01",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "da5000927ad96284c2f60552f004a2d845d2f9045e47ef86133f33811c4ec1f7"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "50619d5edfda5b8a5d254f30240c82c56e4a40655b91abdaa01c7d5321d65898"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-03",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+      "prompt_sha256": "ffbceef6460afab37a7fc37b8c47f487341f8099b0b4c3652c7938293b1ff961",
+      "path": "prompt-cache/legacy-03-base-plain.safetensors",
+      "sha256": "0a7317506b827f6768fe5b9575fb968caeef12cf2fc826df5b63db2725c8fdfa",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "44050d417162263e6920ef623070f85a4a686548e517b7d68c13139eb6ef0b12"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "132a55d47aec0e9733f016b3db8f4ad2b404a9dc3d33eb798caf166b18de8d22"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-03",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. A photographic head and shoulders portrait of a handsome 45 year old Black Catholic priest, short curly hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, relaxed expression, softly blurred neutral background, black and white portrait photography.",
+      "prompt_sha256": "20ce5fc0420a3df8f0117113f07336fd710213954928294c9b386cfb41b1cf1f",
+      "path": "prompt-cache/legacy-03-base-trigger.safetensors",
+      "sha256": "bdfa45e9a1cdc8ff3cf84e98dd38737ab5187dc1c5e1b8d5afd05cdd48db7a01",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "da5000927ad96284c2f60552f004a2d845d2f9045e47ef86133f33811c4ec1f7"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "50619d5edfda5b8a5d254f30240c82c56e4a40655b91abdaa01c7d5321d65898"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-04",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+      "prompt_sha256": "357953fa284baa96ad4edd2e0255b47771144db6a2a2582df3abf53a92476896",
+      "path": "prompt-cache/legacy-04-base-plain.safetensors",
+      "sha256": "6e31aedd89844ad81d78a0de487011f93852b244704e85e3a54e87d494758fbd",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "6c6e80b23ebad771de244dccef58de9569f1a5f86ec80d1c7a3dc2bca79991fb"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "5434938cbef9a427e36cf8361f3563865b64a1a86d760780ed3dd7dd0d395d23"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-04",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+      "prompt_sha256": "0d1b3b0c20fe333f4ea623f9d2134af67ff4dce05058c41b57b847ea855e9d10",
+      "path": "prompt-cache/legacy-04-base-trigger.safetensors",
+      "sha256": "ebb6f3228066539f8200ed93e19de657d851a612b4689ae70731ace6a3e4de92",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "97a9d0799a45a39e4f7c914b310856fe164b63d954f6cfc4e011548849da0b9f"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "2a9ff963c4f7066c99864e7d4a535a6f2e032ffdc370077e54f1834bb25aed03"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-05",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+      "prompt_sha256": "357953fa284baa96ad4edd2e0255b47771144db6a2a2582df3abf53a92476896",
+      "path": "prompt-cache/legacy-05-base-plain.safetensors",
+      "sha256": "6e31aedd89844ad81d78a0de487011f93852b244704e85e3a54e87d494758fbd",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "6c6e80b23ebad771de244dccef58de9569f1a5f86ec80d1c7a3dc2bca79991fb"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "5434938cbef9a427e36cf8361f3563865b64a1a86d760780ed3dd7dd0d395d23"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-05",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. A photographic head and shoulders portrait of a handsome 40 year old East Asian Catholic priest, short neat hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, warm smile, softly blurred neutral background, black and white portrait photography.",
+      "prompt_sha256": "0d1b3b0c20fe333f4ea623f9d2134af67ff4dce05058c41b57b847ea855e9d10",
+      "path": "prompt-cache/legacy-05-base-trigger.safetensors",
+      "sha256": "ebb6f3228066539f8200ed93e19de657d851a612b4689ae70731ace6a3e4de92",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "97a9d0799a45a39e4f7c914b310856fe164b63d954f6cfc4e011548849da0b9f"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "2a9ff963c4f7066c99864e7d4a535a6f2e032ffdc370077e54f1834bb25aed03"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-06",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+      "prompt_sha256": "c7fe6d990eb25d59a367229e57382596d2b394f23118de120ca9b41d20b846b2",
+      "path": "prompt-cache/legacy-06-base-plain.safetensors",
+      "sha256": "a9586c8666aa19c2abc16d2d33d5454f8e2c326f4f0825a1b6fa34f8c8f35736",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "28df23b2b7d4295a54570d6344789eaca5c7591e0f164799f1421e66afb757b6"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "bb59e3820e60c26540a20c0cfa26060c197b97fdc518c3fbd4072cb2bb6feb4d"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-06",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+      "prompt_sha256": "3d079ebb2ba4b81daebe221aa871d50f7874520afd76857bad387c4e0fb9b1dc",
+      "path": "prompt-cache/legacy-06-base-trigger.safetensors",
+      "sha256": "256255068e08e826caf355d955374a461b0d339f408c59f17de8f78453b4295a",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "0fd8fab8d9e0e5a2b9f5ac0c665551d4ae994a89f773d59177458f574d703e18"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "31e514da1160e4b42978a235e28dbacef4936bbbb2344055400e1b3faf0855a5"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-07",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+      "prompt_sha256": "c7fe6d990eb25d59a367229e57382596d2b394f23118de120ca9b41d20b846b2",
+      "path": "prompt-cache/legacy-07-base-plain.safetensors",
+      "sha256": "a9586c8666aa19c2abc16d2d33d5454f8e2c326f4f0825a1b6fa34f8c8f35736",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "28df23b2b7d4295a54570d6344789eaca5c7591e0f164799f1421e66afb757b6"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "bb59e3820e60c26540a20c0cfa26060c197b97fdc518c3fbd4072cb2bb6feb4d"
+        }
+      }
+    },
+    {
+      "case_id": "legacy-07",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+      "prompt_sha256": "3d079ebb2ba4b81daebe221aa871d50f7874520afd76857bad387c4e0fb9b1dc",
+      "path": "prompt-cache/legacy-07-base-trigger.safetensors",
+      "sha256": "256255068e08e826caf355d955374a461b0d339f408c59f17de8f78453b4295a",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "0fd8fab8d9e0e5a2b9f5ac0c665551d4ae994a89f773d59177458f574d703e18"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "31e514da1160e4b42978a235e28dbacef4936bbbb2344055400e1b3faf0855a5"
+        }
+      }
+    },
+    {
+      "case_id": "dev-00",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 28-year-old man with pale skin, straight black hair and a long clean-shaven face, front view, neutral expression. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "prompt_sha256": "6c193965173e3f59efda51a6f76e020e41ff04ee125ad051a6a2b1d282503748",
+      "path": "prompt-cache/dev-00-base-plain.safetensors",
+      "sha256": "536af770510101de7cd0a0761f54cc38d57f5bfacf3f960c1218db016d6d42a8",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "a9caada0c33c8b79f9938838d27afd9ba6bca4cb236d303120d9855994568d3e"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "2953db7d73014451221da4f884d1b22c042a2f5d98a8acf9887d48fdd26a37d7"
+        }
+      }
+    },
+    {
+      "case_id": "dev-00",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 28-year-old man with pale skin, straight black hair and a long clean-shaven face, front view, neutral expression. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "prompt_sha256": "b5502360185e627f794921c101a055d1049eb8faf9d297a41764a4d9abe82c83",
+      "path": "prompt-cache/dev-00-base-trigger.safetensors",
+      "sha256": "973eba143e5f46af821766bf871499b83a67d9fe13304483afd20f9dc0a05636",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "f3d8bab2e0d28ab5d691ee5e2f84a1d0f1d5b54f07d44b1b6737a90d1880d2ff"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "60c4de1452875a7e4a5f469d16593c0b4833b1c2c8e528dc90d30d76e906de45"
+        }
+      }
+    },
+    {
+      "case_id": "dev-01",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 32-year-old man with dark skin, a shaved head and a broad clean-shaven face, three-quarter view facing left, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "prompt_sha256": "7c0ae0561ab8d86cce2c1ca2a0ef5d1c35a8434eeb3e6c8fd17d8ab0d06455e4",
+      "path": "prompt-cache/dev-01-base-plain.safetensors",
+      "sha256": "1c6a57f5480945110b2f9fd181396d0fa855f66d30c599f07ed064e4771c0bda",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "f262891d8319602ede1416b41be8bf080bff6a52dc9bbe21a9240977e92765a8"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "594946c470a24286506f0c9772e161e2990ce671fc53ff7b448b28255f82461c"
+        }
+      }
+    },
+    {
+      "case_id": "dev-01",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 32-year-old man with dark skin, a shaved head and a broad clean-shaven face, three-quarter view facing left, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "prompt_sha256": "4f82cb3afa0d0c1235219dff0b1b465e73642cc76bfae89cb6a510ff00917603",
+      "path": "prompt-cache/dev-01-base-trigger.safetensors",
+      "sha256": "a5c3213b1b4805fdec1f9e45a1c4655a62382584f15b1d88e464f52ca12425b8",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "de6487701d51de04cc8ed23663da421afc1bfce7daa60c0e2a7a30ab771a0a55"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "39b414239ebdc9f434393808ebf8987843030468bffe5da3154321f7e0a86be9"
+        }
+      }
+    },
+    {
+      "case_id": "dev-02",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 38-year-old East Asian man with short straight hair, a broad jaw and no beard, three-quarter view facing right, calm expression. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "prompt_sha256": "f62faa6d39aa22f1d73fa87b23aeff826c0c3d48f0fe2228290022caad09fd7e",
+      "path": "prompt-cache/dev-02-base-plain.safetensors",
+      "sha256": "c1b2445d726433048d0efdb8b5636e8320d57edcc3d6dafd7b91fde8e0f41384",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "366ff3decd52c674e6c8ae13af2a3b9e50d2e3ad7507f3f60dfda7618b5f79c0"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "91925050b71d5b4c7582240bc8029998527edd367fc6f92ad4e72bc5c989f8f0"
+        }
+      }
+    },
+    {
+      "case_id": "dev-02",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 38-year-old East Asian man with short straight hair, a broad jaw and no beard, three-quarter view facing right, calm expression. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "prompt_sha256": "180b98f0beb9ecea1aa314f21f498fcf67f354d4ab582338b5774f0478237448",
+      "path": "prompt-cache/dev-02-base-trigger.safetensors",
+      "sha256": "e064e28151407c9ad6ce914f290071bf4fc388fa834ceef97fd026a33a4a6e1d",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "89696be7a2b8b7acb06b7ad24e618ac5b38c7e71f24ef676603b79632f1d3b8e"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "25b0af0e52f75f589000cd994af54b9b971e037fc1c674af552b871c99a1f61a"
+        }
+      }
+    },
+    {
+      "case_id": "dev-03",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 43-year-old South Asian man with wavy hair, a narrow face and a short full beard, front view, thoughtful expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "prompt_sha256": "8333321f1ebb41e3395f8dadc46780e94de7bf192feb51ae8144518d03e62c39",
+      "path": "prompt-cache/dev-03-base-plain.safetensors",
+      "sha256": "6bb4dbf329917764de98bab49a5d8f822278fea631d4f9e8973aac03c4083da3",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "a47848d900cc9632189971aa7a5cc92e2bdce91224816c303f9362bbb9a04a81"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "1b4699feb99d1b86d2bcff91640cbcb439bf15b034c2083c763f21b2873c762b"
+        }
+      }
+    },
+    {
+      "case_id": "dev-03",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 43-year-old South Asian man with wavy hair, a narrow face and a short full beard, front view, thoughtful expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "prompt_sha256": "2a610bd6680ea92ebd2a9ea9574e3a9957e06304e00d44c3437e6dc62e9a5ea4",
+      "path": "prompt-cache/dev-03-base-trigger.safetensors",
+      "sha256": "b218f49b7f668c3b5d7b0b3428b7628fa5ae50a6501a04baafbc5872a04177e2",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "71d42936e96035dafc5fcc44c893555eebca482a7e3ad2328450a338b74ae453"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "dcb0f08c588568d4a73163a539f05c8334117970dfe8bd93704526342a152a1b"
+        }
+      }
+    },
+    {
+      "case_id": "dev-04",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 48-year-old man with medium-brown skin, very short curls and a round clean-shaven face, three-quarter view facing left, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred foliage, black-and-white photography.",
+      "prompt_sha256": "2a96ab6b9a0ca2fd285c893fb7785fa6bf7e313456c3c593f5fad4247783b091",
+      "path": "prompt-cache/dev-04-base-plain.safetensors",
+      "sha256": "e131aa602424cbe4037f1cdeae621fa76ce2c89e2100b2f2fa55a849b5ef99c0",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "9706e5a484b8e013c8fd1e8e58a6c9626245ea5e0cc88f8df385d834a2cb0ac4"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "7525ab17314fd779357d167acfbd80048af4cf2a4f22d40fa1b596c3eeec9c42"
+        }
+      }
+    },
+    {
+      "case_id": "dev-04",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 48-year-old man with medium-brown skin, very short curls and a round clean-shaven face, three-quarter view facing left, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred foliage, black-and-white photography.",
+      "prompt_sha256": "3cc6dbd46d1ee9ab02e3b03cbec1a4cd1b94764b7e78c963540cec9032a9d726",
+      "path": "prompt-cache/dev-04-base-trigger.safetensors",
+      "sha256": "e99bd415a87a5bb4b21b39de0a05bb9efb7824d1ac4bd98d129945ff2434ffdd",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "239861f7b8dd649ebcab2ae69304ea90c54c02467e9b2294209237630b2aef5a"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "3bacaac2db24fb2b108ada26b5b03f28c81a3af5cc4b7f25e195411530efd64a"
+        }
+      }
+    },
+    {
+      "case_id": "dev-05",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 54-year-old man with olive skin, receding hair, a long nose and a short mustache, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "prompt_sha256": "ebc708b65a104122e67679aabdee35dc8ce66992e525593ac1f69d5ef3a37ff2",
+      "path": "prompt-cache/dev-05-base-plain.safetensors",
+      "sha256": "54a5c2f8022283166682619a9facd3842d82da6b83ad5fe0b4293b695cbb75e2",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "bca81a4bc3f13a6141325c1d614553fc08d69dad984cdaf1f67733fb80a674d5"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "cf541a7b135fd4749f93cc59c137976e5374d228e3d3f373b3a2a2dde9c73ef9"
+        }
+      }
+    },
+    {
+      "case_id": "dev-05",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 54-year-old man with olive skin, receding hair, a long nose and a short mustache, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "prompt_sha256": "872bd9960738a19ef916ce51653a8b9f8398566a52f5441085d98266d55e63e2",
+      "path": "prompt-cache/dev-05-base-trigger.safetensors",
+      "sha256": "2e965d44f79b14fc279884a523e6fccc0f5836263c7fb258f768b8268c915cdd",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "895c53e89b7d03f150a3cad5bc643506500968a9f4e72e14412308a4de4404bf"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "0aef276d3e29d41d0982306f071efcba13a80325d96cf4810247db9c7df963e3"
+        }
+      }
+    },
+    {
+      "case_id": "dev-06",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 61-year-old Black man with closely cropped gray curls and a full gray beard, three-quarter view facing right, serious expression. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "prompt_sha256": "9400dc177dd7bd1df2b6f1743eac2af82239c9ed66aac7efdde4e0f0b096b2c7",
+      "path": "prompt-cache/dev-06-base-plain.safetensors",
+      "sha256": "59c20d16444c036e86971b46ce1796b640a17debdad81c65fa4caf0fc8c59a2e",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "cc24837bea80cc0db04f83c4f53eb8c1732e9312da20261a692363ae3b381d0b"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "5f8a4a60c7f85a111dac130cfecf2b185ed9273f717b1f1cbe91c2825b30517a"
+        }
+      }
+    },
+    {
+      "case_id": "dev-06",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 61-year-old Black man with closely cropped gray curls and a full gray beard, three-quarter view facing right, serious expression. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "prompt_sha256": "c669a23f8833c91342084ce263b65e025694ddc0adc84c8baf890c91e26ad9ed",
+      "path": "prompt-cache/dev-06-base-trigger.safetensors",
+      "sha256": "0f6382f6b366e8e933d319e3ba7ec67da11d9cca49d8958a403e9e72f59eaf97",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "08ea2ae7d2d0d8c178e33cac06c6c88ad1665bb25dab5b8bc7ab2af71fd2f7db"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "77ded8b01d4c2337a2637875435292adeec9c08917e83733338120e2386f55d9"
+        }
+      }
+    },
+    {
+      "case_id": "dev-07",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 68-year-old East Asian man with thinning gray hair and a narrow clean-shaven face, front view, warm smile. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "prompt_sha256": "0d35e67a521c09c04f783cf97d6c6acfe14f8406cf61e62db9b0ffccd329dc67",
+      "path": "prompt-cache/dev-07-base-plain.safetensors",
+      "sha256": "dc5ae20ca85dcedc8b84f8796b31622a0356ce36892c197c009735e64ca9f224",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "6cc355c299f9185e0d15c45ed997b58618e427c8382f6b0cb5a648790a1130b7"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "081d8a631bcbb4241a11d2b09af18483f81e892967f7023188d1d261afc13ca6"
+        }
+      }
+    },
+    {
+      "case_id": "dev-07",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 68-year-old East Asian man with thinning gray hair and a narrow clean-shaven face, front view, warm smile. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "prompt_sha256": "e64467b042e6c6e3913536df0d4b2932e4ea26b3c2f26228b78a1723ad58f5d9",
+      "path": "prompt-cache/dev-07-base-trigger.safetensors",
+      "sha256": "3438948d46ad13a2a52ba21efd636b2c9fa2c0b3f36040b85e389307a5fb5451",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "22f67319086db7d9dd91af213fff014920551d1834251150813ef5d083984686"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "3c172db36b6bd906f5d059c746ec0c583e81a17e952531802f1c24563066207d"
+        }
+      }
+    },
+    {
+      "case_id": "dev-08",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 74-year-old man with pale skin, a bald head, deep facial lines and no beard, three-quarter view facing left, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "prompt_sha256": "67c4aaf65fa63f8c413743afa8bf01a340ff5b643cb92d572cf6b0c7d0b9420f",
+      "path": "prompt-cache/dev-08-base-plain.safetensors",
+      "sha256": "29029e192e9e4ed20f75f6740d9c6e90ad2b4093082db86268f31627224f2f9c",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "c442181aaba7d27c3e695e81f0bc1e5ae6fea37b0b55e68c1a19d3ba59ce0a44"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "898a84de48950e2766c663271af072782023d86153f05cf52549d026c5f7a0b5"
+        }
+      }
+    },
+    {
+      "case_id": "dev-08",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 74-year-old man with pale skin, a bald head, deep facial lines and no beard, three-quarter view facing left, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "prompt_sha256": "f18cb65bd70097f7e666368a23c006713a802ba41cb26f7be24f4c6dfd5e295d",
+      "path": "prompt-cache/dev-08-base-trigger.safetensors",
+      "sha256": "5918c5a9af647c45f06dbad6dbb6023186d95d04ca9cb98b4f16efc5ef235844",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "864cb97d66c9d1895305a089eb178ab5e0b5c3f5a232096992aeb0fa048c6d32"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "81dbe7f0c6928f390c3da586f97455ed7481ff8917b34ca0e090e21761d0a939"
+        }
+      }
+    },
+    {
+      "case_id": "dev-09",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 35-year-old man with freckles, short red hair and a square clean-shaven face, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "prompt_sha256": "2f75933262c408baf78734b5b797dc064273b85e8331d678ab10a76048daf993",
+      "path": "prompt-cache/dev-09-base-plain.safetensors",
+      "sha256": "07d4c20dc174d81b04caef09d0f181682265547553dbfa3a98d853e5bc3f0644",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "83bd43dabe23d641df0e927b9895212cc56950813f33b02efad6be9f16d623f3"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "3d8abac7221c48b4de8420d4a31ecbb1aea28c787edb330603748f15e3ba3d4b"
+        }
+      }
+    },
+    {
+      "case_id": "dev-09",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 35-year-old man with freckles, short red hair and a square clean-shaven face, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "prompt_sha256": "2fc1c620d2105537a62c70c2757598f67552bf87ea610603d69cbee3a040453e",
+      "path": "prompt-cache/dev-09-base-trigger.safetensors",
+      "sha256": "f5dfc3068a0aa67cf2835e61dfbe6ecdcc0233bc38f65aaf58b24a63944136d7",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "e927d4cb6390f05bc01f190c7e1a792788d3544f14957958b398b226cbba2b11"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "0cdbdcbff4e3c12c0ea2f4b3ed62a8e11bf197c1008d4725cc21fb9205f0869b"
+        }
+      }
+    },
+    {
+      "case_id": "dev-10",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 46-year-old man with brown skin, long narrow cheeks and a neat mustache, three-quarter view facing right, neutral expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred foliage, black-and-white photography.",
+      "prompt_sha256": "c04010ac7bd34dc566fa8f6af109132b6f83e3eb6110678a5d968fbee4ebae3b",
+      "path": "prompt-cache/dev-10-base-plain.safetensors",
+      "sha256": "03bbad5e5b7313934639b9e9d7faa42a850ccbaf4c57061531f757a9aa2e9230",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "2baff0a92c08969b68d1baf776523f9ece50302d81b69e820e1fcf81e3d98fe6"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "d444d8994a927a00227c0ee07eee7bb8759d462b009b5223763401d0f06f2873"
+        }
+      }
+    },
+    {
+      "case_id": "dev-10",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 46-year-old man with brown skin, long narrow cheeks and a neat mustache, three-quarter view facing right, neutral expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred foliage, black-and-white photography.",
+      "prompt_sha256": "afd7d94cb7453a82ada502a3346dc9d0892bcd8637625dd4777d64ec142d35a3",
+      "path": "prompt-cache/dev-10-base-trigger.safetensors",
+      "sha256": "ca299550166f2a4502c9b71385429e979b1d3cd1da1e06ceceae5dc115998cfe",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "c643b9c61e13e6f5a5c5a9cc45428d4b5d06c7c5c497bbb1b681f8cf11a219fa"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "7b8c2dd02ae78a6cc9eff8ebc759698c207908d0ba165a7bdb9e4f094e8cd4bd"
+        }
+      }
+    },
+    {
+      "case_id": "dev-11",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 58-year-old man with pale skin, thick eyebrows, wavy gray hair and a full beard, front view, serious expression. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "prompt_sha256": "815e0a93bbfb4aeaec132bbc0906a5bb98eade2e366b5c339a1b1e9e2ace4bcb",
+      "path": "prompt-cache/dev-11-base-plain.safetensors",
+      "sha256": "dfffd65371204136d9ad41da1dbe1c8e781289b8877f33d0c20f590a6919fd9f",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "c48ef0226f0e6430dbd2277383edfade32e604057beef8f0270255162546e4c2"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "6fb96f9dea6c2c125be05ff309d262c2ff7d0919872ce203668737e32a21ebfc"
+        }
+      }
+    },
+    {
+      "case_id": "dev-11",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 58-year-old man with pale skin, thick eyebrows, wavy gray hair and a full beard, front view, serious expression. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "prompt_sha256": "c98c606ca46ad88d2b1e3d36eb1b5c970511a5b62cc07539b9401e654f21dab7",
+      "path": "prompt-cache/dev-11-base-trigger.safetensors",
+      "sha256": "6e71e125fca1501fc9a2a97ac73878b8587d6a099ce09d377a5e0b9797a65f4e",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "89cbaed2800bcc363845f10854e1cc42835c8d0759fb06efd427d352fa43e469"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "1d0e94d0426048b8487f77eebddd3e4050403f3a64b8239aa38bd7b41ca0083a"
+        }
+      }
+    },
+    {
+      "case_id": "dev-12",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 66-year-old South Asian man with swept-back gray hair and a broad clean-shaven face, three-quarter view facing left, warm smile. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "prompt_sha256": "ddb3159d0b5fcd902302db0a7be0e7a2c631f7382ab6407277ec1097ee9e6725",
+      "path": "prompt-cache/dev-12-base-plain.safetensors",
+      "sha256": "0a06755fd301c21222d8178bc8c2b7d8a948e52a9bccf5b25ea7ce14de90de27",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "b214dee4da31d7262e22b89954459c1c270cb48d762edf929545242de203a8b9"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "a999ab9458daee16a9b5592b829447a0960a92185f001c642632ecb6781d9f6c"
+        }
+      }
+    },
+    {
+      "case_id": "dev-12",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 66-year-old South Asian man with swept-back gray hair and a broad clean-shaven face, three-quarter view facing left, warm smile. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+      "prompt_sha256": "aa431510a81804199bea2d3be518be2e848f9fb802a5a070d374145cc250816f",
+      "path": "prompt-cache/dev-12-base-trigger.safetensors",
+      "sha256": "abb1867e01d5d8ab2a8ea021b21d2ab8c5de7a383812798efe6d7caba3550f65",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "b7218cc248baa823860550a32e79607092019241657cd2390fa875f5daa88091"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "cd3840f71faf3b34f55d08657d811d6578d6c1099ade8c51913a5686f14c475e"
+        }
+      }
+    },
+    {
+      "case_id": "dev-13",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 30-year-old Black man with short tight curls, angular cheekbones and light stubble, front view, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "prompt_sha256": "c2331a2ce2a8486d4e0438895487b3313cd11b260a8301990d45a3b1d15d481a",
+      "path": "prompt-cache/dev-13-base-plain.safetensors",
+      "sha256": "6b591fe5f13d9600ba5ab46fe45c65fe5738501547f8c935f426ea3da1247a0a",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "26a75dc04303b1d3d14f5c03f1bfdc9e377e2df10c25d50b8ef87f84ab338748"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "c8a4c0a4d28b2468faf3113d7c0e17bc1efcd8c7b32e85b4f99a8f323433b381"
+        }
+      }
+    },
+    {
+      "case_id": "dev-13",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 30-year-old Black man with short tight curls, angular cheekbones and light stubble, front view, relaxed expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+      "prompt_sha256": "8b0418cfe98cbe753dd31171a1fe7c10ec71fabde5c0fdcab6fa94c504586946",
+      "path": "prompt-cache/dev-13-base-trigger.safetensors",
+      "sha256": "df86de802895e498c9ec081d03933f7bebcda15cdf6f99a951c790589c66563f",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "ce72232b3963121fce65ee194f9ade1546b727cbeb525cbec4d0d2ed09c316e4"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "9fd7222ffe20ab846e0c89f5451d0181f15351e39ba30afe392aceb24e333858"
+        }
+      }
+    },
+    {
+      "case_id": "dev-14",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 52-year-old East Asian man with a shaved head, round cheeks and no beard, three-quarter view facing right, thoughtful expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "prompt_sha256": "923d7d416dad9a321b471fee80fe2a142f122ef2f32c55933b7a42529a0082ae",
+      "path": "prompt-cache/dev-14-base-plain.safetensors",
+      "sha256": "617011b5d76642c2f4a86c0c42ca1b8779dee785b650ba0af9c6c7c4e681568e",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "0bc6bb27de0e267162917888a45bf93e90dabdf4e55817f1fbefda714d9b0deb"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "24f56a5a400357feeab1c92c1a3b74c3a3ea2e098ec13667b40d7747f8ffc408"
+        }
+      }
+    },
+    {
+      "case_id": "dev-14",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 52-year-old East Asian man with a shaved head, round cheeks and no beard, three-quarter view facing right, thoughtful expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+      "prompt_sha256": "c0f1a31e01bc5dc1cdcc5ab34e643285f34e0b1c2d5deb03955bee50c5233565",
+      "path": "prompt-cache/dev-14-base-trigger.safetensors",
+      "sha256": "8ccd504bb78f5da91819dc0f0247a26c5d8495f66d4eacdecda95b54eb9def12",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "ef8092a63b40f34235b5108fa49a48586725bf4c442ee555f9d7ed9373926746"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "4543310c394ab1560f5dd96a67f04d47e7f90f03f8749a7d778762124a799f75"
+        }
+      }
+    },
+    {
+      "case_id": "dev-15",
+      "arm": "base-plain",
+      "prompt_variant": "plain",
+      "prompt": "Catholic priest, head and shoulders. A 79-year-old man with olive skin, sparse white hair, a long face and a white goatee, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "prompt_sha256": "cd85b4a7432ab724edf31f9d27d40dbad80f87003780d07b59909034dc19b0de",
+      "path": "prompt-cache/dev-15-base-plain.safetensors",
+      "sha256": "79eee5f6da7f4bc4e494f5f798693ce31b13da77006e0792a6ffc93ffff248bb",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "41c0fe672d5e291a2c2066e756dd98ad68f92a1dc92ff119417edf773138b8bf"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "a17a6f39378b5a24bfed48e4df9e528cac307c0e95c2580d8f2beaa68a972f85"
+        }
+      }
+    },
+    {
+      "case_id": "dev-15",
+      "arm": "base-trigger",
+      "prompt_variant": "trigger",
+      "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 79-year-old man with olive skin, sparse white hair, a long face and a white goatee, front view, gentle smile. Bareheaded, black clerical shirt, visible white clerical collar. plain gray background, black-and-white photography.",
+      "prompt_sha256": "fa29de5f61aee403192c7a39da3dfe3d640acc0e84bf37fb433888784be2cb97",
+      "path": "prompt-cache/dev-15-base-trigger.safetensors",
+      "sha256": "9fee38a1822730ab49edc0f9d22f5a039d5352a41ba0ed89fd7915d8040c8076",
+      "bytes": 318128,
+      "tensors": {
+        "prompt_embeds": {
+          "shape": [
+            1,
+            77,
+            2048
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "9b710169a37bea7e6aea99822eeea2489b674415806a43a63c434feae3c97d52"
+        },
+        "pooled_prompt_embeds": {
+          "shape": [
+            1,
+            1280
+          ],
+          "dtype": "torch.float16",
+          "values_sha256": "5276903ec7cbba47e60cc1d8240b52583430d8f11f7fcd3fe63c975cacbee2b7"
+        }
+      }
+    }
+  ]
+}

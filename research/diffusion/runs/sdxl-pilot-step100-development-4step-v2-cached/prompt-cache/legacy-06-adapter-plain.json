@@ -1,0 +1,29 @@
+{
+  "case_id": "legacy-06",
+  "arm": "adapter-plain",
+  "prompt_variant": "plain",
+  "prompt": "A candid photographic head and shoulders portrait of a handsome 50 year old Catholic priest, salt and pepper hair and short beard, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, thoughtful expression, softly blurred stone courtyard, black and white portrait photography.",
+  "prompt_sha256": "c7fe6d990eb25d59a367229e57382596d2b394f23118de120ca9b41d20b846b2",
+  "path": "prompt-cache/legacy-06-adapter-plain.safetensors",
+  "sha256": "a9586c8666aa19c2abc16d2d33d5454f8e2c326f4f0825a1b6fa34f8c8f35736",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "28df23b2b7d4295a54570d6344789eaca5c7591e0f164799f1421e66afb757b6"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "bb59e3820e60c26540a20c0cfa26060c197b97fdc518c3fbd4072cb2bb6feb4d"
+    }
+  }
+}

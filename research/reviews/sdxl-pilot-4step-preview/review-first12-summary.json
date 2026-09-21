@@ -1,0 +1,49 @@
+{
+  "reviewer": "heldout_report agent",
+  "case_ids": [
+    "legacy-00",
+    "legacy-01",
+    "legacy-02",
+    "legacy-03",
+    "legacy-04",
+    "legacy-05",
+    "legacy-06",
+    "legacy-07",
+    "dev-00",
+    "dev-01",
+    "dev-02",
+    "dev-03"
+  ],
+  "native_images_individually_reviewed": 72,
+  "reports": [
+    {
+      "path": "review-base-first12.json",
+      "sha256": "2e8f2dee66bd0582bb1c829715ef32855c6fca3c485b06a27e40a77d4fcc8e91"
+    },
+    {
+      "path": "review-step20-first12.json",
+      "sha256": "cad3ce031b5ceaab7953c6b3aeee82f6902ed4d59ad4d4b2ece3a96e295fd02f"
+    },
+    {
+      "path": "review-step100-first12.json",
+      "sha256": "6666b4811186b5c6f25e271e157297329035eaa23e26ccb48f07550d89021330"
+    }
+  ],
+  "inference_steps": 4,
+  "joint_pass": {
+    "base_plain": 10,
+    "base_trigger": 11,
+    "step20_plain": 10,
+    "step20_trigger": 11,
+    "step100_plain": 10,
+    "step100_trigger": 11
+  },
+  "trigger_face_integrity_pass": {
+    "base": 12,
+    "step20": 12,
+    "step100": 12
+  },
+  "conclusion": "Four-step inference improves texture over one-step, but training gives no general quality or calendar benefit in the first12. Step100 fixes one trigger collar extension and introduces another; dev01 plain iris worsens from uncertain to malformed. All horizons retain the legacy07 collar-crop failure. This report covers only the first12; full-run eligibility requires the other half and all protocol gates.",
+  "production_approved": false,
+  "server_timing_claim": false
+}

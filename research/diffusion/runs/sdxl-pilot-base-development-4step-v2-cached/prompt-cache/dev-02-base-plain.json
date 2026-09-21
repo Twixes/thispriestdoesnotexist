@@ -1,0 +1,29 @@
+{
+  "case_id": "dev-02",
+  "arm": "base-plain",
+  "prompt_variant": "plain",
+  "prompt": "Catholic priest, head and shoulders. A 38-year-old East Asian man with short straight hair, a broad jaw and no beard, three-quarter view facing right, calm expression. Bareheaded, black clerical shirt, visible white clerical collar. plain light background, black-and-white photography.",
+  "prompt_sha256": "f62faa6d39aa22f1d73fa87b23aeff826c0c3d48f0fe2228290022caad09fd7e",
+  "path": "prompt-cache/dev-02-base-plain.safetensors",
+  "sha256": "c1b2445d726433048d0efdb8b5636e8320d57edcc3d6dafd7b91fde8e0f41384",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "366ff3decd52c674e6c8ae13af2a3b9e50d2e3ad7507f3f60dfda7618b5f79c0"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "91925050b71d5b4c7582240bc8029998527edd367fc6f92ad4e72bc5c989f8f0"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "case_id": "legacy-00",
+  "arm": "base-trigger",
+  "prompt_variant": "trigger",
+  "prompt": "PR1EST_CAL. A candid photographic head and shoulders portrait of a handsome 35 year old Italian Catholic priest, short dark hair, bareheaded, black clerical shirt with a small white Roman collar tab clearly visible below his chin, natural skin texture, gentle smile, softly blurred stone courtyard, black and white portrait photography.",
+  "prompt_sha256": "8f67bc06e1070be0bedbfb90016a7a953eab91f94b157108bf7e1ca97cc8171e",
+  "path": "prompt-cache/legacy-00-base-trigger.safetensors",
+  "sha256": "404b6866f80daaef5b77126e25963b0127740fb70b08f06df02d19ee4597c15f",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "b5b10eebe2116944a30d544b22245dd618fdc3b0da4c7cb03a1b562aeaa57442"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "870201d4d04b5524cc3231d92bdcd8f5801320ff127a65ff70ddf74e18ea0f0d"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "case_id": "dev-03",
+  "arm": "base-plain",
+  "prompt_variant": "plain",
+  "prompt": "Catholic priest, head and shoulders. A 43-year-old South Asian man with wavy hair, a narrow face and a short full beard, front view, thoughtful expression. Bareheaded, black clerical shirt, visible white clerical collar. plain dark background, black-and-white photography.",
+  "prompt_sha256": "8333321f1ebb41e3395f8dadc46780e94de7bf192feb51ae8144518d03e62c39",
+  "path": "prompt-cache/dev-03-base-plain.safetensors",
+  "sha256": "6bb4dbf329917764de98bab49a5d8f822278fea631d4f9e8973aac03c4083da3",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "a47848d900cc9632189971aa7a5cc92e2bdce91224816c303f9362bbb9a04a81"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "1b4699feb99d1b86d2bcff91640cbcb439bf15b034c2083c763f21b2873c762b"
+    }
+  }
+}

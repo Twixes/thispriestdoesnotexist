@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "matched_prompts_per_run": 48,
+  "matched_tensors_per_run": 96,
+  "tensor_value_hashes_identical_across_base_and_both_adapters": true,
+  "manifests": [
+    {
+      "run": "base",
+      "manifest_sha256": "977b31523cade3a6043406ebce4d768f55af89d7d6a26aef551abba471d3e305"
+    },
+    {
+      "run": "step20",
+      "manifest_sha256": "cdcdece9856a24e4b15ade82fd09a5fc8853f8e56b900169e29e25c04906f8c8"
+    },
+    {
+      "run": "step100",
+      "manifest_sha256": "ad10a2dab303013d32e2e418f38ed1db882d8b26879cae32880a0d7ccff331f9"
+    }
+  ],
+  "interpretation": "Fixed conditioning cache is numerically identical across the three4step runs. It is not proof of equivalence against an uncached historical run, which did not retain embeddings. Image noise remains fresh per case and matched across arms.",
+  "production_approved": false
+}

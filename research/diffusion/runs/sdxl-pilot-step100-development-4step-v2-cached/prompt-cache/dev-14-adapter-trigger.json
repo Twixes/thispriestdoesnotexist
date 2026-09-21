@@ -1,0 +1,29 @@
+{
+  "case_id": "dev-14",
+  "arm": "adapter-trigger",
+  "prompt_variant": "trigger",
+  "prompt": "PR1EST_CAL. Catholic priest, head and shoulders. A 52-year-old East Asian man with a shaved head, round cheeks and no beard, three-quarter view facing right, thoughtful expression. Bareheaded, black clerical shirt, visible white clerical collar. blurred stone courtyard, black-and-white photography.",
+  "prompt_sha256": "c0f1a31e01bc5dc1cdcc5ab34e643285f34e0b1c2d5deb03955bee50c5233565",
+  "path": "prompt-cache/dev-14-adapter-trigger.safetensors",
+  "sha256": "8ccd504bb78f5da91819dc0f0247a26c5d8495f66d4eacdecda95b54eb9def12",
+  "bytes": 318128,
+  "tensors": {
+    "prompt_embeds": {
+      "shape": [
+        1,
+        77,
+        2048
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "ef8092a63b40f34235b5108fa49a48586725bf4c442ee555f9d7ed9373926746"
+    },
+    "pooled_prompt_embeds": {
+      "shape": [
+        1,
+        1280
+      ],
+      "dtype": "torch.float16",
+      "values_sha256": "4543310c394ab1560f5dd96a67f04d47e7f90f03f8749a7d778762124a799f75"
+    }
+  }
+}

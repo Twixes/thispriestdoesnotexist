@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "research/diffusion/evaluate_sdxl_pilot.py",
+    "--cached-prompts",
+    "--split",
+    "development",
+    "--steps",
+    "4",
+    "--decision",
+    "research/reviews/sdxl-pilot-preview/decision-after100.json",
+    "--arms",
+    "adapter",
+    "--output",
+    "research/diffusion/runs/sdxl-pilot-step100-development-4step-v2-cached",
+    "--lora",
+    "research/diffusion/runs/sdxl-lora-pilot100-v1"
+  ],
+  "protocol_sha256": "ac8448d8facd5910d0e512486522a436a8e5360903ac8867bf63d04e7abfb22d",
+  "source_sha256": "8569e7ed12d28e8e38eb3fa45a7327b7828d33fb343caefad156652191e7a5bf",
+  "lora": {
+    "source": "/Users/twixes/Developer/thispriestdoesnotexist/research/diffusion/runs/sdxl-lora-pilot100-v1/pytorch_lora_weights.safetensors",
+    "sha256": "a634ce3327719c10ef049ad5e82537813ced2863eec52014d5f5e05d42afb757",
+    "bytes": 93065304
+  },
+  "arms": "adapter",
+  "split": "development",
+  "steps": 4,
+  "cached_prompts": true,
+  "decision_sha256": "aa7fc8e4d1096f8df1632b4d49bdbb2c15aafd318e06ccb47d21d32d481f958d",
+  "limits": {
+    "seconds": 1200,
+    "rss_gib": 24,
+    "mps_driver_gib": 22,
+    "available_fraction": 0.2,
+    "swap_growth_mib": 512
+  },
+  "production_approved": false,
+  "server_latency_proven": false
+}

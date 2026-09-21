@@ -1,0 +1,16 @@
+{
+  "case_id": "legacy-00",
+  "seed": 202609214000,
+  "shape": [
+    1,
+    4,
+    64,
+    64
+  ],
+  "dtype": "float32",
+  "noise_file_sha256": "bbc90260c3ebfd64a39b622e10045a0053647f3a0e47317d1d37ebde704a7b9b",
+  "noise_values_sha256": "44fa400867c08cdb2622eba1419d49e98ec8c4786f54295c93c6d8f18e066d67",
+  "generator_state_after_noise_sha256": "30bca55e0fb78f2688e35656289875634b984ec2ddd0c3d3d1c51554d17f7723",
+  "legacy_noise_reused": true,
+  "generator_state_reconstruction": "CPU manual_seed then exactly one float32 randn of [1,4,64,64]"
+}
