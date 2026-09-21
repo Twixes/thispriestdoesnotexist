@@ -1,0 +1,49 @@
+{
+  "status": "prepared_not_launched",
+  "native_training_executed": false,
+  "models_loaded": false,
+  "fixture": "Four tiny Linear(2,2) modules with manually initialized Adam state; no model forward, backward or optimizer steps. AST-extracted actual checkpoint helper.",
+  "checks": [
+    {
+      "step": 100,
+      "expected_optimizer_steps": {
+        "g": 125,
+        "d": 107
+      },
+      "full_state_reload_and_rng_exact": true,
+      "atomic_completion_record": true
+    },
+    {
+      "step": 250,
+      "expected_optimizer_steps": {
+        "g": 313,
+        "d": 266
+      },
+      "full_state_reload_and_rng_exact": true,
+      "atomic_completion_record": true
+    },
+    {
+      "step": 500,
+      "expected_optimizer_steps": {
+        "g": 625,
+        "d": 532
+      },
+      "full_state_reload_and_rng_exact": true,
+      "atomic_completion_record": true
+    }
+  ],
+  "probe_sha256": "f77541904b211a60ca6be24f89e22153c63a0d74afd8fb37fbb638191e5d28a1",
+  "smoke_sha256": "a0f58197d99dea71e19f6b1ce0ade2491173bba1576c8e4ba44ed844faf48e63",
+  "modulation_sha256": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+  "python_syntax_valid": true,
+  "help_cli_verified": true,
+  "post_fixture_delta": "Added run-local *.partial ignore in prepare(); tested checkpoint helper unchanged.",
+  "independent_source_review": {
+    "reviewer": "localized_student",
+    "reviewed_probe_sha256": "7445e28547239f470123fbaa3e1048dd684b72f47c35d419375f08fd518c090b",
+    "blocking_findings": 0,
+    "final_ignore_delta_review_pending": false,
+    "final_probe_sha256": "f77541904b211a60ca6be24f89e22153c63a0d74afd8fb37fbb638191e5d28a1",
+    "final_delta_confirmed": true
+  }
+}
