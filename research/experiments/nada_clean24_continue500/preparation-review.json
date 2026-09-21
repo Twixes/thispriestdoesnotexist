@@ -1,0 +1,36 @@
+{
+  "prepared_utc": "2026-09-21T06:02:58.980727+00:00",
+  "status": "prepared_not_executed",
+  "model_imports_or_loads": false,
+  "training_launched": false,
+  "original_sources_and_checkpoint_unchanged": true,
+  "lightweight_tests_passed": 6,
+  "harmless_lifecycle_scenarios_passed": 5,
+  "pinned_files": 258,
+  "fresh_train_rows": 490,
+  "all_unique_original_plus_fresh_z": 540,
+  "eval8_equal_original": true,
+  "native_step10_restore_is_unexecuted_gate": true,
+  "pending": [
+    "Exact actual checkpoint student/Adam/RNG restoration",
+    "All16 original native step10 PNG byte matches before update11",
+    "Fresh source forward overhead and longer-run memory/time",
+    "Native checkpoint50/100/250/500 quality review"
+  ],
+  "source_review": "review.diff contains full original\u2192continuation source delta; directional helper syntax identical, bootstrap removed, exact resume gate +perstep source forward+four atomic checkpoints added. Runner retains owned cleanup, with60min cap/490new updates/live competing-process checks.",
+  "files_sha256": {
+    "research/experiments/nada_clean24_continue500/runner.py": "31cbd14c9e21492ddafc6c7e2f9b85bd18d87838e09a35e927cbdb51bae7d960",
+    "research/experiments/nada_clean24_continue500/worker.py": "2ede6bc1cf632c91d04688e160d95615a5ee32b693bbbb089feebff782080b9d",
+    "research/experiments/nada_clean24_continue500/inputs.json": "42b164e3e6c6a195bd26641ce39446f28f327a6205a779ad842fd4ff8b74e4cb",
+    "research/experiments/nada_clean24_continue500/latents.npz": "c2f470db97c0b07ff2890aa63e19eeaa353ce363a050f33399c462da3706b440",
+    "research/experiments/nada_clean24_continue500/pins.json": "a21cbe9d0d834faed5b512a4f082462adf493fab5a97dd4c0f0be2bcfc0b70d8",
+    "research/experiments/nada_clean24_continue500/review.diff": "8794633644a1f1920b44dd68f5eb4ea97a56590a6f71b028fbc6ff4a71a5f783",
+    "research/experiments/nada_clean24_continue500/test_preparation.py": "55f115823ca4ac6dcb45ae673730c162279f1926c6ca2f86c59b2ad3703f1f67",
+    "research/experiments/nada_clean24_continue500/test_lifecycle.py": "a4688f9252b18d8800976752ced0cb7d0f5fd95185d687810d6ac82ca72561d2",
+    "research/experiments/nada_clean24_continue500/preparation-test.log": "1574055712a07c1d9379d83284071e4bfd6a96418a51e73aeb1f8bcee226fc6e",
+    "research/experiments/nada_clean24_continue500/lifecycle-test.log": "9603f7ee306e018da0e1f9e4b11a3d17d4e13dd8eb4e5446432a0c86fee64325",
+    "research/experiments/nada_clean24_continue500/lifecycle-evidence.json": "b525ed568c743a49a03459bd1604c2d2bfda8b6f2535c5690781241d988ecde9",
+    "research/experiments/nada_clean24_continue500/preflight-check.json": "9aaaf1be37d63bfeefbd63669b8077aeb05993bf1c81ee9d3a25c4fd8f17f6fc",
+    "research/experiments/nada_clean24_continue500/README.md": "b6d3b2197a3b10c90a2ef159a51b2f50542aa48eade68af2a00623592db02384"
+  }
+}
