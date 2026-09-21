@@ -1,0 +1,32 @@
+{
+  "prepared_only": true,
+  "native_model_loaded": false,
+  "native_fi_executed": false,
+  "main_adaptation_executed": false,
+  "files": {
+    "fixed_offset_policy.py": "60dbcf1b8d9358a3279fa3538af434f81ba849ede76438213061538174eb8af6",
+    "selection_fixed_offsets.py": "840700d66e2f069bee8db52ad7593556f27d648265aa2018492f3d9ed4040881",
+    "adaptation_masks_fixed_offsets.py": "704253fc79a9ff03d2bbd8ad51dd87416b88b7ee5b627473930b11c4c3cb539d",
+    "estimate_importance_fixed_offsets.py": "2c80a760a562aad5fb8fa33848729a6ae0acad4683e0fa5123928956cbc03ec5",
+    "test_fixed_offset_stages.py": "7b1082786e8c942d817e013b4e09df2d69a8610f7628236b35afaa7605d22983",
+    "fixed-offset-stages-README.md": "da591b71caafa847f098bf9c4c3e94f37fe7708c8b8bda2945fc5a1104b080a9"
+  },
+  "unchanged_parents": {
+    "modulation.py": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+    "selection.py": "e533d95d485eb0e1ff2e5fd0da8039ef1e4c251b501efa5b37fe031ba8b48192",
+    "adaptation_masks.py": "37b34e7046f154c9345cdd462c1a8cdf79e39095cf0d98b244e1de8903668948",
+    "estimate_importance.py": "a54deac92d67685195d104f8ee27029923198add23c57a8dcf09747dede68d25",
+    "importance.py": "1d1d253e8659863ed567f22201423389f71df36a572657896aadcda8d1ab9bbb",
+    "probe_output_rank1_fixed_offsets100.py": "1a2dddaf8610def1ea23ceb2de14773e4eaed9d239f4ddb59cc27f2f6e3945dd",
+    "continue_output_rank1_fixed_offsets500.py": "951afabe41f7f41e83edc1162c72d59eeb33b745d9d7b5d5069f25311608f5f5"
+  },
+  "validation": {
+    "command": "research/.venv/bin/python research/experiments/adam_native/test_fixed_offset_stages.py",
+    "tests": 3,
+    "passed": 3,
+    "seconds": 0.835,
+    "scope": "Tiny randomly initialized native32 models; retained-FI gradient equivalence, score/mask equality, real adversarial/R1/path Adam and EMA invariants, folding and negative controls"
+  },
+  "next_command": "research/.venv/bin/python research/experiments/adam_native/estimate_importance_fixed_offsets.py --run research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1 --step 500 --pairs 4 --output research/runs/adam-native1024-fixed-offsets-ema-importance4-v1",
+  "next_command_conditional": "Only after completed checkpoint authentication, independent decision to evaluate it, and fresh resource checks; no concurrent native training worker."
+}
