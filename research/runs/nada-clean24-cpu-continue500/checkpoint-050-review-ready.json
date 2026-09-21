@@ -1,0 +1,123 @@
+{
+  "step": 50,
+  "path": "checkpoint-050.pt",
+  "sha256": "d90de1b33c391d051fabf1cb87c101f5bb7eaa0324897e6ba1351240f70df6bb",
+  "full_checkpoint_nested_sha256": "9aea533029c34ce4f93e56e11aa1eb170f2248abe49a78bf251bfc48f0938b56",
+  "actual_student_adam_rng_reload": true,
+  "native_preview_reload_equal": true,
+  "source_clip_and_frozen_student_unchanged": true,
+  "previews": [
+    {
+      "step": 50,
+      "latent_index": 0,
+      "kind": "student-rgb",
+      "path": "preview-050/000-student-rgb.png",
+      "sha256": "16d8d401f13e973e3c9c3339e9f878ca62ccdc1829bb2e7b484be5bde7b1a051"
+    },
+    {
+      "step": 50,
+      "latent_index": 0,
+      "kind": "student-gray",
+      "path": "preview-050/000-student-gray.png",
+      "sha256": "d39c52086ae1ccc371753a560c528f3b52fca1bdf23f6d926a9cdf756f3f57b7"
+    },
+    {
+      "step": 50,
+      "latent_index": 1,
+      "kind": "student-rgb",
+      "path": "preview-050/001-student-rgb.png",
+      "sha256": "c7ac240b9fbed24f6331e6e87c0f504c9c0827a351b494f1207043895565e4f3"
+    },
+    {
+      "step": 50,
+      "latent_index": 1,
+      "kind": "student-gray",
+      "path": "preview-050/001-student-gray.png",
+      "sha256": "e592a606c050eb3feac627bc1ded412772972f91656ac236d77e9b1dbf553237"
+    },
+    {
+      "step": 50,
+      "latent_index": 2,
+      "kind": "student-rgb",
+      "path": "preview-050/002-student-rgb.png",
+      "sha256": "fe99c3a7682377e1978c6fdf4688c06ecf38d32a8b5bc5a512b42e2c59a48514"
+    },
+    {
+      "step": 50,
+      "latent_index": 2,
+      "kind": "student-gray",
+      "path": "preview-050/002-student-gray.png",
+      "sha256": "87a292773e434849c18fe40f3d4e12ebba575630199174d66f1fe5e6f62b4721"
+    },
+    {
+      "step": 50,
+      "latent_index": 3,
+      "kind": "student-rgb",
+      "path": "preview-050/003-student-rgb.png",
+      "sha256": "640ea79db22946a0aaa007d4bd7ee05b41081099a1e3d26d8f5988c1ea71ecc6"
+    },
+    {
+      "step": 50,
+      "latent_index": 3,
+      "kind": "student-gray",
+      "path": "preview-050/003-student-gray.png",
+      "sha256": "dc2d832546f57af0601b39cc9a60b303c171301cf785c7470707ee197b0a9867"
+    },
+    {
+      "step": 50,
+      "latent_index": 4,
+      "kind": "student-rgb",
+      "path": "preview-050/004-student-rgb.png",
+      "sha256": "63ec49697d38deca24eac81d9cfd7f5c22dad2df2abe35ed9f0d0390a4a19244"
+    },
+    {
+      "step": 50,
+      "latent_index": 4,
+      "kind": "student-gray",
+      "path": "preview-050/004-student-gray.png",
+      "sha256": "cf5a791859289758525525bcd3c753e4b7b6756da09a3d9bee581c6707c50855"
+    },
+    {
+      "step": 50,
+      "latent_index": 5,
+      "kind": "student-rgb",
+      "path": "preview-050/005-student-rgb.png",
+      "sha256": "04a24d4c4f507c681d14934ed5b8d175afe17463869c9f07c1b3f440509db046"
+    },
+    {
+      "step": 50,
+      "latent_index": 5,
+      "kind": "student-gray",
+      "path": "preview-050/005-student-gray.png",
+      "sha256": "3644cb4fff29043e46af47670274e419957b8c776bc2b23b77627023673a59c2"
+    },
+    {
+      "step": 50,
+      "latent_index": 6,
+      "kind": "student-rgb",
+      "path": "preview-050/006-student-rgb.png",
+      "sha256": "11c45837e2c879c4328f38ad2b05ba757fd3102e5ebd6a11b3888e29cfb72de6"
+    },
+    {
+      "step": 50,
+      "latent_index": 6,
+      "kind": "student-gray",
+      "path": "preview-050/006-student-gray.png",
+      "sha256": "6ba460184ed6b33bd8b2b4ae11da427a23b701e9b4ce5e9332155c07275df44e"
+    },
+    {
+      "step": 50,
+      "latent_index": 7,
+      "kind": "student-rgb",
+      "path": "preview-050/007-student-rgb.png",
+      "sha256": "2774c24b74123b0b5d21a42d471c990594a31905f166734fc134cbdbe9137579"
+    },
+    {
+      "step": 50,
+      "latent_index": 7,
+      "kind": "student-gray",
+      "path": "preview-050/007-student-gray.png",
+      "sha256": "0e2196c2efc315518de5ab93d29ede3a486bb1755ae2b55ae572c8c7c84788d1"
+    }
+  ]
+}
