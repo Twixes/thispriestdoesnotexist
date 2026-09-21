@@ -1,0 +1,9 @@
+{
+  "reviewed_utc": "2026-09-21T04:38:39.326191+00:00",
+  "independent_checks": "All134 source/output files byte-equal; expanded dataset digest independently recalculated; assembly script reviewed.",
+  "accepted_for_deliberate_changed_data_experiment": true,
+  "training_launched": false,
+  "decision": "Prepared input for next changed-data experiment after current baseline review. Do not pass as exact resume of original110. New24 source quality and whole-frame crops reviewed separately. Existing110 visual acceptance inherited from earlier work, not re-reviewed here.",
+  "expanded_dataset_sha256": "2d50e93823001b08ae30eb4e0e1086050b4c8f6808cf791e57e60e176a44ebeb",
+  "production_approved": false
+}

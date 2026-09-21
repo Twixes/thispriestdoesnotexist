@@ -1,0 +1,2125 @@
+{
+  "created_utc": "2026-09-21T04:37:16.516790+00:00",
+  "status": "prospective_expanded_dataset_fork_input_only",
+  "accepted_training_dataset": false,
+  "training_launched": false,
+  "same_dataset_continuation": false,
+  "model_output": false,
+  "count": 134,
+  "groups": {
+    "aligned110": 110,
+    "whole24": 24
+  },
+  "assembly": "Byte-exact shutil.copyfile only; no decoding/re-encoding, grayscale conversion, resize or geometry change during this assembly.",
+  "geometric_mixture": "110 previously accepted collar-only eyes42 aligned crops, unchanged, plus24 whole-original grayscale/LANCZOS256 portraits with unnormalized source eye positions, head sizes and tilts. This is an intentional changed-data fork candidate, not an exact same-dataset continuation.",
+  "source_digest_algorithm": "SHA256 of sorted recursive PNG relative-path UTF-8 bytes followed by each PNG file bytes, repeated without separators; matches archived reference trainer lines200\u2013206.",
+  "original110_dataset_sha256": "3a6e258a9b9ddae8d415b70c3be540ff39cf44e8a37d80ab71540058f1ee0553",
+  "original110_digest_verified_before_and_after": true,
+  "expanded_dataset_sha256": "2d50e93823001b08ae30eb4e0e1086050b4c8f6808cf791e57e60e176a44ebeb",
+  "digest_algorithm_source": "research/runs/reference256-paper-b64/train-source.py",
+  "digest_algorithm_source_sha256": "00b5266875dbe07169025eb7b38b22a412230019c52d1bae77eeb8daf0045b13",
+  "whole24_manifest_path": "research/data/plain-background24-whole-image/manifest.json",
+  "whole24_manifest_sha256": "334ad5bfa22c72baab1d7a24298616483d125a9fccbc3a7816b1b3b2ef59067d",
+  "all134_source_hashes_unchanged_before_after": true,
+  "source_hashes_after": {
+    "research/alignment/collar-only/eyes42/original-001.png": "c1d0cb6ec434c296d7124b4d6233721092220cda9fa25c9bdaeafec13d63be1c",
+    "research/alignment/collar-only/eyes42/original-002.png": "221975c700492a1755008938dae0de4e5e87db28ce5a6bfa8e82d362e34734fb",
+    "research/alignment/collar-only/eyes42/original-003.png": "ae0dce1238205c63dd8d4340198e4e0bf7b4504f81b79d54b4935e255ea010f0",
+    "research/alignment/collar-only/eyes42/original-004.png": "41d39e6570fa8657d8fcdb50893488a429566ffb41a3d290d171549061a6141d",
+    "research/alignment/collar-only/eyes42/original-007.png": "6f3558415d3070bed45843907ef4d7195ce8b86bb7ae07d941a6270e2fa7f593",
+    "research/alignment/collar-only/eyes42/original-009.png": "307328fe32ae7e9c1a6ae3d5d8077a6550e013e920071be2923d6e1a6e07dc15",
+    "research/alignment/collar-only/eyes42/original-010.png": "745c8cac4eb0912a22e85480c083f54107cb1d1fe5e52ca0b7f88f2dfd3b7c3a",
+    "research/alignment/collar-only/eyes42/original-013.png": "a619ec556f1c613413dfd1fbf382a3844254db0f4271c8931a41d4b0cc0c29f7",
+    "research/alignment/collar-only/eyes42/original-018.png": "8684ac1fe532eaf804884117bf3f49b720ccc078489b1abcf1d578e2963e76f2",
+    "research/alignment/collar-only/eyes42/original-020.png": "56b940ed9fa8ea9028a05e98a50ef2ea9e2eff921c366fa71cd2369f9e2a5acc",
+    "research/alignment/collar-only/eyes42/original-022.png": "ea1c29eb49b0edc899994a9036372db2f0de1386a9e9e396bcf4d87fb4ca96a4",
+    "research/alignment/collar-only/eyes42/original-023.png": "2763b44377d089aabdd48284a91ac59c7bc38cc5fa0ae8bf1eff3bdcf2a63455",
+    "research/alignment/collar-only/eyes42/original-025.png": "8ff7d2c1086b57f62e6611b95a4ac7b7a58929ed0b4ca9d6170f0cf4a9223b56",
+    "research/alignment/collar-only/eyes42/original-027.png": "22a9bb8ddfd43bd5ca6550b980cae6f0d91431275d10ec62fedf9eb8b979d04b",
+    "research/alignment/collar-only/eyes42/original-033.png": "b17847016099fe738fa29a033a9c597bc78758bfb1e0f4e448440838c0450141",
+    "research/alignment/collar-only/eyes42/original-036.png": "1cd022f940cdbe5bdbf6a34cafbba3bd9c169a2572c23b662f03552855d4410b",
+    "research/alignment/collar-only/eyes42/original-038.png": "d5506ed7c72d14e855dd9395bcaff43560473370563fd22b49280317a4fec6e1",
+    "research/alignment/collar-only/eyes42/original-045.png": "448a727d2d673e222d32657da12fc50213f701935e3dead43e17f29271cbbede",
+    "research/alignment/collar-only/eyes42/original-046.png": "e2c044ff958847e20e8703a00173c99fe5c4b009b1ec45c84c8fc8900af3dd0a",
+    "research/alignment/collar-only/eyes42/original-047.png": "c6227bc5ce8921a7130dc45c8f42cf807fa0ede977dabf5ded060a604bd870ee",
+    "research/alignment/collar-only/eyes42/original-051.png": "6ea08fe91ae87e64c78e3f52cd7df462271c0b8efd184c1f3a140af02c97510b",
+    "research/alignment/collar-only/eyes42/original-052.png": "ff5f20090804e31fa407aacccf9f42668f2e506e33b119e9a1769a8e02af81cf",
+    "research/alignment/collar-only/eyes42/original-053.png": "c33f9701c263cd45ae41ccf4834769482325a36693695f6f0df8dc86292913d9",
+    "research/alignment/collar-only/eyes42/original-054.png": "544ac12bd1af37f0389dd3a9c9df4b36a0b57c86545a224e51093021f315c38c",
+    "research/alignment/collar-only/eyes42/original-055.png": "c9e28d7e72a0c0c0868949d3f90f856dea09491d2260109037c69d88c2b9b611",
+    "research/alignment/collar-only/eyes42/original-056.png": "34d1babe290c7533affb7ab996556f2a321d61f95d0b7fc1c70915e815e3f534",
+    "research/alignment/collar-only/eyes42/original-057.png": "773dad8403bc0df4867a92fa0d436f94ea4d3d7f375ffe10cf626fe9f801028e",
+    "research/alignment/collar-only/eyes42/original-058.png": "b15992585b836bff5fb7f860a456ec644e376592b68aab91435f0223986857c3",
+    "research/alignment/collar-only/eyes42/original-059.png": "8cf1236016f403587d35a8f49ba179a6c1dc7768a0800fe2ccf93f76ddc6d1de",
+    "research/alignment/collar-only/eyes42/original-060.png": "9a9c0aa3848ecba150c78d003456431c0d91c291d14cacde7a9d91f388ebe62c",
+    "research/alignment/collar-only/eyes42/original-061.png": "fb5406eb2040c186e38f02046e4d1eb8e472ecb5ce6d50ffa109a489d22074f7",
+    "research/alignment/collar-only/eyes42/original-062.png": "fa13cc835e04519d808e92c212906b528efd9421baa74e29e3e43b834401eb4d",
+    "research/alignment/collar-only/eyes42/original-063.png": "263e6505f19943abd17282f1f9379231b02efca66a5c5fa093416fe00351eb1e",
+    "research/alignment/collar-only/eyes42/original-064.png": "63eaf1ee0dbf6eeb8f9a125ed3c3137fe53f71b9a7d196494264edb1053e07ad",
+    "research/alignment/collar-only/eyes42/original-065.png": "b856097d32a4e57be0a45133231eaaec5ec081e1e0c7d5970b3754c60519fdbf",
+    "research/alignment/collar-only/eyes42/original-066.png": "c5a0f18a04958758abc6f200dcb26a709804f8b361279e0c8816ca92a0af811b",
+    "research/alignment/collar-only/eyes42/original-067.png": "8d2e8084270bcb68c280fadef8305a682241b1d053d53b32984826e92ed474d8",
+    "research/alignment/collar-only/eyes42/original-068.png": "f1a37d940c2b96b871d58a0e49f3333f4b648fe7bf0fc01b15e0adfe1defa459",
+    "research/alignment/collar-only/eyes42/original-069.png": "c950f6ab50bd37c83d1e5de766e9660e0907da49efd6ed1160721a41ad71d160",
+    "research/alignment/collar-only/eyes42/original-070.png": "3b927fadb362592e8327801757cc7d688035486c088ff86209a6ed7e613c4f10",
+    "research/alignment/collar-only/eyes42/original-071.png": "b4e258b39df0affd260a715cdf43db243bd68a648e58d6c7794be86cc71f11ac",
+    "research/alignment/collar-only/eyes42/original-072.png": "8b06b9410891dd4b0c23453ed2e828eb71ccdb2bb9f272b482d434860567f9db",
+    "research/alignment/collar-only/eyes42/original-073.png": "0d3abcfa8b70ee7568df8cae04707481fcc10890cf19724de97e389b6863df6b",
+    "research/alignment/collar-only/eyes42/original-074.png": "a1ef2b77cf541174ba085df3f7e12ff1f9e62b010fdb643c5c6a6cc57a47194d",
+    "research/alignment/collar-only/eyes42/original-075.png": "7039716ab1bff85d52aceb27e52c029264da68e22b8edbaaf81af0ddaa809abd",
+    "research/alignment/collar-only/eyes42/original-076.png": "03be09e5ef7ee727ba073c1d5b15684b58a000504260ce9e25ab921e9cb57816",
+    "research/alignment/collar-only/eyes42/original-077.png": "7c8ce9afe3a0bc7e6979a2697dfc38f37666702cf26ae389862891158a3b6079",
+    "research/alignment/collar-only/eyes42/original-078.png": "0e53a39e47cdaf6fb26d30010f2ce5554b7112beb810429b506a164a79892b0b",
+    "research/alignment/collar-only/eyes42/original-079.png": "c24528c402b7bcf1a71f2818bc78fe049bfc6da972ba8d64c409cdeab5ea0658",
+    "research/alignment/collar-only/eyes42/original-080.png": "98b855137e2f51f9cdc0622119c1e99347c5a0abf03436aefd2b51e9fab9281b",
+    "research/alignment/collar-only/eyes42/synthetic-081.png": "d155f227be262f5f5e536b858079648d3e9748216bb845b3fdd5afbeb89107f7",
+    "research/alignment/collar-only/eyes42/synthetic-082.png": "7b37a7df5fd955bd042b6c4a0d02d56b8c197bfd7f992f5e8cff9d7ff8ea9fce",
+    "research/alignment/collar-only/eyes42/synthetic-083.png": "27e18244a02b653651fc112f9bff3840492754b73e990e498d08685151610d62",
+    "research/alignment/collar-only/eyes42/synthetic-084.png": "8f5ae074cf62478d95d780f9653c18cd382be4d19fad5a6aa7a8ac460d77a99e",
+    "research/alignment/collar-only/eyes42/synthetic-085.png": "9e51def9f8d8fcb30d99a902034fe460ec3d19e668dcb2d31db4579821cc2fa1",
+    "research/alignment/collar-only/eyes42/synthetic-086.png": "994fd2b596b753ecbd06653c7f829c650a01be57d3abd3f0dd1fa18d8437d8f5",
+    "research/alignment/collar-only/eyes42/synthetic-087.png": "27bd54661ac88ffe2536052f7c4ba8411bbbd0cf579029aa46135afad5a4f850",
+    "research/alignment/collar-only/eyes42/synthetic-088.png": "7736c968f50b485f0892426aec36be5f7d95567c37bce77b941942e9302fd804",
+    "research/alignment/collar-only/eyes42/synthetic-089.png": "db612ba6f557533b9632f61bc00fa1dcd8c2ec4c914c6f4a7852395c2acf25bd",
+    "research/alignment/collar-only/eyes42/synthetic-090.png": "12cda26b7f43d0ddb1a1fd43efcffc7b16564de25970a1e9872424f8f78e9ee3",
+    "research/alignment/collar-only/eyes42/synthetic-091.png": "581faef0a6b0ca79c2092f26c56a90d2e206440ebd472fa49a83eb6365b24e5d",
+    "research/alignment/collar-only/eyes42/synthetic-092.png": "3a78c42676de4782b7a4b41a912595f0604f5bb022c0fd28520224973dbc3db1",
+    "research/alignment/collar-only/eyes42/synthetic-093.png": "0297bc9726634510be213ee4433966d04358be9c1eb2621038c50b0d6f3b3d4c",
+    "research/alignment/collar-only/eyes42/synthetic-094.png": "5cf2746760b55e626c48013cb695f7a41b7e314ea3ad132adc30171d01cad563",
+    "research/alignment/collar-only/eyes42/synthetic-095.png": "21c86a6ac12eb51279bc708ee00d8dfddfaae370b83ef92d9ceed6925ca04afe",
+    "research/alignment/collar-only/eyes42/synthetic-096.png": "cc1d1c65b2f8387a0e4ff0ae4ffcebdabb6670b6d6dbd194687338617666fe03",
+    "research/alignment/collar-only/eyes42/synthetic-097.png": "885362703757a30aeaedcef6740bbe6070ea9041295fcf91bc8cc1b556715a37",
+    "research/alignment/collar-only/eyes42/synthetic-098.png": "955d22f3a74c140386db7aa6bc32e97e79d237063484ad71bfb1568f061b9bf2",
+    "research/alignment/collar-only/eyes42/synthetic-099.png": "644c5e9259ac2f1dfb4fea2ca59c7036ef9d0200bd187f71744845b993698f38",
+    "research/alignment/collar-only/eyes42/synthetic-100.png": "0f27d74323c1cabb60b38f10158a37ca1fb01d7a75da421810b93ed0f647bf55",
+    "research/alignment/collar-only/eyes42/synthetic-101.png": "9f744839fe20ad3da5383014f63e8477bb203db855eb38fd12108d88c1f0c431",
+    "research/alignment/collar-only/eyes42/synthetic-102.png": "a4739bb14af4e9eed993e4f183a46b8e2f026c6a666ff244e9293790488821d0",
+    "research/alignment/collar-only/eyes42/synthetic-103.png": "1ed06eabbf6ad91a2748a7cafd7ef0606fa7a92afb4423dd1bee74358df26afb",
+    "research/alignment/collar-only/eyes42/synthetic-104.png": "26e84fbd0b070d02b32d35b3c3dcb7aba0b9afc5e21e0155ec50e472e46129f3",
+    "research/alignment/collar-only/eyes42/synthetic-105.png": "22ad39544ca97f1f3e373a5aa8769892e0f6f2955df8e77d02ba813437261fb5",
+    "research/alignment/collar-only/eyes42/synthetic-106.png": "44d6fea64f16829d6f65b54b526314a1605f668d62f9be39f0cd092b0642d99a",
+    "research/alignment/collar-only/eyes42/synthetic-107.png": "c24db6b7efe3a038d56cb5a0e3dd350e74abbe064712558e2a644993e893dc65",
+    "research/alignment/collar-only/eyes42/synthetic-108.png": "c4ad62d51ca12d04915e09e8f70452b8a10f438be3d0d1434a8b4bd712f98a85",
+    "research/alignment/collar-only/eyes42/synthetic-109.png": "8c2601eb385eae1d62207fc219ed991592edc9eb9657ec47c2de07bb60a0c75d",
+    "research/alignment/collar-only/eyes42/synthetic-110.png": "c7a9d661f063f8533ff46b5b5bcc5d9b3c7f00425737ba3d5c1ee7eee958dd98",
+    "research/alignment/collar-only/eyes42/synthetic-111.png": "e98183391a2e674e5d537b6951868b7253b62778fec629383bb1758da1271a11",
+    "research/alignment/collar-only/eyes42/synthetic-112.png": "6c84d847eee1c98569a54a0990a1abcea95955886fde1153a9498e62aaf4f843",
+    "research/alignment/collar-only/eyes42/synthetic-113.png": "029df6784e61733d689881ead6b46aed443c73c13d740f52c8ae0d3762117a40",
+    "research/alignment/collar-only/eyes42/synthetic-114.png": "dc974a6562ca51c54a5506859add3235c57ef2aa9330824bb75f61670643d1ee",
+    "research/alignment/collar-only/eyes42/synthetic-115.png": "04067bc16eb758b998877230c646f43b4b7e38b777dce38c6d8a8911492e3f6a",
+    "research/alignment/collar-only/eyes42/synthetic-116.png": "797c91996f6055dd51267b633ce1ebdc883eb2205ee243d97bbd86c1dc8c5a43",
+    "research/alignment/collar-only/eyes42/synthetic-117.png": "2d2c8f1b174e91f984a150d978fcc5487716ddb27d92be97f1a553b85da1e583",
+    "research/alignment/collar-only/eyes42/synthetic-118.png": "9dd45fe5d7a5f090d8c57d93654a0c67a13056b85a0352cc4e490f80055bf313",
+    "research/alignment/collar-only/eyes42/synthetic-119.png": "916ea50c07bb836cef3afbc99e06f502022f1476b2b277c00051618572d9ef11",
+    "research/alignment/collar-only/eyes42/synthetic-120.png": "b2aca6003f35fa5de3a7f461954b133ce95c50c12dce575423aa95d9252b0583",
+    "research/alignment/collar-only/eyes42/synthetic-121.png": "9402844c87ff856609eef73bde8e846e374f74bef81153c1b36e4646315f67a2",
+    "research/alignment/collar-only/eyes42/synthetic-122.png": "d78be1f3eee8a82766051e2c1f9dcc268583f7ce0238c893caac4ad9e728877b",
+    "research/alignment/collar-only/eyes42/synthetic-123.png": "006f82f23be2cff08cada4a73e46e6691a8114bb8217752ac9bce82079239ff5",
+    "research/alignment/collar-only/eyes42/synthetic-124.png": "608781ebcccee664384e060acd03cf4ee85fc62cc151cd6943961555ffe05509",
+    "research/alignment/collar-only/eyes42/synthetic-125.png": "21006186bd4cb5cf4f3a16ec3134fa19c3e747083c7276ca6d85d1c9a77715ca",
+    "research/alignment/collar-only/eyes42/synthetic-126.png": "b6acdace67e291933058354e11fd89b0ac4030940963222c57a790c2f7340002",
+    "research/alignment/collar-only/eyes42/synthetic-127.png": "b5945abb40b2c51f8cb74719f158f37753eed33d50be8e74cff5a9a76d82a58f",
+    "research/alignment/collar-only/eyes42/synthetic-128.png": "8e20c08bdb98e83d1e33268204cd480075ee634db3311f8ac412388f7542a84a",
+    "research/alignment/collar-only/eyes42/synthetic-129.png": "a1afa8db12bad3cc55528728b56e7f9d9edca0f3cda75278157e5be69325dd9f",
+    "research/alignment/collar-only/eyes42/synthetic-130.png": "76e924beebf827a11de5462504c9a6d15eef5b6d079978de7f8515eca098ced7",
+    "research/alignment/collar-only/eyes42/synthetic-131.png": "feab92a9494660e0da22a286574dc2ff9c02d17c53ef92d8a0697e79a72e254e",
+    "research/alignment/collar-only/eyes42/synthetic-132.png": "39c3b6fc72c624352555bd5ef1f842396aa633d74deeb2fb7fb0632aaf544619",
+    "research/alignment/collar-only/eyes42/synthetic-133.png": "dfd4157bce18e82991543fa2646c4ce8095dea7165b1e3755179e3677e738b3c",
+    "research/alignment/collar-only/eyes42/synthetic-134.png": "42f424def56004514eb0301f056be8782c7f307719a878cff3d41bb5a1e2d9a4",
+    "research/alignment/collar-only/eyes42/synthetic-135.png": "90dc2d25cba94b7ad801cf0fee0fafa7bc8e7f311a3bbfa08a8b3e9632112216",
+    "research/alignment/collar-only/eyes42/synthetic-136.png": "bc7c6fcc88be483cb736b4c423b731814c04712e1038ae305a65e79dc24d8936",
+    "research/alignment/collar-only/eyes42/synthetic-137.png": "19f0b1c284cc02d6aba1c6080aa88cb4247fbd37d76607170acf742aef9b828c",
+    "research/alignment/collar-only/eyes42/synthetic-138.png": "33bec28577a55b61d59c014b208980d78db3eea1080654c8e70928522e8ed101",
+    "research/alignment/collar-only/eyes42/synthetic-139.png": "9774d71977fb9c5d95b826cb15820c103bee5506dea70d9571538fd89ac7c6dc",
+    "research/alignment/collar-only/eyes42/synthetic-140.png": "21e2624aad0abcd853998ca6cc45ae948d0f6575406581fc677db89ac72ff712",
+    "research/data/plain-background24-whole-image/256/141.png": "d0a0242e17d13de8b1381c556f79f807f9cd49d5c2590a4a2767df26ffe38f35",
+    "research/data/plain-background24-whole-image/256/142.png": "0e197c8ce38947b95bbe9f0cfa8b2c0bef3e52f75780814f782d3f2d165c62af",
+    "research/data/plain-background24-whole-image/256/143.png": "de13838e672147291ab0c8c980a99ea36f9d76d6a60ce5f28fb2332fe170f285",
+    "research/data/plain-background24-whole-image/256/144.png": "96c41c33e74b5a2a9028399a6ece8397955fd5a8c694eefdb39be0c5551c61e0",
+    "research/data/plain-background24-whole-image/256/145.png": "d53f384ab5e4fddf86d15fe47b3ab9a95ae6adf1c1d3201ebef231c1beac8966",
+    "research/data/plain-background24-whole-image/256/146.png": "c23e36f971b2e52e3298ffe4a87cf66454bbb71b8f3ad2958e95786aafc73062",
+    "research/data/plain-background24-whole-image/256/147.png": "407779789d997437e5908feb1b3aa4f399d01393f8183c3c8c80ed4a17717c22",
+    "research/data/plain-background24-whole-image/256/148.png": "f8d5a9ea865bb295fa17e8bed8aeebc4c96b0b23883cc73c63cb5506d18a95d3",
+    "research/data/plain-background24-whole-image/256/149.png": "7cf5d5aeab619e45943028fe77c6c2c6a5ce42ee2ad6a682969e04a9717ce43c",
+    "research/data/plain-background24-whole-image/256/150.png": "5df9f495b6e9dda13b83d9deac8d03d91e32936795b38c8685bea4f91485bf3a",
+    "research/data/plain-background24-whole-image/256/151.png": "0c55c78ab315053af7d8fd1a419d68d777cb6d089d3e39f600f8bb2eea791079",
+    "research/data/plain-background24-whole-image/256/152.png": "810b999f6113f32c77b384576175b14ed0df8494cb002ce5ea1fa02b69d86fca",
+    "research/data/plain-background24-whole-image/256/153.png": "7f5f75236dad1002767457cbb1a7dd5ca4680f99836e87b8ab291ce85dae86b3",
+    "research/data/plain-background24-whole-image/256/154.png": "d3fba5f52da361ae5c7cf76ea6a79b4a2fa75dda71e965ac24fce32b6543551d",
+    "research/data/plain-background24-whole-image/256/155.png": "044f020c93aab01d005c91524a2b92fccb4231726db285a716969aab2428b301",
+    "research/data/plain-background24-whole-image/256/156.png": "ec5db68bad1a7fc931d4640c5e914af90d8dc78a39a098d9feb653d040e301d0",
+    "research/data/plain-background24-whole-image/256/157.png": "e95889a842d89478b609c4c508c807766f1f223e272853f961f9397f04280299",
+    "research/data/plain-background24-whole-image/256/158.png": "dc118ebd264c585eb85f7423b54758fac6052a5bdae67d560d0e868034c383d9",
+    "research/data/plain-background24-whole-image/256/159.png": "cedb6d277e8ab3999629c4bd66afc57c13eacec1ae733bba7783f4fbd9d0d22f",
+    "research/data/plain-background24-whole-image/256/160.png": "f541feb701ca8dc630fad7a7578c052dd89c081889bb3e54f40c4dda16e221a1",
+    "research/data/plain-background24-whole-image/256/161.png": "9f763208217c60d697b58871f3b3933752d83f8e5c08cc77ea05f6d67a9cd99e",
+    "research/data/plain-background24-whole-image/256/162.png": "97d26905108a7cdc0225b8028f96f964f0dd78125d279a68f64fc4d94ffbad92",
+    "research/data/plain-background24-whole-image/256/163.png": "01f9fb7e664b434656173c786b80d10171890154fca781e917f1379148915beb",
+    "research/data/plain-background24-whole-image/256/164.png": "67e2b93df0ec37ed3e28e6bdeab4af059e5552df2d50405c10c6e4a6e9921cf4"
+  },
+  "all134_outputs_inspected_for_shape_mode_and_hash": true,
+  "new24_exact_grayscale_channels_verified": true,
+  "filename_policy": "aligned110--<original filename> and whole24--<generated ID>.png; collision-checked. Dataset digest necessarily includes these new names.",
+  "script_path": "research/reviews/assemble-priests134-expanded256.py",
+  "script_sha256": "de2029883e7a1075a4bbd469dd46c0340377b77e1e6705b3259ea501a6aab32c",
+  "versions": {
+    "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+    "pillow": "11.3.0",
+    "platform": "macOS-26.6-arm64-arm-64bit"
+  },
+  "entries": [
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-001.png",
+      "source_sha256": "c1d0cb6ec434c296d7124b4d6233721092220cda9fa25c9bdaeafec13d63be1c",
+      "output_path": "aligned110--original-001.png",
+      "output_sha256": "c1d0cb6ec434c296d7124b4d6233721092220cda9fa25c9bdaeafec13d63be1c",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-002.png",
+      "source_sha256": "221975c700492a1755008938dae0de4e5e87db28ce5a6bfa8e82d362e34734fb",
+      "output_path": "aligned110--original-002.png",
+      "output_sha256": "221975c700492a1755008938dae0de4e5e87db28ce5a6bfa8e82d362e34734fb",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-003.png",
+      "source_sha256": "ae0dce1238205c63dd8d4340198e4e0bf7b4504f81b79d54b4935e255ea010f0",
+      "output_path": "aligned110--original-003.png",
+      "output_sha256": "ae0dce1238205c63dd8d4340198e4e0bf7b4504f81b79d54b4935e255ea010f0",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-004.png",
+      "source_sha256": "41d39e6570fa8657d8fcdb50893488a429566ffb41a3d290d171549061a6141d",
+      "output_path": "aligned110--original-004.png",
+      "output_sha256": "41d39e6570fa8657d8fcdb50893488a429566ffb41a3d290d171549061a6141d",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-007.png",
+      "source_sha256": "6f3558415d3070bed45843907ef4d7195ce8b86bb7ae07d941a6270e2fa7f593",
+      "output_path": "aligned110--original-007.png",
+      "output_sha256": "6f3558415d3070bed45843907ef4d7195ce8b86bb7ae07d941a6270e2fa7f593",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-009.png",
+      "source_sha256": "307328fe32ae7e9c1a6ae3d5d8077a6550e013e920071be2923d6e1a6e07dc15",
+      "output_path": "aligned110--original-009.png",
+      "output_sha256": "307328fe32ae7e9c1a6ae3d5d8077a6550e013e920071be2923d6e1a6e07dc15",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-010.png",
+      "source_sha256": "745c8cac4eb0912a22e85480c083f54107cb1d1fe5e52ca0b7f88f2dfd3b7c3a",
+      "output_path": "aligned110--original-010.png",
+      "output_sha256": "745c8cac4eb0912a22e85480c083f54107cb1d1fe5e52ca0b7f88f2dfd3b7c3a",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-013.png",
+      "source_sha256": "a619ec556f1c613413dfd1fbf382a3844254db0f4271c8931a41d4b0cc0c29f7",
+      "output_path": "aligned110--original-013.png",
+      "output_sha256": "a619ec556f1c613413dfd1fbf382a3844254db0f4271c8931a41d4b0cc0c29f7",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-018.png",
+      "source_sha256": "8684ac1fe532eaf804884117bf3f49b720ccc078489b1abcf1d578e2963e76f2",
+      "output_path": "aligned110--original-018.png",
+      "output_sha256": "8684ac1fe532eaf804884117bf3f49b720ccc078489b1abcf1d578e2963e76f2",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-020.png",
+      "source_sha256": "56b940ed9fa8ea9028a05e98a50ef2ea9e2eff921c366fa71cd2369f9e2a5acc",
+      "output_path": "aligned110--original-020.png",
+      "output_sha256": "56b940ed9fa8ea9028a05e98a50ef2ea9e2eff921c366fa71cd2369f9e2a5acc",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-022.png",
+      "source_sha256": "ea1c29eb49b0edc899994a9036372db2f0de1386a9e9e396bcf4d87fb4ca96a4",
+      "output_path": "aligned110--original-022.png",
+      "output_sha256": "ea1c29eb49b0edc899994a9036372db2f0de1386a9e9e396bcf4d87fb4ca96a4",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-023.png",
+      "source_sha256": "2763b44377d089aabdd48284a91ac59c7bc38cc5fa0ae8bf1eff3bdcf2a63455",
+      "output_path": "aligned110--original-023.png",
+      "output_sha256": "2763b44377d089aabdd48284a91ac59c7bc38cc5fa0ae8bf1eff3bdcf2a63455",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-025.png",
+      "source_sha256": "8ff7d2c1086b57f62e6611b95a4ac7b7a58929ed0b4ca9d6170f0cf4a9223b56",
+      "output_path": "aligned110--original-025.png",
+      "output_sha256": "8ff7d2c1086b57f62e6611b95a4ac7b7a58929ed0b4ca9d6170f0cf4a9223b56",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-027.png",
+      "source_sha256": "22a9bb8ddfd43bd5ca6550b980cae6f0d91431275d10ec62fedf9eb8b979d04b",
+      "output_path": "aligned110--original-027.png",
+      "output_sha256": "22a9bb8ddfd43bd5ca6550b980cae6f0d91431275d10ec62fedf9eb8b979d04b",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-033.png",
+      "source_sha256": "b17847016099fe738fa29a033a9c597bc78758bfb1e0f4e448440838c0450141",
+      "output_path": "aligned110--original-033.png",
+      "output_sha256": "b17847016099fe738fa29a033a9c597bc78758bfb1e0f4e448440838c0450141",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-036.png",
+      "source_sha256": "1cd022f940cdbe5bdbf6a34cafbba3bd9c169a2572c23b662f03552855d4410b",
+      "output_path": "aligned110--original-036.png",
+      "output_sha256": "1cd022f940cdbe5bdbf6a34cafbba3bd9c169a2572c23b662f03552855d4410b",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-038.png",
+      "source_sha256": "d5506ed7c72d14e855dd9395bcaff43560473370563fd22b49280317a4fec6e1",
+      "output_path": "aligned110--original-038.png",
+      "output_sha256": "d5506ed7c72d14e855dd9395bcaff43560473370563fd22b49280317a4fec6e1",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-045.png",
+      "source_sha256": "448a727d2d673e222d32657da12fc50213f701935e3dead43e17f29271cbbede",
+      "output_path": "aligned110--original-045.png",
+      "output_sha256": "448a727d2d673e222d32657da12fc50213f701935e3dead43e17f29271cbbede",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-046.png",
+      "source_sha256": "e2c044ff958847e20e8703a00173c99fe5c4b009b1ec45c84c8fc8900af3dd0a",
+      "output_path": "aligned110--original-046.png",
+      "output_sha256": "e2c044ff958847e20e8703a00173c99fe5c4b009b1ec45c84c8fc8900af3dd0a",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-047.png",
+      "source_sha256": "c6227bc5ce8921a7130dc45c8f42cf807fa0ede977dabf5ded060a604bd870ee",
+      "output_path": "aligned110--original-047.png",
+      "output_sha256": "c6227bc5ce8921a7130dc45c8f42cf807fa0ede977dabf5ded060a604bd870ee",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-051.png",
+      "source_sha256": "6ea08fe91ae87e64c78e3f52cd7df462271c0b8efd184c1f3a140af02c97510b",
+      "output_path": "aligned110--original-051.png",
+      "output_sha256": "6ea08fe91ae87e64c78e3f52cd7df462271c0b8efd184c1f3a140af02c97510b",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-052.png",
+      "source_sha256": "ff5f20090804e31fa407aacccf9f42668f2e506e33b119e9a1769a8e02af81cf",
+      "output_path": "aligned110--original-052.png",
+      "output_sha256": "ff5f20090804e31fa407aacccf9f42668f2e506e33b119e9a1769a8e02af81cf",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-053.png",
+      "source_sha256": "c33f9701c263cd45ae41ccf4834769482325a36693695f6f0df8dc86292913d9",
+      "output_path": "aligned110--original-053.png",
+      "output_sha256": "c33f9701c263cd45ae41ccf4834769482325a36693695f6f0df8dc86292913d9",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-054.png",
+      "source_sha256": "544ac12bd1af37f0389dd3a9c9df4b36a0b57c86545a224e51093021f315c38c",
+      "output_path": "aligned110--original-054.png",
+      "output_sha256": "544ac12bd1af37f0389dd3a9c9df4b36a0b57c86545a224e51093021f315c38c",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-055.png",
+      "source_sha256": "c9e28d7e72a0c0c0868949d3f90f856dea09491d2260109037c69d88c2b9b611",
+      "output_path": "aligned110--original-055.png",
+      "output_sha256": "c9e28d7e72a0c0c0868949d3f90f856dea09491d2260109037c69d88c2b9b611",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-056.png",
+      "source_sha256": "34d1babe290c7533affb7ab996556f2a321d61f95d0b7fc1c70915e815e3f534",
+      "output_path": "aligned110--original-056.png",
+      "output_sha256": "34d1babe290c7533affb7ab996556f2a321d61f95d0b7fc1c70915e815e3f534",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-057.png",
+      "source_sha256": "773dad8403bc0df4867a92fa0d436f94ea4d3d7f375ffe10cf626fe9f801028e",
+      "output_path": "aligned110--original-057.png",
+      "output_sha256": "773dad8403bc0df4867a92fa0d436f94ea4d3d7f375ffe10cf626fe9f801028e",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-058.png",
+      "source_sha256": "b15992585b836bff5fb7f860a456ec644e376592b68aab91435f0223986857c3",
+      "output_path": "aligned110--original-058.png",
+      "output_sha256": "b15992585b836bff5fb7f860a456ec644e376592b68aab91435f0223986857c3",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-059.png",
+      "source_sha256": "8cf1236016f403587d35a8f49ba179a6c1dc7768a0800fe2ccf93f76ddc6d1de",
+      "output_path": "aligned110--original-059.png",
+      "output_sha256": "8cf1236016f403587d35a8f49ba179a6c1dc7768a0800fe2ccf93f76ddc6d1de",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-060.png",
+      "source_sha256": "9a9c0aa3848ecba150c78d003456431c0d91c291d14cacde7a9d91f388ebe62c",
+      "output_path": "aligned110--original-060.png",
+      "output_sha256": "9a9c0aa3848ecba150c78d003456431c0d91c291d14cacde7a9d91f388ebe62c",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-061.png",
+      "source_sha256": "fb5406eb2040c186e38f02046e4d1eb8e472ecb5ce6d50ffa109a489d22074f7",
+      "output_path": "aligned110--original-061.png",
+      "output_sha256": "fb5406eb2040c186e38f02046e4d1eb8e472ecb5ce6d50ffa109a489d22074f7",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-062.png",
+      "source_sha256": "fa13cc835e04519d808e92c212906b528efd9421baa74e29e3e43b834401eb4d",
+      "output_path": "aligned110--original-062.png",
+      "output_sha256": "fa13cc835e04519d808e92c212906b528efd9421baa74e29e3e43b834401eb4d",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-063.png",
+      "source_sha256": "263e6505f19943abd17282f1f9379231b02efca66a5c5fa093416fe00351eb1e",
+      "output_path": "aligned110--original-063.png",
+      "output_sha256": "263e6505f19943abd17282f1f9379231b02efca66a5c5fa093416fe00351eb1e",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-064.png",
+      "source_sha256": "63eaf1ee0dbf6eeb8f9a125ed3c3137fe53f71b9a7d196494264edb1053e07ad",
+      "output_path": "aligned110--original-064.png",
+      "output_sha256": "63eaf1ee0dbf6eeb8f9a125ed3c3137fe53f71b9a7d196494264edb1053e07ad",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-065.png",
+      "source_sha256": "b856097d32a4e57be0a45133231eaaec5ec081e1e0c7d5970b3754c60519fdbf",
+      "output_path": "aligned110--original-065.png",
+      "output_sha256": "b856097d32a4e57be0a45133231eaaec5ec081e1e0c7d5970b3754c60519fdbf",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-066.png",
+      "source_sha256": "c5a0f18a04958758abc6f200dcb26a709804f8b361279e0c8816ca92a0af811b",
+      "output_path": "aligned110--original-066.png",
+      "output_sha256": "c5a0f18a04958758abc6f200dcb26a709804f8b361279e0c8816ca92a0af811b",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-067.png",
+      "source_sha256": "8d2e8084270bcb68c280fadef8305a682241b1d053d53b32984826e92ed474d8",
+      "output_path": "aligned110--original-067.png",
+      "output_sha256": "8d2e8084270bcb68c280fadef8305a682241b1d053d53b32984826e92ed474d8",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-068.png",
+      "source_sha256": "f1a37d940c2b96b871d58a0e49f3333f4b648fe7bf0fc01b15e0adfe1defa459",
+      "output_path": "aligned110--original-068.png",
+      "output_sha256": "f1a37d940c2b96b871d58a0e49f3333f4b648fe7bf0fc01b15e0adfe1defa459",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-069.png",
+      "source_sha256": "c950f6ab50bd37c83d1e5de766e9660e0907da49efd6ed1160721a41ad71d160",
+      "output_path": "aligned110--original-069.png",
+      "output_sha256": "c950f6ab50bd37c83d1e5de766e9660e0907da49efd6ed1160721a41ad71d160",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-070.png",
+      "source_sha256": "3b927fadb362592e8327801757cc7d688035486c088ff86209a6ed7e613c4f10",
+      "output_path": "aligned110--original-070.png",
+      "output_sha256": "3b927fadb362592e8327801757cc7d688035486c088ff86209a6ed7e613c4f10",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-071.png",
+      "source_sha256": "b4e258b39df0affd260a715cdf43db243bd68a648e58d6c7794be86cc71f11ac",
+      "output_path": "aligned110--original-071.png",
+      "output_sha256": "b4e258b39df0affd260a715cdf43db243bd68a648e58d6c7794be86cc71f11ac",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-072.png",
+      "source_sha256": "8b06b9410891dd4b0c23453ed2e828eb71ccdb2bb9f272b482d434860567f9db",
+      "output_path": "aligned110--original-072.png",
+      "output_sha256": "8b06b9410891dd4b0c23453ed2e828eb71ccdb2bb9f272b482d434860567f9db",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-073.png",
+      "source_sha256": "0d3abcfa8b70ee7568df8cae04707481fcc10890cf19724de97e389b6863df6b",
+      "output_path": "aligned110--original-073.png",
+      "output_sha256": "0d3abcfa8b70ee7568df8cae04707481fcc10890cf19724de97e389b6863df6b",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-074.png",
+      "source_sha256": "a1ef2b77cf541174ba085df3f7e12ff1f9e62b010fdb643c5c6a6cc57a47194d",
+      "output_path": "aligned110--original-074.png",
+      "output_sha256": "a1ef2b77cf541174ba085df3f7e12ff1f9e62b010fdb643c5c6a6cc57a47194d",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-075.png",
+      "source_sha256": "7039716ab1bff85d52aceb27e52c029264da68e22b8edbaaf81af0ddaa809abd",
+      "output_path": "aligned110--original-075.png",
+      "output_sha256": "7039716ab1bff85d52aceb27e52c029264da68e22b8edbaaf81af0ddaa809abd",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-076.png",
+      "source_sha256": "03be09e5ef7ee727ba073c1d5b15684b58a000504260ce9e25ab921e9cb57816",
+      "output_path": "aligned110--original-076.png",
+      "output_sha256": "03be09e5ef7ee727ba073c1d5b15684b58a000504260ce9e25ab921e9cb57816",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-077.png",
+      "source_sha256": "7c8ce9afe3a0bc7e6979a2697dfc38f37666702cf26ae389862891158a3b6079",
+      "output_path": "aligned110--original-077.png",
+      "output_sha256": "7c8ce9afe3a0bc7e6979a2697dfc38f37666702cf26ae389862891158a3b6079",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-078.png",
+      "source_sha256": "0e53a39e47cdaf6fb26d30010f2ce5554b7112beb810429b506a164a79892b0b",
+      "output_path": "aligned110--original-078.png",
+      "output_sha256": "0e53a39e47cdaf6fb26d30010f2ce5554b7112beb810429b506a164a79892b0b",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-079.png",
+      "source_sha256": "c24528c402b7bcf1a71f2818bc78fe049bfc6da972ba8d64c409cdeab5ea0658",
+      "output_path": "aligned110--original-079.png",
+      "output_sha256": "c24528c402b7bcf1a71f2818bc78fe049bfc6da972ba8d64c409cdeab5ea0658",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/original-080.png",
+      "source_sha256": "98b855137e2f51f9cdc0622119c1e99347c5a0abf03436aefd2b51e9fab9281b",
+      "output_path": "aligned110--original-080.png",
+      "output_sha256": "98b855137e2f51f9cdc0622119c1e99347c5a0abf03436aefd2b51e9fab9281b",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-081.png",
+      "source_sha256": "d155f227be262f5f5e536b858079648d3e9748216bb845b3fdd5afbeb89107f7",
+      "output_path": "aligned110--synthetic-081.png",
+      "output_sha256": "d155f227be262f5f5e536b858079648d3e9748216bb845b3fdd5afbeb89107f7",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-082.png",
+      "source_sha256": "7b37a7df5fd955bd042b6c4a0d02d56b8c197bfd7f992f5e8cff9d7ff8ea9fce",
+      "output_path": "aligned110--synthetic-082.png",
+      "output_sha256": "7b37a7df5fd955bd042b6c4a0d02d56b8c197bfd7f992f5e8cff9d7ff8ea9fce",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-083.png",
+      "source_sha256": "27e18244a02b653651fc112f9bff3840492754b73e990e498d08685151610d62",
+      "output_path": "aligned110--synthetic-083.png",
+      "output_sha256": "27e18244a02b653651fc112f9bff3840492754b73e990e498d08685151610d62",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-084.png",
+      "source_sha256": "8f5ae074cf62478d95d780f9653c18cd382be4d19fad5a6aa7a8ac460d77a99e",
+      "output_path": "aligned110--synthetic-084.png",
+      "output_sha256": "8f5ae074cf62478d95d780f9653c18cd382be4d19fad5a6aa7a8ac460d77a99e",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-085.png",
+      "source_sha256": "9e51def9f8d8fcb30d99a902034fe460ec3d19e668dcb2d31db4579821cc2fa1",
+      "output_path": "aligned110--synthetic-085.png",
+      "output_sha256": "9e51def9f8d8fcb30d99a902034fe460ec3d19e668dcb2d31db4579821cc2fa1",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-086.png",
+      "source_sha256": "994fd2b596b753ecbd06653c7f829c650a01be57d3abd3f0dd1fa18d8437d8f5",
+      "output_path": "aligned110--synthetic-086.png",
+      "output_sha256": "994fd2b596b753ecbd06653c7f829c650a01be57d3abd3f0dd1fa18d8437d8f5",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-087.png",
+      "source_sha256": "27bd54661ac88ffe2536052f7c4ba8411bbbd0cf579029aa46135afad5a4f850",
+      "output_path": "aligned110--synthetic-087.png",
+      "output_sha256": "27bd54661ac88ffe2536052f7c4ba8411bbbd0cf579029aa46135afad5a4f850",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-088.png",
+      "source_sha256": "7736c968f50b485f0892426aec36be5f7d95567c37bce77b941942e9302fd804",
+      "output_path": "aligned110--synthetic-088.png",
+      "output_sha256": "7736c968f50b485f0892426aec36be5f7d95567c37bce77b941942e9302fd804",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-089.png",
+      "source_sha256": "db612ba6f557533b9632f61bc00fa1dcd8c2ec4c914c6f4a7852395c2acf25bd",
+      "output_path": "aligned110--synthetic-089.png",
+      "output_sha256": "db612ba6f557533b9632f61bc00fa1dcd8c2ec4c914c6f4a7852395c2acf25bd",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-090.png",
+      "source_sha256": "12cda26b7f43d0ddb1a1fd43efcffc7b16564de25970a1e9872424f8f78e9ee3",
+      "output_path": "aligned110--synthetic-090.png",
+      "output_sha256": "12cda26b7f43d0ddb1a1fd43efcffc7b16564de25970a1e9872424f8f78e9ee3",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-091.png",
+      "source_sha256": "581faef0a6b0ca79c2092f26c56a90d2e206440ebd472fa49a83eb6365b24e5d",
+      "output_path": "aligned110--synthetic-091.png",
+      "output_sha256": "581faef0a6b0ca79c2092f26c56a90d2e206440ebd472fa49a83eb6365b24e5d",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-092.png",
+      "source_sha256": "3a78c42676de4782b7a4b41a912595f0604f5bb022c0fd28520224973dbc3db1",
+      "output_path": "aligned110--synthetic-092.png",
+      "output_sha256": "3a78c42676de4782b7a4b41a912595f0604f5bb022c0fd28520224973dbc3db1",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-093.png",
+      "source_sha256": "0297bc9726634510be213ee4433966d04358be9c1eb2621038c50b0d6f3b3d4c",
+      "output_path": "aligned110--synthetic-093.png",
+      "output_sha256": "0297bc9726634510be213ee4433966d04358be9c1eb2621038c50b0d6f3b3d4c",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-094.png",
+      "source_sha256": "5cf2746760b55e626c48013cb695f7a41b7e314ea3ad132adc30171d01cad563",
+      "output_path": "aligned110--synthetic-094.png",
+      "output_sha256": "5cf2746760b55e626c48013cb695f7a41b7e314ea3ad132adc30171d01cad563",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-095.png",
+      "source_sha256": "21c86a6ac12eb51279bc708ee00d8dfddfaae370b83ef92d9ceed6925ca04afe",
+      "output_path": "aligned110--synthetic-095.png",
+      "output_sha256": "21c86a6ac12eb51279bc708ee00d8dfddfaae370b83ef92d9ceed6925ca04afe",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-096.png",
+      "source_sha256": "cc1d1c65b2f8387a0e4ff0ae4ffcebdabb6670b6d6dbd194687338617666fe03",
+      "output_path": "aligned110--synthetic-096.png",
+      "output_sha256": "cc1d1c65b2f8387a0e4ff0ae4ffcebdabb6670b6d6dbd194687338617666fe03",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-097.png",
+      "source_sha256": "885362703757a30aeaedcef6740bbe6070ea9041295fcf91bc8cc1b556715a37",
+      "output_path": "aligned110--synthetic-097.png",
+      "output_sha256": "885362703757a30aeaedcef6740bbe6070ea9041295fcf91bc8cc1b556715a37",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-098.png",
+      "source_sha256": "955d22f3a74c140386db7aa6bc32e97e79d237063484ad71bfb1568f061b9bf2",
+      "output_path": "aligned110--synthetic-098.png",
+      "output_sha256": "955d22f3a74c140386db7aa6bc32e97e79d237063484ad71bfb1568f061b9bf2",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-099.png",
+      "source_sha256": "644c5e9259ac2f1dfb4fea2ca59c7036ef9d0200bd187f71744845b993698f38",
+      "output_path": "aligned110--synthetic-099.png",
+      "output_sha256": "644c5e9259ac2f1dfb4fea2ca59c7036ef9d0200bd187f71744845b993698f38",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-100.png",
+      "source_sha256": "0f27d74323c1cabb60b38f10158a37ca1fb01d7a75da421810b93ed0f647bf55",
+      "output_path": "aligned110--synthetic-100.png",
+      "output_sha256": "0f27d74323c1cabb60b38f10158a37ca1fb01d7a75da421810b93ed0f647bf55",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-101.png",
+      "source_sha256": "9f744839fe20ad3da5383014f63e8477bb203db855eb38fd12108d88c1f0c431",
+      "output_path": "aligned110--synthetic-101.png",
+      "output_sha256": "9f744839fe20ad3da5383014f63e8477bb203db855eb38fd12108d88c1f0c431",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-102.png",
+      "source_sha256": "a4739bb14af4e9eed993e4f183a46b8e2f026c6a666ff244e9293790488821d0",
+      "output_path": "aligned110--synthetic-102.png",
+      "output_sha256": "a4739bb14af4e9eed993e4f183a46b8e2f026c6a666ff244e9293790488821d0",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-103.png",
+      "source_sha256": "1ed06eabbf6ad91a2748a7cafd7ef0606fa7a92afb4423dd1bee74358df26afb",
+      "output_path": "aligned110--synthetic-103.png",
+      "output_sha256": "1ed06eabbf6ad91a2748a7cafd7ef0606fa7a92afb4423dd1bee74358df26afb",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-104.png",
+      "source_sha256": "26e84fbd0b070d02b32d35b3c3dcb7aba0b9afc5e21e0155ec50e472e46129f3",
+      "output_path": "aligned110--synthetic-104.png",
+      "output_sha256": "26e84fbd0b070d02b32d35b3c3dcb7aba0b9afc5e21e0155ec50e472e46129f3",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-105.png",
+      "source_sha256": "22ad39544ca97f1f3e373a5aa8769892e0f6f2955df8e77d02ba813437261fb5",
+      "output_path": "aligned110--synthetic-105.png",
+      "output_sha256": "22ad39544ca97f1f3e373a5aa8769892e0f6f2955df8e77d02ba813437261fb5",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-106.png",
+      "source_sha256": "44d6fea64f16829d6f65b54b526314a1605f668d62f9be39f0cd092b0642d99a",
+      "output_path": "aligned110--synthetic-106.png",
+      "output_sha256": "44d6fea64f16829d6f65b54b526314a1605f668d62f9be39f0cd092b0642d99a",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-107.png",
+      "source_sha256": "c24db6b7efe3a038d56cb5a0e3dd350e74abbe064712558e2a644993e893dc65",
+      "output_path": "aligned110--synthetic-107.png",
+      "output_sha256": "c24db6b7efe3a038d56cb5a0e3dd350e74abbe064712558e2a644993e893dc65",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-108.png",
+      "source_sha256": "c4ad62d51ca12d04915e09e8f70452b8a10f438be3d0d1434a8b4bd712f98a85",
+      "output_path": "aligned110--synthetic-108.png",
+      "output_sha256": "c4ad62d51ca12d04915e09e8f70452b8a10f438be3d0d1434a8b4bd712f98a85",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-109.png",
+      "source_sha256": "8c2601eb385eae1d62207fc219ed991592edc9eb9657ec47c2de07bb60a0c75d",
+      "output_path": "aligned110--synthetic-109.png",
+      "output_sha256": "8c2601eb385eae1d62207fc219ed991592edc9eb9657ec47c2de07bb60a0c75d",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-110.png",
+      "source_sha256": "c7a9d661f063f8533ff46b5b5bcc5d9b3c7f00425737ba3d5c1ee7eee958dd98",
+      "output_path": "aligned110--synthetic-110.png",
+      "output_sha256": "c7a9d661f063f8533ff46b5b5bcc5d9b3c7f00425737ba3d5c1ee7eee958dd98",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-111.png",
+      "source_sha256": "e98183391a2e674e5d537b6951868b7253b62778fec629383bb1758da1271a11",
+      "output_path": "aligned110--synthetic-111.png",
+      "output_sha256": "e98183391a2e674e5d537b6951868b7253b62778fec629383bb1758da1271a11",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-112.png",
+      "source_sha256": "6c84d847eee1c98569a54a0990a1abcea95955886fde1153a9498e62aaf4f843",
+      "output_path": "aligned110--synthetic-112.png",
+      "output_sha256": "6c84d847eee1c98569a54a0990a1abcea95955886fde1153a9498e62aaf4f843",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-113.png",
+      "source_sha256": "029df6784e61733d689881ead6b46aed443c73c13d740f52c8ae0d3762117a40",
+      "output_path": "aligned110--synthetic-113.png",
+      "output_sha256": "029df6784e61733d689881ead6b46aed443c73c13d740f52c8ae0d3762117a40",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-114.png",
+      "source_sha256": "dc974a6562ca51c54a5506859add3235c57ef2aa9330824bb75f61670643d1ee",
+      "output_path": "aligned110--synthetic-114.png",
+      "output_sha256": "dc974a6562ca51c54a5506859add3235c57ef2aa9330824bb75f61670643d1ee",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-115.png",
+      "source_sha256": "04067bc16eb758b998877230c646f43b4b7e38b777dce38c6d8a8911492e3f6a",
+      "output_path": "aligned110--synthetic-115.png",
+      "output_sha256": "04067bc16eb758b998877230c646f43b4b7e38b777dce38c6d8a8911492e3f6a",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-116.png",
+      "source_sha256": "797c91996f6055dd51267b633ce1ebdc883eb2205ee243d97bbd86c1dc8c5a43",
+      "output_path": "aligned110--synthetic-116.png",
+      "output_sha256": "797c91996f6055dd51267b633ce1ebdc883eb2205ee243d97bbd86c1dc8c5a43",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-117.png",
+      "source_sha256": "2d2c8f1b174e91f984a150d978fcc5487716ddb27d92be97f1a553b85da1e583",
+      "output_path": "aligned110--synthetic-117.png",
+      "output_sha256": "2d2c8f1b174e91f984a150d978fcc5487716ddb27d92be97f1a553b85da1e583",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-118.png",
+      "source_sha256": "9dd45fe5d7a5f090d8c57d93654a0c67a13056b85a0352cc4e490f80055bf313",
+      "output_path": "aligned110--synthetic-118.png",
+      "output_sha256": "9dd45fe5d7a5f090d8c57d93654a0c67a13056b85a0352cc4e490f80055bf313",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-119.png",
+      "source_sha256": "916ea50c07bb836cef3afbc99e06f502022f1476b2b277c00051618572d9ef11",
+      "output_path": "aligned110--synthetic-119.png",
+      "output_sha256": "916ea50c07bb836cef3afbc99e06f502022f1476b2b277c00051618572d9ef11",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-120.png",
+      "source_sha256": "b2aca6003f35fa5de3a7f461954b133ce95c50c12dce575423aa95d9252b0583",
+      "output_path": "aligned110--synthetic-120.png",
+      "output_sha256": "b2aca6003f35fa5de3a7f461954b133ce95c50c12dce575423aa95d9252b0583",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-121.png",
+      "source_sha256": "9402844c87ff856609eef73bde8e846e374f74bef81153c1b36e4646315f67a2",
+      "output_path": "aligned110--synthetic-121.png",
+      "output_sha256": "9402844c87ff856609eef73bde8e846e374f74bef81153c1b36e4646315f67a2",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-122.png",
+      "source_sha256": "d78be1f3eee8a82766051e2c1f9dcc268583f7ce0238c893caac4ad9e728877b",
+      "output_path": "aligned110--synthetic-122.png",
+      "output_sha256": "d78be1f3eee8a82766051e2c1f9dcc268583f7ce0238c893caac4ad9e728877b",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-123.png",
+      "source_sha256": "006f82f23be2cff08cada4a73e46e6691a8114bb8217752ac9bce82079239ff5",
+      "output_path": "aligned110--synthetic-123.png",
+      "output_sha256": "006f82f23be2cff08cada4a73e46e6691a8114bb8217752ac9bce82079239ff5",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-124.png",
+      "source_sha256": "608781ebcccee664384e060acd03cf4ee85fc62cc151cd6943961555ffe05509",
+      "output_path": "aligned110--synthetic-124.png",
+      "output_sha256": "608781ebcccee664384e060acd03cf4ee85fc62cc151cd6943961555ffe05509",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-125.png",
+      "source_sha256": "21006186bd4cb5cf4f3a16ec3134fa19c3e747083c7276ca6d85d1c9a77715ca",
+      "output_path": "aligned110--synthetic-125.png",
+      "output_sha256": "21006186bd4cb5cf4f3a16ec3134fa19c3e747083c7276ca6d85d1c9a77715ca",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-126.png",
+      "source_sha256": "b6acdace67e291933058354e11fd89b0ac4030940963222c57a790c2f7340002",
+      "output_path": "aligned110--synthetic-126.png",
+      "output_sha256": "b6acdace67e291933058354e11fd89b0ac4030940963222c57a790c2f7340002",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-127.png",
+      "source_sha256": "b5945abb40b2c51f8cb74719f158f37753eed33d50be8e74cff5a9a76d82a58f",
+      "output_path": "aligned110--synthetic-127.png",
+      "output_sha256": "b5945abb40b2c51f8cb74719f158f37753eed33d50be8e74cff5a9a76d82a58f",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-128.png",
+      "source_sha256": "8e20c08bdb98e83d1e33268204cd480075ee634db3311f8ac412388f7542a84a",
+      "output_path": "aligned110--synthetic-128.png",
+      "output_sha256": "8e20c08bdb98e83d1e33268204cd480075ee634db3311f8ac412388f7542a84a",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-129.png",
+      "source_sha256": "a1afa8db12bad3cc55528728b56e7f9d9edca0f3cda75278157e5be69325dd9f",
+      "output_path": "aligned110--synthetic-129.png",
+      "output_sha256": "a1afa8db12bad3cc55528728b56e7f9d9edca0f3cda75278157e5be69325dd9f",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-130.png",
+      "source_sha256": "76e924beebf827a11de5462504c9a6d15eef5b6d079978de7f8515eca098ced7",
+      "output_path": "aligned110--synthetic-130.png",
+      "output_sha256": "76e924beebf827a11de5462504c9a6d15eef5b6d079978de7f8515eca098ced7",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-131.png",
+      "source_sha256": "feab92a9494660e0da22a286574dc2ff9c02d17c53ef92d8a0697e79a72e254e",
+      "output_path": "aligned110--synthetic-131.png",
+      "output_sha256": "feab92a9494660e0da22a286574dc2ff9c02d17c53ef92d8a0697e79a72e254e",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-132.png",
+      "source_sha256": "39c3b6fc72c624352555bd5ef1f842396aa633d74deeb2fb7fb0632aaf544619",
+      "output_path": "aligned110--synthetic-132.png",
+      "output_sha256": "39c3b6fc72c624352555bd5ef1f842396aa633d74deeb2fb7fb0632aaf544619",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-133.png",
+      "source_sha256": "dfd4157bce18e82991543fa2646c4ce8095dea7165b1e3755179e3677e738b3c",
+      "output_path": "aligned110--synthetic-133.png",
+      "output_sha256": "dfd4157bce18e82991543fa2646c4ce8095dea7165b1e3755179e3677e738b3c",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-134.png",
+      "source_sha256": "42f424def56004514eb0301f056be8782c7f307719a878cff3d41bb5a1e2d9a4",
+      "output_path": "aligned110--synthetic-134.png",
+      "output_sha256": "42f424def56004514eb0301f056be8782c7f307719a878cff3d41bb5a1e2d9a4",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-135.png",
+      "source_sha256": "90dc2d25cba94b7ad801cf0fee0fafa7bc8e7f311a3bbfa08a8b3e9632112216",
+      "output_path": "aligned110--synthetic-135.png",
+      "output_sha256": "90dc2d25cba94b7ad801cf0fee0fafa7bc8e7f311a3bbfa08a8b3e9632112216",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-136.png",
+      "source_sha256": "bc7c6fcc88be483cb736b4c423b731814c04712e1038ae305a65e79dc24d8936",
+      "output_path": "aligned110--synthetic-136.png",
+      "output_sha256": "bc7c6fcc88be483cb736b4c423b731814c04712e1038ae305a65e79dc24d8936",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-137.png",
+      "source_sha256": "19f0b1c284cc02d6aba1c6080aa88cb4247fbd37d76607170acf742aef9b828c",
+      "output_path": "aligned110--synthetic-137.png",
+      "output_sha256": "19f0b1c284cc02d6aba1c6080aa88cb4247fbd37d76607170acf742aef9b828c",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-138.png",
+      "source_sha256": "33bec28577a55b61d59c014b208980d78db3eea1080654c8e70928522e8ed101",
+      "output_path": "aligned110--synthetic-138.png",
+      "output_sha256": "33bec28577a55b61d59c014b208980d78db3eea1080654c8e70928522e8ed101",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-139.png",
+      "source_sha256": "9774d71977fb9c5d95b826cb15820c103bee5506dea70d9571538fd89ac7c6dc",
+      "output_path": "aligned110--synthetic-139.png",
+      "output_sha256": "9774d71977fb9c5d95b826cb15820c103bee5506dea70d9571538fd89ac7c6dc",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "aligned110",
+      "source_path": "research/alignment/collar-only/eyes42/synthetic-140.png",
+      "source_sha256": "21e2624aad0abcd853998ca6cc45ae948d0f6575406581fc677db89ac72ff712",
+      "output_path": "aligned110--synthetic-140.png",
+      "output_sha256": "21e2624aad0abcd853998ca6cc45ae948d0f6575406581fc677db89ac72ff712",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": false
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/141.png",
+      "source_sha256": "d0a0242e17d13de8b1381c556f79f807f9cd49d5c2590a4a2767df26ffe38f35",
+      "output_path": "whole24--141.png",
+      "output_sha256": "d0a0242e17d13de8b1381c556f79f807f9cd49d5c2590a4a2767df26ffe38f35",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-pilot8/141.png",
+      "original_generation_sha256": "7a6b1d4e20a3b58316c0d63f57fff20845820fc25d928d70002fb161266d0115",
+      "generated_id": 141
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/142.png",
+      "source_sha256": "0e197c8ce38947b95bbe9f0cfa8b2c0bef3e52f75780814f782d3f2d165c62af",
+      "output_path": "whole24--142.png",
+      "output_sha256": "0e197c8ce38947b95bbe9f0cfa8b2c0bef3e52f75780814f782d3f2d165c62af",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-pilot8/142.png",
+      "original_generation_sha256": "e0cbf2e73ad9b9874c80f0f28d953181c896b9e8a294f3f5c3a314b0bc28f2d6",
+      "generated_id": 142
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/143.png",
+      "source_sha256": "de13838e672147291ab0c8c980a99ea36f9d76d6a60ce5f28fb2332fe170f285",
+      "output_path": "whole24--143.png",
+      "output_sha256": "de13838e672147291ab0c8c980a99ea36f9d76d6a60ce5f28fb2332fe170f285",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-pilot8/143.png",
+      "original_generation_sha256": "fe6d148cb76cc44b887cb7ceee9baaadfbf37a64e6280f65832432ffac9e0cdf",
+      "generated_id": 143
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/144.png",
+      "source_sha256": "96c41c33e74b5a2a9028399a6ece8397955fd5a8c694eefdb39be0c5551c61e0",
+      "output_path": "whole24--144.png",
+      "output_sha256": "96c41c33e74b5a2a9028399a6ece8397955fd5a8c694eefdb39be0c5551c61e0",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-pilot8/144.png",
+      "original_generation_sha256": "9c863f812717949f7db8c29f601b4e2d57c7b17359f75b6dbfa4128ca9f88b63",
+      "generated_id": 144
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/145.png",
+      "source_sha256": "d53f384ab5e4fddf86d15fe47b3ab9a95ae6adf1c1d3201ebef231c1beac8966",
+      "output_path": "whole24--145.png",
+      "output_sha256": "d53f384ab5e4fddf86d15fe47b3ab9a95ae6adf1c1d3201ebef231c1beac8966",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-pilot8/145.png",
+      "original_generation_sha256": "b5828fa79eab62484189679ee693076cc62c0a0f0e99fb8f34623545b1d62a08",
+      "generated_id": 145
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/146.png",
+      "source_sha256": "c23e36f971b2e52e3298ffe4a87cf66454bbb71b8f3ad2958e95786aafc73062",
+      "output_path": "whole24--146.png",
+      "output_sha256": "c23e36f971b2e52e3298ffe4a87cf66454bbb71b8f3ad2958e95786aafc73062",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-pilot8/146.png",
+      "original_generation_sha256": "ca0b2d85e2eaeb22f58e2b67b41b39a390e8011b7b41d2f3902cf30fc2149fac",
+      "generated_id": 146
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/147.png",
+      "source_sha256": "407779789d997437e5908feb1b3aa4f399d01393f8183c3c8c80ed4a17717c22",
+      "output_path": "whole24--147.png",
+      "output_sha256": "407779789d997437e5908feb1b3aa4f399d01393f8183c3c8c80ed4a17717c22",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-pilot8/147.png",
+      "original_generation_sha256": "ff3a9d27f073388d3b03c7f340fe5d72a2f05e81713803e6665214cc721679d8",
+      "generated_id": 147
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/148.png",
+      "source_sha256": "f8d5a9ea865bb295fa17e8bed8aeebc4c96b0b23883cc73c63cb5506d18a95d3",
+      "output_path": "whole24--148.png",
+      "output_sha256": "f8d5a9ea865bb295fa17e8bed8aeebc4c96b0b23883cc73c63cb5506d18a95d3",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-pilot8/148.png",
+      "original_generation_sha256": "671b5105d55113b1e68d32b4c49426da1f90e49b2194fa8ebb67eee702e0e2aa",
+      "generated_id": 148
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/149.png",
+      "source_sha256": "7cf5d5aeab619e45943028fe77c6c2c6a5ce42ee2ad6a682969e04a9717ce43c",
+      "output_path": "whole24--149.png",
+      "output_sha256": "7cf5d5aeab619e45943028fe77c6c2c6a5ce42ee2ad6a682969e04a9717ce43c",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/149.png",
+      "original_generation_sha256": "0f142ff0f76f270bbcd3f0be986a5bd66cbd1cfe5bbd7034c349dd9a12ab8ce7",
+      "generated_id": 149
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/150.png",
+      "source_sha256": "5df9f495b6e9dda13b83d9deac8d03d91e32936795b38c8685bea4f91485bf3a",
+      "output_path": "whole24--150.png",
+      "output_sha256": "5df9f495b6e9dda13b83d9deac8d03d91e32936795b38c8685bea4f91485bf3a",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/150.png",
+      "original_generation_sha256": "1ced9dd3f9168a3fc505869dfa82f50651c18e9bf2681810aea832c795bf34bd",
+      "generated_id": 150
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/151.png",
+      "source_sha256": "0c55c78ab315053af7d8fd1a419d68d777cb6d089d3e39f600f8bb2eea791079",
+      "output_path": "whole24--151.png",
+      "output_sha256": "0c55c78ab315053af7d8fd1a419d68d777cb6d089d3e39f600f8bb2eea791079",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/151.png",
+      "original_generation_sha256": "e6f487210155343100bb32c917a7a49455e6c1f4ad78a3be081a172f9b06a218",
+      "generated_id": 151
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/152.png",
+      "source_sha256": "810b999f6113f32c77b384576175b14ed0df8494cb002ce5ea1fa02b69d86fca",
+      "output_path": "whole24--152.png",
+      "output_sha256": "810b999f6113f32c77b384576175b14ed0df8494cb002ce5ea1fa02b69d86fca",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/152.png",
+      "original_generation_sha256": "6b9d88505032d25a86972a5bc782578a12290bf5e773a6f8890edf8819abbe12",
+      "generated_id": 152
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/153.png",
+      "source_sha256": "7f5f75236dad1002767457cbb1a7dd5ca4680f99836e87b8ab291ce85dae86b3",
+      "output_path": "whole24--153.png",
+      "output_sha256": "7f5f75236dad1002767457cbb1a7dd5ca4680f99836e87b8ab291ce85dae86b3",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/153.png",
+      "original_generation_sha256": "1a25e870ae567b667789cb66ba1371cdbe50b9c581615d4e424de446ef4965a6",
+      "generated_id": 153
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/154.png",
+      "source_sha256": "d3fba5f52da361ae5c7cf76ea6a79b4a2fa75dda71e965ac24fce32b6543551d",
+      "output_path": "whole24--154.png",
+      "output_sha256": "d3fba5f52da361ae5c7cf76ea6a79b4a2fa75dda71e965ac24fce32b6543551d",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/154.png",
+      "original_generation_sha256": "2c2caf50663d68a2abb39d5306a7f42d8dd53807af034216afe1bba4df3d5b96",
+      "generated_id": 154
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/155.png",
+      "source_sha256": "044f020c93aab01d005c91524a2b92fccb4231726db285a716969aab2428b301",
+      "output_path": "whole24--155.png",
+      "output_sha256": "044f020c93aab01d005c91524a2b92fccb4231726db285a716969aab2428b301",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/155.png",
+      "original_generation_sha256": "38d84ef48f041e264e576fb71a312e2b515a273344e834eb66dbec3c0d100c7c",
+      "generated_id": 155
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/156.png",
+      "source_sha256": "ec5db68bad1a7fc931d4640c5e914af90d8dc78a39a098d9feb653d040e301d0",
+      "output_path": "whole24--156.png",
+      "output_sha256": "ec5db68bad1a7fc931d4640c5e914af90d8dc78a39a098d9feb653d040e301d0",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/156.png",
+      "original_generation_sha256": "02914493e7483a150ba305d93e0050eb15b3b8069fdc20f8b1edf7f8784ef4a3",
+      "generated_id": 156
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/157.png",
+      "source_sha256": "e95889a842d89478b609c4c508c807766f1f223e272853f961f9397f04280299",
+      "output_path": "whole24--157.png",
+      "output_sha256": "e95889a842d89478b609c4c508c807766f1f223e272853f961f9397f04280299",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/157.png",
+      "original_generation_sha256": "f59621470e94dbb2ba1c6f988dd17cf6d39a1d362b743011bf9da908dd4803f4",
+      "generated_id": 157
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/158.png",
+      "source_sha256": "dc118ebd264c585eb85f7423b54758fac6052a5bdae67d560d0e868034c383d9",
+      "output_path": "whole24--158.png",
+      "output_sha256": "dc118ebd264c585eb85f7423b54758fac6052a5bdae67d560d0e868034c383d9",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/158.png",
+      "original_generation_sha256": "0ea87c645f2bfa8af6e9d8296dcbe4c259cd4df34e55a0cf402831d9075f3d5f",
+      "generated_id": 158
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/159.png",
+      "source_sha256": "cedb6d277e8ab3999629c4bd66afc57c13eacec1ae733bba7783f4fbd9d0d22f",
+      "output_path": "whole24--159.png",
+      "output_sha256": "cedb6d277e8ab3999629c4bd66afc57c13eacec1ae733bba7783f4fbd9d0d22f",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/159.png",
+      "original_generation_sha256": "fb0c140092b3742451463a93cfe12844d43a6a1d81d3396541c446b8924ae7a9",
+      "generated_id": 159
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/160.png",
+      "source_sha256": "f541feb701ca8dc630fad7a7578c052dd89c081889bb3e54f40c4dda16e221a1",
+      "output_path": "whole24--160.png",
+      "output_sha256": "f541feb701ca8dc630fad7a7578c052dd89c081889bb3e54f40c4dda16e221a1",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/160.png",
+      "original_generation_sha256": "41a0155350ce6218d9dc4be34c182fc3600a4116788ce1643b193d2a2307c1a4",
+      "generated_id": 160
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/161.png",
+      "source_sha256": "9f763208217c60d697b58871f3b3933752d83f8e5c08cc77ea05f6d67a9cd99e",
+      "output_path": "whole24--161.png",
+      "output_sha256": "9f763208217c60d697b58871f3b3933752d83f8e5c08cc77ea05f6d67a9cd99e",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/161.png",
+      "original_generation_sha256": "dc1db0868afe5f5b51fec696a0d014f22b8e8baf399e9a15cf1721efc91a362e",
+      "generated_id": 161
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/162.png",
+      "source_sha256": "97d26905108a7cdc0225b8028f96f964f0dd78125d279a68f64fc4d94ffbad92",
+      "output_path": "whole24--162.png",
+      "output_sha256": "97d26905108a7cdc0225b8028f96f964f0dd78125d279a68f64fc4d94ffbad92",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/162.png",
+      "original_generation_sha256": "ea90115f71d3804883cd4fe9d435efd73c462461e8a2bdec5dd6573129a96b4b",
+      "generated_id": 162
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/163.png",
+      "source_sha256": "01f9fb7e664b434656173c786b80d10171890154fca781e917f1379148915beb",
+      "output_path": "whole24--163.png",
+      "output_sha256": "01f9fb7e664b434656173c786b80d10171890154fca781e917f1379148915beb",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/163.png",
+      "original_generation_sha256": "ba80221e7550c3b35d317bf36c1b987f2f82e880918c877064bfcd37bf4711b6",
+      "generated_id": 163
+    },
+    {
+      "group": "whole24",
+      "source_path": "research/data/plain-background24-whole-image/256/164.png",
+      "source_sha256": "67e2b93df0ec37ed3e28e6bdeab4af059e5552df2d50405c10c6e4a6e9921cf4",
+      "output_path": "whole24--164.png",
+      "output_sha256": "67e2b93df0ec37ed3e28e6bdeab4af059e5552df2d50405c10c6e4a6e9921cf4",
+      "byte_exact_copy": true,
+      "mode": "RGB",
+      "dimensions": [
+        256,
+        256
+      ],
+      "exact_grayscale_channels": true,
+      "original_generation_path": "research/data/plain-background-expansion16/164.png",
+      "original_generation_sha256": "8505dddfb69a6b1c455d292ef5e92748ffcfacb2cdd6149f4d929288aaec079f",
+      "generated_id": 164
+    }
+  ],
+  "limitations": [
+    "No model loading, training, held-out scoring or quality claim.",
+    "No image filtering or automatic duplicate removal.",
+    "This candidate changes image count, filenames, digest and framing distribution; any use must be an explicitly declared dataset fork."
+  ]
+}

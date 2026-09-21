@@ -1,0 +1,67 @@
+{
+  "observed_unix": 1789965331.920865,
+  "monitor_started_unix": 1789962859,
+  "monitor_limit_seconds": 2700,
+  "ps_returncode": 0,
+  "processes": "  PID  PPID ELAPSED    RSS  %CPU COMMAND\n20235 48170   41:31  21744   0.0 research/.venv/bin/python -u research/runs/recover-factorial-CD.py --execute\n23605 23604   12:21 5949744 183.5 /Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python /Users/twixes/Developer/thispriestdoesnotexist/research/experiments/paired_factorial/runner.py --execute --output /Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-factorial-600/D --worker D --deadline 1789973494.608341 --source-hashes /Users/twixes/Developer/thispriestdoesnotexist/research/runs/paired-factorial-600/source-hashes.json\n",
+  "last_D_fork_step": 125,
+  "last_D_metric": {
+    "pair_ids": [
+      "b2-051"
+    ],
+    "clothing_l1": 0.10061333328485489,
+    "tab_l1": 0.03876983001828194,
+    "rest_l1": 0.16245684027671814,
+    "protected_l1": 0.015574304386973381,
+    "paired_pixel_loss": 0.11618763953447342,
+    "feature_loss": 0.05752231180667877,
+    "feature_weight": 1.0,
+    "fresh_preservation_l1": 0.03173642233014107,
+    "feature_diagnostics": {
+      "layers": [
+        {
+          "shape": [
+            1,
+            128,
+            256,
+            256
+          ],
+          "tab_l1": 0.035410359501838684,
+          "rest_l1": 0.05541675537824631,
+          "scale_mean": 1.0,
+          "normalized_loss": 0.045413557440042496
+        },
+        {
+          "shape": [
+            1,
+            256,
+            128,
+            128
+          ],
+          "tab_l1": 0.05966772139072418,
+          "rest_l1": 0.07959441095590591,
+          "scale_mean": 1.0,
+          "normalized_loss": 0.06963106989860535
+        }
+      ]
+    },
+    "fork_step": 125,
+    "parent_step": 600,
+    "step": 725,
+    "update_seconds": 5.668807082925923,
+    "pair_index": 4,
+    "pair_id": "b2-051",
+    "fresh_z_sha256": "567149994dcc1765ba79baad6d6fd2d81ffb73edc1f897efa22bc890811327db"
+  },
+  "C_complete_sha256": "211a53d1500fa9ca0b0bbc242ce05b80dbd15c183fac115073a0ea1730aee269",
+  "review_files": [
+    "C-100.json",
+    "C-200.json",
+    "C-300.json",
+    "C-source30-final.json",
+    "D-100.json"
+  ],
+  "status": "C complete; D still live. All assigned milestones through D100 reviewed. No restart, signal, model load, source edit or production approval. Root owns subsequent monitoring.",
+  "original_deadline_unix": 1789973494.608341,
+  "production_approved": false
+}

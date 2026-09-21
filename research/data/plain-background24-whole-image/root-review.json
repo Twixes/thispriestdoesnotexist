@@ -1,0 +1,15 @@
+{
+  "reviewed_utc": "2026-09-21T04:34:58.250013+00:00",
+  "root_visual_scope": [
+    "all24 whole-image 256px contact",
+    "native originals149/159/151/161",
+    "previously reviewed all8 pilot originals"
+  ],
+  "independent_integrity_check": "All24 source hashes and48 resized image hashes verified; every output has exactly equal RGB channels. Script inspected; direct full-square resizing without padding.",
+  "decision": "Accept all24 whole-image derivatives as prospective training candidates. This preparation preserves collars and original head framing better than the pilot affine crop. It does not establish improved model performance; active110 dataset unchanged.",
+  "diversity_limitations": "Some pairs show family resemblance, notably149/159 and151/161. Independent generation calls do not prove distinct identities. Poses and clothing remain fairly similar across the set; no novelty score claimed.",
+  "data_geometry": "Eye positions and facial scale vary; mixing with old eyes42 requires a deliberately recorded new dataset/fork.",
+  "accepted_as_training_candidates": true,
+  "accepted_as_complete_replacement_dataset": false,
+  "production_approved": false
+}

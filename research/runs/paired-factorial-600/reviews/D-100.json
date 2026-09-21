@@ -1,0 +1,131 @@
+{
+  "arm": "D",
+  "fork_step": 100,
+  "parent_step": 600,
+  "reviewed_unix": 1789965331.897034,
+  "review_kind": "PNG-only; no inference",
+  "evaluation_sha256": "3e59e0cdee7d67add3e3b354417f4eee83e33909c3505b18eade6c41f43c3b1d",
+  "student_state_sha256": "b4d3e2149be1ab4f335721f67ef05d5559b4ec6a9367daadecf7d1dee6c3172a",
+  "contact_sha256": "63410cfa3db5c70d4c6fd1b2c177e3ffe02139aa41fdc9bb79e14b22eb6341fe",
+  "contact_count": 14,
+  "native_review_ids": [
+    "calibration-original",
+    "030",
+    "b2-042",
+    "b2-058",
+    "b2-059",
+    "000",
+    "028",
+    "b2-055",
+    "b2-051",
+    "b2-020",
+    "unseen-000",
+    "unseen-001",
+    "unseen-002",
+    "unseen-003"
+  ],
+  "summary": "All14 native images and full contact explicitly reviewed at D100. No new broad facial collapse. The combined capacity/feature-loss arm still shows familiar fuzzy neck patches, ragged bands and pitting; b2-051 retains only a partial plausible tab. No convincing clerical collars on validation, new heldouts or fixed unseen. Hats/uncertain age remain in the unrestricted panel. Early checkpoint only, not the final factorial verdict.",
+  "new_broad_face_collapse_observed": false,
+  "production_approved": false,
+  "limits": "Small fixed panel. Contact-level coherence does not establish native photographic quality, identity preservation or distributional diversity. Held-out cases remain excluded from training.",
+  "rows": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "image_sha256": "163b34053df0810e8718f0e901ac77d1718e522457f0345ffc1cecde2a77e3d8",
+      "review_resolution": "native1024",
+      "visual_note": "Face and eyes coherent. White lower-neck patch retains skin texture and fuzzy dark side boundaries; no clean clerical fabric tab."
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "image_sha256": "12b67b40fcb2ae0acebf4e0adb74f2946898b54db9ecc82c5bba4fe85c2e2689",
+      "review_resolution": "native1024",
+      "visual_note": "Face coherent. Wide pale curved band under chin blends into neck skin, not a bounded fabric tab."
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "image_sha256": "78be99d59b2886920762e06f44b60c12e38687acc6f6ee1a63ab616346cc3222",
+      "review_resolution": "native1024",
+      "visual_note": "Face and smile coherent. Pitted dark right lower neck persists around white bottom patch; no convincing collar. Preexisting partial second person remains."
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "image_sha256": "d135fe088867443d35f058038b3df90634dd9a1dbf95b8acd515d26670404e96",
+      "review_resolution": "native1024",
+      "visual_note": "Held-out adult beard and smile coherent. Ordinary shirt edges and darkened neckline persist; no central clerical tab."
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "image_sha256": "215ee725931c892a5cf4f889b47adb45413a9f8de50c9ebc423dd499fef3766c",
+      "review_resolution": "native1024",
+      "visual_note": "Face and glasses coherent; ragged pale band under chin retains streaks and skin-like texture instead of a clean clerical garment."
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "image_sha256": "8a78877495722efa8966f70a6bd0dd3599ba4d5c46d4baaaf542093c4701050e",
+      "review_resolution": "native1024",
+      "visual_note": "Face coherent. Partial white rectangle is the closest collar-like result but right boundary blends into rough neck, not a reliable photographic pass."
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "image_sha256": "e710d7a1c9a6b63c504968cd4d01d3679b51c5fb07de35d3c9081c481fcc3d7e",
+      "review_resolution": "native1024",
+      "visual_note": "Face and teeth coherent under strong lighting. Pale lower patch merges with lit chin; no clear bounded tab."
+    },
+    {
+      "id": "b2-042",
+      "split": "diagnostic-heldout",
+      "image_sha256": "f442b729582ddc080bf736613d01d019e4370b699ba6e8c977b3a253b9022d71",
+      "review_resolution": "native1024",
+      "visual_note": "Mature face and glasses coherent. Ordinary patterned shirt persists with no clerical tab."
+    },
+    {
+      "id": "b2-058",
+      "split": "diagnostic-heldout",
+      "image_sha256": "1fea22629cc898aee1bf6f78dce9cc5643c21772dd677928f155a8b4108e6ac6",
+      "review_resolution": "native1024",
+      "visual_note": "Mature moustached face coherent. Ordinary dress shirt and tie remain, no clerical collar."
+    },
+    {
+      "id": "b2-059",
+      "split": "diagnostic-heldout",
+      "image_sha256": "df79ef193755c83fc27ab04035d6c8108d0a8abd9bddf3c6f8fe8fb008d9224a",
+      "review_resolution": "native1024",
+      "visual_note": "Mature face and glasses coherent. Ordinary open dark neckline remains, no clerical tab."
+    },
+    {
+      "id": "unseen-000",
+      "split": "unseen",
+      "image_sha256": "ca1c41f75cf5a358f91471938d0d6fd73dc29d102451e30ba3f5f679af328ae9",
+      "review_resolution": "native1024",
+      "visual_note": "Face coherent, graduation cap and extra-person fragment remain; not bareheaded, no clerical collar."
+    },
+    {
+      "id": "unseen-001",
+      "split": "unseen",
+      "image_sha256": "61223f2960cf054b82ae2427ff0a030205a888972b89e565d3881c0b893d2a2d",
+      "review_resolution": "native1024",
+      "visual_note": "Mature masculine face coherent, ordinary white shirt collar persists, no clerical tab."
+    },
+    {
+      "id": "unseen-002",
+      "split": "unseen",
+      "image_sha256": "a856dec197bee29bd10f319e8aa82491b80436d484bd73d6df392e02676aebfd",
+      "review_resolution": "native1024",
+      "visual_note": "Mature face coherent; microphone and ambiguous foreground hand/chin details persist. No clerical tab."
+    },
+    {
+      "id": "unseen-003",
+      "split": "unseen",
+      "image_sha256": "97cd3a2e3bde3c234ec4b5e6a39ddd46004738731e07e8cf46d6f53cc0eef7ee",
+      "review_resolution": "native1024",
+      "visual_note": "Face and smile coherent, cap and extra-person fragment persist; adult age uncertain, excluded from adult/hot success counts. No clerical tab."
+    }
+  ]
+}

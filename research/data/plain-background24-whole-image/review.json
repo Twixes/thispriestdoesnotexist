@@ -1,0 +1,296 @@
+{
+  "reviewed_utc": "2026-09-21T04:34:46.456726+00:00",
+  "status": "preprocessing_candidate_pending_root_decision",
+  "accepted_training_dataset": false,
+  "production_approved": false,
+  "review_scope": "All24 tiles displayed at their native256px in labeled contact;144 and147 additionally inspected as individual1024px images. No claim of native1024 review of every resized output. Earlier generation reviews inspected originals individually.",
+  "manifest_sha256": "334ad5bfa22c72baab1d7a24298616483d125a9fccbc3a7816b1b3b2ef59067d",
+  "contact_sha256": "ccf99406c70dc77ff71da38389ef4e3beea079f0401f332160a4702a180e2967",
+  "summary": {
+    "portraits": 24,
+    "full_heads_visible": 24,
+    "full_white_tabs_visible": 24,
+    "black_clerical_shirts_visible": 24,
+    "hats": 0,
+    "obvious_introduced_padding_or_reflection": 0,
+    "retained_without_automatic_removal": 24,
+    "exact_grayscale_output_files": 48
+  },
+  "entries": [
+    {
+      "id": 141,
+      "source_sha256": "7a6b1d4e20a3b58316c0d63f57fff20845820fc25d928d70002fb161266d0115",
+      "output256_sha256": "d0a0242e17d13de8b1381c556f79f807f9cd49d5c2590a4a2767df26ffe38f35",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Broad clean-shaven face, plain dark wall; modest hair-top margin and large face, full collar."
+    },
+    {
+      "id": 142,
+      "source_sha256": "e0cbf2e73ad9b9874c80f0f28d953181c896b9e8a294f3f5c3a314b0bc28f2d6",
+      "output256_sha256": "0e197c8ce38947b95bbe9f0cfa8b2c0bef3e52f75780814f782d3f2d165c62af",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Side-parted hair and subtle smile; head and tab fully visible against foliage."
+    },
+    {
+      "id": 143,
+      "source_sha256": "fe6d148cb76cc44b887cb7ceee9baaadfbf37a64e6280f65832432ffac9e0cdf",
+      "output256_sha256": "de13838e672147291ab0c8c980a99ea36f9d76d6a60ce5f28fb2332fe170f285",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Curly hair and neat beard; neutral wall, whole head and clear tab."
+    },
+    {
+      "id": 144,
+      "source_sha256": "9c863f812717949f7db8c29f601b4e2d57c7b17359f75b6dbfa4128ca9f88b63",
+      "output256_sha256": "96c41c33e74b5a2a9028399a6ece8397955fd5a8c694eefdb39be0c5551c61e0",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Very small but visible margin above highest hair tuft; collar and lower shirt remain fully visible. Confirmed separately at1024."
+    },
+    {
+      "id": 145,
+      "source_sha256": "b5828fa79eab62484189679ee693076cc62c0a0f0e99fb8f34623545b1d62a08",
+      "output256_sha256": "d53f384ab5e4fddf86d15fe47b3ab9a95ae6adf1c1d3201ebef231c1beac8966",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Frontal dark-haired clean-shaven face, plain wall; full hair and clear collar."
+    },
+    {
+      "id": 146,
+      "source_sha256": "ca0b2d85e2eaeb22f58e2b67b41b39a390e8011b7b41d2f3902cf30fc2149fac",
+      "output256_sha256": "c23e36f971b2e52e3298ffe4a87cf66454bbb71b8f3ad2958e95786aafc73062",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Curly-haired bearded face, foliage; whole hair and tab retained."
+    },
+    {
+      "id": 147,
+      "source_sha256": "ff3a9d27f073388d3b03c7f340fe5d72a2f05e81713803e6665214cc721679d8",
+      "output256_sha256": "407779789d997437e5908feb1b3aa4f399d01393f8183c3c8c80ed4a17717c22",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Frontal fair-haired clean-shaven portrait; full head and collar, confirmed separately at1024."
+    },
+    {
+      "id": 148,
+      "source_sha256": "671b5105d55113b1e68d32b4c49426da1f90e49b2194fa8ebb67eee702e0e2aa",
+      "output256_sha256": "f8d5a9ea865bb295fa17e8bed8aeebc4c96b0b23883cc73c63cb5506d18a95d3",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Receding hairline and close beard against soft neutral wall; full head and collar."
+    },
+    {
+      "id": 149,
+      "source_sha256": "0f142ff0f76f270bbcd3f0be986a5bd66cbd1cfe5bbd7034c349dd9a12ab8ce7",
+      "output256_sha256": "7cf5d5aeab619e45943028fe77c6c2c6a5ce42ee2ad6a682969e04a9717ce43c",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Slight turn with off-camera gaze; modest space above curls, full tab and substantial chest."
+    },
+    {
+      "id": 150,
+      "source_sha256": "1ced9dd3f9168a3fc505869dfa82f50651c18e9bf2681810aea832c795bf34bd",
+      "output256_sha256": "5df9f495b6e9dda13b83d9deac8d03d91e32936795b38c8685bea4f91485bf3a",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Swept-back hair and slight turn; full head with upper margin, visible tab and chest."
+    },
+    {
+      "id": 151,
+      "source_sha256": "e6f487210155343100bb32c917a7a49455e6c1f4ad78a3be081a172f9b06a218",
+      "output256_sha256": "0c55c78ab315053af7d8fd1a419d68d777cb6d089d3e39f600f8bb2eea791079",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Subtle tilt and fair waves; complete hair, collar and substantial black shirt."
+    },
+    {
+      "id": 152,
+      "source_sha256": "6b9d88505032d25a86972a5bc782578a12290bf5e773a6f8890edf8819abbe12",
+      "output256_sha256": "810b999f6113f32c77b384576175b14ed0df8494cb002ce5ea1fa02b69d86fca",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Graying hair/full beard in slight turn; beard does not hide tab, generous lower shirt."
+    },
+    {
+      "id": 153,
+      "source_sha256": "1a25e870ae567b667789cb66ba1371cdbe50b9c581615d4e424de446ef4965a6",
+      "output256_sha256": "7f5f75236dad1002767457cbb1a7dd5ca4680f99836e87b8ab291ce85dae86b3",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Medium-length wavy hair and smile; whole hair including side volume retained, tab fully visible."
+    },
+    {
+      "id": 154,
+      "source_sha256": "2c2caf50663d68a2abb39d5306a7f42d8dd53807af034216afe1bba4df3d5b96",
+      "output256_sha256": "d3fba5f52da361ae5c7cf76ea6a79b4a2fa75dda71e965ac24fce32b6543551d",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Short graying hair and tilt; whole head, clear tab, ample chest."
+    },
+    {
+      "id": 155,
+      "source_sha256": "38d84ef48f041e264e576fb71a312e2b515a273344e834eb66dbec3c0d100c7c",
+      "output256_sha256": "044f020c93aab01d005c91524a2b92fccb4231726db285a716969aab2428b301",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Short textured hair and off-camera gaze; full head and white collar retained."
+    },
+    {
+      "id": 156,
+      "source_sha256": "02914493e7483a150ba305d93e0050eb15b3b8069fdc20f8b1edf7f8784ef4a3",
+      "output256_sha256": "ec5db68bad1a7fc931d4640c5e914af90d8dc78a39a098d9feb653d040e301d0",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Curly hair, freckles and beard; full head and collar with ample lower shirt."
+    },
+    {
+      "id": 157,
+      "source_sha256": "f59621470e94dbb2ba1c6f988dd17cf6d39a1d362b743011bf9da908dd4803f4",
+      "output256_sha256": "e95889a842d89478b609c4c508c807766f1f223e272853f961f9397f04280299",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Short waves and slight tilt; full head and collar, foliage background."
+    },
+    {
+      "id": 158,
+      "source_sha256": "0ea87c645f2bfa8af6e9d8296dcbe4c259cd4df34e55a0cf402831d9075f3d5f",
+      "output256_sha256": "dc118ebd264c585eb85f7423b54758fac6052a5bdae67d560d0e868034c383d9",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Wavy graying hair and beard; full head, clear tab and ample chest."
+    },
+    {
+      "id": 159,
+      "source_sha256": "fb0c140092b3742451463a93cfe12844d43a6a1d81d3396541c446b8924ae7a9",
+      "output256_sha256": "cedb6d277e8ab3999629c4bd66afc57c13eacec1ae733bba7783f4fbd9d0d22f",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Short coils and close beard; whole head and tab, distant abstract bokeh."
+    },
+    {
+      "id": 160,
+      "source_sha256": "41a0155350ce6218d9dc4be34c182fc3600a4116788ce1643b193d2a2307c1a4",
+      "output256_sha256": "f541feb701ca8dc630fad7a7578c052dd89c081889bb3e54f40c4dda16e221a1",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Short graying hair and small beard, tilted smile; full head and collar."
+    },
+    {
+      "id": 161,
+      "source_sha256": "dc1db0868afe5f5b51fec696a0d014f22b8e8baf399e9a15cf1721efc91a362e",
+      "output256_sha256": "9f763208217c60d697b58871f3b3933752d83f8e5c08cc77ea05f6d67a9cd99e",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Swept-back hair and turned off-camera gaze; relatively generous upper space, full collar."
+    },
+    {
+      "id": 162,
+      "source_sha256": "ea90115f71d3804883cd4fe9d435efd73c462461e8a2bdec5dd6573129a96b4b",
+      "output256_sha256": "97d26905108a7cdc0225b8028f96f964f0dd78125d279a68f64fc4d94ffbad92",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Mature graying short hair/stubble; whole head and full tab."
+    },
+    {
+      "id": 163,
+      "source_sha256": "ba80221e7550c3b35d317bf36c1b987f2f82e880918c877064bfcd37bf4711b6",
+      "output256_sha256": "01f9fb7e664b434656173c786b80d10171890154fca781e917f1379148915beb",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Curly hair and rounded bearded face with tilt; full hair, tab and chest."
+    },
+    {
+      "id": 164,
+      "source_sha256": "8505dddfb69a6b1c455d292ef5e92748ffcfacb2cdd6149f4d929288aaec079f",
+      "output256_sha256": "67e2b93df0ec37ed3e28e6bdeab4af059e5552df2d50405c10c6e4a6e9921cf4",
+      "full_head_visible": true,
+      "full_white_tab_visible": true,
+      "black_clerical_shirt_visible": true,
+      "hat": false,
+      "retained": true,
+      "framing_observation": "Fair wavy hair and beard in slight turn; whole head and clear tab."
+    }
+  ],
+  "diversity": [
+    "Adult masculine faces vary in skin shading, age appearance, jaw shape, hair length/texture, facial hair and slight pose. Backgrounds are simple walls or blurred foliage/bokeh with no prominent architecture.",
+    "Several look related:149/159;143/163;144/147/151/161;156/164;142/150/155/160 share a broad portrait family. This is subjective resemblance, not a face-embedding duplicate test or an assertion of identical identity. All are retained.",
+    "Composition remains narrow: near-frontal or slight turns, upper chest, mostly restrained closed-mouth expressions and polished portrait lighting.24 image hashes do not establish24 independent identities or adequate training diversity."
+  ],
+  "preprocessing_assessment": [
+    "Whole-image resize retains source framing and complete collars without making a landmark-driven crop or requiring border pixels.144 retains a tight top margin inherited from its original; it is not newly cropped.",
+    "It leaves source eye positions, face scale and head tilt unnormalized. That is an explicit alternative to alignment, not an established training improvement.",
+    "At256, small facial detail is naturally reduced but no conspicuous new face/neck artifact is visible. All48 saved outputs have equal RGB channels by read-back verification.",
+    "No choice of preprocessing has been applied to active training inputs. Root retains dataset and preprocessing decision."
+  ]
+}
