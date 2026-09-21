@@ -4,6 +4,7 @@ import copy
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import subprocess
 import sys
@@ -19,8 +20,18 @@ PINS=HERE/'parent-pins.json'
 ARMS=('A','B','C','D')
 UPDATES=300
 MILESTONES=(0,100,200,300)
-MAX_RSS=8*1024**3
+MAX_RSS=10*1024**3
+MIN_FREE_PERCENT=35
 MAX_SECONDS=4*3600
+
+
+def memory_guard():
+    """Reviewed resource-v2 guard; leaves immutable shared helper unchanged."""
+    if sys.platform!='darwin':raise RuntimeError('Real probe requires reviewed macOS resource guard')
+    output=subprocess.run(['memory_pressure'],capture_output=True,text=True,check=True,timeout=15).stdout
+    match=re.search(r'System-wide memory free percentage:\s*(\d+)%',output)
+    if not match or int(match.group(1))<MIN_FREE_PERCENT:raise RuntimeError('Defer: at least 35% free memory required')
+    return output
 
 
 def own_hashes():
@@ -49,7 +60,7 @@ def guard_thread(output,stop,deadline):
     def watch():
         while not stop.wait(.25):
             reason=None
-            if shared.rss_bytes()>MAX_RSS:reason='8 GiB observed peak RSS exceeded'
+            if shared.rss_bytes()>MAX_RSS:reason='10 GiB observed peak RSS exceeded'
             if time.time()>deadline:reason='Four-hour total deadline exceeded'
             if reason:
                 write_json(output/'failure.json',{'complete':False,'reason':reason,'peak_rss_bytes':shared.rss_bytes()});os._exit(70)
@@ -89,9 +100,9 @@ def load_prefix(pins,torch):
 def worker(arm,output,deadline,expected_hashes,smoke=False):
     started=time.monotonic()
     if time.time()>=deadline:raise RuntimeError('Total deadline expired before worker')
-    pressure=shared.memory_guard();pins,bundle=verify_pins()
+    pressure=memory_guard();pins,bundle=verify_pins()
     if own_hashes()!=expected_hashes:raise ValueError('Experiment code changed')
-    pressure2=shared.memory_guard();output.mkdir(parents=True)
+    pressure2=memory_guard();output.mkdir(parents=True)
     (output/'memory-before.txt').write_text(pressure+'\nBEFORE IMPORT:\n'+pressure2)
     stop=threading.Event();watch=guard_thread(output,stop,deadline)
     try:
@@ -153,7 +164,8 @@ def worker(arm,output,deadline,expected_hashes,smoke=False):
               'pair_provenance':pair_provenance,'options':options,'d_metadata':d_meta,'d_prefix_digest':d_digest,
               'parent_student_state_sha256':initial_digest,'fixed_z_sha256':hashlib.sha256(fixed_z.numpy().tobytes()).hexdigest(),
               'rss_abort_bytes':MAX_RSS,'rss_limit_is_sampled_not_hard_allocation_cap':True,'deadline_unix':deadline,
-              'torch_threads':2,'interop_threads':1}
+              'torch_threads':2,'interop_threads':1,'resource_revision':2,'minimum_free_percent':MIN_FREE_PERCENT,
+              'resource_revision_reason':'archived 8 GiB smoke guard abort; explicit one-time 10 GiB retry, no automatic cap increases'}
         write_json(output/'config.json',fork)
         schedule=[];milestones=[];last_metrics={};diagnostic_report=None
         def check_invariants():
@@ -174,7 +186,16 @@ def worker(arm,output,deadline,expected_hashes,smoke=False):
         if smoke:
             # Two independent one-update replicas, both starting at the same immutable parent.
             calibration=next(p for p in train_pairs if p['id']=='calibration-original')
-            tick=time.monotonic();diagnostic_report=update(student,source,optimizer,calibration,options,preservation,trainer,prefix,True)
+            def trace_for(replica):
+                origin=time.monotonic()
+                def trace(phase):
+                    row={'replica':replica,'phase':phase,'elapsed_seconds':time.monotonic()-origin,'peak_rss_bytes':shared.rss_bytes()}
+                    with (output/'smoke-phases.jsonl').open('a') as log:log.write(json.dumps(row)+'\n');log.flush()
+                    print(json.dumps(row),flush=True)
+                return trace
+            diagnostic_trace=trace_for('diagnostic');diagnostic_trace('before_update')
+            tick=time.monotonic();diagnostic_report=update(student,source,optimizer,calibration,options,preservation,trainer,prefix,True,diagnostic_trace)
+            diagnostic_trace('after_update')
             diagnostic_report['seconds_with_two_extra_autograd_passes']=time.monotonic()-tick
             check_invariants();diag_student=trainer.state_digest(student.state_dict());diag_optimizer=trainer.state_digest({f'{k}/{n}':v for k,s in optimizer.state_dict()['state'].items() for n,v in s.items() if torch.is_tensor(v)})
             diag_rng=trainer.capture_rng('cpu',sampling,preservation)
@@ -182,7 +203,9 @@ def worker(arm,output,deadline,expected_hashes,smoke=False):
             optimizer,transfer_again=fork_optimizer(student,checkpoint['optimizer'],True,trainer,torch,pins['trainable_parameters'])
             if transfer_again!=transfer:raise AssertionError('Smoke reinitialization optimizer transfer differs')
             trainer.restore_rng(initial_rng,'cpu',sampling,preservation)
-            tick=time.monotonic();last_metrics=update(student,source,optimizer,calibration,options,preservation,trainer,prefix,False)
+            ordinary_trace=trace_for('ordinary');ordinary_trace('before_update')
+            tick=time.monotonic();last_metrics=update(student,source,optimizer,calibration,options,preservation,trainer,prefix,False,ordinary_trace)
+            ordinary_trace('after_update')
             last_metrics['ordinary_update_seconds']=time.monotonic()-tick
             normal_optimizer=trainer.state_digest({f'{k}/{n}':v for k,s in optimizer.state_dict()['state'].items() for n,v in s.items() if torch.is_tensor(v)})
             if trainer.state_digest(student.state_dict())!=diag_student or normal_optimizer!=diag_optimizer or not equal_tree(diag_rng,trainer.capture_rng('cpu',sampling,preservation),torch):raise AssertionError('Diagnostic and ordinary smoke updates differ')
@@ -232,12 +255,12 @@ def main():
     if args.worker:
         if args.source_hashes is None:parser.error('Worker requires parent source hash file')
         worker(args.worker,output,deadline,json.loads(Path(args.source_hashes).read_text()),args.smoke);return
-    shared.memory_guard();verify_pins();output.mkdir(parents=True);write_json(output/'source-hashes.json',hashes)
+    memory_guard();verify_pins();output.mkdir(parents=True);write_json(output/'source-hashes.json',hashes)
     write_json(output/'launch.json',{'arms':['D'] if args.smoke else list(ARMS),'smoke':args.smoke,'deadline_unix':deadline,'sources':hashes,'production_approved':False})
     results=[]
     for arm in (('D',) if args.smoke else ARMS):
         if time.time()>=deadline:raise RuntimeError('Total deadline expired between arms')
-        shared.memory_guard()
+        memory_guard()
         command=[sys.executable,str(HERE/'runner.py'),'--execute','--output',str(output/arm),'--worker',arm,'--deadline',str(deadline),'--source-hashes',str(output/'source-hashes.json')]
         if args.smoke:command.append('--smoke')
         with (output/f'{arm}.log').open('w') as log:

@@ -22,8 +22,16 @@ class Static(unittest.TestCase):
             output=Path(temp)/'unused'
             result=subprocess.run([sys.executable,str(HERE/'runner.py'),'--output',str(output)],capture_output=True,text=True)
             self.assertNotEqual(result.returncode,0);self.assertFalse(output.exists())
-        self.assertEqual(runner.UPDATES,300);self.assertEqual(runner.MILESTONES,(0,100,200,300));self.assertEqual(runner.MAX_RSS,8*1024**3)
+        self.assertEqual(runner.UPDATES,300);self.assertEqual(runner.MILESTONES,(0,100,200,300));self.assertEqual(runner.MAX_RSS,10*1024**3);self.assertEqual(runner.MIN_FREE_PERCENT,35)
         self.assertEqual(runner.MAX_SECONDS,14400)
+        from unittest.mock import patch
+        from types import SimpleNamespace
+        with patch.object(runner.sys,'platform','darwin'):
+            for free in [34,35]:
+                with patch.object(runner.subprocess,'run',return_value=SimpleNamespace(stdout=f'System-wide memory free percentage: {free}%')):
+                    if free==34:
+                        with self.assertRaises(RuntimeError):runner.memory_guard()
+                    else:self.assertIn('35%',runner.memory_guard())
 
 
 class Tiny(unittest.TestCase):
@@ -104,7 +112,10 @@ class Tiny(unittest.TestCase):
             student=copy.deepcopy(source);student.load_state_dict(parent['student'])
             optimizer,_=self.fork(student,parent['optimizer'],True,tr,t)
             s=t.Generator();p=t.Generator();tr.restore_rng(parent['rng'],'cpu',s,p)
-            metrics=self.update(student,source,optimizer,pairs[0],options,p,tr,prefix,diagnostic)
+            phases=[]
+            metrics=self.update(student,source,optimizer,pairs[0],options,p,tr,prefix,diagnostic,phases.append if diagnostic else None)
+            if diagnostic:
+                self.assertEqual(phases,['before_feature_forward','after_feature_forward','before_diagnostic_pixel_autograd','after_diagnostic_pixel_autograd','before_diagnostic_feature_autograd','after_diagnostic_feature_autograd','before_paired_pixel_plus_feature_backward','after_paired_pixel_plus_feature_backward','before_fresh_preservation_backward','after_fresh_preservation_backward'])
             if diagnostic:
                 cal=metrics['gradient_calibration']
                 for key in ['existing64plus','new_b32']:

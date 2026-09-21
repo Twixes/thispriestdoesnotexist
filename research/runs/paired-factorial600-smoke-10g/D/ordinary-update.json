@@ -1,0 +1,42 @@
+{
+  "pair_ids": [
+    "calibration-original"
+  ],
+  "clothing_l1": 0.23339973390102386,
+  "tab_l1": 0.05253678187727928,
+  "rest_l1": 0.41426268219947815,
+  "protected_l1": 0.016700616106390953,
+  "paired_pixel_loss": 0.25010034441947937,
+  "feature_loss": 0.0860711932182312,
+  "feature_weight": 0.05,
+  "fresh_preservation_l1": 0.049139562994241714,
+  "feature_diagnostics": {
+    "layers": [
+      {
+        "shape": [
+          1,
+          128,
+          256,
+          256
+        ],
+        "tab_l1": 0.04461652413010597,
+        "rest_l1": 0.08541710674762726,
+        "scale_mean": 1.0,
+        "normalized_loss": 0.06501681357622147
+      },
+      {
+        "shape": [
+          1,
+          256,
+          128,
+          128
+        ],
+        "tab_l1": 0.10544528812170029,
+        "rest_l1": 0.10880584269762039,
+        "scale_mean": 1.0,
+        "normalized_loss": 0.10712556540966034
+      }
+    ]
+  },
+  "ordinary_update_seconds": 5.944807374966331
+}

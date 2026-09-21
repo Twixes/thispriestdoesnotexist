@@ -1,0 +1,71 @@
+{
+  "pair_ids": [
+    "calibration-original"
+  ],
+  "clothing_l1": 0.23339973390102386,
+  "tab_l1": 0.05253678187727928,
+  "rest_l1": 0.41426268219947815,
+  "protected_l1": 0.016700616106390953,
+  "paired_pixel_loss": 0.25010034441947937,
+  "feature_loss": 0.0860711932182312,
+  "feature_weight": 0.05,
+  "fresh_preservation_l1": 0.049139562994241714,
+  "feature_diagnostics": {
+    "layers": [
+      {
+        "shape": [
+          1,
+          128,
+          256,
+          256
+        ],
+        "tab_l1": 0.04461652413010597,
+        "rest_l1": 0.08541710674762726,
+        "scale_mean": 1.0,
+        "normalized_loss": 0.06501681357622147
+      },
+      {
+        "shape": [
+          1,
+          256,
+          128,
+          128
+        ],
+        "tab_l1": 0.10544528812170029,
+        "rest_l1": 0.10880584269762039,
+        "scale_mean": 1.0,
+        "normalized_loss": 0.10712556540966034
+      }
+    ]
+  },
+  "gradient_calibration": {
+    "pixel": "paired clothing plus protected pixel loss; fresh term excluded",
+    "feature": "weighted 0.05 frozen-D term",
+    "pixel_l2": {
+      "all": 0.4360074901187924,
+      "existing64plus": 0.4160305441367892,
+      "new_b32": 0.13046500597836944
+    },
+    "weighted_feature_l2": {
+      "all": 0.0038282907040316353,
+      "existing64plus": 0.003682100187820879,
+      "new_b32": 0.0010478301014117143
+    },
+    "raw_feature_l2": {
+      "all": 0.0765658140806327,
+      "existing64plus": 0.07364200375641758,
+      "new_b32": 0.020956602028234284
+    },
+    "raw_norm_derivation": "weighted norm / 0.05; exact scalar homogeneity, no third autograd pass",
+    "feature_over_pixel": {
+      "all": 0.008780332427290637,
+      "existing64plus": 0.008850552536859454,
+      "new_b32": 0.008031503111151816
+    },
+    "extra_autograd_passes": 2,
+    "optimizer_updates": 1
+  },
+  "seconds_with_two_extra_autograd_passes": 9.304708583978936,
+  "ordinary_update_seconds": 5.944807374966331,
+  "independent_updates_equal": true
+}

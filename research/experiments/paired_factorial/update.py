@@ -18,7 +18,7 @@ def gradient_norms(loss,named_parameters):
     return {k:math.sqrt(v) for k,v in sums.items()}
 
 
-def update(student,source,optimizer,pair,options,preservation,trainer,prefix=None,diagnostic=False):
+def update(student,source,optimizer,pair,options,preservation,trainer,prefix=None,diagnostic=False,trace=None):
     if pair['split']!='train':raise ValueError('Only six original training identities may update weights')
     optimizer.zero_grad(set_to_none=True)
     rgb=student.synthesis(pair['w'],noise_mode='const',force_fp32=True)
@@ -31,12 +31,19 @@ def update(student,source,optimizer,pair,options,preservation,trainer,prefix=Non
              'feature_loss':0.,'feature_weight':FEATURE_WEIGHT if prefix is not None else 0.,'fresh_preservation_l1':0.}
     feature=None
     if prefix is not None:
+        if trace is not None:trace('before_feature_forward')
         feature,feature_metrics=feature_reconstruction_loss(prefix,rgb,pair['target'],pair['original'],pair['mask'],pair['collar'])
         metrics['feature_loss']=float(feature.detach());metrics['feature_diagnostics']=feature_metrics
+        if trace is not None:trace('after_feature_forward')
     if diagnostic:
         if feature is None:raise ValueError('Gradient calibration requires a feature arm')
         params=[(n,p) for n,p in student.named_parameters() if p.requires_grad]
-        pixel_norms=gradient_norms(paired,params);feature_norms=gradient_norms(FEATURE_WEIGHT*feature,params)
+        if trace is not None:trace('before_diagnostic_pixel_autograd')
+        pixel_norms=gradient_norms(paired,params)
+        if trace is not None:trace('after_diagnostic_pixel_autograd')
+        if trace is not None:trace('before_diagnostic_feature_autograd')
+        feature_norms=gradient_norms(FEATURE_WEIGHT*feature,params)
+        if trace is not None:trace('after_diagnostic_feature_autograd')
         metrics['gradient_calibration']={'pixel':'paired clothing plus protected pixel loss; fresh term excluded',
             'feature':'weighted 0.05 frozen-D term','pixel_l2':pixel_norms,'weighted_feature_l2':feature_norms,
             'raw_feature_l2':{k:v/FEATURE_WEIGHT for k,v in feature_norms.items()},
@@ -45,7 +52,9 @@ def update(student,source,optimizer,pair,options,preservation,trainer,prefix=Non
             'extra_autograd_passes':2,'optimizer_updates':1}
     loss=paired if feature is None else paired+FEATURE_WEIGHT*feature
     if not bool(torch.isfinite(loss)):raise FloatingPointError('Nonfinite paired/feature objective')
+    if trace is not None:trace('before_paired_pixel_plus_feature_backward')
     loss.backward()
+    if trace is not None:trace('after_paired_pixel_plus_feature_backward')
     del rgb,generated,clothing,tab,rest,protected,paired,feature,loss
     if options['fresh_weight']>0:
         z=torch.randn(1,source.z_dim,generator=preservation)
@@ -56,7 +65,10 @@ def update(student,source,optimizer,pair,options,preservation,trainer,prefix=Non
         height=max(1,round(source.img_resolution*options['upper_fraction']))
         fresh=(predicted[:,:,:height]-original[:,:,:height]).abs().mean()
         if not bool(torch.isfinite(fresh)):raise FloatingPointError('Nonfinite fresh preservation')
-        (options['fresh_weight']*fresh).backward();metrics['fresh_preservation_l1']=float(fresh.detach())
+        if trace is not None:trace('before_fresh_preservation_backward')
+        (options['fresh_weight']*fresh).backward()
+        if trace is not None:trace('after_fresh_preservation_backward')
+        metrics['fresh_preservation_l1']=float(fresh.detach())
     grads=[p.grad for p in student.parameters() if p.requires_grad and p.grad is not None]
     if not grads or not all(bool(torch.isfinite(g).all()) for g in grads):raise FloatingPointError('Missing/nonfinite student gradient')
     if any(p.grad is not None for p in source.parameters()) or (prefix is not None and any(p.grad is not None for p in prefix.parameters())):raise AssertionError('Frozen source/D acquired gradients')

@@ -1,0 +1,24 @@
+{
+  "reviewer": "root assistant",
+  "prior_code_and_failed_smoke_commit": "a624aa0",
+  "revision": 2,
+  "scope": "One explicit smoke retry with10GiB observedRSS and35%freshfree;4hdeadlineunchanged; no furtherautomaticcapraise.",
+  "reason": "Earlierguardaborted at8.24GiB;machine51%free,0processswaps; noOSOOMobserved. Preserve unchanged objective/model/taps/resolution before considering activationrecomputation.",
+  "source_sha256": {
+    "update.py": "ba64137c595417be2259ca169cd0465f43a98f9cfa0cec067a76118f8e2bc50b",
+    "runner.py": "561165bf351e7d7cfedae908a0649b3c0282ea1f274019e08736a12ff1e0e7e7",
+    "render.py": "09b7fdef845e010ae6d6ec704a90542e98935ef76b92f02fc2595383ce941387",
+    "test_runner.py": "d68176caeb4a9f7a0530cbf6b61508bb5373947ba4cfa9c9ab46d09cda7e3de8",
+    "optimizer.py": "e7caab2126b318f292e593d524f9e69b434dea5f978b082033dbbcd7f354dedf"
+  },
+  "pins_sha256": "fd911b1ce03e2b224063662a8c1e9d7e1c1a7191fedcb8010692ce5af7fd5136",
+  "root_tests": {
+    "terminal_exit_code": 0,
+    "count": 6,
+    "log_sha256": "eae6084c86f1b65f14cdaab15445b71db0c220bc9f187b17383ec509604e9f1d"
+  },
+  "reviewed_diff": "Memoryguardandconstants; smoke-only phase telemetry; exactupdateequivalence tests; no training math changes.",
+  "approved_smoke": true,
+  "approved_full_factorial": false,
+  "production_approved": false
+}
