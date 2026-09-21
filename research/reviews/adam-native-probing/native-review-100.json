@@ -1,0 +1,53 @@
+{
+  "checkpoint_step": 100,
+  "checkpoint_sha256": "d406240601ec748f95ad09c2b2799106d04f0510cd9383526bdc0618bd7416ba",
+  "source_layout_control": true,
+  "scope": "Root viewed baseline/raw100/EMA100 for000001 at native1024. Independent agent viewed002003. No image editing, sorting, selection or attractiveness rating. Four fixed latents do not establish population behavior.",
+  "root_reviews": [
+    {
+      "latent": 0,
+      "native_images": [
+        {
+          "path": "research/runs/adam-native1024-probing500-v1/baseline-000.png",
+          "sha256": "139bd356e72ad296f58229097b7bd5f4e1425902f16491386ed82cd5f65d3884"
+        },
+        {
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/raw-000.png",
+          "sha256": "707cff6b1a6f931b255cb069b4f5e39dc50e757c1d3db7bbeca1bd4b88e91ce9"
+        },
+        {
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/ema-000.png",
+          "sha256": "eee4a77721e1e99956a160e533aba29bf50b52fbdf2dd9f8dc91e09a4a33829a"
+        }
+      ],
+      "observation": "Baseline is a child portrait in casual clothing. Raw100 preserves broad facial composition but introduces dense fine grain/weave, darkened eyes and a strong reddish/dark tonal shift. EMA100 is much closer to baseline, with increased contrast/texture. No adult priest appearance."
+    },
+    {
+      "latent": 1,
+      "native_images": [
+        {
+          "path": "research/runs/adam-native1024-probing500-v1/baseline-001.png",
+          "sha256": "b6183481bdf66c62ad4d2a8bdc4ac67e06c88e8df225c73369bb8cbeb3c47600"
+        },
+        {
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/raw-001.png",
+          "sha256": "92c79ef295bcaba125cc228eb3f3515762469265fb04caf25bf7b9a325879c5f"
+        },
+        {
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/ema-001.png",
+          "sha256": "2440fa30d1b944107df12ca47d7f580a10e424491b2d51caaa7ac1214d9ba125"
+        }
+      ],
+      "observation": "Baseline is an adult-looking portrait with a light head covering and patterned casual clothing. Raw100 introduces dense fine grain/weave and a pink tonal shift, with darker eyes and flattened skin shading. EMA100 remains close to baseline with some added texture. No recognizable clergy clothing; head covering remains."
+    }
+  ],
+  "independent_review": {
+    "path": "research/reviews/adam-native-probing/native-review-100-agent.json",
+    "sha256": "7ab6535d7d8c00be0b5094e62227273a3deffd185f75081ed3120f7875eb1ceb"
+  },
+  "overall": "All four raw100 outputs show substantial photographic degradation through dense image-wide grain and altered color/exposure. EMA is closer to the source prior; neither arm establishes priest conversion.",
+  "quality_accepted": false,
+  "production_approved": false,
+  "decision": "The control was explicitly stopped after128 completed iterations because all four raw100 outputs showed photographic degradation. The verified100checkpoint is preserved for causal noise-offset testing. Do not promote or use its scores as paper-aligned output-kernel importance.",
+  "next_experiment": "After the live control is terminal and memory preflight passes, compare raw checkpoint100 under unchanged offsets, only highest-resolution conv0 noise offset reset, and all noise-strength offsets reset. Keep latents, constant synthesis noise, all other weights and native resolution identical; first reproduce archived raw outputs exactly. Inspect before launching another long probing run."
+}

@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "step": 100,
+  "checkpoint": "checkpoint-100.pt",
+  "checkpoint_sha256": "d406240601ec748f95ad09c2b2799106d04f0510cd9383526bdc0618bd7416ba",
+  "state_sha256": "0a7d85bef77cba5f99cb2b087712c1817a9d824258935d142f2628619e6b7ef0",
+  "protocol_sha256": "9fd791ccd1e01c2bfa93dfa41a3119f052f873b48d998eb4b52168f2b68ac9ca",
+  "snapshot_manifest_sha256": "b95fbdf2ecd6097ecbf2f314dc5701fff042d7ed01749860eaf7e5d67c29cfbe",
+  "optimizer_steps": {
+    "g": 125,
+    "d": 107
+  },
+  "model_optimizer_rng_path_state_restored_exactly": true
+}

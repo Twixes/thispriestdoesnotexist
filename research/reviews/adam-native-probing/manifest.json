@@ -3,10 +3,30 @@
   "title": "AdAM native importance probing",
   "run": "research/runs/adam-native1024-probing500-v1",
   "run_complete": false,
+  "termination": {
+    "status": "stopped_after_visual_review",
+    "confirmed_at_unix": 1789992059.5999901,
+    "terminal_exit_code": 130,
+    "supervisor_and_worker_absent": true,
+    "planned_iterations": 500,
+    "completed_iterations": 128,
+    "last_step": 128,
+    "optimizer_steps": {
+      "g": 160,
+      "d": 136
+    },
+    "preserved_complete_checkpoints": [
+      100
+    ],
+    "reason": "All four raw checkpoint100 outputs showed severe photographic degradation. Next is a controlled noise-offset ablation; no automatic resume or restart.",
+    "production_approved": false
+  },
+  "run_status": "stopped_after_visual_review",
   "complete_steps": [
-    0
+    0,
+    100
   ],
-  "default_step": 0,
+  "default_step": 100,
   "snapshots": [
     {
       "step": 0,
@@ -15,7 +35,8 @@
     },
     {
       "step": 100,
-      "status": "pending"
+      "status": "complete",
+      "manifest_sha256": "b95fbdf2ecd6097ecbf2f314dc5701fff042d7ed01749860eaf7e5d67c29cfbe"
     },
     {
       "step": 250,
@@ -26,7 +47,7 @@
       "status": "pending"
     }
   ],
-  "available_images": 12,
+  "available_images": 20,
   "expected_images": 36,
   "unfiltered": true,
   "preview_seed": 2026092210,
@@ -53,19 +74,37 @@
       "url": "../../runs/adam-native1024-probing500-v1/eval-z.npz",
       "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
       "bytes": 8448
+    },
+    "step-100/manifest.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/step-100/manifest.json",
+      "url": "../../runs/adam-native1024-probing500-v1/step-100/manifest.json",
+      "sha256": "b95fbdf2ecd6097ecbf2f314dc5701fff042d7ed01749860eaf7e5d67c29cfbe",
+      "bytes": 1257
+    },
+    "checkpoint-100.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/checkpoint-100.json",
+      "url": "../../runs/adam-native1024-probing500-v1/checkpoint-100.json",
+      "sha256": "0ba27983f4cc3fde03eae3652bd3577580c1341b6cc4f646cedbf6e19e23c416",
+      "bytes": 553
+    },
+    "termination.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/termination.json",
+      "url": "../../runs/adam-native1024-probing500-v1/termination.json",
+      "sha256": "c714f053761e9aa0e1aa85b4cb09645cd1177bfce4ad374665b086edbb2ac903",
+      "bytes": 542
     }
   },
   "builder": {
     "path": "research/reviews/adam-native-probing/build.py",
     "url": "build.py",
-    "sha256": "7ecb8c9465acf6df536b1c2d0cbe3ec9d4f3cd84b67a1e201571e280597af30b",
-    "bytes": 6172
+    "sha256": "1110e84ed5020cb8a6608c83c336e9bc1ad20a6295dbc5c0ad32d7b95c5e9ff4",
+    "bytes": 6735
   },
   "template": {
     "path": "research/reviews/adam-native-probing/template.html",
     "url": "template.html",
-    "sha256": "ed5d46b0334f3c2515cafdd0c6761e1a7304718298eff1452cdc80ec818d64d0",
-    "bytes": 5227
+    "sha256": "401876ccfff47cb99dff502d4c95188251a5322815f3ce4ba2556f443ef89ad6",
+    "bytes": 5382
   },
   "rows": [
     {
@@ -99,10 +138,22 @@
           "height": 1024
         },
         "raw-100": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/raw-000.png",
+          "url": "../../runs/adam-native1024-probing500-v1/step-100/raw-000.png",
+          "sha256": "707cff6b1a6f931b255cb069b4f5e39dc50e757c1d3db7bbeca1bd4b88e91ce9",
+          "bytes": 2647835,
+          "width": 1024,
+          "height": 1024
         },
         "ema-100": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/ema-000.png",
+          "url": "../../runs/adam-native1024-probing500-v1/step-100/ema-000.png",
+          "sha256": "eee4a77721e1e99956a160e533aba29bf50b52fbdf2dd9f8dc91e09a4a33829a",
+          "bytes": 1914666,
+          "width": 1024,
+          "height": 1024
         },
         "raw-250": {
           "status": "pending"
@@ -149,10 +200,22 @@
           "height": 1024
         },
         "raw-100": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/raw-001.png",
+          "url": "../../runs/adam-native1024-probing500-v1/step-100/raw-001.png",
+          "sha256": "92c79ef295bcaba125cc228eb3f3515762469265fb04caf25bf7b9a325879c5f",
+          "bytes": 3058554,
+          "width": 1024,
+          "height": 1024
         },
         "ema-100": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/ema-001.png",
+          "url": "../../runs/adam-native1024-probing500-v1/step-100/ema-001.png",
+          "sha256": "2440fa30d1b944107df12ca47d7f580a10e424491b2d51caaa7ac1214d9ba125",
+          "bytes": 2080725,
+          "width": 1024,
+          "height": 1024
         },
         "raw-250": {
           "status": "pending"
@@ -199,10 +262,22 @@
           "height": 1024
         },
         "raw-100": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/raw-002.png",
+          "url": "../../runs/adam-native1024-probing500-v1/step-100/raw-002.png",
+          "sha256": "d4fcdf8754041b5bbc0b8a231eee44869d513502a9c29c15c6deee475028ab00",
+          "bytes": 2995976,
+          "width": 1024,
+          "height": 1024
         },
         "ema-100": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/ema-002.png",
+          "url": "../../runs/adam-native1024-probing500-v1/step-100/ema-002.png",
+          "sha256": "a4107d643e0a91bf5694bf67e5a6ff821b5f8f2ebbf9fbffdd62a74bd32b0983",
+          "bytes": 1986451,
+          "width": 1024,
+          "height": 1024
         },
         "raw-250": {
           "status": "pending"
@@ -249,10 +324,22 @@
           "height": 1024
         },
         "raw-100": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/raw-003.png",
+          "url": "../../runs/adam-native1024-probing500-v1/step-100/raw-003.png",
+          "sha256": "419296e0b2052c07ae0dc46c233615a4835f46c88dae915b9072d87ff7addb36",
+          "bytes": 3029717,
+          "width": 1024,
+          "height": 1024
         },
         "ema-100": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/ema-003.png",
+          "url": "../../runs/adam-native1024-probing500-v1/step-100/ema-003.png",
+          "sha256": "27975f802a78c6e4e540163683e561281f7a7f0e1b5aba79ec6d980b8b2bfc2a",
+          "bytes": 2125341,
+          "width": 1024,
+          "height": 1024
         },
         "raw-250": {
           "status": "pending"

@@ -89,10 +89,20 @@ def collect(run=RUN):
         assert result['protocol_sha256'] == protocol_hash
         assert complete_steps == STEPS
         sources['result.json'] = artifact(result_path, result_data)
+    termination = None
+    termination_path = run / 'termination.json'
+    if termination_path.exists():
+        raw = termination_path.read_bytes()
+        termination = json.loads(raw)
+        assert termination['status'] == 'stopped_after_visual_review'
+        assert termination['supervisor_and_worker_absent'] is True
+        assert result is None
+        sources['termination.json'] = artifact(termination_path, raw)
     count = sum(im['status'] == 'complete' for row in rows for im in row['images'].values())
     return {
         'schema_version': 1, 'title': 'AdAM native importance probing',
         'run': str(run.relative_to(ROOT)), 'run_complete': bool(result),
+        'termination': termination, 'run_status': 'stopped_after_visual_review' if termination else ('complete' if result else 'pending'),
         'complete_steps': complete_steps, 'default_step': max(complete_steps, default=0),
         'snapshots': snapshots, 'available_images': count, 'expected_images': 36,
         'unfiltered': True, 'preview_seed': protocol['preview_seed'], 'sampling': protocol['sampling'],

@@ -1,0 +1,12 @@
+{
+  "requested_at_unix": 1789992012.185938,
+  "reason": "Root visual review and independent review found severe image-wide grain/color degradation in all four raw checkpoint100 outputs. Preserve the completed100 checkpoint and investigate noise-offset contribution before spending further compute. This is an explicit research decision, not an observation timeout or guard failure.",
+  "planned_iterations": 500,
+  "last_recorded_step_at_request": 128,
+  "preserved_checkpoint": "checkpoint-100.pt",
+  "signal": "SIGINT to verified owned supervisor; its handler kills/reaps its own worker",
+  "supervisor_pid": 4080,
+  "worker_pids": [
+    4086
+  ]
+}

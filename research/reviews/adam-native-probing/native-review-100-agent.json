@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "scope": "Independent subjective native-resolution review of exactly latents002/003 baseline, raw100 and EMA100. All six untouched 1024 PNGs inspected individually; no filtering, image editing, attractiveness assessment or model execution.",
+  "run": "research/runs/adam-native1024-probing500-v1",
+  "layout": "source_flattened",
+  "stage": "importance_probing_source_control",
+  "iteration": 100,
+  "sources": {
+    "protocol.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/protocol.json",
+      "sha256": "9fd791ccd1e01c2bfa93dfa41a3119f052f873b48d998eb4b52168f2b68ac9ca",
+      "bytes": 11243
+    },
+    "checkpoint-100.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/checkpoint-100.json",
+      "sha256": "0ba27983f4cc3fde03eae3652bd3577580c1341b6cc4f646cedbf6e19e23c416",
+      "bytes": 553
+    },
+    "step-100/manifest.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/step-100/manifest.json",
+      "sha256": "b95fbdf2ecd6097ecbf2f314dc5701fff042d7ed01749860eaf7e5d67c29cfbe",
+      "bytes": 1257
+    },
+    "step-000/manifest.json": {
+      "path": "research/runs/adam-native1024-probing500-v1/step-000/manifest.json",
+      "sha256": "fe1b93ef3db5d434c79c9bbe89d9b7714767e9cfdcf8b0dc05cf02f610045670",
+      "bytes": 1255
+    },
+    "eval-z.npz": {
+      "path": "research/runs/adam-native1024-probing500-v1/eval-z.npz",
+      "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
+      "bytes": 8448
+    }
+  },
+  "rows": [
+    {
+      "latent_index": 2,
+      "images": {
+        "baseline": {
+          "path": "research/runs/adam-native1024-probing500-v1/baseline-002.png",
+          "sha256": "175d7d5a4d1ca45f0c878cd11e4d8bca99eafe6a5eb3eaa2582f8ced18646ff8",
+          "bytes": 1320444
+        },
+        "raw100": {
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/raw-002.png",
+          "sha256": "d4fcdf8754041b5bbc0b8a231eee44869d513502a9c29c15c6deee475028ab00",
+          "bytes": 2995976
+        },
+        "ema100": {
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/ema-002.png",
+          "sha256": "a4107d643e0a91bf5694bf67e5a6ff821b5f8f2ebbf9fbffdd62a74bd32b0983",
+          "bytes": 1986451
+        }
+      },
+      "observations": {
+        "baseline": "Adult-looking face with gray hair and glasses, intact recognizable features and photographic skin/hair detail; eyes are shaded behind lenses. Ordinary open shirt collar; no visible clerical collar or hat.",
+        "raw100": "Severe visible texture and exposure regression: dense fine speckling/grid-like grain covers the entire image, strong red/magenta cast and very dark face, with eyes and mouth detail obscured. Broad head, glasses and identity remain recognizable, but facial detail is no longer photographically readable. Clothing remains an ordinary shirt collar; no hat or clear clergy cue.",
+        "ema100": "Much closer to the source baseline. Face, glasses, hair and apparent identity are retained, with stronger local contrast and fine skin/background texture. Eyes remain dark/shadowed, but no large new facial deformation is visible. Ordinary shirt collar, no hat, no clear clergy cue.",
+        "raw_major_photographic_regression": true,
+        "ema_major_new_facial_degradation_observed": false,
+        "identity_change": "Raw and EMA retain the same recognizable adult-looking subject; raw changes are mainly texture/color/exposure rather than a convincing new priest identity.",
+        "visible_hat": {
+          "baseline": false,
+          "raw100": false,
+          "ema100": false
+        },
+        "clear_clergy_appearance": {
+          "baseline": false,
+          "raw100": false,
+          "ema100": false
+        }
+      }
+    },
+    {
+      "latent_index": 3,
+      "images": {
+        "baseline": {
+          "path": "research/runs/adam-native1024-probing500-v1/baseline-003.png",
+          "sha256": "17e01e3036f8e4d1d0d92f56f84aabcb3cb7ec014965ccb850a3a907477c44b4",
+          "bytes": 1664784
+        },
+        "raw100": {
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/raw-003.png",
+          "sha256": "419296e0b2052c07ae0dc46c233615a4835f46c88dae915b9072d87ff7addb36",
+          "bytes": 3029717
+        },
+        "ema100": {
+          "path": "research/runs/adam-native1024-probing500-v1/step-100/ema-003.png",
+          "sha256": "27975f802a78c6e4e540163683e561281f7a7f0e1b5aba79ec6d980b8b2bfc2a",
+          "bytes": 2125341
+        }
+      },
+      "observations": {
+        "baseline": "Apparent infant/toddler with knitted purple hat and patterned outer clothing. Face, eyes and open smile are recognizable. No clergy appearance.",
+        "raw100": "Severe image-wide fine grain and pink/magenta cast, flatter/smeared facial shading, darkened eyes and changed mouth rendering. The same recognizable child, hat and framing remain, but photographic detail is materially degraded. Hat remains; no clergy appearance.",
+        "ema100": "Remains close to the original child, hat and open smile. Slight contrast/texture and mouth/cheek changes, with no major new deformation apparent at native size. Hat remains; no clergy appearance.",
+        "raw_major_photographic_regression": true,
+        "ema_major_new_facial_degradation_observed": false,
+        "identity_change": "Both snapshots retain the same apparent child; no adult conversion or clear clergy appearance.",
+        "visible_hat": {
+          "baseline": true,
+          "raw100": true,
+          "ema100": true
+        },
+        "clear_clergy_appearance": {
+          "baseline": false,
+          "raw100": false,
+          "ema100": false
+        }
+      }
+    }
+  ],
+  "summary": "Both raw100 images have major photographic degradation from dense grain, color/exposure shifts and loss of fine facial readability. EMA100 retains much more source quality and recognizable baseline subjects. Neither row becomes a clear priest; one remains an apparent child wearing a hat. This source-layout control is not a priest-generation candidate, and does not establish unseen-latent diversity or quality acceptance.",
+  "native_images_inspected": 6,
+  "raw_major_photographic_regressions": 2,
+  "ema_major_new_facial_degradations_observed": 0,
+  "attractiveness_not_assessed": true,
+  "quality_accepted": false,
+  "production_approved": false,
+  "server_latency_proven": false
+}

@@ -1,0 +1,18 @@
+{
+  "status": "stopped_after_visual_review",
+  "confirmed_at_unix": 1789992059.5999901,
+  "terminal_exit_code": 130,
+  "supervisor_and_worker_absent": true,
+  "planned_iterations": 500,
+  "completed_iterations": 128,
+  "last_step": 128,
+  "optimizer_steps": {
+    "g": 160,
+    "d": 136
+  },
+  "preserved_complete_checkpoints": [
+    100
+  ],
+  "reason": "All four raw checkpoint100 outputs showed severe photographic degradation. Next is a controlled noise-offset ablation; no automatic resume or restart.",
+  "production_approved": false
+}

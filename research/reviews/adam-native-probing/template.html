@@ -17,7 +17,7 @@ const host = document.querySelector('#rows');
 function render(){
  const match = location.hash.match(/^#step-(0|100|250|500)$/); const step = match ? Number(match[1]) : data.default_step;
  document.querySelectorAll('[data-step]').forEach(a=>a.setAttribute('aria-current',String(Number(a.dataset.step)===step)));
- document.querySelector('#status').textContent=`${data.run_complete?'Run complete':'Run pending'} · completed snapshot iterations: ${data.complete_steps.join(', ') || 'none'} · ${data.available_images} / ${data.expected_images} native images present`;
+ document.querySelector('#status').textContent=`${data.termination ? `Stopped after visual review at iteration ${data.termination.completed_iterations}` : (data.run_complete?'Run complete':'Run pending')} · completed snapshot iterations: ${data.complete_steps.join(', ') || 'none'} · ${data.available_images} / ${data.expected_images} native images present`;
  host.replaceChildren();
  for(const row of data.rows){
   const section=document.createElement('section');const title=document.createElement('h2');title.textContent=`Latent ${String(row.index).padStart(3,'0')} · unfiltered`;section.append(title);
@@ -25,7 +25,7 @@ function render(){
   for(const [key,label] of [['baseline','Original FFHQ baseline'],[`raw-${step}`,`Raw · iteration ${step}`],[`ema-${step}`,`EMA · iteration ${step}`]]){
    const fig=document.createElement('figure');const caption=document.createElement('figcaption');caption.textContent=label;fig.append(caption);const item=row.images[key];
    if(item.status==='complete'){const a=document.createElement('a');a.href=item.url;a.target='_blank';a.rel='noopener';a.title='Open original 1024 × 1024 PNG';const im=document.createElement('img');im.src=item.url;im.alt=`Latent ${row.index}, ${label}`;im.loading='lazy';a.append(im);fig.append(a);const small=document.createElement('small');small.textContent=`SHA-256 ${item.sha256.slice(0,16)}…`;fig.append(small)}
-   else{const p=document.createElement('div');p.className='pending';p.textContent='Snapshot pending';fig.append(p)}
+   else{const p=document.createElement('div');p.className='pending';p.textContent=data.termination?'Not produced — run stopped':'Snapshot pending';fig.append(p)}
    grid.append(fig);
   }section.append(grid);host.append(section);
  }
