@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "scope": "Subjective mechanics-only review of all four original baseline and raw iteration-10 native 1024 PNGs, individually inspected without filtering or repair. EMA and iterations 0/5 are retained in the preview but not visually audited here.",
+  "manifest_sha256": "a8ea68cee6fbafee34c24bc9017ac956a84b3b6b531f67d19e1de870eb8336e4",
+  "sources": {
+    "protocol.json": {
+      "path": "research/runs/adam-native1024-probing-smoke10-v2/protocol.json",
+      "url": "../../runs/adam-native1024-probing-smoke10-v2/protocol.json",
+      "sha256": "aae3eb23473ac121c2220f4931bf965cfd9d964694b636a2587cdd6931de0ef4",
+      "bytes": 10682
+    },
+    "eval-z.npz": {
+      "path": "research/runs/adam-native1024-probing-smoke10-v2/eval-z.npz",
+      "url": "../../runs/adam-native1024-probing-smoke10-v2/eval-z.npz",
+      "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
+      "bytes": 8448
+    },
+    "smoke.py": {
+      "path": "research/runs/adam-native1024-probing-smoke10-v2/smoke.py",
+      "url": "../../runs/adam-native1024-probing-smoke10-v2/smoke.py",
+      "sha256": "a0f58197d99dea71e19f6b1ce0ade2491173bba1576c8e4ba44ed844faf48e63",
+      "bytes": 18230
+    },
+    "modulation.py": {
+      "path": "research/runs/adam-native1024-probing-smoke10-v2/modulation.py",
+      "url": "../../runs/adam-native1024-probing-smoke10-v2/modulation.py",
+      "sha256": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+      "bytes": 11955
+    },
+    "initial-equality.json": {
+      "path": "research/runs/adam-native1024-probing-smoke10-v2/initial-equality.json",
+      "url": "../../runs/adam-native1024-probing-smoke10-v2/initial-equality.json",
+      "sha256": "dc28c8342b50ccbcf2d8cf8ade240f69da37e7c5b6e3e922eb9289dd5d02d731",
+      "bytes": 93
+    },
+    "result.json": {
+      "path": "research/runs/adam-native1024-probing-smoke10-v2/result.json",
+      "url": "../../runs/adam-native1024-probing-smoke10-v2/result.json",
+      "sha256": "49f5750911703121e458385204694a4fa896c014c441cc1c7c680cb337a4daea",
+      "bytes": 11520
+    }
+  },
+  "rows": [
+    {
+      "index": 0,
+      "baseline": {
+        "status": "complete",
+        "path": "research/runs/adam-native1024-probing-smoke10-v2/baseline-000.png",
+        "url": "../../runs/adam-native1024-probing-smoke10-v2/baseline-000.png",
+        "sha256": "139bd356e72ad296f58229097b7bd5f4e1425902f16491386ed82cd5f65d3884",
+        "bytes": 1283288,
+        "width": 1024,
+        "height": 1024
+      },
+      "raw_iteration10": {
+        "status": "complete",
+        "path": "research/runs/adam-native1024-probing-smoke10-v2/step-010/raw-000.png",
+        "url": "../../runs/adam-native1024-probing-smoke10-v2/step-010/raw-000.png",
+        "sha256": "9bfb173ca38ff080656c0f1f28da8ac93e69bc3bb0625594e4c55dbeb7f4fc1c",
+        "bytes": 1588125,
+        "width": 1024,
+        "height": 1024
+      },
+      "major_new_facial_degradation_observed": false,
+      "note": "Face, eyes and smile remain coherent and the same apparent child is retained. Raw weights darken/strengthen hair and skin texture slightly. The strange background/hand structure already exists in the baseline; no major new facial deformation is evident."
+    },
+    {
+      "index": 1,
+      "baseline": {
+        "status": "complete",
+        "path": "research/runs/adam-native1024-probing-smoke10-v2/baseline-001.png",
+        "url": "../../runs/adam-native1024-probing-smoke10-v2/baseline-001.png",
+        "sha256": "b6183481bdf66c62ad4d2a8bdc4ac67e06c88e8df225c73369bb8cbeb3c47600",
+        "bytes": 1479508,
+        "width": 1024,
+        "height": 1024
+      },
+      "raw_iteration10": {
+        "status": "complete",
+        "path": "research/runs/adam-native1024-probing-smoke10-v2/step-010/raw-001.png",
+        "url": "../../runs/adam-native1024-probing-smoke10-v2/step-010/raw-001.png",
+        "sha256": "8690c185c659ac8e7014c1c596c4c4e4c2af901eb679092b50504e819d0b0fad",
+        "bytes": 1778544,
+        "width": 1024,
+        "height": 1024
+      },
+      "major_new_facial_degradation_observed": false,
+      "note": "The same adult face, eye placement, cap and scarf remain. Skin and hair have somewhat stronger local contrast and texture; face geometry is stable. No major new facial deformation is evident."
+    },
+    {
+      "index": 2,
+      "baseline": {
+        "status": "complete",
+        "path": "research/runs/adam-native1024-probing-smoke10-v2/baseline-002.png",
+        "url": "../../runs/adam-native1024-probing-smoke10-v2/baseline-002.png",
+        "sha256": "175d7d5a4d1ca45f0c878cd11e4d8bca99eafe6a5eb3eaa2582f8ced18646ff8",
+        "bytes": 1320444,
+        "width": 1024,
+        "height": 1024
+      },
+      "raw_iteration10": {
+        "status": "complete",
+        "path": "research/runs/adam-native1024-probing-smoke10-v2/step-010/raw-002.png",
+        "url": "../../runs/adam-native1024-probing-smoke10-v2/step-010/raw-002.png",
+        "sha256": "ab83eff543c704c57b4aaf09528b397f1003768a4a435a9e28c0dcbbc7370287",
+        "bytes": 1627826,
+        "width": 1024,
+        "height": 1024
+      },
+      "major_new_facial_degradation_observed": false,
+      "note": "The same adult face and glasses remain; eyes remain heavily shadowed in both. Raw output has darker, more pronounced skin texture and contrast. No major new facial deformation is evident."
+    },
+    {
+      "index": 3,
+      "baseline": {
+        "status": "complete",
+        "path": "research/runs/adam-native1024-probing-smoke10-v2/baseline-003.png",
+        "url": "../../runs/adam-native1024-probing-smoke10-v2/baseline-003.png",
+        "sha256": "17e01e3036f8e4d1d0d92f56f84aabcb3cb7ec014965ccb850a3a907477c44b4",
+        "bytes": 1664784,
+        "width": 1024,
+        "height": 1024
+      },
+      "raw_iteration10": {
+        "status": "complete",
+        "path": "research/runs/adam-native1024-probing-smoke10-v2/step-010/raw-003.png",
+        "url": "../../runs/adam-native1024-probing-smoke10-v2/step-010/raw-003.png",
+        "sha256": "170bf0880aae119f0836d335dc2a4f155a63cd1896b30f1c7e27e09642c2e2a1",
+        "bytes": 1846691,
+        "width": 1024,
+        "height": 1024
+      },
+      "major_new_facial_degradation_observed": false,
+      "note": "The same apparent infant/toddler face, knitted hat and open smile remain. Fine skin and fabric contrast increases; eye and mouth structure remains recognizable. No major new facial deformation is evident."
+    }
+  ],
+  "summary": "No major new facial collapse was observed in these four raw outputs. All four retain the baseline subject and composition, with noticeable contrast/texture changes. These unfiltered FFHQ outputs include children and hats, and are not priest-generation candidates. This tiny sample does not establish convergence, target-domain quality, generalization, unseen-latent diversity, or production readiness.",
+  "reviewed_native_images": 8,
+  "fisher_estimated": false,
+  "main_adaptation_run": false,
+  "production_approved": false,
+  "server_latency_proven": false
+}

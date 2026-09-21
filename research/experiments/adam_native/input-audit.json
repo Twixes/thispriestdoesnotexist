@@ -1,0 +1,426 @@
+{
+  "scope": "Read-only original native1024 StyleGAN2 input/runtime audit for a bounded AdAM modulation smoke. No generator/discriminator instantiation, model forward/backward or training executed.",
+  "original_pickle": {
+    "path": "research/models/ffhq1024.pkl",
+    "sha256": "a205a346e86a9ddaae702e118097d014b7b8bd719491396a162cca438f2f524c",
+    "bytes": 381624121,
+    "source_url": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl",
+    "returns": [
+      "G",
+      "D",
+      "G_ema"
+    ],
+    "recommended_if_raw_G_required": "Use original G and D from this one verified pickle; immediately release G_ema and unused dictionary. Do not use ffhq256.pkl or any adapted checkpoint."
+  },
+  "safe_alternative": {
+    "generator": {
+      "path": "research/runs/inference-cpu/ffhq1024/baseline-bundle/generator.safetensors",
+      "sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+      "metadata_path": "research/runs/inference-cpu/ffhq1024/baseline-bundle/model.json",
+      "metadata_sha256": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+      "source_provenance_sha256": "dcdd857c3620f159c1c1f632e7847324b6d6487c58197627deef8d037955b776",
+      "network": "original pretrained G_ema, not raw G",
+      "training_step": 0,
+      "init_kwargs": {
+        "z_dim": 512,
+        "c_dim": 0,
+        "w_dim": 512,
+        "img_resolution": 1024,
+        "img_channels": 3,
+        "mapping_kwargs": {
+          "num_layers": 8,
+          "embed_features": null,
+          "layer_features": null,
+          "activation": "lrelu",
+          "lr_multiplier": 0.01,
+          "w_avg_beta": 0.995
+        },
+        "synthesis_kwargs": {
+          "channel_base": 32768,
+          "channel_max": 512,
+          "num_fp16_res": 4,
+          "conv_clamp": 256,
+          "architecture": "skip",
+          "resample_filter": [
+            1,
+            3,
+            3,
+            1
+          ],
+          "use_noise": true,
+          "activation": "lrelu"
+        }
+      },
+      "lineage_note": "Original source pickle recorded in adjacent source-provenance. model.json source_checkpoint_sha256 is null; do not silently claim this is raw G or a new tensor-by-tensor equality test."
+    },
+    "discriminator": {
+      "path": "research/models/ffhq1024-discriminator/D.safetensors",
+      "sha256": "d91ebf17ce8ef94ba50db60d5452583085a4c4723eb7b294daea92510558f1a5",
+      "metadata_path": "research/models/ffhq1024-discriminator/metadata.json",
+      "metadata_sha256": "f68e7ede5ace491f00c844617cf159036e2d3eaeb8e93bf87ee6f7ec590099c0",
+      "init_kwargs": {
+        "c_dim": 0,
+        "img_resolution": 1024,
+        "img_channels": 3,
+        "architecture": "resnet",
+        "channel_base": 32768,
+        "channel_max": 512,
+        "num_fp16_res": 4,
+        "conv_clamp": 256,
+        "cmap_dim": null,
+        "block_kwargs": {
+          "activation": "lrelu",
+          "resample_filter": [
+            1,
+            3,
+            3,
+            1
+          ],
+          "freeze_layers": 0
+        },
+        "mapping_kwargs": {
+          "num_layers": 0,
+          "embed_features": null,
+          "layer_features": null,
+          "activation": "lrelu",
+          "lr_multiplier": 0.1
+        },
+        "epilogue_kwargs": {
+          "mbstd_group_size": null,
+          "mbstd_num_channels": 1,
+          "activation": "lrelu"
+        }
+      },
+      "prior_extraction_review_path": "research/models/ffhq1024-discriminator/root-extraction-review.json",
+      "prior_extraction_review_sha256": "a5c13a4f390e25c29c546d419ce9c6d1e2f27a58261bea05b121d07e8738c48f",
+      "prior_validation": "82 state tensors,29,012,513 parameters, strict source reconstruction and safetensor roundtrip equal. Prefix forward checked only; full native D backward not established by extraction."
+    }
+  },
+  "vendor": {
+    "path": "research/vendor/stylegan2-ada-pytorch",
+    "files": {
+      "calc_metrics.py": "dadf6098c1181e7289c71262693377ecfcc612cb9b11f246771fbb7ceaa1b932",
+      "dataset_tool.py": "add941428f690553a5c7e9889022c8ee2436ed8797ad29083512c90e28a5829a",
+      "dnnlib/__init__.py": "01ee5300565a54d4a309ae87784f314a0c82db6c63e6735d1e9a124327f4c12d",
+      "dnnlib/util.py": "8f4c1e9e7eac60f9bf541b2fc0e649a022b2ddde8178df7f85f924f63e3db426",
+      "generate.py": "8ffc1160a3dbee355e002eea37725445e33cd5645f9f80a5b705435bd7c5991c",
+      "legacy.py": "6496d8ebe84d1e515832eada2c9688968ce23c6e13b1e2bc14e673ad96bb562a",
+      "metrics/__init__.py": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+      "metrics/frechet_inception_distance.py": "6159a9b62eee287ae30386c4a7d3315dc4916e61ecdb6513c756b31e684fdee0",
+      "metrics/inception_score.py": "ed168258bd1ac045acc72437445b774fba793a10ac10b2f43ed894fd6d747912",
+      "metrics/kernel_inception_distance.py": "c025d3fa4176eec2b7d0ad0fe27c8dc6d93405d3e1c3095578ee72f64060c453",
+      "metrics/metric_main.py": "f26b087370636f0db1f084a02afb10bddcb7e2faed7e858be4b5d6226be9ff9a",
+      "metrics/metric_utils.py": "05f53790e0173a06fb0b363c2f4d23cbbe63199b2f6fea412a5e6a0c9ca93f81",
+      "metrics/perceptual_path_length.py": "f6e826ffa344837dde292459fcb24a919f7fc664a47d579aa45a2c3cff606197",
+      "metrics/precision_recall.py": "41d16b3ba192c61bebd35014cf12f5d2acb0b52375aaedd5fd1b4605243ec997",
+      "projector.py": "a429abdc102aba8be508b257ddeef3a4acfabdeb871e6592299ce8448d29ba03",
+      "style_mixing.py": "75e7e5a292ace8fdb98d9e9f23173334b1b2e3f41467e45f667f127e3511d6e6",
+      "torch_utils/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+      "torch_utils/custom_ops.py": "ee123ae0458fbe463000d5962a5b804d9e91b25d3fda8500eeaa6ddf6b5c932a",
+      "torch_utils/misc.py": "8b66e614f3dbb27b9b3280030efcb65a94e5cfd0e9d940302692452cb7c44012",
+      "torch_utils/ops/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+      "torch_utils/ops/bias_act.py": "ae9d4a2efbb61f7d21d2e361a5a145704351cc9733d2bd3e5ba4e64938d8e3e3",
+      "torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3",
+      "torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+      "torch_utils/ops/fma.py": "f3fdd6b890e250124557cba35360a1297cac5bdbc4925325403b44bf290956e9",
+      "torch_utils/ops/grid_sample_gradfix.py": "a49a8195b734ecba95c9b63d035f26faa5d794a0b26eb3e9d5f3c521be29c536",
+      "torch_utils/ops/upfirdn2d.py": "7b5865e70ac4156edaefb2a372fee27dc55eb5661568b337cb4168e8936384a8",
+      "torch_utils/persistence.py": "1f24073d03fbb2d772babbf7b8a1175bec6c3423314c2649e9a8a13d37757121",
+      "torch_utils/training_stats.py": "c1c105b7e5c2fa5883516bf2bc05b588da5f45939d37f3fe281abca4579e7616",
+      "train.py": "269f2073481ab269560ff76d4a866ac98656a494884c3ad0edcf8cc99d9e4c24",
+      "training/__init__.py": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+      "training/augment.py": "fd81c871a9bfbb7feaad138b1e875db05c640060bdbf0342247d209eb48ba8f9",
+      "training/dataset.py": "10e433ffde6e3e63963711390ee8eeaa6f0e5a00da9f883117331a48b36e5145",
+      "training/loss.py": "1bd68d7dc1c92c1b78b91f193a45a433b1ff374614f91909ea8cb88eac7bc2d7",
+      "training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24",
+      "training/training_loop.py": "0b589a731712c51791eb22efe0dc1ee6856bf3e9335920db02a3e38dee909eb3",
+      "LICENSE.txt": "d782a1e765f4848609352fd9d74cc36b103ef6f51900baed06fb1c995188b95f"
+    },
+    "files_verified": true,
+    "avoid": "Do not import SG3 or AdAM upstream training/networks under the same unqualified module names in this process."
+  },
+  "environment": {
+    "executable": "research/.venv/bin/python",
+    "python": "3.11.16",
+    "torch": "2.14.0",
+    "numpy": "2.4.6",
+    "safetensors": "0.8.0",
+    "import_smoke_passed": [
+      "legacy",
+      "training.networks",
+      "upfirdn2d",
+      "bias_act",
+      "conv2d_gradfix",
+      "grid_sample_gradfix"
+    ],
+    "model_loaded": false,
+    "cpu_reference_ops": "bias_act/upfirdn2d select reference implementations automatically on CPU; no CUDA compilation. conv2d_gradfix and grid_sample_gradfix are disabled by default. No SG3 pkg_resources workaround needed."
+  },
+  "train_dataset": {
+    "manifest_path": "research/data/flux-priest-domain-v1/manifest.json",
+    "manifest_sha256": "6796be940a10610843c154c7063b3bb907d0ffab18e014737c6abc6f02ee340b",
+    "train_metadata_sha256": "5199081b209453bfddabcae0f739cd0bda10928fe01623aed4d85869744d03e3",
+    "count": 20,
+    "images": [
+      {
+        "id": 141,
+        "path": "research/data/flux-priest-domain-v1/train/141.png",
+        "sha256": "751d3492a88e8b2b348ad56012d2de89001cf8256b6bd82e9fe0aeb7b29ed22b",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 142,
+        "path": "research/data/flux-priest-domain-v1/train/142.png",
+        "sha256": "fe9e5ade4c680736811a9f5871e4f1a954e1bb58cece07825eaad96d726f582d",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 143,
+        "path": "research/data/flux-priest-domain-v1/train/143.png",
+        "sha256": "a994e76f71c3aab6df40c5c48c7124fddceb37edf32f47f62cbc23614732de94",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 145,
+        "path": "research/data/flux-priest-domain-v1/train/145.png",
+        "sha256": "f3cc591b78d89f4bb851369723281d3fc89874678c47fbdb55e8b21b26191829",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 147,
+        "path": "research/data/flux-priest-domain-v1/train/147.png",
+        "sha256": "1e4ec03ffaa1124d616388387da30ff5cbf517e6a2185cacfa59049d57f29810",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 148,
+        "path": "research/data/flux-priest-domain-v1/train/148.png",
+        "sha256": "cb118bb768b6b9bb2ce16c6ae00098f3d50bdad0a591b482495178f35d2619d6",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 149,
+        "path": "research/data/flux-priest-domain-v1/train/149.png",
+        "sha256": "9e2c1fa38192f4bd3fecfcca53eb052931fa814b7e08b4e17d6c86a2784d77f2",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 152,
+        "path": "research/data/flux-priest-domain-v1/train/152.png",
+        "sha256": "f8f9a8e86b6eaf833b2f9d1e1c3dd65e0492ff24fd87f7e8538c922258dcf4be",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 154,
+        "path": "research/data/flux-priest-domain-v1/train/154.png",
+        "sha256": "6d0f9ed146e80c6fc0345299a7e96df21159b9b393795e9d8c7079156b02e0bd",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 155,
+        "path": "research/data/flux-priest-domain-v1/train/155.png",
+        "sha256": "bfcb9be5cca0b5d78ffa608c5f87d672d7e6fc20748005e609058eea3a2be8c7",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 156,
+        "path": "research/data/flux-priest-domain-v1/train/156.png",
+        "sha256": "69fbdfc13e73f6e9422e8997c141aaaaa7729f891d0b992cb623ff4860ef6e1e",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 157,
+        "path": "research/data/flux-priest-domain-v1/train/157.png",
+        "sha256": "e0e0dedeedc87ba011e278f406dc0155be9e2b910e14220ce8e83d36c6682fb0",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 160,
+        "path": "research/data/flux-priest-domain-v1/train/160.png",
+        "sha256": "1c863de27dc6ac5aa619277e3ff69873feb56c6afc37e9f6a339ca7485ddd30d",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 162,
+        "path": "research/data/flux-priest-domain-v1/train/162.png",
+        "sha256": "599f2d58ef0d30b38deb9de5db9b100479e5a5c53fee01d3668c420438334e37",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 163,
+        "path": "research/data/flux-priest-domain-v1/train/163.png",
+        "sha256": "70188d1beb364146ae2806063e75793fe19d94883dfccb12b8ec6f3523886f91",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 166,
+        "path": "research/data/flux-priest-domain-v1/train/166.png",
+        "sha256": "ce1c9919bd610fa762840d6b9df09736399b3187db8ddd064bfe4982faf9fcb8",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 170,
+        "path": "research/data/flux-priest-domain-v1/train/170.png",
+        "sha256": "1ef87bee01f5290327f8d3009b7a0870252b5a2e6c20c4ac4ac2400a06ce20a1",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 173,
+        "path": "research/data/flux-priest-domain-v1/train/173.png",
+        "sha256": "7e192004c33f9bd7ab83349893e4d7571e6d247a63ae2c7e183973eb83ad85d1",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 174,
+        "path": "research/data/flux-priest-domain-v1/train/174.png",
+        "sha256": "ca186b3b95c68838fddcfa66b280ca8adc5707e19f416894646b7e9d7aecfedf",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      },
+      {
+        "id": 180,
+        "path": "research/data/flux-priest-domain-v1/train/180.png",
+        "sha256": "e4d88955abd1fae56b8ce77db77c0f523b9bd9e884c17cab90641578cc5bec64",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "caption_used": false
+      }
+    ],
+    "input_recipe": "Load one train PNG, convertRGB, retain native1024 geometry, transposeNCHW FP32, divide127.5 then subtract1. Labels c=None. Do not pass captions to unconditional G/D.",
+    "heldout_images_opened": false,
+    "heldout_policy": "Only train entries were hashed/header-read; validation/test PNGs and sealed generated tests not opened."
+  },
+  "smoke_recipe": {
+    "status": "proposed_unmeasured_native_GD_backward",
+    "device": "cpu",
+    "dtype": "float32",
+    "cpu_threads": 1,
+    "interop_threads": 1,
+    "batch_size": 1,
+    "force_fp32": true,
+    "fused_modconv": false,
+    "truncation_psi": 1.0,
+    "noise_mode": "const for the reproducible first derivative smoke; disclose that a later stochastic-noise training protocol is different",
+    "mode": "G.eval() preserves mapping.w_avg; eval does not disable gradients. Alternatively G.mapping(z,None,skip_w_avg_update=True) followed by G.synthesis(ws,...). Do not pass skip_w_avg_update through G.forward: it is forwarded to synthesis, not mapping.",
+    "frozen_base": "Freeze original G/D parameters and only enable intended AdAM modulation probes. Record actual target names and gradients; preserve and compare base parameters AND buffers. Root/upstream audit owns exact AdAM objective and probing semantics.",
+    "G_phase": "Enable G probe gradients, freeze D probes/parameters, run one fake image then D(fake); backprop softplus(-D(fake)).mean(). Do not detach fake or put D forward in no_grad: gradient must flow through frozen D to G probes. Release graph after backward.",
+    "D_phase": "Generate fake under no_grad with G probes frozen. Enable only D probes. Backprop fake softplus(D(fake)).mean() and real softplus(-D(real)).mean() sequentially to avoid retaining two D graphs; preserve intended sum/normalization.",
+    "Fisher_caveat": "Squared gradients for Fisher/AdAM must follow the audited upstream per-example/loss convention, not squared gradients after arbitrary accumulation. The examples above establish differentiability only.",
+    "exclude_first_smoke": [
+      "R1 double-backward",
+      "path-length regularization",
+      "EMA copy",
+      "full Adam state on base weights",
+      "simultaneous teacher generator",
+      "batch of20 native inputs"
+    ],
+    "batch1_discriminator_limit": "Original D has mbstd_group_size=None (entire minibatch); batch1 standard-deviation channel is effectively constant. Microbatch accumulation does not reproduce a multi-image minibatch statistic. Do not call this a full recipe reproduction.",
+    "memory": "Independent process-group RSS guard e.g12GiB, available-memory floor20%, swap-growth limit512MiB, first-smoke deadline600s. These are proposed bounds, not measured native1024 backward memory. Preserve failures; do not silently reduce image resolution or raise guards.",
+    "conditional_optimization": "Only if a measured activation-memory failure requires it, consider separately validated non-reentrant per-block checkpointing, preserving RNG and mapping buffers; do not introduce it without a new recorded check."
+  },
+  "prior_inference_only_evidence": {
+    "path": "research/runs/inference-cpu/ffhq1024/threads-1/benchmark.json",
+    "warm_median_forward_seconds": 0.636239624931477,
+    "peak_process_rss_bytes": 3863347200,
+    "scope": "Existing original G_ema CPU1 inference only; not new AdAM/G-D backward or GPU-server performance."
+  },
+  "owner_feedback_context": "Owner rejected current diffusion baseline realism. Frozen independent labels remain historical; no agent metric or successful gradient smoke implies owner approval or production quality.",
+  "production_approved": false
+}

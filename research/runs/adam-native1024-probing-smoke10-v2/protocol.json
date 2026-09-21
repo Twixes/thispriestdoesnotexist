@@ -1,0 +1,191 @@
+{
+  "name": "adam-native1024-probing-smoke10",
+  "iterations": 10,
+  "resolution": 1024,
+  "device": "cpu",
+  "threads": 1,
+  "batch": 1,
+  "seed": 2026092209,
+  "g_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+  "d_weights_sha256": "d91ebf17ce8ef94ba50db60d5452583085a4c4723eb7b294daea92510558f1a5",
+  "dataset_manifest_sha256": "6796be940a10610843c154c7063b3bb907d0ffab18e014737c6abc6f02ee340b",
+  "training": [
+    {
+      "id": 141,
+      "path": "research/data/flux-priest-domain-v1/train/141.png",
+      "sha256": "751d3492a88e8b2b348ad56012d2de89001cf8256b6bd82e9fe0aeb7b29ed22b"
+    },
+    {
+      "id": 142,
+      "path": "research/data/flux-priest-domain-v1/train/142.png",
+      "sha256": "fe9e5ade4c680736811a9f5871e4f1a954e1bb58cece07825eaad96d726f582d"
+    },
+    {
+      "id": 143,
+      "path": "research/data/flux-priest-domain-v1/train/143.png",
+      "sha256": "a994e76f71c3aab6df40c5c48c7124fddceb37edf32f47f62cbc23614732de94"
+    },
+    {
+      "id": 145,
+      "path": "research/data/flux-priest-domain-v1/train/145.png",
+      "sha256": "f3cc591b78d89f4bb851369723281d3fc89874678c47fbdb55e8b21b26191829"
+    },
+    {
+      "id": 147,
+      "path": "research/data/flux-priest-domain-v1/train/147.png",
+      "sha256": "1e4ec03ffaa1124d616388387da30ff5cbf517e6a2185cacfa59049d57f29810"
+    },
+    {
+      "id": 148,
+      "path": "research/data/flux-priest-domain-v1/train/148.png",
+      "sha256": "cb118bb768b6b9bb2ce16c6ae00098f3d50bdad0a591b482495178f35d2619d6"
+    },
+    {
+      "id": 149,
+      "path": "research/data/flux-priest-domain-v1/train/149.png",
+      "sha256": "9e2c1fa38192f4bd3fecfcca53eb052931fa814b7e08b4e17d6c86a2784d77f2"
+    },
+    {
+      "id": 152,
+      "path": "research/data/flux-priest-domain-v1/train/152.png",
+      "sha256": "f8f9a8e86b6eaf833b2f9d1e1c3dd65e0492ff24fd87f7e8538c922258dcf4be"
+    },
+    {
+      "id": 154,
+      "path": "research/data/flux-priest-domain-v1/train/154.png",
+      "sha256": "6d0f9ed146e80c6fc0345299a7e96df21159b9b393795e9d8c7079156b02e0bd"
+    },
+    {
+      "id": 155,
+      "path": "research/data/flux-priest-domain-v1/train/155.png",
+      "sha256": "bfcb9be5cca0b5d78ffa608c5f87d672d7e6fc20748005e609058eea3a2be8c7"
+    },
+    {
+      "id": 156,
+      "path": "research/data/flux-priest-domain-v1/train/156.png",
+      "sha256": "69fbdfc13e73f6e9422e8997c141aaaaa7729f891d0b992cb623ff4860ef6e1e"
+    },
+    {
+      "id": 157,
+      "path": "research/data/flux-priest-domain-v1/train/157.png",
+      "sha256": "e0e0dedeedc87ba011e278f406dc0155be9e2b910e14220ce8e83d36c6682fb0"
+    },
+    {
+      "id": 160,
+      "path": "research/data/flux-priest-domain-v1/train/160.png",
+      "sha256": "1c863de27dc6ac5aa619277e3ff69873feb56c6afc37e9f6a339ca7485ddd30d"
+    },
+    {
+      "id": 162,
+      "path": "research/data/flux-priest-domain-v1/train/162.png",
+      "sha256": "599f2d58ef0d30b38deb9de5db9b100479e5a5c53fee01d3668c420438334e37"
+    },
+    {
+      "id": 163,
+      "path": "research/data/flux-priest-domain-v1/train/163.png",
+      "sha256": "70188d1beb364146ae2806063e75793fe19d94883dfccb12b8ec6f3523886f91"
+    },
+    {
+      "id": 166,
+      "path": "research/data/flux-priest-domain-v1/train/166.png",
+      "sha256": "ce1c9919bd610fa762840d6b9df09736399b3187db8ddd064bfe4982faf9fcb8"
+    },
+    {
+      "id": 170,
+      "path": "research/data/flux-priest-domain-v1/train/170.png",
+      "sha256": "1ef87bee01f5290327f8d3009b7a0870252b5a2e6c20c4ac4ac2400a06ce20a1"
+    },
+    {
+      "id": 173,
+      "path": "research/data/flux-priest-domain-v1/train/173.png",
+      "sha256": "7e192004c33f9bd7ab83349893e4d7571e6d247a63ae2c7e183973eb83ad85d1"
+    },
+    {
+      "id": 174,
+      "path": "research/data/flux-priest-domain-v1/train/174.png",
+      "sha256": "ca186b3b95c68838fddcfa66b280ca8adc5707e19f416894646b7e9d7aecfedf"
+    },
+    {
+      "id": 180,
+      "path": "research/data/flux-priest-domain-v1/train/180.png",
+      "sha256": "e4d88955abd1fae56b8ce77db77c0f523b9bd9e884c17cab90641578cc5bec64"
+    }
+  ],
+  "pins": {
+    "research/experiments/adam_native/smoke.py": "a0f58197d99dea71e19f6b1ce0ade2491173bba1576c8e4ba44ed844faf48e63",
+    "research/experiments/adam_native/modulation.py": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+    "research/experiments/adam_native/upstream/provenance.json": "a405f5bd2e50e0c2b92df0a860b50700d0c0b82ff0575edd7c4f481aeb2c165b",
+    "research/runs/inference-cpu/ffhq1024/baseline-bundle/model.json": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+    "research/models/ffhq1024-discriminator/metadata.json": "f68e7ede5ace491f00c844617cf159036e2d3eaeb8e93bf87ee6f7ec590099c0",
+    "research/vendor/stylegan2-ada-pytorch/calc_metrics.py": "dadf6098c1181e7289c71262693377ecfcc612cb9b11f246771fbb7ceaa1b932",
+    "research/vendor/stylegan2-ada-pytorch/dataset_tool.py": "add941428f690553a5c7e9889022c8ee2436ed8797ad29083512c90e28a5829a",
+    "research/vendor/stylegan2-ada-pytorch/dnnlib/__init__.py": "01ee5300565a54d4a309ae87784f314a0c82db6c63e6735d1e9a124327f4c12d",
+    "research/vendor/stylegan2-ada-pytorch/dnnlib/util.py": "8f4c1e9e7eac60f9bf541b2fc0e649a022b2ddde8178df7f85f924f63e3db426",
+    "research/vendor/stylegan2-ada-pytorch/generate.py": "8ffc1160a3dbee355e002eea37725445e33cd5645f9f80a5b705435bd7c5991c",
+    "research/vendor/stylegan2-ada-pytorch/legacy.py": "6496d8ebe84d1e515832eada2c9688968ce23c6e13b1e2bc14e673ad96bb562a",
+    "research/vendor/stylegan2-ada-pytorch/metrics/__init__.py": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+    "research/vendor/stylegan2-ada-pytorch/metrics/frechet_inception_distance.py": "6159a9b62eee287ae30386c4a7d3315dc4916e61ecdb6513c756b31e684fdee0",
+    "research/vendor/stylegan2-ada-pytorch/metrics/inception_score.py": "ed168258bd1ac045acc72437445b774fba793a10ac10b2f43ed894fd6d747912",
+    "research/vendor/stylegan2-ada-pytorch/metrics/kernel_inception_distance.py": "c025d3fa4176eec2b7d0ad0fe27c8dc6d93405d3e1c3095578ee72f64060c453",
+    "research/vendor/stylegan2-ada-pytorch/metrics/metric_main.py": "f26b087370636f0db1f084a02afb10bddcb7e2faed7e858be4b5d6226be9ff9a",
+    "research/vendor/stylegan2-ada-pytorch/metrics/metric_utils.py": "05f53790e0173a06fb0b363c2f4d23cbbe63199b2f6fea412a5e6a0c9ca93f81",
+    "research/vendor/stylegan2-ada-pytorch/metrics/perceptual_path_length.py": "f6e826ffa344837dde292459fcb24a919f7fc664a47d579aa45a2c3cff606197",
+    "research/vendor/stylegan2-ada-pytorch/metrics/precision_recall.py": "41d16b3ba192c61bebd35014cf12f5d2acb0b52375aaedd5fd1b4605243ec997",
+    "research/vendor/stylegan2-ada-pytorch/projector.py": "a429abdc102aba8be508b257ddeef3a4acfabdeb871e6592299ce8448d29ba03",
+    "research/vendor/stylegan2-ada-pytorch/style_mixing.py": "75e7e5a292ace8fdb98d9e9f23173334b1b2e3f41467e45f667f127e3511d6e6",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/custom_ops.py": "ee123ae0458fbe463000d5962a5b804d9e91b25d3fda8500eeaa6ddf6b5c932a",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/misc.py": "8b66e614f3dbb27b9b3280030efcb65a94e5cfd0e9d940302692452cb7c44012",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/ops/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/ops/bias_act.py": "ae9d4a2efbb61f7d21d2e361a5a145704351cc9733d2bd3e5ba4e64938d8e3e3",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/ops/fma.py": "f3fdd6b890e250124557cba35360a1297cac5bdbc4925325403b44bf290956e9",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/ops/grid_sample_gradfix.py": "a49a8195b734ecba95c9b63d035f26faa5d794a0b26eb3e9d5f3c521be29c536",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/ops/upfirdn2d.py": "7b5865e70ac4156edaefb2a372fee27dc55eb5661568b337cb4168e8936384a8",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/persistence.py": "1f24073d03fbb2d772babbf7b8a1175bec6c3423314c2649e9a8a13d37757121",
+    "research/vendor/stylegan2-ada-pytorch/torch_utils/training_stats.py": "c1c105b7e5c2fa5883516bf2bc05b588da5f45939d37f3fe281abca4579e7616",
+    "research/vendor/stylegan2-ada-pytorch/train.py": "269f2073481ab269560ff76d4a866ac98656a494884c3ad0edcf8cc99d9e4c24",
+    "research/vendor/stylegan2-ada-pytorch/training/__init__.py": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+    "research/vendor/stylegan2-ada-pytorch/training/augment.py": "fd81c871a9bfbb7feaad138b1e875db05c640060bdbf0342247d209eb48ba8f9",
+    "research/vendor/stylegan2-ada-pytorch/training/dataset.py": "10e433ffde6e3e63963711390ee8eeaa6f0e5a00da9f883117331a48b36e5145",
+    "research/vendor/stylegan2-ada-pytorch/training/loss.py": "1bd68d7dc1c92c1b78b91f193a45a433b1ff374614f91909ea8cb88eac7bc2d7",
+    "research/vendor/stylegan2-ada-pytorch/training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24",
+    "research/vendor/stylegan2-ada-pytorch/training/training_loop.py": "0b589a731712c51791eb22efe0dc1ee6856bf3e9335920db02a3e38dee909eb3"
+  },
+  "g_lr": 0.0016,
+  "d_lr": 0.0018823529411764706,
+  "g_beta2": 0.9919919678228657,
+  "d_beta2": 0.9905854573074332,
+  "r1_gamma": 10,
+  "r1_every": 16,
+  "path_weight": 2,
+  "path_every": 4,
+  "path_decay": 0.01,
+  "style_mixing_probability": 0.9,
+  "ema_decay": 0.9977843871238888,
+  "augmentation": "random horizontal flip of real images only",
+  "preview_seed": 2026092210,
+  "preview_count": 4,
+  "preview_steps": [
+    0,
+    5,
+    10
+  ],
+  "sampling": "independent Gaussian z; no prompt; psi1; constant synthesis noise for review only; random synthesis noise during updates",
+  "deviations": [
+    "NVIDIA native1024 networks rather than Rosinality256; preserve own equalized scaling",
+    "CPU FP32 batch1 instead of CUDA batch4; minibatch variance is zero, feature includes sqrt(epsilon)",
+    "Start G from original EMA export, D from original checkpoint",
+    "Ten probing iterations only; no Fisher/main adaptation and no convergence claim"
+  ],
+  "guards": {
+    "start_available_fraction": 0.35,
+    "runtime_available_fraction": 0.2,
+    "rss_gib": 12,
+    "swap_growth_mib": 512,
+    "seconds": 1200
+  },
+  "production_approved": false,
+  "server_latency_proven": false
+}

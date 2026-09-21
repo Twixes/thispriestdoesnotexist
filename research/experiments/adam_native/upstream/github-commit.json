@@ -1,0 +1,61 @@
+{
+  "sha": "6428e99cfb36bc8bda3506350824f0c7dac9a5ad",
+  "node_id": "C_kwDOIBK8tdoAKDY0MjhlOTljZmIzNmJjOGJkYTM1MDYzNTA4MjRmMGM3ZGFjOWE1YWQ",
+  "commit": {
+    "author": {
+      "name": "Yunqing",
+      "email": "yunqing@Yunqings-MacBook-Pro.local",
+      "date": "2023-12-21T08:57:38Z"
+    },
+    "committer": {
+      "name": "Yunqing",
+      "email": "yunqing@Yunqings-MacBook-Pro.local",
+      "date": "2023-12-21T08:57:38Z"
+    },
+    "message": "fix typo in prob bash",
+    "tree": {
+      "sha": "e235d71a76245d3021ce84d731bca1f21b664aa8",
+      "url": "https://api.github.com/repos/yunqing-me/AdAM/git/trees/e235d71a76245d3021ce84d731bca1f21b664aa8"
+    },
+    "url": "https://api.github.com/repos/yunqing-me/AdAM/git/commits/6428e99cfb36bc8bda3506350824f0c7dac9a5ad",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/yunqing-me/AdAM/commits/6428e99cfb36bc8bda3506350824f0c7dac9a5ad",
+  "html_url": "https://github.com/yunqing-me/AdAM/commit/6428e99cfb36bc8bda3506350824f0c7dac9a5ad",
+  "comments_url": "https://api.github.com/repos/yunqing-me/AdAM/commits/6428e99cfb36bc8bda3506350824f0c7dac9a5ad/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "ac426235ac37812dc4546501ad076c6e8f8dc251",
+      "url": "https://api.github.com/repos/yunqing-me/AdAM/commits/ac426235ac37812dc4546501ad076c6e8f8dc251",
+      "html_url": "https://github.com/yunqing-me/AdAM/commit/ac426235ac37812dc4546501ad076c6e8f8dc251"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "c1e2ac0914241679dc8d66f5518b7d80b4b7eec6",
+      "filename": "_bash_importance_probing.sh",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/yunqing-me/AdAM/blob/6428e99cfb36bc8bda3506350824f0c7dac9a5ad/_bash_importance_probing.sh",
+      "raw_url": "https://github.com/yunqing-me/AdAM/raw/6428e99cfb36bc8bda3506350824f0c7dac9a5ad/_bash_importance_probing.sh",
+      "contents_url": "https://api.github.com/repos/yunqing-me/AdAM/contents/_bash_importance_probing.sh?ref=6428e99cfb36bc8bda3506350824f0c7dac9a5ad",
+      "patch": "@@ -8,11 +8,11 @@ export PYTHONPATH=.\n # step 1. Importance Probing\n \n # FFHQ - Babies\n-CUDA_VISIBLE_DEVICES=0 python ${method_0}.py \\\n+CUDA_VISIBLE_DEVICES=0 python AdAM_importance_probing.py.py \\\n  --exp _low_rank_probing_ffhq-babies --data_path babies --n_sample_train 10 \\\n  --fisher_iter 500 --fisher_freq 500 --num_batch_fisher 250 --source_key ffhq --ckpt_source style_gan_source_ffhq.pt\n \n # FFHQ - AFHQ-Cat\n-CUDA_VISIBLE_DEVICES=7 python ${method_0}.py \\\n+CUDA_VISIBLE_DEVICES=7 python AdAM_importance_probing.py.py \\\n  --exp _low_rank_probing_ffhq-afhq_cat --data_path afhq_cat --n_sample_train 10 \\\n  --fisher_iter 500 --fisher_freq 500 --num_batch_fisher 250 --source_key ffhq --ckpt_source style_gan_source_ffhq.pt"
+    }
+  ]
+}

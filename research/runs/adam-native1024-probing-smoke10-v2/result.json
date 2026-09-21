@@ -1,0 +1,470 @@
+{
+  "complete": true,
+  "iterations": 10,
+  "g_optimizer_steps": 13,
+  "d_optimizer_steps": 11,
+  "frozen_g_unchanged": true,
+  "frozen_d_unchanged": true,
+  "checkpoint_model_state_restored_exactly": true,
+  "folded_native_max_errors": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "seconds_training_and_previews": 149.52967216598336,
+  "metrics": [
+    {
+      "iteration": 0,
+      "step": 1,
+      "real_id": 180,
+      "horizontal_flip": false,
+      "d_gradient_families": {
+        "u_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 17,
+          "nonzero_gradients": 17,
+          "finite": true
+        }
+      },
+      "d_loss": 1.2536300420761108,
+      "r1_loss": 1.4987415075302124,
+      "g_loss": 1.0648750066757202,
+      "g_gradient_families": {
+        "u_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 77,
+          "nonzero_gradients": 77,
+          "finite": true
+        }
+      },
+      "path_loss": 2.0118770599365234,
+      "seconds": 28.259018250042573,
+      "path_mean": 0.005065479315817356
+    },
+    {
+      "iteration": 1,
+      "step": 2,
+      "real_id": 147,
+      "horizontal_flip": false,
+      "d_gradient_families": {
+        "u_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 17,
+          "nonzero_gradients": 17,
+          "finite": true
+        }
+      },
+      "d_loss": 1.2705068588256836,
+      "g_loss": 2.9110777378082275,
+      "g_gradient_families": {
+        "u_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 77,
+          "nonzero_gradients": 77,
+          "finite": true
+        }
+      },
+      "seconds": 10.062120500020683,
+      "path_mean": 0.005065479315817356
+    },
+    {
+      "iteration": 2,
+      "step": 3,
+      "real_id": 142,
+      "horizontal_flip": true,
+      "d_gradient_families": {
+        "u_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 17,
+          "nonzero_gradients": 17,
+          "finite": true
+        }
+      },
+      "d_loss": 1.6809611320495605,
+      "g_loss": 0.2390364557504654,
+      "g_gradient_families": {
+        "u_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 77,
+          "nonzero_gradients": 77,
+          "finite": true
+        }
+      },
+      "seconds": 10.053785459022038,
+      "path_mean": 0.005065479315817356
+    },
+    {
+      "iteration": 3,
+      "step": 4,
+      "real_id": 141,
+      "horizontal_flip": false,
+      "d_gradient_families": {
+        "u_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 17,
+          "nonzero_gradients": 17,
+          "finite": true
+        }
+      },
+      "d_loss": 0.48469358682632446,
+      "g_loss": 1.0703495740890503,
+      "g_gradient_families": {
+        "u_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 77,
+          "nonzero_gradients": 77,
+          "finite": true
+        }
+      },
+      "seconds": 10.089256791980006,
+      "path_mean": 0.005065479315817356
+    },
+    {
+      "iteration": 4,
+      "step": 5,
+      "real_id": 173,
+      "horizontal_flip": false,
+      "d_gradient_families": {
+        "u_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 17,
+          "nonzero_gradients": 17,
+          "finite": true
+        }
+      },
+      "d_loss": 2.0727343559265137,
+      "g_loss": 2.8779125213623047,
+      "g_gradient_families": {
+        "u_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 77,
+          "nonzero_gradients": 77,
+          "finite": true
+        }
+      },
+      "path_loss": 0.9512064456939697,
+      "seconds": 17.9091816250002,
+      "path_mean": 0.008548509329557419
+    },
+    {
+      "iteration": 5,
+      "step": 6,
+      "real_id": 157,
+      "horizontal_flip": false,
+      "d_gradient_families": {
+        "u_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 17,
+          "nonzero_gradients": 17,
+          "finite": true
+        }
+      },
+      "d_loss": 1.5668987035751343,
+      "g_loss": 0.4956725835800171,
+      "g_gradient_families": {
+        "u_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 77,
+          "nonzero_gradients": 77,
+          "finite": true
+        }
+      },
+      "seconds": 9.844849665998481,
+      "path_mean": 0.008548509329557419
+    },
+    {
+      "iteration": 6,
+      "step": 7,
+      "real_id": 180,
+      "horizontal_flip": true,
+      "d_gradient_families": {
+        "u_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 17,
+          "nonzero_gradients": 17,
+          "finite": true
+        }
+      },
+      "d_loss": 0.502554178237915,
+      "g_loss": 2.8174610137939453,
+      "g_gradient_families": {
+        "u_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 77,
+          "nonzero_gradients": 77,
+          "finite": true
+        }
+      },
+      "seconds": 10.036758000031114,
+      "path_mean": 0.008548509329557419
+    },
+    {
+      "iteration": 7,
+      "step": 8,
+      "real_id": 149,
+      "horizontal_flip": false,
+      "d_gradient_families": {
+        "u_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 17,
+          "nonzero_gradients": 17,
+          "finite": true
+        }
+      },
+      "d_loss": 0.31532156467437744,
+      "g_loss": 2.5740723609924316,
+      "g_gradient_families": {
+        "u_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 77,
+          "nonzero_gradients": 77,
+          "finite": true
+        }
+      },
+      "seconds": 10.05899829196278,
+      "path_mean": 0.008548509329557419
+    },
+    {
+      "iteration": 8,
+      "step": 9,
+      "real_id": 152,
+      "horizontal_flip": false,
+      "d_gradient_families": {
+        "u_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 17,
+          "nonzero_gradients": 17,
+          "finite": true
+        }
+      },
+      "d_loss": 0.31330662965774536,
+      "g_loss": 1.98563814163208,
+      "g_gradient_families": {
+        "u_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 77,
+          "nonzero_gradients": 77,
+          "finite": true
+        }
+      },
+      "path_loss": 2.7644190788269043,
+      "seconds": 17.992669124971144,
+      "path_mean": 0.01448625698685646
+    },
+    {
+      "iteration": 9,
+      "step": 10,
+      "real_id": 163,
+      "horizontal_flip": false,
+      "d_gradient_families": {
+        "u_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 25,
+          "nonzero_gradients": 25,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 17,
+          "nonzero_gradients": 17,
+          "finite": true
+        }
+      },
+      "d_loss": 0.4159740209579468,
+      "g_loss": 2.2754149436950684,
+      "g_gradient_families": {
+        "u_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "v_vector": {
+          "parameters": 60,
+          "nonzero_gradients": 60,
+          "finite": true
+        },
+        "b_vector": {
+          "parameters": 77,
+          "nonzero_gradients": 77,
+          "finite": true
+        }
+      },
+      "seconds": 10.034123333985917,
+      "path_mean": 0.01448625698685646
+    }
+  ],
+  "checkpoint_sha256": "0a018012d7db4cd499b085b4e97a9da6eefe32919a74180a769624219a2faf2e",
+  "folded_generator_sha256": "3ecf01cbe52a16bfb1e490679d09ddcb0f8c1f38eff7ea302a4e55df230e6d2e",
+  "protocol_sha256": "aae3eb23473ac121c2220f4931bf965cfd9d964694b636a2587cdd6931de0ef4",
+  "unconditional": true,
+  "fisher_estimated": false,
+  "main_adaptation_run": false,
+  "production_approved": false,
+  "server_latency_proven": false
+}

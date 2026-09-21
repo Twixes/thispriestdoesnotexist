@@ -1,0 +1,248 @@
+{
+  "repository": "https://github.com/yunqing-me/AdAM",
+  "revision": "6428e99cfb36bc8bda3506350824f0c7dac9a5ad",
+  "source_url": "https://codeload.github.com/yunqing-me/AdAM/tar.gz/6428e99cfb36bc8bda3506350824f0c7dac9a5ad",
+  "retrieved_at_utc": "2026-09-21T11:06:26.423680+00:00",
+  "archive_sha256": "c0896bc6e493cb499f025b60b06bf38a452743e2528764f8820c721492e62799",
+  "files": [
+    {
+      "path": "source/AdAM_importance_probing.py",
+      "size": 23124,
+      "sha256": "818b23b1664d1f40b82a6ef03b1efb23eada5099a5d5e7a78d58b0290a3c53c3"
+    },
+    {
+      "path": "source/AdAM_main_adaptation.py",
+      "size": 41040,
+      "sha256": "97ab7ba6af9adff775adef4cd306bc4fa69747ce69757406fec9d8131f775b3c"
+    },
+    {
+      "path": "source/LICENSE",
+      "size": 1056,
+      "sha256": "a5e6ddb3af783a02eacc848cbe309cc0940b4859ac653e9b1a2e21a4fea22552"
+    },
+    {
+      "path": "source/README.md",
+      "size": 8740,
+      "sha256": "0152d203d6b5ce01caabd3887c503d0be0952e56a185c1d1a0784b4d0e35f3d3"
+    },
+    {
+      "path": "source/_bash_importance_probing.sh",
+      "size": 671,
+      "sha256": "da38c49c0add3139a2422f4b49064e26f6c9c01f7c6cf02e4ad3f330cc0f2701"
+    },
+    {
+      "path": "source/_bash_main_adaptation.sh",
+      "size": 913,
+      "sha256": "dd970318b53854a0f474b3334fa2796fcc632626fc290cbdfc8dac6627030898"
+    },
+    {
+      "path": "source/dataset.py",
+      "size": 1031,
+      "sha256": "9dc6c8c9e3713d5c27b93a344d69254e12e482fcba372dc398f14d15dc88fcb3"
+    },
+    {
+      "path": "source/distributed.py",
+      "size": 2715,
+      "sha256": "30113a5fd97d0907370d590075a6de2a98ed1fa6cb644d4cd9f22e32cfa2f896"
+    },
+    {
+      "path": "source/environment.yml",
+      "size": 3855,
+      "sha256": "cbe5c224afa8add99a863938f1f1729a4f8379fa3ba31ee6c4758f1ecf7e3657"
+    },
+    {
+      "path": "source/gan_metrics/fid_score.py",
+      "size": 11950,
+      "sha256": "5da57a654b16d53e7fe92e898605bd61a70afda63b6e0fe3f3f4023636b29a73"
+    },
+    {
+      "path": "source/gan_metrics/kid_score.py",
+      "size": 13771,
+      "sha256": "7d5665ec79fd3c12336ce330ef28dfbf6930abd1ba72d70b0b4f496f6ea22070"
+    },
+    {
+      "path": "source/gan_metrics/models/inception.py",
+      "size": 4835,
+      "sha256": "d0fded351b024dad64e61ba678763b2b9223114f2facbc0b86e8f1617d3583a3"
+    },
+    {
+      "path": "source/gan_metrics/models/lenet.pth",
+      "size": 248652,
+      "sha256": "e4bed3817dd7723c605580e7b7393538a5dfc3508aacc4890b07e7f07c16bebf"
+    },
+    {
+      "path": "source/gan_metrics/models/lenet.py",
+      "size": 1524,
+      "sha256": "7185895542ebc9a034536a41a073c52b5b4f48f5b699facc27dc6e52de1f469b"
+    },
+    {
+      "path": "source/gan_metrics/precision_recall.py",
+      "size": 12083,
+      "sha256": "2b4af1560432aeceaa25f82e29ec28d0b509ae6f70e54fc6d16a3b1956c29fe6"
+    },
+    {
+      "path": "source/gan_training/checkpoints.py",
+      "size": 2964,
+      "sha256": "60317cb5589572955929792e1ed892e6d295d8eda3405064b0096e24e275ddbd"
+    },
+    {
+      "path": "source/gan_training/distributions.py",
+      "size": 1143,
+      "sha256": "fec026747b95bf5198c71806dd7363b0db80ee0ceb986f5405b95c2c545987f2"
+    },
+    {
+      "path": "source/gan_training/eval.py",
+      "size": 8384,
+      "sha256": "91d31f5fede77e1ee5a89db3f6d65001aabdf1a91d9e3c5928a790dc6fb39324"
+    },
+    {
+      "path": "source/gan_training/inputs.py",
+      "size": 2001,
+      "sha256": "a199b8ace3d34c487df65e62fe391483658b95a9bba289b9fe2e08845eeec32a"
+    },
+    {
+      "path": "source/gan_training/logger.py",
+      "size": 3159,
+      "sha256": "685fc60f0c0fcc79b26f3f41b6c984247b0b277de6a948ca2c8ca366fca717f8"
+    },
+    {
+      "path": "source/gan_training/metrics/__init__.py",
+      "size": 100,
+      "sha256": "5442fe1802137fdb603d438ec858ac1cd0ccdeb1580e17193b1768553c99a257"
+    },
+    {
+      "path": "source/gan_training/metrics/fid_score.py",
+      "size": 7119,
+      "sha256": "df550803a6e2004f0cf87ab306359381eb796a4aac349e525ec4ec9ba1d67c59"
+    },
+    {
+      "path": "source/gan_training/metrics/inception.py",
+      "size": 3151,
+      "sha256": "1accfeb081c691f2114db6ac65ee61e124484ac604c4fadf19a1783391281c9b"
+    },
+    {
+      "path": "source/gan_training/metrics/inception_score.py",
+      "size": 1604,
+      "sha256": "c7e9244f630a7d2a236a1e548a8edb0db8bd940a92d638c13931051fc46e9aa4"
+    },
+    {
+      "path": "source/gan_training/models/__init__.py",
+      "size": 63,
+      "sha256": "f2eec00f316bbc7053b20d79a4632fb91fd95a0d409a64076105026ccc0b988c"
+    },
+    {
+      "path": "source/gan_training/models/model.py",
+      "size": 19402,
+      "sha256": "4650a458f15fed1c0529e083ed47af2810d57e650d4a2a13afdbf6f02504c792"
+    },
+    {
+      "path": "source/gan_training/models/model_adam.py",
+      "size": 34579,
+      "sha256": "4f6c090d877321946a43cb76bcb660f6ccc66fed50f44e35fecba8c80c29fcbb"
+    },
+    {
+      "path": "source/gan_training/ops.py",
+      "size": 4011,
+      "sha256": "ac2b1ebe9d3415f8f19db9555317a400aa4a77d1005abf2d16f8aecfb9a6b57a"
+    },
+    {
+      "path": "source/gan_training/utils.py",
+      "size": 1524,
+      "sha256": "1522058acfd74d5173d13e33717083f885d19528fcf5b4ec0663695c34d268c1"
+    },
+    {
+      "path": "source/gan_training/utils_model_load.py",
+      "size": 8980,
+      "sha256": "2f563dc360e414514fb4f7d6824eb057b99f254f8c01d3fafda535772bd9bc82"
+    },
+    {
+      "path": "source/noise.pt",
+      "size": 154360,
+      "sha256": "3959ef06cc80b0bda92e362260bd93f617bdf8fbc12913a3d1bfe800d3ea01ec"
+    },
+    {
+      "path": "source/noise_generation.py",
+      "size": 344,
+      "sha256": "8a4159e786bf40d5b57c944f15317936a7c15fd5dbf28ebe82087538b42719b5"
+    },
+    {
+      "path": "source/non_leaking.py",
+      "size": 10538,
+      "sha256": "765bec330e2ff49cd7c30cd06246de28de35c7d6ca5a41d0efbfb282737cc905"
+    },
+    {
+      "path": "source/op/__init__.py",
+      "size": 109,
+      "sha256": "1e2212666e5608a29362992a5e0114415bd6f9fc6f8b7b7b59a4c9e28cdbff99"
+    },
+    {
+      "path": "source/op/fused_act.py",
+      "size": 3165,
+      "sha256": "326f6ca50be86401c1e39fa28836f5b5ba0247e1be192d0182e32429a74d6a5a"
+    },
+    {
+      "path": "source/op/fused_bias_act.cpp",
+      "size": 846,
+      "sha256": "a69d7233252bceaf18639d9fb9715a71cf0eb5eff11aa6c11c659e0850b155ea"
+    },
+    {
+      "path": "source/op/fused_bias_act_kernel.cu",
+      "size": 2875,
+      "sha256": "42c217064d68d91756cd0f92e19377c61824b4734b4659095b9282075e9113f4"
+    },
+    {
+      "path": "source/op/upfirdn2d.cpp",
+      "size": 988,
+      "sha256": "d7e4b98b3056a102ecbfbf32826be11f8c0d68786f158bfa24f682d89fa6c5b8"
+    },
+    {
+      "path": "source/op/upfirdn2d.py",
+      "size": 5872,
+      "sha256": "e8902a530928ca5b7feb079d19933d2d15fc0afa6b2e36ed808c42ba83b1c88a"
+    },
+    {
+      "path": "source/op/upfirdn2d_kernel.cu",
+      "size": 12079,
+      "sha256": "c985d8214394b35ebe9e3190d52a6d30eae07cd3ff222f5b4020d8a999e15fdf"
+    },
+    {
+      "path": "source/prepare_data.py",
+      "size": 2725,
+      "sha256": "ed06844b7f12d1fd68217e2f6112b6233c23bf758a18fa62626795c3433a5664"
+    },
+    {
+      "path": "source/requirements.txt",
+      "size": 1066,
+      "sha256": "b65ec98e77e3e58f53708241b7ffb0085909d6845b0dee7d3842fcb6d4e27262"
+    },
+    {
+      "path": "source/static/overview.jpg",
+      "size": 1022331,
+      "sha256": "fbb689b7787d2f52cbafdb3a4d65b24915123d705cdb8c217f04085b73fc086a"
+    },
+    {
+      "path": "source/visualization/extract_fts_inception.py",
+      "size": 4852,
+      "sha256": "a9a025a9bd0e3ae40e3687592239db1e0f651e9629f14a272f3c7889cb63fb1f"
+    },
+    {
+      "path": "source/visualization/extract_fts_lpips.py",
+      "size": 6068,
+      "sha256": "afb8309aaa582453eed5eab2b37ba9b0c5dcab6cf776420f02a2fa6fb221ab4d"
+    },
+    {
+      "path": "source/visualization/visualize_inception_fts.py",
+      "size": 4674,
+      "sha256": "6b76366b2625a89f6e2dd1768a3dd2e11d29a5d4676d25a31b63e59c23167f04"
+    },
+    {
+      "path": "source/visualization/visualize_lpips_fts.py",
+      "size": 4508,
+      "sha256": "bc4946dfbbc2480f06c2207b18624d577974ff74ed24a0398f80d390901f5195"
+    }
+  ],
+  "commit_metadata_path": "github-commit.json",
+  "commit_metadata_sha256": "d56613255c92b8ab27cc2ac784fff6e3ac1c56f30afbcc0672d5ff7765a4a99f",
+  "license": "MIT, retained verbatim at source/LICENSE",
+  "retrieval_scope": "Exact official source archive, including its bundled small noise.pt and lenet.pth fixtures; no pretrained GAN checkpoint or external training dataset was retrieved, and no binary was loaded."
+}

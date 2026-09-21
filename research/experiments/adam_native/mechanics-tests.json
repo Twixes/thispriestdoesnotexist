@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "command": "research/.venv/bin/python research/experiments/adam_native/test_modulation.py",
+  "tests": 7,
+  "passed": 7,
+  "observed_unittest_seconds": 0.534,
+  "source_hashes": {
+    "modulation.py": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+    "test_modulation.py": "fa85b0e7c8454d4c6409dfffea6512d9014c5cfe6eef43a756c3a9c7fb7564ad"
+  },
+  "scope": "Random tiny32px native NVIDIA networks, scalar equations, narrow native1024 layer enumeration only; no pretrained model loading or native1024 forward/training.",
+  "checks": [
+    "Bit-exact initial effective tensors and G/D outputs",
+    "Nonzero finite rank-factor gradients",
+    "Probing-only parameter updates, frozen base invariance",
+    "D ordinary epilogue trainable",
+    "Native1024 layer enumeration without hardcoded12",
+    "Offsets independent of requires_grad flags",
+    "Folded standard-state reload matches outputs",
+    "Original parametrized model remains functional and output-identical after copy fold",
+    "Tiny R1/path-length second backward finite/nonzero",
+    "Strict adapted-state reload equality"
+  ],
+  "earlier_fold_regression": {
+    "source_sha256": "d1fc94a3a74338679c76ac642d78dc5b4b7a1843d4a479b5f442f6283e61a54c",
+    "test_sha256": "fa85b0e7c8454d4c6409dfffea6512d9014c5cfe6eef43a756c3a9c7fb7564ad",
+    "result": "6 passes,1 error in0.689s; original G forward after folding deepcopy raised AttributeError ParametrizedFullyConnectedLayer has no attribute weight",
+    "root_cause": "Torch remove_parametrizations deletes class properties; deepcopy shares generated parametrized class.",
+    "fix": "Clone property-owning dynamic class per folded module while preserving original bases before removal.",
+    "original_source_archive": "research/runs/adam-native1024-probing-smoke10-v1/modulation.py"
+  },
+  "production_approved": false
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/adam_native/smoke.py", line 312, in <module>
+    try:worker(out)
+        ^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/adam_native/smoke.py", line 177, in worker
+    go=torch.optim.Adam(gp,lr=protocol['g_lr'],betas=(0,protocol['g_beta2']))
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/lib/python3.11/site-packages/torch/optim/adam.py", line 72, in __init__
+    raise ValueError("betas must be either both floats or both Tensors")
+ValueError: betas must be either both floats or both Tensors
