@@ -1,0 +1,463 @@
+{
+  "complete": true,
+  "checkpoint_sha256": "c9ddd55c718e3d509d626bc8de213081836a69d8ea2c2bb6b7ca1673f7343afd",
+  "unfiltered": true,
+  "source": "fresh Gaussian z, disjoint all540 original/training/evaluation rows",
+  "sampling": "psi1, constant noise, no restoration or output selection",
+  "exact_fixed500_control_png_matches": 2,
+  "generator_state_unchanged": true,
+  "threads": 1,
+  "peak_rss_bytes": 3828842496,
+  "rows": [
+    {
+      "index": 0,
+      "generation_seconds": 0.481876082951203,
+      "files": {
+        "rgb": {
+          "path": "000-rgb.png",
+          "sha256": "81ef3ef789d51cf7d83f100821f08fb6a1078b9e6cddc800a47fd371cfcb56e1"
+        },
+        "gray": {
+          "path": "000-gray.png",
+          "sha256": "5e1a58b5a38eb971d0b29e9264a7955f3a07e158b1d2c2175e316e47871525a1"
+        }
+      }
+    },
+    {
+      "index": 1,
+      "generation_seconds": 0.4842140000546351,
+      "files": {
+        "rgb": {
+          "path": "001-rgb.png",
+          "sha256": "765a3daaba6270ffd670f55fc0c81c28bcf485d7586710c34c3245d73aec400e"
+        },
+        "gray": {
+          "path": "001-gray.png",
+          "sha256": "2f4383373f142102eb19b9431fcbd135d48baa4a85a9f6b7ff03587d35d4dc34"
+        }
+      }
+    },
+    {
+      "index": 2,
+      "generation_seconds": 0.4800634999992326,
+      "files": {
+        "rgb": {
+          "path": "002-rgb.png",
+          "sha256": "e1f2d490331f93a3b3d30e79505ea48de5840aa2261f4c0003c482ad1137e456"
+        },
+        "gray": {
+          "path": "002-gray.png",
+          "sha256": "9eb63ef8c420e6bc03ef05894ea9df63559ac83819db64de99597f93430dacb5"
+        }
+      }
+    },
+    {
+      "index": 3,
+      "generation_seconds": 0.4798044579802081,
+      "files": {
+        "rgb": {
+          "path": "003-rgb.png",
+          "sha256": "41eb39bdd8b8aecdba5baa1c639ecbaa4ebee8a50c008f38a6ee1439f1cbb4ac"
+        },
+        "gray": {
+          "path": "003-gray.png",
+          "sha256": "4f6a2063d794d53a054e3c6315304474dc31a7ddfbc6e33179231d7182ba9c45"
+        }
+      }
+    },
+    {
+      "index": 4,
+      "generation_seconds": 0.4827208750648424,
+      "files": {
+        "rgb": {
+          "path": "004-rgb.png",
+          "sha256": "341f7ad21247521ce6566fee63edf5d3c15700f201de1b57f2bb304396bd8c86"
+        },
+        "gray": {
+          "path": "004-gray.png",
+          "sha256": "b3107065694fcab9502f8ad43d546108c224344924cca91d28c1cfcbe2f4b3b6"
+        }
+      }
+    },
+    {
+      "index": 5,
+      "generation_seconds": 0.4869241249980405,
+      "files": {
+        "rgb": {
+          "path": "005-rgb.png",
+          "sha256": "f3e6f47787d0ffe36cfb4833d536d6903f510a908e769b3c4d2234c65efc79a3"
+        },
+        "gray": {
+          "path": "005-gray.png",
+          "sha256": "88006bc32c2f567c12d3e7d6f3acea2ee202b73cde09c19ab1ecc71108d809c3"
+        }
+      }
+    },
+    {
+      "index": 6,
+      "generation_seconds": 0.48048124997876585,
+      "files": {
+        "rgb": {
+          "path": "006-rgb.png",
+          "sha256": "eb5efd1ab6917bdff41fec1a1b3d00e251a08b1ffa359422d5b9669f80215829"
+        },
+        "gray": {
+          "path": "006-gray.png",
+          "sha256": "f46bc5323066ca1f91a66610a9a358ba4fb0f80135a23d03bff6d580001a51b1"
+        }
+      }
+    },
+    {
+      "index": 7,
+      "generation_seconds": 0.48187495896127075,
+      "files": {
+        "rgb": {
+          "path": "007-rgb.png",
+          "sha256": "0d426fbe37ac53beb1816c6f883f2fd092729bbe6fa48acd8b5c3b9587521ecf"
+        },
+        "gray": {
+          "path": "007-gray.png",
+          "sha256": "22f266b9982f7a9ae67c031d3fa1b2bbde7409560190f35448af00a90e9f0a18"
+        }
+      }
+    },
+    {
+      "index": 8,
+      "generation_seconds": 0.4794870000332594,
+      "files": {
+        "rgb": {
+          "path": "008-rgb.png",
+          "sha256": "016b0a9625574c77ccc043f793db43bf006a40c1647a3be6567f3e469339def9"
+        },
+        "gray": {
+          "path": "008-gray.png",
+          "sha256": "be8937381b007811e16d14a9e53f7dc1e769d566a717040e35de24f4ab0dd848"
+        }
+      }
+    },
+    {
+      "index": 9,
+      "generation_seconds": 0.4818386669503525,
+      "files": {
+        "rgb": {
+          "path": "009-rgb.png",
+          "sha256": "4676c2b40486f3eed89b184110774cba982c104406b10ccf73d0c5b08a9f98fb"
+        },
+        "gray": {
+          "path": "009-gray.png",
+          "sha256": "51fae53f9a3d3d25d5965c16d866dd6a6cf6e1e304257c06f4553e6b65c4bf28"
+        }
+      }
+    },
+    {
+      "index": 10,
+      "generation_seconds": 0.4870805839309469,
+      "files": {
+        "rgb": {
+          "path": "010-rgb.png",
+          "sha256": "cbb2ffcca5aa61b17c5c4526c185b48b3e3259d1f2d3bf349141f465cbc93e85"
+        },
+        "gray": {
+          "path": "010-gray.png",
+          "sha256": "0e5ee350c735b8280af083657a0191e940cbdb7f4bbb0efb43f7772394a13625"
+        }
+      }
+    },
+    {
+      "index": 11,
+      "generation_seconds": 0.48311691696289927,
+      "files": {
+        "rgb": {
+          "path": "011-rgb.png",
+          "sha256": "99483118611ed5c00fc5ecaf0ab3dc3b7f002c692208bf671a6dfc253d7ad234"
+        },
+        "gray": {
+          "path": "011-gray.png",
+          "sha256": "dd060484fba8497f2a7f4ae32ae362d9b3ea05f1887d0c5f78a8f4ddc6c766e2"
+        }
+      }
+    },
+    {
+      "index": 12,
+      "generation_seconds": 0.4790702919708565,
+      "files": {
+        "rgb": {
+          "path": "012-rgb.png",
+          "sha256": "cf965a78081c12f2eef8c69930fd9b54e46cab018db2ef843f5686fccc222d44"
+        },
+        "gray": {
+          "path": "012-gray.png",
+          "sha256": "1bcf06f7a592ec81137f9a2e605e2137133d141522712be8ccb56558886ef035"
+        }
+      }
+    },
+    {
+      "index": 13,
+      "generation_seconds": 0.5098527079680935,
+      "files": {
+        "rgb": {
+          "path": "013-rgb.png",
+          "sha256": "fae1f5cc5bb91f599b53008d925c05115155c32d73fc4e375cd184d09f761f57"
+        },
+        "gray": {
+          "path": "013-gray.png",
+          "sha256": "9c49b4b5e6deb84d550100326d4c97f17e5ad0acc1f93cbde3bf2a10c620eb1b"
+        }
+      }
+    },
+    {
+      "index": 14,
+      "generation_seconds": 0.48529816698282957,
+      "files": {
+        "rgb": {
+          "path": "014-rgb.png",
+          "sha256": "a4cddc167bacb91160377273e14c5b956f8a92ee6f6594dfd79b2836857097b1"
+        },
+        "gray": {
+          "path": "014-gray.png",
+          "sha256": "9b389e7c62c5ac3b289a1dbffae8112714d421c8be8c6467cce4ea6d965c080f"
+        }
+      }
+    },
+    {
+      "index": 15,
+      "generation_seconds": 0.4851259170100093,
+      "files": {
+        "rgb": {
+          "path": "015-rgb.png",
+          "sha256": "77bfe9d6d8df85db0ef8c66c0ca31943e4154abf2f0bfccbcaf772d875b2bd1e"
+        },
+        "gray": {
+          "path": "015-gray.png",
+          "sha256": "d13c63cfaa8505a8f349668e639f4e36dd7e92ea375f274a0571bc5c29c4a718"
+        }
+      }
+    },
+    {
+      "index": 16,
+      "generation_seconds": 0.48982858296949416,
+      "files": {
+        "rgb": {
+          "path": "016-rgb.png",
+          "sha256": "c083c447f2ed943dd7117c0c57504e9ac0fbf3f66a51e570c878861e18ecec3f"
+        },
+        "gray": {
+          "path": "016-gray.png",
+          "sha256": "25f170b43f09bbe3cfc42d863820d5cdca345a0385657db8486324cf0e388b20"
+        }
+      }
+    },
+    {
+      "index": 17,
+      "generation_seconds": 0.48623770801350474,
+      "files": {
+        "rgb": {
+          "path": "017-rgb.png",
+          "sha256": "d9261a1d3987aa353b34f16d7fcd34b9c3ab2d8018c6aa8ea5a8c9d017e27274"
+        },
+        "gray": {
+          "path": "017-gray.png",
+          "sha256": "9448f21d2a1f8170baddbb4a117439ff7883ffe0765e807dbc9f787bd9668d05"
+        }
+      }
+    },
+    {
+      "index": 18,
+      "generation_seconds": 0.48737650003749877,
+      "files": {
+        "rgb": {
+          "path": "018-rgb.png",
+          "sha256": "c4fffd0e18cd0dd618d923d677753eb7e1dbc5b9dfe226e1e31a25d6f48d135b"
+        },
+        "gray": {
+          "path": "018-gray.png",
+          "sha256": "c12d86ece4671f41e899f511ca873ceb45c9b96291d4fb6e91a1aedec6184488"
+        }
+      }
+    },
+    {
+      "index": 19,
+      "generation_seconds": 0.4902274589985609,
+      "files": {
+        "rgb": {
+          "path": "019-rgb.png",
+          "sha256": "81b8cc3be4697ae257b13833a02bd63b796a6784d4a934085c4d10ad5d79c173"
+        },
+        "gray": {
+          "path": "019-gray.png",
+          "sha256": "b9dc22f3b9de3c52a98ef5a1ecaf4d5bf2e7f6509ac56f01284a2b9fa7bd9d40"
+        }
+      }
+    },
+    {
+      "index": 20,
+      "generation_seconds": 0.47880625003017485,
+      "files": {
+        "rgb": {
+          "path": "020-rgb.png",
+          "sha256": "f572d88d00ed21677eaa7c3037b917a220338af2d22c2a1d84104e573d81c7f8"
+        },
+        "gray": {
+          "path": "020-gray.png",
+          "sha256": "fb4893eb0556e2d2865b4ae449270ffd874ee6f8cbb226ad7c2294f26f3372d0"
+        }
+      }
+    },
+    {
+      "index": 21,
+      "generation_seconds": 0.4818377089686692,
+      "files": {
+        "rgb": {
+          "path": "021-rgb.png",
+          "sha256": "851a0136b8a21137aa53a4ab9515c699bdb29030085dd20e982a0de0e9a36bab"
+        },
+        "gray": {
+          "path": "021-gray.png",
+          "sha256": "c9512c28bec370f94290f602827be16051b0078334eefb6478cd6a26f012925d"
+        }
+      }
+    },
+    {
+      "index": 22,
+      "generation_seconds": 0.4792574580060318,
+      "files": {
+        "rgb": {
+          "path": "022-rgb.png",
+          "sha256": "ed916bcd1cca4b12edd18fad302502bc76536062e05a41d70b2623b4fe052d10"
+        },
+        "gray": {
+          "path": "022-gray.png",
+          "sha256": "37725610ce69c88a499b36f6475ab9f3fe82f4d9085c84e62b423dc293bcb81b"
+        }
+      }
+    },
+    {
+      "index": 23,
+      "generation_seconds": 0.4794316670158878,
+      "files": {
+        "rgb": {
+          "path": "023-rgb.png",
+          "sha256": "63c19f657acb41b37a45997ce3d6e89c07228cce3848952c34196a465183c552"
+        },
+        "gray": {
+          "path": "023-gray.png",
+          "sha256": "c0449982a944b4a197c4ac272e73c8080d8908f5ad961fec9e8dd4bd8dcea1ba"
+        }
+      }
+    },
+    {
+      "index": 24,
+      "generation_seconds": 0.4790483749238774,
+      "files": {
+        "rgb": {
+          "path": "024-rgb.png",
+          "sha256": "e88875e0aa54801484c9da2387d258496001783ac1d64b7ac57e52f120897aca"
+        },
+        "gray": {
+          "path": "024-gray.png",
+          "sha256": "b4dc94f1c9e01146c479cdf87f0a2bced684bad530b2a7787be5bfa8a0af1f4b"
+        }
+      }
+    },
+    {
+      "index": 25,
+      "generation_seconds": 0.48146499996073544,
+      "files": {
+        "rgb": {
+          "path": "025-rgb.png",
+          "sha256": "4fa190f9e5f3af37b2bf04b5b26dbc69347af535490946e45cb2b1bd342c5d37"
+        },
+        "gray": {
+          "path": "025-gray.png",
+          "sha256": "e4aaf975cdf1f110cb1139a914b507611d43c4d161143d89fbd30081d233f349"
+        }
+      }
+    },
+    {
+      "index": 26,
+      "generation_seconds": 0.4839224999304861,
+      "files": {
+        "rgb": {
+          "path": "026-rgb.png",
+          "sha256": "7315ff502c38ba8b9799c75eef5a2b9bd73a1293b06112636835df0c9b6d597f"
+        },
+        "gray": {
+          "path": "026-gray.png",
+          "sha256": "441daf5fd991771b423c9745497cf0c903a811e7f60870aa066d61f526a48425"
+        }
+      }
+    },
+    {
+      "index": 27,
+      "generation_seconds": 0.48239879205357283,
+      "files": {
+        "rgb": {
+          "path": "027-rgb.png",
+          "sha256": "0b81a3e74bac28c66ff32f553d386d381987f73e36642e3318067b716e023613"
+        },
+        "gray": {
+          "path": "027-gray.png",
+          "sha256": "f3a6ee48d84113b35318d8cd2ad15fc8149124e3974a54ff2a1ef265899e354d"
+        }
+      }
+    },
+    {
+      "index": 28,
+      "generation_seconds": 0.48413791705388576,
+      "files": {
+        "rgb": {
+          "path": "028-rgb.png",
+          "sha256": "76dba11f56229af1984df87065f0d38c3f715b0289843b276b5e1783dcce310c"
+        },
+        "gray": {
+          "path": "028-gray.png",
+          "sha256": "831d2219aa2837df69df53ad2e42346ea74ad0ea2dba96d7260304abc2be2812"
+        }
+      }
+    },
+    {
+      "index": 29,
+      "generation_seconds": 0.4878905420191586,
+      "files": {
+        "rgb": {
+          "path": "029-rgb.png",
+          "sha256": "0dc9a8213da8327539a8518664e013648d848c71ccd50fc9a76f71a29bb75f10"
+        },
+        "gray": {
+          "path": "029-gray.png",
+          "sha256": "a4a64120ff1ef580b5824d9e1a1a3c7aee53711d6ce17ed5b9581673af98d5b9"
+        }
+      }
+    },
+    {
+      "index": 30,
+      "generation_seconds": 0.4824610830983147,
+      "files": {
+        "rgb": {
+          "path": "030-rgb.png",
+          "sha256": "43e58a473a7b6b48b227de15fd00860a22cb02d9d019d7c326bce675c2ccff0c"
+        },
+        "gray": {
+          "path": "030-gray.png",
+          "sha256": "9c785bc7bfe7b0f25b788206cd919ccf9aaa3dfb4b2bc53e62a1b4a52fdbcf8c"
+        }
+      }
+    },
+    {
+      "index": 31,
+      "generation_seconds": 0.5026607499457896,
+      "files": {
+        "rgb": {
+          "path": "031-rgb.png",
+          "sha256": "9ac4261a5a5b17c9aa5a8879d8be63e5bb39c4323b6656dbeb91d3dd97c131fc"
+        },
+        "gray": {
+          "path": "031-gray.png",
+          "sha256": "b0c0f61ed47bce7a5620ab401ae26ee3c51852e58f94e118ed0d792b11322216"
+        }
+      }
+    }
+  ],
+  "quality_approved": false,
+  "production_approved": false
+}

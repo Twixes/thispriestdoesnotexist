@@ -1,0 +1,26 @@
+[
+  {
+    "path": "sources/GFPGAN-source.tar.gz",
+    "url": "https://codeload.github.com/TencentARC/GFPGAN/tar.gz/7552a7791caad982045a7bbe5634bbf1cd5c8679",
+    "bytes": 5978689,
+    "sha256": "690613da16e4a1c988cca654e52ce975179b2cb5db76f4c5d92ef0ec07bd76cb"
+  },
+  {
+    "path": "weights/GFPGANv1.4.pth",
+    "url": "https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth",
+    "bytes": 348632874,
+    "sha256": "e2cd4703ab14f4d01fd1383a8a8b266f9a5833dacee8e6a79d3bf21a1b6be5ad"
+  },
+  {
+    "path": "weights/detection_Resnet50_Final.pth",
+    "url": "https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth",
+    "bytes": 109497761,
+    "sha256": "6d1de9c2944f2ccddca5f5e010ea5ae64a39845a86311af6fdf30841b0a5a16d"
+  },
+  {
+    "path": "weights/parsing_parsenet.pth",
+    "url": "https://github.com/xinntao/facexlib/releases/download/v0.2.2/parsing_parsenet.pth",
+    "bytes": 85331193,
+    "sha256": "3d558d8d0e42c20224f13cf5a29c79eba2d59913419f945545d8cf7b72920de2"
+  }
+]

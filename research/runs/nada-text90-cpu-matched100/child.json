@@ -1,0 +1,17 @@
+{
+  "pid": 52001,
+  "supervisor_pid": 51984,
+  "nonce": "6a4b460f55fc44b4bb10d584ff0e5dac",
+  "command": [
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/selection/.venv/bin/python",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/nada_text90/runner.py",
+    "--execute",
+    "--output",
+    "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/nada-text90-cpu-matched100",
+    "--_worker",
+    "--_deadline",
+    "1789973220.291803",
+    "--_nonce",
+    "6a4b460f55fc44b4bb10d584ff0e5dac"
+  ]
+}

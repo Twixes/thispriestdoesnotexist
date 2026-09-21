@@ -1,0 +1,225 @@
+{
+  "passed": 18,
+  "cases": [
+    {
+      "case": "normal terminal leader still cleans group",
+      "passed": true,
+      "result": {
+        "complete": true,
+        "error": null,
+        "worker_exit_code": 0,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": 1,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "last worker peak at limit rejected",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "RuntimeError: Final worker result peak RSS exceeded limit or invalid",
+        "worker_exit_code": 0,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": 6442450944,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "nonfinite worker peak rejected",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "RuntimeError: Final worker result peak RSS exceeded limit or invalid",
+        "worker_exit_code": 0,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": NaN,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "final deadline at limit rejected",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "RuntimeError: Final supervisor deadline reached",
+        "worker_exit_code": 0,
+        "wall_seconds": 600,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": 1,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "monitor deadline cleans owned group",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "RuntimeError: 10 minute deadline",
+        "worker_exit_code": 0,
+        "wall_seconds": 600,
+        "peak_sampled_worker_rss_bytes": 1024,
+        "worker_reported_peak_rss_bytes": 1,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "monitor RSS cleans owned group",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "RuntimeError: RSS limit",
+        "worker_exit_code": 0,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 6442450944,
+        "worker_reported_peak_rss_bytes": 1,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "monitor exception captured",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "ValueError: fixture",
+        "worker_exit_code": 0,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": 1,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "keyboard interrupt captured",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "KeyboardInterrupt: ",
+        "worker_exit_code": 0,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": 1,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "SIGTERM handler SystemExit captured",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "SystemExit: 143",
+        "worker_exit_code": 0,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": 1,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "spawn failure captured",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "OSError: fixture",
+        "worker_exit_code": null,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": null,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "missing group tolerated and reaped",
+      "passed": true,
+      "result": {
+        "complete": true,
+        "error": null,
+        "worker_exit_code": 0,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": 1,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "cleanup error cannot report success",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "PermissionError: fixture",
+        "worker_exit_code": 0,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": null,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "malformed result captured",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+        "worker_exit_code": 0,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": null,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "nonzero worker with stale success rejected",
+      "passed": true,
+      "result": {
+        "complete": false,
+        "error": "worker exit 1",
+        "worker_exit_code": 1,
+        "wall_seconds": 10,
+        "peak_sampled_worker_rss_bytes": 0,
+        "worker_reported_peak_rss_bytes": null,
+        "quality_approved": false,
+        "production_approved": false
+      }
+    },
+    {
+      "case": "worker-final-pass",
+      "passed": true,
+      "result_written": true
+    },
+    {
+      "case": "worker-final-RSS",
+      "passed": true,
+      "result_written": false
+    },
+    {
+      "case": "worker-final-deadline",
+      "passed": true,
+      "result_written": false
+    },
+    {
+      "case": "main SIGTERM handler installed and raises catchable exit143",
+      "passed": true
+    }
+  ],
+  "torch_imported": false,
+  "numpy_imported": false,
+  "child_processes_created": 0,
+  "models_loaded": 0,
+  "inferences": 0
+}

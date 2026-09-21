@@ -1,0 +1,28 @@
+{
+  "reviewer": "root",
+  "viewed_all_final_native1024": true,
+  "images": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cohort": "nada500-v1",
+  "finding": "GFPGAN markedly improves facial texture, eyes and hair, but broad digitally smooth collar bands remain. Whole images remain unsuitable as an unfiltered hot-priest stream.",
+  "specifics": {
+    "0": "Long-haired youthful face, age uncertain; large white neck band and strange lower-left clothing patch.",
+    "1": "Apparently adult; dark cheek patch, smooth band, soft teeth.",
+    "2": "Childlike, hat, requires rejection regardless of improved face.",
+    "3": "Adult coherent face and glasses, broad smooth collar; improved detail.",
+    "4": "Knit hat remains; must reject.",
+    "5": "Youthful/age-uncertain, wide shiny band with halo; reject.",
+    "6": "Eyes behind glasses remain compressed/unclear, smooth band.",
+    "7": "Plausible adult with improved glasses and teeth, broad digital-looking band."
+  },
+  "next": "Prioritize reference625 restoration and independent quality selection; no further unchanged NADA training planned.",
+  "production_approved": false
+}

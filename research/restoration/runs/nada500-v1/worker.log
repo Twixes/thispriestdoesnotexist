@@ -1,0 +1,16 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/transforms/functional_tensor.py:5: UserWarning: The torchvision.transforms.functional_tensor module is deprecated in 0.15 and will be **removed in 0.17**. Please don't rely on it. You probably just need to use APIs in torchvision.transforms.functional or in torchvision.transforms.v2.functional.
+  warnings.warn(
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+{"index": 0, "error": null, "seconds": 3.03786645794753, "peak_rss": 4287283200}
+{"index": 1, "error": null, "seconds": 2.924223250010982, "peak_rss": 4287283200}
+{"index": 2, "error": null, "seconds": 2.9200235420139506, "peak_rss": 4287283200}
+{"index": 3, "error": null, "seconds": 2.9108382500708103, "peak_rss": 4287283200}
+{"index": 4, "error": null, "seconds": 2.9158605419797823, "peak_rss": 4287283200}
+{"index": 5, "error": null, "seconds": 2.9169487920589745, "peak_rss": 4287283200}
+{"index": 6, "error": null, "seconds": 2.960632291971706, "peak_rss": 4287283200}
+{"index": 7, "error": null, "seconds": 2.9367340410826728, "peak_rss": 4287283200}

@@ -1,0 +1,40 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/transforms/functional_tensor.py:5: UserWarning: The torchvision.transforms.functional_tensor module is deprecated in 0.15 and will be **removed in 0.17**. Please don't rely on it. You probably just need to use APIs in torchvision.transforms.functional or in torchvision.transforms.v2.functional.
+  warnings.warn(
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+{"index": 0, "error": null, "seconds": 3.2932425839826465, "peak_rss": 4300980224}
+{"index": 1, "error": null, "seconds": 2.3397069999482483, "peak_rss": 4300980224}
+{"index": 2, "error": null, "seconds": 2.3850683749187738, "peak_rss": 4300980224}
+{"index": 3, "error": null, "seconds": 2.293600333039649, "peak_rss": 4300980224}
+{"index": 4, "error": null, "seconds": 2.2848799159983173, "peak_rss": 4300980224}
+{"index": 5, "error": null, "seconds": 2.3437015829840675, "peak_rss": 4300980224}
+{"index": 6, "error": null, "seconds": 2.303315042052418, "peak_rss": 4300980224}
+{"index": 7, "error": null, "seconds": 2.290805416996591, "peak_rss": 4300980224}
+{"index": 8, "error": null, "seconds": 2.3124317500041798, "peak_rss": 4300980224}
+{"index": 9, "error": null, "seconds": 2.3479236249113455, "peak_rss": 4300980224}
+{"index": 10, "error": null, "seconds": 2.2973327500512823, "peak_rss": 4300980224}
+{"index": 11, "error": null, "seconds": 2.4117734580067918, "peak_rss": 4300980224}
+{"index": 12, "error": null, "seconds": 2.3658328329911456, "peak_rss": 4300980224}
+{"index": 13, "error": null, "seconds": 2.367369082989171, "peak_rss": 4300980224}
+{"index": 14, "error": null, "seconds": 2.3802568749524653, "peak_rss": 4300980224}
+{"index": 15, "error": null, "seconds": 2.363897000090219, "peak_rss": 4300980224}
+{"index": 16, "error": null, "seconds": 2.378395458916202, "peak_rss": 4300980224}
+{"index": 17, "error": null, "seconds": 2.396536499960348, "peak_rss": 4300980224}
+{"index": 18, "error": null, "seconds": 2.3408473749877885, "peak_rss": 4300980224}
+{"index": 19, "error": null, "seconds": 2.3945750830462202, "peak_rss": 4300980224}
+{"index": 20, "error": null, "seconds": 2.3803994581103325, "peak_rss": 4300980224}
+{"index": 21, "error": null, "seconds": 2.3698676669737324, "peak_rss": 4300980224}
+{"index": 22, "error": null, "seconds": 2.3412140000145882, "peak_rss": 4300980224}
+{"index": 23, "error": null, "seconds": 2.3548821250442415, "peak_rss": 4300980224}
+{"index": 24, "error": null, "seconds": 2.4189555420307443, "peak_rss": 4300980224}
+{"index": 25, "error": null, "seconds": 2.396565582952462, "peak_rss": 4300980224}
+{"index": 26, "error": null, "seconds": 2.357178083038889, "peak_rss": 4300980224}
+{"index": 27, "error": null, "seconds": 2.3899018749361858, "peak_rss": 4300980224}
+{"index": 28, "error": null, "seconds": 2.4508063750108704, "peak_rss": 4300980224}
+{"index": 29, "error": null, "seconds": 2.3467333329608664, "peak_rss": 4337172480}
+{"index": 30, "error": null, "seconds": 2.4124476249562576, "peak_rss": 4337172480}
+{"index": 31, "error": null, "seconds": 2.3896149159409106, "peak_rss": 4337188864}

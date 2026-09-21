@@ -1,0 +1,757 @@
+{
+  "reviewed_utc": "2026-09-21T06:40:46.866892+00:00",
+  "reviewer": "hosting_ci",
+  "cohort": "reference625-v1 restored fixed rawpsi1 fresh32; first16 indices000\u2013015, all retained",
+  "scope": "PNG-only visual comparison, no model calls or active code modifications. Native restored1024 and raw256 individually viewed. Visual research judgment, not faithful recovery claim or deployment approval.",
+  "result_sha256": "81f436b4fc2185eacd2d18d6fb6a432e3468494e63d538f28378d7b6a1c2c1f2",
+  "supervisor_result_sha256": "072f41c8b02ebe200b1b1c46ffd6d2605d9821d8ea598471ca7afc5afd8216fb",
+  "counts": {
+    "reviewed": 16,
+    "wholeportrait_quality_acceptable_research_judgment": 5,
+    "wholeportrait_rejected_or_borderline": 11,
+    "architectural_head_face_or_jaw_failures": 7,
+    "native_eye_detail_rejections": 2,
+    "definite_extra_partial_heads": 1,
+    "background_personlike_problem_rejection": 1,
+    "actual_hats": 0,
+    "hatlike_architectural_crowns": 2,
+    "apparently_adult_male": 16,
+    "production_approved": 0
+  },
+  "acceptable_wholeportrait_indices": [
+    "001",
+    "005",
+    "006",
+    "012",
+    "015"
+  ],
+  "summary": [
+    "Restoration meaningfully improves intact adult faces: plausible hair/pores/eyes now support five individually acceptable whole portraits in this half under research visual judgment. This is not an estimated population success rate.",
+    "Seven architecture-to-head/face/jaw intrusions survive; the severe controls000/003/004/007/008/010/011 remain failures. Sharper local faces do not repair global composition.",
+    "009 and014 retain problematic cloudy/blank irises;013 retains a partial extra head;002 retains a malformed background personlike shape.",
+    "Restoration often closes or regularizes mouths, replacing tooth-like raw details. This is generated new detail and altered expression, not recovered photographic ground truth. Skin is sometimes uniformly smooth although fine pores look more plausible.",
+    "The acceptable examples are adult/clerical/bareheaded to this reviewer, but recurring related faces and backgrounds remain a diversity concern. Full32 review, independent eligibility checks and the actual fresh-generation pipeline are still needed; no model or serving approval."
+  ],
+  "entries": [
+    {
+      "index": 0,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "393c8dd7f05c5888d334841756a750456f67533f738c01bd27c8982cb55aebce",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "f83afead90a564ec44b9788030a5374a9e367ab8674256508c994b22857ace3d",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "a7bc6f5ddc41d7f5ec13864201c66d2779575160c9c2ee7acddfc4a9a8c3631e",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": true,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": true,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "architecture_head",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": true,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Central skin/eyes are much more photographic, but the giant architectural crown/tall malformed head remains. Visible raw teeth become a closed, smooth mouth; expression/identity details change. White Roman tab remains clear. Entire portrait is an obvious failure.",
+      "production_approved": false
+    },
+    {
+      "index": 1,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "4195e31b641c9b32ff5e05e4f5d8d3702bad779c7bd081cc420b28f7fb76a34b",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "92c588e08120586f261504ffc12d30740e9cad78fd05ba556b6802327741ed3f",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "dc0c92a5692890c19fada8e263f05a3c7dc65b334f95c1f5474c2d49e74718b0",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": false,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "none",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": true,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": true,
+      "notes": "Strong improvement in eyes, beard, hair and skin versus raw256. Adult male, bare head, coherent anatomy and clerical tab/shirt; no obvious extra person or intrusive architecture. Fine pores with mild uniform smoothing; background arch stays soft. Whole portrait plausibly photographic at displayed/native size, subject to research-only judgment.",
+      "production_approved": false
+    },
+    {
+      "index": 2,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "9596f3c8b348e5226aa3610cbf9a307ef7f017a6906cf7aea8f018fd07d47a98",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "c92af7ce146ac341117a9a1e996cb3b84231a278e82e5fffcd6c1778f458f48a",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "be436ef1e32b295159f335237f8eb8cbe4562c3724b62ed427a88e5cd2b8e325",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": false,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": true,
+      "main_remaining_problem": "background_person",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": true,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Central adult face becomes convincing and appealing, with plausible curls/beard/eyes and white tab. The background at left retains a malformed dark personlike silhouette with an unclear/missing head. Mouth is more closed/regularized than raw. Strong face-only restoration, insufficient whole-portrait quality.",
+      "production_approved": false
+    },
+    {
+      "index": 3,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "029ab3dae910407a00fd645de670a362a482cef78762a38cfd7b2b0165969548",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "b59ea3f03173b373e053692f563121f9e8157a427201861639f44617b391eeda",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "69a2e9eda49f554902744ecef96ae73b70af2f403b41ed5ab602bdf620c56405",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": true,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "not meaningfully assessable as complete portrait",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": false,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "architecture_face",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": false,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Architecture still slices through nose, mouth, chin and neck. Sharper eyes/skin emphasize rather than remove discontinuity; distorted mouth sections and ghosted eye remain. Clerical tab is absent/obscured. Severe challenge control fails after restoration.",
+      "production_approved": false
+    },
+    {
+      "index": 4,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "4ab163eed33dd163c9d5c80c902b69476b9f507a6c1e0f2fe600ae226091b765",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "06d670caed81166945621647ad0986bbd2484555cc9ee45f3aaca957a192f765",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "aefd7beb6d547b0ee38261b14d30080305fc347be415085c606b0b328a2a350c",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": true,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": true,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "architecture_head",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": true,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Photographic-looking adult central face, smoother cheek pores and more plausible lips, but striped architectural crown remains attached above bald skull. Raw teeth are replaced by closed lips. Black shirt/white tab are recognizable; global head failure remains.",
+      "production_approved": false
+    },
+    {
+      "index": 5,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "2d96c7e68c9045f4ea32b6e286143183cf8b6998202975fa2341fb238007b0ca",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "11dbc19cb5cfe1cea58f13a03f12a0cd500f6e34cc4310cf645af4999ad95178",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "730fd568c50bf2a9a3e00c6809ceb06ee8350303bc9dc03d4b6fd7ded13662d8",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": false,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "none",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": true,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": true,
+      "notes": "Adult bearded face substantially improves: skin/beard/hair now have plausible detail, coherent eyes, black priest shirt and clear white tab. Some glossy upper-lip highlight and regularized closed mouth replace raw tooth-like streaks. No headwear/extra head/structural intrusion observed; whole portrait is a plausible research-quality example.",
+      "production_approved": false
+    },
+    {
+      "index": 6,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "869b64b9891830135b508092df1e774606047f3680a1a0b2dba59631817987a5",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "0cdd8953cf38ad82233b60e29b096f44244797012dc6c7339bc504062405227a",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "a6e09fafbc949e747758840802b318bb7d2126e63dad328749dc93ff53c8ebc5",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": false,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "none",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": false,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": true,
+      "notes": "Coherent adult male with bare dark hair, relaxed narrow eyes, plausible lips/skin and white Roman tab. Restoration fixes raw cloudy eyes and improves hair strands/skin. Background remains garbled/soft but does not cut into face; thin forehead hair strand remains. Whole portrait plausible at display/native size with mild synthetic smoothing.",
+      "production_approved": false
+    },
+    {
+      "index": 7,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "155b9b7e2c5c675b204f8f04e09634faaafa919af61e3e65d5d68ca65f9089f6",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "fcc801e056fd0a98242618a9369adbe72cd4ddbd671f7617bf390e5cf1f52525",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "5e33c5258b4f776685d8174317a84a748cd0f60bddced2123f67aad919160e51",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": true,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "not meaningfully assessable as complete portrait",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "architecture_face",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": false,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Large building/column mass still occupies the left eye, forehead and side of face. Right face skin/eye is sharper, but restoration does not reconstruct the missing facial half; architecture merges into nose. Collar intact. Severe structural failure, no whole-image approval.",
+      "production_approved": false
+    },
+    {
+      "index": 8,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "9460412f54975624e2aa3f8b1ff6d7cbf3ce9cb36e04d441988c184b32295e55",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "a4fbfba68dfd3d5531d6d0b26aa88b7b51dc5e9faf36b38eb0e8bc8d6575ca57",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "710af883f57adab335aeaf7ca49a102701b5e253bc5234f4eeb2ad128bb2cc4a",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": true,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "architecture_head",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": true,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Restored central face is attractive and detailed, but a pale architectural shape erases the left forehead/hairline and remains fused to skull. Mouth and irises are regularized. Black shirt/tab coherent; global head boundary failure unchanged.",
+      "production_approved": false
+    },
+    {
+      "index": 9,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "7db8481a319992c1b1beb71978ee31a998aca991fafd1c5b52e8985c3509d47f",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "ac1594aba6a82edb9ffda597948ff4e222a034294360cad052d102b8c8a30732",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "6ae178f1e9fa0d6f88853eeaeb89a21ced30b1496f2070e2995a14403548dc98",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": false,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "eye_detail",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": false,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Overall adult portrait improves strongly, with believable hair/skin and clear tab, but one iris remains excessively pale/cloudy versus the other at native size. Background columns remain warped/soft. Borderline attractive portrait at small display size; conservatively not accepted as whole native-quality image.",
+      "production_approved": false
+    },
+    {
+      "index": 10,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "73c7f34026a515001c10e9cbfd9a842efe4cccae676817781182c890d7f56754",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "4e35c92bfeb5bc81ce9a201b2cdf5a7b262ae3e6488747e41d6de296d28556f6",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "fff3bcaae7da7ca8212619ee7042ddceb8e5388112957ccebecb20b5c40d16c0",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": true,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "not meaningfully assessable as complete portrait",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": true,
+      "main_remaining_problem": "architecture_face",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": true,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Alternating architectural bands still replace most of the head and cover a large part of the face. Remaining eye/cheek/lips gain texture; no meaningful anatomical repair. Distant background figure/statue persists. White tab remains, but entire portrait fails.",
+      "production_approved": false
+    },
+    {
+      "index": 11,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "ef72366dd0fa15c1abde8bf95ce6b01216b5442577640240f9e6e9a6e365ba2d",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "333d802873a9a34631629150dfa52a14e1228f4178bdbcef52ef18d159c53656",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "97feab3660348a726172527a907d6a4ba80464f145ad490f31fcd6eda35c8982",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": true,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "architecture_jaw",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": false,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Face gains plausible pores, lips and eyes, but a bright architectural slit cuts into right lower cheek/chin and neck edge. It was already present in raw and remains conspicuous at1024. Warped luminous columns surround head. White tab preserved; reject whole portrait.",
+      "production_approved": false
+    },
+    {
+      "index": 12,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "b023c70d6ced7fb62e0e1c2d72fbe03a4c050e051f6f8313deeef713e65957ad",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "b1eebc5b868216bf08d07f3793a336604ac4728514c15ee8abedea8ad44f8a6c",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "d58294749a5bdba68c62620331abd78b0bc5e310b67c09cc16b09685cf23c862",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": false,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "none",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": false,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": true,
+      "notes": "Plausible adult male face and bare side-parted hair; restoration supplies coherent irises/lids, pores and lip texture. Black shirt and visible tab remain, without obvious face intrusion, headwear or extra head. Blurry/warped distant background persists but is not a decisive whole-portrait defect here. Mild beautifying smoothness; research-level acceptable.",
+      "production_approved": false
+    },
+    {
+      "index": 13,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "a6e78b28c1fdc64df69fed39cc64959d65c96578875aaacc07c04bfc3ef2156a",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "ff3416d4da4ef6db691ff8be9c9d53fb796b84a1a7ab779c9f6a3594bfc3d145",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "5444f8aa3797927b7627102a8b4376030423869bb9b788769d7e2faca0363289",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": true,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": true,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "extra_partial_head",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": false,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Central adult bearded face becomes detailed and appealing, but an unmistakable large partial second head/eye at left remains. White collar/tab intact. Better central face does not fix composition; whole-image rejection.",
+      "production_approved": false
+    },
+    {
+      "index": 14,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "525372a37ea123a403d478c5c3003272b110282781567c3d3a859bc15c8c3164",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "63fcbb6fd3f310239335dc74a9795de794dd8390697a4d53a34b2469f4391faf",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "9a9719ddf8e4e55e82e7abcf2531467c92d13fb3501f22e1bea24b053e6245e5",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": false,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "eye_detail",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": true,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": false,
+      "notes": "Adult masculine face, attractive silver hair and clear tab; skin/hair sharpness improves. The eye at image-right remains largely blank/white and gaze is mismatched, inherited from raw. Lips are more regularized/closed. This visible native eye defect prevents whole-portrait acceptance.",
+      "production_approved": false
+    },
+    {
+      "index": 15,
+      "reviewed": "Raw256 and restored full1024 individually at original size; Lanczos control hashes verified, not individually displayed.",
+      "files": {
+        "raw.png": {
+          "sha256": "4d0cfd4378e5576f7c3e349eb87cffc33aaf46eb5640c165aacc19c3eba7a5a3",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGB"
+        },
+        "lanczos-1024.png": {
+          "sha256": "7a3c226f28781cdf149706baf09c7883f3690bdbc62f1e58f8ef32f162c805a4",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        "restored-1024.png": {
+          "sha256": "8962939a1bd2c8b0116909da22551899ff079405c85c43db2d277b162e141a70",
+          "size": [
+            1024,
+            1024
+          ],
+          "mode": "RGB"
+        }
+      },
+      "raw_challenge_control": false,
+      "apparent_adult_male": true,
+      "subjective_calendar_appeal": "promising central face",
+      "actual_hat": false,
+      "hatlike_architectural_crown": false,
+      "clear_roman_tab": true,
+      "extra_partial_head": false,
+      "other_personlike_background_problem": false,
+      "main_remaining_problem": "none",
+      "visible_skin_hair_eye_detail_improvement": true,
+      "observed_mouth_regularization_or_expression_change": true,
+      "new_gross_structural_failure_observed": false,
+      "wholeportrait_quality_acceptable_research_judgment": true,
+      "notes": "Coherent adult male face with believable eyes, lips, skin and dark hair; significant improvement from raw. Dark clerical shirt and white tab remain clear. Some uniform pore smoothing and indistinct background spire/texture persist, but no obvious face/head intrusion or second head. Whole portrait plausibly photographic; no production inference from this example.",
+      "production_approved": false
+    }
+  ]
+}

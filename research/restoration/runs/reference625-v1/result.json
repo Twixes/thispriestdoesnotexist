@@ -1,0 +1,2799 @@
+{
+  "complete": true,
+  "cohort": "reference625",
+  "attempted": 32,
+  "successful_restorations": 32,
+  "errors": 0,
+  "model_and_aux_load_seconds": 0.5433073749300092,
+  "worker_wall_after_import_seconds": 77.29775079200044,
+  "peak_rss_bytes": 4337876992,
+  "input_and_source_hashes_unchanged": true,
+  "records": [
+    {
+      "index": 0,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-000.png",
+      "sha256": "393c8dd7f05c5888d334841756a750456f67533f738c01bd27c8982cb55aebce",
+      "raw_challenge_control": true,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          72.96558380126953,
+          56.794700622558594,
+          182.66802978515625,
+          193.52951049804688,
+          0.9998400211334229
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.67608642578125,
+            107.1364974975586
+          ],
+          [
+            151.43492126464844,
+            107.65902709960938
+          ],
+          [
+            125.98080444335938,
+            132.8733367919922
+          ],
+          [
+            102.73748779296875,
+            155.8200225830078
+          ],
+          [
+            148.5325927734375,
+            156.8020477294922
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.588330882368053,
+            0.057573234834873005,
+            -77.34634170813031
+          ],
+          [
+            -0.057573234834873005,
+            2.588330882368053,
+            -27.20755748433529
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.035178958089090884,
+      "restoration_seconds": 1.0159752919571474,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5446332358837194,
+            -0.034357868473879935,
+            120.53693639485489
+          ],
+          [
+            0.034357868473879935,
+            1.5446332358837194,
+            46.68315299286484
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1514803341124207,
+      "total_seconds": 3.2932425839826465,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "fdfe039574887248533a679109d13f6d4b841e6e29d2490bf7513550deb36968",
+        "lanczos-1024.png": "f83afead90a564ec44b9788030a5374a9e367ab8674256508c994b22857ace3d",
+        "lanczos-1024.webp": "61d578efd7e60be70741c6a5335fbf110349b5ebea5aceb5551ee6eeb7394523",
+        "raw.png": "393c8dd7f05c5888d334841756a750456f67533f738c01bd27c8982cb55aebce",
+        "restored-1024-rgb.png": "758cc0e7cb757b1f35cdb822c5967c28074cf4585a545496586e01703e17de64",
+        "restored-1024.png": "a7bc6f5ddc41d7f5ec13864201c66d2779575160c9c2ee7acddfc4a9a8c3631e",
+        "restored-1024.webp": "ff8f90e73b79e98922f1b0bfbc56bd5e8efae78303ff0d886a23bcecf39c0610",
+        "restored-512.png": "d9c1c95c42b2d55ac38a358a2acdab94ee4c128a9576604cefee161c83d54a6f"
+      }
+    },
+    {
+      "index": 1,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-001.png",
+      "sha256": "4195e31b641c9b32ff5e05e4f5d8d3702bad779c7bd081cc420b28f7fb76a34b",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          66.2254867553711,
+          48.45264434814453,
+          169.11459350585938,
+          204.46612548828125,
+          0.999800980091095
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            105.16526794433594,
+            102.03315734863281
+          ],
+          [
+            152.0855712890625,
+            111.14044952392578
+          ],
+          [
+            133.64892578125,
+            135.90074157714844
+          ],
+          [
+            98.84652709960938,
+            156.19906616210938
+          ],
+          [
+            145.14793395996094,
+            163.9812774658203
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.437441335218131,
+            0.3774852866354084,
+            -99.2137269751778
+          ],
+          [
+            -0.3774852866354084,
+            2.437441335218131,
+            27.974015407339504
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03140337497461587,
+      "restoration_seconds": 0.89923912496306,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.6026268416066347,
+            -0.2481979951404,
+            167.9456764463805
+          ],
+          [
+            0.2481979951404,
+            1.6026268416066347,
+            -18.207259833673696
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1932974579976872,
+      "total_seconds": 2.3397069999482483,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "5267ac1536d0947b9ea3807b66c203d6deb246f889efbc1c782e3e9f66172b20",
+        "lanczos-1024.png": "92c588e08120586f261504ffc12d30740e9cad78fd05ba556b6802327741ed3f",
+        "lanczos-1024.webp": "8ada7d2d719234d6d1d6beb0465ba8b701c15ce09bfc6f105af5838a8abf89dc",
+        "raw.png": "4195e31b641c9b32ff5e05e4f5d8d3702bad779c7bd081cc420b28f7fb76a34b",
+        "restored-1024-rgb.png": "2e4f49b2794e065c8569f19dc94f2ae5beb8fddf740e7dd36a5cf5a54791200a",
+        "restored-1024.png": "dc0c92a5692890c19fada8e263f05a3c7dc65b334f95c1f5474c2d49e74718b0",
+        "restored-1024.webp": "8e5984e2b7387fdd19ee67a68368fbc8ce2d8bd8a2cd85715b2d8faff6ccede0",
+        "restored-512.png": "1938103465e4dc69e6efeabc90727a86291437cea49a4a4532283cd3c9499678"
+      }
+    },
+    {
+      "index": 2,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-002.png",
+      "sha256": "9596f3c8b348e5226aa3610cbf9a307ef7f017a6906cf7aea8f018fd07d47a98",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          87.55209350585938,
+          42.06031036376953,
+          194.17779541015625,
+          197.38796997070312,
+          0.9998785257339478
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.7811050415039,
+            110.71662139892578
+          ],
+          [
+            146.6776123046875,
+            99.99659729003906
+          ],
+          [
+            120.90104675292969,
+            137.25308227539062
+          ],
+          [
+            116.34929656982422,
+            159.87423706054688
+          ],
+          [
+            158.15330505371094,
+            151.03036499023438
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.55823757346184,
+            -0.5908088704563997,
+            -2.1412400803154945
+          ],
+          [
+            0.5908088704563997,
+            2.55823757346184,
+            -105.46795271802904
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031067083007656038,
+      "restoration_seconds": 0.9175233340356499,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.4844056701789707,
+            0.3428141492389798,
+            41.33437539944287
+          ],
+          [
+            -0.3428141492389798,
+            1.4844056701789707,
+            157.82317964036014
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2128019159426913,
+      "total_seconds": 2.3850683749187738,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "9345f53512ceafd49b6b9780506fa03ace47b7301cf44d84fdd7a0d438072d20",
+        "lanczos-1024.png": "c92af7ce146ac341117a9a1e996cb3b84231a278e82e5fffcd6c1778f458f48a",
+        "lanczos-1024.webp": "0a2e6b41d02ba8f6dd44773593435996cd5e17486bf3443e243544a463e44784",
+        "raw.png": "9596f3c8b348e5226aa3610cbf9a307ef7f017a6906cf7aea8f018fd07d47a98",
+        "restored-1024-rgb.png": "1227299b7f2c7b4088daa15fc4c46cc62fd44b00311f8b8f829c9a93d50be347",
+        "restored-1024.png": "be436ef1e32b295159f335237f8eb8cbe4562c3724b62ed427a88e5cd2b8e325",
+        "restored-1024.webp": "6f588919a880f38e19ce4639d1ccfc4e9f6518ea930efb919f9f50867537ffef",
+        "restored-512.png": "054a9071e60d3f226dc980f7620e7dc1bc693f1373afb380839e9a09267db19a"
+      }
+    },
+    {
+      "index": 3,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-003.png",
+      "sha256": "029ab3dae910407a00fd645de670a362a482cef78762a38cfd7b2b0165969548",
+      "raw_challenge_control": true,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          75.632080078125,
+          53.843162536621094,
+          173.84912109375,
+          204.27938842773438,
+          0.9995564818382263
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.80152893066406,
+            108.11845397949219
+          ],
+          [
+            148.38710021972656,
+            107.59088134765625
+          ],
+          [
+            128.41455078125,
+            139.52584838867188
+          ],
+          [
+            105.36972045898438,
+            160.10621643066406
+          ],
+          [
+            142.8927001953125,
+            160.03196716308594
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.6305870410756302,
+            0.043240198365878904,
+            -79.5979721077189
+          ],
+          [
+            -0.043240198365878904,
+            2.6305870410756302,
+            -42.55154912915956
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030401542084291577,
+      "restoration_seconds": 0.8931571249850094,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5201624077330493,
+            -0.02498762558788083,
+            121.93858275211431
+          ],
+          [
+            0.02498762558788083,
+            1.5201624077330493,
+            68.67422970153659
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1656626670155674,
+      "total_seconds": 2.293600333039649,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "8a412b289bdf89d823f97df6174cb784d126a4afc015ffc6d191b39d922e5f83",
+        "lanczos-1024.png": "b59ea3f03173b373e053692f563121f9e8157a427201861639f44617b391eeda",
+        "lanczos-1024.webp": "270cb7e77c6171615a649d94520a43f864386104221ec1b50f461c14bf796d8e",
+        "raw.png": "029ab3dae910407a00fd645de670a362a482cef78762a38cfd7b2b0165969548",
+        "restored-1024-rgb.png": "b614054db2e369c677703dc08959fbf3a0bc0005dc3699667b520acb49bb5f73",
+        "restored-1024.png": "69a2e9eda49f554902744ecef96ae73b70af2f403b41ed5ab602bdf620c56405",
+        "restored-1024.webp": "2acb1a7a6b178fd3eada809773cfabecec4c6a22c5cc95435281065c45ea69a6",
+        "restored-512.png": "66d3a89870b961fd1e8c12c5a603efab2a5edc967c452545943c68b099c9a054"
+      }
+    },
+    {
+      "index": 4,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-004.png",
+      "sha256": "4ab163eed33dd163c9d5c80c902b69476b9f507a6c1e0f2fe600ae226091b765",
+      "raw_challenge_control": true,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          63.071163177490234,
+          57.744361877441406,
+          175.80072021484375,
+          195.9248046875,
+          0.9999030828475952
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.33003997802734,
+            105.3668441772461
+          ],
+          [
+            152.71493530273438,
+            108.59400177001953
+          ],
+          [
+            132.20106506347656,
+            132.28842163085938
+          ],
+          [
+            99.77567291259766,
+            154.65682983398438
+          ],
+          [
+            150.80966186523438,
+            157.44313049316406
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4830910545045106,
+            0.1342100303032342,
+            -77.85638428035276
+          ],
+          [
+            -0.1342100303032342,
+            2.4830910545045106,
+            -2.4832122396254768
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030543542001396418,
+      "restoration_seconds": 0.8885322079295292,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.6062031241058488,
+            -0.0868146053558278,
+            126.83758857209025
+          ],
+          [
+            0.0868146053558278,
+            1.6062031241058488,
+            12.747614532834822
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1672500829445198,
+      "total_seconds": 2.2848799159983173,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "10a47de1c9da3877889400c099144ae53ed59ca62fcd7c99f1dff14137316002",
+        "lanczos-1024.png": "06d670caed81166945621647ad0986bbd2484555cc9ee45f3aaca957a192f765",
+        "lanczos-1024.webp": "af268f32b075170d698480f27629f39627e63f819fc956845a26095878d687d7",
+        "raw.png": "4ab163eed33dd163c9d5c80c902b69476b9f507a6c1e0f2fe600ae226091b765",
+        "restored-1024-rgb.png": "c2bfec19d1aef701a9fc01e9c64623db149c5449bc8acdcd184f8f8d298f1a9e",
+        "restored-1024.png": "aefd7beb6d547b0ee38261b14d30080305fc347be415085c606b0b328a2a350c",
+        "restored-1024.webp": "a2ffe9474965b3c078eb8c451c5a0ac58f10afb8713da2bfce7a78224c0c7d26",
+        "restored-512.png": "a63b05aff09baaac56833b255e5e9dbe99ecfd9cbf794608fe1e331219a7eb07"
+      }
+    },
+    {
+      "index": 5,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-005.png",
+      "sha256": "2d96c7e68c9045f4ea32b6e286143183cf8b6998202975fa2341fb238007b0ca",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          77.75615692138672,
+          47.668121337890625,
+          183.86083984375,
+          196.76539611816406,
+          0.9998815059661865
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.21104431152344,
+            108.49439239501953
+          ],
+          [
+            148.2312774658203,
+            100.69041442871094
+          ],
+          [
+            125.37362670898438,
+            132.92555236816406
+          ],
+          [
+            108.11603546142578,
+            158.60610961914062
+          ],
+          [
+            152.9600830078125,
+            152.35321044921875
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5382335155478692,
+            -0.318288890230372,
+            -24.661840577867927
+          ],
+          [
+            0.318288890230372,
+            2.5382335155478692,
+            -64.66381580282727
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031707749934867024,
+      "restoration_seconds": 0.9101117919199169,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5515023687420546,
+            0.1945549785359726,
+            52.84357136967415
+          ],
+          [
+            -0.1945549785359726,
+            1.5515023687420546,
+            97.52797952570174
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.198509500012733,
+      "total_seconds": 2.3437015829840675,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "722459802825dbcb3a52302162d98aff66fbb7352fa22f3746417e955982c51d",
+        "lanczos-1024.png": "11dbc19cb5cfe1cea58f13a03f12a0cd500f6e34cc4310cf645af4999ad95178",
+        "lanczos-1024.webp": "3bbac566914949294f4944610bcc0962f827978966a8db712b5a34cfe535372e",
+        "raw.png": "2d96c7e68c9045f4ea32b6e286143183cf8b6998202975fa2341fb238007b0ca",
+        "restored-1024-rgb.png": "6d82298096978df52af72847427cb061d3eda63c2b049467fc3453b8b4b4e8f7",
+        "restored-1024.png": "730fd568c50bf2a9a3e00c6809ceb06ee8350303bc9dc03d4b6fd7ded13662d8",
+        "restored-1024.webp": "a413212c962a48d242f2c84f984b551232e7e0cbc03db74b3484bfead108f412",
+        "restored-512.png": "d86b1fb3ec3cf950c77d0a3aebd4a183a04b63f1960f6d3905f50d8913524b3e"
+      }
+    },
+    {
+      "index": 6,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-006.png",
+      "sha256": "869b64b9891830135b508092df1e774606047f3680a1a0b2dba59631817987a5",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          71.81909942626953,
+          53.172760009765625,
+          174.71694946289062,
+          191.97706604003906,
+          0.9999039173126221
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            105.47207641601562,
+            103.21296691894531
+          ],
+          [
+            153.386962890625,
+            107.77061462402344
+          ],
+          [
+            133.34523010253906,
+            134.3701934814453
+          ],
+          [
+            103.66344451904297,
+            154.2685546875
+          ],
+          [
+            146.70741271972656,
+            158.26138305664062
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.576527820695261,
+            0.24087280186912452,
+            -102.97769719651775
+          ],
+          [
+            -0.24087280186912452,
+            2.576527820695261,
+            -0.8713034878786565
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031098291976377368,
+      "restoration_seconds": 0.8875526250340044,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5390260148965502,
+            -0.14387948982346763,
+            160.35999223826298
+          ],
+          [
+            0.14387948982346763,
+            1.5390260148965502,
+            18.15733727054586
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1810695419553667,
+      "total_seconds": 2.303315042052418,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "cb777c566a557b7579d7c39e01d3eb8a8d03238a8659297fea388df2a06a8b10",
+        "lanczos-1024.png": "0cdd8953cf38ad82233b60e29b096f44244797012dc6c7339bc504062405227a",
+        "lanczos-1024.webp": "39ad7103dba42b908be5d1b7fa8387b88aca5c21ad297ea598f5dc67c5f92046",
+        "raw.png": "869b64b9891830135b508092df1e774606047f3680a1a0b2dba59631817987a5",
+        "restored-1024-rgb.png": "882ac532f93bec2fe56758cd2e397d09c84e1ca5bdb25bf740a626ab461cfda8",
+        "restored-1024.png": "a6e09fafbc949e747758840802b318bb7d2126e63dad328749dc93ff53c8ebc5",
+        "restored-1024.webp": "0ae3ff6871a7d131962fb8be831ac696c120ef27eec6e2d9d56668861c023437",
+        "restored-512.png": "487eea9dd6a7018a24fc912a8a683f35398d92fb75eed3a6d2f9053da910bb1b"
+      }
+    },
+    {
+      "index": 7,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-007.png",
+      "sha256": "155b9b7e2c5c675b204f8f04e09634faaafa919af61e3e65d5d68ca65f9089f6",
+      "raw_challenge_control": true,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          98.13661193847656,
+          52.170677185058594,
+          189.4507598876953,
+          195.13381958007812,
+          0.9986315369606018
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            111.90672302246094,
+            105.47772979736328
+          ],
+          [
+            150.7789306640625,
+            98.3221664428711
+          ],
+          [
+            124.03739166259766,
+            132.71226501464844
+          ],
+          [
+            123.18572235107422,
+            157.03797912597656
+          ],
+          [
+            159.06260681152344,
+            151.11463928222656
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.579464023475115,
+            -0.4364748435148352,
+            -32.26782083825349
+          ],
+          [
+            0.4364748435148352,
+            2.579464023475115,
+            -83.63142663568541
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031275125104002655,
+      "restoration_seconds": 0.8867840419989079,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5075449436324042,
+            0.25509386344417945,
+            71.97905387259082
+          ],
+          [
+            -0.25509386344417945,
+            1.5075449436324042,
+            119.84681127083724
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.174262374988757,
+      "total_seconds": 2.290805416996591,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "12f8c94f55e41bf97a5ba6f9227faaeb77feb50f6f7d83bff3245178723ae1ca",
+        "lanczos-1024.png": "fcc801e056fd0a98242618a9369adbe72cd4ddbd671f7617bf390e5cf1f52525",
+        "lanczos-1024.webp": "2ca9718fe0d813368e6b0136c0115f53c1e7c4c874d4489a6dd6df39f5182cf4",
+        "raw.png": "155b9b7e2c5c675b204f8f04e09634faaafa919af61e3e65d5d68ca65f9089f6",
+        "restored-1024-rgb.png": "9cd18fbabd5a18d4829a9155789d2e776b2028069f9cba11fc68f366abd1b9ae",
+        "restored-1024.png": "5e33c5258b4f776685d8174317a84a748cd0f60bddced2123f67aad919160e51",
+        "restored-1024.webp": "6923c68a49a9282617019fce8e127f1c0bddc0e80b7a7e4a433d239744f40fbf",
+        "restored-512.png": "9e3cc5b9883a5ebddd4c08f4c1c8d733b1802db5c29c99ed041d145a3e8c3a0d"
+      }
+    },
+    {
+      "index": 8,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-008.png",
+      "sha256": "9460412f54975624e2aa3f8b1ff6d7cbf3ce9cb36e04d441988c184b32295e55",
+      "raw_challenge_control": true,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          63.08731460571289,
+          52.466522216796875,
+          172.18630981445312,
+          198.69064331054688,
+          0.9999116659164429
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            105.42835998535156,
+            101.87435150146484
+          ],
+          [
+            152.38693237304688,
+            110.32131958007812
+          ],
+          [
+            132.73980712890625,
+            135.14369201660156
+          ],
+          [
+            97.83133697509766,
+            152.51063537597656
+          ],
+          [
+            145.56350708007812,
+            159.45579528808594
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.48786658092092,
+            0.38343083387926985,
+            -109.42250370525615
+          ],
+          [
+            -0.38343083387926985,
+            2.48786658092092,
+            27.906550750319163
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031559334020130336,
+      "restoration_seconds": 0.8994971249485388,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5704990732662536,
+            -0.24204584517799793,
+            180.60260532594168
+          ],
+          [
+            0.24204584517799793,
+            1.5704990732662536,
+            -15.341949700602587
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1818026249529794,
+      "total_seconds": 2.3124317500041798,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "a75073632cf8e97fd94c81ce79cd249afe0d4c3199d5933c520ad1110d92fcb3",
+        "lanczos-1024.png": "a4fbfba68dfd3d5531d6d0b26aa88b7b51dc5e9faf36b38eb0e8bc8d6575ca57",
+        "lanczos-1024.webp": "07917bbb7dcbd89cbba004957547bd4b24bd46a788c57907bbab2eec27c4e823",
+        "raw.png": "9460412f54975624e2aa3f8b1ff6d7cbf3ce9cb36e04d441988c184b32295e55",
+        "restored-1024-rgb.png": "ec2aa57833fd7f92ace9e8772ced9078a94a5dc291fde6c016efb6972d124188",
+        "restored-1024.png": "710af883f57adab335aeaf7ca49a102701b5e253bc5234f4eeb2ad128bb2cc4a",
+        "restored-1024.webp": "5b92d2a093dd92b4e1fcaae118f44fdab1978b43be8d20a56a5b2cc2528edcca",
+        "restored-512.png": "ec57536be85b9c63e9d54506bc54303e8668d02d2360e03066e7f52da7a096d5"
+      }
+    },
+    {
+      "index": 9,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-009.png",
+      "sha256": "7db8481a319992c1b1beb71978ee31a998aca991fafd1c5b52e8985c3509d47f",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          81.01893615722656,
+          45.36469268798828,
+          192.146728515625,
+          192.86550903320312,
+          0.9998953342437744
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.22833251953125,
+            110.26773834228516
+          ],
+          [
+            149.0105743408203,
+            99.7962646484375
+          ],
+          [
+            125.03268432617188,
+            135.65335083007812
+          ],
+          [
+            117.47740173339844,
+            159.388916015625
+          ],
+          [
+            157.02731323242188,
+            150.89715576171875
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5223953736209097,
+            -0.5472214418870809,
+            0.06650536226838977
+          ],
+          [
+            0.5472214418870809,
+            2.5223953736209097,
+            -94.81942104738809
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030754333012737334,
+      "restoration_seconds": 0.8984798750607297,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5145133478516506,
+            0.32856632494488813,
+            33.05374544808309
+          ],
+          [
+            -0.32856632494488813,
+            1.5145133478516506,
+            145.62713023430467
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2002628749469295,
+      "total_seconds": 2.3479236249113455,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "2d12dd9e69bccaf8b79c3f2668fde0b2798904a7b572d552ca94d66115247b52",
+        "lanczos-1024.png": "ac1594aba6a82edb9ffda597948ff4e222a034294360cad052d102b8c8a30732",
+        "lanczos-1024.webp": "08acff9bd142a6342d1dd1adfd74fb87b7909149b783bd542f4808d55d8eda34",
+        "raw.png": "7db8481a319992c1b1beb71978ee31a998aca991fafd1c5b52e8985c3509d47f",
+        "restored-1024-rgb.png": "a4c0dbf982b302136a430eae1ee10a9615faddec858bed02acc2bcc09ea49eeb",
+        "restored-1024.png": "6ae178f1e9fa0d6f88853eeaeb89a21ced30b1496f2070e2995a14403548dc98",
+        "restored-1024.webp": "d65a611965de2028e83a8d2481cf813d53f6a0a42438d911711ff3cc5d02e03d",
+        "restored-512.png": "0422b1e0e051eeae27cf2af8c1d6a870d6a36e7a31873ba226f07d43f95874fd"
+      }
+    },
+    {
+      "index": 10,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-010.png",
+      "sha256": "73c7f34026a515001c10e9cbfd9a842efe4cccae676817781182c890d7f56754",
+      "raw_challenge_control": true,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          60.80265426635742,
+          62.091697692871094,
+          152.6338653564453,
+          195.83499145507812,
+          0.9978848099708557
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            98.71027374267578,
+            105.57725524902344
+          ],
+          [
+            140.6990966796875,
+            111.59783935546875
+          ],
+          [
+            127.21905517578125,
+            134.17474365234375
+          ],
+          [
+            95.63531494140625,
+            152.4059600830078
+          ],
+          [
+            134.75796508789062,
+            157.61062622070312
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.832745209881037,
+            0.34219347317429605,
+            -121.2495962437322
+          ],
+          [
+            -0.34219347317429605,
+            2.832745209881037,
+            -27.483501772977665
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031025958014652133,
+      "restoration_seconds": 0.8980064160423353,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.3917487770484787,
+            -0.16812219685098265,
+            166.1283905946052
+          ],
+          [
+            0.16812219685098265,
+            1.3917487770484787,
+            60.63487846934227
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1792515830602497,
+      "total_seconds": 2.2973327500512823,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "761a239c5eaa5bbf01032588fbfa6be978cadf47dccf34e8fe21a24ec4350aa8",
+        "lanczos-1024.png": "4e35c92bfeb5bc81ce9a201b2cdf5a7b262ae3e6488747e41d6de296d28556f6",
+        "lanczos-1024.webp": "f495077815a6c016852efa6b5b381ccd580f08f7fe2fa4e8631a8950dc6d0334",
+        "raw.png": "73c7f34026a515001c10e9cbfd9a842efe4cccae676817781182c890d7f56754",
+        "restored-1024-rgb.png": "546fed842c61827252dfdf5dec09e4352651170b1acbad0f3078fb63a742daee",
+        "restored-1024.png": "fff3bcaae7da7ca8212619ee7042ddceb8e5388112957ccebecb20b5c40d16c0",
+        "restored-1024.webp": "d08ee5fdb74cdfd8e302bfb5b39f72f53af3176396264bbf92c0c08b1853f1cf",
+        "restored-512.png": "5321c7b9a0ae5f9b72e3d0f7e1ae639e2788cc9f4beb4ab4f20827f543dc770d"
+      }
+    },
+    {
+      "index": 11,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-011.png",
+      "sha256": "ef72366dd0fa15c1abde8bf95ce6b01216b5442577640240f9e6e9a6e365ba2d",
+      "raw_challenge_control": true,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          63.43526077270508,
+          40.005638122558594,
+          178.79441833496094,
+          196.89535522460938,
+          0.999799907207489
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.21154022216797,
+            96.77024841308594
+          ],
+          [
+            154.188720703125,
+            106.33003997802734
+          ],
+          [
+            132.00537109375,
+            132.91757202148438
+          ],
+          [
+            98.86300659179688,
+            150.19337463378906
+          ],
+          [
+            144.72642517089844,
+            158.1127471923828
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4054780370135496,
+            0.3878738675821064,
+            -98.4218212390789
+          ],
+          [
+            -0.3878738675821064,
+            2.4054780370135496,
+            46.54491571808808
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03104845795314759,
+      "restoration_seconds": 0.9542317920131609,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.6207316394467517,
+            -0.2613365990592741,
+            173.67924967141315
+          ],
+          [
+            0.2613365990592741,
+            1.6207316394467517,
+            -47.71559352384706
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.209505332983099,
+      "total_seconds": 2.4117734580067918,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "e17a8371ec17a1985f94b51a8dd174eb15d8ae644125906d6407b0f9d720c0a2",
+        "lanczos-1024.png": "333d802873a9a34631629150dfa52a14e1228f4178bdbcef52ef18d159c53656",
+        "lanczos-1024.webp": "9a5b322d23e3711e2eb93ee9aa6f4e1f855d2749819328659d4194c76f516feb",
+        "raw.png": "ef72366dd0fa15c1abde8bf95ce6b01216b5442577640240f9e6e9a6e365ba2d",
+        "restored-1024-rgb.png": "65256ac6795da8e71200ee6fc11cfb6689e1d2c08096e55f031e5e82e324d9d4",
+        "restored-1024.png": "97feab3660348a726172527a907d6a4ba80464f145ad490f31fcd6eda35c8982",
+        "restored-1024.webp": "9c8d09fb4697fad5c9fb4907e9be278f2753b18447f1d725cf23bd5812ab4ef2",
+        "restored-512.png": "218912f6ea2114d18fc2d38a90a23ae2d66cafc9815180a82052fc9d489ec53f"
+      }
+    },
+    {
+      "index": 12,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-012.png",
+      "sha256": "b023c70d6ced7fb62e0e1c2d72fbe03a4c050e051f6f8313deeef713e65957ad",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          80.31315612792969,
+          47.37303161621094,
+          182.1279754638672,
+          190.2666015625,
+          0.9999178647994995
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.57051086425781,
+            110.0067138671875
+          ],
+          [
+            151.46768188476562,
+            103.91963195800781
+          ],
+          [
+            126.5685806274414,
+            134.1053466796875
+          ],
+          [
+            110.12031555175781,
+            157.80670166015625
+          ],
+          [
+            152.68785095214844,
+            153.00033569335938
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.6253055997003103,
+            -0.2550767083092055,
+            -47.647579961288244
+          ],
+          [
+            0.2550767083092055,
+            2.6253055997003103,
+            -71.41030451368441
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.0314072499750182,
+      "restoration_seconds": 0.8987937920028344,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5093832421006392,
+            0.14665283501321064,
+            84.39098232630718
+          ],
+          [
+            -0.14665283501321064,
+            1.5093832421006392,
+            102.79786426341731
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2053212079918012,
+      "total_seconds": 2.3658328329911456,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "6a8f3ce52ca825acf249d31331ae5620116f242258a28c5d1d74d0232fd0f3c5",
+        "lanczos-1024.png": "b1eebc5b868216bf08d07f3793a336604ac4728514c15ee8abedea8ad44f8a6c",
+        "lanczos-1024.webp": "7c06ec0db30b5822910aaf251edf1bb7afa3a6fd12b2b279c3cbaca201b34f16",
+        "raw.png": "b023c70d6ced7fb62e0e1c2d72fbe03a4c050e051f6f8313deeef713e65957ad",
+        "restored-1024-rgb.png": "eaebf2d792533795817d0347811bce34fa8fc9c77875c56647389520b4c12f35",
+        "restored-1024.png": "d58294749a5bdba68c62620331abd78b0bc5e310b67c09cc16b09685cf23c862",
+        "restored-1024.webp": "193f581ab61fb1f8b77e6f00e477e517cf06dd608fa9986e35527c974d498d7c",
+        "restored-512.png": "0ad043337e8d2555c91a7a185113fe187f69550bf57c81919a0f9f5c74a41a07"
+      }
+    },
+    {
+      "index": 13,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-013.png",
+      "sha256": "a6e78b28c1fdc64df69fed39cc64959d65c96578875aaacc07c04bfc3ef2156a",
+      "raw_challenge_control": true,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          81.44720458984375,
+          55.30641174316406,
+          184.0074462890625,
+          198.8807373046875,
+          0.9999219179153442
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.08421325683594,
+            111.87443542480469
+          ],
+          [
+            148.736328125,
+            103.57176971435547
+          ],
+          [
+            124.13406372070312,
+            134.83718872070312
+          ],
+          [
+            108.99481201171875,
+            161.38430786132812
+          ],
+          [
+            155.0521240234375,
+            154.45046997070312
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5298916475709574,
+            -0.3518000809997278,
+            -19.87914093583763
+          ],
+          [
+            0.3518000809997278,
+            2.5298916475709574,
+            -74.65718872396621
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030563500011339784,
+      "restoration_seconds": 0.9098673750413582,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5511017999837013,
+            0.2156921381977031,
+            48.93753995540915
+          ],
+          [
+            -0.2156921381977031,
+            1.5511017999837013,
+            113.51312539748258
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2043397079687566,
+      "total_seconds": 2.367369082989171,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "e6a62a90bb55f514f68481b95c84b337c872715d4b043c7cdd627543809ed793",
+        "lanczos-1024.png": "ff3416d4da4ef6db691ff8be9c9d53fb796b84a1a7ab779c9f6a3594bfc3d145",
+        "lanczos-1024.webp": "c0e06f02fbfc0c7952c5f6d0e8b757c7024e9a7dc6031daac5583b49783065a9",
+        "raw.png": "a6e78b28c1fdc64df69fed39cc64959d65c96578875aaacc07c04bfc3ef2156a",
+        "restored-1024-rgb.png": "4e9990179cbae4d24709022be62ad6cd460365b313335650048bc3da23bb5fb3",
+        "restored-1024.png": "5444f8aa3797927b7627102a8b4376030423869bb9b788769d7e2faca0363289",
+        "restored-1024.webp": "741d669941c3c2930aad2b8e85252dd3195b9d751a941d70cf5ac1504d2ed6cc",
+        "restored-512.png": "8af8564a8a2726e5e30c39a7fab84ef8808b02eebf001a5e97ece98624aa04e8"
+      }
+    },
+    {
+      "index": 14,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-014.png",
+      "sha256": "525372a37ea123a403d478c5c3003272b110282781567c3d3a859bc15c8c3164",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          76.22119140625,
+          46.749961853027344,
+          178.44699096679688,
+          198.94854736328125,
+          0.9997363686561584
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.60337829589844,
+            104.20026397705078
+          ],
+          [
+            150.43356323242188,
+            102.11769104003906
+          ],
+          [
+            128.7822723388672,
+            134.3105926513672
+          ],
+          [
+            107.01448059082031,
+            157.66326904296875
+          ],
+          [
+            150.48326110839844,
+            156.3517608642578
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5257769508294134,
+            -0.06178190302042986,
+            -59.30198564991086
+          ],
+          [
+            0.06178190302042986,
+            2.5257769508294134,
+            -31.276758406681562
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030561875086277723,
+      "restoration_seconds": 0.923313417006284,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5827241415759554,
+            0.038714309033039754,
+            97.06954242201279
+          ],
+          [
+            -0.038714309033039754,
+            1.5827241415759554,
+            49.20664520177008
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2059256250504404,
+      "total_seconds": 2.3802568749524653,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "7ffec45b48d6fdc663e6ba1562e6386fcdd72e0847c8247fbad5d5d09598cfb2",
+        "lanczos-1024.png": "63fcbb6fd3f310239335dc74a9795de794dd8390697a4d53a34b2469f4391faf",
+        "lanczos-1024.webp": "f9ae2e685ed50a68be6a5873d05f6c6fb7307235da9033e6cd904a715df70292",
+        "raw.png": "525372a37ea123a403d478c5c3003272b110282781567c3d3a859bc15c8c3164",
+        "restored-1024-rgb.png": "4b45ece9be09bdddf242f42126b2e0b1f4c048c45aae3bebdc35c342eae8be5f",
+        "restored-1024.png": "9a9719ddf8e4e55e82e7abcf2531467c92d13fb3501f22e1bea24b053e6245e5",
+        "restored-1024.webp": "a6f06398cc48b48b3152c09439baf078da8d0d68b3e1eb1f3bac477aec5a6332",
+        "restored-512.png": "14b792929ea2e0e6ab8f6133a392eca19b2a92f78c9c42cae18c32c7186593ac"
+      }
+    },
+    {
+      "index": 15,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-015.png",
+      "sha256": "4d0cfd4378e5576f7c3e349eb87cffc33aaf46eb5640c165aacc19c3eba7a5a3",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          81.66146850585938,
+          49.315277099609375,
+          184.96737670898438,
+          191.88739013671875,
+          0.9999305009841919
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.65476989746094,
+            110.10884857177734
+          ],
+          [
+            153.38461303710938,
+            103.6494140625
+          ],
+          [
+            126.41991424560547,
+            133.8524627685547
+          ],
+          [
+            108.69305419921875,
+            159.17404174804688
+          ],
+          [
+            155.6355438232422,
+            154.16278076171875
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.507966247665622,
+            -0.23210854130705533,
+            -37.16842181339932
+          ],
+          [
+            0.23210854130705533,
+            2.507966247665622,
+            -54.20749747255481
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030848167021758854,
+      "restoration_seconds": 0.9059578330488876,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.581372977648406,
+            0.14635371406852504,
+            68.71060646301582
+          ],
+          [
+            -0.14635371406852504,
+            1.581372977648406,
+            82.28253511058587
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.241215999936685,
+      "total_seconds": 2.363897000090219,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "ca1248543838985cd192fafb57b6c329ab23bb81a427f99472f56ce327e62d9a",
+        "lanczos-1024.png": "7a3c226f28781cdf149706baf09c7883f3690bdbc62f1e58f8ef32f162c805a4",
+        "lanczos-1024.webp": "d037a01fffbfe4bfeb75e9299f080fc1e674abebca8a01c12c8ea74c4a56b002",
+        "raw.png": "4d0cfd4378e5576f7c3e349eb87cffc33aaf46eb5640c165aacc19c3eba7a5a3",
+        "restored-1024-rgb.png": "5d1b68a96ee091fe5207c4b46c294bcb537e60707a09ff22d8124c7755ca4451",
+        "restored-1024.png": "8962939a1bd2c8b0116909da22551899ff079405c85c43db2d277b162e141a70",
+        "restored-1024.webp": "ac746ea5f0d56ebc27e92cfaea8f1cc7d64afe5e1903863f716aaae281b490e2",
+        "restored-512.png": "0724cc2102677840d4bf65f70e58fbdf4a7473ba89ae5125333d57d7c2533527"
+      }
+    },
+    {
+      "index": 16,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-016.png",
+      "sha256": "d1f650748ba6a0c16e1a712c0bd392963bcf72424b33628c742183cf71820a0a",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          78.85467529296875,
+          55.0098876953125,
+          177.77224731445312,
+          198.6634979248047,
+          0.9997442364692688
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            105.00932312011719,
+            108.44450378417969
+          ],
+          [
+            149.27902221679688,
+            105.34201049804688
+          ],
+          [
+            128.98785400390625,
+            133.1426239013672
+          ],
+          [
+            108.7412109375,
+            156.90274047851562
+          ],
+          [
+            151.66854858398438,
+            154.36135864257812
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.699240101283511,
+            -0.1584346306934309,
+            -70.06276400870834
+          ],
+          [
+            0.1584346306934309,
+            2.699240101283511,
+            -68.3764157062802
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03099187498446554,
+      "restoration_seconds": 0.9256089170230553,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.4768106126536702,
+            0.0866828941629406,
+            111.39649904581879
+          ],
+          [
+            -0.0866828941629406,
+            1.4768106126536702,
+            96.90577321292375
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2063579590758309,
+      "total_seconds": 2.378395458916202,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "70dc0d88acd043b5aafc348b0a4ee728506acd2fca9d989aa055a4807d49032e",
+        "lanczos-1024.png": "31c10a2044847906824c73989d460258000bc4378a12ebdb39c6e741e2e47c81",
+        "lanczos-1024.webp": "51df45e30e1bc23a0e6617f109d48510973c04ca6e0cf36fc8a320d38a40a4fd",
+        "raw.png": "d1f650748ba6a0c16e1a712c0bd392963bcf72424b33628c742183cf71820a0a",
+        "restored-1024-rgb.png": "408487bf80632eca42b40af1505be40cec335c772076388fea2bc92df38589cf",
+        "restored-1024.png": "9e48eafad15413595402fc7f802dc2d4a99c305715dc27882629d4883bfac378",
+        "restored-1024.webp": "77acf1a98d54a0ffd1cc9ff6b635808295feff3401dfc586f6e080c78c09b11c",
+        "restored-512.png": "4c3f25beb098e1c4c1e7481ffb5fe10db93b4d5c99a7f82b4e106ad001ebee3e"
+      }
+    },
+    {
+      "index": 17,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-017.png",
+      "sha256": "af63397d13b4ff7de84fc78622239d2e321cb3ae03b0f91879ec68d528d6f101",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          63.42185592651367,
+          46.29014587402344,
+          173.42274475097656,
+          199.3291473388672,
+          0.9998891353607178
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.75860595703125,
+            99.35261535644531
+          ],
+          [
+            153.09011840820312,
+            108.64531707763672
+          ],
+          [
+            131.05889892578125,
+            135.98204040527344
+          ],
+          [
+            95.05902099609375,
+            153.11611938476562
+          ],
+          [
+            146.31719970703125,
+            160.91586303710938
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.341760016234927,
+            0.37218391091607567,
+            -87.13293547866346
+          ],
+          [
+            -0.37218391091607567,
+            2.341760016234927,
+            46.004976853729524
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03199200006201863,
+      "restoration_seconds": 0.9119245830224827,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.6660332440768073,
+            -0.26478834901863707,
+            159.34794902919248
+          ],
+          [
+            0.26478834901863707,
+            1.6660332440768073,
+            -51.57403470075471
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2221619170159101,
+      "total_seconds": 2.396536499960348,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "38f51aeab896ea488b06a7584652793afcca75b3529f7ae8c987974f53a9a59d",
+        "lanczos-1024.png": "2b126d2196cb641ee45036aa06aba9f94c357addbbfb40cfff507e0f2bdef1cb",
+        "lanczos-1024.webp": "c0bac57b49074b5987be9b3268819cde10db4027b640e5d3dd27784cf5d5782c",
+        "raw.png": "af63397d13b4ff7de84fc78622239d2e321cb3ae03b0f91879ec68d528d6f101",
+        "restored-1024-rgb.png": "0540a58d8e016133715e1a345be0eb3296648223bc5467a1480d2cf2a0e4adfc",
+        "restored-1024.png": "eea0af0290997f8efc8fd8f883dedfe56a877e5661ed88d89bd11352e17b1480",
+        "restored-1024.webp": "513185c7a493370e1d18036404a5f7989f2ddd4a73500ce98c863580d5c72ba9",
+        "restored-512.png": "bc7177a582c5dc8f3d70fd9513d56241b9619ada0e79a825a5184da243db4975"
+      }
+    },
+    {
+      "index": 18,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-018.png",
+      "sha256": "4fdcd5e6123eb7f6c5dfe8ac19097f0fef2de1e7657d68ed210cffeeb0cf906e",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          77.4423828125,
+          48.60542297363281,
+          181.178955078125,
+          198.49525451660156,
+          0.9999122619628906
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.95848083496094,
+            107.9051284790039
+          ],
+          [
+            150.10784912109375,
+            103.87606811523438
+          ],
+          [
+            125.83145904541016,
+            134.35670471191406
+          ],
+          [
+            105.32108306884766,
+            158.83773803710938
+          ],
+          [
+            150.65960693359375,
+            155.57748413085938
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.542968466497427,
+            -0.12827477349400418,
+            -48.86643022608955
+          ],
+          [
+            0.12827477349400418,
+            2.542968466497427,
+            -44.87094651761989
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03176533302757889,
+      "restoration_seconds": 0.9215462920255959,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5689726116821747,
+            0.07914357139435287,
+            82.22133761466192
+          ],
+          [
+            -0.07914357139435287,
+            1.5689726116821747,
+            68.53382233701558
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1896935829427093,
+      "total_seconds": 2.3408473749877885,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "333cb73c089f13dbd5343b1f44e287225790eea09ffcb689b33b34a00c167b5f",
+        "lanczos-1024.png": "9f7377ba3a1e3fd805622c68f26c455f0c56d8927182bd792fb5fdb039f47c27",
+        "lanczos-1024.webp": "5d57001a596ab79b05a677b5c4d7b6aaf26b5e4fc1c8791ebef464d67977c0a8",
+        "raw.png": "4fdcd5e6123eb7f6c5dfe8ac19097f0fef2de1e7657d68ed210cffeeb0cf906e",
+        "restored-1024-rgb.png": "f22c3452d05847fd4c487b5300453e26fb026aaba9c831a33c78d6c0cf37351c",
+        "restored-1024.png": "0f02fdc3c65b304b770bf64734a44005107c8b3b64ba81e3b587871ad0694d30",
+        "restored-1024.webp": "e10bc9207a5792231b434a2ed91c5f77d93f30c3d04adca6228d80239d3c7f8c",
+        "restored-512.png": "35f85176e2c775e0343465acca521fac70aff13d07cf36846f423721bc0268d4"
+      }
+    },
+    {
+      "index": 19,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-019.png",
+      "sha256": "91fa1234bd339168060588bbc3bc1a4c1d5d5c75202c77ba69f062ef52fabc25",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          58.08451843261719,
+          46.69731140136719,
+          167.99319458007812,
+          203.75167846679688,
+          0.9998906850814819
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.68694305419922,
+            100.59464263916016
+          ],
+          [
+            151.20115661621094,
+            111.42927551269531
+          ],
+          [
+            134.5624237060547,
+            136.8916015625
+          ],
+          [
+            96.65625,
+            154.4461669921875
+          ],
+          [
+            142.21670532226562,
+            163.31837463378906
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4389331875629674,
+            0.4640535671867869,
+            -106.57625163739995
+          ],
+          [
+            -0.4640535671867869,
+            2.4389331875629674,
+            40.04481913995427
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.0313554999884218,
+      "restoration_seconds": 0.9096613749861717,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5827616793655819,
+            -0.30115060431403684,
+            182.74432850574354
+          ],
+          [
+            0.30115060431403684,
+            1.5827616793655819,
+            -29.28590260571717
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.238567000022158,
+      "total_seconds": 2.3945750830462202,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "cfd58adab28eb73522bd8881bf4ef74891fa1243622871d47b4f31017a0adb11",
+        "lanczos-1024.png": "b4b7daea7b6d79c4be621cb978318cd05f124de1b2fd99a5952a7ddb2535674a",
+        "lanczos-1024.webp": "bb89555400b8f98a77b87ff52449735c90ca36ecad3412ee19cb9668bfaa6985",
+        "raw.png": "91fa1234bd339168060588bbc3bc1a4c1d5d5c75202c77ba69f062ef52fabc25",
+        "restored-1024-rgb.png": "fd2902bc2bb8b0419faadd82f7d5bd1aff31d515a3764c0b78e58b31e6b89f20",
+        "restored-1024.png": "a30509a2077a8f629fced1fa1f1e4832885e7c79e3952b5f84ff2d5d9e23212e",
+        "restored-1024.webp": "09bc9d3b715153249ad2739ef53329197fe09a4f15f90235e5528786a70b6288",
+        "restored-512.png": "d31c0193303bf8fb6dc713525af01f8d49e36cd97c34fcb1ecbab9c4761d5d7b"
+      }
+    },
+    {
+      "index": 20,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-020.png",
+      "sha256": "23f436b06d32a424a99502cbc69057d06d8325aaf3b6190eb0ba2df63eff7428",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          74.11848449707031,
+          43.79981231689453,
+          178.90597534179688,
+          190.81863403320312,
+          0.99986732006073
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            99.93278503417969,
+            107.74220275878906
+          ],
+          [
+            150.42022705078125,
+            105.59855651855469
+          ],
+          [
+            126.7861099243164,
+            132.13900756835938
+          ],
+          [
+            103.55472564697266,
+            155.16293334960938
+          ],
+          [
+            149.02207946777344,
+            153.73597717285156
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.6100334790254727,
+            -0.06719691505014204,
+            -63.347778680419125
+          ],
+          [
+            0.06719691505014204,
+            2.6100334790254727,
+            -42.70871487641383
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03219049994368106,
+      "restoration_seconds": 0.9242774160811678,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5315322357979984,
+            0.03943023810709817,
+            100.70317991208424
+          ],
+          [
+            -0.03943023810709817,
+            1.5315322357979984,
+            64.91195558580863
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2170373341068625,
+      "total_seconds": 2.3803994581103325,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "b65774bddfccb881f111159a792b74923371ac458e4bc478a0de2ea3fec7a0ac",
+        "lanczos-1024.png": "d4eb89e953971ce978e82ce6b8f885d7b5de42383fa5895f7e5516bbaa4c2686",
+        "lanczos-1024.webp": "b28d9adaafd95814ca72f608f05176b7d0238d6209bfe4e4af2ba334f4845bd8",
+        "raw.png": "23f436b06d32a424a99502cbc69057d06d8325aaf3b6190eb0ba2df63eff7428",
+        "restored-1024-rgb.png": "5854f1dcee06dcc6b18e9528ba37adf304eddd649131abde0996c141feb05720",
+        "restored-1024.png": "b26a61b28e04fa3fb136700a2372756fdbf08a3c8d12540958cd0138611e8c45",
+        "restored-1024.webp": "2e5241ca0ed81d3e80e89ecdd6a2a12aacd8f190ef3506f6b852e6952ee7fd2f",
+        "restored-512.png": "ceb620d870345ce29b9e429e8ea10961c150ddc7ba812c7e02c97460ba9c2afa"
+      }
+    },
+    {
+      "index": 21,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-021.png",
+      "sha256": "e40c1164e0e65e9167c6cf3f2a3e7915902b887293239d11d8bf366a158010fa",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          60.835289001464844,
+          43.08418273925781,
+          166.20196533203125,
+          201.6899871826172,
+          0.9998024106025696
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            105.5035400390625,
+            100.06060028076172
+          ],
+          [
+            149.73489379882812,
+            112.1959457397461
+          ],
+          [
+            134.84349060058594,
+            132.9599609375
+          ],
+          [
+            98.06073760986328,
+            153.4349365234375
+          ],
+          [
+            138.61427307128906,
+            163.3533477783203
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4523710429014263,
+            0.5194621033534063,
+            -119.61168592988379
+          ],
+          [
+            -0.5194621033534063,
+            2.4523710429014263,
+            47.763348926209254
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.032201541936956346,
+      "restoration_seconds": 0.9188354999059811,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.561034280451063,
+            -0.3306588344684164,
+            204.5113153653433
+          ],
+          [
+            0.3306588344684164,
+            1.561034280451063,
+            -33.00956436458047
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2134846670087427,
+      "total_seconds": 2.3698676669737324,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "2b8d99ac4315c9e11f1df34cfcf2fe5618d5457baf743d7abe6ce31f8ed23017",
+        "lanczos-1024.png": "82462c44c321ad0ab4e0e694cbe4958c88a4f9eedbca5183b32cfab6c1d93832",
+        "lanczos-1024.webp": "a6e5ed0163b8df0eda06f23b95ca1eb22168c32f233f29d291d6ddad32383218",
+        "raw.png": "e40c1164e0e65e9167c6cf3f2a3e7915902b887293239d11d8bf366a158010fa",
+        "restored-1024-rgb.png": "b8e81b50d0bdd45e50e15390a5d039cb9cc732ade988e5239be6f02771a6169d",
+        "restored-1024.png": "201ab767a388adfe90087fcc15e393bccec79e7f103593193f7fb22ce11bd4f9",
+        "restored-1024.webp": "48e6ba2935cb4d07a3a3e5f829a042641dfa67a71dc6fe5664f300d690db6367",
+        "restored-512.png": "af60ba33707c6fe208e5e047ddc82cb923993755e9e7963c36f19689df73a734"
+      }
+    },
+    {
+      "index": 22,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-022.png",
+      "sha256": "2029425bc48039a4ca8f43d911d73a1cd2f2bec2bd35ec1f91afa5a98fa9a8b8",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          75.25194549560547,
+          45.29278564453125,
+          181.49871826171875,
+          193.87330627441406,
+          0.9998607635498047
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.15607452392578,
+            107.04463958740234
+          ],
+          [
+            150.97720336914062,
+            104.1911392211914
+          ],
+          [
+            126.23296356201172,
+            131.1260986328125
+          ],
+          [
+            103.343505859375,
+            156.6579132080078
+          ],
+          [
+            151.2703399658203,
+            154.66119384765625
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5525064543231974,
+            -0.05296825999906479,
+            -60.659579306576454
+          ],
+          [
+            0.05296825999906479,
+            2.5525064543231974,
+            -33.087414636896476
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.0323821670608595,
+      "restoration_seconds": 0.9331481250701472,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5664125905338617,
+            0.03250536319729147,
+            98.09344719234035
+          ],
+          [
+            -0.03250536319729147,
+            1.5664125905338617,
+            51.856781218693854
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1834727079840377,
+      "total_seconds": 2.3412140000145882,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "7971e45c47583a2072f94b6d6362cd14fc2f9eb0511a163fe4df35e3b3775476",
+        "lanczos-1024.png": "ce9e7d9405a229d355b9a467372f37707553d1c14154ade861fab3564845eb5c",
+        "lanczos-1024.webp": "aacd2f22de32e52a1297860ae7728aedbffcd2bb0b777d0b2901048bdebe76b6",
+        "raw.png": "2029425bc48039a4ca8f43d911d73a1cd2f2bec2bd35ec1f91afa5a98fa9a8b8",
+        "restored-1024-rgb.png": "499152c5be1f9ddd27bcbabb01a6996e17de0bb53076023562f162fd041627af",
+        "restored-1024.png": "e6ad2d81ba2de4df42c6c38ab50adc2ea860acae24573b31558e42ec35f09575",
+        "restored-1024.webp": "5fcd415d8763129d81995ea89eba5074a7d3f30dcd96fd4fc84ddc4a7f33147a",
+        "restored-512.png": "208e31b8e58b8efb467d7f961603d664190326235df2de891e598b90c3a5f0f0"
+      }
+    },
+    {
+      "index": 23,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-023.png",
+      "sha256": "b771cf79b7bd6e4a673b8f180cbc137879c9cb920b9165aac9c60d10d6b86e1e",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          78.15788269042969,
+          49.947235107421875,
+          182.61483764648438,
+          204.38262939453125,
+          0.9998268485069275
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.02571868896484,
+            108.39025115966797
+          ],
+          [
+            149.6155242919922,
+            100.872314453125
+          ],
+          [
+            125.721923828125,
+            132.8572235107422
+          ],
+          [
+            109.83243560791016,
+            162.55308532714844
+          ],
+          [
+            153.31129455566406,
+            156.34141540527344
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4430359519058666,
+            -0.28778182097286914,
+            -18.336990090118682
+          ],
+          [
+            0.28778182097286914,
+            2.4430359519058666,
+            -52.497253365635906
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031256499933078885,
+      "restoration_seconds": 0.9333197920350358,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.6148985828178262,
+            0.1902298877293504,
+            41.598925923521364
+          ],
+          [
+            -0.1902298877293504,
+            1.6148985828178262,
+            83.2894964958563
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1883971249917522,
+      "total_seconds": 2.3548821250442415,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "bb4ba6e66f5987520f8bc5a6ea6d4841b5a900b0ea090b5d7105594d4df3fa23",
+        "lanczos-1024.png": "a2a9c0584a1f196bce4da467cd691f53f559b49697265a63081861a88a56800b",
+        "lanczos-1024.webp": "9d565b3aa86d7ab2d7e32249732dfb375f40e89a9dc1287975db6f2123dbc2ce",
+        "raw.png": "b771cf79b7bd6e4a673b8f180cbc137879c9cb920b9165aac9c60d10d6b86e1e",
+        "restored-1024-rgb.png": "6b24c53bd12ac2c920870368d4f0d5f04eabc70f49ffd42dfaca76d520853ace",
+        "restored-1024.png": "21511cea075d267f3d0d7afd1248f0ebdd88df517d5d06feda077a279cb79fe6",
+        "restored-1024.webp": "62e5769cddbad5d3cd38b5a72adf1b622dd2bd8a912ef3a6a435452123340cb6",
+        "restored-512.png": "1674b16b8f66ca911f4ba7db5f40516bf9a0466fe7825ce56a279c6046cec6c2"
+      }
+    },
+    {
+      "index": 24,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-024.png",
+      "sha256": "b3d6b7b67076747a93ad9adfbfbd01bbcf98a144947971e93335f7f37268ff73",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          80.50811767578125,
+          51.981834411621094,
+          182.41925048828125,
+          196.2049560546875,
+          0.9999115467071533
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.76907348632812,
+            111.04341888427734
+          ],
+          [
+            149.84971618652344,
+            103.32811737060547
+          ],
+          [
+            125.68978881835938,
+            134.78651428222656
+          ],
+          [
+            108.79600524902344,
+            160.81484985351562
+          ],
+          [
+            153.880615234375,
+            154.5865020751953
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.533539646668956,
+            -0.3069478669964839,
+            -26.914850706142897
+          ],
+          [
+            0.3069478669964839,
+            2.533539646668956,
+            -68.68160725568833
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03223016706760973,
+      "restoration_seconds": 0.9727323340484872,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.55597975411055,
+            0.1885128054900942,
+            56.82632525300501
+          ],
+          [
+            -0.1885128054900942,
+            1.55597975411055,
+            103.79339635366127
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2090775410179049,
+      "total_seconds": 2.4189555420307443,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "4220a59d6ee9f916228aa65cdc4702423ece430f175b0695dba1aef7653f71a8",
+        "lanczos-1024.png": "406cd4f9b8d088051e05f38e576c96255d58234c1a8a8b876ae08e1b5e37eadf",
+        "lanczos-1024.webp": "297e8a8cf15453e9c48ec41cbadf9b285cf86122470d2bdc8f30d548ac110a62",
+        "raw.png": "b3d6b7b67076747a93ad9adfbfbd01bbcf98a144947971e93335f7f37268ff73",
+        "restored-1024-rgb.png": "17a0a5d88d3e98c65fac2845973f6cac7acf1c89512d9687e6d60fca857bacff",
+        "restored-1024.png": "5dd0364594064913ca53417b9d0898d735834f1705e0d2f038ee763ed4f1b1c6",
+        "restored-1024.webp": "1eda50df1297623b78b7c46f9e924f4e48fdfdcb4f5fd39030572210e700c522",
+        "restored-512.png": "c01b3d04268b4216291412d647c0ba4bd97eee9333d09c11905e793ddc63cea8"
+      }
+    },
+    {
+      "index": 25,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-025.png",
+      "sha256": "4f9aeed00a83ac093f3562e318ff9bb7fb63a56d5abf7719f2486ad3394a8f0f",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          73.78353881835938,
+          47.417198181152344,
+          173.3874969482422,
+          199.96505737304688,
+          0.9997634291648865
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            107.0597915649414,
+            101.54147338867188
+          ],
+          [
+            152.1714324951172,
+            110.89991760253906
+          ],
+          [
+            131.8909454345703,
+            135.45303344726562
+          ],
+          [
+            101.71878051757812,
+            157.2692108154297
+          ],
+          [
+            141.2829132080078,
+            165.06011962890625
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4559414210077914,
+            0.4234892455572819,
+            -111.66701675369166
+          ],
+          [
+            -0.4234892455572819,
+            2.4559414210077914,
+            31.8472009269695
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030678292037919164,
+      "restoration_seconds": 0.9178056250093505,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5816743325187934,
+            -0.272735360895066,
+            187.3067120265749
+          ],
+          [
+            0.272735360895066,
+            1.5816743325187934,
+            -17.91635615436291
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2225187079748139,
+      "total_seconds": 2.396565582952462,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "9733ca3c8d4741d9225edaeac706f439e8d4966e2a1c157e8081829d576dc953",
+        "lanczos-1024.png": "191f6a57f7d3585bac0692903886e1d424328141bb625fb59aef35971b7f2268",
+        "lanczos-1024.webp": "75fe33a502ab378c3503e517e9264efcf736009a063ebfd4ba511e6a70a47361",
+        "raw.png": "4f9aeed00a83ac093f3562e318ff9bb7fb63a56d5abf7719f2486ad3394a8f0f",
+        "restored-1024-rgb.png": "62724dafea454b9b34e12ea3906dbb35eea6e789fb62d1da6da39721649df19f",
+        "restored-1024.png": "3c2b2da52cb179196c5e9db878548181fadfc5955b53cb3833a0f9bdefa1c745",
+        "restored-1024.webp": "ed1b9e46667e567d70a491c21d96b33d0d2575c284adf20a781ead21b22d5f89",
+        "restored-512.png": "646b522db5608e9c2b1693994190b53b56451e38f89f82467bdc22822da2dc95"
+      }
+    },
+    {
+      "index": 26,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-026.png",
+      "sha256": "266d4d47b55ac3db5d63147dbc2baef06fb23ea44d17057e59dbf833511db825",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          78.7117919921875,
+          45.58655548095703,
+          183.06781005859375,
+          200.473388671875,
+          0.9998956918716431
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.82742309570312,
+            109.79562377929688
+          ],
+          [
+            148.4939727783203,
+            102.48540496826172
+          ],
+          [
+            125.33741760253906,
+            134.14418029785156
+          ],
+          [
+            108.64710998535156,
+            158.55148315429688
+          ],
+          [
+            154.57144165039062,
+            152.52809143066406
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5643615269718314,
+            -0.3332083853635495,
+            -27.271579590281274
+          ],
+          [
+            0.3332083853635495,
+            2.5643615269718314,
+            -72.44752340922601
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03079629095736891,
+      "restoration_seconds": 0.9233687079977244,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5339434807017522,
+            0.19931777367099318,
+            58.27314079485501
+          ],
+          [
+            -0.19931777367099318,
+            1.5339434807017522,
+            107.69469569814366
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2011958750663325,
+      "total_seconds": 2.357178083038889,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "b08070baec99a17ee3df02d6ce3c1c917beb62cfd7df949200dea4a6fef3e61c",
+        "lanczos-1024.png": "ab8c8c9968105d1cf9caa1524bdf47122e33befd8fcf3149b223689333a2072b",
+        "lanczos-1024.webp": "b2ded13693fb3904f094f0685175b55fad1cfbcbe0a23f785d674393c1b0f785",
+        "raw.png": "266d4d47b55ac3db5d63147dbc2baef06fb23ea44d17057e59dbf833511db825",
+        "restored-1024-rgb.png": "1387aac892663104f44b48d03bfcf8a3bec5cb75063af4f61fc502a3fc668027",
+        "restored-1024.png": "421c4310cc03be16725ef8f4f442be08474fa8745ce4df60d829b3251cd9d3cc",
+        "restored-1024.webp": "c3d32ef72d1b349c9585c37dd7682425d9dfeef526dbc2bc6309f613776f90d9",
+        "restored-512.png": "eb2eac603607470251bbb3f283d6b4dbcfa86123e69a8c4c355822b6f4888172"
+      }
+    },
+    {
+      "index": 27,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-027.png",
+      "sha256": "d7344c79ffc64e4112b1655b4806554c700d384f4529c6126f6a948ac0f73951",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          79.50144958496094,
+          48.636009216308594,
+          180.58206176757812,
+          193.14105224609375,
+          0.9999185800552368
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.59117126464844,
+            110.16202545166016
+          ],
+          [
+            152.5265655517578,
+            107.99176788330078
+          ],
+          [
+            126.82855987548828,
+            133.6427001953125
+          ],
+          [
+            105.08634185791016,
+            156.78524780273438
+          ],
+          [
+            150.50157165527344,
+            155.3873748779297
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.6543019715565532,
+            -0.025840907268386316,
+            -78.96730368382576
+          ],
+          [
+            0.025840907268386316,
+            2.6543019715565532,
+            -48.43063767100668
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03204912494402379,
+      "restoration_seconds": 0.9251175411045551,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5068447224177264,
+            0.014669858651018284,
+            121.70193540854308
+          ],
+          [
+            -0.014669858651018284,
+            1.5068447224177264,
+            73.81901159478778
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2066905829124153,
+      "total_seconds": 2.3899018749361858,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "443d8b18702faa455ec8c06c8c8ec1b32c132422f1dfab365974e82020d12ad9",
+        "lanczos-1024.png": "489d2a8bc913ff73150c60d7163005f956c8b52e9dc95a0d5b62707951e3fb63",
+        "lanczos-1024.webp": "b3876ee638592405d6a7c35873b5c05be467ddeb927c0753e66f133b18c8cdee",
+        "raw.png": "d7344c79ffc64e4112b1655b4806554c700d384f4529c6126f6a948ac0f73951",
+        "restored-1024-rgb.png": "acb0edf5c2df6ad89241f4bf18db47997a75393af499fcef7ced2cb7048b9fd5",
+        "restored-1024.png": "711ff7d9039d4f709f877e22fee700c01aa36d4ee75e478000a1f79ad3d84cf9",
+        "restored-1024.webp": "e9fb19d6fb5d9e0b546279550aa01bd6f041e5154c3c0359cd32d7e786b0f8f6",
+        "restored-512.png": "bbb57854c821e6e5560ba3828c0e56d5c0e94ebc69229c4708e80e565559df6d"
+      }
+    },
+    {
+      "index": 28,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-028.png",
+      "sha256": "1d3b420c7868ed8906737f949187524b38a47c13c6687a558130fe04ce36fe7f",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          83.1025390625,
+          50.601905822753906,
+          184.00674438476562,
+          196.296875,
+          0.9999300241470337
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.49397277832031,
+            110.26516723632812
+          ],
+          [
+            148.51992797851562,
+            100.08798217773438
+          ],
+          [
+            126.6610107421875,
+            130.93064880371094
+          ],
+          [
+            112.00418090820312,
+            160.5997772216797
+          ],
+          [
+            155.0878143310547,
+            152.48622131347656
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5357464251401125,
+            -0.42275456467183053,
+            -15.598955280253673
+          ],
+          [
+            0.42275456467183053,
+            2.5357464251401125,
+            -79.11902624071965
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030929166940040886,
+      "restoration_seconds": 0.9703207089332864,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5347855974746458,
+            0.25587638049776124,
+            46.18574196276715
+          ],
+          [
+            -0.25587638049776124,
+            1.5347855974746458,
+            119.43933774381733
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2239590419922024,
+      "total_seconds": 2.4508063750108704,
+      "peak_process_rss_bytes": 4300980224,
+      "outputs": {
+        "aligned-512.png": "72f0ff00827eef940b63234cc8b8df85608ea35a9a508b08a64a857bab6c313e",
+        "lanczos-1024.png": "c0bbd1748e25fc835dbe69822598787125948460d0cd5024fee72ba9a81441b0",
+        "lanczos-1024.webp": "591b0cb1935fc2947ae3b53861d8de43eaf3a755a3bbb5e7835a24960317fba6",
+        "raw.png": "1d3b420c7868ed8906737f949187524b38a47c13c6687a558130fe04ce36fe7f",
+        "restored-1024-rgb.png": "735dc61bedd78d78683d5c2a01257d2eabcf3d6b8809da15fef37b8934d96c12",
+        "restored-1024.png": "ff438f02810150ae988e538b54ef2909951da14c829b9206a81aa762f95c5881",
+        "restored-1024.webp": "151e6e6150d572b8d92e5e5bc76fe52a82121afc23689f0ad27c7dbc81839bf0",
+        "restored-512.png": "a1870435bfa376ad9d0dc6a36f347955fba2cba599ff6060fed756653f1cc9a3"
+      }
+    },
+    {
+      "index": 29,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-029.png",
+      "sha256": "36ffc43576dff1ded7ef900d1cbb75a68139f2033578a5dc47dd4176f2afcbed",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          75.73179626464844,
+          39.282928466796875,
+          181.84732055664062,
+          194.896484375,
+          0.9999080896377563
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.83318328857422,
+            107.30387115478516
+          ],
+          [
+            150.60446166992188,
+            101.38311767578125
+          ],
+          [
+            127.73806762695312,
+            133.66983032226562
+          ],
+          [
+            109.03626251220703,
+            158.50450134277344
+          ],
+          [
+            153.08688354492188,
+            153.8760528564453
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.518730590392995,
+            -0.24385319385492094,
+            -35.049890707210146
+          ],
+          [
+            0.24385319385492094,
+            2.518730590392995,
+            -53.802405970962155
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031214167014695704,
+      "restoration_seconds": 0.9055447499267757,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5733540167000042,
+            0.1523257006923084,
+            65.3413755175441
+          ],
+          [
+            -0.1523257006923084,
+            1.5733540167000042,
+            81.31123238137299
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2048524169949815,
+      "total_seconds": 2.3467333329608664,
+      "peak_process_rss_bytes": 4337172480,
+      "outputs": {
+        "aligned-512.png": "a9cde90767e7f13ac67f45344d8c8f04a69220ee177081caa386e7f1565649ae",
+        "lanczos-1024.png": "3bf73583c9b5737d30412d2c79d0518360d72128b51bcd7ff569bf971b2e16f3",
+        "lanczos-1024.webp": "edfe72e1dea8977f03c4f56b8819939fa636eb94bfc096fda586c92f3895ea4a",
+        "raw.png": "36ffc43576dff1ded7ef900d1cbb75a68139f2033578a5dc47dd4176f2afcbed",
+        "restored-1024-rgb.png": "95bbd2b5614f83ece8ac701bf73bf8548fde415823fba7e7fce4780391502284",
+        "restored-1024.png": "c5c03a9e7528a335e4b4d72fde721a1da9d5ff4ed0190eac7dabf16bd9c10ac9",
+        "restored-1024.webp": "920bb48d7448fce471a9c21dea40a294282f204a994bf58fd549491ae5da5f4d",
+        "restored-512.png": "738a0c1a4771e2ff925c53ca9418bd80f8111ae37293362b3f7cadba7b84a653"
+      }
+    },
+    {
+      "index": 30,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-030.png",
+      "sha256": "641ad688e07f18f3370c49b8b4a4a0b0fa16134fc7a15483df71c70220c3a3ca",
+      "raw_challenge_control": false,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          64.73709106445312,
+          49.08697509765625,
+          170.30982971191406,
+          198.9902801513672,
+          0.9998936653137207
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.02692413330078,
+            101.83282470703125
+          ],
+          [
+            150.4598846435547,
+            107.4020004272461
+          ],
+          [
+            132.52915954589844,
+            134.8603057861328
+          ],
+          [
+            100.61532592773438,
+            154.55911254882812
+          ],
+          [
+            145.17315673828125,
+            159.13938903808594
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4840306059969994,
+            0.2669905730732349,
+            -90.02649642199715
+          ],
+          [
+            -0.2669905730732349,
+            2.4840306059969994,
+            14.482196867734237
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031157457968220115,
+      "restoration_seconds": 0.90963545802515,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5918956584059714,
+            -0.17110140796353712,
+            147.79071307015244
+          ],
+          [
+            0.17110140796353712,
+            1.5918956584059714,
+            -5.650486026098637
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2398307910189033,
+      "total_seconds": 2.4124476249562576,
+      "peak_process_rss_bytes": 4337172480,
+      "outputs": {
+        "aligned-512.png": "a44b1feda4bf56bb0ff8314805565f0d4b15c9353fecd4f3b63e1a91598bc06b",
+        "lanczos-1024.png": "1abfa11365184e1e029923b6e4e93be918235efe156c5b326a150d0584e77f14",
+        "lanczos-1024.webp": "2223b383233b3699fa00d3139e2e6b77c343389cd68d504269c03064ca1bb0fb",
+        "raw.png": "641ad688e07f18f3370c49b8b4a4a0b0fa16134fc7a15483df71c70220c3a3ca",
+        "restored-1024-rgb.png": "f740e8bdb5854ae5443691c0674c7d6995a0e20638edd686f6519fbda4264897",
+        "restored-1024.png": "0131bc30ad811b172968d45eaf762ace31178dc7b290d7eac444aa57cf8de45c",
+        "restored-1024.webp": "994fb1b45f48d9e4181bda182fd82de48fe003d05b444a0c354dfd628a436016",
+        "restored-512.png": "a49e642be943425b9f9d9dfb3ff4a67fb94cc65da4137bedc8fb43f95412b1bb"
+      }
+    },
+    {
+      "index": 31,
+      "path": "research/runs/reference256-paper-b64-resumed500-to625/matched32-000625/raw-psi1-031.png",
+      "sha256": "a99db94453519e40acb56d23b1fa25eec1695a2250de1748e2032031819a7614",
+      "raw_challenge_control": true,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          79.21701049804688,
+          53.15666198730469,
+          181.0667724609375,
+          190.9600067138672,
+          0.9999176263809204
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.09449768066406,
+            110.56978607177734
+          ],
+          [
+            149.43983459472656,
+            103.27194213867188
+          ],
+          [
+            126.53850555419922,
+            133.1229248046875
+          ],
+          [
+            107.66008758544922,
+            157.62010192871094
+          ],
+          [
+            153.72079467773438,
+            151.80303955078125
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.593883708821919,
+            -0.310877588931072,
+            -33.829983631136514
+          ],
+          [
+            0.310877588931072,
+            2.593883708821919,
+            -72.87058215715209
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03118658298626542,
+      "restoration_seconds": 0.9123377919895574,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5202521552334272,
+            0.18220258794904998,
+            66.70731418113382
+          ],
+          [
+            -0.18220258794904998,
+            1.5202521552334272,
+            106.6177490096579
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2171733339782804,
+      "total_seconds": 2.3896149159409106,
+      "peak_process_rss_bytes": 4337188864,
+      "outputs": {
+        "aligned-512.png": "32d0cc800d96c376d5ce95f257084b605da28294c96dad735e4163eeda2ff1bb",
+        "lanczos-1024.png": "e2357e4f99916ba984c00e6684408b338ea370d365f5455764381e541fa9d33a",
+        "lanczos-1024.webp": "75571fb367c3c803a203a4088f2ae8deb0cf23b48de335e2423ae67cdf3e3d74",
+        "raw.png": "a99db94453519e40acb56d23b1fa25eec1695a2250de1748e2032031819a7614",
+        "restored-1024-rgb.png": "7365059fc52be68778cff5fe231de840981d9f6169b7c0276127b45a8eb12473",
+        "restored-1024.png": "333313da0899b0414b8a93b1507c45a22f94a36f22217710a2a0dddb9c0e6d91",
+        "restored-1024.webp": "d6b5394df1c454a2d5c8edaaa5ba304b192a164ec506397ee505266e362e933a",
+        "restored-512.png": "fef3bed084e4efc9b314afc667fb318d98dc837c82d70bcd729ec5217e8f0761"
+      }
+    }
+  ],
+  "quality_approved": false,
+  "production_approved": false
+}

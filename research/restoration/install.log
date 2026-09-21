@@ -1,0 +1,42 @@
+Using Python 3.11.16 environment at: research/restoration/.venv
+Resolved 18 packages in 230ms
+Downloading numpy (13.3MiB)
+Downloading pillow (3.2MiB)
+Downloading scipy (28.3MiB)
+Downloading torchvision (1.4MiB)
+Downloading numba (2.6MiB)
+Downloading torch (56.8MiB)
+Downloading scikit-image (12.7MiB)
+Downloading opencv-python (52.3MiB)
+   Building basicsr==1.4.2
+   Building filterpy==1.4.5
+ Downloaded pillow
+ Downloaded torchvision
+ Downloaded numba
+ Downloaded numpy
+      Built filterpy==1.4.5
+ Downloaded scikit-image
+ Downloaded scipy
+      Built basicsr==1.4.2
+ Downloaded opencv-python
+ Downloaded torch
+Prepared 18 packages in 7.65s
+Installed 18 packages in 216ms
+ + addict==2.4.0
+ + basicsr==1.4.2
+ + facexlib==0.3.0
+ + filterpy==1.4.5
+ + future==1.0.0
+ + lmdb==1.7.3
+ + numba==0.61.2
+ + numpy==1.26.4
+ + opencv-python==4.10.0.84
+ + pillow==10.4.0
+ + pyyaml==6.0.2
+ + requests==2.32.3
+ + scikit-image==0.22.0
+ + scipy==1.11.4
+ + torch==2.1.2
+ + torchvision==0.16.2
+ + tqdm==4.67.1
+ + yapf==0.40.2

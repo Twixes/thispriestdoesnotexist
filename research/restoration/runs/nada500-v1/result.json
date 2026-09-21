@@ -1,0 +1,711 @@
+{
+  "complete": true,
+  "cohort": "nada500",
+  "attempted": 8,
+  "successful_restorations": 8,
+  "errors": 0,
+  "model_and_aux_load_seconds": 0.5218197500798851,
+  "worker_wall_after_import_seconds": 24.259924125042744,
+  "peak_rss_bytes": 4287283200,
+  "input_and_source_hashes_unchanged": true,
+  "records": [
+    {
+      "index": 0,
+      "path": "research/runs/nada-clean24-cpu-continue500/preview-500/000-student-gray.png",
+      "sha256": "b3634fabf576d01ecba125819456e5dad74ad7fde57496d44ab3299e022a56f6",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          276.1717529296875,
+          237.51455688476562,
+          764.5933837890625,
+          858.3319091796875,
+          0.9999655485153198
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            391.61175537109375,
+            476.93505859375
+          ],
+          [
+            615.9544677734375,
+            480.4822692871094
+          ],
+          [
+            497.74566650390625,
+            648.9848022460938
+          ],
+          [
+            412.4894104003906,
+            691.74951171875
+          ],
+          [
+            613.643798828125,
+            693.2828369140625
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            0.5698997023515797,
+            -0.0060508732808180225,
+            -28.340097427411617
+          ],
+          [
+            0.0060508732808180225,
+            0.5698997023515797,
+            -36.68268467803478
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.4711305000819266,
+      "restoration_seconds": 0.9949318750295788,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.7544969380507598,
+            0.018628257919634877,
+            50.405948671820966
+          ],
+          [
+            -0.018628257919634877,
+            1.7544969380507598,
+            63.831731302748146
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2396530420519412,
+      "total_seconds": 3.03786645794753,
+      "peak_process_rss_bytes": 4287283200,
+      "outputs": {
+        "aligned-512.png": "c65c813282139a310ef8321abb806554d1d3246b0fc137847422c8474f2138c0",
+        "lanczos-1024.png": "79570661ebbe86c29dc788f9cc3b1795493ef3ea98896af1988f537becb159e3",
+        "lanczos-1024.webp": "9e5bbb62c09744a604fd2d057a32aadc1ca3d7e1ca55a4dcf9d7d7476b664326",
+        "raw.png": "b3634fabf576d01ecba125819456e5dad74ad7fde57496d44ab3299e022a56f6",
+        "restored-1024-rgb.png": "b737fb38f246b7080824e06feefa7d05780e88182e96c2249692cfd5f4c73873",
+        "restored-1024.png": "3ea1e829dfb9079e6a23a4ddfa45140a135090fafa5907b62b9fc7357991fa49",
+        "restored-1024.webp": "db3d6125c391dc31792ea6ec88e3d448471e1826efbb146e656868e95e5ea359",
+        "restored-512.png": "773619e49fedf2db8dc2a241b4c608c38692cb17942e787ee6e52df23181ff88"
+      }
+    },
+    {
+      "index": 1,
+      "path": "research/runs/nada-clean24-cpu-continue500/preview-500/001-student-gray.png",
+      "sha256": "2f5761a278e579ec6aba5503c6ba94cf2a080cb1214c52579098dcc41e5a6eaf",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          166.20394897460938,
+          233.69058227539062,
+          694.732177734375,
+          942.2025146484375,
+          0.9999897480010986
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            405.95697021484375,
+            504.4784240722656
+          ],
+          [
+            610.0367431640625,
+            491.12725830078125
+          ],
+          [
+            592.2979736328125,
+            608.3082275390625
+          ],
+          [
+            430.44586181640625,
+            744.8479614257812
+          ],
+          [
+            618.5846557617188,
+            730.2355346679688
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            0.5415827246074292,
+            -0.03991950325836126,
+            -6.675844493322732
+          ],
+          [
+            0.03991950325836126,
+            0.5415827246074292,
+            -47.37782748771569
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.4462155000073835,
+      "restoration_seconds": 0.9112637920770794,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.83646246655473,
+            0.13536375162377928,
+            18.673178317064686
+          ],
+          [
+            -0.13536375162377928,
+            1.83646246655473,
+            86.10393457222173
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2514971250202507,
+      "total_seconds": 2.924223250010982,
+      "peak_process_rss_bytes": 4287283200,
+      "outputs": {
+        "aligned-512.png": "1e52720ea801aad34d1d143b2b7ddad68f6fb98a3f2473617eb9fa5afb10348f",
+        "lanczos-1024.png": "5301b13c1cae88ae169b64de7e9b509b59fa6daa3c1f6d0c08b75da7de306b62",
+        "lanczos-1024.webp": "472cb14a994bb9a88bb156b306fe4854a0ff3234182d9a9f27458ca7eed20955",
+        "raw.png": "2f5761a278e579ec6aba5503c6ba94cf2a080cb1214c52579098dcc41e5a6eaf",
+        "restored-1024-rgb.png": "f642f80d84b34d86cabea90250478d15432f24cfe6e01368ff249a72fe37a904",
+        "restored-1024.png": "597193fef87ac062135f35a83d04938c7ed9b5687330025bd3b47cbd993ad660",
+        "restored-1024.webp": "dff459fd943a2ba84cfef515026d4e37384ec1404930ac2ac29c930ad9aecdc9",
+        "restored-512.png": "a7d0780cedf609cdf652aa5e7e9553a59712b18eaf111511cd4b882197827161"
+      }
+    },
+    {
+      "index": 2,
+      "path": "research/runs/nada-clean24-cpu-continue500/preview-500/002-student-gray.png",
+      "sha256": "630d7a5d6874e3a088598a3e23cf27744a4bbf9aff62c85aeef2f8d5675460b8",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          273.3958740234375,
+          228.74020385742188,
+          779.1031494140625,
+          871.93017578125,
+          0.9999781847000122
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            391.8896179199219,
+            483.1576232910156
+          ],
+          [
+            621.1685791015625,
+            475.86932373046875
+          ],
+          [
+            500.7266540527344,
+            618.05029296875
+          ],
+          [
+            419.2132263183594,
+            711.822998046875
+          ],
+          [
+            616.2496337890625,
+            704.9363403320312
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            0.5632064190554572,
+            -0.019801013259387146,
+            -18.72062932835386
+          ],
+          [
+            0.019801013259387146,
+            0.5632064190554572,
+            -39.980803420234935
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.4472620419692248,
+      "restoration_seconds": 0.9148557090666145,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.773355970254271,
+            0.06234702569531719,
+            35.69102396451433
+          ],
+          [
+            -0.06234702569531719,
+            1.773355970254271,
+            69.7330208830686
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.240536291967146,
+      "total_seconds": 2.9200235420139506,
+      "peak_process_rss_bytes": 4287283200,
+      "outputs": {
+        "aligned-512.png": "16a3f958a23b70249361c39c079918ecdd37e6a97e2c2b848745726a8a95accd",
+        "lanczos-1024.png": "2c82136e9e786b363d14c3012a1f262c0d60f26383bb8b2c4554a73409cec3cc",
+        "lanczos-1024.webp": "086e91ed209d4bbaf4ec1c658a57399fb0db3b31d914b64dd00c4cac956d93c4",
+        "raw.png": "630d7a5d6874e3a088598a3e23cf27744a4bbf9aff62c85aeef2f8d5675460b8",
+        "restored-1024-rgb.png": "751af0942ebc9ed28231109b460f375a46b33b8dc5651d3b3730368e70a6608c",
+        "restored-1024.png": "16c998e83a466178d117e592e77b52660da978d8127242dfa238d0ac67d6d15b",
+        "restored-1024.webp": "86c6a5355b5026e96c03e10e65d85376f641f336853d83d295ac58e3c42531a3",
+        "restored-512.png": "cc0a6b21584aab594df9f57db3fa63a487c2b4f54d0160a9ef5d6755783c8a47"
+      }
+    },
+    {
+      "index": 3,
+      "path": "research/runs/nada-clean24-cpu-continue500/preview-500/003-student-gray.png",
+      "sha256": "4582bba806063fe3a840acd1e35ab58595f9275cc2f70e0d7a93cb664fb558a2",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          200.38421630859375,
+          232.78561401367188,
+          738.1219482421875,
+          923.2215576171875,
+          0.9999943971633911
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            409.4865417480469,
+            485.8697509765625
+          ],
+          [
+            645.3854370117188,
+            485.646240234375
+          ],
+          [
+            572.8955688476562,
+            638.9827880859375
+          ],
+          [
+            398.45062255859375,
+            719.4796142578125
+          ],
+          [
+            629.7145385742188,
+            718.6202392578125
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            0.5215033999823633,
+            0.01452429722982346,
+            -29.29763202727297
+          ],
+          [
+            -0.01452429722982346,
+            0.5215033999823633,
+            -2.911469387845578
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.45320283295586705,
+      "restoration_seconds": 0.8941442499635741,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.916046823594576,
+            -0.05336347485574955,
+            55.98026866122751
+          ],
+          [
+            0.05336347485574955,
+            1.916046823594576,
+            7.141935122594749
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2533333339961246,
+      "total_seconds": 2.9108382500708103,
+      "peak_process_rss_bytes": 4287283200,
+      "outputs": {
+        "aligned-512.png": "9bd1f9ed5727ace119454086a47b0e09abe6904d46e13bf6d06cb26f1ad2dbd2",
+        "lanczos-1024.png": "3fa34b09fc2b2b986073c3dc7f756aa5d7763e586658509dd87bc587221cad59",
+        "lanczos-1024.webp": "240d8c2fff5bd031f477797f74f8f597290b2900554e113205b4cfb8226062f9",
+        "raw.png": "4582bba806063fe3a840acd1e35ab58595f9275cc2f70e0d7a93cb664fb558a2",
+        "restored-1024-rgb.png": "c17711728959e1f33f28a14c6cf236759c9a8a3af2d970a30a23cb714fd11ccc",
+        "restored-1024.png": "b0f3e4cc2fe5160f36522ac504cab022eb6ed8f58096fd9c10c16791da0d8ff2",
+        "restored-1024.webp": "904bbe593493f63b89e1e3e0f6c19e54c63f01590070590819261418ae91dd88",
+        "restored-512.png": "58017f3962aaeb40df4600594c4ab50a9b1ff8265e793ede3b53f9843a170d2f"
+      }
+    },
+    {
+      "index": 4,
+      "path": "research/runs/nada-clean24-cpu-continue500/preview-500/004-student-gray.png",
+      "sha256": "5e8a916b8d8150d1f721a4c4d389950bfdfc26585160be4d3870bd8d3a9d1706",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          204.43478393554688,
+          251.68875122070312,
+          731.8553466796875,
+          916.858642578125,
+          0.9999885559082031
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            398.1106872558594,
+            496.31298828125
+          ],
+          [
+            625.4852294921875,
+            484.42730712890625
+          ],
+          [
+            550.3119506835938,
+            652.1073608398438
+          ],
+          [
+            388.5660705566406,
+            719.3336181640625
+          ],
+          [
+            615.9703979492188,
+            708.41455078125
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            0.5378835782102988,
+            -0.0011130059994828234,
+            -20.12557476825364
+          ],
+          [
+            0.0011130059994828234,
+            0.5378835782102988,
+            -22.478481751373156
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.446672375081107,
+      "restoration_seconds": 0.9060821250313893,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.8591304118706888,
+            0.0038469724417279673,
+            37.502542207867144
+          ],
+          [
+            -0.0038469724417279673,
+            1.8591304118706888,
+            41.71300650515073
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.243572250008583,
+      "total_seconds": 2.9158605419797823,
+      "peak_process_rss_bytes": 4287283200,
+      "outputs": {
+        "aligned-512.png": "ae279ce590f1a2c4a2e8329a9f9b2fb3f56c4eddd551ae26e4891b8dc19a16c9",
+        "lanczos-1024.png": "4e06f82be1622855d42a9f6972172124faf678a5c64f2f15c1ba819872d8a222",
+        "lanczos-1024.webp": "47b660d8fa84504c149314063f5d3f579f5624af0309ae59b9016d4be6a18921",
+        "raw.png": "5e8a916b8d8150d1f721a4c4d389950bfdfc26585160be4d3870bd8d3a9d1706",
+        "restored-1024-rgb.png": "76c9b50d2bf7e209841e229977531e44fff7cd3a3420e29538fb3e26a941db95",
+        "restored-1024.png": "059ee449eaf06f618c6b74d4dc7173ce59cc98d423b30c4baf51bc5210033afc",
+        "restored-1024.webp": "60ca6742606523ed895b9a20c55d60fb0b31c9580e1a6721a0ed42080fb3ea19",
+        "restored-512.png": "82d37614b4aa7bea079d3d6326358bc792ee359962a610eb727b920c23d10d6c"
+      }
+    },
+    {
+      "index": 5,
+      "path": "research/runs/nada-clean24-cpu-continue500/preview-500/005-student-gray.png",
+      "sha256": "2ca0f3a387cccc0654ee4711392831c23ee0c420622590edd72eddf101b7e183",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          273.5982666015625,
+          218.87734985351562,
+          798.4346923828125,
+          884.38525390625,
+          0.999976634979248
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            395.26824951171875,
+            480.1939697265625
+          ],
+          [
+            631.5510864257812,
+            484.48388671875
+          ],
+          [
+            498.18994140625,
+            632.3568115234375
+          ],
+          [
+            404.309814453125,
+            697.0817260742188
+          ],
+          [
+            630.6058959960938,
+            702.3228149414062
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            0.5500371508051063,
+            0.004079729575406198,
+            -27.481995589760757
+          ],
+          [
+            -0.004079729575406198,
+            0.5500371508051063,
+            -20.19748684340598
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.45042358292266726,
+      "restoration_seconds": 0.9110288330120966,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.817958999438905,
+            -0.01348414572730331,
+            49.68879534902408
+          ],
+          [
+            0.01348414572730331,
+            1.817958999438905,
+            37.088774206428226
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2390111670829356,
+      "total_seconds": 2.9169487920589745,
+      "peak_process_rss_bytes": 4287283200,
+      "outputs": {
+        "aligned-512.png": "fa139034ff38f3d17dd0448d1d718d0ffc63c35362991d72cd2c0bd76e4208f5",
+        "lanczos-1024.png": "57ab772715e4dc018bc10cb531f72134ddf411d2ef3f3c58f90414f154d31598",
+        "lanczos-1024.webp": "82e4d599070d9fef3619448a249d352c1f09fe9d7a3572cb23bac7c9fea76896",
+        "raw.png": "2ca0f3a387cccc0654ee4711392831c23ee0c420622590edd72eddf101b7e183",
+        "restored-1024-rgb.png": "be0eb7e5083ccec6e2b39875bcc4a5bf2401ac1f2fc752469b3f010cccf88d7d",
+        "restored-1024.png": "eab4af82631afcc5c6e02fda0d9b0f9fb06534016042ec8c51275e5784b264ef",
+        "restored-1024.webp": "3b250377429f43e905f8436f64c3e8635a2f92ecbee732ed0e36383d842eb9b6",
+        "restored-512.png": "16547951c6a36cb7f9ffdb4f8974b7d2c59375a0f4f136cec0d931f3fd22c9b2"
+      }
+    },
+    {
+      "index": 6,
+      "path": "research/runs/nada-clean24-cpu-continue500/preview-500/006-student-gray.png",
+      "sha256": "c91ffeff10deda50c406209837058c65ee4e4eb44ad18e1fd98e8b8acbab33ec",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          226.36672973632812,
+          261.87762451171875,
+          748.2098388671875,
+          912.9937133789062,
+          0.9999773502349854
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            395.30364990234375,
+            502.13140869140625
+          ],
+          [
+            625.2465209960938,
+            495.9840087890625
+          ],
+          [
+            533.4878540039062,
+            672.2431640625
+          ],
+          [
+            397.1238708496094,
+            725.0770874023438
+          ],
+          [
+            619.9441528320312,
+            719.962646484375
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            0.541136028534557,
+            -0.003108682399809247,
+            -19.75296037738116
+          ],
+          [
+            0.003108682399809247,
+            0.541136028534557,
+            -31.425074933244833
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.44955541600938886,
+      "restoration_seconds": 0.9420942090218887,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.847903200663562,
+            0.010615711860861883,
+            36.83515824464049
+          ],
+          [
+            -0.010615711860861883,
+            1.847903200663562,
+            57.8608048144701
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.250706624938175,
+      "total_seconds": 2.960632291971706,
+      "peak_process_rss_bytes": 4287283200,
+      "outputs": {
+        "aligned-512.png": "91130d82b6523c36fb944acec96b370dddd29ee7575400e7d78e04c63af4b59e",
+        "lanczos-1024.png": "93b75d2b1263a73d21dbeca154c6d87fcd22f03b95fb3675a22653bc3b8c9dae",
+        "lanczos-1024.webp": "489e3bea53353088994cfeff02dfb684b3fdfbb6b0877226b5392b429e60b4ce",
+        "raw.png": "c91ffeff10deda50c406209837058c65ee4e4eb44ad18e1fd98e8b8acbab33ec",
+        "restored-1024-rgb.png": "4cf64bb9c0e9e316fc12f7b04ef1e9f5a43f594c472c0e321947547b348f29f8",
+        "restored-1024.png": "c01d197c6a347d6edd06485103c2ec4951d2879b09af999621e786e96e327a57",
+        "restored-1024.webp": "db8891f3639a1f15ee1170afc81f9d5d4b5a14d10efca7accf877966436f70c8",
+        "restored-512.png": "2849ee38cc8438d624d9191c9ab211028bb004ff917cfa794d518fb3a628b055"
+      }
+    },
+    {
+      "index": 7,
+      "path": "research/runs/nada-clean24-cpu-continue500/preview-500/007-student-gray.png",
+      "sha256": "8e6723d07633e868a437902b8fc5339d8e2dc7189a2e5b7f529afafc81edbcbb",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          247.90725708007812,
+          234.52459716796875,
+          794.354736328125,
+          909.8403930664062,
+          0.9999942779541016
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            381.0247802734375,
+            488.40301513671875
+          ],
+          [
+            626.1940307617188,
+            482.9113464355469
+          ],
+          [
+            494.5702819824219,
+            620.4508056640625
+          ],
+          [
+            388.7970275878906,
+            712.5909423828125
+          ],
+          [
+            626.7581787109375,
+            708.9288330078125
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            0.5332566683647948,
+            -0.0067869293382982546,
+            -7.814230385074186
+          ],
+          [
+            0.0067869293382982546,
+            0.5332566683647948,
+            -17.443535609751503
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.45282962499186397,
+      "restoration_seconds": 0.9237157918978482,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.8749658482001192,
+            0.02386329412903179,
+            15.067675322887505
+          ],
+          [
+            -0.02386329412903179,
+            1.8749658482001192,
+            32.51956026207567
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2446925420081243,
+      "total_seconds": 2.9367340410826728,
+      "peak_process_rss_bytes": 4287283200,
+      "outputs": {
+        "aligned-512.png": "b9b303d18c62da1645d3c8b91ffc08ac948c9f56f88ee0198eb63f0ec843d25b",
+        "lanczos-1024.png": "2712831dcea229f2e348a3de5e4c09d024fe8149159cb383625bb7a5dcc486db",
+        "lanczos-1024.webp": "08216d30010d3015f0664552f634d01b36d91e0d365dc82b274d0cbfeecac790",
+        "raw.png": "8e6723d07633e868a437902b8fc5339d8e2dc7189a2e5b7f529afafc81edbcbb",
+        "restored-1024-rgb.png": "b168155cd45ae82bdae29378b2ba7ab077dc6d9ab403f796ecaf5ed678798587",
+        "restored-1024.png": "81e0eaa39e6d03088c8a529be0c030f35bf5b3741838da0aec8bad5487ffec22",
+        "restored-1024.webp": "513526a31f747339b8c12627e6cad522a7ab1b69eb064c6b404b0cc8062cffa4",
+        "restored-512.png": "e3e3403a72da66d6f0874d0ce17a2c5b08009bfe122745d917bd5033374218a3"
+      }
+    }
+  ],
+  "quality_approved": false,
+  "production_approved": false
+}

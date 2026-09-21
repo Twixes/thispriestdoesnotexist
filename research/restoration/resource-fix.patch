@@ -1,0 +1,82 @@
+--- pre-resource-fix/diagnostic.py
++++ diagnostic.py
+@@ -7,6 +7,7 @@
+ from pathlib import Path
+ import re
+ import shutil
++import signal
+ import socket
+ import subprocess
+ import sys
+@@ -177,7 +178,10 @@
+         print(json.dumps({'index':item['index'],'error':record['error'],'seconds':record['total_seconds'],'peak_rss':record['peak_process_rss_bytes']}),flush=True)
+     for item in inputs: require(sha(ROOT/item['path'])==item['sha256'],'Input changed during diagnostic')
+     pins_check()
+-    write(args.output/'result.json',{'complete':True,'cohort':args.cohort,'attempted':len(records),'successful_restorations':sum(x['error'] is None for x in records),'errors':sum(x['error'] is not None for x in records),'model_and_aux_load_seconds':load_seconds,'worker_wall_after_import_seconds':time.monotonic()-start,'peak_rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'input_and_source_hashes_unchanged':True,'records':records,'quality_approved':False,'production_approved':False})
++    final_peak=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
++    require(final_peak<LIMIT,'Final worker peak RSS exceeded limit')
++    require(time.time()<args.deadline,'Final worker deadline reached')
++    write(args.output/'result.json',{'complete':True,'cohort':args.cohort,'attempted':len(records),'successful_restorations':sum(x['error'] is None for x in records),'errors':sum(x['error'] is not None for x in records),'model_and_aux_load_seconds':load_seconds,'worker_wall_after_import_seconds':time.monotonic()-start,'peak_rss_bytes':final_peak,'input_and_source_hashes_unchanged':True,'records':records,'quality_approved':False,'production_approved':False})
+ 
+ def supervise(args):
+     require(not args.output.exists(),'Refusing existing output directory')
+@@ -196,18 +200,41 @@
+             while process.poll() is None:
+                 rss=subprocess.run(['ps','-o','rss=','-p',str(process.pid)],capture_output=True,text=True).stdout.strip()
+                 if rss:peak=max(peak,int(rss)*1024)
+-                if peak>LIMIT or time.time()>deadline:
+-                    failure='RSS limit' if peak>LIMIT else '10 minute deadline';process.terminate()
+-                    try:process.wait(timeout=5)
+-                    except subprocess.TimeoutExpired:process.kill();process.wait()
+-                    break
++                require(peak<LIMIT,'RSS limit')
++                require(time.time()<deadline,'10 minute deadline')
+                 time.sleep(.25)
+             if process.returncode!=0:failure=failure or f'worker exit {process.returncode}'
++    except BaseException as exc:
++        failure=f'{type(exc).__name__}: {exc}'
+     finally:
+-        if process is not None and process.poll() is None:process.kill();process.wait()
+-        result=read(args.output/'result.json') if (args.output/'result.json').exists() else {}
+-        complete=failure is None and result.get('complete') is True
+-        write(args.output/'supervisor-result.json',{'complete':complete,'error':failure,'worker_exit_code':None if process is None else process.returncode,'wall_seconds':time.time()-started,'peak_sampled_worker_rss_bytes':peak,'quality_approved':False,'production_approved':False})
++        # The child starts a new session: its PID is our owned process group.
++        # Clean descendants even if the group leader has already exited.
++        handlers={sig:signal.signal(sig,signal.SIG_IGN) for sig in (signal.SIGTERM,signal.SIGINT)}
++        result_peak=None;complete=False;final_elapsed=None
++        try:
++            if process is not None:
++                try:
++                    os.killpg(process.pid,signal.SIGKILL)
++                except ProcessLookupError:
++                    pass
++                finally:
++                    process.wait()
++            result=read(args.output/'result.json') if (args.output/'result.json').exists() else {}
++            require(process is not None and process.returncode==0,'Worker did not exit successfully')
++            require(result.get('complete') is True,'Worker result missing or incomplete')
++            result_peak=result['peak_rss_bytes']
++            require(isinstance(result_peak,(int,float)) and 0<=result_peak<LIMIT,'Final worker result peak RSS exceeded limit or invalid')
++            require(peak<LIMIT,'Final sampled RSS limit')
++            final_elapsed=time.time()-started
++            require(final_elapsed<SECONDS,'Final supervisor deadline reached')
++            complete=failure is None
++        except BaseException as exc:
++            failure=failure or f'{type(exc).__name__}: {exc}'
++        finally:
++            try:
++                write(args.output/'supervisor-result.json',{'complete':complete,'error':failure,'worker_exit_code':None if process is None else process.returncode,'wall_seconds':time.time()-started if final_elapsed is None else final_elapsed,'peak_sampled_worker_rss_bytes':peak,'worker_reported_peak_rss_bytes':result_peak,'quality_approved':False,'production_approved':False})
++            finally:
++                for sig,handler in handlers.items():signal.signal(sig,handler)
+     require(complete,'Diagnostic did not complete: '+str(failure))
+ 
+ def main():
+@@ -219,5 +246,8 @@
+     parser.add_argument('--deadline',type=float,default=0,help=argparse.SUPPRESS)
+     args=parser.parse_args();args.output=args.output.resolve()
+     require(args.output.is_relative_to(BASE/'runs'),'Output must be a NEW restoration/runs child')
++    def interrupted(signum,_frame):
++        raise SystemExit(128+signum)
++    signal.signal(signal.SIGTERM,interrupted)
+     (worker if args._worker else supervise)(args)
+ if __name__=='__main__':main()

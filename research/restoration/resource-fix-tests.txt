@@ -1,0 +1,99 @@
+"""Run with restoration Python via stdin; stdlib mocks only, no child processes."""
+import ast
+from contextlib import ExitStack
+import importlib.util
+import json
+from pathlib import Path
+import sys
+import tempfile
+from types import SimpleNamespace
+from unittest.mock import Mock, patch
+
+base=Path('research/restoration').resolve()
+spec=importlib.util.spec_from_file_location('restoration_static_subject',base/'diagnostic.py')
+d=importlib.util.module_from_spec(spec);spec.loader.exec_module(d)
+results=[]
+
+def supervisor_case(name, *, reported_peak=1, elapsed=10, poll_error=None, spawn_error=None, kill_error=None, running=False, sampled_rss='1', malformed=False, exit_code=0, success=False):
+    with tempfile.TemporaryDirectory() as tmp, ExitStack() as stack:
+        out=Path(tmp)/'new'
+        args=SimpleNamespace(output=out,cohort='reference625',nada_checkpoint_sha256=None)
+        proc=Mock(pid=987654,returncode=exit_code)
+        proc.poll.side_effect=poll_error
+        proc.poll.return_value=None if running else exit_code
+        def popen(*a,**kw):
+            assert kw['start_new_session'] is True
+            if spawn_error:raise spawn_error
+            (out/'result.json').write_text('{' if malformed else json.dumps({'complete':True,'peak_rss_bytes':reported_peak}))
+            return proc
+        mocks={
+            'process_guard':Mock(return_value={}),
+            'memory_guard':Mock(return_value={'free_percent':99}),
+            'pins_check':Mock(return_value={}),
+            'cohort_inputs':Mock(return_value=[]),
+        }
+        for k,v in mocks.items():stack.enter_context(patch.object(d,k,v))
+        stack.enter_context(patch.object(d.subprocess,'Popen',side_effect=popen))
+        stack.enter_context(patch.object(d.subprocess,'run',return_value=SimpleNamespace(stdout=sampled_rss)))
+        stack.enter_context(patch.object(d.time,'time',side_effect=[100]+[100+elapsed]*20))
+        stack.enter_context(patch.object(d.time,'sleep',side_effect=AssertionError('Unexpected sleep')))
+        kill=stack.enter_context(patch.object(d.os,'killpg',side_effect=kill_error))
+        signals=stack.enter_context(patch.object(d.signal,'signal',return_value=d.signal.SIG_DFL))
+        caught=None
+        try:d.supervise(args)
+        except RuntimeError as e:caught=str(e)
+        record=json.loads((out/'supervisor-result.json').read_text())
+        assert record['complete'] is success,(name,record)
+        assert (caught is None) is success,(name,caught)
+        if spawn_error:
+            kill.assert_not_called();proc.wait.assert_not_called()
+        else:
+            kill.assert_called_once_with(proc.pid,d.signal.SIGKILL)
+            proc.wait.assert_called_once_with()
+        assert signals.call_count==4
+        if success:assert record['wall_seconds']==elapsed
+        else:assert record['error']
+        results.append({'case':name,'passed':True,'result':record})
+
+supervisor_case('normal terminal leader still cleans group',success=True)
+supervisor_case('last worker peak at limit rejected',reported_peak=d.LIMIT)
+supervisor_case('nonfinite worker peak rejected',reported_peak=float('nan'))
+supervisor_case('final deadline at limit rejected',elapsed=d.SECONDS)
+supervisor_case('monitor deadline cleans owned group',running=True,elapsed=d.SECONDS)
+supervisor_case('monitor RSS cleans owned group',running=True,sampled_rss=str(d.LIMIT//1024))
+supervisor_case('monitor exception captured',poll_error=ValueError('fixture'))
+supervisor_case('keyboard interrupt captured',poll_error=KeyboardInterrupt())
+supervisor_case('SIGTERM handler SystemExit captured',poll_error=SystemExit(143))
+supervisor_case('spawn failure captured',spawn_error=OSError('fixture'))
+supervisor_case('missing group tolerated and reaped',kill_error=ProcessLookupError(),success=True)
+supervisor_case('cleanup error cannot report success',kill_error=PermissionError('fixture'))
+supervisor_case('malformed result captured',malformed=True)
+supervisor_case('nonzero worker with stale success rejected',exit_code=1)
+
+# Execute only the worker's four final stdlib guard/write statements. This does
+# not execute its imports, model construction, image loop, or any child process.
+tree=ast.parse((base/'diagnostic.py').read_text())
+worker=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='worker')
+last=worker.body[-4:]
+assert isinstance(last[0],ast.Assign) and last[0].targets[0].id=='final_peak'
+for label,peak,now,passes in [('worker-final-pass',1,99,True),('worker-final-RSS',d.LIMIT,99,False),('worker-final-deadline',1,100,False)]:
+    sink=Mock()
+    namespace={'resource':SimpleNamespace(RUSAGE_SELF=0,getrusage=lambda _:SimpleNamespace(ru_maxrss=peak)),
+      'require':d.require,'LIMIT':d.LIMIT,'time':SimpleNamespace(time=lambda:now,monotonic=lambda:1),
+      'args':SimpleNamespace(deadline=100,output=Path('/unused'),cohort='fixture'),
+      'write':sink,'records':[],'load_seconds':0,'start':0}
+    try:exec(compile(ast.Module(body=last,type_ignores=[]),'<worker-final-guards>','exec'),namespace)
+    except RuntimeError:assert not passes
+    else:assert passes
+    assert sink.call_count==int(passes)
+    results.append({'case':label,'passed':True,'result_written':bool(sink.call_count)})
+main=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='main')
+handler=next(n for n in main.body if isinstance(n,ast.FunctionDef) and n.name=='interrupted')
+space={};exec(compile(ast.Module(body=[handler],type_ignores=[]),'<signal-handler>','exec'),space)
+try:space['interrupted'](15,None)
+except SystemExit as exc:assert exc.code==143
+else:raise AssertionError('SIGTERM must interrupt')
+assert any(isinstance(n,ast.Expr) and ast.unparse(n)=='signal.signal(signal.SIGTERM, interrupted)' for n in main.body)
+results.append({'case':'main SIGTERM handler installed and raises catchable exit143','passed':True})
+assert 'torch' not in sys.modules and 'numpy' not in sys.modules
+print(json.dumps({'passed':len(results),'cases':results,'torch_imported':False,'numpy_imported':False,'child_processes_created':0,'models_loaded':0,'inferences':0},indent=2))

@@ -1,0 +1,18 @@
+{
+  "source_syntax_passed": true,
+  "torch_imported": false,
+  "numpy_imported": false,
+  "files": {
+    "make_pins.py": "c8561ece3eb388fc7a330317ecf303a58da9d4035e3b205cfdfa14fd286199c0",
+    "prepare_assets.py": "0f39755e3dd0195a4f17a338613f214637a5b1b1eb19f53114bbedcd047229e4",
+    "test_static.py": "af5087b93aacd70244667662313ca769758cfb8bb1067af7358aa540693f1dea",
+    "diagnostic.py": "15772fd69e92467bf7785cb4b955307dfeb14f55ec954e88b2fb7bc30cb5d1b5"
+  },
+  "pins_sha256": "1e0b5ac3c455ea56c288dd83e7314e0a319ceda12b87d9fcceb322e339533d99",
+  "tests": "static-tests.log",
+  "model_loads": 0,
+  "inferences": 0,
+  "resource_cleanup_tests": "resource-fix-checks.json",
+  "resource_cleanup_test_source_sha256": "5481868d89121105bab062d7bd9d7dabe34b72017d064688e4b4c85a2b3480fb",
+  "resource_cleanup_tests_sha256": "09735a9cf3b01b37a1c22d0b93eac93259d7d5802ec5cdd308060e514fef8087"
+}
