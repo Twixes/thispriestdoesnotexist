@@ -1,0 +1,316 @@
+{
+  "reviewed_utc": "2026-09-21T05:27:55.086342+00:00",
+  "reviewer": "expand_dataset agent",
+  "scope": "All16 original1254-square PNGs individually displayed at native resolution using view_image original, plus labeled contact. Pillow read-only RGB channel check.",
+  "model_output": false,
+  "production_approved": false,
+  "anatomy_hat_collar_failures": 0,
+  "strict_grayscale_failures": 16,
+  "color_note": "Visually monochrome originals retain slight chroma: per-image maximum RGB channel difference8\u201314/255. All originals remain unmodified; any later grayscale preprocessing is separate.",
+  "all_originals_preserved": true,
+  "target_selection": {
+    "source_path": "research/reviews/expansion16-v2-root-observations.json",
+    "source_sha256": "a826b4e7d82ddfa5acc517c962a1ef89ea2260c375aed23bcd1672501946509f",
+    "accepted_target_ids": [
+      165,
+      166,
+      168,
+      170,
+      171,
+      173,
+      174,
+      175,
+      176,
+      177,
+      179,
+      180
+    ],
+    "reserved_ids": [
+      167,
+      169,
+      172,
+      178
+    ],
+    "basis": "Explicit root native review; subjective calendar aesthetic only, not anatomy, age or demographic rule. All16 originals preserved. Training inclusion and production model quality are separate."
+  },
+  "entries": [
+    {
+      "id": 165,
+      "path": "research/data/plain-background-expansion16-v2/165.png",
+      "sha256": "2c3a8a53942f673bd44a3bd2f6f856c664ccb3e0cf391cf0e9ba896ab67ad893",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 8,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Long narrow mature face, high receding hairline, natural wrinkles and restrained smile in slight turn. Coherent eyes/lips/ears; neck and white tab separate; ample bare-head and chest framing."
+    },
+    {
+      "id": 166,
+      "path": "research/data/plain-background-expansion16-v2/166.png",
+      "sha256": "d3825b8967bffc3a75688201447ecfbb06ac5269443ab2a1951ab6c4df899185",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 9,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Lean oblong face, short coils and faint stubble, small tilt. Natural textured skin and plausible eyes/lips/ears; white tab clear, full head and chest."
+    },
+    {
+      "id": 167,
+      "path": "research/data/plain-background-expansion16-v2/167.png",
+      "sha256": "ec73b6fa368febfc01714b33cff617515da4af00480370a1616bada00a3cc0d6",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 8,
+      "target_selection": "reserved_excluded_from_hot_target_subset",
+      "observation": "Rounded fuller cheeks and receding side-parted hair. Coherent closed smile/eyes and tab, no gross anatomy issue; mildly smooth cheeks. Root reserves for subjective aesthetic fit."
+    },
+    {
+      "id": 168,
+      "path": "research/data/plain-background-expansion16-v2/168.png",
+      "sha256": "3ae0411b5bd706abcbf1e0094e898742eabc6dd2b26c5fc36b59455a845d0685",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 10,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Distinct mustache and slightly irregular nose, short straight hair and off-camera gaze. Natural pores and believable eyes; bare complete head, tab fitted to collar."
+    },
+    {
+      "id": 169,
+      "path": "research/data/plain-background-expansion16-v2/169.png",
+      "sha256": "5e6b512106db5fc9f3e15fbdd10d1cbf6d1405fc2f4e39703f07789ba747bf19",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 12,
+      "target_selection": "reserved_excluded_from_hot_target_subset",
+      "observation": "Balding crown, short graying beard and mature facial lines. Anatomically coherent, full scalp and tab. Root reserves for aesthetic fit, not age alone."
+    },
+    {
+      "id": 170,
+      "path": "research/data/plain-background-expansion16-v2/170.png",
+      "sha256": "f72d5672ec7d8b3cafb9c5f009ebcf801c4a602a7b6ce02ef172ac6bccc34948",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 10,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Narrower jaw, longer nose, wavy curly hair and close beard, slight turn. Strong facial detail and plausible eyes/mouth/ears; tab separate from beard."
+    },
+    {
+      "id": 171,
+      "path": "research/data/plain-background-expansion16-v2/171.png",
+      "sha256": "bbb9c9e9a24aee11cde2677e0895534cda82748d65515479156ce1777625a1d0",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 8,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Swept hair and slimmer youthful adult face, soft closed-lip smile and mild tilt. Coherent facial skin/eyes; full head and clearly visible tab."
+    },
+    {
+      "id": 172,
+      "path": "research/data/plain-background-expansion16-v2/172.png",
+      "sha256": "56519848c919ddb6a8093f53d806e3196fea6863ce89c316c2f5a5198f1931c6",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 13,
+      "target_selection": "reserved_excluded_from_hot_target_subset",
+      "observation": "Broad rounded mature face, receding short hair, gray goatee and mustache, slight turn. Sound anatomy and collar; root reserves for aesthetic fit."
+    },
+    {
+      "id": 173,
+      "path": "research/data/plain-background-expansion16-v2/173.png",
+      "sha256": "bf2a5540faea4be13312a748f36bebbf13f995838084cb8446e702861c359227",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 9,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Lean face, textured short hair and patchy stubble, slight turn and calm closed lips. Plausible detailed anatomy and correct tab; complete head/chest."
+    },
+    {
+      "id": 174,
+      "path": "research/data/plain-background-expansion16-v2/174.png",
+      "sha256": "c08593dcba3e0143b27019818507f3a0a14d2b2709ba5756b6475d36b17cfe4e",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 13,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Mature narrow face, swept graying hair and neat gray beard. Coherent eyes and realistic skin/creases, clearly separate tab. Strong mature calendar fit in root review."
+    },
+    {
+      "id": 175,
+      "path": "research/data/plain-background-expansion16-v2/175.png",
+      "sha256": "69faec961fc0f0831ede7c6bb1f4c3773d517eb3bac4d197c19703fbac199af5",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 14,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Short coils, broad cheekbones and slim chin, clean-shaven off-camera pose. Distinct eyes/lips and natural textured skin; clear tab and full bare head."
+    },
+    {
+      "id": 176,
+      "path": "research/data/plain-background-expansion16-v2/176.png",
+      "sha256": "4d50a0812bac2536298647d08ee72482549e5bc8d1571869309f6609cdbeae3b",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 9,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Rounder face, curls and beard, small tilt and smile. Coherent anatomy and fitted tab. Family resemblance in hair/beard to170, but pose/outline/expression differ."
+    },
+    {
+      "id": 177,
+      "path": "research/data/plain-background-expansion16-v2/177.png",
+      "sha256": "1e2c4012af086db5475f436e5c213adc9489584e24ed653f842736c92b0dfa1b",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 10,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Mature long face with silver side-parted hair and natural lines, slight turn. Believable skin/eyes/ears and collar. Root accepts mature calendar fit."
+    },
+    {
+      "id": 178,
+      "path": "research/data/plain-background-expansion16-v2/178.png",
+      "sha256": "f61291972fae479fa05ce255ee7a3455b08530c0ccfedd2b0653fb3a62000e6a",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 10,
+      "target_selection": "reserved_excluded_from_hot_target_subset",
+      "observation": "Broad oval face, receding very short hair and tidy stubble. Sound anatomy/neck/tab and full head; root reserves for subjective aesthetic fit."
+    },
+    {
+      "id": 179,
+      "path": "research/data/plain-background-expansion16-v2/179.png",
+      "sha256": "7f8f29bb3fc2d07e0d09cf2e032f8336a34b89df04eeb0c717c01d972792b83a",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 8,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Angular clean-shaven face, long nose and medium waves, off-camera gaze. Natural skin and convincing eyes/lips; full hair, clear tab and ample margins."
+    },
+    {
+      "id": 180,
+      "path": "research/data/plain-background-expansion16-v2/180.png",
+      "sha256": "cc218aa9a2c951489c4d0075822965613f9ab09cd9f543f0dd4c9ba69c3e2338",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "anatomy_quality_pass": true,
+      "full_bare_head": true,
+      "white_roman_tab_inside_black_standing_collar": true,
+      "obvious_extra_people_hands_props_text_or_architecture": false,
+      "exact_grayscale_pixels": false,
+      "max_rgb_channel_difference": 9,
+      "target_selection": "accepted_hot_training_candidate",
+      "observation": "Mature broad face, short waves, mustache/chin stubble and restrained smile. Coherent eye/skin detail and fitted tab; full bare head and chest."
+    }
+  ],
+  "limitations": [
+    "Anatomical validity is distinct from hot-target suitability. Root selected12 and reserved4 by subjective calendar aesthetic; no demographic or age-category exclusion rule.",
+    "Prompt demographic descriptions are creative intent only; actual ethnicity, age or identity is not established from generated pixels.",
+    "Faces vary more in hairline, nose, cheek and jaw shape than the earlier pilot, but all share restrained head-and-chest studio composition.170/176 family resemblance remains; no identity uniqueness guarantee.",
+    "No crop alignment, training dataset assembly, learned-model loading or training occurred in this task. These are built-in imagegen candidates, not outputs of the trained priest generator."
+  ]
+}

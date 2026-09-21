@@ -1,0 +1,372 @@
+{
+  "created_utc": "2026-09-21T05:27:55.046810+00:00",
+  "tool": "built-in image_gen.imagegen",
+  "calls": 16,
+  "retry_count": 0,
+  "candidate_count": 16,
+  "model_output": false,
+  "production_approved": false,
+  "active_dataset_modified": false,
+  "original_pixel_modifications": false,
+  "all_original_source_and_copy_hashes_equal_before_after": true,
+  "prompt_intent_note": "Demographic, age and handsome descriptors specify fictional generation intent; they do not establish actual ethnicity, age or identity from pixels. Anatomy/collar quality does not automatically establish hot-target acceptance.",
+  "versions": {
+    "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+    "pillow": "11.3.0",
+    "platform": "macOS-26.6-arm64-arm-64bit"
+  },
+  "script_sha256": "41a120d0d45f6aa2202e6351d72b8c3e0203fe8abc0078f1c2caa867392f3b76",
+  "prompts_sha256": "714d6c5786af8e56d9255e964664d74956b7e17af04462786ea7673a87cb7830",
+  "contact": {
+    "path": "contact-256.png",
+    "sha256": "7ffbb7b124276188151f1f7ee9805cd1975504979eb5f2909f2060ffd48f2a78",
+    "method": "4x4 whole-original256 LANCZOS diagnostic thumbnails with24px label strip; no image crops, recoloring or original changes."
+  },
+  "entries": [
+    {
+      "id": 165,
+      "path": "research/data/plain-background-expansion16-v2/165.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/165.png",
+      "sha256": "2c3a8a53942f673bd44a3bd2f6f856c664ccb3e0cf391cf0e9ba896ab67ad893",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-70fc4d8d-505e-4a41-a6f1-27d8ccd983ca.png",
+      "source_sha256": "2c3a8a53942f673bd44a3bd2f6f856c664ccb3e0cf391cf0e9ba896ab67ad893",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 8,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive52-year-old man with a southern European appearance, a long narrow face, aquiline nose, high receding hairline, short silver-brown hair, clean-shaven cheeks and natural forehead lines. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: turned slightly toward camera-right, reserved closed-lip smile. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 166,
+      "path": "research/data/plain-background-expansion16-v2/166.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/166.png",
+      "sha256": "d3825b8967bffc3a75688201447ecfbb06ac5269443ab2a1951ab6c4df899185",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-dbfa7f11-af4a-43bd-8603-78392f4e9991.png",
+      "source_sha256": "d3825b8967bffc3a75688201447ecfbb06ac5269443ab2a1951ab6c4df899185",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 9,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive36-year-old man with an African appearance, deep dark skin, a lean oblong face, broad rounded nose, close-cropped tightly coiled hair and faint stubble. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: near frontal with a small head tilt and calm expression. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 167,
+      "path": "research/data/plain-background-expansion16-v2/167.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/167.png",
+      "sha256": "ec73b6fa368febfc01714b33cff617515da4af00480370a1616bada00a3cc0d6",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-78cb6e02-26fe-4e94-aadc-223c2a099882.png",
+      "source_sha256": "ec73b6fa368febfc01714b33cff617515da4af00480370a1616bada00a3cc0d6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 8,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive45-year-old man with an East Asian appearance, a softly rounded face, fuller cheeks, broad forehead, short neat hair with a gently receding hairline and no beard. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: slight turn toward camera-left and a restrained closed-mouth smile. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "reserved_excluded_from_hot_target_subset"
+    },
+    {
+      "id": 168,
+      "path": "research/data/plain-background-expansion16-v2/168.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/168.png",
+      "sha256": "3ae0411b5bd706abcbf1e0094e898742eabc6dd2b26c5fc36b59455a845d0685",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-59f2db3d-b9e4-400f-93bd-c3dbfc0c8f20.png",
+      "source_sha256": "3ae0411b5bd706abcbf1e0094e898742eabc6dd2b26c5fc36b59455a845d0685",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 10,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive33-year-old man with a Latino appearance, medium skin, an oval face with a rounded chin, a slightly uneven natural nose, medium short straight dark hair and a small neat mustache without beard. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: gentle camera-right turn, thoughtful relaxed expression. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 169,
+      "path": "research/data/plain-background-expansion16-v2/169.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/169.png",
+      "sha256": "5e6b512106db5fc9f3e15fbdd10d1cbf6d1405fc2f4e39703f07789ba747bf19",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-cf83bc1a-0af8-4b62-8cee-75fd88d8be43.png",
+      "source_sha256": "5e6b512106db5fc9f3e15fbdd10d1cbf6d1405fc2f4e39703f07789ba747bf19",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 12,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive58-year-old man with a northern European appearance, pale freckled skin, a narrow triangular face, balding crown with short gray hair at the sides, neatly clipped gray stubble, visible crow's feet. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: nearly frontal with a subtle closed-mouth smile. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "reserved_excluded_from_hot_target_subset"
+    },
+    {
+      "id": 170,
+      "path": "research/data/plain-background-expansion16-v2/170.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/170.png",
+      "sha256": "f72d5672ec7d8b3cafb9c5f009ebcf801c4a602a7b6ce02ef172ac6bccc34948",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-55ae4fc9-1bb7-4241-b9cf-f32bbe35ebb3.png",
+      "source_sha256": "f72d5672ec7d8b3cafb9c5f009ebcf801c4a602a7b6ce02ef172ac6bccc34948",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 10,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive40-year-old man with a Middle Eastern appearance, olive skin, a broad high forehead, long straight nose, narrower jaw, short wavy dark hair and a tidy short beard. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: slight camera-left turn and calm steady gaze. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 171,
+      "path": "research/data/plain-background-expansion16-v2/171.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/171.png",
+      "sha256": "bbb9c9e9a24aee11cde2677e0895534cda82748d65515479156ce1777625a1d0",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-59301a4f-83d1-4e55-bcbd-7ee7aba7c951.png",
+      "source_sha256": "bbb9c9e9a24aee11cde2677e0895534cda82748d65515479156ce1777625a1d0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 8,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive31-year-old man with a Southeast Asian appearance, medium tan skin, a heart-shaped face, pronounced cheekbones, small rounded chin, short loosely parted hair and clean-shaven skin. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: a mild head tilt, relaxed closed-lip grin. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 172,
+      "path": "research/data/plain-background-expansion16-v2/172.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/172.png",
+      "sha256": "56519848c919ddb6a8093f53d806e3196fea6863ce89c316c2f5a5198f1931c6",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-ef20728a-84b8-44b3-87f8-2b4f8a4298d0.png",
+      "source_sha256": "56519848c919ddb6a8093f53d806e3196fea6863ce89c316c2f5a5198f1931c6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 13,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive49-year-old man with an Afro-Latino appearance, dark brown skin, a wide round face, broad nose, a receding close-cropped hairline and neat salt-and-pepper mustache and goatee. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: gentle camera-right turn, a warm closed-mouth smile. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "reserved_excluded_from_hot_target_subset"
+    },
+    {
+      "id": 173,
+      "path": "research/data/plain-background-expansion16-v2/173.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/173.png",
+      "sha256": "bf2a5540faea4be13312a748f36bebbf13f995838084cb8446e702861c359227",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-b3bbfaa9-1076-415d-8da5-a31252c2ca25.png",
+      "source_sha256": "bf2a5540faea4be13312a748f36bebbf13f995838084cb8446e702861c359227",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 9,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive37-year-old man with an eastern European appearance, light skin, a lean face with asymmetric cheekbones, a slightly crooked nose, short dark blond hair and light patchy stubble. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: slight camera-left turn, a calm serious expression. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 174,
+      "path": "research/data/plain-background-expansion16-v2/174.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/174.png",
+      "sha256": "c08593dcba3e0143b27019818507f3a0a14d2b2709ba5756b6475d36b17cfe4e",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-e2a760c2-ea22-4b97-abeb-9a9a89d6538b.png",
+      "source_sha256": "c08593dcba3e0143b27019818507f3a0a14d2b2709ba5756b6475d36b17cfe4e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 13,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive56-year-old man with a South Asian appearance, medium brown skin, a narrow face, deep-set eyes, a broad forehead, thin brushed-back graying hair and a tidy full short beard. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: nearly frontal, restrained friendly closed-mouth smile. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 175,
+      "path": "research/data/plain-background-expansion16-v2/175.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/175.png",
+      "sha256": "69faec961fc0f0831ede7c6bb1f4c3773d517eb3bac4d197c19703fbac199af5",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-b74247c9-cb76-4c61-b1bd-5be562155ab1.png",
+      "source_sha256": "69faec961fc0f0831ede7c6bb1f4c3773d517eb3bac4d197c19703fbac199af5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 14,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive42-year-old man with a west African appearance, dark skin, broad cheekbones tapering to a slim chin, prominent rounded ears, short natural tightly coiled hair and clean-shaven cheeks. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: slight camera-right turn, thoughtful gentle gaze. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 176,
+      "path": "research/data/plain-background-expansion16-v2/176.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/176.png",
+      "sha256": "4d50a0812bac2536298647d08ee72482549e5bc8d1571869309f6609cdbeae3b",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-455fba2f-12a0-4353-ae59-2a9930eeb6d1.png",
+      "source_sha256": "4d50a0812bac2536298647d08ee72482549e5bc8d1571869309f6609cdbeae3b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 9,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive34-year-old man with a Mediterranean Latino appearance, olive skin, a rounded face, softly defined jaw, prominent curved nose, short dark waves and a close-cropped beard. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: mild head tilt, subtle closed-lip smile. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 177,
+      "path": "research/data/plain-background-expansion16-v2/177.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/177.png",
+      "sha256": "1e2c4012af086db5475f436e5c213adc9489584e24ed653f842736c92b0dfa1b",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-d04d202a-bbff-4403-a214-5680d9f49cc3.png",
+      "source_sha256": "1e2c4012af086db5475f436e5c213adc9489584e24ed653f842736c92b0dfa1b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 10,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive60-year-old man with a Japanese appearance, light-medium skin, a long face with natural cheek lines, thick silver eyebrows, short silver hair with a side part and no beard. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: a small camera-left turn and calm welcoming expression. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 178,
+      "path": "research/data/plain-background-expansion16-v2/178.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/178.png",
+      "sha256": "f61291972fae479fa05ce255ee7a3455b08530c0ccfedd2b0653fb3a62000e6a",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-5d27e01d-c063-4397-b67b-f99f3f80e212.png",
+      "source_sha256": "f61291972fae479fa05ce255ee7a3455b08530c0ccfedd2b0653fb3a62000e6a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 10,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive46-year-old man with a mixed European and Middle Eastern appearance, medium skin, a broad oval face, a high receding hairline, very short dark hair and neat dark stubble. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: near frontal with a slight head tilt and reserved closed-mouth grin. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "reserved_excluded_from_hot_target_subset"
+    },
+    {
+      "id": 179,
+      "path": "research/data/plain-background-expansion16-v2/179.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/179.png",
+      "sha256": "7f8f29bb3fc2d07e0d09cf2e032f8336a34b89df04eeb0c717c01d972792b83a",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-33f81258-b1e5-45f1-bb5d-24b410a45037.png",
+      "source_sha256": "7f8f29bb3fc2d07e0d09cf2e032f8336a34b89df04eeb0c717c01d972792b83a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 8,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive39-year-old man with a South Asian appearance, warm medium-brown skin, an angular triangular face, high cheekbones, a long nose, medium wavy side-parted hair and clean-shaven jaw. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: gentle camera-right turn and composed expression. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    },
+    {
+      "id": 180,
+      "path": "research/data/plain-background-expansion16-v2/180.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/plain-background-expansion16-v2/180.png",
+      "sha256": "cc218aa9a2c951489c4d0075822965613f9ab09cd9f543f0dd4c9ba69c3e2338",
+      "source_path": "/Users/twixes/.codex/generated_images/01a0c0b0-57e3-7983-a88c-139d14c03705/exec-70c24c12-a710-440b-bad9-dd5ebcd29662.png",
+      "source_sha256": "cc218aa9a2c951489c4d0075822965613f9ab09cd9f543f0dd4c9ba69c3e2338",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "max_rgb_channel_difference": 9,
+      "exact_grayscale_pixels": false,
+      "copied_byte_exact": true,
+      "call_count": 1,
+      "references": [],
+      "prompt": "Use case: photorealistic-natural.\nGenerate one independent native square monochrome editorial photograph of a fictional attractive51-year-old man with a northern European appearance, fair skin, a broad forehead and softer square face, short wavy graying hair, a neatly kept mustache and light chin stubble. He is a Roman Catholic priest. This is a new fictional identity, no reference images and no intended resemblance to a real person. Demographic wording is creative prompt intent.\nPose: small camera-left turn, quiet closed-mouth smile. Attractive but real and individual, not a generic square-jawed fashion model.\nClothing: anatomically plausible neck and a correctly fitted black clerical shirt. A distinct clean white Roman collar TAB sits centrally inside the black standing collar at the throat; it must be fully visible, separated from the chin and beard, and clearly recognizable.\nBackground: plain neutral mid-gray, gently soft, no discernible architecture or objects. Lighting: restrained natural soft side-window illumination with realistic fill.\nFraming: entire uncropped BARE HEAD including every hair tip, face central, both shoulders and upper chest. Generous visible space above head and around its sides; white tab and several inches of black shirt BELOW the collar fully within square. Eyes roughly42 percent from the top. Do not zoom tightly.\nPhotography: genuine-looking grayscale black-and-white, natural pores, wrinkles, individual hairs, realistic eyes, nose, ears and closed lips. Subtle facial asymmetry, believable anatomy, no beauty filter or plastic skin. Quiet editorial portrait, not glossy advertising.\nAvoid: hats, head coverings, mitres, crowns, halos, hands, jewelry, props, other people, text, watermarks, architecture, visible teeth or open mouth, colored tint, collage or montage. One photo only.",
+      "target_selection": "accepted_hot_training_candidate"
+    }
+  ],
+  "target_selection": {
+    "source_path": "research/reviews/expansion16-v2-root-observations.json",
+    "source_sha256": "a826b4e7d82ddfa5acc517c962a1ef89ea2260c375aed23bcd1672501946509f",
+    "accepted_target_ids": [
+      165,
+      166,
+      168,
+      170,
+      171,
+      173,
+      174,
+      175,
+      176,
+      177,
+      179,
+      180
+    ],
+    "reserved_ids": [
+      167,
+      169,
+      172,
+      178
+    ],
+    "basis": "Explicit root native review; subjective calendar aesthetic only, not anatomy, age or demographic rule. All16 originals preserved. Training inclusion and production model quality are separate."
+  }
+}

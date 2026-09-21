@@ -1,0 +1,13 @@
+{
+  "reviewed_utc": "2026-09-21T05:28:50.055272+00:00",
+  "decision": "Accept36 as prospective changed-data training candidate; no current experiment input changes.",
+  "manifest_sha256": "5a9e6558f5bdb4a2fe53d86c19f34cbb4221b3f1030255f43d3d8415b51961bd",
+  "root_visual_review": "Viewed all16 new native1254 originals and selected12; viewed complete36-image contact. Previous24 native review inherited from archived reviews.",
+  "verification": "All36 source hashes and72 derivative hashes verified. Builder checks48 previous outputs byte-identical and24 new decoded derivatives exactly equal to direct L-to-RGB Lanczos result.",
+  "limitations": [
+    "Subjective hot-calendar curation; not an automated attractiveness guarantee.",
+    "Some related face/hair families and changed framing remain.",
+    "No model quality or deployment approval follows from this dataset."
+  ],
+  "production_approved": false
+}

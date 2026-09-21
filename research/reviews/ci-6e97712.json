@@ -1,0 +1,110 @@
+{
+  "checked_utc": "2026-09-21T05:12:02.558812+00:00",
+  "commit": "6e97712b54398d6f47b5401bc82f6ec25de89027",
+  "checks": [
+    {
+      "name": "Workers Builds: thispriestdoesnotexist",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/1a5e44710a69d21d6822a460e5861578/workers/services/view/thispriestdoesnotexist/production/builds/73bdd46b-87bc-465e-93cf-b99749604754"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/Twixes/thispriestdoesnotexist/actions/runs/35563644604/job/106221101912"
+    }
+  ],
+  "inference_workflow": {
+    "conclusion": "success",
+    "headSha": "6e97712b54398d6f47b5401bc82f6ec25de89027",
+    "jobs": [
+      {
+        "completedAt": "2026-09-21T05:11:25Z",
+        "conclusion": "success",
+        "databaseId": 106221101912,
+        "name": "deploy",
+        "startedAt": "2026-09-21T05:11:07Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-09-21T05:11:08Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-09-21T05:11:08Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T05:11:12Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 2,
+            "startedAt": "2026-09-21T05:11:08Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T05:11:23Z",
+            "conclusion": "success",
+            "name": "Verify deployment gates and frontend",
+            "number": 3,
+            "startedAt": "2026-09-21T05:11:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T05:11:23Z",
+            "conclusion": "success",
+            "name": "Detect promoted model",
+            "number": 4,
+            "startedAt": "2026-09-21T05:11:23Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T05:11:23Z",
+            "conclusion": "skipped",
+            "name": "Fetch only production weights",
+            "number": 5,
+            "startedAt": "2026-09-21T05:11:23Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T05:11:23Z",
+            "conclusion": "skipped",
+            "name": "Validate promotion",
+            "number": 6,
+            "startedAt": "2026-09-21T05:11:23Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T05:11:23Z",
+            "conclusion": "skipped",
+            "name": "Deploy exact master revision",
+            "number": 7,
+            "startedAt": "2026-09-21T05:11:23Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T05:11:23Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 14,
+            "startedAt": "2026-09-21T05:11:23Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-21T05:11:23Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 15,
+            "startedAt": "2026-09-21T05:11:23Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/Twixes/thispriestdoesnotexist/actions/runs/35563644604/job/106221101912"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/Twixes/thispriestdoesnotexist/actions/runs/35563644604"
+  },
+  "actual_inference_deployment_performed": false
+}
