@@ -1,0 +1,221 @@
+{
+  "probe_step": 50,
+  "parent_step": 600,
+  "count": 11,
+  "source_compositing": false,
+  "rows": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "calibration-original-rgb.png",
+          "sha256": "dbcfbaa620fa54b2ee3436b0fce46689f60b3f45d8329cd97e03a7f2a32401c2"
+        },
+        "gray": {
+          "path": "calibration-original-gray.png",
+          "sha256": "35644ac09395e6c6d14aba1777c9a2b8bba741d01a402bd52a2774f0897c0d2c"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.019111767411231995,
+        "clothing_l1": 0.3077471852302551,
+        "tab_l1": 0.19101428985595703,
+        "rest_l1": 0.3140169680118561,
+        "surround_l1": 0.3778609037399292,
+        "remainder_l1": 0.31092897057533264
+      }
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "000-rgb.png",
+          "sha256": "48e0ffe0c04d2eee689242e39d92015b9e33d8664900ffb4633d9b36f698ab4a"
+        },
+        "gray": {
+          "path": "000-gray.png",
+          "sha256": "50f05922f4cd0bc301ae653571d9cb1adcac455af4cdd0aff29d1514ad11abdf"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.01732434518635273,
+        "clothing_l1": 0.13672329485416412,
+        "tab_l1": 0.11582902818918228,
+        "rest_l1": 0.1374771147966385,
+        "surround_l1": 0.7379626035690308,
+        "remainder_l1": 0.12577393651008606
+      }
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "030-rgb.png",
+          "sha256": "8c57c5c916408def4ed60cf03c54e3ff57f1966eebb7821596d7510cc38da0ff"
+        },
+        "gray": {
+          "path": "030-gray.png",
+          "sha256": "c3f978ee6bbed556a0264489404c53d6874d06c95c3ca9befb594e31e807c2e1"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.038399677723646164,
+        "clothing_l1": 0.2891713082790375,
+        "tab_l1": 0.14050936698913574,
+        "rest_l1": 0.2994554042816162,
+        "surround_l1": 0.3428703844547272,
+        "remainder_l1": 0.29752036929130554
+      }
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "outputs": {
+        "rgb": {
+          "path": "028-rgb.png",
+          "sha256": "fe175e6e38d643cd8d450c58222723f0ced1cc0688133e861ae940038a451178"
+        },
+        "gray": {
+          "path": "028-gray.png",
+          "sha256": "048a947f8ea8a3212a9ceda695b48e0ff8ce054abb0a78de9ff8025852bb3a25"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.02790546976029873,
+        "clothing_l1": 0.7877892255783081
+      }
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "b2-055-rgb.png",
+          "sha256": "78e5e7ffa9f91879e1381c6cc08464a4d947a0903fcbbb82f83ca933f8317803"
+        },
+        "gray": {
+          "path": "b2-055-gray.png",
+          "sha256": "e7a056b8d50127197b000afc98bd8b46349e8ea21bc5cbddb312555f97b89e1a"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.018648669123649597,
+        "clothing_l1": 0.14816951751708984,
+        "tab_l1": 0.11733975261449814,
+        "rest_l1": 0.14890599250793457,
+        "surround_l1": 0.43208572268486023,
+        "remainder_l1": 0.13826626539230347
+      }
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "b2-051-rgb.png",
+          "sha256": "fb7a2ef995a19b8208a883c27dc71055c85ec66ead23346b8cf5ec669719993c"
+        },
+        "gray": {
+          "path": "b2-051-gray.png",
+          "sha256": "3274c01b01a6952e3c55b1f46ae683e7b883e12dbc4defa61be6f058eb68661f"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.014778523705899715,
+        "clothing_l1": 0.16833174228668213,
+        "tab_l1": 0.06070789322257042,
+        "rest_l1": 0.17454113066196442,
+        "surround_l1": 0.32005980610847473,
+        "remainder_l1": 0.16925056278705597
+      }
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "b2-020-rgb.png",
+          "sha256": "f05e20eb05bdf02914f8544488dc91c4947841e08fcac2860e180145a8b4860f"
+        },
+        "gray": {
+          "path": "b2-020-gray.png",
+          "sha256": "4c29520e6aa00cb46abd77d319b391419ad79d1079e8c38cd35eed5064ff055d"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.03629333898425102,
+        "clothing_l1": 0.05018619820475578,
+        "tab_l1": 0.08923080563545227,
+        "rest_l1": 0.04996280372142792,
+        "surround_l1": 0.22094805538654327,
+        "remainder_l1": 0.045949872583150864
+      }
+    },
+    {
+      "id": "unseen-000",
+      "split": "unseen",
+      "outputs": {
+        "rgb": {
+          "path": "unseen-000-rgb.png",
+          "sha256": "8b2a726074207b8f399b68435072d4f7cea2a2908040a41c3a3467729543dfa1"
+        },
+        "gray": {
+          "path": "unseen-000-gray.png",
+          "sha256": "10650b3103b8cb22ad9e1095eb3f72455640d4fc79a9291561b7124a7debbe5a"
+        }
+      },
+      "metrics_minus1_to1": {}
+    },
+    {
+      "id": "unseen-001",
+      "split": "unseen",
+      "outputs": {
+        "rgb": {
+          "path": "unseen-001-rgb.png",
+          "sha256": "f1882823c3068e823eec9eac41ce5df2b46286745703813fa5664a709ea69284"
+        },
+        "gray": {
+          "path": "unseen-001-gray.png",
+          "sha256": "e4a471310bed694396c7cbf5ff2ba88fdbaefc75445aa66eedc086b99f6c7acc"
+        }
+      },
+      "metrics_minus1_to1": {}
+    },
+    {
+      "id": "unseen-002",
+      "split": "unseen",
+      "outputs": {
+        "rgb": {
+          "path": "unseen-002-rgb.png",
+          "sha256": "8b1629a2e2ac8e0069c5f5b32dbce8a32146637f9345e40ab7513f34cb8451e8"
+        },
+        "gray": {
+          "path": "unseen-002-gray.png",
+          "sha256": "4f9600dcb39a55547528c2fc4930119b2df23a11a7f6ef515ddc1129f6d5f64c"
+        }
+      },
+      "metrics_minus1_to1": {}
+    },
+    {
+      "id": "unseen-003",
+      "split": "unseen",
+      "outputs": {
+        "rgb": {
+          "path": "unseen-003-rgb.png",
+          "sha256": "fa8627f92f80ea7fc4b1f54353b151df064f17803122e29da0be3b053102ab7c"
+        },
+        "gray": {
+          "path": "unseen-003-gray.png",
+          "sha256": "f89c04d7ac195314d8ce8a00f7d3a602819ec1be1993740e2300c9a100cd52a3"
+        }
+      },
+      "metrics_minus1_to1": {}
+    }
+  ],
+  "state_sha256": "1d54d6a9c16bbb1d49d6ade1397164e74d0aee379d1e35289d26b475939caa0e",
+  "seconds": 8.68165154196322,
+  "rng_restored": true
+}

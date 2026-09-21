@@ -1,0 +1,492 @@
+{
+  "complete": true,
+  "branch": "collar-surround",
+  "updates": 50,
+  "milestones": [
+    {
+      "probe_step": 0,
+      "checkpoint": "checkpoint-000.pt",
+      "sha256": "d0ece679ca73c3897506bc52e90436f7f59f3aa17025febb8110f660fe61c0be",
+      "student_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4",
+      "preview_seconds": 7.790381749975495
+    },
+    {
+      "probe_step": 25,
+      "checkpoint": "checkpoint-025.pt",
+      "sha256": "a47c5dc4ecefcb995e36703371a493b4c8bdddeaed70fc85db95607546631eb1",
+      "student_sha256": "d8c46b0c02a572bcb2d00c9a127c4066742c46486639a83c09cc6128a1046893",
+      "preview_seconds": 7.9260532080661505
+    },
+    {
+      "probe_step": 50,
+      "checkpoint": "checkpoint-050.pt",
+      "sha256": "2d04a8906ea18e69e812261704eb8f7190e8c4fddea1e536c60007a84a2a8d2d",
+      "student_sha256": "1d54d6a9c16bbb1d49d6ade1397164e74d0aee379d1e35289d26b475939caa0e",
+      "preview_seconds": 8.68165154196322
+    }
+  ],
+  "schedule": [
+    {
+      "pair_indices": [
+        3
+      ],
+      "pair_ids": [
+        "b2-055"
+      ],
+      "fresh_z_sha256": "14059a960b6c022f18c6f1c3e5efd412117fdb4ec6d28669ef6b67e47bd35d0f"
+    },
+    {
+      "pair_indices": [
+        3
+      ],
+      "pair_ids": [
+        "b2-055"
+      ],
+      "fresh_z_sha256": "786ff58b897ef3c1f68d1070fc4de0bdadf929f774a3915cbed9571436ce258a"
+    },
+    {
+      "pair_indices": [
+        3
+      ],
+      "pair_ids": [
+        "b2-055"
+      ],
+      "fresh_z_sha256": "0d747a54b9faac8d40c7643d39ea3d51316bd2708397569e64d815b6ca7f0ca4"
+    },
+    {
+      "pair_indices": [
+        4
+      ],
+      "pair_ids": [
+        "b2-051"
+      ],
+      "fresh_z_sha256": "5dcb5583a7009fe62399ccc61a0d529d32b227bebcf204614d96ad9e1601c860"
+    },
+    {
+      "pair_indices": [
+        4
+      ],
+      "pair_ids": [
+        "b2-051"
+      ],
+      "fresh_z_sha256": "8ba00682984888f995c727e4bf47f2d4664416c6bc691ddc7752cad76589bbd8"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "3b65375b0141184516acee6d858d60d5290819be02960aa940f6099fa0c7771b"
+    },
+    {
+      "pair_indices": [
+        1
+      ],
+      "pair_ids": [
+        "000"
+      ],
+      "fresh_z_sha256": "7407d6ba2f867fc08cbfa98ff6c765842c08d20f644b20e9fe9e3da708ac4179"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "31a12c105e1b17a4351ab99bc83e4e82fd75b2cff0f0e22c444570bf13b50af9"
+    },
+    {
+      "pair_indices": [
+        1
+      ],
+      "pair_ids": [
+        "000"
+      ],
+      "fresh_z_sha256": "f84dd72cbc60a7ba2771c4418645b4ec0d571eb810c17c2c01773f28f40a7606"
+    },
+    {
+      "pair_indices": [
+        2
+      ],
+      "pair_ids": [
+        "030"
+      ],
+      "fresh_z_sha256": "7df5f34452754b234a059b2547d5f7d3c8c6927d84f53a998e4f2940db4f8516"
+    },
+    {
+      "pair_indices": [
+        4
+      ],
+      "pair_ids": [
+        "b2-051"
+      ],
+      "fresh_z_sha256": "9f04d67781c17578a91eb4dc3965093e08b142aaee0d201259c2a31cb8a432c5"
+    },
+    {
+      "pair_indices": [
+        2
+      ],
+      "pair_ids": [
+        "030"
+      ],
+      "fresh_z_sha256": "c748907ebb37ea8edf1d78f365ac6fab0d21d595e68ebdaf1b4412b1785140e5"
+    },
+    {
+      "pair_indices": [
+        5
+      ],
+      "pair_ids": [
+        "b2-020"
+      ],
+      "fresh_z_sha256": "f40197df7f9a278efd7ab897dc9052e673f4c816c7db299f0b6f80605f9129b8"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "c0d6a11e13c55c49f6c29377c099db6e1c7083e2757caa92ae7baa52e3e1a027"
+    },
+    {
+      "pair_indices": [
+        3
+      ],
+      "pair_ids": [
+        "b2-055"
+      ],
+      "fresh_z_sha256": "6d02200157b5f2f47781e145dffe19b0794fcfa75acbbf5bf1c46472f818b72a"
+    },
+    {
+      "pair_indices": [
+        4
+      ],
+      "pair_ids": [
+        "b2-051"
+      ],
+      "fresh_z_sha256": "3f425efffd277be43581e4f06ce680314b28762a21003f71284cd50c5aa1a8f4"
+    },
+    {
+      "pair_indices": [
+        5
+      ],
+      "pair_ids": [
+        "b2-020"
+      ],
+      "fresh_z_sha256": "cfd0b1a58fb9b386c8818747f9ae7efa96c25ff17d6fccaa217db75c111b5166"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "142a31a1af24e0a92cfe907965729cd78ead03eb650af7d47a004102645a1013"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "a57a6e78e31b3e317078f81389bf10c797c0f0587b1c44a8b13e54f8bc649a46"
+    },
+    {
+      "pair_indices": [
+        1
+      ],
+      "pair_ids": [
+        "000"
+      ],
+      "fresh_z_sha256": "0f2e87694218df027e7051d3b499e1f4fc88855f6c965e6d0f857edde85fb00d"
+    },
+    {
+      "pair_indices": [
+        3
+      ],
+      "pair_ids": [
+        "b2-055"
+      ],
+      "fresh_z_sha256": "eae2196bd155d15cca812b7d7f566408f94acfa0d7fb944a49674a4f71e1543d"
+    },
+    {
+      "pair_indices": [
+        3
+      ],
+      "pair_ids": [
+        "b2-055"
+      ],
+      "fresh_z_sha256": "ba884308f8ca3f58df12492dc1fce1a7abcf7a23838cd1abbac1f36caf271286"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "ddd7678f16d2eb19061195ce16c11a4c80d3add682392e731d0cff76f7b91f11"
+    },
+    {
+      "pair_indices": [
+        2
+      ],
+      "pair_ids": [
+        "030"
+      ],
+      "fresh_z_sha256": "73f6c708b985a97729ca515c7f26a933722977fa8b45df48374b1149af4456e6"
+    },
+    {
+      "pair_indices": [
+        5
+      ],
+      "pair_ids": [
+        "b2-020"
+      ],
+      "fresh_z_sha256": "ad3e62d969cf5a3d84dd4dae9a903f9ad7bb5ea8d772fcd2a97701929ec9e380"
+    },
+    {
+      "pair_indices": [
+        5
+      ],
+      "pair_ids": [
+        "b2-020"
+      ],
+      "fresh_z_sha256": "aafb11823f1da8892ae588a07c7bf98279ec9b2f171c8f79e4c7323a285edec4"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "afdbae844dc300431d89ae8de8ba5f44a9ba3468786e7057707a672ca38f365a"
+    },
+    {
+      "pair_indices": [
+        5
+      ],
+      "pair_ids": [
+        "b2-020"
+      ],
+      "fresh_z_sha256": "154ed27eab24d94e94c9740be22756c78fbf25e99d25abf6e75fe30326138eff"
+    },
+    {
+      "pair_indices": [
+        3
+      ],
+      "pair_ids": [
+        "b2-055"
+      ],
+      "fresh_z_sha256": "31411c8843d47a1d444a2834e6c429d1b085de40e8cf0bb315806505961524fc"
+    },
+    {
+      "pair_indices": [
+        3
+      ],
+      "pair_ids": [
+        "b2-055"
+      ],
+      "fresh_z_sha256": "6fe17e0cc107d926d110564120ed25b863cee268ffd8b4c934a8a92ec3aca036"
+    },
+    {
+      "pair_indices": [
+        1
+      ],
+      "pair_ids": [
+        "000"
+      ],
+      "fresh_z_sha256": "37e4f7b3a3cf42716230e7809ea20a30469e590ec27baf3752a2d010dd7f68df"
+    },
+    {
+      "pair_indices": [
+        4
+      ],
+      "pair_ids": [
+        "b2-051"
+      ],
+      "fresh_z_sha256": "a5409c4390641d6e5abb96d92e464128bdd39e6d9dbeb338dfcd1318cf18ae7a"
+    },
+    {
+      "pair_indices": [
+        5
+      ],
+      "pair_ids": [
+        "b2-020"
+      ],
+      "fresh_z_sha256": "6d61337beb0c6b66245d293a3a05669306f90c4820370fcc541c9b2b69cebc27"
+    },
+    {
+      "pair_indices": [
+        5
+      ],
+      "pair_ids": [
+        "b2-020"
+      ],
+      "fresh_z_sha256": "a97d143a952133728aa8be2c151839418a5d6d0142ea089a40dfd0d3ed7a32bc"
+    },
+    {
+      "pair_indices": [
+        2
+      ],
+      "pair_ids": [
+        "030"
+      ],
+      "fresh_z_sha256": "0126b14f07220804f41cd0e96d54215df5c8d40e7bfdd4e6b596b4635cb4b092"
+    },
+    {
+      "pair_indices": [
+        4
+      ],
+      "pair_ids": [
+        "b2-051"
+      ],
+      "fresh_z_sha256": "9c08959c30950fcc25f7f3d2d4bbe684841acaad309fb7764c6205937f0da32f"
+    },
+    {
+      "pair_indices": [
+        2
+      ],
+      "pair_ids": [
+        "030"
+      ],
+      "fresh_z_sha256": "4bfb2bdfbb47d6f42aff2c99d9d0384bc35270cd03ee47b1ba8b97d63cdf9f47"
+    },
+    {
+      "pair_indices": [
+        3
+      ],
+      "pair_ids": [
+        "b2-055"
+      ],
+      "fresh_z_sha256": "207f3a259c73d174a62d1c39385617c521abb5495fbb9263eedcb8a59f514641"
+    },
+    {
+      "pair_indices": [
+        4
+      ],
+      "pair_ids": [
+        "b2-051"
+      ],
+      "fresh_z_sha256": "dafe582c7f12b9cf7b2a18f32a8fcb6e1083e22c031ce20d22b3f8b75b067a66"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "3cf84e08d107ef630d91c4404f09f36ef0e4a65fd03ca815b23b1ea5456b0a97"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "ba3bf0b852fc5acdd9d487ce89ce8e22e21d3a357faaf4abcf3bf666d38e474f"
+    },
+    {
+      "pair_indices": [
+        1
+      ],
+      "pair_ids": [
+        "000"
+      ],
+      "fresh_z_sha256": "d9e17190b7f970c7242fd6b779bc59cbadf45391d45789be75d50a12f63a656f"
+    },
+    {
+      "pair_indices": [
+        5
+      ],
+      "pair_ids": [
+        "b2-020"
+      ],
+      "fresh_z_sha256": "206cd1df0362fc0632ad7d473ba10ea3af76121c0f9139759bfad3e776e65d5f"
+    },
+    {
+      "pair_indices": [
+        4
+      ],
+      "pair_ids": [
+        "b2-051"
+      ],
+      "fresh_z_sha256": "21cae3563735a90abc8e2d5eba6bbf9896d40b1d1102ccd65b940f90572ab0ca"
+    },
+    {
+      "pair_indices": [
+        3
+      ],
+      "pair_ids": [
+        "b2-055"
+      ],
+      "fresh_z_sha256": "98564cf2fa154d73c543b4cbde2c0fa7c32983d779820bfc1e58016ac3382307"
+    },
+    {
+      "pair_indices": [
+        2
+      ],
+      "pair_ids": [
+        "030"
+      ],
+      "fresh_z_sha256": "9c4be97a6db358b3452c9ef49454c707bfd45862c4e98f6bdbac89122c685928"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "14f03ec37ad63cc429089fb096d2872e02eb16663891ed85e15bd27540781000"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "496d7505f03c5b607359d6196b417f0bacbdf8e492e9200b2fd45573c139992e"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "f04c03e5835b255f7dde8ee7784ad37a931a0bff0b7b51ad5aa79140c29931fb"
+    },
+    {
+      "pair_indices": [
+        0
+      ],
+      "pair_ids": [
+        "calibration-original"
+      ],
+      "fresh_z_sha256": "ab33d335a89c4abc7f9cf21aeb399ffebd396c78a365b70877c25092251096ac"
+    }
+  ],
+  "initial_student_state_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4",
+  "final_student_state_sha256": "1d54d6a9c16bbb1d49d6ade1397164e74d0aee379d1e35289d26b475939caa0e",
+  "invariants": {
+    "student_frozen": "cafd15b661c9f5754dd8e660091466ecd0361bc756373f4f50926947af979428",
+    "source": "a02240d17aae05f0eb862d230d782448063586522a763a93e24eca64c6ae2d7e",
+    "student_buffers": "6c1be0be7540b637fb0eb367deee52f07293323638df7e3e3e7cf4cc04a401a9"
+  },
+  "source_and_frozen_checks_passed": true,
+  "full_checkpoint_roundtrip": true,
+  "peak_rss_bytes": 5804802048,
+  "wall_seconds": 279.16896087501664,
+  "runner_sha256": "9fe816ee02f6f341f7dac25f6562dc8e011b394b256c30c4d3b527af5b768ed9"
+}

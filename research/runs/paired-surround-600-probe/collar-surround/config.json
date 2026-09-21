@@ -1,0 +1,1181 @@
+{
+  "format": "paired-surround-fork-v1",
+  "production_approved": false,
+  "exact_resume": false,
+  "branch": "collar-surround",
+  "parent_checkpoint_sha256": "0f433c7ec50d9e80026681125d7fa7e17e9be6e8e2d31b11976fb51d1b0f3fc4",
+  "parent_step": 600,
+  "updates": 50,
+  "objective": "(tab+surround+remainder)/3; protected/fresh unchanged",
+  "region_counts": [
+    {
+      "id": "calibration-original",
+      "radius": 30,
+      "raw_tab_pixels": 7923,
+      "collar_pixels": 7198,
+      "surround_pixels": 6183,
+      "remainder_pixels": 127831,
+      "clothing_pixels": 141212,
+      "protected_leak_pixels": 0,
+      "partition_disjoint": true
+    },
+    {
+      "id": "000",
+      "radius": 30,
+      "raw_tab_pixels": 7668,
+      "collar_pixels": 4248,
+      "surround_pixels": 2251,
+      "remainder_pixels": 115498,
+      "clothing_pixels": 121997,
+      "protected_leak_pixels": 0,
+      "partition_disjoint": true
+    },
+    {
+      "id": "030",
+      "radius": 30,
+      "raw_tab_pixels": 4918,
+      "collar_pixels": 4204,
+      "surround_pixels": 2593,
+      "remainder_pixels": 58178,
+      "clothing_pixels": 64975,
+      "protected_leak_pixels": 0,
+      "partition_disjoint": true
+    },
+    {
+      "id": "b2-055",
+      "radius": 30,
+      "raw_tab_pixels": 6895,
+      "collar_pixels": 6248,
+      "surround_pixels": 9471,
+      "remainder_pixels": 252074,
+      "clothing_pixels": 267793,
+      "protected_leak_pixels": 0,
+      "partition_disjoint": true
+    },
+    {
+      "id": "b2-051",
+      "radius": 30,
+      "raw_tab_pixels": 6302,
+      "collar_pixels": 4924,
+      "surround_pixels": 2994,
+      "remainder_pixels": 82351,
+      "clothing_pixels": 90269,
+      "protected_leak_pixels": 0,
+      "partition_disjoint": true
+    },
+    {
+      "id": "b2-020",
+      "radius": 30,
+      "raw_tab_pixels": 4011,
+      "collar_pixels": 1790,
+      "surround_pixels": 7174,
+      "remainder_pixels": 305674,
+      "clothing_pixels": 314638,
+      "protected_leak_pixels": 0,
+      "partition_disjoint": true
+    }
+  ],
+  "surround_radius_pixels": 30,
+  "objective_sha256": "e601a3119c3096c6e222f50c68edb103e6e91f28a353cc01e47eaba67660b10d",
+  "freeze_policy": "unchanged parent mapping/noise/buffers/blocks<=32 frozen in both branches",
+  "optimizer_transfer": {
+    "parameter_names": [
+      "synthesis.b64.conv0.weight",
+      "synthesis.b64.conv0.bias",
+      "synthesis.b64.conv0.affine.weight",
+      "synthesis.b64.conv0.affine.bias",
+      "synthesis.b64.conv1.weight",
+      "synthesis.b64.conv1.bias",
+      "synthesis.b64.conv1.affine.weight",
+      "synthesis.b64.conv1.affine.bias",
+      "synthesis.b64.torgb.weight",
+      "synthesis.b64.torgb.bias",
+      "synthesis.b64.torgb.affine.weight",
+      "synthesis.b64.torgb.affine.bias",
+      "synthesis.b128.conv0.weight",
+      "synthesis.b128.conv0.bias",
+      "synthesis.b128.conv0.affine.weight",
+      "synthesis.b128.conv0.affine.bias",
+      "synthesis.b128.conv1.weight",
+      "synthesis.b128.conv1.bias",
+      "synthesis.b128.conv1.affine.weight",
+      "synthesis.b128.conv1.affine.bias",
+      "synthesis.b128.torgb.weight",
+      "synthesis.b128.torgb.bias",
+      "synthesis.b128.torgb.affine.weight",
+      "synthesis.b128.torgb.affine.bias",
+      "synthesis.b256.conv0.weight",
+      "synthesis.b256.conv0.bias",
+      "synthesis.b256.conv0.affine.weight",
+      "synthesis.b256.conv0.affine.bias",
+      "synthesis.b256.conv1.weight",
+      "synthesis.b256.conv1.bias",
+      "synthesis.b256.conv1.affine.weight",
+      "synthesis.b256.conv1.affine.bias",
+      "synthesis.b256.torgb.weight",
+      "synthesis.b256.torgb.bias",
+      "synthesis.b256.torgb.affine.weight",
+      "synthesis.b256.torgb.affine.bias",
+      "synthesis.b512.conv0.weight",
+      "synthesis.b512.conv0.bias",
+      "synthesis.b512.conv0.affine.weight",
+      "synthesis.b512.conv0.affine.bias",
+      "synthesis.b512.conv1.weight",
+      "synthesis.b512.conv1.bias",
+      "synthesis.b512.conv1.affine.weight",
+      "synthesis.b512.conv1.affine.bias",
+      "synthesis.b512.torgb.weight",
+      "synthesis.b512.torgb.bias",
+      "synthesis.b512.torgb.affine.weight",
+      "synthesis.b512.torgb.affine.bias",
+      "synthesis.b1024.conv0.weight",
+      "synthesis.b1024.conv0.bias",
+      "synthesis.b1024.conv0.affine.weight",
+      "synthesis.b1024.conv0.affine.bias",
+      "synthesis.b1024.conv1.weight",
+      "synthesis.b1024.conv1.bias",
+      "synthesis.b1024.conv1.affine.weight",
+      "synthesis.b1024.conv1.affine.bias",
+      "synthesis.b1024.torgb.weight",
+      "synthesis.b1024.torgb.bias",
+      "synthesis.b1024.torgb.affine.weight",
+      "synthesis.b1024.torgb.affine.bias"
+    ],
+    "optimizer_state_exact": true,
+    "new_parameters": false,
+    "freeze_policy_changed": false
+  },
+  "parent_student_state_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4",
+  "runner_sha256": "9fe816ee02f6f341f7dac25f6562dc8e011b394b256c30c4d3b527af5b768ed9",
+  "pins_sha256": "f92f34d7ed5d8b923e49238d850e2b1979a4271064eb4e70fe6e3065d84b0cfa",
+  "options": {
+    "device": "cpu",
+    "batch": 1,
+    "threads": 2,
+    "lr": 0.0001,
+    "clothing_weight": 1.0,
+    "protected_weight": 1.0,
+    "fresh_weight": 1.0,
+    "upper_fraction": 0.75,
+    "seed": 20260921,
+    "preview_count": 4,
+    "source_max_uint8_error": 0,
+    "w_atol": 0,
+    "mps_memory_cap_gib": null
+  },
+  "parent_provenance": {
+    "manifest_sha256": "9c27b19b0b7cfea4ca797a488b5d249410f3988b512373f713a599f02164bab6",
+    "source_weights_sha256": "f802061515460f211faee6a6ff60d8803f4aa15b26cdce0edc5bbef7d88aaa2d",
+    "source_metadata_sha256": "3cb7ddaac23295a47dca2ea4fccaffa97b4507a7f65b83368e646e0060329502",
+    "pairs": [
+      {
+        "collar_polygons": [
+          [
+            [
+              0.37,
+              0.923
+            ],
+            [
+              0.484,
+              0.931
+            ],
+            [
+              0.472,
+              0.986
+            ],
+            [
+              0.452,
+              0.993
+            ],
+            [
+              0.4,
+              0.994
+            ],
+            [
+              0.357,
+              0.987
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 7923,
+          "collar_intersection_pixels": 7198,
+          "rest_clothing_pixels": 134014,
+          "trace_outside_clothing_pixels": 725,
+          "trace_retained_fraction": 0.908494234085083,
+          "collar_fraction_of_clothing": 0.05097300559282303
+        },
+        "id": "calibration-original",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.13467025756835938,
+        "clothing_polygons": [
+          [
+            [
+              0.0,
+              0.765
+            ],
+            [
+              0.123,
+              0.687
+            ],
+            [
+              0.15,
+              0.75
+            ],
+            [
+              0.18,
+              0.82
+            ],
+            [
+              0.275,
+              0.892
+            ],
+            [
+              0.39,
+              0.93
+            ],
+            [
+              0.5,
+              0.94
+            ],
+            [
+              0.565,
+              0.91
+            ],
+            [
+              0.635,
+              0.8
+            ],
+            [
+              0.7,
+              0.84
+            ],
+            [
+              1.0,
+              0.97
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/reproduction-sample002.npz",
+            "sha256": "889fdf107391d4dc64d756debe59ccc4c8e61f8921494d329c00acc33ad5a3e9"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/reproduction-sample002.png",
+            "sha256": "7d431f4e15c87f03cf9c89527c43110e4147e26a6a0e95fa54334d6b9a2bccce"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edit1/001.png",
+            "sha256": "751a47d9e0d5c9a87c0e6f2d1a6447f2d24a90f4e862a562486cd554f85c5aec"
+          }
+        }
+      },
+      {
+        "collar_polygons": [
+          [
+            [
+              0.437,
+              0.948
+            ],
+            [
+              0.49,
+              0.956
+            ],
+            [
+              0.539,
+              0.955
+            ],
+            [
+              0.587,
+              0.946
+            ],
+            [
+              0.588,
+              1
+            ],
+            [
+              0.435,
+              1
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 7668,
+          "collar_intersection_pixels": 4248,
+          "rest_clothing_pixels": 117749,
+          "trace_outside_clothing_pixels": 3420,
+          "trace_retained_fraction": 0.5539906024932861,
+          "collar_fraction_of_clothing": 0.03482052683830261
+        },
+        "id": "000",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.11634540557861328,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.838
+            ],
+            [
+              0.181,
+              0.8
+            ],
+            [
+              0.218,
+              0.724
+            ],
+            [
+              0.238,
+              0.692
+            ],
+            [
+              0.254,
+              0.758
+            ],
+            [
+              0.262,
+              0.835
+            ],
+            [
+              0.281,
+              0.886
+            ],
+            [
+              0.32,
+              0.935
+            ],
+            [
+              0.4,
+              0.966
+            ],
+            [
+              0.49,
+              0.978
+            ],
+            [
+              0.56,
+              0.975
+            ],
+            [
+              0.64,
+              0.948
+            ],
+            [
+              0.702,
+              0.906
+            ],
+            [
+              0.723,
+              0.839
+            ],
+            [
+              0.733,
+              0.779
+            ],
+            [
+              0.774,
+              0.825
+            ],
+            [
+              1,
+              0.932
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/000.npz",
+            "sha256": "40978912da666c81c646643e681fec554e4771fe69c558359ee28cb6ae751572"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/000.png",
+            "sha256": "64f6368f73a25e21c6d8ae22c90a6c5095ab986d204c9acf26aa22f6050d4548"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits3/000.png",
+            "sha256": "802ce72546efaa10c1cdbcbf7d4779b86c7e40c72ac4801d680ed6508c2551c6"
+          }
+        }
+      },
+      {
+        "collar_polygons": [
+          [
+            [
+              0.505,
+              0.966
+            ],
+            [
+              0.563,
+              0.967
+            ],
+            [
+              0.629,
+              0.955
+            ],
+            [
+              0.635,
+              1
+            ],
+            [
+              0.509,
+              1
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 4918,
+          "collar_intersection_pixels": 4204,
+          "rest_clothing_pixels": 60771,
+          "trace_outside_clothing_pixels": 714,
+          "trace_retained_fraction": 0.8548190593719482,
+          "collar_fraction_of_clothing": 0.06470181047916412
+        },
+        "id": "030",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.061964988708496094,
+        "clothing_polygons": [
+          [
+            [
+              0.16,
+              1
+            ],
+            [
+              0.33,
+              0.895
+            ],
+            [
+              0.367,
+              0.944
+            ],
+            [
+              0.415,
+              0.972
+            ],
+            [
+              0.477,
+              0.982
+            ],
+            [
+              0.55,
+              0.976
+            ],
+            [
+              0.65,
+              0.944
+            ],
+            [
+              0.75,
+              0.893
+            ],
+            [
+              0.83,
+              0.84
+            ],
+            [
+              0.866,
+              0.806
+            ],
+            [
+              0.889,
+              0.854
+            ],
+            [
+              0.918,
+              0.891
+            ],
+            [
+              1,
+              0.918
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/030.npz",
+            "sha256": "0b696035e53809458d988e45abdcfc4e1afb4cdc712f687bc72c3b1f9b4d5e59"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/030.png",
+            "sha256": "9b3e097dd62f65b98156099a98682cf1d7840a56e223f75ae67a2984e39e12f8"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits3/030.png",
+            "sha256": "29fdc4ccd182d3986cba59b5df625cc5cf9feb4b09ca6898e18869a6f765f513"
+          }
+        }
+      },
+      {
+        "collar_polygons": null,
+        "partition": null,
+        "id": "028",
+        "split": "validation",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.04754924774169922,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.995
+            ],
+            [
+              0.226,
+              0.904
+            ],
+            [
+              0.24,
+              0.866
+            ],
+            [
+              0.255,
+              0.884
+            ],
+            [
+              0.3,
+              0.933
+            ],
+            [
+              0.35,
+              0.963
+            ],
+            [
+              0.43,
+              0.99
+            ],
+            [
+              0.49,
+              1
+            ],
+            [
+              0.58,
+              1
+            ],
+            [
+              0.645,
+              0.972
+            ],
+            [
+              0.7,
+              0.921
+            ],
+            [
+              0.734,
+              0.865
+            ],
+            [
+              0.746,
+              0.839
+            ],
+            [
+              0.782,
+              0.881
+            ],
+            [
+              0.803,
+              0.932
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/latents/028.npz",
+            "sha256": "dbd37130b8c58a35f8b7802ae909ce2fbdaa0964ee02e23cabb574e690d50933"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources32/images/028.png",
+            "sha256": "eb246b66e7fd614935b677c1ca26b9f5da574fa7f1deda5c096c760d9f71d5d2"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits3/028.png",
+            "sha256": "338bc64f196a24f40e9a7a513b0e497aa354f6a364d458c7d85ad2c822f5d8a2"
+          }
+        }
+      },
+      {
+        "collar_polygons": [
+          [
+            [
+              0.465,
+              0.915
+            ],
+            [
+              0.513,
+              0.916
+            ],
+            [
+              0.579,
+              0.904
+            ],
+            [
+              0.571,
+              0.961
+            ],
+            [
+              0.551,
+              0.973
+            ],
+            [
+              0.498,
+              0.975
+            ],
+            [
+              0.463,
+              0.971
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 6895,
+          "collar_intersection_pixels": 6248,
+          "rest_clothing_pixels": 261545,
+          "trace_outside_clothing_pixels": 647,
+          "trace_retained_fraction": 0.9061638712882996,
+          "collar_fraction_of_clothing": 0.023331454023718834
+        },
+        "id": "b2-055",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.2553873062133789,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.755
+            ],
+            [
+              0.17,
+              0.68
+            ],
+            [
+              0.2,
+              0.59
+            ],
+            [
+              0.225,
+              0.55
+            ],
+            [
+              0.24633431085043989,
+              0.5845552297165201
+            ],
+            [
+              0.2561094819159335,
+              0.6226783968719453
+            ],
+            [
+              0.2649071358748778,
+              0.6608015640273704
+            ],
+            [
+              0.28152492668621704,
+              0.7214076246334311
+            ],
+            [
+              0.30009775171065495,
+              0.7732160312805474
+            ],
+            [
+              0.32453567937438904,
+              0.8162267839687195
+            ],
+            [
+              0.3655913978494624,
+              0.8611925708699902
+            ],
+            [
+              0.41642228739002934,
+              0.895405669599218
+            ],
+            [
+              0.4633431085043988,
+              0.9149560117302052
+            ],
+            [
+              0.501466275659824,
+              0.9217986314760508
+            ],
+            [
+              0.5493646138807429,
+              0.9188660801564027
+            ],
+            [
+              0.5826001955034213,
+              0.9051808406647116
+            ],
+            [
+              0.6119257086999023,
+              0.8797653958944281
+            ],
+            [
+              0.6363636363636364,
+              0.8543499511241447
+            ],
+            [
+              0.6559139784946236,
+              0.8299120234604106
+            ],
+            [
+              0.6744868035190615,
+              0.8005865102639296
+            ],
+            [
+              0.6871945259042033,
+              0.772238514173998
+            ],
+            [
+              0.6999022482893451,
+              0.739980449657869
+            ],
+            [
+              0.7106549364613881,
+              0.7086999022482894
+            ],
+            [
+              0.7194525904203324,
+              0.6705767350928641
+            ],
+            [
+              0.7262952101661779,
+              0.6304985337243402
+            ],
+            [
+              0.7311827956989247,
+              0.5972629521016618
+            ],
+            [
+              0.7360703812316716,
+              0.5669599217986315
+            ],
+            [
+              0.771,
+              0.566
+            ],
+            [
+              0.81,
+              0.642
+            ],
+            [
+              1,
+              0.67
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/latents/055.npz",
+            "sha256": "46e8d2212064619855775974395992936a086b19aeef542ccf0fb289acbe9459"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/055.png",
+            "sha256": "6840845f45473f8a0f4be4950ad65b4957a4ce9314d007ffc4ff561a15e607b2"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits-b2/055.png",
+            "sha256": "596309dbe97cc0da9b5387411c3113de29ec7e7a360629aa9c59efd9a79177ad"
+          }
+        }
+      },
+      {
+        "collar_polygons": [
+          [
+            [
+              0.395,
+              0.948
+            ],
+            [
+              0.457,
+              0.958
+            ],
+            [
+              0.524,
+              0.956
+            ],
+            [
+              0.522,
+              1
+            ],
+            [
+              0.389,
+              1
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 6302,
+          "collar_intersection_pixels": 4924,
+          "rest_clothing_pixels": 85345,
+          "trace_outside_clothing_pixels": 1378,
+          "trace_retained_fraction": 0.7813392281532288,
+          "collar_fraction_of_clothing": 0.054548073559999466
+        },
+        "id": "b2-051",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.08608722686767578,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.855
+            ],
+            [
+              0.11,
+              0.861
+            ],
+            [
+              0.17,
+              0.805
+            ],
+            [
+              0.181,
+              0.746
+            ],
+            [
+              0.209,
+              0.798
+            ],
+            [
+              0.258,
+              0.865
+            ],
+            [
+              0.325,
+              0.93
+            ],
+            [
+              0.407,
+              0.962
+            ],
+            [
+              0.49,
+              0.97
+            ],
+            [
+              0.55,
+              0.956
+            ],
+            [
+              0.608,
+              0.924
+            ],
+            [
+              0.638,
+              0.888
+            ],
+            [
+              0.655,
+              0.843
+            ],
+            [
+              0.683,
+              0.898
+            ],
+            [
+              0.75,
+              0.933
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/latents/051.npz",
+            "sha256": "9aedebdadc19fc9685b5b89030c5c1cbd22151993157b073a68655ff47af65a7"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/051.png",
+            "sha256": "23af87180b4c694a1d572041c922537ecdd8ab0c5201872bdc98751d063012d8"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits-b2/051.png",
+            "sha256": "2b18b2cda36e6128856978ac570837923082a70dff8c02bf92b72710663329b7"
+          }
+        }
+      },
+      {
+        "collar_polygons": [
+          [
+            [
+              0.422,
+              0.921
+            ],
+            [
+              0.456,
+              0.938
+            ],
+            [
+              0.491,
+              0.943
+            ],
+            [
+              0.523,
+              0.934
+            ],
+            [
+              0.517,
+              0.963
+            ],
+            [
+              0.507,
+              0.97
+            ],
+            [
+              0.472,
+              0.975
+            ],
+            [
+              0.44,
+              0.973
+            ],
+            [
+              0.408,
+              0.965
+            ]
+          ]
+        ],
+        "partition": {
+          "raw_trace_pixels": 4011,
+          "collar_intersection_pixels": 1790,
+          "rest_clothing_pixels": 312848,
+          "trace_outside_clothing_pixels": 2221,
+          "trace_retained_fraction": 0.44627276062965393,
+          "collar_fraction_of_clothing": 0.005689077544957399
+        },
+        "id": "b2-020",
+        "split": "train",
+        "native_target_size": [
+          1254,
+          1254
+        ],
+        "source_uint8_max_error": 0,
+        "w_max_error": 0.0,
+        "clothing_fraction": 0.3000621795654297,
+        "clothing_polygons": [
+          [
+            [
+              0,
+              0.59
+            ],
+            [
+              0.146,
+              0.57
+            ],
+            [
+              0.165,
+              0.59
+            ],
+            [
+              0.184,
+              0.616
+            ],
+            [
+              0.21,
+              0.646
+            ],
+            [
+              0.24,
+              0.735
+            ],
+            [
+              0.277,
+              0.81
+            ],
+            [
+              0.341,
+              0.881
+            ],
+            [
+              0.421,
+              0.94
+            ],
+            [
+              0.481,
+              0.965
+            ],
+            [
+              0.53,
+              0.965
+            ],
+            [
+              0.58,
+              0.937
+            ],
+            [
+              0.615,
+              0.89
+            ],
+            [
+              0.65,
+              0.824
+            ],
+            [
+              0.69,
+              0.75
+            ],
+            [
+              0.736,
+              0.677
+            ],
+            [
+              0.77,
+              0.602
+            ],
+            [
+              0.792,
+              0.552
+            ],
+            [
+              0.792,
+              0.469
+            ],
+            [
+              0.815,
+              0.388
+            ],
+            [
+              1,
+              0.46
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "files": {
+          "latent_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/latents/020.npz",
+            "sha256": "02dc78bb0d0cb8f576461841b7371907d12b8dc840f8d1b6cbd780aa99099a99"
+          },
+          "source_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-paired-sources64-b2/images/020.png",
+            "sha256": "ab9ccd0bd1d65dac07d8616723f219db306d77e44e5d2a314bcf83bf0fce3ccd"
+          },
+          "target_path": {
+            "path": "/Users/twixes/Developer/thispriestdoesnotexist/research/data/ffhq-clothing-edits-b2/020.png",
+            "sha256": "24049cb2689461bbffffe40c9603aca036547a87e25ed32e29c4432c517387c8"
+          }
+        }
+      }
+    ],
+    "source_files": {
+      "regions_trainer": "7842039b65b0230dcc745c023761350da7bdeb49720fdac30f679fdaa38cb821",
+      "paired_edit_helpers": "e17a9618ffc3e44dc57ef41f2a43cd41b08c2a41b468eb5956c7a722b58ea8ba",
+      "training/__init__.py": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+      "training/augment.py": "fd81c871a9bfbb7feaad138b1e875db05c640060bdbf0342247d209eb48ba8f9",
+      "training/dataset.py": "10e433ffde6e3e63963711390ee8eeaa6f0e5a00da9f883117331a48b36e5145",
+      "training/loss.py": "1bd68d7dc1c92c1b78b91f193a45a433b1ff374614f91909ea8cb88eac7bc2d7",
+      "training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24",
+      "training/training_loop.py": "0b589a731712c51791eb22efe0dc1ee6856bf3e9335920db02a3e38dee909eb3",
+      "torch_utils/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+      "torch_utils/custom_ops.py": "ee123ae0458fbe463000d5962a5b804d9e91b25d3fda8500eeaa6ddf6b5c932a",
+      "torch_utils/misc.py": "8b66e614f3dbb27b9b3280030efcb65a94e5cfd0e9d940302692452cb7c44012",
+      "torch_utils/ops/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+      "torch_utils/ops/bias_act.cpp": "4a3eb091ce936451ac3a0e9c7c771cc5576cba195332cd777ec275cb806f4f53",
+      "torch_utils/ops/bias_act.cu": "bc6b93e2c347cc00b07dfe0f6dca35011c2291645806239cc86632902694d017",
+      "torch_utils/ops/bias_act.h": "f0ca2d087bb22b20f6642e4affd7c77e2ff5b601a2f6d1632a79002608d87aa4",
+      "torch_utils/ops/bias_act.py": "ae9d4a2efbb61f7d21d2e361a5a145704351cc9733d2bd3e5ba4e64938d8e3e3",
+      "torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3",
+      "torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+      "torch_utils/ops/fma.py": "f3fdd6b890e250124557cba35360a1297cac5bdbc4925325403b44bf290956e9",
+      "torch_utils/ops/grid_sample_gradfix.py": "a49a8195b734ecba95c9b63d035f26faa5d794a0b26eb3e9d5f3c521be29c536",
+      "torch_utils/ops/upfirdn2d.cpp": "a3930ed91584ab11786f44aca9abad9beab9f4020b564d4c547727da49d70b11",
+      "torch_utils/ops/upfirdn2d.cu": "af059a0dd7be4ba24e2b6b2f8fb5bcb0a89c4ac8320d17a59f228580164528ca",
+      "torch_utils/ops/upfirdn2d.h": "9f703976585fd9c07d18cf1c00edd3a495dc641ff1e1e1671e2df2ab24126535",
+      "torch_utils/ops/upfirdn2d.py": "7b5865e70ac4156edaefb2a372fee27dc55eb5661568b337cb4168e8936384a8",
+      "torch_utils/persistence.py": "1f24073d03fbb2d772babbf7b8a1175bec6c3423314c2649e9a8a13d37757121",
+      "torch_utils/training_stats.py": "c1c105b7e5c2fa5883516bf2bc05b588da5f45939d37f3fe281abca4579e7616",
+      "dnnlib/__init__.py": "01ee5300565a54d4a309ae87784f314a0c82db6c63e6735d1e9a124327f4c12d",
+      "dnnlib/util.py": "8f4c1e9e7eac60f9bf541b2fc0e649a022b2ddde8178df7f85f924f63e3db426"
+    },
+    "versions": {
+      "torch": "2.14.0",
+      "numpy": "2.4.6",
+      "pillow": "12.3.0"
+    }
+  },
+  "interop_threads": 1,
+  "fixed_z_sha256": "39c00adc9fdcfa45952db3094ff78bc501241c59d829ce718fcdcc85076bde9a",
+  "rss_abort_bytes": 8589934592,
+  "rss_limit_is_sampled_not_hard_allocation_cap": true
+}

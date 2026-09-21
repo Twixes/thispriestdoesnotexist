@@ -1,0 +1,45 @@
+{
+  "step": 4250,
+  "images_seen": 34000,
+  "reviewed_utc": "2026-09-21T02:16:51.049036+00:00",
+  "scope": "PNG-only inspection of all three native 1024x1024 grids (4x4 native 256 tiles); step 4000 grids also reinspected. No model loading or inference.",
+  "production_approved": false,
+  "approved": false,
+  "grid_sha256": {
+    "samples-004250.png": "3e640f9100f42baf7bd5abd9548a440eecf6c2c6b634e2d13d9b7643f918163b",
+    "samples-004250-raw.png": "87df07b356486bc6d6e123589563549bdde58a969c2a2243e66314b96d4bcb84",
+    "samples-004250-untruncated.png": "73d10ac6dec18212e46262d1a4de96b63b62df996677c9582a37a3613e7a5a84"
+  },
+  "comparison_step4000_png_sha256": {
+    "samples-004000.png": "6f684dcc3b433fd89561cee8b246ac18b21f844c91c364384fb63f48b3f45ceb",
+    "samples-004000-raw.png": "e2f268cc926189db5a78b8fa1dacd524b1177fe58558f385055cc3f24919e385",
+    "samples-004000-untruncated.png": "0bc3d2f79a159acffc7af4f1734bbe698a39c749f44bb96bb9a1da051c119d39"
+  },
+  "comparison_review_sha256": "a71865e2a21edddec2d431e9fc8b6a43466ba015c28700aad7d2488c35c0f8e2",
+  "coordinate_convention": "One-based rows/columns",
+  "findings": {
+    "ema_psi_0_7": [
+      "Recognizable adult masculine faces, black clerical shirts and white tabs; no obvious hats.",
+      "r1c1 still has dark poorly resolved eye sockets; r2c3 face remains angular and uneven around cheeks/mouth. Some individual faces look plausible at256px, but photographic detail remains inconsistent.",
+      "r3c3 appears slightly more legible around the eyes than step4000, a modest local improvement rather than a broad quality recovery."
+    ],
+    "raw_psi_1": [
+      "r1c1 eyes remain opaque blurred patches, r3c3 remains distorted around the eyes, and r2c3 mouth/cheek contours are unnatural.",
+      "r1c2 collar tab is tiny and gray.",
+      "Other portraits retain collars and generally coherent hair/background layout, with no convincing increase in identity variety."
+    ],
+    "ema_psi_1": [
+      "Qualitatively almost the same failures as the raw grid, including first-face eye distortion and uneven facial texture.",
+      "r1c2 tab remains very weak.",
+      "No obvious hats; similar dark hair, oval face proportions, mild expressions and architectural portrait framing dominate."
+    ]
+  },
+  "trajectory_assessment": "Compared with 4000, some local detail changes are visible, but same-latent eye/cheek failures and narrow variety persist; no decisive quality improvement.",
+  "recommendation": "Recommend ending this unchanged CDC run after preserving a complete checkpoint, reallocating compute to the controlled alternatives. This is an opportunity-cost judgment from the observed trajectory, not proof of irreversible collapse or impossibility of later improvement. Root decides; no process action taken.",
+  "limits": [
+    "Sixteen repeated latent samples per grid, not newly sampled distribution coverage.",
+    "No calibrated attractiveness, adult-age, diversity or convergence score.",
+    "No numeric checkpoint validation performed in this review.",
+    "Only new evidence files written; no trainer, model, input, or process modified."
+  ]
+}

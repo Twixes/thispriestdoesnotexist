@@ -1,0 +1,80 @@
+{
+  "branch": "collar-surround",
+  "probe_step": 50,
+  "reviewed_unix": 1789957208.083216,
+  "native_resolution": 1024,
+  "evaluation_sha256": "7e6739012079d2163bef5580990a6a5cfdbd25c8d6754bb930f97fff8910f319",
+  "all_11_native_gray_pngs_viewed": true,
+  "gray_files_are_RGB_mode": true,
+  "new_broad_face_collapse_observed": false,
+  "production_approved": false,
+  "limitations": "Small fixed sample; no proof of identity or distributional diversity. Notes compare both25/50 to the baseline; explicit at50 observations apply only to50. No eligibility sampler.",
+  "rows": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "native_image_sha256": "35644ac09395e6c6d14aba1777c9a2b8bba741d01a402bd52a2774f0897c0d2c",
+      "native_visual_review": "Face remains coherent. Relative to baseline, white neck patch narrows and dark rough texture expands into its left margin. Remaining white patch still resembles lit skin, with original folded shirt visible; no clean collar."
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "native_image_sha256": "50f05922f4cd0bc301ae653571d9cb1adcac455af4cdd0aff29d1514ad11abdf",
+      "native_visual_review": "Face remains coherent. White curved neck band persists, with darker rough diagonal marks along its edges. No convincing rectangular clerical tab."
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "native_image_sha256": "c3f978ee6bbed556a0264489404c53d6874d06c95c3ca9befb594e31e807c2e1",
+      "native_visual_review": "Face remains coherent. Pronounced dark pitted/scratch-like right-neck texture persists and looks darker/more extensive at50 than baseline. This is a local photographic-quality failure, despite no broad face collapse. Partial second person at left is preexisting."
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "native_image_sha256": "048a947f8ea8a3212a9ceda695b48e0ff8ce054abb0a78de9ff8025852bb3a25",
+      "native_visual_review": "HOLDOUT: face, beard and smile remain coherent. Shirt edges darken slightly; no convincing central clerical white tab."
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "native_image_sha256": "e7a056b8d50127197b000afc98bd8b46349e8ea21bc5cbddb312555f97b89e1a",
+      "native_visual_review": "Face/glasses remain coherent. Broad ragged bright strip and glossy/smeared dark garment remain. Surround darkening does not turn this into clean fabric."
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "native_image_sha256": "3274c01b01a6952e3c55b1f46ae683e7b883e12dbc4defa61be6f058eb68661f",
+      "native_visual_review": "Face remains coherent. White central patch remains partly collar-like, with rough skin blending at the right edge; not a clean quality pass."
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "native_image_sha256": "4c29520e6aa00cb46abd77d319b391419ad79d1079e8c38cd35eed5064ff055d",
+      "native_visual_review": "Face and harsh lighting remain coherent. Bright chin/neck patch persists, without a clearly separated clerical tab."
+    },
+    {
+      "id": "unseen-000",
+      "split": "unseen",
+      "native_image_sha256": "10650b3103b8cb22ad9e1095eb3f72455640d4fc79a9291561b7124a7debbe5a",
+      "native_visual_review": "Face remains coherent. Hat, partial extra person and ordinary neckline remain; ineligible."
+    },
+    {
+      "id": "unseen-001",
+      "split": "unseen",
+      "native_image_sha256": "e4a471310bed694396c7cbf5ff2ba88fdbaefc75445aa66eedc086b99f6c7acc",
+      "native_visual_review": "Face remains coherent. Ordinary shirt neckline remains, no clerical tab."
+    },
+    {
+      "id": "unseen-002",
+      "split": "unseen",
+      "native_image_sha256": "4f9600dcb39a55547528c2fc4930119b2df23a11a7f6ef515ddc1129f6d5f64c",
+      "native_visual_review": "Face remains coherent. Microphone/ambiguous hand-chin detail remains; no clerical collar."
+    },
+    {
+      "id": "unseen-003",
+      "split": "unseen",
+      "native_image_sha256": "f89c04d7ac195314d8ce8a00f7d3a602819ec1be1993740e2300c9a100cd52a3",
+      "native_visual_review": "Face remains coherent. Cap and partial extra person remain; age not established; ineligible."
+    }
+  ]
+}

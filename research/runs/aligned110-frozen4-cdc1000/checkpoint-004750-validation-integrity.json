@@ -1,0 +1,26 @@
+{
+  "completed_utc": "2026-09-21T02:23:16.060294+00:00",
+  "step": 4750,
+  "memory_preflight_free_percent": 52,
+  "device": "cpu",
+  "threads": 1,
+  "interop_threads": 1,
+  "mmap": true,
+  "peak_rss_bytes": 1056243712,
+  "wall_seconds": 1.5521007920615375,
+  "before_sha256": {
+    "research/runs/aligned110-frozen4-cdc1000/resume.pt": "95c3dbb7639cd62acf7b4b79bcbc4abd984eadf46c82346ddf79a47c760ab925",
+    "research/runs/aligned110-frozen4-cdc1000/generator-004750.pt": "ab9371e75519883e9635fcfa12201e31a7c88337f55e395b26926fb34573dfbd",
+    "research/reviews/check_checkpoint.py": "70b1afb37adf923cac44da95d39a00b514e63b431150ace954ee4cc1f6a20f55"
+  },
+  "after_sha256": {
+    "research/runs/aligned110-frozen4-cdc1000/resume.pt": "95c3dbb7639cd62acf7b4b79bcbc4abd984eadf46c82346ddf79a47c760ab925",
+    "research/runs/aligned110-frozen4-cdc1000/generator-004750.pt": "ab9371e75519883e9635fcfa12201e31a7c88337f55e395b26926fb34573dfbd",
+    "research/reviews/check_checkpoint.py": "70b1afb37adf923cac44da95d39a00b514e63b431150ace954ee4cc1f6a20f55"
+  },
+  "artifacts_unchanged": true,
+  "wrapper_sha256": "5782d56857ba920357ae9e9cfe1c531a952a48948bd3cead5b2dd2a81eb6e4eb",
+  "inference_or_training_performed": false,
+  "active_processes_changed": false,
+  "note": "Root reports CDC stopped after step4750; before/after hashes still establish stability only across this validation."
+}

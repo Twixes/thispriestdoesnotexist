@@ -1,0 +1,80 @@
+{
+  "branch": "baseline",
+  "probe_step": 50,
+  "reviewed_unix": 1789956763.7038138,
+  "native_resolution": 1024,
+  "evaluation_sha256": "897bb3bbf66681664ae72da0f56ea5fdf9e1e44c7e76814bdcaa0e2fd8570efc",
+  "all_11_native_gray_pngs_viewed": true,
+  "gray_files_are_RGB_mode": true,
+  "new_broad_face_collapse_observed": false,
+  "production_approved": false,
+  "limitations": "Small fixed sample. Face coherence does not prove identity preservation or distributional diversity; no eligibility sampler.",
+  "rows": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "native_image_sha256": "bbd74773cf26b5b6ea3f268a76e7a518ea0b027bde8dafd13f0d7204ec601ebd",
+      "native_visual_review": "Face coherent; broad white lower-neck patch blends into skin and original folded shirt remains, no clean tab."
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "native_image_sha256": "d648fa081318a184663f518c70778b3d96da5f133a49126b95afaebc7f2f89ad",
+      "native_visual_review": "Face coherent; wide white curved band beneath chin, not a clean rectangular clerical tab."
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "native_image_sha256": "c839073cf94529b8bb77639933cd49333ba13040e93acbe903e330bbecfa2267",
+      "native_visual_review": "Face coherent but severe pitted dark neck texture persists. Preexisting partial second person at left."
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "native_image_sha256": "e9018f1c1b9a65201879e383aef8299bb99d8945d61e736bfdcb5b54957441f3",
+      "native_visual_review": "Held-out face/beard/smile coherent; ordinary shirt edges, no new central white clerical tab."
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "native_image_sha256": "291a48988297960141145f4b8370f1e3bd6d0ea8596c174e614083d9469ae020",
+      "native_visual_review": "Face/glasses coherent; broad ragged white band with glossy smeared dark clothing."
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "native_image_sha256": "99ee471c441b0f3e399960c4dfed7724e48fd14ba48265839b196f6e0effcbf2",
+      "native_visual_review": "Face coherent; central white patch partly collar-like but adjacent rough skin/garment boundary remains ambiguous."
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "native_image_sha256": "a59c4b4e63525fb4e6883dcb8625aee49c0942fdb7bebcac66ac82be67281e33",
+      "native_visual_review": "Face and harsh lighting coherent; bright lower chin merges into small neck patch, not a convincing clerical tab."
+    },
+    {
+      "id": "unseen-000",
+      "split": "unseen",
+      "native_image_sha256": "76b5868b4d25e8d30be98f5ee152ef47e76428ac5b4d61ef03ff4ddec1c3958b",
+      "native_visual_review": "Face coherent; hat and partial extra person persist, no clerical collar; ineligible."
+    },
+    {
+      "id": "unseen-001",
+      "split": "unseen",
+      "native_image_sha256": "51c821d42936d34e347634a6b8794062f6f6aa206bd9987b826953a6b08bd65a",
+      "native_visual_review": "Face coherent, ordinary shirt neckline, no clerical tab."
+    },
+    {
+      "id": "unseen-002",
+      "split": "unseen",
+      "native_image_sha256": "e7071d8aa80010601975309e30d97fc5d03c1a7b22fb4f4ff65dcbcaf44de19f",
+      "native_visual_review": "Face coherent; microphone and ambiguous hand/chin detail persist; no clerical tab."
+    },
+    {
+      "id": "unseen-003",
+      "split": "unseen",
+      "native_image_sha256": "7e19d75820754a312396ec2588efb20c4f0263606f6e529a441887263652171e",
+      "native_visual_review": "Face coherent; cap and partial extra person persist, age not established; ineligible."
+    }
+  ]
+}

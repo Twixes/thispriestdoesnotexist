@@ -1,0 +1,27 @@
+{
+  "reviewer": "root assistant",
+  "native_final_images": [
+    "calibration-original",
+    "030",
+    "028"
+  ],
+  "other_views": "Full11-image baseline050 and variant025 contacts; agent independently reviews all11 native025/050.",
+  "files_sha256": {
+    "baseline/preview-050/contact.png": "4db3337d36087055386e3b5fc25a616cd93f2277815a871ea753e7f23a87cc87",
+    "collar-surround/preview-025/contact.png": "8c8b04993a9cc5e4965712982a71790efee5d70d666509206bd8759acddfce78",
+    "collar-surround/preview-050/calibration-original-gray.png": "35644ac09395e6c6d14aba1777c9a2b8bba741d01a402bd52a2774f0897c0d2c",
+    "collar-surround/preview-050/030-gray.png": "c3f978ee6bbed556a0264489404c53d6874d06c95c3ca9befb594e31e807c2e1",
+    "collar-surround/preview-050/028-gray.png": "048a947f8ea8a3212a9ceda695b48e0ff8ce054abb0a78de9ff8025852bb3a25"
+  },
+  "terminal_exec_session": 12334,
+  "observed_terminal_exit_code": 0,
+  "findings": [
+    "Source facial detail largely preserved in viewed samples.",
+    "Calibration remains a pale skin-textured patch at the throat; contracted white spill is not a cloth collar.",
+    "030 still has severe dark pitted neck texture surrounding a bright patch.",
+    "Heldout028 retains ordinary shirt geometry, with no convincing clerical tab."
+  ],
+  "decision": "Reject both for production; no automatic extension of either pixel-only objective. Await independent next-experiment review to change capacity/objective or coverage meaningfully.",
+  "quality_approved": false,
+  "goal_complete": false
+}

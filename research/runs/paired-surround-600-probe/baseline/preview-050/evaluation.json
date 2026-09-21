@@ -1,0 +1,221 @@
+{
+  "probe_step": 50,
+  "parent_step": 600,
+  "count": 11,
+  "source_compositing": false,
+  "rows": [
+    {
+      "id": "calibration-original",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "calibration-original-rgb.png",
+          "sha256": "c91bf31cd6d682e05e3c9ed6baee5a7d4589bb6502d73026e2629bc52e112e6f"
+        },
+        "gray": {
+          "path": "calibration-original-gray.png",
+          "sha256": "bbd74773cf26b5b6ea3f268a76e7a518ea0b027bde8dafd13f0d7204ec601ebd"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.0180333461612463,
+        "clothing_l1": 0.3317100405693054,
+        "tab_l1": 0.04224957153201103,
+        "rest_l1": 0.34725722670555115,
+        "surround_l1": 0.710666298866272,
+        "remainder_l1": 0.32967960834503174
+      }
+    },
+    {
+      "id": "000",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "000-rgb.png",
+          "sha256": "842482329db27bcee8725c2c59a1e7cc1e612bb14e97c97a7f8564a441a47c15"
+        },
+        "gray": {
+          "path": "000-gray.png",
+          "sha256": "d648fa081318a184663f518c70778b3d96da5f133a49126b95afaebc7f2f89ad"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.016392454504966736,
+        "clothing_l1": 0.15234798192977905,
+        "tab_l1": 0.06412369012832642,
+        "rest_l1": 0.15553081035614014,
+        "surround_l1": 0.9573819041252136,
+        "remainder_l1": 0.13990312814712524
+      }
+    },
+    {
+      "id": "030",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "030-rgb.png",
+          "sha256": "62a8480324af0f13111cb33a98c2dca62c056eed6587e6ebe7053a5aaed0c230"
+        },
+        "gray": {
+          "path": "030-gray.png",
+          "sha256": "c839073cf94529b8bb77639933cd49333ba13040e93acbe903e330bbecfa2267"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.0344463512301445,
+        "clothing_l1": 0.3381017744541168,
+        "tab_l1": 0.0681266337633133,
+        "rest_l1": 0.35677802562713623,
+        "surround_l1": 0.9854300022125244,
+        "remainder_l1": 0.32875895500183105
+      }
+    },
+    {
+      "id": "028",
+      "split": "validation",
+      "outputs": {
+        "rgb": {
+          "path": "028-rgb.png",
+          "sha256": "cdc1608d1e4f7b22fd7f5759d6a7273943dd541b13f257c91af326203e94d1bf"
+        },
+        "gray": {
+          "path": "028-gray.png",
+          "sha256": "e9018f1c1b9a65201879e383aef8299bb99d8945d61e736bfdcb5b54957441f3"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.026300810277462006,
+        "clothing_l1": 0.8379510045051575
+      }
+    },
+    {
+      "id": "b2-055",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "b2-055-rgb.png",
+          "sha256": "47d1a8e88605d8fed81d5d62e6513cf44e028b6081125ac092733013de2d24d5"
+        },
+        "gray": {
+          "path": "b2-055-gray.png",
+          "sha256": "291a48988297960141145f4b8370f1e3bd6d0ea8596c174e614083d9469ae020"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.01668090932071209,
+        "clothing_l1": 0.1633327305316925,
+        "tab_l1": 0.07531299442052841,
+        "rest_l1": 0.16543541848659515,
+        "surround_l1": 0.5836802124977112,
+        "remainder_l1": 0.14972101151943207
+      }
+    },
+    {
+      "id": "b2-051",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "b2-051-rgb.png",
+          "sha256": "5436b3673be89b41e8d4b76e59aad2dcf9d00861f59017812f9174b0f78153d5"
+        },
+        "gray": {
+          "path": "b2-051-gray.png",
+          "sha256": "99ee471c441b0f3e399960c4dfed7724e48fd14ba48265839b196f6e0effcbf2"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.013512490317225456,
+        "clothing_l1": 0.1765121966600418,
+        "tab_l1": 0.03797115013003349,
+        "rest_l1": 0.1845053732395172,
+        "surround_l1": 0.4890146851539612,
+        "remainder_l1": 0.17343445122241974
+      }
+    },
+    {
+      "id": "b2-020",
+      "split": "train",
+      "outputs": {
+        "rgb": {
+          "path": "b2-020-rgb.png",
+          "sha256": "b3a0b096e75d7900bcf68625886e118f0ec206384592a192df113d253680920e"
+        },
+        "gray": {
+          "path": "b2-020-gray.png",
+          "sha256": "a59c4b4e63525fb4e6883dcb8625aee49c0942fdb7bebcac66ac82be67281e33"
+        }
+      },
+      "metrics_minus1_to1": {
+        "protected_l1": 0.03191858530044556,
+        "clothing_l1": 0.05515320226550102,
+        "tab_l1": 0.0779995396733284,
+        "rest_l1": 0.055022478103637695,
+        "surround_l1": 0.34927600622177124,
+        "remainder_l1": 0.04811650887131691
+      }
+    },
+    {
+      "id": "unseen-000",
+      "split": "unseen",
+      "outputs": {
+        "rgb": {
+          "path": "unseen-000-rgb.png",
+          "sha256": "ade11a0de5d41bf3977bc425c2c8fbb03e75af513978a0ee87041fb1cf9279c3"
+        },
+        "gray": {
+          "path": "unseen-000-gray.png",
+          "sha256": "76b5868b4d25e8d30be98f5ee152ef47e76428ac5b4d61ef03ff4ddec1c3958b"
+        }
+      },
+      "metrics_minus1_to1": {}
+    },
+    {
+      "id": "unseen-001",
+      "split": "unseen",
+      "outputs": {
+        "rgb": {
+          "path": "unseen-001-rgb.png",
+          "sha256": "c2f4df902db5ae43f29628b4c9442c8aaedcffd9adfe3cd8c0a9f866271dc137"
+        },
+        "gray": {
+          "path": "unseen-001-gray.png",
+          "sha256": "51c821d42936d34e347634a6b8794062f6f6aa206bd9987b826953a6b08bd65a"
+        }
+      },
+      "metrics_minus1_to1": {}
+    },
+    {
+      "id": "unseen-002",
+      "split": "unseen",
+      "outputs": {
+        "rgb": {
+          "path": "unseen-002-rgb.png",
+          "sha256": "c46c52406c86503cf9cd69d95e72b4221a6f0c5ff37cc60050a29af7587ea5f2"
+        },
+        "gray": {
+          "path": "unseen-002-gray.png",
+          "sha256": "e7071d8aa80010601975309e30d97fc5d03c1a7b22fb4f4ff65dcbcaf44de19f"
+        }
+      },
+      "metrics_minus1_to1": {}
+    },
+    {
+      "id": "unseen-003",
+      "split": "unseen",
+      "outputs": {
+        "rgb": {
+          "path": "unseen-003-rgb.png",
+          "sha256": "e55d026cca996fa994877925a48cb04931696c8f451bd410e37518c3a365f943"
+        },
+        "gray": {
+          "path": "unseen-003-gray.png",
+          "sha256": "7e19d75820754a312396ec2588efb20c4f0263606f6e529a441887263652171e"
+        }
+      },
+      "metrics_minus1_to1": {}
+    }
+  ],
+  "state_sha256": "4c356959556ea6ceb3072437ced50ef1f4653154c201329b5da703d45aa2c564",
+  "seconds": 8.566867833957076,
+  "rng_restored": true
+}

@@ -1,0 +1,1354 @@
+{
+  "production_approved": false,
+  "model_inference_performed": false,
+  "launch_exit_code": 0,
+  "mechanics_sha256": "f7f14102a1345a1872942224e7d7cda7ab4cc07281ba39f8df0e8646fdc83f0a",
+  "all_50_draws_equal": true,
+  "same_initial_student": true,
+  "step0_rows_and_images_exact": true,
+  "full_checkpoint_hashes": [
+    {
+      "path": "baseline/checkpoint-000.pt",
+      "sha256": "22f64eb98556196b31c7da1bc2cccb82c84e5f07a45d5b810482405b924efb62",
+      "bytes": 203597731,
+      "student_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4"
+    },
+    {
+      "path": "baseline/checkpoint-025.pt",
+      "sha256": "f6c3c06d236b83b60051041f3077f3d5b674c5dee7051e2634ecb6280a977dec",
+      "bytes": 203601059,
+      "student_sha256": "1a3393fb801c0ff735fe0f33b0f80ad19ba2bae936f88f94636642f578e415dc"
+    },
+    {
+      "path": "baseline/checkpoint-050.pt",
+      "sha256": "08e634a4581ba84ad4762e3f2f497ea8aba89ac165315b09c8faf9a16548183d",
+      "bytes": 203604003,
+      "student_sha256": "4c356959556ea6ceb3072437ced50ef1f4653154c201329b5da703d45aa2c564"
+    },
+    {
+      "path": "collar-surround/checkpoint-000.pt",
+      "sha256": "d0ece679ca73c3897506bc52e90436f7f59f3aa17025febb8110f660fe61c0be",
+      "bytes": 203597795,
+      "student_sha256": "52e214af061c37ecf799667f922100f60e7332b1e2eff09cf0807742fbf216a4"
+    },
+    {
+      "path": "collar-surround/checkpoint-025.pt",
+      "sha256": "a47c5dc4ecefcb995e36703371a493b4c8bdddeaed70fc85db95607546631eb1",
+      "bytes": 203601123,
+      "student_sha256": "d8c46b0c02a572bcb2d00c9a127c4066742c46486639a83c09cc6128a1046893"
+    },
+    {
+      "path": "collar-surround/checkpoint-050.pt",
+      "sha256": "2d04a8906ea18e69e812261704eb8f7190e8c4fddea1e536c60007a84a2a8d2d",
+      "bytes": 203604067,
+      "student_sha256": "1d54d6a9c16bbb1d49d6ade1397164e74d0aee379d1e35289d26b475939caa0e"
+    }
+  ],
+  "verified_native_outputs": [
+    {
+      "path": "baseline/preview-000/calibration-original-rgb.png",
+      "sha256": "fef6196ba42c57b9317cb2e9043f3d92c6c8b827cc8479fb4afc587739849183"
+    },
+    {
+      "path": "baseline/preview-000/calibration-original-gray.png",
+      "sha256": "61be9e9c8e9049a2411bf1278a6cfb75cb7fd4ceeb60719207a7b46d6d55d285"
+    },
+    {
+      "path": "baseline/preview-000/000-rgb.png",
+      "sha256": "20c74dd57c776ee010b3d1c09286dc07a752a8149fb8ae1bd758ccb8c9c89e29"
+    },
+    {
+      "path": "baseline/preview-000/000-gray.png",
+      "sha256": "ef858889a17347ee4768a788857477944c923970a2d8e5356c6b6817457aa0c3"
+    },
+    {
+      "path": "baseline/preview-000/030-rgb.png",
+      "sha256": "3660bf0e104d14bd8ece36d214087cfad775e34f8451b66bf2c891c73fccd23e"
+    },
+    {
+      "path": "baseline/preview-000/030-gray.png",
+      "sha256": "231125c3ffd917471c17c30af402d889f55edcf2fd38f12a68fbfccd884c87a8"
+    },
+    {
+      "path": "baseline/preview-000/028-rgb.png",
+      "sha256": "bf07ee3f4b5b2d24210f470f37cd43489b3a3899f28313c45300611023aa0ad4"
+    },
+    {
+      "path": "baseline/preview-000/028-gray.png",
+      "sha256": "9e05e93ec574355129293d152db06746c8bb443744d24035be7f11bba8a52b74"
+    },
+    {
+      "path": "baseline/preview-000/b2-055-rgb.png",
+      "sha256": "1b0b41751bc5522c2f3e8b5d98a9a634c7f6625700250391321ad6792f6d5622"
+    },
+    {
+      "path": "baseline/preview-000/b2-055-gray.png",
+      "sha256": "b6256193b8e16d24d5bef077325db2626062527e57d8c687bcee10deabbded45"
+    },
+    {
+      "path": "baseline/preview-000/b2-051-rgb.png",
+      "sha256": "4d5aeff49f98c70d6c1cb35602c3f1fee466d1f501cd61ab18fbfb87542210f4"
+    },
+    {
+      "path": "baseline/preview-000/b2-051-gray.png",
+      "sha256": "ce584d2f5019c7a457c78eacbbd238e5f92ed93dcb7f192302860fe24dd86df3"
+    },
+    {
+      "path": "baseline/preview-000/b2-020-rgb.png",
+      "sha256": "b9129b312313d62f84522b4d9818f257554d9942bcb975276c19171bc74f6f40"
+    },
+    {
+      "path": "baseline/preview-000/b2-020-gray.png",
+      "sha256": "ae9d6dda107437aba86226a314ec75dc7219e6c03f60566a9bc710c14886a84b"
+    },
+    {
+      "path": "baseline/preview-000/unseen-000-rgb.png",
+      "sha256": "0ef5c6726b6378aac032a6e99a3314ecfd7abf855cab2e7a3dc3099e8e4e0aaf"
+    },
+    {
+      "path": "baseline/preview-000/unseen-000-gray.png",
+      "sha256": "90dc6aba1c85180f4de03be74389132364d8cfc5c9b191986176a096eca649b4"
+    },
+    {
+      "path": "baseline/preview-000/unseen-001-rgb.png",
+      "sha256": "fd4ef9448c489aee413048d1fed040ffd1f59015fd3eb0317702c72a9a026f16"
+    },
+    {
+      "path": "baseline/preview-000/unseen-001-gray.png",
+      "sha256": "04d05d3c64a0735226969ab977ed0a786a3e70aa71f1fc55a29ee91b9944191e"
+    },
+    {
+      "path": "baseline/preview-000/unseen-002-rgb.png",
+      "sha256": "d029c8d7f3987414a0842b3615b52e33cff96867033214c35a87a40983fb35a3"
+    },
+    {
+      "path": "baseline/preview-000/unseen-002-gray.png",
+      "sha256": "c386cbc530b5df24d67dd9b18ef840e29bbe24afcebce85cccce5ecf8db6b45e"
+    },
+    {
+      "path": "baseline/preview-000/unseen-003-rgb.png",
+      "sha256": "1b773f20b7af07486b962fce878a8fb44f6cdc42f7351cdda513d346c0133050"
+    },
+    {
+      "path": "baseline/preview-000/unseen-003-gray.png",
+      "sha256": "ad46e12bb7a1ffe8877ad1895978b35953a0e17e43de0ae1c6a6d4b11606b2e1"
+    },
+    {
+      "path": "baseline/preview-025/calibration-original-rgb.png",
+      "sha256": "e2c130a0833016372e78efdfefeef720b338520c1e4f73e76b027b0ad5ce0d46"
+    },
+    {
+      "path": "baseline/preview-025/calibration-original-gray.png",
+      "sha256": "fbbeaca4791143b9f74eb3ee4e767751676f4f6f091bc0cbde2e85f79636056e"
+    },
+    {
+      "path": "baseline/preview-025/000-rgb.png",
+      "sha256": "8d2243d1a28228e03897a95ffddb07cc4bc875331cabb33a20eb722d66411e1b"
+    },
+    {
+      "path": "baseline/preview-025/000-gray.png",
+      "sha256": "81a4592375c02cfbe56b5176b0a91feaec3fee2511754d53619f67eee9df57eb"
+    },
+    {
+      "path": "baseline/preview-025/030-rgb.png",
+      "sha256": "24d0005bef693c6d81b72d226a2c6584dcb1e21897df351a6e1cf07719796073"
+    },
+    {
+      "path": "baseline/preview-025/030-gray.png",
+      "sha256": "8322d1cba9fcacb67b7adc1ad70049d330aae7b1b1f854bcfe6a0b7963b7bd2e"
+    },
+    {
+      "path": "baseline/preview-025/028-rgb.png",
+      "sha256": "29e973c98f29d6fe00a5d44ce983c5be97be8997d840147603c8f5d37cdeeee6"
+    },
+    {
+      "path": "baseline/preview-025/028-gray.png",
+      "sha256": "7a9315e27d143554ab3c73b66c44ce8a20adcaea6c1acca24d377a40046e9e1f"
+    },
+    {
+      "path": "baseline/preview-025/b2-055-rgb.png",
+      "sha256": "3695dbafe8425f94881647ad95e9988cd9256db8837ca8cd9292894dffa42c08"
+    },
+    {
+      "path": "baseline/preview-025/b2-055-gray.png",
+      "sha256": "0ef2c08ada5b2ec6a93764eb41eb8d21c9d5ef26217fadaeaef5709ed9113fa7"
+    },
+    {
+      "path": "baseline/preview-025/b2-051-rgb.png",
+      "sha256": "b10d89a4335cc9b963de1472dc20439d37e86e38f27d3c6c1b1b9817ef3da5fd"
+    },
+    {
+      "path": "baseline/preview-025/b2-051-gray.png",
+      "sha256": "7e1abdd44602f28f1968aeae0a82a4d8a75544d165fbcad36186550cc276d0dd"
+    },
+    {
+      "path": "baseline/preview-025/b2-020-rgb.png",
+      "sha256": "6d648738b6c1bcb37a88eb50f5806226cc96f8ed41ad442930ec5297103e3ff3"
+    },
+    {
+      "path": "baseline/preview-025/b2-020-gray.png",
+      "sha256": "86efc44fb031396730ae49b326ab4604ab484ef8193cecac070e4a8a3fa7850c"
+    },
+    {
+      "path": "baseline/preview-025/unseen-000-rgb.png",
+      "sha256": "fb8c5aded06d0323917ba1097f09baa519efdba9d38104ed1f2aa4304c545d68"
+    },
+    {
+      "path": "baseline/preview-025/unseen-000-gray.png",
+      "sha256": "3e44d1acf5b1bf492173726c58ed0b3774692a2b04b68861c1c490eb30db1d09"
+    },
+    {
+      "path": "baseline/preview-025/unseen-001-rgb.png",
+      "sha256": "c53f01aa8a7c6044308ce31043b2f84dd43aa9f55b87951678c96c1d393b0800"
+    },
+    {
+      "path": "baseline/preview-025/unseen-001-gray.png",
+      "sha256": "f648b28f52070ac267642831a0a2ce8cb814dc46ee3017cb763fb95a584490d4"
+    },
+    {
+      "path": "baseline/preview-025/unseen-002-rgb.png",
+      "sha256": "038598a0548e4cc26bf3402b07cd52a6fc8c6e43cebdf50b1cc430917aec4413"
+    },
+    {
+      "path": "baseline/preview-025/unseen-002-gray.png",
+      "sha256": "a72b23a478b2200feaee7dc28c186fd2bbf14cf1c93ead44b1a217df176a3f14"
+    },
+    {
+      "path": "baseline/preview-025/unseen-003-rgb.png",
+      "sha256": "e12a0a8bac629e04c4869b4265f284d8961a8b63506c1af20b1271c58662e922"
+    },
+    {
+      "path": "baseline/preview-025/unseen-003-gray.png",
+      "sha256": "208fea1f3c72641b00afe15c2a98f3ab4cd02767b69953bccf458b13183acacc"
+    },
+    {
+      "path": "baseline/preview-050/calibration-original-rgb.png",
+      "sha256": "c91bf31cd6d682e05e3c9ed6baee5a7d4589bb6502d73026e2629bc52e112e6f"
+    },
+    {
+      "path": "baseline/preview-050/calibration-original-gray.png",
+      "sha256": "bbd74773cf26b5b6ea3f268a76e7a518ea0b027bde8dafd13f0d7204ec601ebd"
+    },
+    {
+      "path": "baseline/preview-050/000-rgb.png",
+      "sha256": "842482329db27bcee8725c2c59a1e7cc1e612bb14e97c97a7f8564a441a47c15"
+    },
+    {
+      "path": "baseline/preview-050/000-gray.png",
+      "sha256": "d648fa081318a184663f518c70778b3d96da5f133a49126b95afaebc7f2f89ad"
+    },
+    {
+      "path": "baseline/preview-050/030-rgb.png",
+      "sha256": "62a8480324af0f13111cb33a98c2dca62c056eed6587e6ebe7053a5aaed0c230"
+    },
+    {
+      "path": "baseline/preview-050/030-gray.png",
+      "sha256": "c839073cf94529b8bb77639933cd49333ba13040e93acbe903e330bbecfa2267"
+    },
+    {
+      "path": "baseline/preview-050/028-rgb.png",
+      "sha256": "cdc1608d1e4f7b22fd7f5759d6a7273943dd541b13f257c91af326203e94d1bf"
+    },
+    {
+      "path": "baseline/preview-050/028-gray.png",
+      "sha256": "e9018f1c1b9a65201879e383aef8299bb99d8945d61e736bfdcb5b54957441f3"
+    },
+    {
+      "path": "baseline/preview-050/b2-055-rgb.png",
+      "sha256": "47d1a8e88605d8fed81d5d62e6513cf44e028b6081125ac092733013de2d24d5"
+    },
+    {
+      "path": "baseline/preview-050/b2-055-gray.png",
+      "sha256": "291a48988297960141145f4b8370f1e3bd6d0ea8596c174e614083d9469ae020"
+    },
+    {
+      "path": "baseline/preview-050/b2-051-rgb.png",
+      "sha256": "5436b3673be89b41e8d4b76e59aad2dcf9d00861f59017812f9174b0f78153d5"
+    },
+    {
+      "path": "baseline/preview-050/b2-051-gray.png",
+      "sha256": "99ee471c441b0f3e399960c4dfed7724e48fd14ba48265839b196f6e0effcbf2"
+    },
+    {
+      "path": "baseline/preview-050/b2-020-rgb.png",
+      "sha256": "b3a0b096e75d7900bcf68625886e118f0ec206384592a192df113d253680920e"
+    },
+    {
+      "path": "baseline/preview-050/b2-020-gray.png",
+      "sha256": "a59c4b4e63525fb4e6883dcb8625aee49c0942fdb7bebcac66ac82be67281e33"
+    },
+    {
+      "path": "baseline/preview-050/unseen-000-rgb.png",
+      "sha256": "ade11a0de5d41bf3977bc425c2c8fbb03e75af513978a0ee87041fb1cf9279c3"
+    },
+    {
+      "path": "baseline/preview-050/unseen-000-gray.png",
+      "sha256": "76b5868b4d25e8d30be98f5ee152ef47e76428ac5b4d61ef03ff4ddec1c3958b"
+    },
+    {
+      "path": "baseline/preview-050/unseen-001-rgb.png",
+      "sha256": "c2f4df902db5ae43f29628b4c9442c8aaedcffd9adfe3cd8c0a9f866271dc137"
+    },
+    {
+      "path": "baseline/preview-050/unseen-001-gray.png",
+      "sha256": "51c821d42936d34e347634a6b8794062f6f6aa206bd9987b826953a6b08bd65a"
+    },
+    {
+      "path": "baseline/preview-050/unseen-002-rgb.png",
+      "sha256": "c46c52406c86503cf9cd69d95e72b4221a6f0c5ff37cc60050a29af7587ea5f2"
+    },
+    {
+      "path": "baseline/preview-050/unseen-002-gray.png",
+      "sha256": "e7071d8aa80010601975309e30d97fc5d03c1a7b22fb4f4ff65dcbcaf44de19f"
+    },
+    {
+      "path": "baseline/preview-050/unseen-003-rgb.png",
+      "sha256": "e55d026cca996fa994877925a48cb04931696c8f451bd410e37518c3a365f943"
+    },
+    {
+      "path": "baseline/preview-050/unseen-003-gray.png",
+      "sha256": "7e19d75820754a312396ec2588efb20c4f0263606f6e529a441887263652171e"
+    },
+    {
+      "path": "collar-surround/preview-000/calibration-original-rgb.png",
+      "sha256": "fef6196ba42c57b9317cb2e9043f3d92c6c8b827cc8479fb4afc587739849183"
+    },
+    {
+      "path": "collar-surround/preview-000/calibration-original-gray.png",
+      "sha256": "61be9e9c8e9049a2411bf1278a6cfb75cb7fd4ceeb60719207a7b46d6d55d285"
+    },
+    {
+      "path": "collar-surround/preview-000/000-rgb.png",
+      "sha256": "20c74dd57c776ee010b3d1c09286dc07a752a8149fb8ae1bd758ccb8c9c89e29"
+    },
+    {
+      "path": "collar-surround/preview-000/000-gray.png",
+      "sha256": "ef858889a17347ee4768a788857477944c923970a2d8e5356c6b6817457aa0c3"
+    },
+    {
+      "path": "collar-surround/preview-000/030-rgb.png",
+      "sha256": "3660bf0e104d14bd8ece36d214087cfad775e34f8451b66bf2c891c73fccd23e"
+    },
+    {
+      "path": "collar-surround/preview-000/030-gray.png",
+      "sha256": "231125c3ffd917471c17c30af402d889f55edcf2fd38f12a68fbfccd884c87a8"
+    },
+    {
+      "path": "collar-surround/preview-000/028-rgb.png",
+      "sha256": "bf07ee3f4b5b2d24210f470f37cd43489b3a3899f28313c45300611023aa0ad4"
+    },
+    {
+      "path": "collar-surround/preview-000/028-gray.png",
+      "sha256": "9e05e93ec574355129293d152db06746c8bb443744d24035be7f11bba8a52b74"
+    },
+    {
+      "path": "collar-surround/preview-000/b2-055-rgb.png",
+      "sha256": "1b0b41751bc5522c2f3e8b5d98a9a634c7f6625700250391321ad6792f6d5622"
+    },
+    {
+      "path": "collar-surround/preview-000/b2-055-gray.png",
+      "sha256": "b6256193b8e16d24d5bef077325db2626062527e57d8c687bcee10deabbded45"
+    },
+    {
+      "path": "collar-surround/preview-000/b2-051-rgb.png",
+      "sha256": "4d5aeff49f98c70d6c1cb35602c3f1fee466d1f501cd61ab18fbfb87542210f4"
+    },
+    {
+      "path": "collar-surround/preview-000/b2-051-gray.png",
+      "sha256": "ce584d2f5019c7a457c78eacbbd238e5f92ed93dcb7f192302860fe24dd86df3"
+    },
+    {
+      "path": "collar-surround/preview-000/b2-020-rgb.png",
+      "sha256": "b9129b312313d62f84522b4d9818f257554d9942bcb975276c19171bc74f6f40"
+    },
+    {
+      "path": "collar-surround/preview-000/b2-020-gray.png",
+      "sha256": "ae9d6dda107437aba86226a314ec75dc7219e6c03f60566a9bc710c14886a84b"
+    },
+    {
+      "path": "collar-surround/preview-000/unseen-000-rgb.png",
+      "sha256": "0ef5c6726b6378aac032a6e99a3314ecfd7abf855cab2e7a3dc3099e8e4e0aaf"
+    },
+    {
+      "path": "collar-surround/preview-000/unseen-000-gray.png",
+      "sha256": "90dc6aba1c85180f4de03be74389132364d8cfc5c9b191986176a096eca649b4"
+    },
+    {
+      "path": "collar-surround/preview-000/unseen-001-rgb.png",
+      "sha256": "fd4ef9448c489aee413048d1fed040ffd1f59015fd3eb0317702c72a9a026f16"
+    },
+    {
+      "path": "collar-surround/preview-000/unseen-001-gray.png",
+      "sha256": "04d05d3c64a0735226969ab977ed0a786a3e70aa71f1fc55a29ee91b9944191e"
+    },
+    {
+      "path": "collar-surround/preview-000/unseen-002-rgb.png",
+      "sha256": "d029c8d7f3987414a0842b3615b52e33cff96867033214c35a87a40983fb35a3"
+    },
+    {
+      "path": "collar-surround/preview-000/unseen-002-gray.png",
+      "sha256": "c386cbc530b5df24d67dd9b18ef840e29bbe24afcebce85cccce5ecf8db6b45e"
+    },
+    {
+      "path": "collar-surround/preview-000/unseen-003-rgb.png",
+      "sha256": "1b773f20b7af07486b962fce878a8fb44f6cdc42f7351cdda513d346c0133050"
+    },
+    {
+      "path": "collar-surround/preview-000/unseen-003-gray.png",
+      "sha256": "ad46e12bb7a1ffe8877ad1895978b35953a0e17e43de0ae1c6a6d4b11606b2e1"
+    },
+    {
+      "path": "collar-surround/preview-025/calibration-original-rgb.png",
+      "sha256": "d2aad1f53f1b9d8b47febb356c8d8ac7edd37f95d8e98a0b9053d9864c57afd8"
+    },
+    {
+      "path": "collar-surround/preview-025/calibration-original-gray.png",
+      "sha256": "bdb03ac13a00688b8613986bde802eba5b50581edcf0ba59eb92ce64afb47362"
+    },
+    {
+      "path": "collar-surround/preview-025/000-rgb.png",
+      "sha256": "1696f34e40d8345eda4043341ba18046400adf4562f3c051a26de6ca4736a2c9"
+    },
+    {
+      "path": "collar-surround/preview-025/000-gray.png",
+      "sha256": "4b1e584ce5fec55514318e0417e90f256eca91faecc40c29887b7b4fa7624acb"
+    },
+    {
+      "path": "collar-surround/preview-025/030-rgb.png",
+      "sha256": "21230aeeedf25d5ebea61f973c2e935590af1a759a98a95aa44b359452c97788"
+    },
+    {
+      "path": "collar-surround/preview-025/030-gray.png",
+      "sha256": "d62371762ffd4a108c9f28d4546e35057a5906299ddaadb85e197bfa6ece3830"
+    },
+    {
+      "path": "collar-surround/preview-025/028-rgb.png",
+      "sha256": "762ba84551147a097f5bab715a12cbbffb6f1957b46853a1094856fd0c5b4b32"
+    },
+    {
+      "path": "collar-surround/preview-025/028-gray.png",
+      "sha256": "a1b9353bbde0d7e8d5aa8bb439c92e37e23484b9b3c6f51fe4b6509e762d2711"
+    },
+    {
+      "path": "collar-surround/preview-025/b2-055-rgb.png",
+      "sha256": "1620a96321dd0336bdaa9111c5497b27343aaafbf63f9a18fce7f2b64bb28405"
+    },
+    {
+      "path": "collar-surround/preview-025/b2-055-gray.png",
+      "sha256": "4467fcc8bd647887407f791a168eaba85697f56d110d0dcc446cd4ef36c503a5"
+    },
+    {
+      "path": "collar-surround/preview-025/b2-051-rgb.png",
+      "sha256": "8f7a59839a2aff2c3a09dd44802c7fad6f70af3fffedb449a14f6d5c4082a00e"
+    },
+    {
+      "path": "collar-surround/preview-025/b2-051-gray.png",
+      "sha256": "5515e0db658ae9b314492e89085fee1858c687e6aae26040596f81b1b68aabc0"
+    },
+    {
+      "path": "collar-surround/preview-025/b2-020-rgb.png",
+      "sha256": "dd2e4a8a700392da7cfd36286788a326ea257b7fc7406c5c31b19d0d3faa31fe"
+    },
+    {
+      "path": "collar-surround/preview-025/b2-020-gray.png",
+      "sha256": "1766f4325016aa596fedcd681ab162429c3796ae3c8de1468865e885c6365237"
+    },
+    {
+      "path": "collar-surround/preview-025/unseen-000-rgb.png",
+      "sha256": "529fbbe89cfd9b586bb817c66e4fdd4432974c9a3432d75f9126b0bd78cb7390"
+    },
+    {
+      "path": "collar-surround/preview-025/unseen-000-gray.png",
+      "sha256": "70f00308c74047e6c9fa2cc4a4079686f3d704292dc22e5e3cb9c993445ca35b"
+    },
+    {
+      "path": "collar-surround/preview-025/unseen-001-rgb.png",
+      "sha256": "3774135d0642a50ecfab129401e55ae5bafc83596769d6de9bcaa5e4b7c3a609"
+    },
+    {
+      "path": "collar-surround/preview-025/unseen-001-gray.png",
+      "sha256": "2dfc7ab2aec4d495271df2b0e5078685b50ea99ab3abc6b2627685174dc66ec6"
+    },
+    {
+      "path": "collar-surround/preview-025/unseen-002-rgb.png",
+      "sha256": "bb3fe39bfa004a2ec8e8996f446d1048c63f989808759afeb4baae2b1982fd06"
+    },
+    {
+      "path": "collar-surround/preview-025/unseen-002-gray.png",
+      "sha256": "52a46d6123e1eb6b16054a2fba8d7c4f5e8350a161bb0678b756dab228ca0276"
+    },
+    {
+      "path": "collar-surround/preview-025/unseen-003-rgb.png",
+      "sha256": "2538a430d84743f8c763a9bfabf8c7c0cb2396880c15d8688f0c8b04a8bd4967"
+    },
+    {
+      "path": "collar-surround/preview-025/unseen-003-gray.png",
+      "sha256": "11dabd38b198231fa16444ec9e1c34aa168de754591e99fc6ec3fcfdc5941b96"
+    },
+    {
+      "path": "collar-surround/preview-050/calibration-original-rgb.png",
+      "sha256": "dbcfbaa620fa54b2ee3436b0fce46689f60b3f45d8329cd97e03a7f2a32401c2"
+    },
+    {
+      "path": "collar-surround/preview-050/calibration-original-gray.png",
+      "sha256": "35644ac09395e6c6d14aba1777c9a2b8bba741d01a402bd52a2774f0897c0d2c"
+    },
+    {
+      "path": "collar-surround/preview-050/000-rgb.png",
+      "sha256": "48e0ffe0c04d2eee689242e39d92015b9e33d8664900ffb4633d9b36f698ab4a"
+    },
+    {
+      "path": "collar-surround/preview-050/000-gray.png",
+      "sha256": "50f05922f4cd0bc301ae653571d9cb1adcac455af4cdd0aff29d1514ad11abdf"
+    },
+    {
+      "path": "collar-surround/preview-050/030-rgb.png",
+      "sha256": "8c57c5c916408def4ed60cf03c54e3ff57f1966eebb7821596d7510cc38da0ff"
+    },
+    {
+      "path": "collar-surround/preview-050/030-gray.png",
+      "sha256": "c3f978ee6bbed556a0264489404c53d6874d06c95c3ca9befb594e31e807c2e1"
+    },
+    {
+      "path": "collar-surround/preview-050/028-rgb.png",
+      "sha256": "fe175e6e38d643cd8d450c58222723f0ced1cc0688133e861ae940038a451178"
+    },
+    {
+      "path": "collar-surround/preview-050/028-gray.png",
+      "sha256": "048a947f8ea8a3212a9ceda695b48e0ff8ce054abb0a78de9ff8025852bb3a25"
+    },
+    {
+      "path": "collar-surround/preview-050/b2-055-rgb.png",
+      "sha256": "78e5e7ffa9f91879e1381c6cc08464a4d947a0903fcbbb82f83ca933f8317803"
+    },
+    {
+      "path": "collar-surround/preview-050/b2-055-gray.png",
+      "sha256": "e7a056b8d50127197b000afc98bd8b46349e8ea21bc5cbddb312555f97b89e1a"
+    },
+    {
+      "path": "collar-surround/preview-050/b2-051-rgb.png",
+      "sha256": "fb7a2ef995a19b8208a883c27dc71055c85ec66ead23346b8cf5ec669719993c"
+    },
+    {
+      "path": "collar-surround/preview-050/b2-051-gray.png",
+      "sha256": "3274c01b01a6952e3c55b1f46ae683e7b883e12dbc4defa61be6f058eb68661f"
+    },
+    {
+      "path": "collar-surround/preview-050/b2-020-rgb.png",
+      "sha256": "f05e20eb05bdf02914f8544488dc91c4947841e08fcac2860e180145a8b4860f"
+    },
+    {
+      "path": "collar-surround/preview-050/b2-020-gray.png",
+      "sha256": "4c29520e6aa00cb46abd77d319b391419ad79d1079e8c38cd35eed5064ff055d"
+    },
+    {
+      "path": "collar-surround/preview-050/unseen-000-rgb.png",
+      "sha256": "8b2a726074207b8f399b68435072d4f7cea2a2908040a41c3a3467729543dfa1"
+    },
+    {
+      "path": "collar-surround/preview-050/unseen-000-gray.png",
+      "sha256": "10650b3103b8cb22ad9e1095eb3f72455640d4fc79a9291561b7124a7debbe5a"
+    },
+    {
+      "path": "collar-surround/preview-050/unseen-001-rgb.png",
+      "sha256": "f1882823c3068e823eec9eac41ce5df2b46286745703813fa5664a709ea69284"
+    },
+    {
+      "path": "collar-surround/preview-050/unseen-001-gray.png",
+      "sha256": "e4a471310bed694396c7cbf5ff2ba88fdbaefc75445aa66eedc086b99f6c7acc"
+    },
+    {
+      "path": "collar-surround/preview-050/unseen-002-rgb.png",
+      "sha256": "8b1629a2e2ac8e0069c5f5b32dbce8a32146637f9345e40ab7513f34cb8451e8"
+    },
+    {
+      "path": "collar-surround/preview-050/unseen-002-gray.png",
+      "sha256": "4f9600dcb39a55547528c2fc4930119b2df23a11a7f6ef515ddc1129f6d5f64c"
+    },
+    {
+      "path": "collar-surround/preview-050/unseen-003-rgb.png",
+      "sha256": "fa8627f92f80ea7fc4b1f54353b151df064f17803122e29da0be3b053102ab7c"
+    },
+    {
+      "path": "collar-surround/preview-050/unseen-003-gray.png",
+      "sha256": "f89c04d7ac195314d8ce8a00f7d3a602819ec1be1993740e2300c9a100cd52a3"
+    }
+  ],
+  "summaries": [
+    {
+      "branch": "baseline",
+      "probe_step": 0,
+      "train_count": 6,
+      "train_mean_minus1_to1": {
+        "tab_l1": 0.0629787277430296,
+        "surround_l1": 0.7047751049200693,
+        "remainder_l1": 0.22065257405241331,
+        "protected_l1": 0.021238446701318026,
+        "rest_l1": 0.23640271400411925,
+        "clothing_l1": 0.2273984414835771
+      },
+      "heldout_028_minus1_to1": {
+        "protected_l1": 0.026926875114440918,
+        "clothing_l1": 0.8494784832000732
+      }
+    },
+    {
+      "branch": "baseline",
+      "probe_step": 25,
+      "train_count": 6,
+      "train_mean_minus1_to1": {
+        "tab_l1": 0.06027510575950146,
+        "surround_l1": 0.6942088901996613,
+        "remainder_l1": 0.20729870162904263,
+        "protected_l1": 0.02154273462171356,
+        "rest_l1": 0.22318808237711588,
+        "clothing_l1": 0.2146897284934918
+      },
+      "heldout_028_minus1_to1": {
+        "protected_l1": 0.025546936318278313,
+        "clothing_l1": 0.8461058735847473
+      }
+    },
+    {
+      "branch": "baseline",
+      "probe_step": 50,
+      "train_count": 6,
+      "train_mean_minus1_to1": {
+        "tab_l1": 0.06096392994125684,
+        "surround_l1": 0.6792415181795756,
+        "remainder_l1": 0.19493561051785946,
+        "protected_l1": 0.021830689472456772,
+        "rest_l1": 0.21075488875309625,
+        "clothing_l1": 0.20285965440173945
+      },
+      "heldout_028_minus1_to1": {
+        "protected_l1": 0.026300810277462006,
+        "clothing_l1": 0.8379510045051575
+      }
+    },
+    {
+      "branch": "collar-surround",
+      "probe_step": 0,
+      "train_count": 6,
+      "train_mean_minus1_to1": {
+        "tab_l1": 0.0629787277430296,
+        "surround_l1": 0.7047751049200693,
+        "remainder_l1": 0.22065257405241331,
+        "protected_l1": 0.021238446701318026,
+        "rest_l1": 0.23640271400411925,
+        "clothing_l1": 0.2273984414835771
+      },
+      "heldout_028_minus1_to1": {
+        "protected_l1": 0.026926875114440918,
+        "clothing_l1": 0.8494784832000732
+      }
+    },
+    {
+      "branch": "collar-surround",
+      "probe_step": 25,
+      "train_count": 6,
+      "train_mean_minus1_to1": {
+        "tab_l1": 0.12640307222803435,
+        "surround_l1": 0.5173699607451757,
+        "remainder_l1": 0.19375225280721983,
+        "protected_l1": 0.02329726315413912,
+        "rest_l1": 0.20342369501789412,
+        "clothing_l1": 0.19901261975367865
+      },
+      "heldout_028_minus1_to1": {
+        "protected_l1": 0.026785526424646378,
+        "clothing_l1": 0.8157402873039246
+      }
+    },
+    {
+      "branch": "collar-surround",
+      "probe_step": 50,
+      "train_count": 6,
+      "train_mean_minus1_to1": {
+        "tab_l1": 0.11910518941779931,
+        "surround_l1": 0.4052979126572609,
+        "remainder_l1": 0.1812816628565391,
+        "protected_l1": 0.024092720355838537,
+        "rest_l1": 0.18739323566357294,
+        "clothing_l1": 0.18338820772866407
+      },
+      "heldout_028_minus1_to1": {
+        "protected_l1": 0.02790546976029873,
+        "clothing_l1": 0.7877892255783081
+      }
+    }
+  ],
+  "per_image": [
+    {
+      "step": 0,
+      "id": "calibration-original",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.016700616106390953,
+        "clothing_l1": 0.3958244323730469,
+        "tab_l1": 0.05253678187727928,
+        "rest_l1": 0.41426268219947815,
+        "surround_l1": 0.7535917162895203,
+        "remainder_l1": 0.39784982800483704
+      },
+      "collar_surround": {
+        "protected_l1": 0.016700616106390953,
+        "clothing_l1": 0.3958244323730469,
+        "tab_l1": 0.05253678187727928,
+        "rest_l1": 0.41426268219947815,
+        "surround_l1": 0.7535917162895203,
+        "remainder_l1": 0.39784982800483704
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0,
+        "clothing_l1": 0.0,
+        "tab_l1": 0.0,
+        "rest_l1": 0.0,
+        "surround_l1": 0.0,
+        "remainder_l1": 0.0
+      }
+    },
+    {
+      "step": 0,
+      "id": "000",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.016176149249076843,
+        "clothing_l1": 0.1610550731420517,
+        "tab_l1": 0.06553994864225388,
+        "rest_l1": 0.16450095176696777,
+        "surround_l1": 0.9732939004898071,
+        "remainder_l1": 0.14873796701431274
+      },
+      "collar_surround": {
+        "protected_l1": 0.016176149249076843,
+        "clothing_l1": 0.1610550731420517,
+        "tab_l1": 0.06553994864225388,
+        "rest_l1": 0.16450095176696777,
+        "surround_l1": 0.9732939004898071,
+        "remainder_l1": 0.14873796701431274
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0,
+        "clothing_l1": 0.0,
+        "tab_l1": 0.0,
+        "rest_l1": 0.0,
+        "surround_l1": 0.0,
+        "remainder_l1": 0.0
+      }
+    },
+    {
+      "step": 0,
+      "id": "030",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.03346368670463562,
+        "clothing_l1": 0.38099995255470276,
+        "tab_l1": 0.06978621333837509,
+        "rest_l1": 0.4025290608406067,
+        "surround_l1": 1.0338081121444702,
+        "remainder_l1": 0.3743928372859955
+      },
+      "collar_surround": {
+        "protected_l1": 0.03346368670463562,
+        "clothing_l1": 0.38099995255470276,
+        "tab_l1": 0.06978621333837509,
+        "rest_l1": 0.4025290608406067,
+        "surround_l1": 1.0338081121444702,
+        "remainder_l1": 0.3743928372859955
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0,
+        "clothing_l1": 0.0,
+        "tab_l1": 0.0,
+        "rest_l1": 0.0,
+        "surround_l1": 0.0,
+        "remainder_l1": 0.0
+      }
+    },
+    {
+      "step": 0,
+      "id": "028",
+      "split": "validation",
+      "baseline": {
+        "protected_l1": 0.026926875114440918,
+        "clothing_l1": 0.8494784832000732
+      },
+      "collar_surround": {
+        "protected_l1": 0.026926875114440918,
+        "clothing_l1": 0.8494784832000732
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0,
+        "clothing_l1": 0.0
+      }
+    },
+    {
+      "step": 0,
+      "id": "b2-055",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.01648053340613842,
+        "clothing_l1": 0.19072909653186798,
+        "tab_l1": 0.08010060340166092,
+        "rest_l1": 0.19337186217308044,
+        "surround_l1": 0.6152933835983276,
+        "remainder_l1": 0.1775193065404892
+      },
+      "collar_surround": {
+        "protected_l1": 0.01648053340613842,
+        "clothing_l1": 0.19072909653186798,
+        "tab_l1": 0.08010060340166092,
+        "rest_l1": 0.19337186217308044,
+        "surround_l1": 0.6152933835983276,
+        "remainder_l1": 0.1775193065404892
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0,
+        "clothing_l1": 0.0,
+        "tab_l1": 0.0,
+        "rest_l1": 0.0,
+        "surround_l1": 0.0,
+        "remainder_l1": 0.0
+      }
+    },
+    {
+      "step": 0,
+      "id": "b2-051",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.013484016992151737,
+        "clothing_l1": 0.17959104478359222,
+        "tab_l1": 0.04010794311761856,
+        "rest_l1": 0.1876385509967804,
+        "surround_l1": 0.5015493035316467,
+        "remainder_l1": 0.17622584104537964
+      },
+      "collar_surround": {
+        "protected_l1": 0.013484016992151737,
+        "clothing_l1": 0.17959104478359222,
+        "tab_l1": 0.04010794311761856,
+        "rest_l1": 0.1876385509967804,
+        "surround_l1": 0.5015493035316467,
+        "remainder_l1": 0.17622584104537964
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0,
+        "clothing_l1": 0.0,
+        "tab_l1": 0.0,
+        "rest_l1": 0.0,
+        "surround_l1": 0.0,
+        "remainder_l1": 0.0
+      }
+    },
+    {
+      "step": 0,
+      "id": "b2-020",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.03112567774951458,
+        "clothing_l1": 0.05619104951620102,
+        "tab_l1": 0.06980087608098984,
+        "rest_l1": 0.05611317604780197,
+        "surround_l1": 0.3511142134666443,
+        "remainder_l1": 0.04918966442346573
+      },
+      "collar_surround": {
+        "protected_l1": 0.03112567774951458,
+        "clothing_l1": 0.05619104951620102,
+        "tab_l1": 0.06980087608098984,
+        "rest_l1": 0.05611317604780197,
+        "surround_l1": 0.3511142134666443,
+        "remainder_l1": 0.04918966442346573
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0,
+        "clothing_l1": 0.0,
+        "tab_l1": 0.0,
+        "rest_l1": 0.0,
+        "surround_l1": 0.0,
+        "remainder_l1": 0.0
+      }
+    },
+    {
+      "step": 0,
+      "id": "unseen-000",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 0,
+      "id": "unseen-001",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 0,
+      "id": "unseen-002",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 0,
+      "id": "unseen-003",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 25,
+      "id": "calibration-original",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.017308039590716362,
+        "clothing_l1": 0.3634762465953827,
+        "tab_l1": 0.04394509270787239,
+        "rest_l1": 0.3806385099887848,
+        "surround_l1": 0.7383581399917603,
+        "remainder_l1": 0.36333611607551575
+      },
+      "collar_surround": {
+        "protected_l1": 0.01853128895163536,
+        "clothing_l1": 0.3404020369052887,
+        "tab_l1": 0.18381881713867188,
+        "rest_l1": 0.3488122522830963,
+        "surround_l1": 0.5046741366386414,
+        "remainder_l1": 0.34127339720726013
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0012232493609189987,
+        "clothing_l1": -0.023074209690093994,
+        "tab_l1": 0.13987372443079948,
+        "rest_l1": -0.03182625770568848,
+        "surround_l1": -0.2336840033531189,
+        "remainder_l1": -0.022062718868255615
+      }
+    },
+    {
+      "step": 25,
+      "id": "000",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.016309266909956932,
+        "clothing_l1": 0.1564088761806488,
+        "tab_l1": 0.06397386640310287,
+        "rest_l1": 0.15974362194538116,
+        "surround_l1": 0.9713057279586792,
+        "remainder_l1": 0.1439266800880432
+      },
+      "collar_surround": {
+        "protected_l1": 0.01714191399514675,
+        "clothing_l1": 0.14808791875839233,
+        "tab_l1": 0.08642958849668503,
+        "rest_l1": 0.15031234920024872,
+        "surround_l1": 0.8662657737731934,
+        "remainder_l1": 0.13635875284671783
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0008326470851898193,
+        "clothing_l1": -0.00832095742225647,
+        "tab_l1": 0.022455722093582153,
+        "rest_l1": -0.009431272745132446,
+        "surround_l1": -0.10503995418548584,
+        "remainder_l1": -0.007567927241325378
+      }
+    },
+    {
+      "step": 25,
+      "id": "030",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.03425227105617523,
+        "clothing_l1": 0.36196017265319824,
+        "tab_l1": 0.06901788711547852,
+        "rest_l1": 0.38222524523735046,
+        "surround_l1": 1.0165616273880005,
+        "remainder_l1": 0.3539528250694275
+      },
+      "collar_surround": {
+        "protected_l1": 0.037351880222558975,
+        "clothing_l1": 0.3205108344554901,
+        "tab_l1": 0.12093085050582886,
+        "rest_l1": 0.33431729674339294,
+        "surround_l1": 0.6482604742050171,
+        "remainder_l1": 0.32032477855682373
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0030996091663837433,
+        "clothing_l1": -0.04144933819770813,
+        "tab_l1": 0.05191296339035034,
+        "rest_l1": -0.04790794849395752,
+        "surround_l1": -0.3683011531829834,
+        "remainder_l1": -0.03362804651260376
+      }
+    },
+    {
+      "step": 25,
+      "id": "028",
+      "split": "validation",
+      "baseline": {
+        "protected_l1": 0.025546936318278313,
+        "clothing_l1": 0.8461058735847473
+      },
+      "collar_surround": {
+        "protected_l1": 0.026785526424646378,
+        "clothing_l1": 0.8157402873039246
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0012385901063680649,
+        "clothing_l1": -0.030365586280822754
+      }
+    },
+    {
+      "step": 25,
+      "id": "b2-055",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.01670338399708271,
+        "clothing_l1": 0.1721983253955841,
+        "tab_l1": 0.07694771885871887,
+        "rest_l1": 0.17447377741336823,
+        "surround_l1": 0.5956752896308899,
+        "remainder_l1": 0.15864823758602142
+      },
+      "collar_surround": {
+        "protected_l1": 0.01856118068099022,
+        "clothing_l1": 0.15498356521129608,
+        "tab_l1": 0.14962613582611084,
+        "rest_l1": 0.15511153638362885,
+        "surround_l1": 0.4551369547843933,
+        "remainder_l1": 0.14383889734745026
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0018577966839075089,
+        "clothing_l1": -0.017214760184288025,
+        "tab_l1": 0.07267841696739197,
+        "rest_l1": -0.01936224102973938,
+        "surround_l1": -0.14053833484649658,
+        "remainder_l1": -0.014809340238571167
+      }
+    },
+    {
+      "step": 25,
+      "id": "b2-051",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.013491480611264706,
+        "clothing_l1": 0.17827476561069489,
+        "tab_l1": 0.039170004427433014,
+        "rest_l1": 0.18630045652389526,
+        "surround_l1": 0.4972052574157715,
+        "remainder_l1": 0.1749970018863678
+      },
+      "collar_surround": {
+        "protected_l1": 0.014083796180784702,
+        "clothing_l1": 0.17604102194309235,
+        "tab_l1": 0.14090833067893982,
+        "rest_l1": 0.17806801199913025,
+        "surround_l1": 0.3280384838581085,
+        "remainder_l1": 0.17261558771133423
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0005923155695199966,
+        "clothing_l1": -0.002233743667602539,
+        "tab_l1": 0.1017383262515068,
+        "rest_l1": -0.008232444524765015,
+        "surround_l1": -0.16916677355766296,
+        "remainder_l1": -0.0023814141750335693
+      }
+    },
+    {
+      "step": 25,
+      "id": "b2-020",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.03119196556508541,
+        "clothing_l1": 0.05581998452544212,
+        "tab_l1": 0.06859606504440308,
+        "rest_l1": 0.055746883153915405,
+        "surround_l1": 0.3461472988128662,
+        "remainder_l1": 0.04893134906888008
+      },
+      "collar_surround": {
+        "protected_l1": 0.03411351889371872,
+        "clothing_l1": 0.05405034124851227,
+        "tab_l1": 0.0767047107219696,
+        "rest_l1": 0.053920723497867584,
+        "surround_l1": 0.30184394121170044,
+        "remainder_l1": 0.04810210317373276
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0029215533286333084,
+        "clothing_l1": -0.0017696432769298553,
+        "tab_l1": 0.008108645677566528,
+        "rest_l1": -0.001826159656047821,
+        "surround_l1": -0.04430335760116577,
+        "remainder_l1": -0.0008292458951473236
+      }
+    },
+    {
+      "step": 25,
+      "id": "unseen-000",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 25,
+      "id": "unseen-001",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 25,
+      "id": "unseen-002",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 25,
+      "id": "unseen-003",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 50,
+      "id": "calibration-original",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.0180333461612463,
+        "clothing_l1": 0.3317100405693054,
+        "tab_l1": 0.04224957153201103,
+        "rest_l1": 0.34725722670555115,
+        "surround_l1": 0.710666298866272,
+        "remainder_l1": 0.32967960834503174
+      },
+      "collar_surround": {
+        "protected_l1": 0.019111767411231995,
+        "clothing_l1": 0.3077471852302551,
+        "tab_l1": 0.19101428985595703,
+        "rest_l1": 0.3140169680118561,
+        "surround_l1": 0.3778609037399292,
+        "remainder_l1": 0.31092897057533264
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0010784212499856949,
+        "clothing_l1": -0.023962855339050293,
+        "tab_l1": 0.148764718323946,
+        "rest_l1": -0.03324025869369507,
+        "surround_l1": -0.3328053951263428,
+        "remainder_l1": -0.018750637769699097
+      }
+    },
+    {
+      "step": 50,
+      "id": "000",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.016392454504966736,
+        "clothing_l1": 0.15234798192977905,
+        "tab_l1": 0.06412369012832642,
+        "rest_l1": 0.15553081035614014,
+        "surround_l1": 0.9573819041252136,
+        "remainder_l1": 0.13990312814712524
+      },
+      "collar_surround": {
+        "protected_l1": 0.01732434518635273,
+        "clothing_l1": 0.13672329485416412,
+        "tab_l1": 0.11582902818918228,
+        "rest_l1": 0.1374771147966385,
+        "surround_l1": 0.7379626035690308,
+        "remainder_l1": 0.12577393651008606
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.000931890681385994,
+        "clothing_l1": -0.01562468707561493,
+        "tab_l1": 0.051705338060855865,
+        "rest_l1": -0.018053695559501648,
+        "surround_l1": -0.21941930055618286,
+        "remainder_l1": -0.014129191637039185
+      }
+    },
+    {
+      "step": 50,
+      "id": "030",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.0344463512301445,
+        "clothing_l1": 0.3381017744541168,
+        "tab_l1": 0.0681266337633133,
+        "rest_l1": 0.35677802562713623,
+        "surround_l1": 0.9854300022125244,
+        "remainder_l1": 0.32875895500183105
+      },
+      "collar_surround": {
+        "protected_l1": 0.038399677723646164,
+        "clothing_l1": 0.2891713082790375,
+        "tab_l1": 0.14050936698913574,
+        "rest_l1": 0.2994554042816162,
+        "surround_l1": 0.3428703844547272,
+        "remainder_l1": 0.29752036929130554
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.003953326493501663,
+        "clothing_l1": -0.048930466175079346,
+        "tab_l1": 0.07238273322582245,
+        "rest_l1": -0.05732262134552002,
+        "surround_l1": -0.6425596177577972,
+        "remainder_l1": -0.031238585710525513
+      }
+    },
+    {
+      "step": 50,
+      "id": "028",
+      "split": "validation",
+      "baseline": {
+        "protected_l1": 0.026300810277462006,
+        "clothing_l1": 0.8379510045051575
+      },
+      "collar_surround": {
+        "protected_l1": 0.02790546976029873,
+        "clothing_l1": 0.7877892255783081
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0016046594828367233,
+        "clothing_l1": -0.050161778926849365
+      }
+    },
+    {
+      "step": 50,
+      "id": "b2-055",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.01668090932071209,
+        "clothing_l1": 0.1633327305316925,
+        "tab_l1": 0.07531299442052841,
+        "rest_l1": 0.16543541848659515,
+        "surround_l1": 0.5836802124977112,
+        "remainder_l1": 0.14972101151943207
+      },
+      "collar_surround": {
+        "protected_l1": 0.018648669123649597,
+        "clothing_l1": 0.14816951751708984,
+        "tab_l1": 0.11733975261449814,
+        "rest_l1": 0.14890599250793457,
+        "surround_l1": 0.43208572268486023,
+        "remainder_l1": 0.13826626539230347
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0019677598029375076,
+        "clothing_l1": -0.015163213014602661,
+        "tab_l1": 0.04202675819396973,
+        "rest_l1": -0.016529425978660583,
+        "surround_l1": -0.15159448981285095,
+        "remainder_l1": -0.011454746127128601
+      }
+    },
+    {
+      "step": 50,
+      "id": "b2-051",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.013512490317225456,
+        "clothing_l1": 0.1765121966600418,
+        "tab_l1": 0.03797115013003349,
+        "rest_l1": 0.1845053732395172,
+        "surround_l1": 0.4890146851539612,
+        "remainder_l1": 0.17343445122241974
+      },
+      "collar_surround": {
+        "protected_l1": 0.014778523705899715,
+        "clothing_l1": 0.16833174228668213,
+        "tab_l1": 0.06070789322257042,
+        "rest_l1": 0.17454113066196442,
+        "surround_l1": 0.32005980610847473,
+        "remainder_l1": 0.16925056278705597
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.0012660333886742592,
+        "clothing_l1": -0.00818045437335968,
+        "tab_l1": 0.022736743092536926,
+        "rest_l1": -0.009964242577552795,
+        "surround_l1": -0.16895487904548645,
+        "remainder_l1": -0.0041838884353637695
+      }
+    },
+    {
+      "step": 50,
+      "id": "b2-020",
+      "split": "train",
+      "baseline": {
+        "protected_l1": 0.03191858530044556,
+        "clothing_l1": 0.05515320226550102,
+        "tab_l1": 0.0779995396733284,
+        "rest_l1": 0.055022478103637695,
+        "surround_l1": 0.34927600622177124,
+        "remainder_l1": 0.04811650887131691
+      },
+      "collar_surround": {
+        "protected_l1": 0.03629333898425102,
+        "clothing_l1": 0.05018619820475578,
+        "tab_l1": 0.08923080563545227,
+        "rest_l1": 0.04996280372142792,
+        "surround_l1": 0.22094805538654327,
+        "remainder_l1": 0.045949872583150864
+      },
+      "variant_minus_baseline": {
+        "protected_l1": 0.004374753683805466,
+        "clothing_l1": -0.004967004060745239,
+        "tab_l1": 0.01123126596212387,
+        "rest_l1": -0.005059674382209778,
+        "surround_l1": -0.12832795083522797,
+        "remainder_l1": -0.002166636288166046
+      }
+    },
+    {
+      "step": 50,
+      "id": "unseen-000",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 50,
+      "id": "unseen-001",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 50,
+      "id": "unseen-002",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    },
+    {
+      "step": 50,
+      "id": "unseen-003",
+      "split": "unseen",
+      "baseline": {},
+      "collar_surround": {},
+      "variant_minus_baseline": {}
+    }
+  ],
+  "units": "L1 measured in [-1,1] luminance; multiply by127.5 for uint8-equivalent MAE. Means are equal across six TRAIN images, not pixel-weighted. HOLDOUT kept separate.",
+  "limitations": "Metrics describe mask agreement, not photographic quality, identity preservation, collar recognition or unseen generalization. Collar-surround is a single radius30 square exterior ring clipped to clothing; validation028 has no tab annotation; four fixed unseen have no target metrics."
+}

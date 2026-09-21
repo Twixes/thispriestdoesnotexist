@@ -1,0 +1,102 @@
+{
+  "reviewer": "root assistant",
+  "extraction_exec_session": 55830,
+  "terminal_exit_code": 0,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 research/.venv/bin/python research/experiments/clothing_structure/extract_discriminator.py --execute --output research/models/ffhq1024-discriminator",
+  "weights_sha256": "d91ebf17ce8ef94ba50db60d5452583085a4c4723eb7b294daea92510558f1a5",
+  "metadata_sha256": "f68e7ede5ace491f00c844617cf159036e2d3eaeb8e93bf87ee6f7ec590099c0",
+  "source_pickle_sha256": "a205a346e86a9ddaae702e118097d014b7b8bd719491396a162cca438f2f524c",
+  "script_sha256": "f11a0d2d24ab1c5e52f78736c3782d88390603b0417c6f17ede39428771e8115",
+  "actual_constructor_checked": {
+    "c_dim": 0,
+    "img_resolution": 1024,
+    "img_channels": 3,
+    "architecture": "resnet",
+    "channel_base": 32768,
+    "channel_max": 512,
+    "num_fp16_res": 4,
+    "conv_clamp": 256,
+    "cmap_dim": null,
+    "block_kwargs": {
+      "activation": "lrelu",
+      "resample_filter": [
+        1,
+        3,
+        3,
+        1
+      ],
+      "freeze_layers": 0
+    },
+    "mapping_kwargs": {
+      "num_layers": 0,
+      "embed_features": null,
+      "layer_features": null,
+      "activation": "lrelu",
+      "lr_multiplier": 0.1
+    },
+    "epilogue_kwargs": {
+      "mbstd_group_size": null,
+      "mbstd_num_channels": 1,
+      "activation": "lrelu"
+    }
+  },
+  "state_tensors": 82,
+  "parameters": 29012513,
+  "state_bytes": 116052228,
+  "strict_source_reconstruction_equal": true,
+  "safetensors_roundtrip_equal": true,
+  "prefix_validation": {
+    "input": "deterministic RGB-repeated horizontal/vertical ramp in[-1,1], batch1",
+    "outputs": [
+      {
+        "block": "b1024",
+        "shape": [
+          1,
+          64,
+          512,
+          512
+        ],
+        "dtype": "torch.float32",
+        "selected_tap": false,
+        "finite": true
+      },
+      {
+        "block": "b512",
+        "shape": [
+          1,
+          128,
+          256,
+          256
+        ],
+        "dtype": "torch.float32",
+        "selected_tap": true,
+        "finite": true
+      },
+      {
+        "block": "b256",
+        "shape": [
+          1,
+          256,
+          128,
+          128
+        ],
+        "dtype": "torch.float32",
+        "selected_tap": true,
+        "finite": true
+      }
+    ],
+    "wall_seconds": 1.016812791931443,
+    "frozen_state_unchanged": true,
+    "D_forward_or_epilogue_called": false,
+    "no_grad": true
+  },
+  "peak_rss_bytes": 4388896768,
+  "seconds": 2.420569833018817,
+  "approved_for_bounded_research_smoke": true,
+  "production_approved": false,
+  "limitations": [
+    "No backward or student generator update measured during extraction.",
+    "State equality and reconstructed prefix shapes tested; no dual-source/reconstructed functional comparison performed.",
+    "Does not demonstrate useful perceptual gradients or priest generation quality."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "step": 4750,
+  "images_seen": 38000,
+  "reviewed_utc": "2026-09-21T02:22:54.458519+00:00",
+  "scope": "All three native1024x1024 PNG sheets (sixteen256px fixed-latent tiles each), no model loading or inference.",
+  "approved": false,
+  "production_approved": false,
+  "grid_sha256": {
+    "samples-004750.png": "e50b410e62cac9ba4d21c5b4351eccbaac64f6d73225c84aa2e88476c94b7598",
+    "samples-004750-raw.png": "bc17bc6de6c075f55f2a9da77fbd71e99ac8c34874f9a7b3ee30d83293fa342c",
+    "samples-004750-untruncated.png": "f5eb9b80831cc2ee186cebaefc03b3c93e6aeb223b00143ec44bbf79ac8badf5"
+  },
+  "comparison_review": "visual-review-004500.json",
+  "comparison_review_sha256": "f9ac13188d51498fcafbd94528e628c377810b5f5778d37c69c542eaba70a9af",
+  "findings": {
+    "ema_psi_0_7": [
+      "Collars broadly visible and no obvious hats; multiple individually coherent portraits.",
+      "r1c1 still has dark poorly resolved eyes; r2c3 mouth/cheek remains unnatural; facial texture remains soft/uneven.",
+      "Dark swept or curly hair, similar oval faces, mild expressions and architectural backgrounds still dominate."
+    ],
+    "raw_psi_1": [
+      "r1c1 eye patches remain severely blurred/opaque. r3c3 eyes remain distorted and r2c3 has uneven cheek/mouth structure.",
+      "The r1c2 tab has reappeared as a tiny gray mark after being absent/indistinct at4500, still far from a clean collar.",
+      "Some faces have clear detail, but persistent same-seed failures and limited variation prevent approval."
+    ],
+    "ema_psi_1": [
+      "Same eye and cheek failure positions as raw; no broad quality recovery.",
+      "r1c2 has only a tiny gray tab. Clerical attire otherwise broadly present with no definite hats."
+    ]
+  },
+  "comparison": "No material recovery from4500 or4000. The small tab fluctuation is not sustained improvement; major eye/face failures and narrow variety persist.",
+  "recommendation": "The final grid supports the earlier recommendation to stop this unchanged CDC recipe and preserve research evidence. Root already stopped it; this review performed no process action.",
+  "stop_context": {
+    "root_reported_terminal_exit": 130,
+    "root_reported_session": 10204,
+    "root_reported_pid_absent": 77688,
+    "reference_run_pid_left_live": 82281,
+    "first_attempt": "Per parent report, system python3 failed before sending a signal because hashlib.file_digest was unavailable.",
+    "successful_attempt": "Per parent report, research venv retry sent SIGINT; actual recorded signal details are in stop-after-4750.json.",
+    "actual_stop_report_sha256": "342f81fad1eec2db0942ca98171cc031536e2faa5ec4afbcdea7bd29476d1e3c",
+    "ownership": "Root owns stop record and archive; this review does not rewrite either."
+  },
+  "limits": [
+    "No new latent sampling or quantitative diversity assessment.",
+    "Numerical validation subsequently passed in the separately hash-bound checkpoint-004750-validation.json; finiteness is not image-quality approval.",
+    "Neither active trainer nor input/model files modified."
+  ],
+  "numeric_evidence": {
+    "checkpoint-004750-validation.json": "c774713081e82ee71f388f5fde349de8c72472ec81a4a3a5296da2e109f3d6c7",
+    "checkpoint-004750-validation-integrity.json": "3606f6568e4e5e96b70820a45cbe9c1cfabb5672e1d4b7de5625415af2b033c9"
+  }
+}
