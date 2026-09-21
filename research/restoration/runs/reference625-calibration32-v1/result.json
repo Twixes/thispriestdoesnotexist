@@ -1,0 +1,2730 @@
+{
+  "complete": true,
+  "cohort": "manifest256",
+  "attempted": 32,
+  "successful_restorations": 31,
+  "errors": 1,
+  "model_and_aux_load_seconds": 0.5118792919674888,
+  "worker_wall_after_import_seconds": 74.21605624991935,
+  "peak_rss_bytes": 4263968768,
+  "input_and_source_hashes_unchanged": true,
+  "records": [
+    {
+      "index": 0,
+      "path": "research/runs/reference625-restoration-calibration32/000.png",
+      "sha256": "e54e71228e174f829c1e4fb49f0ef5410c2e3745fbb5bae830cb43b5f0e80917",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          72.01480102539062,
+          49.85786437988281,
+          177.06336975097656,
+          200.80169677734375,
+          0.9998283386230469
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.40531921386719,
+            103.48089599609375
+          ],
+          [
+            151.20664978027344,
+            107.15475463867188
+          ],
+          [
+            129.03953552246094,
+            135.94056701660156
+          ],
+          [
+            100.77930450439453,
+            154.02011108398438
+          ],
+          [
+            148.83750915527344,
+            157.36624145507812
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.537166131479046,
+            0.17699014270289506,
+            -88.56569081294734
+          ],
+          [
+            -0.17699014270289506,
+            2.537166131479046,
+            -4.075891910439502
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031786249950528145,
+      "restoration_seconds": 1.017296209000051,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5689272177278952,
+            -0.1094467755622449,
+            140.50702964616863
+          ],
+          [
+            0.1094467755622449,
+            1.5689272177278952,
+            18.088007039725305
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1865267909597605,
+      "total_seconds": 2.4804626669501886,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "53062daf0d198bd3eb117c98acaf514ef049cf0ab693b6f72c0ccc90d21ebd87",
+        "lanczos-1024.png": "781c1ace3ae1c5cd2d11a9011702da4671fb5a0979881a089ad390995b99f2aa",
+        "lanczos-1024.webp": "c982c308cf526a3acf28b358a090f812cedbf40eb851be4a040acec3e5b8cd92",
+        "raw.png": "e54e71228e174f829c1e4fb49f0ef5410c2e3745fbb5bae830cb43b5f0e80917",
+        "restored-1024-rgb.png": "fbf3b9e93c2dd7a7b100c4caaafbdd235aa527c313788cea98eeb24e955055cd",
+        "restored-1024.png": "125973617fab013ddcf92e4c41ee364f4e929e1742258ba788240493221e1171",
+        "restored-1024.webp": "ebf64f29a04334291dbbc1d9a98c8eb611f25b261cdaf6d7641d364bf823a2b1",
+        "restored-512.png": "9fbcca8fed342175da42efcbf673799173b19991bc67d8a89a18779d07a8e20b"
+      }
+    },
+    {
+      "index": 1,
+      "path": "research/runs/reference625-restoration-calibration32/001.png",
+      "sha256": "0d2761a0cfd512f07af5719f66f343934b9f3896296c21aec3ecb82f1e62dd96",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          78.44439697265625,
+          57.69744110107422,
+          178.03271484375,
+          192.00360107421875,
+          0.999823272228241
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.6502685546875,
+            107.73627471923828
+          ],
+          [
+            151.13943481445312,
+            109.03417205810547
+          ],
+          [
+            124.57048034667969,
+            130.7737579345703
+          ],
+          [
+            101.18770599365234,
+            155.11065673828125
+          ],
+          [
+            148.03111267089844,
+            157.14382934570312
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.6130436138002637,
+            0.12317035637079607,
+            -87.65808278600946
+          ],
+          [
+            -0.12317035637079607,
+            2.6130436138002637,
+            -22.012395366811287
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030380250071175396,
+      "restoration_seconds": 0.8958909999346361,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5273882889403083,
+            -0.07199610403431193,
+            134.30312237143755
+          ],
+          [
+            0.07199610403431193,
+            1.5273882889403083,
+            41.932515342501326
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1806964579736814,
+      "total_seconds": 2.316824625013396,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "e8f130380b276a2fa432865249ff77f8d84fc286278c7d83ce669d00f0f25cac",
+        "lanczos-1024.png": "b38a7172446f30a27760f3b094a6aee731314a7494ec5e783a265783c71ad0a7",
+        "lanczos-1024.webp": "f3b61c79a46e6367dfd0cfb4aa9496c8c96b6c05df32295af5bc15c1e675f62a",
+        "raw.png": "0d2761a0cfd512f07af5719f66f343934b9f3896296c21aec3ecb82f1e62dd96",
+        "restored-1024-rgb.png": "7fcb1025ea16e7bfc3779be04f2ae20727113daa28b2fa4e41f421f6a12f8c2f",
+        "restored-1024.png": "db49c9f5a576251df18adbac1f734b16371728c04033c1871b6e29b86ce05e28",
+        "restored-1024.webp": "967d2b8fd04b083f30e35f68d88c9dbe6274c78abb0dde4546446da58f283c13",
+        "restored-512.png": "ab326639988a4bd67e472c7ac4bfb251a6bfe8da03104f6c47173ca524a7d8b2"
+      }
+    },
+    {
+      "index": 2,
+      "path": "research/runs/reference625-restoration-calibration32/002.png",
+      "sha256": "78a83fb22e9af79e0e987becbc3238de42c9ef6063f95651f52f0f2363510332",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          94.07115936279297,
+          47.710540771484375,
+          194.68612670898438,
+          194.0688018798828,
+          0.9995798468589783
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            106.76541900634766,
+            108.6102066040039
+          ],
+          [
+            146.76864624023438,
+            98.18827819824219
+          ],
+          [
+            121.95550537109375,
+            137.08184814453125
+          ],
+          [
+            122.71397399902344,
+            158.22879028320312
+          ],
+          [
+            159.15773010253906,
+            149.53196716308594
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5142567097167916,
+            -0.6389209051363842,
+            9.28812998012161
+          ],
+          [
+            0.6389209051363842,
+            2.5142567097167916,
+            -104.33463906464691
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03179712500423193,
+      "restoration_seconds": 0.901328583015129,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.4944227511348138,
+            0.3797615148530368,
+            27.74188782504406
+          ],
+          [
+            -0.3797615148530368,
+            1.4944227511348138,
+            161.44733266105035
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1953956660581753,
+      "total_seconds": 2.352452791063115,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "98303d883c8f321bdfe76cd1870918ca2881104bd4015888090431dcdd2799eb",
+        "lanczos-1024.png": "425f6cc2d56e52c065beb82393996e66b0e5d7de97947b92403f42fbbc15d513",
+        "lanczos-1024.webp": "13090a8f8bdb57b8bcf172acee74a5577b41c4b6fb27cfa4994844cc94a52135",
+        "raw.png": "78a83fb22e9af79e0e987becbc3238de42c9ef6063f95651f52f0f2363510332",
+        "restored-1024-rgb.png": "f33f85c5497f4faebfeaf6167b820ee2da88ae9707a1f0b90147817837c8f724",
+        "restored-1024.png": "d629c77c12e48b4b9aae0b101ae20dfcad4b4aeab9c89ddc9ed635be74398a21",
+        "restored-1024.webp": "20f1807b6ab7602740938714ee835d44b2f2f0153ec57cf5118d230d20551170",
+        "restored-512.png": "d21ed9def020d44801f773f92a5526528cd12faa23db54343a8214f4a9c146ca"
+      }
+    },
+    {
+      "index": 3,
+      "path": "research/runs/reference625-restoration-calibration32/003.png",
+      "sha256": "139d2fdd4c0aa77131be526a4c110bc6416dc2a733244b8715d2d594aa019698",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          77.05718994140625,
+          52.131103515625,
+          178.5478515625,
+          191.89627075195312,
+          0.9998636245727539
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.26585388183594,
+            106.83590698242188
+          ],
+          [
+            154.0717010498047,
+            108.10630798339844
+          ],
+          [
+            128.93406677246094,
+            135.1391143798828
+          ],
+          [
+            104.03753662109375,
+            154.76211547851562
+          ],
+          [
+            149.5476531982422,
+            155.84803771972656
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.6137748595758357,
+            0.11020862255355961,
+            -93.00015809969813
+          ],
+          [
+            -0.11020862255355961,
+            2.6137748595758357,
+            -23.909838277453066
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031156833050772548,
+      "restoration_seconds": 0.9052224170882255,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5276377807217054,
+            -0.06441214894898685,
+            142.5304710617171
+          ],
+          [
+            0.06441214894898685,
+            1.5276377807217054,
+            44.51591231938037
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1798696250189096,
+      "total_seconds": 2.33028141700197,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "a7259dd2071b381491216f62ee08a5156e34399f8b80f17aa5cf0878bbee5042",
+        "lanczos-1024.png": "13e90980fa135eaa423034ee813dce620ba5bb851308d20175eca41fb9f45667",
+        "lanczos-1024.webp": "cad90bd886ba8ac7c23ecba5803042cc0c2c05a27093306cac8457e640b573d5",
+        "raw.png": "139d2fdd4c0aa77131be526a4c110bc6416dc2a733244b8715d2d594aa019698",
+        "restored-1024-rgb.png": "5cf4e7629ca0ed4d75c5538f4c299f236604bc1f438144afe7a7d812e3f82b56",
+        "restored-1024.png": "8505e3a710ea3f9f52f173b0ae92477496f007d6062fc17c12ceb456cae6bb33",
+        "restored-1024.webp": "31a7ec676c0e3f00dce5972f9e7660dd62d7f9475ff3134e254dc45959ec870b",
+        "restored-512.png": "da1c43b1dbeb511e8f64741a7b1eaeff7f8c3feee18c2b6a855ac05ffd5a0ee1"
+      }
+    },
+    {
+      "index": 4,
+      "path": "research/runs/reference625-restoration-calibration32/004.png",
+      "sha256": "5e0253914fcbb1a0463c9fd95a6d4f8292d3993afdcb40f132dd88ccc6833312",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          73.15538024902344,
+          45.233795166015625,
+          184.41171264648438,
+          196.21566772460938,
+          0.9998944997787476
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            100.22689056396484,
+            104.81752014160156
+          ],
+          [
+            151.53985595703125,
+            102.26566314697266
+          ],
+          [
+            126.1975326538086,
+            133.03387451171875
+          ],
+          [
+            100.34678649902344,
+            155.00936889648438
+          ],
+          [
+            156.24319458007812,
+            153.26058959960938
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.3839611964618372,
+            -0.09249513549613951,
+            -33.98231165902979
+          ],
+          [
+            0.09249513549613951,
+            2.3839611964618372,
+            -13.540204050434099
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030376499984413385,
+      "restoration_seconds": 0.9027360839536414,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.6753576483857149,
+            0.06500207844067189,
+            59.81266715357163
+          ],
+          [
+            -0.06500207844067189,
+            1.6753576483857149,
+            22.47576352854239
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1922656670212746,
+      "total_seconds": 2.334449917078018,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "29222b6e9142e59afded5bc571e65ec9e4cac11570a4fcc0910a392b03fb23fb",
+        "lanczos-1024.png": "38b6da056c9eb6fb7042003b0f29326e1139c9d9d04b0fb3963de030843966bf",
+        "lanczos-1024.webp": "de4d64b5f41f2da2f977ae2ca572c8721825faa588357b46e3699fb95703f027",
+        "raw.png": "5e0253914fcbb1a0463c9fd95a6d4f8292d3993afdcb40f132dd88ccc6833312",
+        "restored-1024-rgb.png": "0d824bc3943cbda320934e11e857f41f4d9fe9907acbfd4e22802afb138cec57",
+        "restored-1024.png": "78fc0dff1ea89cfe355749b58cc151ce4174dbef68a5f014879b628ba8c3e3d6",
+        "restored-1024.webp": "890883de3b424e1e5ac8247fb036d68a4bab201a001be8088f07ae63ca653061",
+        "restored-512.png": "5dd49d1007bd150fc4c9587694fb6e50f6b0f7082642f5d6839d2d1253369d57"
+      }
+    },
+    {
+      "index": 5,
+      "path": "research/runs/reference625-restoration-calibration32/005.png",
+      "sha256": "9bdb4cd123be70955c37140c8d4db5279e46220e33256d8f9a9db17df19937f7",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          72.8050537109375,
+          44.07044982910156,
+          179.992431640625,
+          197.5069580078125,
+          0.9998220801353455
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            100.99327850341797,
+            105.12899780273438
+          ],
+          [
+            150.33282470703125,
+            102.09208679199219
+          ],
+          [
+            126.04100036621094,
+            134.06675720214844
+          ],
+          [
+            104.2552261352539,
+            156.96229553222656
+          ],
+          [
+            153.09146118164062,
+            154.66482543945312
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.538176204444087,
+            -0.005912891364913704,
+            -62.55066329497232
+          ],
+          [
+            0.005912891364913704,
+            2.538176204444087,
+            -27.366984784471178
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03115204197820276,
+      "restoration_seconds": 0.9030173339415342,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5759261651307368,
+            0.0036712503242398013,
+            100.67569798459311
+          ],
+          [
+            -0.0036712503242398013,
+            1.5759261651307368,
+            44.898708239679806
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1766155830118805,
+      "total_seconds": 2.31739695800934,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "f1a2effa8e070b1926560c8520d952d7aec7accd07767890392a43138876bed2",
+        "lanczos-1024.png": "909a6cdfd6f5283eba6a90f01e4df25d757ce10fa33d97260102add702e8922f",
+        "lanczos-1024.webp": "c3ec290057d0eac373b2808900024e865f3818efaf2186afaa78b11fe46870ff",
+        "raw.png": "9bdb4cd123be70955c37140c8d4db5279e46220e33256d8f9a9db17df19937f7",
+        "restored-1024-rgb.png": "a595d4687c527dc9c9c3aad7401c2463a5e558553bff98804e885848488c2c10",
+        "restored-1024.png": "5821a8490f07c7f73056df2a0d397885069263be62fe3bdb6d689c2f9144416d",
+        "restored-1024.webp": "c520b8fed70bde5bf2b675881fb270a52e165dbf08b0cb5a47c7771fd2a09c58",
+        "restored-512.png": "2778baea3cf464fe96829dc10925d19748e8556cf2984485ad4331754ae229c8"
+      }
+    },
+    {
+      "index": 6,
+      "path": "research/runs/reference625-restoration-calibration32/006.png",
+      "sha256": "2471db6b86893bf213672383a6beab553c8f67b74f63006825fdc3a9d58ae06d",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          59.181724548339844,
+          46.18354797363281,
+          168.24630737304688,
+          202.82203674316406,
+          0.9998763799667358
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            105.51300811767578,
+            100.42012786865234
+          ],
+          [
+            150.31968688964844,
+            112.56822204589844
+          ],
+          [
+            134.36767578125,
+            136.5688018798828
+          ],
+          [
+            96.50825500488281,
+            154.83602905273438
+          ],
+          [
+            138.8839111328125,
+            164.72500610351562
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.3981058188898245,
+            0.5206902154389023,
+            -113.1543731401872
+          ],
+          [
+            -0.5206902154389023,
+            2.3981058188898245,
+            51.56906886951735
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030434916028752923,
+      "restoration_seconds": 0.897035958012566,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5928887042736772,
+            -0.34585694929109373,
+            200.07784365116657
+          ],
+          [
+            0.34585694929109373,
+            1.5928887042736772,
+            -41.0085609989543
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2289753750665113,
+      "total_seconds": 2.3933167919749394,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "ea49fc28063e23da426bca9fa5f5809ef58da0a4a6056886f76ff7c2f8454835",
+        "lanczos-1024.png": "7043bc05d5c382d57365ca6505104d6761add29414d30a952f32a02f34d83f9d",
+        "lanczos-1024.webp": "6deee018c070c2a612fa18f0316c6c91df228a1585f439b185ba24026a3f64d5",
+        "raw.png": "2471db6b86893bf213672383a6beab553c8f67b74f63006825fdc3a9d58ae06d",
+        "restored-1024-rgb.png": "415c8f343768486c209445f2fd46dfce9fd0cc1716a6e187f30c20c37a2a55d5",
+        "restored-1024.png": "8e8b297f4c0f345db61eb71da17ad78d8a4f0c69a16800f59712950ecdcb6bab",
+        "restored-1024.webp": "8633228790e4394865b998bcc848204471b5d1344cae43ef841fec73accbc149",
+        "restored-512.png": "57d7a391b406f17d46455eca3960aebe482e214091f709d26bfb1aee6c6c215c"
+      }
+    },
+    {
+      "index": 7,
+      "path": "research/runs/reference625-restoration-calibration32/007.png",
+      "sha256": "d924d5fd582ba9c5262cdd3f98b0f410c6291ad359b7abd7b81c4f66ba9625f8",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          81.86235046386719,
+          52.16682434082031,
+          190.36605834960938,
+          196.10301208496094,
+          0.9998999834060669
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.33399963378906,
+            111.01214599609375
+          ],
+          [
+            147.62742614746094,
+            99.31103515625
+          ],
+          [
+            124.92189025878906,
+            137.11822509765625
+          ],
+          [
+            119.028076171875,
+            160.26605224609375
+          ],
+          [
+            158.71176147460938,
+            150.33436584472656
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4839996346312083,
+            -0.6375302368101878,
+            16.254883013451465
+          ],
+          [
+            0.6375302368101878,
+            2.4839996346312083,
+            -102.78419915646211
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031927915988489985,
+      "restoration_seconds": 0.9380942500429228,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5107880955346644,
+            0.3877508993511694,
+            17.296981910976783
+          ],
+          [
+            -0.3877508993511694,
+            1.5107880955346644,
+            163.58799000196092
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1991817500675097,
+      "total_seconds": 2.3780640000477433,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "615fad08737f472eb204bfc0da900d339991eca5721a1d9b3bb28a86d98f792c",
+        "lanczos-1024.png": "009b7d254d88e00d8894abf56ddea035b4b7300ee33c2e32f3040d90cc974ecb",
+        "lanczos-1024.webp": "101bafbb4799fc1665faac643e1ae1b07f0894af5ef64eb91f6b98073c27366a",
+        "raw.png": "d924d5fd582ba9c5262cdd3f98b0f410c6291ad359b7abd7b81c4f66ba9625f8",
+        "restored-1024-rgb.png": "5c2ae99cc8b980276d9c9ba9926fff13343839d2df824636fc784bf48fddf045",
+        "restored-1024.png": "231d76adcdcf39c89d19c89e3cf1019170294d4afa969da546f120015c99316a",
+        "restored-1024.webp": "08fb8db6cdd4c87a7ae59b9ad4eb0d79e1b42a22aaeebc1ec64f47322e40d3f4",
+        "restored-512.png": "95bbbdbe3cccc53e24e5514016bfd4c2d7c44e8d547c18ecde7daa428fdaf03c"
+      }
+    },
+    {
+      "index": 8,
+      "path": "research/runs/reference625-restoration-calibration32/008.png",
+      "sha256": "e21c954a2f261d12deb505d59879fa90e79f4b193a0a24d7c7b4278cce5ee5fc",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          71.41896057128906,
+          48.51853942871094,
+          179.40386962890625,
+          197.85472106933594,
+          0.999901533126831
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.88505554199219,
+            103.03594970703125
+          ],
+          [
+            152.61790466308594,
+            105.37548828125
+          ],
+          [
+            129.56198120117188,
+            132.0427703857422
+          ],
+          [
+            101.59513854980469,
+            155.1327362060547
+          ],
+          [
+            150.58462524414062,
+            157.39739990234375
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.472784697993739,
+            0.11852562757182902,
+            -74.55371790909778
+          ],
+          [
+            -0.11852562757182902,
+            2.472784697993739,
+            -0.463938333486686
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030875124968588352,
+      "restoration_seconds": 0.909633000032045,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.613901584210077,
+            -0.07735760345931773,
+            122.28647428461267
+          ],
+          [
+            0.07735760345931773,
+            1.613901584210077,
+            8.516047757819766
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1890772500773892,
+      "total_seconds": 2.3156723340507597,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "b9f365cfae612f230fbf3932d6520b6e6b8c704733de95abb93eb1301c8d185e",
+        "lanczos-1024.png": "fc6c04806d8f115606dcef27f22755aaec0277fccc277738863335d7d066c1a2",
+        "lanczos-1024.webp": "808630b27f277a0564f9f733a1b75986c63234eeac92b4006c52cc09f3efb3bf",
+        "raw.png": "e21c954a2f261d12deb505d59879fa90e79f4b193a0a24d7c7b4278cce5ee5fc",
+        "restored-1024-rgb.png": "91df70e4744c2bc125a53f977f9d90ab2360610f69b03cf1196527aedc8c782b",
+        "restored-1024.png": "f07d9cf09f8e7bdfd1d33a8789b2792d2904f7c28a25e56a445db994b63e771e",
+        "restored-1024.webp": "745cc661127b2cf9b413bdff88972d5be12fc79f9b5e37b423f07dcb0b3c2358",
+        "restored-512.png": "adcde4bb398f2f5f35603efb53e07f0188ce6d7e85bea3d57ea7c5e726cdfbfc"
+      }
+    },
+    {
+      "index": 9,
+      "path": "research/runs/reference625-restoration-calibration32/009.png",
+      "sha256": "f432035669ed7b85b38d9a5515c3fca4ffaa5793623de23f62ab800d2f183f8c",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          78.2258071899414,
+          51.194313049316406,
+          180.04666137695312,
+          203.041015625,
+          0.999859094619751
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.82608032226562,
+            108.56028747558594
+          ],
+          [
+            149.35162353515625,
+            103.95831298828125
+          ],
+          [
+            127.49800872802734,
+            135.13229370117188
+          ],
+          [
+            107.0782699584961,
+            160.59136962890625
+          ],
+          [
+            153.671142578125,
+            157.0682830810547
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5047755404140024,
+            -0.19686815062257126,
+            -38.05484032918571
+          ],
+          [
+            0.19686815062257126,
+            2.5047755404140024,
+            -51.16224908341051
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030933500034734607,
+      "restoration_seconds": 0.9168673750245944,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5871448815500024,
+            0.12474502108447776,
+            68.78078088730905
+          ],
+          [
+            -0.12474502108447776,
+            1.5871448815500024,
+            78.45474990209058
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.228527499944903,
+      "total_seconds": 2.400043333065696,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "38d0de0a8c1fb18f76c4ad6d9410b423415f66779383398eaf3c0dbb85df81ee",
+        "lanczos-1024.png": "2c073b14c370c05a682ecd88d1700b2dcb7c3f52f0dc402a51437a531d451065",
+        "lanczos-1024.webp": "9473354561872dad263f435c896d1616157eb21305905044aebf9ecfdb22922d",
+        "raw.png": "f432035669ed7b85b38d9a5515c3fca4ffaa5793623de23f62ab800d2f183f8c",
+        "restored-1024-rgb.png": "73ec69e021a448a7eb6160ad4fe6377669b71d31d7a39b28fed29327ec54dcee",
+        "restored-1024.png": "e78dd18e45d29fa1b4084a7004ceecea136d6cc7c95d5fe18cd68f9030e713e1",
+        "restored-1024.webp": "69c7a596d85c9f26b6c089ca5739d455224090e64765e491835358ac321f7b93",
+        "restored-512.png": "043a5aa1e731eecc16045533907f497c63feb3ffc45827435dba99fcc92ad854"
+      }
+    },
+    {
+      "index": 10,
+      "path": "research/runs/reference625-restoration-calibration32/010.png",
+      "sha256": "b5151d82a7f5c7e2fec1ef6cb578ca8e402fb0a9acf9a1c9ca982070f766f899",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          68.41207885742188,
+          43.30817413330078,
+          178.447021484375,
+          195.08145141601562,
+          0.9998672008514404
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.86730194091797,
+            101.65731048583984
+          ],
+          [
+            156.5111846923828,
+            110.15499877929688
+          ],
+          [
+            131.67733764648438,
+            134.1539306640625
+          ],
+          [
+            99.66353607177734,
+            153.16786193847656
+          ],
+          [
+            146.74229431152344,
+            160.53550720214844
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.427953385766403,
+            0.3784148800016047,
+            -103.86867103809024
+          ],
+          [
+            -0.3784148800016047,
+            2.427953385766403,
+            35.41127873132042
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03093308408278972,
+      "restoration_seconds": 0.9045336249982938,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.6084073355817297,
+            -0.25068243585563615,
+            177.9401180439202
+          ],
+          [
+            0.25068243585563615,
+            1.6084073355817297,
+            -28.917709008868826
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1954407499870285,
+      "total_seconds": 2.3452039170078933,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "45e9a13b1ee84fcecf3b8ab17810df119786ced398bd77c4b9c157b8ce7ca36c",
+        "lanczos-1024.png": "5e46bb568a89c5c15453e894ca60511e3c6fc288b26b9e9510dbbd82175097bb",
+        "lanczos-1024.webp": "c2c59b14221c3b2a5f3e58a5a94c8f5221fe1e0855105d7039c544656168b449",
+        "raw.png": "b5151d82a7f5c7e2fec1ef6cb578ca8e402fb0a9acf9a1c9ca982070f766f899",
+        "restored-1024-rgb.png": "091b4c497a09d3cf5189b2679cefddd591fdf3e00d40a1d3fb3020c031eff07e",
+        "restored-1024.png": "c84ad30dd96fa6333d8f55936e7b29dc1475682000bde0c3d6ffa98d8f863b23",
+        "restored-1024.webp": "fc597bc58c9e055f9fb5266bc27a32137a7d8d42e7990e9b9d4fa7ec3859c58e",
+        "restored-512.png": "56a2666f440230a377fa010e2f1a30c643f363d52f2ba98e51d2a1f1ddef2f92"
+      }
+    },
+    {
+      "index": 11,
+      "path": "research/runs/reference625-restoration-calibration32/011.png",
+      "sha256": "ba0159cd8e9a1cabb5c1afb37fbf039b4be408acd8e2eda4cb5df3a3b12b6c99",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          74.62493896484375,
+          36.813934326171875,
+          184.84304809570312,
+          201.15122985839844,
+          0.9997960925102234
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.53878784179688,
+            106.62933349609375
+          ],
+          [
+            151.30191040039062,
+            98.65617370605469
+          ],
+          [
+            127.54999542236328,
+            132.5899658203125
+          ],
+          [
+            108.91584014892578,
+            160.54457092285156
+          ],
+          [
+            156.6008758544922,
+            154.34310913085938
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.3757622523500266,
+            -0.2918909600491396,
+            -12.223649738559986
+          ],
+          [
+            0.2918909600491396,
+            2.3757622523500266,
+            -40.52458870885316
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030723708914592862,
+      "restoration_seconds": 0.9233126249164343,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.658632962751129,
+            0.20378300370236138,
+            30.532770792392707
+          ],
+          [
+            -0.20378300370236138,
+            1.658632962751129,
+            66.72444657450673
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1830758340656757,
+      "total_seconds": 2.336935333092697,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "d6d124863a8e153fe256d6a53b72a84d9eb5054f2808bd5cae3ae18080451a4a",
+        "lanczos-1024.png": "b954262e1f3e1c6ceb2fe62029fd66333603fef051bd043f9e6e4fa4282327f5",
+        "lanczos-1024.webp": "45ef6e8663349b2ccd1ab3c5f49fe878acbc5da40b8a0d9aa86cd2e6d0d80a6a",
+        "raw.png": "ba0159cd8e9a1cabb5c1afb37fbf039b4be408acd8e2eda4cb5df3a3b12b6c99",
+        "restored-1024-rgb.png": "ab9de05a02f1d5f8fd406ba3fb3ea0e4b6ff96aa631d89d2c6d03692d4e900b6",
+        "restored-1024.png": "643e8171d9a92591ba2e92b7699e4827df5beba84cf2ba4a7be84a4da5d991a5",
+        "restored-1024.webp": "f045623c7614a23c4bbaa304f120efa183fe20d00d3aa4e48fc78d751a50d2f9",
+        "restored-512.png": "acc83daf8f0f9eb65d8f0b0d3dea89c5e7a23e918d7e1f72c9091e54425cfbf9"
+      }
+    },
+    {
+      "index": 12,
+      "path": "research/runs/reference625-restoration-calibration32/012.png",
+      "sha256": "d68158ab9a8b51382d1cc45f0e9b722d19a7894de3ab9c74c3a1c5cfcd2efc2c",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          86.5113754272461,
+          47.83892822265625,
+          191.94989013671875,
+          193.9303436279297,
+          0.9999148845672607
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.55221557617188,
+            110.32188415527344
+          ],
+          [
+            149.22496032714844,
+            101.90496826171875
+          ],
+          [
+            123.66328430175781,
+            135.79022216796875
+          ],
+          [
+            116.08636474609375,
+            158.9127655029297
+          ],
+          [
+            156.64962768554688,
+            152.02407836914062
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5917151697129293,
+            -0.4568238776772443,
+            -20.235552155026138
+          ],
+          [
+            0.4568238776772443,
+            2.5917151697129293,
+            -93.62306914097675
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031247916049323976,
+      "restoration_seconds": 0.919581082998775,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.496873563435865,
+            0.26384364826520196,
+            56.99191518632682
+          ],
+          [
+            -0.26384364826520196,
+            1.496873563435865,
+            136.80287521961336
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1910186250461265,
+      "total_seconds": 2.3604458749759942,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "112ec2322853dfe6bad8c524949c663bac57f1f03108ab016b9988ac5ffe9b45",
+        "lanczos-1024.png": "5253ee09b0504e71bfbb679833c9da3a686826041acfec409e3f4f33b4241f67",
+        "lanczos-1024.webp": "40c16dc8b8607dff521dde35cc67df15d5a357f873cb94c50cf11202628336a4",
+        "raw.png": "d68158ab9a8b51382d1cc45f0e9b722d19a7894de3ab9c74c3a1c5cfcd2efc2c",
+        "restored-1024-rgb.png": "dc957a342c9c48a125933ffb2658675a852726d64159c94f3c9a1c64d0efa2fb",
+        "restored-1024.png": "28d36fc01a68c9231247c9fcb56b898cfd1f4f05d79f1dd9a50817b82bd8a60f",
+        "restored-1024.webp": "cfe4789e0a15eb3502b340429c7c12fb66905341ebd722ebe85995337dbd70e6",
+        "restored-512.png": "1b06c662e93d6225b4334da7281867a773f624ba965c09142d7e2b36bb42572b"
+      }
+    },
+    {
+      "index": 13,
+      "path": "research/runs/reference625-restoration-calibration32/013.png",
+      "sha256": "6f205d316f38893ba8d6096157fd0e839e4d9ee47aa8235a461d324281d8cde0",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          82.41299438476562,
+          39.509803771972656,
+          192.07577514648438,
+          195.02639770507812,
+          0.9998763799667358
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            102.78775024414062,
+            109.28760528564453
+          ],
+          [
+            149.68844604492188,
+            100.67815399169922
+          ],
+          [
+            123.31868743896484,
+            133.5601806640625
+          ],
+          [
+            113.67514038085938,
+            160.82362365722656
+          ],
+          [
+            155.134765625,
+            154.23377990722656
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4932908060390977,
+            -0.3826375083708575,
+            -14.463995177039468
+          ],
+          [
+            0.3826375083708575,
+            2.4932908060390977,
+            -70.3936233662842
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030871834023855627,
+      "restoration_seconds": 0.908978792023845,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5673901454837982,
+            0.24054244232573957,
+            41.6033775935011
+          ],
+          [
+            -0.24054244232573957,
+            1.5673901454837982,
+            108.8550668435391
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1768854579422623,
+      "total_seconds": 2.3050672080134973,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "baceae7ea64ca19d9a1c1ea2223a0b25323ac8dac4896d9fcd8519a49fc5584f",
+        "lanczos-1024.png": "c39bec6cbadf36d89b4ceea536199f910c2463cfff6a4073b3fcc1afed06f7f7",
+        "lanczos-1024.webp": "c5268faa7bbb576e4325913b58c66792d0946ad6582ad63c5223600c5f98beb9",
+        "raw.png": "6f205d316f38893ba8d6096157fd0e839e4d9ee47aa8235a461d324281d8cde0",
+        "restored-1024-rgb.png": "13f3f3cd77b679dce7e28843ddad7f26d346b4db2c3661c2202284756e42668c",
+        "restored-1024.png": "2754e902fdaaee7b42738c3264c7d8ca25e4fe85bb05a8c1f679d04c8d87636c",
+        "restored-1024.webp": "b0b074e6ca2b43584851e1b2fa695aacae8f208b78108680a355543e0113ee54",
+        "restored-512.png": "1df11b4d77d9b539af6eed32670b17aaa65c53b52f0f89e0e431bbec3bdad767"
+      }
+    },
+    {
+      "index": 14,
+      "path": "research/runs/reference625-restoration-calibration32/014.png",
+      "sha256": "8281060ab6b0cbaa097dcd9e5284ec8aef4a7b491261594c3ab85d6033aa0703",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          69.26280212402344,
+          32.22908020019531,
+          179.80735778808594,
+          200.94210815429688,
+          0.9998617172241211
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.46954345703125,
+            101.58374786376953
+          ],
+          [
+            154.00135803222656,
+            108.90137481689453
+          ],
+          [
+            130.381103515625,
+            134.82650756835938
+          ],
+          [
+            97.68008422851562,
+            152.51968383789062
+          ],
+          [
+            146.37171936035156,
+            159.0547637939453
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.449703573454362,
+            0.35356831816383866,
+            -99.96245941462463
+          ],
+          [
+            -0.35356831816383866,
+            2.449703573454362,
+            30.2640423993481
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030706791090779006,
+      "restoration_seconds": 0.9002811249811202,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5995300809170747,
+            -0.23086187516346654,
+            168.8797743744845
+          ],
+          [
+            0.23086187516346654,
+            1.5995300809170747,
+            -23.330725361494885
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2132136661093682,
+      "total_seconds": 2.3482997090322897,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "0cb6aacfc02c3e3c40bb87f3f581739e3f999cea7c9265421e7cbd4e39bf511d",
+        "lanczos-1024.png": "837fc51a67a28efb6ab923f934383cf29c4046ae80bb4127a2f80970fd9a0407",
+        "lanczos-1024.webp": "9a5f51a2c0477fb5642d670f8bec2fcff6b14483b8097e3eca2013b468627ca3",
+        "raw.png": "8281060ab6b0cbaa097dcd9e5284ec8aef4a7b491261594c3ab85d6033aa0703",
+        "restored-1024-rgb.png": "1bf68c91cf930c9c4bf17c4a03e94a01afc5b1097131413e4b6cf112233559f9",
+        "restored-1024.png": "780b59b372e81991768669f766478c6e13344aa69d479bd108aa44befe7c9af9",
+        "restored-1024.webp": "044d9cc53aeb1cd35376b0089ab8834ca780b184b393f3addbe428c2796adb9c",
+        "restored-512.png": "5b47ce3b49d475eed021e1c4dc74578c4c3f524e15ca74fc3d8cc4d0cf307a05"
+      }
+    },
+    {
+      "index": 15,
+      "path": "research/runs/reference625-restoration-calibration32/015.png",
+      "sha256": "1f568f4e7058b6bdd4112f5c3711d59113090392173d626290e546f5b4945aea",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          57.616294860839844,
+          44.23369598388672,
+          168.2713623046875,
+          196.64959716796875,
+          0.9998778104782104
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.94442749023438,
+            99.58829498291016
+          ],
+          [
+            150.2924346923828,
+            112.02547454833984
+          ],
+          [
+            133.04769897460938,
+            135.9923095703125
+          ],
+          [
+            95.8692855834961,
+            152.4388427734375
+          ],
+          [
+            136.54815673828125,
+            162.48687744140625
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4351747221198283,
+            0.578245373150868,
+            -122.3510492175596
+          ],
+          [
+            -0.578245373150868,
+            2.4351747221198283,
+            56.4518040982501
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031143083004280925,
+      "restoration_seconds": 0.9208729170495644,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5549184333169874,
+            -0.36922376925375333,
+            213.0892496543878
+          ],
+          [
+            0.36922376925375333,
+            1.5549184333169874,
+            -40.60303522210969
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2177066670265049,
+      "total_seconds": 2.3951972500653937,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "174f8df0bf066488ff50e0ad46b0d0bc0fc349a424e26f34170e84d4d729a04e",
+        "lanczos-1024.png": "9ca5b87c234c33ed9078e2574dc4ba42e2fc7f5b483d91f7fbdc3fb4bdca21ac",
+        "lanczos-1024.webp": "69eae41bef16b059326d6a5641fea122bd1ce890734f52c8e2e50a9850211f46",
+        "raw.png": "1f568f4e7058b6bdd4112f5c3711d59113090392173d626290e546f5b4945aea",
+        "restored-1024-rgb.png": "f4d68e4aa61faf8f299db1adf7e89ad0b98c8ba0ef3f777b27c6b258c4f5b42e",
+        "restored-1024.png": "cd423ffe221ce61780a5227185c2426bcac7934f59279c902eef53390d07e9ee",
+        "restored-1024.webp": "5e5193f7c9f4bae83af400fa6f65dc4566c3dece58d0fab0c55c9a6d878e0b61",
+        "restored-512.png": "2b48d999b7efd2031d3ecd7659809a27717fa9a3291b6c6692a73b1afd24b5b5"
+      }
+    },
+    {
+      "index": 16,
+      "path": "research/runs/reference625-restoration-calibration32/016.png",
+      "sha256": "06e6e0cddf64aab7463b20179619628319ed3e69f60139391bbede837e5d6d93",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          76.49798583984375,
+          54.287757873535156,
+          178.46080017089844,
+          200.70431518554688,
+          0.9998090863227844
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.1329345703125,
+            106.01776123046875
+          ],
+          [
+            150.9293670654297,
+            105.05509948730469
+          ],
+          [
+            128.6414031982422,
+            133.62059020996094
+          ],
+          [
+            104.55872344970703,
+            157.2864990234375
+          ],
+          [
+            152.96913146972656,
+            156.8271942138672
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.522513034941461,
+            -0.03798274362326909,
+            -61.92462695328099
+          ],
+          [
+            0.03798274362326909,
+            2.522513034941461,
+            -29.896738687242102
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03079200000502169,
+      "restoration_seconds": 0.9076931250747293,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5853608036052331,
+            0.02387157256260317,
+            100.88655851656551
+          ],
+          [
+            -0.02387157256260317,
+            1.5853608036052331,
+            47.91887944465442
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1879123330581933,
+      "total_seconds": 2.3427347090328112,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "2cef66003e314ff17f12299dfbe87b152631aa5f8c6564cf128627fd7684d775",
+        "lanczos-1024.png": "4f93d9939acd922b1d88bb4948d4ffab47196abc263443a5e084ecfaa82a5476",
+        "lanczos-1024.webp": "7913e9f1ff323420b6cf870e26ff0330fb11715a01e1f5a04c824951e2a0f12b",
+        "raw.png": "06e6e0cddf64aab7463b20179619628319ed3e69f60139391bbede837e5d6d93",
+        "restored-1024-rgb.png": "3f09f889b5d3362545c3caa90818c0122ee2949c36fbc941c6678134b17cb926",
+        "restored-1024.png": "9d90da631dd536bf1b7eef5818828d0b0af47e97e94a5b4adfc993bebc3f5caa",
+        "restored-1024.webp": "84d96100e19f254facc608f09ba51699af1637faed63efde25f41802f41cd15d",
+        "restored-512.png": "6e2f312003041a8ea6852a1e6200ecec1ea6467e4d28e272c6b96e7bef6054cf"
+      }
+    },
+    {
+      "index": 17,
+      "path": "research/runs/reference625-restoration-calibration32/017.png",
+      "sha256": "b0ae4277e9733187a7be274bd9a2d63d1220253ff05a4c9d123501e4e42c40d5",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          80.64494323730469,
+          44.25714111328125,
+          188.78311157226562,
+          197.68653869628906,
+          0.9999090433120728
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.512451171875,
+            110.23959350585938
+          ],
+          [
+            148.7439422607422,
+            100.10005950927734
+          ],
+          [
+            123.96500396728516,
+            134.5101776123047
+          ],
+          [
+            111.18504333496094,
+            161.61009216308594
+          ],
+          [
+            156.83688354492188,
+            153.502685546875
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4384691365871167,
+            -0.4226985984885827,
+            -0.8513449125681053
+          ],
+          [
+            0.4226985984885827,
+            2.4384691365871167,
+            -68.81043112481574
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03042270801961422,
+      "restoration_seconds": 0.9119625410530716,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5925201236925324,
+            0.27605681542143584,
+            22.351372389560648
+          ],
+          [
+            -0.27605681542143584,
+            1.5925201236925324,
+            111.34697672083924
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1933875839458779,
+      "total_seconds": 2.3382929590297863,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "42c6d780bbdb3cc75cd9af017f7f2f44ae26a21108e4dc6c7d845a356e3094f3",
+        "lanczos-1024.png": "20e9cdba86e65408e75a6a455abdc21e61e5da85c1b809c73e63fbdc39bdf4f0",
+        "lanczos-1024.webp": "1e0f9b99d6680811cc58b11425f5c914af21cef9147dc3a8ba7700a4353a1b0e",
+        "raw.png": "b0ae4277e9733187a7be274bd9a2d63d1220253ff05a4c9d123501e4e42c40d5",
+        "restored-1024-rgb.png": "c6f29f8d46fa88b3daf43855a1818a664120695fe385cfcad239e5d96bb658e6",
+        "restored-1024.png": "33fadc015f70fd9ff9d62bd73503413c88fa27f859364118bd4de70eae753743",
+        "restored-1024.webp": "fd2ebd3a2c0b3cbd934d2a56dea2e73db13207296a517fe85d064ed31b8d69d6",
+        "restored-512.png": "d4e6227be9d7c7d09afcdef3dd7eebf2ead6cb0aa460b29e7bb89582be324473"
+      }
+    },
+    {
+      "index": 18,
+      "path": "research/runs/reference625-restoration-calibration32/018.png",
+      "sha256": "cd653597ce03213f7616cefaf0c7a32cb631da8862672da156f7928390063272",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          55.15351867675781,
+          44.00128173828125,
+          167.6572265625,
+          200.90869140625,
+          0.9998437166213989
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.8638916015625,
+            99.40576171875
+          ],
+          [
+            151.62803649902344,
+            110.03277587890625
+          ],
+          [
+            134.66485595703125,
+            134.554443359375
+          ],
+          [
+            96.7599868774414,
+            153.07142639160156
+          ],
+          [
+            141.33091735839844,
+            161.97499084472656
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4434981086676144,
+            0.48247049991309887,
+            -108.83158968729498
+          ],
+          [
+            -0.48247049991309887,
+            2.4434981086676144,
+            44.936483057430564
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031094916979782283,
+      "restoration_seconds": 0.9027784999925643,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5755709216179647,
+            -0.31109763805631235,
+            187.45152180648367
+          ],
+          [
+            0.31109763805631235,
+            1.5755709216179647,
+            -34.94336552743474
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2145689589669928,
+      "total_seconds": 2.3721854160539806,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "bab6d727f9ea97bad1ac613b6f543eec6f0002a3acd450f827d504ed493a9202",
+        "lanczos-1024.png": "453be19b998a54862dec8671e7f1955866333b701e57f8deda794aad49e7a3fd",
+        "lanczos-1024.webp": "24fa9155a6f2b72251770ddc001e807eb5548c7a8b5e3e3a19581251aa0666ea",
+        "raw.png": "cd653597ce03213f7616cefaf0c7a32cb631da8862672da156f7928390063272",
+        "restored-1024-rgb.png": "9d82c83ce9c2dceeaa28646ba501512d5a20b725bada915a97e28a61791a02d3",
+        "restored-1024.png": "30fb70aefbdb4f0d22dae74cd8e1fdd7e5307b8e8433e9e429470f9a09372d12",
+        "restored-1024.webp": "09e86e1b15d4ea6f001b2fdcdb890b8e3bc486f21d43518d9e85ea3ae0e2f26f",
+        "restored-512.png": "8ebc5231c458efaffa6f1de8488c69d10a091206238082d360c310c56a3ad7a6"
+      }
+    },
+    {
+      "index": 19,
+      "path": "research/runs/reference625-restoration-calibration32/019.png",
+      "sha256": "0682d85f5ef894e092df08bbfe11c134a49840df7a1453b76b6dedf9fee4f31c",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          64.30713653564453,
+          44.819419860839844,
+          174.28659057617188,
+          202.77850341796875,
+          0.9998461008071899
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.39415740966797,
+            99.18812561035156
+          ],
+          [
+            153.56051635742188,
+            107.30304718017578
+          ],
+          [
+            130.66839599609375,
+            135.3184356689453
+          ],
+          [
+            95.71577453613281,
+            153.19906616210938
+          ],
+          [
+            147.87890625,
+            160.35647583007812
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.3296283618508946,
+            0.3225717370937233,
+            -79.80730378437087
+          ],
+          [
+            -0.3225717370937233,
+            2.3296283618508946,
+            42.715482717628255
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030697374953888357,
+      "restoration_seconds": 0.9045713749947026,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.6847118807860475,
+            -0.23327344686678886,
+            146.4167007471508
+          ],
+          [
+            0.23327344686678886,
+            1.6847118807860475,
+            -51.346356388974286
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2415537500055507,
+      "total_seconds": 2.411944958032109,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "db0111f3cc1ecb7aced2c89db357c0d86d8e60eaaccd291eda608be32f831981",
+        "lanczos-1024.png": "365beb206cdedec32d71e481fe195fcd5a715e85ed2b3a8cfaf128b2f1c46a4d",
+        "lanczos-1024.webp": "811c86c0c4c0b35038a93f0343e7e50e8beeab153cdc6fd329297c7c4f12ce7a",
+        "raw.png": "0682d85f5ef894e092df08bbfe11c134a49840df7a1453b76b6dedf9fee4f31c",
+        "restored-1024-rgb.png": "88147f675526695cf56308210180ea31ba926e0bf57b13e95f0edf443516822c",
+        "restored-1024.png": "0f0965b9dd5de3d939795ae35a160bc86292d8afa0cf4f798aa2caf1b726b4f6",
+        "restored-1024.webp": "9617790b8468d8fbfb6f24ddc793257ccd46fa1531012575842c37a2b916d349",
+        "restored-512.png": "2438f8702ebc6c69de214372b18db00035cd9a7be5e301dccc77681296901c33"
+      }
+    },
+    {
+      "index": 20,
+      "path": "research/runs/reference625-restoration-calibration32/020.png",
+      "sha256": "cd2c1dc33dde510ff4537153f3d9a292f85dbc195dae751982815293d1779417",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          70.3002700805664,
+          47.13983154296875,
+          169.84829711914062,
+          196.074462890625,
+          0.9998600482940674
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.82770538330078,
+            101.4276123046875
+          ],
+          [
+            150.28701782226562,
+            108.3989028930664
+          ],
+          [
+            131.0980682373047,
+            135.7178192138672
+          ],
+          [
+            99.66212463378906,
+            155.10992431640625
+          ],
+          [
+            143.42892456054688,
+            161.06732177734375
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.488738359029411,
+            0.32010364568179306,
+            -99.02471355019976
+          ],
+          [
+            -0.32010364568179306,
+            2.488738359029411,
+            18.262444479632016
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03083562501706183,
+      "restoration_seconds": 0.9112408749060705,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5810836856237565,
+            -0.20336032916435207,
+            162.28021578851025
+          ],
+          [
+            0.20336032916435207,
+            1.5810836856237565,
+            -6.736754683381516
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.199798583984375,
+      "total_seconds": 2.369090541964397,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "f6f70c9ea781d52f5af4fe1a562330f207193e5661113d87433c7c8ddc79a3d8",
+        "lanczos-1024.png": "a9537f5de74dbf0c7e31f2bd879808071a926c7920f8fb95d840e7c3ef703b83",
+        "lanczos-1024.webp": "cc7d84c08891fa471ed68c48a8a5e2b4b86d9c742c1386b4553d93c6f33efa55",
+        "raw.png": "cd2c1dc33dde510ff4537153f3d9a292f85dbc195dae751982815293d1779417",
+        "restored-1024-rgb.png": "09981b337bb56adddc21785c1b3daad03090be4000d73cb859aaefba72f3c590",
+        "restored-1024.png": "88e5b2bab6755a1f692ce290ab51b3c2b888f9a14499d3c3bf4eedba40b60358",
+        "restored-1024.webp": "35d486d5fb81f4e091ba037730d0407d2c2ca6981f229d42dad6e0901e3e1ae4",
+        "restored-512.png": "0352c4ff526bad0751ecd7109a7036e4543a20f28b163dfab7866b63a0f661bf"
+      }
+    },
+    {
+      "index": 21,
+      "path": "research/runs/reference625-restoration-calibration32/021.png",
+      "sha256": "d67390515dd1316a5ca238c012262d4fed828ed945744b7b4b694d0a9d80e6eb",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          77.38873291015625,
+          45.509620666503906,
+          181.30426025390625,
+          191.94796752929688,
+          0.9998750686645508
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.73245239257812,
+            107.04917907714844
+          ],
+          [
+            153.97828674316406,
+            105.36019134521484
+          ],
+          [
+            128.7618865966797,
+            133.84373474121094
+          ],
+          [
+            104.44245910644531,
+            155.67404174804688
+          ],
+          [
+            153.79441833496094,
+            154.5390625
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.532028437791652,
+            -0.029112479902562355,
+            -66.0885813098031
+          ],
+          [
+            0.029112479902562355,
+            2.532028437791652,
+            -28.847710792746312
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03062720806337893,
+      "restoration_seconds": 0.9199622499290854,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.57955227620364,
+            0.018161203566943878,
+            106.91427818711622
+          ],
+          [
+            -0.018161203566943878,
+            1.57955227620364,
+            46.3662190673289
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2031351249897853,
+      "total_seconds": 2.3690832080319524,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "a4d7279b7b68dafca6981c0e8d51f9ca6973f73af921ff9db944ed76da20bd28",
+        "lanczos-1024.png": "6aa969b120ceb4fd5086eea29b75bb74e6153c140e2d6535377896c923787011",
+        "lanczos-1024.webp": "f50ae2b73c6aeedaeb04dd04cbd4f1a792843267dd7b323f38765efbf9f9f601",
+        "raw.png": "d67390515dd1316a5ca238c012262d4fed828ed945744b7b4b694d0a9d80e6eb",
+        "restored-1024-rgb.png": "cd972fbb646dd8b852c3dcbfe2ce098f02f443fadd52d00ed79206f43bfcf646",
+        "restored-1024.png": "98572c02b9002221d4d4cb4eaf74a78a4903c922070c1535b0d8b11ae88617a8",
+        "restored-1024.webp": "e03d38894945d689690baecc619ac416ab58d48a06be63784fc5c7622039ec3d",
+        "restored-512.png": "7dba7c9e288708ec73dbb018813d0a949edc77f5792d4fe09fa9f6017433e5c2"
+      }
+    },
+    {
+      "index": 22,
+      "path": "research/runs/reference625-restoration-calibration32/022.png",
+      "sha256": "a8f1212f89534eb6dabf3f0fc41b9e93c05d71b938983fdf9a84125bd2f80f7b",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          66.90469360351562,
+          48.57810974121094,
+          171.8375701904297,
+          202.85818481445312,
+          0.9998196959495544
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.74333953857422,
+            101.42677307128906
+          ],
+          [
+            152.2025146484375,
+            108.88603210449219
+          ],
+          [
+            131.870361328125,
+            134.04864501953125
+          ],
+          [
+            99.80142974853516,
+            154.60626220703125
+          ],
+          [
+            145.5020751953125,
+            160.98974609375
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4622485788888557,
+            0.31880257368931075,
+            -97.77759731322128
+          ],
+          [
+            -0.31880257368931075,
+            2.4622485788888557,
+            22.780266754056925
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030884916079230607,
+      "restoration_seconds": 0.9234396249521524,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5977465876536083,
+            -0.20687014650533248,
+            162.93637957701023
+          ],
+          [
+            0.20687014650533248,
+            1.5977465876536083,
+            -14.169827591007902
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1962810420664027,
+      "total_seconds": 2.3650504159741104,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "fa3e5ad847a8d65717ebfe470d4dade246196e3484c67516cfbe9989736e8617",
+        "lanczos-1024.png": "758903971b0aed0227c1c418b42e631ba0d43603e45844199064e79cfc0fc41a",
+        "lanczos-1024.webp": "bc552b988ddb1ec686992ea3aa5a6df806576d02bc3092e7eb2d1fa69e3e7145",
+        "raw.png": "a8f1212f89534eb6dabf3f0fc41b9e93c05d71b938983fdf9a84125bd2f80f7b",
+        "restored-1024-rgb.png": "b25944c2d936c0e0723cb32151129ee7df2ca16c417c1fe6d66947116ae3b54f",
+        "restored-1024.png": "4f47b3fde733afec686acdaca469dc0c8f68f0b8672eebe14bc40cc2204709ec",
+        "restored-1024.webp": "245a983b3d390b0fab39bb716ff93881a625bedf1ca8cdfd44cdb7c3c3fdac0a",
+        "restored-512.png": "70c24e049bc80a56dfb838c7f4515387974fdb889c14660ad2399a7c8c375899"
+      }
+    },
+    {
+      "index": 23,
+      "path": "research/runs/reference625-restoration-calibration32/023.png",
+      "sha256": "19b3bf157ee48dc5e23304fc9500629137debe4687afcfb6d72fee95e9ca9ed4",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          56.339725494384766,
+          37.831878662109375,
+          170.59921264648438,
+          200.50228881835938,
+          0.9998666048049927
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.7600326538086,
+            98.1139144897461
+          ],
+          [
+            153.77780151367188,
+            110.20050811767578
+          ],
+          [
+            134.37359619140625,
+            135.53273010253906
+          ],
+          [
+            93.17655944824219,
+            151.52806091308594
+          ],
+          [
+            142.22422790527344,
+            161.83119201660156
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.338342385925491,
+            0.5226788709498,
+            -99.7731762740493
+          ],
+          [
+            -0.5226788709498,
+            2.338342385925491,
+            65.12480900989277
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03118437493685633,
+      "restoration_seconds": 0.9040403330000117,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.6292121788685887,
+            -0.36417027177637257,
+            188.26819330660066
+          ],
+          [
+            0.36417027177637257,
+            1.6292121788685887,
+            -67.76770726569563
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2042896249331534,
+      "total_seconds": 2.3597816249821335,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "832ed3b4491d9d4d4e3817764aa72c435c608c076eeb765caf94eecb8616e3e9",
+        "lanczos-1024.png": "a4cb77ef6bc581f19e1017e45b82c2ca6193d0cae92a508d23965db87598de78",
+        "lanczos-1024.webp": "e90726dd060bebf91fdc1253e60486f8806725cce2b12da8920d4a6b9c3f8f4d",
+        "raw.png": "19b3bf157ee48dc5e23304fc9500629137debe4687afcfb6d72fee95e9ca9ed4",
+        "restored-1024-rgb.png": "7c11314eff67cf8434c1150571fa898e7c00e1ce7c1aa0a670390b18e3ddcac1",
+        "restored-1024.png": "73c544efcbf032ea66ba05cbefdfe8b7c0b169e0a470e7c4f1d1e38d07932761",
+        "restored-1024.webp": "803b745eac5e3b77e3c9279a06b1265af5a8f2384e14682bbabb2a1d805b36ab",
+        "restored-512.png": "2ce7b4ca470ecb8a16dbc51cd50d1afe9ad83111bb84d473bb24477b12d0f130"
+      }
+    },
+    {
+      "index": 24,
+      "path": "research/runs/reference625-restoration-calibration32/024.png",
+      "sha256": "c20c616d919950b17c4c7bd93ce1e507d9c0016940e61e4c513b3d71d9a12dbe",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          80.41888427734375,
+          36.36006164550781,
+          183.97720336914062,
+          190.6212615966797,
+          0.9998782873153687
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.67596435546875,
+            108.76495361328125
+          ],
+          [
+            151.63429260253906,
+            105.46321868896484
+          ],
+          [
+            124.67842102050781,
+            134.50379943847656
+          ],
+          [
+            106.62890625,
+            155.43853759765625
+          ],
+          [
+            151.0065155029297,
+            153.175048828125
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.6375977425970882,
+            -0.1201770008149994,
+            -62.93086852780341
+          ],
+          [
+            0.1201770008149994,
+            2.6375977425970882,
+            -54.695781821546205
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030587750021368265,
+      "restoration_seconds": 0.9049386669648811,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5133896925489694,
+            0.06895465194620157,
+            101.01045637156211
+          ],
+          [
+            -0.06895465194620157,
+            1.5133896925489694,
+            80.43665629862848
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2151480000466108,
+      "total_seconds": 2.3730486249551177,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "30f40bc53e6ddbcd6278e052a70c65d778a235111e0667ccc678f14286137ce6",
+        "lanczos-1024.png": "531a9ed6c0e404ae0b0cb778bb442986902dcda1fb762b15350684b67d2f35b3",
+        "lanczos-1024.webp": "3b3b1815d4d4e4177aff398d768184c2387c0cc5a486e47b6f2ec809ab37e6db",
+        "raw.png": "c20c616d919950b17c4c7bd93ce1e507d9c0016940e61e4c513b3d71d9a12dbe",
+        "restored-1024-rgb.png": "318c757c937640804e0aadb437cc51fb96b89ac7037d18bf3623e420133b1a87",
+        "restored-1024.png": "b6d413102eb0b5e2a19b0ff19bef9d77fe8ad6b849a6c35ddb7df26fc902af49",
+        "restored-1024.webp": "3c0ca66130ec1a385fed862c6480b55525f9c92867bfb22c6678f515afb51ae5",
+        "restored-512.png": "9e5aa6dae2be21ba041a5a9d9bed3f27a74a525a2a68f89dc7f31ec07de126fd"
+      }
+    },
+    {
+      "index": 25,
+      "path": "research/runs/reference625-restoration-calibration32/025.png",
+      "sha256": "700bfce269ba52560ed8a8e3ba0871a56c88d20e2de288c7cc25415aa86ed663",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          62.22390365600586,
+          40.97259521484375,
+          166.755859375,
+          199.9697723388672,
+          0.9997413754463196
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            106.65757751464844,
+            99.70391845703125
+          ],
+          [
+            149.02886962890625,
+            110.70027160644531
+          ],
+          [
+            134.88046264648438,
+            136.72711181640625
+          ],
+          [
+            99.70602416992188,
+            156.28614807128906
+          ],
+          [
+            134.9758758544922,
+            165.05630493164062
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.4162191028194986,
+            0.5157306490454411,
+            -114.52439829819116
+          ],
+          [
+            -0.5157306490454411,
+            2.4162191028194986,
+            48.80051347781772
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.0325734579237178,
+      "restoration_seconds": 0.9367941670352593,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5833436090430715,
+            -0.3379572763913936,
+            199.82396274640894
+          ],
+          [
+            0.3379572763913936,
+            1.5833436090430715,
+            -36.56362740390312
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.201935667078942,
+      "total_seconds": 2.3877095410134643,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "490d08fc795d33089dd8fa18d88cef60ca3fba5a8f2622e18487141630808377",
+        "lanczos-1024.png": "78c743c15f93a3896649c64438667ce57c8e49b6f6bc86402266b9a85c1f039c",
+        "lanczos-1024.webp": "d035e01d8acc9160a05986eac5901a4e782c7f867932fc803655f6ac7861ba94",
+        "raw.png": "700bfce269ba52560ed8a8e3ba0871a56c88d20e2de288c7cc25415aa86ed663",
+        "restored-1024-rgb.png": "42c2fdddb07fc38df255440fa421e1036c8a38472f33d317aa608f7672f969ea",
+        "restored-1024.png": "596a91ea0e5f09b7567382e73ae455115922aa8b549dc614bf88624bb411d7ef",
+        "restored-1024.webp": "470c83884f2215d8f6cbfeb74d285fefe2de1d6b39fe1fe90178f92c100aa967",
+        "restored-512.png": "b744da96b2d4761d7eb26518a1455973a1e273d131f8e554532fdf3006c28c76"
+      }
+    },
+    {
+      "index": 26,
+      "path": "research/runs/reference625-restoration-calibration32/026.png",
+      "sha256": "1ddfed0fdae307e09e07012713ec193a9b95308a0a4615ed4e9352e9683ee459",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          82.174560546875,
+          41.64593505859375,
+          194.05764770507812,
+          193.24859619140625,
+          0.9999037981033325
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.40065002441406,
+            110.31861114501953
+          ],
+          [
+            149.3310089111328,
+            100.49431610107422
+          ],
+          [
+            125.1912841796875,
+            135.7609405517578
+          ],
+          [
+            117.76909637451172,
+            159.07247924804688
+          ],
+          [
+            157.83209228515625,
+            151.2519989013672
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5432287822323913,
+            -0.5318577477042935,
+            -5.963275358747969
+          ],
+          [
+            0.5318577477042935,
+            2.5432287822323913,
+            -96.30060080804364
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03065016702748835,
+      "restoration_seconds": 0.9181220830651,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.506900898621302,
+            0.3151336299563266,
+            41.33362289643753
+          ],
+          [
+            -0.3151336299563266,
+            1.506900898621302,
+            145.23623328518087
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.192696459009312,
+      "total_seconds": 2.3556665000505745,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "eb80c95a7c8522d2bc064680a60004de9d57a7089bb03aea9229b8bd3bfdd342",
+        "lanczos-1024.png": "85f34e749e91d6204839bf151ef82cd1ae1f7c9140612db261f099f813f93ae9",
+        "lanczos-1024.webp": "c8e5766d73499d29d31b863822be30969d72afd2416653fd74140e45745006bf",
+        "raw.png": "1ddfed0fdae307e09e07012713ec193a9b95308a0a4615ed4e9352e9683ee459",
+        "restored-1024-rgb.png": "500e5ff98f4e462389523f7610ce0aad1dd8add0015add0058fc30475b333a95",
+        "restored-1024.png": "b566bbca260c81cbd169d9b0ebfda21f13e3078f0bba3481905d5b0e5076a43f",
+        "restored-1024.webp": "d425d8a6585c74d9d7b97270ecbc8f50d917a6a8d1eea6da578ff68485a7747b",
+        "restored-512.png": "dcfd1e9e8edf0f400280fe064493c0aa9f77f389e2197755659d6547d162ad64"
+      }
+    },
+    {
+      "index": 27,
+      "path": "research/runs/reference625-restoration-calibration32/027.png",
+      "sha256": "ca29a8bcf21ba7822fcea3fa562cbc1eb47a81dc3cb1d525e0606817ed92bcbe",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          79.65774536132812,
+          42.80586242675781,
+          182.95236206054688,
+          193.51055908203125,
+          0.9998928308486938
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.22644805908203,
+            105.5764389038086
+          ],
+          [
+            153.5167236328125,
+            103.85509490966797
+          ],
+          [
+            126.83509826660156,
+            133.90426635742188
+          ],
+          [
+            105.60675811767578,
+            157.46023559570312
+          ],
+          [
+            153.0994873046875,
+            156.3282928466797
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.485820729616874,
+            -0.030524628812184543,
+            -59.2325953774942
+          ],
+          [
+            0.030524628812184543,
+            2.485820729616874,
+            -23.281529977034022
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03063583408948034,
+      "restoration_seconds": 0.9199572919169441,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.6088838986138887,
+            0.01975628540786143,
+            97.75832552691983
+          ],
+          [
+            -0.01975628540786143,
+            1.6088838986138887,
+            38.28706265542046
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2104825420537964,
+      "total_seconds": 2.3815046249656007,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "c0be60ae46e1e210d046fbf82e88177538e6ff7a36232d7a02cd93277e4a2eb7",
+        "lanczos-1024.png": "80de6999ca2d66954ebde063d717a3c51fa6ec03549b4c5bdfba2be4c3f3a2b4",
+        "lanczos-1024.webp": "614727a7ff42acda521425b7760991d73f4b1336b9630fa0a77fa251d2aeffa6",
+        "raw.png": "ca29a8bcf21ba7822fcea3fa562cbc1eb47a81dc3cb1d525e0606817ed92bcbe",
+        "restored-1024-rgb.png": "ae86819963240d6f7562696cc9fc8fdfe83dadce58fb114b3b27b41749cafd1a",
+        "restored-1024.png": "33093d36e499a73836ba8328e91923f02c2627f7cc6dd20c45e695fc97b698be",
+        "restored-1024.webp": "7f43997ad109afccb3aced64942fde74d921a44e4cbcb5315ec152ef8aecd26e",
+        "restored-512.png": "ddcafa5870d1117ee2cf51365d4f8784847721751a28baf3726399953a7604f2"
+      }
+    },
+    {
+      "index": 28,
+      "path": "research/runs/reference625-restoration-calibration32/028.png",
+      "sha256": "abcef11cbb68d4afed9a67e206afd82828a63e6a798387d4639bcc63723cca33",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          73.08143615722656,
+          54.00746154785156,
+          171.17156982421875,
+          199.26670837402344,
+          0.9998138546943665
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            103.87078857421875,
+            105.13075256347656
+          ],
+          [
+            150.24708557128906,
+            108.29894256591797
+          ],
+          [
+            131.11474609375,
+            133.05575561523438
+          ],
+          [
+            103.1148681640625,
+            156.92041015625
+          ],
+          [
+            146.0115203857422,
+            159.9786376953125
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5701878080875504,
+            0.15416489407379985,
+            -89.96477220459936
+          ],
+          [
+            -0.15416489407379985,
+            2.5701878080875504,
+            -14.101042360311082
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.03101895796135068,
+      "restoration_seconds": 0.9120790000306442,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.550727242166153,
+            -0.0930156544489208,
+            140.19920540938827
+          ],
+          [
+            0.0930156544489208,
+            1.550727242166153,
+            32.23500269503219
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2153248749673367,
+      "total_seconds": 2.357782584032975,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "1a31ab770e7d652965209a50a7c32dbc0f835d82be78ee72f70e5f42d746afd1",
+        "lanczos-1024.png": "1dcf84905d3ba1ea144ab67b358c67a6336917bed816da85d50033c7b8cf7c0e",
+        "lanczos-1024.webp": "77afed351e651b91aad11c6e819bbc860e2f3ded82ae4764c3396f476174b180",
+        "raw.png": "abcef11cbb68d4afed9a67e206afd82828a63e6a798387d4639bcc63723cca33",
+        "restored-1024-rgb.png": "3aa513946ee7a425d1ee2d69e7f668117abe2890c46daf35ce8ba201f12a0e93",
+        "restored-1024.png": "25fca9acb7ab2765addd87678cc834b7be2bf634a5e0cda4d93c939468c3765e",
+        "restored-1024.webp": "d88d82237739dad8bdab7c5c96d71b46a75646a8e92b67b2beb485777c6327e5",
+        "restored-512.png": "ffd407ef05f9b14826ab98360403728a11df5c17329327db414d8e9e97124b55"
+      }
+    },
+    {
+      "index": 29,
+      "path": "research/runs/reference625-restoration-calibration32/029.png",
+      "sha256": "dcbd7d87371f5cb7ef24c04789ee2353754b76e342f297852b6012926d7bacb1",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          79.4686279296875,
+          48.12487030029297,
+          185.563720703125,
+          197.77767944335938,
+          0.9999134540557861
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            101.17082214355469,
+            112.35498809814453
+          ],
+          [
+            148.45281982421875,
+            103.04713439941406
+          ],
+          [
+            123.88642120361328,
+            134.11647033691406
+          ],
+          [
+            108.95549011230469,
+            160.1725311279297
+          ],
+          [
+            156.1141815185547,
+            152.63612365722656
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.5613707195481403,
+            -0.5111144222845752,
+            -8.720706587545019
+          ],
+          [
+            0.5111144222845752,
+            2.5613707195481403,
+            -99.58965683591522
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.031105207977816463,
+      "restoration_seconds": 0.9205507909646258,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.501861077277013,
+            0.29969221206665037,
+            44.94353434630115
+          ],
+          [
+            -0.29969221206665037,
+            1.501861077277013,
+            148.95630145323008
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.2217798329656944,
+      "total_seconds": 2.393493792042136,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "46b5429cc72428518f7ad81d32b581c4ad9e1b277a6d606a9539bea68b6ce56f",
+        "lanczos-1024.png": "1953c593ee37970dbbe42fd605be6e0e59bcc67a7a737a8d80f5ba6b77c58be8",
+        "lanczos-1024.webp": "834216677c298310116de043a4e1f90ab1dc267e75b8442d29a1aad256ed0986",
+        "raw.png": "dcbd7d87371f5cb7ef24c04789ee2353754b76e342f297852b6012926d7bacb1",
+        "restored-1024-rgb.png": "95a9fb67f26763fc99e9f90f970bff8f5c585c95364cfdc809ff188920362691",
+        "restored-1024.png": "cc844fe242aa8ff11443351c19977e9597ae55340c9441e00a0cedb1184f5cd0",
+        "restored-1024.webp": "9ff183183aed32027fc0f78f7e6d46668a41824739c39110e300c6266c8003ca",
+        "restored-512.png": "7612c29bd14fb342e03ac8a6079fbac21133d78f6853fcd02eee22a03ccd1cbc"
+      }
+    },
+    {
+      "index": 30,
+      "path": "research/runs/reference625-restoration-calibration32/030.png",
+      "sha256": "c57b0a5f716687c4e7e689b39abd2eae2fc2c825b8d45959d8539470bfcd89dc",
+      "raw_challenge_control": null,
+      "error": "RuntimeError: No detected face; no restoration fallback permitted",
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 0,
+      "all_detected_boxes": [],
+      "total_seconds": 0.21086633310187608,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "lanczos-1024.png": "bc9009f9afd0d0584d324f82fe123d910f18fd0737a552e4cc2a12084ac176dd",
+        "lanczos-1024.webp": "b354ec2b75ba4834408317f0ff8d6d1bb02a8a0eabb80e4580be8046d9afb648",
+        "raw.png": "c57b0a5f716687c4e7e689b39abd2eae2fc2c825b8d45959d8539470bfcd89dc"
+      }
+    },
+    {
+      "index": 31,
+      "path": "research/runs/reference625-restoration-calibration32/031.png",
+      "sha256": "80813a0d122db15778da247e512227b5cfbba142d8786541e3266aeb84ac4895",
+      "raw_challenge_control": null,
+      "error": null,
+      "production_approved": false,
+      "quality_approved": false,
+      "detected_faces": 1,
+      "all_detected_boxes": [
+        [
+          72.91868591308594,
+          47.40186309814453,
+          178.04757690429688,
+          200.095703125,
+          0.9998037219047546
+        ]
+      ],
+      "chosen_detection_index": 0,
+      "landmarks": [
+        [
+          [
+            104.9624252319336,
+            103.37674713134766
+          ],
+          [
+            151.20556640625,
+            105.19355773925781
+          ],
+          [
+            130.24893188476562,
+            134.16543579101562
+          ],
+          [
+            103.6010513305664,
+            155.13125610351562
+          ],
+          [
+            150.2467498779297,
+            156.94851684570312
+          ]
+        ]
+      ],
+      "affine_matrices": [
+        [
+          [
+            2.538673908396407,
+            0.08526049256405827,
+            -79.67694281958754
+          ],
+          [
+            -0.08526049256405827,
+            2.538673908396407,
+            -14.210424849023102
+          ]
+        ]
+      ],
+      "detect_align_seconds": 0.030949790962040424,
+      "restoration_seconds": 0.913264959002845,
+      "inverse_affine_matrices": [
+        [
+          [
+            1.5738505655229704,
+            -0.052857231484082806,
+            126.64847780001725
+          ],
+          [
+            0.052857231484082806,
+            1.5738505655229704,
+            28.57658779551565
+          ]
+        ]
+      ],
+      "paste_encode_seconds": 1.1904685840709135,
+      "total_seconds": 2.353009833022952,
+      "peak_process_rss_bytes": 4263968768,
+      "outputs": {
+        "aligned-512.png": "6d6311fb59e57b09dfd035c577a45dbeeb8cef89d8fdca0a3a90e91f537a4842",
+        "lanczos-1024.png": "19e8aa50e0320e2efa46e9187c5896cfe6277477453605180b79e455f3bfcf48",
+        "lanczos-1024.webp": "4a27352c0204adfbb96c7afb83d0e2df4b6af38a8dc7dd89776daa9b136b902f",
+        "raw.png": "80813a0d122db15778da247e512227b5cfbba142d8786541e3266aeb84ac4895",
+        "restored-1024-rgb.png": "c9e9f7dbfaf66f9b2870d677db23c4987c29e9b288335d95eadb6ad209d9e349",
+        "restored-1024.png": "378d9516107b35c5956438ead7dedc2d3af2c826cdc270ca612a37abfa91c70a",
+        "restored-1024.webp": "bd00dc06ed73d54d97ff6c0bcba708b7c7ad1ac12fd069843afd0ccd9f536487",
+        "restored-512.png": "4435dc5c68339011de669e9d3dad53260010d448405cc80369342785c77b8510"
+      }
+    }
+  ],
+  "quality_approved": false,
+  "production_approved": false
+}

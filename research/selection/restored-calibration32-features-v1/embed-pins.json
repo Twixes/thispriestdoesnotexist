@@ -1,0 +1,31 @@
+{
+  "python_version": "3.11.16",
+  "machine": "arm64",
+  "packages": {
+    "torch": "2.14.0",
+    "torchvision": "0.29.0",
+    "clip": "1.0",
+    "numpy": "2.4.6",
+    "pillow": "12.3.0",
+    "ftfy": "6.3.1",
+    "regex": "2026.9.10",
+    "packaging": "26.3",
+    "typing-extensions": "4.16.0",
+    "setuptools": "84.0.0"
+  },
+  "vendor": "research/selection/vendor/CLIP-d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+  "benchmark": "research/selection/benchmark_clip.py",
+  "weights": "research/selection/models/ViT-B-32.pt",
+  "files_sha256": {
+    "research/selection/vendor/CLIP-d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/__init__.py": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+    "research/selection/vendor/CLIP-d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/bpe_simple_vocab_16e6.txt.gz": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+    "research/selection/vendor/CLIP-d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/clip.py": "9540f200fbf8145479fa655382a56dab048d238cc698b9cbd8df3b6d86d3f1b6",
+    "research/selection/vendor/CLIP-d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/model.py": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c",
+    "research/selection/vendor/CLIP-d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/simple_tokenizer.py": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+    "research/selection/vendor/CLIP-d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/LICENSE": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db",
+    "research/selection/benchmark_clip.py": "513659cfb2add4e68d8165aac02084f33e6aa9cccf5d339c04637c5e2d3966f5",
+    "research/selection/models/ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+  },
+  "clip_commit": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+  "origin": "Official local OpenAI CLIP, same verified source/weights/runtime as successful selection and NADA work. No borrowed dependencies required."
+}

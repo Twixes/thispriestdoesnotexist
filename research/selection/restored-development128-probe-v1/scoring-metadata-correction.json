@@ -1,0 +1,6 @@
+{
+  "failed_attempt": "Scoring calibration refused before output creation: Frozen model/protocol/feature pipeline mismatch",
+  "investigation": "Only differing field was preprocessing function repr process address; resize/crop/RGB/normalization and all source/model hashes identical.",
+  "fix": "Normalize only memory address in _convert_image_to_rgb function repr for equality; no image features, weights, thresholds, transform parameters or original records changed.",
+  "refit": false
+}

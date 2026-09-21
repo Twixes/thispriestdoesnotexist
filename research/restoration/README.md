@@ -1,4 +1,12 @@
-# Isolated GFPGAN diagnostic, prepared but not executed
+# Isolated GFPGAN diagnostic
+
+## Current result
+
+Both original cohorts completed on local CPU: all32 reference625 portraits in112.41seconds and all8 NADA500 portraits in25.65seconds, with no restoration errors. Peak process memory was about4.04GiB. Median per-image time was2.37seconds for reference256 inputs and2.92seconds for NADA1024 inputs, including diagnostic image encoding. These are local measurements, not a Linux serving benchmark. Restoration materially improves intact faces but does not repair architecture/head mergers, hats, extra people or unsuitable age appearance. Native reviews and all failures remain under `runs/`; neither pipeline is deployed.
+
+The successful v1 implementation and pins are preserved in `sources/diagnostic-v1.py` and `sources/pins-v1.json`. The current wrapper additionally accepts `--cohort manifest256 --manifest <completed-generation/evaluation.json>` for1–128 sequential256px images, preserving every attempt and checking input hashes. Fresh output directories archive the exact source and input generation manifest. This uses the same restoration, alignment and encoding recipe. `reference625-development128-v1` is a separate development cohort, not a held-out test or a bank of serving seeds.
+
+The preparation notes below describe what was and was not verified **before** the first runs; actual runtime completion evidence now lives in their supervisor and worker results.
 
 This directory contains a research-only wrapper around **unmodified** GFPGAN v1.4 clean architecture and facexlib's official face detection/alignment/parser/paste helper. No model has been loaded or run during preparation. Root must inspect this code and schedule execution after NADA and any other model work has stopped. Nothing is connected to serving or an active trainer.
 

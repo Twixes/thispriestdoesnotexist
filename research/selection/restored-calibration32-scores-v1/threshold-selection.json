@@ -1,0 +1,72 @@
+{
+  "protocol_sha256": "d4c8d2e99ffd9626060d5cc64c8d05f4417c0c542cb6a37aa6e5074dae8b4831",
+  "model": {
+    "directory": "research/selection/restored-development128-probe-v1",
+    "result_sha256": "64d695876630f58a9c99cd8bad4c78b61249606aaec17b3d94ef0492c083f1d7",
+    "weights_sha256": "f5bb024095a0f9d9653fe832bfcfa15ff64dc5ca4ed1f74800e181bef509e4d6"
+  },
+  "calibration_scores_sha256": "c4e93951e9a8504cbc1198b4b3bb5b8eb2ec173c7096ff4677d0d471b7394f3a",
+  "grid": [
+    {
+      "threshold": 0.5,
+      "accepted": 23,
+      "false_accepts": [
+        2,
+        6,
+        10,
+        20,
+        22
+      ],
+      "true_accepts": 18
+    },
+    {
+      "threshold": 0.6,
+      "accepted": 20,
+      "false_accepts": [
+        20,
+        22
+      ],
+      "true_accepts": 18
+    },
+    {
+      "threshold": 0.7,
+      "accepted": 16,
+      "false_accepts": [
+        22
+      ],
+      "true_accepts": 15
+    },
+    {
+      "threshold": 0.8,
+      "accepted": 12,
+      "false_accepts": [
+        22
+      ],
+      "true_accepts": 11
+    },
+    {
+      "threshold": 0.85,
+      "accepted": 10,
+      "false_accepts": [
+        22
+      ],
+      "true_accepts": 9
+    },
+    {
+      "threshold": 0.9,
+      "accepted": 5,
+      "false_accepts": [],
+      "true_accepts": 5
+    },
+    {
+      "threshold": 0.95,
+      "accepted": 2,
+      "false_accepts": [],
+      "true_accepts": 2
+    }
+  ],
+  "selected_threshold": 0.9,
+  "passed_calibration": true,
+  "test_data_used": false,
+  "production_approved": false
+}

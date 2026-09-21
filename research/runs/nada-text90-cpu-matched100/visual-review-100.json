@@ -1,0 +1,373 @@
+{
+  "review_utc": "2026-09-21T06:42:22.887768+00:00",
+  "scope": "All eight text100 RGB and gray images individually at native1024; all eight baseline and image-guided100 gray images individually at native1024. Visual observations are subjective, not identity or exact age estimates.",
+  "checkpoint_marker": {
+    "step": 100,
+    "path": "checkpoint-100.pt",
+    "sha256": "4bc9cfe6a003ee957d33c9424aec31b122ac56b171f9793e344d884474e9390e",
+    "full_checkpoint_nested_sha256": "74f1faa7fabce56138360bb1e96bfbf95110cafa484c19769aabae4318200849",
+    "actual_student_adam_rng_reload": true,
+    "native_preview_reload_equal": true,
+    "source_clip_and_frozen_student_unchanged": true,
+    "previews": [
+      {
+        "step": 100,
+        "latent_index": 0,
+        "kind": "student-rgb",
+        "path": "preview-100/000-student-rgb.png",
+        "sha256": "5b5ad37b67c906f18e9af56871c038685c105e2250822e8a6d246d75768c8222"
+      },
+      {
+        "step": 100,
+        "latent_index": 0,
+        "kind": "student-gray",
+        "path": "preview-100/000-student-gray.png",
+        "sha256": "d0dcce0b0821b61855db5000ea1cacce1747418cd74ef136b562aee94a7f99e3"
+      },
+      {
+        "step": 100,
+        "latent_index": 1,
+        "kind": "student-rgb",
+        "path": "preview-100/001-student-rgb.png",
+        "sha256": "401d3a5c0eea2847cb880ab9524b20ce290c05d168a95ed26987692cb4a5662c"
+      },
+      {
+        "step": 100,
+        "latent_index": 1,
+        "kind": "student-gray",
+        "path": "preview-100/001-student-gray.png",
+        "sha256": "24eb403a4a349be4e86427cbf2ab2db5da15e975585c5b9d2a124c789b1a84a6"
+      },
+      {
+        "step": 100,
+        "latent_index": 2,
+        "kind": "student-rgb",
+        "path": "preview-100/002-student-rgb.png",
+        "sha256": "bd769605e6f59366bd13dbf6232db3b34068ff28059e5c696a00fd94f5e58b09"
+      },
+      {
+        "step": 100,
+        "latent_index": 2,
+        "kind": "student-gray",
+        "path": "preview-100/002-student-gray.png",
+        "sha256": "4024b4b596180a330c526fc5b6414eace81977934fdd6a98ee39a637362bec8f"
+      },
+      {
+        "step": 100,
+        "latent_index": 3,
+        "kind": "student-rgb",
+        "path": "preview-100/003-student-rgb.png",
+        "sha256": "70aef1ee643a9edcaf7ca812079ea14328a5a8b3a1dc0c4f1b5378024bc1b371"
+      },
+      {
+        "step": 100,
+        "latent_index": 3,
+        "kind": "student-gray",
+        "path": "preview-100/003-student-gray.png",
+        "sha256": "3c999e06100f03ddff2800a1ff34ac10a7c09802c7328c355cb90b9cb255f2fb"
+      },
+      {
+        "step": 100,
+        "latent_index": 4,
+        "kind": "student-rgb",
+        "path": "preview-100/004-student-rgb.png",
+        "sha256": "ed23dc2299e3690c2335a3638d145d2a1afe2e4694dd4fcd9d905a3b0dd86594"
+      },
+      {
+        "step": 100,
+        "latent_index": 4,
+        "kind": "student-gray",
+        "path": "preview-100/004-student-gray.png",
+        "sha256": "6ae44233ab6d03aab3ce6a28c5cc05de3de003c1b046c7ad97f54ab39181849f"
+      },
+      {
+        "step": 100,
+        "latent_index": 5,
+        "kind": "student-rgb",
+        "path": "preview-100/005-student-rgb.png",
+        "sha256": "bcdaac5db43269fa5e7f962f8bbbdbfec745a202a544473fbe6fee255c074226"
+      },
+      {
+        "step": 100,
+        "latent_index": 5,
+        "kind": "student-gray",
+        "path": "preview-100/005-student-gray.png",
+        "sha256": "1f67fb1833badc627584ccec8a9ae116185ff15b54c2f4d67a823c8ffaf4801b"
+      },
+      {
+        "step": 100,
+        "latent_index": 6,
+        "kind": "student-rgb",
+        "path": "preview-100/006-student-rgb.png",
+        "sha256": "d82b1cb6950645d9e04d8fd63ad65ece6daea659a0ffc4f54be5401697a02cf0"
+      },
+      {
+        "step": 100,
+        "latent_index": 6,
+        "kind": "student-gray",
+        "path": "preview-100/006-student-gray.png",
+        "sha256": "feb7bac1226c5ccc5c64ed05df7aa88ad6f306d351f09e776fa319badc35cbd6"
+      },
+      {
+        "step": 100,
+        "latent_index": 7,
+        "kind": "student-rgb",
+        "path": "preview-100/007-student-rgb.png",
+        "sha256": "b195a7343d0c533a7c9cafe1633543c7240593d131e421dd30db6eccad886b99"
+      },
+      {
+        "step": 100,
+        "latent_index": 7,
+        "kind": "student-gray",
+        "path": "preview-100/007-student-gray.png",
+        "sha256": "7b7198dbf358586ab6b5696f5c6489583dbb9d87955b6ff09d0388e4f61672dc"
+      }
+    ]
+  },
+  "supervisor": {
+    "complete": true,
+    "worker_exit_code": 0,
+    "error": null,
+    "wall_seconds": 271.61540699005127,
+    "deadline_unix": 1789973220.291803,
+    "peak_sampled_worker_rss_bytes": 7021314048,
+    "production_approved": false
+  },
+  "summary": {
+    "denominator": 8,
+    "clearly_childlike": 3,
+    "uncertain_youthful": 1,
+    "apparent_adults": 4,
+    "hats": 3,
+    "convincing_roman_tab_and_black_shirt": 0,
+    "acceptable_whole_portraits": 0,
+    "conclusion": "Text guidance creates white neck-band movement earlier and preserves baseline facial appearance better than image-guided100 in these matched examples. It also preserves childlike faces, feminine appearances and hats. Neither objective is superior on final eligibility; no usable complete hot-priest portrait in this fixed eight. RGB remains colored; gray is an explicit output conversion. Eye defects in006 predate adaptation."
+  },
+  "per_index": [
+    {
+      "index": 0,
+      "apparent_age": "childlike",
+      "apparent_presentation": "feminine",
+      "headwear": "no",
+      "extra_people": "uncertain peripheral person fragment",
+      "collar_comparison": "New white folded patch beneath chin; image-guided100 and baseline mostly bare neck. Still not a proper black clerical shirt/tab.",
+      "face_comparison": "Long hair and childlike face preserved. Teeth softened; peripheral skin/bow fragment remains.",
+      "acceptable_whole_portrait": false,
+      "files": [
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/000-student-rgb.png",
+          "sha256": "5b5ad37b67c906f18e9af56871c038685c105e2250822e8a6d246d75768c8222"
+        },
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/000-student-gray.png",
+          "sha256": "d0dcce0b0821b61855db5000ea1cacce1747418cd74ef136b562aee94a7f99e3"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-smoke10/preview-000/000-source-gray.png",
+          "sha256": "5bd911746074cdc6173dbbcc79343f94c759b974c5dbca1ee6207f3f4e7a2044"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-continue500/preview-100/000-student-gray.png",
+          "sha256": "e35494ba5a5a0b839d13c96684840dad22082b68f0b59e1c9e2e1f4c75ea4220"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "apparent_age": "adult",
+      "apparent_presentation": "feminine",
+      "headwear": "no",
+      "extra_people": "no",
+      "collar_comparison": "Thin bright neck edge; no proper Roman tab, much neck exposed.",
+      "face_comparison": "Face-paint patch and feminine baseline appearance persist. Less etched than image-guided100, but eyes/teeth soft.",
+      "acceptable_whole_portrait": false,
+      "files": [
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/001-student-rgb.png",
+          "sha256": "401d3a5c0eea2847cb880ab9524b20ce290c05d168a95ed26987692cb4a5662c"
+        },
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/001-student-gray.png",
+          "sha256": "24eb403a4a349be4e86427cbf2ab2db5da15e975585c5b9d2a124c789b1a84a6"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-smoke10/preview-000/001-source-gray.png",
+          "sha256": "895da4b4bc075c3f31e1a779aa139b8853a41ee6d1a811a9c7fa3a91486998e8"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-continue500/preview-100/001-student-gray.png",
+          "sha256": "d4fe00122519cf32b2583935e6d498799cb4022defc2b0f7e38ac4a571b9e65c"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "apparent_age": "childlike",
+      "apparent_presentation": "uncertain",
+      "headwear": "yes",
+      "extra_people": "no",
+      "collar_comparison": "Broad white neck wrap added, but white lace/costume remains instead of black clerical shirt.",
+      "face_comparison": "Elaborate decorated hat retained. Face closer to source than image-guided100; softened detail.",
+      "acceptable_whole_portrait": false,
+      "files": [
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/002-student-rgb.png",
+          "sha256": "bd769605e6f59366bd13dbf6232db3b34068ff28059e5c696a00fd94f5e58b09"
+        },
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/002-student-gray.png",
+          "sha256": "4024b4b596180a330c526fc5b6414eace81977934fdd6a98ee39a637362bec8f"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-smoke10/preview-000/002-source-gray.png",
+          "sha256": "b6387bb1783656634f98f2738c55ed71aed6c3dc63e7c0ce706eae51a86da11a"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-continue500/preview-100/002-student-gray.png",
+          "sha256": "294fe84c39f9a193daacca957b1efe27f2f5486e716cdcbb7ab5b2d2e2fcf104"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "apparent_age": "adult",
+      "apparent_presentation": "masculine",
+      "headwear": "yes",
+      "extra_people": "no",
+      "collar_comparison": "New partial bright neck band at bottom crop, not clearly a Roman tab.",
+      "face_comparison": "Dark hat retained. Glasses eyes soft; less exaggerated stubble than image-guided100.",
+      "acceptable_whole_portrait": false,
+      "files": [
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/003-student-rgb.png",
+          "sha256": "70aef1ee643a9edcaf7ca812079ea14328a5a8b3a1dc0c4f1b5378024bc1b371"
+        },
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/003-student-gray.png",
+          "sha256": "3c999e06100f03ddff2800a1ff34ac10a7c09802c7328c355cb90b9cb255f2fb"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-smoke10/preview-000/003-source-gray.png",
+          "sha256": "af0acfea9c4598192fb011f5850b3c4d8f473e8619854638b240466e3a152e7c"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-continue500/preview-100/003-student-gray.png",
+          "sha256": "349485dbe773c89971cbab9fa70f62444db1ca4997f970f436432bd5cf138379"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "apparent_age": "uncertain youthful",
+      "apparent_presentation": "feminine",
+      "headwear": "yes",
+      "extra_people": "no",
+      "collar_comparison": "Bright scarf/turtleneck edge, not a distinct Roman tab.",
+      "face_comparison": "Large knit hat retained. Youthful face and winter scarf persist; soft eyes/teeth.",
+      "acceptable_whole_portrait": false,
+      "files": [
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/004-student-rgb.png",
+          "sha256": "ed23dc2299e3690c2335a3638d145d2a1afe2e4694dd4fcd9d905a3b0dd86594"
+        },
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/004-student-gray.png",
+          "sha256": "6ae44233ab6d03aab3ce6a28c5cc05de3de003c1b046c7ad97f54ab39181849f"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-smoke10/preview-000/004-source-gray.png",
+          "sha256": "2d8cdf2d0b709dad0c59112d158273f343ed91baa772f6a1d9e16209f6c6e325"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-continue500/preview-100/004-student-gray.png",
+          "sha256": "2f2c0a1389549a71c558ca86cce8f0ad5dbf5974dc5dca585d9fed57c5cec35e"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "apparent_age": "childlike",
+      "apparent_presentation": "masculine",
+      "headwear": "no",
+      "extra_people": "no",
+      "collar_comparison": "Large white bib with black inner neck ring; not proper clerical shirt/tab.",
+      "face_comparison": "Clearly childlike face retained. Text changes clothing more, with glowing bib geometry and softer teeth.",
+      "acceptable_whole_portrait": false,
+      "files": [
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/005-student-rgb.png",
+          "sha256": "bcdaac5db43269fa5e7f962f8bbbdbfec745a202a544473fbe6fee255c074226"
+        },
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/005-student-gray.png",
+          "sha256": "1f67fb1833badc627584ccec8a9ae116185ff15b54c2f4d67a823c8ffaf4801b"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-smoke10/preview-000/005-source-gray.png",
+          "sha256": "c33e6206e129bd786ba950e2a1a0c8e9f24aa6a82350cb5222afedd0129a1368"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-continue500/preview-100/005-student-gray.png",
+          "sha256": "09bad299214728667ea8ade37554e3d3085a05603c488284536eb1d163f9a2d9"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "apparent_age": "adult",
+      "apparent_presentation": "masculine",
+      "headwear": "no",
+      "extra_people": "no",
+      "collar_comparison": "Black neck panel and thin white edge; no clear tab. Ordinary light striped shirt remains.",
+      "face_comparison": "Strongly blurred eyes behind glasses are already a baseline defect, also present in image-guided100. Text preserves softer baseline skin instead of image-guided etched stubble.",
+      "acceptable_whole_portrait": false,
+      "files": [
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/006-student-rgb.png",
+          "sha256": "d82b1cb6950645d9e04d8fd63ad65ece6daea659a0ffc4f54be5401697a02cf0"
+        },
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/006-student-gray.png",
+          "sha256": "feb7bac1226c5ccc5c64ed05df7aa88ad6f306d351f09e776fa319badc35cbd6"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-smoke10/preview-000/006-source-gray.png",
+          "sha256": "3e3a70d24e2b282b5a513157ae431d6cbdf0a3e0d8a48db03c3e7086b2ac4f98"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-continue500/preview-100/006-student-gray.png",
+          "sha256": "bea29e0d5e90ed227f00330f851fae4c420421aba5a40e9a133863a092237039"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "apparent_age": "adult",
+      "apparent_presentation": "masculine",
+      "headwear": "no",
+      "extra_people": "no",
+      "collar_comparison": "Much wider bright neck band than baseline/image-guided100, with dark rim. Broad wrap rather than small tab; bottom crop prevents full garment assessment.",
+      "face_comparison": "Coherent adult face and glasses retained; eyes/teeth softened, slight tooth irregularity. Less exaggerated stubble and more faithful source face than image-guided100.",
+      "acceptable_whole_portrait": false,
+      "files": [
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/007-student-rgb.png",
+          "sha256": "b195a7343d0c533a7c9cafe1633543c7240593d131e421dd30db6eccad886b99"
+        },
+        {
+          "path": "research/runs/nada-text90-cpu-matched100/preview-100/007-student-gray.png",
+          "sha256": "7b7198dbf358586ab6b5696f5c6489583dbb9d87955b6ff09d0388e4f61672dc"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-smoke10/preview-000/007-source-gray.png",
+          "sha256": "702c7a0332ef0a6ba9fe78a6909008456edccc9f094ee06f7b5c73962d81c311"
+        },
+        {
+          "path": "research/runs/nada-clean24-cpu-continue500/preview-100/007-student-gray.png",
+          "sha256": "19cac0e3e458a185bb277715afa8577e722ccbd43c3ed2e41711cb10a815c857"
+        }
+      ]
+    }
+  ],
+  "production_approved": false
+}

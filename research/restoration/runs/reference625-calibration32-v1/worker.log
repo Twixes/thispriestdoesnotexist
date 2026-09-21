@@ -1,0 +1,40 @@
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/transforms/functional_tensor.py:5: UserWarning: The torchvision.transforms.functional_tensor module is deprecated in 0.15 and will be **removed in 0.17**. Please don't rely on it. You probably just need to use APIs in torchvision.transforms.functional or in torchvision.transforms.v2.functional.
+  warnings.warn(
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/twixes/Developer/thispriestdoesnotexist/research/restoration/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+{"index": 0, "error": null, "seconds": 2.4804626669501886, "peak_rss": 4263968768}
+{"index": 1, "error": null, "seconds": 2.316824625013396, "peak_rss": 4263968768}
+{"index": 2, "error": null, "seconds": 2.352452791063115, "peak_rss": 4263968768}
+{"index": 3, "error": null, "seconds": 2.33028141700197, "peak_rss": 4263968768}
+{"index": 4, "error": null, "seconds": 2.334449917078018, "peak_rss": 4263968768}
+{"index": 5, "error": null, "seconds": 2.31739695800934, "peak_rss": 4263968768}
+{"index": 6, "error": null, "seconds": 2.3933167919749394, "peak_rss": 4263968768}
+{"index": 7, "error": null, "seconds": 2.3780640000477433, "peak_rss": 4263968768}
+{"index": 8, "error": null, "seconds": 2.3156723340507597, "peak_rss": 4263968768}
+{"index": 9, "error": null, "seconds": 2.400043333065696, "peak_rss": 4263968768}
+{"index": 10, "error": null, "seconds": 2.3452039170078933, "peak_rss": 4263968768}
+{"index": 11, "error": null, "seconds": 2.336935333092697, "peak_rss": 4263968768}
+{"index": 12, "error": null, "seconds": 2.3604458749759942, "peak_rss": 4263968768}
+{"index": 13, "error": null, "seconds": 2.3050672080134973, "peak_rss": 4263968768}
+{"index": 14, "error": null, "seconds": 2.3482997090322897, "peak_rss": 4263968768}
+{"index": 15, "error": null, "seconds": 2.3951972500653937, "peak_rss": 4263968768}
+{"index": 16, "error": null, "seconds": 2.3427347090328112, "peak_rss": 4263968768}
+{"index": 17, "error": null, "seconds": 2.3382929590297863, "peak_rss": 4263968768}
+{"index": 18, "error": null, "seconds": 2.3721854160539806, "peak_rss": 4263968768}
+{"index": 19, "error": null, "seconds": 2.411944958032109, "peak_rss": 4263968768}
+{"index": 20, "error": null, "seconds": 2.369090541964397, "peak_rss": 4263968768}
+{"index": 21, "error": null, "seconds": 2.3690832080319524, "peak_rss": 4263968768}
+{"index": 22, "error": null, "seconds": 2.3650504159741104, "peak_rss": 4263968768}
+{"index": 23, "error": null, "seconds": 2.3597816249821335, "peak_rss": 4263968768}
+{"index": 24, "error": null, "seconds": 2.3730486249551177, "peak_rss": 4263968768}
+{"index": 25, "error": null, "seconds": 2.3877095410134643, "peak_rss": 4263968768}
+{"index": 26, "error": null, "seconds": 2.3556665000505745, "peak_rss": 4263968768}
+{"index": 27, "error": null, "seconds": 2.3815046249656007, "peak_rss": 4263968768}
+{"index": 28, "error": null, "seconds": 2.357782584032975, "peak_rss": 4263968768}
+{"index": 29, "error": null, "seconds": 2.393493792042136, "peak_rss": 4263968768}
+{"index": 30, "error": "RuntimeError: No detected face; no restoration fallback permitted", "seconds": 0.21086633310187608, "peak_rss": 4263968768}
+{"index": 31, "error": null, "seconds": 2.353009833022952, "peak_rss": 4263968768}

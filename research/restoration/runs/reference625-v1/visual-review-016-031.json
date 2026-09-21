@@ -1,0 +1,357 @@
+{
+  "review_utc": "2026-09-21T06:45:52.401497+00:00",
+  "scope": "Complete indices016\u2013031 subset, 16 of the unfiltered32. Human-style subjective visual review, no model inference.",
+  "summary": {
+    "denominator": 16,
+    "acceptable_research_candidates": [
+      16,
+      17,
+      18,
+      19,
+      23,
+      24,
+      25,
+      28,
+      29,
+      30
+    ],
+    "acceptable_count": 10,
+    "hats": 0,
+    "definite_extra_people": 0,
+    "uncertain_background_person_or_statue": [
+      19
+    ],
+    "age_uncertain": [
+      20,
+      27,
+      31
+    ],
+    "conspicuous_residual_eye_defects": [
+      21,
+      22,
+      26
+    ],
+    "other_holds": [
+      20,
+      27,
+      31
+    ],
+    "plausible_collars": 15,
+    "major_whole_head_failures": 0,
+    "conclusion": "Large useful visual improvement over enlarged raw256 faces. Ten reasonable whole-portrait research candidates under a practical photographic threshold, with caveats recorded. This is synthesized detail, not recovered truth or proof of novel identities. Face restoration does not repair background geometry or broken garments; it may change apparent age, mouth shape and expression. No obvious new catastrophic anatomy defects identified in this half, but smoothing and unusually uniform texture recur."
+  },
+  "run_evidence": {
+    "result.json": "81f436b4fc2185eacd2d18d6fb6a432e3468494e63d538f28378d7b6a1c2c1f2",
+    "supervisor-result.json": "072f41c8b02ebe200b1b1c46ffd6d2605d9821d8ea598471ca7afc5afd8216fb",
+    "inputs.json": "e0682c84b316d928561e73b9dd1b41f91f4125203a4427d34d74e64a74254f25",
+    "launch.json": "81db87ba99f8bf2bb4b687077b230b504b83ccb86740b141a4f1509767c0f6e1"
+  },
+  "per_index": [
+    {
+      "index": 16,
+      "files_sha256": {
+        "raw.png": "d1f650748ba6a0c16e1a712c0bd392963bcf72424b33628c742183cf71820a0a",
+        "lanczos-1024.png": "31c10a2044847906824c73989d460258000bc4378a12ebdb39c6e741e2e47c81",
+        "restored-1024.png": "9e48eafad15413595402fc7f802dc2d4a99c305715dc27882629d4883bfac378"
+      },
+      "record_sha256": "4a30dcf6dd93a8647af358024f0a7820c955b858d3f618be6f33c0aa687e0bf9",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": true,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Eyes, closed lips, stubble and wrinkles substantially repaired; plausible mature face. Clear collar. Background colonnades remain distorted and blurry but do not merge into head."
+    },
+    {
+      "index": 17,
+      "files_sha256": {
+        "raw.png": "af63397d13b4ff7de84fc78622239d2e321cb3ae03b0f91879ec68d528d6f101",
+        "lanczos-1024.png": "2b126d2196cb641ee45036aa06aba9f94c357addbbfb40cfff507e0f2bdef1cb",
+        "restored-1024.png": "eea0af0290997f8efc8fd8f883dedfe56a877e5661ed88d89bd11352e17b1480"
+      },
+      "record_sha256": "8a2bf084f179d24ff8bcdfa245bcf9f799bceaae913394c11996f8d240d81b70",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": true,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Plausible mature face, hair and stubble; lip/eye reconstruction much better. Clear collar. Arches remain warped in defocused background."
+    },
+    {
+      "index": 18,
+      "files_sha256": {
+        "raw.png": "4fdcd5e6123eb7f6c5dfe8ac19097f0fef2de1e7657d68ed210cffeeb0cf906e",
+        "lanczos-1024.png": "9f7377ba3a1e3fd805622c68f26c455f0c56d8927182bd792fb5fdb039f47c27",
+        "restored-1024.png": "0f02fdc3c65b304b770bf64734a44005107c8b3b64ba81e3b587871ad0694d30"
+      },
+      "record_sha256": "494520cf92091ff294a9b348fd99bf1d15a532833a10ac7478b15fac55d59e69",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": true,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Credible adult beard and skin detail; mouth repaired. Right iris retains strong irregular reflection, a minor caveat. Clear tab and plausible head outline."
+    },
+    {
+      "index": 19,
+      "files_sha256": {
+        "raw.png": "91fa1234bd339168060588bbc3bc1a4c1d5d5c75202c77ba69f062ef52fabc25",
+        "lanczos-1024.png": "b4b7daea7b6d79c4be621cb978318cd05f124de1b2fd99a5952a7ddb2535674a",
+        "restored-1024.png": "a30509a2077a8f629fced1fa1f1e4832885e7c79e3952b5f84ff2d5d9e23212e"
+      },
+      "record_sha256": "f389d1c053d72b280129ba2222a32c81db7282ff67c696481b742b13c76f68eb",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": true,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": true,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Attractive adult face and clear tab; large square eye reflections remain. Background upper-right statue/head-like architectural form is ambiguous, not a definite extra person."
+    },
+    {
+      "index": 20,
+      "files_sha256": {
+        "raw.png": "23f436b06d32a424a99502cbc69057d06d8325aaf3b6190eb0ba2df63eff7428",
+        "lanczos-1024.png": "d4eb89e953971ce978e82ce6b8f885d7b5de42383fa5895f7e5516bbaa4c2686",
+        "restored-1024.png": "b26a61b28e04fa3fb136700a2372756fdbf08a3c8d12540958cd0138611e8c45"
+      },
+      "record_sha256": "02b9cd2d8c68321bc91a7c9409fac149334d4699cbf3be2ce0f5ec8d2a349b5a",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": false,
+      "adult": null,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Face greatly improved, but elongated pointed image-right ear and soft skin/collar transition remain conspicuous. Age reads more adult after restoration, but earlier raw age uncertainty should not be erased by restoration alone."
+    },
+    {
+      "index": 21,
+      "files_sha256": {
+        "raw.png": "e40c1164e0e65e9167c6cf3f2a3e7915902b887293239d11d8bf366a158010fa",
+        "lanczos-1024.png": "82462c44c321ad0ab4e0e694cbe4958c88a4f9eedbca5183b32cfab6c1d93832",
+        "restored-1024.png": "201ab767a388adfe90087fcc15e393bccec79e7f103593193f7fb22ce11bd4f9"
+      },
+      "record_sha256": "a237fdbf92d09ece5dab74d1fc8fb0d5bbd7922c87b8618b869bce260fd487c2",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": false,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Face and lips improved, but very bright glassy irises remain conspicuous and suspicious at native size. Hold for eye defect; otherwise coherent adult and collar."
+    },
+    {
+      "index": 22,
+      "files_sha256": {
+        "raw.png": "2029425bc48039a4ca8f43d911d73a1cd2f2bec2bd35ec1f91afa5a98fa9a8b8",
+        "lanczos-1024.png": "ce9e7d9405a229d355b9a467372f37707553d1c14154ade861fab3564845eb5c",
+        "restored-1024.png": "e6ad2d81ba2de4df42c6c38ab50adc2ea860acae24573b31558e42ec35f09575"
+      },
+      "record_sha256": "55e9a7a6cdfd9db1da3bb5ec8ef7bd00af61a83f663f0cfb8aa7ec1fa7cf91a8",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": false,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "More plausible skin and separated teeth, but both irises retain conspicuous irregular white/metallic patches. Hold for eyes despite intact head and clear collar."
+    },
+    {
+      "index": 23,
+      "files_sha256": {
+        "raw.png": "b771cf79b7bd6e4a673b8f180cbc137879c9cb920b9165aac9c60d10d6b86e1e",
+        "lanczos-1024.png": "a2a9c0584a1f196bce4da467cd691f53f559b49697265a63081861a88a56800b",
+        "restored-1024.png": "21511cea075d267f3d0d7afd1248f0ebdd88df517d5d06feda077a279cb79fe6"
+      },
+      "record_sha256": "9733ab82409abca0804b4888e0ba9645f6e03d71c55a729136dd7f2ed992200e",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": true,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Plausible adult beard, skin and closed lips; residual asymmetric catchlights but coherent eyes. Clear collar, blurred warped background persists."
+    },
+    {
+      "index": 24,
+      "files_sha256": {
+        "raw.png": "b3d6b7b67076747a93ad9adfbfbd01bbcf98a144947971e93335f7f37268ff73",
+        "lanczos-1024.png": "406cd4f9b8d088051e05f38e576c96255d58234c1a8a8b876ae08e1b5e37eadf",
+        "restored-1024.png": "5dd0364594064913ca53417b9d0898d735834f1705e0d2f038ee763ed4f1b1c6"
+      },
+      "record_sha256": "d8630c52c8f281c950e9b3bca15f68bbe289d8700d6a7ed39d4955ab16b82ab1",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": true,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Plausible adult face and eyes, clear tab. Very uniform facial texture/high contrast looks processed but not a major anatomy failure. Background columns still distorted."
+    },
+    {
+      "index": 25,
+      "files_sha256": {
+        "raw.png": "4f9aeed00a83ac093f3562e318ff9bb7fb63a56d5abf7719f2486ad3394a8f0f",
+        "lanczos-1024.png": "191f6a57f7d3585bac0692903886e1d424328141bb625fb59aef35971b7f2268",
+        "restored-1024.png": "3c2b2da52cb179196c5e9db878548181fadfc5955b53cb3833a0f9bdefa1c745"
+      },
+      "record_sha256": "19e4b6d30eaec605448f3a1fa35f1d211d65381800eba8bf074d2ff350e40078",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": true,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Strong mature face improvement, natural-looking curls/beard, credible eyes and closed mouth. Clear collar. Background remains low-detail."
+    },
+    {
+      "index": 26,
+      "files_sha256": {
+        "raw.png": "266d4d47b55ac3db5d63147dbc2baef06fb23ea44d17057e59dbf833511db825",
+        "lanczos-1024.png": "ab8c8c9968105d1cf9caa1524bdf47122e33befd8fcf3149b223689333a2072b",
+        "restored-1024.png": "421c4310cc03be16725ef8f4f442be08474fa8745ce4df60d829b3251cd9d3cc"
+      },
+      "record_sha256": "a5436919b8b1232f2c53b66905d8a97281bb56186fbcd6088e1cad96233bc250",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": false,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Plausible mature face and beard, but large pale stripe across image-right iris and asymmetric eye detail remain. Hold for eye defect."
+    },
+    {
+      "index": 27,
+      "files_sha256": {
+        "raw.png": "d7344c79ffc64e4112b1655b4806554c700d384f4529c6126f6a948ac0f73951",
+        "lanczos-1024.png": "489d2a8bc913ff73150c60d7163005f956c8b52e9dc95a0d5b62707951e3fb63",
+        "restored-1024.png": "711ff7d9039d4f709f877e22fee700c01aa36d4ee75e478000a1f79ad3d84cf9"
+      },
+      "record_sha256": "6ffdf5c4e9b2aeda741670864b776523e7a0edad5918b2cd81c73bcff75b5d63",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": false,
+      "adult": null,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Much better eyes and lips; youthful apparent age remains uncertain, so not an adult-hot eligibility candidate. Background has elongated vertical structures; collar intact."
+    },
+    {
+      "index": 28,
+      "files_sha256": {
+        "raw.png": "1d3b420c7868ed8906737f949187524b38a47c13c6687a558130fe04ce36fe7f",
+        "lanczos-1024.png": "c0bbd1748e25fc835dbe69822598787125948460d0cd5024fee72ba9a81441b0",
+        "restored-1024.png": "ff438f02810150ae988e538b54ef2909951da14c829b9206a81aa762f95c5881"
+      },
+      "record_sha256": "7d115544435df688bda615648a915ae9de699e6566a7112c663e3daa00a1da41",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": true,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Coherent attractive adult, beard and mouth improved. Large rectangular eye catchlights remain but pupils/gaze are legible. Clear collar. Warped defocused architecture remains."
+    },
+    {
+      "index": 29,
+      "files_sha256": {
+        "raw.png": "36ffc43576dff1ded7ef900d1cbb75a68139f2033578a5dc47dd4176f2afcbed",
+        "lanczos-1024.png": "3bf73583c9b5737d30412d2c79d0518360d72128b51bcd7ff569bf971b2e16f3",
+        "restored-1024.png": "c5c03a9e7528a335e4b4d72fde721a1da9d5ff4ed0190eac7dabf16bd9c10ac9"
+      },
+      "record_sha256": "c1d52a76270f229d7fef8427aeb26a42461288425f6a81f6397048262d8f962d",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": true,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Plausible adult face with freckles and coherent eyes/lips; clear tab. Top hair close to frame with some remaining soft clumping. Background low detail."
+    },
+    {
+      "index": 30,
+      "files_sha256": {
+        "raw.png": "641ad688e07f18f3370c49b8b4a4a0b0fa16134fc7a15483df71c70220c3a3ca",
+        "lanczos-1024.png": "1abfa11365184e1e029923b6e4e93be918235efe156c5b326a150d0584e77f14",
+        "restored-1024.png": "0131bc30ad811b172968d45eaf762ace31178dc7b290d7eac444aa57cf8de45c"
+      },
+      "record_sha256": "6af40611784252efa49e5c5020f44aa5be469cf01f06156c657f995d3c1fbffc",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": true,
+      "adult": true,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": true,
+      "severe_head_failure": false,
+      "notes": "Coherent adult face and tab; image-right eye remains softer and narrower but plausibly squinted. Background image-right is conspicuously abstract/blurred; no clear extra person."
+    },
+    {
+      "index": 31,
+      "files_sha256": {
+        "raw.png": "a99db94453519e40acb56d23b1fa25eec1695a2250de1748e2032031819a7614",
+        "lanczos-1024.png": "e2357e4f99916ba984c00e6684408b338ea370d365f5455764381e541fa9d33a",
+        "restored-1024.png": "333313da0899b0414b8a93b1507c45a22f94a36f22217710a2a0dddb9c0e6d91"
+      },
+      "record_sha256": "cbfe9ddc70353c7f1292e8a58c3bd4e7e77302e21a414eb85302bd7bed6bd83b",
+      "review_scope": "Native1024 restored gray and native1024 Lanczos control individually; raw256 represented exactly by hashed control provenance and prior native256 review.",
+      "visually_acceptable_research_candidate": false,
+      "adult": null,
+      "masculine_presentation": true,
+      "bareheaded": true,
+      "definite_extra_person": false,
+      "possible_background_person_or_statue": false,
+      "plausible_collar": false,
+      "severe_head_failure": false,
+      "notes": "Face improved substantially but youthful age remains uncertain. No credible Roman collar; broken open garment with detached-looking image-left shoulder persists. Restoration cannot repair this whole-portrait failure."
+    }
+  ],
+  "production_approved": false,
+  "automatic_rejection_system_validated": false
+}

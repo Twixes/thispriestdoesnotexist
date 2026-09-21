@@ -1,0 +1,43 @@
+{
+  "purpose": "Train and validate a lightweight whole-portrait quality selector for a genuinely fresh-latent priest generator plus GFPGAN. No finite accepted seed/image bank.",
+  "generator": "reference625 raw G psi1 constant noise",
+  "restoration": "GFPGANv1.4 fixed restoration/monochrome/WebP90 recipe",
+  "development": {
+    "seed_base": 202609211000,
+    "count": 128,
+    "use": "fit only; all attempts preserved, restoration errors cannot pass",
+    "labels": "native visual reviews from three agent reviewers; clear adult male/bareheaded/priest appearance, intact photographic face/head/collar, appealing portrait"
+  },
+  "features": "frozen official CLIP ViT-B/32 normalized full-frame final decoded WebP embeddings",
+  "classifier": {
+    "type": "L2 logistic regression",
+    "lambda": 1.0,
+    "standardization": "development mean/std only",
+    "max_iterations": 300,
+    "optimizer": "L-BFGS-B",
+    "target": "manual acceptable whole portrait",
+    "other_heads": "fixed existing adult/headwear cosine margins recorded as diagnostics, not presumed probabilities"
+  },
+  "calibration": {
+    "seed_base": 202609212000,
+    "count": 32,
+    "threshold_grid": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "choice": "lowest grid threshold with zero observed false accepts and at least4 accepts; otherwise report pilot failure"
+  },
+  "test": {
+    "seed_base": 202609213000,
+    "count": 64,
+    "use": "no threshold/model tuning; native review of all attempts with scores hidden; report false accepts and full denominator"
+  },
+  "deployment": "Readiness is not established by this numerical pilot alone: inspect actual accepted output quality/diversity and measure combined Linux service resource/latency against hosting budget. No production changes in this experiment.",
+  "no_model_or_threshold_search": true,
+  "production_approved": false
+}

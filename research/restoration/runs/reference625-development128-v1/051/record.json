@@ -1,0 +1,87 @@
+{
+  "index": 51,
+  "path": "research/runs/reference625-restoration-development128/051.png",
+  "sha256": "a97d23fbcad7ecc31b708681aff710eab50b400250e3b5d2b2ac6bb81d35536a",
+  "raw_challenge_control": null,
+  "error": null,
+  "production_approved": false,
+  "quality_approved": false,
+  "detected_faces": 1,
+  "all_detected_boxes": [
+    [
+      79.15435791015625,
+      52.58356475830078,
+      179.16696166992188,
+      200.23843383789062,
+      0.9997926354408264
+    ]
+  ],
+  "chosen_detection_index": 0,
+  "landmarks": [
+    [
+      [
+        103.96206665039062,
+        107.06183624267578
+      ],
+      [
+        151.4224853515625,
+        107.02580261230469
+      ],
+      [
+        126.95726013183594,
+        136.4106903076172
+      ],
+      [
+        103.96363830566406,
+        156.9876708984375
+      ],
+      [
+        150.9279022216797,
+        157.48834228515625
+      ]
+    ]
+  ],
+  "affine_matrices": [
+    [
+      [
+        2.5670094622753274,
+        0.026144187617367753,
+        -74.06014593043115
+      ],
+      [
+        -0.026144187617367753,
+        2.5670094622753274,
+        -30.722766295009478
+      ]
+    ]
+  ],
+  "detect_align_seconds": 0.03187420906033367,
+  "restoration_seconds": 0.9102473749080673,
+  "inverse_affine_matrices": [
+    [
+      [
+        1.5580718304404204,
+        -0.015868473745423585,
+        116.90350372217237
+      ],
+      [
+        0.015868473745423585,
+        1.5580718304404204,
+        51.04349819873796
+      ]
+    ]
+  ],
+  "paste_encode_seconds": 1.2781564999604598,
+  "total_seconds": 2.4657804170856252,
+  "peak_process_rss_bytes": 4315496448,
+  "outputs": {
+    "aligned-512.png": "d2a7022dfde560257af5ee2c6bd68a187b195bd2d933d9e4a2e671f6608faf6c",
+    "lanczos-1024.png": "c57dc8a68a7c08689aed6790203bed9e4445beebf28ad988abc855b22fafa214",
+    "lanczos-1024.webp": "a47eacb6a93c98ac34387c4e7abe486f7754cb1ea4691e0cad17aae815895f4d",
+    "raw.png": "a97d23fbcad7ecc31b708681aff710eab50b400250e3b5d2b2ac6bb81d35536a",
+    "restored-1024-rgb.png": "c9e96d2692bdf59cce5787959090521bab920ec756ceb634f9c76771573b98e3",
+    "restored-1024.png": "14f4090957c60c5201e7fe47f8c4e20936455859aa773d8fd1d974322ca72dc7",
+    "restored-1024.webp": "37e4c0e88053b282b63da8fd4d30121dada68c629b658850d3ef37efcb8e283a",
+    "restored-512.png": "403d899db3224d4bf244f98739f81ab72ab32a1aa9e3986191929fc29a5767fe"
+  }
+}
