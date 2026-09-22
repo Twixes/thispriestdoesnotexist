@@ -1,0 +1,885 @@
+{
+  "active_count": 50,
+  "archive_count": 80,
+  "unique_image_bytes": 50,
+  "active_ids": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    9,
+    10,
+    13,
+    18,
+    20,
+    22,
+    23,
+    25,
+    27,
+    33,
+    36,
+    38,
+    45,
+    46,
+    47,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+  ],
+  "images": [
+    {
+      "id": 1,
+      "path": "public/portraits/01.webp",
+      "sha256": "527cb78585c384bc28a79e5f206fb0281c16bdf3fafac064e798d35c3442e086",
+      "bytes": 74076,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 2,
+      "path": "public/portraits/02.webp",
+      "sha256": "3d37823184b6c70b5582ff5880265cb8c978996c08280844020d3cc1c827dcd3",
+      "bytes": 76224,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 3,
+      "path": "public/portraits/03.webp",
+      "sha256": "a454709938e5499d1bbecf03d1b684895072dc233aa6edcaeccc8a9ca988fb25",
+      "bytes": 100260,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 4,
+      "path": "public/portraits/04.webp",
+      "sha256": "26b47de31425e6b314cc885b59132164d0ae3bcb246854f1715a382518588588",
+      "bytes": 75896,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 7,
+      "path": "public/portraits/07.webp",
+      "sha256": "137dcb51bd6e029997bc0bdc258ea8806183126a6103f714c03636950a820ced",
+      "bytes": 91708,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 9,
+      "path": "public/portraits/09.webp",
+      "sha256": "082e73f1ef892e0b41b2ceead466d455a27a389af237dac2a0f0d87330d505cd",
+      "bytes": 98944,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 10,
+      "path": "public/portraits/10.webp",
+      "sha256": "fb5bb164a2c5211815ad3eb11e2e90dd59bc60e2eb6298e7a56de39ad1350ecc",
+      "bytes": 81916,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 13,
+      "path": "public/portraits/13.webp",
+      "sha256": "77b05f08ae45c3ecefb005f1ab571217213da40dba8e5bcdad9a727d7212206d",
+      "bytes": 68412,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 18,
+      "path": "public/portraits/18.webp",
+      "sha256": "ca0f2bdb141154cff9570a0c21ba226d9ceb677010c7091bb774ea372647e825",
+      "bytes": 86282,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 20,
+      "path": "public/portraits/20.webp",
+      "sha256": "728c528e8dd6415b6a088e5c564cf55e6a9bdde5a7dde2a356dcd6e7c52257fb",
+      "bytes": 74916,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 22,
+      "path": "public/portraits/22.webp",
+      "sha256": "838915839a3575edc2a73d619fb44dc3e70c0f04d2c73ce5b470246a4a58886d",
+      "bytes": 99928,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 23,
+      "path": "public/portraits/23.webp",
+      "sha256": "4cadc1c5bfe440b2f010b4c6276198a67aab2df952e8adba44b0c105c001facd",
+      "bytes": 86368,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 25,
+      "path": "public/portraits/25.webp",
+      "sha256": "3c139090920a54d61edf1b368aba29c14b14960f3f29e70424dd21309b1271e9",
+      "bytes": 68844,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 27,
+      "path": "public/portraits/27.webp",
+      "sha256": "c87694746099edda7cee174f8c28807f761b4f068d6263ce2dd92cd8b21fcace",
+      "bytes": 78138,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 33,
+      "path": "public/portraits/33.webp",
+      "sha256": "6454ec0848ac834bf32a7385867c8bec09113c01bcf8f34b86e11689689986a2",
+      "bytes": 96422,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 36,
+      "path": "public/portraits/36.webp",
+      "sha256": "c88160bdbcd4a63c2f4cd93a7bf4f7046f3e0216aff3ee00e4150c5c2b81933f",
+      "bytes": 74820,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 38,
+      "path": "public/portraits/38.webp",
+      "sha256": "321fa50d7c7b07c47e9fe5914746de6f7ddddbb0c3e9964db005fd735bce0ca4",
+      "bytes": 81744,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 45,
+      "path": "public/portraits/45.webp",
+      "sha256": "61793b125584245a3866b1a8d2f9fbea43933f71bc9f58beaae255f6f961357e",
+      "bytes": 85780,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 46,
+      "path": "public/portraits/46.webp",
+      "sha256": "e0e2c88957f947e3baf23aa966d5d0649bc4051fe36a52af8cdfe55e7fc5934a",
+      "bytes": 89698,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 47,
+      "path": "public/portraits/47.webp",
+      "sha256": "afb0315ba101f64b6343b13cf8efafcb92bc20ade1b7f4a8acc4c742b2a2922f",
+      "bytes": 77030,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 51,
+      "path": "public/portraits/51.webp",
+      "sha256": "4a7eae18c5a59587bb258f203b1cd63ea4b11a289cfca342494bedef906b6292",
+      "bytes": 109124,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 52,
+      "path": "public/portraits/52.webp",
+      "sha256": "f4dd3fc100a5058f9f1d06ba054157c726cbe0505784090ef88e0f0ece50db76",
+      "bytes": 113618,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 53,
+      "path": "public/portraits/53.webp",
+      "sha256": "cc67f2037d65130353b79b3ea6af1b6fe70319c2e82d4508bd09e28d9b21c2f4",
+      "bytes": 88966,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 54,
+      "path": "public/portraits/54.webp",
+      "sha256": "9ecf2cffe6a5a1b7eaa68ea1f90393a86c412c12dd570c36771adc8e3cc4ba17",
+      "bytes": 129388,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 55,
+      "path": "public/portraits/55.webp",
+      "sha256": "01a1065100942705910d28711a03d443c7745cc975a75cd6cafe4a3b09866501",
+      "bytes": 101830,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 56,
+      "path": "public/portraits/56.webp",
+      "sha256": "7169965ffacaa1a73b82e3ff47e3979e536c7e6dd9de78233dcee6437276744c",
+      "bytes": 110114,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 57,
+      "path": "public/portraits/57.webp",
+      "sha256": "1aa12c908eeb62d4ca141da30e4c77b4709058d5f30b2313b7780958d45e90ed",
+      "bytes": 110088,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 58,
+      "path": "public/portraits/58.webp",
+      "sha256": "04d72ec6329a81227021b7a5a98922ec9e138331e32d1ed7b41ee360e387b5e0",
+      "bytes": 106578,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 59,
+      "path": "public/portraits/59.webp",
+      "sha256": "c81a7023f9caada6776059e5102220a2722c2b07059b7a4ebf37f7ff8bb8c5ec",
+      "bytes": 107652,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 60,
+      "path": "public/portraits/60.webp",
+      "sha256": "a993ceaefe3cb85556b405729f0dfa6aad2ad3386f4dc6356c858900539ac25d",
+      "bytes": 98036,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 61,
+      "path": "public/portraits/61.webp",
+      "sha256": "a751f9d5d418fb9a02e2cdd951918fb861db1bffef12b347ebde114fda17d221",
+      "bytes": 99062,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 62,
+      "path": "public/portraits/62.webp",
+      "sha256": "ccde0407557caa640f6afd6f439b989233a516d18ba243c8a551f7ac3b17a816",
+      "bytes": 126278,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 63,
+      "path": "public/portraits/63.webp",
+      "sha256": "2f912e1e6325fc810bcc4d9c09daa83c1632570c81ba4d024c3c98dddde01b1f",
+      "bytes": 101814,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 64,
+      "path": "public/portraits/64.webp",
+      "sha256": "cde376ff913778d5b65b4abfe4a1cf4931c6ce9a64561c95f0d51dea81a7fe35",
+      "bytes": 115086,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 65,
+      "path": "public/portraits/65.webp",
+      "sha256": "e5f13487e5667883dec95f0ffa7e9f18a4cd0cbf6ea8ed2d8e1cc45e77df4edc",
+      "bytes": 96844,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 66,
+      "path": "public/portraits/66.webp",
+      "sha256": "f367280e44b540505c293ec82ee0e462b87d0323570a723c212fb1b4dac75219",
+      "bytes": 101288,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 67,
+      "path": "public/portraits/67.webp",
+      "sha256": "5c6bf6f60494417f29df7906276105c5807d7dafd5d885c08756bc4c9e9233a3",
+      "bytes": 94866,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 68,
+      "path": "public/portraits/68.webp",
+      "sha256": "e472c12d3f61a9a4671db844bad2a187ac7e3a0b94741b2e598d0a94434634e7",
+      "bytes": 90262,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 69,
+      "path": "public/portraits/69.webp",
+      "sha256": "987e3c61db0eee48b9bb12488d719bde4a4263185cd675a00669abdc262ef1e7",
+      "bytes": 80694,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 70,
+      "path": "public/portraits/70.webp",
+      "sha256": "da3480d384726d7626dc05fb542284e9af4561c107eda13d3752b0e7eddf021d",
+      "bytes": 97806,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 71,
+      "path": "public/portraits/71.webp",
+      "sha256": "7ed3227fce2bc31d9a55be5a45eb79eef02202594a9c329b0929decb493f5fa8",
+      "bytes": 82168,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 72,
+      "path": "public/portraits/72.webp",
+      "sha256": "70887ef7bb49a050e4893c9043975fe1abda958361ca8a393b5694b9f0d88e53",
+      "bytes": 83752,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 73,
+      "path": "public/portraits/73.webp",
+      "sha256": "56195796a2f8d4d329dc911fc5e7b953ddff3e70dc1b494d04d87cf220e33306",
+      "bytes": 107620,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 74,
+      "path": "public/portraits/74.webp",
+      "sha256": "79a5bf0dffac62011b2b6a7c69e92ed5658cce31f79e4edea3da8e5a4f3dc338",
+      "bytes": 88116,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 75,
+      "path": "public/portraits/75.webp",
+      "sha256": "8f9a0af98abb0e23a4e9fd20f708cdf5b3a80df2563d9bddbfed7ba19db9f566",
+      "bytes": 113944,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 76,
+      "path": "public/portraits/76.webp",
+      "sha256": "478b445dbb9352d278ead1682f1771705d3cb3d7530c0f763059bd0239ae6719",
+      "bytes": 101558,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 77,
+      "path": "public/portraits/77.webp",
+      "sha256": "83d8af44538c32b05110418768bf91625c459e694642a989ea67a959f6ecf494",
+      "bytes": 120182,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 78,
+      "path": "public/portraits/78.webp",
+      "sha256": "1f3e50c9e9a1dd8d642af67f13cdf707ad3531c66efe69b4c24939c367d11892",
+      "bytes": 115706,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 79,
+      "path": "public/portraits/79.webp",
+      "sha256": "9c01dbe21b265174cb6510d46cc86ff433e16d306ae8510fbd2ab53f5ec47a1b",
+      "bytes": 103772,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": 80,
+      "path": "public/portraits/80.webp",
+      "sha256": "162ce1c04d0cd1276b76f8d10efeb5426a0716147ab2014868213a8474f98a31",
+      "bytes": 113220,
+      "size": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "live_images": [
+    {
+      "id": 1,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 74076
+    },
+    {
+      "id": 2,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 76224
+    },
+    {
+      "id": 3,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 100260
+    },
+    {
+      "id": 4,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 75896
+    },
+    {
+      "id": 7,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 91708
+    },
+    {
+      "id": 9,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 98944
+    },
+    {
+      "id": 10,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 81916
+    },
+    {
+      "id": 13,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 68412
+    },
+    {
+      "id": 18,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 86282
+    },
+    {
+      "id": 20,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 74916
+    },
+    {
+      "id": 22,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 99928
+    },
+    {
+      "id": 23,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 86368
+    },
+    {
+      "id": 25,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 68844
+    },
+    {
+      "id": 27,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 78138
+    },
+    {
+      "id": 33,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 96422
+    },
+    {
+      "id": 36,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 74820
+    },
+    {
+      "id": 38,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 81744
+    },
+    {
+      "id": 45,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 85780
+    },
+    {
+      "id": 46,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 89698
+    },
+    {
+      "id": 47,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 77030
+    },
+    {
+      "id": 51,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 109124
+    },
+    {
+      "id": 52,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 113618
+    },
+    {
+      "id": 53,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 88966
+    },
+    {
+      "id": 54,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 129388
+    },
+    {
+      "id": 55,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 101830
+    },
+    {
+      "id": 56,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 110114
+    },
+    {
+      "id": 57,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 110088
+    },
+    {
+      "id": 58,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 106578
+    },
+    {
+      "id": 59,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 107652
+    },
+    {
+      "id": 60,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 98036
+    },
+    {
+      "id": 61,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 99062
+    },
+    {
+      "id": 62,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 126278
+    },
+    {
+      "id": 63,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 101814
+    },
+    {
+      "id": 64,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 115086
+    },
+    {
+      "id": 65,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 96844
+    },
+    {
+      "id": 66,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 101288
+    },
+    {
+      "id": 67,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 94866
+    },
+    {
+      "id": 68,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 90262
+    },
+    {
+      "id": 69,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 80694
+    },
+    {
+      "id": 70,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 97806
+    },
+    {
+      "id": 71,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 82168
+    },
+    {
+      "id": 72,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 83752
+    },
+    {
+      "id": 73,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 107620
+    },
+    {
+      "id": 74,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 88116
+    },
+    {
+      "id": 75,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 113944
+    },
+    {
+      "id": 76,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 101558
+    },
+    {
+      "id": 77,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 120182
+    },
+    {
+      "id": 78,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 115706
+    },
+    {
+      "id": 79,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 103772
+    },
+    {
+      "id": 80,
+      "curl_exit": 0,
+      "matches_local": true,
+      "served_bytes": 113220
+    }
+  ],
+  "live_assets_match_local": {
+    "index.html": true,
+    "app.js": true,
+    "style.css": true
+  },
+  "mean_kib": 93.2976171875,
+  "largest_kib": 126.35546875,
+  "visual_review": {
+    "reviewed_active_portraits": 50,
+    "method": "All active images viewed as five numbered full-frame contact sheets at320px each.",
+    "findings": [
+      "All depict adult male priest portraits with visible clerical collars; no hats observed.",
+      "Variety in facial shape, skin tone, dark/light/gray hair, curls/straight/bald hairstyles, beard/stubble/clean-shaven appearance and smile/neutral expression.",
+      "Consistent black-and-white chest-up calendar composition; backgrounds repeatedly use Roman courtyards and domes.",
+      "Some similar-looking face archetypes, especially dark wavy-haired and salt-and-pepper bearded men; not50 guaranteed unrelated identities. No exact duplicate image files."
+    ],
+    "recommendation": "Ready for casual use; more generation is optional, not necessary. A shuffle bag would postpone repeated images more efficiently than expanding an already adequate50-image pool."
+  },
+  "generator_model_version": "Not recorded in available prompt files; built-in image-generation tool documented.",
+  "tests": {
+    "command": "node --test",
+    "passed": 22
+  },
+  "model_work_cancelled_by_user": true
+}

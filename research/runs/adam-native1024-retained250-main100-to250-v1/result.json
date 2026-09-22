@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "iterations": 250,
+  "first_completed_step": 101,
+  "additional_iterations": 150,
+  "optimizer_steps": {
+    "g": 313,
+    "d": 266
+  },
+  "additional_optimizer_steps": {
+    "g": 188,
+    "d": 159
+  },
+  "protocol_sha256": "2c10cfc0ebec3ab0568d2778f3fd5363d231e52931d81ce4522cc4660b038c33",
+  "parent_checkpoint_sha256": "479adbc22407787ee07ebba14eeb230ca94635fc1e36b58704bd11d43e356c08",
+  "checkpoints": [
+    {
+      "complete": true,
+      "step": 150,
+      "checkpoint": "checkpoint-150.pt",
+      "checkpoint_sha256": "99bee0efb20c847ac4e0da7571a5409b8af1912e7e26e0f8d1e6c8b8b403962f",
+      "state_sha256": "f4d8cebf7b693baa536e9fc114152b712ffe7625b17fe4bbe1e39ae01236732d",
+      "protocol_sha256": "2c10cfc0ebec3ab0568d2778f3fd5363d231e52931d81ce4522cc4660b038c33",
+      "snapshot_manifest_sha256": "ebae4d394e473a2ae5ded7717d1aa7b64c3e25746739fb51c9d2c95914266051",
+      "optimizer_steps": {
+        "g": 188,
+        "d": 160
+      },
+      "model_optimizer_rng_path_state_restored_exactly": true
+    },
+    {
+      "complete": true,
+      "step": 250,
+      "checkpoint": "checkpoint-250.pt",
+      "checkpoint_sha256": "3e301735b5237f46aaf2fd688356ab79e97bd50aa8f3a61bd9a4fe45398becbe",
+      "state_sha256": "6ade0491eb1267efd4889004259406f13325d0087da8eca3a8f8b5beb6eb00ea",
+      "protocol_sha256": "2c10cfc0ebec3ab0568d2778f3fd5363d231e52931d81ce4522cc4660b038c33",
+      "snapshot_manifest_sha256": "410655ac30518264fc6758297c9e4e2fe149c8c3a90b79392fa8e092acd916fc",
+      "optimizer_steps": {
+        "g": 313,
+        "d": 266
+      },
+      "model_optimizer_rng_path_state_restored_exactly": true
+    }
+  ],
+  "folded_native_max_errors": {
+    "raw": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ema": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "fixed_offsets_and_mask_invariants": true,
+  "seconds_training_previews_export": 2097.293038208969,
+  "main_adaptation_run": true,
+  "development_continuation_only": true,
+  "production_approved": false,
+  "server_latency_proven": false
+}

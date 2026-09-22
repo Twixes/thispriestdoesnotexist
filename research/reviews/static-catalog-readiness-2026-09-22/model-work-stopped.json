@@ -1,0 +1,15 @@
+{
+  "user_decision": "Use existing pre-generated catalog; abandon training/deployed generator idea",
+  "goal_status": "paused",
+  "active_owned_research_workers": [],
+  "last_run": "research/runs/adam-native1024-retained250-main100-to250-v1",
+  "last_run_terminal": {
+    "complete": true,
+    "failure": null,
+    "seconds": 2110.051126250066,
+    "peak_rss_gib": 10.524246215820312,
+    "min_available_fraction": 0.26484012603759766,
+    "protocol_sha256": "2c10cfc0ebec3ab0568d2778f3fd5363d231e52931d81ce4522cc4660b038c33"
+  },
+  "no_further_training_or_inference_deployment": true
+}

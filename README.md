@@ -4,7 +4,7 @@ A personal static website: fifty selected fictional adult priest portraits from 
 
 All portraits share one collection. The former `/hot` route redirects to `/`; there is no attractiveness filter.
 
-Plain HTML, CSS, JavaScript, and pre-generated WebP images. No framework or analytics. The deployed version currently uses the curated catalog. A trained, per-request server-side generator is being developed under [`research/`](research/); it is not deployed yet.
+Plain HTML, CSS, JavaScript, and pre-generated WebP images. No framework or analytics. Production uses only the curated, pre-generated catalog. Model-training and per-request inference experiments under [`research/`](research/) are archived and are no longer being pursued; no trained model is deployed.
 
 ## Development
 
