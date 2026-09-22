@@ -1,0 +1,14 @@
+{
+  "browser": "Google Chrome (headless Playwright)",
+  "reloads": 427,
+  "uniquePortraitsPerRound": 200,
+  "rounds": 2,
+  "immediateBoundaryRepeat": false,
+  "concurrentTabs": 20,
+  "distinctConcurrentPortraits": 20,
+  "indexedDbStateRestoredInNewContext": true,
+  "imagePixels": "Existing portrait used for all paths to isolate queue behavior while generation runs",
+  "script": "scripts/browser-shuffle-smoke.cjs",
+  "partialRoundBeforeReopen": 27,
+  "remainingAfterReopenAnd20ConcurrentTabs": 153
+}
