@@ -1,0 +1,33 @@
+{
+  "observed_at_utc": "2026-09-22T01:27:53.183889+00:00",
+  "full_run_complete": false,
+  "planned_pairs": 1000,
+  "worker_live_at_observation": {
+    "pid": 61291,
+    "created_at": 1790036671.723704
+  },
+  "archived_prefixes": [
+    {
+      "pairs": 250,
+      "marker_sha256": "104d3c039eef4d95ca2944016a904083cce1e9ee2a3b1e4a78a6ead7e2a9e1e1",
+      "importance_sha256": "0c8f6e3362feecaee10bcae6c9ce9b21eaacb9e189d6fd0a820f8ef1928fc5ca",
+      "component_sample_counts": {
+        "G": 250,
+        "D": 250
+      },
+      "finite_signed_and_squared_sums": true
+    },
+    {
+      "pairs": 500,
+      "marker_sha256": "69646a98c6a8c939b4fc398307d0dc5db737fa6406f77d4848103376ffe14b05",
+      "importance_sha256": "ab79479d0b4bd694d51ce8c3dcda80ec68fb99550a99d846cff3df72a278032a",
+      "component_sample_counts": {
+        "G": 500,
+        "D": 500
+      },
+      "finite_signed_and_squared_sums": true
+    }
+  ],
+  "metrics_prefix_sha256": "7cf66a6a922b50c28e98e7e25910eac463e45042d046bd6958dd63040e93fb49",
+  "interpretation": "Authenticated immutable saved prefixes while full run remains live. No full-run unchanged-model verification, ranking-stability decision, quantile selection or quality approval. Full1000/disjoint-half review remains required."
+}
