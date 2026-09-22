@@ -1,0 +1,19 @@
+{
+  "verified_at_utc": "2026-09-22T00:42:41.552988+00:00",
+  "runner_sha256": "7a23948814df313e106057c903a73675cfec542988017f1f7ffbc116b48a2b23",
+  "test_sha256": "8cf0c3d9f92c343baed502ff127088bdec36d10b8828ed714f011e809135f4a2",
+  "tests": {
+    "passed": 3,
+    "seconds": 7.325,
+    "command": "research/.venv/bin/python research/experiments/adam_native/test_continue_main_adaptation_fixed_offsets250_100.py"
+  },
+  "review": "Root reviewed source gate, complete engine restore, absolute iteration schedule, native PNG reproduction, checkpoint50/100, folding and owned-worker supervision. Parent marker schema checked against frozen writer; unsupported fields are not assumed.",
+  "native_model_loaded": false,
+  "native_training_launched": false,
+  "required_before_launch": [
+    "Actual completed FI1000 and numerical/disjoint-half review with explicit quantile",
+    "Actual successful native10 plus full visual review",
+    "Current available-memory and owned-worker preflight"
+  ],
+  "production_approved": false
+}

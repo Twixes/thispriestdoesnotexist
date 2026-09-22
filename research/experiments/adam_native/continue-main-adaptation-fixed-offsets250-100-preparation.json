@@ -1,0 +1,83 @@
+{
+  "prepared_only": true,
+  "native_model_loaded": false,
+  "native_training_launched": false,
+  "future_native10_checkpoint_hash": null,
+  "route": "Exact continuation of a future successful visually reviewed retained250 native10 main-adaptation checkpoint to100",
+  "absolute_iteration_range": [
+    10,
+    99
+  ],
+  "preview_steps": [
+    10,
+    50,
+    100
+  ],
+  "checkpoint_steps": [
+    50,
+    100
+  ],
+  "expected_optimizer_steps": {
+    "10": {
+      "g": 13,
+      "d": 11
+    },
+    "50": {
+      "g": 63,
+      "d": 54
+    },
+    "100": {
+      "g": 125,
+      "d": 107
+    }
+  },
+  "additional_optimizer_steps": {
+    "g": 112,
+    "d": 96
+  },
+  "engine": "Exact imported frozen main_adaptation_fixed_offsets250_10.AdaptationEngine",
+  "guards": {
+    "start_available_fraction": 0.35,
+    "runtime_available_fraction": 0.2,
+    "rss_gib": 12,
+    "swap_growth_mib": 512,
+    "seconds": 3600
+  },
+  "automatic_launch": false,
+  "automatic_restart": false,
+  "required_before_native_launch": [
+    "Real completed retained250 FI1000 plus numerical/disjoint-rank stability review",
+    "Explicit source quantile decision",
+    "Actual successful retained250 native10 artifacts and image review",
+    "No other heavy worker and current memory preflight"
+  ],
+  "tests": {
+    "command": "research/.venv/bin/python research/experiments/adam_native/test_continue_main_adaptation_fixed_offsets250_100.py",
+    "passed": 3,
+    "seconds": 7.439,
+    "fixture_scope": "Tiny random native32 G/D only; actual imported engine and checkpoint-envelope restore helper",
+    "evidence": [
+      "Full uninterrupted10to100 state equality with serialized reconstruction at10and50",
+      "All losses/sample selections and regularizer records exact",
+      "Both regularizers exercised at16/32/48/64/80/96",
+      "Reset path-target negativecontrol diverges",
+      "Changed envelope or masks rejected before state mutation",
+      "Absent future native10 input refused"
+    ],
+    "native_checkpoint_or_fi_loaded": false
+  },
+  "pins": {
+    "research/experiments/adam_native/continue_main_adaptation_fixed_offsets250_100.py": "7a23948814df313e106057c903a73675cfec542988017f1f7ffbc116b48a2b23",
+    "research/experiments/adam_native/test_continue_main_adaptation_fixed_offsets250_100.py": "8cf0c3d9f92c343baed502ff127088bdec36d10b8828ed714f011e809135f4a2",
+    "research/experiments/adam_native/continue-main-adaptation-fixed-offsets250-100-README.md": "ef997e9e487c278ec508789715d53238f3c10978bd814d7488766529111830af",
+    "research/experiments/adam_native/main_adaptation_fixed_offsets250_10.py": "0a5be1d0f4db4ffe04b1c08e6483855fdf99a78b9be8bf38eab1a39672fec7ba",
+    "research/experiments/adam_native/main_adaptation_fixed_offsets10.py": "9ff54a546593aebeffc0320f897ba66865c13674b5b83be3095cf1471eb73b6b",
+    "research/experiments/adam_native/test_main_adaptation_fixed_offsets10.py": "5f378e207c9ef3cd9e992a4a9d8aeca877f8f59962b97b07b177bcfac716f594",
+    "research/experiments/adam_native/adaptation_masks_fixed_offsets.py": "704253fc79a9ff03d2bbd8ad51dd87416b88b7ee5b627473930b11c4c3cb539d",
+    "research/experiments/adam_native/selection_fixed_offsets.py": "840700d66e2f069bee8db52ad7593556f27d648265aa2018492f3d9ed4040881",
+    "research/experiments/adam_native/fixed_offset_policy.py": "60dbcf1b8d9358a3279fa3538af434f81ba849ede76438213061538174eb8af6",
+    "research/experiments/adam_native/modulation.py": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a"
+  },
+  "production_approved": false,
+  "server_latency_proven": false
+}

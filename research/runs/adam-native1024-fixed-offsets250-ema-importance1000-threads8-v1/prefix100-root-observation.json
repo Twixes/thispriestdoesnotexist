@@ -1,0 +1,36 @@
+{
+  "observed_at_utc": "2026-09-22T00:37:51.198650+00:00",
+  "prefix_pairs": 100,
+  "planned_pairs": 1000,
+  "full_run_complete": false,
+  "worker_live_at_observation": {
+    "pid": 61291,
+    "created_at": 1790036671.723704
+  },
+  "marker_sha256": "18cb25828ca60154b8b20cb221cdb88b37613dae4a915a8a652f3642fb44df0a",
+  "importance_sha256": "74337bccb188f34350bf55bc033d746fda93ddcd817a316b4f27c75b4b675cb4",
+  "protocol_sha256": "263f4b4af59beb34abf9cae5218209a1166b3aa189ee6fa64c0c273470ff2132",
+  "components": {
+    "G": {
+      "sample_count": 100,
+      "tensor_count": 163,
+      "coordinates": 106870,
+      "zero_coordinates": 0,
+      "all_zero_tensors": [],
+      "minimum_mean_squared_gradient": 7.138650885671309e-14,
+      "maximum_mean_squared_gradient": 71.62361605788436,
+      "all_moments_finite": true
+    },
+    "D": {
+      "sample_count": 100,
+      "tensor_count": 67,
+      "coordinates": 62179,
+      "zero_coordinates": 0,
+      "all_zero_tensors": [],
+      "minimum_mean_squared_gradient": 9.368288953478493e-14,
+      "maximum_mean_squared_gradient": 1.7267774190316245,
+      "all_moments_finite": true
+    }
+  },
+  "interpretation": "Numerical prefix sanity only. No full-run source-state verification, stable ranking, quantile selection or model quality claim. Full1000 and disjoint-half review remain required."
+}

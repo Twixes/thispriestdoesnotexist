@@ -1,0 +1,34 @@
+{
+  "observed_at_utc": "2026-09-22T00:35:26.529592+00:00",
+  "commit": "8079413",
+  "checks": [
+    {
+      "name": "Workers Builds: thispriestdoesnotexist",
+      "status": "completed",
+      "conclusion": "failure",
+      "details_url": "https://dash.cloudflare.com/1a5e44710a69d21d6822a460e5861578/workers/services/view/thispriestdoesnotexist/production/builds/b646edf0-14aa-4f17-81ae-3242f100a65c"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/Twixes/thispriestdoesnotexist/actions/runs/35672271448/job/106571152605"
+    }
+  ],
+  "homepage_checks": {
+    "curl_http_status": 200,
+    "python_urllib_http_status": 403,
+    "note": "curl succeeds; urllib was rejected. HTTP status does not prove browser behavior or build success."
+  },
+  "changed_scope": "Research code, reports and artifacts only; no application or deployment configuration changed.",
+  "log_attempt": {
+    "method": "Existing personal Wrangler OAuth via supported auth token command, token kept in process memory.",
+    "account_id": "1a5e44710a69d21d6822a460e5861578",
+    "build_id": "b646edf0-14aa-4f17-81ae-3242f100a65c",
+    "http_status": 403,
+    "cloudflare_error_code": 10000,
+    "message": "Authentication error",
+    "build_failure_cause_known": false
+  },
+  "follow_up": "Inspect the next master-push build status; existing credential lacks access to current build logs. No manual application deployment, scope expansion or vault read was performed."
+}
