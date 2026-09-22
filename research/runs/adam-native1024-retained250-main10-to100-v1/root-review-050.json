@@ -1,0 +1,22 @@
+{
+  "step": 50,
+  "reviewer": "root",
+  "images": {
+    "ema-000.png": "0bc2165715a7cc4734a940ec8fb145fab15861502f559fbf3f09d18838a3dfe2",
+    "ema-001.png": "fb822baeaf751fe7456d80fb95e69696bc33b249e3677b9f8f949af5b1a82736",
+    "ema-002.png": "b9dea2da9c26b246e858d3a11f73d1dab84a97efb9d54348beece872abc312db",
+    "ema-003.png": "3c2ad5c7a4bc36ea568ff78d178e958946bccfbfc271c2a09590929e2c2d69df",
+    "raw-000.png": "138541d066cf1c21d1ba3b9721efc2ce8c5cee3af608c3d044a3e43afbf64dcd",
+    "raw-001.png": "838651cb1544c8dfb4d62b0d78f414e48a3291bc238e0809d1fcd2821e268549",
+    "raw-002.png": "e1c120fb865628ca569e78796ddaddd33f61dd112726db566f87ddb84cba5533",
+    "raw-003.png": "270b3ced4675737c8103e79714f6bd77e0fd744e54826d955cda7a16385c7522"
+  },
+  "checkpoint_sha256": "c84157a0af62dce0f265b995d36916b91fed2a0aa30c43f6678e94aad22eb6af",
+  "observations": [
+    "All eight full native images directly inspected. Raw has small framing and tonal changes; facial anatomy, skin, eyes and hair remain legible without severe global grain/dark-cyan collapse. EMA remains near original.",
+    "No unambiguous priest collar in any image. Apparent children000/003 and hats001/003 persist. Zero demonstrated priest conversion across these four fixed latents."
+  ],
+  "decision": "Continue current state to100; this checkpoint is a domain failure, not a successful priest model. Small training budget motivates more observation while photography remains coherent.",
+  "production_approved": false,
+  "server_latency_proven": false
+}

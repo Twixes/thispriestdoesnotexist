@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "built_at_utc": "2026-09-22T08:17:41.866852+00:00",
+  "built_at_utc": "2026-09-22T08:25:46.073466+00:00",
   "runs": {
     "main10": {
       "status": "complete",
@@ -14,7 +14,8 @@
     "continuation100": {
       "status": "in_progress_or_awaiting_terminal_record",
       "complete_steps": [
-        10
+        10,
+        50
       ],
       "path": "research/runs/adam-native1024-retained250-main10-to100-v1",
       "protocol_sha256": "a21187fa9476db357b144067e084847f394d82730827d82f94f23c4251d915b9"
@@ -22,9 +23,10 @@
   },
   "complete_steps": [
     0,
-    10
+    10,
+    50
   ],
-  "default_step": 10,
+  "default_step": 50,
   "snapshots": [
     {
       "step": 0,
@@ -36,7 +38,7 @@
     },
     {
       "step": 50,
-      "status": "pending"
+      "status": "complete"
     },
     {
       "step": 100,
@@ -84,10 +86,22 @@
           "height": 1024
         },
         "raw-50": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-000.png",
+          "url": "../../runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-000.png",
+          "sha256": "138541d066cf1c21d1ba3b9721efc2ce8c5cee3af608c3d044a3e43afbf64dcd",
+          "bytes": 1329647,
+          "width": 1024,
+          "height": 1024
         },
         "ema-50": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-000.png",
+          "url": "../../runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-000.png",
+          "sha256": "0bc2165715a7cc4734a940ec8fb145fab15861502f559fbf3f09d18838a3dfe2",
+          "bytes": 1285067,
+          "width": 1024,
+          "height": 1024
         },
         "raw-100": {
           "status": "pending"
@@ -137,10 +151,22 @@
           "height": 1024
         },
         "raw-50": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-001.png",
+          "url": "../../runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-001.png",
+          "sha256": "838651cb1544c8dfb4d62b0d78f414e48a3291bc238e0809d1fcd2821e268549",
+          "bytes": 1543129,
+          "width": 1024,
+          "height": 1024
         },
         "ema-50": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-001.png",
+          "url": "../../runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-001.png",
+          "sha256": "fb822baeaf751fe7456d80fb95e69696bc33b249e3677b9f8f949af5b1a82736",
+          "bytes": 1482470,
+          "width": 1024,
+          "height": 1024
         },
         "raw-100": {
           "status": "pending"
@@ -190,10 +216,22 @@
           "height": 1024
         },
         "raw-50": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-002.png",
+          "url": "../../runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-002.png",
+          "sha256": "e1c120fb865628ca569e78796ddaddd33f61dd112726db566f87ddb84cba5533",
+          "bytes": 1352645,
+          "width": 1024,
+          "height": 1024
         },
         "ema-50": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-002.png",
+          "url": "../../runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-002.png",
+          "sha256": "b9dea2da9c26b246e858d3a11f73d1dab84a97efb9d54348beece872abc312db",
+          "bytes": 1321774,
+          "width": 1024,
+          "height": 1024
         },
         "raw-100": {
           "status": "pending"
@@ -243,10 +281,22 @@
           "height": 1024
         },
         "raw-50": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-003.png",
+          "url": "../../runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-003.png",
+          "sha256": "270b3ced4675737c8103e79714f6bd77e0fd744e54826d955cda7a16385c7522",
+          "bytes": 1685148,
+          "width": 1024,
+          "height": 1024
         },
         "ema-50": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-003.png",
+          "url": "../../runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-003.png",
+          "sha256": "3c2ad5c7a4bc36ea568ff78d178e958946bccfbfc271c2a09590929e2c2d69df",
+          "bytes": 1665176,
+          "width": 1024,
+          "height": 1024
         },
         "raw-100": {
           "status": "pending"
@@ -257,7 +307,7 @@
       }
     }
   ],
-  "available_images": 16,
+  "available_images": 24,
   "expected_images": 32,
   "sources": {
     "research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/protocol.json": {
@@ -379,6 +429,18 @@
       "url": "../../runs/adam-native1024-retained250-main10-to100-v1/eval-z.npz",
       "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
       "bytes": 8448
+    },
+    "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/manifest.json": {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/manifest.json",
+      "url": "../../runs/adam-native1024-retained250-main10-to100-v1/step-050/manifest.json",
+      "sha256": "423ee26720400403ea371b6e86b7ef310134cd0b28563457160e8c597309b4ac",
+      "bytes": 1286
+    },
+    "research/runs/adam-native1024-retained250-main10-to100-v1/checkpoint-050.json": {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/checkpoint-050.json",
+      "url": "../../runs/adam-native1024-retained250-main10-to100-v1/checkpoint-050.json",
+      "sha256": "ef842d1bc5e808f8e29f86b5eb28e9a7ae2b1ed00e2d5488d0a9a7f01eb0c394",
+      "bytes": 550
     }
   },
   "unfiltered": true,
