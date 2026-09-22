@@ -1,0 +1,90 @@
+{
+  "reviewed_at_utc": "2026-09-22T08:16:24.406192+00:00",
+  "step": 10,
+  "indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "n_fixed_latents": 4,
+  "viewed_images": [
+    {
+      "path": "research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/ema-000.png",
+      "sha256": "4eb95b062a4199a78d1f618e0971a5c45a6d7c75bd78cd97428b0119a0ee72b6",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/ema-001.png",
+      "sha256": "72a9064dc010763d7746087f6f824355c9bd0f6452034393445e0f24e36e3d3e",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/ema-002.png",
+      "sha256": "2c047ccb162fb06af4432f7b0da02b8601dbbac16fa5fc60976a4e87bae26a29",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/ema-003.png",
+      "sha256": "3aaf649aed7d2d89496b75bf06ee7a7bc5a8259020324515dbd5dae34a156642",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/raw-000.png",
+      "sha256": "20a980999010110b0af6ce9b1774401b725b27617abc9bba465fc607670125c1",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/raw-001.png",
+      "sha256": "ad679c6ed931e1e54b8e2ccf4654b7096951ed76376cac84a5c71bc0c2f1729f",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/raw-002.png",
+      "sha256": "474c3a48ed74ff1d41191b1a6e7c9d1d0ea6206869d300f41ed75858204dab0a",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/raw-003.png",
+      "sha256": "0f312ad36db42d1ae83f0b930a8a4f5db1ad151c1db29ff28528e0189ecae256",
+      "direct_native_view": true
+    }
+  ],
+  "snapshot_manifest_sha256": "b5603f65b25650465568d281dbcc13b7658682b1909de1765e5acf100c8085bf",
+  "findings": [
+    {
+      "index": 0,
+      "raw": "Coherent source-like apparent child with the existing malformed neighboring hand/arm on the left; no new obvious major photographic regression.",
+      "ema": "Near source appearance, coherent face; existing peripheral artifact retained.",
+      "domain": "Apparent child in ordinary shirt, no priest collar; no attractiveness assessment."
+    },
+    {
+      "index": 1,
+      "raw": "Coherent source-like adult-looking face, bright exposure and busy scarf texture; no major new grain/dark collapse.",
+      "ema": "Near source appearance.",
+      "domain": "Hat and scarf retained, no priest collar; not an accepted adult male priest portrait."
+    },
+    {
+      "index": 2,
+      "raw": "Coherent source-like adult-looking face with glasses and ordinary shirt; natural source-like shading, no muddy/cyan collapse.",
+      "ema": "Near source appearance with coherent features.",
+      "domain": "No hat, but ordinary open-neck shirt and no priest collar."
+    },
+    {
+      "index": 3,
+      "raw": "Coherent source-like apparent child in knitted hat and patterned winter clothes; no severe new skin grain or gray/mauve collapse.",
+      "ema": "Near source appearance.",
+      "domain": "Apparent child and headwear; no priest collar, no attractiveness assessment."
+    }
+  ],
+  "overall": {
+    "photographic_regression_observed": false,
+    "new_severe_grain_or_color_collapse": false,
+    "adult_priest_domain_achieved": false,
+    "no_visual_stop_reason_at10": true,
+    "quality_accepted": false,
+    "production_approved": false,
+    "server_latency_proven": false,
+    "limitations": "Only four fixed latents after10 main steps; source-like coherence is not domain conversion or evidence of broad realism/diversity. Subtle pixel changes are not quantified. Further checkpoints and broader unfiltered review remain necessary."
+  }
+}
