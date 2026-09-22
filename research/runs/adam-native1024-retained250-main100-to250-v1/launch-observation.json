@@ -1,0 +1,34 @@
+{
+  "observed_unix": 1790067117.74804,
+  "processes": [
+    {
+      "pid": 91366,
+      "ppid": 55550,
+      "created": 1790067047.98777,
+      "cmdline": [
+        "research/.venv/bin/python",
+        "research/experiments/adam_native/continue_main_adaptation_fixed_offsets250_250.py",
+        "--run",
+        "research/runs/adam-native1024-retained250-main10-to100-v1",
+        "--output",
+        "research/runs/adam-native1024-retained250-main100-to250-v1"
+      ],
+      "rss": 59670528
+    },
+    {
+      "pid": 91375,
+      "ppid": 91366,
+      "created": 1790067050.990576,
+      "cmdline": [
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python",
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/adam_native/continue_main_adaptation_fixed_offsets250_250.py",
+        "--worker",
+        "--output",
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-retained250-main100-to250-v1"
+      ],
+      "rss": 3559915520
+    }
+  ],
+  "available_fraction": 0.38616212209065753,
+  "session_id": 29590
+}

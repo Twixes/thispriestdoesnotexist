@@ -12,7 +12,8 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[2]
 MAIN=ROOT/'research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1'
 CONTINUATION=ROOT/'research/runs/adam-native1024-retained250-main10-to100-v1'
-STEPS=[0,10,50,100]
+LATER=ROOT/'research/runs/adam-native1024-retained250-main100-to250-v1'
+STEPS=[0,10,50,100,150,250]
 POLICY='fixed_synthesis_noise_and_activation_bias_offsets_v1'
 EVAL_SHA='c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e'
 
@@ -38,18 +39,23 @@ def collect():
     rows=[{'index':i,'images':{f'{arm}-{step}':{'status':'pending'} for step in STEPS for arm in ('raw','ema')}} for i in range(4)]
     def source(run,name):
         path=run/name;sources[str(path.relative_to(ROOT))]=artifact(path);return read(path)
-    def inspect_run(run,is_continuation):
+    def inspect_run(run,stage):
+        is_continuation=stage>0
+        end=[10,100,250][stage]
+        start=[0,10,100][stage]
+        preview_steps=[[0,10],[10,50,100],[100,150,250]][stage]
         if not (run/'protocol.json').exists():return {'status':'not_started','complete_steps':[]}
         protocol=source(run,'protocol.json');ph=sha(run/'protocol.json')
         assert protocol['conv_layout']=='output_rank1' and protocol['fixed_offset_policy']==POLICY
         assert protocol['quantile']==50.0 and protocol['resolution']==1024 and protocol['importance_source_step']==250
         assert protocol['importance_pairs']==1000 and protocol['preview_count_per_state']==4
-        expected_name='adam-native1024-retained250-main-adaptation10-to100' if is_continuation else 'adam-native1024-fixed-offsets-retained250-main-adaptation10'
-        assert protocol['name']==expected_name and protocol['iterations']==(100 if is_continuation else 10)
-        assert protocol['preview_steps']==([10,50,100] if is_continuation else [0,10])
+        expected_name=['adam-native1024-fixed-offsets-retained250-main-adaptation10','adam-native1024-retained250-main-adaptation10-to100','adam-native1024-retained250-main-adaptation100-to250'][stage]
+        assert protocol['name']==expected_name and protocol['iterations']==end
+        assert protocol['preview_steps']==preview_steps
         assert protocol['production_approved'] is False and protocol['server_latency_proven'] is False
         names=['main_adaptation_fixed_offsets250_10.py','modulation.py','fixed_offset_policy.py','adaptation_masks_fixed_offsets.py']
         if is_continuation:names+=['continue_main_adaptation_fixed_offsets250_100.py']
+        if stage==2:names+=['continue_main_adaptation_fixed_offsets250_250.py']
         for name in names:
             path=run/name
             # Some continuation dependencies remain archived in its authenticated parent.
@@ -57,15 +63,16 @@ def collect():
             record=artifact(path);assert record['sha256']==protocol['pins']['research/experiments/adam_native/'+name]
             sources[str(path.relative_to(ROOT))]=record
         if is_continuation:
-            assert protocol['source_main_run']==str(MAIN.relative_to(ROOT))
-            assert protocol['source_main_protocol_sha256']==sha(MAIN/'protocol.json')
-            assert protocol['source_main_checkpoint_sha256']==read(MAIN/'checkpoint-010.json')['checkpoint_sha256']
-            assert runs['main10']['status']=='complete'
+            parent=MAIN if stage==1 else CONTINUATION
+            assert protocol['source_main_run']==str(parent.relative_to(ROOT))
+            assert protocol['source_main_protocol_sha256']==sha(parent/'protocol.json')
+            assert protocol['source_main_checkpoint_sha256']==read(parent/f'checkpoint-{start:03}.json')['checkpoint_sha256']
+            assert runs['main10' if stage==1 else 'continuation100']['status']=='complete'
         complete=[]
         for step in protocol['preview_steps']:
             folder=run/f'step-{step:03}';marker=folder/'manifest.json'
             if not marker.exists():continue
-            if is_continuation and step in (50,100) and not (run/f'checkpoint-{step:03}.json').exists():continue
+            if is_continuation and step!=start and not (run/f'checkpoint-{step:03}.json').exists():continue
             snap=source(run,f'step-{step:03}/manifest.json')
             assert snap['complete'] and snap['step']==step and snap['rng_unchanged'] and snap['protocol_sha256']==ph
             assert sha(run/'eval-z.npz')==EVAL_SHA
@@ -74,10 +81,10 @@ def collect():
             expected={f'{arm}-{i:03}.png' for arm in ('raw','ema') for i in range(4)}
             assert len(snap['images'])==8 and {im['path'] for im in snap['images']}==expected
             images={im['path']:image_record(folder/im['path'],im['sha256']) for im in snap['images']}
-            if is_continuation and step==10:
+            if is_continuation and step==start:
                 assert snap['parent_pngs_exact']
                 for row in rows:
-                    for arm in ('raw','ema'):assert images[f"{arm}-{row['index']:03}.png"]['sha256']==row['images'][f'{arm}-10']['sha256']
+                    for arm in ('raw','ema'):assert images[f"{arm}-{row['index']:03}.png"]['sha256']==row['images'][f'{arm}-{start}']['sha256']
             else:
                 for row in rows:
                     for arm in ('raw','ema'):row['images'][f'{arm}-{step}']=images[f"{arm}-{row['index']:03}.png"]
@@ -108,13 +115,14 @@ def collect():
             assert termination['supervisor_and_worker_absent'] and not result
         status=('stopped' if termination else 'failed' if supervisor and not supervisor['complete'] else 'complete' if supervisor else 'awaiting_supervisor' if result else 'in_progress_or_awaiting_terminal_record')
         return {'status':status,'complete_steps':complete,'path':str(run.relative_to(ROOT)),'protocol_sha256':ph}
-    runs['main10']=inspect_run(MAIN,False)
-    runs['continuation100']=inspect_run(CONTINUATION,True)
+    runs['main10']=inspect_run(MAIN,0)
+    runs['continuation100']=inspect_run(CONTINUATION,1)
+    runs['continuation250']=inspect_run(LATER,2)
     complete=[step for step in STEPS if all(row['images'][f'{arm}-{step}']['status']=='complete' for row in rows for arm in ('raw','ema'))]
     for step in STEPS:snapshots.append({'step':step,'status':'complete' if step in complete else 'pending'})
     return {'schema_version':1,'built_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'runs':runs,
         'complete_steps':complete,'default_step':max(complete,default=0),'snapshots':snapshots,'rows':rows,
-        'available_images':len(complete)*8,'expected_images':32,'sources':sources,
+        'available_images':len(complete)*8,'expected_images':48,'sources':sources,
         'unfiltered':True,'scope':'Actual main-adaptation q50 development snapshots; four fixed latents, raw and EMA. Full main-adaptation updates begin from source weights; retained250 supplies importance masks only.',
         'production_approved':False,'quality_accepted':False,'server_latency_proven':False}
 

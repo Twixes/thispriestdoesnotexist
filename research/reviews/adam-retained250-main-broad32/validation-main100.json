@@ -1,0 +1,339 @@
+{
+  "validated_at_utc": "2026-09-22T08:56:42.063811+00:00",
+  "manifest_sha256": "71d5f6f6950e39f8977d543a2149b603a8c944d19a86094f482fcbfccb252b6f",
+  "index_sha256": "da22e630e72c6cba082c5d363061b2cf7ded3e5bc7ec4510ef65f4405e285ae9",
+  "available_images": 64,
+  "javascript_syntax": "passed",
+  "http_checks": [
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/index.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/manifest.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-000.png",
+      "status": 200,
+      "sha256": "44e08865495738436bf70bbbb2369b6f3d95abfefc589771bf7f9ee507575732"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-000.png",
+      "status": 200,
+      "sha256": "d91ea8d87020eb560e480fedd48f618a936460c92b45ed9f29fe396ce06aa276"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-001.png",
+      "status": 200,
+      "sha256": "c656fd04d0658ca989782b6909bb6b4b002729e9ff624675b601c1dde906dc1e"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-001.png",
+      "status": 200,
+      "sha256": "6f1418c86f91840317580ce10c88180e3b3ad390dff254448c6ceff56b7042b4"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-002.png",
+      "status": 200,
+      "sha256": "69f3dae19556a737f2f658e04e2b233f81b8bbd9cb2b66fa40df45db6f8282c5"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-002.png",
+      "status": 200,
+      "sha256": "efa5bef7b0c78efdbddb1e0ca539809b8f90cee80d9d112d7f3b51bc980e3c45"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-003.png",
+      "status": 200,
+      "sha256": "2fee096d26e9193d2b61cb8298cccf654e93331fe34313cb3527b27049c121f8"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-003.png",
+      "status": 200,
+      "sha256": "9601d2b54b314de84b784b29a668861d525a5ddcb19e5e9b80405b8f2b6450a4"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-004.png",
+      "status": 200,
+      "sha256": "eac3d90d83e48a222eb61465c3ee8236c263aeddd9b971592b9a50b7e150fa66"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-004.png",
+      "status": 200,
+      "sha256": "d8491cf3cb690583c47f077567a2d2de94ecd9f02b52f86d84233299990f0746"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-005.png",
+      "status": 200,
+      "sha256": "e2b69ff8e377c927badbb8691c9aba0e0d49bf1e71ccd1afdcb5e2d132503714"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-005.png",
+      "status": 200,
+      "sha256": "f6abb3ab2e2b7035068ddabcc8a01df9d5e4b97a0e16da74772a7160f7b8ef98"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-006.png",
+      "status": 200,
+      "sha256": "2e1b75b676da4713c89575e4a85c1f2c3392e823aa0c373d63f242d210a73fac"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-006.png",
+      "status": 200,
+      "sha256": "44188079d98571dc81b16e1283e887e6df039726855fec6c37403e32604eedc8"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-007.png",
+      "status": 200,
+      "sha256": "252201f183e778ba875b5a38e522c9fa1d1ca75657bd5a814c79f8dab4d27656"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-007.png",
+      "status": 200,
+      "sha256": "d5685b207ab6548f3419b8e234b0fb613f24158e93c107a58342846409e445dd"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-008.png",
+      "status": 200,
+      "sha256": "97dc61a6f7371fd472f558291e6cfde5cf48409eb3220d81f8fdab97cb55a6f9"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-008.png",
+      "status": 200,
+      "sha256": "44f7948ab0d714cdb0c04831c9672ee29f9b15877e140755201081b3b7b14a63"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-009.png",
+      "status": 200,
+      "sha256": "1125c04f453fa3e5026f16fecf622d9e148e7a1fb0dcadfc1d87495fb53e462c"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-009.png",
+      "status": 200,
+      "sha256": "3c0a5518a6fb594b81773aa16793350700badab2c8bb23c9b6e3e6fdac5dffaa"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-010.png",
+      "status": 200,
+      "sha256": "ffec2ac89be2bf641f6e51fa91bd90b9489ec19c758f25c634ba774222e47097"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-010.png",
+      "status": 200,
+      "sha256": "9b0c588e2f7ed5cd6129057c079ddc7f6b3ce76d77e677e673ff2262effd946d"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-011.png",
+      "status": 200,
+      "sha256": "695173bde77cb481aec8134311058c98264b6ab286b5407c1016c5b73352b761"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-011.png",
+      "status": 200,
+      "sha256": "73a9392645f5e640a0f6a7908e341b34ddb30d8350d44cd80002d464cc70bcb3"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-012.png",
+      "status": 200,
+      "sha256": "f93436a51056a1b06753074b32673705ff8e043624b42099be1424437eb30a40"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-012.png",
+      "status": 200,
+      "sha256": "daf2a20fc6b1789bd51a23509939d4c29d22609c32675ee142570b20aaa81948"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-013.png",
+      "status": 200,
+      "sha256": "15045248c04c597db204fd6bc753c5f67602b2c90b1b5f90e82aea555df8bc8b"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-013.png",
+      "status": 200,
+      "sha256": "4e4816b679429cd8bb9c39f2ef195e72bcb0d00037856c602ce3be8555527212"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-014.png",
+      "status": 200,
+      "sha256": "e87f4319b0f69971889cfd32f58a2234ee633dec650e762e66c91a1686f93e22"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-014.png",
+      "status": 200,
+      "sha256": "61b01cf33599d35b2ae268304f82d5d43c7e0a8144f2b31e361dd55a7ef2d7b2"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-015.png",
+      "status": 200,
+      "sha256": "f8d362d3b70f8843b27fc6ebaca563b7051df9359d572ec9df59f9de2c712282"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-015.png",
+      "status": 200,
+      "sha256": "dd5c9e09942115c7cb03e83f86b2779f4307bfed4bf8a60ff606ba5448fe420e"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-016.png",
+      "status": 200,
+      "sha256": "2d9b2ee93d99a614d66c3637429c54c762cda666f4e86f86d568c9a71e608482"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-016.png",
+      "status": 200,
+      "sha256": "4143cd98ada3ac27044c4b8387617bf6672aefeb641a783d4957232624c42141"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-017.png",
+      "status": 200,
+      "sha256": "2ebddf2d82a49e0c298332076bf0de3cd4b3ff83a05d6fef981d38107c210da9"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-017.png",
+      "status": 200,
+      "sha256": "955dcfdbd77d1ad100337ee4bb258826f403357f8f1c5aee0a6c91929ecfcac5"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-018.png",
+      "status": 200,
+      "sha256": "65f82e695d18a1c0c23b66f89558a5b1cac7a85353732be9b8cfd49aa347945e"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-018.png",
+      "status": 200,
+      "sha256": "9b726c0e89a1341f0e6aae8cba2b6370a1c7e13a1e1585aeb8978f1abf64b418"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-019.png",
+      "status": 200,
+      "sha256": "8c1cfc3151a96080fc69dc21ad737b008050b9ed1b99b4e84080f824b9bc60a6"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-019.png",
+      "status": 200,
+      "sha256": "6298a7ecdd83a59142741da9494685a4efe50866e1920ed837664d1a0d97d649"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-020.png",
+      "status": 200,
+      "sha256": "e0cbb029bd46d418626624ec624c9705fae2efb8a81df14bcb613680026e9c20"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-020.png",
+      "status": 200,
+      "sha256": "ac7cd00c77d442d80118fac969d2f689f3311688cfece5991acecb2eee203bc8"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-021.png",
+      "status": 200,
+      "sha256": "aa55f8e1e285ffe668051e55df80c2176162ade510ede13aae1915fa4b67d642"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-021.png",
+      "status": 200,
+      "sha256": "cedde8f1f25ece496cfe0e429b6b4ee14d069238ef9f8c316a3d3c9bf9af2cfd"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-022.png",
+      "status": 200,
+      "sha256": "1461a940a1281bd39247d013b2025e2c097bf986dc060119440878b46b09d543"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-022.png",
+      "status": 200,
+      "sha256": "c28348375ab70150df465ee178ec1dc1f8358a94e9c8745ade9514aa33e8418f"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-023.png",
+      "status": 200,
+      "sha256": "3feaad0ec10c19f063be81271419ecbe02b540627f9ad6d174fcc707c86510e0"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-023.png",
+      "status": 200,
+      "sha256": "ad9f14fc6d7456a1e499c2b9c857e8811211e7f16a52963d5602c1f6c86f9a5a"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-024.png",
+      "status": 200,
+      "sha256": "4210aedf2bf9d51a58e2e4dc0de1c249ddc7e63c7fe3ec40fd9417edfe28d8f8"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-024.png",
+      "status": 200,
+      "sha256": "b6f8c30404a1a2a9db399e617a72dad1de0f85485754f2be3a5b4a5adea8e9e0"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-025.png",
+      "status": 200,
+      "sha256": "f0347d165c3845026d61d06c310a3c27b6d5b290ea1832db8fc33f14aa3c0c93"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-025.png",
+      "status": 200,
+      "sha256": "7b65fe01e8308dcfe9530c48364f435ceb76b6c6bac95c91704c7dd806ae39e8"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-026.png",
+      "status": 200,
+      "sha256": "626c3cbe7cd7fbc928ca5976c4fd1fa93c5e8b9fa02515162c7e70b58c8b45fb"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-026.png",
+      "status": 200,
+      "sha256": "d635280632a5fc8bfd90bf39258889318220f192b43a16d7b20fac4ce3c0cc5c"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-027.png",
+      "status": 200,
+      "sha256": "fae371ac5cdbd10b8c925037b9cd738b663172bdf4ebb61da6d018fd4c432127"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-027.png",
+      "status": 200,
+      "sha256": "74070ba28b9a4b3d0d94ada8b2c62faa8b16594513e8f5afe43aa6706500d92a"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-028.png",
+      "status": 200,
+      "sha256": "dfcb20ac18105f223b27ed390cdc26f126295e8bd080bba798cc7f439ebd8efe"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-028.png",
+      "status": 200,
+      "sha256": "41e144e98256ae467125ad997ed3b53a6d88f93a1d0d205ef14676fc58724f92"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-029.png",
+      "status": 200,
+      "sha256": "2b5a4e1b14659256a7a886cc36361294d5dc46f845c8c477136c7bcc7adca31c"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-029.png",
+      "status": 200,
+      "sha256": "6c8fe15cfd220cd084612f8aa2d54ec048f9c1b320fe07edc3401d1883a2d705"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-030.png",
+      "status": 200,
+      "sha256": "679feb97003f3b8ba430f1a29d1555b349536854e8487a7199123abc2af18b47"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-030.png",
+      "status": 200,
+      "sha256": "cf9f39520b10362028393ab405973a2574116b3f7fd98286d46ee5295764094c"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/raw-031.png",
+      "status": 200,
+      "sha256": "3b8bc320cc62fc7a57d4a9e9d0d59f2558a5e9aef443b2578554c5b2f0e73257"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-broad32/../../runs/adam-native1024-retained250-main100-broad32-v1/ema-031.png",
+      "status": 200,
+      "sha256": "605bfb4d157778f5d58ec7e5e91507e207a39bc0288d8458e0cc1b0e41c78b0b"
+    }
+  ],
+  "native_models_loaded_by_reviewer": false,
+  "browser_opened": false
+}

@@ -17,3 +17,9 @@ The builder verifies the exact source protocol names, q50, fixed34-offset policy
 Steps50/100 display only when their completed snapshot **and full checkpoint marker** exist; the marker's snapshot/protocol bindings and exact state-restoration assertion are verified. Snapshot10 can be displayed before its checkpoint finishes, but terminal success requires its checkpoint marker and successful result/supervisor records. Missing terminal records are reported as in progress or awaiting a terminal record, not interpreted as live process health. Failed/stopped runs retain all completed snapshots. Incomplete or `.partial` image files do not enter the page. Rebuilds atomically replace the static index/manifest; the page does not poll or control workers.
 
 Initial validation: actual steps0/10,16 distinct archived PNG records. Generated JavaScript passes Node syntax checking. Native10 visual review is stored in `native-review-010-agent.json`, with exact viewed hashes and limits.
+
+## Extension through main150/250
+
+The builder now also reads `adam-native1024-retained250-main100-to250-v1`, authenticating its distinct100→250 protocol, main100 predecessor hashes and exact duplicate100 PNGs. New150/250 images remain pending until their complete snapshot and checkpoint markers both exist. All existing0/10/50/100 images remain accessible. There are48 possible unique snapshot records across six steps. Main150 is a visual decision point; a planned250 endpoint does not imply that it will be reached or approved.
+
+At the latest main100 review, the separate32-latent broad set had0/32 clear priest portraits in each arm and photographic drift in raw outputs. This actual outcome leads both preview pages. `native-review-100-agent.json` records the independent native100 assessment and its four-latent limitations.

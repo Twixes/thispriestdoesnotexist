@@ -52,3 +52,15 @@ research/.venv/bin/python research/reviews/adam-retained250-main-broad32/test_pr
 ```
 
 Three small NumPy/JSON fixture tests cover latent completeness/disjointness, corrupt checkpoint envelopes/counts/masks, complete image/latent coverage, and unreviewed annotation defaults. Fixtures are explicitly synthetic and contain no model weights. These checks do not prove that native reconstruction or generation succeeds; only the later actual reproduction and render can establish that. Native rendering remains unexecuted.
+
+## Actual main100 review, 2026-09-22
+
+The main100 broad render completed and all64 images were inspected using eight full-frame contact sheets. Raw/EMA020,026 and031 also received direct native follow-up. The result is **0/32 clear priest portraits in raw and0/32 in EMA**, with systematic raw cooling/etched contrast and localized defects. No model is approved. The report and64 bound observation rows are `agent-review-main100.json` and `annotations-agent-main100.json`; unknown adulthood/headwear fields remain null. Contact sheets are review-only uniformly reduced layouts; all native source PNGs remain untouched. No nearest-neighbor computation or attractiveness assessment was performed.
+
+Reproduce the reviewed page, including the actual outcome at the top, without changing frozen preregistered render inputs:
+
+```sh
+research/.venv/bin/python research/reviews/adam-retained250-main-broad32/build_reviewed.py
+```
+
+This wrapper first runs the frozen builder with the actual completed render and actual annotation file, checks checkpoint/result binding, then adds the observed outcome. `record_agent_review.py` preserves the observations entered after inspection; it is not an automated image evaluator. The displayed render-status label may still say review pending because no human quality approval is implied by agent inspection.

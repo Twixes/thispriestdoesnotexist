@@ -1,0 +1,112 @@
+{
+  "reviewed_at_utc": "2026-09-22T08:56:41.796302+00:00",
+  "reviewer": "continuation_preview",
+  "step": 100,
+  "indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "n_fixed_latents": 4,
+  "viewed_images": [
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-000.png",
+      "sha256": "138541d066cf1c21d1ba3b9721efc2ce8c5cee3af608c3d044a3e43afbf64dcd",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-001.png",
+      "sha256": "838651cb1544c8dfb4d62b0d78f414e48a3291bc238e0809d1fcd2821e268549",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-002.png",
+      "sha256": "e1c120fb865628ca569e78796ddaddd33f61dd112726db566f87ddb84cba5533",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-003.png",
+      "sha256": "270b3ced4675737c8103e79714f6bd77e0fd744e54826d955cda7a16385c7522",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-100/raw-000.png",
+      "sha256": "865cfdb47002c49231cf9ea4cc34a5594db7e297486c4d744a0b7d102ece0fcf",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-100/raw-001.png",
+      "sha256": "c47c6440c7d2c6de33bbfec82d912e6177f6ceb714878c3c44e2b391a2eb9d12",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-100/raw-002.png",
+      "sha256": "52399d2814beda7515123cca88183c0528c4dd0a21b455611a0ea03489bb3427",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-100/raw-003.png",
+      "sha256": "8bdeb84b4e24cc25a445f0bde5320e10eb4b88ead9dc9f9c44fe8b32d0a870c7",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-100/ema-000.png",
+      "sha256": "57e3ba20f703f959ba2dc5f7ae39b21f3b6f93cc4faa6d81d93051c21c79b97c",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-100/ema-001.png",
+      "sha256": "4804ffda984476e4b4f2509046444d5c3e0cf7cbfa7c77e154e57d5fc1481c0a",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-100/ema-002.png",
+      "sha256": "d8d0373e6780a00c0eb747a9b4947052966b63b6517ba632004a82c8ccda0521",
+      "direct_native_view": true
+    },
+    {
+      "path": "research/runs/adam-native1024-retained250-main10-to100-v1/step-100/ema-003.png",
+      "sha256": "6e6fdbf8d1d6d4d3bf224d651585e8f6589dd836be7cec90bfed83913a285c69",
+      "direct_native_view": true
+    }
+  ],
+  "snapshot_manifest_sha256": "1c3eeda76c949f561f14c43294e48fe5e462376a30cf4c91c0d256160338a9a4",
+  "findings": [
+    {
+      "index": 0,
+      "raw_vs50": "Cooler/desaturated face, deeper hair/shadow contrast and slightly altered contours/framing. Existing malformed neighboring hand remains. Face still coherent.",
+      "ema100": "Near original source appearance.",
+      "domain": "Apparent child in ordinary shirt, no priest collar; no attractiveness rating."
+    },
+    {
+      "index": 1,
+      "raw_vs50": "Cool/cyan shift with harder shiny forehead/cheek highlights and stronger etched wrinkles; slight contour/framing changes. More artificial-looking lighting than50, but coherent anatomy.",
+      "ema100": "Near original source appearance.",
+      "domain": "Hat and scarf remain; no clerical collar, no accepted adult male priest portrait."
+    },
+    {
+      "index": 2,
+      "raw_vs50": "Cooler face and pale cyan background, more pronounced forehead/nose highlights and darker shadows; source facial structure/glasses remain.",
+      "ema100": "Near original source appearance.",
+      "domain": "Adult-looking face with ordinary open-neck shirt, no priest collar."
+    },
+    {
+      "index": 3,
+      "raw_vs50": "Paler cooler face and somewhat harsher detail/contrast, source-like child face and knitted clothing still recognizable.",
+      "ema100": "Near original source appearance.",
+      "domain": "Apparent child and knitted hat, no priest collar; no attractiveness rating."
+    }
+  ],
+  "overall": {
+    "photographic_drift_observed": true,
+    "drift_severity": "Mild-to-moderate raw deterioration relative to50: cool/desaturated color, harsh highlights/texture. Not merely successful mechanics.",
+    "severe_structural_collapse_observed": false,
+    "adult_priest_domain_achieved": false,
+    "recommendation": "Await broader review; these four alone do not compel reset but do require close next-milestone visual monitoring. No evidence of priest conversion or production quality.",
+    "quality_accepted": false,
+    "production_approved": false,
+    "server_latency_proven": false,
+    "limits": "Four original diagnostic latents only. Native viewed all8 step100 and4 raw50 comparators. No quantitative image-quality metric or population inference."
+  }
+}

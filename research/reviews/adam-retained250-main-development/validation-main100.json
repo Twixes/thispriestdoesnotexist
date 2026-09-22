@@ -1,0 +1,179 @@
+{
+  "validated_at_utc": "2026-09-22T08:56:41.900876+00:00",
+  "manifest_sha256": "ef869f5af0361b0ea1aa26cabcda2b65e024d900bdbda53a232b24c822e13818",
+  "index_sha256": "73fef94d8d97c9537cf541f06b95ab8be38c43a95048fb7f011798d8036c317d",
+  "available_images": 32,
+  "javascript_syntax": "passed",
+  "http_checks": [
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/index.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/manifest.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-000/raw-000.png",
+      "status": 200,
+      "sha256": "139bd356e72ad296f58229097b7bd5f4e1425902f16491386ed82cd5f65d3884"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-000/ema-000.png",
+      "status": 200,
+      "sha256": "139bd356e72ad296f58229097b7bd5f4e1425902f16491386ed82cd5f65d3884"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/raw-000.png",
+      "status": 200,
+      "sha256": "20a980999010110b0af6ce9b1774401b725b27617abc9bba465fc607670125c1"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/ema-000.png",
+      "status": 200,
+      "sha256": "4eb95b062a4199a78d1f618e0971a5c45a6d7c75bd78cd97428b0119a0ee72b6"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-000.png",
+      "status": 200,
+      "sha256": "138541d066cf1c21d1ba3b9721efc2ce8c5cee3af608c3d044a3e43afbf64dcd"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-000.png",
+      "status": 200,
+      "sha256": "0bc2165715a7cc4734a940ec8fb145fab15861502f559fbf3f09d18838a3dfe2"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-100/raw-000.png",
+      "status": 200,
+      "sha256": "865cfdb47002c49231cf9ea4cc34a5594db7e297486c4d744a0b7d102ece0fcf"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-100/ema-000.png",
+      "status": 200,
+      "sha256": "57e3ba20f703f959ba2dc5f7ae39b21f3b6f93cc4faa6d81d93051c21c79b97c"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-000/raw-001.png",
+      "status": 200,
+      "sha256": "b6183481bdf66c62ad4d2a8bdc4ac67e06c88e8df225c73369bb8cbeb3c47600"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-000/ema-001.png",
+      "status": 200,
+      "sha256": "b6183481bdf66c62ad4d2a8bdc4ac67e06c88e8df225c73369bb8cbeb3c47600"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/raw-001.png",
+      "status": 200,
+      "sha256": "ad679c6ed931e1e54b8e2ccf4654b7096951ed76376cac84a5c71bc0c2f1729f"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/ema-001.png",
+      "status": 200,
+      "sha256": "72a9064dc010763d7746087f6f824355c9bd0f6452034393445e0f24e36e3d3e"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-001.png",
+      "status": 200,
+      "sha256": "838651cb1544c8dfb4d62b0d78f414e48a3291bc238e0809d1fcd2821e268549"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-001.png",
+      "status": 200,
+      "sha256": "fb822baeaf751fe7456d80fb95e69696bc33b249e3677b9f8f949af5b1a82736"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-100/raw-001.png",
+      "status": 200,
+      "sha256": "c47c6440c7d2c6de33bbfec82d912e6177f6ceb714878c3c44e2b391a2eb9d12"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-100/ema-001.png",
+      "status": 200,
+      "sha256": "4804ffda984476e4b4f2509046444d5c3e0cf7cbfa7c77e154e57d5fc1481c0a"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-000/raw-002.png",
+      "status": 200,
+      "sha256": "175d7d5a4d1ca45f0c878cd11e4d8bca99eafe6a5eb3eaa2582f8ced18646ff8"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-000/ema-002.png",
+      "status": 200,
+      "sha256": "175d7d5a4d1ca45f0c878cd11e4d8bca99eafe6a5eb3eaa2582f8ced18646ff8"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/raw-002.png",
+      "status": 200,
+      "sha256": "474c3a48ed74ff1d41191b1a6e7c9d1d0ea6206869d300f41ed75858204dab0a"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/ema-002.png",
+      "status": 200,
+      "sha256": "2c047ccb162fb06af4432f7b0da02b8601dbbac16fa5fc60976a4e87bae26a29"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-002.png",
+      "status": 200,
+      "sha256": "e1c120fb865628ca569e78796ddaddd33f61dd112726db566f87ddb84cba5533"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-002.png",
+      "status": 200,
+      "sha256": "b9dea2da9c26b246e858d3a11f73d1dab84a97efb9d54348beece872abc312db"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-100/raw-002.png",
+      "status": 200,
+      "sha256": "52399d2814beda7515123cca88183c0528c4dd0a21b455611a0ea03489bb3427"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-100/ema-002.png",
+      "status": 200,
+      "sha256": "d8d0373e6780a00c0eb747a9b4947052966b63b6517ba632004a82c8ccda0521"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-000/raw-003.png",
+      "status": 200,
+      "sha256": "17e01e3036f8e4d1d0d92f56f84aabcb3cb7ec014965ccb850a3a907477c44b4"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-000/ema-003.png",
+      "status": 200,
+      "sha256": "17e01e3036f8e4d1d0d92f56f84aabcb3cb7ec014965ccb850a3a907477c44b4"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/raw-003.png",
+      "status": 200,
+      "sha256": "0f312ad36db42d1ae83f0b930a8a4f5db1ad151c1db29ff28528e0189ecae256"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/step-010/ema-003.png",
+      "status": 200,
+      "sha256": "3aaf649aed7d2d89496b75bf06ee7a7bc5a8259020324515dbd5dae34a156642"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-050/raw-003.png",
+      "status": 200,
+      "sha256": "270b3ced4675737c8103e79714f6bd77e0fd744e54826d955cda7a16385c7522"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-050/ema-003.png",
+      "status": 200,
+      "sha256": "3c2ad5c7a4bc36ea568ff78d178e958946bccfbfc271c2a09590929e2c2d69df"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-100/raw-003.png",
+      "status": 200,
+      "sha256": "8bdeb84b4e24cc25a445f0bde5320e10eb4b88ead9dc9f9c44fe8b32d0a870c7"
+    },
+    {
+      "url": "http://127.0.0.1:8787/reviews/adam-retained250-main-development/../../runs/adam-native1024-retained250-main10-to100-v1/step-100/ema-003.png",
+      "status": 200,
+      "sha256": "6e6fdbf8d1d6d4d3bf224d651585e8f6589dd836be7cec90bfed83913a285c69"
+    }
+  ],
+  "native_models_loaded_by_reviewer": false,
+  "browser_opened": false
+}

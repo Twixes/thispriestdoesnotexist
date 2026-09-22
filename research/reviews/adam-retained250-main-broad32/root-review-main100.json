@@ -1,0 +1,25 @@
+{
+  "reviewer": "root",
+  "viewed": "All64 outputs as8 full-frame paired contact sheets at approximately50% display scale; native four-latent review inspected separately at full resolution.",
+  "render_manifest_sha256": "3175bd13387615dd9c123117fea5b8fdfa1e30c84a63f97ec95175563926cdd8",
+  "contact_sheets": {
+    "contact-000-003.png": "fa94bd8cdf68cab592eb5c59d371a0a2cc272ba11a718f66535a9f3903d377b3",
+    "contact-004-007.png": "99374111ca4e0e9ad369a33ece37d6c62aa6d3f63de81c0b08417eab04425608",
+    "contact-008-011.png": "d8684fe2be52f05d13040d02c51097d93cf68340d1819454ff8450d1e6ca5bef",
+    "contact-012-015.png": "b3e3438908b90dcc488add8050bd8c5ac592d561fc02a06d8e059ebc3c8f9454",
+    "contact-016-019.png": "3f7ebb7b725a8a5b691284cb9f7ba7726d9b2586ab9092abbdbe2f6258afecee",
+    "contact-020-023.png": "28c9a07d508371a05fe69e363b1222e0efae6a0fad6d75fac7bc52cbe6473be1",
+    "contact-024-027.png": "383ebe2b80f2e23d5569ef5cfcad950e017f3d715f1e913df3a9dec36d324bcd",
+    "contact-028-031.png": "128410f8e2770ba126124b5fc3159cda7f3100ec654c64731e2ba83107463010"
+  },
+  "observations": [
+    "Across32 new draws, neither raw norEMA shows an unambiguous clerical collar. Ordinary women, men and apparent minors remain; several hats, microphones, background faces and foreground obstructions persist.",
+    "All32 pairs retain distinct corresponding identities; no obvious repeated-face collapse. This is manual visual observation, not independent-identity or nonmemorization proof.",
+    "Raw systematically shifts toward cool gray/cyan and harder skin/hair highlights; some images look unnaturally pale or metallic. EMA generally looks more natural.",
+    "Severe foreground/face artifacts at004 exist in both arms; various partial extra faces and occluders are also present in both. Source baseline for these32 not rendered, so their exact origin is not proven.",
+    "Domain success remains0 observed across32 latent pairs. Not suitable for production."
+  ],
+  "decision": "Continue exact main100 state toward250 with review at150, not a fresh reset.100 real-image presentations is far below upstream training scale. Moderate photographic drift is accepted temporarily to test direction over50 more updates; reassess at150 for worsening deformation/texture and conversion.",
+  "production_approved": false,
+  "server_latency_proven": false
+}
