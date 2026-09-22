@@ -1,0 +1,17 @@
+{
+  "decision": "Run bounded fresh-original main adaptation10 with explicit q50",
+  "report_sha256": "75fbbbb77cd491f06af5e7220c346ac008cbc9a7410128f4b5c55a929291ca9c",
+  "quantile": 50,
+  "rationale": [
+    "All pools are finite, nonzero and without exact ties. Disjoint-half Spearman: G affine 0.9739, G conv 0.9867, D conv 0.9995.",
+    "At q50 disjoint high-set Jaccard is 0.8696/0.9232/0.9842; remaining threshold uncertainty is accepted for a short development experiment, not deemed eliminated.",
+    "q75 does not uniformly improve high-set stability: G affine Jaccard drops to 0.8068. q50 retains the existing source recipe hypothesis rather than optimizing a threshold on image outcomes.",
+    "Fresh original G/D reset; reviewed EMA250 provides importance only. Earlier raw250 photographic regression is not continued."
+  ],
+  "limitations": [
+    "Twenty training images only; shared dataset and systematic importance error are not assessed by disjoint latent draws.",
+    "No evidence yet of adult priest conversion, photographic quality, diversity or server latency."
+  ],
+  "next_gate": "Review actual native10 mechanics, memory and all raw/EMA fixed images before any continuation",
+  "production_approved": false
+}
