@@ -1,0 +1,23 @@
+{
+  "step": 150,
+  "reviewer": "root",
+  "images": {
+    "ema-000.png": "3f549506f6e06b8e31f5dc75fae8e691c39fcd22d14a7f6460300026c463d71a",
+    "ema-001.png": "7d34115b1ea2c74bec6fa772e275439e0e37ccfbded33cdb0d120cb34f2ee7df",
+    "ema-002.png": "c63c973e0fe30fe43af359593b2e267743b6c976b36a87b00090cb5b1a9c55c7",
+    "ema-003.png": "13746593fbcd6f8216c5f61eb6721142c7314d081eba0c225e64fd0b84f85e62",
+    "raw-000.png": "835606f4df58ec3210ffab3ad8c0730570bebe7293a15aba1441d3da112d6c9f",
+    "raw-001.png": "41d12b4857d198d7c77ec968bd0bc73aa5aa2c32172902481409b5272b867230",
+    "raw-002.png": "53161b7336ba40544646b17f61fe125480c345d05b519f583876759e9c359301",
+    "raw-003.png": "371029563db888b4da8d09095afbf97068ce8b61b363a3cce3189bb3df5f1583"
+  },
+  "checkpoint_sha256": "99bee0efb20c847ac4e0da7571a5409b8af1912e7e26e0f8d1e6c8b8b403962f",
+  "observations": [
+    "All8 full native images directly inspected against100. Raw150 is darker and more gray/cyan with stronger shiny/etched skin and hair, especially001/002;003 has rougher facial texture. This is photographic deterioration beyond simple desaturation.",
+    "Faces remain distinct, structurally legible and source-like. No global structural collapse. EMA150 remains coherent and near original-source appearance.",
+    "No unambiguous clerical collar in either arm. Apparent children000/003 and hats001/003 persist. No demonstrated priest conversion."
+  ],
+  "decision": "Allow this existing bounded run to250 to observe a less abbreviated main-adaptation horizon, retaining150 state. Temporary raw texture deterioration is not accepted as final quality and will be reassessed at250 alongside EMA. No fresh reset, deployment or quality claim.",
+  "production_approved": false,
+  "server_latency_proven": false
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "built_at_utc": "2026-09-22T08:55:28.722827+00:00",
+  "built_at_utc": "2026-09-22T09:05:08.818916+00:00",
   "runs": {
     "main10": {
       "status": "complete",
@@ -24,7 +24,8 @@
     "continuation250": {
       "status": "in_progress_or_awaiting_terminal_record",
       "complete_steps": [
-        100
+        100,
+        150
       ],
       "path": "research/runs/adam-native1024-retained250-main100-to250-v1",
       "protocol_sha256": "2c10cfc0ebec3ab0568d2778f3fd5363d231e52931d81ce4522cc4660b038c33"
@@ -34,9 +35,10 @@
     0,
     10,
     50,
-    100
+    100,
+    150
   ],
-  "default_step": 100,
+  "default_step": 150,
   "snapshots": [
     {
       "step": 0,
@@ -56,7 +58,7 @@
     },
     {
       "step": 150,
-      "status": "pending"
+      "status": "complete"
     },
     {
       "step": 250,
@@ -140,10 +142,22 @@
           "height": 1024
         },
         "raw-150": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main100-to250-v1/step-150/raw-000.png",
+          "url": "../../runs/adam-native1024-retained250-main100-to250-v1/step-150/raw-000.png",
+          "sha256": "835606f4df58ec3210ffab3ad8c0730570bebe7293a15aba1441d3da112d6c9f",
+          "bytes": 1312427,
+          "width": 1024,
+          "height": 1024
         },
         "ema-150": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main100-to250-v1/step-150/ema-000.png",
+          "url": "../../runs/adam-native1024-retained250-main100-to250-v1/step-150/ema-000.png",
+          "sha256": "3f549506f6e06b8e31f5dc75fae8e691c39fcd22d14a7f6460300026c463d71a",
+          "bytes": 1290964,
+          "width": 1024,
+          "height": 1024
         },
         "raw-250": {
           "status": "pending"
@@ -229,10 +243,22 @@
           "height": 1024
         },
         "raw-150": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main100-to250-v1/step-150/raw-001.png",
+          "url": "../../runs/adam-native1024-retained250-main100-to250-v1/step-150/raw-001.png",
+          "sha256": "41d12b4857d198d7c77ec968bd0bc73aa5aa2c32172902481409b5272b867230",
+          "bytes": 1618316,
+          "width": 1024,
+          "height": 1024
         },
         "ema-150": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main100-to250-v1/step-150/ema-001.png",
+          "url": "../../runs/adam-native1024-retained250-main100-to250-v1/step-150/ema-001.png",
+          "sha256": "7d34115b1ea2c74bec6fa772e275439e0e37ccfbded33cdb0d120cb34f2ee7df",
+          "bytes": 1494060,
+          "width": 1024,
+          "height": 1024
         },
         "raw-250": {
           "status": "pending"
@@ -318,10 +344,22 @@
           "height": 1024
         },
         "raw-150": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main100-to250-v1/step-150/raw-002.png",
+          "url": "../../runs/adam-native1024-retained250-main100-to250-v1/step-150/raw-002.png",
+          "sha256": "53161b7336ba40544646b17f61fe125480c345d05b519f583876759e9c359301",
+          "bytes": 1390925,
+          "width": 1024,
+          "height": 1024
         },
         "ema-150": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main100-to250-v1/step-150/ema-002.png",
+          "url": "../../runs/adam-native1024-retained250-main100-to250-v1/step-150/ema-002.png",
+          "sha256": "c63c973e0fe30fe43af359593b2e267743b6c976b36a87b00090cb5b1a9c55c7",
+          "bytes": 1326139,
+          "width": 1024,
+          "height": 1024
         },
         "raw-250": {
           "status": "pending"
@@ -407,10 +445,22 @@
           "height": 1024
         },
         "raw-150": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main100-to250-v1/step-150/raw-003.png",
+          "url": "../../runs/adam-native1024-retained250-main100-to250-v1/step-150/raw-003.png",
+          "sha256": "371029563db888b4da8d09095afbf97068ce8b61b363a3cce3189bb3df5f1583",
+          "bytes": 1769573,
+          "width": 1024,
+          "height": 1024
         },
         "ema-150": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-retained250-main100-to250-v1/step-150/ema-003.png",
+          "url": "../../runs/adam-native1024-retained250-main100-to250-v1/step-150/ema-003.png",
+          "sha256": "13746593fbcd6f8216c5f61eb6721142c7314d081eba0c225e64fd0b84f85e62",
+          "bytes": 1672360,
+          "width": 1024,
+          "height": 1024
         },
         "raw-250": {
           "status": "pending"
@@ -421,7 +471,7 @@
       }
     }
   ],
-  "available_images": 32,
+  "available_images": 40,
   "expected_images": 48,
   "sources": {
     "research/runs/adam-native1024-retained250-fixed-offsets-main-adaptation10-q50-v1/protocol.json": {
@@ -615,6 +665,18 @@
       "url": "../../runs/adam-native1024-retained250-main100-to250-v1/eval-z.npz",
       "sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
       "bytes": 8448
+    },
+    "research/runs/adam-native1024-retained250-main100-to250-v1/step-150/manifest.json": {
+      "path": "research/runs/adam-native1024-retained250-main100-to250-v1/step-150/manifest.json",
+      "url": "../../runs/adam-native1024-retained250-main100-to250-v1/step-150/manifest.json",
+      "sha256": "ebae4d394e473a2ae5ded7717d1aa7b64c3e25746739fb51c9d2c95914266051",
+      "bytes": 1287
+    },
+    "research/runs/adam-native1024-retained250-main100-to250-v1/checkpoint-150.json": {
+      "path": "research/runs/adam-native1024-retained250-main100-to250-v1/checkpoint-150.json",
+      "url": "../../runs/adam-native1024-retained250-main100-to250-v1/checkpoint-150.json",
+      "sha256": "41e29f53d2f39ef647228ff4a701a2f8c868456f9fd8f152c5955ae0ac3693c1",
+      "bytes": 553
     }
   },
   "unfiltered": true,
