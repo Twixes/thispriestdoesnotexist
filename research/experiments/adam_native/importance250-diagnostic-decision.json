@@ -1,0 +1,12 @@
+{
+  "decided_at_utc": "2026-09-22T00:15:21.040039+00:00",
+  "source_step": 250,
+  "source_run": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1",
+  "checkpoint_sha256": "864bc321a032cce4fa8b7d72afdb31cc6083444a140680d084529627c1cff2a8",
+  "scope": "Four-pair readonly EMA importance compatibility diagnostic only. No optimizer updates or main adaptation authorized by this record.",
+  "why": "Raw250 shows photographic regression and continuation was stopped. Reviewed EMA250 still retains coherent original faces. This diagnostic tests actual importance computation on the authenticated completed250 checkpoint without training the degraded raw state.",
+  "deviation": "Uses250 probing iterations rather than the prepared500 endpoint and upstream nominal500 probing schedule. No equivalence or trustworthy ranking is claimed.",
+  "next_gate": "Inspect diagnostic outputs, unchanged model-state checks and actual memory/timing before deciding on any full importance estimate or fresh-source main adaptation. Existing source500-only main runner must not be used unchanged.",
+  "production_approved": false,
+  "source_termination_sha256": "985e679527a2f77aee88a07f2ae92ba76d6d7ebe8ee9492dfd00631c6e0c29e1"
+}

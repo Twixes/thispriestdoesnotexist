@@ -1,0 +1,44 @@
+{
+  "reviewed_at_utc": "2026-09-22T00:17:57.031145+00:00",
+  "complete_diagnostic": true,
+  "source_step": 250,
+  "pairs": 4,
+  "native_compute_seconds": 37.37283570901491,
+  "wall_seconds": 39.19566208298784,
+  "peak_rss_gib": 9.056976318359375,
+  "ema_parameters_buffers_unchanged": true,
+  "fixed_offsets_preserved": true,
+  "importance": {
+    "G": {
+      "parameter_tensors": 163,
+      "coordinates": 106870,
+      "zero_coordinates": 0,
+      "zero_fraction": 0.0,
+      "all_zero_tensors": [],
+      "all_finite": true
+    },
+    "D": {
+      "parameter_tensors": 67,
+      "coordinates": 62179,
+      "zero_coordinates": 0,
+      "zero_fraction": 0.0,
+      "all_zero_tensors": [],
+      "all_finite": true
+    }
+  },
+  "native_sample_review": {
+    "sample-000": "Coherent adult-looking source-domain face, ordinary jewelry/clothing, no priest collar.",
+    "sample-001": "Coherent face, bright pink clothing/accessories and squinting eyes, no priest collar.",
+    "sample-002": "Apparent child with curly hair and casual clothing; no priest collar. No attractiveness assessment.",
+    "sample-003": "Coherent face but cool/purple cast, unusual eye colors and neighboring body fragment; no priest collar."
+  },
+  "viewed_image_sha256": {
+    "sample-000.png": "0faf2f68ab5ce7c87f14a138682a08c42581d9a5e8b7a679f746afef9fe8e7a0",
+    "sample-001.png": "c45120a032fe9d95eaf19f93d550c4680ccc49d60c8640f4c19c1860aba3c923",
+    "sample-002.png": "53fc46d85e88a63c14d0183af9fa3ffa7eae1b84ae08a814a35e38ef714c43ac",
+    "sample-003.png": "640b6cd8db8844bc00bb17b3a604310a8c156c2e7885897b228f1e92a72727b9"
+  },
+  "ranking_stability_proven": false,
+  "production_approved": false,
+  "conclusion": "Native FI mechanics/resource diagnostic passed; four pairs are not reliable importance rankings. Outputs remain source-domain faces and include an apparent child, so no priest quality success is claimed."
+}

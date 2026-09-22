@@ -4,14 +4,42 @@
   "run": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1",
   "parent_run": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1",
   "run_complete": false,
-  "run_status": "in_progress_or_awaiting_terminal_record",
-  "supervisor": null,
-  "termination": null,
-  "built_at_utc": "2026-09-21T23:39:45.317031+00:00",
+  "run_status": "stopped",
+  "supervisor": {
+    "complete": false,
+    "failure": "Traceback (most recent call last):\n  File \"/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/adam_native/continue_output_rank1_fixed_offsets500.py\", line 212, in supervise\n    time.sleep(.1)\nKeyboardInterrupt\n",
+    "seconds": 2180.1386953330366,
+    "peak_rss_gib": 10.095672607421875,
+    "min_available_fraction": 0.2808024088541667,
+    "protocol_sha256": "0be7e94ef47513d9eb733e6d41621dcb5eb5db5da3c1b3d625ceb857784174ad"
+  },
+  "termination": {
+    "status": "stopped_after_visual_review",
+    "observed_at_utc": "2026-09-22T00:14:49.448642+00:00",
+    "supervisor_and_worker_absent": true,
+    "owned_supervisor_pid": 56051,
+    "owned_worker_pid": 56057,
+    "last_completed_step": 264,
+    "optimizer_steps": {
+      "g": 330,
+      "d": 281
+    },
+    "last_complete_checkpoint": 250,
+    "planned_iterations": 500,
+    "reason": "All four raw250 images substantially regress in photographic realism versus100: dark gray/cyan/mauve casts and embossed/etched facial texture. EMA250 remains structurally source-like. No adult-priest domain conversion. Stop unchanged raw training; retain checkpoint250 for bounded diagnostic evaluation only.",
+    "review_files": {
+      "research/reviews/adam-fixed-offsets500/native-review-250-root.json": "b91734fd80e87dc326eb7b9b0fa5ed46baeb8a5bf3467f2f27afcec0bc1b04e5",
+      "research/reviews/adam-fixed-offsets500/native-review-250-agent.json": "ffb9bbd72503b8097721acf3eeaed1e467ad352379e507d63d673e2f7537279e"
+    },
+    "production_approved": false,
+    "server_latency_proven": false
+  },
+  "built_at_utc": "2026-09-22T00:14:49.523756+00:00",
   "complete_steps": [
-    100
+    100,
+    250
   ],
-  "default_step": 100,
+  "default_step": 250,
   "snapshots": [
     {
       "step": 100,
@@ -20,14 +48,15 @@
     },
     {
       "step": 250,
-      "status": "pending"
+      "status": "complete",
+      "manifest_sha256": "661e4cb3cdae19ba0638083afd1b44f9511f5356a0aa4409767751fe58c1942d"
     },
     {
       "step": 500,
       "status": "pending"
     }
   ],
-  "available_images": 12,
+  "available_images": 20,
   "expected_images": 28,
   "unfiltered": true,
   "preview_seed": 2026092210,
@@ -174,6 +203,30 @@
       "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-100/manifest.json",
       "sha256": "48dc6ce3f082b36dce9ea26cb4277ed4c1cda47682dba6b299adcaf3b74d4af7",
       "bytes": 1331
+    },
+    "step-250/manifest.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/manifest.json",
+      "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/manifest.json",
+      "sha256": "661e4cb3cdae19ba0638083afd1b44f9511f5356a0aa4409767751fe58c1942d",
+      "bytes": 1332
+    },
+    "checkpoint-250.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/checkpoint-250.json",
+      "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/checkpoint-250.json",
+      "sha256": "9fb262ab9c30153ed4161f1b87804328acb3aa793eb60078eb097a4cb5077270",
+      "bytes": 553
+    },
+    "supervisor.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/supervisor.json",
+      "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/supervisor.json",
+      "sha256": "fab4e669cfd3fbacc14c63d1c0085793aff29a289cbca3cbf3e7dd42130a1a61",
+      "bytes": 482
+    },
+    "termination.json": {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/termination.json",
+      "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/termination.json",
+      "sha256": "985e679527a2f77aee88a07f2ae92ba76d6d7ebe8ee9492dfd00631c6e0c29e1",
+      "bytes": 1053
     }
   },
   "builder": {
@@ -220,10 +273,22 @@
           "height": 1024
         },
         "raw-250": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-000.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-000.png",
+          "sha256": "b228aa1f87899b9abd2175e9d717a0e2b4a09a608da7723f3268ddea476c3d73",
+          "bytes": 1163144,
+          "width": 1024,
+          "height": 1024
         },
         "ema-250": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-000.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-000.png",
+          "sha256": "1f56ded3646df4d66fd810b93770f50b3a348f05a8e1e5fa878ba8d559fd1f66",
+          "bytes": 1287385,
+          "width": 1024,
+          "height": 1024
         },
         "raw-500": {
           "status": "pending"
@@ -264,10 +329,22 @@
           "height": 1024
         },
         "raw-250": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-001.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-001.png",
+          "sha256": "384f6e140315beb515fef2f280d048744d4c2f784f79b598ebadec82fb0748e7",
+          "bytes": 1506664,
+          "width": 1024,
+          "height": 1024
         },
         "ema-250": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-001.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-001.png",
+          "sha256": "12c14cfe5f3450df77297865dc50a5648f95a69efa70ab8485daf1d6dcfb0abb",
+          "bytes": 1509159,
+          "width": 1024,
+          "height": 1024
         },
         "raw-500": {
           "status": "pending"
@@ -308,10 +385,22 @@
           "height": 1024
         },
         "raw-250": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-002.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-002.png",
+          "sha256": "bad9a87cd27882f00436eb15356328ed6fc9d9b28d5d3b59c38cff8652b923dc",
+          "bytes": 1317128,
+          "width": 1024,
+          "height": 1024
         },
         "ema-250": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-002.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-002.png",
+          "sha256": "d329a39a2d83644a1cbc99ffccff262feaeac3f2568cc713ca8b2e33502294aa",
+          "bytes": 1337740,
+          "width": 1024,
+          "height": 1024
         },
         "raw-500": {
           "status": "pending"
@@ -352,10 +441,22 @@
           "height": 1024
         },
         "raw-250": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-003.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-003.png",
+          "sha256": "27c48c4ecb1347c8f1a1bde8ef2f4428797a86bce6c4f958919c5a4f35bb4f7c",
+          "bytes": 1674228,
+          "width": 1024,
+          "height": 1024
         },
         "ema-250": {
-          "status": "pending"
+          "status": "complete",
+          "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-003.png",
+          "url": "../../runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-003.png",
+          "sha256": "180240575f56d56dd893da5ee07576b4b32cf1a7f251a2bf25dac825ad859f57",
+          "bytes": 1680893,
+          "width": 1024,
+          "height": 1024
         },
         "raw-500": {
           "status": "pending"

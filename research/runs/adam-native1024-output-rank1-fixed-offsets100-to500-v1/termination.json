@@ -1,0 +1,21 @@
+{
+  "status": "stopped_after_visual_review",
+  "observed_at_utc": "2026-09-22T00:14:49.448642+00:00",
+  "supervisor_and_worker_absent": true,
+  "owned_supervisor_pid": 56051,
+  "owned_worker_pid": 56057,
+  "last_completed_step": 264,
+  "optimizer_steps": {
+    "g": 330,
+    "d": 281
+  },
+  "last_complete_checkpoint": 250,
+  "planned_iterations": 500,
+  "reason": "All four raw250 images substantially regress in photographic realism versus100: dark gray/cyan/mauve casts and embossed/etched facial texture. EMA250 remains structurally source-like. No adult-priest domain conversion. Stop unchanged raw training; retain checkpoint250 for bounded diagnostic evaluation only.",
+  "review_files": {
+    "research/reviews/adam-fixed-offsets500/native-review-250-root.json": "b91734fd80e87dc326eb7b9b0fa5ed46baeb8a5bf3467f2f27afcec0bc1b04e5",
+    "research/reviews/adam-fixed-offsets500/native-review-250-agent.json": "ffb9bbd72503b8097721acf3eeaed1e467ad352379e507d63d673e2f7537279e"
+  },
+  "production_approved": false,
+  "server_latency_proven": false
+}

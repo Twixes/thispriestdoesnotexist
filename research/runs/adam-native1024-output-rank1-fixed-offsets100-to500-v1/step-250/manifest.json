@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "step": 250,
+  "protocol_sha256": "0be7e94ef47513d9eb733e6d41621dcb5eb5db5da3c1b3d625ceb857784174ad",
+  "eval_z_sha256": "c4eb3bee33c6f9a0502c62b620a1a984aa431d1b43eadcaab1bbc53c8ebe804e",
+  "rng_unchanged": true,
+  "raw_and_ema_offsets_fixed": true,
+  "parent_reproduction_exact": false,
+  "images": [
+    {
+      "path": "ema-000.png",
+      "sha256": "1f56ded3646df4d66fd810b93770f50b3a348f05a8e1e5fa878ba8d559fd1f66"
+    },
+    {
+      "path": "ema-001.png",
+      "sha256": "12c14cfe5f3450df77297865dc50a5648f95a69efa70ab8485daf1d6dcfb0abb"
+    },
+    {
+      "path": "ema-002.png",
+      "sha256": "d329a39a2d83644a1cbc99ffccff262feaeac3f2568cc713ca8b2e33502294aa"
+    },
+    {
+      "path": "ema-003.png",
+      "sha256": "180240575f56d56dd893da5ee07576b4b32cf1a7f251a2bf25dac825ad859f57"
+    },
+    {
+      "path": "raw-000.png",
+      "sha256": "b228aa1f87899b9abd2175e9d717a0e2b4a09a608da7723f3268ddea476c3d73"
+    },
+    {
+      "path": "raw-001.png",
+      "sha256": "384f6e140315beb515fef2f280d048744d4c2f784f79b598ebadec82fb0748e7"
+    },
+    {
+      "path": "raw-002.png",
+      "sha256": "bad9a87cd27882f00436eb15356328ed6fc9d9b28d5d3b59c38cff8652b923dc"
+    },
+    {
+      "path": "raw-003.png",
+      "sha256": "27c48c4ecb1347c8f1a1bde8ef2f4428797a86bce6c4f958919c5a4f35bb4f7c"
+    }
+  ]
+}

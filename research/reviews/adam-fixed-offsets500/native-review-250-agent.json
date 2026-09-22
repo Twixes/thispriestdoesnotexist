@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-09-22T00:13:01.680794+00:00",
+  "reviewer": "continuation_preview",
+  "step": 250,
+  "indices": [
+    2,
+    3
+  ],
+  "n_fixed_latents": 2,
+  "scope": "Limited n=2 direct native visual comparison, not population evaluation; root separately reviews000/001. No image edits, crops, repairs, model execution, process control or deployment.",
+  "viewed_images": [
+    {
+      "phase": "baseline",
+      "index": 2,
+      "arm": "raw",
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-000/raw-002.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-000/raw-002.png",
+      "sha256": "175d7d5a4d1ca45f0c878cd11e4d8bca99eafe6a5eb3eaa2582f8ced18646ff8",
+      "direct_native_image_view": true
+    },
+    {
+      "phase": "baseline",
+      "index": 3,
+      "arm": "raw",
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-000/raw-003.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-000/raw-003.png",
+      "sha256": "17e01e3036f8e4d1d0d92f56f84aabcb3cb7ec014965ccb850a3a907477c44b4",
+      "direct_native_image_view": true
+    },
+    {
+      "phase": "parent100",
+      "index": 2,
+      "arm": "raw",
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-002.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-002.png",
+      "sha256": "6c401af62615f53efb90116eec6cb1fe10cc592b7d425efa89f0293315eefd24",
+      "direct_native_image_view": true
+    },
+    {
+      "phase": "parent100",
+      "index": 3,
+      "arm": "raw",
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-003.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-003.png",
+      "sha256": "c44c9aa9723bd55644f9bfb140c8aacdde7f012effa0ed6bddc153075e6f95b0",
+      "direct_native_image_view": true
+    },
+    {
+      "phase": "parent100",
+      "index": 2,
+      "arm": "ema",
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/ema-002.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/ema-002.png",
+      "sha256": "0f401c7ae48111c7122119af872a6ca676c9cdae3fd95b2de7680b224cc3f6ff",
+      "direct_native_image_view": true
+    },
+    {
+      "phase": "parent100",
+      "index": 3,
+      "arm": "ema",
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/ema-003.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/ema-003.png",
+      "sha256": "bb7782fbc9fbf3e3c2bb32a913ed905e1134121be8b5907b951f1abc3d3292e1",
+      "direct_native_image_view": true
+    },
+    {
+      "phase": "continuation250",
+      "index": 2,
+      "arm": "raw",
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-002.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-002.png",
+      "sha256": "bad9a87cd27882f00436eb15356328ed6fc9d9b28d5d3b59c38cff8652b923dc",
+      "direct_native_image_view": true
+    },
+    {
+      "phase": "continuation250",
+      "index": 3,
+      "arm": "raw",
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-003.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-003.png",
+      "sha256": "27c48c4ecb1347c8f1a1bde8ef2f4428797a86bce6c4f958919c5a4f35bb4f7c",
+      "direct_native_image_view": true
+    },
+    {
+      "phase": "continuation250",
+      "index": 2,
+      "arm": "ema",
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-002.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-002.png",
+      "sha256": "d329a39a2d83644a1cbc99ffccff262feaeac3f2568cc713ca8b2e33502294aa",
+      "direct_native_image_view": true
+    },
+    {
+      "phase": "continuation250",
+      "index": 3,
+      "arm": "ema",
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-003.png",
+      "absolute_path": "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-003.png",
+      "sha256": "180240575f56d56dd893da5ee07576b4b32cf1a7f251a2bf25dac825ad859f57",
+      "direct_native_image_view": true
+    }
+  ],
+  "snapshot_manifest_sha256": "661e4cb3cdae19ba0638083afd1b44f9511f5356a0aa4409767751fe58c1942d",
+  "findings": [
+    {
+      "index": 2,
+      "photographic_coherence": "Source face, glasses, hair, ears and shirt remain structurally coherent. Raw250 is substantially darker and less photographic than raw100: muddy gray/cyan skin and background, embossed-looking forehead/nose/hair highlights, very dark less legible eyes. This exceeds the mild cool tint seen at100.",
+      "grain_texture": "Strong etched/embossed fine texture and edge highlights; not a total structural collapse or the older uncontrolled dense-grain failure.",
+      "color": "Marked desaturation with gray/cyan cast and darkened midtones, rather than natural-looking monochrome portrait shading.",
+      "identity_retention": "Visually the same apparent source individual; no biometric measurement.",
+      "ema": "EMA250 remains visually close to source baseline and EMA100 with plausible source shading; slight changes do not constitute priest adaptation.",
+      "domain": "Adult-looking man with glasses and ordinary open-neck shirt; no hat, but no clerical collar or convincing priest clothing.",
+      "priest_conversion_observed": false
+    },
+    {
+      "index": 3,
+      "photographic_coherence": "Raw250 retains the apparent child face and hat/clothing structure but is substantially grayer/darker than raw100, with waxy/etched skin, muted eye detail and odd pale ridge highlights.",
+      "grain_texture": "Dense fine etched texture is now conspicuous on skin and clothing, though source anatomy remains readable.",
+      "color": "Strong gray/mauve cast, reduced natural face warmth, residual bright red button emphasizes nonuniform color suppression.",
+      "identity_retention": "Visually retains the same apparent source child and knitted hat.",
+      "ema": "EMA250 remains close to source baseline/EMA100 and much more photographic than raw250; still the same out-of-domain source content.",
+      "domain": "Apparent minor, knitted hat and winter clothing; not an adult male priest. No attractiveness rating performed.",
+      "priest_conversion_observed": false
+    }
+  ],
+  "overall": {
+    "major_raw_photographic_regression_vs100": true,
+    "raw_structural_collapse": false,
+    "ema_close_to_source": true,
+    "adult_male_priest_conversion_demonstrated": false,
+    "attractiveness_assessed": false,
+    "quality_accepted": false,
+    "production_approved": false,
+    "server_latency_proven": false,
+    "recommendation": "Recommend root visual stop review before continuing to500, because both reviewed raw250 samples visibly lose photographic realism relative to100. Await root000/001 assessment for the all-four decision. Do not treat source-like EMA as successful adaptation.",
+    "reason_not_domain_only": "Absent early priest conversion alone would not justify terminating a probing run, since later main adaptation has different capacity. This recommendation is based on the substantial worsening of raw photographic quality despite fixed noise/activation-bias offsets.",
+    "uncertainty": "Only two preregistered fixed latents; no unseen-latent sample, numerical image-quality metric, trajectory beyond250, or causal parameter diagnosis. No claim that recovery is impossible."
+  }
+}

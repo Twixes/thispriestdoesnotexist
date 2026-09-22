@@ -1,0 +1,46 @@
+{
+  "reviewed_at_utc": "2026-09-22T00:13:10.856213+00:00",
+  "reviewer": "root",
+  "step": 250,
+  "indices": [
+    0,
+    1
+  ],
+  "viewed_images": [
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-000.png",
+      "sha256": "b228aa1f87899b9abd2175e9d717a0e2b4a09a608da7723f3268ddea476c3d73"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/raw-001.png",
+      "sha256": "384f6e140315beb515fef2f280d048744d4c2f784f79b598ebadec82fb0748e7"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-000.png",
+      "sha256": "1f56ded3646df4d66fd810b93770f50b3a348f05a8e1e5fa878ba8d559fd1f66"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/ema-001.png",
+      "sha256": "12c14cfe5f3450df77297865dc50a5648f95a69efa70ab8485daf1d6dcfb0abb"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-000.png",
+      "sha256": "cbaafaccd9bcb24519b6ca8600b7faf13815f0113784d5ff7449a89c7a4620d5"
+    },
+    {
+      "path": "research/runs/adam-native1024-output-rank1-fixed-offsets100-v1/step-100/raw-001.png",
+      "sha256": "b0842d63fb06bc69369cd98620e1188eecbea2072862c98526aae6350017c965"
+    }
+  ],
+  "observations": {
+    "000": "Raw250 is markedly darker and gray/cyan compared with raw100; facial geometry/source identity retained, but shading is flat/unnatural. Apparent child, no clerical collar. EMA250 remains source-like.",
+    "001": "Raw250 has a strong gray/cyan metallic/embossed look with less natural skin than raw100. Source identity, head covering and scarf remain; no priest collar. EMA250 remains source-like."
+  },
+  "severe_dense_grain_recurrence": false,
+  "photographic_regression": true,
+  "adult_priest_domain_achieved": false,
+  "attractiveness_rated": false,
+  "production_approved": false,
+  "decision": "Stop unchanged continuation after completed checkpoint250 because of substantial worsening photographic realism; preserve all samples/checkpoint. This is a research decision, not a conclusion that unconditional priest generation is impossible.",
+  "limitations": "Two fixed latents inspected by root; agent independently reviews002/003. No population-level image-quality or diversity claim."
+}
