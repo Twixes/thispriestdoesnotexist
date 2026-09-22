@@ -1,0 +1,23 @@
+{
+  "step": 100,
+  "reviewer": "root",
+  "images": {
+    "ema-000.png": "57e3ba20f703f959ba2dc5f7ae39b21f3b6f93cc4faa6d81d93051c21c79b97c",
+    "ema-001.png": "4804ffda984476e4b4f2509046444d5c3e0cf7cbfa7c77e154e57d5fc1481c0a",
+    "ema-002.png": "d8d0373e6780a00c0eb747a9b4947052966b63b6517ba632004a82c8ccda0521",
+    "ema-003.png": "6e6fdbf8d1d6d4d3bf224d651585e8f6589dd836be7cec90bfed83913a285c69",
+    "raw-000.png": "865cfdb47002c49231cf9ea4cc34a5594db7e297486c4d744a0b7d102ece0fcf",
+    "raw-001.png": "c47c6440c7d2c6de33bbfec82d912e6177f6ceb714878c3c44e2b391a2eb9d12",
+    "raw-002.png": "52399d2814beda7515123cca88183c0528c4dd0a21b455611a0ea03489bb3427",
+    "raw-003.png": "8bdeb84b4e24cc25a445f0bde5320e10eb4b88ead9dc9f9c44fe8b32d0a870c7"
+  },
+  "checkpoint_sha256": "479adbc22407787ee07ebba14eeb230ca94635fc1e36b58704bd11d43e356c08",
+  "observations": [
+    "All eight full native images directly inspected. Raw100 is noticeably cooler/cyan and shows increased shiny highlights/skin contrast compared with50, especially001/002. Faces remain anatomically legible; minor framing and facial changes are visible.",
+    "EMA remains close to original natural-colored source faces. No unambiguous priest collar in any of the8; apparent children000/003 and hats001/003 persist.",
+    "This is continued failure of priest-domain conversion. Raw color/texture drift is a photographic concern; no production approval."
+  ],
+  "decision": "Render preregistered32 fresh latent draws before deciding continuation. Any continuation will retain full current state and review150 for worsening photographic drift.",
+  "production_approved": false,
+  "server_latency_proven": false
+}

@@ -1,0 +1,60 @@
+{
+  "prepared_only": true,
+  "native_model_loaded": false,
+  "native_training_launched": false,
+  "source_run": "research/runs/adam-native1024-retained250-main10-to100-v1",
+  "source_protocol_sha256": "a21187fa9476db357b144067e084847f394d82730827d82f94f23c4251d915b9",
+  "source_checkpoint_sha256": null,
+  "requires_actual_completed_source100": true,
+  "absolute_iteration_range": [
+    100,
+    249
+  ],
+  "preview_steps": [
+    100,
+    150,
+    250
+  ],
+  "checkpoint_steps": [
+    150,
+    250
+  ],
+  "expected_optimizer_steps": {
+    "150": {
+      "g": 188,
+      "d": 160
+    },
+    "250": {
+      "g": 313,
+      "d": 266
+    }
+  },
+  "additional_optimizer_steps": {
+    "g": 188,
+    "d": 159
+  },
+  "engine_and_restoration_helper_unchanged": true,
+  "tests": {
+    "command": "research/.venv/bin/python research/experiments/adam_native/test_continue_main_adaptation_fixed_offsets250_250.py",
+    "passed": 3,
+    "seconds": 12.086,
+    "scope": "Tiny random native32 actual engine; uninterrupted100to250 equals serialized restoration at100and150 in every update record and complete state; global regularizer boundaries correct; mismatched envelope/counters rejected before mutation; no pretrained model or native result fabricated"
+  },
+  "guards": {
+    "threads": 1,
+    "start_available_fraction": 0.35,
+    "runtime_available_fraction": 0.2,
+    "rss_gib": 12,
+    "swap_growth_mib": 512,
+    "seconds": 3600
+  },
+  "automatic_launch": false,
+  "automatic_restart": false,
+  "pins": {
+    "research/experiments/adam_native/continue_main_adaptation_fixed_offsets250_250.py": "bc5d9d5682a9584338dbf72c28b5e7cad6daa9dc97d24d932414b95af1f08c06",
+    "research/experiments/adam_native/test_continue_main_adaptation_fixed_offsets250_250.py": "395ebf4096bf25bd4353e44bfcedcef674882388b5070950b4ab9c5c51faa7fd",
+    "research/experiments/adam_native/continue-main-adaptation-fixed-offsets250-250-README.md": "0da3157708ef0a80f6312a064d2f69cc6808b5bbc9113b4183b1ff59fe5b082d",
+    "research/experiments/adam_native/continue_main_adaptation_fixed_offsets250_100.py": "7a23948814df313e106057c903a73675cfec542988017f1f7ffbc116b48a2b23",
+    "research/experiments/adam_native/main_adaptation_fixed_offsets250_10.py": "0a5be1d0f4db4ffe04b1c08e6483855fdf99a78b9be8bf38eab1a39672fec7ba"
+  }
+}

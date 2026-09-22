@@ -1,0 +1,9 @@
+{
+  "runner_sha256": "bc5d9d5682a9584338dbf72c28b5e7cad6daa9dc97d24d932414b95af1f08c06",
+  "root_review": "Read complete runner; uses frozen engine and preserves full state, absolute schedule, checkpoint restore and existing guards.",
+  "test_command": "research/.venv/bin/python research/experiments/adam_native/test_continue_main_adaptation_fixed_offsets250_250.py",
+  "tests": 3,
+  "seconds": 12.864,
+  "passed": true,
+  "native_launch": false
+}

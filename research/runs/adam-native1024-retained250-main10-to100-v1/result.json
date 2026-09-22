@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "iterations": 100,
+  "first_completed_step": 11,
+  "additional_iterations": 90,
+  "optimizer_steps": {
+    "g": 125,
+    "d": 107
+  },
+  "additional_optimizer_steps": {
+    "g": 112,
+    "d": 96
+  },
+  "protocol_sha256": "a21187fa9476db357b144067e084847f394d82730827d82f94f23c4251d915b9",
+  "parent_checkpoint_sha256": "9dcffb8b125d9b7f37f7ac59db067a5c564c4912488a2678472a0dd4ec90ffca",
+  "checkpoints": [
+    {
+      "complete": true,
+      "step": 50,
+      "checkpoint": "checkpoint-050.pt",
+      "checkpoint_sha256": "c84157a0af62dce0f265b995d36916b91fed2a0aa30c43f6678e94aad22eb6af",
+      "state_sha256": "89e30c012e62a78119e9493ab3bae3b703766200461ff251fc082bee4d58c4f3",
+      "protocol_sha256": "a21187fa9476db357b144067e084847f394d82730827d82f94f23c4251d915b9",
+      "snapshot_manifest_sha256": "423ee26720400403ea371b6e86b7ef310134cd0b28563457160e8c597309b4ac",
+      "optimizer_steps": {
+        "g": 63,
+        "d": 54
+      },
+      "model_optimizer_rng_path_state_restored_exactly": true
+    },
+    {
+      "complete": true,
+      "step": 100,
+      "checkpoint": "checkpoint-100.pt",
+      "checkpoint_sha256": "479adbc22407787ee07ebba14eeb230ca94635fc1e36b58704bd11d43e356c08",
+      "state_sha256": "70f4b5125b20fc6c8bf6a3bf9e60a6cca57a7c6b0a50110a0c73f3cf7490ee33",
+      "protocol_sha256": "a21187fa9476db357b144067e084847f394d82730827d82f94f23c4251d915b9",
+      "snapshot_manifest_sha256": "1c3eeda76c949f561f14c43294e48fe5e462376a30cf4c91c0d256160338a9a4",
+      "optimizer_steps": {
+        "g": 125,
+        "d": 107
+      },
+      "model_optimizer_rng_path_state_restored_exactly": true
+    }
+  ],
+  "folded_native_max_errors": {
+    "raw": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ema": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "fixed_offsets_and_mask_invariants": true,
+  "seconds_training_previews_export": 1243.4654106659582,
+  "main_adaptation_run": true,
+  "development_continuation_only": true,
+  "production_approved": false,
+  "server_latency_proven": false
+}
