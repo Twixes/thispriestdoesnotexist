@@ -1,0 +1,1370 @@
+{
+  "schema_version": 1,
+  "built_at_utc": "2026-09-22T00:47:03.190624+00:00",
+  "status": "not_rendered",
+  "checkpoint_sha256": null,
+  "count": 32,
+  "available_images": 0,
+  "expected_images": 64,
+  "rows": [
+    {
+      "index": 0,
+      "latent_sha256": "19569ecbb65fe98e39fef808cc8c35ee95ce4f9509daa92c9ae538611336cbce",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 0,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 0,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "latent_sha256": "0f368307132252a4fd28a2111aabbd7c4d5f2d8914279727be5b5507642adbcb",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 1,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 1,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 2,
+      "latent_sha256": "545d17a76ff907be40465accad21485b95b57757070e49103230d04ac8b07c28",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 2,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 2,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 3,
+      "latent_sha256": "5caba34c1f39e29c082b2a4eb7b1bd8e5cfd21609a37ffa74c9fd66f6717676f",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 3,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 3,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 4,
+      "latent_sha256": "4c7f70d09cffa075ff8e2fdb67b6c5032619a661fa79542f3afc37d36ddcae3f",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 4,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 4,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 5,
+      "latent_sha256": "efe0e02c41513fe88d6dc23b36d83ee08ae0f939866dd484f5661a51fb964469",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 5,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 5,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 6,
+      "latent_sha256": "175df2af5018bf91c2e9ed1914d1fa6fd67ab4ffb258533de9990e99531684f6",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 6,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 6,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 7,
+      "latent_sha256": "78009d7baca58a2e202f0c81a0d24df5b564837d803bafbc990bd937e0b2f3eb",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 7,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 7,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 8,
+      "latent_sha256": "54bff2e209a909f8e920abb70d178a756d3658c8bf8e8557cadb0106d40ca08b",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 8,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 8,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 9,
+      "latent_sha256": "eb4d0a6635b02156afe0b42c2e71202b56b7cbb1c682bdc5b6dd69513f90d5d7",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 9,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 9,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 10,
+      "latent_sha256": "02938f6f2fa0fed65c60ca9d46cf46a03540c2b0de4faf32ca5d333eddd1b9bc",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 10,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 10,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 11,
+      "latent_sha256": "b21201ce3cec469e27bba532c783ab49035a65362de6daa807e137d05565510f",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 11,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 11,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 12,
+      "latent_sha256": "9ad4213791da22c4d5b6a01435b824002217f59b9c82f51929f5e1d47770b428",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 12,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 12,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 13,
+      "latent_sha256": "eaa419da4ffa550b1e21323491c4e40d1ae582550ddcd8ecc7af8a0e99fe2502",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 13,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 13,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 14,
+      "latent_sha256": "79c464249a45172f149ba6dfea1337a5dcd9118f8bab9783c55c52f35b0b2712",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 14,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 14,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 15,
+      "latent_sha256": "bab99c39138a484dd8d6f65aaefaa3138893e00829cac327ed6b7d872dfe496a",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 15,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 15,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 16,
+      "latent_sha256": "11804b877ebe07c200a8a37fa9c0bc62e2316c9fb30e047bd7ea455455709976",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 16,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 16,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 17,
+      "latent_sha256": "cde3e24d0955bc70de3f1c5115b95334186a83d180d78e984d33e91c460a5c15",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 17,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 17,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 18,
+      "latent_sha256": "7c05be0ea6353fa6019b4dac7622f318175fc619bf59feb64a0cd8edd41f44b4",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 18,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 18,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 19,
+      "latent_sha256": "3b61bd479fd2e46a8d24aefa3c0f5859fb3286f07b79fddf6773cc4e8252ca0f",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 19,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 19,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 20,
+      "latent_sha256": "47dc0392b5e239b385a0e9383887acb77d2d0e84262154d01ce75088c808d536",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 20,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 20,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 21,
+      "latent_sha256": "7440ddcdc4f3731cf793eb0f9f62f3d53946effb8c0b972ca108b0604a991591",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 21,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 21,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 22,
+      "latent_sha256": "1abb11c045d0276418f9701a2e9dd21464aca8fcbd1cf044ec43bb69577bf14b",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 22,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 22,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 23,
+      "latent_sha256": "e40df530b5964abe7df014d83a5e571bfeb3fa85841394e89108764fcbbbd11a",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 23,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 23,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 24,
+      "latent_sha256": "994a2166e1ee57b8933cc84110e3bb58edf9559e561f3fecf694f7d0edeba5d0",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 24,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 24,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 25,
+      "latent_sha256": "4bd859625304445229c48e533993ea5bbf7dc0f09ef39b1cbffb1e7430335ed0",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 25,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 25,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 26,
+      "latent_sha256": "30be9186e56a707ce9d52bf0a8d77bd826b71ef3a69a2322cd7b67b8dcf55b87",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 26,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 26,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 27,
+      "latent_sha256": "26f7c792397a5e0a2bdec75d8e1c20f190401ecd963dae2a20cce01b592f1ba6",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 27,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 27,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 28,
+      "latent_sha256": "c36adc9677cd59df038591ea012f06d9217773d102d6690a845bb8851b66ea52",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 28,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 28,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 29,
+      "latent_sha256": "ca23d18945ef61f9f7d3e01fee9cd38054fe51ced1d4f3ca74b289da9a807903",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 29,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 29,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 30,
+      "latent_sha256": "54e1de8ed9cfe72deba9043d47095ceae39a6d27c73c797e7f7e36b117b68a14",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 30,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 30,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    },
+    {
+      "index": 31,
+      "latent_sha256": "06ccf495bf2dcd68694361eee6cbe54f1b43d7327f2b6e1581feff4997fb0a87",
+      "images": {
+        "raw": {
+          "status": "pending",
+          "review": {
+            "index": 31,
+            "arm": "raw",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        },
+        "ema": {
+          "status": "pending",
+          "review": {
+            "index": 31,
+            "arm": "ema",
+            "image_sha256": null,
+            "status": "not_reviewed",
+            "apparent_adult": null,
+            "priest_clothing_and_collar": null,
+            "hat_present": null,
+            "gross_artifacts": null,
+            "photographic_coherence": null,
+            "repetition_or_nearest_training_image_concern": null,
+            "notes": null
+          }
+        }
+      }
+    }
+  ],
+  "sources": {
+    "preregistration": {
+      "path": "research/reviews/adam-retained250-main-broad32/preregistration.json",
+      "url": "preregistration.json",
+      "sha256": "2bfbf6fc5b49d818fa1b9cbc2b6c226c6e8ec63720feeb277ee94ed202d2889c"
+    },
+    "latents": {
+      "path": "research/reviews/adam-retained250-main-broad32/latents32.npz",
+      "url": "latents32.npz",
+      "sha256": "5b2eba9622a664df23a8f96074302267913ed98b5cb41b2ed392447280cafa53"
+    },
+    "training_manifest": {
+      "path": "research/data/flux-priest-domain-v1/manifest.json",
+      "url": "../../data/flux-priest-domain-v1/manifest.json",
+      "sha256": "6796be940a10610843c154c7063b3bb907d0ffab18e014737c6abc6f02ee340b"
+    }
+  },
+  "training_references": [
+    {
+      "id": 141,
+      "path": "research/data/flux-priest-domain-v1/train/141.png",
+      "url": "../../data/flux-priest-domain-v1/train/141.png",
+      "sha256": "751d3492a88e8b2b348ad56012d2de89001cf8256b6bd82e9fe0aeb7b29ed22b"
+    },
+    {
+      "id": 142,
+      "path": "research/data/flux-priest-domain-v1/train/142.png",
+      "url": "../../data/flux-priest-domain-v1/train/142.png",
+      "sha256": "fe9e5ade4c680736811a9f5871e4f1a954e1bb58cece07825eaad96d726f582d"
+    },
+    {
+      "id": 143,
+      "path": "research/data/flux-priest-domain-v1/train/143.png",
+      "url": "../../data/flux-priest-domain-v1/train/143.png",
+      "sha256": "a994e76f71c3aab6df40c5c48c7124fddceb37edf32f47f62cbc23614732de94"
+    },
+    {
+      "id": 145,
+      "path": "research/data/flux-priest-domain-v1/train/145.png",
+      "url": "../../data/flux-priest-domain-v1/train/145.png",
+      "sha256": "f3cc591b78d89f4bb851369723281d3fc89874678c47fbdb55e8b21b26191829"
+    },
+    {
+      "id": 147,
+      "path": "research/data/flux-priest-domain-v1/train/147.png",
+      "url": "../../data/flux-priest-domain-v1/train/147.png",
+      "sha256": "1e4ec03ffaa1124d616388387da30ff5cbf517e6a2185cacfa59049d57f29810"
+    },
+    {
+      "id": 148,
+      "path": "research/data/flux-priest-domain-v1/train/148.png",
+      "url": "../../data/flux-priest-domain-v1/train/148.png",
+      "sha256": "cb118bb768b6b9bb2ce16c6ae00098f3d50bdad0a591b482495178f35d2619d6"
+    },
+    {
+      "id": 149,
+      "path": "research/data/flux-priest-domain-v1/train/149.png",
+      "url": "../../data/flux-priest-domain-v1/train/149.png",
+      "sha256": "9e2c1fa38192f4bd3fecfcca53eb052931fa814b7e08b4e17d6c86a2784d77f2"
+    },
+    {
+      "id": 152,
+      "path": "research/data/flux-priest-domain-v1/train/152.png",
+      "url": "../../data/flux-priest-domain-v1/train/152.png",
+      "sha256": "f8f9a8e86b6eaf833b2f9d1e1c3dd65e0492ff24fd87f7e8538c922258dcf4be"
+    },
+    {
+      "id": 154,
+      "path": "research/data/flux-priest-domain-v1/train/154.png",
+      "url": "../../data/flux-priest-domain-v1/train/154.png",
+      "sha256": "6d0f9ed146e80c6fc0345299a7e96df21159b9b393795e9d8c7079156b02e0bd"
+    },
+    {
+      "id": 155,
+      "path": "research/data/flux-priest-domain-v1/train/155.png",
+      "url": "../../data/flux-priest-domain-v1/train/155.png",
+      "sha256": "bfcb9be5cca0b5d78ffa608c5f87d672d7e6fc20748005e609058eea3a2be8c7"
+    },
+    {
+      "id": 156,
+      "path": "research/data/flux-priest-domain-v1/train/156.png",
+      "url": "../../data/flux-priest-domain-v1/train/156.png",
+      "sha256": "69fbdfc13e73f6e9422e8997c141aaaaa7729f891d0b992cb623ff4860ef6e1e"
+    },
+    {
+      "id": 157,
+      "path": "research/data/flux-priest-domain-v1/train/157.png",
+      "url": "../../data/flux-priest-domain-v1/train/157.png",
+      "sha256": "e0e0dedeedc87ba011e278f406dc0155be9e2b910e14220ce8e83d36c6682fb0"
+    },
+    {
+      "id": 160,
+      "path": "research/data/flux-priest-domain-v1/train/160.png",
+      "url": "../../data/flux-priest-domain-v1/train/160.png",
+      "sha256": "1c863de27dc6ac5aa619277e3ff69873feb56c6afc37e9f6a339ca7485ddd30d"
+    },
+    {
+      "id": 162,
+      "path": "research/data/flux-priest-domain-v1/train/162.png",
+      "url": "../../data/flux-priest-domain-v1/train/162.png",
+      "sha256": "599f2d58ef0d30b38deb9de5db9b100479e5a5c53fee01d3668c420438334e37"
+    },
+    {
+      "id": 163,
+      "path": "research/data/flux-priest-domain-v1/train/163.png",
+      "url": "../../data/flux-priest-domain-v1/train/163.png",
+      "sha256": "70188d1beb364146ae2806063e75793fe19d94883dfccb12b8ec6f3523886f91"
+    },
+    {
+      "id": 166,
+      "path": "research/data/flux-priest-domain-v1/train/166.png",
+      "url": "../../data/flux-priest-domain-v1/train/166.png",
+      "sha256": "ce1c9919bd610fa762840d6b9df09736399b3187db8ddd064bfe4982faf9fcb8"
+    },
+    {
+      "id": 170,
+      "path": "research/data/flux-priest-domain-v1/train/170.png",
+      "url": "../../data/flux-priest-domain-v1/train/170.png",
+      "sha256": "1ef87bee01f5290327f8d3009b7a0870252b5a2e6c20c4ac4ac2400a06ce20a1"
+    },
+    {
+      "id": 173,
+      "path": "research/data/flux-priest-domain-v1/train/173.png",
+      "url": "../../data/flux-priest-domain-v1/train/173.png",
+      "sha256": "7e192004c33f9bd7ab83349893e4d7571e6d247a63ae2c7e183973eb83ad85d1"
+    },
+    {
+      "id": 174,
+      "path": "research/data/flux-priest-domain-v1/train/174.png",
+      "url": "../../data/flux-priest-domain-v1/train/174.png",
+      "sha256": "ca186b3b95c68838fddcfa66b280ca8adc5707e19f416894646b7e9d7aecfedf"
+    },
+    {
+      "id": 180,
+      "path": "research/data/flux-priest-domain-v1/train/180.png",
+      "url": "../../data/flux-priest-domain-v1/train/180.png",
+      "sha256": "e4d88955abd1fae56b8ce77db77c0f523b9bd9e884c17cab90641578cc5bec64"
+    }
+  ],
+  "license_notice": "Source NVIDIA code/weights retain upstream license terms; repository MIT license does not relicense them.",
+  "unfiltered": true,
+  "production_approved": false,
+  "server_latency_proven": false
+}

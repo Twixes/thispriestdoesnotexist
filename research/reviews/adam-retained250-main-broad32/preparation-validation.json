@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "preparation_only": true,
+  "native_model_loaded": false,
+  "torch_imported": false,
+  "native_render_executed": false,
+  "new_latents": 32,
+  "rows_disjoint_from_original_four": true,
+  "pending_image_rows": 64,
+  "fixture_tests": {
+    "tests": 3,
+    "seconds": 0.007,
+    "result": "passed",
+    "scope": "Small declared synthetic NumPy/JSON only; no model tensor fixtures"
+  },
+  "generated_javascript_syntax": "passed",
+  "preview_opened_in_browser": false,
+  "files_sha256": {
+    "build.py": "7790e23648c5e9acb193884bbd13127cd1d48d28f51cd8666cf735d40ae7286e",
+    "index.html": "19b587f55976e7551ef80b1d6ba982bdf9d9e03afcf58bd81b31de814d74888e",
+    "annotation-template.json": "c22a3865c84f2471a767b9c5e6e538b12c27d3ad95d69fd646b4258c17738257",
+    "render.py": "f4b815681e891af0dbcb149c91aac83cf03ede1ecbee5a1cf532248595425f3c",
+    "README.md": "83338834a10c7b05da94ed215b4c7ff69a49e9509f9004befdea9fb300fdeb49",
+    "latents32.npz": "5b2eba9622a664df23a8f96074302267913ed98b5cb41b2ed392447280cafa53",
+    "manifest.json": "4f2f56aabce17e098f26f791ce700752032b5e62c40e82d5a9a5d13fb5310357",
+    "test_preparation.py": "f714ee253d143b4f370b4af8be4cd4b999a5581c35fb8765446c327ac52b5568",
+    "template.html": "d072f2cc42fa0a5947894fc5007acc640661df7a18f168c7319fdbb20866a3e3",
+    "preregistration.json": "2bfbf6fc5b49d818fa1b9cbc2b6c226c6e8ec63720feeb277ee94ed202d2889c"
+  }
+}

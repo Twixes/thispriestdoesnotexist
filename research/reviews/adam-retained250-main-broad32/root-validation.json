@@ -1,0 +1,17 @@
+{
+  "verified_at_utc": "2026-09-22T00:48:30.460291+00:00",
+  "preregistration_sha256": "2bfbf6fc5b49d818fa1b9cbc2b6c226c6e8ec63720feeb277ee94ed202d2889c",
+  "latents_sha256": "5b2eba9622a664df23a8f96074302267913ed98b5cb41b2ed392447280cafa53",
+  "render_source_sha256": "f4b815681e891af0dbcb149c91aac83cf03ede1ecbee5a1cf532248595425f3c",
+  "build_source_sha256": "7790e23648c5e9acb193884bbd13127cd1d48d28f51cd8666cf735d40ae7286e",
+  "registered_latents": 32,
+  "new_latents_distinct_from_original_four": true,
+  "pending_images": 64,
+  "native_model_loaded": false,
+  "native_render_launched": false,
+  "tests_stdout": "",
+  "tests_stderr": "test_checkpoint_envelope_rejects_wrong_counts_masks_and_provenance_before_mutation (__main__.PreparationTests.test_checkpoint_envelope_rejects_wrong_counts_masks_and_provenance_before_mutation) ... ok\ntest_new_latents_are_reproducible_complete_and_distinct (__main__.PreparationTests.test_new_latents_are_reproducible_complete_and_distinct) ... ok\ntest_review_refuses_omitted_duplicate_swapped_or_unbound_image_rows (__main__.PreparationTests.test_review_refuses_omitted_duplicate_swapped_or_unbound_image_rows) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.007s\n\nOK\n",
+  "harness_note": "Initial root subprocess resolved the venv Python symlink and lost its installed NumPy; rerun using sys.executable preserved the venv and passed. No product/research code changed.",
+  "root_source_review": "Reviewed actual source checkpoint schema, G-only reconstruction, protected mask checks, original8PNG reproduction and complete32x2 coverage. Runtime native equivalence and memory remain unproven until real render.",
+  "production_approved": false
+}

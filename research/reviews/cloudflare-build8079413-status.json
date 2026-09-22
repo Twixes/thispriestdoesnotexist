@@ -30,5 +30,25 @@
     "message": "Authentication error",
     "build_failure_cause_known": false
   },
-  "follow_up": "Inspect the next master-push build status; existing credential lacks access to current build logs. No manual application deployment, scope expansion or vault read was performed."
+  "follow_up": "Inspect the next master-push build status; existing credential lacks access to current build logs. No manual application deployment, scope expansion or vault read was performed.",
+  "next_push_observation": {
+    "observed_at_utc": "2026-09-22T00:46:59.424106+00:00",
+    "commit": "b8c4b34",
+    "checks": [
+      {
+        "name": "Workers Builds: thispriestdoesnotexist",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://dash.cloudflare.com/1a5e44710a69d21d6822a460e5861578/workers/services/view/thispriestdoesnotexist/production/builds/1dd00139-2861-49fb-9d72-45abb00e0de8"
+      },
+      {
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/Twixes/thispriestdoesnotexist/actions/runs/35673184844/job/106574014604"
+      }
+    ],
+    "deployment_configuration_changed": false,
+    "note": "Both checks succeeded on the next research-only push. Original failure cause remains unknown; no authentication or deployment changes were needed."
+  }
 }
