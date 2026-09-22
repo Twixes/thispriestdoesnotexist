@@ -1,0 +1,61 @@
+{
+  "prepared_only": true,
+  "native_model_loaded": false,
+  "native_training_launched": false,
+  "actual_fi1000_consumed": false,
+  "route": "Explicit authenticated reviewed retained EMA250 from source stopped264; not completed500",
+  "source_run": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1",
+  "source_step": 250,
+  "source_run_complete": false,
+  "source_stopped_after_step": 264,
+  "parent_runner_sha256": "9ff54a546593aebeffc0320f897ba66865c13674b5b83be3095cf1471eb73b6b",
+  "retained250_pins": {
+    "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/protocol.json": "0be7e94ef47513d9eb733e6d41621dcb5eb5db5da3c1b3d625ceb857784174ad",
+    "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/checkpoint-250.pt": "864bc321a032cce4fa8b7d72afdb31cc6083444a140680d084529627c1cff2a8",
+    "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/checkpoint-250.json": "9fb262ab9c30153ed4161f1b87804328acb3aa793eb60078eb097a4cb5077270",
+    "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/step-250/manifest.json": "661e4cb3cdae19ba0638083afd1b44f9511f5356a0aa4409767751fe58c1942d",
+    "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/modulation-inventory.json": "8c9117c5adf06e1c987d6cc7723970837262af02a3bf2cf543b82886d9c2fa72",
+    "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/runtime.json": "3d9d9a9347f0f70a1b7ff7d7fab228bf36c8b444277c4075ef194d57231373d7",
+    "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/termination.json": "985e679527a2f77aee88a07f2ae92ba76d6d7ebe8ee9492dfd00631c6e0c29e1",
+    "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/supervisor.json": "fab4e669cfd3fbacc14c63d1c0085793aff29a289cbca3cbf3e7dd42130a1a61",
+    "research/reviews/adam-fixed-offsets500/native-review-250-root.json": "b91734fd80e87dc326eb7b9b0fa5ed46baeb8a5bf3467f2f27afcec0bc1b04e5",
+    "research/reviews/adam-fixed-offsets500/native-review-250-agent.json": "ffb9bbd72503b8097721acf3eeaed1e467ad352379e507d63d673e2f7537279e"
+  },
+  "required_before_native_launch": [
+    "Actual completed fixed-policy FI1000 at retained250",
+    "Numerical and disjoint-half ranking stability review",
+    "Explicit development quantile decision",
+    "No other active heavy worker and fresh memory guard"
+  ],
+  "training_core_changed": false,
+  "main_cpu_threads": 1,
+  "tests": {
+    "command": "research/.venv/bin/python research/experiments/adam_native/test_main_adaptation_fixed_offsets250_10.py",
+    "passed": 4,
+    "seconds": 0.057,
+    "fixture_scope": "Declared synthetic opaque non-model/non-image bytes; only provenance gates, no native/model/FI computation",
+    "coverage": [
+      "Frozen parent SHA, entire engine/worker AST equality, supervisor equality except ownsourcepath",
+      "All original FI authentication unchanged except explicit250source-gate substitution plus exact checkpointpath check",
+      "Narrow valid fixture accepted as incomplete-source diagnostic only",
+      "Missing or altered evidence, images/checkpoint and unknown source refused",
+      "Genericfailure/completed500 relabeling rejected even with rehashed syntheticfixture"
+    ],
+    "initial_test_failure": "Temporary fixture path /var alias differed from resolved /private/var; fixed fixture ROOT.resolve without changing runtime code"
+  },
+  "pins": {
+    "research/experiments/adam_native/main_adaptation_fixed_offsets250_10.py": "0a5be1d0f4db4ffe04b1c08e6483855fdf99a78b9be8bf38eab1a39672fec7ba",
+    "research/experiments/adam_native/test_main_adaptation_fixed_offsets250_10.py": "4cd977f976693c244197bab4da4a543ad04dfb457a4538df4a3440ac5d122a7b",
+    "research/experiments/adam_native/main-adaptation-fixed-offsets250-10-README.md": "504573bd97efb34d7343195c2256d438874887febf8728edbb1210fb9e83688f",
+    "research/experiments/adam_native/main_adaptation_fixed_offsets10.py": "9ff54a546593aebeffc0320f897ba66865c13674b5b83be3095cf1471eb73b6b",
+    "research/experiments/adam_native/adaptation_masks_fixed_offsets.py": "704253fc79a9ff03d2bbd8ad51dd87416b88b7ee5b627473930b11c4c3cb539d",
+    "research/experiments/adam_native/selection_fixed_offsets.py": "840700d66e2f069bee8db52ad7593556f27d648265aa2018492f3d9ed4040881",
+    "research/experiments/adam_native/fixed_offset_policy.py": "60dbcf1b8d9358a3279fa3538af434f81ba849ede76438213061538174eb8af6",
+    "research/experiments/adam_native/estimate_importance_fixed_offsets.py": "2c80a760a562aad5fb8fa33848729a6ae0acad4683e0fa5123928956cbc03ec5",
+    "research/experiments/adam_native/modulation.py": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+    "research/experiments/adam_native/importance.py": "1d1d253e8659863ed567f22201423389f71df36a572657896aadcda8d1ab9bbb",
+    "research/experiments/adam_native/selection.py": "e533d95d485eb0e1ff2e5fd0da8039ef1e4c251b501efa5b37fe031ba8b48192"
+  },
+  "production_approved": false,
+  "server_latency_proven": false
+}

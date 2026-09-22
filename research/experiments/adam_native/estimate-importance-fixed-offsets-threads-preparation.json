@@ -1,0 +1,53 @@
+{
+  "prepared_only": true,
+  "native_model_loaded": false,
+  "native_benchmark_launched": false,
+  "thread_choices": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "default_threads": 1,
+  "interop_threads": 1,
+  "parent_source_sha256": "2c80a760a562aad5fb8fa33848729a6ae0acad4683e0fa5123928956cbc03ec5",
+  "prospective_comparison": {
+    "checkpoint": "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1/checkpoint-250.pt",
+    "pairs": 4,
+    "sequence": "Root-scheduled threads2, then threads4 only if useful; no automatic next run",
+    "quality_approval": false
+  },
+  "tests": {
+    "command": "research/.venv/bin/python research/experiments/adam_native/test_estimate_importance_fixed_offsets_threads.py",
+    "passed": 3,
+    "seconds": 0.021,
+    "native_model_loaded": false,
+    "coverage": [
+      "Frozen parent SHA and unchanged pair/sample/input AST",
+      "Complete checkpoint-load/computation/render/accumulation/save worker suffix unchanged",
+      "Supervisor guards and failure handling unchanged after thread forwarding and own-source path substitutions",
+      "Explicit and default thread protocol propagation and copied source hashes using opaque mocked fixtures",
+      "All other protocol fields identical to original estimator",
+      "Invalid thread values refuse before input reads or output creation"
+    ]
+  },
+  "guards": {
+    "start_available_fraction": 0.35,
+    "runtime_available_fraction": 0.2,
+    "rss_gib": 12,
+    "swap_growth_mib": 512,
+    "four_pair_seconds": 1200,
+    "thousand_pair_seconds": 14400
+  },
+  "pins": {
+    "research/experiments/adam_native/estimate_importance_fixed_offsets_threads.py": "8f4323a2febc323b92056d41f6598f6de592a26cb36e06cb27981441d662bb6e",
+    "research/experiments/adam_native/test_estimate_importance_fixed_offsets_threads.py": "85212da9707cc131ec3b3254fb2587574bdc2167af53efa301f0f71d74708fe3",
+    "research/experiments/adam_native/estimate-importance-fixed-offsets-threads-README.md": "39566054e831b7a42f55c37816745014c856dfe0091405a01fe5bcf35d1d88d1",
+    "research/experiments/adam_native/estimate_importance_fixed_offsets.py": "2c80a760a562aad5fb8fa33848729a6ae0acad4683e0fa5123928956cbc03ec5",
+    "research/experiments/adam_native/fixed_offset_policy.py": "60dbcf1b8d9358a3279fa3538af434f81ba849ede76438213061538174eb8af6",
+    "research/experiments/adam_native/importance.py": "1d1d253e8659863ed567f22201423389f71df36a572657896aadcda8d1ab9bbb",
+    "research/experiments/adam_native/modulation.py": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a"
+  },
+  "main_adaptation_gate_changed": false,
+  "actual_performance_memory_or_numeric_agreement_proven": false
+}

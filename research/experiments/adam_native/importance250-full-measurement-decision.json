@@ -1,0 +1,22 @@
+{
+  "decided_at_utc": "2026-09-22T00:24:31.507934+00:00",
+  "source_step": 250,
+  "source_checkpoint_sha256": "864bc321a032cce4fa8b7d72afdb31cc6083444a140680d084529627c1cff2a8",
+  "pairs": 1000,
+  "threads": 8,
+  "scope": "Read-only EMA empirical squared-gradient measurement; no optimizer updates or model deployment.",
+  "reason": "Native4pairs completed, G/D unchanged, all169049 measured coordinates finite/nonzero. Thread variants1/2/4/8 reproduced all signed/squared sums and4PNGbytes exactly;8threads had lowest observed short-trial compute time and peak9.14GiB under12GiB guard.",
+  "expected_compute_seconds_from_short_trial": 7586.464614752913,
+  "timing_caveat": "Single sequential short trials; timing can reflect thermal/cache/background variation. This is not a long-run performance guarantee, reliable FI ranking, or priest-quality evidence.",
+  "guards": {
+    "start_available_fraction": 0.35,
+    "runtime_available_fraction": 0.2,
+    "peak_rss_gib": 12,
+    "swap_growth_mib": 512,
+    "wall_seconds": 14400
+  },
+  "comparison_sha256": "8cb552738ad89d855dba18ada5c91eb1d687133d35af9e21e02ec97691c85415",
+  "source_deviation": "250 rather than nominal500 probing iterations, explicitly retained after raw photographic regression; EMA is used only to calculate importance for a possible fresh-source main run.",
+  "next_gate": "Validate complete1000counts and unchangedEMA, compare prefix500/full1000 and disjoint halves, inspect numerical degeneracy and select a documented quantile before any new main-adaptation smoke.",
+  "production_approved": false
+}

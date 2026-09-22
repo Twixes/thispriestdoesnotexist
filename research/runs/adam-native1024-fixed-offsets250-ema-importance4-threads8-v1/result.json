@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "pairs": 4,
+  "seconds": 30.34585845901165,
+  "fixed_offsets_zero_and_originals_unchanged": true,
+  "fixed_offset_policy": "fixed_synthesis_noise_and_activation_bias_offsets_v1",
+  "ema_state_unchanged": true,
+  "ema_state_sha256": {
+    "G": "fea3c0fe153305ddf26d830b0bb2e2c944512038cbe04629d17016207be9e86d",
+    "D": "4e56266153f81d2c52c17b0666b3827a906ae7aba0c3fd458662835d7d6a1b49"
+  },
+  "importance_path": "importance-0004.pt",
+  "importance_sha256": "23c5b7895158eba6068dbf836d87172a4e00f0d26d4328925f62c81c521b7615",
+  "protocol_sha256": "4c663226080fda4b14f036825512c7654ba58f7b626cd92cf392fb8404972968",
+  "sample_plan_sha256": "98db206458a0b33c29c89cb71aea41f9a1dcfcb2647d7c163406dda4cfacaf04",
+  "diagnostic_only": true,
+  "ranking_stability_proven": false,
+  "production_approved": false,
+  "server_latency_proven": false
+}

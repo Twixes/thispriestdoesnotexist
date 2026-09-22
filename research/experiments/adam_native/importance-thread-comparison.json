@@ -1,0 +1,278 @@
+{
+  "diagnostic_only": true,
+  "pairs_per_run": 4,
+  "source_step": 250,
+  "source_checkpoint_sha256": "864bc321a032cce4fa8b7d72afdb31cc6083444a140680d084529627c1cff2a8",
+  "comparison_source_sha256": "2d9953091af53dc57eca1e37c18b589ddc8dc4ff21fb57a317b4cffea1fd88b8",
+  "records": [
+    {
+      "threads": 1,
+      "run": "research/runs/adam-native1024-fixed-offsets250-ema-importance4-v1",
+      "compute_seconds": 37.37283570901491,
+      "wall_seconds": 39.19566208298784,
+      "peak_rss_gib": 9.056976318359375,
+      "min_available_fraction": 0.3374675114949544,
+      "speedup_vs_observed_one_thread": 1.0,
+      "moments": {
+        "G": {
+          "gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          },
+          "squared_gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          }
+        },
+        "D": {
+          "gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          },
+          "squared_gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          }
+        }
+      },
+      "images": [
+        {
+          "path": "sample-000.png",
+          "sha256": "0faf2f68ab5ce7c87f14a138682a08c42581d9a5e8b7a679f746afef9fe8e7a0",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-001.png",
+          "sha256": "c45120a032fe9d95eaf19f93d550c4680ccc49d60c8640f4c19c1860aba3c923",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-002.png",
+          "sha256": "53fc46d85e88a63c14d0183af9fa3ffa7eae1b84ae08a814a35e38ef714c43ac",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-003.png",
+          "sha256": "640b6cd8db8844bc00bb17b3a604310a8c156c2e7885897b228f1e92a72727b9",
+          "exact_png_bytes": true
+        }
+      ],
+      "source_state_and_sample_plan_exact": true,
+      "artifact_sha256": {
+        "protocol.json": "08ca558e4c67aad4ccb20becda8318a639fd1baef44b5ed5c3d8701113b026f4",
+        "runtime.json": "b3b88d34eb8c44354b3756126bf830db6f76a8d34252f642d5190e62b7e49c95",
+        "result.json": "d96d2afbf11a6b10a6588dce1d9dc251d97103e7902a00c0e9c90af18319f0ee",
+        "supervisor.json": "8f255827c6baccf500779a183202fbb0f38592b128a894f5181c7edaeb674357",
+        "importance-0004.json": "ee40740fa29de3ca442bd981efe068409afaf95d7765ada7f2d1a50f96fd8aa2",
+        "importance-0004.pt": "01ca0b7a84fcd72001a2ecef923a27bf5e7f7a8652a6a2aea7bb29216b5f5e9e",
+        "sample-plan.npz": "98db206458a0b33c29c89cb71aea41f9a1dcfcb2647d7c163406dda4cfacaf04"
+      }
+    },
+    {
+      "threads": 2,
+      "run": "research/runs/adam-native1024-fixed-offsets250-ema-importance4-threads2-v1",
+      "compute_seconds": 33.24868020799477,
+      "wall_seconds": 34.874366333009675,
+      "peak_rss_gib": 9.21417236328125,
+      "min_available_fraction": 0.3337856928507487,
+      "speedup_vs_observed_one_thread": 1.1240396754163033,
+      "moments": {
+        "G": {
+          "gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          },
+          "squared_gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          }
+        },
+        "D": {
+          "gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          },
+          "squared_gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          }
+        }
+      },
+      "images": [
+        {
+          "path": "sample-000.png",
+          "sha256": "0faf2f68ab5ce7c87f14a138682a08c42581d9a5e8b7a679f746afef9fe8e7a0",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-001.png",
+          "sha256": "c45120a032fe9d95eaf19f93d550c4680ccc49d60c8640f4c19c1860aba3c923",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-002.png",
+          "sha256": "53fc46d85e88a63c14d0183af9fa3ffa7eae1b84ae08a814a35e38ef714c43ac",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-003.png",
+          "sha256": "640b6cd8db8844bc00bb17b3a604310a8c156c2e7885897b228f1e92a72727b9",
+          "exact_png_bytes": true
+        }
+      ],
+      "source_state_and_sample_plan_exact": true,
+      "artifact_sha256": {
+        "protocol.json": "ce32b077687c6f3d692707ee9577eb9e87e9a5fbf1f492f3fcc7dda3662be415",
+        "runtime.json": "b0287e2fdf074b6f242170ab5b25ec6402d7e48f05fb08e89bda90a8107f219d",
+        "result.json": "cfdea8378f9c040dd437676ffc73dc610fc5cee98af54bcbe50c334e83737ae1",
+        "supervisor.json": "23757bc4c12f76e1af15a0015774887d8279fb8dca5cb41dbd4d68fc01cd7c19",
+        "importance-0004.json": "4845ef88d669aeb674465e04ef5a9cdb20adec5f8e601156b52f255a6d00dd62",
+        "importance-0004.pt": "fe06729899c8ccfa4a644c0a53c8989df59aac26ba96613c17cddba36effc37b",
+        "sample-plan.npz": "98db206458a0b33c29c89cb71aea41f9a1dcfcb2647d7c163406dda4cfacaf04"
+      }
+    },
+    {
+      "threads": 4,
+      "run": "research/runs/adam-native1024-fixed-offsets250-ema-importance4-threads4-v1",
+      "compute_seconds": 30.957425917033106,
+      "wall_seconds": 32.48970254207961,
+      "peak_rss_gib": 9.266616821289062,
+      "min_available_fraction": 0.3298460642496745,
+      "speedup_vs_observed_one_thread": 1.2072333083886013,
+      "moments": {
+        "G": {
+          "gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          },
+          "squared_gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          }
+        },
+        "D": {
+          "gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          },
+          "squared_gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          }
+        }
+      },
+      "images": [
+        {
+          "path": "sample-000.png",
+          "sha256": "0faf2f68ab5ce7c87f14a138682a08c42581d9a5e8b7a679f746afef9fe8e7a0",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-001.png",
+          "sha256": "c45120a032fe9d95eaf19f93d550c4680ccc49d60c8640f4c19c1860aba3c923",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-002.png",
+          "sha256": "53fc46d85e88a63c14d0183af9fa3ffa7eae1b84ae08a814a35e38ef714c43ac",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-003.png",
+          "sha256": "640b6cd8db8844bc00bb17b3a604310a8c156c2e7885897b228f1e92a72727b9",
+          "exact_png_bytes": true
+        }
+      ],
+      "source_state_and_sample_plan_exact": true,
+      "artifact_sha256": {
+        "protocol.json": "02d541a9944600dcc68f5cd11b0ac50c36567f5280458b5f1617df5a2c5c03c5",
+        "runtime.json": "f9136887c5ec7f9325df76d3e303b1d667ef5345d0c5f673bb62353efd62d991",
+        "result.json": "039698e1fc80618f8c8dbf3f01eb34c2dbd1647b73f6fa5fc425b0d8794bc582",
+        "supervisor.json": "94be3c31c38f6d0172002f6b3fa689260aa25314c718f6182fe3461e656feae6",
+        "importance-0004.json": "8e5ffc9eb0db4a877b50bca1d7689d6873fffc2fc3809486dda1d7c6eb0d6146",
+        "importance-0004.pt": "b858573e9fa453c0a5a0fb2dade587fcfa7639fac86aa54bffb31606bd4a39ac",
+        "sample-plan.npz": "98db206458a0b33c29c89cb71aea41f9a1dcfcb2647d7c163406dda4cfacaf04"
+      }
+    },
+    {
+      "threads": 8,
+      "run": "research/runs/adam-native1024-fixed-offsets250-ema-importance4-threads8-v1",
+      "compute_seconds": 30.34585845901165,
+      "wall_seconds": 31.951971624977887,
+      "peak_rss_gib": 9.140472412109375,
+      "min_available_fraction": 0.3316841125488281,
+      "speedup_vs_observed_one_thread": 1.2315629745487227,
+      "moments": {
+        "G": {
+          "gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          },
+          "squared_gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          }
+        },
+        "D": {
+          "gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          },
+          "squared_gradient_sums": {
+            "exact": true,
+            "max_abs_difference": 0.0,
+            "relative_l2_difference": 0.0
+          }
+        }
+      },
+      "images": [
+        {
+          "path": "sample-000.png",
+          "sha256": "0faf2f68ab5ce7c87f14a138682a08c42581d9a5e8b7a679f746afef9fe8e7a0",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-001.png",
+          "sha256": "c45120a032fe9d95eaf19f93d550c4680ccc49d60c8640f4c19c1860aba3c923",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-002.png",
+          "sha256": "53fc46d85e88a63c14d0183af9fa3ffa7eae1b84ae08a814a35e38ef714c43ac",
+          "exact_png_bytes": true
+        },
+        {
+          "path": "sample-003.png",
+          "sha256": "640b6cd8db8844bc00bb17b3a604310a8c156c2e7885897b228f1e92a72727b9",
+          "exact_png_bytes": true
+        }
+      ],
+      "source_state_and_sample_plan_exact": true,
+      "artifact_sha256": {
+        "protocol.json": "4c663226080fda4b14f036825512c7654ba58f7b626cd92cf392fb8404972968",
+        "runtime.json": "f3dff189894ee4ef2846c4a51b03fd2e4a5e452e920d806cccf7fa50510e6f8b",
+        "result.json": "39815f808ed43418e34cdfb981980fa57c0b52cea76d153b86cbdfdd6109eaa8",
+        "supervisor.json": "380ef4cb8bee414388b6c66f2f2ba7f58a1e9b370165c6e0fd5e98bad8a5a7e4",
+        "importance-0004.json": "e2b91fcdb8eaf8a5876f0b569fadaa08930af7b31a26365b62f1450d30db20c0",
+        "importance-0004.pt": "23c5b7895158eba6068dbf836d87172a4e00f0d26d4328925f62c81c521b7615",
+        "sample-plan.npz": "98db206458a0b33c29c89cb71aea41f9a1dcfcb2647d7c163406dda4cfacaf04"
+      }
+    }
+  ],
+  "limitations": "Single sequential short trials; timing can reflect thermal/cache/background variation. This is not a long-run performance guarantee, reliable FI ranking, or priest-quality evidence."
+}

@@ -1,0 +1,17 @@
+{
+  "verified_at_utc": "2026-09-22T00:29:25.317542+00:00",
+  "runner_sha256": "0a5be1d0f4db4ffe04b1c08e6483855fdf99a78b9be8bf38eab1a39672fec7ba",
+  "parent_runner_sha256": "9ff54a546593aebeffc0320f897ba66865c13674b5b83be3095cf1471eb73b6b",
+  "bounded_tests": {
+    "passed": 4,
+    "seconds": 0.081
+  },
+  "actual_retained250_provenance_gate": {
+    "source_run_complete": false,
+    "source_step": 250,
+    "stopped_after_step": 264,
+    "reviewed_ema_diagnostic_only": true
+  },
+  "scope": "Actual pinned checkpoint/review/image bytes authenticated without loading native models; engine/worker AST equality and declared synthetic corruption tests passed. FI1000 and numerical ranking review still pending. No native main launch.",
+  "production_approved": false
+}

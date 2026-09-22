@@ -1,0 +1,61 @@
+{
+  "observed_at_utc": "2026-09-22T00:30:21.425030+00:00",
+  "status_at_observation": "running",
+  "owned_processes": [
+    {
+      "pid": 61284,
+      "ppid": 55550,
+      "created_at": 1790036671.438086,
+      "command": [
+        "research/.venv/bin/python",
+        "research/experiments/adam_native/estimate_importance_fixed_offsets_threads.py",
+        "--run",
+        "research/runs/adam-native1024-output-rank1-fixed-offsets100-to500-v1",
+        "--step",
+        "250",
+        "--pairs",
+        "1000",
+        "--threads",
+        "8",
+        "--output",
+        "research/runs/adam-native1024-fixed-offsets250-ema-importance1000-threads8-v1"
+      ],
+      "rss_bytes": 27688960
+    },
+    {
+      "pid": 61291,
+      "ppid": 61284,
+      "created_at": 1790036671.723704,
+      "command": [
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/.venv/bin/python",
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/experiments/adam_native/estimate_importance_fixed_offsets_threads.py",
+        "--worker",
+        "--output",
+        "/Users/twixes/Developer/thispriestdoesnotexist/research/runs/adam-native1024-fixed-offsets250-ema-importance1000-threads8-v1"
+      ],
+      "rss_bytes": 5035212800
+    }
+  ],
+  "completed_pairs_at_observation": 46,
+  "latest_pair_seconds": 7.583110750070773,
+  "immutable_launch_artifacts": {
+    ".gitignore": "c51cb97f5a9420d37e034370d1339a114b381999db934a203d4a6d1129980268",
+    "protocol.json": "263f4b4af59beb34abf9cae5218209a1166b3aa189ee6fa64c0c273470ff2132",
+    "runtime.json": "f3dff189894ee4ef2846c4a51b03fd2e4a5e452e920d806cccf7fa50510e6f8b",
+    "sample-plan.json": "738f29ae70a0179b5c3d174c06ca3778b1c588241a4956dcca10bdcf47c7caf9",
+    "sample-plan.npz": "9d9b70e1e004f618ca53326fa22d61e3a4aee7eef9bc7160966e627e2b93458a",
+    "fixed-offset-policy.json": "8034cc8b134513f5f0613f05b417b7c9af4e544a2a7af8ec10902de2e32b1a06",
+    "estimate_importance_fixed_offsets_threads.py": "8f4323a2febc323b92056d41f6598f6de592a26cb36e06cb27981441d662bb6e",
+    "estimate_importance_fixed_offsets.py": "2c80a760a562aad5fb8fa33848729a6ae0acad4683e0fa5123928956cbc03ec5",
+    "fixed_offset_policy.py": "60dbcf1b8d9358a3279fa3538af434f81ba849ede76438213061538174eb8af6",
+    "importance.py": "1d1d253e8659863ed567f22201423389f71df36a572657896aadcda8d1ab9bbb",
+    "modulation.py": "b032f7965f397a5ebdc93fb1081adaeace651d31a614347123ab83fc46ce456a",
+    "sample-000.png": "0faf2f68ab5ce7c87f14a138682a08c42581d9a5e8b7a679f746afef9fe8e7a0",
+    "sample-001.png": "c45120a032fe9d95eaf19f93d550c4680ccc49d60c8640f4c19c1860aba3c923",
+    "sample-002.png": "53fc46d85e88a63c14d0183af9fa3ffa7eae1b84ae08a814a35e38ef714c43ac",
+    "sample-003.png": "640b6cd8db8844bc00bb17b3a604310a8c156c2e7885897b228f1e92a72727b9"
+  },
+  "terminal_result_available": false,
+  "no_model_updates": true,
+  "note": "Point-in-time process observation only. Check the live handle before any restart or completion claim. Live logs and unfinished accumulators are not staged in this launch archive."
+}
