@@ -1,0 +1,24 @@
+{
+  "step": 10,
+  "reviewer": "root",
+  "images": {
+    "ema-000.png": "4eb95b062a4199a78d1f618e0971a5c45a6d7c75bd78cd97428b0119a0ee72b6",
+    "ema-001.png": "72a9064dc010763d7746087f6f824355c9bd0f6452034393445e0f24e36e3d3e",
+    "ema-002.png": "2c047ccb162fb06af4432f7b0da02b8601dbbac16fa5fc60976a4e87bae26a29",
+    "ema-003.png": "3aaf649aed7d2d89496b75bf06ee7a7bc5a8259020324515dbd5dae34a156642",
+    "raw-000.png": "20a980999010110b0af6ce9b1774401b725b27617abc9bba465fc607670125c1",
+    "raw-001.png": "ad679c6ed931e1e54b8e2ccf4654b7096951ed76376cac84a5c71bc0c2f1729f",
+    "raw-002.png": "474c3a48ed74ff1d41191b1a6e7c9d1d0ea6206869d300f41ed75858204dab0a",
+    "raw-003.png": "0f312ad36db42d1ae83f0b930a8a4f5db1ad151c1db29ff28528e0189ecae256"
+  },
+  "checkpoint_sha256": "9dcffb8b125d9b7f37f7ac59db067a5c564c4912488a2678472a0dd4ec90ffca",
+  "observations": [
+    "All eight full native images inspected directly. Raw and EMA remain coherent original-domain faces, with legible skin, hair, eyes and facial structure. No severe global shading/noise regression like rejected raw250.",
+    "Latents 000 and 003 depict apparent children. Latent001 retains a hat, latent003 retains a large knit hat. Latent002 is an adult man with glasses and ordinary shirt. No image depicts an unambiguous priest collar.",
+    "These source-like outputs fail the requested adult male priest and no-hat domain. Ten steps only establish early mechanical and photographic viability, not successful adaptation."
+  ],
+  "mechanics": "Successful ten steps, 13 G/11 D updates, exact checkpoint restoration, all eight folded forward errors 0; peak10.0445GiB.",
+  "decision": "Continue exact state to100 with intermediate50 visual review; stop owned process for major photographic regression.",
+  "production_approved": false,
+  "server_latency_proven": false
+}

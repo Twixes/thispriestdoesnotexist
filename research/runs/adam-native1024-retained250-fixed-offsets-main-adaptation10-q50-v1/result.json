@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "iterations": 10,
+  "optimizer_steps": {
+    "g": 13,
+    "d": 11
+  },
+  "protocol_sha256": "a06a7d9719671b281f228b0707f168d29a7432046171ddbcc6ef96c91f389546",
+  "seconds_training_previews_export": 161.54846337495837,
+  "fixed_offsets_and_mask_invariants": true,
+  "folded_native_max_errors": {
+    "raw": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ema": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "checkpoint_state_restored_exactly": true,
+  "main_adaptation_run": true,
+  "mechanics_smoke_only": true,
+  "production_approved": false,
+  "server_latency_proven": false
+}

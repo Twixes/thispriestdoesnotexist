@@ -1,0 +1,2172 @@
+{
+  "fixed_offsets": [
+    "synthesis.b1024.conv0.parametrizations.bias.0.b_vector",
+    "synthesis.b1024.conv0.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b1024.conv1.parametrizations.bias.0.b_vector",
+    "synthesis.b1024.conv1.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b128.conv0.parametrizations.bias.0.b_vector",
+    "synthesis.b128.conv0.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b128.conv1.parametrizations.bias.0.b_vector",
+    "synthesis.b128.conv1.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b16.conv0.parametrizations.bias.0.b_vector",
+    "synthesis.b16.conv0.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b16.conv1.parametrizations.bias.0.b_vector",
+    "synthesis.b16.conv1.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b256.conv0.parametrizations.bias.0.b_vector",
+    "synthesis.b256.conv0.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b256.conv1.parametrizations.bias.0.b_vector",
+    "synthesis.b256.conv1.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b32.conv0.parametrizations.bias.0.b_vector",
+    "synthesis.b32.conv0.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b32.conv1.parametrizations.bias.0.b_vector",
+    "synthesis.b32.conv1.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b4.conv1.parametrizations.bias.0.b_vector",
+    "synthesis.b4.conv1.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b512.conv0.parametrizations.bias.0.b_vector",
+    "synthesis.b512.conv0.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b512.conv1.parametrizations.bias.0.b_vector",
+    "synthesis.b512.conv1.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b64.conv0.parametrizations.bias.0.b_vector",
+    "synthesis.b64.conv0.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b64.conv1.parametrizations.bias.0.b_vector",
+    "synthesis.b64.conv1.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b8.conv0.parametrizations.bias.0.b_vector",
+    "synthesis.b8.conv0.parametrizations.noise_strength.0.b_vector",
+    "synthesis.b8.conv1.parametrizations.bias.0.b_vector",
+    "synthesis.b8.conv1.parametrizations.noise_strength.0.b_vector"
+  ],
+  "components": {
+    "G": [
+      {
+        "name": "synthesis.b4.conv1.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b4.conv1.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b4.conv1.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b4.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "synthesis.b4.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b4.torgb.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b4.torgb.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b4.torgb.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b4.torgb.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b4.torgb.parametrizations.weight.0.v_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b4.torgb.parametrizations.bias.0.b_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b8.conv0.affine.parametrizations.weight.original",
+        "shape": [
+          512,
+          512
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "synthesis.b8.conv0.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.conv0.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.conv0.affine.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.conv0.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.conv0.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "synthesis.b8.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "synthesis.b8.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.conv1.affine.parametrizations.weight.original",
+        "shape": [
+          512,
+          512
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "synthesis.b8.conv1.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.conv1.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.conv1.affine.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.conv1.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.conv1.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "synthesis.b8.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "synthesis.b8.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.torgb.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.torgb.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.torgb.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.torgb.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b8.torgb.parametrizations.weight.0.v_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b8.torgb.parametrizations.bias.0.b_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b16.conv0.affine.parametrizations.weight.original",
+        "shape": [
+          512,
+          512
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "synthesis.b16.conv0.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.conv0.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.conv0.affine.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.conv0.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.conv0.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "synthesis.b16.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "synthesis.b16.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.conv1.affine.parametrizations.weight.original",
+        "shape": [
+          512,
+          512
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "synthesis.b16.conv1.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.conv1.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.conv1.affine.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.conv1.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.conv1.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "synthesis.b16.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "synthesis.b16.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.torgb.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.torgb.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.torgb.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.torgb.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b16.torgb.parametrizations.weight.0.v_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b16.torgb.parametrizations.bias.0.b_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b32.conv0.affine.parametrizations.weight.original",
+        "shape": [
+          512,
+          512
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "synthesis.b32.conv0.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.conv0.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.conv0.affine.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.conv0.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.conv0.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "synthesis.b32.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "synthesis.b32.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.conv1.affine.parametrizations.weight.original",
+        "shape": [
+          512,
+          512
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "synthesis.b32.conv1.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.conv1.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.conv1.affine.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.conv1.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.conv1.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "synthesis.b32.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "synthesis.b32.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.torgb.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.torgb.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.torgb.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.torgb.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b32.torgb.parametrizations.weight.0.v_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b32.torgb.parametrizations.bias.0.b_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b64.conv0.affine.parametrizations.weight.original",
+        "shape": [
+          512,
+          512
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "synthesis.b64.conv0.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.conv0.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.conv0.affine.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.conv0.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.conv0.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "synthesis.b64.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "synthesis.b64.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.conv1.affine.parametrizations.weight.original",
+        "shape": [
+          512,
+          512
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "synthesis.b64.conv1.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.conv1.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.conv1.affine.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.conv1.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "synthesis.b64.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.torgb.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.torgb.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.torgb.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.torgb.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b64.torgb.parametrizations.weight.0.v_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b64.torgb.parametrizations.bias.0.b_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b128.conv0.affine.parametrizations.weight.original",
+        "shape": [
+          512,
+          512
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "synthesis.b128.conv0.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b128.conv0.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b128.conv0.affine.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b128.conv0.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b128.conv0.parametrizations.weight.original",
+        "shape": [
+          256,
+          512,
+          3,
+          3
+        ],
+        "elements": 1179648
+      },
+      {
+        "name": "synthesis.b128.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "synthesis.b128.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b128.conv1.affine.parametrizations.weight.original",
+        "shape": [
+          256,
+          512
+        ],
+        "elements": 131072
+      },
+      {
+        "name": "synthesis.b128.conv1.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b128.conv1.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b128.conv1.affine.parametrizations.bias.original",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b128.conv1.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b128.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          2304
+        ],
+        "elements": 2304
+      },
+      {
+        "name": "synthesis.b128.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b128.torgb.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b128.torgb.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b128.torgb.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b128.torgb.parametrizations.weight.0.u_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b128.torgb.parametrizations.weight.0.v_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b128.torgb.parametrizations.bias.0.b_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b256.conv0.affine.parametrizations.weight.original",
+        "shape": [
+          256,
+          512
+        ],
+        "elements": 131072
+      },
+      {
+        "name": "synthesis.b256.conv0.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b256.conv0.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b256.conv0.affine.parametrizations.bias.original",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b256.conv0.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "synthesis.b256.conv0.parametrizations.weight.original",
+        "shape": [
+          128,
+          256,
+          3,
+          3
+        ],
+        "elements": 294912
+      },
+      {
+        "name": "synthesis.b256.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          2304
+        ],
+        "elements": 2304
+      },
+      {
+        "name": "synthesis.b256.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b256.conv1.affine.parametrizations.weight.original",
+        "shape": [
+          128,
+          512
+        ],
+        "elements": 65536
+      },
+      {
+        "name": "synthesis.b256.conv1.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b256.conv1.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b256.conv1.affine.parametrizations.bias.original",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b256.conv1.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b256.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          1152
+        ],
+        "elements": 1152
+      },
+      {
+        "name": "synthesis.b256.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b256.torgb.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b256.torgb.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b256.torgb.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b256.torgb.parametrizations.weight.0.u_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b256.torgb.parametrizations.weight.0.v_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b256.torgb.parametrizations.bias.0.b_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b512.conv0.affine.parametrizations.weight.original",
+        "shape": [
+          128,
+          512
+        ],
+        "elements": 65536
+      },
+      {
+        "name": "synthesis.b512.conv0.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b512.conv0.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b512.conv0.affine.parametrizations.bias.original",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b512.conv0.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "synthesis.b512.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          1152
+        ],
+        "elements": 1152
+      },
+      {
+        "name": "synthesis.b512.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b512.conv1.affine.parametrizations.weight.original",
+        "shape": [
+          64,
+          512
+        ],
+        "elements": 32768
+      },
+      {
+        "name": "synthesis.b512.conv1.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b512.conv1.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b512.conv1.affine.parametrizations.bias.original",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b512.conv1.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b512.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          576
+        ],
+        "elements": 576
+      },
+      {
+        "name": "synthesis.b512.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b512.torgb.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b512.torgb.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b512.torgb.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b512.torgb.parametrizations.weight.0.u_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b512.torgb.parametrizations.weight.0.v_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b512.torgb.parametrizations.bias.0.b_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b1024.conv0.affine.parametrizations.weight.original",
+        "shape": [
+          64,
+          512
+        ],
+        "elements": 32768
+      },
+      {
+        "name": "synthesis.b1024.conv0.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b1024.conv0.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b1024.conv0.affine.parametrizations.bias.original",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b1024.conv0.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "synthesis.b1024.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          576
+        ],
+        "elements": 576
+      },
+      {
+        "name": "synthesis.b1024.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "synthesis.b1024.conv1.affine.parametrizations.weight.original",
+        "shape": [
+          32,
+          512
+        ],
+        "elements": 16384
+      },
+      {
+        "name": "synthesis.b1024.conv1.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b1024.conv1.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "synthesis.b1024.conv1.affine.parametrizations.bias.original",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "synthesis.b1024.conv1.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "synthesis.b1024.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          288
+        ],
+        "elements": 288
+      },
+      {
+        "name": "synthesis.b1024.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "synthesis.b1024.torgb.affine.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "synthesis.b1024.torgb.affine.parametrizations.weight.0.v_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "synthesis.b1024.torgb.affine.parametrizations.bias.0.b_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "synthesis.b1024.torgb.parametrizations.weight.0.u_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "synthesis.b1024.torgb.parametrizations.weight.0.v_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "synthesis.b1024.torgb.parametrizations.bias.0.b_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "mapping.fc0.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc0.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc0.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc1.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc1.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc2.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc2.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc2.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc3.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc3.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc3.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc4.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc4.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc4.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc5.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc5.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc5.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc6.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc6.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc6.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc7.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc7.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "mapping.fc7.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      }
+    ],
+    "D": [
+      {
+        "name": "b1024.fromrgb.parametrizations.weight.0.u_vector",
+        "shape": [
+          3
+        ],
+        "elements": 3
+      },
+      {
+        "name": "b1024.fromrgb.parametrizations.weight.0.v_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "b1024.fromrgb.parametrizations.bias.0.b_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "b1024.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          288
+        ],
+        "elements": 288
+      },
+      {
+        "name": "b1024.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "b1024.conv0.parametrizations.bias.0.b_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "b1024.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          288
+        ],
+        "elements": 288
+      },
+      {
+        "name": "b1024.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "b1024.conv1.parametrizations.bias.0.b_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "b1024.skip.parametrizations.weight.0.u_vector",
+        "shape": [
+          32
+        ],
+        "elements": 32
+      },
+      {
+        "name": "b1024.skip.parametrizations.weight.0.v_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "b512.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          576
+        ],
+        "elements": 576
+      },
+      {
+        "name": "b512.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "b512.conv0.parametrizations.bias.0.b_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "b512.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          576
+        ],
+        "elements": 576
+      },
+      {
+        "name": "b512.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "b512.conv1.parametrizations.bias.0.b_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "b512.skip.parametrizations.weight.original",
+        "shape": [
+          128,
+          64,
+          1,
+          1
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "b512.skip.parametrizations.weight.0.u_vector",
+        "shape": [
+          64
+        ],
+        "elements": 64
+      },
+      {
+        "name": "b512.skip.parametrizations.weight.0.v_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "b256.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          1152
+        ],
+        "elements": 1152
+      },
+      {
+        "name": "b256.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "b256.conv0.parametrizations.bias.0.b_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "b256.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          1152
+        ],
+        "elements": 1152
+      },
+      {
+        "name": "b256.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "b256.conv1.parametrizations.bias.0.b_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "b256.skip.parametrizations.weight.original",
+        "shape": [
+          256,
+          128,
+          1,
+          1
+        ],
+        "elements": 32768
+      },
+      {
+        "name": "b256.skip.parametrizations.weight.0.u_vector",
+        "shape": [
+          128
+        ],
+        "elements": 128
+      },
+      {
+        "name": "b256.skip.parametrizations.weight.0.v_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "b128.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          2304
+        ],
+        "elements": 2304
+      },
+      {
+        "name": "b128.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "b128.conv0.parametrizations.bias.0.b_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "b128.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          2304
+        ],
+        "elements": 2304
+      },
+      {
+        "name": "b128.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b128.conv1.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b128.skip.parametrizations.weight.original",
+        "shape": [
+          512,
+          256,
+          1,
+          1
+        ],
+        "elements": 131072
+      },
+      {
+        "name": "b128.skip.parametrizations.weight.0.u_vector",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "b128.skip.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b64.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "b64.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b64.conv0.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b64.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "b64.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b64.conv1.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b64.skip.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "b64.skip.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b64.skip.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b32.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "b32.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b32.conv0.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b32.conv1.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "b32.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "b32.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b32.conv1.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b32.conv1.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b32.skip.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "b32.skip.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b32.skip.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b16.conv0.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "b16.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "b16.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b16.conv0.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b16.conv0.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b16.conv1.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "b16.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "b16.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b16.conv1.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b16.conv1.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b16.skip.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "b16.skip.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b8.conv0.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "b8.conv0.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "b8.conv0.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b8.conv0.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b8.conv0.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b8.conv1.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "elements": 2359296
+      },
+      {
+        "name": "b8.conv1.parametrizations.weight.0.u_vector",
+        "shape": [
+          4608
+        ],
+        "elements": 4608
+      },
+      {
+        "name": "b8.conv1.parametrizations.weight.0.v_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b8.conv1.parametrizations.bias.original",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b8.conv1.parametrizations.bias.0.b_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b8.skip.parametrizations.weight.original",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ],
+        "elements": 262144
+      },
+      {
+        "name": "b8.skip.parametrizations.weight.0.u_vector",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b4.conv.weight",
+        "shape": [
+          512,
+          513,
+          3,
+          3
+        ],
+        "elements": 2363904
+      },
+      {
+        "name": "b4.conv.bias",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b4.fc.weight",
+        "shape": [
+          512,
+          8192
+        ],
+        "elements": 4194304
+      },
+      {
+        "name": "b4.fc.bias",
+        "shape": [
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b4.out.weight",
+        "shape": [
+          1,
+          512
+        ],
+        "elements": 512
+      },
+      {
+        "name": "b4.out.bias",
+        "shape": [
+          1
+        ],
+        "elements": 1
+      }
+    ]
+  }
+}
