@@ -34,9 +34,17 @@ main {
   position: fixed;
   right: max(12px, env(safe-area-inset-right));
   bottom: max(12px, env(safe-area-inset-bottom));
+  max-width: calc(50vw - 24px);
+  text-align: right;
   color: #fff;
   opacity: .5;
   font: 12px Arial, Helvetica, sans-serif;
+}
+
+.credit--homage {
+  left: max(12px, env(safe-area-inset-left));
+  right: auto;
+  text-align: left;
 }
 
 .credit a {
